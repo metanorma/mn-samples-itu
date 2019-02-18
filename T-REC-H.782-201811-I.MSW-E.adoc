@@ -19,44 +19,12 @@ Recommendation ITU-T H.782 specifies the data elements and structures of the met
 
 |===
 <.^h| Edition <.^h| Recommendation <.^h| Approval <.^h| Study Group <.^h| 
-Unique ID[[body_ftn1]]
+Unique ID{blank}footnote:[To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser, followed by the Recommendation's unique ID. For example, http://handle.itu.int/11.1002/1000/11830-en[].]
 <.<h| [[ihistorye]]1.0 <.<h| ITU-T H.782 <.<h| 2017-12-14 <.<h| 16 <.<h| http://handle.itu.int/11.1002/1000/13439[11.1002/1000/13439]
 <.<h| 2.0 <.<h| ITU-T H.782 (V2) <.<h| 2018-11-29 <.<h| 16 <.<h| http://handle.itu.int/11.1002/1000/13783[11.1002/1000/13783]
 |===
 
-== FOREWORD 
-
-The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of tele­com­mu­ni­ca­tions, information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.
-
-The [[iitexte]]World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU‑T study groups which, in turn, produce Recommendations on these topics.
-
-The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution1.
-
-In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.
-
-== NOTE
-
-In [[iitextea]]this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.
-
-Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.
-
-== INTELLECTUAL PROPERTY RIGHTS
-
-ITU [[iitexteb]]draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.
-
-As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at http://www.itu.int/ITU-T/ipr/[http://www.itu.int/ITU-T/ipr/].
-
-ITU[[iiannee]]2019
-
-All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.
-
-
-
-[[p1rectexte]]Recommendation ITU-T H.782
-
-Digital signage: Metadata
-
-== [[a__1Scope]][[_Toc449358]][[_Toc535833702]][[_Toc532563340]]1 Scope
+== [[a__1Scope]]Scope
 
 This Recommendation addresses specifications for the metadata, which especially focus on semantics aspects, related to general digital signage services. This Recommendation defines metadata for the following digital signage functionalities:
 
@@ -74,29 +42,30 @@ This Recommendation addresses specifications for the metadata, which especially 
 
 – interactive service.
 
-[[_Toc355359943]][[_Toc509401009]][[_Toc505694936]][[_Toc503891482]][[_Toc274586683]]This revision updates the data types of elements/attributes of identifiers. The update aims to widen applicability of the specifications at the price of easy XML validation.
+This revision updates the data types of elements/attributes of identifiers. The update aims to widen applicability of the specifications at the price of easy XML validation.
 
-== [[a__2References]][[_Toc532563341]][[_Toc449359]][[_Toc535833703]]2 References
+[bibliography]
+== [[a__2References]]References
 
 The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.
 
-[ITU-T H.741.2]Recommendation ITU-T H.741.2 (2012), _IPTV application event handling: Data structures of audience measurement for IPTV services_.
+* [h741, ITU-T H.741.2] Recommendation ITU-T H.741.2 (2012), _IPTV application event handling: Data structures of audience measurement for IPTV services_.
 
-[ITU-T H.780]Recommendation ITU-T H.780 (2012), _Digital signage: Service requirements and IPTV-based architecture_.
+* [h780, ITU-T H.780] Recommendation ITU-T H.780 (2012), _Digital signage: Service requirements and IPTV-based architecture_.
 
-[ITU-T H.781]Recommendation ITU-T H.781 (2015), _Digital signage: Functional architecture_.
+* [h781, ITU-T H.781] Recommendation ITU-T H.781 (2015), _Digital signage: Functional architecture_.
 
-[ETSI TS 102 822-3-1] ETSI TS 102 822-3-1 V1.9.2 (2016), _Broadcast and On-line Services: Search, select, and rightful use of content on personal storage systems ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1– Metadata schemas_.
+* [etsi, ETSI TS 102 822-3-1] ETSI TS 102 822-3-1 V1.9.2 (2016), _Broadcast and On-line Services: Search, select, and rightful use of content on personal storage systems ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1– Metadata schemas_.
 
-[IETF RFC 5139]IETF RFC 5139 (2008), _Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)_.
+* [rfc5139, IETF RFC 5139] IETF RFC 5139 (2008), _Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)_.
 
-[ISO 19136]ISO 19136 (2007),_Geographic information – Geography Markup Language (GML)_.
+* [iso19136, ISO 19136] ISO 19136 (2007),_Geographic information – Geography Markup Language (GML)_.
 
-[W3C XMLSchema]W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
+* [xmlschema, W3C XMLSchema] W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
 
-== [[a__3Definitions]][[_Toc355359944]][[_Toc449360]][[_Toc535833704]][[_Toc532563342]][[_Toc509401010]][[_Toc505694937]][[_Toc503891483]][[_Toc274586684]]3 Definitions
+== [[a__3Definitions]]3 Definitions
 
-=== [[a__3_1Terms_defined_elsewhere]][[_Toc355359945]][[_Toc449361]][[_Toc535833705]][[_Toc532563343]][[_Toc509401011]][[_Toc505694938]][[_Toc503891484]][[_Toc274586685]]3.1 Terms defined elsewhere
+=== [[a__3_1Terms_defined_elsewhere]]3.1 Terms defined elsewhere
 
 This Recommendation uses the following terms defined elsewhere:
 
@@ -118,33 +87,33 @@ NOTE 3 – This data may indicate an order of playing contents.
 
 *3.1. **5** proof-of-play (PoP)* [ITU-T H.781]:Any technique that can identify and prove that the content has been displayed on the screen.
 
-=== [[a__3_2Terms_defined_in_this_Recommendation]][[_Toc355359946]][[_Toc449362]][[_Toc535833706]][[_Toc532563344]][[_Toc509401012]][[_Toc505694939]][[_Toc503891485]][[_Toc274586686]]3.2 Terms defined in this Recommendation
+=== [[a__3_2Terms_defined_in_this_Recommendation]]3.2 Terms defined in this Recommendation
 
 This Recommendation defines the following terms:
 
-[[_Toc238617661]][[_Toc274586687]]*3.2. **1** play log*: A collection of record or information created by a digital signage system reflecting the content played, system performance, and other data.
+*3.2. **1** play log*: A collection of record or information created by a digital signage system reflecting the content played, system performance, and other data.
 
 *3.2.2 region*:A partial area of the screen layout to be a content displayed.
 
-*3.2.3 screen* *layout*: A composition of one or moreregions to be content displayed.[[_Toc505694940]][[_Toc503891486]][[_Toc355359947]][[_Toc371031599]][[_Toc371031598]][[_Toc371031597]][[_Toc371031596]]
+*3.2.3 screen* *layout*: A composition of one or moreregions to be content displayed.
 
-== [[a__4Abbreviations_and_acronyms]][[_Toc509401013]][[_Toc449363]][[_Toc535833707]][[_Toc532563345]]4 Abbreviations and acronyms
+== [[a__4Abbreviations_and_acronyms]]Abbreviations and acronyms
 
 This Recommendation uses the following abbreviations and acronyms:
 
-DSDigital Signage
+DS:: Digital Signage
 
-GMLGeography Markup Language
+GML:: Geography Markup Language
 
-URIUniform Resource Identifier
+URI:: Uniform Resource Identifier
 
-URLUniform Resource Locator
+URL:: Uniform Resource Locator
 
-UTCCoordinated Universal Time
+UTC:: Coordinated Universal Time
 
-XMLextensible Markup Language
+XML:: extensible Markup Language
 
-== [[a__5Conventions]][[_Toc355359948]][[_Toc449364]][[_Toc535833708]][[_Toc532563346]][[_Toc509401014]][[_Toc505694941]][[_Toc503891487]][[_Toc274586688]]5 Conventions
+== [[a__5Conventions]]Conventions
 
 This Recommendation follows the notation described in clause 6 of [ITU-T H.741.2]. The notation is used in this Recommendation to facilitate the specification of the correspondingschema:
 
@@ -154,12 +123,12 @@ This Recommendation follows the notation described in clause 6 of [ITU-T H.741.2
 
 – _Type_: describes the type of the pertaining instanceas defined in Table 1;
 
-– _Container_:elements are defined to group associated elements.
+– _Container_: elements are defined to group associated elements.
 
 Table 1 contains data types used in this Recommendation; alternative representations may be shown whichillustrates other data structures. In case of discrepancy with any alternative representation, the correct information is to be found in Table 1.
 
 |===
-4+<.<h| [[_Ref355364476]][[_Toc532563369]][[_Toc503891510]][[_Toc325666222]][[_Toc355364187]]Table 1–Data types used in this Recommendation
+4+<.<h| [[_Ref355364476]]Table 1–Data types used in this Recommendation
 <.<| <.<| Type <.<| Name <.<| Notes/Reference
 <.<| <.<| ca:civicAddress <.<| Civic address <.<| Used to specify civic location.Defined in [IETF RFC 5139].
 <.<| <.<| gml:Point <.<| GML point <.<| Used to specify simple point geometry in format of geography markup language (GML).A point consists of a \<Point\> element with a child \<coords\> element. Within \<coords\> the latitude and longitude values are separated by a space.Defined in [ISO 19136].
@@ -179,7 +148,7 @@ Table 1 contains data types used in this Recommendation; alternative representat
 
 |===
 
-== [[a__6Overview]][[_Toc355359949]][[_Toc449365]][[_Toc535833709]][[_Toc532563347]][[_Toc509401015]][[_Toc505694942]][[_Toc503891488]][[_Toc274586689]]6 Overview
+== [[a__6Overview]]Overview
 
 This Recommendation address metadata related to digital signage (DS) services to present details of contents and service information. [ITU-T H.780] specifies some elements of metadata that are applicable to digital signage services.
 
@@ -191,9 +160,9 @@ Figure 1 illustrates a reference functional model for DS services as per [ITU‑
 
 image::T-REC-H.782_images/image003.png[]
 
-NOTE – Figure 1 as per [ITU-T H.781].
+NOTE:: Figure 1 as per [ITU-T H.781].
 
-[[_Ref481859692]][[_Toc532563386]][[_Toc503891527]]Figure 1 – Digital signage service reference architecture
+[[_Ref481859692]]Figure 1 – Digital signage service reference architecture
 
 Entities in Figure 1 are as follows:
 
@@ -217,9 +186,9 @@ Main groups of functions within the DS terminal device and the DS service operat
 
 This Recommendation describes metadata handled by these four functional groups.
 
-== [[a__7Configuration_of_terminal_device]][[_Toc452100937]][[_Toc324250308]][[_Toc355359953]][[_Toc449366]][[_Toc535833710]][[_Toc532563348]][[_Toc509401016]][[_Toc505694943]][[_Toc503891489]][[_Toc482154548]][[_Toc482154547]][[_Toc482154546]][[_Toc482154545]][[_Toc482154544]][[_Toc482154543]][[_Toc482154489]][[_Toc482154488]][[_Toc482154487]][[_Toc482154486]][[_Toc482154485]][[_Toc482154484]][[_Toc482154483]][[_Toc482154482]][[_Toc482154481]][[_Toc482154480]][[_Toc482154479]][[_Toc482154478]][[_Toc482154477]][[_Toc482154476]][[_Toc482154475]][[_Toc482154474]][[_Toc482154473]][[_Toc482154472]][[_Toc482154404]][[_Toc482154403]][[_Toc482154402]][[_Toc452100944]][[_Toc355878025]][[_Toc355878024]][[_Toc452100943]][[_Toc452100942]][[_Toc452100941]][[_Toc452100940]][[_Toc452100939]][[_Toc452100938]]7 Configuration of terminal device
+== [[a__7Configuration_of_terminal_device]]7 Configuration of terminal device
 
-=== [[a__7_1Client_configuration]][[_Toc503891490]][[_Toc449367]][[_Toc535833711]][[_Toc532563349]][[_Toc509401017]][[_Toc505694944]]7.1 Client configuration
+=== [[a__7_1Client_configuration]]7.1 Client configuration
 
 The digital signage server configures the digital signage client with a set of metadata in the "client configuration" which includes allocation of _TerminalId_; see Figure 2. The digital signage server can reconfigure the digital signage client with the configuration information needed.
 
@@ -227,10 +196,10 @@ A set of elements/attributes for "client configuration" metadata is shown in Tab
 
 image::T-REC-H.782_images/image004.png[]
 
-[[_Ref451526981]][[_Toc532563387]][[_Toc503891528]]Figure 2 – A flow for client configuration
+[[_Ref451526981]]Figure 2 – A flow for client configuration
 
 |===
-5+<.^h| [[_Ref451527253]][[_Toc532563370]][[_Toc503891511]]Table 2 – Metadata for "client configuration"
+5+<.^h| [[_Ref451527253]]Table 2 – Metadata for "client configuration"
 <.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Client‌Configuration <.<| Container to include client configuration information. <.<| <.<|
 <.<| <.<| Terminal‌Id <.<| Element of ClientConfiguration.An identifier of a terminal device. This value is allocated by the digital signage server. <.<| M(1) <.<| xs:NMTOKEN
@@ -271,7 +240,7 @@ Supplemental explanations of elements are as follows:
 
 –_PlaylistScheduleServerIdRef_: denotes the reference identifier of the playlist schedule server for the terminal.
 
-=== [[a__7_2Terminal_device]][[_Toc503891491]][[_Toc449368]][[_Toc535833712]][[_Toc532563350]][[_Toc509401018]][[_Toc505694945]]7.2 Terminal device
+=== [[a__7_2Terminal_device]]7.2 Terminal device
 
 A digital signage client may use the set of metadata in the "terminal device" to send its installation information to the server, and the digital signage server may use this metadata to manage the terminal device. See Figure 3.
 
@@ -280,10 +249,10 @@ A set of elements/attributes for "terminal device" metadata is shown in Table 3.
 image::T-REC-H.782_images/image005.png[]
 
 
-[[_Toc491876900]][[_Toc532563388]][[_Toc503891529]]Figure 3 – A flow for terminal device
+Figure 3 – A flow for terminal device
 
 |===
-5+<.^h| [[_Ref481864403]][[_Toc532563371]][[_Toc503891512]]Table 3 – Metadata for "terminal device"
+5+<.^h| [[_Ref481864403]]Table 3 – Metadata for "terminal device"
 <.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Terminal‌Device <.<| Container to include terminal device information to be reported to the server. <.<| <.<|
 <.<| <.<| TerminalId‌Ref <.<| Element of TerminalDevice.A reference identifier of a terminal device. This value is allocated by the digital signage server (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
@@ -336,12 +305,12 @@ NOTE 6 – This element can be used to locate the terminal, e.g., maintenance.
 
 –_InterfaceDevice_: describes the list of interactive devices that are attached to the terminal. A terminal device can have zero or more interactive devices attached such as touch panel, keyboard, mouse, camera, sensor, etc. The digital signage operator can make use of the interactive devices to provide interactive services and collect environmental inputs.
 
-=== [[a__7_3Interactive_device]][[_Toc491876741]][[_Toc449369]][[_Toc535833713]][[_Toc532563351]][[_Toc509401019]][[_Toc505694946]][[_Toc503891492]]7.3 Interactive device
+=== [[a__7_3Interactive_device]]7.3 Interactive device
 
 A terminal device can have zero or more interactive devices attached. The digital signage service can make use of the interactive devices to provide interactive services and collect environmental inputs. A set of elements/attributes for the interactive device are shown in Table 4.
 
 |===
-5+<.^h| [[_Ref481864429]][[_Toc532563372]][[_Toc503891513]]Table 4 – Metadatafor "interactive device"
+5+<.^h| [[_Ref481864429]]Table 4 – Metadatafor "interactive device"
 <.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Interactive‌Device <.<| Container to include interactive devices attached to the terminal. <.<| <.<|
 <.<| <.<| Interactive‌DeviceId <.<| Element of InteractiveDevice.Identifier of the interactive device. <.<| M(1) <.<| xs:NMTOKEN
@@ -364,12 +333,12 @@ Supplemental explanations of elements are as follows:
 
 NOTE –For example, a mouse or touch panel can produce position data type, a camera can produce video data type.
 
-=== [[a__7_4Content_delivery_server]][[_Toc503891493]][[_Toc449370]][[_Toc535833714]][[_Toc532563352]][[_Toc509401020]][[_Toc505694947]]7.4 Content delivery server
+=== [[a__7_4Content_delivery_server]]7.4 Content delivery server
 
 It is possible to have a separate content delivery server to distribute content to the DS terminal. A set of elements/attributes for the information of the "content delivery server" are shown in Table 5.
 
 |===
-5+<.^h| [[_Ref451527254]][[_Toc532563373]][[_Toc503891514]]Table 5 – Metadata for "content delivery server"
+5+<.^h| [[_Ref451527254]]Table 5 – Metadata for "content delivery server"
 <.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Content‌Delivery‌Server <.<| Container to include information of the content delivery server. <.<| <.<|
 <.<| <.<| Content‌Delivery‌Server‌Id <.<| Element of ContentDeliveryServer.Identification of the content delivery server. <.<| M(1) <.<| xs:NMTOKEN
@@ -382,7 +351,7 @@ It is possible to have a separate content delivery server to distribute content 
 
 |===
 
-[[_Toc451528068]][[_Toc452100993]]Supplemental explanations of elements are as follows:
+Supplemental explanations of elements are as follows:
 
 – _ContentDeliveryServerId_: denotes the identifier of the content delivery server;
 
@@ -394,12 +363,12 @@ NOTE – The content delivery server can validate the DS terminal device that pr
 
 – _Timezone_: describes the time zone used by the content delivery server.
 
-=== [[a__7_5Log_server]][[_Toc503891494]][[_Toc449371]][[_Toc535833715]][[_Toc532563353]][[_Toc509401021]][[_Toc505694948]]7.5 Log server
+=== [[a__7_5Log_server]]7.5 Log server
 
 It is possible to have separate log server to collect log data. A set of elements/attributes for the "logserver" are shown in Table 6.
 
 |===
-4+<.^h| [[_Ref451529430]][[_Toc532563374]][[_Toc503891515]]Table 6 – Metadata for "log server"
+4+<.^h| [[_Ref451529430]]Table 6 – Metadata for "log server"
 <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| LogServer <.<| Container to include information of log server. <.<| <.<|
 <.<| LogServerId <.<| Element of LogServer.Identification of the log server. <.<| M(1) <.<| xs:NMTOKEN
@@ -424,12 +393,12 @@ NOTE – The log server can validate the DS terminal device that provides this i
 
 – _Timezone:_ describes the time zone used by the log server.
 
-=== [[a__7_6Playlist_schedule_server]][[_Toc503891495]][[_Toc449372]][[_Toc535833716]][[_Toc532563354]][[_Toc509401022]][[_Toc505694949]]7.6 Playlist schedule server
+=== [[a__7_6Playlist_schedule_server]]7.6 Playlist schedule server
 
 It is possible to have a separate server to inform playlist schedule. A set of elements/attributes for the information of the "playlist schedule server" are shown in Table 7.
 
 |===
-4+<.^h| [[_Ref451529432]][[_Toc532563375]][[_Toc503891516]]Table 7 – Metadata for "playlist schedule server"
+4+<.^h| [[_Ref451529432]]Table 7 – Metadata for "playlist schedule server"
 <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| Playlist‌Schedule‌Server <.<| Container to include information of playlist scheduleserver. <.<| <.<|
 <.<| Playlist‌Schedule‌ServerId <.<| Element of PlaylistScheduleServer.Identification of the playlist schedule server. <.<| M(1) <.<| xs:NMTOKEN
@@ -454,7 +423,7 @@ NOTE – The playlist schedule server can validate the DS terminal device that p
 
 – _Timezone_: describes the time zone used by the playlist schedule server.
 
-=== [[a__7_7Terminal_device_status]][[_Toc503891496]][[_Toc449373]][[_Toc535833717]][[_Toc532563355]][[_Toc509401023]][[_Toc505694950]]7.7 Terminal device status
+=== [[a__7_7Terminal_device_status]]7.7 Terminal device status
 
 The terminal device can send its device status to the digital signage server; see Figure 4. This informs the digital signage operator of the current condition of the terminal device [ITU-T H.781].
 
@@ -463,10 +432,10 @@ A set of elements/attributes for "terminal device status" metadata is shown in T
 image::T-REC-H.782_images/image006.png[]
 
 
-[[_Toc491876901]][[_Toc532563389]][[_Toc503891530]]Figure 4 – A flow for terminal device status
+Figure 4 – A flow for terminal device status
 
 |===
-5+<.^h| [[_Ref451527257]][[_Toc532563376]][[_Toc503891517]]Table 8 –Metadata for "terminal device status"
+5+<.^h| [[_Ref451527257]]Table 8 –Metadata for "terminal device status"
 <.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Terminal‌Device‌Status <.<| Container to include information in the terminal device status reported to the server. <.<| <.<|
 <.<| <.<| Terminal‌Id‌Ref <.<| Element of TerminalDeviceStatus.A reference identifier of the terminal device (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
@@ -497,14 +466,14 @@ NOTE 1 – The server can determine the need for controlling the volume level/br
 
 NOTE 2 – The server can check when it has made any control to the terminal device.
 
-=== [[a__7_8Terminal_group]][[_Toc503891497]][[_Toc449374]][[_Toc535833718]][[_Toc532563356]][[_Toc509401024]][[_Toc505694951]]7.8 Terminal group
+=== [[a__7_8Terminal_group]]7.8 Terminal group
 
 A number of terminal devices can be grouped together to display the same content and playlist schedule. It would be easier to manage and operate multiple digital signage clients with the concept of a group. The digital signage server assigns a client to a group with the set of metadata defined in Table9.
 
 A set of elements/attributes for "terminal group" metadata is shown in Table 9.
 
 |===
-5+<.^h| [[_Ref451527258]][[_Toc532563377]][[_Toc503891518]]Table 9 – Metadata for "terminal group"
+5+<.^h| [[_Ref451527258]]Table 9 – Metadata for "terminal group"
 <.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Terminal‌Group <.<| Container to include group information for terminal device. <.<| <.<|
 <.<| <.<| Terminal‌GroupId <.<| Element of TerminalGroup.An identifier of the group of terminal devices. <.<| M(1) <.<| xs:NMTOKEN
@@ -519,7 +488,7 @@ A set of elements/attributes for "terminal group" metadata is shown in Table 9.
 
 |===
 
-[[_Toc452101001]]Supplemental explanations of elements are as follows:
+Supplemental explanations of elements are as follows:
 
 – _TerminalGroupId_: denotes the identifier of the group of terminal devices;
 
@@ -537,7 +506,7 @@ NOTE 1 – This element can be used by a user of the digital signage service to 
 
 NOTE 2 – For example, a terminal device on the first floor of a building can belong to a building group and also to a first‑floor group.
 
-== [[a__8Play_log]][[_Toc491876580]][[_Toc449375]][[_Toc535833719]][[_Toc532563357]][[_Toc509401025]][[_Toc505694952]][[_Toc503891498]][[_Toc355359959]][[_Toc324250310]][[_Toc491876852]][[_Toc491876684]][[_Toc491876851]][[_Toc491876683]][[_Toc491876850]][[_Toc491876682]][[_Toc491876849]][[_Toc491876681]][[_Toc491876848]][[_Toc491876680]][[_Toc491876847]][[_Toc491876679]][[_Toc491876846]][[_Toc491876678]][[_Toc491876845]][[_Toc491876677]][[_Toc491876844]][[_Toc491876676]][[_Toc491876843]][[_Toc491876675]][[_Toc491876842]][[_Toc491876674]][[_Toc491876841]][[_Toc491876673]][[_Toc491876840]][[_Toc491876672]][[_Toc491876839]][[_Toc491876671]][[_Toc491876756]][[_Toc491876588]][[_Toc491876755]][[_Toc491876587]][[_Toc491876754]][[_Toc491876586]][[_Toc491876753]][[_Toc491876585]][[_Toc491876752]][[_Toc491876584]][[_Toc491876751]][[_Toc491876583]][[_Toc491876750]][[_Toc491876582]][[_Toc491876749]][[_Toc491876581]][[_Toc491876748]]8 Play log
+== [[a__8Play_log]]8 Play log
 
 Digital signage server has log management functions to aggregate logs from DS terminal devices. The DS terminal device creates records for content played in the DS terminal device and sends the play log to the server. The details functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
 
@@ -549,10 +518,10 @@ image::T-REC-H.782_images/image007.png[]
 
 
 
-[[_Toc503891531]][[_Toc532563390]]Figure 5 – Flows for reporting play log
+Figure 5 – Flows for reporting play log
 
 |===
-5+<.^h| [[_Toc482154563]][[_Toc532563378]][[_Toc503891519]][[_Toc324359011]][[_Toc355364195]][[_Ref355356154]][[_Toc482154617]][[_Toc482154615]][[_Toc482154614]][[_Toc482154613]][[_Toc482154612]][[_Toc482154611]][[_Toc482154610]][[_Toc482154608]][[_Toc482154607]][[_Toc482154606]][[_Toc482154605]][[_Toc482154604]][[_Toc482154602]][[_Toc482154601]][[_Toc482154600]][[_Toc482154599]][[_Toc482154598]][[_Toc482154596]][[_Toc482154595]][[_Toc482154594]][[_Toc482154593]][[_Toc482154592]][[_Toc482154590]][[_Toc482154589]][[_Toc482154588]][[_Toc482154587]][[_Toc482154585]][[_Toc482154584]][[_Toc482154583]][[_Toc482154582]][[_Toc482154581]][[_Toc482154579]][[_Toc482154578]][[_Toc482154577]][[_Toc482154576]][[_Toc482154574]][[_Toc482154573]][[_Toc482154572]][[_Toc482154571]][[_Toc482154569]][[_Toc482154568]][[_Toc482154567]][[_Toc482154566]][[_Toc482154565]][[_Toc482154564]]Table 10 – Metadata for "play log"
+5+<.^h| [[_Ref355356154]]Table 10 – Metadata for "play log"
 <.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| PlayLog <.<| Container to include information of play log reported by the client. <.<| <.<|
 <.<| <.<| TerminalIdRef <.<| Element of Playlog.A reference identifier of the terminal device (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
@@ -571,7 +540,7 @@ image::T-REC-H.782_images/image007.png[]
 
 |===
 
-[[_Toc355878038]]Supplemental explanations of elements are as follows:
+Supplemental explanations of elements are as follows:
 
 – _TerminalIdRef_: denotes the reference identifier to the digital signage client terminal device that is reporting the play log;
 
@@ -591,7 +560,7 @@ NOTE 3 – If there are multiple regions, multiple play logs are generated for a
 
 – _ProofOfPlay_: describes proof that the content/playlist has been displayed. This element is implementation-dependent.
 
-== [[a__9Content_delivery_scheduling]][[_Toc503891499]][[_Toc449376]][[_Toc535833720]][[_Toc532563358]][[_Toc509401026]][[_Toc505694953]]9 Content delivery scheduling
+== [[a__9Content_delivery_scheduling]]9 Content delivery scheduling
 
 The digital signage server manages schedules for content delivery and requests the content delivery server to distribute content to multiple DS terminal devices. The delivery of content is performed between the content delivery server and the content delivery client. The detailed functionalities of digital signage server, content delivery server, and content delivery client are defined in [ITU‑TH.781].
 
@@ -603,10 +572,10 @@ image::T-REC-H.782_images/image008.png[]
 
 
 
-[[_Toc445291091]][[_Toc532563391]][[_Toc503891532]]Figure 6 – Flows for content delivery scheduling
+Figure 6 – Flows for content delivery scheduling
 
 |===
-5+<.^h| [[_Ref451530481]][[_Toc532563379]][[_Toc503891520]]Table 11 – Metadata for "content delivery schedule"
+5+<.^h| [[_Ref451530481]]Table 11 – Metadata for "content delivery schedule"
 <.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Content‌Delivery‌Schedule <.<| Container to include information of the content delivery schedule. <.<| <.<|
 <.<| <.<| Content‌Delivery‌ScheduleId <.<| Element of ContentDeliverySchedule.An identifier of the content delivery schedule. <.<| M(1) <.<| xs:NMTOKEN
@@ -639,15 +608,15 @@ NOTE 2 – Content such as current weather conditions, is an example of outdated
 
 – _SendDateTime_: describes the content delivery date/time, which indicates the time to start content delivery and is assigned in advance.
 
-== [[a__10Playlist_schedule]][[_Toc445291063]][[_Toc449377]][[_Toc535833721]][[_Toc532563359]][[_Toc509401027]][[_Toc505694954]][[_Toc503891500]]10 Playlist schedule
+== [[a__10Playlist_schedule]]10 Playlist schedule
 
 Digital signage server creates and manages a schedule of playlists. The digital signage client plays playlists according to the playlist schedule. Detail functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
 
-=== [[a__10_1Playlist_schedule]][[_Toc496533342]][[_Toc449378]][[_Toc535833722]][[_Toc532563360]][[_Toc509401028]][[_Toc505694955]][[_Toc503891501]][[_Toc491876862]][[_Toc482154629]][[_Toc482154628]][[_Toc496624687]]10.1 Playlist schedule
+=== [[a__10_1Playlist_schedule]]10.1 Playlist schedule
 
 A set of elements/attributes for "playlist schedule" are shown in Table 12.
 
-[[_Ref451530219]][[_Toc532563380]][[_Toc503891521]][[_Toc445291083]]Table 12– Metadata for "playlist schedule"
+[[_Ref451530219]]Table 12– Metadata for "playlist schedule"
 
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
@@ -708,11 +677,11 @@ NOTE 5 – If _StartTime_ is not assigned, the content may be played immediately
 
 NOTE 6 – If omitted, handling of this element is implementation-dependent (e.g., repetition time is infinite when an exact value is not specified).
 
-=== [[a__10_2Playlist]][[_Toc503891502]][[_Toc449379]][[_Toc535833723]][[_Toc532563361]][[_Toc509401029]][[_Toc505694956]]10.2 Playlist
+=== [[a__10_2Playlist]]10.2 Playlist
 
 A set of elements/attributes for "playlist" are shown in Table 13.
 
-[[_Ref451530087]][[_Toc532563381]][[_Toc503891522]][[_Toc445291085]]Table 13 – Metadata for "playlist"
+[[_Ref451530087]]Table 13 – Metadata for "playlist"
 
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
@@ -758,12 +727,12 @@ NOTE 4 – For a single screen layout and region in the terminal device, it shal
 
 NOTE 5 – [b-W3C CSS Transitions] and [b-W3C CSS Transforms] have defined methods of expressing HTML5 transition effects that can be used as a reference for this element.
 
-=== [[a__10_3Contents]][[_Toc503891503]][[_Toc449380]][[_Toc535833724]][[_Toc532563362]][[_Toc509401030]][[_Toc505694957]]10.3 Contents
+=== [[a__10_3Contents]]10.3 Contents
 
 A set of elements/for "contents" are shown in Table 14.
 
 |===
-5+<.^h| [[_Ref451529899]][[_Toc532563382]][[_Toc503891523]]Table 14– Metadata for "contents"
+5+<.^h| [[_Ref451529899]]Table 14– Metadata for "contents"
 <.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Contents <.<| Container to include information of content. <.<| <.<|
 <.<| <.<| ContentId <.<| Element of Contents.An identifier of content. <.<| M(1) <.<| xs:NMTOKEN
@@ -840,15 +809,15 @@ NOTE 3 – [b-RFC 2046] defines method of expressing the coding method by combin
 
 – _ContentDeliveryServerIdRefList_: denotes a list of reference identifier of the content delivery servers. Digital signage client can use this information to find the server to retrieve content.
 
-== [[a__11Screen]][[_Toc503891504]][[_Toc355359962]][[_Toc449381]][[_Toc535833725]][[_Toc532563363]][[_Toc509401031]][[_Toc505694958]]11 Screen
+== [[a__11Screen]]11 Screen
 
-=== [[a__11_1Screen_layout]][[_Toc503891505]][[_Toc449382]][[_Toc535833726]][[_Toc532563364]][[_Toc509401032]][[_Toc505694959]]11.1 Screen layout
+=== [[a__11_1Screen_layout]]11.1 Screen layout
 
 This clause gives the definition of metadata for screen layout. Screen layout may be delivered to terminal devices to configure and/or reconfigure the layout of content to be displayed. Screen layout can be delivered separately from content or delivered with content.
 
 A set of elements/attributes for "screen layout" are shown in Table 15.
 
-[[_Ref371021270]][[_Toc361297230]][[_Toc532563383]][[_Toc503891524]]Table 15 – Metadata for "screen layout"
+[[_Ref371021270]]Table 15 – Metadata for "screen layout"
 
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
@@ -867,7 +836,7 @@ Supplemental explanations of elements are as follows:
 
 – _Region_: denotes the list of containers to include regions that constitutes the screen layout.
 
-=== [[a__11_2Region]][[_Toc491876866]][[_Toc449383]][[_Toc535833727]][[_Toc532563365]][[_Toc509401033]][[_Toc505694960]][[_Toc503891506]]11.2 Region
+=== [[a__11_2Region]]11.2 Region
 
 This clause gives the definition of the elements/attributes for region. Region information is a part of screen layout information to configure an area on the screen where content is to be displayed. When the content is delivered to terminal devices, the identifier of region of screen layout is delivered to identify the area on the screen where content is to be displayed.
 
@@ -876,7 +845,7 @@ NOTE 1 – Screen layout of digital signage service can be dynamically changed b
 A set of elements/attributes for region information are shown in Table 16.
 
 |===
-5+<.^h| [[_Ref369553286]][[_Toc532563384]][[_Ref487468477]][[_Toc503891525]]Table 16 – Metadata for "region"
+5+<.^h| [[_Ref369553286]][[_Ref487468477]]Table 16 – Metadata for "region"
 <.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
 <.<| <.<| Region <.<| Container to include information of region of screen. <.<| <.<|
 <.<| <.<| RegionId <.<| Element of Region.Identifier of the region.Region is a portion of screen. <.<| M(1) <.<| xs:NMTOKEN
@@ -904,7 +873,7 @@ NOTE 2 – If the pixel resolution is not provided, the width and height of a re
 
 – _BackgroundColour_: describes the suggested background colour used in the region. The suggested format is RGB, YCbCr, and HSV.
 
-== [[a__12Interactive_service]][[_Toc503891507]][[_Toc449384]][[_Toc535833728]][[_Toc532563366]][[_Toc509401034]][[_Toc505694961]]12 Interactive service
+== [[a__12Interactive_service]]12 Interactive service
 
 This clause gives the definition of metadata for interactive service. Figure 7 shows the basic flow for the interactive service.
 
@@ -914,13 +883,13 @@ image::T-REC-H.782_images/image009.png[]
 
 
 
-[[_Toc503891533]][[_Toc532563392]]Figure 7 – Flow for interactive service
+Figure 7 – Flow for interactive service
 
 An example interactive service is as follows. The digital signage client has a touch screen that shows the map of a supermarket. The user touches the milk section to see the details of milk that are sold in the supermarket. The content displayed on the screen can be changed to display the details of milk products. For this use case, the function for scheduling a playlist will need to register an event to be notified from the touch screen.
 
-[[_Toc491768013]][[_Toc491876875]][[_Toc491876707]][[_Toc491768019]][[_Toc491876874]][[_Toc491876706]][[_Toc491768018]][[_Toc491876873]][[_Toc491876705]][[_Toc491768017]][[_Toc491876872]][[_Toc491876704]][[_Toc491768016]][[_Toc491876871]][[_Toc491876703]][[_Toc491768015]][[_Toc491876870]][[_Toc491876702]][[_Toc491768014]][[_Toc491876869]][[_Toc491876701]]A set of elements/attributes for "event" metadata is shown in Table 17.
+A set of elements/attributes for "event" metadata is shown in Table 17.
 
-[[_Ref482153761]][[_Toc532563385]][[_Toc503891526]]Table 17 – Metadata elements in "event"
+[[_Ref482153761]]Table 17 – Metadata elements in "event"
 
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.^h| Support <.^h| Type
@@ -948,7 +917,7 @@ Supplemental explanations of elements are as follows:
 
 NOTE – For example, on failure to the interactive device, the event action is set to stop notification, since it is not possible to make correct notifications for such circumstances.
 
-== [[a__Annex_ARelation_among_metadata_tables]][[_Toc355359965]][[_Toc449385]][[_Toc535833729]][[_Toc532563367]][[_Toc509401035]][[_Toc505694962]][[_Toc503891508]]Annex A +
+== [[a__Annex_ARelation_among_metadata_tables]]Annex A +
  +
 Relation among metadata tables
 
@@ -982,31 +951,28 @@ image::T-REC-H.782_images/image010.png[]
 
 
 
-[[_Toc492971169]][[_Toc532563393]][[_Toc503891534]]Figure A.1 – Relations amo[[_GoBack]]ng metadata entities
+Figure A.1 – Relations amo[[_GoBack]]ng metadata entities
 
-== [[a__Bibliography]][[_Toc355359967]][[_Toc449386]][[_Toc535833730]][[_Toc532563368]][[_Toc509401036]][[_Toc505694963]][[_Toc503891509]]Bibliography
+[bibliography]
+== [[a__Bibliography]]Bibliography
 
-[b-ITU-T H.760] Recommendation ITU-T H.760 (2009_),__Overview of multimedia application frameworks for IPTV services_.
+* [h760, b-ITU-T H.760] Recommendation ITU-T H.760 (2009_),__Overview of multimedia application frameworks for IPTV services_.
 
-[b-ITU-T X.1255]Recommendation ITU-T X.1255 (2013), _Framework for discovery of identity management information_.
+* [x1255, b-ITU-T X.1255]Recommendation ITU-T X.1255 (2013), _Framework for discovery of identity management information_.
 
-[b-ISO 639-2] ISO 639-2:1998, _Codes for the representation of names of languages– Part 2: Alpha-3 code_.
+* [iso639, b-ISO 639-2] ISO 639-2:1998, _Codes for the representation of names of languages– Part 2: Alpha-3 code_.
 
-[b-POPAI playlog] _Digital Signage Network Playlog Standards_, Version 1.1, 23August2006.
+* [playlog, b-POPAI playlog] _Digital Signage Network Playlog Standards_, Version 1.1, 23August2006.
 
-https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai[https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai]
+* https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai[https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai]
 
-[b-RFC 2046]IETF RFC 2046 (1996), _Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types_.
+* [rfc2046, b-RFC 2046]IETF RFC 2046 (1996), _Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types_.
 
-[b-RFC 5646] IETF RFC 5646 (2009), _Tags for Identifying Languages_.
+* [rfc5646, b-RFC 5646] IETF RFC 5646 (2009), _Tags for Identifying Languages_.
 
-[b-W3C CSS Transitions]W3C, _CSS_ _Transitions_.
+* [csstransitions, b-W3C CSS Transitions]W3C, _CSS_ _Transitions_. https://www.w3.org/TR/css3-transitions[https://www.w3.org/TR/css3-transitions] – [Last accessed 02 Oct. 2018].
 
-https://www.w3.org/TR/css3-transitions[https://www.w3.org/TR/css3-transitions] – [Last accessed 02 Oct. 2018].
-
-[b-W3C CSS Transforms]W3C, _CSS_ _Transforms Module Level 1_.
-
-https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/] – [Last accessed 02 Oct. 2018].
+* [csstransfroms, b-W3C CSS Transforms]W3C, _CSS_ _Transforms Module Level 1_. https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/] – [Last accessed 02 Oct. 2018].
 
 [[c3tope]]
 
@@ -1040,6 +1006,4 @@ https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/]
 <.<| <.<|
 
 |===
-
-[[ftn1]]\*To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser,followedbytheRecommendation'suniqueID.Forexample, http://handle.itu.int/11.1002/1000/11830-en[http://handle.itu.int/11.1002/1000/11830-en].
 
