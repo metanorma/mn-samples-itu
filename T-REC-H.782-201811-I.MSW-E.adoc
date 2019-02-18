@@ -12,16 +12,19 @@
 
 [abstract]
 == Summary
-Recommendation ITU-T H.782 specifies the data elements and structures of the metadata for digital signage services. The metadata describes information for contents, terminal devices, play logs, playlist schedule, screen layout, etc. The metadata is handled by a digital signage server, a digital signage client, a content delivery server, and a content delivery client. It also specifies general information flows to describe how the metadata are used in the digital signage services.This revision updates the data types of elements/attributes of identifiers. This update aims to widen applicability of the specifications at the price of easy extensible markup language (XML) validation.
+Recommendation ITU-T H.782 specifies the data elements and structures of the metadata for digital signage services. The metadata describes information for contents, terminal devices, play logs, playlist schedule, screen layout, etc. The metadata is handled by a digital signage server, a digital signage client, a content delivery server, and a content delivery client. It also specifies general information flows to describe how the metadata are used in the digital signage services.
+
+This revision updates the data types of elements/attributes of identifiers. This update aims to widen applicability of the specifications at the price of easy extensible markup language (XML) validation.
 
 [preface]
 == History
 
 |===
-<.^h| Edition <.^h| Recommendation <.^h| Approval <.^h| Study Group <.^h| 
+<.^| Edition <.^| Recommendation <.^| Approval <.^| Study Group <.^| 
 Unique ID{blank}footnote:[To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser, followed by the Recommendation's unique ID. For example, http://handle.itu.int/11.1002/1000/11830-en[].]
-<.<h| [[ihistorye]]1.0 <.<h| ITU-T H.782 <.<h| 2017-12-14 <.<h| 16 <.<h| http://handle.itu.int/11.1002/1000/13439[11.1002/1000/13439]
-<.<h| 2.0 <.<h| ITU-T H.782 (V2) <.<h| 2018-11-29 <.<h| 16 <.<h| http://handle.itu.int/11.1002/1000/13783[11.1002/1000/13783]
+
+<.<| [[ihistorye]]1.0 <.<| ITU-T H.782 <.<| 2017-12-14 <.<| 16 <.<| http://handle.itu.int/11.1002/1000/13439[11.1002/1000/13439]
+<.<| 2.0 <.<| ITU-T H.782 (V2) <.<| 2018-11-29 <.<| 16 <.<| http://handle.itu.int/11.1002/1000/13783[11.1002/1000/13783]
 |===
 
 == [[a__1Scope]]Scope
@@ -47,21 +50,19 @@ This revision updates the data types of elements/attributes of identifiers. The 
 [bibliography]
 == [[a__2References]]References
 
-The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.
+* [[[h741, ITU-T H.741.2]]] Recommendation ITU-T H.741.2 (2012), _IPTV application event handling: Data structures of audience measurement for IPTV services_.
 
-* [h741, ITU-T H.741.2] Recommendation ITU-T H.741.2 (2012), _IPTV application event handling: Data structures of audience measurement for IPTV services_.
+* [[[h780, ITU-T H.780]]] Recommendation ITU-T H.780 (2012), _Digital signage: Service requirements and IPTV-based architecture_.
 
-* [h780, ITU-T H.780] Recommendation ITU-T H.780 (2012), _Digital signage: Service requirements and IPTV-based architecture_.
+* [[[h781, ITU-T H.781]]] Recommendation ITU-T H.781 (2015), _Digital signage: Functional architecture_.
 
-* [h781, ITU-T H.781] Recommendation ITU-T H.781 (2015), _Digital signage: Functional architecture_.
+* [[[etsi, ETSI TS 102 822-3-1]]] ETSI TS 102 822-3-1 V1.9.2 (2016), _Broadcast and On-line Services: Search, select, and rightful use of content on personal storage systems ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1– Metadata schemas_.
 
-* [etsi, ETSI TS 102 822-3-1] ETSI TS 102 822-3-1 V1.9.2 (2016), _Broadcast and On-line Services: Search, select, and rightful use of content on personal storage systems ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1– Metadata schemas_.
+* [[[rfc5139, IETF RFC 5139]]] IETF RFC 5139 (2008), _Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)_.
 
-* [rfc5139, IETF RFC 5139] IETF RFC 5139 (2008), _Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)_.
+* [[[iso19136, ISO 19136]]] ISO 19136 (2007),_Geographic information – Geography Markup Language (GML)_.
 
-* [iso19136, ISO 19136] ISO 19136 (2007),_Geographic information – Geography Markup Language (GML)_.
-
-* [xmlschema, W3C XMLSchema] W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
+* [[[xmlschema, W3C XMLSchema]]] W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
 
 == [[a__3Definitions]]3 Definitions
 
@@ -71,17 +72,17 @@ This Recommendation uses the following terms defined elsewhere:
 
 *3.1.1 content* [ITU-T H.780]: A combination of audio, still image, graphic, video, or data.
 
-NOTE – A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by [b-ITU-T H.760]).
+NOTE: A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by [b-ITU-T H.760]).
 
 *3.1.2 metadata* [b-ITU-T X.1255]:Structured information that pertains to the identity of users, systems, services, processes, resources, information or other entities.
 
 *3.1.3* *playlist* [ITU-T H.780]: Composed of a list of contents.
 
-NOTE 1 – This data is created and provided by digital service providers.
+NOTE: This data is created and provided by digital service providers.
 
-NOTE 2 – This data can be selected by an end user when interactivity is supported in a digital signage terminal device.
+NOTE: This data can be selected by an end user when interactivity is supported in a digital signage terminal device.
 
-NOTE 3 – This data may indicate an order of playing contents.
+NOTE: This data may indicate an order of playing contents.
 
 *3.1.4* *playlist schedule* [ITU-T H.780]: Composed of a list of playlists indicated by a specific play date and/or time.
 
@@ -160,7 +161,7 @@ Figure 1 illustrates a reference functional model for DS services as per [ITU‑
 
 image::T-REC-H.782_images/image003.png[]
 
-NOTE:: Figure 1 as per [ITU-T H.781].
+NOTE: Figure 1 as per [ITU-T H.781].
 
 [[_Ref481859692]]Figure 1 – Digital signage service reference architecture
 
@@ -186,9 +187,9 @@ Main groups of functions within the DS terminal device and the DS service operat
 
 This Recommendation describes metadata handled by these four functional groups.
 
-== [[a__7Configuration_of_terminal_device]]7 Configuration of terminal device
+== [[a__7Configuration_of_terminal_device]]Configuration of terminal device
 
-=== [[a__7_1Client_configuration]]7.1 Client configuration
+=== [[a__7_1Client_configuration]]Client configuration
 
 The digital signage server configures the digital signage client with a set of metadata in the "client configuration" which includes allocation of _TerminalId_; see Figure 2. The digital signage server can reconfigure the digital signage client with the configuration information needed.
 
@@ -220,7 +221,7 @@ image::T-REC-H.782_images/image004.png[]
 
 |===
 
-NOTE – Elements derived from [ITU-T H.780]: TerminalId, Keyword.
+NOTE: Elements derived from [ITU-T H.780]: TerminalId, Keyword.
 
 Supplemental explanations of elements are as follows:
 
@@ -240,7 +241,7 @@ Supplemental explanations of elements are as follows:
 
 –_PlaylistScheduleServerIdRef_: denotes the reference identifier of the playlist schedule server for the terminal.
 
-=== [[a__7_2Terminal_device]]7.2 Terminal device
+=== [[a__7_2Terminal_device]]Terminal device
 
 A digital signage client may use the set of metadata in the "terminal device" to send its installation information to the server, and the digital signage server may use this metadata to manage the terminal device. See Figure 3.
 
@@ -273,13 +274,13 @@ Figure 3 – A flow for terminal device
 
 |===
 
-NOTE 1 – Elements derived from [ITU-T H.780]: TerminalId, DisplayInformation, and InstallationDate.
+NOTE: Elements derived from [ITU-T H.780]: TerminalId, DisplayInformation, and InstallationDate.
 
 Supplemental explanations of elements are as follows:
 
 –_TerminalIdRef_: denotes the reference identifier to the terminal, if applicable. After first initiation, the terminal device may not have any _TerminalId_ to identify itself;
 
-NOTE 2 – In this case, the terminal device sets the initial value, such as "0", to the _TerminalId._ The digital signage server can assign a unique value for _TerminalId_ through the flow described in clause7.1;
+NOTE: In this case, the terminal device sets the initial value, such as "0", to the _TerminalId._ The digital signage server can assign a unique value for _TerminalId_ through the flow described in clause7.1;
 
 –_DisplayInformation_: describes the display information of the digital signage terminal. The information may include the display size, pixel, and capabilities such as 3D, touch screen, etc. Digital signage server can use this information in determining the type of content that the terminal is able to display;
 
@@ -287,25 +288,25 @@ NOTE 2 – In this case, the terminal device sets the initial value, such as "0"
 
 –_StorageSize_: describes the size of the storage available in the terminal, e.g., a hard disk drive or flash memory;
 
-NOTE 3 – This is used to check if the terminal is able to store the content to be displayed;
+NOTE: This is used to check if the terminal is able to store the content to be displayed;
 
 –_IPAddress_ and _MACAddress_: denotes the address used to access the terminal. It is possible to use this information when creating the _TerminalId_ element;
 
 –_Timezone_:describes the time zone of the area where the terminal is installed;
 
-NOTE 4 – When the terminal and the server are in different time zones, the server needs to be careful with information related to time;
+NOTE: When the terminal and the server are in different time zones, the server needs to be careful with information related to time;
 
 –_GeoLocation_: denotes the location of the terminal using GML format;
 
-NOTE 5 – If the terminal is mobile, this element can be appropriate in providing the actual position of the terminal.
+NOTE: If the terminal is mobile, this element can be appropriate in providing the actual position of the terminal.
 
 –_Location_: describes the postal address of the terminal;
 
-NOTE 6 – This element can be used to locate the terminal, e.g., maintenance.
+NOTE: This element can be used to locate the terminal, e.g., maintenance.
 
 –_InterfaceDevice_: describes the list of interactive devices that are attached to the terminal. A terminal device can have zero or more interactive devices attached such as touch panel, keyboard, mouse, camera, sensor, etc. The digital signage operator can make use of the interactive devices to provide interactive services and collect environmental inputs.
 
-=== [[a__7_3Interactive_device]]7.3 Interactive device
+=== [[a__7_3Interactive_device]]Interactive device
 
 A terminal device can have zero or more interactive devices attached. The digital signage service can make use of the interactive devices to provide interactive services and collect environmental inputs. A set of elements/attributes for the interactive device are shown in Table 4.
 
@@ -331,9 +332,9 @@ Supplemental explanations of elements are as follows:
 
 – _OutputType_: describes the data type of event that can be produced from the interactive device.
 
-NOTE –For example, a mouse or touch panel can produce position data type, a camera can produce video data type.
+NOTE: For example, a mouse or touch panel can produce position data type, a camera can produce video data type.
 
-=== [[a__7_4Content_delivery_server]]7.4 Content delivery server
+=== [[a__7_4Content_delivery_server]]Content delivery server
 
 It is possible to have a separate content delivery server to distribute content to the DS terminal. A set of elements/attributes for the information of the "content delivery server" are shown in Table 5.
 
@@ -359,11 +360,11 @@ Supplemental explanations of elements are as follows:
 
 – _Username_ and _password_: denotes the user name and password that is used in accessing the content delivery server;
 
-NOTE – The content delivery server can validate the DS terminal device that provides this information.
+NOTE: The content delivery server can validate the DS terminal device that provides this information.
 
 – _Timezone_: describes the time zone used by the content delivery server.
 
-=== [[a__7_5Log_server]]7.5 Log server
+=== [[a__7_5Log_server]]Log server
 
 It is possible to have separate log server to collect log data. A set of elements/attributes for the "logserver" are shown in Table 6.
 
@@ -389,11 +390,11 @@ Supplemental explanations of elements are as follows:
 
 – _Username_ and _Password_: denotes the user name and password that is used in accessing log server;
 
-NOTE – The log server can validate the DS terminal device that provides this information.
+NOTE: The log server can validate the DS terminal device that provides this information.
 
 – _Timezone:_ describes the time zone used by the log server.
 
-=== [[a__7_6Playlist_schedule_server]]7.6 Playlist schedule server
+=== [[a__7_6Playlist_schedule_server]]Playlist schedule server
 
 It is possible to have a separate server to inform playlist schedule. A set of elements/attributes for the information of the "playlist schedule server" are shown in Table 7.
 
@@ -419,11 +420,11 @@ Supplemental explanations of elements are as follows:
 
 – _Username_ and _Password_: denotes the user name and password that is used in accessing playlist schedule server;
 
-NOTE – The playlist schedule server can validate the DS terminal device that provides this information.
+NOTE: The playlist schedule server can validate the DS terminal device that provides this information.
 
 – _Timezone_: describes the time zone used by the playlist schedule server.
 
-=== [[a__7_7Terminal_device_status]]7.7 Terminal device status
+=== [[a__7_7Terminal_device_status]]Terminal device status
 
 The terminal device can send its device status to the digital signage server; see Figure 4. This informs the digital signage operator of the current condition of the terminal device [ITU-T H.781].
 
@@ -460,13 +461,13 @@ Supplemental explanations of elements are as follows:
 
 – _AVControl_: describes the current sound volume level and brightness level of the terminal device;
 
-NOTE 1 – The server can determine the need for controlling the volume level/brightness level that is appropriate for the environment. It is possible to add other types of audio/visual settings that are needed in the implementation such as contrast, colours, etc.
+NOTE: The server can determine the need for controlling the volume level/brightness level that is appropriate for the environment. It is possible to add other types of audio/visual settings that are needed in the implementation such as contrast, colours, etc.
 
 – _LastConnect_: describes the date/time that the server has interface with the terminal device.
 
-NOTE 2 – The server can check when it has made any control to the terminal device.
+NOTE: The server can check when it has made any control to the terminal device.
 
-=== [[a__7_8Terminal_group]]7.8 Terminal group
+=== [[a__7_8Terminal_group]]Terminal group
 
 A number of terminal devices can be grouped together to display the same content and playlist schedule. It would be easier to manage and operate multiple digital signage clients with the concept of a group. The digital signage server assigns a client to a group with the set of metadata defined in Table9.
 
@@ -498,19 +499,19 @@ Supplemental explanations of elements are as follows:
 
 – _Location:_ describes the location of the terminal devices in the group, normally in user‑readable format;
 
-NOTE 1 – This element can be used by a user of the digital signage service to understand the estimated location of the group. For example, terminal devices on the first floor of a building can form a "first‑floor" group.
+NOTE: This element can be used by a user of the digital signage service to understand the estimated location of the group. For example, terminal devices on the first floor of a building can form a "first‑floor" group.
 
 – _CreationDateTime_: describes the creation time and date of the terminal group;
 
 – _ParentGroupIdRef_, _InheritedDepth_: group can be in nested. The depth of the nested group is expressed in _InheritedDepth_ element.
 
-NOTE 2 – For example, a terminal device on the first floor of a building can belong to a building group and also to a first‑floor group.
+NOTE: For example, a terminal device on the first floor of a building can belong to a building group and also to a first‑floor group.
 
-== [[a__8Play_log]]8 Play log
+== [[a__8Play_log]]Play log
 
 Digital signage server has log management functions to aggregate logs from DS terminal devices. The DS terminal device creates records for content played in the DS terminal device and sends the play log to the server. The details functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
 
-NOTE 1 – The digital signage server controlling and managing multiple clients can be overwhelmed with play log reports from a large number of clients. It is convenient to specify the timing of sending the report to avoid high server load intensity or network congestion [ITU-T H.781].
+NOTE: The digital signage server controlling and managing multiple clients can be overwhelmed with play log reports from a large number of clients. It is convenient to specify the timing of sending the report to avoid high server load intensity or network congestion [ITU-T H.781].
 
 The digital signage client reports to the digital signage server of its play log with the set of metadata defined in Table 10, which describes a set of elements/attributes for "play log" metadata.
 
@@ -546,7 +547,7 @@ Supplemental explanations of elements are as follows:
 
 – _StartDateTime_, _EndDateTime_, and _Duration_: describes the start time and date and end time and date that the terminal device has displayed the content, playlist, or playlist schedule;
 
-NOTE 2 – If the content is interrupted in the middle of a replay, the duration will be shorter than the duration specified in Table 13 or Table 14;
+NOTE: If the content is interrupted in the middle of a replay, the duration will be shorter than the duration specified in Table 13 or Table 14;
 
 – _LogType_: describes the type of play log;
 
@@ -554,7 +555,7 @@ NOTE 2 – If the content is interrupted in the middle of a replay, the duration
 
 – _PlayedScreenRegion_: denotes the reference identifier to the screen layout and region in which the content, playlist, or playlist schedule has been displayed;
 
-NOTE 3 – If there are multiple regions, multiple play logs are generated for a certain time.
+NOTE: If there are multiple regions, multiple play logs are generated for a certain time.
 
 – _PlayStatus_: describes the status of displaying the content/playlist;
 
@@ -600,19 +601,19 @@ Supplemental explanations of elements are as follows:
 
 – _PublicationDateTime_: describes the time and date that the server has issued the content delivery schedule;
 
-NOTE 1 – If multiple schedules are received with the same _ContentDeliveryScheduleId_, the metadata with the latest publication time will be effective. The outdated schedule is ignored.
+NOTE: If multiple schedules are received with the same _ContentDeliveryScheduleId_, the metadata with the latest publication time will be effective. The outdated schedule is ignored.
 
 – _DeliveryDeadline_: describes the deadline time/date in which the content must be delivered. After the deadline, the content is assumed to be outdated and is not needed by the client;
 
-NOTE 2 – Content such as current weather conditions, is an example of outdated information for the following day.
+NOTE: Content such as current weather conditions, is an example of outdated information for the following day.
 
 – _SendDateTime_: describes the content delivery date/time, which indicates the time to start content delivery and is assigned in advance.
 
-== [[a__10Playlist_schedule]]10 Playlist schedule
+== [[a__10Playlist_schedule]]Playlist schedule
 
 Digital signage server creates and manages a schedule of playlists. The digital signage client plays playlists according to the playlist schedule. Detail functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
 
-=== [[a__10_1Playlist_schedule]]10.1 Playlist schedule
+=== [[a__10_1Playlist_schedule]]Playlist schedule
 
 A set of elements/attributes for "playlist schedule" are shown in Table 12.
 
@@ -645,21 +646,21 @@ Supplemental explanations of elements are as follows:
 
 – _TerminalGroupIdRefList_: denotes the list of _TerminalGroupId_ in which the pertaining playlist schedule applies. The terminal device can ignore playlist schedules that do not have the _TerminalGroupId_ to which the terminal device belongs;
 
-NOTE 1 – This information is omitted, the playlist schedule applies to every terminal device that receives this playlist schedule;
+NOTE: This information is omitted, the playlist schedule applies to every terminal device that receives this playlist schedule;
 
 – _PublicationDateTime_: describes time and date that the server has issued the playlist schedule. If multiple schedules are received with the same _PublicationDateTime_, the metadata with the latest publication time will be in effect. Outdated publication times are ignored;
 
 – _ValidDateTime_: describes time and date in which the playlist schedule becomes effective. The playlist schedule can be distributed before the actual play time. The operator needs to consider when the terminal device can download all content in the playlist schedule when setting the valid time;
 
-NOTE 2 – If this element is omitted, handling of this element is implementation-dependent (e.g., start display whenever possible).
+NOTE: If this element is omitted, handling of this element is implementation-dependent (e.g., start display whenever possible).
 
 – _Expiration_: describes time and date in which the playlist schedule expires;
 
-NOTE 3 – If this element is omitted, handling of this element is implementation-dependent (e.g., expiration time is infinite until new _PlaylistSchedule_ with same identifier is received).
+NOTE: If this element is omitted, handling of this element is implementation-dependent (e.g., expiration time is infinite until new _PlaylistSchedule_ with same identifier is received).
 
 – _Priority_: describes the priority of the playlist schedule. It is possible to have more than one playlist schedule for single moment. The playlist schedule with higher priority is displayed. The playlist schedule with lower priority can be played is implementation-dependent (e.g., high priority playlist are player often than low priority playlist);
 
-NOTE 4 – If omitted, handling of this element is implementation-dependent (e.g., assign lowest priority).
+NOTE: If omitted, handling of this element is implementation-dependent (e.g., assign lowest priority).
 
 – _ApplyDateList_: describes the specific date in which the playlist should be played. It is possible to set schedule for certain date (e.g., Independence Day). It should set to the same or later time/date than the ValidTime;
 
@@ -667,7 +668,7 @@ NOTE 4 – If omitted, handling of this element is implementation-dependent (e.g
 
 – _StartTime_: describes the time/date in which the content should start playing. It is possible to set different schedule for morning, evening, night, etc.;
 
-NOTE 5 – If _StartTime_ is not assigned, the content may be played immediately based on when the terminal device receives a playlist.
+NOTE: If _StartTime_ is not assigned, the content may be played immediately based on when the terminal device receives a playlist.
 
 – _EndTime_: describes the time/date in which the content should start playing;
 
@@ -675,9 +676,9 @@ NOTE 5 – If _StartTime_ is not assigned, the content may be played immediately
 
 – _RepeatNumber_: describes the number of time the playlist should be repeated.
 
-NOTE 6 – If omitted, handling of this element is implementation-dependent (e.g., repetition time is infinite when an exact value is not specified).
+NOTE: If omitted, handling of this element is implementation-dependent (e.g., repetition time is infinite when an exact value is not specified).
 
-=== [[a__10_2Playlist]]10.2 Playlist
+=== [[a__10_2Playlist]]Playlist
 
 A set of elements/attributes for "playlist" are shown in Table 13.
 
@@ -707,27 +708,27 @@ Supplemental explanations of elements are as follows:
 
 – _Priority_: describes the priority of the playlist. The playlist is displayed when no playlist with higher priority exists;
 
-NOTE 1 – If omitted, handling of this element is implementation-dependent (e.g., assign lowest priority).
+NOTE: If omitted, handling of this element is implementation-dependent (e.g., assign lowest priority).
 
 – _PlayOrder_: describes the order of the list of contents to be played in the playlist. Suggested values that can be used are sequential, random, but not limited;
 
-NOTE 2 – If omitted, handling of this element is implementation-dependent (e.g., play order is sequential).
+NOTE: If omitted, handling of this element is implementation-dependent (e.g., play order is sequential).
 
 – _ContentIdRef_: denotes the reference identifier of the content to be played by the terminal device. It consists of multiple _ContentIdRef_ which can represent the play order of multiple contents;
 
-NOTE 3 –The client can use this information to recognise the list of contents that it needs to retrieve from the content delivery server.
+NOTE: The client can use this information to recognise the list of contents that it needs to retrieve from the content delivery server.
 
 – _TargetRegion_: denotes the reference identifier to the screen layout and region of screen in which the playlist is displayed;
 
-NOTE 4 – For a single screen layout and region in the terminal device, it shall be omitted.
+NOTE: For a single screen layout and region in the terminal device, it shall be omitted.
 
 – _Duration_: describes the duration of time expected for playing the list of contents in the playlist;
 
 – _TransitionEffect_: describes the effects used between content displayed to allow a smooth transition.
 
-NOTE 5 – [b-W3C CSS Transitions] and [b-W3C CSS Transforms] have defined methods of expressing HTML5 transition effects that can be used as a reference for this element.
+NOTE: [b-W3C CSS Transitions] and [b-W3C CSS Transforms] have defined methods of expressing HTML5 transition effects that can be used as a reference for this element.
 
-=== [[a__10_3Contents]]10.3 Contents
+=== [[a__10_3Contents]]Contents
 
 A set of elements/for "contents" are shown in Table 14.
 
@@ -761,7 +762,7 @@ A set of elements/for "contents" are shown in Table 14.
 
 |===
 
-NOTE 1 – Elements derived from [ITU-T H.780]: ContentId, Title, Synopsis, Explanation, Keyword, Genre, PreferenceCondition, Language, RelatedMaterial, ProductionDate, Release, Duration, Availability, ContentType, FileSize, PromotionalInformation, and CreationInformation.
+NOTE: Elements derived from [ITU-T H.780]: ContentId, Title, Synopsis, Explanation, Keyword, Genre, PreferenceCondition, Language, RelatedMaterial, ProductionDate, Release, Duration, Availability, ContentType, FileSize, PromotionalInformation, and CreationInformation.
 
 Supplemental explanations of elements are as follows:
 
@@ -781,11 +782,11 @@ Supplemental explanations of elements are as follows:
 
 – _Language_: describes type of languages used in audio and caption;
 
-NOTE 2 – [b-ISO 639-2] defines three-letter codes for various languages. [b-RFC 5646] defines semantics of language tags for indicating the language often used in an information object in Web services.
+NOTE: [b-ISO 639-2] defines three-letter codes for various languages. [b-RFC 5646] defines semantics of language tags for indicating the language often used in an information object in Web services.
 
 – _MimeType_: describes the coding method used in the content;
 
-NOTE 3 – [b-RFC 2046] defines method of expressing the coding method by combining category with the coding type. Some examples include text/plain, image/jpeg, audio/mpeg, video/mp4, etc.
+NOTE: [b-RFC 2046] defines method of expressing the coding method by combining category with the coding type. Some examples include text/plain, image/jpeg, audio/mpeg, video/mp4, etc.
 
 – _RelatedMaterial_: describes references to any other material related to the content;
 
@@ -809,9 +810,9 @@ NOTE 3 – [b-RFC 2046] defines method of expressing the coding method by combin
 
 – _ContentDeliveryServerIdRefList_: denotes a list of reference identifier of the content delivery servers. Digital signage client can use this information to find the server to retrieve content.
 
-== [[a__11Screen]]11 Screen
+== [[a__11Screen]]Screen
 
-=== [[a__11_1Screen_layout]]11.1 Screen layout
+=== [[a__11_1Screen_layout]]Screen layout
 
 This clause gives the definition of metadata for screen layout. Screen layout may be delivered to terminal devices to configure and/or reconfigure the layout of content to be displayed. Screen layout can be delivered separately from content or delivered with content.
 
@@ -836,11 +837,11 @@ Supplemental explanations of elements are as follows:
 
 – _Region_: denotes the list of containers to include regions that constitutes the screen layout.
 
-=== [[a__11_2Region]]11.2 Region
+=== [[a__11_2Region]]Region
 
 This clause gives the definition of the elements/attributes for region. Region information is a part of screen layout information to configure an area on the screen where content is to be displayed. When the content is delivered to terminal devices, the identifier of region of screen layout is delivered to identify the area on the screen where content is to be displayed.
 
-NOTE 1 – Screen layout of digital signage service can be dynamically changed by updating values in Table16. For example, in the case of emergencies including disasters, alert messages are shown in the blank space after the current content presented on the screen is squeezed and/or moved.
+NOTE: Screen layout of digital signage service can be dynamically changed by updating values in Table16. For example, in the case of emergencies including disasters, alert messages are shown in the blank space after the current content presented on the screen is squeezed and/or moved.
 
 A set of elements/attributes for region information are shown in Table 16.
 
@@ -867,13 +868,13 @@ Supplemental explanations of elements are as follows:
 
 – _PixelResolution_: describes the horizontal and vertical size of the region along with aspect ratio of the region. Thus, it consists of three information: width, height and aspectRatio;
 
-NOTE 2 – If the pixel resolution is not provided, the width and height of a region is the same as those of a display in a terminal device.
+NOTE: If the pixel resolution is not provided, the width and height of a region is the same as those of a display in a terminal device.
 
 – _Z-__depth_: describes the number of hierarchy of the region.
 
 – _BackgroundColour_: describes the suggested background colour used in the region. The suggested format is RGB, YCbCr, and HSV.
 
-== [[a__12Interactive_service]]12 Interactive service
+== [[a__12Interactive_service]]Interactive service
 
 This clause gives the definition of metadata for interactive service. Figure 7 shows the basic flow for the interactive service.
 
@@ -915,10 +916,10 @@ Supplemental explanations of elements are as follows:
 
 – _EventAction:_ denotes the action performed by the digital signage client;
 
-NOTE – For example, on failure to the interactive device, the event action is set to stop notification, since it is not possible to make correct notifications for such circumstances.
+NOTE: For example, on failure to the interactive device, the event action is set to stop notification, since it is not possible to make correct notifications for such circumstances.
 
-== [[a__Annex_ARelation_among_metadata_tables]]Annex A +
- +
+[appendix]
+== [[a__Annex_ARelation_among_metadata_tables]]
 Relation among metadata tables
 
 (This annex forms an integral part of this Recommendation.)
@@ -956,54 +957,19 @@ Figure A.1 – Relations amo[[_GoBack]]ng metadata entities
 [bibliography]
 == [[a__Bibliography]]Bibliography
 
-* [h760, b-ITU-T H.760] Recommendation ITU-T H.760 (2009_),__Overview of multimedia application frameworks for IPTV services_.
+* [[[h760, b-ITU-T H.760]]] Recommendation ITU-T H.760 (2009_),__Overview of multimedia application frameworks for IPTV services_.
 
-* [x1255, b-ITU-T X.1255]Recommendation ITU-T X.1255 (2013), _Framework for discovery of identity management information_.
+* [[[x1255, b-ITU-T X.1255]]] Recommendation ITU-T X.1255 (2013), _Framework for discovery of identity management information_.
 
-* [iso639, b-ISO 639-2] ISO 639-2:1998, _Codes for the representation of names of languages– Part 2: Alpha-3 code_.
+* [[[iso639, b-ISO 639-2]]] ISO 639-2:1998, _Codes for the representation of names of languages– Part 2: Alpha-3 code_.
 
-* [playlog, b-POPAI playlog] _Digital Signage Network Playlog Standards_, Version 1.1, 23August2006.
+* [[[playlog, b-POPAI playlog]]] _Digital Signage Network Playlog Standards_, Version 1.1, 23 August 2006. https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai[https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai]
 
-* https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai[https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai]
+* [[[rfc2046, b-RFC 2046]]] IETF RFC 2046 (1996), _Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types_.
 
-* [rfc2046, b-RFC 2046]IETF RFC 2046 (1996), _Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types_.
+* [[[rfc5646, b-RFC 5646]]] IETF RFC 5646 (2009), _Tags for Identifying Languages_.
 
-* [rfc5646, b-RFC 5646] IETF RFC 5646 (2009), _Tags for Identifying Languages_.
+* [[[csstransitions, b-W3C CSS Transitions]]] W3C, _CSS_ _Transitions_. https://www.w3.org/TR/css3-transitions[https://www.w3.org/TR/css3-transitions] – [Last accessed 02 Oct. 2018].
 
-* [csstransitions, b-W3C CSS Transitions]W3C, _CSS_ _Transitions_. https://www.w3.org/TR/css3-transitions[https://www.w3.org/TR/css3-transitions] – [Last accessed 02 Oct. 2018].
-
-* [csstransfroms, b-W3C CSS Transforms]W3C, _CSS_ _Transforms Module Level 1_. https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/] – [Last accessed 02 Oct. 2018].
-
-[[c3tope]]
-
-[[cov4top]]
-
-|===
-2+<.<h| *SERIES OF ITU-T RECOMMENDATIONS*
-<.<| [[c4seriee]]Series A <.<| Organization of the work of ITU-T
-<.<| Series D <.<| Tariff and accounting principles and international telecommunication/ICT economic and policy issues
-<.<| Series E <.<| Overall network operation, telephone service, service operation and human factors
-<.<| Series F <.<| Non-telephone telecommunication services
-<.<| Series G <.<| Transmission systems and media, digital systems and networks
-<.<| *Series H* <.<| *Audiovisual and multimedia systems*
-<.<| Series I <.<| Integrated services digital network
-<.<| Series J <.<| Cable networks and transmission of television, sound programme and other multimedia signals
-<.<| Series K <.<| Protection against interference
-<.<| Series L <.<| Environment and ICTs, climate change, e-waste, energy efficiency; construction, installation and protection of cables and other elements of outside plant
-<.<| Series M <.<| Telecommunication management, including TMN and network maintenance
-<.<| Series N <.<| Maintenance: international sound programme and television transmission circuits
-<.<| Series O <.<| Specifications of measuring equipment
-<.<| Series P <.<| Telephone transmission quality, telephone installations, local line networks
-<.<| Series Q <.<| Switching and signalling, and associated measurements and tests
-<.<| Series R <.<| Telegraph transmission
-<.<| Series S <.<| Telegraph services terminal equipment
-<.<| Series T <.<| Terminals for telematic services
-<.<| Series U <.<| Telegraph switching
-<.<| Series V <.<| Data communication over the telephone network
-<.<| Series X <.<| Data networks, open system communications and security
-<.<| Series Y <.<| Global information infrastructure, Internet protocol aspects, next-generation networks, Internet of Things and smart cities
-<.<| Series Z <.<| Languages and general software aspects for telecommunication systems
-<.<| <.<|
-
-|===
+* [[[csstransfroms, b-W3C CSS Transforms]]] W3C, _CSS_ _Transforms Module Level 1_. https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/] – [Last accessed 02 Oct. 2018].
 
