@@ -27,7 +27,7 @@ Unique ID{blank}footnote:[To access the Recommendation, type the URL http://hand
 <.<| 2.0 <.<| ITU-T H.782 (V2) <.<| 2018-11-29 <.<| 16 <.<| http://handle.itu.int/11.1002/1000/13783[11.1002/1000/13783]
 |===
 
-== [[a__1Scope]]Scope
+== Scope
 
 This Recommendation addresses specifications for the metadata, which especially focus on semantics aspects, related to general digital signage services. This Recommendation defines metadata for the following digital signage functionalities:
 
@@ -48,7 +48,7 @@ This Recommendation addresses specifications for the metadata, which especially 
 This revision updates the data types of elements/attributes of identifiers. The update aims to widen applicability of the specifications at the price of easy XML validation.
 
 [bibliography]
-== [[a__2References]]References
+== References
 
 * [[[h741, ITU-T H.741.2]]] Recommendation ITU-T H.741.2 (2012), _IPTV application event handling: Data structures of audience measurement for IPTV services_.
 
@@ -64,19 +64,27 @@ This revision updates the data types of elements/attributes of identifiers. The 
 
 * [[[xmlschema, W3C XMLSchema]]] W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
 
-== [[a__3Definitions]]3 Definitions
+== Definitions
 
-=== [[a__3_1Terms_defined_elsewhere]]3.1 Terms defined elsewhere
+=== Terms defined elsewhere
 
-This Recommendation uses the following terms defined elsewhere:
+==== content
 
-*3.1.1 content* [ITU-T H.780]: A combination of audio, still image, graphic, video, or data.
+A combination of audio, still image, graphic, video, or data.
 
 NOTE: A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by [b-ITU-T H.760]).
 
-*3.1.2 metadata* [b-ITU-T X.1255]:Structured information that pertains to the identity of users, systems, services, processes, resources, information or other entities.
 
-*3.1.3* *playlist* [ITU-T H.780]: Composed of a list of contents.
+==== metadata
+
+Structured information that pertains to the identity of users, systems, services, processes, resources, information or other entities.
+
+[.source]
+<<x1255>>
+
+==== playlist
+
+Composed of a list of contents.
 
 NOTE: This data is created and provided by digital service providers.
 
@@ -84,21 +92,39 @@ NOTE: This data can be selected by an end user when interactivity is supported i
 
 NOTE: This data may indicate an order of playing contents.
 
-*3.1.4* *playlist schedule* [ITU-T H.780]: Composed of a list of playlists indicated by a specific play date and/or time.
+[.source]
+<<h780>>
 
-*3.1. **5** proof-of-play (PoP)* [ITU-T H.781]:Any technique that can identify and prove that the content has been displayed on the screen.
+==== playlist schedule
 
-=== [[a__3_2Terms_defined_in_this_Recommendation]]3.2 Terms defined in this Recommendation
+Composed of a list of playlists indicated by a specific play date and/or time.
 
-This Recommendation defines the following terms:
+[.source]
+<<h780>>
 
-*3.2. **1** play log*: A collection of record or information created by a digital signage system reflecting the content played, system performance, and other data.
+==== proof-of-play (PoP)
 
-*3.2.2 region*:A partial area of the screen layout to be a content displayed.
+Any technique that can identify and prove that the content has been displayed on the screen.
 
-*3.2.3 screen* *layout*: A composition of one or moreregions to be content displayed.
+[.source]
+<<h781>>
 
-== [[a__4Abbreviations_and_acronyms]]Abbreviations and acronyms
+
+=== Terms defined in this Recommendation
+
+==== play log
+
+A collection of record or information created by a digital signage system reflecting the content played, system performance, and other data.
+
+==== region
+
+A partial area of the screen layout to be a content displayed.
+
+==== screen layout
+
+A composition of one or moreregions to be content displayed.
+
+== Abbreviations and acronyms
 
 This Recommendation uses the following abbreviations and acronyms:
 
@@ -114,7 +140,7 @@ UTC:: Coordinated Universal Time
 
 XML:: extensible Markup Language
 
-== [[a__5Conventions]]Conventions
+== Conventions
 
 This Recommendation follows the notation described in clause 6 of [ITU-T H.741.2]. The notation is used in this Recommendation to facilitate the specification of the correspondingschema:
 
@@ -126,11 +152,13 @@ This Recommendation follows the notation described in clause 6 of [ITU-T H.741.2
 
 – _Container_: elements are defined to group associated elements.
 
-Table 1 contains data types used in this Recommendation; alternative representations may be shown whichillustrates other data structures. In case of discrepancy with any alternative representation, the correct information is to be found in Table 1.
+<<table1>> contains data types used in this Recommendation; alternative representations may be shown whichillustrates other data structures. In case of discrepancy with any alternative representation, the correct information is to be found in <<table1>>.
 
+[[table1]]
+.Data types used in this Recommendation
 |===
-4+<.<h| [[_Ref355364476]]Table 1–Data types used in this Recommendation
 <.<| <.<| Type <.<| Name <.<| Notes/Reference
+
 <.<| <.<| ca:civicAddress <.<| Civic address <.<| Used to specify civic location.Defined in [IETF RFC 5139].
 <.<| <.<| gml:Point <.<| GML point <.<| Used to specify simple point geometry in format of geography markup language (GML).A point consists of a \<Point\> element with a child \<coords\> element. Within \<coords\> the latitude and longitude values are separated by a space.Defined in [ISO 19136].
 <.<| <.<| tva:GenreType <.<| Genre <.<| Used to specify genre of the content.Defined in [ETSI TS 102 822-3-1].
