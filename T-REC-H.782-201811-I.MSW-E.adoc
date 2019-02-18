@@ -1,0 +1,1045 @@
+= Digital signage: Metadata
+:bureau: T
+:docnumber: H.782
+:series: H: Audiovisual and Multimedia Systems
+:series1: IPTV multimedia services and applications for IPTV
+:series2: Digital Signage
+:published-date: 2018-11-01
+:status: published
+:keywords: digital signage, information flows, metadata
+:stem:
+
+
+[abstract]
+== Summary
+Recommendation ITU-T H.782 specifies the data elements and structures of the metadata for digital signage services. The metadata describes information for contents, terminal devices, play logs, playlist schedule, screen layout, etc. The metadata is handled by a digital signage server, a digital signage client, a content delivery server, and a content delivery client. It also specifies general information flows to describe how the metadata are used in the digital signage services.This revision updates the data types of elements/attributes of identifiers. This update aims to widen applicability of the specifications at the price of easy extensible markup language (XML) validation.
+
+[preface]
+== History
+
+|===
+<.^h| Edition <.^h| Recommendation <.^h| Approval <.^h| Study Group <.^h| 
+Unique ID[[body_ftn1]]
+<.<h| [[ihistorye]]1.0 <.<h| ITU-T H.782 <.<h| 2017-12-14 <.<h| 16 <.<h| http://handle.itu.int/11.1002/1000/13439[11.1002/1000/13439]
+<.<h| 2.0 <.<h| ITU-T H.782 (V2) <.<h| 2018-11-29 <.<h| 16 <.<h| http://handle.itu.int/11.1002/1000/13783[11.1002/1000/13783]
+|===
+
+== FOREWORD 
+
+The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of tele­com­mu­ni­ca­tions, information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.
+
+The [[iitexte]]World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU‑T study groups which, in turn, produce Recommendations on these topics.
+
+The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution1.
+
+In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.
+
+== NOTE
+
+In [[iitextea]]this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.
+
+Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.
+
+== INTELLECTUAL PROPERTY RIGHTS
+
+ITU [[iitexteb]]draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.
+
+As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at http://www.itu.int/ITU-T/ipr/[http://www.itu.int/ITU-T/ipr/].
+
+ITU[[iiannee]]2019
+
+All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.
+
+
+
+[[p1rectexte]]Recommendation ITU-T H.782
+
+Digital signage: Metadata
+
+== [[a__1Scope]][[_Toc449358]][[_Toc535833702]][[_Toc532563340]]1 Scope
+
+This Recommendation addresses specifications for the metadata, which especially focus on semantics aspects, related to general digital signage services. This Recommendation defines metadata for the following digital signage functionalities:
+
+– terminal devices;
+
+– play logs;
+
+– content delivery scheduling;
+
+– playlist and content;
+
+– playlist schedule;
+
+– screen layout and region;
+
+– interactive service.
+
+[[_Toc355359943]][[_Toc509401009]][[_Toc505694936]][[_Toc503891482]][[_Toc274586683]]This revision updates the data types of elements/attributes of identifiers. The update aims to widen applicability of the specifications at the price of easy XML validation.
+
+== [[a__2References]][[_Toc532563341]][[_Toc449359]][[_Toc535833703]]2 References
+
+The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.
+
+[ITU-T H.741.2]Recommendation ITU-T H.741.2 (2012), _IPTV application event handling: Data structures of audience measurement for IPTV services_.
+
+[ITU-T H.780]Recommendation ITU-T H.780 (2012), _Digital signage: Service requirements and IPTV-based architecture_.
+
+[ITU-T H.781]Recommendation ITU-T H.781 (2015), _Digital signage: Functional architecture_.
+
+[ETSI TS 102 822-3-1] ETSI TS 102 822-3-1 V1.9.2 (2016), _Broadcast and On-line Services: Search, select, and rightful use of content on personal storage systems ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1– Metadata schemas_.
+
+[IETF RFC 5139]IETF RFC 5139 (2008), _Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)_.
+
+[ISO 19136]ISO 19136 (2007),_Geographic information – Geography Markup Language (GML)_.
+
+[W3C XMLSchema]W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
+
+== [[a__3Definitions]][[_Toc355359944]][[_Toc449360]][[_Toc535833704]][[_Toc532563342]][[_Toc509401010]][[_Toc505694937]][[_Toc503891483]][[_Toc274586684]]3 Definitions
+
+=== [[a__3_1Terms_defined_elsewhere]][[_Toc355359945]][[_Toc449361]][[_Toc535833705]][[_Toc532563343]][[_Toc509401011]][[_Toc505694938]][[_Toc503891484]][[_Toc274586685]]3.1 Terms defined elsewhere
+
+This Recommendation uses the following terms defined elsewhere:
+
+*3.1.1 content* [ITU-T H.780]: A combination of audio, still image, graphic, video, or data.
+
+NOTE – A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by [b-ITU-T H.760]).
+
+*3.1.2 metadata* [b-ITU-T X.1255]:Structured information that pertains to the identity of users, systems, services, processes, resources, information or other entities.
+
+*3.1.3* *playlist* [ITU-T H.780]: Composed of a list of contents.
+
+NOTE 1 – This data is created and provided by digital service providers.
+
+NOTE 2 – This data can be selected by an end user when interactivity is supported in a digital signage terminal device.
+
+NOTE 3 – This data may indicate an order of playing contents.
+
+*3.1.4* *playlist schedule* [ITU-T H.780]: Composed of a list of playlists indicated by a specific play date and/or time.
+
+*3.1. **5** proof-of-play (PoP)* [ITU-T H.781]:Any technique that can identify and prove that the content has been displayed on the screen.
+
+=== [[a__3_2Terms_defined_in_this_Recommendation]][[_Toc355359946]][[_Toc449362]][[_Toc535833706]][[_Toc532563344]][[_Toc509401012]][[_Toc505694939]][[_Toc503891485]][[_Toc274586686]]3.2 Terms defined in this Recommendation
+
+This Recommendation defines the following terms:
+
+[[_Toc238617661]][[_Toc274586687]]*3.2. **1** play log*: A collection of record or information created by a digital signage system reflecting the content played, system performance, and other data.
+
+*3.2.2 region*:A partial area of the screen layout to be a content displayed.
+
+*3.2.3 screen* *layout*: A composition of one or moreregions to be content displayed.[[_Toc505694940]][[_Toc503891486]][[_Toc355359947]][[_Toc371031599]][[_Toc371031598]][[_Toc371031597]][[_Toc371031596]]
+
+== [[a__4Abbreviations_and_acronyms]][[_Toc509401013]][[_Toc449363]][[_Toc535833707]][[_Toc532563345]]4 Abbreviations and acronyms
+
+This Recommendation uses the following abbreviations and acronyms:
+
+DSDigital Signage
+
+GMLGeography Markup Language
+
+URIUniform Resource Identifier
+
+URLUniform Resource Locator
+
+UTCCoordinated Universal Time
+
+XMLextensible Markup Language
+
+== [[a__5Conventions]][[_Toc355359948]][[_Toc449364]][[_Toc535833708]][[_Toc532563346]][[_Toc509401014]][[_Toc505694941]][[_Toc503891487]][[_Toc274586688]]5 Conventions
+
+This Recommendation follows the notation described in clause 6 of [ITU-T H.741.2]. The notation is used in this Recommendation to facilitate the specification of the correspondingschema:
+
+– _Definition/Semantics_: definition and semantics of the element / attribute along with notes and value domain;
+
+– _Support_: describes the requirement level and number of occurrence of the pertaining instance. The notationsfor requirement level are M for mandatory, R for recommended, O for optional.The notations for number of occurrence are (1) = (one instance), (0-1) = (zero or one instance), (0-\*) = (zero or multiple instances possible), (1-\*) = (oneor multiple instances possible);
+
+– _Type_: describes the type of the pertaining instanceas defined in Table 1;
+
+– _Container_:elements are defined to group associated elements.
+
+Table 1 contains data types used in this Recommendation; alternative representations may be shown whichillustrates other data structures. In case of discrepancy with any alternative representation, the correct information is to be found in Table 1.
+
+|===
+4+<.<h| [[_Ref355364476]][[_Toc532563369]][[_Toc503891510]][[_Toc325666222]][[_Toc355364187]]Table 1–Data types used in this Recommendation
+<.<| <.<| Type <.<| Name <.<| Notes/Reference
+<.<| <.<| ca:civicAddress <.<| Civic address <.<| Used to specify civic location.Defined in [IETF RFC 5139].
+<.<| <.<| gml:Point <.<| GML point <.<| Used to specify simple point geometry in format of geography markup language (GML).A point consists of a \<Point\> element with a child \<coords\> element. Within \<coords\> the latitude and longitude values are separated by a space.Defined in [ISO 19136].
+<.<| <.<| tva:GenreType <.<| Genre <.<| Used to specify genre of the content.Defined in [ETSI TS 102 822-3-1].
+<.<| <.<| xs:date <.<| Date <.<| Used to specify date. The lexical form is CCYY-MM-DD where "CC" represents the century, "YY" the year, "MM" the month and "DD" the day.Defined in [W3C XMLSchema].
+<.<| <.<| xs:duration <.<| Duration <.<| Used to specify duration of time. The lexical form is PnYnMnDTnHnMnS, where "P" represents the starts expression, "nY" represents number of years, "nM" represents number of months, "nD" represents number of days, "T" represents separation of date and time, "nH" represents number of hours, "nM" represents number of minutes, and "nS" represents number of seconds.Defined in [W3C XMLSchema].
+<.<| <.<| xs:time <.<| Time <.<| Used to specify time. The format of time is "hh:mm:ss" where: hh indicates the hour, mm indicates the minute, ss indicates the second.Defined in [W3C XMLSchema].
+<.<| <.<| xs:dateTime <.<| Date and time <.<| Used to specify date and time. The format of dateTime is YYYY-MM-DDThh:mm:ss.s+zzzzzzDefined in [W3C XMLSchema].
+<.<| <.<| xs:integer <.<| Integer <.<| Used to specify a numeric value without a fractional component.Defined in [W3C XMLSchema].
+<.<| <.<| xs:language <.<| Natural language identifier <.<| Used to specify a natural language identifier.Defined in [W3C XMLSchema].
+<.<| <.<| xs:nonNegativeInteger <.<| Non-negative integer <.<| Used to specify integer containing only non-negative values (e.g., 0,1,2,..)Defined in [[OLE_LINK113]][[OLE_LINK112]][W3C XMLSchema].
+<.<| <.<| xs:positiveInteger <.<| Positive integer <.<| Used to specify integer containing only positive values (e.g., 1,2,..).Defined in [W3C XMLSchema].
+<.<| <.<| xs:string <.<| String <.<| Used to specify string value which contains characters, line feeds, carriage returns, and tab characters.Defined in [W3C XMLSchema].
+<.<| <.<| xs:NMTOKEN <.<| Normalized String without spaces <.<| Used to specify string after white space replacement. This is, any occurrence of line feeds, carriage returns, contiguous of spaces, and tab are replaced by a single space along with leading or trailing spaces removed.Defined in [W3C XMLSchema].
+<.<| <.<| xs:NMTOKENS <.<| List of NMTOKEN <.<| A whitespace-separated list of NMTOKEN values.Defined in [W3C XMLSchema].
+<.<| <.<| xs:anyURI <.<| URI <.<| Used to specify uniform resource identifier (URI).Defined in [W3C XMLSchema].
+
+|===
+
+== [[a__6Overview]][[_Toc355359949]][[_Toc449365]][[_Toc535833709]][[_Toc532563347]][[_Toc509401015]][[_Toc505694942]][[_Toc503891488]][[_Toc274586689]]6 Overview
+
+This Recommendation address metadata related to digital signage (DS) services to present details of contents and service information. [ITU-T H.780] specifies some elements of metadata that are applicable to digital signage services.
+
+Digital signage server has capabilities for administration of digital signage system, control of content delivery, and management of digital signage terminal devices. Digital signage clients are responsible for content presentation, and interactions with audiences. The detailed functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
+
+This Recommendation selects basic elements/attributes from these specifications that are applicable to digital signage services. Names of elements/attributes are quoted as they are in the specifications, in order to keep the relationship between the standards clear.
+
+Figure 1 illustrates a reference functional model for DS services as per [ITU‑TH.781], and the scope of this Recommendation.
+
+image::T-REC-H.782_images/image003.png[]
+
+NOTE – Figure 1 as per [ITU-T H.781].
+
+[[_Ref481859692]][[_Toc532563386]][[_Toc503891527]]Figure 1 – Digital signage service reference architecture
+
+Entities in Figure 1 are as follows:
+
+–*Audience/User*: the audience or user, or his/her own device;
+
+–*DS terminal device*: the device that displays content received from a DS service operator;
+
+–*DS service operator*: the business operator that provides DS services. It manages DS terminal devices for displaying content received from a content provider;
+
+–*Content provider or business system*: this entity provides content to the DS service operator for a particular purpose, e.g., advertisements, information, alerts.
+
+Main groups of functions within the DS terminal device and the DS service operator are as follows:
+
+–*DS client*: is responsible for content presentation and interactions with audiences;
+
+–*Content delivery client*: is responsible for acquiring content through a network;
+
+–*DS server*: has capabilities for administration of DS system, control of content delivery and management of DS terminal devices;
+
+–*Content delivery server*: delivers content to the content delivery client.
+
+This Recommendation describes metadata handled by these four functional groups.
+
+== [[a__7Configuration_of_terminal_device]][[_Toc452100937]][[_Toc324250308]][[_Toc355359953]][[_Toc449366]][[_Toc535833710]][[_Toc532563348]][[_Toc509401016]][[_Toc505694943]][[_Toc503891489]][[_Toc482154548]][[_Toc482154547]][[_Toc482154546]][[_Toc482154545]][[_Toc482154544]][[_Toc482154543]][[_Toc482154489]][[_Toc482154488]][[_Toc482154487]][[_Toc482154486]][[_Toc482154485]][[_Toc482154484]][[_Toc482154483]][[_Toc482154482]][[_Toc482154481]][[_Toc482154480]][[_Toc482154479]][[_Toc482154478]][[_Toc482154477]][[_Toc482154476]][[_Toc482154475]][[_Toc482154474]][[_Toc482154473]][[_Toc482154472]][[_Toc482154404]][[_Toc482154403]][[_Toc482154402]][[_Toc452100944]][[_Toc355878025]][[_Toc355878024]][[_Toc452100943]][[_Toc452100942]][[_Toc452100941]][[_Toc452100940]][[_Toc452100939]][[_Toc452100938]]7 Configuration of terminal device
+
+=== [[a__7_1Client_configuration]][[_Toc503891490]][[_Toc449367]][[_Toc535833711]][[_Toc532563349]][[_Toc509401017]][[_Toc505694944]]7.1 Client configuration
+
+The digital signage server configures the digital signage client with a set of metadata in the "client configuration" which includes allocation of _TerminalId_; see Figure 2. The digital signage server can reconfigure the digital signage client with the configuration information needed.
+
+A set of elements/attributes for "client configuration" metadata is shown in Table 2.
+
+image::T-REC-H.782_images/image004.png[]
+
+[[_Ref451526981]][[_Toc532563387]][[_Toc503891528]]Figure 2 – A flow for client configuration
+
+|===
+5+<.^h| [[_Ref451527253]][[_Toc532563370]][[_Toc503891511]]Table 2 – Metadata for "client configuration"
+<.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Client‌Configuration <.<| Container to include client configuration information. <.<| <.<|
+<.<| <.<| Terminal‌Id <.<| Element of ClientConfiguration.An identifier of a terminal device. This value is allocated by the digital signage server. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Name <.<| Element of ClientConfiguration.Name of the terminal, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| KeywordList <.<| Element of ClientConfiguration.Container to include list of keywords. <.<| O(0-1) <.<|
+<.<| <.<| Keyword <.<| Element of KeywordList.A keyword for the usage of the terminal device which can be in different languges.A keyword can be a single word or an entire phrase made up of multiple words. <.<| O(1-\*) <.<| xs:string
+<.<| <.<| Configuration‌DateTime <.<| Element of ClientConfiguration.Describes date/time of configuration of the terminal device. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| ScreenlayoutId‌RefList <.<| Element of ClientConfiguration.A list of reference identifiers of the screen layout information (see Table 15). <.<| O(0-1) <.<| xs:NMTOKENS
+<.<| <.<| TerminalGroup‌Id‌Ref <.<| Element of ClientConfiguration.A reference identifier of the terminal group information (see Table 9). <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| Username <.<| Element of ClientConfiguration.The user name to access the terminal device. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| Password <.<| Element of ClientConfiguration.The password to access the terminal device. <.<| O(0-1) <.<| xs:string
+<.<| <.<| AVControl <.<| Element of ClientConfiguration.Container to include audio and visual information. <.<| O(0-1) <.<|
+<.<| <.<| Volume <.<| Element of AVControl.Control the sound volume level of the terminal device.Suggested unit is in percentage (%). <.<| O(0-1) <.<| xs:string
+<.<| <.<| Brightness <.<| Element of AVControl.Control the monitor brightness level of the terminal device.Suggested unit is in percentage (%). <.<| O(0-1) <.<| xs:string
+<.<| <.<| ContentDelivery‌ServerIdRefList <.<| Element of ClientConfiguration.A list of reference identifiers of content delivery servers (see Table 5). <.<| O(0-1) <.<| xs:NMTOKENS
+<.<| <.<| LogServerIdRef <.<| Element of ClientConfiguration.A reference identifier to a log server (see Table 6). <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| Playlist‌ScheduleServer‌Id‌Ref <.<| Element of ClientConfiguration.A reference identifier to a server that provides a playlist schedule (see Table 7). <.<| O(0-1) <.<| xs:NMTOKEN
+
+|===
+
+NOTE – Elements derived from [ITU-T H.780]: TerminalId, Keyword.
+
+Supplemental explanations of elements are as follows:
+
+–_ScreenlayoutIdRefList_: denotes the list of reference identifiers of the screen layout format of the terminal device. This element is used when there are limited types of screen layout format within this configuration;
+
+–_Name_: denotes the name of the terminal device. Normally, it is in user-readable format for the user to differentiate or to understand the purpose of the terminals. It can be in different languages;
+
+–_Username and Password_: denotes the username and password that is used in accessing digital signage service from the terminal device. This information can be used for maintenance of terminal and the digital signage client;
+
+–_AVControl_: describes the level of sound volume and brightness of the terminal device that is controlled by the digital signage server. It is possible to add other types of audio/visual setting that in needed in the implementation such as contrast, colours, etc.;
+
+–_TerminalGroup_: denotes the reference identifier of the terminal group that the terminal belongs;
+
+–_ContentDeliveryServerIdRefList_: denotes the list of reference identifiers of the content delivery servers that are used by terminals in downloading content. There can be more than one content delivery servers;
+
+–_LogServerIdRef_: denotes the reference identifier of the log server that is used by the terminal to report log data;
+
+–_PlaylistScheduleServerIdRef_: denotes the reference identifier of the playlist schedule server for the terminal.
+
+=== [[a__7_2Terminal_device]][[_Toc503891491]][[_Toc449368]][[_Toc535833712]][[_Toc532563350]][[_Toc509401018]][[_Toc505694945]]7.2 Terminal device
+
+A digital signage client may use the set of metadata in the "terminal device" to send its installation information to the server, and the digital signage server may use this metadata to manage the terminal device. See Figure 3.
+
+A set of elements/attributes for "terminal device" metadata is shown in Table 3.
+
+image::T-REC-H.782_images/image005.png[]
+
+
+[[_Toc491876900]][[_Toc532563388]][[_Toc503891529]]Figure 3 – A flow for terminal device
+
+|===
+5+<.^h| [[_Ref481864403]][[_Toc532563371]][[_Toc503891512]]Table 3 – Metadata for "terminal device"
+<.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Terminal‌Device <.<| Container to include terminal device information to be reported to the server. <.<| <.<|
+<.<| <.<| TerminalId‌Ref <.<| Element of TerminalDevice.A reference identifier of a terminal device. This value is allocated by the digital signage server (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Installation‌DateTime <.<| Element of TerminalDevice.Describes date and time of installation of the terminal device. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| Display‌Information <.<| Element of TerminalDevice.Container to include information of the display connected to a terminal device. <.<| O(0-1) <.<|
+<.<| <.<| Installation‌Layout <.<| Element of DisplayInformation.Informs how the display is installed. Example values are horizontal, vertical, tiled horizontally, but not limited. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Size <.<| Element of DisplayInformation.The size of display monitor in length unit. The data type has three attributes for diagonal, width and height of the monitor, and an additional unit attribute. Example units are centimeters, inches, but not limited. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Pixel‌Resolution <.<| Element of DisplayInformation.The resolution of display monitor in pixels. It has three attributes for the width, height and aspect ratio. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Capability‌List <.<| Element of DisplayInformation.List of capabilities that are provided in the screen. Example values are touch screen, 3D, but not limited. <.<| O(0-1) <.<| xs:‌NMTOKENS
+<.<| <.<| Cpu <.<| Element of TerminalDevice.CPU power of the terminal. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Storage‌Size <.<| Element of TerminalDevice.Storage size available of the terminal. <.<| O(0-1) <.<| xs:string
+<.<| <.<| IPAddress <.<| Element of TerminalDevice.IP address of the terminal device.This attribute can be an IPv4 or IPv6 address.Either MAC address or IP address exists for a single terminal. <.<| R(0-1) <.<| xs:‌NMTOKEN
+<.<| <.<| MACAddress <.<| Element of TerminalDevice.MAC address of the terminal device.The format for this attribute is "xx:xx:xx:xx:xx:xx", where 'x' indicates a single hexadecimal.Either MAC address or IP address exists for a single terminal. <.<| R(0-1) <.<| xs:‌NMTOKEN
+<.<| <.<| Timezone <.<| Element of TerminalDevice.The timezone of the terminal device.Value in coordinated universal time (UTC) time. <.<| O(0-1) <.<| xs:time
+<.<| <.<| Geo‌Location <.<| Element of TerminalDevice.The geographical location of the terminal device. <.<| O(0-1) <.<| gml:Point
+<.<| <.<| Location <.<| Element of TerminalDevice.Location of the terminal other than geographic information (e.g., postal address). <.<| O(0-1) <.<| ca:‌civic‌Address
+<.<| <.<| Interactive‌Device <.<| Element of TerminalDevice.The container to include the list of interactive devices that are attached to the terminal device (see Table 4). <.<| O(0-\*) <.<|
+
+|===
+
+NOTE 1 – Elements derived from [ITU-T H.780]: TerminalId, DisplayInformation, and InstallationDate.
+
+Supplemental explanations of elements are as follows:
+
+–_TerminalIdRef_: denotes the reference identifier to the terminal, if applicable. After first initiation, the terminal device may not have any _TerminalId_ to identify itself;
+
+NOTE 2 – In this case, the terminal device sets the initial value, such as "0", to the _TerminalId._ The digital signage server can assign a unique value for _TerminalId_ through the flow described in clause7.1;
+
+–_DisplayInformation_: describes the display information of the digital signage terminal. The information may include the display size, pixel, and capabilities such as 3D, touch screen, etc. Digital signage server can use this information in determining the type of content that the terminal is able to display;
+
+–_Cpu_: describes the CPU power of the terminal. This is used to check if the terminal has the ability to display certain types of content;
+
+–_StorageSize_: describes the size of the storage available in the terminal, e.g., a hard disk drive or flash memory;
+
+NOTE 3 – This is used to check if the terminal is able to store the content to be displayed;
+
+–_IPAddress_ and _MACAddress_: denotes the address used to access the terminal. It is possible to use this information when creating the _TerminalId_ element;
+
+–_Timezone_:describes the time zone of the area where the terminal is installed;
+
+NOTE 4 – When the terminal and the server are in different time zones, the server needs to be careful with information related to time;
+
+–_GeoLocation_: denotes the location of the terminal using GML format;
+
+NOTE 5 – If the terminal is mobile, this element can be appropriate in providing the actual position of the terminal.
+
+–_Location_: describes the postal address of the terminal;
+
+NOTE 6 – This element can be used to locate the terminal, e.g., maintenance.
+
+–_InterfaceDevice_: describes the list of interactive devices that are attached to the terminal. A terminal device can have zero or more interactive devices attached such as touch panel, keyboard, mouse, camera, sensor, etc. The digital signage operator can make use of the interactive devices to provide interactive services and collect environmental inputs.
+
+=== [[a__7_3Interactive_device]][[_Toc491876741]][[_Toc449369]][[_Toc535833713]][[_Toc532563351]][[_Toc509401019]][[_Toc505694946]][[_Toc503891492]]7.3 Interactive device
+
+A terminal device can have zero or more interactive devices attached. The digital signage service can make use of the interactive devices to provide interactive services and collect environmental inputs. A set of elements/attributes for the interactive device are shown in Table 4.
+
+|===
+5+<.^h| [[_Ref481864429]][[_Toc532563372]][[_Toc503891513]]Table 4 – Metadatafor "interactive device"
+<.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Interactive‌Device <.<| Container to include interactive devices attached to the terminal. <.<| <.<|
+<.<| <.<| Interactive‌DeviceId <.<| Element of InteractiveDevice.Identifier of the interactive device. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Name <.<| Element of InteractiveDevice.Name of the interactive device, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Type <.<| Element of InteractiveDevice.Type of interactive device.The suggested values are touch panel, keyboard, mouse, camera, camcorder, sensor, but not limited. <.<| R(0-1) <.<| xs:string
+<.<| <.<| Output‌Type <.<| Element of InteractiveDevice.Type of output type of event that can occur to the interactive device.The suggested values are text, audio, video, position, but not limited. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Status <.<| Element of InteractiveDevice.Indicates the existence of an error (and/or type of error) in the interactive device.The suggested values are normal, failure, but not limited. <.<| M(1) <.<| xs:string
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _InteractiveDeviceId_: denotes the identifier of the interactive device that is attached to the terminal. It is a unique value within the terminal device;
+
+– _Name_: denotes the name of the interactive device. Normally, it is in user-readable format for the user to differentiate or to understand the auxiliary devices attached. It can be in different languages;
+
+– _Type_: describes the type of the interactive device that includes touch panel, keyboard, camera, sensor, etc.;
+
+– _OutputType_: describes the data type of event that can be produced from the interactive device.
+
+NOTE –For example, a mouse or touch panel can produce position data type, a camera can produce video data type.
+
+=== [[a__7_4Content_delivery_server]][[_Toc503891493]][[_Toc449370]][[_Toc535833714]][[_Toc532563352]][[_Toc509401020]][[_Toc505694947]]7.4 Content delivery server
+
+It is possible to have a separate content delivery server to distribute content to the DS terminal. A set of elements/attributes for the information of the "content delivery server" are shown in Table 5.
+
+|===
+5+<.^h| [[_Ref451527254]][[_Toc532563373]][[_Toc503891514]]Table 5 – Metadata for "content delivery server"
+<.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Content‌Delivery‌Server <.<| Container to include information of the content delivery server. <.<| <.<|
+<.<| <.<| Content‌Delivery‌Server‌Id <.<| Element of ContentDeliveryServer.Identification of the content delivery server. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Location <.<| Element of ContentDeliveryServer.Container to include the IP address/URI of the content delivery server. <.<| M(1) <.<|
+<.<| <.<| IPAddress <.<| Element of Location.The IP address and port number of the content delivery server. <.<| O(0-1) <.<| xs:string
+<.<| <.<| URI <.<| Element of Location.The URI of the content delivery server. <.<| O(0-1) <.<| xs:anyURI
+<.<| <.<| Username <.<| Element of ContentDeliveryServer.The user name to access the content delivery server. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Password <.<| Element of ContentDeliveryServer.The password to access the content delivery server. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Timezone <.<| Element of ContentDeliveryServer.The time zone of the content delivery server.Value in UTC time. <.<| O(0-1) <.<| xs:time
+
+|===
+
+[[_Toc451528068]][[_Toc452100993]]Supplemental explanations of elements are as follows:
+
+– _ContentDeliveryServerId_: denotes the identifier of the content delivery server;
+
+– _Location_: describes the addressing information to access the content delivery server. Suggested format used for this element is IP Address/port number, URI, uniform resource locator (URL), etc.;
+
+– _Username_ and _password_: denotes the user name and password that is used in accessing the content delivery server;
+
+NOTE – The content delivery server can validate the DS terminal device that provides this information.
+
+– _Timezone_: describes the time zone used by the content delivery server.
+
+=== [[a__7_5Log_server]][[_Toc503891494]][[_Toc449371]][[_Toc535833715]][[_Toc532563353]][[_Toc509401021]][[_Toc505694948]]7.5 Log server
+
+It is possible to have separate log server to collect log data. A set of elements/attributes for the "logserver" are shown in Table 6.
+
+|===
+4+<.^h| [[_Ref451529430]][[_Toc532563374]][[_Toc503891515]]Table 6 – Metadata for "log server"
+<.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| LogServer <.<| Container to include information of log server. <.<| <.<|
+<.<| LogServerId <.<| Element of LogServer.Identification of the log server. <.<| M(1) <.<| xs:NMTOKEN
+<.<| Location <.<| Element of LogServer.Container to include the IP address/URI of the log server. <.<| M(1) <.<|
+<.<| IPAddress <.<| Element of Location.The IP address and port number of the log server. <.<| O(0-1) <.<| xs:string
+<.<| URI <.<| Element of Location.The URI of the log server. <.<| O(0-1) <.<| xs:anyURI
+<.<| Username <.<| Element of LogServer.The user name to access to the log server. <.<| O(0-1) <.<| xs:‌NMTOKEN
+<.<| Password <.<| Element of LogServer.The password to access to the log server. <.<| O(0-1) <.<| xs:string
+<.<| Timezone <.<| Element of LogServer.The time zone of the log server.Value in UTC time. <.<| O(0-1) <.<| xs:time
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _LogServerId_: denotes the identifier of the log server;
+
+– _Location_: describes the addressing information to access the log server. Suggested format used for this element is IP address/port number, URI, URL, etc.;
+
+– _Username_ and _Password_: denotes the user name and password that is used in accessing log server;
+
+NOTE – The log server can validate the DS terminal device that provides this information.
+
+– _Timezone:_ describes the time zone used by the log server.
+
+=== [[a__7_6Playlist_schedule_server]][[_Toc503891495]][[_Toc449372]][[_Toc535833716]][[_Toc532563354]][[_Toc509401022]][[_Toc505694949]]7.6 Playlist schedule server
+
+It is possible to have a separate server to inform playlist schedule. A set of elements/attributes for the information of the "playlist schedule server" are shown in Table 7.
+
+|===
+4+<.^h| [[_Ref451529432]][[_Toc532563375]][[_Toc503891516]]Table 7 – Metadata for "playlist schedule server"
+<.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| Playlist‌Schedule‌Server <.<| Container to include information of playlist scheduleserver. <.<| <.<|
+<.<| Playlist‌Schedule‌ServerId <.<| Element of PlaylistScheduleServer.Identification of the playlist schedule server. <.<| M(1) <.<| xs:NMTOKEN
+<.<| Location <.<| Element of PlaylistScheduleServer.Container to include the IP address/URI of the playlist schedule server. <.<| M(1) <.<|
+<.<| IPAddress <.<| Element of Location.The IP qddress and port number of the playlist schedule server. <.<| O(0-1) <.<| xs:string
+<.<| URI <.<| Element of Location.The URI of the playlist schedule server. <.<| O(0-1) <.<| xs:anyURI
+<.<| Username <.<| Element of PlaylistScheduleServer.The user name to access to the playlist schedule server. <.<| O(0-1) <.<| xs:‌NMTOKEN
+<.<| Password <.<| Element of PlaylistScheduleServer.The password to access to the playlist schedule server. <.<| O(0-1) <.<| xs:string
+<.<| Timezone <.<| Element of PlaylistScheduleServer.The time zone of the playlist schedule server.Value in UTC time. <.<| O(0-1) <.<| xs:time
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _PlaylistScheduleServerId_: denotes the identifier of the playlist schedule server;
+
+– _Location_: describes the addressing information to access the playlist schedule server. Suggested format used for this element is IP address/port number, URI, URL, etc.;
+
+– _Username_ and _Password_: denotes the user name and password that is used in accessing playlist schedule server;
+
+NOTE – The playlist schedule server can validate the DS terminal device that provides this information.
+
+– _Timezone_: describes the time zone used by the playlist schedule server.
+
+=== [[a__7_7Terminal_device_status]][[_Toc503891496]][[_Toc449373]][[_Toc535833717]][[_Toc532563355]][[_Toc509401023]][[_Toc505694950]]7.7 Terminal device status
+
+The terminal device can send its device status to the digital signage server; see Figure 4. This informs the digital signage operator of the current condition of the terminal device [ITU-T H.781].
+
+A set of elements/attributes for "terminal device status" metadata is shown in Table 8.
+
+image::T-REC-H.782_images/image006.png[]
+
+
+[[_Toc491876901]][[_Toc532563389]][[_Toc503891530]]Figure 4 – A flow for terminal device status
+
+|===
+5+<.^h| [[_Ref451527257]][[_Toc532563376]][[_Toc503891517]]Table 8 –Metadata for "terminal device status"
+<.<| <.^| Element/Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Terminal‌Device‌Status <.<| Container to include information in the terminal device status reported to the server. <.<| <.<|
+<.<| <.<| Terminal‌Id‌Ref <.<| Element of TerminalDeviceStatus.A reference identifier of the terminal device (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Timestamp <.<| Element of TerminalDeviceStatus.Time/date that was measured by the terminal device. <.<| M(1) <.<| xs:dateTime
+<.<| <.<| FreeSpace <.<| Element of TerminalDeviceStatus.Size of the free space in the memory of the terminal device.Suggested unit is in either megabytes (MB) or gigabytes (GB). The value may be expressed as size + unit such as '10 MB'. <.<| R(0-1) <.<| xs:string
+<.<| <.<| CPU‌Speed <.<| Element of TerminalDeviceStatus.Currently measured CPU speed of the terminal device.Suggested unit is in GHz. <.<| O(0-1) <.<| xs:non‌Negative‌Integer
+<.<| <.<| Temperature <.<| Element of TerminalDeviceStatus.Currently measured temperature of the terminal device.Suggested unit is in Celsius. <.<| O(0-1) <.<| xs:integer
+<.<| <.<| Uptime <.<| Element of TerminalDeviceStatus.Current uptime of the terminal device.Suggested unit is in minutes. <.<| R(0-1) <.<| xs:non‌Negative‌Integer
+<.<| <.<| AVControl <.<| Element of TerminalDeviceStatus.Container to include current audio and visual status. <.<| O(0-1) <.<|
+<.<| <.<| Volume <.<| Element of AVControl.Current sound volume level of the terminal device.Suggested unit is in percentage (%). <.<| O(0-1) <.<| xs:non‌Negative‌Integer
+<.<| <.<| Brightness <.<| Element of AVControl.Current monitor brightness level of the terminal device.Suggested unit is in percentage (%). <.<| O(0-1) <.<| xs:non‌Negative‌Integer
+<.<| <.<| Last‌Connect <.<| Element of TerminalDeviceStatus.Time of last connection with the server. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| Terminal‌Status <.<| Element of TerminalDeviceStatus.Indicates the existence of an error (and/or type of error) of the terminal device.The suggested values are normal, display failure, interactive device failure, but not limited. <.<| M(1) <.<| xs:string
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _Timestamp_: describes the time and date of the moment that the terminal device has measured the terminal device status;
+
+– _FreeSpace, CPUSpeed,_ and _Temperature_: describe the performance status of the terminal device. The server can detect if the terminal device is overloaded;
+
+– _AVControl_: describes the current sound volume level and brightness level of the terminal device;
+
+NOTE 1 – The server can determine the need for controlling the volume level/brightness level that is appropriate for the environment. It is possible to add other types of audio/visual settings that are needed in the implementation such as contrast, colours, etc.
+
+– _LastConnect_: describes the date/time that the server has interface with the terminal device.
+
+NOTE 2 – The server can check when it has made any control to the terminal device.
+
+=== [[a__7_8Terminal_group]][[_Toc503891497]][[_Toc449374]][[_Toc535833718]][[_Toc532563356]][[_Toc509401024]][[_Toc505694951]]7.8 Terminal group
+
+A number of terminal devices can be grouped together to display the same content and playlist schedule. It would be easier to manage and operate multiple digital signage clients with the concept of a group. The digital signage server assigns a client to a group with the set of metadata defined in Table9.
+
+A set of elements/attributes for "terminal group" metadata is shown in Table 9.
+
+|===
+5+<.^h| [[_Ref451527258]][[_Toc532563377]][[_Toc503891518]]Table 9 – Metadata for "terminal group"
+<.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Terminal‌Group <.<| Container to include group information for terminal device. <.<| <.<|
+<.<| <.<| Terminal‌GroupId <.<| Element of TerminalGroup.An identifier of the group of terminal devices. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Name <.<| Element of TerminalGroup.Name of the terminal group, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Username <.<| Element of TerminalGroup.The user name to access the terminal group. <.<| O(0-1) <.<| xs:‌NMTOKEN
+<.<| <.<| Password <.<| Element of TerminalGroup.The password to access the terminal group. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Location <.<| Element of TerminalGroup.Location of the terminals in the group (e.g., A building name, or an area name of terminal devices installed). <.<| O(0-1) <.<| xs:string
+<.<| <.<| Creation‌DateTime <.<| Element of TerminalGroup.Creation time/date of the terminal group. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| ParentGroup‌IdRef <.<| Element of TerminalGroup.To support nested groups, a reference identifier of the parent terminal group. <.<| R(0-1) <.<| xs:NMTOKEN
+<.<| <.<| Inherited‌Depth <.<| Element of TerminalGroup.The depth of the nested group when ParentGroupIdRef is assigned.If the value is bigger than 0, it is inherited. <.<| R(0-1) <.<| xs:non‌Negative‌Integer
+<.<| <.<| TerminalId‌RefList <.<| Element of TerminalGroup.A list of reference identifiers of the terminal devices (see Table 2). List of terminal devices that are assigned to this group. <.<| M(1) <.<| xs:NMTOKENS
+
+|===
+
+[[_Toc452101001]]Supplemental explanations of elements are as follows:
+
+– _TerminalGroupId_: denotes the identifier of the group of terminal devices;
+
+– _Name_: denotes the name of the group. Normally, it is in user-readable format for the user to differentiate or to understand the purpose of the group. It can be in different languages;
+
+– _Username_ and _Password_: denotes the user name and password that is commonly used by the terminal devices in the group;
+
+– _Location:_ describes the location of the terminal devices in the group, normally in user‑readable format;
+
+NOTE 1 – This element can be used by a user of the digital signage service to understand the estimated location of the group. For example, terminal devices on the first floor of a building can form a "first‑floor" group.
+
+– _CreationDateTime_: describes the creation time and date of the terminal group;
+
+– _ParentGroupIdRef_, _InheritedDepth_: group can be in nested. The depth of the nested group is expressed in _InheritedDepth_ element.
+
+NOTE 2 – For example, a terminal device on the first floor of a building can belong to a building group and also to a first‑floor group.
+
+== [[a__8Play_log]][[_Toc491876580]][[_Toc449375]][[_Toc535833719]][[_Toc532563357]][[_Toc509401025]][[_Toc505694952]][[_Toc503891498]][[_Toc355359959]][[_Toc324250310]][[_Toc491876852]][[_Toc491876684]][[_Toc491876851]][[_Toc491876683]][[_Toc491876850]][[_Toc491876682]][[_Toc491876849]][[_Toc491876681]][[_Toc491876848]][[_Toc491876680]][[_Toc491876847]][[_Toc491876679]][[_Toc491876846]][[_Toc491876678]][[_Toc491876845]][[_Toc491876677]][[_Toc491876844]][[_Toc491876676]][[_Toc491876843]][[_Toc491876675]][[_Toc491876842]][[_Toc491876674]][[_Toc491876841]][[_Toc491876673]][[_Toc491876840]][[_Toc491876672]][[_Toc491876839]][[_Toc491876671]][[_Toc491876756]][[_Toc491876588]][[_Toc491876755]][[_Toc491876587]][[_Toc491876754]][[_Toc491876586]][[_Toc491876753]][[_Toc491876585]][[_Toc491876752]][[_Toc491876584]][[_Toc491876751]][[_Toc491876583]][[_Toc491876750]][[_Toc491876582]][[_Toc491876749]][[_Toc491876581]][[_Toc491876748]]8 Play log
+
+Digital signage server has log management functions to aggregate logs from DS terminal devices. The DS terminal device creates records for content played in the DS terminal device and sends the play log to the server. The details functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
+
+NOTE 1 – The digital signage server controlling and managing multiple clients can be overwhelmed with play log reports from a large number of clients. It is convenient to specify the timing of sending the report to avoid high server load intensity or network congestion [ITU-T H.781].
+
+The digital signage client reports to the digital signage server of its play log with the set of metadata defined in Table 10, which describes a set of elements/attributes for "play log" metadata.
+
+image::T-REC-H.782_images/image007.png[]
+
+
+
+[[_Toc503891531]][[_Toc532563390]]Figure 5 – Flows for reporting play log
+
+|===
+5+<.^h| [[_Toc482154563]][[_Toc532563378]][[_Toc503891519]][[_Toc324359011]][[_Toc355364195]][[_Ref355356154]][[_Toc482154617]][[_Toc482154615]][[_Toc482154614]][[_Toc482154613]][[_Toc482154612]][[_Toc482154611]][[_Toc482154610]][[_Toc482154608]][[_Toc482154607]][[_Toc482154606]][[_Toc482154605]][[_Toc482154604]][[_Toc482154602]][[_Toc482154601]][[_Toc482154600]][[_Toc482154599]][[_Toc482154598]][[_Toc482154596]][[_Toc482154595]][[_Toc482154594]][[_Toc482154593]][[_Toc482154592]][[_Toc482154590]][[_Toc482154589]][[_Toc482154588]][[_Toc482154587]][[_Toc482154585]][[_Toc482154584]][[_Toc482154583]][[_Toc482154582]][[_Toc482154581]][[_Toc482154579]][[_Toc482154578]][[_Toc482154577]][[_Toc482154576]][[_Toc482154574]][[_Toc482154573]][[_Toc482154572]][[_Toc482154571]][[_Toc482154569]][[_Toc482154568]][[_Toc482154567]][[_Toc482154566]][[_Toc482154565]][[_Toc482154564]]Table 10 – Metadata for "play log"
+<.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| PlayLog <.<| Container to include information of play log reported by the client. <.<| <.<|
+<.<| <.<| TerminalIdRef <.<| Element of Playlog.A reference identifier of the terminal device (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| LogItem <.<| Element of Playlog.Container to include information of list of log items. <.<| O(0-\*) <.<|
+<.<| <.<| StartDateTime <.<| Element of LogItem.Describes the start date and time of showing the content. <.<| M(1) <.<| xs:dateTime
+<.<| <.<| EndDateTime <.<| Element of LogItem.Describes the end date and time of showing the content.Either EndDateTime or Duration may exist for a single log item. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| Duration <.<| Element of LogItem.Describes duration of showing the content.Either EndDateTime or Duration may exist for a single log item. <.<| O(0-1) <.<| xs:duration
+<.<| <.<| LogItemType <.<| Element of LogItem.Identifies the type of the single log.Various values are possible, suggested ones are ContentLog and PlayListLog. <.<| R(1) <.<| xs:‌NMTOKEN
+<.<| <.<| ContentIdRef <.<| Element of LogItem.A reference identifier of the content which is presented in the terminal device (see Table 14).Either ContentIdRef or PlayListIdRef exists for a single log. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| PlaylistIdRef <.<| Element of LogItem.A reference identifier of the playlist or playlist schedule which is presented in the terminal device (see Table 13).Either ContentIdRef or PlaylistIdRef exists for a single log. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| PlayedScreen‌Region <.<| Element of LogItem.A container to include reference identifier to screen layout and region in which the content/playlist has been played. <.<| O(0-1) <.<|
+<.<| <.<| ScreenLayout‌IdRef <.<| Element of PlayedScreenRegion.A reference identifier of the screen layout in which the content/playlist has been displayed (see Table 15). <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| RegionIdRef <.<| Element of PlayedScreenRegion.A reference identifier of the region in which the content/playlist has been displayed (see Table 16).For a single region in the terminal device, it shall be omitted. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| PlayStatus <.<| Element of LogItem.Indicates the display status of the content/playlist.The suggested values are success, hardware failure, content failure, content interruption, but not limited. <.<| R(1) <.<| xs:string
+<.<| <.<| ProofOfPlay <.<| Element of LogItem.Anything that can identify the proof of play. <.<| O(0-1) <.<| xs:string
+
+|===
+
+[[_Toc355878038]]Supplemental explanations of elements are as follows:
+
+– _TerminalIdRef_: denotes the reference identifier to the digital signage client terminal device that is reporting the play log;
+
+– _StartDateTime_, _EndDateTime_, and _Duration_: describes the start time and date and end time and date that the terminal device has displayed the content, playlist, or playlist schedule;
+
+NOTE 2 – If the content is interrupted in the middle of a replay, the duration will be shorter than the duration specified in Table 13 or Table 14;
+
+– _LogType_: describes the type of play log;
+
+– _ContentIdRef_ and _PlayListIdRef_: denotes the reference identifier to the content, playlist, or playlist schedule that has been displayed in the terminal device;
+
+– _PlayedScreenRegion_: denotes the reference identifier to the screen layout and region in which the content, playlist, or playlist schedule has been displayed;
+
+NOTE 3 – If there are multiple regions, multiple play logs are generated for a certain time.
+
+– _PlayStatus_: describes the status of displaying the content/playlist;
+
+– _ProofOfPlay_: describes proof that the content/playlist has been displayed. This element is implementation-dependent.
+
+== [[a__9Content_delivery_scheduling]][[_Toc503891499]][[_Toc449376]][[_Toc535833720]][[_Toc532563358]][[_Toc509401026]][[_Toc505694953]]9 Content delivery scheduling
+
+The digital signage server manages schedules for content delivery and requests the content delivery server to distribute content to multiple DS terminal devices. The delivery of content is performed between the content delivery server and the content delivery client. The detailed functionalities of digital signage server, content delivery server, and content delivery client are defined in [ITU‑TH.781].
+
+There are three types of content delivery: push-mode, pull-mode and P2P-mode. Figure 6 consolidates operational flows of the three modes into one flow diagram.
+
+A set of elements/attributes for "content delivery schedule" metadata is shown in Table 11.
+
+image::T-REC-H.782_images/image008.png[]
+
+
+
+[[_Toc445291091]][[_Toc532563391]][[_Toc503891532]]Figure 6 – Flows for content delivery scheduling
+
+|===
+5+<.^h| [[_Ref451530481]][[_Toc532563379]][[_Toc503891520]]Table 11 – Metadata for "content delivery schedule"
+<.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Content‌Delivery‌Schedule <.<| Container to include information of the content delivery schedule. <.<| <.<|
+<.<| <.<| Content‌Delivery‌ScheduleId <.<| Element of ContentDeliverySchedule.An identifier of the content delivery schedule. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| ContentId‌Ref‌List <.<| Element of ContentDeliverySchedule.A list of reference identifiers of content (see Table 14).Content to be delivered from the content delivery server to the content delivery client. <.<| M(1) <.<| xs:NMTOKENS
+<.<| <.<| Terminal‌Group‌Id‌Ref‌List <.<| Element of ContentDeliverySchedule.A list of reference identifiers of terminal group (see Table9).Terminal group ID of the terminal devices in which this metadata applies.If omitted, applies to the terminal device that received this metadata. <.<| O(0-1) <.<| xs:NMTOKENS
+<.<| <.<| Publication‌DateTime <.<| Element of ContentDeliverySchedule.Time/date of the content delivery schedule issued by the server. <.<| R(1) <.<| xs:dateTime
+<.<| <.<| Delivery‌Deadline <.<| Element of ContentDeliverySchedule.Deadline time/date in which specified content must be received by the client. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| SendDate‌Time <.<| Element of ContentDeliverySchedule.Time/date when the delivery of specified content starts.If neither Deadline nor SendDateTime are assigned, content may be sent immediately when the delivery server receives a sending request. <.<| O(0-1) <.<| xs:dateTime
+<.<| <.<| Delivery‌Method <.<| Element of ContentDeliverySchedule.Delivery method used between content the delivery server and the content delivery client.The suggested values are PushMode, PullMode, P2PMode, but not limited. <.<| R(1) <.<| xs:‌NMTOKENS
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _ContentDeliveryScheduleId_: denotes the identifier of the content delivery schedule. It is used to differentiate multiple schedules that are issued by the server that provides information on the content delivery schedule;
+
+– _ContentIdRefList_: denotes the list of references to the content that are delivered from the content server;
+
+– _TerminalGroupIdRefList_: describes the list of references to the terminal group that this metadata applies;
+
+– _DeliveryMethod_: describes the delivery method used between the content delivery server and the content delivery client. The PushMode is described in clause 8.5.1 in [ITU-T H.781], PullMode is described in clause 8.5.2 in [ITU-T H.781], and P2PMode is described in clause8.5.3 of [ITU-T H.781];
+
+– _PublicationDateTime_: describes the time and date that the server has issued the content delivery schedule;
+
+NOTE 1 – If multiple schedules are received with the same _ContentDeliveryScheduleId_, the metadata with the latest publication time will be effective. The outdated schedule is ignored.
+
+– _DeliveryDeadline_: describes the deadline time/date in which the content must be delivered. After the deadline, the content is assumed to be outdated and is not needed by the client;
+
+NOTE 2 – Content such as current weather conditions, is an example of outdated information for the following day.
+
+– _SendDateTime_: describes the content delivery date/time, which indicates the time to start content delivery and is assigned in advance.
+
+== [[a__10Playlist_schedule]][[_Toc445291063]][[_Toc449377]][[_Toc535833721]][[_Toc532563359]][[_Toc509401027]][[_Toc505694954]][[_Toc503891500]]10 Playlist schedule
+
+Digital signage server creates and manages a schedule of playlists. The digital signage client plays playlists according to the playlist schedule. Detail functionalities of digital signage server and digital signage client are defined in [ITU-T H.781].
+
+=== [[a__10_1Playlist_schedule]][[_Toc496533342]][[_Toc449378]][[_Toc535833722]][[_Toc532563360]][[_Toc509401028]][[_Toc505694955]][[_Toc503891501]][[_Toc491876862]][[_Toc482154629]][[_Toc482154628]][[_Toc496624687]]10.1 Playlist schedule
+
+A set of elements/attributes for "playlist schedule" are shown in Table 12.
+
+[[_Ref451530219]][[_Toc532563380]][[_Toc503891521]][[_Toc445291083]]Table 12– Metadata for "playlist schedule"
+
+|===
+<.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+<.<| Playlist‌Schedule <.<| Container to include information of playlist schedule. <.<| <.<|
+<.<| Playlist‌ScheduleId <.<| Element of PlaylistSchedule.Identifier of the PlaylistSchedule. <.<| M(1) <.<| xs:NMTOKEN
+<.<| Name <.<| Element of PlaylistSchedule.Name of the playlist schedule, which can be in different languages <.<| O(0-\*) <.<| xs:string
+<.<| Terminal‌GroupIdRefList <.<| Element of PlaylistSchedule.A list of reference identifiers of the terminal group (see Table9). Terminal group ID of the terminals in which this playlist schedule applies. <.<| O(0-1) <.<| xs:NMTOKENS
+<.<| Publication‌DateTime <.<| Element of PlaylistSchedule.Time/date of the playlist schedule issued by the server. <.<| R(1) <.<| xs:dateTime
+<.<| ValidDate‌Time <.<| Element of PlaylistSchedule.Time/date in which this playlist schedule becomes valid. <.<| O(0-1) <.<| xs:dateTime
+<.<| Expiration <.<| Element of PlaylistSchedule.Expiration time/date of the playlist schedule.If omitted, handling of this element is implementation-dependent (e.g., expiration time is infinite until new PlaylistScheduleInformation with same identifier is received). <.<| O(0-1) <.<| xs:dateTime
+<.<| Priority <.<| Element of PlaylistSchedule.Priority of the playlist schedule. Pertaining playlist schedule is displayed when no playlist schedule with higher priority exists. <.<| O(0-1) <.<| xs:non‌Negative‌Integer
+<.<| ApplyDate‌List <.<| Element of PlaylistSchedule.List of specific single date in which the content should be played. <.<| O(0-1) <.<| xs:date
+<.<| ApplyDay‌OfWeekList <.<| Element of PlaylistSchedule.List of day of the week in which the playlist should be played.Among other possible values, the suggested values are Everyday,Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and PublicHolidays. <.<| O(0-1) <.<| xs:‌NMTOKEN
+<.<| StartTime <.<| Element of PlaylistSchedule.Time/date in which the content should start playing. <.<| R(1) <.<| xs:dateTime or xs:time
+<.<| EndTime <.<| Element of PlaylistSchedule.Time/date in which the content should stop playing. <.<| O(0-1) <.<| xs:dateTime or xs:time
+<.<| PlaylistId‌Ref <.<| Element of PlaylistSchedule.A reference identifier of the Playlist(see Table 13) which contains a list of contents to be played by the client. <.<| M(1-\*) <.<| xs:NMTOKEN
+<.<| Repeat‌Number <.<| Element of PlaylistIdRef.Number of times the playlist should be repeated. <.<| O(0-1) <.<| xs:‌positiveInteger
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _PlaylistScheduleId_: denotes the identifier of the playlist schedule. It is used to differentiate multiple schedules that are issued by the server that provides playlist schedule;
+
+– _Name_: denotes the name of the playlist schedule. Normally, it is in user-readable format for the user to differentiate or to understand the purpose of the playlist schedule. It can be in different languages;
+
+– _TerminalGroupIdRefList_: denotes the list of _TerminalGroupId_ in which the pertaining playlist schedule applies. The terminal device can ignore playlist schedules that do not have the _TerminalGroupId_ to which the terminal device belongs;
+
+NOTE 1 – This information is omitted, the playlist schedule applies to every terminal device that receives this playlist schedule;
+
+– _PublicationDateTime_: describes time and date that the server has issued the playlist schedule. If multiple schedules are received with the same _PublicationDateTime_, the metadata with the latest publication time will be in effect. Outdated publication times are ignored;
+
+– _ValidDateTime_: describes time and date in which the playlist schedule becomes effective. The playlist schedule can be distributed before the actual play time. The operator needs to consider when the terminal device can download all content in the playlist schedule when setting the valid time;
+
+NOTE 2 – If this element is omitted, handling of this element is implementation-dependent (e.g., start display whenever possible).
+
+– _Expiration_: describes time and date in which the playlist schedule expires;
+
+NOTE 3 – If this element is omitted, handling of this element is implementation-dependent (e.g., expiration time is infinite until new _PlaylistSchedule_ with same identifier is received).
+
+– _Priority_: describes the priority of the playlist schedule. It is possible to have more than one playlist schedule for single moment. The playlist schedule with higher priority is displayed. The playlist schedule with lower priority can be played is implementation-dependent (e.g., high priority playlist are player often than low priority playlist);
+
+NOTE 4 – If omitted, handling of this element is implementation-dependent (e.g., assign lowest priority).
+
+– _ApplyDateList_: describes the specific date in which the playlist should be played. It is possible to set schedule for certain date (e.g., Independence Day). It should set to the same or later time/date than the ValidTime;
+
+– _ApplyDayOfWeekList_: describes the day of the week in which the playlist are displayed. The suggested values are Everyday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and PublicHolidays;
+
+– _StartTime_: describes the time/date in which the content should start playing. It is possible to set different schedule for morning, evening, night, etc.;
+
+NOTE 5 – If _StartTime_ is not assigned, the content may be played immediately based on when the terminal device receives a playlist.
+
+– _EndTime_: describes the time/date in which the content should start playing;
+
+– _PlaylistIdRef_: denotes the reference identifier to the playlist. It consists of multiple _PlaylistIdRef_ that can represent the play order of the multiple playlist. The playlist contains a list of contents to be played by the digital signage terminal device;
+
+– _RepeatNumber_: describes the number of time the playlist should be repeated.
+
+NOTE 6 – If omitted, handling of this element is implementation-dependent (e.g., repetition time is infinite when an exact value is not specified).
+
+=== [[a__10_2Playlist]][[_Toc503891502]][[_Toc449379]][[_Toc535833723]][[_Toc532563361]][[_Toc509401029]][[_Toc505694956]]10.2 Playlist
+
+A set of elements/attributes for "playlist" are shown in Table 13.
+
+[[_Ref451530087]][[_Toc532563381]][[_Toc503891522]][[_Toc445291085]]Table 13 – Metadata for "playlist"
+
+|===
+<.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+<.<| Playlist <.<| Container to include information of playlist. <.<| <.<|
+<.<| PlaylistId <.<| Element of Playlist.Identifier of the playlist. <.<| M(1) <.<| xs:NMTOKEN
+<.<| Name <.<| Element of Playlist.Name of the playlist, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| Priority <.<| Element of Playlist.Priority of the playlist. Pertaining playlist is displayed when no playlist with higher priority exists. <.<| O(0-1) <.<| xs:positiveInteger
+<.<| PlayOrder <.<| Element of Playlist.Order of the list of contents to be played in the playlist.Suggested values are sequential, random, but not limited. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| ContentIdRef <.<| Element of Playlist.A reference identifier of the content (see Table 14).Content to be played by the terminal device. <.<| M(1-\*) <.<| xs:NMTOKEN
+<.<| TargetRegion <.<| Element of Playlist.A container to include a reference identifier to screen layout and region in which the content is displayed. <.<| O(0-1) <.<|
+<.<| ScreenLayout‌IdRef <.<| Element of TargetRegion.A reference identifier to screen information (see Table 15) in which the content is displayed. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| Region‌IdRef <.<| Element of TargetRegion.A reference identifier to region information (see Table 16) in which the content is displayed. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| Duration <.<| Element of Playlist.Indicates the duration of the content played in the playlist. <.<| O(0-1) <.<| xs:duration
+<.<| Transition‌Effect <.<| Element of Playlist.Description of effects used between content displayed to allow smooth transition. <.<| O(0-1) <.<| xs:string
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _PlaylistId_: denotes the identifier of the playlist. It is possible to define multiple playlists for various purposes;
+
+– _Name_: denotes the name of the playlist. Normally, it is in user-readable format for the user to differentiate and to understand the purpose of the playlist. It can be in different languages;
+
+– _Priority_: describes the priority of the playlist. The playlist is displayed when no playlist with higher priority exists;
+
+NOTE 1 – If omitted, handling of this element is implementation-dependent (e.g., assign lowest priority).
+
+– _PlayOrder_: describes the order of the list of contents to be played in the playlist. Suggested values that can be used are sequential, random, but not limited;
+
+NOTE 2 – If omitted, handling of this element is implementation-dependent (e.g., play order is sequential).
+
+– _ContentIdRef_: denotes the reference identifier of the content to be played by the terminal device. It consists of multiple _ContentIdRef_ which can represent the play order of multiple contents;
+
+NOTE 3 –The client can use this information to recognise the list of contents that it needs to retrieve from the content delivery server.
+
+– _TargetRegion_: denotes the reference identifier to the screen layout and region of screen in which the playlist is displayed;
+
+NOTE 4 – For a single screen layout and region in the terminal device, it shall be omitted.
+
+– _Duration_: describes the duration of time expected for playing the list of contents in the playlist;
+
+– _TransitionEffect_: describes the effects used between content displayed to allow a smooth transition.
+
+NOTE 5 – [b-W3C CSS Transitions] and [b-W3C CSS Transforms] have defined methods of expressing HTML5 transition effects that can be used as a reference for this element.
+
+=== [[a__10_3Contents]][[_Toc503891503]][[_Toc449380]][[_Toc535833724]][[_Toc532563362]][[_Toc509401030]][[_Toc505694957]]10.3 Contents
+
+A set of elements/for "contents" are shown in Table 14.
+
+|===
+5+<.^h| [[_Ref451529899]][[_Toc532563382]][[_Toc503891523]]Table 14– Metadata for "contents"
+<.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Contents <.<| Container to include information of content. <.<| <.<|
+<.<| <.<| ContentId <.<| Element of Contents.An identifier of content. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Title <.<| Element of Contents.Titles, which can be in different languages. <.<| R(0-\*) <.<| xs:string
+<.<| <.<| Synopsis <.<| Element of Contents.A simple textual description of the content, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Explanation <.<| Element of Contents.A detailed textual description of the content, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| KeywordList <.<| Element of Contents.Container to include a list of keywords. <.<| O(0-1) <.<|
+<.<| <.<| Keyword <.<| Element of KeywordList.A keyword for contents. A keyword can be a single word or an entire phrase made up of multiple words, which can be in different languages. <.<| O(1-\*) <.<| xs:string
+<.<| <.<| Genre <.<| Element of Contents.A genre for the content. <.<| O(0-\*) <.<| tva:‌GenreType
+<.<| <.<| Preference‌Condition <.<| Element of Contents.A combination of time, place and/or specific parts of content that can be associated with a particular set for usage restriction, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Language <.<| Element of Contents.Container to include languages used in the content. <.<| O(0-1) <.<|
+<.<| <.<| Audio‌Language‌List <.<| Element of Language.Describes spoken language for the content.The suggested value for language codes are three-letter codes such as ENG, KOR, JPN [b-ISO 639-2]. <.<| O(0-1) <.<| xs:language
+<.<| <.<| Caption‌LanguageList <.<| Element of Language.Describes spoken languages for the content.The suggested value for language codes are three-letter codes such as ENG, KOR, JPN [b-ISO 639-2]. <.<| O(0-1) <.<| xs:language
+<.<| <.<| MimeType <.<| Element of Contents.Describes encoding used for the content. <.<| R(0-\*) <.<| xs:string
+<.<| <.<| Related‌Material <.<| Element of Contents.A reference to any other material related to the content. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Production‌Date <.<| Element of Contents.The date or time period when the content was produced. <.<| O(0-1) <.<| xs:dateTime orxs:date
+<.<| <.<| Release <.<| Element of Contents.Information about the region and date of release of the content. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Duration <.<| Element of Contents.Indicates the approximate duration of the content. <.<| O(0-1) <.<| xs:duration
+<.<| <.<| Availability <.<| Element of Contents.Information about when the content is available for display. <.<| O(0-\*) <.<| xs:dateTime
+<.<| <.<| ContentType <.<| Element of Contents.Type of media of the content (e.g., video, still image). <.<| R(0-1) <.<| xs:‌NMTOKEN
+<.<| <.<| FileSize <.<| Element of Contents.Indicates the size, in bytes, of the file where the content is stored. Suggested units are B, KB, MB, GB, and TB. <.<| R(0-1) <.<| xs:non‌Negative‌Integer
+<.<| <.<| Promotional‌Information <.<| Element of Contents.Information on the products/service in the content when the content is presented as a promotion or advertisement, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Creation‌Information <.<| Element of Contents.Information concerning the content creation (e.g., title, creator, classification), which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| FileName <.<| Element of Contents.Indicates the file name of the content in the local memory that is downloaded from the server. <.<| R(0-1) <.<| xs:anyURI
+<.<| <.<| Content‌Delivery‌Server‌Id‌Ref‌List <.<| Element of Contents.A list of reference identifiers of the content delivery servers (see Table 5). <.<| O(0-1) <.<| xs:NMTOKENS
+
+|===
+
+NOTE 1 – Elements derived from [ITU-T H.780]: ContentId, Title, Synopsis, Explanation, Keyword, Genre, PreferenceCondition, Language, RelatedMaterial, ProductionDate, Release, Duration, Availability, ContentType, FileSize, PromotionalInformation, and CreationInformation.
+
+Supplemental explanations of elements are as follows:
+
+– _ContentId_: denotes the identifier of the content;
+
+– _Title_: describes the title of the content, which can be in different languages;
+
+– _Synopsis_: describes a simple summary of the content, which can be in different languages;
+
+– _Explanation_: describes a detailed description of the content, which can be in different languages;
+
+– _KeywordList_: describes a list of keywords for the content. A keyword can be a single word or an entire phrase made up of multiple words, which can be in different languages;
+
+– _Genre_: describes genre for the contents. TV-Anytime Forum has defined Genre Dictionary in the Appendix B of Metadata Specification, [ETSI TS 102 822-3-1], which can be used as a reference. Some of the categories include information, drama, entertainment, music, enrichment, movies, animations/special effects, hobby, sport events, pure information, information/tabloid, documentary, education, and children;
+
+– _PreferenceCondition_: describes time, place and/or specific parts of content that can be associated with a particular set for usage restriction. This information can be in different languages;
+
+– _Language_: describes type of languages used in audio and caption;
+
+NOTE 2 – [b-ISO 639-2] defines three-letter codes for various languages. [b-RFC 5646] defines semantics of language tags for indicating the language often used in an information object in Web services.
+
+– _MimeType_: describes the coding method used in the content;
+
+NOTE 3 – [b-RFC 2046] defines method of expressing the coding method by combining category with the coding type. Some examples include text/plain, image/jpeg, audio/mpeg, video/mp4, etc.
+
+– _RelatedMaterial_: describes references to any other material related to the content;
+
+– _vProductionDate_: describes the date or date/time when the content was produced;
+
+– _Release_: describes the region and date of release of the content;
+
+– _Duration_: describes an approximate duration of the content;
+
+– _Availability_: describes when the content is scheduled to start or when it should end;
+
+– _ContentType_: describes the medium of content (e.g., video and audio, multimedia application, audio only, still image);
+
+– _FileSize_: describes the size, in bytes, of the file where the content is stored. Suggested units are B, KB, MB, GB, and TB;
+
+– _PromotionalInformation_: describes the information on the products or the services in the content when the content is presented for the purpose of promotion or advertisement. It can be in different languages;
+
+– _CreationInformation_: describes the information concerning the content creation (e.g., title, creator, classification). It can be in different languages;
+
+– _FileName_: describes the file name of the content in the local memory that is downloaded from the server;
+
+– _ContentDeliveryServerIdRefList_: denotes a list of reference identifier of the content delivery servers. Digital signage client can use this information to find the server to retrieve content.
+
+== [[a__11Screen]][[_Toc503891504]][[_Toc355359962]][[_Toc449381]][[_Toc535833725]][[_Toc532563363]][[_Toc509401031]][[_Toc505694958]]11 Screen
+
+=== [[a__11_1Screen_layout]][[_Toc503891505]][[_Toc449382]][[_Toc535833726]][[_Toc532563364]][[_Toc509401032]][[_Toc505694959]]11.1 Screen layout
+
+This clause gives the definition of metadata for screen layout. Screen layout may be delivered to terminal devices to configure and/or reconfigure the layout of content to be displayed. Screen layout can be delivered separately from content or delivered with content.
+
+A set of elements/attributes for "screen layout" are shown in Table 15.
+
+[[_Ref371021270]][[_Toc361297230]][[_Toc532563383]][[_Toc503891524]]Table 15 – Metadata for "screen layout"
+
+|===
+<.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+<.^| ScreenLayout <.<| Container to include information of screen layout. <.<| <.<|
+<.<| ScreenLayoutId <.<| Element of ScreenLayout.Identifier of the screen layout. <.<| M(1) <.<| xs:NMTOKEN
+<.<| Name <.<| Element of ScreenLayout.Name of the screen, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| Region <.<| Element of ScreenLayout.A list of containers to include regions (see Table 16). <.<| O(0-\*) <.<|
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _ScreenLayoutId_: denotes the identifier of the screen layout. It is possible to have different types of configurations of screen layout;
+
+– _Name_: denotes the name of the screen layout. Normally, it is in user-readable format for the user to differentiate or to understand the purpose of the screen layout. It can be in different languages;
+
+– _Region_: denotes the list of containers to include regions that constitutes the screen layout.
+
+=== [[a__11_2Region]][[_Toc491876866]][[_Toc449383]][[_Toc535833727]][[_Toc532563365]][[_Toc509401033]][[_Toc505694960]][[_Toc503891506]]11.2 Region
+
+This clause gives the definition of the elements/attributes for region. Region information is a part of screen layout information to configure an area on the screen where content is to be displayed. When the content is delivered to terminal devices, the identifier of region of screen layout is delivered to identify the area on the screen where content is to be displayed.
+
+NOTE 1 – Screen layout of digital signage service can be dynamically changed by updating values in Table16. For example, in the case of emergencies including disasters, alert messages are shown in the blank space after the current content presented on the screen is squeezed and/or moved.
+
+A set of elements/attributes for region information are shown in Table 16.
+
+|===
+5+<.^h| [[_Ref369553286]][[_Toc532563384]][[_Ref487468477]][[_Toc503891525]]Table 16 – Metadata for "region"
+<.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+<.<| <.<| Region <.<| Container to include information of region of screen. <.<| <.<|
+<.<| <.<| RegionId <.<| Element of Region.Identifier of the region.Region is a portion of screen. <.<| M(1) <.<| xs:NMTOKEN
+<.<| <.<| Name <.<| Element of Region.Name of the region, which can be in different languages. <.<| O(0-\*) <.<| xs:string
+<.<| <.<| Referencing‌Position <.<| Element of Region.A referencing point of the region, and (x,y) coordinate of the referencing point. Available values are (x, y), upper-left, upper-right, lower-left, lower-right and centre. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Pixel‌Resolution <.<| Element of Region.Horizontal and vertical size of the region along with aspect ratio. <.<| O(0-1) <.<| xs:string
+<.<| <.<| Z-depth <.<| Element of Region.Indicates the number of hierarchy of the region. <.<| O(0-1) <.<| xs:integer
+<.<| <.<| Background colour <.<| Element of Region.Indicates the suggested background colour of the region. The suggested format is RGB, YCbCr, and HSV. <.<| O(0-1) <.<| xs:string
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _RegionId_: denotes the identifier of the region in the screen layout. It is a unique value within the screen layout. Region is a portion of a screen layout;
+
+– _Name_: denotes the name of the region. Normally, it is in user-readable format for the user to differentiate or to understand the purpose of the region. It can be in different languages;
+
+– _ReferencingPosition_: describes the referencing point of the region, and (x,y) coordinate of the referencing point. Available values are (x, y), upper-left, upper-right, lower-left, lower-right and centre;
+
+– _PixelResolution_: describes the horizontal and vertical size of the region along with aspect ratio of the region. Thus, it consists of three information: width, height and aspectRatio;
+
+NOTE 2 – If the pixel resolution is not provided, the width and height of a region is the same as those of a display in a terminal device.
+
+– _Z-__depth_: describes the number of hierarchy of the region.
+
+– _BackgroundColour_: describes the suggested background colour used in the region. The suggested format is RGB, YCbCr, and HSV.
+
+== [[a__12Interactive_service]][[_Toc503891507]][[_Toc449384]][[_Toc535833728]][[_Toc532563366]][[_Toc509401034]][[_Toc505694961]]12 Interactive service
+
+This clause gives the definition of metadata for interactive service. Figure 7 shows the basic flow for the interactive service.
+
+Any function (such as digital signage server, audience measurement client and different functions within the digital signage client) may need to be informed of a particular event received from the interactive device. Upon occurrence of events from the interactive device, the digital signage client informs the event requester with a set of metadata in the event as defined in Table 17.
+
+image::T-REC-H.782_images/image009.png[]
+
+
+
+[[_Toc503891533]][[_Toc532563392]]Figure 7 – Flow for interactive service
+
+An example interactive service is as follows. The digital signage client has a touch screen that shows the map of a supermarket. The user touches the milk section to see the details of milk that are sold in the supermarket. The content displayed on the screen can be changed to display the details of milk products. For this use case, the function for scheduling a playlist will need to register an event to be notified from the touch screen.
+
+[[_Toc491768013]][[_Toc491876875]][[_Toc491876707]][[_Toc491768019]][[_Toc491876874]][[_Toc491876706]][[_Toc491768018]][[_Toc491876873]][[_Toc491876705]][[_Toc491768017]][[_Toc491876872]][[_Toc491876704]][[_Toc491768016]][[_Toc491876871]][[_Toc491876703]][[_Toc491768015]][[_Toc491876870]][[_Toc491876702]][[_Toc491768014]][[_Toc491876869]][[_Toc491876701]]A set of elements/attributes for "event" metadata is shown in Table 17.
+
+[[_Ref482153761]][[_Toc532563385]][[_Toc503891526]]Table 17 – Metadata elements in "event"
+
+|===
+<.^h| Element/ Attribute <.^h| Definition/Semantics <.^h| Support <.^h| Type
+<.<| Event <.<| Container to include information of the event to be notified to the requester. <.<| <.<|
+<.<| TerminalId‌Ref <.<| Element of Event.A reference identifier to the terminal device (see Table 2). <.<| M(1) <.<| xs:NMTOKEN
+<.<| Interactive‌DeviceIdRef <.<| Element of Event.A reference identifier to the interactive device (see Table4). <.<| M(1) <.<| xs:NMTOKEN
+<.<| Event‌Data‌Type <.<| Element of Event.Type of event data received from the interactive device.The suggested values are text, audio, video, position, but not limited. <.<| O(0-1) <.<| xs:‌NMTOKEN
+<.<| EventData <.<| Element of Event.Event input data value from the interactive device. <.<| O(0-\*) <.<| xs:string
+<.<| EventAction <.<| Element of Event.Indicates the action made by the digital signage client.The suggested values are start notification, stop notification, but not limited. <.<| M(1) <.<| xs:‌NMTOKEN
+<.<| EventDateTime <.<| Element of Event.Time/date of the event occurred. <.<| R(1) <.<| xs:dateTime
+
+|===
+
+Supplemental explanations of elements are as follows:
+
+– _TerminalIdRef_: denotes the reference to the digital signage terminal device that has the interactive device attached;
+
+– _InteractiveDeviceIdRef:_ denotes the reference to the interactive device that is attached to the _TerminalIdRef_ in which an event has occurred;
+
+– _EventDataType:_ denotes the data type of event that has occurred in the interactive device;
+
+– _EventData:_ denotes the input data received from the interactive device. This metadata has used xs:string for the type of _EventData_, however, it can be in any format (such as text, coordinate position of the screen, audio stream, video stream, etc.) in accordance with the _EventDataType_;
+
+– _EventAction:_ denotes the action performed by the digital signage client;
+
+NOTE – For example, on failure to the interactive device, the event action is set to stop notification, since it is not possible to make correct notifications for such circumstances.
+
+== [[a__Annex_ARelation_among_metadata_tables]][[_Toc355359965]][[_Toc449385]][[_Toc535833729]][[_Toc532563367]][[_Toc509401035]][[_Toc505694962]][[_Toc503891508]]Annex A +
+ +
+Relation among metadata tables
+
+(This annex forms an integral part of this Recommendation.)
+
+This annex describes the relations among metadata entities that are used in this Recommendation. These entities are 'client configuration', 'terminal device', 'terminal device status', 'terminal group', 'interactive device', 'content delivery server', 'log server', 'playlist schedule server', 'content delivery schedule', 'play log', 'playlist schedule', 'contents', 'playlist', 'screen layout', 'region' and 'event'.
+
+In Figure A.1, metadata entities including reference elements and the relations are described. The relations between two entities are derived from the "Support" attribute of reference elements in the metadata table, and the notation is as follows:
+
+– M(1) is relation 1 to 1;
+
+– M(1-\*) is relation 1 to 1..n;
+
+– R(0-1) is relation 1 to 0..1;
+
+– R(0-\*) is relation 1 to 0..n.;
+
+– O(0-1) is relation 1 to 0..1;
+
+– O(0-\*) is relation 1 to 0..n.
+
+If "type" attribute represents a list of references, the notation is as follows:
+
+– M(1) is relation 1 to 1..n;
+
+– O(0-1) is relation 1 to 0..n.
+
+Arrow (AB) shows a relation "A refers to B".
+
+image::T-REC-H.782_images/image010.png[]
+
+
+
+[[_Toc492971169]][[_Toc532563393]][[_Toc503891534]]Figure A.1 – Relations amo[[_GoBack]]ng metadata entities
+
+== [[a__Bibliography]][[_Toc355359967]][[_Toc449386]][[_Toc535833730]][[_Toc532563368]][[_Toc509401036]][[_Toc505694963]][[_Toc503891509]]Bibliography
+
+[b-ITU-T H.760] Recommendation ITU-T H.760 (2009_),__Overview of multimedia application frameworks for IPTV services_.
+
+[b-ITU-T X.1255]Recommendation ITU-T X.1255 (2013), _Framework for discovery of identity management information_.
+
+[b-ISO 639-2] ISO 639-2:1998, _Codes for the representation of names of languages– Part 2: Alpha-3 code_.
+
+[b-POPAI playlog] _Digital Signage Network Playlog Standards_, Version 1.1, 23August2006.
+
+https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai[https://www.pdffiller.com/51014346-Standards-Digital-Signage-Playlog-V1o1-2006pdf-Digital-Signage-Network-Playlog-Standards-Popai]
+
+[b-RFC 2046]IETF RFC 2046 (1996), _Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types_.
+
+[b-RFC 5646] IETF RFC 5646 (2009), _Tags for Identifying Languages_.
+
+[b-W3C CSS Transitions]W3C, _CSS_ _Transitions_.
+
+https://www.w3.org/TR/css3-transitions[https://www.w3.org/TR/css3-transitions] – [Last accessed 02 Oct. 2018].
+
+[b-W3C CSS Transforms]W3C, _CSS_ _Transforms Module Level 1_.
+
+https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/] – [Last accessed 02 Oct. 2018].
+
+[[c3tope]]
+
+[[cov4top]]
+
+|===
+2+<.<h| *SERIES OF ITU-T RECOMMENDATIONS*
+<.<| [[c4seriee]]Series A <.<| Organization of the work of ITU-T
+<.<| Series D <.<| Tariff and accounting principles and international telecommunication/ICT economic and policy issues
+<.<| Series E <.<| Overall network operation, telephone service, service operation and human factors
+<.<| Series F <.<| Non-telephone telecommunication services
+<.<| Series G <.<| Transmission systems and media, digital systems and networks
+<.<| *Series H* <.<| *Audiovisual and multimedia systems*
+<.<| Series I <.<| Integrated services digital network
+<.<| Series J <.<| Cable networks and transmission of television, sound programme and other multimedia signals
+<.<| Series K <.<| Protection against interference
+<.<| Series L <.<| Environment and ICTs, climate change, e-waste, energy efficiency; construction, installation and protection of cables and other elements of outside plant
+<.<| Series M <.<| Telecommunication management, including TMN and network maintenance
+<.<| Series N <.<| Maintenance: international sound programme and television transmission circuits
+<.<| Series O <.<| Specifications of measuring equipment
+<.<| Series P <.<| Telephone transmission quality, telephone installations, local line networks
+<.<| Series Q <.<| Switching and signalling, and associated measurements and tests
+<.<| Series R <.<| Telegraph transmission
+<.<| Series S <.<| Telegraph services terminal equipment
+<.<| Series T <.<| Terminals for telematic services
+<.<| Series U <.<| Telegraph switching
+<.<| Series V <.<| Data communication over the telephone network
+<.<| Series X <.<| Data networks, open system communications and security
+<.<| Series Y <.<| Global information infrastructure, Internet protocol aspects, next-generation networks, Internet of Things and smart cities
+<.<| Series Z <.<| Languages and general software aspects for telecommunication systems
+<.<| <.<|
+
+|===
+
+[[ftn1]]\*To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser,followedbytheRecommendation'suniqueID.Forexample, http://handle.itu.int/11.1002/1000/11830-en[http://handle.itu.int/11.1002/1000/11830-en].
+
