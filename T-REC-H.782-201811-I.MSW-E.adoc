@@ -72,7 +72,7 @@ This revision updates the data types of elements/attributes of identifiers. The 
 
 A combination of audio, still image, graphic, video, or data.
 
-NOTE: A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by [b-ITU-T H.760]).
+NOTE: A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by <<h760>>).
 
 
 ==== metadata
@@ -159,8 +159,8 @@ This Recommendation follows the notation described in clause 6 of [ITU-T H.741.2
 |===
 <.<| <.<| Type <.<| Name <.<| Notes/Reference
 
-<.<| <.<| ca:civicAddress <.<| Civic address <.<| Used to specify civic location.Defined in [IETF RFC 5139].
-<.<| <.<| gml:Point <.<| GML point <.<| Used to specify simple point geometry in format of geography markup language (GML).A point consists of a \<Point\> element with a child \<coords\> element. Within \<coords\> the latitude and longitude values are separated by a space.Defined in [ISO 19136].
+<.<| <.<| ca:civicAddress <.<| Civic address <.<| Used to specify civic location. Defined in [IETF RFC 5139].
+<.<| <.<| gml:Point <.<| GML point <.<| Used to specify simple point geometry in format of geography markup language (GML). A point consists of a \<Point\> element with a child \<coords\> element. Within \<coords\> the latitude and longitude values are separated by a space. Defined in [ISO 19136].
 <.<| <.<| tva:GenreType <.<| Genre <.<| Used to specify genre of the content.Defined in [ETSI TS 102 822-3-1].
 <.<| <.<| xs:date <.<| Date <.<| Used to specify date. The lexical form is CCYY-MM-DD where "CC" represents the century, "YY" the year, "MM" the month and "DD" the day.Defined in [W3C XMLSchema].
 <.<| <.<| xs:duration <.<| Duration <.<| Used to specify duration of time. The lexical form is PnYnMnDTnHnMnS, where "P" represents the starts expression, "nY" represents number of years, "nM" represents number of months, "nD" represents number of days, "T" represents separation of date and time, "nH" represents number of hours, "nM" represents number of minutes, and "nS" represents number of seconds.Defined in [W3C XMLSchema].

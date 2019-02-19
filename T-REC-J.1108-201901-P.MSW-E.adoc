@@ -17,7 +17,7 @@ As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) archi
 [[a__1Scope]]
 == Scope
 
-Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. [[_Hlk530637669]]The architecture described in this Draft [New] Recommendation are defined according to [ITU-T J.1106]. The transmission specifications described in this Draft [New] Recommendation are defined as follows:
+Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. [[_Hlk530637669]]The architecture described in this Draft [New] Recommendation are defined according to <<j1106>>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:
 
 * Radio over IP terminal system
 * Radio over IP headend system
@@ -52,6 +52,8 @@ The collection of hardware and software that comprises a local source of time fo
 <<x743>>
 
 === Terms defined in this Recommendation
+
+None
 
 == Abbreviations and acronyms
 
@@ -103,11 +105,11 @@ In the body of this document and its annexes, the words _shall_, _shall not_, _s
 
 == Overview
 
-In this section, the overview is defined according to [ITU-T J.1106] section 6.
+In this section, the overview is defined according to <<j1106,section 6>>.
 
 == Functional Architecture
 
-In this section, the functional architectureis defined according to [ITU-T J.1107] section 7.
+In this section, the functional architectureis defined according to <<j1107,section 7>>.
 
 == Timing Processing Specification
 
