@@ -189,7 +189,7 @@ Digital signage server has capabilities for administration of digital signage sy
 
 This Recommendation selects basic elements/attributes from these specifications that are applicable to digital signage services. Names of elements/attributes are quoted as they are in the specifications, in order to keep the relationship between the standards clear.
 
-Figure 1 illustrates a reference functional model for DS services as per [ITU‑TH.781], and the scope of this Recommendation.
+<<figure1>> illustrates a reference functional model for DS services as per [ITU‑TH.781], and the scope of this Recommendation.
 
 [[figure1]]
 .Digital signage service reference architecture
@@ -223,13 +223,13 @@ This Recommendation describes metadata handled by these four functional groups.
 
 === Client configuration
 
-The digital signage server configures the digital signage client with a set of metadata in the "client configuration" which includes allocation of _TerminalId_; see Figure 2. The digital signage server can reconfigure the digital signage client with the configuration information needed.
+The digital signage server configures the digital signage client with a set of metadata in the "client configuration" which includes allocation of _TerminalId_; see <<figure2>>. The digital signage server can reconfigure the digital signage client with the configuration information needed.
 
 A set of elements/attributes for "client configuration" metadata is shown in <<table2>>.
 
+[[figure2]]
+.A flow for client configuration
 image::T-REC-H.782/image004.png[]
-
-Figure 2 – A flow for client configuration
 
 [[table2]]
 .Metadata for "client configuration"
@@ -242,7 +242,7 @@ Figure 2 – A flow for client configuration
 <.<| <.<| KeywordList <.<| Element of ClientConfiguration.Container to include list of keywords. <.<| O(0-1) <.<|
 <.<| <.<| Keyword <.<| Element of KeywordList.A keyword for the usage of the terminal device which can be in different languges.A keyword can be a single word or an entire phrase made up of multiple words. <.<| O(1-\*) <.<| xs:string
 <.<| <.<| Configuration‌DateTime <.<| Element of ClientConfiguration.Describes date/time of configuration of the terminal device. <.<| O(0-1) <.<| xs:dateTime
-<.<| <.<| ScreenlayoutId‌RefList <.<| Element of ClientConfiguration.A list of reference identifiers of the screen layout information (see Table 15). <.<| O(0-1) <.<| xs:NMTOKENS
+<.<| <.<| ScreenlayoutId‌RefList <.<| Element of ClientConfiguration.A list of reference identifiers of the screen layout information (see <<table15>>). <.<| O(0-1) <.<| xs:NMTOKENS
 <.<| <.<| TerminalGroup‌Id‌Ref <.<| Element of ClientConfiguration.A reference identifier of the terminal group information (see <<table9>>). <.<| O(0-1) <.<| xs:NMTOKEN
 <.<| <.<| Username <.<| Element of ClientConfiguration.The user name to access the terminal device. <.<| O(0-1) <.<| xs:NMTOKEN
 <.<| <.<| Password <.<| Element of ClientConfiguration.The password to access the terminal device. <.<| O(0-1) <.<| xs:string
@@ -277,13 +277,13 @@ Supplemental explanations of elements are as follows:
 
 === Terminal device
 
-A digital signage client may use the set of metadata in the "terminal device" to send its installation information to the server, and the digital signage server may use this metadata to manage the terminal device. See Figure 3.
+A digital signage client may use the set of metadata in the "terminal device" to send its installation information to the server, and the digital signage server may use this metadata to manage the terminal device. See <<figure3>>.
 
 A set of elements/attributes for "terminal device" metadata is shown in <<table3>>.
 
+[[figure3]]
+.A flow for terminal device
 image::T-REC-H.782/image005.png[]
-
-Figure 3 – A flow for terminal device
 
 [[table3]]
 .Metadata for "terminal device"
@@ -469,14 +469,13 @@ NOTE: The playlist schedule server can validate the DS terminal device that prov
 
 === Terminal device status
 
-The terminal device can send its device status to the digital signage server; see Figure 4. This informs the digital signage operator of the current condition of the terminal device [ITU-T H.781].
+The terminal device can send its device status to the digital signage server; see <<figure4>>. This informs the digital signage operator of the current condition of the terminal device [ITU-T H.781].
 
 A set of elements/attributes for "terminal device status" metadata is shown in <<table8>>.
 
+[[figure4]]
+.A flow for terminal device status
 image::T-REC-H.782/image006.png[]
-
-
-Figure 4 – A flow for terminal device status
 
 [[table8]]
 .Metadata for "terminal device status"
@@ -562,11 +561,9 @@ NOTE: The digital signage server controlling and managing multiple clients can b
 
 The digital signage client reports to the digital signage server of its play log with the set of metadata defined in <<table10>>, which describes a set of elements/attributes for "play log" metadata.
 
+[[figure5]]
+.Flows for reporting play log
 image::T-REC-H.782/image007.png[]
-
-
-
-Figure 5 – Flows for reporting play log
 
 [[table10]]
 .Metadata for "play log"
@@ -580,11 +577,11 @@ Figure 5 – Flows for reporting play log
 <.<| <.<| EndDateTime <.<| Element of LogItem.Describes the end date and time of showing the content.Either EndDateTime or Duration may exist for a single log item. <.<| O(0-1) <.<| xs:dateTime
 <.<| <.<| Duration <.<| Element of LogItem.Describes duration of showing the content.Either EndDateTime or Duration may exist for a single log item. <.<| O(0-1) <.<| xs:duration
 <.<| <.<| LogItemType <.<| Element of LogItem.Identifies the type of the single log.Various values are possible, suggested ones are ContentLog and PlayListLog. <.<| R(1) <.<| xs:‌NMTOKEN
-<.<| <.<| ContentIdRef <.<| Element of LogItem.A reference identifier of the content which is presented in the terminal device (see Table 14).Either ContentIdRef or PlayListIdRef exists for a single log. <.<| O(0-1) <.<| xs:NMTOKEN
-<.<| <.<| PlaylistIdRef <.<| Element of LogItem.A reference identifier of the playlist or playlist schedule which is presented in the terminal device (see Table 13).Either ContentIdRef or PlaylistIdRef exists for a single log. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| ContentIdRef <.<| Element of LogItem.A reference identifier of the content which is presented in the terminal device (see <<table14>>).Either ContentIdRef or PlayListIdRef exists for a single log. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| PlaylistIdRef <.<| Element of LogItem.A reference identifier of the playlist or playlist schedule which is presented in the terminal device (see <<table13>>).Either ContentIdRef or PlaylistIdRef exists for a single log. <.<| O(0-1) <.<| xs:NMTOKEN
 <.<| <.<| PlayedScreen‌Region <.<| Element of LogItem.A container to include reference identifier to screen layout and region in which the content/playlist has been played. <.<| O(0-1) <.<|
-<.<| <.<| ScreenLayout‌IdRef <.<| Element of PlayedScreenRegion.A reference identifier of the screen layout in which the content/playlist has been displayed (see Table 15). <.<| O(0-1) <.<| xs:NMTOKEN
-<.<| <.<| RegionIdRef <.<| Element of PlayedScreenRegion.A reference identifier of the region in which the content/playlist has been displayed (see Table 16).For a single region in the terminal device, it shall be omitted. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| ScreenLayout‌IdRef <.<| Element of PlayedScreenRegion.A reference identifier of the screen layout in which the content/playlist has been displayed (see <<table15>>). <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| <.<| RegionIdRef <.<| Element of PlayedScreenRegion.A reference identifier of the region in which the content/playlist has been displayed (see <<table16>>).For a single region in the terminal device, it shall be omitted. <.<| O(0-1) <.<| xs:NMTOKEN
 <.<| <.<| PlayStatus <.<| Element of LogItem.Indicates the display status of the content/playlist.The suggested values are success, hardware failure, content failure, content interruption, but not limited. <.<| R(1) <.<| xs:string
 <.<| <.<| ProofOfPlay <.<| Element of LogItem.Anything that can identify the proof of play. <.<| O(0-1) <.<| xs:string
 
@@ -596,7 +593,7 @@ Supplemental explanations of elements are as follows:
 
 * _StartDateTime_, _EndDateTime_, and _Duration_: describes the start time and date and end time and date that the terminal device has displayed the content, playlist, or playlist schedule;
 
-NOTE: If the content is interrupted in the middle of a replay, the duration will be shorter than the duration specified in Table 13 or Table 14;
+NOTE: If the content is interrupted in the middle of a replay, the duration will be shorter than the duration specified in <<table13>> or <<table14>>;
 
 * _LogType_: describes the type of play log;
 
@@ -614,15 +611,13 @@ NOTE: If there are multiple regions, multiple play logs are generated for a cert
 
 The digital signage server manages schedules for content delivery and requests the content delivery server to distribute content to multiple DS terminal devices. The delivery of content is performed between the content delivery server and the content delivery client. The detailed functionalities of digital signage server, content delivery server, and content delivery client are defined in [ITU‑TH.781].
 
-There are three types of content delivery: push-mode, pull-mode and P2P-mode. Figure 6 consolidates operational flows of the three modes into one flow diagram.
+There are three types of content delivery: push-mode, pull-mode and P2P-mode. <<figure6>> consolidates operational flows of the three modes into one flow diagram.
 
 A set of elements/attributes for "content delivery schedule" metadata is shown in <<table11>>.
 
+[[figure6]]
+.Flows for content delivery scheduling
 image::T-REC-H.782/image008.png[]
-
-
-
-Figure 6 – Flows for content delivery scheduling
 
 [[table11]]
 .Metadata for "content delivery schedule"
@@ -631,7 +626,7 @@ Figure 6 – Flows for content delivery scheduling
 
 <.<| <.<| Content‌Delivery‌Schedule <.<| Container to include information of the content delivery schedule. <.<| <.<|
 <.<| <.<| Content‌Delivery‌ScheduleId <.<| Element of ContentDeliverySchedule.An identifier of the content delivery schedule. <.<| M(1) <.<| xs:NMTOKEN
-<.<| <.<| ContentId‌Ref‌List <.<| Element of ContentDeliverySchedule.A list of reference identifiers of content (see Table 14).Content to be delivered from the content delivery server to the content delivery client. <.<| M(1) <.<| xs:NMTOKENS
+<.<| <.<| ContentId‌Ref‌List <.<| Element of ContentDeliverySchedule.A list of reference identifiers of content (see <<table14>>).Content to be delivered from the content delivery server to the content delivery client. <.<| M(1) <.<| xs:NMTOKENS
 <.<| <.<| Terminal‌Group‌Id‌Ref‌List <.<| Element of ContentDeliverySchedule.A list of reference identifiers of terminal group (see <<table9>>).Terminal group ID of the terminal devices in which this metadata applies.If omitted, applies to the terminal device that received this metadata. <.<| O(0-1) <.<| xs:NMTOKENS
 <.<| <.<| Publication‌DateTime <.<| Element of ContentDeliverySchedule.Time/date of the content delivery schedule issued by the server. <.<| R(1) <.<| xs:dateTime
 <.<| <.<| Delivery‌Deadline <.<| Element of ContentDeliverySchedule.Deadline time/date in which specified content must be received by the client. <.<| O(0-1) <.<| xs:dateTime
@@ -666,12 +661,13 @@ Digital signage server creates and manages a schedule of playlists. The digital 
 
 === Playlist schedule
 
-A set of elements/attributes for "playlist schedule" are shown in Table 12.
+A set of elements/attributes for "playlist schedule" are shown in <<table12>>.
 
-Table 12– Metadata for "playlist schedule"
-
+[[table12]]
+.Metadata for "playlist schedule"
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+
 <.<| Playlist‌Schedule <.<| Container to include information of playlist schedule. <.<| <.<|
 <.<| Playlist‌ScheduleId <.<| Element of PlaylistSchedule.Identifier of the PlaylistSchedule. <.<| M(1) <.<| xs:NMTOKEN
 <.<| Name <.<| Element of PlaylistSchedule.Name of the playlist schedule, which can be in different languages <.<| O(0-\*) <.<| xs:string
@@ -684,7 +680,7 @@ Table 12– Metadata for "playlist schedule"
 <.<| ApplyDay‌OfWeekList <.<| Element of PlaylistSchedule.List of day of the week in which the playlist should be played.Among other possible values, the suggested values are Everyday,Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and PublicHolidays. <.<| O(0-1) <.<| xs:‌NMTOKEN
 <.<| StartTime <.<| Element of PlaylistSchedule.Time/date in which the content should start playing. <.<| R(1) <.<| xs:dateTime or xs:time
 <.<| EndTime <.<| Element of PlaylistSchedule.Time/date in which the content should stop playing. <.<| O(0-1) <.<| xs:dateTime or xs:time
-<.<| PlaylistId‌Ref <.<| Element of PlaylistSchedule.A reference identifier of the Playlist(see Table 13) which contains a list of contents to be played by the client. <.<| M(1-\*) <.<| xs:NMTOKEN
+<.<| PlaylistId‌Ref <.<| Element of PlaylistSchedule.A reference identifier of the Playlist(see <<table13>>) which contains a list of contents to be played by the client. <.<| M(1-\*) <.<| xs:NMTOKEN
 <.<| Repeat‌Number <.<| Element of PlaylistIdRef.Number of times the playlist should be repeated. <.<| O(0-1) <.<| xs:‌positiveInteger
 
 |===
@@ -731,21 +727,22 @@ NOTE: If omitted, handling of this element is implementation-dependent (e.g., re
 
 === Playlist
 
-A set of elements/attributes for "playlist" are shown in Table 13.
+A set of elements/attributes for "playlist" are shown in <<table13>>.
 
-Table 13 – Metadata for "playlist"
-
+[[table13]]
+.Metadata for "playlist"
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+
 <.<| Playlist <.<| Container to include information of playlist. <.<| <.<|
 <.<| PlaylistId <.<| Element of Playlist.Identifier of the playlist. <.<| M(1) <.<| xs:NMTOKEN
 <.<| Name <.<| Element of Playlist.Name of the playlist, which can be in different languages. <.<| O(0-\*) <.<| xs:string
 <.<| Priority <.<| Element of Playlist.Priority of the playlist. Pertaining playlist is displayed when no playlist with higher priority exists. <.<| O(0-1) <.<| xs:positiveInteger
 <.<| PlayOrder <.<| Element of Playlist.Order of the list of contents to be played in the playlist.Suggested values are sequential, random, but not limited. <.<| O(0-1) <.<| xs:NMTOKEN
-<.<| ContentIdRef <.<| Element of Playlist.A reference identifier of the content (see Table 14).Content to be played by the terminal device. <.<| M(1-\*) <.<| xs:NMTOKEN
+<.<| ContentIdRef <.<| Element of Playlist.A reference identifier of the content (see <<table14>>).Content to be played by the terminal device. <.<| M(1-\*) <.<| xs:NMTOKEN
 <.<| TargetRegion <.<| Element of Playlist.A container to include a reference identifier to screen layout and region in which the content is displayed. <.<| O(0-1) <.<|
-<.<| ScreenLayout‌IdRef <.<| Element of TargetRegion.A reference identifier to screen information (see Table 15) in which the content is displayed. <.<| O(0-1) <.<| xs:NMTOKEN
-<.<| Region‌IdRef <.<| Element of TargetRegion.A reference identifier to region information (see Table 16) in which the content is displayed. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| ScreenLayout‌IdRef <.<| Element of TargetRegion.A reference identifier to screen information (see <<table15>>) in which the content is displayed. <.<| O(0-1) <.<| xs:NMTOKEN
+<.<| Region‌IdRef <.<| Element of TargetRegion.A reference identifier to region information (see <<table16>>) in which the content is displayed. <.<| O(0-1) <.<| xs:NMTOKEN
 <.<| Duration <.<| Element of Playlist.Indicates the duration of the content played in the playlist. <.<| O(0-1) <.<| xs:duration
 <.<| Transition‌Effect <.<| Element of Playlist.Description of effects used between content displayed to allow smooth transition. <.<| O(0-1) <.<| xs:string
 
@@ -869,16 +866,17 @@ NOTE: [b-RFC 2046] defines method of expressing the coding method by combining c
 
 This clause gives the definition of metadata for screen layout. Screen layout may be delivered to terminal devices to configure and/or reconfigure the layout of content to be displayed. Screen layout can be delivered separately from content or delivered with content.
 
-A set of elements/attributes for "screen layout" are shown in Table 15.
+A set of elements/attributes for "screen layout" are shown in <<table15>>.
 
-Table 15 – Metadata for "screen layout"
-
+[[table15]]
+.Metadata for "screen layout"
 |===
 <.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+
 <.^| ScreenLayout <.<| Container to include information of screen layout. <.<| <.<|
 <.<| ScreenLayoutId <.<| Element of ScreenLayout.Identifier of the screen layout. <.<| M(1) <.<| xs:NMTOKEN
 <.<| Name <.<| Element of ScreenLayout.Name of the screen, which can be in different languages. <.<| O(0-\*) <.<| xs:string
-<.<| Region <.<| Element of ScreenLayout.A list of containers to include regions (see Table 16). <.<| O(0-\*) <.<|
+<.<| Region <.<| Element of ScreenLayout.A list of containers to include regions (see <<table16>>). <.<| O(0-\*) <.<|
 
 |===
 
@@ -894,13 +892,15 @@ Supplemental explanations of elements are as follows:
 
 This clause gives the definition of the elements/attributes for region. Region information is a part of screen layout information to configure an area on the screen where content is to be displayed. When the content is delivered to terminal devices, the identifier of region of screen layout is delivered to identify the area on the screen where content is to be displayed.
 
-NOTE: Screen layout of digital signage service can be dynamically changed by updating values in Table 16. For example, in the case of emergencies including disasters, alert messages are shown in the blank space after the current content presented on the screen is squeezed and/or moved.
+NOTE: Screen layout of digital signage service can be dynamically changed by updating values in <<table16>>. For example, in the case of emergencies including disasters, alert messages are shown in the blank space after the current content presented on the screen is squeezed and/or moved.
 
-A set of elements/attributes for region information are shown in Table 16.
+A set of elements/attributes for region information are shown in <<table16>>.
 
+[[table16]]
+.Metadata for "region"
 |===
-5+<.^h| Table 16 – Metadata for "region"
 <.<| <.^| Element/ Attribute <.^| Definition/Semantics <.<| Support <.<| Type
+
 <.<| <.<| Region <.<| Container to include information of region of screen. <.<| <.<|
 <.<| <.<| RegionId <.<| Element of Region.Identifier of the region.Region is a portion of screen. <.<| M(1) <.<| xs:NMTOKEN
 <.<| <.<| Name <.<| Element of Region.Name of the region, which can be in different languages. <.<| O(0-\*) <.<| xs:string
@@ -929,12 +929,11 @@ NOTE: If the pixel resolution is not provided, the width and height of a region 
 
 == Interactive service
 
-This clause gives the definition of metadata for interactive service. Figure 7 shows the basic flow for the interactive service.
+This clause gives the definition of metadata for interactive service. <<figure7>> shows the basic flow for the interactive service.
 
-Any function (such as digital signage server, audience measurement client and different functions within the digital signage client) may need to be informed of a particular event received from the interactive device. Upon occurrence of events from the interactive device, the digital signage client informs the event requester with a set of metadata in the event as defined in Table 17.
+Any function (such as digital signage server, audience measurement client and different functions within the digital signage client) may need to be informed of a particular event received from the interactive device. Upon occurrence of events from the interactive device, the digital signage client informs the event requester with a set of metadata in the event as defined in <<table17>>.
 
-//Figure 7 – Flow for interactive service
-
+[[figure7]]
 .Flow for interactive service
 image::T-REC-H.782/image009.png[]
 
