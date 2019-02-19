@@ -8,7 +8,12 @@
 :status: published
 :keywords: digital signage, information flows, metadata
 :stem:
-
+:imagesdir: images
+:docfile: T-REC-H.782-201811-I.MSW-E.adoc
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc
+:local-cache-only:
+:data-uri-image:
 
 [abstract]
 == Summary
@@ -20,7 +25,7 @@ This revision updates the data types of elements/attributes of identifiers. This
 == History
 
 |===
-<.^| Edition <.^| Recommendation <.^| Approval <.^| Study Group <.^| 
+<.^| Edition <.^| Recommendation <.^| Approval <.^| Study Group <.^|
 Unique ID{blank}footnote:[To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser, followed by the Recommendation's unique ID. For example, http://handle.itu.int/11.1002/1000/11830-en[].]
 
 <.<| [[ihistorye]]1.0 <.<| ITU-T H.782 <.<| 2017-12-14 <.<| 16 <.<| http://handle.itu.int/11.1002/1000/13439[11.1002/1000/13439]
@@ -187,7 +192,7 @@ This Recommendation selects basic elements/attributes from these specifications 
 
 Figure 1 illustrates a reference functional model for DS services as per [ITU‑TH.781], and the scope of this Recommendation.
 
-image::T-REC-H.782_images/image003.png[]
+image::T-REC-H.782/image003.png[]
 
 NOTE: Figure 1 as per [ITU-T H.781].
 
@@ -223,7 +228,7 @@ The digital signage server configures the digital signage client with a set of m
 
 A set of elements/attributes for "client configuration" metadata is shown in Table 2.
 
-image::T-REC-H.782_images/image004.png[]
+image::T-REC-H.782/image004.png[]
 
 [[_Ref451526981]]Figure 2 – A flow for client configuration
 
@@ -275,7 +280,7 @@ A digital signage client may use the set of metadata in the "terminal device" to
 
 A set of elements/attributes for "terminal device" metadata is shown in Table 3.
 
-image::T-REC-H.782_images/image005.png[]
+image::T-REC-H.782/image005.png[]
 
 
 Figure 3 – A flow for terminal device
@@ -458,7 +463,7 @@ The terminal device can send its device status to the digital signage server; se
 
 A set of elements/attributes for "terminal device status" metadata is shown in Table 8.
 
-image::T-REC-H.782_images/image006.png[]
+image::T-REC-H.782/image006.png[]
 
 
 Figure 4 – A flow for terminal device status
@@ -543,7 +548,7 @@ NOTE: The digital signage server controlling and managing multiple clients can b
 
 The digital signage client reports to the digital signage server of its play log with the set of metadata defined in Table 10, which describes a set of elements/attributes for "play log" metadata.
 
-image::T-REC-H.782_images/image007.png[]
+image::T-REC-H.782/image007.png[]
 
 
 
@@ -597,7 +602,7 @@ There are three types of content delivery: push-mode, pull-mode and P2P-mode. Fi
 
 A set of elements/attributes for "content delivery schedule" metadata is shown in Table 11.
 
-image::T-REC-H.782_images/image008.png[]
+image::T-REC-H.782/image008.png[]
 
 
 
@@ -908,7 +913,7 @@ This clause gives the definition of metadata for interactive service. Figure 7 s
 
 Any function (such as digital signage server, audience measurement client and different functions within the digital signage client) may need to be informed of a particular event received from the interactive device. Upon occurrence of events from the interactive device, the digital signage client informs the event requester with a set of metadata in the event as defined in Table 17.
 
-image::T-REC-H.782_images/image009.png[]
+image::T-REC-H.782/image009.png[]
 
 
 
@@ -940,50 +945,43 @@ Supplemental explanations of elements are as follows:
 
 – _EventDataType:_ denotes the data type of event that has occurred in the interactive device;
 
-– _EventData:_ denotes the input data received from the interactive device. This metadata has used xs:string for the type of _EventData_, however, it can be in any format (such as text, coordinate position of the screen, audio stream, video stream, etc.) in accordance with the _EventDataType_;
+– _EventData:_ denotes the input data received from the interactive device. This metadata has used `xs:string` for the type of _EventData_, however, it can be in any format (such as text, coordinate position of the screen, audio stream, video stream, etc.) in accordance with the _EventDataType_;
 
 – _EventAction:_ denotes the action performed by the digital signage client;
 
 NOTE: For example, on failure to the interactive device, the event action is set to stop notification, since it is not possible to make correct notifications for such circumstances.
 
 [appendix]
-== [[a__Annex_ARelation_among_metadata_tables]]
-Relation among metadata tables
+== Relation among metadata tables
 
 (This annex forms an integral part of this Recommendation.)
 
 This annex describes the relations among metadata entities that are used in this Recommendation. These entities are 'client configuration', 'terminal device', 'terminal device status', 'terminal group', 'interactive device', 'content delivery server', 'log server', 'playlist schedule server', 'content delivery schedule', 'play log', 'playlist schedule', 'contents', 'playlist', 'screen layout', 'region' and 'event'.
 
-In Figure A.1, metadata entities including reference elements and the relations are described. The relations between two entities are derived from the "Support" attribute of reference elements in the metadata table, and the notation is as follows:
+In <<figurea1>>, metadata entities including reference elements and the relations are described. The relations between two entities are derived from the "Support" attribute of reference elements in the metadata table, and the notation is as follows:
 
-– M(1) is relation 1 to 1;
-
-– M(1-\*) is relation 1 to 1..n;
-
-– R(0-1) is relation 1 to 0..1;
-
-– R(0-\*) is relation 1 to 0..n.;
-
-– O(0-1) is relation 1 to 0..1;
-
-– O(0-\*) is relation 1 to 0..n.
+– stem:[M(1)] is relation stem:[1 to 1];
+– stem:[M(1-\*)] is relation stem:[1 to 1..n];
+– stem:[R(0-1)] is relation stem:[1 to 0..1];
+– stem:[R(0-\*)] is relation stem:[1 to 0..n];
+– stem:[O(0-1)] is relation stem:[1 to 0..1];
+– stem:[O(0-\*)] is relation stem:[1 to 0..n].
 
 If "type" attribute represents a list of references, the notation is as follows:
 
-– M(1) is relation 1 to 1..n;
+– stem:[M(1)] is relation stem:[1 to 1..n];
 
-– O(0-1) is relation 1 to 0..n.
+– stem:[O(0-1)] is relation stem:[1 to 0..n].
 
-Arrow (AB) shows a relation "A refers to B".
+Arrow (stem:[A -> B]) shows a relation "A refers to B".
 
-image::T-REC-H.782_images/image010.png[]
+[[figurea1]]
+.Relations among metadata entities
+image::T-REC-H.782/image010.png[]
 
-
-
-Figure A.1 – Relations amo[[_GoBack]]ng metadata entities
 
 [bibliography]
-== [[a__Bibliography]]Bibliography
+== Bibliography
 
 * [[[h760, b-ITU-T H.760]]] Recommendation ITU-T H.760 (2009_),__Overview of multimedia application frameworks for IPTV services_.
 
