@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/riboseinc/isodoc
-  revision: de6b7b7eb1c89668cd14e1155f1a3806a2792b4a
+  revision: cee34a8feafe4b33b3b0b38100b65ed25c1806a2
   specs:
     isodoc (0.9.16)
       asciimath
@@ -32,14 +32,15 @@ GIT
 
 GIT
   remote: https://github.com/riboseinc/metanorma
-  revision: 27a8b26b1aa2030f85d09ad446d08477e8de0272
+  revision: 896de94fae5f8d514ca84a3f797b9f11bc2bb68f
   specs:
     metanorma (0.3.8)
       asciidoctor
+      htmlentities
 
 GIT
   remote: https://github.com/riboseinc/metanorma-cli
-  revision: b59dcce7fcf4cefa700621021b0a166f11cbb103
+  revision: 69ade51f723d0338c87ee77d125570bd9441ccc4
   specs:
     metanorma-cli (1.1.4)
       isodoc (~> 0.9.0)
@@ -61,7 +62,7 @@ GIT
 
 GIT
   remote: https://github.com/riboseinc/metanorma-itu
-  revision: 596dfa60c7957892a12b4591ee60710365df0091
+  revision: a243aa67be4cdacba188c65681e87ee1f09b9d6c
   specs:
     metanorma-itu (0.0.1)
       asciidoctor (~> 1.5.7)
@@ -72,7 +73,7 @@ GIT
 
 GIT
   remote: https://github.com/riboseinc/metanorma-standoc
-  revision: 350a25c8a6c9e54aae3c050822e82eaddb64ffa6
+  revision: 16ec0a76c21e693be063d67c1290aadaeae94d27
   specs:
     metanorma-standoc (1.1.2)
       asciidoctor (~> 1.5.7)
@@ -86,7 +87,7 @@ GIT
 
 GIT
   remote: https://github.com/riboseinc/relaton-cli
-  revision: 14117d3e8f2538860c236941c0a52d6b5c95a6a3
+  revision: 624388998bc1bd5ce0556a847d7bcf19cdb0648c
   specs:
     relaton-cli (0.1.7)
       liquid
@@ -98,12 +99,12 @@ GEM
   specs:
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
-    algoliasearch (1.25.2)
+    algoliasearch (1.26.0)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
     asciidoctor (1.5.8)
     asciimath (1.0.8)
-    byebug (10.0.2)
+    byebug (11.0.0)
     camertron-eprun (1.1.1)
     cldr-plurals-runtime-rb (1.0.1)
     cnccs (0.1.3)
