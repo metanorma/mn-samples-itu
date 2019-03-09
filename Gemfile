@@ -7,6 +7,6 @@ gem "metanorma-itu", git: "https://github.com/metanorma/metanorma-itu"
 #gem "metanorma-itu", path: "~/src/metanorma-itu"
 gem "isodoc", git: "https://github.com/metanorma/isodoc"
 gem "html2doc", git: "https://github.com/metanorma/html2doc"
-gem "relaton-cli", git: "https://github.com/riboseinc/relaton-cli"
+gem "relaton-cli", git: "https://github.com/metanorma/relaton-cli"
 gem "byebug"
 
