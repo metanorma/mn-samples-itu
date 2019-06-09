@@ -14,8 +14,6 @@ before_install:
   - gem update --system
   - gem install bundler
   - sudo bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | bash"
-  -
-  - pip install yq
 script:
   - make clean all publish
 deploy:
