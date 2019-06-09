@@ -1,24 +1,20 @@
 #!make
 SHELL := /bin/bash
 
-include metanorma.env
-export $(shell sed 's/=.*//' metanorma.env)
-
-RELATON_COLLECTION_ORG  := "International Telecommunications Union -- Standardization"
-RELATON_COLLECTION_NAME := "ITU-T Recommendations in Metanorma"
-
 comma := ,
 empty :=
 space := $(empty) $(empty)
 
-SRC  := $(wildcard sources/*.adoc)
+SRC  := $(filter-out README.adoc, $(wildcard sources/*.adoc))
 INPUT_XML  := $(patsubst %.adoc,%.xml,$(SRC))
 OUTPUT_XML  := $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
 OUTPUT_HTML := $(patsubst %.xml,%.html,$(OUTPUT_XML))
-FORMATS := xml html
 
-COMPILE_CMD_LOCAL := bundle exec metanorma -R $${FILENAME//adoc/rxl} $$FILENAME
-COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ ribose/metanorma "metanorma $${FILENAME//adoc/rxl}  $$FILENAME"
+FORMAT_MARKER := mn-output-
+FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d ' ' | tr ',' '\n' | sort | uniq | tr '\n' ' ')
+
+COMPILE_CMD_LOCAL := bundle exec metanorma $$FILENAME
+COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ ribose/metanorma "metanorma $$FILENAME"
 
 ifdef METANORMA_DOCKER
   COMPILE_CMD := echo "Compiling via docker..."; $(COMPILE_CMD_DOCKER)
@@ -43,8 +39,8 @@ documents/%.xml: documents sources/%.xml
 
 documents.rxl: $(OUTPUT_XML)
 	bundle exec relaton concatenate \
-	  -t $(RELATON_COLLECTION_NAME) \
-		-g $(RELATON_COLLECTION_ORG) \
+	  -t "$(shell yq -r .relaton.collection.name metanorma.yml)" \
+		-g "$(shell yq -r .relaton.collection.organization metanorma.yml)" \
 		documents $@
 
 documents.html: documents.rxl
@@ -127,13 +123,4 @@ published: documents.html
 	cp $< published/index.html; \
 	if [ -d "images" ]; then cp -a images published; fi
 
-deploy_key:
-	openssl aes-256-cbc -K $(encrypted_$(ENCRYPTION_LABEL)_key) \
-		-iv $(encrypted_$(ENCRYPTION_LABEL)_iv) -in $@.enc -out $@ -d && \
-	chmod 600 $@
-
-deploy: deploy_key
-	export COMMIT_AUTHOR_EMAIL=$(COMMIT_AUTHOR_EMAIL); \
-	./deploy.sh
-
-.PHONY: publish deploy
+.PHONY: publish
