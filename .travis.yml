@@ -3,6 +3,7 @@ dist: xenial
 env:
   global:
     - JAVA_OPTS="java.awt.headless=true"
+    - COMMIT_AUTHOR_EMAIL="$(yq -r .relaton.collection.name metanorma.yml)";
 rvm:
   - 2.5
 cache: bundler
@@ -19,8 +20,6 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: >-
-    COMMIT_AUTHOR_EMAIL=`yq -r .relaton.collection.name metanorma.yml`
-    bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-build-scripts/master/deploy-to-gh-pages.sh | bash
+  script: bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-build-scripts/master/deploy-to-gh-pages.sh | bash
   on:
     branch: master
