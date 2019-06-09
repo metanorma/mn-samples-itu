@@ -3,7 +3,7 @@ dist: xenial
 env:
   global:
     - JAVA_OPTS="java.awt.headless=true"
-    - COMMIT_AUTHOR_EMAIL="$(yq -r .relaton.collection.name metanorma.yml)";
+    - COMMIT_AUTHOR_EMAIL="$(yq r metanorma.yml metanorma.deploy.email)";
 rvm:
   - 2.5
 cache: bundler
