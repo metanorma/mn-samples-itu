@@ -39,8 +39,8 @@ documents/%.xml: documents sources/%.xml
 
 documents.rxl: $(OUTPUT_XML)
 	bundle exec relaton concatenate \
-	  -t "$(shell yq -r .relaton.collection.name metanorma.yml)" \
-		-g "$(shell yq -r .relaton.collection.organization metanorma.yml)" \
+	  -t "$(shell yq r metanorma.yml relaton.collection.name)" \
+		-g "$(shell yq r metanorma.yml relaton.collection.organization)" \
 		documents $@
 
 documents.html: documents.rxl
