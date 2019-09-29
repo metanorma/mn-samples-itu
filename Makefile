@@ -1,6 +1,6 @@
 #!make
 SHELL := /bin/bash
-# Ensure the xml2rfc cache directory exists locally
+
 IGNORE := $(shell mkdir -p $(HOME)/.cache/xml2rfc)
 
 SRC := $(shell yq r metanorma.yml metanorma.source.files | cut -c 3-999)
@@ -9,28 +9,17 @@ SRC := $(filter-out README.adoc, $(wildcard sources/*.adoc))
 endif
 
 FORMAT_MARKER := mn-output-
-FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d ' ' | tr ',' '\n' | sort | uniq | tr '\n' ' ')
+FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d " " | tr "," "\\n" | sort | uniq | tr "\\n" " ")
 
-XML  := $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
-
-XMLRFC3  := $(patsubst %.xml,%.v3.xml,$(OUTPUT_XML))
-HTML := $(patsubst %.xml,%.html,$(OUTPUT_XML))
-DOC  := $(patsubst %.xml,%.doc,$(OUTPUT_XML))
-PDF  := $(patsubst %.xml,%.pdf,$(OUTPUT_XML))
-TXT  := $(patsubst %.xml,%.txt,$(OUTPUT_XML))
-NITS := $(patsubst %.adoc,%.nits,$(wildcard sources/draft-*.adoc))
-WSD  := $(wildcard sources/models/*.wsd)
-XMI	 := $(patsubst sources/models/%,sources/xmi/%,$(patsubst %.wsd,%.xmi,$(WSD)))
-PNG	 := $(patsubst sources/models/%,sources/images/%,$(patsubst %.wsd,%.png,$(WSD)))
-
-COMPILE_CMD_LOCAL := bundle exec metanorma $$FILENAME
-METANORMA_DOCKER_IMAGE ?= metanorma/metanorma
-COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER_IMAGE) "metanorma $$FILENAME"
+INPUT_XML  := $(patsubst %.adoc,%.xml,$(SRC))
+OUTPUT_XML  := $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
+OUTPUT_HTML := $(patsubst %.xml,%.html,$(OUTPUT_XML))
 
 ifdef METANORMA_DOCKER
-  COMPILE_CMD := echo "Compiling via docker..."; $(COMPILE_CMD_DOCKER)
+  PREFIX_CMD := echo "Running via docker..."; docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER)
+
 else
-  COMPILE_CMD := echo "Compiling locally..."; $(COMPILE_CMD_LOCAL)
+  PREFIX_CMD := echo "Running locally..."; bundle exec
 endif
 
 _OUT_FILES := $(foreach FORMAT,$(FORMATS),$(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
@@ -41,50 +30,25 @@ all: documents.html
 documents:
 	mkdir -p $@
 
-documents/%.xml: documents sources/images sources/%.xml
-	export GLOBIGNORE=sources/$*.adoc; \
-	mv sources/$(addsuffix .*,$*) documents; \
-	unset GLOBIGNORE
+documents/%.xml: documents sources/%.xml
+	mv sources/$*.{xml,html,doc,rxl} documents
 
 %.xml %.html:	%.adoc | bundle
-	FILENAME=$^; \
-	${COMPILE_CMD}
+	pushd $(dir $^); \
+	FILENAME=$(notdir $^); \
+	${PREFIX_CMD} metanorma $$FILENAME; \
+	popd
 
-documents.rxl: $(XML)
-	bundle exec relaton concatenate \
+documents.rxl: $(OUTPUT_XML)
+	${PREFIX_CMD} relaton concatenate \
 	  -t "$(shell yq r metanorma.yml relaton.collection.name)" \
 		-g "$(shell yq r metanorma.yml relaton.collection.organization)" \
 		documents $@
 
 documents.html: documents.rxl
-	bundle exec relaton xml2html documents.rxl
-
-# %.v3.xml %.xml %.html %.doc %.pdf %.txt: sources/images %.adoc | bundle
-# 	FILENAME=$^; \
-# 	${COMPILE_CMD}
-#
-# documents/draft-%.nits:	documents/draft-%.txt
-# 	VERSIONED_NAME=`grep :name: draft-$*.adoc | cut -f 2 -d ' '`; \
-# 	cp $^ $${VERSIONED_NAME}.txt && \
-# 	idnits --verbose $${VERSIONED_NAME}.txt > $@ && \
-# 	cp $@ $${VERSIONED_NAME}.nits && \
-# 	cat $${VERSIONED_NAME}.nits
-
-%.nits:
+	${PREFIX_CMD} relaton xml2html documents.rxl
 
 %.adoc:
-
-nits: $(NITS)
-
-sources/images: $(PNG)
-
-sources/images/%.png: sources/models/%.wsd
-	plantuml -tpng -o ../images/ $<
-
-sources/xmi: $(XMI)
-
-sources/xmi/%.xmi: sources/models/%.wsd
-	plantuml -xmi:star -o ../xmi/ $<
 
 define FORMAT_TASKS
 OUT_FILES-$(FORMAT) := $($(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
@@ -106,7 +70,7 @@ $(foreach FORMAT,$(FORMATS),$(eval $(FORMAT_TASKS)))
 open: open-html
 
 clean:
-	rm -rf documents documents.html documents.rxl published *_images $(OUT_FILES)
+	rm -rf documents published *_images sources/*.{rxl,xml,html,doc}
 
 bundle:
 	if [ "x" == "${METANORMA_DOCKER}x" ]; then bundle; fi
@@ -140,7 +104,7 @@ endef
 
 $(foreach FORMAT,$(FORMATS),$(eval $(WATCH_TASKS)))
 
-serve: $(NODE_BIN_DIR)/live-server revealjs-css reveal.js sources/images
+serve: $(NODE_BIN_DIR)/live-server revealjs-css reveal.js images
 	export PORT=$${PORT:-8123} ; \
 	port=$${PORT} ; \
 	for html in $(HTML); do \
@@ -154,11 +118,11 @@ watch-serve: $(NODE_BIN_DIR)/run-p
 #
 # Deploy jobs
 #
-
 publish: published
-
 published: documents.html
-	mkdir -p $@ && \
+	mkdir -p published && \
 	cp -a documents $@/ && \
-	cp $< $@/index.html; \
-	if [ -d "sources/images" ]; then cp -a sources/images $@/; fi
+	cp $< published/index.html; \
+	if [ -d "images" ]; then cp -a images published; fi
+
+.PHONY: publish
