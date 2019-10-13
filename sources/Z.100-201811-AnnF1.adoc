@@ -448,9 +448,9 @@ The first constraint defines the initial set [smallcap]#_Agent_# to consist of a
 
 A (global) state stem:[ s in S] is given by an interpretation of the names in stem:[V] over the base set of stem:[M]. State transitions can be defined in terms of partial reinterpretations of dynamic domains, functions and predicates. This gives rise to the notions of _location_ as a conceptual means to refer to parts of global states, and of _update_ to describe state changes.
 
-A _location of a state_ stem:[s] _of_ stem:[M] is a pair stem:[ii"loc"_s  = < f, s(x) >], where stem:[f] is a dynamic name in stem:[V], and stem:[s(x)] is a sequence of elements of the base set according to the arity of stem:[f]. An _update of s_ is a pair stem:[delta_s = < ii"loc"_s, s(y) >], where stem:[s(y)] identifies an element of the base set as the new value to be associated with the location stem:[ii"loc"_s]. To _fire_ stem:[delta_s] means to transform stem:[s] into a state stem:[s'] of stem:[M] such that stem:[f_{s'} (s(x)) = s(y)], while all other locations stem:[ii"loc"'_s] of stem:[s], stem:[ii"loc"'_s != ii"loc"_s], remain unaffected. In other words, firing an update modifies the interpretation of a state in a well-defined way.
+A _location of a state_ stem:[s] _of_ stem:[M] is a pair stem:[ii"loc"_s  = <f, s(x)>], where stem:[f] is a dynamic name in stem:[V], and stem:[s(x)] is a sequence of elements of the base set according to the arity of stem:[f]. An _update of s_ is a pair stem:[delta_s = <ii"loc"_s, s(y)>], where stem:[s(y)] identifies an element of the base set as the new value to be associated with the location stem:[ii"loc"_s]. To _fire_ stem:[delta_s] means to transform stem:[s] into a state stem:[s'] of stem:[M] such that stem:[f_{s'} (s(x)) = s(y)], while all other locations stem:[ii"loc"'_s] of stem:[s], stem:[ii"loc"'_s != ii"loc"_s], remain unaffected. In other words, firing an update modifies the interpretation of a state in a well-defined way.
 
-The potential behaviour of a basic ASM is captured by a _program_ stem:[P], which is defined by a _transition rule_ (see <<F1_3_1_8Transition_rules>> and <<F1_3_1_10ASM_programs>>). For each state stem:[s in S], a program stem:[P] of stem:[M] defines an _update set_ stem:[Delta_s(P)] as a finite set of updates of stem:[s]. stem:[Delta_s(P)] is _consistent_, if and only if it does not contain any two updates stem:[delta_s,  delta'_s] such that stem:[delta_s = < ii"loc"_s,  s(y) >], stem:[delta'_s = < ii"loc"_s,  s(y') >], and stem:[s(y) != s(y')]. The _firing of a consistent update set_ stem:[Delta_s (P)] in state stem:[s] means to fire all its members simultaneously, i.e., to produce (in one atomic step) a new state stem:[s'] such that for all locations stem:[ii"loc"_s = < f,  s(x) >] of stem:[s], stem:[f_{s'} (s(x)) = s(y)], if stem:["<<" f,  s(x) >,  s(y) > in Delta_s (P)], and stem:[f_{s'} (s(x)) = f_s (s(x))] otherwise, and is called _state transition_. Firing an inconsistent update set has no effect, i.e., stem:[s' = s].
+The potential behaviour of a basic ASM is captured by a _program_ stem:[P], which is defined by a _transition rule_ (see <<F1_3_1_8Transition_rules>> and <<F1_3_1_10ASM_programs>>). For each state stem:[s in S], a program stem:[P] of stem:[M] defines an _update set_ stem:[Delta_s(P)] as a finite set of updates of stem:[s]. stem:[Delta_s(P)] is _consistent_, if and only if it does not contain any two updates stem:[delta_s,  delta'_s] such that stem:[delta_s = < ii"loc"_s,  s(y) >], stem:[delta'_s = < ii"loc"_s,  s(y') >], and stem:[s(y) != s(y')]. The _firing of a consistent update set_ stem:[Delta_s (P)] in state stem:[s] means to fire all its members simultaneously, i.e., to produce (in one atomic step) a new state stem:[s'] such that for all locations stem:[ii"loc"_s = <f,  s(x)>] of stem:[s], stem:[f_{s'} (s(x)) = s(y)], if stem:["<<" f,  s(x) >,  s(y) > in Delta_s (P)], and stem:[f_{s'} (s(x)) = f_s (s(x))] otherwise, and is called _state transition_. Firing an inconsistent update set has no effect, i.e., stem:[s' = s].
 
 NOTE: In the context of the SDL‑2010 semantics, an inconsistent update set indicates an error in the semantic model. The ASM semantics ensures that such errors do not destroy the notion of state.
 
@@ -498,7 +498,7 @@ The construction of complex transition rules out of elementary update instructio
 * _if-then-constructor_
 
 ____
-stem:[ii"Rule" ::=] *if* stem:[g] *then*
+stem:[ii"Rule" "::="] *if* stem:[g] *then*
 
 
 stem:[ii"Rule"_1]
@@ -518,7 +518,7 @@ The update set specified by stem:[ii"Rule"] in a given state stem:[s] is defined
 * _do-in-parallel-constructor_
 
 ____
-stem:[ii"Rule" ::=] [*do in-parallel*]
+stem:[ii"Rule" "::="] [*do in-parallel*]
 
 
 stem:[ii"Rule"_1]
@@ -538,7 +538,7 @@ The update set defined by stem:[ii"Rule"] in state stem:[s] is defined to be the
 * _do-forall-constructor_
 
 ____
-stem:[ii"Rule" ::=] *do forall* stem:[v : g(v)]
+stem:[ii"Rule" "::="] *do forall* stem:[v : g(v)]
 
 
 stem:[ii"Rule"_0 (v)]
@@ -552,7 +552,7 @@ The effect of stem:[ii"Rule"] is that stem:[ii"Rule"_0] is fired simultaneously 
 * _choose-constructor_
 
 ____
-stem:[ii"Rule"  ::=] *choose* stem:[  v  :  g(v)]
+stem:[ii"Rule"  "::="] *choose* stem:[  v  :  g(v)]
 
 
 stem:[ii"Rule"_0 (v)]
@@ -566,7 +566,7 @@ The effect of stem:[ii"Rule"] is that stem:[ii"Rule"_0] is fired for an element 
 * _extend-constructor_
 
 ____
-stem:[ii"Rule"  ::=] *extend* stem:[D] *with* stem:[  v_1,  ...  ,  v_n]
+stem:[ii"Rule"  "::="] *extend* stem:[D] *with* stem:[  v_1,  ...  ,  v_n]
 
 
 stem:[ii"Rule"_0 (v_1, ...,  v_n)]
@@ -584,7 +584,7 @@ NOTE: _extend_ can be defined in terms of the _import_ constructor (not shown he
 * _let-constructor_
 
 ____
-stem:[ii"Rule"  ::=] *let* stem:[ v = ii"expression"] *in*
+stem:[ii"Rule"  "::="] *let* stem:[ v = ii"expression"] *in*
 
 
 stem:[ii"Rule"_0 (v)]
