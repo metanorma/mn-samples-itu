@@ -12,6 +12,7 @@ GEM
     faraday (0.16.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.11.1)
+    ffi (1.11.1-x64-mingw32)
     gb-agencies (0.0.6)
     git (1.5.0)
     html2doc (0.8.13)
@@ -162,6 +163,8 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.4-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
     optout (0.0.2)
     public_suffix (4.0.1)
     rake (12.3.3)
@@ -213,6 +216,8 @@ GEM
     rubyzip (2.0.0)
     sassc (2.2.1)
       ffi (~> 1.9)
+    sassc (2.2.1-x64-mingw32)
+      ffi (~> 1.9)
     sterile (1.0.14)
       nokogiri
     thor (0.20.3)
@@ -230,6 +235,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   metanorma-cli
