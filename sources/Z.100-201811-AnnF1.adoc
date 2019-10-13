@@ -343,7 +343,7 @@ The following notational conventions are used when declaring names.
 
 * _Function names_ are written in italics starting with a lowercase letter (as in _mode_). A function name stem:[f] is declared by stem:[f]: stem:[D_1 xx D_2 xx ... xx D_n rarr D_0] , where stem:[n] is the arity of stem:[f], and stem:[D_0], stem:[D_1], stem:[D_2 ... D_n]  are domain names. A function name is interpreted as a function over the base set. The interpretation respects the arity of stem:[f].
 
-* _Predicate names_ that are not _Domain names_ are also written in italics (as in stem:[ii"available"]). A predicate name stem:[p] is declared by stem:[p]: stem:[D_1 xx D_2 times ... xx D_n rarr] _Boolean_. A predicate is interpreted as a function whose value is either _true_ or _false_.
+* _Predicate names_ that are not _Domain names_ are also written in italics (as in stem:[ii"available"]). A predicate name stem:[p] is declared by stem:[p]: stem:[D_1 xx D_2 xx ... xx D_n rarr] _Boolean_. A predicate is interpreted as a function whose value is either _true_ or _false_.
 
 Declarations also include qualifiers, which specify further restrictions on their interpretation. Qualifiers on name declarations constrain interpretation of the one-step transformation.
 
