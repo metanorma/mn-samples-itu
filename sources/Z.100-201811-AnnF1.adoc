@@ -5,17 +5,22 @@ ITU
 :series: Z: Languages and General Software Aspects for Telecommunication Systems
 :series1: Formal description techniques (FDT)
 :series2: Specification and Description Language (SDL)
-:published-date: 2018-12-01
+:published-date: 2018-11-01
 :status: published
 :doctype: recommendation
 :keywords: abstract state machines, ASM, formal definition, overview, overview of semantics, SDL‑2010, specification and description language
 :imagesdir: images
 :docfile: Z.100-201811-AnnF1.adoc
 :mn-document-class: itu
-:mn-output-extensions: xml,html,doc,rxl
+:mn-output-extensions: html
 :local-cache-only:
 :data-uri-image:
 :stem:
+:section-refsig: Clause
+:annexid: F1
+:annextitle: SDL‑2010 formal definition: General overview
+:xrefstyle: short
+
 
 
 [abstract]
@@ -24,66 +29,67 @@ Annex F1 provides the motivation for and the main objectives of a formal semanti
 
 [preface]
 == History
+[cols="2,2,1,^2,^2"]
 |===
-<.^h| Edition <.^h| Recommendation <.^h| Approval <.^h| Study Group <.^h| 
+.^h| Edition .^h| Recommendation .^h| Approval .^h| Study Group .^h| 
 Unique ID{blank}footnote:[To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser, followed by the Recommendation's unique ID. For example, http://handle.itu.int/11.1002/1000/11830-en[].]
 
-<.<| [[ihistorye]]1.0 <.<| ITU-T Z.100 <.<| 1984-10-19 <.<| <.<| http://handle.itu.int/11.1002/1000/2222[11.1002/1000/2222]
-<.<| 1.1 <.<| ITU-T Z.100 Annex A <.<| 1984-10-19 <.<| <.<| http://handle.itu.int/11.1002/1000/6664[11.1002/1000/6664]
-<.<| 1.2 <.<| ITU-T Z.100 Annex B <.<| 1984-10-19 <.<| <.<| http://handle.itu.int/11.1002/1000/6665[11.1002/1000/6665]
-<.<| 1.3 <.<| ITU-T Z.100 Annex C1 <.<| 1984-10-19 <.<| <.<| http://handle.itu.int/11.1002/1000/6666[11.1002/1000/6666]
-<.<| 1.4 <.<| ITU-T Z.100 Annex C2 <.<| 1984-10-19 <.<| <.<| http://handle.itu.int/11.1002/1000/6667[11.1002/1000/6667]
-<.<| 1.5 <.<| ITU-T Z.100 Annex D <.<| 1984-10-19 <.<| <.<| http://handle.itu.int/11.1002/1000/6668[11.1002/1000/6668]
-<.<| 2.0 <.<| ITU-T Z.100 <.<| 1987-09-30 <.<| X <.<| http://handle.itu.int/11.1002/1000/10954[11.1002/1000/10954]
-<.<| 2.1 <.<| ITU-T Z.100 Annex A <.<| 1988-11-25 <.<| <.<| http://handle.itu.int/11.1002/1000/6669[11.1002/1000/6669]
-<.<| 2.2 <.<| ITU-T Z.100 Annex B <.<| 1988-11-25 <.<| <.<| http://handle.itu.int/11.1002/1000/6670[11.1002/1000/6670]
-<.<| 2.3 <.<| ITU-T Z.100 Annex C1 <.<| 1988-11-25 <.<| <.<| http://handle.itu.int/11.1002/1000/6671[11.1002/1000/6671]
-<.<| 2.4 <.<| ITU-T Z.100 Annex C2 <.<| 1988-11-25 <.<| <.<| http://handle.itu.int/11.1002/1000/6672[11.1002/1000/6672]
-<.<| 2.5 <.<| ITU-T Z.100 Annex D <.<| 1988-11-25 <.<| X <.<| http://handle.itu.int/11.1002/1000/3646[11.1002/1000/3646]
-<.<| 2.6 <.<| ITU-T Z.100 Annex E <.<| 1988-11-25 <.<| <.<| http://handle.itu.int/11.1002/1000/6673[11.1002/1000/6673]
-<.<| 2.7 <.<| ITU-T Z.100 Annex F1 <.<| 1988-11-25 <.<| X <.<| http://handle.itu.int/11.1002/1000/3647[11.1002/1000/3647]
-<.<| 2.8 <.<| ITU-T Z.100 Annex F2 <.<| 1988-11-25 <.<| X <.<| http://handle.itu.int/11.1002/1000/3648[11.1002/1000/3648]
-<.<| 2.9 <.<| ITU-T Z.100 Annex F3 <.<| 1988-11-25 <.<| X <.<| http://handle.itu.int/11.1002/1000/3649[11.1002/1000/3649]
-<.<| 3.0 <.<| ITU-T Z.100 <.<| 1988-11-25 <.<| <.<| http://handle.itu.int/11.1002/1000/3153[11.1002/1000/3153]
-<.<| 3.1 <.<| ITU-T Z.100 Annex C <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3155[11.1002/1000/3155]
-<.<| 3.2 <.<| ITU-T Z.100 Annex D <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3156[11.1002/1000/3156]
-<.<| 3.3 <.<| ITU-T Z.100 Annex F1 <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3157[11.1002/1000/3157]
-<.<| 3.4 <.<| ITU-T Z.100 Annex F2 <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3158[11.1002/1000/3158]
-<.<| 3.5 <.<| ITU-T Z.100 Annex F3 <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3159[11.1002/1000/3159]
-<.<| 3.6 <.<| ITU-T Z.100 App. I <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3160[11.1002/1000/3160]
-<.<| 3.7 <.<| ITU-T Z.100 App. II <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3161[11.1002/1000/3161]
-<.<| 4.0 <.<| ITU-T Z.100 <.<| 1993-03-12 <.<| X <.<| http://handle.itu.int/11.1002/1000/3154[11.1002/1000/3154]
-<.<| 4.1 <.<| ITU-T Z.100 (1993) Add. 1 <.<| 1996-10-18 <.<| 10 <.<| http://handle.itu.int/11.1002/1000/3917[11.1002/1000/3917]
-<.<| 5.0 <.<| ITU-T Z.100 <.<| 1999-11-19 <.<| 10 <.<| http://handle.itu.int/11.1002/1000/4764[11.1002/1000/4764]
-<.<| 5.1 <.<| ITU-T Z.100 (1999) Cor. 1 <.<| 2001-10-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/5567[11.1002/1000/5567]
-<.<| 6.0 <.<| ITU-T Z.100 <.<| 2002-08-06 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/6029[11.1002/1000/6029]
-<.<| 6.1 <.<| ITU-T Z.100 (2002) Amd. 1 <.<| 2003-10-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/7091[11.1002/1000/7091]
-<.<| 6.2 <.<| ITU-T Z.100 (2002) Cor. 1 <.<| 2004-08-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/356[11.1002/1000/356]
-<.<| 7.0 <.<| ITU-T Z.100 <.<| 2007-11-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/9262[11.1002/1000/9262]
-<.<| 8.0 <.<| ITU-T Z.100 <.<| 2011-12-22 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/11387[11.1002/1000/11387]
-<.<| 8.1 <.<| ITU-T Z.100 Annex F1 <.<| 2000-11-24 <.<| 10 <.<| http://handle.itu.int/11.1002/1000/5239[11.1002/1000/5239]
-<.<| 8.2 <.<| ITU-T Z.100 Annex F2 <.<| 2000-11-24 <.<| 10 <.<| http://handle.itu.int/11.1002/1000/5576[11.1002/1000/5576]
-<.<| 8.3 <.<| ITU-T Z.100 Annex F3 <.<| 2000-11-24 <.<| 10 <.<| http://handle.itu.int/11.1002/1000/5577[11.1002/1000/5577]
-<.<| 8.4 <.<| ITU-T Z.100 Annex F1 <.<| 2015-01-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/12354[11.1002/1000/12354]
-<.<| 8.5 <.<| ITU-T Z.100 Annex F2 <.<| 2015-01-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/12355[11.1002/1000/12355]
-<.<| 8.6 <.<| ITU-T Z.100 Annex F3 <.<| 2015-01-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/12356[11.1002/1000/12356]
-<.<| 9.0 <.<| ITU-T Z.100 <.<| 2016-04-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/12846[11.1002/1000/12846]
-<.<| 9.1 <.<| ITU-T Z.100 Annex F1 <.<| 2016-10-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/13040[11.1002/1000/13040]
-<.<| 9.2 <.<| ITU-T Z.100 Annex F2 <.<| 2016-10-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/13041[11.1002/1000/13041]
-<.<| 9.3 <.<| ITU-T Z.100 Annex F3 <.<| 2016-10-29 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/13042[11.1002/1000/13042]
-<.<| 9.4 <.<| ITU-T Z.100 Annex F1 <.<| 2018-11-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/13732[11.1002/1000/13732]
-<.<| 9.5 <.<| ITU-T Z.100 Annex F2 <.<| 2018-11-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/13733[11.1002/1000/13733]
-<.<| 9.6 <.<| ITU-T Z.100 Annex F3 <.<| 2018-11-13 <.<| 17 <.<| http://handle.itu.int/11.1002/1000/13734[11.1002/1000/13734]
+| [[ihistorye]]1.0 | ITU-T Z.100 | 1984-10-19 | | http://handle.itu.int/11.1002/1000/2222[11.1002/1000/2222]
+| 1.1 | ITU-T Z.100 Annex A | 1984-10-19 | | http://handle.itu.int/11.1002/1000/6664[11.1002/1000/6664]
+| 1.2 | ITU-T Z.100 Annex B | 1984-10-19 | | http://handle.itu.int/11.1002/1000/6665[11.1002/1000/6665]
+| 1.3 | ITU-T Z.100 Annex C1 | 1984-10-19 | | http://handle.itu.int/11.1002/1000/6666[11.1002/1000/6666]
+| 1.4 | ITU-T Z.100 Annex C2 | 1984-10-19 | | http://handle.itu.int/11.1002/1000/6667[11.1002/1000/6667]
+| 1.5 | ITU-T Z.100 Annex D | 1984-10-19 | | http://handle.itu.int/11.1002/1000/6668[11.1002/1000/6668]
+| 2.0 | ITU-T Z.100 | 1987-09-30 | X | http://handle.itu.int/11.1002/1000/10954[11.1002/1000/10954]
+| 2.1 | ITU-T Z.100 Annex A | 1988-11-25 | | http://handle.itu.int/11.1002/1000/6669[11.1002/1000/6669]
+| 2.2 | ITU-T Z.100 Annex B | 1988-11-25 | | http://handle.itu.int/11.1002/1000/6670[11.1002/1000/6670]
+| 2.3 | ITU-T Z.100 Annex C1 | 1988-11-25 | | http://handle.itu.int/11.1002/1000/6671[11.1002/1000/6671]
+| 2.4 | ITU-T Z.100 Annex C2 | 1988-11-25 | | http://handle.itu.int/11.1002/1000/6672[11.1002/1000/6672]
+| 2.5 | ITU-T Z.100 Annex D | 1988-11-25 | X | http://handle.itu.int/11.1002/1000/3646[11.1002/1000/3646]
+| 2.6 | ITU-T Z.100 Annex E | 1988-11-25 | | http://handle.itu.int/11.1002/1000/6673[11.1002/1000/6673]
+| 2.7 | ITU-T Z.100 Annex F1 | 1988-11-25 | X | http://handle.itu.int/11.1002/1000/3647[11.1002/1000/3647]
+| 2.8 | ITU-T Z.100 Annex F2 | 1988-11-25 | X | http://handle.itu.int/11.1002/1000/3648[11.1002/1000/3648]
+| 2.9 | ITU-T Z.100 Annex F3 | 1988-11-25 | X | http://handle.itu.int/11.1002/1000/3649[11.1002/1000/3649]
+| 3.0 | ITU-T Z.100 | 1988-11-25 | | http://handle.itu.int/11.1002/1000/3153[11.1002/1000/3153]
+| 3.1 | ITU-T Z.100 Annex C | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3155[11.1002/1000/3155]
+| 3.2 | ITU-T Z.100 Annex D | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3156[11.1002/1000/3156]
+| 3.3 | ITU-T Z.100 Annex F1 | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3157[11.1002/1000/3157]
+| 3.4 | ITU-T Z.100 Annex F2 | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3158[11.1002/1000/3158]
+| 3.5 | ITU-T Z.100 Annex F3 | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3159[11.1002/1000/3159]
+| 3.6 | ITU-T Z.100 App. I | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3160[11.1002/1000/3160]
+| 3.7 | ITU-T Z.100 App. II | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3161[11.1002/1000/3161]
+| 4.0 | ITU-T Z.100 | 1993-03-12 | X | http://handle.itu.int/11.1002/1000/3154[11.1002/1000/3154]
+| 4.1 | ITU-T Z.100 (1993) Add. 1 | 1996-10-18 | 10 | http://handle.itu.int/11.1002/1000/3917[11.1002/1000/3917]
+| 5.0 | ITU-T Z.100 | 1999-11-19 | 10 | http://handle.itu.int/11.1002/1000/4764[11.1002/1000/4764]
+| 5.1 | ITU-T Z.100 (1999) Cor. 1 | 2001-10-29 | 17 | http://handle.itu.int/11.1002/1000/5567[11.1002/1000/5567]
+| 6.0 | ITU-T Z.100 | 2002-08-06 | 17 | http://handle.itu.int/11.1002/1000/6029[11.1002/1000/6029]
+| 6.1 | ITU-T Z.100 (2002) Amd. 1 | 2003-10-29 | 17 | http://handle.itu.int/11.1002/1000/7091[11.1002/1000/7091]
+| 6.2 | ITU-T Z.100 (2002) Cor. 1 | 2004-08-29 | 17 | http://handle.itu.int/11.1002/1000/356[11.1002/1000/356]
+| 7.0 | ITU-T Z.100 | 2007-11-13 | 17 | http://handle.itu.int/11.1002/1000/9262[11.1002/1000/9262]
+| 8.0 | ITU-T Z.100 | 2011-12-22 | 17 | http://handle.itu.int/11.1002/1000/11387[11.1002/1000/11387]
+| 8.1 | ITU-T Z.100 Annex F1 | 2000-11-24 | 10 | http://handle.itu.int/11.1002/1000/5239[11.1002/1000/5239]
+| 8.2 | ITU-T Z.100 Annex F2 | 2000-11-24 | 10 | http://handle.itu.int/11.1002/1000/5576[11.1002/1000/5576]
+| 8.3 | ITU-T Z.100 Annex F3 | 2000-11-24 | 10 | http://handle.itu.int/11.1002/1000/5577[11.1002/1000/5577]
+| 8.4 | ITU-T Z.100 Annex F1 | 2015-01-13 | 17 | http://handle.itu.int/11.1002/1000/12354[11.1002/1000/12354]
+| 8.5 | ITU-T Z.100 Annex F2 | 2015-01-13 | 17 | http://handle.itu.int/11.1002/1000/12355[11.1002/1000/12355]
+| 8.6 | ITU-T Z.100 Annex F3 | 2015-01-13 | 17 | http://handle.itu.int/11.1002/1000/12356[11.1002/1000/12356]
+| 9.0 | ITU-T Z.100 | 2016-04-29 | 17 | http://handle.itu.int/11.1002/1000/12846[11.1002/1000/12846]
+| 9.1 | ITU-T Z.100 Annex F1 | 2016-10-29 | 17 | http://handle.itu.int/11.1002/1000/13040[11.1002/1000/13040]
+| 9.2 | ITU-T Z.100 Annex F2 | 2016-10-29 | 17 | http://handle.itu.int/11.1002/1000/13041[11.1002/1000/13041]
+| 9.3 | ITU-T Z.100 Annex F3 | 2016-10-29 | 17 | http://handle.itu.int/11.1002/1000/13042[11.1002/1000/13042]
+| 9.4 | ITU-T Z.100 Annex F1 | 2018-11-13 | 17 | http://handle.itu.int/11.1002/1000/13732[11.1002/1000/13732]
+| 9.5 | ITU-T Z.100 Annex F2 | 2018-11-13 | 17 | http://handle.itu.int/11.1002/1000/13733[11.1002/1000/13733]
+| 9.6 | ITU-T Z.100 Annex F3 | 2018-11-13 | 17 | http://handle.itu.int/11.1002/1000/13734[11.1002/1000/13734]
 |===
 
 
 [appendix]
 == SDL 2010 formal definition: General overview
 
-=== {blank}
+//=== {blank}
 
-[[a__F1_1_5Status_of_Annex_F1]]
-==== Preface
+[[F1_1_5Status_of_Annex_F1]]
+=== Preface
 
 The formal definition of SDL‑2010 provided in this annex is a precise language definition, which supplements the definition given in the Recommendation text. It is for use by those requiring a very precise definition of SDL‑2010, such as maintainers of the SDL‑2010 language, designers of SDL‑2010 tools and users of the SDL‑2010 language.
 
@@ -96,27 +102,27 @@ The formal definition consists of three annexes:
 *Annex F3*:: This annex defines the dynamic semantics of SDL‑2010.
 
 
-[[a__F1_1_1Motivation]]
+[[F1_1_1Motivation]]
 ==== Motivation
 
 SDL‑2010 has both a formal syntax and a formal semantics. Annexes F1, F2 and F3 define the formal semantics of SDL‑2010. If there is any inconsistency between Annexes F1, F2 and F3 and other parts of the ITU‑T Z.100 series for SDL‑2010, then there is an error that needs correcting. Neither the other parts of the ITU‑T Z.100 series for SDL‑2010 nor Annexes F1, F2 and F3 take precedence in this case.
 
-[[a__F1_1_2Main_objectives]]
+[[F1_1_2Main_objectives]]
 ==== Main objectives
 
 A primary objective of a formal SDL‑2010 semantics is intelligibility, a prerequisite for correctness, acceptance and maintainability. Intelligibility is supported by building on well-known mathematical formalisms and notations, by a close correspondence between the specification technique and semantics to be formalized, and by concise and well-structured documentation.
 
 Maintainability is another important objective because SDL‑2010 is an evolving technical standard. Apart from the language extensions that are incorporated into this Recommendation, further language features under consideration. Therefore, the mathematical formalism has to be sufficiently rich and flexible so that the formal semantics can be adapted and extended with a reasonable effort.
 
-SDL‑2010 can be classified as a model-oriented formal description technique (FDT) for the specification of distributed and concurrent systems, which means that an SDL‑2010 specification explicitly defines a set of computations. This calls for an operational semantics in order to achieve a close correspondence with the specification, and thus improve its intelligibility. In addition, operational semantics lends itself naturally to executability ([<<b-Eschbach>>], [<<b-Eschbach 2001>>] and [<<b-Glaesser>>]), which, given the availability of tools, fulfils another explicit objective.
+SDL‑2010 can be classified as a model-oriented formal description technique (FDT) for the specification of distributed and concurrent systems, which means that an SDL‑2010 specification explicitly defines a set of computations. This calls for an operational semantics in order to achieve a close correspondence with the specification, and thus improve its intelligibility. In addition, operational semantics lends itself naturally to executability (<<b-Eschbach>>, <<b-Eschbach_2001>> and <<b-Glaesser>>), which, given the availability of tools, fulfils another explicit objective.
 
-[[a__F1_1_3References_and_definitions]]
+[[F1_1_3References_and_definitions]]
 ==== References and definitions
 
 The references and definitions of the main body of Recommendation ITU‑TZ.100 apply throughout Annexes F1, F2 and F3.
 
 [bibliography]
-[[a__F1_1_4Bibliographical_references]]
+[[F1_1_4Bibliographical_references]]
 ==== Bibliographical references (for this annex only)
 
 * [[[b-ASM,b-ASM]]], http://www.eecs.umich.edu/gasm/[] (accessed 20 March 2018)
@@ -127,7 +133,7 @@ NOTE: The axiomatic definition of abstract state machines for sequential algorit
 
 * [[[b-Blass_2008,b-Blass 2008]]], Blass, A. and Gurevich, Y. (2008), _Abstract State machines capture parallel algorithms: Correction and extension_. ACM Transactions on Computational Logic, Vol. 9, No. 3, ACM.
 
-NOTE: The postulates presented in [b-Blass] do not allow proclets to be created on the fly. On the fly creation of proclets is required to correct one of the flaws identified in the examples in Section 8 of [b-Blass]. Other flaws in the earlier article have also been corrected.
+NOTE: The postulates presented in <<b-Blass>> do not allow proclets to be created on the fly. On the fly creation of proclets is required to correct one of the flaws identified in the examples in Section 8 of <<b-Blass>>. Other flaws in the earlier article have also been corrected.
 
 * [[[b-Boerger,b-Börger]]], Börger, E. (2003), _The ASM Refinement Method_, Formal Aspects of Computing Vol. 15, pp. 237-257, BCS.
 
@@ -155,12 +161,12 @@ NOTE: The axiomatic definition given by Gurevich for the sequential algorithms c
 
 * [[[b-Gurevich_2000,b-Gurevich 2000]]], Gurevich, Y. (2000), _Sequential Abstract State Machines Capture Sequential Algorithms_, Microsoft Research.
 
-[[a__F1_1_5Status_of_Annex_F1__this_annex_]]
+[[F1_1_5Status_of_Annex_F1_this_annex]]
 ==== Status of Annex F1 (this annex)
 
 The (01/2015) edition was an improvement on the previous edition, because it updated the description of ASM and the list of references. The (10/2016) edition clarified a number of items in the (01/2015) edition and added descriptions of items used in F2 and/or F3 that were previously missing or newly added to F2 and/or F3. This edition is essentially a maintenance update further clarifying existing content and adding additional features used in F2 and/or F3.
 
-[[a__F1_2Overview_of_the_semantics]]
+[[F1_2Overview_of_the_semantics]]
 === Overview of the semantics
 
 In order to define the formal semantics of SDL‑2010, the language definition is decomposed into several parts:
@@ -184,18 +190,18 @@ image::data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAAAv8AAAHZCAYAAAFm4WQCAAAAAXNSR
 
 The _grammar_ defines the set of syntactically correct SDL‑2010 specifications. The ITU‑T Z.100 series for SDL‑2010 defines a concrete graphical grammar, a concrete textual grammar, and an abstract grammar. The syntax of the concrete grammars is defined formally using the Backus-Naur form (BNF) with some extensions to capture the graphical language constructs (see clause 5.4.1 of [ITU‑T Z.111]). The abstract grammar is obtained from the concrete grammars by removing irrelevant details such as separators and lexical rules, and by applying transformation rules (see below). The syntax of the abstract grammar is defined in the textual presentation metalanguage for abstract grammar (see clause 5.4.1.1 of [ITU‑T Z.111]).
 
-From the specifications that are correct with respect to the grammar syntax, the _well-formedness__conditions_ define the specifications that are also correct with respect to context information. The well-formedness conditions address matters of scope, visibility and type. The well-formedness conditions are defined in terms of first order predicate calculus (PC1).
+From the specifications that are correct with respect to the grammar syntax, the _well-formedness conditions_ define the specifications that are also correct with respect to context information. The well-formedness conditions address matters of scope, visibility and type. The well-formedness conditions are defined in terms of first order predicate calculus (PC1).
 
 Furthermore, some language constructs appearing in the concrete grammars are replaced by other language elements in the abstract grammar using _transformation rules_ to keep the set of core concepts small. These transformations are described in the 'Model' paragraphs of the ITU‑T Z.100 series for SDL‑2010, and are formally expressed as rewrite rules.
 
 The _dynamic semantics_ applies only to syntactically correct SDL‑2010 specifications that satisfy the well-formedness conditions. The dynamic semantics defines the set of computations associated with a specification, and are described in Part 3 of the formal definition, i.e., Annex F3.
 
-[[a__F1_2_1Grammar]]
+[[F1_2_1Grammar]]
 ==== Grammar
 
 The _grammar_ of SDL‑2010 is formalized as described above. The primary concrete grammar is given for SDL‑GR. Most of the grammar of SDL‑GR is textual, but it has some graphical elements. To enable formalisation of SDL‑2010 specifications into ASM, any SDL‑GR graphical element is changed to the equivalent concrete textual representation (SDL‑PR) defined in [ITU‑T Z.106]. The grammar in the ITU‑TZ.100 series for SDL‑2010 is designed to be a presentation grammar: it is not adapted to automatic parser generation. Moreover, some restrictions that finally guarantee uniqueness of the semantics cannot be expressed in BNF and have been stated in the text instead. Therefore, the grammar is defined using BNF and some text (mostly for the precedence rules). The translation from the concrete textual SDL‑2010 representation to the abstract syntax representation of SDL‑2010 (called AS1) consists of two steps. The first step from the concrete textual SDL‑2010 representation to AS0 (the concrete syntax with details such as separators and lexical rules removed) is not formally defined, but is derived from the correspondence between the two grammars, which is almost one-to-one. The second step, translating AS0 to AS1, is formally captured by a set of transformation rules (see Annex F2).
 
-[[a__F1_2_2Well-formedness_conditions]]
+[[F1_2_2Well-formedness_conditions]]
 ==== Well-formedness conditions
 
 The _well-formedness conditions_ define additional constraints that a well-formed SDL‑2010 specification has to satisfy. These constraints cannot be expressed using context-free grammar rules, but they are static, and can be defined and checked independently of the dynamic semantics of SDL‑2010 (see Annex F2). An SDL‑2010 specification is _valid_ if and only if it satisfies the syntactical rules and the static conditions of SDL‑2010. The well-formedness conditions are context-dependent conditions on elements of a context free grammar.
@@ -212,7 +218,7 @@ There are five kinds of well-formedness conditions:
 
 * _Plain syntax rules_: There are some rules that refer to the correctness of the concrete syntax, and that have no counterpart in the abstract syntax. For instance, the names at the beginning and at the end of a definition in SDL‑PR have to match.
 
-[[a__F1_2_3Transformation_rules]]
+[[F1_2_3Transformation_rules]]
 ==== Transformation rules
 
 For a language with a rich syntax, it is important to identify the core concepts matching the intentions of the language designer. Further language constructs, such as shorthand notations, that are introduced for convenience, but do not add to the expressiveness of the language, can be replaced using these core concepts. Since replacements, which are described by transformation rules, can be formalized, it suffices to define the dynamic semantics only for the core concepts, which adds to its conciseness and intelligibility. <<fig-f1-1>> illustrates the general approach. The language is defined with its concrete grammar using lexical and syntax rules. Consistency constraints are defined on this concrete grammar.
@@ -221,16 +227,16 @@ The ITU‑T Z.100 series for SDL‑2010 prescribes the transformation of SDL‑2
 
 To formalize the transformation rules of SDL‑2010, the rewrite rules in PC1 are used. These rules define patterns of the AST, which are to be replaced by other AST patterns. In fact, several groups of such rewrite rules are defined that are applied in turn. A single transformation is realized by the application of a rewrite rule to the concrete specification, which essentially means to replace parts of the specification by other parts as defined by the rule (see Annex F2).
 
-[[a__F1_2_4Dynamic_semantics]]
+[[F1_2_4Dynamic_semantics]]
 ==== Dynamic semantics
 
-The _dynamic semantics_ (clauses F3.2 and F3.3) consists of the following parts (see Figure F1-2):
+The _dynamic semantics_ (clauses F3.2 and F3.3) consists of the following parts (see <<fig-f1-2>>):
 
 . The _SDL‑2010 Abstract Machine (SAM)_: this is defined using ASM. The definition of the SAM is divided into three parts, corresponding to the abstract syntax:
 
 .. basic signal flow concepts (such as signals, timers, gates, channels) defined in terms of an ASM model in clause F3.2.1.1;
 
-.. various types of ASM agents to model corresponding SDL‑2010 agents in clauseF3.2.1.2; and
+.. various types of ASM agents to model corresponding SDL‑2010 agents in clause F3.2.1.2; and
 
 .. signal processing and behaviour primitives (the abstract machine instructions of the SAM) in clause F3.2.1.4 (that uses the interface to the data type part in clause F3.2.1.3).
 
@@ -251,22 +257,22 @@ image::data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAAAk4AAAKYCAYAAAHyOUdRAAAAAXNSR
 
 The formal semantics is formalized starting from the abstract syntax AS1 of SDL‑2010. From this abstract syntax, a behaviour model for SDL‑2010 specifications is derived that can be understood as abstract code generated from an SDL‑2010 specification. The approach chosen here is based on an abstract operational view using the ASM formalism as the underlying mathematical framework for a rigorous semantic definition of the SAM model. The compilation defines an abstract compiler mapping the behaviour parts of SDL‑2010 to abstract code (denotational semantics). Finally, the initialization describes an interpretation of the abstract syntax tree to build the initial system structure (operational semantics).
 
-The _dynamic semantics_ associates a particular distributed, real-time ASM with each SDL‑2010 specification. Intuitively, an ASM consists of a set of autonomous agents cooperatively performing concurrent machine runs. The behaviour of an agent is determined by an ASM program, each consisting of a transition rule that defines the set of possible computations (called "runs" in the context of ASM). Each agent has its own partial view on a global state, which is defined by a set of static and dynamic functions and domains. By having non-empty intersections of partial views, interaction among agents can be modelled. An introduction to the ASM model, and the notation used in Annexes F1, F2 and F3, is given in clause F1.3.
+The _dynamic semantics_ associates a particular distributed, real-time ASM with each SDL‑2010 specification. Intuitively, an ASM consists of a set of autonomous agents cooperatively performing concurrent machine runs. The behaviour of an agent is determined by an ASM program, each consisting of a transition rule that defines the set of possible computations (called "runs" in the context of ASM). Each agent has its own partial view on a global state, which is defined by a set of static and dynamic functions and domains. By having non-empty intersections of partial views, interaction among agents can be modelled. An introduction to the ASM model, and the notation used in Annexes F1, F2 and F3, is given in <<F1_3Abstract_State_Machines>>.
 
-[[a__F1_3Abstract_State_Machines]]
-=== F1.3 Abstract State Machines
+[[F1_3Abstract_State_Machines]]
+=== Abstract State Machines
 
-This clause explains the basic notions and concepts of _Abstract State Machines_ (_ASM_) as well as the notation used in these Annexes F1, F2 and F3 to define the SDL‑2010 abstract machine model. The objective here is to provide an intuitive understanding of the formalism; for a rigorous definition of the mathematical foundations of ASM and its application, the reader is referred to [<<b-Gurevich>>], [<<b-Blass>>], [<<b-Blass_2008>>], [<<b-Glausch>>], [<<b-BoergerStaerk>>] and [<<b-Boerger>>]. A discussion and motivation of the appropriateness of the semantic framework used here is given in [<<b-Eschbach>>], [<<b-Eschbach_2001>>] and [<<b-Glaesser>>]. Further references on ASM-related material can also be found on the ASM webpages [<<b-ASM>>].
+This clause explains the basic notions and concepts of _Abstract State Machines_ (_ASM_) as well as the notation used in these Annexes F1, F2 and F3 to define the SDL‑2010 abstract machine model. The objective here is to provide an intuitive understanding of the formalism; for a rigorous definition of the mathematical foundations of ASM and its application, the reader is referred to <<b-Gurevich>>, <<b-Blass>>, <<b-Blass_2008>>, <<b-Glausch>>, <<b-BoergerStaerk>> and <<b-Boerger>>. A discussion and motivation of the appropriateness of the semantic framework used here is given in <<b-Eschbach>>, <<b-Eschbach_2001>> and <<b-Glaesser>>. Further references on ASM-related material can also be found on the ASM webpages <<b-ASM>>.
 
-The ASM model used to define the dynamic semantics of SDL‑2010 is explained in several steps. Firstly, the _basic ASM model_ with a single agent is treated (see clause F1.3.1). Next, this model is extended to cover _multi-agent systems_ (see clause F1.3.2). Then, _open systems_, i.e., systems interacting with an environment they cannot control, are addressed by adding the notion of _external world_ (see clause F1.3.3). Finally, the model is extended by introducing a notion of _real-time behaviour_ (see clause F1.3.4). To illustrate these steps, an ASM model for a simple system is developed, step-by-step. The final ASM model of this system is summarized in clause F1.3.5. Additional notation used to define the dynamic semantics of SDL‑2010 is explained in clause F1.3.6.
+The ASM model used to define the dynamic semantics of SDL‑2010 is explained in several steps. Firstly, the _basic ASM model_ with a single agent is treated (see <<F1_3_1Basic_ASM_model>>). Next, this model is extended to cover _multi-agent systems_ (see <<F1_3_2Distributed_multi-agent_ASM>>). Then, _open systems_, i.e., systems interacting with an environment they cannot control, are addressed by adding the notion of _external world_ (see <<F1_3_3The_external_world>>). Finally, the model is extended by introducing a notion of _real-time behaviour_ (see <<F1_3_4Real_time_behaviour>>). To illustrate these steps, an ASM model for a simple system is developed, step-by-step. The final ASM model of this system is summarized in <<F1_3_5Example_The_system_RMS>>. Additional notation used to define the dynamic semantics of SDL‑2010 is explained in <<F1_3_6Predefined_names_and_special_symbols>>.
 
 
-.Example (A simple resource management system (_RMS_)):
+.A simple resource management system (_RMS_):
 ====
 
-In order to illustrate the ASM model, a simple resource management system (_RMS_) consisting of _a group of n \> 1 agents_ competing for a _resource_ (for instance, a device or service) is defined. Informally, this system is characterized as follows:
+In order to illustrate the ASM model, a simple resource management system (_RMS_) consisting of _a group of_ stem:[n > 1] _agents_ competing for a _resource_ (for instance, a device or service) is defined. Informally, this system is characterized as follows:
 
-* There is a set of _m__tokens_, _m_\<_n_, used to grant _exclusive_ or _non-exclusive_ (_shared_) access to the resource.
+* There is a set of stem:[m] _tokens_, stem:[m < n], used to grant _exclusive_ or _non-exclusive_ (_shared_) access to the resource.
 
 * Depending on whether the desired access mode is exclusive or shared, an agent must own all tokens or one token, respectively, before the agent may access the resource.
 
@@ -280,244 +286,296 @@ In order to illustrate the ASM model, a simple resource management system (_RMS_
 
 * Initially, all agents are idle, and all tokens are available.
 
-The system will be defined step by step, as the explanations of the ASM model proceed, starting with the basic ASM model with a single agent. The final ASM model of this system is summarized in clause F1.3.5.
+The system will be defined step by step, as the explanations of the ASM model proceed, starting with the basic ASM model with a single agent. The final ASM model of this system is summarized in <<F1_3_5Example_The_system_RMS>>.
 ====
 
+[[F1_3_1Basic_ASM_model]]
 ==== Basic ASM model
 
-[[a__F1_3_1_1Overview]]
+[[F1_3_1_1Overview]]
 ===== Overview
 
 An abstract state machine (ASM) is a model of computation that treats first-order structures as dynamic entities whose states can change during a computation.
 
-An abstract state machine has a set of states _S_, a subset of initial states _S_0 ⊆ _S_ and a function τ: _S → S_, called the one-step transformation. Every state is a first-order structure. All the states of an ASM have the same signature, which is also called the signature of the ASM, and all the states have the same base set, called the base set of the ASM. τ does not change the base set, but it does, in general, change the equivalences that hold between terms of the signature.
+An abstract state machine has a set of states stem:[S], a subset of initial states stem:[S_0 sube S] and a function stem:[tau]: stem:[S rarr S], called the one-step transformation. Every state is a first-order structure. All the states of an ASM have the same signature, which is also called the signature of the ASM, and all the states have the same base set, called the base set of the ASM. stem:[tau] does not change the base set, but it does, in general, change the equivalences that hold between terms of the signature.
 
 The behaviour of an abstract state machine is modelled as a run or sequence of states. A run starts with an initial state, and each subsequent state is derived from its predecessor by application of the one-step transformation. Each application of the one-step transformation is called a move.
 
 [%unnumbered]
+[cols="8*^"]
 |===
-<.<h| <.<h| τ <.<h| <.<h| τ <.<h| <.<h| τ <.<h| <.<h| _moves_
+| | stem:[tau] | | stem:[tau] | | stem:[tau] | | _moves_
 
-<.<| _s_~0~ ∊ _S_~0~  <.<| → <.<| _s_~1~ <.<| → <.<| _s_~2~ <.<| → <.<| _..._ <.<| _states_
+| stem:[s_0 in S_0]  | stem:[rarr] | stem:[s_1] | stem:[rarr] | stem:[s_2] | stem:[rarr] | stem:[...] | _states_
 |===
 
-[[a__F1_3_1_2States]]
-===== F1.3.1.2 States
+[[F1_3_1_2States]]
+===== States
 
-The base set of the abstract state machine, which is the base set of every state of the ASM, contains three distinct elements: _true_, _false_ and _undefined_. The base set also contains an infinite number of _reserve elements_. A state also has functions and predicates that are defined over the base set. All functions are total, with _undefined_ being used to mimic partial functions. Predicates are functions whose only possible values are _true_ or _false_. Special unary predicates called _domain names_ identify members of the base set as belonging to particular _domains_. This allows states to be viewed as many-sorted structures.
+The base set of the abstract state machine, which is the base set of every state of the ASM, contains three distinct elements: _true_, _false_ and stem:[ii"undefined"]. The base set also contains an infinite number of _reserve elements_. A state also has functions and predicates that are defined over the base set. All functions are total, with stem:[ii"undefined"] being used to mimic partial functions. Predicates are functions whose only possible values are _true_ or _false_. Special unary predicates called _domain names_ identify members of the base set as belonging to particular _domains_. This allows states to be viewed as many-sorted structures.
 
-Embedded within a state are certain substructures or _background classes_ [<<b-Blass>>] and [<<b-Blass_2008>>]. One such background includes _true_, _false_, the domain name _Boolean_ and the Boolean operators. The backgrounds used in modelling SDL‑2010 include numbers, sets and sequences. A minimal background is defined in [<<b-Blass>>] and [<<b-Blass_2008>>] to characterize the ASMs that model parallel algorithms.
+Embedded within a state are certain substructures or _background classes_ <<b-Blass>> and <<b-Blass_2008>>. One such background includes _true_, _false_, the domain name [smallcap]#_Boolean_# and the Boolean operators. The backgrounds used in modelling SDL‑2010 include numbers, sets and sequences. A minimal background is defined in <<b-Blass>> and <<b-Blass_2008>> to characterize the ASMs that model parallel algorithms.
 
-[[a__F1_3_1_3One-step_transformation]]
-===== F1.3.1.3 One-step transformation
+[[F1_3_1_3One-step_transformation]]
+===== One-step transformation
 
-The one-step transformation _τ_ updates the values of functions. In general, for _s_ ∊ _S_, some equivalences hold in _s_ but not in τ_(s)_ and vice versa. In some cases, τhas no effect, so _s_ and τ_(s)_ are the same.
+The one-step transformation stem:[tau] updates the values of functions. In general, for stem:[s in S], some equivalences hold in stem:[s] but not in stem:[tau(s)] and vice versa. In some cases, τhas no effect, so stem:[s] and stem:[tau(s)] are the same.
 
-To express the relationship between _s_ and τ_(s)_ more precisely, the changes effected by τare described in terms of an _update set_. An update set Δ is a set of triples _\<f, [a], b\>_ where _f_ _is__a function symbol,_ _[a]_ _is a tuple of elements of the base set of the abstract state machine that respects the arity of_ _f,_ _and_ _b_ _is an element of the base set. The relationship between__s_ and τ_(s)_ is expressed by stating that Δ contains all information of the form _f [a]= b_ that is not true in the state _s_ but is true in τ_(s)_ [<<b-Blass>>].
+To express the relationship between stem:[s] and stem:[tau(s)] more precisely, the changes effected by τare described in terms of an _update set_. An update set stem:[Delta] is a set of triples stem:[ < f,[a\],b >] where stem:[f] is a function symbol, stem:[[a\]] is a tuple of elements of the base set of the abstract state machine that respects the arity of stem:[f], and stem:[b] is an element of the base set. The relationship between stem:[s] and stem:[tau] is expressed by stating that Δ contains all information of the form stem:[f [a\]= b] that is not true in the state stem:[s] but is true in stem:[tau(s)] <<b-Blass>>.
 
-The pair _\<f, [a]\>_ is also called a _location_ of a state _s._ This captures the idea of updating the value of a variable in a conventional imperative programming language. A member _\<f, [a], b\>_ of an update set is also known as an _update_ and may be written _f [a]:= b_ to reinforce the idea of variable assignment.
+The pair stem:[< f, [a\] >] is also called a _location_ of a state stem:[s]. This captures the idea of updating the value of a variable in a conventional imperative programming language. A member stem:[<f, [a\], b>] of an update set is also known as an _update_ and may be written stem:[f [a\]:= b] to reinforce the idea of variable assignment.
 
-An abstract state machine provides a model of computation for an algorithm that is expressed as a program using a programming-style syntax. The algorithm defines the update set for every state of the ASM. To facilitate the study of the kinds of algorithms captured by different kinds of ASM, axioms [<<b-Blass>>] have been developed to define classes of ASMs in a syntax-independent way [b‑Glausch]. As well as capturing the ideas of state and one-step transformation outlined above (the Sequential Time and Abstract State postulates, [<<b-Blass>>] and [<<b-Gurevich_2000>>]), axioms aim to capture the idea that the amount of computation required to move from _s_ to τ_(s)_ must be bounded, where the bound depends only on the algorithm and not on the state.
+An abstract state machine provides a model of computation for an algorithm that is expressed as a program using a programming-style syntax. The algorithm defines the update set for every state of the ASM. To facilitate the study of the kinds of algorithms captured by different kinds of ASM, axioms <<b-Blass>> have been developed to define classes of ASMs in a syntax-independent way [b‑Glausch]. As well as capturing the ideas of state and one-step transformation outlined above (the Sequential Time and Abstract State postulates, <<b-Blass>> and <<b-Gurevich_2000>>), axioms aim to capture the idea that the amount of computation required to move from stem:[s] to stem:[tau(s)] must be bounded, where the bound depends only on the algorithm and not on the state.
 
-[[a__F1_3_1_4Specifying_an_abstract_state_machine]]
-===== F1.3.1.4 Specifying an abstract state machine
+[[F1_3_1_4Specifying_an_abstract_state_machine]]
+===== Specifying an abstract state machine
 
-An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation τ: S → S. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.
+An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation stem:[tau: "&nbsp;" S rarr S]. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.
 
-[[a__F1_3_1_5Specifying_the_signature__ vocabulary_]]
-===== F1.3.1.5 Specifying the signature (vocabulary)
+[[F1_3_1_5Specifying_the_signature_vocabulary]]
+===== Specifying the signature (vocabulary)
 
 An ASM signature comprises function names, predicate names and domain names. Names in the signature have a specified arity, and are interpreted over the base set of the states of an ASM. The interpretation of names respects their arity.
 
 The following notational conventions are used when declaring names.
 
-* _Domain names_ start with an uppercase letter and presented in small-capitalized italics (as in [smallcap]#_Agent_#), except when denoting a non‑terminal of the SDL‑2010 abstract grammar. In that case, domain names are written as the SDL‑2010 non‑terminals, i.e., in italics, hyphenated, and starting with an uppercase letter (as in _Agent-definition_). A domain name _D_ is declared by *domain* _D_. A domain name is interpreted as a unary predicate which yields _true_ for the members of the base set that belong to the domain.
+* _Domain names_ start with an uppercase letter and presented in small-capitalized italics (as in [smallcap]#_Agent_#), except when denoting a non‑terminal of the SDL‑2010 abstract grammar. In that case, domain names are written as the SDL‑2010 non‑terminals, i.e., in italics, hyphenated, and starting with an uppercase letter (as in _Agent-definition_). A domain name stem:[D] is declared by *domain* stem:[D]. A domain name is interpreted as a unary predicate which yields _true_ for the members of the base set that belong to the domain.
 
-* _Function names_ are written in italics starting with a lowercase letter (as in _mode_). A function name _f_ is declared by _f_: _D_~1~&times;D~2~&times;...&times;D_~n~ → _D_~0~ , where _n_ is the arity of _f_, and _D_~0~, _D_~1~, _D_~2~... _D_~n~  are domain names. A function name is interpreted as a function over the base set. The interpretation respects the arity of _f_.
+* _Function names_ are written in italics starting with a lowercase letter (as in _mode_). A function name stem:[f] is declared by stem:[f]: stem:[D_1 xx D_2 xx ... xx D_n rarr D_0] , where stem:[n] is the arity of stem:[f], and stem:[D_0], stem:[D_1], stem:[D_2 ... D_n]  are domain names. A function name is interpreted as a function over the base set. The interpretation respects the arity of stem:[f].
 
-* _Predicate names_ that are not _Domain names_ are also written in italics (as in _available_). A predicate name _p_ is declared by _p_: _D_~1~&times;_D_~2~&times;...&times;D_~n~ → [smallcap]#_Boolean_#. A predicate is interpreted as a function whose value is either _true_ or _false_.
+* _Predicate names_ that are not _Domain names_ are also written in italics (as in stem:[ii"available"]). A predicate name stem:[p] is declared by stem:[p]: stem:[D_1 xx D_2 times ... xx D_n rarr] _Boolean_. A predicate is interpreted as a function whose value is either _true_ or _false_.
 
 Declarations also include qualifiers, which specify further restrictions on their interpretation. Qualifiers on name declarations constrain interpretation of the one-step transformation.
 
 * _Static names_ are qualified by the keyword *static*. A name that is declared static has the same interpretation in every state of an ASM. This means that the one-step transformation cannot update a static name. So the interpretation of a static domain name yields _true_ for the same elements in every state, and a static function name yields the same value for a given argument tuple in every state of an ASM.
 
-* Dynamic names are qualified by one of the keywords *controlled*, *shared* or *monitored*. The one-step transformation can change the value of the interpretation of a dynamic name. A dynamic function can yield different values for a given set of arguments in different states of an ASM. An ASM can be subject to external environmental influences. ASM agents can communicate [<<b-Glaesser_2007>>]. When any of these situations is specified, the keywords *controlled*, *shared* and *monitored* constrain visibility and updates of domains, functions and predicates.
+* Dynamic names are qualified by one of the keywords *controlled*, *shared* or *monitored*. The one-step transformation can change the value of the interpretation of a dynamic name. A dynamic function can yield different values for a given set of arguments in different states of an ASM. An ASM can be subject to external environmental influences. ASM agents can communicate <<b-Glaesser_2007>>. When any of these situations is specified, the keywords *controlled*, *shared* and *monitored* constrain visibility and updates of domains, functions and predicates.
 
-.Example (The RMS Signature):
+.The RMS Signature:
 ====
-*static domain* [smallcap]#_Agent_# +
-*static domain* [smallcap]#_Token_# +
+*static domain* [smallcap]#_Agent_#
+
+
+*static domain* [smallcap]#_Token_#
+
+
 *domain* [smallcap]#_Mode_#
 
-*shared* _mode_: [smallcap]#_Agent_# → [smallcap]#_Mode_# +
-*_controlled_* _owner_: [smallcap]#_Token_# → [smallcap]#_Agent_# +
-*static* _ag_: → [smallcap]#_Agent_#
 
-_idle_: [smallcap]#_Agent_# → [smallcap]#_Boolean_# +
-_waiting_: [smallcap]#_Agent_# → [smallcap]#_Boolean_# +
-_busy_: [smallcap]#_Agent_# → [smallcap]#_Boolean_# +
-_available_: [smallcap]#_Token_# → [smallcap]#_Boolean_#
+*shared* _mode_ : [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Mode_#
 
-*monitored* _stop_: [smallcap]#_Agent_# → [smallcap]#_Boolean_#
+
+*_controlled_* _owner_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Agent_#
+
+
+*static* stem:[ii"ag"] : stem:[rarr] [smallcap]#_Agent_#
+
+
+stem:[ii"idle"] : [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Boolean_#
+
+
+stem:[ii"waiting"] : [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Boolean_#
+
+
+stem:[ii"busy"] : [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Boolean_#
+
+
+stem:[ii"available"] : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Boolean_#
+
+
+*monitored* stem:[ii"stop"] : [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Boolean_#
 ====
 
-The static domain names [smallcap]#_Agent_#, [smallcap]#_Token_# and [smallcap]#_Mode_# are introduced to represent the (single) agent of the system, the set of tokens, and the different access modes (exclusive, shared), respectively. The names _mode_ and _owner_ denote dynamic functions; they are used to model the current access mode of an agent and the current owner of a token, respectively. The 0-ary function name _ag_ refers to a value of the domain [smallcap]#_Agent_#. _idle_, _waiting_, _busy_, and _available_ are names of derived, dynamic predicates. _stop_ denotes a monitored predicate, which will be explained later.
+The static domain names [smallcap]#_Agent_#, [smallcap]#_Token_# and [smallcap]#_Mode_# are introduced to represent the (single) agent of the system, the set of tokens, and the different access modes (exclusive, shared), respectively. The names _mode_ and _owner_ denote dynamic functions; they are used to model the current access mode of an agent and the current owner of a token, respectively. The 0-ary function name stem:[ii"ag"] refers to a value of the domain [smallcap]#_Agent_#. stem:[ii"idle"], stem:[ii"waiting"], stem:[ii"busy"], and stem:[ii"available"] are names of derived, dynamic predicates. stem:[ii"stop"] denotes a monitored predicate, which will be explained later.
 
-The vocabularies we will consider also include _predefined names_, which include all the items in the background classes of the ASM. These include the equality sign, the 0-ary predicate names _true_, _false_ and _undefined_, the domain names [smallcap]#_Boolean_#, [smallcap]#_Nat_# and [smallcap]#_Real_#, as well as the names of frequently used standard functions (such as Boolean operations ∧, ∨, ¬, ⇒, ⇔, and set operations ⊆, ∪, ∩, ∊, ∉, etc.). The full collection of predefined names is listed in clause F1.3.6. Interpretation of predefined names is constrained to the usual meanings of those names.
+The vocabularies we will consider also include _predefined names_, which include all the items in the background classes of the ASM. These include the equality sign, the 0-ary predicate names _true_, _false_ and stem:[ii"undefined"], the domain names [smallcap]#_Boolean_#, [smallcap]#_Nat_# and [smallcap]#_Real_#, as well as the names of frequently used standard functions (such as Boolean operations stem:[^^, vv, not, rArr, lArr], and set operations stem:[sube, uu, nn, in, !in], etc.). The full collection of predefined names is listed in <<F1_3_6Predefined_names_and_special_symbols>>. Interpretation of predefined names is constrained to the usual meanings of those names.
 
 The notational conventions described above enable declaration of _basic names_ that are interpreted directly over the ASM base set. As well as _basic names_, the signature of an ASM may include _derived names_, whose interpretation depends on the interpretation of the basic names. Derived names are defined using logical formulae involving other names. The interpretation of a derived name is determined by the interpretations of those other names, and ultimately by the interpretation of base names.
 
-Let _derivedName_ be an n-ary name, and let _formula_(_v_~1~ _,...,v_~n~) denote a formula of the domain _D_ with free variables _v_~1~ _,...,v_~n~  of domains _D_~1~ _,...,Dn_, _n_≥ 0. The general form of a _derived name definition_ is:
+Let _derivedName_ be an n-ary name, and let _formula_ (stem:[v_1,..., v_n]) denote a formula of the domain stem:[D] with free variables stem:[v_1,..., v_n]  of domains stem:[D_1,..., D_N, n >= 0]. The general form of a _derived name definition_ is:
 
-____
-_derivedNameDefinition_::= _derivedName_(_v_~1~ :_D_~1~ ,_...,v_~n~ :_D_~n~ ):_D_ =~def~  _formula_(_v_~1~ _,...,v_~n~ )
-____
+[stem]
+++++
+ii"derivedNameDefinition" "&nbsp;" "::=" "&nbsp;" ii"derivedName" "&nbsp;" (v_1 : "&nbsp;" D_1 , "&nbsp;" ..., "&nbsp;" v_n : "&nbsp;" D_n ): "&nbsp;" D =_{"def"} ii"formula" "&nbsp;" (v_1 , "&nbsp;" ..., "&nbsp;"v_n)
+++++
 
-The result domain _D_ is omitted in case of a derived domain definition.
+The result domain stem:[D] is omitted in case of a derived domain definition.
 
-*Example (Derived names for the _RMS_ specification)*
-
+.Derived names for the _RMS_ specification
+====
 The following derived predicates are defined to refer to the status of an agent/token in a given state.
 
+
+[smallcap]#_Mode_# stem:[=_{"def"}]  {stem:[ ii"exclusive", "&nbsp;" ii"shared"]}
+
+stem:[ii"idle"] (stem:[a] : [smallcap]#_Agent_#): [smallcap]#_Boolean_# stem:[=_{"def"} ii"a.mode" = ii"undefined" ^^ AAt in] [smallcap]#_Token_# : stem:[ii"t.owner" != a]
+
+stem:[ii"waiting"] (stem:[a] : [smallcap]#_Agent_#): [smallcap]#_Boolean_# stem:[=_{"def"} ii"a.mode" != ii"undefined" ^^ AAt in] [smallcap]#_Token_# : stem:[ii"t.owner" != a]
+
+stem:[ii"busy"] (stem:[a] : [smallcap]#_Agent_#): _Boolean_ stem:[=_{"def"}] stem:[ ii"a.mode" != ii"undefined" ^^ AAt in] [smallcap]#_Token_# : stem:[ii"t.owner" = a]
+
+stem:[ii"available"] (stem:[t] : [smallcap]#_Token_#): [smallcap]#_Boolean_# stem:[=_{"def"} ii"t.owner" = ii"undefined"]
 ====
-[smallcap]#_Mode_# =~def~  {_exclusive, shared_}
 
-_idle_(_a:[smallcap]#__Agent__#): [smallcap]#_Boolean_# =~def~ _a.mode_ = _undefined_ ∧ ∀t ∊_Token__: t.owner_ ≠ _a_
+An agent stem:[a] is, for instance, idle if the function _mode_ yields the value stem:[ii"undefined"] for that agent, and stem:[a] does not hold any token. A token stem:[t] is available if no agent is holding stem:[t].
 
-_waiting_(_a:[smallcap]#__Agent__#): [smallcap]#_Boolean_# =~def~ _a.mode_≠_undefined_∧∀t ∊ [smallcap]#_Token_#: t.owner_≠_a_
+For an improved readability, use of the _"."-notation_ is allowed for unary functions and predicates. For instance, stem:[ii"a.mode"] is equivalent to _mode_(stem:[a]).
 
-_busy_(_a:__Agent_): _Boolean_=~def~ _a.mode_≠_undefined_∧∃t ∊ [smallcap]#_Token_#: _t.owner_ = _a_
+[[F1_3_1_6Initial_states]]
+===== Initial states
 
-_available_(_t:[smallcap]#_Token_#): [smallcap]#_Boolean_# =~def~ _t.owner_ = _undefined_
-====
-
-An agent _a_ is, for instance, idle if the function _mode_ yields the value _undefined_ for that agent, and _a_ does not hold any token. A token _t_ is available if no agent is holding _t_.
-
-For an improved readability, use of the"_._"-notation_ is allowed for unary functions and predicates. For instance, _a.mode_ is equivalent to _mode_(_a_).
-
-[[a__F1_3_1_6Initial_states]]
-===== F1.3.1.6 Initial states
-
-The set of _initial states _S_~0~ ⊆ _S_ is defined by constraints imposed on domains, functions and predicates as associated with the names in _V_. The initial constraints for predefined domains and operations are given implicitly (see clause F1.3.6). Initial constraints have the following general form:
+The set of _initial states_ stem:[S_0 sube S] is defined by constraints imposed on domains, functions and predicates as associated with the names in stem:[V]. The initial constraints for predefined domains and operations are given implicitly (see <<F1_3_6Predefined_names_and_special_symbols>>). Initial constraints have the following general form:
 
 ____
-*initially*_ClosedFormula_
+
+*initially* _ClosedFormula_
 ____
 
-*Example (Initial states):*
-
+.Initial states:
+====
 The following constraints define the set of initial states of the system _RMS_.
 
+
+*initially* [smallcap]#_Agent_# = {stem:[ii"ag"]}
+
+*initially* stem:[AAa in] [smallcap]#_Agent_#: stem:[ii"a.idle"] stem:[^^ AAt in] [smallcap]#_Token_#: stem:[ii"t.available"]
 ====
-*initially* [smallcap]#_Agent_# = {_ag_}
 
-*initially* ∀_a_ ∊ [smallcap]#_Agent_#: _a.idle_∧∀_t_∊ [smallcap]#_Token_#: _t.available_
-====
+The first constraint defines the initial set [smallcap]#_Agent_# to consist of a single element stem:[ii"ag"]. The second constraint expresses that initially, the agent of _RMS_ is idle (stem:[ii"a.mode" = ii"undefined"]), and all tokens are available (stem:[ ii"t.owner" = ii"undefined"]). Note that no constraint on stem:[ii"stop"] is defined.
 
-The first constraint defines the initial set [smallcap]#_Agent_# to consist of a single element _ag_. The second constraint expresses that initially, the agent of _RMS_ is idle (_a.mode = undefined_), and all tokens are available (_t.owner_ = _undefined_). Note that no constraint on _stop_ is defined.
+[[F1_3_1_7State_transitions_and_runs]]
+===== State transitions and runs
 
-[[a__F1_3_1_7State_transitions_and_runs]]
-===== F1.3.1.7 State transitions and runs
+A (global) state stem:[ s in S] is given by an interpretation of the names in stem:[V] over the base set of stem:[M]. State transitions can be defined in terms of partial reinterpretations of dynamic domains, functions and predicates. This gives rise to the notions of _location_ as a conceptual means to refer to parts of global states, and of _update_ to describe state changes.
 
-A (global) state _s_∊_S_ is given by an interpretation of the names in _V_ over the base set of _M_. State transitions can be defined in terms of partial reinterpretations of dynamic domains, functions and predicates. This gives rise to the notions of _location_ as a conceptual means to refer to parts of global states, and of _update_ to describe state changes.
+A _location of a state_ stem:[s] _of_ stem:[M] is a pair stem:[ii"loc"_s  = < f, s(x) >], where stem:[f] is a dynamic name in stem:[V], and stem:[s(x)] is a sequence of elements of the base set according to the arity of stem:[f]. An _update of s_ is a pair stem:[delta_s = < ii"loc"_s, s(y) >], where stem:[s(y)] identifies an element of the base set as the new value to be associated with the location stem:[ii"loc"_s]. To _fire_ stem:[delta_s] means to transform stem:[s] into a state stem:[s'] of stem:[M] such that stem:[f_{s'} (s(x)) = s(y)], while all other locations stem:[ii"loc"'_s] of stem:[s], stem:[ii"loc"'_s != ii"loc"_s], remain unaffected. In other words, firing an update modifies the interpretation of a state in a well-defined way.
 
-A _location of a state_ _s_ _of_ _M_ is a pair _loc_~s~  = \<_f_, _s_(_x_)\>, where _f_ is a dynamic name in _V_, and _s_(_x_) is a sequence of elements of the base set according to the arity of _f_. An _update of s_ is a pair δ~s~ = \<_loc~s~, _s_(_y_)\>, where _s_(_y_) identifies an element of the base set as the new value to be associated with the location _loc~s~. To _fire_ δ~s~ means to transform _s_ into a state _s'_ of _M_ such that _f_~s'~(_s_(_x_)) = _s_(_y_), while all other locations _loc'_~s~ of _s_, _loc'_~s~ ≠_loc_~s~, remain unaffected. In other words, firing an update modifies the interpretation of a state in a well-defined way.
-
-The potential behaviour of a basic ASM is captured by a _program_ _P_, which is defined by a _transition rule_ (see clauses F1.3.1.8 and F1.3.1.10). For each state _s_∊_S_, a program _P_ of _M_ defines an _update set_ Δ~s~(_P_) as a finite set of updates of _s_. Δ~s~(_P_) is _consistent_, if and only if it does not contain any two updates δ~s~, δ'~s~ such that δ~s~ = \<_loc_~s~, _s_(_y_)\>, δ'~s~ = \<_loc_~s~, _s_(_y'_)\>, and _s_(_y_)≠_s_(_y'_). The _firing of a consistent update set_Δ~s~(_P_) in state _s_ means to fire all its members simultaneously, i.e., to produce (in one atomic step) a new state _s'_ such that for all locations _loc_~s~ = \<_f_,_s_(_x_)\> of _s_, _f_
-_== s'_(_s_(_x_)) = _s_(_y_), if \<\<_f_,_s_(_x_)\>,_s_(_y_)\> ∊Δ~s~(_P_), and _f_
-_== s'_(_s_(_x_)) = _f_~s~(_s_(_x_)) otherwise, and is called _state transition_. Firing an inconsistent update set has no effect, i.e., _s'_ = _s_.
+The potential behaviour of a basic ASM is captured by a _program_ stem:[P], which is defined by a _transition rule_ (see <<F1_3_1_8Transition_rules>> and <<F1_3_1_10ASM_programs>>). For each state stem:[s in S], a program stem:[P] of stem:[M] defines an _update set_ stem:[Delta_s(P)] as a finite set of updates of stem:[s]. stem:[Delta_s(P)] is _consistent_, if and only if it does not contain any two updates stem:[delta_s, "&nbsp;" delta'_s] such that stem:[delta_s = < ii"loc"_s, "&nbsp;" s(y) >], stem:[delta'_s = < ii"loc"_s, "&nbsp;" s(y') >], and stem:[s(y) != s(y')]. The _firing of a consistent update set_ stem:[Delta_s (P)] in state stem:[s] means to fire all its members simultaneously, i.e., to produce (in one atomic step) a new state stem:[s'] such that for all locations stem:[ii"loc"_s = < f, "&nbsp;" s(x) >] of stem:[s], stem:[f_{s'} (s(x)) = s(y)], if stem:["<<" f, "&nbsp;" s(x) >, "&nbsp;" s(y) > in Delta_s (P)], and stem:[f_{s'} (s(x)) = f_s (s(x))] otherwise, and is called _state transition_. Firing an inconsistent update set has no effect, i.e., stem:[s' = s].
 
 NOTE: In the context of the SDL‑2010 semantics, an inconsistent update set indicates an error in the semantic model. The ASM semantics ensures that such errors do not destroy the notion of state.
 
-The behaviour of a single-agent ASM _M_ is modelled through (finite or infinite) _runs __of__ M_, where a _run_ is a sequence of state transitions of the form:
+The behaviour of a single-agent ASM stem:[M] is modelled through (finite or infinite) _runs of_ stem:[M], where a _run_ is a sequence of state transitions of the form:
 
 [%unnumbered]
+[cols="8*^"]
 |===
-<.<h| <.<h| Δ~s~ ~0~ (_P_) <.<h| <.<h| Δ~s1~(_P_) <.<h| <.<h| Δ~s2~(_P_) <.<h| <.<h| <.<h| _moves_
+| | stem:[Delta_{s0} (P)] | | stem:[Delta_{s1} (P)] | | stem:[Delta_{s2} (P)] | |  _moves_
 
-<.<| _s_~0~ <.<| → <.<| _s_~1~ <.<| → <.<| _s_~2~ <.<| → <.<| _..._ <.<| <.<| _states_
+| stem:[s_0] | stem:[rarr] | stem:[s_1] | stem:[rarr] | stem:[s_2] | stem:[rarr] | ... |  _states_
 |===
 
-such that _s_~0~∊_S_~0~, and _s_~i+1~ is obtained from _s_~i~, for _i_≥ 0, by firing Δ~si~(_P_) on _s_~i~, where Δ~si~(_P_) denotes an update set defined by the program _P_ of _M_ on _s_~i~ (see clause F1.3.1.10). The meaning of an ASM is defined to be the set of all its runs. In the sequel, we restrict attention to runs starting in an initial state, also called _regular runs_.
 
-[[a__F1_3_1_8Transition_rules]]
-===== F1.3.1.8 Transition rules
+such that stem:[s_0 in S_0], and stem:[s_{i+1}] is obtained from stem:[s_i], for stem:[ i >= 0], by firing stem:[Delta_{si} (P)] on stem:[s_i], where stem:[Delta_{si} (P)] denotes an update set defined by the program stem:[P] of stem:[M] on stem:[s_i] (see <<F1_3_1_10ASM_programs>>). The meaning of an ASM is defined to be the set of all its runs. In the sequel, we restrict attention to runs starting in an initial state, also called _regular runs_.
+
+[[F1_3_1_8Transition_rules]]
+===== Transition rules
 
 Transition rules specify update sets over ASM states. Complex rules are formed from elementary rules using various rule constructors. The elementary form of transition rule is called _update instruction_.
 
 * _update_ instruction
 
 ____
-_Rule_ ::= _f_(_t_1,...,_tn_) := _t_0 (_n_≥ 0)
-____
 
-Here, _f_ is a non-static name of _V_ denoting either a controlled or a shared function, predicate or domain, and _t_~0~,_t_~1~,...,_t_~n~ are terms over _V_ identifying, for a given state _s_, the location _loc_ = \<_f_,\<_s_(_t_~1~),..., _s_(_t_~n~)\>\> to be changed and the new value _s_(_t_~0~) to be assigned, respectively. In other words, the above update instruction specifies the update set {\<\<_f_,\<_s_(_t_~1~),..., _s_(_t_~n~)\>\>, _s_(_t_~0~)\>}, consisting of a single update. Note that only locations related to (non-static) basic names may occur at the left-hand side of an update instruction.
-
-*Example (Update instruction):()
-
-Let _t_ be a variable denoting a token and _ag_ be an agent.
-
-====
-_t.owner_ : = _ag_ specifies the update set {\<\<_owner_,\<_s_(_t_)\>\>, _s_(_ag_)\>}
-
-_ag.mode_ : = _undefined_ specifies the update set {\<\<_mode_,\<_s_(_ag_)\>\>, _s_(_undefined_)\>}
-====
-
-The construction of complex transition rules out of elementary update instructions is recursively defined by means of _ASM rule constructors_. For the ASM model applied to define the SDL‑2010 semantics, six different constructors (*if-then*, *do-in-parallel*, *do-forall*, *choose*, *extend*, *let*) are used. These constructors are listed below, with an informal description of their meaning. Here, _Rule_, _Rule_~i~ denote transition rules, _g_ denotes a Boolean term, and _v,v_~1~ _,...,v_~n~ denote free variables over the base set of _M_. The scope of a rule constructor is expressed by appropriate keywords, and can additionally be indicated by indentation. The closing keywords can be omitted, if no confusion arises. If closing keywords are omitted, the corresponding constructor extends as much as possible, but not over the next *where*-clause.
-
-* _if-then__-constructor_
+stem:[ii"Rule" "&nbsp;" "::=" "&nbsp;" f(t_1, "&nbsp;"..., "&nbsp;" t_n) := t_0 (n >= 0)]
 
 ____
-Rule_ ::=*if*_g_*then* +
-_Rule_~1~  +
-[*else* +
-_Rule_~2~] +
+
+Here, stem:[f] is a non-static name of stem:[V] denoting either a controlled or a shared function, predicate or domain, and stem:[t_0, "&nbsp;" t_1 , "&nbsp;" ..., "&nbsp;" t_n] are terms over stem:[V] identifying, for a given state stem:[s], the location stem:[ ii"loc" = < f, "&nbsp;" < s(t_1) , "&nbsp;" ..., "&nbsp;"  s(t_n) ">>"] to be changed and the new value stem:[s(t_0)] to be assigned, respectively. In other words, the above update instruction specifies the update set stem:[{ "<<" f, "&nbsp;" < s(t_1) , "&nbsp;" ..., "&nbsp;" s(t_n) ">>", "&nbsp;" s(t_0) > }], consisting of a single update. Note that only locations related to (non-static) basic names may occur at the left-hand side of an update instruction.
+
+
+.Update instruction:
+====
+Let stem:[t] be a variable denoting a token and stem:[ag] be an agent.
+
+
+stem:[ii"t.owner" := ii"ag"] specifies the update set stem:[{ "<<" ii"owner", "&nbsp;" < s(t) ">>", "&nbsp;" s(ii"ag") >}]
+
+stem:[ii"ag.mode" := ii"undefined"] specifies the update set stem:[{ "<<" ii"mode", "&nbsp;" < s(ag) ">>", "&nbsp;" s(ii"undefined") >}]
+====
+
+The construction of complex transition rules out of elementary update instructions is recursively defined by means of _ASM rule constructors_. For the ASM model applied to define the SDL‑2010 semantics, six different constructors (*if-then*, *do-in-parallel*, *do-forall*, *choose*, *extend*, *let*) are used. These constructors are listed below, with an informal description of their meaning. Here, stem:[ii"Rule"],  stem:[ii"Rule"_i] denote transition rules, stem:[g] denotes a Boolean term, and stem:[v, v_1,..., v_n] denote free variables over the base set of stem:[M]. The scope of a rule constructor is expressed by appropriate keywords, and can additionally be indicated by indentation. The closing keywords can be omitted, if no confusion arises. If closing keywords are omitted, the corresponding constructor extends as much as possible, but not over the next *where*-clause.
+
+* _if-then-constructor_
+
+____
+stem:[ii"Rule" ::=] *if* stem:[g] *then*
+
+
+stem:[ii"Rule"_1]
+
+
+[*else*
+
+
+stem:[ii"Rule"_2]]
+
+
 *endif*
 ____
 
-The update set specified by _Rule_ in a given state _s_ is defined to be the update set of _Rule_~1~ or _Rule_~2~, depending on the value of _g_ in state _s_. Without the optional *else*-part, the update set defined by _Rule_ is the update set of _Rule_~1~ or the empty update set. Sometimes, *elseif* is used as abbreviation for *else if*.
+The update set specified by stem:[ii"Rule"] in a given state stem:[s] is defined to be the update set of stem:[ii"Rule"_1] or stem:[ii"Rule"_2], depending on the value of stem:[g] in state _s_. Without the optional *else*-part, the update set defined by stem:[ii"Rule"] is the update set of stem:[ii"Rule"_1] or the empty update set. Sometimes, *elseif* is used as abbreviation for *else if*.
 
-* _do-in-parallel__-constructor_
+* _do-in-parallel-constructor_
 
 ____
-_Rule_ ::=[*do in-parallel*] +
-_Rule_~1~ +
-... + 
-_Rule_~n~ +
+stem:[ii"Rule" ::=] [*do in-parallel*]
+
+
+stem:[ii"Rule"_1]
+
+
+... 
+
+
+stem:[ii"Rule"_n]
+
+
 [*enddo*]
 ____
 
-The update set defined by _Rule_ in state _s_ is defined to be the union of the update sets of _Rule_~1~ through _Rule_~n~. In other words, the order in which transition rules belonging to the same block are stated is irrelevant. For brevity, the keywords *do in-parallel* and *enddo* may be omitted, where no confusion arises. Hence, an ASM program often appears as a collection of rules rather than a monolithic block rule.
+The update set defined by stem:[ii"Rule"] in state stem:[s] is defined to be the union of the update sets of stem:[ii"Rule"_1] through stem:[ii"Rule"_n]. In other words, the order in which transition rules belonging to the same block are stated is irrelevant. For brevity, the keywords *do in-parallel* and *enddo* may be omitted, where no confusion arises. Hence, an ASM program often appears as a collection of rules rather than a monolithic block rule.
 
 * _do-forall-constructor_
 
 ____
-_Rule_ ::=*do forall* _v: g(v)_ +
-_Rule_~0~_(v)_ +
+stem:[ii"Rule" ::=] *do forall* stem:[v : g(v)]
+
+
+stem:[ii"Rule"_0 (v)]
+
+
 *enddo*
 ____
 
-The effect of _Rule_ is that _Rule_~0~ is fired simultaneously for all elements _v_ of the base set of _M_ for which the Boolean condition _g(v)_ holds in state _s_, where _v_ is a free variable_in_ _Rule_~0~_._ _More precisely,_Δ~s~(_Rule_)_is the union of all update sets _Δ~s~(_Rule_~0~ _(v)_) such that_ _g(v)_ holds in state _s_. Recall that update sets are required to be finite; therefore, _g(v)_ must hold for a finite number of values only.
+The effect of stem:[ii"Rule"] is that stem:[ii"Rule"_0] is fired simultaneously for all elements stem:[v] of the base set of stem:[M] for which the Boolean condition stem:[g(v)] holds in state stem:[s], where stem:[v] is a free variable_in_ stem:[ii"Rule"_0]. _More precisely_, stem:[Delta_s (ii"Rule")] is the union of all update sets stem:[Delta_s (ii"Rule"_0 (v))] such that stem:[g(v)] holds in state stem:[s]. Recall that update sets are required to be finite; therefore, stem:[g(v)] must hold for a finite number of values only.
 
 * _choose-constructor_
 
 ____
-_Rule_ ::=*choose* _v: g(v)_ +
-_Rule_~0~_(v)_ +
+stem:[ii"Rule" "&nbsp;" ::=] *choose* stem:[ "&nbsp;" v "&nbsp;" : "&nbsp;" g(v)]
+
+
+stem:[ii"Rule"_0 (v)]
+
+
 *endchoose*
 ____
 
-The effect of_Rule_is that _Rule_~0~ is fired for an element _v_ of the base set of _M_ for which the condition _g(v)_ holds in state _s_, where _v_ is a free variable _in_ _Rule_~0~_. More precisely,_ Δ~s~(_Rule_) _is some update set_ Δ~s~(_Rule_~0~_(v)_) _such that g(v)_holds in state _s_, or the empty update set if no such _v_ exists.
+The effect of stem:[ii"Rule"] is that stem:[ii"Rule"_0] is fired for an element stem:[v] of the base set of stem:[M] for which the condition stem:[g(v)] holds in state stem:[s], where stem:[v] is a free variable _in_ stem:[ii"Rule"_0]. _More precisely_, stem:[Delta_s (ii"Rule")] _is some update set_ stem:[Delta_s (ii"Rule"_0 (v))] _such that_ stem:[g(v)] holds in state stem:[s], or the empty update set if no such stem:[v] exists.
 
 * _extend-constructor_
 
 ____
-_Rule_ ::=*extend* _D_*with*_v_~1~ _,...,v_~n~ +
-_Rule_~0~_(v_~1~_,...,v_~n~_)_ +
+stem:[ii"Rule" "&nbsp;" ::=] *extend* stem:[D] *with* stem:[ "&nbsp;" v_1, "&nbsp;" ... "&nbsp;" , "&nbsp;" v_n]
+
+
+stem:[ii"Rule"_0 (v_1, ..., "&nbsp;" v_n)]
+
+
 *endextend*
 ____
 
-The effect of _Rule_ when fired at state _s_ is that _n_ reserve elements of _s_ (see clause F1.3.1.2) are imported into the dynamic domain _D_ (while being removed from the reserve), that _v_~1~ _,...,v_~n~ become bound to one of the imported elements each, and then _Rule_~0~ _(v_~1~_,...,v_~n~_) is fired._
+The effect of stem:[ii"Rule"] when fired at state stem:[s] is that stem:[n] reserve elements of stem:[s] (see <<F1_3_1_2States>>) are imported into the dynamic domain stem:[D] (while being removed from the reserve), that stem:[v_1,..., ii "Rule" v_n] become bound to one of the imported elements each, and then stem:[ii"Rule"_0 (v_1,..., v_n)] _is fired_.
 
 The _extend_ constructor can be used to mimic object-based ASM definitions, where objects are dynamically created. Thus, for each object to be created, an element from the reserve is assigned to the corresponding domain, and initialized.
 
@@ -526,42 +584,53 @@ NOTE: _extend_ can be defined in terms of the _import_ constructor (not shown he
 * _let-constructor_
 
 ____
-_Rule_ ::=*let* _v_ = _expression_ *in* +
-_Rule_~0~_(v)_ +
+stem:[ii"Rule" "&nbsp;" ::=] *let* stem:["&nbsp;" v = ii"expression"] *in*
+
+
+stem:[ii"Rule"_0 (v)]
+
 
 *endlet*
 ____
 
-The effect of _Rule_ when fired in some state _s_ is that _v_ is bound to the value of _expression_, and that _Rule_~0~  is fired with this value.
+The effect of stem:[ii"Rule"] when fired in some state stem:[s] is that stem:[v] is bound to the value of _expression_, and that stem:[ii"Rule"_0]  is fired with this value.
 
-*Example (Transition rule with if-then and choose):*
-
-The following transition rule defines the behaviour of agent _ag_ when requesting shared access, i.e., when _ag.__mode_ _=_ _shared_. The rule applies the if-then-constructor, the choose-constructor, and an update instruction.
-
+.Transition rule with if-then and choose:
 ====
-*if* _ag. __mode_ _=_ _shared_ _∧__ ag.w__aiting_ *then*
-*choose* _t_: _t_∊ [smallcap]#_Token_# ∧ _t.available_
-_t.owner_ := _ag_
+The following transition rule defines the behaviour of agent stem:[ii"ag"] when requesting shared access, i.e., when stem:[ii"ag.mode" = ii"shared"]. The rule applies the if-then-constructor, the choose-constructor, and an update instruction.
+
+
+*if* stem:["&nbsp;" ii"ag.mode" = ii"shared" ^^ ii "ag.waiting" "&nbsp;"] *then*
+
+
+*choose* stem:["&nbsp;" t "&nbsp;" : "&nbsp;" t in][smallcap]#_Token_# stem:[^^ ii"t.available"]
+
+
+stem:[ii"t.owner" := ii"ag"]
+
+
 *endchoose*
+
+
 *endif*
 ====
 
-The precise meaning of the rule is given by its update set with respect to a state _s_, which is either {\<\<_owner_,\<_s_(_t_)\>\>, _s_(_ag_)\>} for some token _s_(_t_) available in _s_, if all further predicates stated in the if-then-constructor hold in _s_, or the empty update set otherwise.
+The precise meaning of the rule is given by its update set with respect to a state stem:[s], which is either stem:[{"<<" ii "owner", < s(t) ">>", "&nbsp;" s(ii"ag") >}] for some token stem:[s(t)] available in stem:[s], if all further predicates stated in the if-then-constructor hold in stem:[s], or the empty update set otherwise.
 
-[[a__F1_3_1_9Abbreviations]]
-===== F1.3.1.9 Abbreviations
+[[F1_3_1_9Abbreviations]]
+===== Abbreviations
 
-Rules can be structured using _abbreviations_, consisting of _rule macros_ and _derived__names_, which may have parameters. This allows for hierarchical definitions, and the stepwise refinement of complex rules, which supports the understanding of ASM model definitions.
+Rules can be structured using _abbreviations_, consisting of _rule macros_ and _derived names_, which may have parameters. This allows for hierarchical definitions, and the stepwise refinement of complex rules, which supports the understanding of ASM model definitions.
 
-Derived names are introduced (as explained in clauses F1.3.1.5 and F1.3.5.3), i.e., by declaration and definition, or alternatively, in the compact form, by combining declaration and definition.
+Derived names are introduced (as explained in <<F1_3_1_5Specifying_the_signature_vocabulary>> and <<F1_3_5_3Derived_names>>), i.e., by declaration and definition, or alternatively, in the compact form, by combining declaration and definition.
 
 * _rule-macro_-definition
 +
 --
-Let _Rule_~0~  denote a transition rule with free variables _v_~1~ _,...,v_~n~ _of domains_ _D_~1~,_..._,_D_~n~_, n_≥ 0_._ The general form of a rule macro definition is:
+Let stem:[ii"Rule"_0]  denote a transition rule with free variables stem:[v_1 ,..., v_n] _of domains_ stem:[D_1,..., "&nbsp;" D_n, "&nbsp;" n >= 0]. The general form of a rule macro definition is:
 
 ____
-_RuleMacroDefinition_ ::=_RuleMacroName(v~1~:D~1~,...,v~n~:D~n~)_ ≡ _Rule_~0~ _(v_~1~_,...,v_~n~_)_
+stem:[ii"RuleMacroDefinition" "&nbsp;" "::=" "&nbsp;" ii"RuleMacroName"(v_1  "&nbsp;" : "&nbsp;" D_1 ,..., v_n "&nbsp;" : "&nbsp;" D_n) -= ii"Rule"_0 (v_1, "&nbsp;" ..., "&nbsp;" v_n)]
 ____
 
 Rule macro names are, by convention, written in small capitals, with a leading capital letter (as in [smallcap]#SharedAccess#).
@@ -570,12 +639,18 @@ Rule macro names are, by convention, written in small capitals, with a leading c
 * _where_-part
 +
 --
-By default, _rule macros_ and _derived__names_ have a global scope. However, their scope can also be restricted to a particular transition rule _Rule_ by using the where-part.
+By default, _rule macros_ and _derived names_ have a global scope. However, their scope can also be restricted to a particular transition rule stem:[ii"Rule"] by using the where-part.
 
 ____
-_Rule_ ::=_Rule_~0~ +
-*where* +
-( _RuleMacroDefinition_ | _DerivedNameDefinition )_^+^ + 
+stem:[ii"Rule" "&nbsp;" "::=" "&nbsp;" ii"Rule"_0]
+
+
+*where* 
+
+
+stem:[( ii"RuleMacroDefinition" "&nbsp;"] | stem:[{: "&nbsp;" ii"DerivedNameDefinition")^+]
+
+
 *endwhere*
 ____
 --
@@ -586,134 +661,203 @@ ____
 Rule macros are applied in transition rules as follows:
 
 ____
-_Rule_ ::=_RuleMacroName__(t_~1~_,...,t_~n~_)_
+stem:[ii"Rule" "&nbsp;" "::=" "&nbsp;" ii"RuleMacroName"(t_1,..., "&nbsp;" t_n)]
 ____
 
 Formally, rule macros are syntactical abbreviations, i.e., each occurrence of a macro in a rule is to be replaced textually by the related macro definition (replacing formal parameters by actual parameters).
 --
 
-*Example (Rule macro):*
-
-The transition rule from the previous example can be stated using rule macros, and be defined as a macro itself. Here, [smallcap]#SharedAccess# is a macro definition with global scope that can be used in other places of the ASM model definition. [smallcap]#GetToken# is a parameterized macro definition with a local scope restricted to the rule [smallcap]#SharedAccess#, with formal parameter _a_. When [smallcap]#GetToken# is applied in [smallcap]#SharedAccess#, _a_ is replaced by the actual parameter _ag_.
-
+.Rule macro:
 ====
-[smallcap]#SharedAccess# ≡ +
-*if* _ag. __mode_ _=_ _shared_ ∧ _ag.waiting_ *then* +
-[smallcap]#GetToken#(_ag_) +
-*endif* +
-*where* +
-[smallcap]#GetToken#(a: [smallcap]#__Agent__# ) ≡ +
-*choose* _t_: _t_∊_Token_ ∧_t.available_ +
-_t.owner_ := _a_ +
-*endchoose* +
+The transition rule from the previous example can be stated using rule macros, and be defined as a macro itself. Here, [smallcap]#SharedAccess# is a macro definition with global scope that can be used in other places of the ASM model definition. [smallcap]#GetToken# is a parameterized macro definition with a local scope restricted to the rule [smallcap]#SharedAccess#, with formal parameter stem:[ii"a"]. When [smallcap]#GetToken# is applied in [smallcap]#SharedAccess#, stem:[ii"a"] is replaced by the actual parameter stem:[ii"ag"].
+
+
+[smallcap]#SharedAccess# ≡
+
+
+*if* stem:["&nbsp;" ii"ag.mode" = ii"shared" ^^ ii"ag.waiting" "&nbsp;"] *then*
+
+
+[smallcap]#GetToken#(stem:[ii"ag"])
+
+
+*endif*
+
+
+*where*
+
+
+[smallcap]#GetToken# (a:[smallcap]#Agent#) ≡
+
+
+*choose* stem:["&nbsp;" t "&nbsp;" : "&nbsp;" t in ii"Token" ^^ ii"t.available"]
+
+
+stem:[ii"t.owner" := a]
+
+
+*endchoose*
+
+
 *endwhere*
+
 ====
 
-[[a__F1_3_1_10ASM_programs]]
+[[F1_3_1_10ASM_programs]]
 ===== ASM programs
 
-An _ASM program_ _P_ is given by a framed _transition rule_ (or _rule_ for short) of the following form:
+An _ASM program_ stem:[P] is given by a framed _transition rule_ (or _rule_ for short) of the following form:
 
-====
-_Rule_
-====
+----
+Rule
+----
 
 As already mentioned, rule macro definitions may either have a local or a global scope. To have a global scope, the macro definitions can be given outside the ASM program and can thus also be applied in the ASM program.
 
 In the basic ASM model there is just one ASM program, which is statically associated with an implicitly defined agent executing this program. The next clause allows several ASM programs to be defined and associated with different agents that are introduced dynamically during abstract machine runs.
 
-*Example* *(ASM program):*
-
-The ASM program _P_ of the system _RMS_ is defined as follows:
-
+.ASM program:
 ====
-*do in-parallel* +
-[smallcap]#SharedAccess# +
-[smallcap]#ExclusiveAccess# +
-[smallcap]#ReleaseAccess# +
-*enddo* +
+The ASM program stem:[P] of the system _RMS_ is defined as follows:
+
+
+*do in-parallel*
+
+
+[smallcap]#SharedAccess#
+
+
+[smallcap]#ExclusiveAccess#
+
+
+[smallcap]#ReleaseAccess#
+
+
+*enddo*
+
+
 *where*
 
-[smallcap]#SharedAccess# ≡ +
-*if* _ag.__mode_ _=_ _shared_ ∧_ag.waiting_*then* +
-*choose*_t_: _t_∊ [smallcap]#_Token_# ∧_t.available_ +
-_t.owner_ := _ag_ +
-*endchoose* +
+
+[smallcap]#SharedAccess# ≡
+
+
+*if* stem:["&nbsp;" ii"ag.mode" = ii"shared" ^^ ii "ag.waiting" "&nbsp;"] *then*
+
+
+*choose* stem:[t "&nbsp;" : "&nbsp;" t in][smallcap]#_Token_# stem:[^^ ii"t.available"]
+
+
+stem:[ ii"t.owner" :=  ii"ag"]
+
+
+*endchoose*
+
+
 *endif*
 
-[smallcap]#ExclusiveAccess# ≡ +
-*if* _ag. __mode_ _=_ _exclusive_∧∀_t_∊_ [smallcap]#Token_#: _t.a__ vailable_ *then* +
-*do forall*_t_: _t_∊_Token_ +
-_t.__owner_:= _ag_ +
-*enddo* +
+
+[smallcap]#ExclusiveAccess# ≡
+
+
+*if* stem:["&nbsp;" ii"ag.mode" = ii"exclusive" ^^ AAt in] [smallcap]#Token# : stem:[ii"t.available" "&nbsp;"] *then*
+
+
+*do forall* stem:["&nbsp;" t : t in] [smallcap]#_Token_#
+
+
+stem:[ii"t.owner" := ii"ag"]
+
+
+*enddo*
+
+
 *endif*
 
-[smallcap]#ReleaseAccess# ≡ +
-*if* _ag.busy_ ∧_ag.__stop_ *then* +
-*do in-parallel* +
-_ag.__mode_ := _undefined_ +
-*do forall*_t_: _t_∊ [smallcap]#_Token_# ∧_t.__owner = ag_ +
-_t.owner_ := _undefined_ +
-*enddo* +
-*enddo* +
-*endif* +
+
+[smallcap]#ReleaseAccess# ≡
+
+
+*if* stem:["&nbsp;" ii"ag.busy" ^^ ii"ag.stop" "&nbsp;"] *then*
+
+
+*do in-parallel*
+
+
+stem:[ii"ag.mode" := ii"undefined"]
+
+
+*do forall* stem:["&nbsp;" t : t in] [smallcap]#_Token_# stem:[^^ ii"t.owner" = ii"ag"]
+
+
+stem:[ii"t.owner" := ii"undefined"]
+
+
+*enddo*
+
+
+*enddo*
+
+
+*endif*
+
+
 *endwhere*
 ====
 
 The ASM program is defined by a single transition rule as shown in the frame. The transition rule uses the do-in-parallel-constructor and 3 rule macros, which results in a hierarchical rule definition.
 
-[[a__F1_3_2Distributed_multi-agent_ASM]]
-==== F1.3.2 Distributed multi-agent ASM
+[[F1_3_2Distributed_multi-agent_ASM]]
+==== Distributed multi-agent ASM
 
 Mathematical modelling of concurrent and reactive systems requires more than the basic ASM model described above. This section presents the concept of a _distributed ASM_ operating in _parallel_ with its external environment, where the environment behaves as one or more ASMs.
 
-A _distributed Abstract State Machine __M_ is defined over a given _vocabulary_ _V_ by its _states__ S_, its _initial states__S_~0~⊆_S_, its agents _A_, and its _programs_ _P_. These items will be explained in the following subclauses insofar as they differ from the basic ASM model.
+A _distributed Abstract State Machine_ stem:[M] is defined over a given _vocabulary_ stem:[V] by its _states_  _S_, its _initial states_ stem:[S_0 sube S], its agents _A_, and its _programs_ stem:[P]. These items will be explained in the following subclauses insofar as they differ from the basic ASM model.
 
-[[a__F1_3_2_1Signature]]
-===== F1.3.2.1 Signature
+[[F1_3_2_1Signature]]
+===== Signature
 
-The signature (vocabulary) _V_ of a multi-agent ASM _M_ includes distinguished domain names:
+The signature (vocabulary) stem:[V] of a multi-agent ASM _M_ includes distinguished domain names:
 
 ____
 *controlled domain* [smallcap]#_Agent_#
-____
 
-____
+
 *static domain* [smallcap]#_Program_#
 ____
 
-representing _a dynamic_ set _A_ of agents and an invariant set _P_ of ASM programs, respectively. _Agent, Program_ and_program_: _Agent_ → _Program_ constitutes further _background classes_.
+representing _a dynamic_ set _A_ of agents and an invariant set stem:[P] of ASM programs, respectively. _Agent, Program_ and _program_: stem:[ii "Agent" rarr ii "Program"] constitutes further _background classes_.
 
-Furthermore, _V_ includes a distinguished function name:
+Furthermore, stem:[V] includes a distinguished function name:
 
 ____
-*controlled* _program_: [smallcap]#_Agent_# → [smallcap]#_Program_#
+*controlled* _program_ : [smallcap]#_Agent_# → [smallcap]#_Program_#
 ____
 
-and a special 0-ary function _Self_ (see clause F1.3.2.2), whose interpretation is different for each agent.
+and a special 0-ary function _Self_ (see <<F1_3_2_2Agents_and_runs>>), whose interpretation is different for each agent.
 
-[[a__F1_3_2_2Agents_and_runs]]
+[[F1_3_2_2Agents_and_runs]]
 ===== Agents and runs
 
 A multi-agent, distributed ASM has a finite number of agents. Agents can be created and destroyed dynamically. Each agent executes its own basic ASM. The behaviour of each agent is determined by a program, which is defined by a transition rule. The association between agents and their behaviour is specified by the background function _program_: [smallcap]#_Agent_# → [smallcap]#_Program_#. This function can be updated, allowing agents' behaviour to be modified dynamically, and allowing behaviour to be assigned to newly created agents.
 
-Agents operate concurrently and interact by sending messages to one another (see [<<b-Blass>>] and [ITU‑T Z.101]). More precisely, agents interact by updating locations that are accessible to other agents. Agents can act as [smallcap]#_Communicators_# [<<b-Glaesser>>], whose behaviour is to read input locations, transform the values read, and update output locations that can be read by other agents. In this way messages can be passed asynchronously between agents without the original source or the final destination necessarily having a commonly accessible location. Agents also interact with an external environment, which can be viewed as an agent in its own right, or as a collection of agents.
+Agents operate concurrently and interact by sending messages to one another (see <<b-Blass>> and [ITU‑T Z.101]). More precisely, agents interact by updating locations that are accessible to other agents. Agents can act as [smallcap]#_Communicators_# <<b-Glaesser>>, whose behaviour is to read input locations, transform the values read, and update output locations that can be read by other agents. In this way messages can be passed asynchronously between agents without the original source or the final destination necessarily having a commonly accessible location. Agents also interact with an external environment, which can be viewed as an agent in its own right, or as a collection of agents.
 
-A multi-agent distributed ASM is formed by combining its constituent single-agent ASMs. Like a single agent ASM, it has a set states _S_, a subset of initial states _S_~0~ ⊆_S_ and a function τ: _S → S_, called the one-step transformation.
+A multi-agent distributed ASM is formed by combining its constituent single-agent ASMs. Like a single agent ASM, it has a set states _S_, a subset of initial states stem:[S_0 sube S] and a function stem:[τ: S rarr S], called the one-step transformation.
 
-To assign a behaviour to an agent of _M_, the distinguished function _program_ (see clause F1.3.2.1) yields (for each agent _a_ of _M_) the program of _P_ to be executed by _a_. The function _program_ thus allows the definition (or redefinition) of the behaviour of agents dynamically; it is thereby possible to create new agents at run time. In a given state _*s*_ of _M_, the agents of _M_ are all those elements _a_ of s such that _a.__program identifies_ a behaviour (asdefined by some program of _P_) to be associated with _a_.
+To assign a behaviour to an agent of _M_, the distinguished function _program_ (see <<F1_3_2_1Signature>>) yields (for each agent stem:[ii"a"] of _M_) the program of stem:[P] to be executed by stem:[ii"a"]. The function _program_ thus allows the definition (or redefinition) of the behaviour of agents dynamically; it is thereby possible to create new agents at run time. In a given state *_s_* of _M_, the agents of _M_ are all those elements stem:[ii"a"] of s such that _a.program identifies_ a behaviour (asdefined by some program of stem:[P]) to be associated with stem:[ii"a"].
 
 A special 0-ary function _Self_ serves as a _self-reference_ identifying the respective agent calling _Self_:
 
 ____
-*monitored* _Self_: →_Agent_
+*monitored* stem:[ ii "Self" : rarr] [smallcap]#_Agent_#
 ____
 
-For every agent, _Self_ has a different interpretation. By using _Self_ as an additional function argument, each agent _a_ can have its own partial view of a given global state of _M_ on which it fires the rule in _a_._program_.
+For every agent, _Self_ has a different interpretation. By using _Self_ as an additional function argument, each agent stem:[ii"a"] can have its own partial view of a given global state of _M_ on which it fires the rule in _a.program_.
 
-*Example (Scheme of a distributed ASM)*
-
-In the following figure, a particular distributed ASM _M_, consisting of three agents _ag_~1~, _ag_~2~, and _ag_~3~ is illustrated. The function _program_ associates, with each agent, one of the ASM programs _P_~1~, _P_~2~, and _P_~3~. Here, _ag_~1~ and _ag_~2~ are assigned the same program. Program _P_~2~ is currently not associated with any agent; however, this may change during execution, as _program_ is a dynamic function. Each agent has its own _partial view_ on a given global state _s_ of _M_, in which it fires the rule of its current program. In the figure, this view is illustrated by the function _view_, which yields, for each agent, its local and its shared state. In fact, the current view of each agent is determined implicitly by the ASM model definition, including the ASM programs.
+.Scheme of a distributed ASM
+====
+In the following figure, a particular distributed ASM stem:[M], consisting of three agents stem:[ii"ag"_1], stem:[ii"ag"_2], and stem:[ii"ag"_3] is illustrated. The function _program_ associates, with each agent, one of the ASM programs stem:[ii "P"_1], stem:[ii "P"_2], and stem:[ii "P"_3]. Here, stem:[ii"ag"_1] and stem:[ii"ag"_2] are assigned the same program. Program stem:[ii "P"_2] is currently not associated with any agent; however, this may change during execution, as _program_ is a dynamic function. Each agent has its own _partial view_ on a given global state stem:[s] of stem:[M], in which it fires the rule of its current program. In the figure, this view is illustrated by the function _view_, which yields, for each agent, its local and its shared state. In fact, the current view of each agent is determined implicitly by the ASM model definition, including the ASM programs.
 
 [[fig-f1-3]]
 .Each agent has a partial view of the global ASM state
@@ -724,36 +868,37 @@ The semantic model of concurrency underlying the distributed ASM model defines b
 
 *Partially ordered runs*
 
-Regarding the moves of an individual agent, these are linearly ordered, whereas moves of different agents need only be ordered in case they are not _independent_ of each other. Intuitively, independent moves model concurrent actions that are incomparable with regard to their order of execution. The precise meaning of independence is implied by the coherence condition in the formal definition of partially ordered runs [<<b-Gurevich>>].
+Regarding the moves of an individual agent, these are linearly ordered, whereas moves of different agents need only be ordered in case they are not _independent_ of each other. Intuitively, independent moves model concurrent actions that are incomparable with regard to their order of execution. The precise meaning of independence is implied by the coherence condition in the formal definition of partially ordered runs <<b-Gurevich>>.
 
-A run ρ of a distributed ASM _M_ is given by a triple (Λ,_A_,σ) satisfying the following four conditions:
+A run ρ of a distributed ASM stem:[M] is given by a triple stem:[(^^,A,sigma)] satisfying the following four conditions:
 
-. Λ is a partially ordered set of moves, where each move has only a finite number of predecessors;
+. stem:[^^] is a partially ordered set of moves, where each move has only a finite number of predecessors;
 
-. _A_ is a function on Λ associating agents to moves such that the moves of any single agent of _M_ are linearly ordered;
+. stem:[A] is a function on Λ associating agents to moves such that the moves of any single agent of stem:[M] are linearly ordered;
 
-. σ assigns a state of _M_ to each initial segment _Y_ of Λ, where σ(_Y_) is the result of performing all moves in _Y_; if _Y_ is empty, then σ(_Y_) ∊ _S_~0~_;_
+. σ assigns a state of stem:[M] to each initial segment stem:[Y] of Λ, where stem:[sigma(Y)] is the result of performing all moves in stem:[Y]; if stem:[Y] is empty, then stem:[sigma(Y) in S_0];
 
-. if _y_ is a maximal element in a finite initial segment _Y_ of Λ and _Z_ = _Y_ – { _y_ }, then _A_(_y_) is an agent in σ(_Z_) and σ(_Y_) is obtained from σ(_Z_) by firing _A_(_y_) at σ(_Z_) (_coherence condition_).
+. if stem:[Y] is a maximal element in a finite initial segment stem:[Y] of stem:[^^] and stem:[Z = Y - { y }], then stem:[A(y)] is an agent in stem:[sigma(Z)] and stem:[sigma(Y)] is obtained from stem:[sigma(Z)] by firing stem:[A(y)] at stem:[sigma(Z)] (_coherence condition_).
 
 *Implications*
 
-Partially ordered runs have certain characteristic properties that can be stated in terms of _linearizations_ of partially ordered sets. A linearization of a partially ordered set Λ is a linearly ordered set Λ' with the same elements such that if _y_ \< _z_ in Λ then _y_ \< _z_ in Λ'. Accordingly, the semantic model of concurrency (as implied by the notion of a partially ordered run) can further be characterized as follows [<<b-Gurevich>>]:
+Partially ordered runs have certain characteristic properties that can be stated in terms of _linearizations_ of partially ordered sets. A linearization of a partially ordered set Λ is a linearly ordered set Λ' with the same elements such that if stem:[y < z] in stem:[^^] then stem:[y < z] in stem:[^^']. Accordingly, the semantic model of concurrency (as implied by the notion of a partially ordered run) can further be characterized as follows <<b-Gurevich>>:
 
-* All _linearizations_ of the same finite initial segment of a run of _M_ have the same final state.
+* All _linearizations_ of the same finite initial segment of a run of stem:[M] have the same final state.
 
-* A property holds in every reachable state of a run ρ of _M_ if and only if it holds in every reachable state of every linearization of ρ.
+* A property holds in every reachable state of a run ρ of stem:[M] if and only if it holds in every reachable state of every linearization of ρ.
+====
 
-[[a__F1_3_2_3Distributed_ASM_programs]]
-===== F1.3.2.3 Distributed ASM programs
 
-A distributed _ASM M_ has a finite set _P_ of programs. Eachprogram _p_ _∊_ _P_ is given by a _program name_ and a _transition rule_ (or _rule_ for short). The program name uniquely identifies _p_ within _P_, and is represented by a unary static function. Programs are stated in the following form:
+[[F1_3_2_3Distributed_ASM_programs]]
+===== Distributed ASM programs
+
+A distributed _ASM M_ has a finite set stem:[P] of programs. Eachprogram stem:[p in P] is given by a _program name_ and a _transition rule_ (or _rule_ for short). The program name uniquely identifies stem:[p] within stem:[P], and is represented by a unary static function. Programs are stated in the following form:
 
 [smallcap]#Asm-Program#:
-
-====
-_Rule_
-====
+----
+Rule
+----
 
 NOTE: Strictly, the program names of M are represented by a distinguished set of elements from the base set.
 
@@ -762,16 +907,16 @@ Program names are, by convention, hyphenated and written in small capitals, with
 By default, the following implicit constraint applies:
 
 ____
-*initially* _Program_ = {program~1~ ,...,program~n~ }
+*initially* stem:[ii"Program" = {ii"program"_1 ,..., ii"program"_n }]
 ____
 
-where program~1~ ,.. ,program~n~  are the names of the programs that are defined in the ASM model.
+where stem:[ii"program"_1 ,..., ii"program"_N]  are the names of the programs that are defined in the ASM model.
 
-*Example (ASM program)*
-
+.ASM program
+====
 The distributed ASM program of the system _RMS_ defines a single program as follows:
 
-====
+
 [smallcap]#Resource-Management-Program#: +
 *do in-parallel* +
 [smallcap]#SharedAccess# +
@@ -780,22 +925,22 @@ The distributed ASM program of the system _RMS_ defines a single program as foll
 *enddo* +
 *where* +
 [smallcap]#SharedAccess# ≡ +
-*if* _Self.mode = shared_ ∧_Self.waiting_ *then* +
-*choose*_t_: _t_∊ [smallcap]#_Token_# ∧_t.available_ +
+*if* _Self.mode_ = _shared_ ∧ _Self.waiting_ *then* +
+*choose* _t_ : _t_ ∊ [smallcap]#_Token_# ∧ _t.available_ +
 _t.owner_ := _Self_ +
 *endchoose* +
 *endif* +
 [smallcap]#ExclusiveAccess# ≡ +
-*if* _Self. __mode_ _=_ _exclusive_∧∀_t_∊ [smallcap]#_Token_#: _t.a__ vailable_ *then* +
-*do forall*_t_: _t_∊ [smallcap]#_Token_# +
-_t.__owner_:= _Self_ +
+*if* _Self.mode_ = _exclusive_ ∧ ∀_t_ ∊ [smallcap]#_Token_#: _t.available_ *then* +
+*do forall* _t_ : _t_ ∊ [smallcap]#_Token_# +
+_t.owner_ := _Self_ +
 *enddo* +
 *endif* +
 [smallcap]#ReleaseAccess# ≡ +
-*if* _Self.busy_∧_Self.__ stop_ *then* +
+*if* _Self.busy_ ∧ _Self.stop_ *then* +
 *do in-parallel* + 
-_Self.__mode_ := _undefined_ +
-*do forall*_t_: _t_∊ [smallcap]#_Token_# ∧_t.__owner = Self_ +
+_Self.mode_ := _undefined_ +
+*do forall* _t_ : _t_ ∊ [smallcap]#_Token_# ∧ _t.owner_ = _Self_ +
 _t.owner_ := _undefined_ +
 *enddo* + 
 *enddo* + 
@@ -803,9 +948,9 @@ _t.owner_ := _undefined_ +
 *endwhere* +
 ====
 
-The program of the distributed ASM has the name Resource-Management-Program, and is defined as the single-agent ASM program before, with one difference: all occurrences of _ag_ have been replaced by calls of the function _Self_. This allows the association of the program with different agents, while accessing the local state of these agents.
+The program of the distributed ASM has the name Resource-Management-Program, and is defined as the single-agent ASM program before, with one difference: all occurrences of stem:[ii"ag"] have been replaced by calls of the function _Self_. This allows the association of the program with different agents, while accessing the local state of these agents.
 
-[[a__F1_3_3The_external_world]]
+[[F1_3_3The_external_world]]
 ==== The external world
 
 Following an _open system view_, interactions between a system and the external world, e.g., the environment into which the system is embedded, are modelled in terms of various interface mechanisms. Regarding the reactive nature of distributed systems, it is important to clearly identify and precisely state:
@@ -822,7 +967,7 @@ These domains, functions or predicates can only be modified by agents of the ASM
 
 * _monitored names_
 
-These domains, functions or predicates can only be modified by the environment, but are visible to ASM agents. Thus, a monitored domain, function or predicate may change its values from state to state in an unpredictable way, unless this is restricted by _integrity__constraints_ (see below). Monitored names are preceded by the keyword *monitored* at their point of declaration. See <<fig-f1-3>>.
+These domains, functions or predicates can only be modified by the environment, but are visible to ASM agents. Thus, a monitored domain, function or predicate may change its values from state to state in an unpredictable way, unless this is restricted by _integrity constraints_ (see below). Monitored names are preceded by the keyword *monitored* at their point of declaration. See <<fig-f1-3>>.
 
 * _shared names_
 
@@ -831,130 +976,134 @@ These domains, functions or predicates are visible to and may be altered by the 
 [[fig-f1-4]]
 .Extended classification of ASM names
 ====
-*Example (External world)*
-The vocabulary _V_ of the system _RMS_ is extended by a classification of dynamic functions and predicates:
+*External world*
+
+The vocabulary stem:[V] of the system _RMS_ is extended by a classification of dynamic functions and predicates:
 
 ____
-*shared* _mode_: [smallcap]#_Agent_# → [smallcap]#_Mode_#
+*shared* _mode_ : [smallcap]#_Agent_# → [smallcap]#_Mode_#
+
+*controlled* _owner_ : [smallcap]#_Token_# → [smallcap]#_Agent_#
+
+*monitored* _stop_ : [smallcap]#_Agent_# → [smallcap]#_Boolean_#
 ____
 
-____
-*controlled* _owner_: [smallcap]#_Token_# → [smallcap]#_Agent_#
-____
-
-____
-*monitored* _stop_: [smallcap]#_Agent_# → [smallcap]#_Boolean_#
-____
-
-The function _mode_, which determines the current access mode, is shared. It may be affected by externally controlled 'set' operations, switching it to one of the values _exclusive_ or _shared_. Furthermore, it is reset internally when the resource is released (see clause F1.3.2.3).
+The function _mode_, which determines the current access mode, is shared. It may be affected by externally controlled 'set' operations, switching it to one of the values _exclusive_ or _shared_. Furthermore, it is reset internally when the resource is released (see <<F1_3_2_3Distributed_ASM_programs>>).
 
 The predicate _stop_ represents an external stop request, such as an interrupt, and therefore is monitored.
 ====
 
-In general, the influence of the environment on the system through shared and monitored names may be completely unpredictable. However, preconditions on the expected environment behaviour may be expressed by stating _integrity__constraints_, which are required to hold in _all_ states and runs of _M_. Note that integrity constraints merely express preconditions on the environment behaviour, but _not_ properties the system is supposed to have.
+In general, the influence of the environment on the system through shared and monitored names may be completely unpredictable. However, preconditions on the expected environment behaviour may be expressed by stating _integrity constraints_, which are required to hold in _all_ states and runs of stem:[M]. Note that integrity constraints merely express preconditions on the environment behaviour, but _not_ properties the system is supposed to have.
 
 Integrity constraints are stated in the following form:
 
 ____
-_IntegrityConstraint_ ::= *constraint*_ClosedFormula_
+_IntegrityConstraint_ ::= *constraint* _ClosedFormula_
 ____
 
-*Example (Integrity constraints):*
+.Integrity constraints:
+====
+//*Integrity constraints:*
 
 The following integrity constraint states that stop requests are only generated for busy agents:
 
 ____
-*constraint* ∀_a_∊ [smallcap]#_Agent_#: (_a_._stop_ _⇒__a_._busy_)
+*constraint* stem:[AA_a in] [smallcap]#_Agent_#: stem:[(ii "a.stop" rArr ii "a.busy")]
 ____
 
-[[a__F1_3_4Real-time_behaviour]]
+====
+
+[[F1_3_4Real_time_behaviour]]
 ==== Real-time behaviour
 
 By introducing a notion of _real time_ and imposing additional constraints on runs, we obtain a specialized class of ASMs, called _distributed real-time ASM_, with agents performing _instantaneous_ actions in _continuous_ time. Essentially, that means that agents fire their rules at the moment they are enabled.
 
-To incorporate real-time behaviour into the underlying ASM execution model, we introduce a 0-ary monitored real-valued function _currentTime __._ Intuitively, _currentTime__ refers to the physical time __._ _As an integrity constraint on the nature of physical time, it is assumed that__ currentTime_ changes its values monotonically increasing over ASM runs.
+To incorporate real-time behaviour into the underlying ASM execution model, we introduce a 0-ary monitored real-valued function stem:[ii "currentTime"]. Intuitively, stem:[ii "currentTime"] refers to the physical time. As an integrity constraint on the nature of physical time, it is assumed that stem:[ii "currentTime"] changes its values monotonically increasing over ASM runs.
 
 ____
-*monitored*_currentTime_: → [smallcap]#_Real_#
+*monitored* stem:[ii "currentTime" : rarr] [smallcap]#_Real_#
 ____
 
-Consider a given vocabulary _V_ containing [smallcap]#_Real_# (but not _currentTime_) and let _V_^+^ be the extension of _V_ with the function symbol _currentTime_. Restrict attention to _V_^+^-states where _currentTime_evaluates to a real number. One can then define a run _R_ of the resulting machine model as a mapping from the interval [0,∞) to states of vocabulary _V_^+^ satisfying the following _discreteness requirement_:
+Consider a given vocabulary stem:[V] containing [smallcap]#_Real_# (but not stem:[ii "currentTime"]) and let stem:[V^+] be the extension of stem:[V] with the function symbol stem:[ii "currentTime"]. Restrict attention to stem:[V^+] -states where stem:[ii "currentTime"] evaluates to a real number. One can then define a run _R_ of the resulting machine model as a mapping from the interval [0,∞) to states of vocabulary stem:[V] satisfying the following _discreteness requirement_:
 
-. for every _t_≥ 0, _currentTime_ evaluates to _t_ at state _R_(_t_);
+. for every stem:[t >= 0], stem:[ii "currentTime"] evaluates to stem:[t] at state stem:[R(t)];
 
-. for every τ \> 0, there is a finite sequence 0 = _t_~0~  \< _t_~1~  \<…\< _t_~n~  = τ such that if _t_~i~  \< α \< β \< _t_~i~ ~+1~  then σ(α) = σ(β).
+. for every stem:[tau > 0], there is a finite sequence stem:[0 = t_0 < t_1 < ... < t_n = tau] such that if stem:[t_i < alpha < beta < t_{i+1}]  then stem:[sigma(alpha) = sigma(beta)].
 
-where the reduct of _R_(_t_) to _V_ is denoted by σ(_t_) such that for a given value _t_, σ(_t_) is derived from _R_(_t_) by ignoring the interpretation of the function name _currentTime_.
+where the reduct of stem:[R(t)] to stem:[V] is denoted by stem:[sigma(t)] such that for a given value stem:[t], stem:[sigma(t)] is derived from stem:[R(t)] by ignoring the interpretation of the function name stem:[ii "currentTime"].
 
-Exploiting the discreteness property, one effectively obtains some finite representation (_history_) for every finite (sub-) run by abstracting from those states that do not differ in any significant way from their neighbouring states. In particular, one can simply ignore all states that are identical to their preceding state except that _currentTime_ has increased. From the above definition of run it follows that only finitely many states are left.
+Exploiting the discreteness property, one effectively obtains some finite representation (_history_) for every finite (sub-) run by abstracting from those states that do not differ in any significant way from their neighbouring states. In particular, one can simply ignore all states that are identical to their preceding state except that stem:[ii "currentTime"] has increased. From the above definition of run it follows that only finitely many states are left.
 
-[[a__F1_3_5Example__ The_system_RMS]]
+[[F1_3_5Example_The_system_RMS]]
 ==== Example: The system _RMS_
 
 In this clause, we assemble the pieces of the ASM model definition of the system _RMS_ into their final version. For completeness, we also repeat the informal description.
 
-[[a__F1_3_5_1Informal_description]]
+[[F1_3_5_1Informal_description]]
 ===== Informal description
 
-In order to illustrate the ASM model, a simple resource management system _RMS_ consisting of a group of _n \>_ 1 _agents_ competing for a _resource_, for instance, a device or service, is defined. Informally, this system is characterized as follows:
+In order to illustrate the ASM model, a simple resource management system _RMS_ consisting of a group of stem:[n > 1] _agents_ competing for a _resource_, for instance, a device or service, is defined. Informally, this system is characterized as follows:
 
-* There is a set of _m__tokens_, _m_ \< _n_, used to grant _exclusive_ or _non-exclusive_ (_shared_) access to the resource.
+* There is a set of stem:[m] _tokens_, stem:[m < n], used to grant _exclusive_ or _non-exclusive_ (_shared_) access to the resource.
 
 * Depending on whether the desired access mode is exclusive or shared, an agent must own all tokens or one token, respectively, before he may access the resource.
 
-* An agent is _idle_ when not competing for a resource, _waiting_ when trying to obtain access to the resource, or _busy_ when owning the right to access the resource.
+* An agent is stem:[ii"idle"] when not competing for a resource, stem:[ii"waiting"] when trying to obtain access to the resource, or stem:[ii"busy"] when owning the right to access the resource.
 
-* Once an agent is _waiting_, it remains so until it obtains access to the resource.
+* Once an agent is stem:[ii"waiting"], it remains so until it obtains access to the resource.
 
-* A busy agent releases the resource when it is no longer needed, as indicated by a _stop__condition_ for that agent that is externally set. On releasing the resource, all tokens owned by the agent are returned.
+* A busy agent releases the resource when it is no longer needed, as indicated by a _stop condition_ for that agent that is externally set. On releasing the resource, all tokens owned by the agent are returned.
 
 * Stop conditions are only indicated when an agent is busy.
 
 * Initially, all agents are idle, and all tokens are available.
 
-[[a__F1_3_5_2Vocabulary]]
-===== F1.3.5.2 Vocabulary
+[[F1_3_5_2Vocabulary]]
+===== Vocabulary
 
 ____
 *static domain* [smallcap]#_Token_# +
 *shared* _mode_: [smallcap]#_Agent_# → [smallcap]#_Mode_# +
-*controlled* _owner_ : [smallcap]#_Token_# → [smallcap]#_Agent_# +
-*monitored* _stop_: [smallcap]#_Agent_# → [smallcap]#_Boolean_[smallcap]#
+*controlled* _owner_: [smallcap]#_Token_# → [smallcap]#_Agent_# +
+*monitored* _stop_: [smallcap]#_Agent_# → [smallcap]#_Boolean_#
 ____
 
-[[a__F1_3_5_3Derived_names]]
+[[F1_3_5_3Derived_names]]
 ===== Derived names
 
 ____
-[smallcap]#_Mode_# =~def~  {_exclusive_, _shared_} +
-_idle(a:[smallcap]#Agent#):_ [smallcap]#_Boolean_# =~def~ _a.mode = undefined_∧∀_t_∊ [smallcap]#_Token_#: _t.owner_≠_a_ +
-_waiting(a:[smallcap]#Agent#): [smallcap]#_Boolean_# ~def~ _a.mode_ ≠_undefined_∧∀_t_∊ [smallcap]#_Token_#: _t.owner_≠_a_ +
-_busy(a:[smallcap]#Agent#):_ [smallcap]#_Boolean_# =~def~ _a.mode_ ≠_undefined_∧∃_t_∊ [smallcap]#_Token_#: _t.owner_ = _a_ +
-_available(t:[smallcap]#Token#):_ [smallcap]#_Boolean_# =~def~ _t.owner_ = _undefined_
+[smallcap]#_Mode_# stem:[=_{"def"}] {_exclusive_, _shared_}
+
+_idle_ (a: [smallcap]#Agent#): [smallcap]#_Boolean_# stem:[=_{"def"}] _a.mode_ = _undefined_ ∧ ∀_t_ ∊ [smallcap]#_Token_#: _t.owner_ ≠ _a_
+
+_waiting_ (a: [smallcap]#Agent#): [smallcap]#_Boolean_# stem:[=_{"def"}] _a.mode_ ≠ _undefined_ ∧ ∀_t_ ∊ [smallcap]#_Token_#: _t.owner_ ≠ _a_
+
+_busy_ (a: [smallcap]#Agent#): [smallcap]#_Boolean_# stem:[=_{"def"}] _a.mode_ ≠ _undefined_ ∧ ∃_t_ ∊ [smallcap]#_Token_#: _t.owner_ = _a_
+
+_available_ (_t_: [smallcap]#Token#): [smallcap]#_Boolean_# stem:[=_{"def"}] _t.owner_ = _undefined_
 ____
 
-[[a__F1_3_5_4Integrity_constraints]]
+[[F1_3_5_4Integrity_constraints]]
 ===== Integrity constraints
 
 ____
-*constraint* ∀_a_∊ [smallcap]#_Agent_#: (_a.stop_ _⇒_ _a.busy_)
+*constraint* stem:[AA_a in] [smallcap]#_Agent_#: stem:[(ii "a.stop" rArr ii "a.busy")]
 ____
 
-[[a__F1_3_5_5Initial_constraints]]
+[[F1_3_5_5Initial_constraints]]
 ===== Initial constraints
 
 ____
-*initially* |[smallcap]#_Agent_#| \> _1_ +
-*initially* |[smallcap]#_Token_#| \< |[smallcap]#_Agent_#| +
+*initially* |[smallcap]#_Agent_#| > _1_ +
+*initially* |[smallcap]#_Token_#| < |[smallcap]#_Agent_#| +
 *initially* ∀_a_ ∊ [smallcap]#_Agent_#: _a.program_ = [smallcap]#Resource-Management-Program# +
-*initially* ∀_a_∊ [smallcap]#_Agent_#: _a.idle_∧∀_t_∊ [smallcap]#_Token_#: _t.available_
+*initially* ∀_a_ ∊ [smallcap]#_Agent_#: _a.idle_ ∧ ∀_t_ ∊ [smallcap]#_Token_#: _t.available_
 ____
 
-[[a__F1_3_5_6ASM_programs]]
+[[F1_3_5_6ASM_programs]]
 ===== ASM programs
 
-[smallcap]#Resource-Management-Program#
-
+.[smallcap]#Resource-Management-Program#
 ====
 *do in-parallel* +
 [smallcap]#SharedAccess# +
@@ -963,34 +1112,34 @@ ____
 *enddo* +
 *where* +
 [smallcap]#SharedAccess# ≡ +
-*if* _Self.mode_ _=_ _shared_∧_Self __.__ waiting_ *then* +
-*choose* _t_: _t_∊ [smallcap]#_Token_# ∧_t.available_ +
+*if* _Self.mode_ = _shared_ ∧ _Self.waiting_ *then* +
+*choose* _t_ : _t_ ∊ [smallcap]#_Token_# ∧ _t.available_ +
 _t.owner_ := _Self_ +
 *endchoose* +
 *endif* +
 [smallcap]#ExclusiveAccess# ≡ +
-*if* _Self.mode_ _=_ _exclusive_∧∀_t_∊ [smallcap]#_Token_#: _t.a__vailable_ *then* +
-*do forall* _t_: _t_∊ [smallcap]#_Token_# +
-_t.__owner_:= _Self_ +
+*if* _Self.mode_ = _exclusive_ ∧ ∀_t_ ∊ [smallcap]#_Token_#: _t.available_ *then* +
+*do forall* _t_ : _t_ ∊ [smallcap]#_Token_# +
+_t.owner_ := _Self_ +
 *enddo* +
 *endif* +
 [smallcap]#ReleaseAccess# ≡ +
 *if* _Self.stop_ *then* +
 _Self.mode_ := _undefined_ +
-*do forall* _t_: _t_∊ [smallcap]#_Token_# ∧_t.__owner = Self_ +
+*do forall* _t_ : _t_ ∊ [smallcap]#_Token_# ∧ _t.owner_ = _Self_ +
 _t.owner_ := _undefined_ +
 *enddo* +
 *endif* +
 *endwhere*
 ====
 
-[[a__F1_3_6Predefined_names_and_special_symbols]]
-==== F1.3.6 Predefined names and special symbols
+[[F1_3_6Predefined_names_and_special_symbols]]
+==== Predefined names and special symbols
 
-To define an ASM model, in particular the ASM model capturing the semantics of SDL‑2010, certain names and their intended interpretation are predefined. These names are grouped and listed in this clause (where _D_ refers to the syntactic category of domains). For prefix, infix and postfix operators, an underline ("\_") is used to indicate the position of their arguments. Moreover, the precedence of the operators is indicated by prec(n), where n is a number. Higher numbers mean tighter binding. Monadic operators have a tighter binding than binary ones. Binary operators are associative to the left.
+To define an ASM model, in particular the ASM model capturing the semantics of SDL‑2010, certain names and their intended interpretation are predefined. These names are grouped and listed in this clause (where stem:[D] refers to the syntactic category of domains). For prefix, infix and postfix operators, an underline ("_") is used to indicate the position of their arguments. Moreover, the precedence of the operators is indicated by prec(n), where n is a number. Higher numbers mean tighter binding. Monadic operators have a tighter binding than binary ones. Binary operators are associative to the left.
 
-[[a__F1_3_6_1ASM-specific_domains]]
-===== F1.3.6.1 ASM-specific domains
+[[F1_3_6_1ASM-specific_domains]]
+===== ASM-specific domains
 
 |===
 <.<| *static domain* _X_ <.<| ASM base set (meta domain)
@@ -1000,128 +1149,128 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| *shared domain* _Agent_ <.<| ASM agents
 <.<| *static domain* _Program_ <.<| ASM programs
 <.<| *static domain* _Token_ <.<| Syntax tokens (character strings)
-<.<| *\_ \** <.<| Domain constructor: finite sequences of
-<.<| *\_ +* <.<| Domain constructor: non-empty, finite sequences of
-<.<| *\_ -set* <.<| Domain constructor: finite sets of
-<.<| *\_* &times; \_ prec(7) <.<| Tuple domain constructor
-<.<| *\_* ∪ \_ prec(6) <.<| Union domain constructor
+<.<| *_ ** <.<| Domain constructor: finite sequences of
+<.<| *_ +* <.<| Domain constructor: non-empty, finite sequences of
+<.<| *_ -set* <.<| Domain constructor: finite sets of
+<.<| *_* &times; _ &nbsp; prec(7) <.<| Tuple domain constructor
+<.<| *_* stem:[uu] _ &nbsp; prec(6) <.<| Union domain constructor
 |===
 
-[[a__F1_3_6_2ASM-specific_functions]]
-===== F1.3.6.2 ASM-specific functions
+[[F1_3_6_2ASM-specific_functions]]
+===== ASM-specific functions
 
 |===
 <.<| *static* _undefined_: → _X_ <.<| Indicator for undefined values
 <.<| *monitored* _Self_: → _Agent_ <.<| Self reference for ASM agents
-<.<| *controlled*_program_: _Agent_→ _Program_ <.<| Program of an ASM agent
-<.<| *monitored*_currentTime_: →_Real_ <.<| The current system time
+<.<| *controlled* _program_: _Agent_ → _Program_ <.<| Program of an ASM agent
+<.<| *monitored* _currentTime_: → _Real_ <.<| The current system time
 |===
 
-[[a__F1_3_6_3Boolean_functions_and_predicates]]
-===== F1.3.6.3 Boolean functions and predicates
+[[F1_3_6_3Boolean_functions_and_predicates]]
+===== Boolean functions and predicates
 
 |===
-<.<| *static*_true_: → _Boolean_ <.<| Predefined literal
-<.<| *static*_false_: → _Boolean_ <.<| Predefined literal
-<.<| \_ = \_ prec(4) <.<| Equality
-<.<| \_ ≠ \_ prec(4) <.<| Inequality
-<.<| \_ ∧ \_ prec(3) <.<| Logical and
-<.<| \_ ∨ \_ prec(2) <.<| Logical or
-<.<| \_ ⇒ \_ prec(1) <.<| Implication
-<.<| \_ ⇔ \_ prec(1) <.<| Logical equivalence
-<.<| ¬ \_ <.<| Negation
-<.<| ∃_x_∊_D_: _P_(_x_) prec(0) <.<| Existential quantification (at least one element)
-<.<| ∃!_x_∊_D_: _P_(_x_) prec(0) <.<| Unique existential quantification (exactly one element)
-<.<| ∀_x_∊_D_: _P_(_x_) prec(0) <.<| Universal quantification
+<.<| *static* _true_: → _Boolean_ <.<| Predefined literal
+<.<| *static* _false_: → _Boolean_ <.<| Predefined literal
+<.<| _ stem:[=] _ &nbsp; prec(4) <.<| Equality
+<.<| _ stem:[!=] _ &nbsp; prec(4) <.<| Inequality
+<.<| _ stem:[^^] _ &nbsp; prec(3) <.<| Logical and
+<.<| _ stem:[vv] _ &nbsp; prec(2) <.<| Logical or
+<.<| _ stem:[rArr] _ &nbsp; prec(1) <.<| Implication
+<.<| _ stem:[hArr] _ &nbsp; prec(1) <.<| Logical equivalence
+<.<| stem:[not] _ <.<| Negation
+<.<| stem:[EE x in D: P(x)] &nbsp; prec(0) <.<| Existential quantification (at least one element)
+<.<| stem:[EE !x in D: P(x)] &nbsp; prec(0) <.<| Unique existential quantification (exactly one element)
+<.<| stem:[AA x in D: P(x)] &nbsp; prec(0) <.<| Universal quantification
 |===
 
-[[a__F1_3_6_4Terms]]
-===== F1.3.6.4 Terms
+[[F1_3_6_4Terms]]
+===== Terms
 
 |===
-<.<| _X_ <.<| 0-ary function application
-<.<| _f_(_t_~1~ ,..., _t_~n~) <.<| Function application with n argument expressions
-<.<| *if*_Formula_*then*_Term_*else*_Term_*endif* <.<| Conditional expression; again we use *elseif* instead of *else**if*
-<.<| *s-*\_(\_) <.<| Tuple selection function (see Tuples below)
-<.<| *mk-*\_(...) <.<| Tuple construction (see Tuples below)
-<.<| *inv-*\_(...) <.<| The inverse of a function or map,*inv-*_Fun_(_x_) =~def~ _take_({ _a_∊_D_: _Fun_(_a_) =_x_ })
+<.<| stem:[X] <.<| 0-ary function application
+<.<| stem:[f(t_1,..., t_n)] <.<| Function application with n argument expressions
+<.<| *if* _Formula_ *then* _Term_ *else* _Term_ *endif* <.<| Conditional expression; again we use *elseif* instead of *else* *if*
+<.<| *s-* _ (_) <.<| Tuple selection function (see Tuples below)
+<.<| *mk-* _ (...) <.<| Tuple construction (see Tuples below)
+<.<| *inv-* _ (...) <.<| The inverse of a function or map, *inv-* stem:[ii "Fun"(x) =_{"def"} "take"({ a in D: ii "Fun"(a) = x })]
 |===
 
-[[a__F1_3_6_5Functions_and_relations_on_syntax_tokens__character_strings_]]
-===== F1.3.6.5 Functions and relations on syntax tokens (character strings)
+[[F1_3_6_5Functions_and_relations_on_syntax_tokens_character_strings]]
+===== Functions and relations on syntax tokens (character strings)
 
 |===
-<.<h| \_ + \_ prec(6) <.<h| String concatenation
-<.<| " \_ " <.<| Domain constructor – QUOTATION MARKS around character string
-<.<| _chr_: _Nat _→_ Token_ <.<| Single character _Token_ for character with value given by _Nat_
-<.<| _head_: _Token _→_ Token_ <.<| First character of string representing the _Token_
-<.<| _last_: _Token _→_ Token_ <.<| Last character of string representing the _Token_
-<.<| _length_: _Token _→_ Nat_ <.<| Length of the string representing the _Token_
-<.<| _num_: _Token _→_ Nat_ <.<| _Nat_ value of first character of string representing the _Token_
-<.<| _substring_: _Token_ &times;_Nat_&times;_Nat _→_ Token_ <.<| substring of string representing the _Token_ from element i length j.
-<.<| _tail_: _Token _→_ Token_ <.<| Tail of string representing the _Token_.
+<.<| _ stem:[+] _ &nbsp; prec(6) <.<| String concatenation
+<.<| " _ " <.<| Domain constructor – QUOTATION MARKS around character string
+<.<| _chr_ : [smallcap]#_Nat_# stem:[rarr] [smallcap]#_Token_# <.<| Single character _Token_ for character with value given by [smallcap]#_Nat_#
+<.<| _head_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Token_# <.<| First character of string representing the [smallcap]#_Token_#
+<.<| _last_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Token_# <.<| Last character of string representing the [smallcap]#_Token_#
+<.<| _length_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Nat_# <.<| Length of the string representing the [smallcap]#_Token_#
+<.<| _num_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Nat_# <.<| [smallcap]#_Nat_# value of first character of string representing the [smallcap]#_Token_#
+<.<| _substring_ : [smallcap]#_Token_# &times; [smallcap]#_Nat_# &times; [smallcap]#_Nat_# stem:[rarr] [smallcap]#_Token_# <.<| substring of string representing the [smallcap]#_Token_# from element i length j.
+<.<| _tail_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Token_# <.<| Tail of string representing the [smallcap]#_Token_#.
 |===
 
-[[a__F1_3_6_6Functions_and_relations_on_integers]]
-===== F1.3.6.6 Functions and relations on integers
+[[F1_3_6_6Functions_and_relations_on_integers]]
+===== Functions and relations on integers
 
 |===
-<.<h| \_ \> \_, \_ ≥ \_, \_ \<\_, \_ ≤ \_ prec(4) <.<h| Comparison operators
-<.<| \_ + \_ prec(6) <.<| Addition
-<.<| \_ - \_ prec(6) <.<| Subtraction
-<.<| \_ \*\_ prec(7) <.<| Multiplication
-<.<| \_ / \_ prec(7) <.<| Division
-<.<| \_ ^ \_ prec(8) <.<| Raise x to the power y
-<.<| _0_, _1_, ... <.<| Integer literals
+<.<| _ > _, _ ≥ _, _ < _ , _ ≤ _ &nbsp; prec(4) <.<| Comparison operators
+<.<| _ + _ &nbsp; prec(6) <.<| Addition
+<.<| _ - _ &nbsp; prec(6) <.<| Subtraction
+<.<| _ * _ &nbsp; prec(7) <.<| Multiplication
+<.<| _ / _ &nbsp; prec(7) <.<| Division
+<.<| _ ^ _ &nbsp; prec(8) <.<| Raise x to the power y
+<.<| 0, 1, ... <.<| Integer literals
 |===
 
-[[a__F1_3_6_7Functions_on_sequences]]
-===== F1.3.6.7 Functions on sequences
+[[F1_3_6_7Functions_on_sequences]]
+===== Functions on sequences
 
 |===
-<.<h| *static*_empty_: →_D_ \* <.<h| Empty sequence
-<.<| *static*_head_: _D_ \* →_D_ <.<| Head of the sequence (_undefined_ when empty)
-<.<| *static*_tail_: _D_ \* →_D_ \* <.<| Tail of the sequence (_undefined_ when empty)
-<.<| *static*_last_: _D_ \* →_D_ <.<| Last element of a sequence (_undefined_ when empty)
-<.<| *static*_length_: _D_\* →_Nat_ <.<| Length of a sequence
-<.<| *static* \< \>: _D_~1~&times;_D_~2~&times; … &times;_D_~n~ →_(__D_~1~∪_D_~2~∪ … ∪_D_~n~ )\* <.<| Sequence constructor; arguments are listed inside the brackets, separated by commas
-<.<| 1.._n_ <.<| Sequence constructor for the sequence \<1,2,..n\>; can be used so long as it is clear that this constructs a sequence and not a set.
-<.<| \_⁀ \_ prec(6) <.<| Concatenation of sequences
-<.<| _toSet_: _D_ \* →_D_*-set* <.<| Conversion of the elements of a sequence into a set
-<.<| \_ [\_] <.<| Access an element of a list; the index within the brackets must be of type _Nat_
-<.<| \_ *in* \_ prec(4) <.<| Element of?
-<.<| \< \<_expression_\> | \<_var_\>*in*\<_seq_\> : \<_cond_\>\> <.<| Sequence comprehension; acts like a filter on \<seq\>, i.e., order-preserving; \<_seq_\> is an input sequence whose values are bound to \<_var_\>; \<_var_\> is a free variable in \<_expression_\>; evaluating \<_expression_\> with \<_var_\> bound to a value of \<_seq_\> yields a value; \<_cond_\> is a condition which determines whether or not that value will be included in the final sequence.
-<.<| \< \<_var_\> *in*\<_seq_\> : \<_cond_\>\> =~def~  \< \<_var_\> | \<_var_\> *in* \<_seq_\> : \<_cond_\>\> <.<| Abbreviated sequence comprehension; \<_cond_\> acts as a filter on \<_seq_\>
-<.<| \< \<_expression_\> | \<_var_\> *in*\<_seq_\> \> =~def~  \< \<_expression_\> | \<_var_\> *in* \<_seq_\> : _true_ \> <.<| Abbreviated sequence comprehension
+<.<| *static* _empty_ : stem:[rarr D^"*"] <.<| Empty sequence
+<.<| *static* _head_ : stem:[D^"*" rarr D] <.<| Head of the sequence (stem:[ii"undefined"] when empty)
+<.<| *static* _tail_ : stem:[D^"*" rarr D^"*"] <.<| Tail of the sequence (stem:[ii"undefined"] when empty)
+<.<| *static* _last_ : stem:[D^"*" rarr D] <.<| Last element of a sequence (stem:[ii"undefined"] when empty)
+<.<| *static* _length_ : stem:[D^"*" rarr] [smallcap]#_Nat_# <.<| Length of a sequence
+<.<| *static* < >: stem:[D_1 xx D_2 xx ... xx D_n rarr (D_1 uu D_2 uu ... uu D_n)^{**}] <.<| Sequence constructor; arguments are listed inside the brackets, separated by commas
+<.<| stem:[1 ... n] <.<| Sequence constructor for the sequence <1,2,..n>; can be used so long as it is clear that this constructs a sequence and not a set.
+<.<| _ ⁀ _ prec(6) <.<| Concatenation of sequences
+<.<| _toSet_ : stem:[D^{**} rarr D] *-set* <.<| Conversion of the elements of a sequence into a set
+<.<| _ [_] <.<| Access an element of a list; the index within the brackets must be of type _Nat_
+<.<| _ *in* _ &nbsp; prec(4) <.<| Element of?
+<.<| << _expression_ > \| < _var_ > *in* < _seq_ > : < _cond_ > > <.<| Sequence comprehension; acts like a filter on <seq>, i.e., order-preserving; < _seq_ > is an input sequence whose values are bound to < _var_ >; < _var_ > is a free variable in < _expression_ >; evaluating < _expression_ > with < _var_ > bound to a value of < _seq_ > yields a value; < _cond_ > is a condition which determines whether or not that value will be included in the final sequence.
+<.<| << _var_ > *in* < seq > : < _cond_ >> stem:[=_{"def"}]  << _var_ > \| < _var_ > \| *in* < _seq_ > : <  _cond_ >> <.<| Abbreviated sequence comprehension; <_cond_> acts as a filter on < _seq_ >
+<.<| < < _expression_ > \|  < _var_ > *in* < _seq_ > > stem:[=_{"def"}]  < < _expression_ > \| < _var_ > *in* < _seq_ > : _true_ > <.<| Abbreviated sequence comprehension
 |===
 
 NOTE: The character ⁀ is the Unicode character with the decimal value 8256 (use find u^8256 in MSWord to locate).
 
-[[a__F1_3_6_8Functions_on_sets]]
-===== F1.3.6.8 Functions on sets
+[[F1_3_6_8Functions_on_sets]]
+===== Functions on sets
 
 |===
-<.<h| \_ ∪ \_ prec(6) <.<h| Set union
-<.<| \_ ∩ \_ prec(7) <.<| Intersection
-<.<| \_ \ \_ prec(6) <.<| Set subtraction
-<.<| \_ ∊ \_ prec(4) <.<| Element of?
-<.<| \_ ∉ \_ prec(4) <.<| Not element of?
-<.<| \_ ⊆ \_ prec(4) <.<| Subset of?
-<.<| \_ ⊂ \_ prec(4) <.<| Proper subset of?
-<.<| | \_ | <.<| Cardinality of a set
-<.<| *U* \_ <.<| Big union: union of all sets included within the argument set
-<.<| ∅ <.<| Empty set
-<.<| *static* { }: _D_~1~&times;_D_~2~&times; … &times;_D_~n~ →_(__D_~1~∪_D_~2~∪ … ∪_D_~n~ )*-set* <.<| Set constructor; comma-separated list of arguments in the brackets
-<.<| 1.._n_ <.<| Set constructor for the set {1,2,..n}; can be used where there is no ambiguity with sequence constructor.
-<.<| _take_: _D_*-set*→_D_ <.<| Select an arbitrary element from the set, or _undefined_ for an empty set
-<.<| \_ .. \_ prec(5) <.<| Natural range from the first value to the second. Empty set when the second expression is smaller than the first one
-<.<| { \<_expression_\> | \<_var_\> ∊ \<_set_\> : \<_cond_\>} <.<| Set comprehension, acts like a filter on \<_set_\>; \<_set_\> is an input set; \<_expression_\> is evaluated for each binding of \<_var_\> to a value of \<_set_\>, yielding a candidate for inclusion in the new set; \<_cond_\> determines whether or not the candidate is included in the final set.
-<.<| { \<_var_\> ∊\<_set_\> : \<_cond_\>} =~def~  { \<_var_\> | \<_var_\> ∊ \<_set_\>: \<_cond_\>} <.<| Abbreviated set comprehension
-<.<| { \<_expression_\> | \<_var_\> ∊\<_set_\> } =~def~  { \<_expression_\> | \<_var_\> ∊ \<_set_\>: _true_ } <.<| Abbreviated set comprehension
+<.<| _ stem:[uu] _ &nbsp; prec(6) <.<| Set union
+<.<| _ stem:[nn] _ &nbsp; prec(7) <.<| Intersection
+<.<| _ \ _ &nbsp; prec(6) <.<| Set subtraction
+<.<| _ stem:[in] _ &nbsp; prec(4) <.<| Element of?
+<.<| _ stem:[!in] _ &nbsp; prec(4) <.<| Not element of?
+<.<| _ stem:[sube] _ &nbsp; prec(4) <.<| Subset of?
+<.<| _ stem:[sub] _ &nbsp; prec(4) <.<| Proper subset of?
+<.<|  _  <.<| Cardinality of a set
+<.<| stem:[uuu]  <.<| Big union: union of all sets included within the argument set
+<.<| stem:[phi] <.<| Empty set
+<.<| *static* { }: stem:[D_1 xx D_2 xx ... xx D_n rarr (D_1 uu D_2 uu ... uu D_n bb "-set")] <.<| Set constructor; comma-separated list of arguments in the brackets
+<.<| stem:[1..n] <.<| Set constructor for the set stem:[{1,2,..n}]; can be used where there is no ambiguity with sequence constructor.
+<.<| _take_ : stem:[D bb "-set" rarr D] <.<| Select an arbitrary element from the set, or stem:[ii"undefined"] for an empty set
+<.<| _ stem:[..] _ &nbsp; prec(5) <.<| Natural range from the first value to the second. Empty set when the second expression is smaller than the first one
+<.<| { < _expression_ > \| < _var_ > ∊ < _set_ > : < _cond_ >} <.<| Set comprehension, acts like a filter on < _set_ >; < _set_ > is an input set; < _expression_ > is evaluated for each binding of < _var_ > to a value of < _set_ >, yielding a candidate for inclusion in the new set; < _cond_ > determines whether or not the candidate is included in the final set.
+<.<| { < _var_ > ∊ < _set_ > : < _cond_ >} stem:[=_{"def"}]  { < _var_ > \| < _var_ > ∊ < _set_ >: < _cond_ >} <.<| Abbreviated set comprehension
+<.<| { < _expression_ > \| < _var_ > ∊ < _set_ > } stem:[=_{"def"}]  { < _expression_ > \| < _var_ > ∊ < _set_ >: _true_ } <.<| Abbreviated set comprehension
 |===
 
-[[a__F1_3_6_9Patterns_and_case-expressions]]
-===== F1.3.6.9 Patterns and case-expressions
+[[F1_3_6_9Patterns_and_case-expressions]]
+===== Patterns and case-expressions
 
 Patterns provide a means to easily access the structure of values. The following patterns are provided:
 
@@ -1138,265 +1287,327 @@ Patterns are used to describe functions on the syntax tree. The non-terminal nam
 A case expression is used to determine a value depending on pattern matching.
 
 ____
-_CaseExpression_ ::=*case*_Term_*of* +
-| _Pattern_~1~ *then*_Term_~1~ +
-| _Pattern_~2~ *then*_Term_~2~ +
+_CaseExpression_ ::= *case* _Term_ *of* +
+| _Pattern_~1~ *then* _Term_~1~ +
+| _Pattern_~2~ *then* _Term_~2~ +
 ... +
 [ *otherwise* _Term_~0~ ] +
 *endcase*
 ____
 
-If the value of _Term_ matches at least one _Pattern_~i~, then the result of the case expression is given by the _Term_~i~. If no pattern matches, the result is _Term_~0~ (if present). Otherwise, the result is _undefined_.
+If the value of stem:[ii "Term"] matches at least one stem:[ii "Pattern"_i], then the result of the case expression is given by the stem:[ii "Term"_i]. If no pattern matches, the result is stem:[ii "Term"_0] (if present). Otherwise, the result is stem:[ii"undefined"].
 
-[[a__F1_3_6_10Union_domains]]
+[[F1_3_6_10Union_domains]]
 ===== Union domains
 
 Union domains contain the values of their constituent domains. They are used below as models for named and unnamed unions and alternative right sides to abstract syntax rules.
 
 ____
-_D_ =~def~ _D_~1~∪_D_~2~
+stem:[D =_{"def"} D_1 uu D_2]
 ____
 
-[[a__F1_3_6_11Sequence_domains]]
+[[F1_3_6_11Sequence_domains]]
 ===== Sequence domains
 
 Sequence domains contain sequences of the values of their constituent domains. They are used below as models for named and unnamed sequences, and sequences defined as (parts of) the right sides of abstract syntax rules expressed using extended BNF.
 
 ____
-_D_ =~def~ _D_~1~_\*_
+stem:[D =_{"def"} D_1^**_]
 ____
 
-[[a__F1_3_6_12Tuples]]
+[[F1_3_6_12Tuples]]
 ===== Tuples
 
 Tuple domains contain elements of the Cartesian product of their constituent domains. They are used below as models for the tuples specified by the right sides of abstract syntax rules. For every declared tuple domain, several implied constructor and selector functions are defined. For example, the tuple definition:
 
 ____
-_D_ =~def~ _D_~1~&times;_D_~2~_^\*^_&times;_D_~3~*-set*&times;_D_~1~&times; (_D_~1~∪_D_~2~) &times; (_D_~1~&times;_D_~2~)_^\*^_&times; (_D_~1~&times;_D_~2~)*-set* &times; (_D_~1~∪_D_~2~)*-set*
+stem:[D =_{"def"} D_1 xx D_2^** xx D_3 bb "-set" xx D_1 xx (D_1 uu D_2) xx ( D_1 xx D_2)^** xx (D_1 xx D_2) bb "-set" xx (D_1 uu D_2) bb "-set"]
 ____
 
 also defines the following constructor and selector functions:
 
 ____
-*mk-*_D_: _D_~1~&times;_D_~2~_^\*^_&times;_D_~3~*-set*&times;_D_~1~&times; (_D_~1~∪_D_~2~)→_D_
+stem:[bb "mk-" D " ": " " D_1 xx D_2^** xx D_3 bb "-set" xx D_1 xx  (D_1 uu D_2) rarr D]
 
-*s-*_D_~1~: _D_ →_D_~1~
+stem:[bb "s-" D_1 " ": " " D rarr D_1]
 
-*s-*_D_~2~*-seq*: _D_ →_D_~2~_^\*^_
+stem:[bb "s-" D_2 bb "-seq ": " " D rarr D_2^**]
 
-*s-*_D_~3~*-set*: _D_ →_D_~3~*-set*
+stem:[bb "s-" D_3 bb "-set": " " D rarr D_3 bb "-set"]
 
-*s2-*_D_~1~: _D_ →_D_~1~
+stem:[bb "s2-" D_1 " " : " " D rarr D_1]
 
-*s-implicit*: _D_ →(_D_~1~∪_D_~2~)
+stem:[bb "s-implicit " : D rarr (D_1 uu D_2)]
 
-*s-implicit-seq*: _D_ →(_D_~1~&times;_D_~2~)_^\*^_
+stem:[bb "s-implicit-seq" : " " D rarr (D_1 xx D_2)^**]
 
-*s-implicit-set*: _D_ →(_D_~1~&times;_D_~2~)*-set*
+stem:[bb "s-implicit-set" : " " D rarr (D_1 xx D_2) bb "-set"]
 ____
 
-When the tuple includes the same domain more than once, selector functions similar to *s2-*_D_~1~ are defined. For union, the special selector function *s-implicit* is defined.
+When the tuple includes the same domain more than once, selector functions similar to stem:[bb "s2-" D_1] are defined. For union, the special selector function stem:[bb "s-implicit"] is defined.
 
-If a domain on the right hand side is optional (written as [_D__]), the selector function_ *s-*_D_ _is still valid and gives the result_ _undefined_ _if_ _D_ _is absent and the value of selecting_ _D_ _otherwise. Similarly_ *s-*_D_*-seq* _is valid for [__D __^\*^__], and_ *s-*_D_*-set* _is valid for [__D_*-set*_]._
+If a domain on the right hand side is optional (written as [stem:[D]]), the selector function_ stem:[bb "s-" D] is still valid and gives the result stem:[ii"undefined"] if stem:[D] is absent and the value of selecting stem:[D] otherwise. Similarly_ stem:[bb "s-" D bb "-seq"] is valid for [stem:[D^**]], and stem:[bb "s-" D bb "-set"] is valid for stem:[ D bb "-set"].
 
-An invalid selector returns _undefined_.
+An invalid selector returns stem:[ii"undefined"].
 
-[[a__F1_3_6_13Abstract_syntax_rules]]
-===== F1.3.6.13 Abstract syntax rules
+[[F1_3_6_13Abstract_syntax_rules]]
+===== Abstract syntax rules
 
 Abstract syntax rules from the language definition are directly translated to the ASM notation, using the metalanguage for the concrete grammar as defined in [ITU‑T Z.111] with the modified representation of semantic subcategories used in Annex F2. This allows rules to be expressed using the usual BNF conventions extended to include square brackets to indicate optional items, suffixes to indicate various kinds of list, and curly brackets to group related items.
 
 An abstract syntax rule defined with "::" declares a domain of syntax nodes. Each syntax node has an identity and a value. The value is a member of an auxiliary domain of tuples of syntax nodes. For example, the rule
 
 ____
-_Symbol_:: _Symbol_~1~_Symbol_~2~
+stem:[ii"Symbol" "&nbsp;" text(::) "&nbsp;" ii"Symbol"_1 ii"Symbol"_2]
 ____
 
 declares
 
 ____
-*controlled domain* _Symbol_ +
-_Symbol-aux_ =~def~ _Symbol_~1~ &times;Symbol_~2~ +
-*controlled* _contents-Symbol_: _Symbol_ → _Symbol-aux_
+*controlled domain* stem:[ii"Symbol"]
+
+stem:[ii"Symbol-aux" =_{"def"} ii"Symbol"_1 xx ii"Symbol"_2]
+
+*controlled* stem:[ii"contents-Symbol" "&nbsp;" : "&nbsp;" ii"Symbol" rarr ii"Symbol-aux"]
 ____
 
-The abbreviation *mk-*_Symbol_ creates new elements of the domain _Symbol_,
+The abbreviation stem:[bb"mk-" ii"Symbol"] creates new elements of the domain stem:[ii"Symbol"],
 
 ____
-*mk-*_Symbol__(__s1__:_ _Symbol_~1~, _s2: _Symbol_~2~) ≡ +
-*extend* _Symbol_*with*_v_ +
-_contents-Symbol__(__v__)_ := _(__s1, s2__)_ +
+stem:[bb"mk-" ii"Symbol" ( ii"s1" : ii"Symbol"_1, "&nbsp;" ii"s2" : "&nbsp;" ii"Symbol"_2) -=]
+
+*extend* stem:["&nbsp;" ii"Symbol" "&nbsp;"] *with* stem:[ii"v"]
+
+stem:[ii"contents-Symbol"(v) := (ii"s1", "&nbsp;" ii"s2")]
+
 *endextend*
 ____
 
-Note that *mk-*_Symbol_ is not an ASM function, but an abbreviation for an ASM rule.
+Note that stem:[bb"mk-" ii"Symbol"] is not an ASM function, but an abbreviation for an ASM rule.
 
-Selector functions, *s-,* select the components of the tuple that is the value of a syntax node.
+Selector functions, s-, select the components of the tuple that is the value of a syntax node.
 
 ____
-*s-*_Symbol_~1~:_Symbol _→_ Symbol_~1~ +
-*s-*_Symbol_~2~:_Symbol _→_ Symbol_~2~ +
-*s-*_Symbol_~1~(_x_: _Symbol_): _Symbol_~1~=~def~ *s-*_Symbol_~1~(_x.contents-Symbol_) +
-*s-*_Symbol_~2~(_x_: _Symbol_): _Symbol_~2~=~def~ *s-*_Symbol_~2~(_x.contents-Symbol_)
+stem:[bb"s-" ii"Symbol"_1 "&nbsp;" : "&nbsp;" ii"Symbol"  rarr ii"Symbol"_1]
+
+stem:[bb"s-" ii"Symbol"_2 "&nbsp;" : "&nbsp;" ii"Symbol" rarr ii"Symbol"_2]
+
+stem:[bb"s-" ii"Symbol"_1 ( x : ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_1 =_{"def"} bb"s-" ii"Symbol"_1 (ii"x.contents-Symbol")]
+
+stem:[bb"s-" ii"Symbol"_2 ( x : ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_2 =_{"def"} bb"s-" ii"Symbol"_2 ( ii"x.contents-Symbol")]
 ____
 
 Here is a more elaborate example, illustrating the definitions introduced by a variety of extended BNF constructs.
 
 ____
-_Symbol_:: _Symbol_~1~_Symbol_~2~_^+^_ _Symbol_~3~*-set* _[__Symbol_~4~] +
-_{_ _Symbol_~1~|_Symbol_~2~_}{_ _Symbol_~1~_Symbol_
-_== 2 __}__ ^\*^__{_ _Symbol_~1~|_Symbol_~2~_}_*-set*
+stem:[ ii"Symbol" "&nbsp;" "::" "&nbsp;" ii"Symbol"_1 ii"Symbol"_2^+ "&nbsp;" "&nbsp;" ii"Symbol"_3 bb"-set" "&nbsp;" [ ii"Symbol"_4\] ]
+
+stem:[{ ii"Symbol"_1 "&nbsp;" | {: "&nbsp;" ii"Symbol"_2 } "&nbsp;" {ii"Symbol"_1 ii"Symbol"_2}^** "&nbsp;" { ii"Symbol"_1 "&nbsp;" | {: "&nbsp;" ii"Symbol"_2 } bb"-set"]
 ____
 
 which is translated to:
 
 ____
-_Symbol-aux_ =~def~ _Symbol_~1~&times;Symbol_~2~__^\*^__ &times;__Symbol_~3~*-set*_&times;__Symbol_~4~_&times;_ _(__Symbol_~1~∪_Symbol_~2~_)__&times;__(__Symbol_
-_== 1&times;Symbol_~2~_)__^\*^__&times;_ _(__Symbol_~1~∪_Symbol_~2~_)_*-set* +
-*controlled**domain*_Symbol_ +
-*controlled*_contents-Symbol_: _Symbol_ →_Symbol-aux_ +
-*s-*_Symbol_~1~(_x_: _Symbol_): _Symbol_~1~=~def~ *s-*_Symbol_~1~(_x_._contents-Symbol_) +
-*s-*_Symbol_~2~*-seq*(_x_: _Symbol_): _Symbol_~2~_^\*^_=~def~ *s-*_Symbol_~2~*-seq*(_x.contents-Symbol_) +
-*s-*_Symbol_~3~*-set*(_x_: _Symbol_): _Symbol_~3~*-set*=~def~ *s-*_Symbol_~3~*-set*(_x.contents-Symbol_) +
-*s-*_Symbol_~4~(_x_: _Symbol_): _Symbol_~4~=~def~ *s-*_Symbol_~4~(_x.contents-Symbol_) +
-*s-implicit*(_x_: _Symbol_):(_Symbol_~1~∪_Symbol_~2~)=~def~ *s-implicit*(_x.contents-Symbol_) +
-*s-implicit-seq*(_x_: _Symbol_): (_Symbol_~1~&times;_Symbol_~2~)_^\*^_=~def~ *s-implicit-seq*(_x.contents-Symbol_) +
-*s-implicit-set*(_x_: _Symbol_): (_Symbol_~1~∪_Symbol_~2~)*-set*=~def~ *s-implicit-set*(_x.contents-Symbol_)
+
+stem:[ ii"Symbol-aux" =_{"def"} ii"Symbol"_1 xx ii"Symbol"_2^** xx ii"Symbol"_3 bb"-set" xx ii"Symbol"_4 xx ( ii"Symbol"_1 uu ii"Symbol"_2) xx ( ii"Symbol"_1 xx ii"Symbol"_2)^** xx ( ii"Symbol"_1 uu ii"Symbol"_2) bb"-set"]
+
+*controlled* *domain* stem:["&nbsp;" ii"Symbol"]
+
+*controlled* stem:["&nbsp;" ii"contents-Symbol" "&nbsp;" : "&nbsp;" ii"Symbol" rarr ii"Symbol-aux"]
+
+stem:[ bb"s-" ii"Symbol"_1 (x : "&nbsp;" ii"Symbol") : "&nbsp;" ii"Symbol"_1 =_{"def"} bb"s-" ii"Symbol"_1 ( ii"x.contents-Symbol")]
+
+stem:[ bb"s-" ii"Symbol"_2 bb"-seq" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_2^** =_{"def"} bb"s-" ii"Symbol"_2 bb"-seq" (ii"x.contents-Symbol")]
+
+stem:[bb"s-" ii"Symbol"_3 bb"-set" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_3 bb"-set" =_{"def"} bb"s-" ii"Symbol"_3 bb"-set" (ii"x.contents-Symbol")]
+
+stem:[bb"s-" ii"Symbol"_4 ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_4 =_{"def"} bb"s-" ii"Symbol"_4 (ii"x.contents-Symbol")]
+
+stem:[bb"s-implicit" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" (ii"Symbol"_1 uu ii"Symbol"_2) =_{"def"} bb"s-implicit" ( ii"x.contents-Symbol")]
+
+stem:[bb"s-implicit-seq" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;"  ( ii"Symbol"_1 xx ii"Symbol"_2)^** =_{"def"} bb"s-implicit-seq" (ii"x.contents-Symbol")]
+
+stem:[bb"s-implicit-set" (x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ( ii"Symbol"_1 uu ii"Symbol"_2 ) bb"-set" =_{"def"} bb"s-implicit-set" ( ii"x.contents-Symbol")]
 ____
 
-As with the previous example, an abbreviation *mk-*_Symbol_ _is also introduced_. This abbreviation creates a new object of domain _Symbol_ using the *extend* primitive and sets the _contents-Symbol_ value of the newly produced object to the corresponding element of _Symbol-aux_.
+As with the previous example, an abbreviation stem:[bb"mk-" ii"Symbol"] is also introduced. This abbreviation creates a new object of domain stem:[ii"Symbol"] using the *extend* primitive and sets the stem:[ii"contents-Symbol"] value of the newly produced object to the corresponding element of stem:[ii"Symbol-aux"].
 
 ____
-*mk-*_Symbol__(__s1__:_ _Symbol_~1~, _s2seq__ :_ _Symbol_~2~^\*^,_ _s3set_: _Symbol_~3~*-set*_,_ _s4__:_ _Symbol_~4~, _s__ : (__Symbol_~1~∪_Symbol_~2~_)__,_ +
-_s1s2seq__: (__Symbol_~1~&times;Symbol_~2~_)__^\*^ __,_ _sset__ : (__Symbol_~1~∪_Symbol_~2~_)_*-set*_)__≡_ +
-*extend* _Symbol_ *with* _v_ +
-_contents-Symbol(__v)_ _:__=_ _(s1, s2seq, s3set, s4, s, s1s2seq, sset)_ +
+stem:[ bb"mk-" ii"Symbol" "&nbsp;" ( s1 : ii"Symbol"_1, ii"s2seq" "&nbsp;" : "&nbsp;" ii"Symbol"_2^** "&nbsp;" , "&nbsp;" ii"s3set"  "&nbsp;" :  "&nbsp;"  ii "Symbol"_3 bb"-set" "&nbsp;" , "&nbsp;" ii"s4" "&nbsp;" : "&nbsp;"   ii"Symbol"_4 ,] 
+
+stem:[ "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" {:  s "&nbsp;" :  "&nbsp;" ( ii"Symbol"_1 uu ii"Symbol"_2) "&nbsp;" , "&nbsp;" ii"s1s2seq" "&nbsp;" : "&nbsp;" ( ii"Symbol"_1 xx ii"Symbol"_2)^** "&nbsp;" , ]
+
+stem:[ "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" {:  ii"sset" "&nbsp;" : "&nbsp;" ( ii"Symbol"_1 uu ii"Symbol"_2) bb"set") -= ]
+
+*extend* stem:["&nbsp;" ii"Symbol" "&nbsp;"] *with* stem:["&nbsp;" v]
+
+stem:[ii"contents-Symbol"(v) := ( ii"s1", "&nbsp;" ii"s2seq", "&nbsp;" ii"s3set", "&nbsp;" ii"s4", "&nbsp;" s, "&nbsp;" ii"s1s2seq", "&nbsp;" ii"sset")]
+
 *endextend*
 ____
 
-The abbreviation *mk-*_Symbol_ is not a function, but in fact an ASM rule item. Therefore, it must be used only within ASM rules and not as an ASM location.
+The abbreviation stem:[bb"mk-" ii"Symbol"] is not a function, but in fact an ASM rule item. Therefore, it must be used only within ASM rules and not as an ASM location.
 
-If for a given _Symbol, sym,_ the optional _Symbol_~4~ is not present, that fact is expressed in the ASM model by leaving the corresponding value _undefined__:_ _sym_*.s-*_Symbol_~4~_=_ _undefined_. An empty sequence of symbols (constructor with no parts) is denoted by (). For example, the abstract syntax rule
+If for a given stem:[ii"Symbol"], stem:[ii"sym"], the optional stem:[ii"Symbol"_4] is not present, that fact is expressed in the ASM model by leaving the corresponding value stem:[ ii"undefined" "&nbsp;" : "&nbsp;" ii"sym.s-Symbol"_4 = ii"undefined"]. An empty sequence of symbols (constructor with no parts) is denoted by (). For example, the abstract syntax rule
 
+____ 
+stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ()]
 ____
-_Symbol_:: ()
-____
 
-declares a singleton domain, _Symbol_, whose only element is the empty tuple.
+declares a singleton domain, stem:[ii"Symbol"], whose only element is the empty tuple.
 
 The equality for syntax nodes is always a structural equality, i.e., the contents of the symbols are compared instead of the symbols themselves.
 
 A rule of the form
 
 ____
-_Symbol_ :: _Symbol_~1~| _Symbol_~2~| ... | _Symbol_~n~ (_n_≥ 1)
+stem:[ ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 "&nbsp;" | "&nbsp;" ii "Symbol"_2 | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_n ( n >= 1)]
 ____
 
 where each alternative right side consists of a single symbol, is equivalent to
 
 ____
-_Symbol_ :: {_Symbol_~1~| _Symbol_~2~| ... | _Symbol_~n~ }(_n_≥ 1)
+stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" {ii "Symbol"_1  "&nbsp;" | "&nbsp;" ii "Symbol"_2 |  "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_n} "&nbsp;" (n >= 1)]
+____ 
+
+In this case, there are selectors stem:[bb ".s-" ii "Symbol"_i] , stem:[(i = 1, ..., n)] and if stem:[x in ii "Symbol"], then all but one of those selectors will have the value stem:[ii"undefined"]. Moreover, stem:[x. bb "s-implicit" = x. ii "contents-Symbol"].
+
+More usually, rules like this will be represented as named unions. The syntax rules introducing named unions have the form:
+
 ____
-
-In this case, there are selectors .*s-*_Symbol_~i~ , (_i_ = 1, …, _n_) and if _x_ ∊ _Symbol_, then all but one of those selectors will have the value_ _undefined_. Moreover,_x_.*s-implicit* = _x.contents-Symbol_
-
-_More usually, rules like this will be represented as named unions._ The syntax rules introducing named unions have the form:
-
-____
-_Symbol_ = _Symbol_~1~| _Symbol_~2~| ... | _Symbol_~n~ (_n_≥ 1)
+stem:[ii "Symbol" = ii "Symbol"_1 "&nbsp;" | "&nbsp;" ii "Symbol"_2 "&nbsp;" | ... | "&nbsp;" ii "Symbol"_n "&nbsp;" (n >= 1)]
 ____
 
 which is modelled as:
 
 ____
-_Symbol_ =~def~ _Symbol_~1~ __∪__ Symbol_~2~ __∪__... __∪__ Symbol_~n~ 
+stem:[ii "Symbol" =_{"def"} ii "Symbol"_1 uu ii "Symbol"_2 uu ... uu ii "Symbol"_n] 
 ____
 
-Note that since _Symbol_ is a _union_ domain, the expansion yields a domain definition, but no abbreviation *mk-*_Symbol_ and no selector functions *s-*_Symbol__i_(_i_ = 1, ..., _n_) that can be applied to elements of _Symbol_.
+Note that since stem:[ii "Symbol"] is a _union_ domain, the expansion yields a domain definition, but no abbreviation stem:[bb "mk-" ii "Symbol"] and no selector functions stem:[bb "s-" ii "Symbol"_i (i = 1,... , n)] that can be applied to elements of stem:[ii "Symbol"].
 
-Of course, it is still possible to construct elements of _Symbol_ using any constructor that generates an element any of the domains _Symbol_~1~, _Symbol_~2~, ... , _Symbol_~n.~, and given _x_ ∊ _Symbol_, an expression of the form _x_∊_Symbol__ i_(_i_ = 1, … , _n_) _will to test whether or not _x_ belongs to one of the constituent domains of _Symbol_.
+Of course, it is still possible to construct elements of stem:[ii "Symbol"] using any constructor that generates an element any of the domains stem:[ii "Symbol"_1, ii "Symbol"_2, ... , ii "Symbol"_n], and given stem:[x in ii "Symbol"], an expression of the form stem:[x in ii "Symbol"_i (i = 1, ... , n)] will to test whether or not stem:[x] belongs to one of the constituent domains of stem:[ii "Symbol"].
 
 If a name is not required, unnamed unions may be introduced by rules like:
 
-____
-_Symbol_ ::_Symbol_~1~{ _Symbol_~21~| ... | _Symbol_~2N~ }
-____
+
+//stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} "&nbsp;" | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_{2N} }]
+[stem]
+++++
+ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} "&nbsp;" | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_{2N} }
+++++
+
 
 instead of introducing a name for the union:
-
+////
 ____
 _Symbol_ ::_Symbol_~1~_Symbol_~2~ +
 _Symbol_~2~ = _Symbol_~21~ | ... | _Symbol_~2N~
+____
+////
+
+////
+[stem]
+++++
+ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 ii "Symbol"_2
+
+
+ii "Symbol"_2 = ii "Symbol"_{21} | ... | ii "Symbol"_{2N}
+++++
+////
+
+____
+stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 ii "Symbol"_2]
+
+
+stem:[ii "Symbol"_2 = ii "Symbol"_{21} | ... | ii "Symbol"_{2N}]
 ____
 
 Named sequences can be introduced using rules like this:
 
 ____
-_Symbol_ = _Symbol_~1~\*
+stem:[ii "Symbol" = ii "Symbol"_1^{**}]
 ____
 
-which defines the domain of sequences of elements of _Symbol_~1~. Similarly, a rule like
+which defines the domain of sequences of elements of stem:[ii "Symbol"_1]. Similarly, a rule like
 
 ____
-_Symbol_ = {_Symbol_~1~_Symbol_~2~}\*
+stem:[ii "Symbol" = { ii "Symbol"_1 ii "Symbol"_2}^{**}]
 ____
 
-defines the domain _of_ sequences of tuples (_a_,_b_) where _a_ ∊_Symbol_~1~ and _b_∊ _Symbol_~2~
+defines the domain of sequences of tuples stem:[(a,b)] where stem:[a in ii "Symbol"_1] and stem:[b in ii "Symbol"_2]
 
-As with named unions, _Symbol_ yields a domain definition, but not functions *mk-* nor *s-*. Elements of _Symbol_ are constructed using the sequence constructor, \< \>, and components of _Symbol_ can be accessed using the functions on sequences.
+As with named unions, stem:[ii "Symbol"] yields a domain definition, but not functions stem:[bb "mk-"] nor stem:[bb "s-"]. Elements of stem:[ii "Symbol"] are constructed using the sequence constructor, \< \>, and components of stem:[ii "Symbol"] can be accessed using the functions on sequences.
 
 It is not always necessary to name a sequence explicitly. Unnamed sequences may be introduced by rules like:
 
 ____
-_Symbol_ ::_Symbol_~1~{ _Symbol_~21~ ... _Symbol_~2N~ }\*
+stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} ... ii "Symbol"_{2N} }^{**}]
 ____
 
 or like:
 
 ____
-_Symbol_ ::_Symbol_~1~{ _Symbol_~21~ | ... | _Symbol_~2N~ }\*
+stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} "&nbsp;" | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_{2N} }^{**}]
 ____
 
 Named and unnamed sets can be introduced in a similar way.
 
 For each SDL‑2010 keyword *KEYWORD*, there is an associated keyword domain _Keyword_ with just one value:
 
+
 ____
 *static domain* _Keyword_
 ____
+
+////
+----
+*static domain* _Keyword_
+----
+////
 
 It is required that all keyword domains are mutually disjoint.
 
 Given the abstract grammar, there is a derived domain called _DefinitionAS1_, which is composed of all abstract syntax symbol domains as follows:
 
 ____
-_DefinitionAS1_ =~def~ _Symbol_~1~ ∪ _Symbol_~2~ ∪ ... ∪ Symbol_~n~
+stem:[ii "DefinitionAS1" =_{"def"} ii "Symbol"_1 uu ii "Symbol"_2 uu ... uu ii "Symbol"_N]
 ____
 
-where _Symbol_~1~,_Symbol_~2~,...,_Symbol_~n~  are _all_ the symbols (terminal and non-terminal) of the abstract grammar. This includes unnamed non-terminals that appear in the syntax such as _Graph-node_\* and { _Terminator_ | _Decision-node_ } in the AS1 rule _Transition_, and { _Open-range_ | _Closed-range_ }\* in the AS1 rule _Size-constraint_, which in ASM are denoted (respectively) as _Graph-node_*-seq*, ( _Terminator_∪_Decision-node_ ) and (_Open-range_∪_Closed-range_ )*-seq*.
+where stem:[ii "Symbol"_1, "&nbsp;" ii "Symbol"_2, "&nbsp;" ..., "&nbsp;" ii "Symbol"_n]  are _all_ the symbols (terminal and non-terminal) of the abstract grammar. This includes unnamed non-terminals that appear in the syntax such as stem:[ii "Graph-node"^{**}] and stem:[{ ii "Terminator" "&nbsp;" | {: "&nbsp;" ii "Decision-node" }] in the AS1 rule stem:[ii "Transition"], and stem:[{ ii "Open-range" "&nbsp;" | {: "&nbsp;" ii "Closed-range" }^**] in the AS1 rule stem:[ii "Size-constraint"], which in ASM are denoted (respectively) as stem:[ii "Graph-node" bb"-seq"], stem:[( ii"Terminator" uu ii"Decision-node" )] and stem:[(ii"Open-range" uu ii"Closed-range") bb"-seq"].
 
 There is a similar domain _DefinitionAS0_ for the concrete grammar (AS0).
 
-[[a__F1_3_6_14Abstract_syntax_tree]]
+[[F1_3_6_14Abstract_syntax_tree]]
 ===== Abstract syntax tree
 
 The syntax nodes declared by abstract syntax rules can be used to construct an abstract syntax tree.
 
 To navigate downward in a given abstract syntax tree, the functions *s-* can be used. To navigate upward, two parent functions are defined.
 
+////
 ____
 *controlled*_parentAS1_: _DefinitionAS1 _→_ DefinitionAS1_ +
 *controlled*_parentAS0_: _DefinitionAS0 _→_ DefinitionAS0_
 ____
-
-Suppose _node_ is an abstract syntax node and a member of the domain _Symbol_, one of the constituent domains of _DefinitionAS1__:_
+////
 
 ____
-_node_∊ _Symbol_ ⊂_DefinitionAS1_
+*controlled* stem:[ ii"parentAS1" : ii"DefinitionAS1" rarr ii"DefinitionAS1"]
+
+
+*controlled* stem:[ ii"parentAS0" : ii"DefinitionAS0" rarr ii"DefinitionAS0"]
 ____
 
-The parent of_ _node_, if it _exists, includes _node_ in its _contents-_Symbol_. That is,
+Suppose stem:[ii"node"] is an abstract syntax node and a member of the domain stem:[ii"Symbol"], one of the constituent domains of stem:[ii"DefinitionAS1"]:
 
+____
+stem:[ii"node" in ii"Symbol" sub ii"DefinitionAS1"]
+____
+
+The parent of stem:[ii"node"], if it exists, includes stem:[ii"node"], in its stem:[ii"contents-Symbol"]. That is,
+
+////
 ____
 _parentAS1_ (_node_: _DefinitionAS1_): _DefinitionAS1_ =~def~ +
 *if* _node_ = _undefined_ *then* _undefined_ +
@@ -1404,46 +1615,94 @@ _parentAS1_ (_node_: _DefinitionAS1_): _DefinitionAS1_ =~def~ +
 *else* _take_ ({ _p_∊ _Symbol_ ⊂ _DefinitionAS1_: _node_ *in* _p.contents-Symbol_ }) +
 *endif*
 ____
-
-Similarly, for _node_∊ _Symbol_ ⊂_DefinitionAS0__:_
+////
 
 ____
-_parentAS0_(_node_: _DefinitionAS0_): _DefinitionAS0_ =~def~  +
-*if* _node_ = _undefined_ *then* _undefined_ +
-*elseif* _node_ = _rootNodeAS0_ *then* _undefined_ +
-*else*_ take_ ({ _p_∊ _Symbol_ ⊂ _DefinitionAS0_: _node_ *in* _p.contents-Symbol_}) +
+stem:[ii"parentAS1" ( ii"node" : "&nbsp;" ii"DefinitionAS1") : ii"DefinitionAS1" =_{"def"}]
+
+
+*if* stem:[ii"node" = ii"undefined"] *then* stem:[ii"undefined"]
+
+
+*elseif* stem:[ii"node" = ii"rootNodeAS1"] *then* stem:[ii"undefined"]
+
+
+*else* stem:[ ii"take" ({ p in ii"Symbol" sub ii"DefinitionAS1" : "&nbsp;" ii"node"] *in* stem:[ {: {: ii"p.contents-Symbol" })]
+
+
+*endif*
+____
+
+
+Similarly, for stem:[ii"node" in ii"Symbol" sub ii"DefinitionAS0"]:
+
+____
+stem:[ ii"parentAS0" ( ii"node" : ii"DefinitionAS0") : ii"DefinitionAS0" =_{"def"}]
+
+
+*if* stem:[ii"node" = ii"undefined"] *then* stem:[ii"undefined"]
+
+
+*elseif* stem:[ ii"node" = ii"rootNodeAS0"] *then* stem:[ii"undefined"]
+
+
+*else* stem:[ ii"take" ({ p in ii"Symbol" sub ii"DefinitionAS0" : ii"node"] *in* stem:[ {: {: ii"p.contents-Symbol" })]
+
+
 *endif*
 ____
 
 Moreover, two functions are defined to find the parent of a particular kind.
 
 ____
-_parentAS0ofKind_(_from_: _DefinitionAS0_, _x_: _DefinitionAS0_*-set*): _DefinitionAS0_ =~def~ +
-*if* _from_ = _undefined_ *then* _undefined_ +
-*elseif* _from_ ∊ _x_ *then* _from_ +
-*else* _parentAS0ofKind_(_from.parentAS0_, _x_) +
+stem:[ii"parentAS0ofKind" (ii"from": ii"DefinitionAS0", x: ii"DefinitionAS0" bb"-set"): ii"DefinitionAS0" =_{"def"}]
+
+
+*if* stem:[ii"from" = ii"undefined"] *then* stem:[ii"undefined"]
+
+
+*elseif* stem:[ii"from" in x] *then* stem:[ii"from"]
+
+
+*else* stem:[ ii"parentAS0ofKind"( ii"from.parentAS0", x)]
+
+
 *endif*
 
-_parentAS1ofKind_(_from_: _DefinitionAS1_, _x_: _DefinitionAS1_*-set*): _DefinitionAS1_ =~def~ +
-*if* _from_ = _undefined_ *then* _undefined_ +
-*elseif* _from_ ∊ _x_ *then* _from_ +
-*else* _parentAS1ofKind_(_from.parentAS1_, _x_) +
+
+
+
+stem:[ ii"parentAS1ofKind" (ii"from" : ii"DefinitionAS1", x: ii"DefinitionAS1" bb"-set"): ii"DefinitionAS1" =_{"def"}]
+
+
+*if* stem:[ii"from" = ii"undefined"] *then* stem:[ii"undefined"]
+
+
+*elseif* stem:[ii"from" in x] *then* stem:[ii"from"]
+
+
+*else* stem:[ ii"parentAS1ofKind" (ii"from.parentAS1", x)]
+
+
 *endif*
 ____
 
 The top node of the current abstract or concrete syntax tree is denoted by the following 0-ary functions:
 
 ____
-*controlled* _rootNodeAS1_: → _DefinitionAS1_ +
-*controlled* _rootNodeAS0_: → _DefinitionAS0_
+*controlled* stem:[ii"rootNodeAS1" : rarr ii"DefinitionAS1"]
+
+
+*controlled* stem:[ii"rootNodeAS0" : rarr ii"DefinitionAS0"]
 ____
 
-The value of _rootNodeAS1.parentAS1_ is _undefined_.
+The value of stem:[ii"rootNodeAS1.parentAS1"] is stem:[ii"undefined"].
 
-The value of _rootNodeAS0.parentAS0_ is _undefined_
+The value of stem:[ii"rootNodeAS0.parentAS0"] is stem:[ii"undefined"].
 
-The functions _isAncestorAS1_ and _isAncestorAS0_ determine if the first node is an ancestor of the second one:
+The functions stem:[ii"isAncestorAS1"] and stem:[ii"isAncestorAS0"] determine if the first node is an ancestor of the second one:
 
+////
 ____
 _isAncestorAS1_(_n1_:_DefinitionAS1_, _n2_:_DefinitionAS1_): _Boolean_=~def~ +
 _n1_ = _n2.parentAS1_ ∨ (_n2_≠_rootNodeAS1_∧_isAncestorAS1_(_n1_, _n2.parentAS1_))
@@ -1451,27 +1710,45 @@ _n1_ = _n2.parentAS1_ ∨ (_n2_≠_rootNodeAS1_∧_isAncestorAS1_(_n1_, _n2.pare
 _isAncestorAS0_(_n1_: _DefinitionAS0_, _n2_: _DefinitionAS0_): _Boolean_=~def~ +
 _n1_ = _n2.parentAS0_ ∨ (_n2_≠_rootNodeAS0_∧_isAncestorAS0_(_n1_, _n2.parentAS0_))
 ____
-
-The functions _isSameNodeAS1_ and _isSameNodeAS0_ determine if the first node is the same node as the second one, that is they are equal and in the same position in the syntax tree:
+////
 
 ____
-_isSameNode1_(_n1_:_DefinitionAS1_, _n2_:_DefinitionAS1_): _Boolean_=~def~ +
-_n1_ = _n2_∧ (_n1_ = _rootNodeAS1_∨_isSameNode1_(_n1.parentAS1_, _n2.parentAS1_))
+stem:[ii"isAncestorAS1" (n1 : ii"DefinitionAS1", n2 : ii"DefinitionAS1")] : [smallcap]#_Boolean_# stem:[=_{"def"}]
 
-_isSameNode0_(_n1_: _DefinitionAS0_, _n2_: _DefinitionAS0_): _Boolean_=~def~ +
-_n1_ = _n2_∧ (_n1_ = _rootNodeAS0_∨_isSameNode0_(_n1.parentAS0_, _n2.parentAS0_))
+
+stem:[n1 = n2 ii".parentAS1" vv ( n2 != ii"rootNodeAS1" ^^ ii"isAncestorAS1" (n1 , n2 ii".parentAS1"))]
+
+
+stem:[ii"isAncestorAS0" (n1 : ii"DefinitionAS0" ,  n2 :  ii"DefinitionAS0")] : [smallcap]#_Boolean_# stem:[=_{"def"}]
+
+
+stem:[n1 = n2 ii".parentAS0" vv ( n2 != ii"rootNodeAS0" ^^ ii"isAncestorAS0" ( n1 , n2 ii".parentAS0"))]
+____
+
+The functions stem:[ii"isSameNodeAS1"] and stem:[ii"isSameNodeAS0"] determine if the first node is the same node as the second one, that is they are equal and in the same position in the syntax tree:
+
+____
+stem:[ ii"isSameNode1" ( n1 : ii"DefinitionAS1", n2 : ii"DefinitionAS1")] : [smallcap]#_Boolean_# stem:[=_{"def"}]
+
+
+stem:[ n1 = n2 ^^ (n1 = ii"rootNodeAS1" vv ii"isSameNode1" (n1 ii".parentAS1", n2 ".parentAS1"))]
+
+stem:[ii"isSameNode0" ( n1 : ii"DefinitionAS0" , n2 : ii"DefinitionAS0")] : [smallcap]#_Boolean_# stem:[=_{"def"}]
+
+
+stem:[n1 = n2 ^^ (n1 = ii"rootNodeAS0" vv ii"isSameNode0" (n1 ii".parentAS0", n2 ii".parentAS0"))]
 ____
 
 The abstract syntax tree AS0 can be modified using the following derived functions:
 
 ____
-_replaceInSyntaxTree0_: _DefinitionAS0_&times;_DefinitionAS0_&times;_DefinitionAS0 _→_ DefinitionAS0_
+stem:[ii"replaceInSyntaxTree0" "&nbsp;" : "&nbsp;" ii"DefinitionAS0" xx ii"DefinitionAS0" xx ii"DefinitionAS0" rarr ii"DefinitionAS0"]
 ____
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where all old sub-trees are replaced by the new sub-tree.
 
 ____
-_replaceOnceInSyntaxTree0_: _DefinitionAS0_&times;_DefinitionAS0_&times;_DefinitionAS0 _→_ DefinitionAS0_
+stem:[ii"replaceInSyntaxTree0" "&nbsp;" : "&nbsp;" ii"DefinitionAS0" xx ii"DefinitionAS0" xx ii"DefinitionAS0" rarr ii"DefinitionAS0"]
 ____
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where the first old sub-tree is replaced by the new sub-tree, and each subsequent old sub-tree occurrence is unchanged.
