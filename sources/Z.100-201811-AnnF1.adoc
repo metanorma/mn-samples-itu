@@ -330,7 +330,7 @@ An abstract state machine provides a model of computation for an algorithm that 
 [[F1_3_1_4Specifying_an_abstract_state_machine]]
 ===== Specifying an abstract state machine
 
-An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation stem:[tau: "&nbsp;" S rarr S]. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.
+An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation stem:[tau:  S rarr S]. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.
 
 [[F1_3_1_5Specifying_the_signature_vocabulary]]
 ===== Specifying the signature (vocabulary)
@@ -343,7 +343,7 @@ The following notational conventions are used when declaring names.
 
 * _Function names_ are written in italics starting with a lowercase letter (as in _mode_). A function name stem:[f] is declared by stem:[f]: stem:[D_1 xx D_2 xx ... xx D_n rarr D_0] , where stem:[n] is the arity of stem:[f], and stem:[D_0], stem:[D_1], stem:[D_2 ... D_n]  are domain names. A function name is interpreted as a function over the base set. The interpretation respects the arity of stem:[f].
 
-* _Predicate names_ that are not _Domain names_ are also written in italics (as in stem:[ii"available"]). A predicate name stem:[p] is declared by stem:[p]: stem:[D_1 xx D_2 times ... xx D_n rarr] _Boolean_. A predicate is interpreted as a function whose value is either _true_ or _false_.
+* _Predicate names_ that are not _Domain names_ are also written in italics (as in stem:[ii"available"]). A predicate name stem:[p] is declared by stem:[p]: stem:[D_1 xx D_2 xx ... xx D_n rarr] _Boolean_. A predicate is interpreted as a function whose value is either _true_ or _false_.
 
 Declarations also include qualifiers, which specify further restrictions on their interpretation. Qualifiers on name declarations constrain interpretation of the one-step transformation.
 
@@ -396,7 +396,7 @@ Let _derivedName_ be an n-ary name, and let _formula_ (stem:[v_1,..., v_n]) deno
 
 [stem]
 ++++
-ii"derivedNameDefinition" "&nbsp;" "::=" "&nbsp;" ii"derivedName" "&nbsp;" (v_1 : "&nbsp;" D_1 , "&nbsp;" ..., "&nbsp;" v_n : "&nbsp;" D_n ): "&nbsp;" D =_{"def"} ii"formula" "&nbsp;" (v_1 , "&nbsp;" ..., "&nbsp;"v_n)
+ii"derivedNameDefinition"  "::="  ii"derivedName"  (v_1 :  D_1 ,  ...,  v_n :  D_n ):  D =_{"def"} ii"formula"  (v_1 ,  ..., v_n)
 ++++
 
 The result domain stem:[D] is omitted in case of a derived domain definition.
@@ -406,7 +406,7 @@ The result domain stem:[D] is omitted in case of a derived domain definition.
 The following derived predicates are defined to refer to the status of an agent/token in a given state.
 
 
-[smallcap]#_Mode_# stem:[=_{"def"}]  {stem:[ ii"exclusive", "&nbsp;" ii"shared"]}
+[smallcap]#_Mode_# stem:[=_{"def"}]  {stem:[ ii"exclusive",  ii"shared"]}
 
 stem:[ii"idle"] (stem:[a] : [smallcap]#_Agent_#): [smallcap]#_Boolean_# stem:[=_{"def"} ii"a.mode" = ii"undefined" ^^ AAt in] [smallcap]#_Token_# : stem:[ii"t.owner" != a]
 
@@ -448,9 +448,9 @@ The first constraint defines the initial set [smallcap]#_Agent_# to consist of a
 
 A (global) state stem:[ s in S] is given by an interpretation of the names in stem:[V] over the base set of stem:[M]. State transitions can be defined in terms of partial reinterpretations of dynamic domains, functions and predicates. This gives rise to the notions of _location_ as a conceptual means to refer to parts of global states, and of _update_ to describe state changes.
 
-A _location of a state_ stem:[s] _of_ stem:[M] is a pair stem:[ii"loc"_s  = < f, s(x) >], where stem:[f] is a dynamic name in stem:[V], and stem:[s(x)] is a sequence of elements of the base set according to the arity of stem:[f]. An _update of s_ is a pair stem:[delta_s = < ii"loc"_s, s(y) >], where stem:[s(y)] identifies an element of the base set as the new value to be associated with the location stem:[ii"loc"_s]. To _fire_ stem:[delta_s] means to transform stem:[s] into a state stem:[s'] of stem:[M] such that stem:[f_{s'} (s(x)) = s(y)], while all other locations stem:[ii"loc"'_s] of stem:[s], stem:[ii"loc"'_s != ii"loc"_s], remain unaffected. In other words, firing an update modifies the interpretation of a state in a well-defined way.
+A _location of a state_ stem:[s] _of_ stem:[M] is a pair stem:[ii"loc"_s  = <f, s(x)>], where stem:[f] is a dynamic name in stem:[V], and stem:[s(x)] is a sequence of elements of the base set according to the arity of stem:[f]. An _update of s_ is a pair stem:[delta_s = <ii"loc"_s, s(y)>], where stem:[s(y)] identifies an element of the base set as the new value to be associated with the location stem:[ii"loc"_s]. To _fire_ stem:[delta_s] means to transform stem:[s] into a state stem:[s'] of stem:[M] such that stem:[f_{s'} (s(x)) = s(y)], while all other locations stem:[ii"loc"'_s] of stem:[s], stem:[ii"loc"'_s != ii"loc"_s], remain unaffected. In other words, firing an update modifies the interpretation of a state in a well-defined way.
 
-The potential behaviour of a basic ASM is captured by a _program_ stem:[P], which is defined by a _transition rule_ (see <<F1_3_1_8Transition_rules>> and <<F1_3_1_10ASM_programs>>). For each state stem:[s in S], a program stem:[P] of stem:[M] defines an _update set_ stem:[Delta_s(P)] as a finite set of updates of stem:[s]. stem:[Delta_s(P)] is _consistent_, if and only if it does not contain any two updates stem:[delta_s, "&nbsp;" delta'_s] such that stem:[delta_s = < ii"loc"_s, "&nbsp;" s(y) >], stem:[delta'_s = < ii"loc"_s, "&nbsp;" s(y') >], and stem:[s(y) != s(y')]. The _firing of a consistent update set_ stem:[Delta_s (P)] in state stem:[s] means to fire all its members simultaneously, i.e., to produce (in one atomic step) a new state stem:[s'] such that for all locations stem:[ii"loc"_s = < f, "&nbsp;" s(x) >] of stem:[s], stem:[f_{s'} (s(x)) = s(y)], if stem:["<<" f, "&nbsp;" s(x) >, "&nbsp;" s(y) > in Delta_s (P)], and stem:[f_{s'} (s(x)) = f_s (s(x))] otherwise, and is called _state transition_. Firing an inconsistent update set has no effect, i.e., stem:[s' = s].
+The potential behaviour of a basic ASM is captured by a _program_ stem:[P], which is defined by a _transition rule_ (see <<F1_3_1_8Transition_rules>> and <<F1_3_1_10ASM_programs>>). For each state stem:[s in S], a program stem:[P] of stem:[M] defines an _update set_ stem:[Delta_s(P)] as a finite set of updates of stem:[s]. stem:[Delta_s(P)] is _consistent_, if and only if it does not contain any two updates stem:[delta_s,  delta'_s] such that stem:[delta_s = < ii"loc"_s,  s(y) >], stem:[delta'_s = < ii"loc"_s,  s(y') >], and stem:[s(y) != s(y')]. The _firing of a consistent update set_ stem:[Delta_s (P)] in state stem:[s] means to fire all its members simultaneously, i.e., to produce (in one atomic step) a new state stem:[s'] such that for all locations stem:[ii"loc"_s = <f,  s(x)>] of stem:[s], stem:[f_{s'} (s(x)) = s(y)], if stem:["<<" f,  s(x) >,  s(y) > in Delta_s (P)], and stem:[f_{s'} (s(x)) = f_s (s(x))] otherwise, and is called _state transition_. Firing an inconsistent update set has no effect, i.e., stem:[s' = s].
 
 NOTE: In the context of the SDL‑2010 semantics, an inconsistent update set indicates an error in the semantic model. The ASM semantics ensures that such errors do not destroy the notion of state.
 
@@ -476,11 +476,11 @@ Transition rules specify update sets over ASM states. Complex rules are formed f
 
 ____
 
-stem:[ii"Rule" "&nbsp;" "::=" "&nbsp;" f(t_1, "&nbsp;"..., "&nbsp;" t_n) := t_0 (n >= 0)]
+stem:[ii"Rule"  "::="  f(t_1, ...,  t_n) := t_0 (n >= 0)]
 
 ____
 
-Here, stem:[f] is a non-static name of stem:[V] denoting either a controlled or a shared function, predicate or domain, and stem:[t_0, "&nbsp;" t_1 , "&nbsp;" ..., "&nbsp;" t_n] are terms over stem:[V] identifying, for a given state stem:[s], the location stem:[ ii"loc" = < f, "&nbsp;" < s(t_1) , "&nbsp;" ..., "&nbsp;"  s(t_n) ">>"] to be changed and the new value stem:[s(t_0)] to be assigned, respectively. In other words, the above update instruction specifies the update set stem:[{ "<<" f, "&nbsp;" < s(t_1) , "&nbsp;" ..., "&nbsp;" s(t_n) ">>", "&nbsp;" s(t_0) > }], consisting of a single update. Note that only locations related to (non-static) basic names may occur at the left-hand side of an update instruction.
+Here, stem:[f] is a non-static name of stem:[V] denoting either a controlled or a shared function, predicate or domain, and stem:[t_0,  t_1 ,  ...,  t_n] are terms over stem:[V] identifying, for a given state stem:[s], the location stem:[ ii"loc" = < f,  < s(t_1) ,  ...,   s(t_n) ">>"] to be changed and the new value stem:[s(t_0)] to be assigned, respectively. In other words, the above update instruction specifies the update set stem:[{ "<<" f,  < s(t_1) , ...,  s(t_n) ">>",  s(t_0) > }], consisting of a single update. Note that only locations related to (non-static) basic names may occur at the left-hand side of an update instruction.
 
 
 .Update instruction:
@@ -488,9 +488,9 @@ Here, stem:[f] is a non-static name of stem:[V] denoting either a controlled or 
 Let stem:[t] be a variable denoting a token and stem:[ag] be an agent.
 
 
-stem:[ii"t.owner" := ii"ag"] specifies the update set stem:[{ "<<" ii"owner", "&nbsp;" < s(t) ">>", "&nbsp;" s(ii"ag") >}]
+stem:[ii"t.owner" := ii"ag"] specifies the update set stem:[{ "<<" ii"owner",  < s(t) ">>",  s(ii"ag") >}]
 
-stem:[ii"ag.mode" := ii"undefined"] specifies the update set stem:[{ "<<" ii"mode", "&nbsp;" < s(ag) ">>", "&nbsp;" s(ii"undefined") >}]
+stem:[ii"ag.mode" := ii"undefined"] specifies the update set stem:[{ "<<" ii"mode",  < s(ag) ">>",  s(ii"undefined") >}]
 ====
 
 The construction of complex transition rules out of elementary update instructions is recursively defined by means of _ASM rule constructors_. For the ASM model applied to define the SDL‑2010 semantics, six different constructors (*if-then*, *do-in-parallel*, *do-forall*, *choose*, *extend*, *let*) are used. These constructors are listed below, with an informal description of their meaning. Here, stem:[ii"Rule"],  stem:[ii"Rule"_i] denote transition rules, stem:[g] denotes a Boolean term, and stem:[v, v_1,..., v_n] denote free variables over the base set of stem:[M]. The scope of a rule constructor is expressed by appropriate keywords, and can additionally be indicated by indentation. The closing keywords can be omitted, if no confusion arises. If closing keywords are omitted, the corresponding constructor extends as much as possible, but not over the next *where*-clause.
@@ -498,7 +498,7 @@ The construction of complex transition rules out of elementary update instructio
 * _if-then-constructor_
 
 ____
-stem:[ii"Rule" ::=] *if* stem:[g] *then*
+stem:[ii"Rule" "::="] *if* stem:[g] *then*
 
 
 stem:[ii"Rule"_1]
@@ -518,7 +518,7 @@ The update set specified by stem:[ii"Rule"] in a given state stem:[s] is defined
 * _do-in-parallel-constructor_
 
 ____
-stem:[ii"Rule" ::=] [*do in-parallel*]
+stem:[ii"Rule" "::="] [*do in-parallel*]
 
 
 stem:[ii"Rule"_1]
@@ -538,7 +538,7 @@ The update set defined by stem:[ii"Rule"] in state stem:[s] is defined to be the
 * _do-forall-constructor_
 
 ____
-stem:[ii"Rule" ::=] *do forall* stem:[v : g(v)]
+stem:[ii"Rule" "::="] *do forall* stem:[v : g(v)]
 
 
 stem:[ii"Rule"_0 (v)]
@@ -552,7 +552,7 @@ The effect of stem:[ii"Rule"] is that stem:[ii"Rule"_0] is fired simultaneously 
 * _choose-constructor_
 
 ____
-stem:[ii"Rule" "&nbsp;" ::=] *choose* stem:[ "&nbsp;" v "&nbsp;" : "&nbsp;" g(v)]
+stem:[ii"Rule"  "::="] *choose* stem:[  v  :  g(v)]
 
 
 stem:[ii"Rule"_0 (v)]
@@ -566,10 +566,10 @@ The effect of stem:[ii"Rule"] is that stem:[ii"Rule"_0] is fired for an element 
 * _extend-constructor_
 
 ____
-stem:[ii"Rule" "&nbsp;" ::=] *extend* stem:[D] *with* stem:[ "&nbsp;" v_1, "&nbsp;" ... "&nbsp;" , "&nbsp;" v_n]
+stem:[ii"Rule"  "::="] *extend* stem:[D] *with* stem:[  v_1,  ...  ,  v_n]
 
 
-stem:[ii"Rule"_0 (v_1, ..., "&nbsp;" v_n)]
+stem:[ii"Rule"_0 (v_1, ...,  v_n)]
 
 
 *endextend*
@@ -584,7 +584,7 @@ NOTE: _extend_ can be defined in terms of the _import_ constructor (not shown he
 * _let-constructor_
 
 ____
-stem:[ii"Rule" "&nbsp;" ::=] *let* stem:["&nbsp;" v = ii"expression"] *in*
+stem:[ii"Rule"  "::="] *let* stem:[ v = ii"expression"] *in*
 
 
 stem:[ii"Rule"_0 (v)]
@@ -600,10 +600,10 @@ The effect of stem:[ii"Rule"] when fired in some state stem:[s] is that stem:[v]
 The following transition rule defines the behaviour of agent stem:[ii"ag"] when requesting shared access, i.e., when stem:[ii"ag.mode" = ii"shared"]. The rule applies the if-then-constructor, the choose-constructor, and an update instruction.
 
 
-*if* stem:["&nbsp;" ii"ag.mode" = ii"shared" ^^ ii "ag.waiting" "&nbsp;"] *then*
+*if* stem:[ ii"ag.mode" = ii"shared" ^^ ii "ag.waiting" ] *then*
 
 
-*choose* stem:["&nbsp;" t "&nbsp;" : "&nbsp;" t in][smallcap]#_Token_# stem:[^^ ii"t.available"]
+*choose* stem:[ t  :  t in][smallcap]#_Token_# stem:[^^ ii"t.available"]
 
 
 stem:[ii"t.owner" := ii"ag"]
@@ -615,7 +615,7 @@ stem:[ii"t.owner" := ii"ag"]
 *endif*
 ====
 
-The precise meaning of the rule is given by its update set with respect to a state stem:[s], which is either stem:[{"<<" ii "owner", < s(t) ">>", "&nbsp;" s(ii"ag") >}] for some token stem:[s(t)] available in stem:[s], if all further predicates stated in the if-then-constructor hold in stem:[s], or the empty update set otherwise.
+The precise meaning of the rule is given by its update set with respect to a state stem:[s], which is either stem:[{"<<" ii "owner", < s(t) ">>",  s(ii"ag") >}] for some token stem:[s(t)] available in stem:[s], if all further predicates stated in the if-then-constructor hold in stem:[s], or the empty update set otherwise.
 
 [[F1_3_1_9Abbreviations]]
 ===== Abbreviations
@@ -627,10 +627,10 @@ Derived names are introduced (as explained in <<F1_3_1_5Specifying_the_signature
 * _rule-macro_-definition
 +
 --
-Let stem:[ii"Rule"_0]  denote a transition rule with free variables stem:[v_1 ,..., v_n] _of domains_ stem:[D_1,..., "&nbsp;" D_n, "&nbsp;" n >= 0]. The general form of a rule macro definition is:
+Let stem:[ii"Rule"_0]  denote a transition rule with free variables stem:[v_1 ,..., v_n] _of domains_ stem:[D_1,...,  D_n,  n >= 0]. The general form of a rule macro definition is:
 
 ____
-stem:[ii"RuleMacroDefinition" "&nbsp;" "::=" "&nbsp;" ii"RuleMacroName"(v_1  "&nbsp;" : "&nbsp;" D_1 ,..., v_n "&nbsp;" : "&nbsp;" D_n) -= ii"Rule"_0 (v_1, "&nbsp;" ..., "&nbsp;" v_n)]
+stem:[ii"RuleMacroDefinition"  "::="  ii"RuleMacroName"(v_1   :  D_1 ,..., v_n  :  D_n) -= ii"Rule"_0 (v_1,  ...,  v_n)]
 ____
 
 Rule macro names are, by convention, written in small capitals, with a leading capital letter (as in [smallcap]#SharedAccess#).
@@ -642,13 +642,13 @@ Rule macro names are, by convention, written in small capitals, with a leading c
 By default, _rule macros_ and _derived names_ have a global scope. However, their scope can also be restricted to a particular transition rule stem:[ii"Rule"] by using the where-part.
 
 ____
-stem:[ii"Rule" "&nbsp;" "::=" "&nbsp;" ii"Rule"_0]
+stem:[ii"Rule"  "::="  ii"Rule"_0]
 
 
 *where* 
 
 
-stem:[( ii"RuleMacroDefinition" "&nbsp;"] | stem:[{: "&nbsp;" ii"DerivedNameDefinition")^+]
+stem:[( ii"RuleMacroDefinition" ] | stem:[{:  ii"DerivedNameDefinition")^+]
 
 
 *endwhere*
@@ -661,7 +661,7 @@ ____
 Rule macros are applied in transition rules as follows:
 
 ____
-stem:[ii"Rule" "&nbsp;" "::=" "&nbsp;" ii"RuleMacroName"(t_1,..., "&nbsp;" t_n)]
+stem:[ii"Rule"  "::="  ii"RuleMacroName"(t_1,...,  t_n)]
 ____
 
 Formally, rule macros are syntactical abbreviations, i.e., each occurrence of a macro in a rule is to be replaced textually by the related macro definition (replacing formal parameters by actual parameters).
@@ -675,7 +675,7 @@ The transition rule from the previous example can be stated using rule macros, a
 [smallcap]#SharedAccess# ≡
 
 
-*if* stem:["&nbsp;" ii"ag.mode" = ii"shared" ^^ ii"ag.waiting" "&nbsp;"] *then*
+*if* stem:[ ii"ag.mode" = ii"shared" ^^ ii"ag.waiting" ] *then*
 
 
 [smallcap]#GetToken#(stem:[ii"ag"])
@@ -690,7 +690,7 @@ The transition rule from the previous example can be stated using rule macros, a
 [smallcap]#GetToken# (a:[smallcap]#Agent#) ≡
 
 
-*choose* stem:["&nbsp;" t "&nbsp;" : "&nbsp;" t in ii"Token" ^^ ii"t.available"]
+*choose* stem:[ t  :  t in ii"Token" ^^ ii"t.available"]
 
 
 stem:[ii"t.owner" := a]
@@ -742,10 +742,10 @@ The ASM program stem:[P] of the system _RMS_ is defined as follows:
 [smallcap]#SharedAccess# ≡
 
 
-*if* stem:["&nbsp;" ii"ag.mode" = ii"shared" ^^ ii "ag.waiting" "&nbsp;"] *then*
+*if* stem:[ ii"ag.mode" = ii"shared" ^^ ii "ag.waiting" ] *then*
 
 
-*choose* stem:[t "&nbsp;" : "&nbsp;" t in][smallcap]#_Token_# stem:[^^ ii"t.available"]
+*choose* stem:[t  :  t in][smallcap]#_Token_# stem:[^^ ii"t.available"]
 
 
 stem:[ ii"t.owner" :=  ii"ag"]
@@ -760,10 +760,10 @@ stem:[ ii"t.owner" :=  ii"ag"]
 [smallcap]#ExclusiveAccess# ≡
 
 
-*if* stem:["&nbsp;" ii"ag.mode" = ii"exclusive" ^^ AAt in] [smallcap]#Token# : stem:[ii"t.available" "&nbsp;"] *then*
+*if* stem:[ ii"ag.mode" = ii"exclusive" ^^ AAt in] [smallcap]#Token# : stem:[ii"t.available" ] *then*
 
 
-*do forall* stem:["&nbsp;" t : t in] [smallcap]#_Token_#
+*do forall* stem:[ t : t in] [smallcap]#_Token_#
 
 
 stem:[ii"t.owner" := ii"ag"]
@@ -778,7 +778,7 @@ stem:[ii"t.owner" := ii"ag"]
 [smallcap]#ReleaseAccess# ≡
 
 
-*if* stem:["&nbsp;" ii"ag.busy" ^^ ii"ag.stop" "&nbsp;"] *then*
+*if* stem:[ ii"ag.busy" ^^ ii"ag.stop" ] *then*
 
 
 *do in-parallel*
@@ -787,7 +787,7 @@ stem:[ii"t.owner" := ii"ag"]
 stem:[ii"ag.mode" := ii"undefined"]
 
 
-*do forall* stem:["&nbsp;" t : t in] [smallcap]#_Token_# stem:[^^ ii"t.owner" = ii"ag"]
+*do forall* stem:[ t : t in] [smallcap]#_Token_# stem:[^^ ii"t.owner" = ii"ag"]
 
 
 stem:[ii"t.owner" := ii"undefined"]
@@ -1358,7 +1358,7 @@ Abstract syntax rules from the language definition are directly translated to th
 An abstract syntax rule defined with "::" declares a domain of syntax nodes. Each syntax node has an identity and a value. The value is a member of an auxiliary domain of tuples of syntax nodes. For example, the rule
 
 ____
-stem:[ii"Symbol" "&nbsp;" text(::) "&nbsp;" ii"Symbol"_1 ii"Symbol"_2]
+stem:[ii"Symbol"  text(::)  ii"Symbol"_1 ii"Symbol"_2]
 ____
 
 declares
@@ -1368,17 +1368,17 @@ ____
 
 stem:[ii"Symbol-aux" =_{"def"} ii"Symbol"_1 xx ii"Symbol"_2]
 
-*controlled* stem:[ii"contents-Symbol" "&nbsp;" : "&nbsp;" ii"Symbol" rarr ii"Symbol-aux"]
+*controlled* stem:[ii"contents-Symbol"  :  ii"Symbol" rarr ii"Symbol-aux"]
 ____
 
 The abbreviation stem:[bb"mk-" ii"Symbol"] creates new elements of the domain stem:[ii"Symbol"],
 
 ____
-stem:[bb"mk-" ii"Symbol" ( ii"s1" : ii"Symbol"_1, "&nbsp;" ii"s2" : "&nbsp;" ii"Symbol"_2) -=]
+stem:[bb"mk-" ii"Symbol" ( ii"s1" : ii"Symbol"_1,  ii"s2" :  ii"Symbol"_2) -=]
 
-*extend* stem:["&nbsp;" ii"Symbol" "&nbsp;"] *with* stem:[ii"v"]
+*extend* stem:[ ii"Symbol" ] *with* stem:[ii"v"]
 
-stem:[ii"contents-Symbol"(v) := (ii"s1", "&nbsp;" ii"s2")]
+stem:[ii"contents-Symbol"(v) := (ii"s1",  ii"s2")]
 
 *endextend*
 ____
@@ -1388,21 +1388,21 @@ Note that stem:[bb"mk-" ii"Symbol"] is not an ASM function, but an abbreviation 
 Selector functions, s-, select the components of the tuple that is the value of a syntax node.
 
 ____
-stem:[bb"s-" ii"Symbol"_1 "&nbsp;" : "&nbsp;" ii"Symbol"  rarr ii"Symbol"_1]
+stem:[bb"s-" ii"Symbol"_1  :  ii"Symbol"  rarr ii"Symbol"_1]
 
-stem:[bb"s-" ii"Symbol"_2 "&nbsp;" : "&nbsp;" ii"Symbol" rarr ii"Symbol"_2]
+stem:[bb"s-" ii"Symbol"_2  :  ii"Symbol" rarr ii"Symbol"_2]
 
-stem:[bb"s-" ii"Symbol"_1 ( x : ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_1 =_{"def"} bb"s-" ii"Symbol"_1 (ii"x.contents-Symbol")]
+stem:[bb"s-" ii"Symbol"_1 ( x : ii"Symbol")  :  ii"Symbol"_1 =_{"def"} bb"s-" ii"Symbol"_1 (ii"x.contents-Symbol")]
 
-stem:[bb"s-" ii"Symbol"_2 ( x : ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_2 =_{"def"} bb"s-" ii"Symbol"_2 ( ii"x.contents-Symbol")]
+stem:[bb"s-" ii"Symbol"_2 ( x : ii"Symbol")  :  ii"Symbol"_2 =_{"def"} bb"s-" ii"Symbol"_2 ( ii"x.contents-Symbol")]
 ____
 
 Here is a more elaborate example, illustrating the definitions introduced by a variety of extended BNF constructs.
 
 ____
-stem:[ ii"Symbol" "&nbsp;" "::" "&nbsp;" ii"Symbol"_1 ii"Symbol"_2^+ "&nbsp;" "&nbsp;" ii"Symbol"_3 bb"-set" "&nbsp;" [ ii"Symbol"_4\] ]
+stem:[ ii"Symbol"  "::"  ii"Symbol"_1 ii"Symbol"_2^+   ii"Symbol"_3 bb"-set"  [ ii"Symbol"_4\] ]
 
-stem:[{ ii"Symbol"_1 "&nbsp;" | {: "&nbsp;" ii"Symbol"_2 } "&nbsp;" {ii"Symbol"_1 ii"Symbol"_2}^** "&nbsp;" { ii"Symbol"_1 "&nbsp;" | {: "&nbsp;" ii"Symbol"_2 } bb"-set"]
+stem:[{ ii"Symbol"_1  | {:  ii"Symbol"_2 }  {ii"Symbol"_1 ii"Symbol"_2}^**  { ii"Symbol"_1  | {:  ii"Symbol"_2 } bb"-set"]
 ____
 
 which is translated to:
@@ -1411,47 +1411,47 @@ ____
 
 stem:[ ii"Symbol-aux" =_{"def"} ii"Symbol"_1 xx ii"Symbol"_2^** xx ii"Symbol"_3 bb"-set" xx ii"Symbol"_4 xx ( ii"Symbol"_1 uu ii"Symbol"_2) xx ( ii"Symbol"_1 xx ii"Symbol"_2)^** xx ( ii"Symbol"_1 uu ii"Symbol"_2) bb"-set"]
 
-*controlled* *domain* stem:["&nbsp;" ii"Symbol"]
+*controlled* *domain* stem:[ ii"Symbol"]
 
-*controlled* stem:["&nbsp;" ii"contents-Symbol" "&nbsp;" : "&nbsp;" ii"Symbol" rarr ii"Symbol-aux"]
+*controlled* stem:[ ii"contents-Symbol"  :  ii"Symbol" rarr ii"Symbol-aux"]
 
-stem:[ bb"s-" ii"Symbol"_1 (x : "&nbsp;" ii"Symbol") : "&nbsp;" ii"Symbol"_1 =_{"def"} bb"s-" ii"Symbol"_1 ( ii"x.contents-Symbol")]
+stem:[ bb"s-" ii"Symbol"_1 (x :  ii"Symbol") :  ii"Symbol"_1 =_{"def"} bb"s-" ii"Symbol"_1 ( ii"x.contents-Symbol")]
 
-stem:[ bb"s-" ii"Symbol"_2 bb"-seq" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_2^** =_{"def"} bb"s-" ii"Symbol"_2 bb"-seq" (ii"x.contents-Symbol")]
+stem:[ bb"s-" ii"Symbol"_2 bb"-seq" ( x :  ii"Symbol")  :  ii"Symbol"_2^** =_{"def"} bb"s-" ii"Symbol"_2 bb"-seq" (ii"x.contents-Symbol")]
 
-stem:[bb"s-" ii"Symbol"_3 bb"-set" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_3 bb"-set" =_{"def"} bb"s-" ii"Symbol"_3 bb"-set" (ii"x.contents-Symbol")]
+stem:[bb"s-" ii"Symbol"_3 bb"-set" ( x :  ii"Symbol")  :  ii"Symbol"_3 bb"-set" =_{"def"} bb"s-" ii"Symbol"_3 bb"-set" (ii"x.contents-Symbol")]
 
-stem:[bb"s-" ii"Symbol"_4 ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ii"Symbol"_4 =_{"def"} bb"s-" ii"Symbol"_4 (ii"x.contents-Symbol")]
+stem:[bb"s-" ii"Symbol"_4 ( x :  ii"Symbol")  :  ii"Symbol"_4 =_{"def"} bb"s-" ii"Symbol"_4 (ii"x.contents-Symbol")]
 
-stem:[bb"s-implicit" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" (ii"Symbol"_1 uu ii"Symbol"_2) =_{"def"} bb"s-implicit" ( ii"x.contents-Symbol")]
+stem:[bb"s-implicit" ( x :  ii"Symbol")  :  (ii"Symbol"_1 uu ii"Symbol"_2) =_{"def"} bb"s-implicit" ( ii"x.contents-Symbol")]
 
-stem:[bb"s-implicit-seq" ( x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;"  ( ii"Symbol"_1 xx ii"Symbol"_2)^** =_{"def"} bb"s-implicit-seq" (ii"x.contents-Symbol")]
+stem:[bb"s-implicit-seq" ( x :  ii"Symbol")  :   ( ii"Symbol"_1 xx ii"Symbol"_2)^** =_{"def"} bb"s-implicit-seq" (ii"x.contents-Symbol")]
 
-stem:[bb"s-implicit-set" (x : "&nbsp;" ii"Symbol") "&nbsp;" : "&nbsp;" ( ii"Symbol"_1 uu ii"Symbol"_2 ) bb"-set" =_{"def"} bb"s-implicit-set" ( ii"x.contents-Symbol")]
+stem:[bb"s-implicit-set" (x :  ii"Symbol")  :  ( ii"Symbol"_1 uu ii"Symbol"_2 ) bb"-set" =_{"def"} bb"s-implicit-set" ( ii"x.contents-Symbol")]
 ____
 
 As with the previous example, an abbreviation stem:[bb"mk-" ii"Symbol"] is also introduced. This abbreviation creates a new object of domain stem:[ii"Symbol"] using the *extend* primitive and sets the stem:[ii"contents-Symbol"] value of the newly produced object to the corresponding element of stem:[ii"Symbol-aux"].
 
 ____
-stem:[ bb"mk-" ii"Symbol" "&nbsp;" ( s1 : ii"Symbol"_1, ii"s2seq" "&nbsp;" : "&nbsp;" ii"Symbol"_2^** "&nbsp;" , "&nbsp;" ii"s3set"  "&nbsp;" :  "&nbsp;"  ii "Symbol"_3 bb"-set" "&nbsp;" , "&nbsp;" ii"s4" "&nbsp;" : "&nbsp;"   ii"Symbol"_4 ,] 
+stem:[ bb"mk-" ii"Symbol"  ( s1 : ii"Symbol"_1, ii"s2seq"  :  ii"Symbol"_2^**  ,  ii"s3set"   :    ii "Symbol"_3 bb"-set"  ,  ii"s4"  :    ii"Symbol"_4 ,] 
 
-stem:[ "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" {:  s "&nbsp;" :  "&nbsp;" ( ii"Symbol"_1 uu ii"Symbol"_2) "&nbsp;" , "&nbsp;" ii"s1s2seq" "&nbsp;" : "&nbsp;" ( ii"Symbol"_1 xx ii"Symbol"_2)^** "&nbsp;" , ]
+stem:[      {:  s  :   ( ii"Symbol"_1 uu ii"Symbol"_2)  ,  ii"s1s2seq"  :  ( ii"Symbol"_1 xx ii"Symbol"_2)^**  , ]
 
-stem:[ "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" "&nbsp;" {:  ii"sset" "&nbsp;" : "&nbsp;" ( ii"Symbol"_1 uu ii"Symbol"_2) bb"set") -= ]
+stem:[      {:  ii"sset"  :  ( ii"Symbol"_1 uu ii"Symbol"_2) bb"set") -= ]
 
-*extend* stem:["&nbsp;" ii"Symbol" "&nbsp;"] *with* stem:["&nbsp;" v]
+*extend* stem:[ ii"Symbol" ] *with* stem:[ v]
 
-stem:[ii"contents-Symbol"(v) := ( ii"s1", "&nbsp;" ii"s2seq", "&nbsp;" ii"s3set", "&nbsp;" ii"s4", "&nbsp;" s, "&nbsp;" ii"s1s2seq", "&nbsp;" ii"sset")]
+stem:[ii"contents-Symbol"(v) := ( ii"s1",  ii"s2seq",  ii"s3set",  ii"s4",  s,  ii"s1s2seq",  ii"sset")]
 
 *endextend*
 ____
 
 The abbreviation stem:[bb"mk-" ii"Symbol"] is not a function, but in fact an ASM rule item. Therefore, it must be used only within ASM rules and not as an ASM location.
 
-If for a given stem:[ii"Symbol"], stem:[ii"sym"], the optional stem:[ii"Symbol"_4] is not present, that fact is expressed in the ASM model by leaving the corresponding value stem:[ ii"undefined" "&nbsp;" : "&nbsp;" ii"sym.s-Symbol"_4 = ii"undefined"]. An empty sequence of symbols (constructor with no parts) is denoted by (). For example, the abstract syntax rule
+If for a given stem:[ii"Symbol"], stem:[ii"sym"], the optional stem:[ii"Symbol"_4] is not present, that fact is expressed in the ASM model by leaving the corresponding value stem:[ ii"undefined"  :  ii"sym.s-Symbol"_4 = ii"undefined"]. An empty sequence of symbols (constructor with no parts) is denoted by (). For example, the abstract syntax rule
 
 ____ 
-stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ()]
+stem:[ii "Symbol"  "::"  ()]
 ____
 
 declares a singleton domain, stem:[ii"Symbol"], whose only element is the empty tuple.
@@ -1461,13 +1461,13 @@ The equality for syntax nodes is always a structural equality, i.e., the content
 A rule of the form
 
 ____
-stem:[ ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 "&nbsp;" | "&nbsp;" ii "Symbol"_2 | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_n ( n >= 1)]
+stem:[ ii "Symbol"  "::"  ii "Symbol"_1  |  ii "Symbol"_2 |  ...  |  ii "Symbol"_n ( n >= 1)]
 ____
 
 where each alternative right side consists of a single symbol, is equivalent to
 
 ____
-stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" {ii "Symbol"_1  "&nbsp;" | "&nbsp;" ii "Symbol"_2 |  "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_n} "&nbsp;" (n >= 1)]
+stem:[ii "Symbol"  "::"  {ii "Symbol"_1   |  ii "Symbol"_2 |   ...  |  ii "Symbol"_n}  (n >= 1)]
 ____ 
 
 In this case, there are selectors stem:[bb ".s-" ii "Symbol"_i] , stem:[(i = 1, ..., n)] and if stem:[x in ii "Symbol"], then all but one of those selectors will have the value stem:[ii"undefined"]. Moreover, stem:[x. bb "s-implicit" = x. ii "contents-Symbol"].
@@ -1475,7 +1475,7 @@ In this case, there are selectors stem:[bb ".s-" ii "Symbol"_i] , stem:[(i = 1, 
 More usually, rules like this will be represented as named unions. The syntax rules introducing named unions have the form:
 
 ____
-stem:[ii "Symbol" = ii "Symbol"_1 "&nbsp;" | "&nbsp;" ii "Symbol"_2 "&nbsp;" | ... | "&nbsp;" ii "Symbol"_n "&nbsp;" (n >= 1)]
+stem:[ii "Symbol" = ii "Symbol"_1  |  ii "Symbol"_2  | ... |  ii "Symbol"_n  (n >= 1)]
 ____
 
 which is modelled as:
@@ -1491,10 +1491,10 @@ Of course, it is still possible to construct elements of stem:[ii "Symbol"] usin
 If a name is not required, unnamed unions may be introduced by rules like:
 
 
-//stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} "&nbsp;" | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_{2N} }]
+//stem:[ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21}  |  ...  |  ii "Symbol"_{2N} }]
 [stem]
 ++++
-ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} "&nbsp;" | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_{2N} }
+ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21}  |  ...  |  ii "Symbol"_{2N} }
 ++++
 
 
@@ -1509,7 +1509,7 @@ ____
 ////
 [stem]
 ++++
-ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 ii "Symbol"_2
+ii "Symbol"  "::"  ii "Symbol"_1 ii "Symbol"_2
 
 
 ii "Symbol"_2 = ii "Symbol"_{21} | ... | ii "Symbol"_{2N}
@@ -1517,7 +1517,7 @@ ii "Symbol"_2 = ii "Symbol"_{21} | ... | ii "Symbol"_{2N}
 ////
 
 ____
-stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 ii "Symbol"_2]
+stem:[ii "Symbol"  "::"  ii "Symbol"_1 ii "Symbol"_2]
 
 
 stem:[ii "Symbol"_2 = ii "Symbol"_{21} | ... | ii "Symbol"_{2N}]
@@ -1542,13 +1542,13 @@ As with named unions, stem:[ii "Symbol"] yields a domain definition, but not fun
 It is not always necessary to name a sequence explicitly. Unnamed sequences may be introduced by rules like:
 
 ____
-stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} ... ii "Symbol"_{2N} }^{**}]
+stem:[ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21} ... ii "Symbol"_{2N} }^{**}]
 ____
 
 or like:
 
 ____
-stem:[ii "Symbol" "&nbsp;" "::" "&nbsp;" ii "Symbol"_1 { ii "Symbol"_{21} "&nbsp;" | "&nbsp;" ... "&nbsp;" | "&nbsp;" ii "Symbol"_{2N} }^{**}]
+stem:[ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21}  |  ...  |  ii "Symbol"_{2N} }^{**}]
 ____
 
 Named and unnamed sets can be introduced in a similar way.
@@ -1574,7 +1574,7 @@ ____
 stem:[ii "DefinitionAS1" =_{"def"} ii "Symbol"_1 uu ii "Symbol"_2 uu ... uu ii "Symbol"_N]
 ____
 
-where stem:[ii "Symbol"_1, "&nbsp;" ii "Symbol"_2, "&nbsp;" ..., "&nbsp;" ii "Symbol"_n]  are _all_ the symbols (terminal and non-terminal) of the abstract grammar. This includes unnamed non-terminals that appear in the syntax such as stem:[ii "Graph-node"^{**}] and stem:[{ ii "Terminator" "&nbsp;" | {: "&nbsp;" ii "Decision-node" }] in the AS1 rule stem:[ii "Transition"], and stem:[{ ii "Open-range" "&nbsp;" | {: "&nbsp;" ii "Closed-range" }^**] in the AS1 rule stem:[ii "Size-constraint"], which in ASM are denoted (respectively) as stem:[ii "Graph-node" bb"-seq"], stem:[( ii"Terminator" uu ii"Decision-node" )] and stem:[(ii"Open-range" uu ii"Closed-range") bb"-seq"].
+where stem:[ii "Symbol"_1,  ii "Symbol"_2,  ...,  ii "Symbol"_n]  are _all_ the symbols (terminal and non-terminal) of the abstract grammar. This includes unnamed non-terminals that appear in the syntax such as stem:[ii "Graph-node"^{**}] and stem:[{ ii "Terminator"  | {:  ii "Decision-node" }] in the AS1 rule stem:[ii "Transition"], and stem:[{ ii "Open-range"  | {:  ii "Closed-range" }^**] in the AS1 rule stem:[ii "Size-constraint"], which in ASM are denoted (respectively) as stem:[ii "Graph-node" bb"-seq"], stem:[( ii"Terminator" uu ii"Decision-node" )] and stem:[(ii"Open-range" uu ii"Closed-range") bb"-seq"].
 
 There is a similar domain _DefinitionAS0_ for the concrete grammar (AS0).
 
@@ -1618,7 +1618,7 @@ ____
 ////
 
 ____
-stem:[ii"parentAS1" ( ii"node" : "&nbsp;" ii"DefinitionAS1") : ii"DefinitionAS1" =_{"def"}]
+stem:[ii"parentAS1" ( ii"node" :  ii"DefinitionAS1") : ii"DefinitionAS1" =_{"def"}]
 
 
 *if* stem:[ii"node" = ii"undefined"] *then* stem:[ii"undefined"]
@@ -1627,7 +1627,7 @@ stem:[ii"parentAS1" ( ii"node" : "&nbsp;" ii"DefinitionAS1") : ii"DefinitionAS1"
 *elseif* stem:[ii"node" = ii"rootNodeAS1"] *then* stem:[ii"undefined"]
 
 
-*else* stem:[ ii"take" ({ p in ii"Symbol" sub ii"DefinitionAS1" : "&nbsp;" ii"node"] *in* stem:[ {: {: ii"p.contents-Symbol" })]
+*else* stem:[ ii"take" ({ p in ii"Symbol" sub ii"DefinitionAS1" :  ii"node"] *in* stem:[ {: {: ii"p.contents-Symbol" })]
 
 
 *endif*
@@ -1742,13 +1742,13 @@ ____
 The abstract syntax tree AS0 can be modified using the following derived functions:
 
 ____
-stem:[ii"replaceInSyntaxTree0" "&nbsp;" : "&nbsp;" ii"DefinitionAS0" xx ii"DefinitionAS0" xx ii"DefinitionAS0" rarr ii"DefinitionAS0"]
+stem:[ii"replaceInSyntaxTree0"  :  ii"DefinitionAS0" xx ii"DefinitionAS0" xx ii"DefinitionAS0" rarr ii"DefinitionAS0"]
 ____
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where all old sub-trees are replaced by the new sub-tree.
 
 ____
-stem:[ii"replaceInSyntaxTree0" "&nbsp;" : "&nbsp;" ii"DefinitionAS0" xx ii"DefinitionAS0" xx ii"DefinitionAS0" rarr ii"DefinitionAS0"]
+stem:[ii"replaceInSyntaxTree0"  :  ii"DefinitionAS0" xx ii"DefinitionAS0" xx ii"DefinitionAS0" rarr ii"DefinitionAS0"]
 ____
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where the first old sub-tree is replaced by the new sub-tree, and each subsequent old sub-tree occurrence is unchanged.
