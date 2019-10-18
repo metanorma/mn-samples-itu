@@ -2761,7 +2761,7 @@ The dispersion slope can be calculated from the equations in <<table-a2>>, using
 This appendix presents methods of determining the coefficients, A~t~ and B~t~ found in <<eq6-11>>. Limited negative error method and least square method are described in clauses <<a_I_1Limited_negative_error_method>> and <<a_I_2Least_squares_method>>, respectively. <<a_I_3Example>> provides an example of the cut-off wavelength interpolation method.
 
 [[a_I_1Limited_negative_error_method]]
-=== I.1 Limited negative error method
+=== Limited negative error method
 
 The algorithm is derived from the observation that the transition structures (humps) consist of data points with a positive deviation from the expected ideal curve. The interpolation procedure is based on a theoretical model of the LP~11~ transition region and a method of fitting the data to the model. The procedure has six steps.
 
@@ -2929,15 +2929,15 @@ image::data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAABTgAAAMeCAYAAAFOy1t8AAAAAXNSR
 (This appendix does not form an integral of this Recommendation.)
 
 [[a_II_1General]]
-=== II.1 General
+=== General
 
 A test method is described by which to determine the longitudinal uniformity of the chromatic dispersion of a single-mode optical fibre based on bidirectional backscattering measurements. This technique can evaluate the uniformity of the waveguide and material dispersion individually. Moreover, this technique can be used to measure the mode field diameter. Procedures for the calibration of backscattering equipment are provided in <<IEC_61746-1>>.
 
 [[a_II_2Test_apparatus]]
-=== II.2 Test apparatus
+=== Test apparatus
 
 [[a_II_2_1General_considerations]]
-==== II.2.1 General considerations (as in <<a_6_4_2_2_1General_considerations>>)
+==== General considerations (as in <<a_6_4_2_2_1General_considerations>>)
 
 An example of the apparatus is shown in <<fig-II-1>>.
 
@@ -2974,7 +2974,7 @@ image::data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAABZMAAALoCAYAAAF6z1vqAAAAAXNSR
 The refractive index profile of the reference fibre shall be similar to that of the test fibre and its length is restricted to maintain a good longitudinal uniformity, but it shall be longer than the input dead‑zone of the backscattering measurements. In addition, the mode field diameter of the reference fibre shall be measured as a function of wavelength. This reference fibre can be used to estimate the absolute value of the mode field diameter and relative index difference from the backscattering measurements.
 
 [[a_II_3Measurement_procedure]]
-=== II.3 Measurement procedure
+=== Measurement procedure
 
 . Connect reference fibres to both ends of the test fibre.
 
@@ -3310,20 +3310,20 @@ There are three methods for measuring MPI. The first, the "Narrowband ECL/PM met
 Disadvantages include a more complicated set-up and the inability to measure fibres in configurations other than straight, under tension.
 
 [[a_IV_1First_test_method]]
-=== IV.1 First test method: The narrowband ECL/PM technique
+=== First test method: The narrowband ECL/PM technique
 
 [[a_IV_1_1General]]
-==== IV.1.1 General
+==== General
 
 The narrowband ECL/PM technique monitors transmitted optical power through the jumper as a function of wavelength. The interference phenomenon between the fundamental, LP~01~, and HOM is measured by capturing the maximum and minimum transmitted power over a range of wavelengths. Polarization variation of the input is used to ensure true power extremes are found.
 
 [[a_IV_1_2Test_apparatus]]
-==== IV.1.2 Test apparatus
+==== Test apparatus
 
 A schematic of the apparatus required for the first test method is shown in <<fig-IV-2>>.
 
 [[a_IV_1_2_1Optical_source]]
-===== IV.1.2.1 Optical source
+===== Optical source
 
 A tuneable external cavity laser (ECL) is used with recommended characteristics: line width < 200 kHz, power > –4 dBm at the shortest wavelengths of interest (usually 1260 nm) and wide tuning range (~100 nm). The stability of the power should be < 0.01 dB over the testing time and should vary < 0.05 dB over the wavelength range required to sample the free spectral range (FSR) of the jumper interference pattern (this is typically ~2 nm). The laser RIN should be less than &minus;145 dBm/Hz over the 10 MHz-500 MHz range. It is useful to measure the MPI of the ECL in isolation and values typically are < –55 dB. Output should be taken through a standard single-mode fibre (<<ITU-T_G.652>> type) with an angled connector.
 
@@ -3333,7 +3333,7 @@ image::data:image/*;base64,iVBORw0KGgoAAAANSUhEUgAABYEAAAFYCAYAAAFytgPXAAAAAXNSR
 
 
 [[a_IV_1_2_2Polarization_scrambler]]
-===== IV.1.2.2 Polarization scrambler
+===== Polarization scrambler
 
 Since the coupling at the connection points will be polarization dependent, power measurements must be made at many random polarizations of the incoming light. The polarization may be changed by use of a polarization controller (manual or electronic) or a scrambler. In the case of a controller, at least 100 randomized polarization states should be used for each wavelength measured (therefore the manual controller is not recommended). The use of the scrambler requires knowledge of the scrambling speed (degree/s change on the Poincaré sphere, or highest frequency component in the scrambling instrument). The power measurement must be made on a time scale that is short compared to the time for the polarization to change substantially. Power meters usually require ~0.1– 20ms to obtain a reading. Thus scrambling frequencies should be below the range 1–0.005 kHz, depending on the averaging time chosen for the power meter. If the photodetector/OSA receiver is used (see <<a_IV_1_2_4Optical_receiver>> below) then the scrambling speed is virtually unlimited. The polarization scrambler should have angled connections. It is useful to test the combined ECL – scrambler combination for MPI. Typical results are < –50 dB. Verify that randomly distributed polarization states on the Poincaré sphere are obtained.
 
@@ -3376,12 +3376,12 @@ Some <<ITU-T_G.657>>.A fibres and all <<ITU-T_G.657>>.B fibres cannot be mode st
 In either case, LP~01~ loss data should be taken over the FSR (~ ±3 nm) of the jumper interference pattern. The average over this wavelength range is the connection loss. For consistency, it is important to equalize the splice loss at each end of the test cable. This is because, for a fixed total loss in the splices, maximum MPI is found when the individual splice losses are equal.
 
 [[a_IV_1_3_4Short-cabled_fibre_measurement]]
-===== IV.1.3.4 Short-cabled fibre measurement
+===== Short-cabled fibre measurement
 
 The measurement procedure of <<a_IV_1_3_2Baseline_measurement>> is followed. With the jumper under test included, ensure that the wavelength scan range is sufficient to encompass several cycles of the roughly sinusoidal variation in transmitted power of the FSR. In addition, ensure that the wavelength step is sufficiently small to resolve the spectral intensity pattern.
 
 [[a_IV_1_3_5Calculations]]
-===== IV.1.3.5 Calculations
+===== Calculations
 
 Though not mandatory, it is informative to first subtract the baseline average power from the maximum and minimum power measured through the test cable. This corrects for the power variation with wavelength of the light source. To compute the MPI, the data (corrected maximum and minimum transmitted power versus wavelength) is processed through a moving window of width ≥ FSR. For each position of the window (denoted by its central wavelength), the maximum and minimum power are found and used in <<eq-IV-1>> to find the MPI.
 
@@ -3500,7 +3500,7 @@ See <<a_IV_1_3_6Presentation_of_the_results>>.
 The fibre stretching technique utilizes the fact that the transmitted power, with interference between the LP~01~ mode and an HOM in the jumper, changes periodically with the optical phase difference through the jumper. This optical phase difference is dependent on wavelength (which was exploited in the other two techniques) but is also proportional to the jumper length. The length is most easily varied by stretching the fibre. In this case the maximum and minimum transmitted power is measured as fibre length is varied. Polarization variation of the input is used to ensure true power extremes are found. For typical fibres with a 2 nm FSR, the required length variation is of the order of 2-4mm; for a fibre span of 2 metres this corresponds to a strain of ~10^–3^, substantially below proof test levels. Higher strains may be required for fibres with a larger FSR. This method may be less easily applied in cases where the jumper is buffered and/or jacketed.
 
 [[a_IV_3_2Test_apparatus]]
-==== IV.3.2 Test apparatus
+==== Test apparatus
 
 A schematic of the apparatus required for the third test method is shown in <<fig-IV-3>>. The source can be either a tuneable laser or a transceiver. Polarization changes are made by the polarization scrambler. Angled connectors are used throughout to minimize reflections. The upstream fusion splice is attached to a fixed stage, while the other fusion splice is attached to a movable translation stage.
 
@@ -3598,7 +3598,7 @@ MPI(dB) =
 where PR is the difference between the maximum and minimum power levels detected (in dB). Note that if the photodetector/oscilloscope method is used, the output data is an electrical voltage, not an optical power. Due to the linearity of the photodetector, <<eq-IV-1>> can still be used with a voltage difference when voltages have been converted to dB (10 log V). Dark current corrections should be made prior to this conversion. Verify that the MPI, computed directly from the baseline data, is suitably low.
 
 [[a_IV_3_3_6Presentation_of_the_results]]
-===== IV.3.3.6 Presentation of the results
+===== Presentation of the results
 
 See <<a_IV_1_3_6Presentation_of_the_results>>.
 
