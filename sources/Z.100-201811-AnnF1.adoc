@@ -305,7 +305,6 @@ The behaviour of an abstract state machine is modelled as a run or sequence of s
 [cols="8*^"]
 |===
 | | stem:[tau] | | stem:[tau] | | stem:[tau] | | _moves_
-
 | stem:[s_0 in S_0]  | stem:[rarr] | stem:[s_1] | stem:[rarr] | stem:[s_2] | stem:[rarr] | stem:[...] | _states_
 |===
 
@@ -446,7 +445,6 @@ The behaviour of a single-agent ASM _M_ is modelled through (finite or infinite)
 [cols="8*^"]
 |===
 | | stem:[Delta_{s0} (P)] | | stem:[Delta_{s1} (P)] | | stem:[Delta_{s2} (P)] | |  _moves_
-
 | stem:[s_0] | stem:[rarr] | stem:[s_1] | stem:[rarr] | stem:[s_2] | stem:[rarr] | ... |  _states_
 |===
 
@@ -558,16 +556,19 @@ _Rule_ stem:["::="] *let* _v_ stem:[=] _expression_ *in* +
 The effect of _Rule_ when fired in some state _s_ is that _v_ is bound to the value of _expression_, and that _Rule_~0~  is fired with this value.
 
 .Transition rule with if-then and choose:
-[pseudocode]
 ====
-The following transition rule defines the behaviour of agent _ag_ when requesting shared access, i.e., when stem:[ii"ag.mode" = ii"shared"]. The rule applies the if-then-constructor, the choose-constructor, and an update instruction.
+The following transition rule defines the behaviour of agent _ag_ when requesting shared access, i.e., when _ag.mode_ = _shared_. The rule applies the if-then-constructor, the choose-constructor, and an update instruction.
 
 
+[pseudocode]
+======
 *if* _ag.mode_  stem:[=] _shared_  stem:[^^] _ag.waiting_ *then* +
     *choose* _t_  :  _t_  stem:[in][smallcap]#_Token_# stem:[^^] _t.available_ +
         _t.owner_ stem:[:=] _ag_ +
     *endchoose* +
 *endif*
+======
+
 ====
 
 The precise meaning of the rule is given by its update set with respect to a state _s_, which is either stem:[{"<<" ii "owner", < s(t) ">>",  s(ii"ag") >}] for some token stem:[s(t)] available in _s_, if all further predicates stated in the if-then-constructor hold in _s_, or the empty update set otherwise.
@@ -623,21 +624,23 @@ Formally, rule macros are syntactical abbreviations, i.e., each occurrence of a 
 --
 
 .Rule macro:
-[pseudocode]
 ====
 The transition rule from the previous example can be stated using rule macros, and be defined as a macro itself. Here, [smallcap]#SharedAccess# is a macro definition with global scope that can be used in other places of the ASM model definition. [smallcap]#GetToken# is a parameterized macro definition with a local scope restricted to the rule [smallcap]#SharedAccess#, with formal parameter _a_. When [smallcap]#GetToken# is applied in [smallcap]#SharedAccess#, _a_ is replaced by the actual parameter _ag_.
 
-
+[pseudocode]
+=====
 [smallcap]#SharedAccess# ≡ +
     *if* _ag.mode_ stem:[=] _shared_ stem:[^^] _ag.waiting_  *then* +
         [smallcap]#GetToken#(_ag_) +
     *endif* +
     *where* +
-        [smallcap]#GetToken# (a:[smallcap]#Agent#) ≡ +
+        [smallcap]#GetToken# ( _a_ : [smallcap]#Agent#) ≡ +
         *choose*  _t_  :  _t_ stem:[in] _Token_ stem:[^^] _t.available_ +
             _t.owner_ stem:[:=] _a_ +
         *endchoose* +
     *endwhere*
+=====    
+    
 ====
 
 [[F1_3_1_10ASM_programs]]
@@ -655,11 +658,11 @@ As already mentioned, rule macro definitions may either have a local or a global
 In the basic ASM model there is just one ASM program, which is statically associated with an implicitly defined agent executing this program. The next clause allows several ASM programs to be defined and associated with different agents that are introduced dynamically during abstract machine runs.
 
 .ASM program:
-[pseudocode]
 ====
 The ASM program _P_ of the system _RMS_ is defined as follows:
 
-
+[pseudocode]
+=====
 *do in-parallel* +
     [smallcap]#SharedAccess# +
     [smallcap]#ExclusiveAccess# +
@@ -689,6 +692,8 @@ The ASM program _P_ of the system _RMS_ is defined as follows:
         *enddo* +
     *endif* +
 *endwhere*
+=====
+
 ====
 
 The ASM program is defined by a single transition rule as shown in the frame. The transition rule uses the do-in-parallel-constructor and 3 rule macros, which results in a hierarchical rule definition.
@@ -799,11 +804,12 @@ ____
 where stem:[ii"program"_1 ,..., ii"program"_N]  are the names of the programs that are defined in the ASM model.
 
 .ASM program
-[pseudocode]
 ====
 The distributed ASM program of the system _RMS_ defines a single program as follows:
 
 
+[pseudocode]
+=====
 [smallcap]#Resource-Management-Program#: +
 *do in-parallel* +
     [smallcap]#SharedAccess# +
@@ -832,7 +838,9 @@ The distributed ASM program of the system _RMS_ defines a single program as foll
                     *enddo* +
                 *enddo* +
             *endif* +
-*endwhere* +
+*endwhere*
+=====
+
 ====
 
 The program of the distributed ASM has the name Resource-Management-Program, and is defined as the single-agent ASM program before, with one difference: all occurrences of _ag_ have been replaced by calls of the function _Self_. This allows the association of the program with different agents, while accessing the local state of these agents.
@@ -980,12 +988,13 @@ ____
 [[F1_3_5_5Initial_constraints]]
 ===== Initial constraints
 
-____
+[pseudocode]
+====
 *initially* |[smallcap]#_Agent_#| > _1_ +
 *initially* |[smallcap]#_Token_#| < |[smallcap]#_Agent_#| +
 *initially* ∀_a_ ∊ [smallcap]#_Agent_#: _a.program_ = [smallcap]#Resource-Management-Program# +
 *initially* ∀_a_ ∊ [smallcap]#_Agent_#: _a.idle_ ∧ ∀_t_ ∊ [smallcap]#_Token_#: _t.available_
-____
+====
 
 [[F1_3_5_6ASM_programs]]
 ===== ASM programs
@@ -1175,7 +1184,7 @@ Patterns are used to describe functions on the syntax tree. The non-terminal nam
 A case expression is used to determine a value depending on pattern matching.
 
 ____
-_CaseExpression_ ::= *case* _Term_ *of* +
+_CaseExpression_ stem:[::=] *case* _Term_ *of* +
 | _Pattern_~1~ *then* _Term_~1~ +
 | _Pattern_~2~ *then* _Term_~2~ +
 ... +
@@ -1379,7 +1388,6 @@ Of course, it is still possible to construct elements of stem:[ii "Symbol"] usin
 If a name is not required, unnamed unions may be introduced by rules like:
 
 
-//stem:[ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21}  |  ...  |  ii "Symbol"_{2N} }]
 [stem]
 ++++
 ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21}  |  ...  |  ii "Symbol"_{2N} }
@@ -1387,22 +1395,7 @@ ii "Symbol"  "::"  ii "Symbol"_1 { ii "Symbol"_{21}  |  ...  |  ii "Symbol"_{2N}
 
 
 instead of introducing a name for the union:
-////
-____
-_Symbol_ ::_Symbol_~1~_Symbol_~2~ +
-_Symbol_~2~ = _Symbol_~21~ | ... | _Symbol_~2N~
-____
-////
 
-////
-[stem]
-++++
-ii "Symbol"  "::"  ii "Symbol"_1 ii "Symbol"_2
-
-
-ii "Symbol"_2 = ii "Symbol"_{21} | ... | ii "Symbol"_{2N}
-++++
-////
 
 ____
 stem:[ii "Symbol"  "::"  ii "Symbol"_1 ii "Symbol"_2]
@@ -1448,11 +1441,6 @@ ____
 *static domain* _Keyword_
 ____
 
-////
-----
-*static domain* _Keyword_
-----
-////
 
 It is required that all keyword domains are mutually disjoint.
 
@@ -1473,35 +1461,22 @@ The syntax nodes declared by abstract syntax rules can be used to construct an a
 
 To navigate downward in a given abstract syntax tree, the functions *s-* can be used. To navigate upward, two parent functions are defined.
 
-////
-____
-*controlled*_parentAS1_: _DefinitionAS1 _→_ DefinitionAS1_ +
-*controlled*_parentAS0_: _DefinitionAS0 _→_ DefinitionAS0_
-____
-////
-
-____
+[pseudocode]
+====
 *controlled*  _parentAS1_ : _DefinitionAS1_ stem:[rarr] _DefinitionAS1_ +
 *controlled*  _parentAS0_ : _DefinitionAS0_ stem:[rarr] _DefinitionAS0_
-____
+====
 
 Suppose _node_ is an abstract syntax node and a member of the domain _Symbol_, one of the constituent domains of _DefinitionAS1_:
 
-____
+[pseudocode]
+====
 _node_ stem:[in] _Symbol_ stem:[sub] _DefinitionAS1_
-____
+====
 
 The parent of _node_, if it exists, includes _node_, in its _contents-Symbol_. That is,
 
-////
-____
-_parentAS1_ (_node_: _DefinitionAS1_): _DefinitionAS1_ =~def~ +
-*if* _node_ = _undefined_ *then* _undefined_ +
-*elseif* _node_ = _rootNodeAS1_ *then* _undefined_ +
-*else* _take_ ({ _p_∊ _Symbol_ ⊂ _DefinitionAS1_: _node_ *in* _p.contents-Symbol_ }) +
-*endif*
-____
-////
+
 
 [pseudocode]
 ====
@@ -1544,10 +1519,12 @@ _parentAS1ofKind_ (_from_ : _DefinitionAS1_, _x_ : _DefinitionAS1_ *-set*) : _De
 
 The top node of the current abstract or concrete syntax tree is denoted by the following 0-ary functions:
 
-____
+[%unnumbered]
+[pseudocode]
+====
 *controlled* _rootNodeAS1_ : stem:[rarr] _DefinitionAS1_ +
 *controlled* _rootNodeAS0_ : stem:[rarr] _DefinitionAS0_
-____
+====
 
 The value of _rootNodeAS1.parentAS1_ is _undefined_.
 
@@ -1555,47 +1532,42 @@ The value of _rootNodeAS0.parentAS0_ is _undefined_.
 
 The functions _isAncestorAS1_ and _isAncestorAS0_ determine if the first node is an ancestor of the second one:
 
-////
-____
-_isAncestorAS1_(_n1_:_DefinitionAS1_, _n2_:_DefinitionAS1_): _Boolean_=~def~ +
-_n1_ = _n2.parentAS1_ ∨ (_n2_≠_rootNodeAS1_∧_isAncestorAS1_(_n1_, _n2.parentAS1_))
 
-_isAncestorAS0_(_n1_: _DefinitionAS0_, _n2_: _DefinitionAS0_): _Boolean_=~def~ +
-_n1_ = _n2.parentAS0_ ∨ (_n2_≠_rootNodeAS0_∧_isAncestorAS0_(_n1_, _n2.parentAS0_))
-____
-////
-
-____
+[pseudocode]
+====
 _isAncestorAS1_ (_n1_ : _DefinitionAS1_, _n2_ : _DefinitionAS1_) : [smallcap]#_Boolean_# stem:[=_{"def"}] +
 _n1_ = _n2.parentAS1_ stem:[vv] ( _n2_ stem:[!=] _rootNodeAS1_ stem:[^^] _isAncestorAS1_ (_n1_ , _n2.parentAS1_))
 
 
 _isAncestorAS0_ (_n1_ : _DefinitionAS0_ ,  _n2_ :  _DefinitionAS0_) : [smallcap]#_Boolean_# stem:[=_{"def"}] +
 _n1_ = _n2.parentAS0_ stem:[vv] ( n2 stem:[!=] _rootNodeAS0_ stem:[^^] _isAncestorAS0_ ( _n1_ , _n2.parentAS0_))]
-____
+====
 
 The functions _isSameNodeAS1_ and _isSameNodeAS0_ determine if the first node is the same node as the second one, that is they are equal and in the same position in the syntax tree:
 
-____
+[pseudocode]
+====
 _isSameNode1_ (_n1_ : _DefinitionAS1_, _n2_ : _DefinitionAS1_) : [smallcap]#_Boolean_# stem:[=_{"def"}] +
 _n1_ = _n2_ stem:[^^] (_n1_ = _rootNodeAS1_ stem:[vv] _isSameNode1_ (_n1.parentAS1_, _n2.parentAS1_))]
 
 
 _isSameNode0_ (_n1_ : _DefinitionAS0_ , _n2_ : _DefinitionAS0_) : [smallcap]#_Boolean_# stem:[=_{"def"}] +
 _n1_ = _n2_ stem:[^^] (_n1_ = _rootNodeAS0_ stem:[vv] _isSameNode0_ (_n1.parentAS0_, _n2.parentAS0_))]
-____
+====
 
 The abstract syntax tree AS0 can be modified using the following derived functions:
 
-____
+[pseudocode]
+====
 _replaceInSyntaxTree0_  :  _DefinitionAS0_ stem:[xx] _DefinitionAS0_ stem:[xx] _DefinitionAS0_ stem:[rarr] _DefinitionAS0_]
-____
+====
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where all old sub-trees are replaced by the new sub-tree.
 
-____
+[pseudocode]
+====
 _replaceInSyntaxTree0_  :  _DefinitionAS0_ stem:[xx] _DefinitionAS0_ stem:[xx] _DefinitionAS0_ stem:[rarr] _DefinitionAS0_]
-____
+====
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where the first old sub-tree is replaced by the new sub-tree, and each subsequent old sub-tree occurrence is unchanged.
 
