@@ -16,20 +16,10 @@ GIT
       uuidtools
 
 GIT
-  remote: https://github.com/metanorma/metanorma-iec
-  revision: 2b38f51fc6bed21d845eda1afd398708aa3cd2ce
-  specs:
-    metanorma-iec (0.0.8)
-      asciidoctor (~> 1.5.7)
-      isodoc (~> 1.0.0)
-      metanorma-iso (~> 1.3.0)
-      ruby-jing
-
-GIT
   remote: https://github.com/metanorma/metanorma-itu
-  revision: 2c94e70851d17a0136ad1ca0b48f6999c08701aa
+  revision: 374492a6e32474e04fc022a5f0972e04dd67b0b9
   specs:
-    metanorma-itu (0.2.7)
+    metanorma-itu (0.2.8)
       asciidoctor (~> 1.5.7)
       htmlentities (~> 4.3.4)
       isodoc (~> 1.0.0)
@@ -139,6 +129,11 @@ GEM
       isodoc (~> 1.0.0)
       metanorma-iso (~> 1.3.0)
       twitter_cldr (~> 4.4.4)
+    metanorma-iec (0.0.9)
+      asciidoctor (~> 1.5.7)
+      isodoc (~> 1.0.0)
+      metanorma-iso (~> 1.3.0)
+      ruby-jing
     metanorma-ietf (1.0.6)
       isodoc (~> 1.0.0)
       metanorma-standoc (~> 1.3.0)
@@ -265,7 +260,6 @@ PLATFORMS
 DEPENDENCIES
   isodoc!
   metanorma-cli
-  metanorma-iec!
   metanorma-itu!
   metanorma-standoc!
   relaton-cli
