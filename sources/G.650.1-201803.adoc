@@ -1,5 +1,4 @@
 = Definitions and test methods for linear, deterministic attributes of single-mode fibre and cable
-ITU
 :bureau: T
 :docnumber: G.650.1
 :series: G: Transmission Systems and Media, Digital Systems and Networks
@@ -1735,7 +1734,7 @@ Fibre ends shall be substantially clean, smooth and perpendicular to the fibre a
 [level=6]
 ===== Procedure
 
-[arabic]
+[class=steps]
 . The fibre under test is placed in the measurement set-up. The output power P~2~ is recorded.
 
 . Keeping the launching conditions fixed, the fibre is cut to the cut-back length (for example, 2 m from the launching point). The cladding mode stripper, when needed, is refitted and the output power P~1~ from the cut-back length is recorded.
@@ -1906,6 +1905,7 @@ The following details shall be presented:
 ====
 Unidirectional backscattering measurements are obtained with the function a(x) alone. The complete analysis of the recorded unidirectional backscattering loss curves (<<fig14>>b) shows that, independently from the attenuation measurements, many phenomena can be monitored using the backscattering technique including:
 
+[class=steps]
 . reflection originated by the branching and coupling devices at the input end of the fibre;
 
 . zone of invariant backscattered slope;
@@ -2028,6 +2028,7 @@ If the fibre is fitted with connectors, an appropriate cleaning procedure is req
 [level=6]
 ===== Procedure
 
+[class=steps]
 . Once a measurement wavelength is selected, the power P~1~ is firstly measured in the following way:
 +
 *For option a)*
@@ -3308,6 +3309,7 @@ The measurement of coherent multipath interference (MPI) is performed to ensure 
 
 There are three methods for measuring MPI. The first, the "Narrowband ECL/PM method", uses an external cavity laser (ECL) and a power meter (PM) and is quite accurate but may be time consuming and limited in wavelength range. The second, the "Wideband LED/OSA method", uses a wideband source (such as an edge emitting light emitting diode, EELED) and an optical spectrum analyser (OSA). This method typically has a higher noise floor but enables MPI measurements over the entire transmission band of the fibre. The third method uses a fixed wavelength light source, such as in an actual transmitter, and involves varying the length of the jumper by stretching. It is termed the "Fibre stretching" or "FS" method. This method has the advantages of:
 
+[class=steps]
 . low cost light sources;
 
 . ability to find MPI using actual transceivers in a system test arrangement; and
@@ -3673,6 +3675,7 @@ For the analysis of the interference patterns, a computer with suitable software
 [[a_V_3Measurement_procedure]]
 === Measurement procedure
 
+[class=steps]
 . The fibre under test is placed in the measurement set-up (<<fig-V-1>> and <<fig-V-2>>). The positioning of the end faces is carried out with 3-dimensional micro-positioning devices by optimizing the optical power received by the detector. Errors arising from cladding modes are not possible.
 
 . The determination of the group delay is performed by balancing the optical lengths of the two interferometer paths with one linear positioning device in the reference path for different wavelengths. The difference between position _x_~i~ of the maximum of the interference pattern for wavelength λ~i~ and position _x_~0~ for wavelength λ~0~ (<<fig-V-3>>) determines the group delay difference Δτ~g~(λ~i~) between the reference path and the test path as follows:
