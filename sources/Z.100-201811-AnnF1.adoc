@@ -623,12 +623,12 @@ The transition rule from the previous example can be stated using rule macros, a
 
 [pseudocode]
 =====
-[smallcap]#SharedAccess# ≡ +
+[smallcap]#SharedAccess# stem:[-=] +
     *if* _ag.mode_ stem:[=] _shared_ stem:[^^] _ag.waiting_  *then* +
         [smallcap]#GetToken#(stem:["ag"]) +
     *endif* +
     *where* +
-        [smallcap]#GetToken# ( stem:[a] : [smallcap]#Agent#) ≡ +
+        [smallcap]#GetToken# ( stem:[a] : [smallcap]#Agent#) stem:[-=] +
         *choose*  stem:[t]  :  stem:[t] stem:[in] _Token_ stem:[^^] _t.available_ +
             _t.owner_ stem:[:=] stem:[a] +
         *endchoose* +
@@ -664,19 +664,19 @@ The ASM program stem:[P] of the system _RMS_ is defined as follows:
 *enddo* +
 *where*
 
-[smallcap]#SharedAccess# ≡ +
+[smallcap]#SharedAccess# stem:[-=] +
     *if* _ag.mode_ stem:[=] _shared_ stem:[^^] _ag.waiting_ *then* +
         *choose* stem:[t] : stem:[t] stem:[in][smallcap]#_Token_# stem:[^^] _t.available_ +
             _t.owner_  stem:[:=] stem:["ag"] +
         *endchoose* +
     *endif* +
-[smallcap]#ExclusiveAccess# ≡ +
+[smallcap]#ExclusiveAccess# stem:[-=] +
     *if*  _ag.mode_ stem:[=] _exclusive_ stem:[^^ AAt in] +[smallcap]#Token# : _t.available_ *then* +
         *do forall* _t : stem:[t] stem:[in] [smallcap]#_Token_# +
             _t.owner_ stem:[:=] stem:["ag"] +
         *enddo* +
         *endif* +
-[smallcap]#ReleaseAccess# ≡ +
+[smallcap]#ReleaseAccess# stem:[-=] +
     *if*  _ag.busy_ stem:[^^] _ag.stop_ *then* +
         *do in-parallel* +
             _ag.mode_ stem:[:=] _undefined_ +
@@ -813,19 +813,19 @@ The distributed ASM program of the system _RMS_ defines a single program as foll
     [smallcap]#ReleaseAccess# +
 *enddo* +
 *where* +
-        [smallcap]#SharedAccess# ≡ +
+        [smallcap]#SharedAccess# stem:[-=] +
             *if* _Self.mode_ = _shared_ ∧ _Self.waiting_ *then* +
                 *choose* stem:[t] : stem:[t] stem:[in] [smallcap]#_Token_# ∧ _t.available_ +
                     _t.owner_ := _Self_ +
                 *endchoose* +
             *endif* +
-        [smallcap]#ExclusiveAccess# ≡ +
+        [smallcap]#ExclusiveAccess# stem:[-=] +
             *if* _Self.mode_ = _exclusive_ ∧ stem:[forall t] stem:[in] [smallcap]#_Token_#: _t.available_ *then* +
                 *do forall* stem:[t] : stem:[t] stem:[in] [smallcap]#_Token_# +
                     _t.owner_ := _Self_ +
                 *enddo* +
             *endif* +
-        [smallcap]#ReleaseAccess# ≡ +
+        [smallcap]#ReleaseAccess# stem:[-=] +
             *if* _Self.busy_ ∧ _Self.stop_ *then* +
                 *do in-parallel* + 
                     _Self.mode_ := _undefined_ +
@@ -1010,19 +1010,19 @@ _available_ (_t_: [smallcap]#Token#): [smallcap]#_Boolean_# stem:[=_{"def"}] _t.
     [smallcap]#ReleaseAccess# +
 *enddo* +
 *where* +
-    [smallcap]#SharedAccess# ≡ +
+    [smallcap]#SharedAccess# stem:[-=] +
         *if* _Self.mode_ = _shared_ ∧ _Self.waiting_ *then* +
             *choose* stem:[t] : stem:[t] stem:[in] [smallcap]#_Token_# ∧ _t.available_ +
                 _t.owner_ := _Self_ +
             *endchoose* +
         *endif* +
-    [smallcap]#ExclusiveAccess# ≡ +
+    [smallcap]#ExclusiveAccess# stem:[-=] +
         *if* _Self.mode_ = _exclusive_ ∧ stem:[forall t] stem:[in] [smallcap]#_Token_#: _t.available_ *then* +
             *do forall* stem:[t] : stem:[t] stem:[in] [smallcap]#_Token_# +
                 _t.owner_ := _Self_ +
             *enddo* +
         *endif* +
-    [smallcap]#ReleaseAccess# ≡ +
+    [smallcap]#ReleaseAccess# stem:[-=] +
         *if* _Self.stop_ *then* +
             _Self.mode_ := _undefined_ +
                 *do forall* stem:[t] : stem:[t] stem:[in] [smallcap]#_Token_# ∧     _t.owner_ = _Self_ +
