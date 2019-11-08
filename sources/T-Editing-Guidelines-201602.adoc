@@ -30,7 +30,7 @@ TSAG agreed at its February 2011 meeting to update the author's guide (last revi
 Subsequently, TSAG agreed at its February 2016 meeting to make mandatory the Keywords field based on http://www.itu.int/md/T13-TSAG-160201-TD-GEN-0405/en[TD405]. The required changes have been introduced in this guide in clean text.
 
 
-[[a_1Scope]]
+[[Scope]]
 == Scope
 
 This author's guide is intended to provide a common approach to the preparation of ITU-T texts that are intended for publication, e.g., draft Recommendations. It attempts to cover the kind of questions likely to arise in the preparation of an ITU-T Recommendation and provides, through application of its own rules, an illustration using the normal order of the elements of drafting a typical Recommendation. To avoid confusion which may result from this approach for a first-time reader, detailed explanations of the contents of each heading are given in <<a_7Description_of_introductory_material_to_be_provided_by_the_author>> and <<a_8Description_of_core_material>> below.
@@ -41,17 +41,17 @@ For common texts developed with ISO/IEC, <<ITU-T_A.23>> applies instead of this 
 
 
 [bibliography]
-[[a_2References]]
+[[References]]
 == References
 
 * [[[ITU-T_A.5,ITU-T A.5]]] Recommendation ITU-T A.5 (2016), _Generic procedures for including references to documents of other organizations in ITU-T Recommendations._
 
 * [[[ITU-T_A.23,ITU-T A.23]]] Recommendation ITU-T A.23, Annex A (2014), _Guide for ITU-T and ISO/IEC JTC 1 cooperation._
 
-[[a_3Definitions]]
+[[Definitions]]
 == Definitions
 
-[[a_3_1Terms_defined_elsewhere]]
+[[Terms_defined_elsewhere]]
 === Terms defined elsewhere
 
 ==== amendment <<b-ITU-T_A.1>>
@@ -85,30 +85,45 @@ An amendment to a Recommendation contains changes or additions to an already pub
 <.<| Index (optional and rarely used) <.<| None
 |===
 
-[[a_3_1_2]]
-==== annex <<b-ITU-T_A.1>> 
+[[term-annex]]
+==== annex
 An annex to a Recommendation contains material (e.g., technical detail or explanation) which is necessary to its overall completeness and comprehensibility and is therefore considered an integral part of the Recommendation. As an integral part of the Recommendation, approval of an annex follows the same approval procedures as Recommendations.
 
-[[a_3_1_3]]
-==== appendix <<b-ITU-T_A.1>> 
+[.source]
+<<b-ITU-T_A.1>>
+
+[[term-appendix]]
+==== appendix
 An appendix to a Recommendation contains material which is supplementary to and associated with the subject matter of the Recommendation but is not essential to its completeness or comprehensibility. It is therefore not considered to be an integral part of the Recommendation and thus does not require the same approval procedures as Recommendations; agreement by the study group is sufficient.
 
-[[a_3_1_4]]
-==== clause <<b-ITU-T_A.1>> 
+[.source]
+<<b-ITU-T_A.1>>
+ 
+[[term-clause]]
+==== clause
 The word clause shall be used to denote single-digit or multiple-digit numbered text passages.
 
-[[a_3_1_5]]
-==== corrigendum <<b-ITU-T_A.1>>
+[.source]
+<<b-ITU-T_A.1>>
+ 
+[[term-corrigendum]]
+==== corrigendum
 A corrigendum to a Recommendation contains corrections to an already published ITU-T Recommendation. A corrigendum is published by ITU-T as a separate document that contains only corrections. TSB may correct obvious errors by issuing a corrigendum with the concurrence of the study group chairman; otherwise, approval of a corrigendum follows the same approval procedures as Recommendations.
 
-[[a_3_1_6]]
-==== implementers' guide <<b-ITU-T_A.1>> 
+[.source]
+<<b-ITU-T_A.1>>
+
+[[term-implementers-guide]]
+==== implementers' guide
 An implementers' guide is a document which records all identified defects (e.g., typographical errors, editorial errors, ambiguities, omissions or inconsistencies and technical errors) associated with a Recommendation or a set of Recommendations and their status of correction, from their identification to final resolution. An implementers' guide is issued by ITU-T following agreement by a study group, or following agreement by a working party with concurrence of the study group chairman. Typically, defect corrections are first collected in an implementers' guide and, at a time deemed appropriate by the study group, they are used to produce a corrigendum or are included as revisions to a Recommendation.
 
-[[a_3_2Terms_defined_in_this_Recommendation]]
+[.source]
+<<b-ITU-T_A.1>>
+
+[[Terms_defined_in_this_Recommendation]]
 === Terms defined in this Recommendation
 
-[[a_3_2_1]]
+[[term-normative-reference]]
 ==== normative reference 
 Another document that contains provisions which, through reference to it, constitute provisions of the referring document.
 
@@ -118,17 +133,17 @@ NOTE: All non-normative references must appear as entries in the "Bibliography" 
 
 NOTE: The sole reference to a normative reference should not be made from an appendix.
 
-[[a_3_2_2]]
+[[term-supplement]]
 ==== supplement 
 A supplement contains illustrative material, published in a separate document, which is supplementary to and associated with the subject matter of one or more Recommendations, but is not essential to their completeness, understandability or ability to be implemented, and is therefore not considered to be an integral part of any Recommendation(s). As such, a supplement does not require the same approval procedures as Recommendations; agreement by the study group is sufficient. For additional guidance regarding supplements, see <<b-ITU-T_A.13>>.
 
-[[a_3_2_3]]
+[[term-text]]
 ==== text
 Text is the content of a document, in particular a Recommendation, and may include printed or coded text, or data (such as test images, graphics, software, etc.).
 
 NOTE: The "text" of Recommendations is to be understood in a broad sense.
 
-[[a_4Abbreviations_and_acronyms]]
+[[Abbreviations_and_acronyms]]
 == Abbreviations and acronyms
 
 This Recommendation uses the following abbreviations and acronyms:
@@ -137,64 +152,64 @@ CD-ROM:: Compact Disk Read-Only Memory
 DVD-ROM:: Digital Versatile Disk Read-Only Memory
 PICS:: Protocol Implementation Conformance Statement
 
-[[a_5Conventions]]
+[[Conventions]]
 == Conventions
 
 None.
 
-[[a_6Recommendation_number_and_title]]
-==  Recommendation number and title
+[[Recommendation_number_and_title]]
+== Recommendation number and title
 
 Recommendations are identified by their number, date of approval and title.
 
-[[a_6_1Recommendation_number]]
+[[Recommendation_number]]
 === Recommendation number
 
 Each ITU-T Recommendation is identified by a unique Recommendation number. This number is composed of a letter prefix referring to the series, and a number identifying the particular subject in the series. If necessary, this main number may be followed by a suffix number (e.g., Recommendation ITU-T G.108.2). In some exceptional circumstances, a dual number may be considered for a Recommendation when it belongs to more than one series, (e.g., Recommendation ITU-T G.709/Y.1331).
 
 Recommendation numbers are chosen in consultation with the study group chairman and study group counsellor.
 
-[[a_6_2Date_of_approval]]
+[[Date_of_approval]]
 === Date of approval
 
 Recommendation editions are identified by their date of approval. This is normally the year of approval, but may be indicated as month and year, if necessary, to uniquely identify the version of the Recommendation.
 
-[[a_6_3Recommendation_title]]
+[[Recommendation_title]]
 === Recommendation title
 
 The title should not be unnecessarily long and should provide an indication of the main topics covered. The title should be unique, and should not contain acronyms. It should not repeat the series and sub-series titles which are already indicated on the Recommendation cover page.
 
-[[a_7Description_of_introductory_material_to_be_provided_by_the_author]]
+[[Description_of_introductory_material_to_be_provided_by_the_author]]
 == Description of introductory material to be provided by the author
 
 Introductory material is not considered as part of the Recommendation. Consequently, it shall not contain any normative requirements. Pages containing introductory material shall be numbered with lower case Roman numerals in the final publication.
 
-[[a_7_1Summary_mandatory]]
+[[Summary_mandatory]]
 === Summary (mandatory)
 
 This element shall be supplied by the rapporteur or the editor. It is placed before the main body of the Recommendation. It provides a brief overview of the purpose and contents of the Recommendation, thus permitting readers to judge its usefulness for their work.
 
-[[a_7_2Keywords_mandatory]]
+[[Keywords_mandatory]]
 === Keywords (mandatory)
 
 This element, placed before the main body of the Recommendation, lists a limited number of words or word combinations that identify the main topics in the Recommendation. Keywords shall be placed successively in alphabetical order separated by commas.
 
-[[a_7_3Introduction_optional]]
+[[Introduction_optional]]
 === Introduction (optional)
 
 This element, placed before the main body of the Recommendation, may provide information that the author deems appropriate and that is not already provided in the "Summary" or in the "Scope" elements.
 
-[[a_8Description_of_core_material]]
+[[Description_of_core_material]]
 == Description of core material
 
 The Recommendation commences on Arabic numeral page 1 that follows the Roman-numbered pages in the final publication. The Recommendation title will appear at the beginning of page 1, just preceding clause 1, "Scope".
 
-[[a_8_1Scope]]
+[[Scope]]
 === Scope
 
 This element should appear, as clause 1, at the beginning of every Recommendation, to define, without ambiguity, its intent or object and the aspects covered, thereby indicating the limits of its applicability.
 
-[[a_8_2References]]
+[[References]]
 === References
 
 This element should appear as clause 2, and permits the author to list, alphanumerically in ascending order, ITU-T and ITU-R Recommendations, International Organization for Standardization (ISO), International Electrotechnical Commission (IEC) and other accepted organizations' standards referred to in the main body of the Recommendation and which are considered to be incorporated by reference into the Recommendation. <<ITU-T_A.5>> provides generic procedures for referencing the documents of organizations other than ISO and IEC in ITU-T Recommendations.
@@ -251,7 +266,7 @@ Informative (non-normative) reference to any other publicly available texts may 
 ====
 
 
-[[a_8_3Definitions]]
+[[Definitions]]
 === Definitions
 
 This element should appear as clause 3; it gives the definitions necessary for the understanding of certain terms used in the Recommendation. For more details, see <<annexB>>.
@@ -268,7 +283,7 @@ NOTE: Terms which are defined elsewhere should normally include only a normative
 
 NOTE: TSB collects all new terms and their definitions from new or revised Recommendations and adds them to the ITU-T Terms and Definitions database, which is available to the general public on the ITU‑T website (http://www.itu.int/ITU-R/go/terminology-database[http://www.itu.int/ITU-R/go/terminology-database]).
 
-[[a_8_4Abbreviations_and_acronyms]]
+[[Abbreviations_and_acronyms]]
 === Abbreviations and acronyms
 
 This element should appear as clause 4. It lists in alphabetical order all the abbreviations and acronyms from throughout the Recommendation with their unabbreviated forms. The letters which appear in the acronym shall be capitalized. The first appearance of any acronym within the Recommendation should be preceded by its complete unabbreviated form, e.g., asynchronous transfer mode (ATM). It is recommended to use abbreviations in figures and tables, due to lack of space. The plural of a fully capitalized acronym is formed by adding a lower case "s", e.g., ICTs (not ICTS).
@@ -279,7 +294,7 @@ NOTE: Abbreviations for physical quantities, measurement units and their multipl
 
 NOTE: Names of ITU and other major international standards development organizations do not need to be included in clause 4, "Abbreviations". Less familiar <<ITU-T_A.5>> or <<b-ITU-T_A.6>> qualified organizations may be listed, where appropriate.
 
-[[a_8_5Conventions]]
+[[Conventions]]
 === Conventions
 
 This element should appear as clause 5. It describes particular notations, assumptions, styles, presentations, etc., used within the Recommendation, if any.
@@ -288,28 +303,28 @@ The unnecessary use of capitalized words shall be avoided. Special classes of te
 
 An ITU-T Recommendation, by definition, is not mandatory – compliance is voluntary. The use of the words "shall" and "must" and their negatives "shall not" and "must not" are to be used with care and sparingly. These words are only to be used to express mandatory provisions, when necessary, to give the Recommendation meaning and effect; i.e., if certain values and/or parts of a Recommendation are essential and the Recommendation will have no meaning if these values and/or parts are not strictly respected or adhered to. Compliance with the Recommendation is achieved only when all mandatory provisions are met. However, the inclusion of mandatory provisions in a Recommendation does not imply that compliance with the Recommendation is required of any party.
 
-[[a_8_6Recommendation_technical_content]]
+[[Recommendation_technical_content]]
 === Recommendation technical content
 
 Recommendation clauses 6 and onwards contain technical specifications.
 
 NOTE: Non-normative material should be placed in an appendix.
 
-[[a_8_7Annexes]]
+[[Annexes]]
 === Annexes
 
 Annexes form an integral part of the Recommendation and shall appear immediately after the main body of the Recommendation. They shall be designated A, B, C, etc. A single annex shall be designated Annex A. The following text should appear immediately after and below the annex title: "(This annex forms an integral part of this Recommendation.)".
 
 Numbers given to the clauses, tables, figures and equations of an annex shall be preceded by the letter assigned to that annex (e.g., clause A.2, Figure B.3, Equation C-1). The numbering shall start afresh with each annex.
 
-[[a_8_8Appendices]]
+[[Appendices]]
 === Appendices
 
 Appendices do not form an integral part of the Recommendation and shall appear immediately after the last annex of the Recommendation or, if there are no annexes, after the main body of the Recommendation. They shall be designated with upper case Roman numerals (i.e., I, II, III). A single appendix shall be designated Appendix I. The following text should appear immediately after and below the appendix title: "(This appendix does not form an integral part of this Recommendation.)".
 
 Numbers given to the clauses, tables, figures and equations of an appendix shall be preceded by the numeral assigned to that appendix (e.g., clause II.3, Table IV.2, Equation III-1). The numbering shall start afresh with each appendix.
 
-[[a_8_9Electronic_attachments]]
+[[Electronic_attachments]]
 === Electronic attachments
 
 An electronic attachment contains information that is disclosed only in electronic format, such as source code software, test data, formal-language descriptions, software user guides or pro forma to be completed by the users (PICS, etc.). They are recorded on an appropriate electronic physical medium (CD-ROM, DVD-ROM, etc.) attached to the cover for paper publication, and are grouped with the main text file for web publication.
@@ -318,14 +333,14 @@ Electronic attachments may be normative or informative, and may correspond to a 
 
 If the electronic attachment or any other part of a Recommendation is covered by a copyright or a patent, the intellectual property rights owner must file with TSB a TSB-standardized software copyright and licensing declaration form or a patent statement licensing declaration form. More information on this topic can be found at: http://www.itu.int/en/ITU-T/ipr/Pages/default.aspx[http://www.itu.int/en/ITU-T/ipr/Pages/default.aspx].
 
-[[a_8_10Bibliography]]
+[[Bibliography]]
 === Bibliography
 
 This element may be present in order to cite references or sources not covered by the "References" element and which are intended for background information (i.e., they are informative not normative). Referencing draft standards and internal ITU documents (e.g., TDs or contributions) and other documents that are not available to all readers of the published Recommendation shall be avoided.
 
 If these documents are referenced, a format similar to that used in clause 2 should be used, with a slight difference in the formulation of the citation tag ("b-" is inserted at the start of the tag). <<examp8-2>> provides examples of bibliographic entries.
 
-[[a_8_11Index]]
+[[Index]]
 === Index
 
 This element, when needed, should be the last element of the Recommendation. It is preferable to reference the index entries to the clause number (and not to the page number) since page numbering is subject to change during processing in TSB.
@@ -354,10 +369,10 @@ http://www.w3.org/TR/1999/REC-html401-19991224/[http://www.w3.org/TR/1999/REC-ht
 ====
 
 
-[[a_9Formatting_indications]]
+[[Formatting_indications]]
 == Formatting indications
 
-[[a_9_1General]]
+[[General]]
 === General
 
 Due to the multiple compatibility problems and the resulting risks of misinterpretation of objects such as equations or figures during the different processing stages, authors should send, when requested by TSB, a stable electronic copy (e.g., a pdf file) that shows the intended layout of figures and equations.
@@ -368,7 +383,7 @@ Deviations from the styles presented in the standard template should be avoided.
 
 Paragraphs of the normal text should start at the left margin.
 
-[[a_9_2Fonts]]
+[[Fonts]]
 === Fonts
 
 In general, all Recommendations should use a serif font (e.g., "Times New Roman") with the point size set at 12. Where required, a sans serif font (e.g., "Arial"), a constant width font (e.g., "Courier New"), and a standard mathematical symbol font may also be used. The recommended font is 8pt "Arial" for indicating URIs within the text. The recommended font is 9pt "Courier New" for ASN.1 modules and types, as well as for XML documents and schemas. Unless there are extenuating circumstances, no other special fonts should be used. (As a reminder, using the appropriate template for the particular type of document automatically implements all the special formatting if one selects the correct style for the elements within the document.)
@@ -377,22 +392,22 @@ If circumstances require special characters beyond these font families, the font
 
 The unnecessary use of italic and bold typeface within the text should be avoided.
 
-[[a_9_3Clause_number_and_titles]]
+[[Clause_number_and_titles]]
 === Clause numbers and titles
 
-[[a_9_3_1Clause_numbers]]
+[[Clause_numbers]]
 ==== Clause numbers
 
 Clauses should be numbered with the digits in bold and separated by periods (e.g., *8.3.1*). In the case of a single-numbered clause, no period shall be present.
 
 The clause number shall appear together with the clause title on a separate line.
 
-[[a_9_3_2Clause_titles]]
+[[Clause_titles]]
 ==== Clause titles
 
 The title, in bold, indicating the content of the clause shall appear to the right of the clause number. Untitled clauses should be avoided.
 
-[[a_9_3_3Lists]]
+[[Lists]]
 ==== Lists
 
 Lists allow associated short clauses to be presented outside of the main paragraph numbering scheme thus avoiding excessively long clause numbers (e.g., 2.13.3.3.2 is equivalent to point two of the third indent of clause 2.13.3). In the interest of simplicity, authors should avoid lists with more than three levels.
@@ -419,34 +434,34 @@ When sub-lists appear within a list as a second level, main levels, at least, sh
 
 .. second sub-item.
 
-[[a_9_4Mathematical_expressions_and_symbols_formulae_equations_etc]]
+[[Mathematical_expressions_and_symbols_formulae_equations_etc]]
 === Mathematical expressions and symbols (formulae, equations, etc.)
 
-[[a_9_4_1Quantities_units_and_symbols]]
+[[Quantities_units_and_symbols]]
 ==== Quantities, units and symbols
 
 Physical quantities, units, symbol names and usage shall follow the International System of Units (SI), as defined by ISO. Letter symbols used to express quantities in an expression shall be listed with their explanations below the expression, or group of expressions, using them.
 
-[[a_9_4_2Equations_and_formulae]]
+[[Equations_and_formulae]]
 ==== Equations and formulae
 
 Equations and formulae shall be in the mathematically correct form and shall occupy one or more lines with no text, unless text is an integral part of the expression. ITU formats all equations and formulae by means of MathType; to avoid transcription errors within ITU during publication, the use of this tool by the authors is encouraged.
 
 When necessary, equations should be given a number (placed between parentheses at the right margin of the page) that contains the main clause number plus a number in Arabic numerals in sequence from the beginning of this clause. For example, Equation 6-3 is the third mathematical expression in clause 6 of the Recommendation in which it is contained. Given the complicated nature of mathematical expressions, great care shall be exercised to ensure the clarity of manuscripts (e.g., for the vertical placement of subscripted or superscripted numbers or variables).
 
-[[a_9_4_3Numbers_and_special_characters]]
+[[Numbers_and_special_characters]]
 ==== Numbers and special characters
 
 In order to avoid ambiguity, it is recommended to use a single quote (') as a thousand's digit separator instead of spaces, commas or dots (e.g., "1'000'000").
 
 Arabic numerals and non-Latin characters (e.g., Greek, Cyrillic) should not be in italic typeface.
 
-[[a_9_5Figures_and_tables]]
+[[Figures_and_tables]]
 === Figures and tables
 
 Each figure and table shall be referred to explicitly within the text.
 
-[[a_9_5_1Figures]]
+[[Figures]]
 ==== Figures
 
 Figures shall be numbered with Arabic numerals, beginning with 1 (within annexes or appendices, there will be a letter-plus-period or a Roman-numeral-plus-period prefix). This numbering shall normally be independent from the numbering of the clause and of any tables. For Recommendations which are very long or complex, however, the author may number figures sequentially with respect to the single digit clause number. For example, Figure 4-3 denotes the third figure in clause 4 of the Recommendation in which it is contained.
@@ -467,7 +482,7 @@ It is recommended that the figure index that is shown in the lower right-hand co
 .Example of presentation of figures
 image::T-Editing-Guidelines-201602/003.gif[]
 
-[[a_9_5_2Tables]]
+[[Tables]]
 ==== Tables
 
 Tables shall be numbered with Arabic numerals, beginning with 1 (within annexes or appendices there will be a letter-plus-period or a Roman-numeral-plus-period prefix). This numbering shall normally be independent of the numbering of the clause and of any figures. For Recommendations which are very long and complex, the author may number sequentially with respect to the single digit clause number. For example, Table 4-3 denotes the third table in clause 4 of the Recommendation in which it is contained.
@@ -480,10 +495,10 @@ If the table is longer than a page length, the table number and title as well as
 
 If the table is wider than a page width, then each row in the complete table shall be assigned an index number. Each sub-table shall contain the index number in the first column.
 
-[[a_9_6Notes_and_footnotes]]
+[[Notes_and_footnotes]]
 === Notes and footnotes
 
-[[a_9_6_1Notes_and_footnotes_to_the_main_text]]
+[[Notes_and_footnotes_to_the_main_text]]
 ==== Notes and footnotes to the main text
 
 If the text is written in a clear manner, the need for notes should be minimal. If supplementary or complementary information is necessary, notes may be integrated in the text of a Recommendation. They shall normally be placed after the clause or paragraph to which they refer.
@@ -500,30 +515,30 @@ If the same footnote appears repeatedly on the same page of the text, the text o
 
 Notes and footnotes should not contain normative specifications.
 
-[[a_9_6_2Notes_to_tables_and_figures]]
+[[Notes_to_tables_and_figures]]
 ==== Notes to tables and figures
 
 Notes to tables and figures shall be treated independently from footnotes and notes integrated in the Recommendation. They shall be located for tables within the frame of the table, and for figures, between the figure and its title. Notes for each table and each figure shall be numbered independently. Such notes may contain normative specifications. Notes to a table or a figure can be indicated alternatively by a superscripted lower case letter (see <<fig3>>). Both the indicator and the note itself shall be printed in a font several point sizes smaller than the main text. To assure legibility, ITU-T uses 9pt Times New Roman font for text within figures and tables.
 
-[[a_9_7Citing_of_references]]
+[[Citing_of_references]]
 === Citing of references
 
-[[a_9_7_1References_within_the_same_Recommendation]]
+[[References_within_the_same_Recommendation]]
 ==== References within the same Recommendation
 
 When reference is made to text passages, tables, figures, equations, etc., within the same Recommendation, it is sufficient to cite the appropriate number without the Recommendation number, e.g., "see Table 4", or "see clause 5" or "see clause 5.4.7".
 
-[[a_9_7_2References_to_parts_of_another_Recommendation]]
+[[References_to_parts_of_another_Recommendation]]
 ==== References to parts of another Recommendation
 
 When reference is made to text passages, tables, figures, equations, etc., in another Recommendation, the citation tag (see <<a_8_2References>>) of the referenced Recommendation should be included in the reference, e.g., "see Figure 1 of [b-ITU-T A.8]", "see clause 2 of [b-ITU-T A.4]" or "see clause 2.2.10 of [ITU-T A.5]".
 
-[[a_9_8Formal_language_descriptions]]
+[[Formal_language_descriptions]]
 === Formal language descriptions
 
 Formal language modules should be presented using only characters acceptable by the relevant compilers (including tabs, line returns, etc.). See <<a_9_2Fonts>> regarding the use of fonts for formal languages.
 
-[[a_10Additional_guidance]]
+[[Additional_guidance]]
 == Additional guidance
 
 An ITU English language style guide [b-ITU style] is available.
@@ -555,20 +570,20 @@ Authors are advised to ask TSB for the last published source file of the Recomme
 [[annexB]]
 == Guidance on the development of definitions
 
-[[a_B_1Introduction]]
+[[Introduction]]
 === Introduction
 
 A considerable amount of time is spent by study groups on terminology and definitions but the results can be duplicative and of inconsistent quality. Greater consistency is needed in the way definitions are drafted. In addition, consideration needs to be given to ensuring that definitions are drafted in a way that allows for automated compilation and processing of new definitions so that the ITU database of definitions can be more easily maintained. Annex 2 to WTSA Resolution 67 (Johannesburg, 2008) provides basic guidelines for the preparation of terms and definitions. This annex builds on that guidance to help study groups to adopt a consistent approach to terminology and definitions and also to address the requirements for automated updating of the terminology database.
 
-[[a_B_2Terms_and_definitions]]
+[[Terms_and_definitions]]
 === Terms and definitions
 
 A _term_ is simply a word, or group of words that is used to express a specific concept. A _definition_ is a clear, concise and accurate statement that expresses the precise meaning of a term or concept.
 
-[[a_B_3Best_practices_for_writing_definitions_within_ITU-T_Recommendations]]
+[[Best_practices_for_writing_definitions_within_ITU-T_Recommendations]]
 === Best practices for writing definitions within ITU-T Recommendations
 
-[[a_B_3_1Use_of_existing_terminology]]
+[[Use_of_existing_terminology]]
 ==== Use of existing terminology
 
 Developers of Recommendations spend a great amount of time on terminology development. While it is important that definitions accurately capture the subject concept or term, experience has shown that terminology discussions frequently consume significant technical meeting time. One way to reduce unnecessary discussion is to use already-defined terms.
@@ -577,7 +592,7 @@ New terms should not be developed where an acceptable definition already exists.
 
 ITU provides an online database, "ITU Terms and Definitions" {blank}footnote:[http://www.itu.int/ITU-R/go/terminology-database], to assist in discovering existing terms and definitions in ITU-R and ITU-T Recommendations.
 
-[[a_B_3_2Structure]]
+[[Structure]]
 ==== Structure 
 
 A formal definition is a concise, logical statement that comprises three essential elements:
@@ -597,7 +612,7 @@ An example of a complete definition in ITU-T style is:
 ^.^| (The term) ^.^| (The class of object) ^.^| (The distinguishing characteristics)
 |===
 
-[[a_B_3_3Conciseness]]
+[[Conciseness]]
 ==== Conciseness 
 
 Definitions should be concise and should include only the necessary information. To avoid complexity and confusion, each definition should describe only one concept.
@@ -608,47 +623,47 @@ Figures, equations and tables should not replace the verbal representation of th
 
 NOTE: It is recognized that, for mathematical terms, equations may be the most effective and efficient way of defining the term.
 
-[[a_B_3_4Clarity_and_accuracy]]
+[[Clarity_and_accuracy]]
 ==== Clarity and accuracy 
 
 Definitions must be accurate, clear and positive. Inaccurate and negative definitions are not acceptable. Nor should definitions be circular or include, or paraphrase, the term being defined. The language used in a definition must either be common English language terms or defined elsewhere in the text.
 
-[[a_B_3_5Independence]]
+[[Independence]]
 ==== Independence 
 
 Definitions must be able to stand alone. In other words, the meaning should be understandable without requiring reference to other parts of the Recommendation. This is particularly important since the terms and definitions are being extracted for use by delegates, and consumers on the web.
 
-[[a_B_3_6Grammatical_form]]
+[[Grammatical_form]]
 ==== Grammatical form 
 
 The form of the definition should also be the same part of speech {blank}footnote:["parts of speech" are _verbs, nouns, adjectives, adverbs, etc_.] as the term or concept being defined. For example, if the term being defined is a noun, the definition should not be expressed as a verb or other part of speech.
 
-[[a_B_3_7Illustrations_within_definitions]]
+[[Illustrations_within_definitions]]
 ==== Illustrations within definitions
 
 While figures or equations can assist with the understanding of the meaning of a term, they should not form the essence of the definition. In other words, they are best applied as supplemental, informative material to enhance the presentation of the concepts involved. In general, they should not replace the textual representation of the basic definition.
 
-[[a_B_3_8Symbols_and_abbreviations]]
+[[Symbols_and_abbreviations]]
 ==== Symbols and abbreviations
 
 Where abbreviations are used within a definition, an explanation or expansion of those abbreviations must be included. Standard symbols for measurement units should not be defined.
 
-[[a_B_3_9Protocol_elements]]
+[[Protocol_elements]]
 ==== Protocol elements
 
 Formal or detailed descriptions of protocol elements should be avoided within the "Definitions" clause; these are best handled within the main body of the Recommendation (clause 6 or later).
 
-[[a_B_3_10Variables_and_special_notations_catalogues_within_definitions]]
+[[Variables_and_special_notations_catalogues_within_definitions]]
 ==== Variables and special notations catalogued within definitions
 
 Definitions should be limited to concepts related to terms and not the method of representing information within a Recommendation. The latter group is more appropriately documented within clause 5, "Conventions".
 
-[[a_B_3_11Undefined_terms]]
+[[Undefined_terms]]
 ==== Undefined terms
 
 Where a term is used but not defined (either explicitly, or by reference), it must be assumed that common English language usage (i.e., the dictionary definition) of the term is intended. Recognized English language dictionaries include: _The Concise Oxford Dictionary_, _The Shorter Oxford English Dictionary_, _The Collins Concise English Dictionary_, _Webster's New World College Dictionary or Chambers Concise Dictionary_.
 
-[[a_B_4Formatting_of_definitions]]
+[[Formatting_of_definitions]]
 === Formatting of definitions
 
 Formatting requirements for definitions are illustrated in <<a_3Definitions>> and explained in <<a_8_3Definitions>> of this author's guide.
@@ -665,7 +680,7 @@ In addition, the following stylistic aspects are preferred:
 [appendix]
 == URI naming scheme for the identification of XML namespaces defined in ITU-T Recommendations
 
-[[a_C_1Introduction]]
+[[Introduction]]
 === Introduction
 
 ITU-T Recommendations increasingly define XML schemas. To answer the growing demand of universal resource identifiers (URIs) for referencing XML namespaces in ITU-T Recommendations, ITU reserved the following URL: +
@@ -675,7 +690,7 @@ ITU-T Recommendations increasingly define XML schemas. To answer the growing dem
 This annex gives the rules for allocating URIs to XML namespaces defined in ITU-T Recommendations.
 
 
-[[a_C_2Proposed_structure_for_URIs_defined_in_ITU-T_Recommendations]]
+[[Proposed_structure_for_URIs_defined_in_ITU-T_Recommendations]]
 === Proposed structure for URIs defined in ITU-T Recommendations
 
 In order to guarantee the uniqueness of namespaces defined in ITU-T Recommendations as well as to improve their visibility, any XML namespace will be referenced with a URI of the form: +
@@ -696,7 +711,7 @@ The study group responsible for the Recommendation identified by the namespace, 
 
 It is noted that this naming scheme can easily be extended to accommodate other types of documents produced in ITU.
 
-[[a_C_3Examples_of_use]]
+[[Examples_of_use]]
 === Examples of use
 
 * Recommendation ITU-T X.1206 (2008), _A vendor-neutral framework for automatic notification of security related information and dissemination of updates_. 
@@ -741,7 +756,7 @@ This annex describes a suggested presentation format for amendments and corrigen
 
 This proposal applies to ITU-T texts only. The presentation of ITU-T | ISO/IEC common texts is governed by <<ITU-T_A.23>>.
 
-[[a_E_1Preferred_presentation_format]]
+[[Preferred_presentation_format]]
 === Preferred presentation format
 
 The principle of the format is to present changes with revision marks and to replace unchanged text with ellipses, keeping only the necessary parts to help locate the modified parts.
@@ -772,29 +787,29 @@ Forward error correction (FEC) (e.g., per [IETF RFC 2733]) or other forms of red
 ====
 
 
-[[a_E_2Exceptions_to_the_above_presentation_format]]
+[[Exceptions_to_the_above_presentation_format]]
 === Exceptions to the above presentation format
 
 The above presentation format is intended to simplify presentation. It should not be considered as a constraint. Sometimes, other formats lead to simpler presentation, for instance, when deleting or adding complete annexes or appendices.
 
-[[a_E_3Numbering_new_clauses_tables_and_figures]]
+[[Numbering_new_clauses_tables_and_figures]]
 === Numbering new clauses, tables and figures
 
 In a corrigendum or an amendment, existing clause, figure and table numbers should not be modified, in order to allow for further non-ambiguous referencing, especially in future amendments and corrigenda to the same version of the Recommendation.
 
-[[a_E_3_1Deletion_od_a_clause_table_or_figure]]
+[[Deletion_od_a_clause_table_or_figure]]
 ==== Deletion of a clause, table or figure
 
 The subsequent clauses, tables or figures should not be renumbered, and the deleted number should not be reused.
 
-[[a_E_3_2Insertion_of_a_clause_table_or_figure]]
+[[Insertion_of_a_clause_table_or_figure]]
 ==== Insertion of a clause, table or figure
 
 Previous clause, figure or table numbers will be extended with letters in order to designate the inserted clauses, tables or figures.
 
 _Example:_ If several clauses are to be inserted, for instance, between clauses 6.1 and 6.2, they should be numbered as 6.1a, 6.1b, etc.
 
-[[a_E_3_3Renumbering]]
+[[Renumbering]]
 ==== Renumbering
 
 When issuing a completely revised edition, clauses, figures and tables will be renumbered sequentially.
@@ -809,7 +824,7 @@ The sole reference to a normative reference listed in clause 2 should not be mad
 
 
 [bibliography]
-[[a_Bibliography]]
+[[Bibliography]]
 == Bibliography
 
 * [[[b-ITU-T_A.1,b-ITU-T A.1]]], Recommendation ITU-T A.1 (2012), _Working methods for study groups of the ITU Telecommunication Standardization Sector_.
