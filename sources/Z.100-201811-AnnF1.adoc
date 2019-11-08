@@ -87,7 +87,7 @@ Unique ID{blank}footnote:[To access the Recommendation, type the URL http://hand
 
 //=== {blank}
 
-[[F1_1_5Status_of_Annex_F1]]
+[[Status_of_Annex_F1]]
 === Preface
 
 The formal definition of SDL‑2010 provided in this annex is a precise language definition, which supplements the definition given in the Recommendation text. It is for use by those requiring a very precise definition of SDL‑2010, such as maintainers of the SDL‑2010 language, designers of SDL‑2010 tools and users of the SDL‑2010 language.
@@ -101,12 +101,12 @@ The formal definition consists of three annexes:
 *Annex F3*:: This annex defines the dynamic semantics of SDL‑2010.
 
 
-[[F1_1_1Motivation]]
+[[Motivation]]
 ==== Motivation
 
 SDL‑2010 has both a formal syntax and a formal semantics. Annexes F1, F2 and F3 define the formal semantics of SDL‑2010. If there is any inconsistency between Annexes F1, F2 and F3 and other parts of the ITU‑T Z.100 series for SDL‑2010, then there is an error that needs correcting. Neither the other parts of the ITU‑T Z.100 series for SDL‑2010 nor Annexes F1, F2 and F3 take precedence in this case.
 
-[[F1_1_2Main_objectives]]
+[[Main_objectives]]
 ==== Main objectives
 
 A primary objective of a formal SDL‑2010 semantics is intelligibility, a prerequisite for correctness, acceptance and maintainability. Intelligibility is supported by building on well-known mathematical formalisms and notations, by a close correspondence between the specification technique and semantics to be formalized, and by concise and well-structured documentation.
@@ -115,7 +115,7 @@ Maintainability is another important objective because SDL‑2010 is an evolving
 
 SDL‑2010 can be classified as a model-oriented formal description technique (FDT) for the specification of distributed and concurrent systems, which means that an SDL‑2010 specification explicitly defines a set of computations. This calls for an operational semantics in order to achieve a close correspondence with the specification, and thus improve its intelligibility. In addition, operational semantics lends itself naturally to executability (<<b-Eschbach>>, <<b-Eschbach_2001>> and <<b-Glaesser>>), which, given the availability of tools, fulfils another explicit objective.
 
-[[F1_1_3References_and_definitions]]
+[[References_and_definitions]]
 ==== References and definitions
 
 The references and definitions of the main body of Recommendation ITU‑TZ.100 apply throughout Annexes F1, F2 and F3.
@@ -159,12 +159,12 @@ NOTE: The axiomatic definition given by Gurevich for the sequential algorithms c
 
 * [[[b-Gurevich_2000,b-Gurevich 2000]]], Gurevich, Y. (2000), _Sequential Abstract State Machines Capture Sequential Algorithms_, Microsoft Research.
 
-[[F1_1_5Status_of_Annex_F1_this_annex]]
+[[Status_of_Annex_F1_this_annex]]
 ==== Status of Annex F1 (this annex)
 
 The (01/2015) edition was an improvement on the previous edition, because it updated the description of ASM and the list of references. The (10/2016) edition clarified a number of items in the (01/2015) edition and added descriptions of items used in F2 and/or F3 that were previously missing or newly added to F2 and/or F3. This edition is essentially a maintenance update further clarifying existing content and adding additional features used in F2 and/or F3.
 
-[[F1_2Overview_of_the_semantics]]
+[[Overview_of_the_semantics]]
 === Overview of the semantics
 
 In order to define the formal semantics of SDL‑2010, the language definition is decomposed into several parts:
@@ -194,12 +194,12 @@ Furthermore, some language constructs appearing in the concrete grammars are rep
 
 The _dynamic semantics_ applies only to syntactically correct SDL‑2010 specifications that satisfy the well-formedness conditions. The dynamic semantics defines the set of computations associated with a specification, and are described in Part 3 of the formal definition, i.e., Annex F3.
 
-[[F1_2_1Grammar]]
+[[Grammar]]
 ==== Grammar
 
 The _grammar_ of SDL‑2010 is formalized as described above. The primary concrete grammar is given for SDL‑GR. Most of the grammar of SDL‑GR is textual, but it has some graphical elements. To enable formalisation of SDL‑2010 specifications into ASM, any SDL‑GR graphical element is changed to the equivalent concrete textual representation (SDL‑PR) defined in [ITU‑T Z.106]. The grammar in the ITU‑TZ.100 series for SDL‑2010 is designed to be a presentation grammar: it is not adapted to automatic parser generation. Moreover, some restrictions that finally guarantee uniqueness of the semantics cannot be expressed in BNF and have been stated in the text instead. Therefore, the grammar is defined using BNF and some text (mostly for the precedence rules). The translation from the concrete textual SDL‑2010 representation to the abstract syntax representation of SDL‑2010 (called AS1) consists of two steps. The first step from the concrete textual SDL‑2010 representation to AS0 (the concrete syntax with details such as separators and lexical rules removed) is not formally defined, but is derived from the correspondence between the two grammars, which is almost one-to-one. The second step, translating AS0 to AS1, is formally captured by a set of transformation rules (see Annex F2).
 
-[[F1_2_2Well-formedness_conditions]]
+[[Well-formedness_conditions]]
 ==== Well-formedness conditions
 
 The _well-formedness conditions_ define additional constraints that a well-formed SDL‑2010 specification has to satisfy. These constraints cannot be expressed using context-free grammar rules, but they are static, and can be defined and checked independently of the dynamic semantics of SDL‑2010 (see Annex F2). An SDL‑2010 specification is _valid_ if and only if it satisfies the syntactical rules and the static conditions of SDL‑2010. The well-formedness conditions are context-dependent conditions on elements of a context free grammar.
@@ -216,7 +216,7 @@ There are five kinds of well-formedness conditions:
 
 * _Plain syntax rules_: There are some rules that refer to the correctness of the concrete syntax, and that have no counterpart in the abstract syntax. For instance, the names at the beginning and at the end of a definition in SDL‑PR have to match.
 
-[[F1_2_3Transformation_rules]]
+[[Transformation_rules]]
 ==== Transformation rules
 
 For a language with a rich syntax, it is important to identify the core concepts matching the intentions of the language designer. Further language constructs, such as shorthand notations, that are introduced for convenience, but do not add to the expressiveness of the language, can be replaced using these core concepts. Since replacements, which are described by transformation rules, can be formalized, it suffices to define the dynamic semantics only for the core concepts, which adds to its conciseness and intelligibility. <<fig-f1-1>> illustrates the general approach. The language is defined with its concrete grammar using lexical and syntax rules. Consistency constraints are defined on this concrete grammar.
@@ -225,7 +225,7 @@ The ITU‑T Z.100 series for SDL‑2010 prescribes the transformation of SDL‑2
 
 To formalize the transformation rules of SDL‑2010, the rewrite rules in PC1 are used. These rules define patterns of the AST, which are to be replaced by other AST patterns. In fact, several groups of such rewrite rules are defined that are applied in turn. A single transformation is realized by the application of a rewrite rule to the concrete specification, which essentially means to replace parts of the specification by other parts as defined by the rule (see Annex F2).
 
-[[F1_2_4Dynamic_semantics]]
+[[Dynamic_semantics]]
 ==== Dynamic semantics
 
 The _dynamic semantics_ (clauses F3.2 and F3.3) consists of the following parts (see <<fig-f1-2>>):
@@ -257,7 +257,7 @@ The formal semantics is formalized starting from the abstract syntax AS1 of SDL�
 
 The _dynamic semantics_ associates a particular distributed, real-time ASM with each SDL‑2010 specification. Intuitively, an ASM consists of a set of autonomous agents cooperatively performing concurrent machine runs. The behaviour of an agent is determined by an ASM program, each consisting of a transition rule that defines the set of possible computations (called "runs" in the context of ASM). Each agent has its own partial view on a global state, which is defined by a set of static and dynamic functions and domains. By having non-empty intersections of partial views, interaction among agents can be modelled. An introduction to the ASM model, and the notation used in Annexes F1, F2 and F3, is given in <<F1_3Abstract_State_Machines>>.
 
-[[F1_3Abstract_State_Machines]]
+[[Abstract_State_Machines]]
 === Abstract State Machines
 
 This clause explains the basic notions and concepts of _Abstract State Machines_ (_ASM_) as well as the notation used in these Annexes F1, F2 and F3 to define the SDL‑2010 abstract machine model. The objective here is to provide an intuitive understanding of the formalism; for a rigorous definition of the mathematical foundations of ASM and its application, the reader is referred to <<b-Gurevich>>, <<b-Blass>>, <<b-Blass_2008>>, <<b-Glausch>>, <<b-BoergerStaerk>> and <<b-Boerger>>. A discussion and motivation of the appropriateness of the semantic framework used here is given in <<b-Eschbach>>, <<b-Eschbach_2001>> and <<b-Glaesser>>. Further references on ASM-related material can also be found on the ASM webpages <<b-ASM>>.
@@ -287,10 +287,10 @@ In order to illustrate the ASM model, a simple resource management system (_RMS_
 The system will be defined step by step, as the explanations of the ASM model proceed, starting with the basic ASM model with a single agent. The final ASM model of this system is summarized in <<F1_3_5Example_The_system_RMS>>.
 ====
 
-[[F1_3_1Basic_ASM_model]]
+[[Basic_ASM_model]]
 ==== Basic ASM model
 
-[[F1_3_1_1Overview]]
+[[Overview]]
 ===== Overview
 
 An abstract state machine (ASM) is a model of computation that treats first-order structures as dynamic entities whose states can change during a computation.
@@ -306,14 +306,14 @@ The behaviour of an abstract state machine is modelled as a run or sequence of s
 | stem:[s_0 in S_0]  | stem:[rarr] | stem:[s_1] | stem:[rarr] | stem:[s_2] | stem:[rarr] | stem:[...] | _states_
 |===
 
-[[F1_3_1_2States]]
+[[States]]
 ===== States
 
 The base set of the abstract state machine, which is the base set of every state of the ASM, contains three distinct elements: _true_, _false_ and _undefined_. The base set also contains an infinite number of _reserve elements_. A state also has functions and predicates that are defined over the base set. All functions are total, with _undefined_ being used to mimic partial functions. Predicates are functions whose only possible values are _true_ or _false_. Special unary predicates called _domain names_ identify members of the base set as belonging to particular _domains_. This allows states to be viewed as many-sorted structures.
 
 Embedded within a state are certain substructures or _background classes_ <<b-Blass>> and <<b-Blass_2008>>. One such background includes _true_, _false_, the domain name [smallcap]#_Boolean_# and the Boolean operators. The backgrounds used in modelling SDL‑2010 include numbers, sets and sequences. A minimal background is defined in <<b-Blass>> and <<b-Blass_2008>> to characterize the ASMs that model parallel algorithms.
 
-[[F1_3_1_3One-step_transformation]]
+[[One-step_transformation]]
 ===== One-step transformation
 
 The one-step transformation stem:[tau] updates the values of functions. In general, for stem:[s in S], some equivalences hold in stem:[s] but not in stem:[tau(s)] and vice versa. In some cases, τhas no effect, so stem:[s] and stem:[tau(s)] are the same.
@@ -324,12 +324,12 @@ The pair stem:[<< f, [a\] >>] is also called a _location_ of a state stem:[s]. T
 
 An abstract state machine provides a model of computation for an algorithm that is expressed as a program using a programming-style syntax. The algorithm defines the update set for every state of the ASM. To facilitate the study of the kinds of algorithms captured by different kinds of ASM, axioms <<b-Blass>> have been developed to define classes of ASMs in a syntax-independent way [b‑Glausch]. As well as capturing the ideas of state and one-step transformation outlined above (the Sequential Time and Abstract State postulates, <<b-Blass>> and <<b-Gurevich_2000>>), axioms aim to capture the idea that the amount of computation required to move from stem:[s] to stem:[tau(s)] must be bounded, where the bound depends only on the algorithm and not on the state.
 
-[[F1_3_1_4Specifying_an_abstract_state_machine]]
+[[Specifying_an_abstract_state_machine]]
 ===== Specifying an abstract state machine
 
 An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation stem:[tau:  S rarr S]. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.
 
-[[F1_3_1_5Specifying_the_signature_vocabulary]]
+[[Specifying_the_signature_vocabulary]]
 ===== Specifying the signature (vocabulary)
 
 An ASM signature comprises function names, predicate names and domain names. Names in the signature have a specified arity, and are interpreted over the base set of the states of an ASM. The interpretation of names respects their arity.
@@ -408,7 +408,7 @@ An agent stem:[a] is, for instance, idle if the function _mode_ yields the value
 
 For an improved readability, use of the _"."-notation_ is allowed for unary functions and predicates. For instance, _a.mode_ is equivalent to _mode_(_a_).
 
-[[F1_3_1_6Initial_states]]
+[[Initial_states]]
 ===== Initial states
 
 The set of _initial states_ stem:[S_0 sube S] is defined by constraints imposed on domains, functions and predicates as associated with the names in stem:[V]. The initial constraints for predefined domains and operations are given implicitly (see <<F1_3_6Predefined_names_and_special_symbols>>). Initial constraints have the following general form:
@@ -430,7 +430,7 @@ The following constraints define the set of initial states of the system _RMS_.
 
 The first constraint defines the initial set [smallcap]#_Agent_# to consist of a single element stem:["ag"]. The second constraint expresses that initially, the agent of _RMS_ is idle (stem:["a.mode" = "undefined"]), and all tokens are available (stem:[ "t.owner" = "undefined"]). Note that no constraint on _stop_ is defined.
 
-[[F1_3_1_7State_transitions_and_runs]]
+[[State_transitions_and_runs]]
 ===== State transitions and runs
 
 A (global) state stem:[ s in S] is given by an interpretation of the names in stem:[V] over the base set of stem:[M]. State transitions can be defined in terms of partial reinterpretations of dynamic domains, functions and predicates. This gives rise to the notions of _location_ as a conceptual means to refer to parts of global states, and of _update_ to describe state changes.
@@ -453,7 +453,7 @@ The behaviour of a single-agent ASM stem:[M] is modelled through (finite or infi
 
 such that stem:[s_0 in S_0], and stem:[s_{i+1}] is obtained from stem:[s_i], for stem:[ i >= 0], by firing stem:[Delta_{si} (P)] on stem:[s_i], where stem:[Delta_{si} (P)] denotes an update set defined by the program stem:[P] of stem:[M] on stem:[s_i] (see <<F1_3_1_10ASM_programs>>). The meaning of an ASM is defined to be the set of all its runs. In the sequel, we restrict attention to runs starting in an initial state, also called _regular runs_.
 
-[[F1_3_1_8Transition_rules]]
+[[Transition_rules]]
 ===== Transition rules
 
 Transition rules specify update sets over ASM states. Complex rules are formed from elementary rules using various rule constructors. The elementary form of transition rule is called _update instruction_.
@@ -574,7 +574,7 @@ The following transition rule defines the behaviour of agent stem:["ag"] when re
 
 The precise meaning of the rule is given by its update set with respect to a state stem:[s], which is either stem:[{<< << "owner", << s(t) >> >>,  s("ag") >> }] for some token stem:[s(t)] available in stem:[s], if all further predicates stated in the if-then-constructor hold in stem:[s], or the empty update set otherwise.
 
-[[F1_3_1_9Abbreviations]]
+[[Abbreviations]]
 ===== Abbreviations
 
 Rules can be structured using _abbreviations_, consisting of _rule macros_ and _derived names_, which may have parameters. This allows for hierarchical definitions, and the stepwise refinement of complex rules, which supports the understanding of ASM model definitions.
@@ -637,7 +637,7 @@ The transition rule from the previous example can be stated using rule macros, a
     
 ====
 
-[[F1_3_1_10ASM_programs]]
+[[ASM_programs]]
 ===== ASM programs
 
 An _ASM program_ stem:[P] is given by a framed _transition rule_ (or _rule_ for short) of the following form:
@@ -692,14 +692,14 @@ The ASM program stem:[P] of the system _RMS_ is defined as follows:
 
 The ASM program is defined by a single transition rule as shown in the frame. The transition rule uses the do-in-parallel-constructor and 3 rule macros, which results in a hierarchical rule definition.
 
-[[F1_3_2Distributed_multi-agent_ASM]]
+[[Distributed_multi-agent_ASM]]
 ==== Distributed multi-agent ASM
 
 Mathematical modelling of concurrent and reactive systems requires more than the basic ASM model described above. This section presents the concept of a _distributed ASM_ operating in _parallel_ with its external environment, where the environment behaves as one or more ASMs.
 
 A _distributed Abstract State Machine_ stem:[M] is defined over a given _vocabulary_ stem:[V] by its _states_  stem:[S], its _initial states_ stem:[S_0 sube S], its agents stem:[A], and its _programs_ stem:[P]. These items will be explained in the following subclauses insofar as they differ from the basic ASM model.
 
-[[F1_3_2_1Signature]]
+[[Signature]]
 ===== Signature
 
 The signature (vocabulary) stem:[V] of a multi-agent ASM stem:[M] includes distinguished domain names:
@@ -721,7 +721,7 @@ Furthermore, stem:[V] includes a distinguished function name:
 
 and a special 0-ary function _Self_ (see <<F1_3_2_2Agents_and_runs>>), whose interpretation is different for each agent.
 
-[[F1_3_2_2Agents_and_runs]]
+[[Agents_and_runs]]
 ===== Agents and runs
 
 A multi-agent, distributed ASM has a finite number of agents. Agents can be created and destroyed dynamically. Each agent executes its own basic ASM. The behaviour of each agent is determined by a program, which is defined by a transition rule. The association between agents and their behaviour is specified by the background function _program_: [smallcap]#_Agent_# → [smallcap]#_Program_#. This function can be updated, allowing agents' behaviour to be modified dynamically, and allowing behaviour to be assigned to newly created agents.
@@ -776,7 +776,7 @@ Partially ordered runs have certain characteristic properties that can be stated
 ====
 
 
-[[F1_3_2_3Distributed_ASM_programs]]
+[[Distributed_ASM_programs]]
 ===== Distributed ASM programs
 
 A distributed _ASM M_ has a finite set stem:[P] of programs. Eachprogram stem:[p in P] is given by a _program name_ and a _transition rule_ (or _rule_ for short). The program name uniquely identifies stem:[p] within stem:[P], and is represented by a unary static function. Programs are stated in the following form:
@@ -841,7 +841,7 @@ The distributed ASM program of the system _RMS_ defines a single program as foll
 
 The program of the distributed ASM has the name Resource-Management-Program, and is defined as the single-agent ASM program before, with one difference: all occurrences of stem:["ag"] have been replaced by calls of the function _Self_. This allows the association of the program with different agents, while accessing the local state of these agents.
 
-[[F1_3_3The_external_world]]
+[[The_external_world]]
 ==== The external world
 
 Following an _open system view_, interactions between a system and the external world, e.g., the environment into which the system is embedded, are modelled in terms of various interface mechanisms. Regarding the reactive nature of distributed systems, it is important to clearly identify and precisely state:
@@ -905,7 +905,7 @@ The following integrity constraint states that stop requests are only generated 
 
 ====
 
-[[F1_3_4Real_time_behaviour]]
+[[Real_time_behaviour]]
 ==== Real-time behaviour
 
 By introducing a notion of _real time_ and imposing additional constraints on runs, we obtain a specialized class of ASMs, called _distributed real-time ASM_, with agents performing _instantaneous_ actions in _continuous_ time. Essentially, that means that agents fire their rules at the moment they are enabled.
@@ -927,12 +927,12 @@ where the reduct of stem:[R(t)] to stem:[V] is denoted by stem:[sigma(t)] such t
 
 Exploiting the discreteness property, one effectively obtains some finite representation (_history_) for every finite (sub-) run by abstracting from those states that do not differ in any significant way from their neighbouring states. In particular, one can simply ignore all states that are identical to their preceding state except that _currentTime_ has increased. From the above definition of run it follows that only finitely many states are left.
 
-[[F1_3_5Example_The_system_RMS]]
+[[Example_The_system_RMS]]
 ==== Example: The system _RMS_
 
 In this clause, we assemble the pieces of the ASM model definition of the system _RMS_ into their final version. For completeness, we also repeat the informal description.
 
-[[F1_3_5_1Informal_description]]
+[[Informal_description]]
 ===== Informal description
 
 In order to illustrate the ASM model, a simple resource management system _RMS_ consisting of a group of stem:[n > 1] _agents_ competing for a _resource_, for instance, a device or service, is defined. Informally, this system is characterized as follows:
@@ -951,7 +951,7 @@ In order to illustrate the ASM model, a simple resource management system _RMS_ 
 
 * Initially, all agents are idle, and all tokens are available.
 
-[[F1_3_5_2Vocabulary]]
+[[Vocabulary]]
 ===== Vocabulary
 
 [pseudocode]
@@ -962,7 +962,7 @@ In order to illustrate the ASM model, a simple resource management system _RMS_ 
 *monitored* _stop_: [smallcap]#_Agent_# → [smallcap]#_Boolean_#
 ====
 
-[[F1_3_5_3Derived_names]]
+[[Derived_names]]
 ===== Derived names
 
 [pseudocode]
@@ -978,7 +978,7 @@ _busy_ (a: [smallcap]#Agent#): [smallcap]#_Boolean_# stem:[=_{"def"}] _a.mode_ �
 _available_ (_t_: [smallcap]#Token#): [smallcap]#_Boolean_# stem:[=_{"def"}] _t.owner_ = _undefined_
 ====
 
-[[F1_3_5_4Integrity_constraints]]
+[[Integrity_constraints]]
 ===== Integrity constraints
 
 [pseudocode]
@@ -986,7 +986,7 @@ _available_ (_t_: [smallcap]#Token#): [smallcap]#_Boolean_# stem:[=_{"def"}] _t.
 *constraint* stem:[AA_a in] [smallcap]#_Agent_#: (_a.stop_ stem:[rArr] _a.busy_)
 ====
 
-[[F1_3_5_5Initial_constraints]]
+[[Initial_constraints]]
 ===== Initial constraints
 
 [pseudocode]
@@ -997,7 +997,7 @@ _available_ (_t_: [smallcap]#Token#): [smallcap]#_Boolean_# stem:[=_{"def"}] _t.
 *initially* stem:[forall a] stem:[in] [smallcap]#_Agent_#: _a.idle_ ∧ stem:[forall t] stem:[in] [smallcap]#_Token_#: _t.available_
 ====
 
-[[F1_3_5_6ASM_programs]]
+[[ASM_programs]]
 ===== ASM programs
 
 * [smallcap]#Resource-Management-Program#
@@ -1032,12 +1032,12 @@ _available_ (_t_: [smallcap]#Token#): [smallcap]#_Boolean_# stem:[=_{"def"}] _t.
 *endwhere*
 ====
 
-[[F1_3_6Predefined_names_and_special_symbols]]
+[[Predefined_names_and_special_symbols]]
 ==== Predefined names and special symbols
 
 To define an ASM model, in particular the ASM model capturing the semantics of SDL‑2010, certain names and their intended interpretation are predefined. These names are grouped and listed in this clause (where stem:[D] refers to the syntactic category of domains). For prefix, infix and postfix operators, an underline ("_") is used to indicate the position of their arguments. Moreover, the precedence of the operators is indicated by prec(n), where n is a number. Higher numbers mean tighter binding. Monadic operators have a tighter binding than binary ones. Binary operators are associative to the left.
 
-[[F1_3_6_1ASM-specific_domains]]
+[[ASM-specific_domains]]
 ===== ASM-specific domains
 
 |===
@@ -1055,7 +1055,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| *_* stem:[uu] _ &nbsp; prec(6) <.<| Union domain constructor
 |===
 
-[[F1_3_6_2ASM-specific_functions]]
+[[ASM-specific_functions]]
 ===== ASM-specific functions
 
 |===
@@ -1065,7 +1065,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| *monitored* _currentTime_: → _Real_ <.<| The current system time
 |===
 
-[[F1_3_6_3Boolean_functions_and_predicates]]
+[[Boolean_functions_and_predicates]]
 ===== Boolean functions and predicates
 
 |===
@@ -1083,7 +1083,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| stem:[AA x in D: P(x)] &nbsp; prec(0) <.<| Universal quantification
 |===
 
-[[F1_3_6_4Terms]]
+[[Terms]]
 ===== Terms
 
 |===
@@ -1095,7 +1095,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| *inv-* _ (...) <.<| The inverse of a function or map, *inv-* stem:["Fun"(x) =_{"def"} "take"({ a in D: "Fun"(a) = x })]
 |===
 
-[[F1_3_6_5Functions_and_relations_on_syntax_tokens_character_strings]]
+[[Functions_and_relations_on_syntax_tokens_character_strings]]
 ===== Functions and relations on syntax tokens (character strings)
 
 |===
@@ -1110,7 +1110,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| _tail_ : [smallcap]#_Token_# stem:[rarr] [smallcap]#_Token_# <.<| Tail of string representing the [smallcap]#_Token_#.
 |===
 
-[[F1_3_6_6Functions_and_relations_on_integers]]
+[[Functions_and_relations_on_integers]]
 ===== Functions and relations on integers
 
 |===
@@ -1123,7 +1123,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 <.<| 0, 1, ... <.<| Integer literals
 |===
 
-[[F1_3_6_7Functions_on_sequences]]
+[[Functions_on_sequences]]
 ===== Functions on sequences
 
 |===
@@ -1145,7 +1145,7 @@ To define an ASM model, in particular the ASM model capturing the semantics of S
 
 NOTE: The character ⁀ is the Unicode character with the decimal value 8256 (use find u^8256 in MSWord to locate).
 
-[[F1_3_6_8Functions_on_sets]]
+[[Functions_on_sets]]
 ===== Functions on sets
 
 |===
@@ -1168,7 +1168,7 @@ NOTE: The character ⁀ is the Unicode character with the decimal value 8256 (us
 <.<| stem:[{ << "expression" >>] \| stem:[<< "var" >>] stem:[in] stem:[{: << "set" >> }] stem:[=_{"def"}]   stem:[{ << "expression" >>] \| stem:[<< "var" >> in << "set" >>] : stem:[{: "true" }] <.<| Abbreviated set comprehension
 |===
 
-[[F1_3_6_9Patterns_and_case-expressions]]
+[[Patterns_and_case-expressions]]
 ===== Patterns and case-expressions
 
 Patterns provide a means to easily access the structure of values. The following patterns are provided:
@@ -1197,7 +1197,7 @@ _CaseExpression_ stem:[::=] *case* _Term_ *of* +
 
 If the value of _Term_ matches at least one stem:["Pattern"_i], then the result of the case expression is given by the stem:["Term"_i]. If no pattern matches, the result is stem:["Term"_0] (if present). Otherwise, the result is _undefined_.
 
-[[F1_3_6_10Union_domains]]
+[[Union_domains]]
 ===== Union domains
 
 Union domains contain the values of their constituent domains. They are used below as models for named and unnamed unions and alternative right sides to abstract syntax rules.
@@ -1207,7 +1207,7 @@ Union domains contain the values of their constituent domains. They are used bel
 stem:[D =_{"def"} D_1 uu D_2]
 ====
 
-[[F1_3_6_11Sequence_domains]]
+[[Sequence_domains]]
 ===== Sequence domains
 
 Sequence domains contain sequences of the values of their constituent domains. They are used below as models for named and unnamed sequences, and sequences defined as (parts of) the right sides of abstract syntax rules expressed using extended BNF.
@@ -1217,7 +1217,7 @@ Sequence domains contain sequences of the values of their constituent domains. T
 stem:[D =_{"def"} D_1^**_]
 ====
 
-[[F1_3_6_12Tuples]]
+[[Tuples]]
 ===== Tuples
 
 Tuple domains contain elements of the Cartesian product of their constituent domains. They are used below as models for the tuples specified by the right sides of abstract syntax rules. For every declared tuple domain, several implied constructor and selector functions are defined. For example, the tuple definition:
@@ -1254,7 +1254,7 @@ If a domain on the right hand side is optional (written as [_D_]), the selector 
 
 An invalid selector returns _undefined_.
 
-[[F1_3_6_13Abstract_syntax_rules]]
+[[Abstract_syntax_rules]]
 ===== Abstract syntax rules
 
 Abstract syntax rules from the language definition are directly translated to the ASM notation, using the metalanguage for the concrete grammar as defined in [ITU‑T Z.111] with the modified representation of semantic subcategories used in Annex F2. This allows rules to be expressed using the usual BNF conventions extended to include square brackets to indicate optional items, suffixes to indicate various kinds of list, and curly brackets to group related items.
@@ -1477,7 +1477,7 @@ where stem:["Symbol"_1,  "Symbol"_2,  ...,  "Symbol"_n]  are _all_ the symbols (
 
 There is a similar domain _DefinitionAS0_ for the concrete grammar (AS0).
 
-[[F1_3_6_14Abstract_syntax_tree]]
+[[Abstract_syntax_tree]]
 ===== Abstract syntax tree
 
 The syntax nodes declared by abstract syntax rules can be used to construct an abstract syntax tree.
