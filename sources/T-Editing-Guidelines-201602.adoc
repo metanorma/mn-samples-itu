@@ -33,7 +33,7 @@ Subsequently, TSAG agreed at its February 2016 meeting to make mandatory the Key
 [[Scope]]
 == Scope
 
-This author's guide is intended to provide a common approach to the preparation of ITU-T texts that are intended for publication, e.g., draft Recommendations. It attempts to cover the kind of questions likely to arise in the preparation of an ITU-T Recommendation and provides, through application of its own rules, an illustration using the normal order of the elements of drafting a typical Recommendation. To avoid confusion which may result from this approach for a first-time reader, detailed explanations of the contents of each heading are given in <<a_7Description_of_introductory_material_to_be_provided_by_the_author>> and <<a_8Description_of_core_material>> below.
+This author's guide is intended to provide a common approach to the preparation of ITU-T texts that are intended for publication, e.g., draft Recommendations. It attempts to cover the kind of questions likely to arise in the preparation of an ITU-T Recommendation and provides, through application of its own rules, an illustration using the normal order of the elements of drafting a typical Recommendation. To avoid confusion which may result from this approach for a first-time reader, detailed explanations of the contents of each heading are given in <<Description_of_introductory_material_to_be_provided_by_the_author>> and <<Description_of_core_material>> below.
 
 <<table1>> shows the arrangement of the elements that may comprise a published Recommendation. Shaded rows correspond to elements provided by TSB.
 
@@ -54,8 +54,11 @@ For common texts developed with ISO/IEC, <<ITU-T_A.23>> applies instead of this 
 [[Terms_defined_elsewhere]]
 === Terms defined elsewhere
 
-==== amendment <<b-ITU-T_A.1>>
+==== amendment
 An amendment to a Recommendation contains changes or additions to an already published ITU-T Recommendation. The amendment is published by ITU-T as a separate document that contains primarily changes or additions {blank}footnote:[An amendment should have a title that reflects its content.]. If it forms an integral part of the Recommendation, approval of an amendment follows the same approval procedures as Recommendations; otherwise, it is agreed by the study group.
+
+[.source]
+<<b-ITU-T_A.1>>
 
 [[table1]]
 .Arrangement of elements (typical)
@@ -209,7 +212,7 @@ The Recommendation commences on Arabic numeral page 1 that follows the Roman-num
 
 This element should appear, as clause 1, at the beginning of every Recommendation, to define, without ambiguity, its intent or object and the aspects covered, thereby indicating the limits of its applicability.
 
-[[References]]
+[[Core_material_references]]
 === References
 
 This element should appear as clause 2, and permits the author to list, alphanumerically in ascending order, ITU-T and ITU-R Recommendations, International Organization for Standardization (ISO), International Electrotechnical Commission (IEC) and other accepted organizations' standards referred to in the main body of the Recommendation and which are considered to be incorporated by reference into the Recommendation. <<ITU-T_A.5>> provides generic procedures for referencing the documents of organizations other than ISO and IEC in ITU-T Recommendations.
@@ -224,7 +227,7 @@ Each referenced document shall be introduced in clause 2 with a citation tag so 
 
 NOTE: The citation tag in square brackets is generally the short form or abbreviation indicating the standards group that produced the document, followed by the number or designation of the document itself.
 
-Informative (non-normative) reference to any other publicly available texts may be made through a bibliography, at the end of the Recommendation (see <<a_8_10Bibliography>>). Informative references provide supplemental information to assist the understanding of the Recommendation and to which conformance is not necessary. If the reader does not need to read the referenced document to obtain information that is not explicitly stated in the referencing Recommendation, then the referenced document is informative.
+Informative (non-normative) reference to any other publicly available texts may be made through a bibliography, at the end of the Recommendation (see <<Core_material_bibliography>>). Informative references provide supplemental information to assist the understanding of the Recommendation and to which conformance is not necessary. If the reader does not need to read the referenced document to obtain information that is not explicitly stated in the referencing Recommendation, then the referenced document is informative.
 
 
 <<examp1>> illustrates examples of presentation of references.
@@ -266,7 +269,7 @@ Informative (non-normative) reference to any other publicly available texts may 
 ====
 
 
-[[Definitions]]
+[[Core_material_definitions]]
 === Definitions
 
 This element should appear as clause 3; it gives the definitions necessary for the understanding of certain terms used in the Recommendation. For more details, see <<annexB>>.
@@ -283,7 +286,7 @@ NOTE: Terms which are defined elsewhere should normally include only a normative
 
 NOTE: TSB collects all new terms and their definitions from new or revised Recommendations and adds them to the ITU-T Terms and Definitions database, which is available to the general public on the ITU‑T website (http://www.itu.int/ITU-R/go/terminology-database[http://www.itu.int/ITU-R/go/terminology-database]).
 
-[[Abbreviations_and_acronyms]]
+[[Core_material_abbreviations_and_acronyms]]
 === Abbreviations and acronyms
 
 This element should appear as clause 4. It lists in alphabetical order all the abbreviations and acronyms from throughout the Recommendation with their unabbreviated forms. The letters which appear in the acronym shall be capitalized. The first appearance of any acronym within the Recommendation should be preceded by its complete unabbreviated form, e.g., asynchronous transfer mode (ATM). It is recommended to use abbreviations in figures and tables, due to lack of space. The plural of a fully capitalized acronym is formed by adding a lower case "s", e.g., ICTs (not ICTS).
@@ -294,7 +297,7 @@ NOTE: Abbreviations for physical quantities, measurement units and their multipl
 
 NOTE: Names of ITU and other major international standards development organizations do not need to be included in clause 4, "Abbreviations". Less familiar <<ITU-T_A.5>> or <<b-ITU-T_A.6>> qualified organizations may be listed, where appropriate.
 
-[[Conventions]]
+[[Core_material_conventions]]
 === Conventions
 
 This element should appear as clause 5. It describes particular notations, assumptions, styles, presentations, etc., used within the Recommendation, if any.
@@ -333,7 +336,7 @@ Electronic attachments may be normative or informative, and may correspond to a 
 
 If the electronic attachment or any other part of a Recommendation is covered by a copyright or a patent, the intellectual property rights owner must file with TSB a TSB-standardized software copyright and licensing declaration form or a patent statement licensing declaration form. More information on this topic can be found at: http://www.itu.int/en/ITU-T/ipr/Pages/default.aspx[http://www.itu.int/en/ITU-T/ipr/Pages/default.aspx].
 
-[[Bibliography]]
+[[Core_material_bibliography]]
 === Bibliography
 
 This element may be present in order to cite references or sources not covered by the "References" element and which are intended for background information (i.e., they are informative not normative). Referencing draft standards and internal ITU documents (e.g., TDs or contributions) and other documents that are not available to all readers of the published Recommendation shall be avoided.
@@ -531,12 +534,12 @@ When reference is made to text passages, tables, figures, equations, etc., withi
 [[References_to_parts_of_another_Recommendation]]
 ==== References to parts of another Recommendation
 
-When reference is made to text passages, tables, figures, equations, etc., in another Recommendation, the citation tag (see <<a_8_2References>>) of the referenced Recommendation should be included in the reference, e.g., "see Figure 1 of [b-ITU-T A.8]", "see clause 2 of [b-ITU-T A.4]" or "see clause 2.2.10 of [ITU-T A.5]".
+When reference is made to text passages, tables, figures, equations, etc., in another Recommendation, the citation tag (see <<Core_material_references>>) of the referenced Recommendation should be included in the reference, e.g., "see Figure 1 of [b-ITU-T A.8]", "see clause 2 of [b-ITU-T A.4]" or "see clause 2.2.10 of [ITU-T A.5]".
 
 [[Formal_language_descriptions]]
 === Formal language descriptions
 
-Formal language modules should be presented using only characters acceptable by the relevant compilers (including tabs, line returns, etc.). See <<a_9_2Fonts>> regarding the use of fonts for formal languages.
+Formal language modules should be presented using only characters acceptable by the relevant compilers (including tabs, line returns, etc.). See <<Fonts>> regarding the use of fonts for formal languages.
 
 [[Additional_guidance]]
 == Additional guidance
@@ -570,7 +573,7 @@ Authors are advised to ask TSB for the last published source file of the Recomme
 [[annexB]]
 == Guidance on the development of definitions
 
-[[Introduction]]
+[[AnnexB_introduction]]
 === Introduction
 
 A considerable amount of time is spent by study groups on terminology and definitions but the results can be duplicative and of inconsistent quality. Greater consistency is needed in the way definitions are drafted. In addition, consideration needs to be given to ensuring that definitions are drafted in a way that allows for automated compilation and processing of new definitions so that the ITU database of definitions can be more easily maintained. Annex 2 to WTSA Resolution 67 (Johannesburg, 2008) provides basic guidelines for the preparation of terms and definitions. This annex builds on that guidance to help study groups to adopt a consistent approach to terminology and definitions and also to address the requirements for automated updating of the terminology database.
@@ -666,7 +669,7 @@ Where a term is used but not defined (either explicitly, or by reference), it mu
 [[Formatting_of_definitions]]
 === Formatting of definitions
 
-Formatting requirements for definitions are illustrated in <<a_3Definitions>> and explained in <<a_8_3Definitions>> of this author's guide.
+Formatting requirements for definitions are illustrated in <<Definitions>> and explained in <<Core_material_definitions>> of this author's guide.
 
 NOTE: The formatting requirements for definitions within common or twin texts jointly developed with ISO/IEC JTC 1 are illustrated in clause 3 of Appendix II of <<ITU-T_A.23>>.
 
@@ -680,7 +683,7 @@ In addition, the following stylistic aspects are preferred:
 [appendix]
 == URI naming scheme for the identification of XML namespaces defined in ITU-T Recommendations
 
-[[Introduction]]
+[[AnnexC_introduction]]
 === Introduction
 
 ITU-T Recommendations increasingly define XML schemas. To answer the growing demand of universal resource identifiers (URIs) for referencing XML namespaces in ITU-T Recommendations, ITU reserved the following URL: +
@@ -774,14 +777,17 @@ The text appears, then, as shown in the example given in <<exampE_1>>.
 
 [example]
 ====
-*...* +
+*...* 
 
-*6	Definition of the VBD mode of operation* +
+*6	Definition of the VBD mode of operation* 
 
-*...* +
-and should consider the appropriate application of: +
-`The use of echo cancellers on the VBD channel, as per Rec. ITU-T G.168.` +
-Forward error correction (FEC) (e.g., per [IETF RFC 2733]) or other forms of redundancy (e.g., per [IETF RFC 2198]) only if support has been successfully negotiated with the remote ITU-T V.152 implementation. +
+*...* 
+
+and should consider the appropriate application of: 
+
+del:[The use of echo cancellers on the VBD channel, as per Rec. ITU-T G.168.] 
+
+Forward error correction (FEC) (e.g., per [IETF RFC 2733]) or other forms of redundancy add:[(e.g., per [IETF RFC 2198])] only if support has been successfully negotiated with the remote ITU-T V.152 implementation. 
 
 *...*
 ====
