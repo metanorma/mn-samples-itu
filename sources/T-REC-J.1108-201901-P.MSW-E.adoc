@@ -19,7 +19,7 @@
 == Summary
 As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.
 
-[[Scope]]
+[[scope]]
 == Scope
 
 Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. [[_Hlk530637669]]The architecture described in this Draft [New] Recommendation are defined according to <<j1106>>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:
@@ -30,6 +30,7 @@ Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendatio
 The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Draft[New] Recommendation are defined the timing processing specification.
 
 [bibliography]
+[[references]]
 == References
 
 * [[[j210, ITU-T J.210]]] Recommendation ITU-T J.210 (2006/11), _Downstream RF Interface for Cable Modem Termination Systems_
@@ -45,10 +46,13 @@ The most important part of the RoIP transmission system is having the correct ne
 * [[[x743, ITU-T X.743]]] ITU-T Recommendation X.743(1998/06), _Time Management Function_
 
 
+[[definitions]]
 == Definitions
 
+[[terms_defined_elsewhere]]
 === Terms defined elsewhere
 
+[[term_local_clock]]
 ==== local clock
 
 The collection of hardware and software that comprises a local source of time for a system
@@ -56,10 +60,12 @@ The collection of hardware and software that comprises a local source of time fo
 [.source]
 <<x743>>
 
+[[terms_defined_in_this_recommendation]]
 === Terms defined in this Recommendation
 
 None
 
+[[abbreviations_and_acronyms]]
 == Abbreviations and acronyms
 
 This Recommendation uses the following abbreviations and acronyms:
@@ -94,6 +100,7 @@ STB:: Set-Top Box
 
 US:: Up Stream
 
+[[conventions]]
 == Conventions
 
 In this Recommendation:
@@ -108,14 +115,17 @@ The keywords "*can optionally"* indicate an optional requirement which is permis
 
 In the body of this document and its annexes, the words _shall_, _shall not_, _should_, and _may_ sometimes appear, in which case they are to be interpreted, respectively, as _is required to_, _is prohibited from_, _is recommended_, and _can optionally_. The appearance of such phrases or keywords in an appendix or in material explicitly marked as _informative_ are to be interpreted as having no normative intent.
 
+[[overview]]
 == Overview
 
 In this section, the overview is defined according to <<j1106,section 6>>.
 
+[[functional_architecture]]
 == Functional Architecture
 
 In this section, the functional architecture is defined according to <<j1107,section 7>>.
 
+[[timing_processing_specification]]
 == Timing Processing Specification
 
 It is important to synchronize upstream data based on the DOCSIS (Data Over Cable Service Interface Specification) with the existing cable network through the optical IP network (i.e. xPON networks). The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal.
@@ -147,6 +157,7 @@ Therefore, the following requirements is required to perform the function of tim
 [TIME-REQ-11] The RoIP headend for RF signal reconstruction is required to transform Digital to Analogue and frequency band.
 
 [bibliography]
+[[bibliography]]
 == Bibliography
 
 * [[[docsis1, b-ANSI/SCTE 135-1 2008]]] DOCSIS 3.0 Part 1: Physical Layer Specification
@@ -156,6 +167,5 @@ Therefore, the following requirements is required to perform the function of tim
 * [[[docsis4, b-ANSI/SCTE 135-4 2008]]] DOCSIS 3.0 Part 4: Operations Support Systems Interface
 
 * [[[docsis5, b-ANSI/SCTE 135-5 2009]]] DOCSIS 3.0 Part 5: Cable Modem to Customer Premise
-
 
 
