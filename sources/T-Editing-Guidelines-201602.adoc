@@ -5,7 +5,7 @@
 :published-date: 2016-02-05
 :status: published
 :doctype: recommendation
-:keywords: 
+:keywords:
 :imagesdir: images
 :docfile: T-Editing-Guidelines-201602.adoc
 :mn-document-class: itu
@@ -18,14 +18,14 @@
 
 
 [abstract]
-== Summary 
+== Summary
 This author's guide for drafting ITU-T Recommendations permits uniform, efficient preparation of texts by TSB for publication. It covers the rules for drafting a Recommendation in a standard manner. Its provisions should be applied in all instances where texts (such as draft Recommendations) are being prepared by study group authors for approval and publication. The methods presented in this author's guide are the basis for a template and will remain stable until changes to current publication procedures necessitate their modification.
 
 In order to facilitate comparison with other presentation styles, this author's guide has been prepared in accordance with the presentation rules that it mandates. The examples used within the text, such as references, are for illustrative purposes only. Thus, this author's guide constitutes an example of the proposed presentation style. Please note that Recommendation ITU-T A.1500 is a fictitious Recommendation used to illustrate the points given in this guide.
 
 [preface]
 == History
-TSAG agreed at its February 2011 meeting to update the author's guide (last revised 14 March 2007) based upon http://www.itu.int/md/T09-TSAG-C-0041/en[C41] and the related discussion of that meeting. The convener of the ad hoc group on working methods, together with TSB, was tasked with preparing a final text. That text appears on subsequent pages. 
+TSAG agreed at its February 2011 meeting to update the author's guide (last revised 14 March 2007) based upon http://www.itu.int/md/T09-TSAG-C-0041/en[C41] and the related discussion of that meeting. The convener of the ad hoc group on working methods, together with TSB, was tasked with preparing a final text. That text appears on subsequent pages.
 
 Subsequently, TSAG agreed at its February 2016 meeting to make mandatory the Keywords field based on http://www.itu.int/md/T13-TSAG-160201-TD-GEN-0405/en[TD405]. The required changes have been introduced in this guide in clean text.
 
@@ -103,14 +103,14 @@ An appendix to a Recommendation contains material which is supplementary to and 
 
 [.source]
 <<b-ITU-T_A.1>>
- 
+
 [[term-clause]]
 ==== clause
 The word clause shall be used to denote single-digit or multiple-digit numbered text passages.
 
 [.source]
 <<b-ITU-T_A.1>>
- 
+
 [[term-corrigendum]]
 ==== corrigendum
 A corrigendum to a Recommendation contains corrections to an already published ITU-T Recommendation. A corrigendum is published by ITU-T as a separate document that contains only corrections. TSB may correct obvious errors by issuing a corrigendum with the concurrence of the study group chairman; otherwise, approval of a corrigendum follows the same approval procedures as Recommendations.
@@ -129,7 +129,7 @@ An implementers' guide is a document which records all identified defects (e.g.,
 === Terms defined in this Recommendation
 
 [[term-normative-reference]]
-==== normative reference 
+==== normative reference
 Another document that contains provisions which, through reference to it, constitute provisions of the referring document.
 
 NOTE: Entries listed in the "References" element shall be for normative references that are referenced from within the main body, including annexes, of the Recommendation.
@@ -139,7 +139,7 @@ NOTE: All non-normative references must appear as entries in the "Bibliography" 
 NOTE: The sole reference to a normative reference should not be made from an appendix.
 
 [[term-supplement]]
-==== supplement 
+==== supplement
 A supplement contains illustrative material, published in a separate document, which is supplementary to and associated with the subject matter of one or more Recommendations, but is not essential to their completeness, understandability or ability to be implemented, and is therefore not considered to be an integral part of any Recommendation(s). As such, a supplement does not require the same approval procedures as Recommendations; agreement by the study group is sufficient. For additional guidance regarding supplements, see <<b-ITU-T_A.13>>.
 
 [[term-text]]
@@ -209,7 +209,7 @@ This element, placed before the main body of the Recommendation, may provide inf
 
 The Recommendation commences on Arabic numeral page 1 that follows the Roman-numbered pages in the final publication. The Recommendation title will appear at the beginning of page 1, just preceding clause 1, "Scope".
 
-[[Scope]]
+[[preScope]]
 === Scope
 
 This element should appear, as clause 1, at the beginning of every Recommendation, to define, without ambiguity, its intent or object and the aspects covered, thereby indicating the limits of its applicability.
@@ -598,7 +598,7 @@ New terms should not be developed where an acceptable definition already exists.
 ITU provides an online database, "ITU Terms and Definitions" {blank}footnote:[http://www.itu.int/ITU-R/go/terminology-database], to assist in discovering existing terms and definitions in ITU-R and ITU-T Recommendations.
 
 [[Structure]]
-==== Structure 
+==== Structure
 
 A formal definition is a concise, logical statement that comprises three essential elements:
 
@@ -618,7 +618,7 @@ An example of a complete definition in ITU-T style is:
 |===
 
 [[Conciseness]]
-==== Conciseness 
+==== Conciseness
 
 Definitions should be concise and should include only the necessary information. To avoid complexity and confusion, each definition should describe only one concept.
 
@@ -629,17 +629,17 @@ Figures, equations and tables should not replace the verbal representation of th
 NOTE: It is recognized that, for mathematical terms, equations may be the most effective and efficient way of defining the term.
 
 [[Clarity_and_accuracy]]
-==== Clarity and accuracy 
+==== Clarity and accuracy
 
 Definitions must be accurate, clear and positive. Inaccurate and negative definitions are not acceptable. Nor should definitions be circular or include, or paraphrase, the term being defined. The language used in a definition must either be common English language terms or defined elsewhere in the text.
 
 [[Independence]]
-==== Independence 
+==== Independence
 
 Definitions must be able to stand alone. In other words, the meaning should be understandable without requiring reference to other parts of the Recommendation. This is particularly important since the terms and definitions are being extracted for use by delegates, and consumers on the web.
 
 [[Grammatical_form]]
-==== Grammatical form 
+==== Grammatical form
 
 The form of the definition should also be the same part of speech {blank}footnote:["parts of speech" are _verbs, nouns, adjectives, adverbs, etc_.] as the term or concept being defined. For example, if the term being defined is a noun, the definition should not be expressed as a verb or other part of speech.
 
@@ -719,18 +719,18 @@ It is noted that this naming scheme can easily be extended to accommodate other 
 [[Examples_of_use]]
 === Examples of use
 
-* Recommendation ITU-T X.1206 (2008), _A vendor-neutral framework for automatic notification of security related information and dissemination of updates_. 
+* Recommendation ITU-T X.1206 (2008), _A vendor-neutral framework for automatic notification of security related information and dissemination of updates_.
 +
 [align=center]
 *`\http://www.itu.int/xml-namespace/itu-t/x.1206/core/`*
 
-* Draft Recommendation ITU-T H.325, _Advanced multimedia systems for next generation and other packet-switched networks_. 
+* Draft Recommendation ITU-T H.325, _Advanced multimedia systems for next generation and other packet-switched networks_.
 +
 [align=center]
 *`\http://www.itu.int/xml-namespace/itu-t/h.325/core/`*
 
 
- 
+
 [appendix]
 == Actions required to improve the quality of ITU-T Recommendations
 
@@ -779,17 +779,17 @@ The text appears, then, as shown in the example given in <<exampE_1>>.
 
 [example]
 ====
-*...* 
+*...*
 
-*6	Definition of the VBD mode of operation* 
+*6	Definition of the VBD mode of operation*
 
-*...* 
+*...*
 
-and should consider the appropriate application of: 
+and should consider the appropriate application of:
 
-del:[The use of echo cancellers on the VBD channel, as per Rec. ITU-T G.168.] 
+del:[The use of echo cancellers on the VBD channel, as per Rec. ITU-T G.168.]
 
-Forward error correction (FEC) (e.g., per [IETF RFC 2733]) or other forms of redundancy add:[(e.g., per [IETF RFC 2198])] only if support has been successfully negotiated with the remote ITU-T V.152 implementation. 
+Forward error correction (FEC) (e.g., per [IETF RFC 2733]) or other forms of redundancy add:[(e.g., per [IETF RFC 2198])] only if support has been successfully negotiated with the remote ITU-T V.152 implementation.
 
 *...*
 ====
