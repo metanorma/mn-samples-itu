@@ -18,33 +18,33 @@
 
 [abstract]
 == Summary
-Recommendation ITU-T P.1203 provides the introductory document for a set of documents that describe model algorithms for monitoring the integral media session quality for TCP-type video streaming. The models comprise modules for short-term audio- and video-quality estimation. The per-one-second outputs of these short-term modules are integrated into estimates of audiovisual quality and, together with information about initial loading delay and media playout stalling events, further integrated into the final model output, the estimate of integral quality. The respective ITU-T work item has formerly been referred to as P.NATS (Parametric non-intrusive assessment of TCP-based multimedia streaming quality). 
+Recommendation ITU-T P.1203 provides the introductory document for a set of documents that describe model algorithms for monitoring the integral media session quality for TCP-type video streaming. The models comprise modules for short-term audio- and video-quality estimation. The per-one-second outputs of these short-term modules are integrated into estimates of audiovisual quality and, together with information about initial loading delay and media playout stalling events, further integrated into the final model output, the estimate of integral quality. The respective ITU-T work item has formerly been referred to as P.NATS (Parametric non-intrusive assessment of TCP-based multimedia streaming quality).
 
-The structure of the set of recommendations reflects the different functionality of modules described in each document: 
+The structure of the set of recommendations reflects the different functionality of modules described in each document:
 
-* ITU-T P.1203: Introductory document (this Recommendation) 
+* ITU-T P.1203: Introductory document (this Recommendation)
 
-* ITU-T P.1203.1: Video quality estimation module (short-term, providing per-one-second output information) 
+* ITU-T P.1203.1: Video quality estimation module (short-term, providing per-one-second output information)
 
-* ITU-T P.1203.2: Audio quality estimation module (short-term, providing per-one-second output information) 
+* ITU-T P.1203.2: Audio quality estimation module (short-term, providing per-one-second output information)
 
-* ITU-T P.1203.3: Audiovisual integration and integration of final score, reflecting remembered quality for viewing sessions between 30 s and 5 min duration 
+* ITU-T P.1203.3: Audiovisual integration and integration of final score, reflecting remembered quality for viewing sessions between 30 s and 5 min duration
 
-The input used by the models consists of information obtained by prior stream inspection. Four different levels of inspection are included, resulting in models of different complexity both of the input information and the model algorithms, which are called "modes of operation" in the following: 
+The input used by the models consists of information obtained by prior stream inspection. Four different levels of inspection are included, resulting in models of different complexity both of the input information and the model algorithms, which are called "modes of operation" in the following:
 
-* Mode 0: Information obtained from meta-information available during progressive download or adaptive streaming, for example from manifest files used in DASH, about codec and bitrate, and initial loading delay and stalling. 
+* Mode 0: Information obtained from meta-information available during progressive download or adaptive streaming, for example from manifest files used in DASH, about codec and bitrate, and initial loading delay and stalling.
 
-* Mode 1: All information from Mode 0, with additional video and audio frame information based on packet header inspection 
+* Mode 1: All information from Mode 0, with additional video and audio frame information based on packet header inspection
 
-* Mode 2: All information from Mode 1, and up to 2% (in Bytes) of the overall media stream information based on deep packet inspection and partial bitstream parsing 
+* Mode 2: All information from Mode 1, and up to 2% (in Bytes) of the overall media stream information based on deep packet inspection and partial bitstream parsing
 
-* Mode 3: All information from Mode 1, and complete media stream information based on bitstream parsing 
+* Mode 3: All information from Mode 1, and complete media stream information based on bitstream parsing
 
-The ITU-T P.1203-series of Recommendations addresses two application areas, which are respectively indicated in the module-related Recommendations <<ITU-T_P.1203.1>>, <<ITU-T_P.1203.2>>, <<ITU-T_P.1203.3>>: 
+The ITU-T P.1203-series of Recommendations addresses two application areas, which are respectively indicated in the module-related Recommendations <<ITU-T_P.1203.1>>, <<ITU-T_P.1203.2>>, <<ITU-T_P.1203.3>>:
 
-* Large-screen presentation as with fixed-network video streaming 
+* Large-screen presentation as with fixed-network video streaming
 
-* Mobile streaming on handheld devices such as smartphones The ITU-T P.1203 module algorithms are no-reference, bitstream-based models. 
+* Mobile streaming on handheld devices such as smartphones The ITU-T P.1203 module algorithms are no-reference, bitstream-based models.
 
 <<<
 
@@ -270,7 +270,7 @@ This Recommendation uses the following conventions:
 * Pq designates the quality integration module (see <<ITU-T_P.1203.3>>).
 
 [[areas_of_application]]
-== Areas of application 
+== Areas of application
 
 The application areas for ITU-T P.1203 are:
 
@@ -385,10 +385,10 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 
 |===
 ^.^| *ID* ^.^| *Description* ^.^| *Values* ^.^| *Frequency* ^.^| *Available to modes*
-5+| *_I.GEN_* 
+5+| *_I.GEN_*
 ^.^| 0 | The resolution of the image displayed to the user | Number of pixels (WxH) in displayed video | Per media session | All
 ^.^| 1 | The device type on which the media is played | "PC" or "mobile" | Per media session | All
-5+| *_I.11_* 
+5+| *_I.11_*
 ^.^| 2 | Target Audio bit-rate | Bitrate in kbit/s | Per media segment | All
 ^.^| 3 | Segment duration | Duration in seconds | Per media segment | All
 ^.^| 4 | Audio frame number | Integer, starting with 1 | Per media segment | 1, 2, 3
@@ -398,7 +398,7 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 ^.^| 8 | Audio sampling frequency | In Hz | Per media segment | All
 ^.^| 9 | Number of audio channels | 2 | Per media segment | All
 | 10 | Audio bit-stream | Encoded audio bytes for the frame | Per audio frame | 2, 3
-5+| *_I.13_* 
+5+| *_I.13_*
 ^.^| 11 | Target Video bit-rate | Bit-rate in kbit/s | Per media segment | All
 ^.^| 12 | Video frame-rate | Frame rate in frames per second. | Per media segment | All
 ^.^| 13 | Segment duration | Duration in seconds | Per media segment | All
@@ -411,7 +411,7 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 ^.^| 20 | Video frame size | The size of the encoded video frame in bytes | Per video frame | 1, 2, 3
 ^.^| 21 | Type of each picture | "I" or "Non-I" for mode 1"I"/"P"/"B" for modes 2, 3 | Per video frame | 1, 2, 3
 ^.^| 22 | Video bit-stream | Encoded video bytes for the frame | Per video frame | 2, 3
-5+| *_I.14_* 
+5+| *_I.14_*
 ^.^| 23 | Stalling/initial loading event start | The start time of the stalling event in seconds relative to the start of the original video clip, expressed in media time (not wall clock time)NOTE – This is 0 for initial loading delay. | Per stalling event | All
 ^.^| 24 | Event duration | The duration of the stalling event in seconds | Per stalling event | All
 |===
@@ -555,7 +555,7 @@ if frames[output_sample_relative-1].media_quality_level == target_media_quality_
 				i-=1
 
 if output_sample_relative + 1 != length(frames):
-	if frames[output_sample_relative+1].media_quality_level == 
+	if frames[output_sample_relative+1].media_quality_level ==
 target_media_quality_level:
 	i = output_sample_relative + 1
 	window.append(i)
@@ -572,7 +572,7 @@ target_media_quality_level:
 At the end of the procedure, "window" identifies the indices of frames (0-based) from the list of forwarded frames that must be used for calculating the quality score (see the respective procedures in <<ITU-T_P.1203.1>> and <<ITU-T_P.1203.2>>.
 
 [[model_output_information]]
-=== Model output information 
+=== Model output information
 
 The Pa and Pv modules provide one score per output sampling interval, thus one score every 1 s (see <<term_output_sampling_interval>>).
 
@@ -615,7 +615,7 @@ The ITU-T P.1203 model outputs are as follows:
 Includes initial loading delay and stalling aspects.
 
 [[overview_of_databases_used_for_model_development]]
-== Overview of databases used for model development 
+== Overview of databases used for model development
 
 For model development and validation, a total of 30 databases were created. Each database consists of a set of processed video sequences (PVSs). Within one database, each PVS was derived from a unique source video. The source videos of each database were of fixed duration in-between 1-5 minutes. The number of PVSs in each database was chosen such that the total video duration presented to subjects is around 60 minutes. In more detail, 60 PVSs were used for databases of 1‑minute duration, with fewer PVSs for the longer durations, and with a minimum of 14 PVSs for the source videos of 5-minute duration. In total, 1064 PVSs were used.
 
@@ -653,7 +653,7 @@ The performance of the overall ITU-T P.1203 model on the databases described in 
 [[table_appendix]]
 [%unnumbered]
 |===
-h| *Performance measure* h| *Mode 0* h| *Mode 1* h| *Mode 2* h| *Mode 3*
+h| Performance measure h| Mode 0 h| Mode 1 h| Mode 2 h| Mode 3
 | *RMSE* ^.^| 0.465 ^.^| 0.415 ^.^| 0.381 ^.^| 0.333
 | *Pearson correlation* ^.^| 0.814 ^.^| 0.842 ^.^| 0.868 ^.^| 0.892
 |===
