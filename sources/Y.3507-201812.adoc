@@ -650,12 +650,9 @@ The OCP Server Project provides standardized server system specifications for sc
 .OCP related specifications
 [cols="a,2a,3a,a",cols="header"]
 |===
-^| Family
-^| Specification
-^| Summary
-^| Published
+^| Family ^| Specification ^| Summary ^| Published
 
-.8+.<| OpenRack V2
+.8+| OpenRack V2
 
 | Twin Lakes 1S Server Design Specification V1.00 <<b-OCP_1S>>
 | This specification describes the design of the Twin Lakes 1S server based on the Intel Xeon Processor D-2191 System-on-a-Chip (SoC).
@@ -691,7 +688,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2016
 
 
-.2+.<| OpenRack v1
+.2+| OpenRack v1
 
 | Open Rack- AMD Motherboard Hardware V2.0 <<b-OCP_AMBH>>
 | This document defines the technical specifications for the AMD motherboard used in Open Compute Project servers.
@@ -701,7 +698,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | This document describes Facebook's FSC algorithm and its update methodology. Using the OpenIPMI fan speed control (FSC) is an intelligent method for controlling server fans to provide adequate cooling while managing thermal constraints and power efficiency. This document will help to manage FSC settings and FSC updates by using intelligent platform management interface (IPMI) commands to vary the fan control profile on either local or remote systems.
 | 2017
 
-.6+.<| Olympus
+.6+| Olympus
 
 | Project Olympus AMD EPYC Processor Motherboard Specification <<b-OCP_OAPM>>
 | This specification describes the Project Olympus AMD Server Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
@@ -728,7 +725,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2017
 
 
-.10+.<| OCS
+.10+| OCS
 
 
 | Open CloudServer OCS Programmable Server Adapter Mezzanine Programmables V1.0 <<b-OCP_OCSPSAM>>
@@ -772,7 +769,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2014
 
 
-.2+.<| OCP Mezzanine
+.2+| OCP Mezzanine
 
 
 | Mezzanine Card 2.0 Design Specification V1.0 <<b-OCP_MEZZ>>
@@ -784,7 +781,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2012
 
 
-.4+.<| 19" Server
+.4+| 19" Server
 
 
 | QCT Big Sur Product Architecture Following Big Sur Specification V1.0 <<b-OCP_BS>>
@@ -804,7 +801,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2013
 
 
-.2+.<| SOC Boards
+.2+| SOC Boards
 | Panther+ Micro-Server Card Hardware V0.8 <<b-OCP_PMSCH>>
 
 | This document describes the technical specifications used in the design of an Intel Avoton SoC based Micro-Server card for Open Compute Project, known as the Panther+.
@@ -815,7 +812,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2016
 
 
-.5+.<| Barreleye
+.5+| Barreleye
 | Barreleye G2 Specification <<b-OCP_G2>>
 | This document describes the specifications for: Zaius POWER9 motherboard, Barreleye G2 server – 2OU, Zaius server – 1.5OU
 | 2017
@@ -843,7 +840,7 @@ The OCP Server Project provides standardized server system specifications for sc
 | 2018
 
 
-.2+.<| Mezz Card
+.2+| Mezz Card
 
 
 | 25G Dual Port OCP 2.0 NIC Mezzanine Card V1.0 <<b-OCP_25GDual>>
@@ -867,9 +864,7 @@ DMTF has developed specifications related to management interface, which are rel
 .DMTF related specifications
 [cols="3a,4a,a",options="header"]
 |===
-^| Specification
-^| Summary
-^| Published
+^| Specification ^| Summary ^| Published
 
 | Redfish Scalable Platforms ManagementAPI Specification <<b-DMTF_RFAPI>>
 | This specification is to define the protocols, data model and behaviors, as well as other architectural components needed for an interoperable, cross-vendor, remote and out-of-band capable interface that meets the expectations of Cloud and web-based IT professionals for scalable platform management. While large scale systems are the primary focus, the specifications are also capable of being used for more traditional system platform management implementations.
@@ -895,9 +890,7 @@ The Storage Networking Industry Association (SNIA) is a non-profit organization 
 .SNIA related specifications
 [cols="3a,4a,a",options="header"]
 |===
-^| Specification
-^| Summary
-^| Published
+^| Specification ^| Summary ^| Published
 
 | SNIA Swordfish Specification V1.0.6 <<b-SNIA_SF>>
 | The Swordfish Scalable Storage Management API ("Swordfish") defines a RESTful interface and a standardized data model to provide a scalable, customer-centric interface for managing storage and related data services. It extends the Redfish Scalable Platforms Management API Specification (DSP0266) from the DMTF.
@@ -917,9 +910,7 @@ The ETSI NFV EVE Working Group seeks to develop the necessary requirements to en
 .ETSI related specifications
 [cols="3a,4a,a",options="header"]
 |===
-^| Specification
-^| Summary
-^| Published
+^| Specification ^| Summary ^| Published
 
 | Hardware Interoperability Requirements Specification <<b-ETSI_EVE007>>
 | The document develops a set of normative interoperability requirements for the NFV hardware ecosystem and telecommunications physical environment to support NFV deployment.
@@ -942,9 +933,7 @@ Table I.5 analyses the relationship between functional requirement introduced in
 [[table-i-5]]
 [cols="a,3a,10a",options="header"]
 |===
-^| NO.
-^| Requirements in this Recommendation
-^| Relationship with related specifications from other SDOs
+^| NO. ^| Requirements in this Recommendation ^| Relationship with related specifications from other SDOs
 
 
 | *1*
