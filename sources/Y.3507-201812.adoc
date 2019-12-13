@@ -5,7 +5,7 @@
 :series1: Cloud Computing
 :series2:
 :published-date: 2018-12-01
-:status: published
+:status: in-force
 :doctype: recommendation
 :keywords: Cloud computing, functional requirements, physical machine
 :imagesdir: images
@@ -648,265 +648,209 @@ The OCP Server Project provides standardized server system specifications for sc
 
 [[table-i-1]]
 .OCP related specifications
+[cols="a,2a,3a,a",cols="header"]
 |===
+^| Family ^| Specification ^| Summary ^| Published
 
-| *Family*
-| *Specification*
-| *Summary*
-| *Published*
-.8+.<| OpenRack V2
+.8+| OpenRack V2
+
 | Twin Lakes 1S Server Design Specification V1.00 <<b-OCP_1S>>
-
 | This specification describes the design of the Twin Lakes 1S server based on the Intel Xeon Processor D-2191 System-on-a-Chip (SoC).
-
 | 2018
 
 | Facebook 2S Server Tioga Pass Specification V1.0 <<b-OCP_2S>>
-
 | This specification describes Facebook dual sockets server Intel Motherboard v4.0
 (Project name: Tioga Pass) design and design requirement to integrate Tioga Pass into Open Rack V2.
-
 | 2018
 
 | Big Basin-JBOG Specification V1.0 <<b-OCP_JBOG>>
-
 | This document describes technical specifications for Facebook's Big Basin-JBOG for use in Open Rack V2.
-
 | 2018
 
 | Inspur Server Project San Jose V1.01 <<b-OCP_SJ>>
-
 | This document defines the technical specification for San Jose Motherboard and chassis used in Open Compute Project Open Rack V2.
-
 | 2017
 
 | Facebook Multi-Node Server Platform: Yosemite V2 Design Specification V1.0 <<b-OCP_Yose>>
-
 | This specification describes the design of the Yosemite V2 Platform that hosts four One Socket (1S) servers, or two sets of 1S server/device card pairs.
-
 | 2017
 
 | Facebook Server Intel Motherboard V4.0 Project Tioga Pass V0.30 <<b-OCP_TP>>
 | This specification describes Facebook dual sockets server Intel Motherboard v4.0 (Project name: Tioga Pass) design and design requirement to integrate Intel Motherboard v4.0 into Open Rack V2.
-
 | 2017
 
 | Facebook Server Intel Motherboard V3.1 <<b-OCP_MB>>
-
 | This specification describes Intel Motherboard v3.0 design and design requirement to integrate Intel Motherboard v3.0 into Open Rack V11 and Open Rack V2.
-
 | 2016
 
 | Open Rack- Intel Motherboard Hardware V2.0 <<b-OCP_IMBH>>
-
 | This document defines the technical specifications for the Intel motherboard used in Open Compute Project servers.
-
 | 2016
-.2+.<| OpenRack v1
+
+
+.2+| OpenRack v1
+
 | Open Rack- AMD Motherboard Hardware V2.0 <<b-OCP_AMBH>>
-
 | This document defines the technical specifications for the AMD motherboard used in Open Compute Project servers.
-
 | 2012
 
 | Facebook server Fan Speed Control Interface Draft V0.1 <<b-OCP_FSCI>>
-
 | This document describes Facebook's FSC algorithm and its update methodology. Using the OpenIPMI fan speed control (FSC) is an intelligent method for controlling server fans to provide adequate cooling while managing thermal constraints and power efficiency. This document will help to manage FSC settings and FSC updates by using intelligent platform management interface (IPMI) commands to vary the fan control profile on either local or remote systems.
-
 | 2017
-.6+.<| Olympus
+
+.6+| Olympus
+
 | Project Olympus AMD EPYC Processor Motherboard Specification <<b-OCP_OAPM>>
-
 | This specification describes the Project Olympus AMD Server Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
-
 | 2017
 
 | Project Olympus Cavium ThunderX2 ARMx64 Motherboard Specification <<b-OCP_OCTAM>>
-
 | This specification focuses on the Project Olympus Cavium ThunderX2 ARMx64 Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
-
 | 2017
 
 | Project Olympus 1U Server Mechanical Specification <<b-OCP_O1USM>>
-
 | This specification focuses on the Project Olympus full-width server mechanical assembly. It covers the mechanical features and supported components of the server, as well as the interfaces with the mechanical and power support structure.
-
 | 2017
 
 | Project Olympus 2U Server Mechanical Specification <<b-OCP_O2USM>>
-
 | This specification focuses on the Project Olympus 2U server mechanical assembly. It covers the mechanical features and supported components of the server, as well as the interfaces with the mechanical and power support structure.
-
 | 2017
 
 | Project Olympus Intel Xeon Scalable Processor BIOS Specification <<b-OCP_OBIOS>>
-
 | The System BIOS is an essential platform ingredient which is responsible for platform initialization that must be completed before booting of an operating system. Thus, the BIOS execution phase of the boot process is often referred to as pre‑boot phase.
-
 | 2017
 
 | Project Olympus Intel Xeon Scalable Processor Motherboard Specification <<b-OCP_OMB>>
-
 | This specification describes the Project Olympus Intel Server Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
-
 | 2017
-.10+.<| OCS
+
+
+.10+| OCS
+
+
 | Open CloudServer OCS Programmable Server Adapter Mezzanine Programmables V1.0 <<b-OCP_OCSPSAM>>
-
 | This document defines physical and interface requirements for the programmable NIC mezzanine card that can be installed on an Open Cloud Server (OCS) server blade. This server adapter is programmable and provides CPU offload for Host‑based SDN, virtual switch data path and tunneling protocols.
-
 | 2016
 
 | Open CloudServer OCS Chassis Manager Specification V2.1 <<b-OCP_OCSCM>>
-
 | This specification is an addendum to the OCS Open CloudServer Chassis Management v2.0 specification. It defines the requirements for the upgrade to the Chassis Manager v1.0 made necessary by end of production of the CPU.
-
 | 2016
 
 | Open CloudServer OCS Blade Specification V2.1 <<b-OCP_OCSB>>
-
 | This document is intended for designers and engineers who will be building blades for an OCS system.
-
 | 2016
 
 | Open CloudServer OCS Solid State Drive V2.1 <<b-OCP_OCSSSD>>
-
 | This specification, Open CloudServer Solid State Drive, OCS SSD, describes the low-cost, high‑performance flash-based storage devices deployed first in the Open CloudServer OCS Blade V2 specification. The OCS Blade V2 supports four PCI-Express riser cards and eight Open CloudServer Solid State Drive M.2 modules. The Table 1 briefly describes the required features.
-
 | 2015
 
 | Open CloudServer OCS Power Supply V2.0 <<b-OCP_OCSPS>>
-
 | This specification, Open CloudServer Chassis Power Supply Version 2.0, describes the power supply family requirements for the Windows Cloud Server system. The mechanical interface and electrical interface is identical between power supply options to enable a common slot, universal, modular foundation power supply system to enable the Microsoft Windows Cloud Server systems.
-
 | 2015
 
 | Open CloudServer SAS Mezzanine I/O specification V1.0 <<b-OCP_OCSSAS>>
-
 | This document outlines specifications for the Open CloudServer Storage Attached SCSI (SAS) mezzanine card.
-
 | 2015
 
 | Open CloudServer JBOD specification V1.0 <<b-OCP_OCSJBOD>>
-
 | This document provides the technical specifications for the design of the 6G half-width JBOD blade for the Open CloudServer system.
-
 | 2015
 
 | Open CloudServer OCS Tray Mezzanine Specification V2.0 <<b-OCP_OCSTRAY>>
-
 | This specification, Open CloudServer OCS Tray Mezzanine Version 2.0, describes the physical and interface requirements for the Open CloudServer (OCS) tray mezzanine card. The mezzanine card will be installed on the tray backplane and will have a Peripheral Component Interconnect Express (PCIe) x16 Gen3 interface. This interface can either be used as one x16, two x8, or four x4 channels.
-
 | 2015
 
 | Open CloudServer Chassis Specification V2.0 <<b-OCP_OCSC>>
-
 | Describes the hardware used in the Version 2.0 (V2.0) OCS system, including the chassis, tray and systems management.
-
 | 2015
 
 | Open CloudServer OCS NIC Mezzanine Specification V2.0 <<b-OCP_OCSNIC>>
-
 | This specification, Open CloudServer NIC Mezzanine Version 2.0, describes the physical and interface requirements for the Open CloudServer (OCS) NIC mezzanine card that to be installed on an OCS blade.
-
 | 2014
-.2+.<| OCP Mezzanine
+
+
+.2+| OCP Mezzanine
+
+
 | Mezzanine Card 2.0 Design Specification V1.0 <<b-OCP_MEZZ>>
-
 | Mezzanine card 2.0 specification is developed based on original OCP Mezzanine card. It extends the card mechanical and electrical interface to enable new uses cases for Facebook and other users in OCP community. The extension takes backward compatibility to existing OCP platforms designed for original OCP Mezzanine card specification V0.5 into consideration and some tradeoffs are made between backward compatibility and new requirements.
-
 | 2016
 
 | Mezzanine Card for Intel v2.0 Motherboard <<b-OCP_MEZZMB>>
-
 | This document describes the mezzanine card design for use with Open Compute Project Intel v2.0 motherboards. The mezzanine card is installed on an Intel v2.0 OCP motherboard to provide extended functionality, such as support for 10GbE PCI-E devices.
-
 | 2012
-.4+.<| 19" Server
+
+
+.4+| 19" Server
+
+
 | QCT Big Sur Product Architecture Following Big Sur Specification V1.0 <<b-OCP_BS>>
-
 | The QCT Big Suris 4OU/21 "chassis which using IA-64 based dual-socket servers that support the Grantley–EP processors in combination with the Wellsburg PCH to provide a balanced feature set between technology leadership and cost. QCT Grantley platform will be 16DIMMsand supports 8 GPGPU cards and Max. 8x2.5" HDDs.
-
 | 2017
 
 | Hyve Solutions Ambient Series-E V1.2 <<b-OCP_HSAS>>
-
 | This document defines the technical specifications for the Hyve Solutions Ambient Series-E server, including motherboard, chassis and power supply.
-
 | 2017
 
 | QuantaGrid D51B-1U V1.1 <<b-OCP_QGD>>
-
 | The Quanta Grid D51B-1Uwill be IA-64 based dual-socket servers that support the Grantley–EP processors in combination with the Wellsburg PCH (PCH) to provide a balanced feature set between technology leadership and cost.
-
 | 2015
 
 | Decathlete Server Board Standard V2.1 <<b-OCP_DSBS>>
-
 | This standard provides board-specific information detailing the features and functionality of a general purpose 2-socket server board for adoption by the Open Compute Project community. The purpose of this document is to define a dual socket server board that is capable of deployment in scale out data centres as well as traditional data centres with 19" rack enclosures.
-
 | 2013
-.2+.<| SOC Boards
+
+
+.2+| SOC Boards
 | Panther+ Micro-Server Card Hardware V0.8 <<b-OCP_PMSCH>>
 
 | This document describes the technical specifications used in the design of an Intel Avoton SoC based Micro-Server card for Open Compute Project, known as the Panther+.
-
 | 2016
 
 | Micro-Server Card Hardware V1.0 <<b-OCP_HSCH>>
-
 | This specification provides a common form factor for emerging micro-server and SOC (System-On-Chip) server designs.
-
 | 2016
-.5+.<| Barreleye
+
+
+.5+| Barreleye
 | Barreleye G2 Specification <<b-OCP_G2>>
-
 | This document describes the specifications for: Zaius POWER9 motherboard, Barreleye G2 server – 2OU, Zaius server – 1.5OU
-
 | 2017
 
 | Barreleye G1 Specification <<b-OCP_G1>>
-
 | This document describes the specification of Barreleye, an OpenPOWER-based Open Compute server, with a mechanical and electrical package designed for Open Rack.
-
 | 2016
 
 | Facebook, Microsoft, M.2 Carrier Card Design Specification V1.0 <<b-OCP_M2>>
 
 | This specification provides the requirements for a PCIe Full Height Half Length (FHHL) form factor card that supports up to four M.2 form factor solid-state drives (SSDs). The card shall support 110mm (Type 22110) or 80mm (Type 22080) dual sided M.2 modules.
-
 | 2018
 
 | Facebook PCIe Retimer Card V1.1 <<b-OCP_PCIRC>>
-
 | This specification describes the design and design requirements for a PCIe add-in card that converts an internal PCIe connection to an external PCIe connection.
-
 | 2017
 
 | Add-on-Card Thermal Interface Spec for Intel Motherboard V3.0 <<b-OCP_ACTI>>
-
 | The goal of this document is to define a standard interface for Facebook Intel motherboard V3.0 to poll thermal data from an add-on-card including Mezzanine card.
-
 | 2017
 
 | Debug Card
 | OCP debug card with LCD spec V1.0 <<b-OCP_Debug>>
-
 | The specification defines the OCP Debug Card with LCD for a server system debug.
-
 | 2018
-.2+.<| Mezz Card
+
+
+.2+| Mezz Card
+
+
 | 25G Dual Port OCP 2.0 NIC Mezzanine Card V1.0 <<b-OCP_25GDual>>
-
 | This document specifies a technical design implementation to define 25G Ethernet card which meets the requirements of OCP Mezzanine card 2.0 type-A design and the heat sink design could let this card to be able to deployment in OCP server or standard server.
-
 | 2018
 
 | OCP NIC 3.0 Design Specification V0.8 <<b-OCP_NIC>>
-
 | The OCP NIC 3.0 specification is a follow-on to the OCP Mezz 2.0 rev 1.00 design specification. The OCP NIC 3.0 specification supports two basic card sizes: Small Card and Large Card. The Small Card allows for up to 16 PCIe lanes on the card edge while the Large Card supports up to 32 PCIe lanes.
-
 | 2018
+
 |===
 
 [[dmtf]]
@@ -918,12 +862,9 @@ DMTF has developed specifications related to management interface, which are rel
 
 [[table-i-2]]
 .DMTF related specifications
+[cols="3a,4a,a",options="header"]
 |===
-
-^h| Specification
-^h| Summary
-^h| Published
-
+^| Specification ^| Summary ^| Published
 
 | Redfish Scalable Platforms ManagementAPI Specification <<b-DMTF_RFAPI>>
 | This specification is to define the protocols, data model and behaviors, as well as other architectural components needed for an interoperable, cross-vendor, remote and out-of-band capable interface that meets the expectations of Cloud and web-based IT professionals for scalable platform management. While large scale systems are the primary focus, the specifications are also capable of being used for more traditional system platform management implementations.
@@ -939,6 +880,7 @@ DMTF has developed specifications related to management interface, which are rel
 
 |===
 
+
 [[snia]]
 ==== SNIA
 
@@ -946,17 +888,16 @@ The Storage Networking Industry Association (SNIA) is a non-profit organization 
 
 [[table-i-3]]
 .SNIA related specifications
+[cols="3a,4a,a",options="header"]
 |===
-
-^h| Specification
-^h| Summary
-^h| Published
-
+^| Specification ^| Summary ^| Published
 
 | SNIA Swordfish Specification V1.0.6 <<b-SNIA_SF>>
 | The Swordfish Scalable Storage Management API ("Swordfish") defines a RESTful interface and a standardized data model to provide a scalable, customer-centric interface for managing storage and related data services. It extends the Redfish Scalable Platforms Management API Specification (DSP0266) from the DMTF.
 | 2018-05-25
+
 |===
+
 
 [[etsi]]
 ==== ETSI
@@ -967,17 +908,16 @@ The ETSI NFV EVE Working Group seeks to develop the necessary requirements to en
 
 [[table-i-4]]
 .ETSI related specifications
+[cols="3a,4a,a",options="header"]
 |===
-
-^h| Specification
-^h| Summary
-^h| Published
-
+^| Specification ^| Summary ^| Published
 
 | Hardware Interoperability Requirements Specification <<b-ETSI_EVE007>>
 | The document develops a set of normative interoperability requirements for the NFV hardware ecosystem and telecommunications physical environment to support NFV deployment.
 | 2017-03
+
 |===
+
 
 [[Relationship_with_related_specifications_from_other_SDOs]]
 === Relationship with related specifications from other SDOs
@@ -991,11 +931,9 @@ Table I.5 analyses the relationship between functional requirement introduced in
 .Relationship with related specifications from other SDOs
 
 [[table-i-5]]
+[cols="a,3a,10a",options="header"]
 |===
-
-| NO.
-| Requirements in this Recommendation
-| Relationship with related specifications from other SDOs
+^| NO. ^| Requirements in this Recommendation ^| Relationship with related specifications from other SDOs
 
 
 | *1*
@@ -1014,8 +952,8 @@ a|
 
 a|
 * <<b-OCP_2S>> provides CPU replacement as 'The motherboard supports all Intel Xeon Scalable processor family (aka Skylake-SP) processors with TDP up to 165W. The motherboard shall provision the support of all future CPUs in Intel Xeon Scalable processor Family Platform and the Next gen Intel Xeon Scalable processor Family Platform unless noted otherwise' in clause 5.3.1.
-* <<b-OCP_HSAS>> provides CPU replacementas 'The motherboard is designed to support dual Intel Xeon E5-2600 v3 and v4 series processors and up to 2048GB LRDIMM 3DS/1024GB LRDIMM/ 512GB RDIMM DDR4 memory. Leveraging advanced technology from Intel, the motherboard is capable of offering scalable 32- and 64‑bit computing, high-bandwidth memory design and lightning-fast PCI-E bus implementation' in clause 7.
-* <<b-OCP_MB>> provides CPU replacement as 'The motherboard uses Intel Xeon E5-2600 v3 (LGA2011-3) Product Family processors with TDP up to 145W. The features listed below must be supported by the motherboard: Support two Intel Xeon E5-2600 v3 (LGA2011‑3) Product Family processors up to 145W TDP and vendors should engage with Intel to ensure the design ready for future processors; Two full-width Intel QPI links up to 9.6 GT/s/direction; Upto 18 cores per CPU (up to 36 threads with Hyper-Threading Technology). Up to 45MB last level cache; Single Processor mode is supported' in clause 5.3.1.
+* <<b-OCP_HSAS>> provides CPU replacement as 'The motherboard is designed to support dual Intel Xeon E5-2600 v3 and v4 series processors and up to 2048GB LRDIMM 3DS/1024GB LRDIMM/ 512GB RDIMM DDR4 memory. Leveraging advanced technology from Intel, the motherboard is capable of offering scalable 32- and 64‑bit computing, high-bandwidth memory design and lightning-fast PCI-E bus implementation' in clause 7.
+* <<b-OCP_MB>> provides CPU replacement as 'The motherboard uses Intel Xeon E5-2600 v3 (LGA2011-3) Product Family processors with TDP up to 145W. The features listed below must be supported by the motherboard: Support two Intel Xeon E5-2600 v3 (LGA2011‑3) Product Family processors up to 145W TDP and vendors should engage with Intel to ensure the design ready for future processors; Two full-width Intel QPI links up to 9.6 GT/s/direction; Up to 18 cores per CPU (up to 36 threads with Hyper-Threading Technology). Up to 45MB last level cache; Single Processor mode is supported' in clause 5.3.1.
 
 | *3*
 | *Multiple CPUs*
@@ -1040,7 +978,7 @@ a|
 * <<b-OCP_G1>> provides Low power consumption of CPU as 'The motherboard shall be designed to handle a processor with a maximum TDP of 190W CPU' in clause 7.3.1
 * <<b-OCP_DSBS>> provides Low power consumption of CPU as 'Support up to two processors with a thermal design point (TDP) of up to 135 W' in clause 4.
 * <<b-OCP_AMBH>> provides Low power consumption of CPU as 'The CPU VRM is optimized to reduce cost and increase the efficiency of the power conversion system' in clause 9.1.5.
-* <<b-OCP_DSBS>> provides Low power consumption of CPUas 'Support up to two processors using LGA2011-3 (socket type R3) and VRD 12.5 and a thermal design point (TDP) of up to 145W' in clause 4.
+* <<b-OCP_DSBS>> provides Low power consumption of CPU as 'Support up to two processors using LGA2011-3 (socket type R3) and VRD 12.5 and a thermal design point (TDP) of up to 145W' in clause 4.
 * <<b-OCP_IMBH>> provides Low power consumption of CPU as 'The motherboard uses next generation Intel Xeon processor E5-2600 product family CPUs with a TDP (thermal design power) up to 115W' in clause 4.3.
 * <<b-OCP_IMBH>> provides Low power consumption of CPU as 'Two to monitor temperatures for CPU0 and CPU1, retrieved through the CPU's temperature sensor interface (PECI)' in clause 6.1.
 * <<b-OCP_MB>> provides Low power consumption of CPU as 'The motherboard uses Intel Xeon E5-2600 v3 (LGA2011-3) Product Family processors with TDP up to 145W. The features listed below must be supported by the motherboard: Support two Intel Xeon E5‑2600 v3 (LGA2011-3) Product Family processors up to 145W TDP and vendors should engage with Intel to ensure the design ready for future processors; Two full-width Intel QPI links up to 9.6 GT/s/direction; Up to 18 cores per CPU (up to 36 threads with Hyper‑Threading Technology). Up to 45MB last level cache; Single Processor mode is supported' in clause 5.3.1.
@@ -1051,33 +989,33 @@ a|
 
 a|
 * <<b-OCP_2S>> provides hardware-assisted memory virtualization as 'Setting for the watchdog timer: The default setting for EVT/DVT/PVT is disabled. The default setting for MP is enabled. The timeout value is 15 minutes and reset the system after the timer expires. The watchdog timer is always disabled after POST' in clause6.3.2.
-* <<b-OCP_HSAS>> provides hardware-assisted memory virtualizationas 'The motherboard is designed to support dual Intel Xeon E5-2600 v3 and v4 series processors and up to 2048GB LRDIMM 3DS/1024GB LRDIMM/ 512GB RDIMM DDR4 memory. Leveraging advanced technology from Intel, the motherboard is capable of offering scalable 32- and 64- bit computing, high-bandwidth memory design and lightning-fast PCI-E bus implementation' in clause 7.
+* <<b-OCP_HSAS>> provides hardware-assisted memory virtualization as 'The motherboard is designed to support dual Intel Xeon E5-2600 v3 and v4 series processors and up to 2048GB LRDIMM 3DS/1024GB LRDIMM/ 512GB RDIMM DDR4 memory. Leveraging advanced technology from Intel, the motherboard is capable of offering scalable 32- and 64- bit computing, high-bandwidth memory design and lightning-fast PCI-E bus implementation' in clause 7.
 * <<b-OCP_IMBH>> provides hardware-assisted memory virtualization as 'The Efficiency Performance motherboard, built with the Intel Xeon E5-2600 processor, was originally was code-named the Sandy Bridge‑EP motherboard' in clause 4.
-* <<b-OCP_OAPM>> provides hardware-assisted memory virtualizationas 'AMD EPYC platform' in clause 5.
-* <<b-OCP_MB>> provides hardware-assisted memory virtualizationas 'Intel Motherboard V3.1 (also referred to "motherboard" or "the motherboard" in this document, unless noted otherwise) is based on Intel Xeon Processor E5-2600 v3 (formerly code-named Haswell‑EP processor) product family CPU architecture' in clause 4.1.
+* <<b-OCP_OAPM>> provides hardware-assisted memory virtualization as 'AMD EPYC platform' in clause 5.
+* <<b-OCP_MB>> provides hardware-assisted memory virtualization as 'Intel Motherboard V3.1 (also referred to "motherboard" or "the motherboard" in this document, unless noted otherwise) is based on Intel Xeon Processor E5-2600 v3 (formerly code-named Haswell‑EP processor) product family CPU architecture' in clause 4.1.
 
 | *6*
 | *Memory replacement*
 
 a|
 * <<b-OCP_2S>> provides memory replacement as 'Besides traditional DDR4 DIMM, the motherboard shall support Non-Volatile DIMM (NVDIMM) on all DIMM slots' in clause 5.3.3.
-* <<b-OCP_DSBS>> provides memory replacementas 'Memory Expansion :16 sockets for un-buffered DDR3 and registered DDR3 DIMMS' and 'Provide 16 sockets for DDR4 DIMMS' in clause 4.
-* <<b-OCP_G1>> provides memory replacementas '4 DDR3 Memory channels per memory buffer; total 32 DDR3 RDIMMs, 1333 MHz (1DPC), 8/16/32GB' in clause 6.1.
-* <<b-OCP_HSAS>> provides memory replacementas 'The motherboard is designed to support dual Intel Xeon E5-2600 v3 and v4 series processors and up to 2048GB LRDIMM 3DS/1024GB LRDIMM/ 512GB RDIMM DDR4 memory. Leveraging advanced technology from Intel, the motherboard is capable of offering scalable 32- and 64‑ bit computing, high-bandwidth memory design and lightning-fast PCI-E bus implementation' in clause 7.
-* <<b-OCP_MB>> provides memory replacementas 'The motherboard has DIMM subsystem designed as below: DDR4 direct attach memory support on CPU0 and CPU1; 4x channels DDR4 registered memory interface on each CPU; 2x DDR4 slots per channel (total 16 DIMM); Support RDIMM, LRDIMM; Support SR, DR and QR DIMM; Support DDR4 speeds of 1600/1866/2133; Up to maximum 1024 GB with 64GB DIMMs; Follow updated JEDEC DDR4 specification with 288 pin DIMM socket' in clause 5.3.2.
+* <<b-OCP_DSBS>> provides memory replacement as 'Memory Expansion :16 sockets for un-buffered DDR3 and registered DDR3 DIMMS' and 'Provide 16 sockets for DDR4 DIMMS' in clause 4.
+* <<b-OCP_G1>> provides memory replacement as '4 DDR3 Memory channels per memory buffer; total 32 DDR3 RDIMMs, 1333 MHz (1DPC), 8/16/32GB' in clause 6.1.
+* <<b-OCP_HSAS>> provides memory replacement as 'The motherboard is designed to support dual Intel Xeon E5-2600 v3 and v4 series processors and up to 2048GB LRDIMM 3DS/1024GB LRDIMM/ 512GB RDIMM DDR4 memory. Leveraging advanced technology from Intel, the motherboard is capable of offering scalable 32- and 64‑ bit computing, high-bandwidth memory design and lightning-fast PCI-E bus implementation' in clause 7.
+* <<b-OCP_MB>> provides memory replacement as 'The motherboard has DIMM subsystem designed as below: DDR4 direct attach memory support on CPU0 and CPU1; 4x channels DDR4 registered memory interface on each CPU; 2x DDR4 slots per channel (total 16 DIMM); Support RDIMM, LRDIMM; Support SR, DR and QR DIMM; Support DDR4 speeds of 1600/1866/2133; Up to maximum 1024 GB with 64GB DIMMs; Follow updated JEDEC DDR4 specification with 288 pin DIMM socket' in clause 5.3.2.
 
 | *7*
 | *Memory reliability*
 
 a|
 * <<b-OCP_2S>> provides memory reliability as 'Setting for ECC error threshold: Available settings are 1, 4, 10 and 1000. The default setting is 1 for EVT, DVT and PVT and 1000 for MP. Setting for ECC error event log threshold: Available settings are disabled, 10, 50, 100. The default setting is 10' in clause 6.3.2.
-* <<b-OCP_2S>> provides memory reliabilityas 'Both correctable ECC and uncorrectable ECC errors should be logged into SEL. Each log entry should indicate location of DIMM by CPU socket#, Channel # and slot #. Memory error reporting need to be tested by both XDP injection and reworked ECC DIMM' in clause 9.11.1.
-* <<b-OCP_AMBH>> provides memory reliabilityas 'Setting for ECC error threshold, available settings are 1, 4, 10 and 1000' in clause 5.5.
-* <<b-OCP_AMBH>> provides memory reliabilityas 'CPU/memory errors: Both correctable ECC and uncorrectable ECC errors should be logged into event log. Error categories include DRAM, HyperTransport Link and L3 Cache' in clause 5.10.1.
+* <<b-OCP_2S>> provides memory reliability as 'Both correctable ECC and uncorrectable ECC errors should be logged into SEL. Each log entry should indicate location of DIMM by CPU socket#, Channel # and slot #. Memory error reporting need to be tested by both XDP injection and reworked ECC DIMM' in clause 9.11.1.
+* <<b-OCP_AMBH>> provides memory reliability as 'Setting for ECC error threshold, available settings are 1, 4, 10 and 1000' in clause 5.5.
+* <<b-OCP_AMBH>> provides memory reliability as 'CPU/memory errors: Both correctable ECC and uncorrectable ECC errors should be logged into event log. Error categories include DRAM, HyperTransport Link and L3 Cache' in clause 5.10.1.
 * <<b-OCP_HSCH>> provides memory reliability as 'Memory Correctable ECC: The threshold value is 1000. When the threshold is reached, the BIOS logs the event and includes the physical DIMM location.' in clause 8.5.10.
-* <<b-OCP_IMBH>> provides memory reliabilityas 'DDR3 direct attached memory support on cpu0 and cpu1 with: 4 channel DDR3 registered memory interface on processors 0 and 1; 2 DDR3 slots per channel per processor (total of 16 DIMMs on the motherboard); RDIMM/LV‑RDIMM (1.5V/1.35V), LRDIMM and ECC UDIMM/LV-UDIMM(1.5V/1.35V); Single, dual and quad rank DIMMs ; DDR3 speeds of 800/1066/1333/1600 MHz; Up to maximum 512 GB memory with 32GB RDIMM DIMMs' in clause4.3.
-* <<b-OCP_IMBH>> provides memory reliabilityas 'CPU/Memory errors: Both correctable ECC and un-correctable ECC errors should be logged into the event log. Error categories include DRAM, Link and L3 cache' in clause 5.9.1.
-* <<b-OCP_IMBH>> provides memory reliabilityas 'Memory Correctable ECC: The threshold value is 1000. When the threshold is reached, the BIOS should log the event including DIMM location information and output DIMM location code through the debug card' in clause 5.9.2.
+* <<b-OCP_IMBH>> provides memory reliability as 'DDR3 direct attached memory support on cpu0 and cpu1 with: 4 channel DDR3 registered memory interface on processors 0 and 1; 2 DDR3 slots per channel per processor (total of 16 DIMMs on the motherboard); RDIMM/LV‑RDIMM (1.5V/1.35V), LRDIMM and ECC UDIMM/LV-UDIMM(1.5V/1.35V); Single, dual and quad rank DIMMs ; DDR3 speeds of 800/1066/1333/1600 MHz; Up to maximum 512 GB memory with 32GB RDIMM DIMMs' in clause4.3.
+* <<b-OCP_IMBH>> provides memory reliability as 'CPU/Memory errors: Both correctable ECC and un-correctable ECC errors should be logged into the event log. Error categories include DRAM, Link and L3 cache' in clause 5.9.1.
+* <<b-OCP_IMBH>> provides memory reliability as 'Memory Correctable ECC: The threshold value is 1000. When the threshold is reached, the BIOS should log the event including DIMM location information and output DIMM location code through the debug card' in clause 5.9.2.
 
 | *8*
 | *Supporting various types of memory*
@@ -1097,45 +1035,45 @@ a|
 * <<b-OCP_1S>> provides multiple interfaces for storage as 'The Twin Lakes 1S server implements primary and extension x16 PCIe edge connectors as defined in the 1S server specification. The primary x16 PCIe edge connector supports: • PCIe Gen3 ports • A 10GBase-KR • A SATA port • A USB 2.0 port • A Universal Asynchronous Receiver/Transmitter (UART)' in clause 3.
 * <<b-OCP_1S>> provides multiple interfaces for storage as 'The Twin Lakes 1S server supports three on-card Solid State Drives (SSDs) in the 2280 or 22110 M.2 form factor' in clause 3.
 * <<b-OCP_1S>> provides multiple interfaces for storage as 'The Twin Lakes 1S server supports three M.2 solid-state drives in 2280 or 22110 form factors. Boot M.2 slot is only available in 2280 form factor and it can be configured as either SATA or PCIe interface through BOM options, but not both. A minimum 256GB M.2 SATA or NVMe SSD is required as a boot device and for logging purpose. Two additional SSD drives are designed in to support applications that require high disk performance. These two M.2 slots only support PCIe X4 links but both support SSD drives in 2280 or 22110 form factors' in clause 9.4.
-* <<b-OCP_2S>> provides multiple interfaces for storageas 'Following internal connectors should be placed as close as possible to front of the board in order to have easy front access: 1x vertical combo SATA signal and power connector; 1x 14-pin Debug card header; 1X right angle USB3 Type A connector; 1X SMD switch to enable/disable Intel Intel At Scale Debug; 1x M.2 connector with 2280 and 22110 support; 1x RJ45; 1x USB type C; 1X customized VGA connector' in clause 5.2.
-* <<b-OCP_2S>> provides multiple interfaces for storageas 'The motherboard uses Intel PCH chipset, which supports following features: 4x USB 3.0/2.0 ports: one type A for front connector; one type C for front connector; one for BMC in-band firmware update; one to X32 riser connector; 1x M.2 connector; 1x individual SATA 6Gps port; 1x miniSAS HD x8 port or 1x miniSAS HD x4 port; 1x PCIe x4 ports to M.2 connector, colayout with SATA port to M.2 connector; SPI interface, mux with BMC to enable BMC the capability to perform BIOS upgrade and recovery; SPI interface for TPM header' in clause5.4.
-* <<b-OCP_2S>> provides multiple interfaces for storageas 'The motherboard has Intel PCH on board. Intel PCH has a SATA controller support 8x SATA3 ports and an sSATA controller support 6x SATA3 ports' in clause 11.6.
-* <<b-OCP_AMBH>> provides multiple interfaces for storageas 'PCI-E x16 Slot/Riser Card; PCI-E Mezzanine Card; PCI-E External Connector; SATA' in clauses 10.1,10.2,10.3, 10.7.
-* <<b-OCP_BS>> provides multiple interfaces for storageas 'PCIe Expansion Slot; SATA hot-plug drives' in clause 2, Table 2-1.
-* <<b-OCP_DSBS>> provides multiple interfaces for storageas 'Storage: Two single port AHCI SATA connectors capable of supporting up to 6 Gb/sec; Two SCU 4-port mini-SAS connectors capable of supporting up to 3 Gb/sec SATA/SAS; Two 4-port mini HD connectors capable of supporting up to 6 Gb/sec SATA' and 'Support for PCI Express* 225W/300W High Power Card Electromechanical Specification 1.0' in clause 4, Tables 1 and 2.
-* <<b-OCP_G1>> provides multiple interfaces for storageas '15x 12Gb/s SAS or 6Gb/s SATA 2.5' drive slots, up to 15mm thickness, connected via SEB, to an onboard HBA. One M.2 SATA slot, also on board.' and '1 x 16 Gen3 FH/FL, 2 x8 Gen3 LP/HL, 1 x8 OCP Mez with front Panel access, 1 x8 PCIe OCP Mez in a non-front-accessible internal slot to support SAS HBA or Raid-on-Chip with SuperCap' in clause 6.1.
-* <<b-OCP_HSAS>> provides multiple interfaces for storageas '▪ Intel C612 Controller;▪ (2) discrete SATA 7pin for SATA4 and SATA5;▪ (2) MiniSAS SFF-8087 for SATA0~SATA3, sSATA0~sSATA3;▪ 6.0Gb/s speed;▪ SATA SGPIO supported;▪ RAID 0/1/10/5 (Intel RST);▪ (4) Internal MiniSASHD SFF-8643 connectors (Optional)' in clause 8.
-* <<b-OCP_HSCH>> provides multiple interfaces for storageas 'The SATA connections are a minimum of SATA2.0 (3Gb/s) and may be SATA3.0 (6Gb/s).The PCIe connection is a minimum of PCIe 2.0 and may be PCIe 3.0' in clauses 6.4 and 6.5.
-* <<b-OCP_OAPM>> provides multiple interfaces for storageas 'SATA, and PCI-Express Expansion' in clause 5.
-* <<b-OCP_MB>> provides multiple interfaces for storageas 'The mo6erboard uses Intel C610 series chipset, which supports following features: 3x USB 3.0/2.0 ports: one for front connector; one for optional vertical on board connector; one for BMC in-band firmware update; 1x mSATA connector from SATA port 4 co-layout with M.2 connector; 1x individual SATA 6Gps ports from SATA port 5; 1x miniSAS port from SATA port 0/1/2/3, 1x miniSAS port from sSATA0/1/2/3; 1x PCIe x4 ports to M.2 connector; SPI interface, connect to BMC to enable BMC the capability to perform BIOS upgrade and recovery; SMBUS interface (master and slave); Intel Server Platform Services (SPS) 3.0 Firmware with Intel Node Manager' in clause 5.4.
+* <<b-OCP_2S>> provides multiple interfaces for storage as 'Following internal connectors should be placed as close as possible to front of the board in order to have easy front access: 1x vertical combo SATA signal and power connector; 1x 14-pin Debug card header; 1X right angle USB3 Type A connector; 1X SMD switch to enable/disable Intel Intel At Scale Debug; 1x M.2 connector with 2280 and 22110 support; 1x RJ45; 1x USB type C; 1X customized VGA connector' in clause 5.2.
+* <<b-OCP_2S>> provides multiple interfaces for storage as 'The motherboard uses Intel PCH chipset, which supports following features: 4x USB 3.0/2.0 ports: one type A for front connector; one type C for front connector; one for BMC in-band firmware update; one to X32 riser connector; 1x M.2 connector; 1x individual SATA 6Gps port; 1x miniSAS HD x8 port or 1x miniSAS HD x4 port; 1x PCIe x4 ports to M.2 connector, colayout with SATA port to M.2 connector; SPI interface, mux with BMC to enable BMC the capability to perform BIOS upgrade and recovery; SPI interface for TPM header' in clause5.4.
+* <<b-OCP_2S>> provides multiple interfaces for storage as 'The motherboard has Intel PCH on board. Intel PCH has a SATA controller support 8x SATA3 ports and an sSATA controller support 6x SATA3 ports' in clause 11.6.
+* <<b-OCP_AMBH>> provides multiple interfaces for storage as 'PCI-E x16 Slot/Riser Card; PCI-E Mezzanine Card; PCI-E External Connector; SATA' in clauses 10.1,10.2,10.3, 10.7.
+* <<b-OCP_BS>> provides multiple interfaces for storage as 'PCIe Expansion Slot; SATA hot-plug drives' in clause 2, Table 2-1.
+* <<b-OCP_DSBS>> provides multiple interfaces for storage as 'Storage: Two single port AHCI SATA connectors capable of supporting up to 6 Gb/sec; Two SCU 4-port mini-SAS connectors capable of supporting up to 3 Gb/sec SATA/SAS; Two 4-port mini HD connectors capable of supporting up to 6 Gb/sec SATA' and 'Support for PCI Express* 225W/300W High Power Card Electromechanical Specification 1.0' in clause 4, Tables 1 and 2.
+* <<b-OCP_G1>> provides multiple interfaces for storage as '15x 12Gb/s SAS or 6Gb/s SATA 2.5' drive slots, up to 15mm thickness, connected via SEB, to an onboard HBA. One M.2 SATA slot, also on board.' and '1 x 16 Gen3 FH/FL, 2 x8 Gen3 LP/HL, 1 x8 OCP Mez with front Panel access, 1 x8 PCIe OCP Mez in a non-front-accessible internal slot to support SAS HBA or Raid-on-Chip with SuperCap' in clause 6.1.
+* <<b-OCP_HSAS>> provides multiple interfaces for storage as '▪ Intel C612 Controller;▪ (2) discrete SATA 7pin for SATA4 and SATA5;▪ (2) MiniSAS SFF-8087 for SATA0-SATA3, sSATA0-sSATA3;▪ 6.0Gb/s speed;▪ SATA SGPIO supported;▪ RAID 0/1/10/5 (Intel RST);▪ (4) Internal MiniSASHD SFF-8643 connectors (Optional)' in clause 8.
+* <<b-OCP_HSCH>> provides multiple interfaces for storage as 'The SATA connections are a minimum of SATA2.0 (3Gb/s) and may be SATA3.0 (6Gb/s).The PCIe connection is a minimum of PCIe 2.0 and may be PCIe 3.0' in clauses 6.4 and 6.5.
+* <<b-OCP_OAPM>> provides multiple interfaces for storage as 'SATA, and PCI-Express Expansion' in clause 5.
+* <<b-OCP_MB>> provides multiple interfaces for storage as 'The motherboard uses Intel C610 series chipset, which supports following features: 3x USB 3.0/2.0 ports: one for front connector; one for optional vertical on board connector; one for BMC in-band firmware update; 1x mSATA connector from SATA port 4 co-layout with M.2 connector; 1x individual SATA 6Gps ports from SATA port 5; 1x miniSAS port from SATA port 0/1/2/3, 1x miniSAS port from sSATA0/1/2/3; 1x PCIe x4 ports to M.2 connector; SPI interface, connect to BMC to enable BMC the capability to perform BIOS upgrade and recovery; SMBUS interface (master and slave); Intel Server Platform Services (SPS) 3.0 Firmware with Intel Node Manager' in clause 5.4.
 
 | *10*
 | *Storage replacement*
 
 a|
 * <<b-OCP_1S>> provides storage replacement as 'The carrier assembly includes 2x ejectors which are used for card injection/ejection into the PCIe connectors' in clause 5.1.
-* <<b-OCP_1S>> provides storage replacementas 'The Twin Lakes 1S server supports three M.2 solid-state drives in 2280 or 22110 form factors. Boot M.2 slot is only available in 2280 form factor and it can be configured as either SATA or PCIe interface through BOM options, but not both. A minimum 256GB M.2 SATA or NVMe SSD is required as a boot device and for logging purpose. Two additional SSD drives are designed in to support applications that require high disk performance. These two M.2 slots only support PCIe X4 links but both support SSD drives in 2280 or 22110 form factors' in clause9.4.
+* <<b-OCP_1S>> provides storage replacement as 'The Twin Lakes 1S server supports three M.2 solid-state drives in 2280 or 22110 form factors. Boot M.2 slot is only available in 2280 form factor and it can be configured as either SATA or PCIe interface through BOM options, but not both. A minimum 256GB M.2 SATA or NVMe SSD is required as a boot device and for logging purpose. Two additional SSD drives are designed in to support applications that require high disk performance. These two M.2 slots only support PCIe X4 links but both support SSD drives in 2280 or 22110 form factors' in clause9.4.
 * <<b-OCP_2S>> provides storage replacement as 'The motherboard uses Intel PCH chipset, which supports following features: 4x USB 3.0/2.0 ports: one type A for front connector; one type C for front connector; one for BMC in-band firmware update; one to X32 riser connector; 1x M.2 connector; 1x individual SATA 6Gps port; 1x miniSAS HD x8 port or 1x miniSAS HD x4 port; 1x PCIe x4 ports to M.2 connector, colayout with SATA port to M.2 connector; SPI interface, mux with BMC to enable BMC the capability to perform BIOS upgrade and recovery; SPI interface for TPM header' in clause5.4.
-* <<b-OCP_AMBH>> provides storage replacementas 'PCI-E x16 Slot/Riser Card; PCI-E Mezzanine Card; PCI-E External Connector; SATA' in clauses 10.1,10.2,10.3 and 10.7.
-* <<b-OCP_BS>> provides storage replacementas 'PCIe Expansion Slot; SATA hot-plug drives' in clause 2, Table 2-1.
-* <<b-OCP_DSBS>> provides storage replacementas 'Storage: Two single port AHCI SATA connectors capable of supporting up to 6 Gb/sec; Two SCU 4-port mini-SAS connectors capable of supporting up to 3 Gb/sec SATA/SAS; Two 4-port mini HD connectors capable of supporting up to 6 Gb/sec SATA' and 'Support for PCI Express* 225W/300W High Power Card Electromechanical Specification 1.0' in clause 4, Tables 1 and 2.
-* <<b-OCP_HSAS>> provides storage replacementas '▪ Intel C612 Controller;▪ (2) discrete SATA 7pin for SATA4 and SATA5;▪ (2) MiniSAS SFF-8087 for SATA0~SATA3, sSATA0~sSATA3;▪ 6.0Gb/s speed;▪ SATA SGPIO supported;▪ RAID 0/1/10/5 (Intel RST);▪ (4) Internal MiniSASHD SFF-8643 connectors (Optional)' in clause 8.
-* <<b-OCP_HSCH>> provides storage replacementas 'The BIOS is tuned to minimize card power consumption. It has the following features: • Unused devices are disabled including PCIe* lanes, USB ports, SATA/SAS ports, etc;• BIOS setup menu;• SOC settings are provided to allow tuning to achieve the optimal combination of performance and power consumption' in clause 8.5.2.
-* <<b-OCP_MB>> provides storage replacementas 'The motherboard uses Intel C610 series chipset, which supports following features: 3x USB 3.0/2.0 ports: one for front connector; one for optional vertical onboard connector; one for BMC in-band firmware update; 1x mSATA connector from SATA port 4 co-layout with M.2 connector; 1x individual SATA 6Gps ports from SATA port 5; 1x miniSAS port from SATA port 0/1/2/3, 1x miniSAS port from sSATA0/1/2/3; 1x PCIe x4 ports to M.2 connector; SPI interface, connect to BMC to enable BMC the capability to perform BIOS upgrade and recovery; SMBUS interface (master and slave); Intel Server Platform Services (SPS) 3.0 Firmware with Intel Node Manager' in clause 5.4.
+* <<b-OCP_AMBH>> provides storage replacement as 'PCI-E x16 Slot/Riser Card; PCI-E Mezzanine Card; PCI-E External Connector; SATA' in clauses 10.1,10.2,10.3 and 10.7.
+* <<b-OCP_BS>> provides storage replacement as 'PCIe Expansion Slot; SATA hot-plug drives' in clause 2, Table 2-1.
+* <<b-OCP_DSBS>> provides storage replacement as 'Storage: Two single port AHCI SATA connectors capable of supporting up to 6 Gb/sec; Two SCU 4-port mini-SAS connectors capable of supporting up to 3 Gb/sec SATA/SAS; Two 4-port mini HD connectors capable of supporting up to 6 Gb/sec SATA' and 'Support for PCI Express* 225W/300W High Power Card Electromechanical Specification 1.0' in clause 4, Tables 1 and 2.
+* <<b-OCP_HSAS>> provides storage replacement as '▪ Intel C612 Controller;▪ (2) discrete SATA 7pin for SATA4 and SATA5;▪ (2) MiniSAS SFF-8087 for SATA0~SATA3, sSATA0~sSATA3;▪ 6.0Gb/s speed;▪ SATA SGPIO supported;▪ RAID 0/1/10/5 (Intel RST);▪ (4) Internal MiniSASHD SFF-8643 connectors (Optional)' in clause 8.
+* <<b-OCP_HSCH>> provides storage replacement as 'The BIOS is tuned to minimize card power consumption. It has the following features: • Unused devices are disabled including PCIe* lanes, USB ports, SATA/SAS ports, etc;• BIOS setup menu;• SOC settings are provided to allow tuning to achieve the optimal combination of performance and power consumption' in clause 8.5.2.
+* <<b-OCP_MB>> provides storage replacement as 'The motherboard uses Intel C610 series chipset, which supports following features: 3x USB 3.0/2.0 ports: one for front connector; one for optional vertical onboard connector; one for BMC in-band firmware update; 1x mSATA connector from SATA port 4 co-layout with M.2 connector; 1x individual SATA 6Gps ports from SATA port 5; 1x miniSAS port from SATA port 0/1/2/3, 1x miniSAS port from sSATA0/1/2/3; 1x PCIe x4 ports to M.2 connector; SPI interface, connect to BMC to enable BMC the capability to perform BIOS upgrade and recovery; SMBUS interface (master and slave); Intel Server Platform Services (SPS) 3.0 Firmware with Intel Node Manager' in clause 5.4.
 
 | *11*
 | *Storage redundancy hardware*
 
 a|
 * <<b-OCP_HSAS>> provides storage redundancy hardware as 'Storage: RAID 0/1/10/5 (Intel RST)' in clause 8.
-* <<b-OCP_SJ>> provides Storage redundancy hardwareas 'SATA RAID KEY: 1x4' in clause 6.12.
+* <<b-OCP_SJ>> provides Storage redundancy hardware as 'SATA RAID KEY: 1x4' in clause 6.12.
 
 | *12*
 | *Storage hibernation*
 
 a|
 * <<b-OCP_2S>> provides storage hibernation as 'Disable any unused devices, such as unused PCI, PCIe ports, USB ports, SATA/SAS ports, clock generator and buffer ports' in clause 6.3.1.
-* <<b-OCP_HSCH>> provides storage hibernationas 'The BIOS is tuned to minimize card power consumption. It has the following features: • Unused devices are disabled including PCIe* lanes, USB ports, SATA/SAS ports, etc.; • BIOS setup menu; • SOC settings are provided to allow tuning to achieve the optimal combination of performance and power consumption' in clause 8.5.2.
+* <<b-OCP_HSCH>> provides storage hibernation as 'The BIOS is tuned to minimize card power consumption. It has the following features: • Unused devices are disabled including PCIe* lanes, USB ports, SATA/SAS ports, etc.; • BIOS setup menu; • SOC settings are provided to allow tuning to achieve the optimal combination of performance and power consumption' in clause 8.5.2.
 * <<b-OCP_MB>> provides storage hibernation as 'The BIOS should be tuned to minimize system power consumption and maximize performance. This includes: Disable any unused devices, such as unused PCI, PCIe ports, USB ports, SATA/SAS ports, clock generator and buffer ports. Tuning CPU/Chipset settings to reach minimized power consumption and best performance in a data centre environment' in clause 6.3.1.
 
 | *13*
@@ -1187,7 +1125,7 @@ a|
 * <<b-OCP_1S>> describes that the Twin Lakes 1S server recommend a power-capping implementation to reduce the server's power consumption (cut off power in certain time) in clause 8.4.
 * <<b-OCP_OAPM>> describe that the motherboard supports Emergency Power Reduction mechanism (PWRBRK#) for the x16 PCIe slots in clause 7.5.
 * <<b-OCP_OCTAM>> describes how the motherboard supports Emergency Power Reduction mechanism (PWRBRK#) for the x16 and x32PCIe slots in clause 7.5.
-* <<b-OCP_OMB>> describes how the motherboard supports Emergency Power Reduction mechanism (PWRBRK#) for the x16 PCIe slots in clause 6.5, the main purpose is to provide a power reduction mechanism for GPGPU cards as part of the throttleand power capping strategy.
+* <<b-OCP_OMB>> describes how the motherboard supports Emergency Power Reduction mechanism (PWRBRK#) for the x16 PCIe slots in clause 6.5, the main purpose is to provide a power reduction mechanism for GPGPU cards as part of the throttle and power capping strategy.
 * <<b-OCP_HSCH>> describes how the BIOS is tuned to minimize card power consumption. It has the following features: • Unused devices are disabled including PCIe* lanes, USB ports, SATA/SAS ports, etc.; • BIOS setup menu; • SOC settings are provided to allow tuning to achieve the optimal combination of performance and power consumption' in clause 8.5.2.
 * <<b-OCP_HSCH>> describes how each card must provide temperature sensors for the SOC, the SO-DIMM(s) (if they are used) and one ambient temperature sensor. All temperature readings for each sensor must be readable via the management sideband interface to the baseboard. Additionally, over-temperature thresholds are configurable and an alert mechanism is provided to enable thermal shutdown and/or an increase in airflow. The sensors are accurate to +/−3C' in clause 5.4.
 
@@ -1259,9 +1197,9 @@ a|
 a|
 * <<b-OCP_1S>> provides air flow set as 'The card level air baffle must be designed to help maintain temperatures of all major components on the server card by reducing bypass air and increasing airflow through key components' in clause 6.6.
 * <<b-OCP_2S>> provides airflow set as 'The unit of airflow (or volumetric flow) used for this spec is CFM (cubic feet per minute).The maximum allowable airflow per watt in the system must be 0.107' in clause10.2.26.
-* <<b-OCP_JBOG>> provides system airflow set as 'The unit of airflow (orvolumetric flow) used for this spec is CFM (cubic feet per minute). The maximum allowable airflow per watt in the system must be 0.14 at sea level' in clause 8.2.3.
+* <<b-OCP_JBOG>> provides system airflow set as 'The unit of airflow (or volumetric flow) used for this spec is CFM (cubic feet per minute). The maximum allowable airflow per watt in the system must be 0.14 at sea level' in clause 8.2.3.
 * <<b-OCP_SJ>> provides cooling set as 'To meet thermal reliability requirement, the thermal and cooling solution should dissipate heat from the components when system operating at its maximum thermal power' in clause 11.
-* <<b-OCP_Yose>> provides airflow set as 'The unit of airflow (orvolumetric flow) used for this spec is cubic feet per minute (CFM)' in clause 8.2.5.
+* <<b-OCP_Yose>> provides airflow set as 'The unit of airflow (or volumetric flow) used for this spec is cubic feet per minute (CFM)' in clause 8.2.5.
 
 | *28*
 | *Interconnect network supports*
@@ -1299,7 +1237,7 @@ a|
 a|
 * <<b-OCP_1S>> provides temperature and power sensors set as 'Each card must provide following sensors: Temperature sensors for SOC, DIMM, voltage regulators and other critical chips' in clause 6.5.
 * <<b-OCP_2S>> provides running monitor set as 'The vendor should implement BMC FW to support thermal monitoring, including processor, memory, chipset, VRs, PCIe card, Mezzanine cards, Inlet/outlet air temperature and airflow sensor' in clause 9.8.
-* <<b-OCP_AMBH>> provides memory reliabilityas 'Hardware health monitoring display' in clause 5.5.
+* <<b-OCP_AMBH>> provides memory reliability as 'Hardware health monitoring display' in clause 5.5.
 * <<b-OCP_JBOG>> provides monitor set as 'The BMC implemented is to have access to all analog sensors placed in the system and ensure that they are displayed in a sensor data record repository' in clause7.9.1.1.
 * <<b-OCP_Yose>> provides monitor set as 'During the entire hot-service process, the BMC shall monitor the thermal condition closely' in clause 5.2.
 * <<b-OCP_AMBH>> provides monitor set as 'The BMC can be used to monitor hardware and control fan speed' in clause 6.
@@ -1310,7 +1248,7 @@ a|
 
 a|
 * <<b-OCP_1S>> provides power operation set as 'The Twin Lakes 1S server can throttle itself down to lowest possible power state as quickly as possible when the platform asserts the FAST\_THROTTLE\_N signal or it receives request from BMC, or over power event reported by on-card power monitor' in clause 8.4，and 'The BMC controls power on, off and reset directly via the signals defined in the pin-out' in clause 9.7.13.
-* <<b-OCP_2S>> provides auto power on set as 'Motherboard should be set to restore last power state during AC on/off. This means that, when AC does on/off cycle, motherboard should power on automatically withoutrequiring power button' in clause 15.9.
+* <<b-OCP_2S>> provides auto power on set as 'Motherboard should be set to restore last power state during AC on/off. This means that, when AC does on/off cycle, motherboard should power on automatically without requiring power button' in clause 15.9.
 * <<b-OCP_JBOG>> provides power operation set as 'Support power on policy to be last-state, always-on and always-off upon recovery from an AC power loss event. T' in clause 7.7.
 * <<b-OCP_Yose>> provides auto power set as 'Now the user can replace the failed unit with a new one, BMC would automatically resume power and boot the new card' in clause 5.2.
 * <<b-OCP_OBIOS>> provides power controller set as 'The following actions are available on expiration of the Watchdog Timer: • System Reset• System Power Off• System Power Cycle• Pre-timeout Interrupt (OPTIONAL)' in clause 9.2.2.
@@ -1371,7 +1309,7 @@ a|
 | *Processing unit operation*
 
 a|
-* <<b-OCP_1S>> provides power operation as 'server shall have the power monitoring capability to read power consumptionreliably and accurately and can report a one-second average power reading with 3% accuracy' in clause 8.4.
+* <<b-OCP_1S>> provides power operation as 'server shall have the power monitoring capability to read power consumption reliably and accurately and can report a one-second average power reading with 3% accuracy' in clause 8.4.
 * <<b-OCP_2S>> provides monitoring information as 'BMC should implement thermal monitoring feature for PCIe card on riser and Mezzanine card. BMC reads the temperature of key components of PCIe and Mezzanine cards through its SMBus ports in the format as TMP421 temperature sensor. BMC' in clause 9.18.
 * <<b-OCP_AMBH>> provides monitoring information as 'The ODM needs to provide a system access interface and application to retrieve hardware monitoring sensor readings, including at minimum, lm\_sensors, a Linux application for the CentOS operating system and its driver' in clause 6.
 * <<b-OCP_AMBH>> provides power operation as 'The motherboard includes a power switch, reset switch, power LED, HDD activity LED and beep error LED' in clause 10.9.
@@ -1543,6 +1481,7 @@ a|
 * Workload offload (see <<io_device_requirements>>)
 * Hardware acceleration (see <<io_device_requirements>>)
 * Interface for monitoring power (see <<power_supply_requirements>>)
+
 |===
 
 [[table-ii-2]]
@@ -1671,6 +1610,7 @@ a|
 * Device driver and API supports (see <<io_interface_requirements>>)
 * Expansion of interconnect network (see <<scalability_requirements>>)
 * Network topology (see <<interconnect_network_requirements>>)
+
 |===
 
 [[table-ii-5]]
@@ -1753,6 +1693,7 @@ a|
 * Self-checking mechanism (see <<management_component_requirements>>)
 * Remote management (see <<operation_requirements>>)
 * Diagnostic of physical machine (see <<operation_requirements>>)
+
 |===
 
 [[table-ii-7]]
@@ -1846,6 +1787,7 @@ a|
 * Network topology (see <<interconnect_network_requirements>>)
 * Interconnect network supports (see <<interconnect_network_requirements>>)
 * Device driver and API supports (see <<io_interface_requirements>>)
+
 |===
 
 [[table-ii-9]]
