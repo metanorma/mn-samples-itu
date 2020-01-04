@@ -1247,7 +1247,7 @@ a|
 | *Automatically power operation*
 
 a|
-* <<b-OCP_1S>> provides power operation set as 'The Twin Lakes 1S server can throttle itself down to lowest possible power state as quickly as possible when the platform asserts the FAST\_THROTTLE\_N signal or it receives request from BMC, or over power event reported by on-card power monitor' in clause 8.4，and 'The BMC controls power on, off and reset directly via the signals defined in the pin-out' in clause 9.7.13.
+* <<b-OCP_1S>> provides power operation set as 'The Twin Lakes 1S server can throttle itself down to lowest possible power state as quickly as possible when the platform asserts the `FAST_THROTTLE_N` signal or it receives request from BMC, or over power event reported by on-card power monitor' in clause 8.4, and 'The BMC controls power on, off and reset directly via the signals defined in the pin-out' in clause 9.7.13.
 * <<b-OCP_2S>> provides auto power on set as 'Motherboard should be set to restore last power state during AC on/off. This means that, when AC does on/off cycle, motherboard should power on automatically without requiring power button' in clause 15.9.
 * <<b-OCP_JBOG>> provides power operation set as 'Support power on policy to be last-state, always-on and always-off upon recovery from an AC power loss event. T' in clause 7.7.
 * <<b-OCP_Yose>> provides auto power set as 'Now the user can replace the failed unit with a new one, BMC would automatically resume power and boot the new card' in clause 5.2.
@@ -1262,8 +1262,8 @@ a|
 
 a|
 * <<b-OCP_2S>> provides get selftest result set as 'Get Selftest Results (0x04) in clause 9.13.
-* <<b-OCP_TP>> provides selftest set as 'During system boot-up, POST (Power-On-SelfTest ) codes will be send to port 80 and decoded by the BMC to drive the LED display as described in section 8.5. P' in clause8.2.
-* <<b-OCP_OBIOS>> provides selftest set as 'Built-In Self-Test (BIST) The BIST\_ENABLE can be controlled by a BMC, GPO, strap or other mechanism. BIOS shall implement a platform policy to control BIST execution' in clause 4.12.
+* <<b-OCP_TP>> provides selftest set as 'During system boot-up, POST (Power-On-SelfTest) codes will be send to port 80 and decoded by the BMC to drive the LED display as described in section 8.5. P' in clause8.2.
+* <<b-OCP_OBIOS>> provides selftest set as 'Built-In Self-Test (BIST) The `BIST_ENABLE` can be controlled by a BMC, GPO, strap or other mechanism. BIOS shall implement a platform policy to control BIST execution' in clause 4.12.
 
 | *36*
 | *Provide I/O interface to administrator*
@@ -1336,14 +1336,14 @@ a|
 * <<b-ETSI_EVE007>> provide diagnostic of physical machine as 'the rack power subsystem should provide a means to report power system fault events' in clause 5.3.2.3.
 * <<b-OCP_2S>> provides error log as 'Error to be logged' in clause 9.11.1.
 * <<b-OCP_AMBH>> provides system log as 'The BIOS logs system events through the baseboard management controller (BMC)' in clause 5.10.
-* <<b-OCP_Yose>> provides event log as 'The vendor should implement the BMC to support storing events/logs from each 1S serverbaseboard, device carrier card and mezzanine card' in clause 6.15.
+* <<b-OCP_Yose>> provides event log as 'The vendor should implement the BMC to support storing events/logs from each 1S server base board, device carrier card and mezzanine card' in clause 6.15.
 * <<b-OCP_DSBS>> provides log as 'The Decathlete server board standard will define a minimal set of error handling and alerts. These features may become a section of this standard, or may be a standalone specification authored by the OCP Hardware Management project' in clause 9.
 
 | *43*
 | *Expansion of interconnect network*
 
 a|
-* <<b-OCP_Yose>> provides network connectivity as 'The network controller vendors offer Network Interface Cards (NICs) that support multi-host functions. These multi-host NICs provide network connectivity to multiple servers through a PCIe interface' in clause5.7.6.
+* <<b-OCP_Yose>> provides network connectivity as 'The network controller vendors offer Network Interface Cards (NICs) that support multi-host functions. These multi-host NICs provide network connectivity to multiple servers through a PCIe interface' in clause 5.7.6.
 * <<b-OCP_DSBS>> provides network connectors as 'The server board SHALL have one LAN device to support the RJ-45 network interface connectors' in clause 6.1.
 * <<b-OCP_NIC>> provides network interconnect as 'NC-SI over RBT capable OCP NIC 3.0 cards shall use a unique Package ID per ASIC when multiple ASICs share the single NC-SI physical interconnect to ensure there are no addressing conflicts' in clause 4.8.1.
 
