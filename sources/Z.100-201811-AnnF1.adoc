@@ -572,6 +572,8 @@ The following transition rule defines the behaviour of agent stem:["ag"] when re
 The precise meaning of the rule is given by its update set with respect to a state stem:[s], which is either stem:[{<< << "owner", << s(t) >> >>,  s("ag") >> }] for some token stem:[s(t)] available in stem:[s], if all further predicates stated in the if-then-constructor hold in stem:[s], or the empty update set otherwise.
 
 [[abbreviations]]
+// To avoid this being recognised as abbreviations
+[heading="Abbreviation Clause"]
 ===== Abbreviations
 
 Rules can be structured using _abbreviations_, consisting of _rule macros_ and _derived names_, which may have parameters. This allows for hierarchical definitions, and the stepwise refinement of complex rules, which supports the understanding of ASM model definitions.
