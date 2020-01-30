@@ -647,73 +647,73 @@ The OCP Server Project provides standardized server system specifications for sc
 
 | Twin Lakes 1S Server Design Specification V1.00 <<b-OCP_1S>>
 | This specification describes the design of the Twin Lakes 1S server based on the Intel Xeon Processor D-2191 System-on-a-Chip (SoC).
-| 2018
+^.^| 2018
 
 | Facebook 2S Server Tioga Pass Specification V1.0 <<b-OCP_2S>>
 | This specification describes Facebook dual sockets server Intel Motherboard v4.0
 (Project name: Tioga Pass) design and design requirement to integrate Tioga Pass into Open Rack V2.
-| 2018
+^.^| 2018
 
 | Big Basin-JBOG Specification V1.0 <<b-OCP_JBOG>>
 | This document describes technical specifications for Facebook's Big Basin-JBOG for use in Open Rack V2.
-| 2018
+^.^| 2018
 
 | Inspur Server Project San Jose V1.01 <<b-OCP_SJ>>
 | This document defines the technical specification for San Jose Motherboard and chassis used in Open Compute Project Open Rack V2.
-| 2017
+^.^| 2017
 
 | Facebook Multi-Node Server Platform: Yosemite V2 Design Specification V1.0 <<b-OCP_Yose>>
 | This specification describes the design of the Yosemite V2 Platform that hosts four One Socket (1S) servers, or two sets of 1S server/device card pairs.
-| 2017
+^.^| 2017
 
 | Facebook Server Intel Motherboard V4.0 Project Tioga Pass V0.30 <<b-OCP_TP>>
 | This specification describes Facebook dual sockets server Intel Motherboard v4.0 (Project name: Tioga Pass) design and design requirement to integrate Intel Motherboard v4.0 into Open Rack V2.
-| 2017
+^.^| 2017
 
 | Facebook Server Intel Motherboard V3.1 <<b-OCP_MB>>
 | This specification describes Intel Motherboard v3.0 design and design requirement to integrate Intel Motherboard v3.0 into Open Rack V11 and Open Rack V2.
-| 2016
+^.^| 2016
 
 | Open Rack- Intel Motherboard Hardware V2.0 <<b-OCP_IMBH>>
 | This document defines the technical specifications for the Intel motherboard used in Open Compute Project servers.
-| 2016
+^.^| 2016
 
 
 .2+| OpenRack v1
 
 | Open Rack- AMD Motherboard Hardware V2.0 <<b-OCP_AMBH>>
 | This document defines the technical specifications for the AMD motherboard used in Open Compute Project servers.
-| 2012
+^.^| 2012
 
 | Facebook server Fan Speed Control Interface Draft V0.1 <<b-OCP_FSCI>>
 | This document describes Facebook's FSC algorithm and its update methodology. Using the OpenIPMI fan speed control (FSC) is an intelligent method for controlling server fans to provide adequate cooling while managing thermal constraints and power efficiency. This document will help to manage FSC settings and FSC updates by using intelligent platform management interface (IPMI) commands to vary the fan control profile on either local or remote systems.
-| 2017
+^.^| 2017
 
 .6+| Olympus
 
 | Project Olympus AMD EPYC Processor Motherboard Specification <<b-OCP_OAPM>>
 | This specification describes the Project Olympus AMD Server Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
-| 2017
+^.^| 2017
 
 | Project Olympus Cavium ThunderX2 ARMx64 Motherboard Specification <<b-OCP_OCTAM>>
 | This specification focuses on the Project Olympus Cavium ThunderX2 ARMx64 Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
-| 2017
+^.^| 2017
 
 | Project Olympus 1U Server Mechanical Specification <<b-OCP_O1USM>>
 | This specification focuses on the Project Olympus full-width server mechanical assembly. It covers the mechanical features and supported components of the server, as well as the interfaces with the mechanical and power support structure.
-| 2017
+^.^| 2017
 
 | Project Olympus 2U Server Mechanical Specification <<b-OCP_O2USM>>
 | This specification focuses on the Project Olympus 2U server mechanical assembly. It covers the mechanical features and supported components of the server, as well as the interfaces with the mechanical and power support structure.
-| 2017
+^.^| 2017
 
 | Project Olympus Intel Xeon Scalable Processor BIOS Specification <<b-OCP_OBIOS>>
 | The System BIOS is an essential platform ingredient which is responsible for platform initialization that must be completed before booting of an operating system. Thus, the BIOS execution phase of the boot process is often referred to as pre‑boot phase.
-| 2017
+^.^| 2017
 
 | Project Olympus Intel Xeon Scalable Processor Motherboard Specification <<b-OCP_OMB>>
 | This specification describes the Project Olympus Intel Server Motherboard. This is an implementation specific specification under the Project Olympus Universal Motherboard Specification.
-| 2017
+^.^| 2017
 
 
 .10+| OCS
@@ -721,43 +721,43 @@ The OCP Server Project provides standardized server system specifications for sc
 
 | Open CloudServer OCS Programmable Server Adapter Mezzanine Programmables V1.0 <<b-OCP_OCSPSAM>>
 | This document defines physical and interface requirements for the programmable NIC mezzanine card that can be installed on an Open Cloud Server (OCS) server blade. This server adapter is programmable and provides CPU offload for Host‑based SDN, virtual switch data path and tunneling protocols.
-| 2016
+^.^| 2016
 
 | Open CloudServer OCS Chassis Manager Specification V2.1 <<b-OCP_OCSCM>>
 | This specification is an addendum to the OCS Open CloudServer Chassis Management v2.0 specification. It defines the requirements for the upgrade to the Chassis Manager v1.0 made necessary by end of production of the CPU.
-| 2016
+^.^| 2016
 
 | Open CloudServer OCS Blade Specification V2.1 <<b-OCP_OCSB>>
 | This document is intended for designers and engineers who will be building blades for an OCS system.
-| 2016
+^.^| 2016
 
 | Open CloudServer OCS Solid State Drive V2.1 <<b-OCP_OCSSSD>>
 | This specification, Open CloudServer Solid State Drive, OCS SSD, describes the low-cost, high‑performance flash-based storage devices deployed first in the Open CloudServer OCS Blade V2 specification. The OCS Blade V2 supports four PCI-Express riser cards and eight Open CloudServer Solid State Drive M.2 modules. The Table 1 briefly describes the required features.
-| 2015
+^.^| 2015
 
 | Open CloudServer OCS Power Supply V2.0 <<b-OCP_OCSPS>>
 | This specification, Open CloudServer Chassis Power Supply Version 2.0, describes the power supply family requirements for the Windows Cloud Server system. The mechanical interface and electrical interface is identical between power supply options to enable a common slot, universal, modular foundation power supply system to enable the Microsoft Windows Cloud Server systems.
-| 2015
+^.^| 2015
 
 | Open CloudServer SAS Mezzanine I/O specification V1.0 <<b-OCP_OCSSAS>>
 | This document outlines specifications for the Open CloudServer Storage Attached SCSI (SAS) mezzanine card.
-| 2015
+^.^| 2015
 
 | Open CloudServer JBOD specification V1.0 <<b-OCP_OCSJBOD>>
 | This document provides the technical specifications for the design of the 6G half-width JBOD blade for the Open CloudServer system.
-| 2015
+^.^| 2015
 
 | Open CloudServer OCS Tray Mezzanine Specification V2.0 <<b-OCP_OCSTRAY>>
 | This specification, Open CloudServer OCS Tray Mezzanine Version 2.0, describes the physical and interface requirements for the Open CloudServer (OCS) tray mezzanine card. The mezzanine card will be installed on the tray backplane and will have a Peripheral Component Interconnect Express (PCIe) x16 Gen3 interface. This interface can either be used as one x16, two x8, or four x4 channels.
-| 2015
+^.^| 2015
 
 | Open CloudServer Chassis Specification V2.0 <<b-OCP_OCSC>>
 | Describes the hardware used in the Version 2.0 (V2.0) OCS system, including the chassis, tray and systems management.
-| 2015
+^.^| 2015
 
 | Open CloudServer OCS NIC Mezzanine Specification V2.0 <<b-OCP_OCSNIC>>
 | This specification, Open CloudServer NIC Mezzanine Version 2.0, describes the physical and interface requirements for the Open CloudServer (OCS) NIC mezzanine card that to be installed on an OCS blade.
-| 2014
+^.^| 2014
 
 
 .2+| OCP Mezzanine
@@ -765,11 +765,11 @@ The OCP Server Project provides standardized server system specifications for sc
 
 | Mezzanine Card 2.0 Design Specification V1.0 <<b-OCP_MEZZ>>
 | Mezzanine card 2.0 specification is developed based on original OCP Mezzanine card. It extends the card mechanical and electrical interface to enable new uses cases for Facebook and other users in OCP community. The extension takes backward compatibility to existing OCP platforms designed for original OCP Mezzanine card specification V0.5 into consideration and some tradeoffs are made between backward compatibility and new requirements.
-| 2016
+^.^| 2016
 
 | Mezzanine Card for Intel v2.0 Motherboard <<b-OCP_MEZZMB>>
 | This document describes the mezzanine card design for use with Open Compute Project Intel v2.0 motherboards. The mezzanine card is installed on an Intel v2.0 OCP motherboard to provide extended functionality, such as support for 10GbE PCI-E devices.
-| 2012
+^.^| 2012
 
 
 .4+| 19" Server
@@ -777,58 +777,58 @@ The OCP Server Project provides standardized server system specifications for sc
 
 | QCT Big Sur Product Architecture Following Big Sur Specification V1.0 <<b-OCP_BS>>
 | The QCT Big Suris 4OU/21 "chassis which using IA-64 based dual-socket servers that support the Grantley–EP processors in combination with the Wellsburg PCH to provide a balanced feature set between technology leadership and cost. QCT Grantley platform will be 16DIMMsand supports 8 GPGPU cards and Max. 8x2.5" HDDs.
-| 2017
+^.^| 2017
 
 | Hyve Solutions Ambient Series-E V1.2 <<b-OCP_HSAS>>
 | This document defines the technical specifications for the Hyve Solutions Ambient Series-E server, including motherboard, chassis and power supply.
-| 2017
+^.^| 2017
 
 | QuantaGrid D51B-1U V1.1 <<b-OCP_QGD>>
 | The Quanta Grid D51B-1Uwill be IA-64 based dual-socket servers that support the Grantley–EP processors in combination with the Wellsburg PCH (PCH) to provide a balanced feature set between technology leadership and cost.
-| 2015
+^.^| 2015
 
 | Decathlete Server Board Standard V2.1 <<b-OCP_DSBS>>
 | This standard provides board-specific information detailing the features and functionality of a general purpose 2-socket server board for adoption by the Open Compute Project community. The purpose of this document is to define a dual socket server board that is capable of deployment in scale out data centres as well as traditional data centres with 19" rack enclosures.
-| 2013
+^.^| 2013
 
 
 .2+| SOC Boards
 | Panther+ Micro-Server Card Hardware V0.8 <<b-OCP_PMSCH>>
 
 | This document describes the technical specifications used in the design of an Intel Avoton SoC based Micro-Server card for Open Compute Project, known as the Panther+.
-| 2016
+^.^| 2016
 
 | Micro-Server Card Hardware V1.0 <<b-OCP_HSCH>>
 | This specification provides a common form factor for emerging micro-server and SOC (System-On-Chip) server designs.
-| 2016
+^.^| 2016
 
 
 .5+| Barreleye
 | Barreleye G2 Specification <<b-OCP_G2>>
 | This document describes the specifications for: Zaius POWER9 motherboard, Barreleye G2 server – 2OU, Zaius server – 1.5OU
-| 2017
+^.^| 2017
 
 | Barreleye G1 Specification <<b-OCP_G1>>
 | This document describes the specification of Barreleye, an OpenPOWER-based Open Compute server, with a mechanical and electrical package designed for Open Rack.
-| 2016
+^.^| 2016
 
 | Facebook, Microsoft, M.2 Carrier Card Design Specification V1.0 <<b-OCP_M2>>
 
 | This specification provides the requirements for a PCIe Full Height Half Length (FHHL) form factor card that supports up to four M.2 form factor solid-state drives (SSDs). The card shall support 110mm (Type 22110) or 80mm (Type 22080) dual sided M.2 modules.
-| 2018
+^.^| 2018
 
 | Facebook PCIe Retimer Card V1.1 <<b-OCP_PCIRC>>
 | This specification describes the design and design requirements for a PCIe add-in card that converts an internal PCIe connection to an external PCIe connection.
-| 2017
+^.^| 2017
 
 | Add-on-Card Thermal Interface Spec for Intel Motherboard V3.0 <<b-OCP_ACTI>>
 | The goal of this document is to define a standard interface for Facebook Intel motherboard V3.0 to poll thermal data from an add-on-card including Mezzanine card.
-| 2017
+^.^| 2017
 
 | Debug Card
 | OCP debug card with LCD spec V1.0 <<b-OCP_Debug>>
 | The specification defines the OCP Debug Card with LCD for a server system debug.
-| 2018
+^.^| 2018
 
 
 .2+| Mezz Card
@@ -836,11 +836,11 @@ The OCP Server Project provides standardized server system specifications for sc
 
 | 25G Dual Port OCP 2.0 NIC Mezzanine Card V1.0 <<b-OCP_25GDual>>
 | This document specifies a technical design implementation to define 25G Ethernet card which meets the requirements of OCP Mezzanine card 2.0 type-A design and the heat sink design could let this card to be able to deployment in OCP server or standard server.
-| 2018
+^.^| 2018
 
 | OCP NIC 3.0 Design Specification V0.8 <<b-OCP_NIC>>
 | The OCP NIC 3.0 specification is a follow-on to the OCP Mezz 2.0 rev 1.00 design specification. The OCP NIC 3.0 specification supports two basic card sizes: Small Card and Large Card. The Small Card allows for up to 16 PCIe lanes on the card edge while the Large Card supports up to 32 PCIe lanes.
-| 2018
+^.^| 2018
 
 |===
 
@@ -859,15 +859,15 @@ DMTF has developed specifications related to management interface, which are rel
 
 | Redfish Scalable Platforms ManagementAPI Specification <<b-DMTF_RFAPI>>
 | This specification is to define the protocols, data model and behaviors, as well as other architectural components needed for an interoperable, cross-vendor, remote and out-of-band capable interface that meets the expectations of Cloud and web-based IT professionals for scalable platform management. While large scale systems are the primary focus, the specifications are also capable of being used for more traditional system platform management implementations.
-| 2018-08-23
+^.^| 2018-08-23
 
 | Redfish Host Interface Specification <<b-DMTF_RFHI>>
 | This specification defines functional requirements for Redfish Host Interfaces. In the context of this document, the term "Host Interface" refers to interfaces that can be used by software running on a computer system to access the Redfish Service that is used to manage that computer system.
-| 2017-12-11
+^.^| 2017-12-11
 
 | Redfish Interoperability Profiles <<b-DMTF_RFP>>
 | The Redfish Interoperability Profile is a JSON document that contains Schema-level, Property‑level and Registry-level requirements. At the property level, these requirements can include a variety of conditions under which the requirement applies.
-| 2018-05-15
+^.^| 2018-05-15
 
 |===
 
@@ -885,7 +885,7 @@ The Storage Networking Industry Association (SNIA) is a non-profit organization 
 
 | SNIA Swordfish Specification V1.0.6 <<b-SNIA_SF>>
 | The Swordfish Scalable Storage Management API ("Swordfish") defines a RESTful interface and a standardized data model to provide a scalable, customer-centric interface for managing storage and related data services. It extends the Redfish Scalable Platforms Management API Specification (DSP0266) from the DMTF.
-| 2018-05-25
+^.^| 2018-05-25
 
 |===
 
@@ -905,7 +905,7 @@ The ETSI NFV EVE Working Group seeks to develop the necessary requirements to en
 
 | Hardware Interoperability Requirements Specification <<b-ETSI_EVE007>>
 | The document develops a set of normative interoperability requirements for the NFV hardware ecosystem and telecommunications physical environment to support NFV deployment.
-| 2017-03
+^.^| 2017-03
 
 |===
 
