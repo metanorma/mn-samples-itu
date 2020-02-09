@@ -974,8 +974,6 @@ NOTE: For example, on failure to the interactive device, the event action is set
 [appendix]
 == Relation among metadata tables
 
-(This annex forms an integral part of this Recommendation.)
-
 This annex describes the relations among metadata entities that are used in this Recommendation. These entities are 'client configuration', 'terminal device', 'terminal device status', 'terminal group', 'interactive device', 'content delivery server', 'log server', 'playlist schedule server', 'content delivery schedule', 'play log', 'playlist schedule', 'contents', 'playlist', 'screen layout', 'region' and 'event'.
 
 In <<figurea1>>, metadata entities including reference elements and the relations are described. The relations between two entities are derived from the "Support" attribute of reference elements in the metadata table, and the notation is as follows:

@@ -24,8 +24,8 @@ jobs:
           architecture: 'x64'
       - name: Update gems
         run: |
-          gem install bundler 
-          bundle update --bundler
+          gem install bundler -v "~> 2"
+          bundle update
           bundle install --jobs 4 --retry 3
       - name: Use Metanorma
         run: |
