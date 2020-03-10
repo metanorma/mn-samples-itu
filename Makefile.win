@@ -41,7 +41,7 @@ documents:
 	mkdir $@
 
 documents/%.xml: documents sources/images sources/%.xml
-	cp sources/$(addsuffix .*,$*) documents
+	mv sources/$(addsuffix .*,$*) documents
 
 %.xml %.html: %.adoc | bundle
 	${COMPILE_CMD} $^
@@ -102,7 +102,8 @@ $(foreach FORMAT,$(FORMATS),$(eval $(FORMAT_TASKS)))
 open: open-html
 
 clean:
-	rm -rf documents documents.html documents.rxl published *_images $(OUT_FILES)
+	rm -rf documents documents.html documents.rxl published $(OUT_FILES)
+	del /q *_images
 
 bundle:
 	IF "" == "%METANORMA_DOCKER%" bundle
