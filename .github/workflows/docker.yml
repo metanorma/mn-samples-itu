@@ -42,9 +42,9 @@ jobs:
     - name: Deploy to GH Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GH_DEPLOY_KEY }}
+        deploy_key: ${{ secrets.GH_DEPLOY_KEY }}
         publish_dir: ./published
         force_orphan: true
-        user_name: ${{ env.GITHUB_ACTOR }}
-        user_email: ${{ format('{0}@users.noreply.github.com', env.GITHUB_ACTOR) }}
-        commit_message: "${{ format('Deploy to GitHub Pages: {0}', env.GITHUB_SHA) }}"
+        user_name: ${{ github.actor }}
+        user_email: ${{ format('{0}@users.noreply.github.com', github.actor) }}
+        commit_message: "${{ format('Deploy to GitHub Pages: {0}', github.sha) }}"
