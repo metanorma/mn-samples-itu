@@ -39,9 +39,12 @@ jobs:
     - uses: actions/download-artifact@master
       with:
         name: published
-    - name: deploy-to-gh
-      env:
-        GH_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
-        GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
-      run: |
-        curl -L https://raw.githubusercontent.com/metanorma/metanorma-build-scripts/master/ghactions-deploy-to-gh-pages.sh | bash
+    - name: Deploy to GH Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GH_DEPLOY_KEY }}
+        publish_dir: ./published
+        force_orphan: true
+        user_name: ${{ env.GITHUB_ACTOR }}
+        user_email: ${{ format('{0}@users.noreply.github.com', env.GITHUB_ACTOR) }}
+        commit_message: "${{ format('Deploy to GitHub Pages: {0}', env.GITHUB_SHA) }}"
