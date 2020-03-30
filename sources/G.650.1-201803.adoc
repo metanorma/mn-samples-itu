@@ -1249,7 +1249,7 @@ image::G.650.1-201803/image07.png[]
 [level=6]
 ===== Light source
 
-A nominal 1310 nm (for fibres covered by [ITU-TG.652]) or 1550 nm (for fibres covered by [ITU-TG.653] and <<ITU-T_G.654>>) light source for illuminating the core shall be used. The light source shall be adjustable in intensity and stable in position, intensity and wavelength over a time period sufficiently long to complete the measurement procedure. The spectral characteristics of this source should be chosen to preclude multimode operation. A second light source with similar characteristics can be used, if necessary, for illuminating the cladding. The spectral characteristics of the second light source must not cause defocusing of the image.
+A nominal 1310 nm (for fibres covered by <<ITU-T_G.652>>) or 1550 nm (for fibres covered by <<ITU-T_G.653>> and <<ITU-T_G.654>>) light source for illuminating the core shall be used. The light source shall be adjustable in intensity and stable in position, intensity and wavelength over a time period sufficiently long to complete the measurement procedure. The spectral characteristics of this source should be chosen to preclude multimode operation. A second light source with similar characteristics can be used, if necessary, for illuminating the cladding. The spectral characteristics of the second light source must not cause defocusing of the image.
 
 [[cladding_diameter_third_alternative_launching_conditions]]
 [level=6]
@@ -1504,7 +1504,12 @@ A = 10 log |__ rho text(/)
 (10^(0.01)-1)__|
 ++++
 
-Unless otherwise specified, ρ = 2. (6-10)
+Unless otherwise specified, 
+[[eq6-10in]]
+[stem]
+++++
+ρ = 2
+++++
 
 When the coefficients of:
 
@@ -2059,13 +2064,15 @@ If the fibre is fitted with connectors, an appropriate cleaning procedure is req
 [class=steps]
 . Once a measurement wavelength is selected, the power P~1~ is firstly measured in the following way:
 +
+--
 *For option a)*
-+
+
 The fibre of the launching system is connected to the fibre of the receiving system. The received power P~1~ is then recorded.
-+
+
 *For option b)*
-+
+
 The reference system is connected between the launching and the receiving systems. The received power P~1~ is then recorded.
+--
 
 . Successively, the fibre under test is connected between the launching and the receiving systems. The received power P~2~ is then recorded.
 
@@ -2734,7 +2741,7 @@ This annex gives a general description of chromatic dispersion fitting and outli
 NOTE: Even though dispersion slope characteristics may not be normative requirements, typical values are often provided by manufacturers for ease in dispersion accommodation.
 
 [[definition_of_equations_and_fitting_coefficients]]
-=== A.2 Definition of equations and fitting coefficients
+=== Definition of equations and fitting coefficients
 
 <<table-a1>> contains a general description of mathematical models that are fitted. The polynomial formulation is general and can be extended to higher order polynomials via the same principles.
 
@@ -3077,7 +3084,7 @@ Let the mode field diameter at position _x_~0~ in the reference fibre be 2 _W_ (
 +
 If the reference and test fibres have the same index profile and relative index difference, let coefficient _k_ = 0.
 +
-If the relative index difference in the test fibre is not the same as that in the reference fibre, determine coefficient _k_ by using <<eq-II-2>> and the mode field diameter value at _x_ in the test fibre which is evaluated in advance.
+If the relative index difference in the test fibre is not the same as that in the reference fibre, determine coefficient _k_ by using <<eq-II-3>> and the mode field diameter value at _x_ in the test fibre which is evaluated in advance.
 +
 If the adjustment factors _f_ and _g_, which are determined as described in c) in clause <<mode_field_diameter_third_alternative_qualification_for_a_fibre_type>>, are given, the mode field diameter distribution is given by:
 +
@@ -3758,7 +3765,7 @@ The following details shall be presented:
 
 * [[[b-Fleming,b-Fleming]]], Fleming, J.W. (1978), _Material dispersion in lightguide glasses,_ Electron. Lett., Vol. 14, No.11, pp. 326-328.
 
-* [[[b-Hanson,b-Hanson]]], Hanson T.A. (1991), _Spectral Attenuation Modelling with Matrix Models,_Conference Digest NPL Optical Fibre Measurement Conference (OFMC'91), pp. 8-11, York, United Kingdom.
+* [[[b-Hanson,b-Hanson]]], Hanson T.A. (1991), _Spectral Attenuation Modelling with Matrix Models,_ Conference Digest NPL Optical Fibre Measurement Conference (OFMC'91), pp. 8-11, York, United Kingdom.
 
 * [[[b-Kobayashi,b-Kobayashi]]] Kobayashi S. _et al_ (1977), _Refractive-index dispersion of doped fused silica_, IOOC 1977, pp.309-312.
 
