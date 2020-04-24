@@ -1626,7 +1626,7 @@ The measurement shall be performed on a length of single-mode fibre in a cable. 
 
 Alternatively, uncabledsingle-mode fibre in a deployment condition can be used as a test sample which assures that the results for λ~cc~ are in agreement with those achieved in measurements conducted on cabled fibres.
 
-Afibre length of 22 m is inserted into the test apparatus; the inner 20 m are bent to form loosely constrained loops of a radius r ≥ 140 mm. One loop of X = 40 mm radius shall be applied to each fibre end (see <<fig12>>).
+A fibre length of 22 m is inserted into the test apparatus; the inner 20 m are bent to form loosely constrained loops of a radius r ≥ 140 mm. One loop of X = 40 mm radius shall be applied to each fibre end (see <<fig12>>).
 
 Though the relationship between λ~cc~ values measured with cabled and uncabled fibre samples depends on the specific cable design, λ~cc~ measured with an uncabled fibre sample is generally higher than that measured with a cabled fibre sample.
 
@@ -1819,7 +1819,7 @@ The signal level of the backscattered optical signal will normally be small and 
 
 Care must be taken that higher order modes do not propagate.
 
-An example of apparatus is shown in <<fig14>>a.
+An example of apparatus is shown in <<fig14a>>.
 
 [[attenuation_first_alternative_optical_source]]
 [level=6]
@@ -1841,7 +1841,15 @@ A branching device is needed to couple the source radiation into the fibre and t
 
 [[fig14]]
 .The backscattering technique
-image::G.650.1-201803/image16.png[]
+====
+[[fig14a]]
+.Schematic of apparatus
+image::G.650.1-201803/image16a.png[]
+
+[[fig14b]]
+.Example of a undirectional backscattering loss curve
+image::G.650.1-201803/image16b.png[]
+====
 
 
 [[attenuation_first_alternative_optical_detector]]
@@ -1879,7 +1887,7 @@ The measurement may be made with the fibre in a number of fibre configurations (
 
 . Align the fibre under test to the optical coupling system.
 
-. Measure two unidirectional backscattering loss curves, one from each end of the fibre. <<fig14>>b shows an example of such a unidirectional curve. Each backscattering loss curve is analysed by the signal processor and recorded on a logarithmic scale, avoiding the parts at the two ends of the curves, due to the reflections of the coupling and branching devices and by the fibre ends (see parts 1) and 5) in <<fig14>>b.
+. Measure two unidirectional backscattering loss curves, one from each end of the fibre. <<fig14b>> shows an example of such a unidirectional curve. Each backscattering loss curve is analysed by the signal processor and recorded on a logarithmic scale, avoiding the parts at the two ends of the curves, due to the reflections of the coupling and branching devices and by the fibre ends (see parts 1) and 5) in <<fig14b>>.
 
 . Evaluate the length, L~f~, of the fibre from the time interval between the two ends of the backscattering loss curve, T~f~, and the group delay index, N, of the fibre as: asciimath:[L_f = c*T_f text(/) N] (c being the free space light speed).
 
@@ -1910,7 +1918,7 @@ A(x_0,x_1)=
 
 This expression may be evaluated by a least squares linear fit of the data between x~0~ and x~1~.
 
-The end-to-end fibre attenuation coefficient is determined in the same way as <<eq6-15>> with the data points as close as possible to the end positions. However, these points should be outside the dead zone area and the end reflection area (see <<fig14>>b, areas 1) and 5)).
+The end-to-end fibre attenuation coefficient is determined in the same way as <<eq6-15>> with the data points as close as possible to the end positions. However, these points should be outside the dead zone area and the end reflection area (see <<fig14b>>, areas 1) and 5)).
 --
 
 [[attenuation_first_alternative_presentation_of_the_results]]
@@ -1936,7 +1944,7 @@ The following details shall be presented:
 
 [NOTE]
 ====
-Unidirectional backscattering measurements are obtained with the function a(x) alone. The complete analysis of the recorded unidirectional backscattering loss curves (<<fig14>>b) shows that, independently from the attenuation measurements, many phenomena can be monitored using the backscattering technique including:
+Unidirectional backscattering measurements are obtained with the function a(x) alone. The complete analysis of the recorded unidirectional backscattering loss curves (<<fig14b>>) shows that, independently from the attenuation measurements, many phenomena can be monitored using the backscattering technique including:
 
 [class=steps]
 . reflection originated by the branching and coupling devices at the input end of the fibre;
