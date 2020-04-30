@@ -1,4 +1,4 @@
-= Cloud computing -- Functional requirements of physical machine
+= Cloud computing - Functional requirements of physical machine
 :bureau: T
 :docnumber: Y.3507
 :series: Y: Global Information Infrastructure, Internet Protocol Aspects, Next-Generation Networks, Internet of Things and Smart Cities
@@ -1034,7 +1034,7 @@ a|
 * <<b-OCP_DSBS>> provides multiple interfaces for storage as 'Storage: Two single port AHCI SATA connectors capable of supporting up to 6 Gb/sec; Two SCU 4-port mini-SAS connectors capable of supporting up to 3 Gb/sec SATA/SAS; Two 4-port mini HD connectors capable of supporting up to 6 Gb/sec SATA' and 'Support for PCI Express* 225W/300W High Power Card Electromechanical Specification 1.0' in clause 4, Tables 1 and 2.
 * <<b-OCP_G1>> provides multiple interfaces for storage as '15x 12Gb/s SAS or 6Gb/s SATA 2.5' drive slots, up to 15mm thickness, connected via SEB, to an onboard HBA. One M.2 SATA slot, also on board.' and '1 x 16 Gen3 FH/FL, 2 x8 Gen3 LP/HL, 1 x8 OCP Mez with front Panel access, 1 x8 PCIe OCP Mez in a non-front-accessible internal slot to support SAS HBA or Raid-on-Chip with SuperCap' in clause 6.1.
 * <<b-OCP_HSAS>> provides multiple interfaces for storage as '▪ Intel C612 Controller;▪ (2) discrete SATA 7pin for SATA4 and SATA5;▪ (2) MiniSAS SFF-8087 for SATA0-SATA3, sSATA0-sSATA3;▪ 6.0Gb/s speed;▪ SATA SGPIO supported;▪ RAID 0/1/10/5 (Intel RST);▪ (4) Internal MiniSASHD SFF-8643 connectors (Optional)' in clause 8.
-* <<b-OCP_HSCH>> provides multiple interfaces for storage as 'The SATA connections are a minimum of SATA2.0 (3Gb/s) and may be SATA3.0 (6Gb/s).The PCIe connection is a minimum of PCIe 2.0 and may be PCIe 3.0' in clauses 6.4 and 6.5.
+* <<b-OCP_HSCH>> provides multiple interfaces for storage as 'The SATA connections are a minimum of SATA2.0 (3Gb/s) and may be SATA3.0 (6Gb/s). The PCIe connection is a minimum of PCIe 2.0 and may be PCIe 3.0' in clauses 6.4 and 6.5.
 * <<b-OCP_OAPM>> provides multiple interfaces for storage as 'SATA, and PCI-Express Expansion' in clause 5.
 * <<b-OCP_MB>> provides multiple interfaces for storage as 'The motherboard uses Intel C610 series chipset, which supports following features: 3x USB 3.0/2.0 ports: one for front connector; one for optional vertical on board connector; one for BMC in-band firmware update; 1x mSATA connector from SATA port 4 co-layout with M.2 connector; 1x individual SATA 6Gps ports from SATA port 5; 1x miniSAS port from SATA port 0/1/2/3, 1x miniSAS port from sSATA0/1/2/3; 1x PCIe x4 ports to M.2 connector; SPI interface, connect to BMC to enable BMC the capability to perform BIOS upgrade and recovery; SMBUS interface (master and slave); Intel Server Platform Services (SPS) 3.0 Firmware with Intel Node Manager' in clause 5.4.
 
@@ -1187,7 +1187,7 @@ a|
 
 a|
 * <<b-OCP_1S>> provides air flow set as 'The card level air baffle must be designed to help maintain temperatures of all major components on the server card by reducing bypass air and increasing airflow through key components' in clause 6.6.
-* <<b-OCP_2S>> provides airflow set as 'The unit of airflow (or volumetric flow) used for this spec is CFM (cubic feet per minute).The maximum allowable airflow per watt in the system must be 0.107' in clause10.2.26.
+* <<b-OCP_2S>> provides airflow set as 'The unit of airflow (or volumetric flow) used for this spec is CFM (cubic feet per minute). The maximum allowable airflow per watt in the system must be 0.107' in clause10.2.26.
 * <<b-OCP_JBOG>> provides system airflow set as 'The unit of airflow (or volumetric flow) used for this spec is CFM (cubic feet per minute). The maximum allowable airflow per watt in the system must be 0.14 at sea level' in clause 8.2.3.
 * <<b-OCP_SJ>> provides cooling set as 'To meet thermal reliability requirement, the thermal and cooling solution should dissipate heat from the components when system operating at its maximum thermal power' in clause 11.
 * <<b-OCP_Yose>> provides airflow set as 'The unit of airflow (or volumetric flow) used for this spec is cubic feet per minute (CFM)' in clause 8.2.5.
@@ -1430,31 +1430,22 @@ This appendix describes physical machine related use cases.
 .Providing IaaS service with processing resource – use case
 |===
 
-^h| Title
-^h| Providing IaaS service with processing resource use case
+^h| Title ^h| Providing IaaS service with processing resource use case
 
 
-| Description
-| Infrastructure capabilities type, especially for providing VM, which is resided on a physical machine. The virtual machine provides a virtualized and isolated computing environment for each guest operating system (OS) with processing, storage, networking and other hardware resources. Usually a physical machine would carry more than one virtual machine and needs to provide more virtual CPU than physical CPU, so as the memory and I/O devices. Furthermore, the physical machine usually provides a management function for the CSP to manage and monitor the physical machines. The loading information would help the CSP to select which host to deploy the VMs and the fault location information could help the CSP easily replace the failure component. As more applications run in one physical machine, the reliability is required so that it could continue to run and bear the services without migrating when there are few failures. As some applications may require some other hardware components with special features, the physical machine would have to reserve one or more extended interfaces for adding cloud resources. To improve the VM's performance, the physical machines usually use CPUs with virtualization instruction set support. For situations with a lot of network traffic processing, physical machines can offload traffic processing to I/O devices to improve performance and reduce the load of CPUs.
+| Description | Infrastructure capabilities type, especially for providing VM, which is resided on a physical machine. The virtual machine provides a virtualized and isolated computing environment for each guest operating system (OS) with processing, storage, networking and other hardware resources. Usually a physical machine would carry more than one virtual machine and needs to provide more virtual CPU than physical CPU, so as the memory and I/O devices. Furthermore, the physical machine usually provides a management function for the CSP to manage and monitor the physical machines. The loading information would help the CSP to select which host to deploy the VMs and the fault location information could help the CSP easily replace the failure component. As more applications run in one physical machine, the reliability is required so that it could continue to run and bear the services without migrating when there are few failures. As some applications may require some other hardware components with special features, the physical machine would have to reserve one or more extended interfaces for adding cloud resources. To improve the VM's performance, the physical machines usually use CPUs with virtualization instruction set support. For situations with a lot of network traffic processing, physical machines can offload traffic processing to I/O devices to improve performance and reduce the load of CPUs.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager
+| Roles/sub-roles | CSP: cloud service operations manager
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-1.png[]
 
-| Pre-conditions (optional)
-| The virtual machine resides on the physical machine.
+| Pre-conditions (optional) | The virtual machine resides on the physical machine.
 
-| Post-conditions (optional)
-| CSP:cloud service operations manager wants to build or expand a resource pool to provide VM service.
+| Post-conditions (optional) | CSP:cloud service operations manager wants to build or expand a resource pool to provide VM service.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Virtualization instruction set (see <<cpu_requirements>>)
 * Hardware-assisted I/O virtualization (see <<io_device_requirements>>)
 * Hardware-assisted memory virtualization (see <<memory_requirements>>)
@@ -1479,40 +1470,27 @@ a|
 .Preparing a physical machine – use case
 |===
 
-^h| Title
-^h| Preparing a physical machine
+^h| Title ^h| Preparing a physical machine
 
 
-| Description
-| A cloud service operations manager installs multiple processing units on the backplane of an enclosure to increase the computing resources of a physical machine. He or she also installs more than one storage device per CPU in a processing unit through standard storage interfaces.
-
-To connect all multiple processing units together, a cloud service operations manager mounts a switch device which is responsible for system interconnects and network topology to the backplane of the enclosure.
-
-In addition, the enclosure is equipped with a power supply to provide power to an entire physical machine and a cooling device to reduce heating. A cloud service operations manager should be able to check whether each device is installed in a physical machine correctly through a console panel on the enclosure.
-
-System software and operating systems are installed on corresponding devices or rebooted and consequently a physical machine completes to set up its operations.
-
+| Description a| A cloud service operations manager installs multiple processing units on the backplane of an enclosure to increase the computing resources of a physical machine. He or she also installs more than one storage device per CPU in a processing unit through standard storage interfaces. +
+To connect all multiple processing units together, a cloud service operations manager mounts a switch device which is responsible for system interconnects and network topology to the backplane of the enclosure. +
+In addition, the enclosure is equipped with a power supply to provide power to an entire physical machine and a cooling device to reduce heating. A cloud service operations manager should be able to check whether each device is installed in a physical machine correctly through a console panel on the enclosure. +
+System software and operating systems are installed on corresponding devices or rebooted and consequently a physical machine completes to set up its operations. +
 Based on the above steps to construct a physical machine, several physical machines are connected with each other by their external interfaces and can be installed in a standard rack.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager.
+| Roles/sub-roles | CSP: cloud service operations manager.
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-2.png[]
 
 
-| Pre-conditions (optional)
-| CSP: cloud service operations manager wants to modify or expand the resources in a physical machine.
+| Pre-conditions (optional) | CSP: cloud service operations manager wants to modify or expand the resources in a physical machine.
 
-| Post-conditions (optional)
-| A physical machine provides a cloud service.
+| Post-conditions (optional) | A physical machine provides a cloud service.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Hot-plug support (see <<reliability_requirement>>)
 * Configuration of multiple processing units (see <<interconnect_network_requirements>>)
 * Monitoring status of physical machine (see <<enclosure_requirements>>)
@@ -1522,31 +1500,22 @@ a|
 .Cold data storage resource – use case
 |===
 
-^h| Title
-^h| Cold data storage resource use case
+^h| Title ^h| Cold data storage resource use case
 
 
-| Description
-| Cold data means data that is stored but almost never read again. The cloud storage service for cold data provides almost no limit storage capacity at a very low cost and the physical machine for cold data storage requires the highest capacity and the lowest cost. The typical use case is a series of sequential writes, but random reads.As the physical machine is recommended to provide as much storage capacity as possible, it would have many large-capacity disks. To provide a highly durable storage service, the physical machine is recommended to provide management function for the CSP to manage and monitor the physical machine cluster and then the CSP can rebuild the data in time when some failures happen, also the hot plug function is needed. Physical machines usually support storage of different media to balance between cost and performance for different situations.
+| Description | Cold data means data that is stored but almost never read again. The cloud storage service for cold data provides almost no limit storage capacity at a very low cost and the physical machine for cold data storage requires the highest capacity and the lowest cost. The typical use case is a series of sequential writes, but random reads. As the physical machine is recommended to provide as much storage capacity as possible, it would have many large-capacity disks. To provide a highly durable storage service, the physical machine is recommended to provide management function for the CSP to manage and monitor the physical machine cluster and then the CSP can rebuild the data in time when some failures happen, also the hot plug function is needed. Physical machines usually support storage of different media to balance between cost and performance for different situations.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager
+| Roles/sub-roles | CSP: cloud service operations manager
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-3.png[]
 
-| Pre-conditions (optional)
-| The cloud storage service resides on the physical machine.
+| Pre-conditions (optional) | The cloud storage service resides on the physical machine.
 
-| Post-conditions (optional)
-| CSP:cloud service operations manager wants to build or expand a resource pool to provide cloud storage service for cold data.
+| Post-conditions (optional) | CSP:cloud service operations manager wants to build or expand a resource pool to provide cloud storage service for cold data.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Hot-plug support (see <<reliability_requirement>>)
 * Low power consumption of CPU (see <<cpu_requirements>>)
 * Supporting various types of memory (see <<memory_requirements>>)
@@ -1563,39 +1532,26 @@ a|
 .Using an interconnect network for high-performance service – use case
 |===
 
-^h| Title
-^h| Using interconnect network for high-performance service
+^h| Title ^h| Using interconnect network for high-performance service
 
 
-| Description
-| When a cloud service user requests a high performance computing service (e.g., parallel processing, Big data processing, etc.), a cloud service operations manager is responsible for setting up an interconnection network among processing units, because multiple computing resources are required to perform such a service.
-
-Ethernet is a widely used protocol for the interconnection network but the cloud service operations manager may provide other protocols. Therefore, depending on the protocols, the performance of the interconnect network is determined and the cloud service operations manager can select and provide the appropriate interconnect network to the cloud service user.
-
-For utilizing this interconnect network system, a cloud service user can employ socket based applications in the case of using Ethernet protocol. For other networks, a cloud service user is provided with applications per application program interfaces (API) from a cloud service operations manager. This is due to the fact that, a cloud operations manager also has a responsibility to provide a device driver and API for utilizing the propriety network.
-
-Occasionally, a cloud service user may request multiple physical machines for such a service. In this case, a cloud operations manager has a responsibility to support multiple shared resources through the network. Since the physical machines are independent of network devices, this network would be arranged as cabling in an interconnect network.
-
+| Description a| When a cloud service user requests a high performance computing service (e.g., parallel processing, Big data processing, etc.), a cloud service operations manager is responsible for setting up an interconnection network among processing units, because multiple computing resources are required to perform such a service. +
+Ethernet is a widely used protocol for the interconnection network but the cloud service operations manager may provide other protocols. Therefore, depending on the protocols, the performance of the interconnect network is determined and the cloud service operations manager can select and provide the appropriate interconnect network to the cloud service user. +
+For utilizing this interconnect network system, a cloud service user can employ socket based applications in the case of using Ethernet protocol. For other networks, a cloud service user is provided with applications per application program interfaces (API) from a cloud service operations manager. This is due to the fact that, a cloud operations manager also has a responsibility to provide a device driver and API for utilizing the propriety network. +
+Occasionally, a cloud service user may request multiple physical machines for such a service. In this case, a cloud operations manager has a responsibility to support multiple shared resources through the network. Since the physical machines are independent of network devices, this network would be arranged as cabling in an interconnect network. +
 When a cloud service operations manager makes this cabled network, it is constructed to support various topologies (e.g., ring, mesh, tree) to meet the different performance levels of the service requested from a cloud service user.
 
-| Roles/sub-roles
-| CSC: Cloud service user and CSP: Cloud service operations manager
+| Roles/sub-roles | CSC: Cloud service user and CSP: Cloud service operations manager
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-4.png[]
 
-| Pre-conditions (optional)
-| CSC: Cloud service user wants to use a high performance computing application.
+| Pre-conditions (optional) | CSC: Cloud service user wants to use a high performance computing application.
 
-| Post-conditions (optional)
-| Physical machines can run a high performance computing application through a system interconnect network and cabled network.
+| Post-conditions (optional) | Physical machines can run a high performance computing application through a system interconnect network and cabled network.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Sharing process unit component (see <<interconnect_network_requirements>>)
 * Interconnect network supports (see <<interconnect_network_requirements>>)
 * Device driver and API supports (see <<io_interface_requirements>>)
@@ -1608,34 +1564,24 @@ a|
 .Physical machine for hyper-scale deployment – use case
 |===
 
-^h| Title
-^h| Physical machine for hyper-scale deployment
+^h| Title ^h| Physical machine for hyper-scale deployment
 
-| Description
-| This use case covers the situation where very large numbers of physical machines will be employed in multiple data centres around a region or around the world. In this case, a single physical machine will typically be implemented as a server blade that fits into a specially built rack. The rack will typically also include storage, management and networking equipment, which might or might not be implemented using similar blades.
+| Description | This use case covers the situation where very large numbers of physical machines will be employed in multiple data centres around a region or around the world. In this case, a single physical machine will typically be implemented as a server blade that fits into a specially built rack. The rack will typically also include storage, management and networking equipment, which might or might not be implemented using similar blades.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager.
+| Roles/sub-roles | CSP: cloud service operations manager.
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-5.jpg[]
 
 In this type of deployment, physical machines are constructed for deployment in high-density racks specifically designed for the purpose. Each rack provides all the infrastructure required to support the machines, including power, network connectivity and ventilation/cooling. Individual physical machines are automatically initialised and provisioned with necessary software when plugged into an active rack. Once running, each machine is made available for the deployment of VMs or other functions requested by CSCs or CSP administrators. Fault tolerance is often provided by software across multiple machines, so an individual machine can fail without adverse effect on the overall system.
 
-| Pre-conditions (optional)
-| CSP: The CSP wishes to deploy many physical machines in two or more locations, using minimal staffing.
+| Pre-conditions (optional) | CSP: The CSP wishes to deploy many physical machines in two or more locations, using minimal staffing.
 
-| Post-conditions (optional)
-| A physical machine is plugged into a rack, configures itself to the local network and is automatically provisioned with all necessary software including the host operating system, network stacks and hypervisor. The data centre management system is then able to deploy workloads to the machine. In the event of failure, the machine can be removed from the rack and a replacement plugged in with minimal impact on deployed cloud services.
-
+| Post-conditions (optional) a| A physical machine is plugged into a rack, configures itself to the local network and is automatically provisioned with all necessary software including the host operating system, network stacks and hypervisor. The data centre management system is then able to deploy workloads to the machine. In the event of failure, the machine can be removed from the rack and a replacement plugged in with minimal impact on deployed cloud services. +
 A data centre can be left unmanned for several days or weeks at a time. When visited, the failed machines can be quickly removed and replaced by new or refurbished machines, which configure and provision themselves automatically.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Minimum energy consumption (see <<power_supply_requirements>>)
 * No additional ports (see <<security_requirements>>)
 * Authorized access (see <<security_requirements>>)
@@ -1647,36 +1593,25 @@ a|
 .Physical machine for unmanned deployment – use case
 |===
 
-^h| Title
-^h| Physical machine for unmanned deployment
+^h| Title ^h| Physical machine for unmanned deployment
 
-| Description
-| This use case covers the situation where physical machines will be in places where physical access is extremely difficult or only available at infrequent intervals. In this case, a single physical machine will typically be implemented as a server blade that fits into a specially built rack. The rack will typically also include storage, management and networking equipment, which might or might not be implemented using similar blades.
+| Description | This use case covers the situation where physical machines will be in places where physical access is extremely difficult or only available at infrequent intervals. In this case, a single physical machine will typically be implemented as a server blade that fits into a specially built rack. The rack will typically also include storage, management and networking equipment, which might or might not be implemented using similar blades.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager.
+| Roles/sub-roles | CSP: cloud service operations manager.
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-6.png[]
 
-In this type of deployment, physical machines are constructed for deployment in locations where physical access is very tightly constrained. These will typically be inside some form of self-contained "capsule" rather than a normal building.
-
+In this type of deployment, physical machines are constructed for deployment in locations where physical access is very tightly constrained. These will typically be inside some form of self-contained "capsule" rather than a normal building. +
 Examples are systems deployed in underwater containers for positioning close to coastal urban centres.
 
-| Pre-conditions (optional)
-| CSP: The CSP wishes to deploy physical machines in locations where human access will not be possible for the majority or operational time.
+| Pre-conditions (optional) | CSP: The CSP wishes to deploy physical machines in locations where human access will not be possible for the majority or operational time.
 
-| Post-conditions (optional)
-| The physical machines are left running without human access for periods of six months or more.
-
+| Post-conditions (optional) a| The physical machines are left running without human access for periods of six months or more. +
 The data centre management system can deploy workloads to the machine. In the event of failure, the machine can be taken off line, remote diagnostics can be run and the machine either returned to service or taken permanently offline.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Minimum energy consumption (see <<power_supply_requirements>>)
 * Cooling component replacement (see <<cooling_requirements>>)
 * Cooling component redundancy (see <<cooling_requirements>>)
@@ -1691,24 +1626,18 @@ a|
 .Physical machine for network edge – use case
 |===
 
-^h| Title
-^h| Physical machine for network edge
+^h| Title ^h| Physical machine for network edge
 
 
-| Description
-| This use case covers the situation where physical machines will be in network edge locations such as at 5G cell towers, telephone exchanges and cable TV head-end multiplexers. This is one use of the term "micro data centre". The primary reason for this is to minimise network latency between end users and the cloud services running at the network edge, or to concentrate network traffic at the edge to manage load on core network servers (e.g., for massive IoT telemetry applications).
+| Description | This use case covers the situation where physical machines will be in network edge locations such as at 5G cell towers, telephone exchanges and cable TV head-end multiplexers. This is one use of the term "micro data centre". The primary reason for this is to minimise network latency between end users and the cloud services running at the network edge, or to concentrate network traffic at the edge to manage load on core network servers (e.g., for massive IoT telemetry applications).
 
-| Roles/sub-roles
-| CSP: cloud service operations manager.
+| Roles/sub-roles | CSP: cloud service operations manager.
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-7.jpeg[]
 
-In this type of deployment, physical machines are constructed for deployment at the edge of the network, usually co-located with access network transmission and/or multiplexing equipment.
-
+In this type of deployment, physical machines are constructed for deployment at the edge of the network, usually co-located with access network transmission and/or multiplexing equipment. +
 Examples of such locations include:
 
 * Local telephone exchanges
@@ -1717,15 +1646,13 @@ Examples of such locations include:
 * Cable TV head-ends
 * Airliner WiFi/Cellular network equipment.
 
-| Pre-conditions (optional)
-| CSP: The CSP wishes to deploy physical machines to support cloud services running at the edge of their (or a partner's) physical network.
+| Pre-conditions (optional) | CSP: The CSP wishes to deploy physical machines to support cloud services running at the edge of their (or a partner's) physical network.
 
-| Post-conditions (optional)
-| The physical machine(s) run co-located with other network equipment at the edge of the network. The CSP can deploy cloud services or service components to these network edge micro data centres.CSUs can access the cloud service within minimal network latency.The CSP can process large amounts of data from CSUs, without imposing heavy loads on the backhaul network or the core network cloud services.
+| Post-conditions (optional) a| The physical machine(s) run co-located with other network equipment at the edge of the network. The CSP can deploy cloud services or service components to these network edge micro data centres. +
+CSUs can access the cloud service within minimal network latency. +
+The CSP can process large amounts of data from CSUs, without imposing heavy loads on the backhaul network or the core network cloud services.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Supporting power redundancy (see <<power_supply_requirements>>)
 * Adding power supply (see <<scalability_requirements>>)
 * Adding cooling component (see <<scalability_requirements>>)
@@ -1740,37 +1667,25 @@ a|
 .Configurations of clustering processing units – use case
 |===
 
-^h| Title
-^h| A use case of configurations of clustering processing units
+^h| Title ^h| A use case of configurations of clustering processing units
 
 
-| Description
-| When a CSC: cloud service user requests a cloud service, a CSP: cloud service operations manager is responsible for providing computing resources, which can run the cloud service. In this case, based on the multiple processing units in the physical machine, it is possible for the CSP: cloud operations manager to configure a clustering system which can distribute the computational loads among the multiple processing resources.
-
-Therefore, in order to utilize highly integrated computing resources efficiently, the CSP: cloud operations manager has a responsibility to configure the clustered processing units. The configuration can be changed dynamically and elastically according to the cloud service's requirements from the CSC: cloud service user. In other words, according to the required cloud service's characteristics (e.g., network usage ratio, computing capability, the proportion of memory intensive computation, an efficiency of distributed computing), the configuration of the cluster system can vary.
-
-In case of a cloud service based on distributed processing clustering configuration is suitable because data analysis work load can be divided into several processing units. On the other hand, when a CSC: cloud service user requests a cloud service, where data communications occur intensively among processing units, minimum numbers of processing units are recommended as a clustered resources.
-
+| Description a| When a CSC: cloud service user requests a cloud service, a CSP: cloud service operations manager is responsible for providing computing resources, which can run the cloud service. In this case, based on the multiple processing units in the physical machine, it is possible for the CSP: cloud operations manager to configure a clustering system which can distribute the computational loads among the multiple processing resources. +
+Therefore, in order to utilize highly integrated computing resources efficiently, the CSP: cloud operations manager has a responsibility to configure the clustered processing units. The configuration can be changed dynamically and elastically according to the cloud service's requirements from the CSC: cloud service user. In other words, according to the required cloud service's characteristics (e.g., network usage ratio, computing capability, the proportion of memory intensive computation, an efficiency of distributed computing), the configuration of the cluster system can vary. +
+In case of a cloud service based on distributed processing clustering configuration is suitable because data analysis work load can be divided into several processing units. On the other hand, when a CSC: cloud service user requests a cloud service, where data communications occur intensively among processing units, minimum numbers of processing units are recommended as a clustered resources. +
 In addition, the networking between each processing unit for clustering can be basically based on a legacy network such as Ethernet. For a cloud service that is clustering-favourable but has high proportion of network usage among processing units, a proprietary network for clustering environment can be provided to eliminate the overhead of network communications.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager, CSC: cloud service user
+| Roles/sub-roles | CSP: cloud service operations manager, CSC: cloud service user
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-8.png[]
 
-| Pre-conditions (optional)
-| CSC: cloud service user wants to use a cloud service.
+| Pre-conditions (optional) | CSC: cloud service user wants to use a cloud service.
 
-| Post-conditions (optional)
-| Physical machines can run a cloud service efficiently and elastically according to the desired performance.
+| Post-conditions (optional) | Physical machines can run a cloud service efficiently and elastically according to the desired performance.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Configuration of multiple processing units (see <<interconnect_network_requirements>>)
 * Multiple CPUs (see <<cpu_requirements>>)
 * Adding processing units (see <<scalability_requirements>>)
@@ -1785,18 +1700,13 @@ a|
 .Replacing components of a physical machine – use case
 |===
 
-^h| Title
-^h| A use case of replacing components of physical machine
+^h| Title ^h| A use case of replacing components of physical machine
 
-| Description
-| This use case covers the situation where components of physical machine be replaced. After deployment and operation, a component of physical machine may need to be replaced with another new one due to component failure. In addition, a component could be replaced with component of other model to upgrade the performance. Typically, physical machine should support replacement of the main components, including CPU, memory, storage, power supply and cooling component.
+| Description | This use case covers the situation where components of physical machine be replaced. After deployment and operation, a component of physical machine may need to be replaced with another new one due to component failure. In addition, a component could be replaced with component of other model to upgrade the performance. Typically, physical machine should support replacement of the main components, including CPU, memory, storage, power supply and cooling component.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager
+| Roles/sub-roles | CSP: cloud service operations manager
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-9.png[]
 
@@ -1805,15 +1715,11 @@ image::Y.3507-201812/annex-figure-10.png[]
 
 To support replacement, the components are not coupled to the physical machine so that the components can be installed or uninstalled dynamically. Typically, the components are designed to follow certain specifications to ensure compatible interface and shape.
 
-| Pre-conditions (optional)
-| CSP wishes to replace some components of physical machines to fix components failure or upgrade components.
+| Pre-conditions (optional) | CSP wishes to replace some components of physical machines to fix components failure or upgrade components.
 
-| Post-conditions (optional)
-| Physical machine can runs normally with the new components.
+| Post-conditions (optional) | Physical machine can runs normally with the new components.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * CPU replacement (see <<cpu_requirements>>)
 * Memory replacement (see <<memory_requirements>>)
 * Storage replacement (see <<storage_requirements>>)
@@ -1828,33 +1734,23 @@ a|
 .High reliability deployment – use case
 |===
 
-^h| Title
-^h| A use case for high reliability deployment
+^h| Title ^h| A use case for high reliability deployment
 
 
-| Description
-| This use case covers the situation where physical machine will be deployed with high reliability. To achieve high reliability, physical machine needs to be deployed with redundant main components, such as CPU, power supply and cooling component. In addition, physical machine needs to support technology to reduce data errors and data loss at work, such as memory error correction and RAID.
-
+| Description | This use case covers the situation where physical machine will be deployed with high reliability. To achieve high reliability, physical machine needs to be deployed with redundant main components, such as CPU, power supply and cooling component. In addition, physical machine needs to support technology to reduce data errors and data loss at work, such as memory error correction and RAID. +
 Trough RAID technology, data of physical machine is distributed across multiple drives in different ways, referred to as RAID levels, depending on the required level of redundancy and performance. Take RAID1 as an example, as shown in below figure, RAID 1 consists of an exact copy (or mirror) of a set of data on two or more disks. The data of physical machine will not loss so long as at least one member drive is operational.
 
-| Roles/sub-roles
-| CSP: cloud service operations manager
+| Roles/sub-roles | CSP: cloud service operations manager
 
-| Figure
-
-a|
+| Figure a|
 [%unnumbered]
 image::Y.3507-201812/annex-figure-11.png[]
 
-| Pre-conditions (optional)
-| CSP wishes to deploy physical machines withhigh reliability.
+| Pre-conditions (optional) | CSP wishes to deploy physical machines withhigh reliability.
 
-| Post-conditions (optional)
-| Physical machines can still work when some components fail. The physical machine can reduce data errors and losses due to memory and storage failures.
+| Post-conditions (optional) | Physical machines can still work when some components fail. The physical machine can reduce data errors and losses due to memory and storage failures.
 
-| Derived requirements
-
-a|
+| Derived requirements a|
 * Multiple CPUs (see <<cpu_requirements>>)
 * Memory reliability (see <<memory_requirements>>)
 * Storage redundancy hardware (see <<storage_requirements>>)
