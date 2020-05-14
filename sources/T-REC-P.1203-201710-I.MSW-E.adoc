@@ -10,7 +10,7 @@
 :imagesdir: images
 :docfile: T-REC-P.1203-201710-I.MSW-E.adoc
 :mn-document-class: itu
-:mn-output-extensions: xml,html,doc,rxl
+:mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 :stem:
@@ -44,7 +44,9 @@ The ITU-T P.1203-series of Recommendations addresses two application areas, whic
 
 * Large-screen presentation as with fixed-network video streaming
 
-* Mobile streaming on handheld devices such as smartphones The ITU-T P.1203 module algorithms are no-reference, bitstream-based models.
+* Mobile streaming on handheld devices such as smartphones
+
+The ITU-T P.1203 module algorithms are no-reference, bitstream-based models.
 
 <<<
 
@@ -293,7 +295,7 @@ The application areas for ITU-T P.1203 are:
 .Application areas, test factors, and coding technologies for which ITU-T P.1203 has been verified and is known to produce reliable results
 
 |===
-.<h| *Applications for which the model is intended*
+.<h| Applications for which the model is intended
 .<| In-service mid-point or client-side monitoring of encrypted HTTP/TCP based VoD/Live streaming services (mode 0, mode 1). This assumes that the required input for mode 0 or mode 1 is made available for the model, despite the stream being encrypted. See <<table4>> for details.
 .<| In-service mid-point or client-side monitoring of non-encrypted HTTP/TCP based VoD/Live streaming services (mode 0, mode 1, mode 2 and mode 3).
 .<| *Test factors for which the model has been validated*
@@ -314,7 +316,7 @@ NOTE: The audio quality module Pa is assumed to be valid also for other codecs, 
 .Application areas, test factors, and coding technologies for which further investigation of ITU-T P.1203 is needed
 
 |===
-.<h| *Test factors for which the model has not been validated*
+.<h| Test factors for which the model has not been validated
 .<| Broad variations in audio quality; models were not validated for poor audio quality together with high video quality. Audio bitrate was varied but audio quality hardly seems to change/affect the overall audiovisual quality score.
 |===
 
@@ -322,7 +324,7 @@ NOTE: The audio quality module Pa is assumed to be valid also for other codecs, 
 [[table3]]
 .Application areas, test factors, and coding technologies for which ITU-T P.1203 is not intended to be used
 |===
-.<h| *Applications for which the model is not intended*
+.<h| Applications for which the model is not intended
 .<| In-service monitoring of video UDP-based streaming, where packet loss introduces visible quality degradations
 .<| Direct comparison/benchmarking of encoder implementations, and thus of services that employ different encoder implementations
 .<| Evaluation of visual quality including display/device properties
@@ -344,7 +346,7 @@ The modes of operation are defined in <<table4>>, which also provides more infor
 [[table4]]
 .ITU-T P.1203 modes of operation
 |===
-^.^| *Mode* ^.^| *Encryption* ^.^| *Input* ^.^| *Complexity*
+^.^h| Mode ^.^h| Encryption ^.^h| Input ^.^h| Complexity
 ^.^| 0 | Encrypted media payload and media frame headers | Meta-data | Low
 ^.^| 1 | Encrypted media payload | Meta-data and frame size/type information | Low
 ^.^| 2 | No encryption | Meta-data and up-to 2% of the media stream | Medium
@@ -384,7 +386,7 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 .I.11, I.13 and I.14 inputs description
 
 |===
-^.^| *ID* ^.^| *Description* ^.^| *Values* ^.^| *Frequency* ^.^| *Available to modes*
+^.^h| ID ^.^h| Description ^.^h| Values ^.^h| Frequency ^.^h| Available to modes
 5+| *_I.GEN_*
 ^.^| 0 | The resolution of the image displayed to the user | Number of pixels (WxH) in displayed video | Per media session | All
 ^.^| 1 | The device type on which the media is played | "PC" or "mobile" | Per media session | All
@@ -397,7 +399,7 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 ^.^| 7 | Audio codec | One of: AAC-LC, AAC-HEv1, AAC-HEv2,AC3 | Per media segment | All
 ^.^| 8 | Audio sampling frequency | In Hz | Per media segment | All
 ^.^| 9 | Number of audio channels | 2 | Per media segment | All
-| 10 | Audio bit-stream | Encoded audio bytes for the frame | Per audio frame | 2, 3
+^.^| 10 | Audio bit-stream | Encoded audio bytes for the frame | Per audio frame | 2, 3
 5+| *_I.13_*
 ^.^| 11 | Target Video bit-rate | Bit-rate in kbit/s | Per media segment | All
 ^.^| 12 | Video frame-rate | Frame rate in frames per second. | Per media segment | All
@@ -412,7 +414,8 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 ^.^| 21 | Type of each picture | "I" or "Non-I" for mode 1"I"/"P"/"B" for modes 2, 3 | Per video frame | 1, 2, 3
 ^.^| 22 | Video bit-stream | Encoded video bytes for the frame | Per video frame | 2, 3
 5+| *_I.14_*
-^.^| 23 | Stalling/initial loading event start | The start time of the stalling event in seconds relative to the start of the original video clip, expressed in media time (not wall clock time)NOTE – This is 0 for initial loading delay. | Per stalling event | All
+^.^| 23 | Stalling/initial loading event start a| The start time of the stalling event in seconds relative to the start of the original video clip, expressed in media time (not wall clock time) +
+NOTE: This is 0 for initial loading delay. | Per stalling event | All
 ^.^| 24 | Event duration | The duration of the stalling event in seconds | Per stalling event | All
 |===
 
@@ -438,9 +441,12 @@ The Pv <<ITU-T_P.1203.1>> and Pa <<ITU-T_P.1203.2>> modules provide one video or
 
 Pv and Pa modules must therefore apply a sliding *measurement window* for the input data acquisition and output score calculation. The measurement window is defined as:
 
+[quote]
+____
 _audio or video information of one or more segments belonging to a specific media quality level, used as input to the Pv or Pa module at output time ts._
+____
 
-At any output time _ts_, the Pv (<<ITU-T_P.1203.1>>) and Pa (<<ITU-T_P.1203.2>>) modules can use information from the measurement window stem:[ [ts-T/2, ts+T/2] ], with T = 20 s, to generate the output sample according to the output sampling interval (see <<model_output_information>>).
+At any output time _ts_, the Pv (<<ITU-T_P.1203.1>>) and Pa (<<ITU-T_P.1203.2>>) modules can use information from the measurement window stem:[ [ts-T text(/) 2, ts+T text(/)2\] ], with T = 20 s, to generate the output sample according to the output sampling interval (see <<model_output_information>>).
 
 None of the following information must be used from outside the measurement window:
 
@@ -486,22 +492,23 @@ If the last output time is 0 and the accumulated sequence duration is smaller th
 The following pseudocode shows the procedure described above, which is called for every frame extracted:
 
 [[codeblock1]]
+[%unnumbered]
 [source,java]
 ----
 if acc_frame_dur + frame.duration > 20:
-	removed_frame = remove first item from frames
-	acc_frame_dur -= removed_frame.duration
+    removed_frame = remove first item from frames
+    acc_frame_dur -= removed_frame.duration
 
 add frame to frames
 acc_frame_dur += frame.duration
 acc_sequence_dur += frame.duration
 
 if last_score_output_at == 0 and acc_sequence_dur < 10 + 1:
-	do nothing
+    do nothing
 
 if acc_sequence_dur - 10 >= last_score_output_at + 1:
-	last_score_output_at += 1
-	forward frames and output_sample_timestamp to module
+    last_score_output_at += 1
+    forward frames and output_sample_timestamp to module
 ----
 
 When the last extracted frame has been added to the list and the above procedure has been run, the measurement window must be flushed according to the following procedure.
@@ -511,18 +518,19 @@ A final output sample timestamp is calculated by rounding down the total sequenc
 The following pseudocode explains the above procedure:
 
 [[codeblock2]]
+[%unnumbered]
 [source,java]
 ----
 final_sample_timestamp = floor(acc_sequence_dur)
 output_sample_timestamp = last_score_output_at + 1
 
 while output_sample_timestamp <= final_sample_timestamp:
-	while frames[0].dts < output_sample_timestamp - 10:
-		remove first frame in frames
+    while frames[0].dts < output_sample_timestamp - 10:
+        remove first frame in frames
 
-	forward frames and output_sample_timestamp to module
+    forward frames and output_sample_timestamp to module
 
-	output_sample_timestamp += 1
+    output_sample_timestamp += 1
 ----
 
 [[determination_of_contiguous_adjacent_segments]]
@@ -531,11 +539,12 @@ while output_sample_timestamp <= final_sample_timestamp:
 When the list of frames from the measurement window and the output sample timestamp are forwarded to the Pa or Pv module, the module has to determine which frames shall be considered for calculating the score at the output sample timestamp. It does so with the following procedure, where _frames_ refers to the frames forwarded from the procedure in <<determination_of_score_calculation>>:
 
 [[codeblock3]]
+[%unnumbered]
 [source,java]
 ----
 for index, frame in frames:
-	if frame.dts < output_sample_timestamp:
-		last_index = index
+    if frame.dts < output_sample_timestamp:
+        last_index = index
 output_sample_relative = last_index
 
 output_sample_frame = frames[output_sample_relative]
@@ -543,30 +552,30 @@ target_media_quality_level = output_sample_frame.media_quality_level
 window = [output_sample_relative]
 
 if frames[output_sample_relative-1].media_quality_level == target_media_quality_level:
-	i = output_sample_relative - 1
-	window = [i] + window
-	if i-1 != -1:
-		i -= 1
-		while frames[i].media_quality_level == frames[i+1].media_quality_level:
-			window = [i] + window
-			if i-1==-1:
-				break
-			else:
-				i-=1
+    i = output_sample_relative - 1
+    window = [i] + window
+    if i-1 != -1:
+        i -= 1
+        while frames[i].media_quality_level == frames[i+1].media_quality_level:
+            window = [i] + window
+            if i-1==-1:
+                break
+            else:
+                i-=1
 
 if output_sample_relative + 1 != length(frames):
-	if frames[output_sample_relative+1].media_quality_level ==
+    if frames[output_sample_relative+1].media_quality_level ==
 target_media_quality_level:
-	i = output_sample_relative + 1
-	window.append(i)
-	if i+1 != len(frames):
-		i += 1
-		while frames[i].media_quality_level == frames[i-1].media_quality_level:
-			window.append(i)
-			if i+1 == len(frames):
-				break
-			else:
-				i+=1
+    i = output_sample_relative + 1
+    window.append(i)
+    if i+1 != len(frames):
+        i += 1
+        while frames[i].media_quality_level == frames[i-1].media_quality_level:
+            window.append(i)
+            if i+1 == len(frames):
+                break
+            else:
+                i+=1
 ----
 
 At the end of the procedure, "window" identifies the indices of frames (0-based) from the list of forwarded frames that must be used for calculating the quality score (see the respective procedures in <<ITU-T_P.1203.1>> and <<ITU-T_P.1203.2>>.
@@ -637,7 +646,7 @@ Overall performance _p_ is determined by a weighted average of the per-database 
 rho = 1/N sum_{k=1}^{M} w_k xx MSE_k
 ++++
 
-where the weight _w___k_ = 0.25 if the database _k_ is part of the initially shared databases, and _w___k_ = 0.75 otherwise. The total number of databases _M_ is _M_ = 30, and the normalisation constant _N_ is given by stem:[sum_{k=1}^{M}w_k].
+where the weight _w___k_ = 0.25 if the database _k_ is part of the initially shared databases, and _w___k_ = 0.75 otherwise. The total number of databases _M_ is _M_ = 30, and the normalisation constant _N_ is given by stem:[N = sum_{k=1}^{M}w_k].
 
 [[description_of_the_itut_p1203_model_algorithms]]
 == Description of the ITU-T P.1203 model algorithms
@@ -653,7 +662,7 @@ The performance of the overall ITU-T P.1203 model on the databases described in 
 [[table_appendix]]
 [%unnumbered]
 |===
-h| Performance measure h| Mode 0 h| Mode 1 h| Mode 2 h| Mode 3
+^.^h| Performance measure ^.^h| Mode 0 ^.^h| Mode 1 ^.^h| Mode 2 ^.^h| Mode 3
 | *RMSE* ^.^| 0.465 ^.^| 0.415 ^.^| 0.381 ^.^| 0.333
 | *Pearson correlation* ^.^| 0.814 ^.^| 0.842 ^.^| 0.868 ^.^| 0.892
 |===

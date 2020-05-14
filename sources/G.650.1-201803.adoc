@@ -11,16 +11,15 @@
 :imagesdir: images
 :docfile: G.650.1-201803.adoc
 :mn-document-class: itu
-:mn-output-extensions: xml,html,doc,rxl
+:mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 :stem: latexmath
 
 
-
 [abstract]
 == Summary
-Recommendation ITU-T G.650.1 contains definitions of the linear, deterministic parameters of single‑mode optical fibres and cables. It also contains both reference test methods and alternative test methods for characterizing these parameters.
+Recommendation ITU-T G.650.1 contains definitions of the linear, deterministic parameters of single-mode optical fibres and cables. It also contains both reference test methods and alternative test methods for characterizing these parameters.
 
 These test methods are suitable mainly for factory measurements of the linear, deterministic attributes of single-mode fibres and cables. Some of the test methods may also be used to characterize discrete optical components.
 
@@ -82,7 +81,7 @@ This Recommendation contains definitions and test methods suitable mainly for fa
 
 * [[[ITU-T_G.654,ITU-T G.654]]], Recommendation ITU-T G.654 (2016), _Characteristics of a cut-off shifted single-mode optical fibre and cable._
 
-* [[[ITU-T_G.655,ITU-T G.655]]], Recommendation ITU-T G.655 (2009), _Characteristics of a non-zero dispersion-shifted single‑mode optical fibre and cable._
+* [[[ITU-T_G.655,ITU-T G.655]]], Recommendation ITU-T G.655 (2009), _Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable._
 
 * [[[ITU-T_G.656,ITU-T G.656]]], Recommendation ITU-T G.656 (2010), _Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport._
 
@@ -297,7 +296,7 @@ Change in the chromatic dispersion coefficient over the length of an optical fib
 [[term_zero_dispersion_slope]]
 ===== zero-dispersion slope
 
-The chromatic dispersion slope at the zero‑dispersion wavelength.
+The chromatic dispersion slope at the zero-dispersion wavelength.
 
 [[term_zero_dispersion_wavelength]]
 ===== zero-dispersion wavelength
@@ -329,11 +328,11 @@ lambda_(c c)
 ++++
 
 
-This ensures that each individual cable section is sufficiently single mode. Any joint that is not perfect will create some higher order (LP~11~) mode power, and single-mode fibres typically support this mode for a short distance (of the order of metres, depending on the deployment conditions). A minimum distance must therefore be specified between joints in order to give the fibre sufficient distance to attenuate the LP~11~ mode before it reaches the next joint. If  <<ineq3-3>> is satisfied in the shortest cable section, it will be automatically satisfied in all longer cable sections, and single‑mode system operation will occur regardless of the elementary section length.
+This ensures that each individual cable section is sufficiently single mode. Any joint that is not perfect will create some higher order (LP~11~) mode power, and single-mode fibres typically support this mode for a short distance (of the order of metres, depending on the deployment conditions). A minimum distance must therefore be specified between joints in order to give the fibre sufficient distance to attenuate the LP~11~ mode before it reaches the next joint. If  <<ineq3-3>> is satisfied in the shortest cable section, it will be automatically satisfied in all longer cable sections, and single-mode system operation will occur regardless of the elementary section length.
 
 Fibre cut-off wavelength and mode field diameter can be combined to estimate a fibre's bend sensitivity. High fibre cut-off and a small mode field diameter result in a more bend-resistant fibre. This explains why it is often desirable to specify higher values of cut-off wavelength λ~c~, even if the upper limit of this parameter exceeds the operating wavelength. All practical installation techniques and cable designs will ensure a cable cut-off wavelength below the operating wavelength.
 
-Since specification of cable cut-off wavelength, λ~cc~, is a more direct way of ensuring single‑mode cable operation, specifying this is preferred to specifying fibre cut-off wavelength, λ~c~. However, when circumstances do not readily permit the specification of λ~cc~ (e.g., in single-fibre cable such as pigtails, jumpers or cables to be deployed in a significantly different manner than in the λ~cc~ RTM), then specifying an upper limit for λ~c~ is appropriate. This option is addressed in <<ITU-T_G.652>>, <<ITU-T_G.653>>, <<ITU-T_G.654>>, <<ITU-T_G.655>>, <<ITU-T_G.656>> and <<ITU-T_G.657>>.
+Since specification of cable cut-off wavelength, λ~cc~, is a more direct way of ensuring single-mode cable operation, specifying this is preferred to specifying fibre cut-off wavelength, λ~c~. However, when circumstances do not readily permit the specification of λ~cc~ (e.g., in single-fibre cable such as pigtails, jumpers or cables to be deployed in a significantly different manner than in the λ~cc~ RTM), then specifying an upper limit for λ~c~ is appropriate. This option is addressed in <<ITU-T_G.652>>, <<ITU-T_G.653>>, <<ITU-T_G.654>>, <<ITU-T_G.655>>, <<ITU-T_G.656>> and <<ITU-T_G.657>>.
 
 NOTE: The single-mode operability of a short (typically less than 10 m) optical fibre can be additionally investigated by evaluating the multipath interference (MPI). General information on MPI is provided in <<b-ITU-T_G.Sup.47, clause 6.1>> and coherent MPI test methods are described in <<appendixIV>> of this Recommendation.
 
@@ -1196,7 +1195,7 @@ For equipment calibration, the magnification of the magnifying optics shall be m
 
 The test fibre is fixed in the sample holder and set in the measuring system. The fibre is adjusted so that its axis is perpendicular to the optical axis of the measuring system.
 
-Intensity distributions in the observation plane along the line perpendicular to the fibre axis (a‑a' in A, in <<fig5>>) are recorded (shown as B) for different viewing directions, by rotating the fibre around its axis, keeping the distance between the fibre axis and the observation plane constant. The cladding diameter and the central position of the fibre are determined by analysing the symmetry of the radial intensity distribution in the magnified image (shown as b in B). The central position of the core is determined by analysing the intensity distribution of converged light (shown as c). The distance between the central position of the fibre and that of the core corresponds to the nominal observed value of core concentricity error.
+Intensity distributions in the observation plane along the line perpendicular to the fibre axis (a-a' in A, in <<fig5>>) are recorded (shown as B) for different viewing directions, by rotating the fibre around its axis, keeping the distance between the fibre axis and the observation plane constant. The cladding diameter and the central position of the fibre are determined by analysing the symmetry of the radial intensity distribution in the magnified image (shown as b in B). The central position of the core is determined by analysing the intensity distribution of converged light (shown as c). The distance between the central position of the fibre and that of the core corresponds to the nominal observed value of core concentricity error.
 
 As shown in <<fig6>>, fitting the sinusoidal function to the experimentally obtained values of the mode field concentricity error (see <<note_core_centre>>) plotted as a function of the rotation angle, the actual core concentricity error is calculated as the product of the maximum amplitude of the sinusoidal function and magnification factor with respect to the lens effect due to the cylindrical structure of the fibre. The cladding diameter is evaluated as an averaged value of measured fibre diameters at each rotation angle, resulting in values for maximum and minimum diameters to determine the value of cladding non-circularity according to the definition.
 
@@ -1360,7 +1359,7 @@ The following details shall be presented:
 [[fibre_cut_off_wavelength_reference_general]]
 ===== General
 
-The cut-off wavelength measurement of single-mode fibres is intended to assure effective single‑mode operation above a specified wavelength.
+The cut-off wavelength measurement of single-mode fibres is intended to assure effective single-mode operation above a specified wavelength.
 
 The cut-off wavelength measurement shall use the transmitted power technique which measures the variation with wavelength of the transmitted power of a short length of the fibre under test, under defined conditions, compared to a reference transmitted power. There are two possible ways to obtain this reference power:
 
@@ -1485,7 +1484,7 @@ A(lambda) = 10 log
 [[fibre_cut_off_wavelength_determination_of_cut_off_wavelength]]
 ===== Determination of cut-off wavelength
 
-In the transition region, higher-order mode power is reduced with increasing wavelength. Fibre cut‑off wavelength, λ~c~, is defined as the wavelength at which the higher-order mode power relative to the fundamental mode power, Δa(λ), has been reduced to 0.1 dB.
+In the transition region, higher-order mode power is reduced with increasing wavelength. Fibre cut-off wavelength, λ~c~, is defined as the wavelength at which the higher-order mode power relative to the fundamental mode power, Δa(λ), has been reduced to 0.1 dB.
 
 <<fig9b>> and <<fig10b>> illustrate "humps" that sometimes appear near the cut-off wavelength. In the absence of humps (see <<fig9a>> and <<fig10a>>), accurate determination of λ~c~ can be achieved without algorithms. Optionally, for precision improvement, fitting algorithms based on the following equations can be used when humps are present. <<appendix1_methods_of_cut_off_wavelength_interpolation>> contains examples of such algorithms.
 
@@ -1504,7 +1503,7 @@ A = 10 log |__ rho text(/)
 (10^(0.01)-1)__|
 ++++
 
-Unless otherwise specified, 
+Unless otherwise specified,
 [[eq6-10in]]
 [stem]
 ++++
@@ -1626,7 +1625,7 @@ The measurement shall be performed on a length of single-mode fibre in a cable. 
 
 Alternatively, uncabledsingle-mode fibre in a deployment condition can be used as a test sample which assures that the results for λ~cc~ are in agreement with those achieved in measurements conducted on cabled fibres.
 
-Afibre length of 22 m is inserted into the test apparatus; the inner 20 m are bent to form loosely constrained loops of a radius r ≥ 140 mm. One loop of X = 40 mm radius shall be applied to each fibre end (see <<fig12>>).
+A fibre length of 22 m is inserted into the test apparatus; the inner 20 m are bent to form loosely constrained loops of a radius r ≥ 140 mm. One loop of X = 40 mm radius shall be applied to each fibre end (see <<fig12>>).
 
 Though the relationship between λ~cc~ values measured with cabled and uncabled fibre samples depends on the specific cable design, λ~cc~ measured with an uncabled fibre sample is generally higher than that measured with a cabled fibre sample.
 
@@ -1740,7 +1739,7 @@ The launching conditions used must be sufficient to excite the fundamental mode.
 [level=6]
 ===== Mode filter
 
-Care must be taken that higher order modes do not propagate through the cut‑back length. In these cases, it may be necessary to introduce a bend in order to remove the higher modes. For example, a one-turn bend with a radius of 30 mm on the fibre is generally sufficient for most ITU-T G.65x fibres. For some <<ITU-T_G.657>> fibres, smaller radius, multiple bends or longer sample length can be applied to remove high-order propagating modes.
+Care must be taken that higher order modes do not propagate through the cut-back length. In these cases, it may be necessary to introduce a bend in order to remove the higher modes. For example, a one-turn bend with a radius of 30 mm on the fibre is generally sufficient for most ITU-T G.65x fibres. For some <<ITU-T_G.657>> fibres, smaller radius, multiple bends or longer sample length can be applied to remove high-order propagating modes.
 
 [[attenuation_reference_cladding_mode_stripper]]
 [level=6]
@@ -1819,7 +1818,7 @@ The signal level of the backscattered optical signal will normally be small and 
 
 Care must be taken that higher order modes do not propagate.
 
-An example of apparatus is shown in <<fig14>>a.
+An example of apparatus is shown in <<fig14a>>.
 
 [[attenuation_first_alternative_optical_source]]
 [level=6]
@@ -1841,7 +1840,15 @@ A branching device is needed to couple the source radiation into the fibre and t
 
 [[fig14]]
 .The backscattering technique
-image::G.650.1-201803/image16.png[]
+====
+[[fig14a]]
+.Schematic of apparatus
+image::G.650.1-201803/image16a.png[]
+
+[[fig14b]]
+.Example of a undirectional backscattering loss curve
+image::G.650.1-201803/image16b.png[]
+====
 
 
 [[attenuation_first_alternative_optical_detector]]
@@ -1879,7 +1886,7 @@ The measurement may be made with the fibre in a number of fibre configurations (
 
 . Align the fibre under test to the optical coupling system.
 
-. Measure two unidirectional backscattering loss curves, one from each end of the fibre. <<fig14>>b shows an example of such a unidirectional curve. Each backscattering loss curve is analysed by the signal processor and recorded on a logarithmic scale, avoiding the parts at the two ends of the curves, due to the reflections of the coupling and branching devices and by the fibre ends (see parts 1) and 5) in <<fig14>>b.
+. Measure two unidirectional backscattering loss curves, one from each end of the fibre. <<fig14b>> shows an example of such a unidirectional curve. Each backscattering loss curve is analysed by the signal processor and recorded on a logarithmic scale, avoiding the parts at the two ends of the curves, due to the reflections of the coupling and branching devices and by the fibre ends (see parts 1) and 5) in <<fig14b>>.
 
 . Evaluate the length, L~f~, of the fibre from the time interval between the two ends of the backscattering loss curve, T~f~, and the group delay index, N, of the fibre as: asciimath:[L_f = c*T_f text(/) N] (c being the free space light speed).
 
@@ -1910,7 +1917,7 @@ A(x_0,x_1)=
 
 This expression may be evaluated by a least squares linear fit of the data between x~0~ and x~1~.
 
-The end-to-end fibre attenuation coefficient is determined in the same way as <<eq6-15>> with the data points as close as possible to the end positions. However, these points should be outside the dead zone area and the end reflection area (see <<fig14>>b, areas 1) and 5)).
+The end-to-end fibre attenuation coefficient is determined in the same way as <<eq6-15>> with the data points as close as possible to the end positions. However, these points should be outside the dead zone area and the end reflection area (see <<fig14b>>, areas 1) and 5)).
 --
 
 [[attenuation_first_alternative_presentation_of_the_results]]
@@ -1936,7 +1943,7 @@ The following details shall be presented:
 
 [NOTE]
 ====
-Unidirectional backscattering measurements are obtained with the function a(x) alone. The complete analysis of the recorded unidirectional backscattering loss curves (<<fig14>>b) shows that, independently from the attenuation measurements, many phenomena can be monitored using the backscattering technique including:
+Unidirectional backscattering measurements are obtained with the function a(x) alone. The complete analysis of the recorded unidirectional backscattering loss curves (<<fig14b>>) shows that, independently from the attenuation measurements, many phenomena can be monitored using the backscattering technique including:
 
 [class=steps]
 . reflection originated by the branching and coupling devices at the input end of the fibre;
@@ -1958,13 +1965,13 @@ Unidirectional backscattering measurements are obtained with the function a(x) a
 [[attenuation_second_alternative_general]]
 ===== General
 
-The insertion loss technique consists of the evaluation of the power loss due to the insertion of the fibre under test between a launching and a receiving system, previously interconnected (reference condition). The powers P~1~ and P~2~ are thus evaluated in a less straightforward way than in the cut‑back method. Therefore, this method is not intended for use on factory lengths of fibres and cables.
+The insertion loss technique consists of the evaluation of the power loss due to the insertion of the fibre under test between a launching and a receiving system, previously interconnected (reference condition). The powers P~1~ and P~2~ are thus evaluated in a less straightforward way than in the cut-back method. Therefore, this method is not intended for use on factory lengths of fibres and cables.
 
 The insertion loss technique is less accurate than a cut-back one, but has the advantage of being non-destructive for the fibre under test and for the semi-connectors possibly fixed at both ends. Therefore, it is particularly suitable for field use, and mainly intended for use with connectorized cable lengths.
 
 Two options are considered in the following for this technique (see <<fig15>>); they differ in the nature of the launching and receiving systems, as outlined below. Measurement conditions in between option a) and b) are possible and are discussed in <<note_fibre_attenuation>>.
 
-In option a), the quality of the semi-connectors possibly fixed to the fibre under test (and in general the quality of the used interconnection devices) influences the results; in option b), this influence is nearly excluded. As a consequence, option b) has in general a better accuracy, and it is more suitable when the actual attenuation of the fibre alone is needed. Conversely, when the fibre section under test is fitted with semi-connectors and has to be cascaded with other elements, the results from option a) are more meaningful, as they take into account the deviation of the semi‑connectors from the nominal loss.
+In option a), the quality of the semi-connectors possibly fixed to the fibre under test (and in general the quality of the used interconnection devices) influences the results; in option b), this influence is nearly excluded. As a consequence, option b) has in general a better accuracy, and it is more suitable when the actual attenuation of the fibre alone is needed. Conversely, when the fibre section under test is fitted with semi-connectors and has to be cascaded with other elements, the results from option a) are more meaningful, as they take into account the deviation of the semi-connectors from the nominal loss.
 
 [[fig15]]
 .Typical arrangements for the insertion loss technique
@@ -2004,7 +2011,7 @@ The above single-mode fibre is coupled to the fibre under test with a very preci
 
 The source is coupled through a suitable optic to the fibre under test in such a way that the launched spot at the fibre input-end face has a near-field and a far-field intensity almost uniform within the mode field diameter and the far-field intensity of the fibre under test.
 
-The system can employ lenses and a fibre positioner; alternatively, the light can be launched in a step‑index multimode fibre to be connected to the fibre under test.
+The system can employ lenses and a fibre positioner; alternatively, the light can be launched in a step-index multimode fibre to be connected to the fibre under test.
 
 This is accomplished with any coupling device or a semi-connector compatible with those terminating the fibre under test.
 
@@ -2121,7 +2128,7 @@ NOTE: The intrinsic capability of option a) to evaluate the semi-connectors beha
 
 Alternative possibilities are in using, even at an end where the semi-connector evaluation is required, an option b) set-up, previously connecting a single-mode cord to the fibre under test. The nominal loss of the fibre-to-cord connector is to be subtracted from the measured loss.
 
-The test apparatus to be used in practice should be chosen to minimize the error sources, taking into account the available instrumentation and connecting devices. The use of a hybrid set-up (a-launch, b-receive) plus a cord at the receiving end is usually the best solution when both the semi‑connectors have to be evaluated.
+The test apparatus to be used in practice should be chosen to minimize the error sources, taking into account the available instrumentation and connecting devices. The use of a hybrid set-up (a-launch, b-receive) plus a cord at the receiving end is usually the best solution when both the semi-connectors have to be evaluated.
 
 [[attenuation_second_alternative_presentation_of_the_results]]
 ===== Presentation of the results
@@ -2266,7 +2273,7 @@ image::G.650.1-201803/image18.png[]
 [level=6]
 ===== Optical source
 
-The optical source shall be stable in position, intensity and wavelength over a time period sufficiently long to complete the measurement procedure. Laser diodes, (laser diode array (LD‑array)), wavelength tunable laser diodes (WTL) (e.g., an external cavity laser (ECL)), LEDs or broadband sources, (e.g., an Nd:YAG laser with a Raman fibre) may be used, depending on the wavelength range of the measurement.
+The optical source shall be stable in position, intensity and wavelength over a time period sufficiently long to complete the measurement procedure. Laser diodes, (laser diode array (LD-array)), wavelength tunable laser diodes (WTL) (e.g., an external cavity laser (ECL)), LEDs or broadband sources, (e.g., an Nd:YAG laser with a Raman fibre) may be used, depending on the wavelength range of the measurement.
 
 In any case, the modulating signal shall be such as to guarantee a sufficient time resolution in the group delay measurement.
 
@@ -3016,7 +3023,7 @@ image::G.650.1-201803/image23.png[]
 [[appendixII_reference_fibre]]
 ==== Reference fibre
 
-The refractive index profile of the reference fibre shall be similar to that of the test fibre and its length is restricted to maintain a good longitudinal uniformity, but it shall be longer than the input dead‑zone of the backscattering measurements. In addition, the mode field diameter of the reference fibre shall be measured as a function of wavelength. This reference fibre can be used to estimate the absolute value of the mode field diameter and relative index difference from the backscattering measurements.
+The refractive index profile of the reference fibre shall be similar to that of the test fibre and its length is restricted to maintain a good longitudinal uniformity, but it shall be longer than the input dead-zone of the backscattering measurements. In addition, the mode field diameter of the reference fibre shall be measured as a function of wavelength. This reference fibre can be used to estimate the absolute value of the mode field diameter and relative index difference from the backscattering measurements.
 
 [[appendixII_measurement_procedure]]
 === Measurement procedure
@@ -3411,7 +3418,7 @@ Before including the test cable in the measurement set-up, measure a baseline re
 [[appendixIV_first_test_insert_short_cabled_fibre]]
 ===== Insert short-cabled fibre
 
-Either disconnect the two 5 m <<ITU-T_G.652>> fibres or cut the <<ITU-T_G.652>> fibre at its centre and insert the test cable into the set-up (between points A and B in <<fig-IV-1>>), and characterize splice/connector losses at each end. Intentional offset fusion splices are a convenient way to obtain a desired connection loss. An alternative is to use offset connectors. When the MFD values of ITU‑TG.652 fibre and test fibre are 9.0±0.5 μm at 1310 nm, an offset of 1-2 μm corresponds to a connection loss of 0.5-1 dB (this loss should be directly measured). The coupling ratio of LP~01~ power in the 5m <<ITU-T_G.652>> fibre lead to LP~01~ power in the test cable is desired for both connection points. It may be necessary to use mode filters and trial and error to eliminate the higher order modes (see the following note for more details). The geometrical layout of the test cable may be substantially straight, as this is the configuration which will generally give worst case MPI results. Other, more preferable, configurations can be tested as well, which involve multiple small radius cable bends.
+Either disconnect the two 5 m <<ITU-T_G.652>> fibres or cut the <<ITU-T_G.652>> fibre at its centre and insert the test cable into the set-up (between points A and B in <<fig-IV-1>>), and characterize splice/connector losses at each end. Intentional offset fusion splices are a convenient way to obtain a desired connection loss. An alternative is to use offset connectors. When the MFD values of ITU-TG.652 fibre and test fibre are 9.0±0.5 μm at 1310 nm, an offset of 1-2 μm corresponds to a connection loss of 0.5-1 dB (this loss should be directly measured). The coupling ratio of LP~01~ power in the 5m <<ITU-T_G.652>> fibre lead to LP~01~ power in the test cable is desired for both connection points. It may be necessary to use mode filters and trial and error to eliminate the higher order modes (see the following note for more details). The geometrical layout of the test cable may be substantially straight, as this is the configuration which will generally give worst case MPI results. Other, more preferable, configurations can be tested as well, which involve multiple small radius cable bends.
 
 NOTE: The meaning of the MPI value obtained from this measurement is unclear without accurate knowledge of the LP~01~ loss through each of the connection points. Stripping of the high-order mode is required to determine this loss. Some additional comments are made here on mode stripping in <<ITU-T_G.657>> fibres. Some <<ITU-T_G.657>>.A fibres may be mode stripped by using a suitably small fibre loop (the loop should not be so small that it attenuates the LP~01~ mode). If this is the case for the fibre under test, the first connection is made while monitoring the power through the jumper with a mode stripping loop present. When the first connection is satisfactory, the second connection is made, again with mode stripping loops present and power through the 5 m <<ITU-T_G.652>> fibre jumper is monitored until the total loss (through both splices) is satisfactory.
 
@@ -3574,7 +3581,7 @@ To ensure that worst-case conditions are achieved, transmitted power measurement
 [level=6]
 ===== Translation stage
 
-The translation length must be set after the mode beating period has been determined, which should be done with the polarization scrambling turned off. The translation length should be chosen between a lower limit dictated by the periodicity of the mode beating (two periods is recommended) and an upper limit corresponding to an appropriate fibre strain. In the case of a two-metre cable sample, the lower limit of the translation length would be ~2 mm and the upper limit would be ~20 mm. The velocity of the translation stage must be slow enough to guarantee that the time employed for a complete peak/trough cycle is much longer than the power meter integration time, to avoid that the power oscillations induced by fibre length variation are averaged‑out by the power meter integration time. As an example, a translation velocity of 0.2 mm/s would complete a peak/trough cycle of 1mm in 5 s, much longer than the power meter integration time of 100 ms.
+The translation length must be set after the mode beating period has been determined, which should be done with the polarization scrambling turned off. The translation length should be chosen between a lower limit dictated by the periodicity of the mode beating (two periods is recommended) and an upper limit corresponding to an appropriate fibre strain. In the case of a two-metre cable sample, the lower limit of the translation length would be ~2 mm and the upper limit would be ~20 mm. The velocity of the translation stage must be slow enough to guarantee that the time employed for a complete peak/trough cycle is much longer than the power meter integration time, to avoid that the power oscillations induced by fibre length variation are averaged-out by the power meter integration time. As an example, a translation velocity of 0.2 mm/s would complete a peak/trough cycle of 1mm in 5 s, much longer than the power meter integration time of 100 ms.
 
 [[appendixIV_third_test_sampling_frequency]]
 [level=6]
@@ -3655,7 +3662,7 @@ See <<appendixIV_first_test_presentation_of_the_results>>.
 
 The interferometric test method allows the chromatic dispersion to be measured, using a short piece of fibre (several metres). This offers the possibility of measuring the longitudinal chromatic dispersion homogeneity of optical fibres. Moreover, it is possible to test the effect of overall or local influences, such as temperature changes and macrobending losses, on the chromatic dispersion.
 
-According to the interferometric measuring principle, the wavelength-dependent time delay between the test sample and the reference path is measured by a Mach-Zehnder interferometer. The reference path can be an air path or a single‑mode fibre with known spectral group delay.
+According to the interferometric measuring principle, the wavelength-dependent time delay between the test sample and the reference path is measured by a Mach-Zehnder interferometer. The reference path can be an air path or a single-mode fibre with known spectral group delay.
 
 It should be noted that extrapolation of the chromatic dispersion values derived from the interferometric test on fibres of a few metres length, to long fibre sections assumes longitudinal homogeneity of the fibre. This assumption may not be applicable in every case.
 

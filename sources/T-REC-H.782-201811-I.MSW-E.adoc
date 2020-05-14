@@ -7,11 +7,11 @@
 :published-date: 2018-11-01
 :status: in-force
 :doctype: recommendation
-:keywords: digital signage, information flows, metadata
+:keywords: Digital signage, information flows, metadata
 :imagesdir: images
 :docfile: T-REC-H.782-201811-I.MSW-E.adoc
 :mn-document-class: itu
-:mn-output-extensions: xml,html,doc,rxl
+:mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 
@@ -79,6 +79,9 @@ This revision updates the data types of elements/attributes of identifiers. The 
 A combination of audio, still image, graphic, video, or data.
 
 NOTE: A variety of formats is classified as the "data" (e.g., text, encoded values, multimedia description language introduced by <<h760>>).
+
+[.source]
+<<h760>>
 
 ==== metadata
 
@@ -151,9 +154,9 @@ This Recommendation follows the notation described in clause 6 of <<h741>>. The 
 
 * _Definition/Semantics_: definition and semantics of the element / attribute along with notes and value domain;
 
-* _Support_: describes the requirement level and number of occurrence of the pertaining instance. The notations for requirement level are M for mandatory, R for recommended, O for optional.The notations for number of occurrence are (1) = (one instance), (0-1) = (zero or one instance), (0-\*) = (zero or multiple instances possible), (1-*) = (one or multiple instances possible);
+* _Support_: describes the requirement level and number of occurrence of the pertaining instance. The notations for requirement level are M for mandatory, R for recommended, O for optional. The notations for number of occurrence are (1) = (one instance), (0-1) = (zero or one instance), (0-\*) = (zero or multiple instances possible), (1-*) = (one or multiple instances possible);
 
-* _Type_: describes the type of the pertaining instance as defined in Table <<table1>>;
+* _Type_: describes the type of the pertaining instance as defined in <<table1>>;
 
 * _Container_: elements are defined to group associated elements.
 
@@ -162,23 +165,39 @@ This Recommendation follows the notation described in clause 6 of <<h741>>. The 
 [[table1]]
 .Data types used in this Recommendation
 |===
-| Type | Name | Notes/Reference
+^.^h| Type ^.^h| Name ^.^h| Notes/Reference
 
-| ca:civicAddress | Civic address | Used to specify civic location. Defined in <<rfc5139>>.
-| gml:Point | GML point | Used to specify simple point geometry in format of geography markup language (GML). A point consists of a \<Point\> element with a child \<coords\> element. Within \<coords\> the latitude and longitude values are separated by a space. Defined in <<iso19136>>.
-| tva:GenreType | Genre | Used to specify genre of the content. Defined in <<etsi>>.
-| xs:date | Date | Used to specify date. The lexical form is CCYY-MM-DD where "CC" represents the century, "YY" the year, "MM" the month and "DD" the day. Defined in <<xmlschema>>.
-| xs:duration | Duration | Used to specify duration of time. The lexical form is PnYnMnDTnHnMnS, where "P" represents the starts expression, "nY" represents number of years, "nM" represents number of months, "nD" represents number of days, "T" represents separation of date and time, "nH" represents number of hours, "nM" represents number of minutes, and "nS" represents number of seconds. Defined in <<xmlschema>>.
-| xs:time | Time | Used to specify time. The format of time is "hh:mm:ss" where: hh indicates the hour, mm indicates the minute, ss indicates the second. Defined in <<xmlschema>>.
-| xs:dateTime | Date and time | Used to specify date and time. The format of dateTime is YYYY-MM-DDThh:mm:ss.s+zzzzzz Defined in <<xmlschema>>.
-| xs:integer | Integer | Used to specify a numeric value without a fractional component. Defined in <<xmlschema>>.
-| xs:language | Natural language identifier | Used to specify a natural language identifier. Defined in <<xmlschema>>.
-| xs:nonNegativeInteger | Non-negative integer | Used to specify integer containing only non-negative values (e.g., 0,1,2,..) Defined in <<xmlschema>>.
-| xs:positiveInteger | Positive integer | Used to specify integer containing only positive values (e.g., 1,2,..). Defined in <<xmlschema>>.
-| xs:string | String | Used to specify string value which contains characters, line feeds, carriage returns, and tab characters. Defined in <<xmlschema>>.
-| xs:NMTOKEN | Normalized String without spaces | Used to specify string after white space replacement. This is, any occurrence of line feeds, carriage returns, contiguous of spaces, and tab are replaced by a single space along with leading or trailing spaces removed. Defined in <<xmlschema>>.
-| xs:NMTOKENS | List of NMTOKEN | A whitespace-separated list of NMTOKEN values. Defined in <<xmlschema>>.
-| xs:anyURI | URI | Used to specify uniform resource identifier (URI). Defined in <<xmlschema>>.
+| ca:civicAddress | Civic address a| Used to specify civic location. +
+Defined in <<rfc5139>>.
+| gml:Point | GML point a| Used to specify simple point geometry in format of geography markup language (GML). +
+A point consists of a <Point> element with a child <coords> element. Within <coords> the latitude and longitude values are separated by a space. +
+Defined in <<iso19136>>.
+| tva:GenreType | Genre a| Used to specify genre of the content. +
+Defined in <<etsi>>.
+| xs:date | Date a| Used to specify date. The lexical form is CCYY-MM-DD where "CC" represents the century, "YY" the year, "MM" the month and "DD" the day. +
+Defined in <<xmlschema>>.
+| xs:duration | Duration a| Used to specify duration of time. The lexical form is PnYnMnDTnHnMnS, where "P" represents the starts expression, "nY" represents number of years, "nM" represents number of months, "nD" represents number of days, "T" represents separation of date and time, "nH" represents number of hours, "nM" represents number of minutes, and "nS" represents number of seconds. +
+Defined in <<xmlschema>>.
+| xs:time | Time a| Used to specify time. The format of time is "hh:mm:ss" where: hh indicates the hour, mm indicates the minute, ss indicates the second. +
+Defined in <<xmlschema>>.
+| xs:dateTime | Date and time a| Used to specify date and time. The format of dateTime is YYYY-MM-DDThh:mm:ss.s+zzzzzz +
+Defined in <<xmlschema>>.
+| xs:integer | Integer a| Used to specify a numeric value without a fractional component. +
+Defined in <<xmlschema>>.
+| xs:language | Natural language identifier a| Used to specify a natural language identifier. +
+Defined in <<xmlschema>>.
+| xs:nonNegativeInteger | Non-negative integer a| Used to specify integer containing only non-negative values (e.g., 0,1,2,..) +
+Defined in <<xmlschema>>.
+| xs:positiveInteger | Positive integer a| Used to specify integer containing only positive values (e.g., 1,2,..). +
+Defined in <<xmlschema>>.
+| xs:string | String a| Used to specify string value which contains characters, line feeds, carriage returns, and tab characters. +
+Defined in <<xmlschema>>.
+| xs:NMTOKEN | Normalized String without spaces a| Used to specify string after white space replacement. This is, any occurrence of line feeds, carriage returns, contiguous of spaces, and tab are replaced by a single space along with leading or trailing spaces removed. +
+Defined in <<xmlschema>>.
+| xs:NMTOKENS | List of NMTOKEN a| A whitespace-separated list of NMTOKEN values. +
+Defined in <<xmlschema>>.
+| xs:anyURI | URI a| Used to specify uniform resource identifier (URI). +
+Defined in <<xmlschema>>.
 
 |===
 
@@ -235,24 +254,42 @@ image::T-REC-H.782/image004.png[]
 [[table2]]
 .Metadata for "client configuration"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
-| Client‌Configuration | Container to include client configuration information. |
-| Terminal‌Id | Element of ClientConfiguration.An identifier of a terminal device. This value is allocated by the digital signage server. | M(1) | xs:NMTOKEN
-| Name | Element of ClientConfiguration.Name of the terminal, which can be in different languages. | O(0-*) | xs:string
-| KeywordList | Element of ClientConfiguration.Container to include list of keywords. | O(0-1) |
-| Keyword | Element of KeywordList.A keyword for the usage of the terminal device which can be in different languges.A keyword can be a single word or an entire phrase made up of multiple words. | O(1-*) | xs:string
-| Configuration‌DateTime | Element of ClientConfiguration.Describes date/time of configuration of the terminal device. | O(0-1) | xs:dateTime
-| ScreenlayoutId‌RefList | Element of ClientConfiguration.A list of reference identifiers of the screen layout information (see <<table15>>). | O(0-1) | xs:NMTOKENS
-| TerminalGroup‌Id‌Ref | Element of ClientConfiguration.A reference identifier of the terminal group information (see <<table9>>). | O(0-1) | xs:NMTOKEN
-| Username | Element of ClientConfiguration.The user name to access the terminal device. | O(0-1) | xs:NMTOKEN
-| Password | Element of ClientConfiguration.The password to access the terminal device. | O(0-1) | xs:string
-| AVControl | Element of ClientConfiguration.Container to include audio and visual information. | O(0-1) |
-| Volume | Element of AVControl.Control the sound volume level of the terminal device.Suggested unit is in percentage (%). | O(0-1) | xs:string
-| Brightness | Element of AVControl.Control the monitor brightness level of the terminal device.Suggested unit is in percentage (%). | O(0-1) | xs:string
-| ContentDelivery‌ServerIdRefList | Element of ClientConfiguration.A list of reference identifiers of content delivery servers (see <<table5>>). | O(0-1) | xs:NMTOKENS
-| LogServerIdRef | Element of ClientConfiguration.A reference identifier to a log server (see <<table6>>). | O(0-1) | xs:NMTOKEN
-| Playlist‌ScheduleServer‌Id‌Ref | Element of ClientConfiguration.A reference identifier to a server that provides a playlist schedule (see <<table7>>). | O(0-1) | xs:NMTOKEN
+| Client‌Configuration | Container to include client configuration information. | |
+| Terminal‌Id a| Element of ClientConfiguration. +
+An identifier of a terminal device. This value is allocated by the digital signage server. | M(1) | xs:NMTOKEN
+| Name a| Element of ClientConfiguration. +
+Name of the terminal, which can be in different languages. | O(0-*) | xs:string
+| KeywordList a| Element of ClientConfiguration. +
+Container to include list of keywords. | O(0-1) |
+| Keyword a| Element of KeywordList. +
+A keyword for the usage of the terminal device which can be in different languges. +
+A keyword can be a single word or an entire phrase made up of multiple words. | O(1-*) | xs:string
+| Configuration‌DateTime a| Element of ClientConfiguration. +
+Describes date/time of configuration of the terminal device. | O(0-1) | xs:dateTime
+| ScreenlayoutId‌RefList a| Element of ClientConfiguration. +
+A list of reference identifiers of the screen layout information (see <<table15>>). | O(0-1) | xs:NMTOKENS
+| TerminalGroup‌Id‌Ref a| Element of ClientConfiguration. +
+A reference identifier of the terminal group information (see <<table9>>). | O(0-1) | xs:NMTOKEN
+| Username a| Element of ClientConfiguration. +
+The user name to access the terminal device. | O(0-1) | xs:NMTOKEN
+| Password a| Element of ClientConfiguration. +
+The password to access the terminal device. | O(0-1) | xs:string
+| AVControl a| Element of ClientConfiguration. +
+Container to include audio and visual information. | O(0-1) |
+| Volume a| Element of AVControl. +
+Control the sound volume level of the terminal device. +
+Suggested unit is in percentage (%). | O(0-1) | xs:string
+| Brightness a| Element of AVControl. +
+Control the monitor brightness level of the terminal device. +
+Suggested unit is in percentage (%). | O(0-1) | xs:string
+| ContentDelivery‌ServerIdRefList a| Element of ClientConfiguration. +
+A list of reference identifiers of content delivery servers (see <<table5>>). | O(0-1) | xs:NMTOKENS
+| LogServerIdRef a| Element of ClientConfiguration. +
+A reference identifier to a log server (see <<table6>>). | O(0-1) | xs:NMTOKEN
+| Playlist‌ScheduleServer‌Id‌Ref a| Element of ClientConfiguration. +
+A reference identifier to a server that provides a playlist schedule (see <<table7>>). | O(0-1) | xs:NMTOKEN
 
 |===
 
@@ -289,24 +326,44 @@ image::T-REC-H.782/image005.png[]
 [[table3]]
 .Metadata for "terminal device"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
-| Terminal‌Device | Container to include terminal device information to be reported to the server. |
-| TerminalId‌Ref | Element of TerminalDevice.A reference identifier of a terminal device. This value is allocated by the digital signage server (see <<table2>>). | M(1) | xs:NMTOKEN
-| Installation‌DateTime | Element of TerminalDevice.Describes date and time of installation of the terminal device. | O(0-1) | xs:dateTime
-| Display‌Information | Element of TerminalDevice.Container to include information of the display connected to a terminal device. | O(0-1) |
-| Installation‌Layout | Element of DisplayInformation.Informs how the display is installed. Example values are horizontal, vertical, tiled horizontally, but not limited. | O(0-1) | xs:string
-| Size | Element of DisplayInformation.The size of display monitor in length unit. The data type has three attributes for diagonal, width and height of the monitor, and an additional unit attribute. Example units are centimeters, inches, but not limited. | O(0-1) | xs:string
-| Pixel‌Resolution | Element of DisplayInformation.The resolution of display monitor in pixels. It has three attributes for the width, height and aspect ratio. | O(0-1) | xs:string
-| Capability‌List | Element of DisplayInformation.List of capabilities that are provided in the screen. Example values are touch screen, 3D, but not limited. | O(0-1) | xs:‌NMTOKENS
-| Cpu | Element of TerminalDevice.CPU power of the terminal. | O(0-1) | xs:string
-| Storage‌Size | Element of TerminalDevice.Storage size available of the terminal. | O(0-1) | xs:string
-| IPAddress | Element of TerminalDevice.IP address of the terminal device.This attribute can be an IPv4 or IPv6 address.Either MAC address or IP address exists for a single terminal. | R(0-1) | xs:‌NMTOKEN
-| MACAddress | Element of TerminalDevice.MAC address of the terminal device.The format for this attribute is "xx:xx:xx:xx:xx:xx", where 'x' indicates a single hexadecimal.Either MAC address or IP address exists for a single terminal. | R(0-1) | xs:‌NMTOKEN
-| Timezone | Element of TerminalDevice.The timezone of the terminal device.Value in coordinated universal time (UTC) time. | O(0-1) | xs:time
-| Geo‌Location | Element of TerminalDevice.The geographical location of the terminal device. | O(0-1) | gml:Point
-| Location | Element of TerminalDevice.Location of the terminal other than geographic information (e.g., postal address). | O(0-1) | ca:‌civic‌Address
-| Interactive‌Device | Element of TerminalDevice.The container to include the list of interactive devices that are attached to the terminal device (see <<table4>>). | O(0-*) |
+| Terminal‌Device | Container to include terminal device information to be reported to the server. | |
+| TerminalId‌Ref a| Element of TerminalDevice. +
+A reference identifier of a terminal device. This value is allocated by the digital signage server (see <<table2>>). | M(1) | xs:NMTOKEN
+| Installation‌DateTime a| Element of TerminalDevice. +
+Describes date and time of installation of the terminal device. | O(0-1) | xs:dateTime
+| Display‌Information a| Element of TerminalDevice. +
+Container to include information of the display connected to a terminal device. | O(0-1) |
+| Installation‌Layout a| Element of DisplayInformation. +
+Informs how the display is installed. Example values are horizontal, vertical, tiled horizontally, but not limited. | O(0-1) | xs:string
+| Size a| Element of DisplayInformation. +
+The size of display monitor in length unit. The data type has three attributes for diagonal, width and height of the monitor, and an additional unit attribute. Example units are centimeters, inches, but not limited. | O(0-1) | xs:string
+| Pixel‌Resolution a| Element of DisplayInformation. +
+The resolution of display monitor in pixels. It has three attributes for the width, height and aspect ratio. | O(0-1) | xs:string
+| Capability‌List a| Element of DisplayInformation. +
+List of capabilities that are provided in the screen. Example values are touch screen, 3D, but not limited. | O(0-1) | xs:‌NMTOKENS
+| Cpu a| Element of TerminalDevice. +
+CPU power of the terminal. | O(0-1) | xs:string
+| Storage‌Size a| Element of TerminalDevice. +
+Storage size available of the terminal. | O(0-1) | xs:string
+| IPAddress a| Element of TerminalDevice. +
+IP address of the terminal device. +
+This attribute can be an IPv4 or IPv6 address. +
+Either MAC address or IP address exists for a single terminal. | R(0-1) | xs:‌NMTOKEN
+| MACAddress a| Element of TerminalDevice. +
+MAC address of the terminal device. +
+The format for this attribute is "xx:xx:xx:xx:xx:xx", where 'x' indicates a single hexadecimal. +
+Either MAC address or IP address exists for a single terminal. | R(0-1) | xs:‌NMTOKEN
+| Timezone a| Element of TerminalDevice. +
+The timezone of the terminal device. +
+Value in coordinated universal time (UTC) time. | O(0-1) | xs:time
+| Geo‌Location a| Element of TerminalDevice. +
+The geographical location of the terminal device. | O(0-1) | gml:Point
+| Location a| Element of TerminalDevice. +
+Location of the terminal other than geographic information (e.g., postal address). | O(0-1) | ca:‌civic‌Address
+| Interactive‌Device a| Element of TerminalDevice. +
+The container to include the list of interactive devices that are attached to the terminal device (see <<table4>>). | O(0-*) |
 
 |===
 
@@ -333,7 +390,7 @@ NOTE: This is used to check if the terminal is able to store the content to be d
 NOTE: When the terminal and the server are in different time zones, the server needs to be careful with information related to time;
 
 * _GeoLocation_: denotes the location of the terminal using GML format;
-
++
 NOTE: If the terminal is mobile, this element can be appropriate in providing the actual position of the terminal.
 
 * _Location_: describes the postal address of the terminal;
@@ -349,14 +406,22 @@ A terminal device can have zero or more interactive devices attached. The digita
 [[table4]]
 .Metadata for "interactive device"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
-| Interactive‌Device | Container to include interactive devices attached to the terminal. |
-| Interactive‌DeviceId | Element of InteractiveDevice.Identifier of the interactive device. | M(1) | xs:NMTOKEN
-| Name | Element of InteractiveDevice.Name of the interactive device, which can be in different languages. | O(0-*) | xs:string
-| Type | Element of InteractiveDevice.Type of interactive device.The suggested values are touch panel, keyboard, mouse, camera, camcorder, sensor, but not limited. | R(0-1) | xs:string
-| Output‌Type | Element of InteractiveDevice.Type of output type of event that can occur to the interactive device.The suggested values are text, audio, video, position, but not limited. | O(0-1) | xs:string
-| Status | Element of InteractiveDevice.Indicates the existence of an error (and/or type of error) in the interactive device.The suggested values are normal, failure, but not limited. | M(1) | xs:string
+| Interactive‌Device | Container to include interactive devices attached to the terminal. | |
+| Interactive‌DeviceId a| Element of InteractiveDevice. +
+Identifier of the interactive device. | M(1) | xs:NMTOKEN
+| Name a| Element of InteractiveDevice. +
+Name of the interactive device, which can be in different languages. | O(0-*) | xs:string
+| Type a| Element of InteractiveDevice. +
+Type of interactive device. +
+The suggested values are touch panel, keyboard, mouse, camera, camcorder, sensor, but not limited. | R(0-1) | xs:string
+| Output‌Type a| Element of InteractiveDevice. +
+Type of output type of event that can occur to the interactive device. +
+The suggested values are text, audio, video, position, but not limited. | O(0-1) | xs:string
+| Status a| Element of InteractiveDevice. +
+Indicates the existence of an error (and/or type of error) in the interactive device. +
+The suggested values are normal, failure, but not limited. | M(1) | xs:string
 
 |===
 
@@ -379,16 +444,24 @@ It is possible to have a separate content delivery server to distribute content 
 [[table5]]
 .Metadata for "content delivery server"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Content‌Delivery‌Server | Container to include information of the content delivery server. | |
-| Content‌Delivery‌Server‌Id | Element of ContentDeliveryServer.Identification of the content delivery server. | M(1) | xs:NMTOKEN
-| Location | Element of ContentDeliveryServer.Container to include the IP address/URI of the content delivery server. | M(1) |
-| IPAddress | Element of Location.The IP address and port number of the content delivery server. | O(0-1) | xs:string
-| URI | Element of Location.The URI of the content delivery server. | O(0-1) | xs:anyURI
-| Username | Element of ContentDeliveryServer.The user name to access the content delivery server. | O(0-1) | xs:string
-| Password | Element of ContentDeliveryServer.The password to access the content delivery server. | O(0-1) | xs:string
-| Timezone | Element of ContentDeliveryServer.The time zone of the content delivery server.Value in UTC time. | O(0-1) | xs:time
+| Content‌Delivery‌Server‌Id a| Element of ContentDeliveryServer. +
+Identification of the content delivery server. | M(1) | xs:NMTOKEN
+| Location a| Element of ContentDeliveryServer. +
+Container to include the IP address/URI of the content delivery server. | M(1) |
+| IPAddress a| Element of Location. +
+The IP address and port number of the content delivery server. | O(0-1) | xs:string
+| URI a| Element of Location. +
+The URI of the content delivery server. | O(0-1) | xs:anyURI
+| Username a| Element of ContentDeliveryServer. +
+The user name to access the content delivery server. | O(0-1) | xs:string
+| Password a| Element of ContentDeliveryServer. +
+The password to access the content delivery server. | O(0-1) | xs:string
+| Timezone a| Element of ContentDeliveryServer. +
+The time zone of the content delivery server. +
+Value in UTC time. | O(0-1) | xs:time
 
 |===
 
@@ -411,16 +484,24 @@ It is possible to have separate log server to collect log data. A set of element
 [[table6]]
 .Metadata for "log server"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | LogServer | Container to include information of log server. | |
-| LogServerId | Element of LogServer.Identification of the log server. | M(1) | xs:NMTOKEN
-| Location | Element of LogServer.Container to include the IP address/URI of the log server. | M(1) |
-| IPAddress | Element of Location.The IP address and port number of the log server. | O(0-1) | xs:string
-| URI | Element of Location.The URI of the log server. | O(0-1) | xs:anyURI
-| Username | Element of LogServer.The user name to access to the log server. | O(0-1) | xs:‌NMTOKEN
-| Password | Element of LogServer.The password to access to the log server. | O(0-1) | xs:string
-| Timezone | Element of LogServer.The time zone of the log server.Value in UTC time. | O(0-1) | xs:time
+| LogServerId a| Element of LogServer. +
+Identification of the log server. | M(1) | xs:NMTOKEN
+| Location a| Element of LogServer. +
+Container to include the IP address/URI of the log server. | M(1) |
+| IPAddress a| Element of Location. +
+The IP address and port number of the log server. | O(0-1) | xs:string
+| URI a| Element of Location. +
+The URI of the log server. | O(0-1) | xs:anyURI
+| Username a| Element of LogServer. +
+The user name to access to the log server. | O(0-1) | xs:‌NMTOKEN
+| Password a| Element of LogServer. +
+The password to access to the log server. | O(0-1) | xs:string
+| Timezone a| Element of LogServer. +
+The time zone of the log server. +
+Value in UTC time. | O(0-1) | xs:time
 
 |===
 
@@ -443,16 +524,24 @@ It is possible to have a separate server to inform playlist schedule. A set of e
 [[table7]]
 .Metadata for "playlist schedule server"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Playlist‌Schedule‌Server | Container to include information of playlist scheduleserver. | |
-| Playlist‌Schedule‌ServerId | Element of PlaylistScheduleServer.Identification of the playlist schedule server. | M(1) | xs:NMTOKEN
-| Location | Element of PlaylistScheduleServer.Container to include the IP address/URI of the playlist schedule server. | M(1) |
-| IPAddress | Element of Location.The IP qddress and port number of the playlist schedule server. | O(0-1) | xs:string
-| URI | Element of Location.The URI of the playlist schedule server. | O(0-1) | xs:anyURI
-| Username | Element of PlaylistScheduleServer.The user name to access to the playlist schedule server. | O(0-1) | xs:‌NMTOKEN
-| Password | Element of PlaylistScheduleServer.The password to access to the playlist schedule server. | O(0-1) | xs:string
-| Timezone | Element of PlaylistScheduleServer.The time zone of the playlist schedule server.Value in UTC time. | O(0-1) | xs:time
+| Playlist‌Schedule‌ServerId a| Element of PlaylistScheduleServer. +
+Identification of the playlist schedule server. | M(1) | xs:NMTOKEN
+| Location a| Element of PlaylistScheduleServer. +
+Container to include the IP address/URI of the playlist schedule server. | M(1) |
+| IPAddress a| Element of Location. +
+The IP qddress and port number of the playlist schedule server. | O(0-1) | xs:string
+| URI a| Element of Location. +
+The URI of the playlist schedule server. | O(0-1) | xs:anyURI
+| Username a| Element of PlaylistScheduleServer. +
+The user name to access to the playlist schedule server. | O(0-1) | xs:‌NMTOKEN
+| Password a| Element of PlaylistScheduleServer. +
+The password to access to the playlist schedule server. | O(0-1) | xs:string
+| Timezone a| Element of PlaylistScheduleServer. +
+The time zone of the playlist schedule server. +
+Value in UTC time. | O(0-1) | xs:time
 
 |===
 
@@ -481,20 +570,38 @@ image::T-REC-H.782/image006.png[]
 [[table8]]
 .Metadata for "terminal device status"
 |===
-<.^| Element/Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Terminal‌Device‌Status | Container to include information in the terminal device status reported to the server. | |
-| Terminal‌Id‌Ref | Element of TerminalDeviceStatus.A reference identifier of the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
-| Timestamp | Element of TerminalDeviceStatus.Time/date that was measured by the terminal device. | M(1) | xs:dateTime
-| FreeSpace | Element of TerminalDeviceStatus.Size of the free space in the memory of the terminal device.Suggested unit is in either megabytes (MB) or gigabytes (GB). The value may be expressed as size + unit such as '10 MB'. | R(0-1) | xs:string
-| CPU‌Speed | Element of TerminalDeviceStatus.Currently measured CPU speed of the terminal device.Suggested unit is in GHz. | O(0-1) | xs:non‌Negative‌Integer
-| Temperature | Element of TerminalDeviceStatus.Currently measured temperature of the terminal device.Suggested unit is in Celsius. | O(0-1) | xs:integer
-| Uptime | Element of TerminalDeviceStatus.Current uptime of the terminal device.Suggested unit is in minutes. | R(0-1) | xs:non‌Negative‌Integer
-| AVControl | Element of TerminalDeviceStatus.Container to include current audio and visual status. | O(0-1) |
-| Volume | Element of AVControl.Current sound volume level of the terminal device.Suggested unit is in percentage (%). | O(0-1) | xs:non‌Negative‌Integer
-| Brightness | Element of AVControl.Current monitor brightness level of the terminal device.Suggested unit is in percentage (%). | O(0-1) | xs:non‌Negative‌Integer
-| Last‌Connect | Element of TerminalDeviceStatus.Time of last connection with the server. | O(0-1) | xs:dateTime
-| Terminal‌Status | Element of TerminalDeviceStatus.Indicates the existence of an error (and/or type of error) of the terminal device.The suggested values are normal, display failure, interactive device failure, but not limited. | M(1) | xs:string
+| Terminal‌Id‌Ref a| Element of TerminalDeviceStatus. +
+A reference identifier of the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
+| Timestamp a| Element of TerminalDeviceStatus. +
+Time/date that was measured by the terminal device. | M(1) | xs:dateTime
+| FreeSpace a| Element of TerminalDeviceStatus. +
+Size of the free space in the memory of the terminal device. +
+Suggested unit is in either megabytes (MB) or gigabytes (GB). The value may be expressed as size + unit such as '10 MB'. | R(0-1) | xs:string
+| CPU‌Speed a| Element of TerminalDeviceStatus. +
+Currently measured CPU speed of the terminal device. +
+Suggested unit is in GHz. | O(0-1) | xs:non‌Negative‌Integer
+| Temperature a| Element of TerminalDeviceStatus. +
+Currently measured temperature of the terminal device. +
+Suggested unit is in Celsius. | O(0-1) | xs:integer
+| Uptime a| Element of TerminalDeviceStatus. +
+Current uptime of the terminal device. +
+Suggested unit is in minutes. | R(0-1) | xs:non‌Negative‌Integer
+| AVControl a| Element of TerminalDeviceStatus. +
+Container to include current audio and visual status. | O(0-1) |
+| Volume a| Element of AVControl. +
+Current sound volume level of the terminal device. +
+Suggested unit is in percentage (%). | O(0-1) | xs:non‌Negative‌Integer
+| Brightness a| Element of AVControl. +
+Current monitor brightness level of the terminal device. +
+Suggested unit is in percentage (%). | O(0-1) | xs:non‌Negative‌Integer
+| Last‌Connect a| Element of TerminalDeviceStatus. +
+Time of last connection with the server. | O(0-1) | xs:dateTime
+| Terminal‌Status a| Element of TerminalDeviceStatus. +
+Indicates the existence of an error (and/or type of error) of the terminal device. +
+The suggested values are normal, display failure, interactive device failure, but not limited. | M(1) | xs:string
 
 |===
 
@@ -521,18 +628,28 @@ A set of elements/attributes for "terminal group" metadata is shown in <<table9>
 [[table9]]
 .Metadata for "terminal group"
 |===
-<.^| Element/ Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Terminal‌Group | Container to include group information for terminal device. | |
-| Terminal‌GroupId | Element of TerminalGroup.An identifier of the group of terminal devices. | M(1) | xs:NMTOKEN
-| Name | Element of TerminalGroup.Name of the terminal group, which can be in different languages. | O(0-*) | xs:string
-| Username | Element of TerminalGroup.The user name to access the terminal group. | O(0-1) | xs:‌NMTOKEN
-| Password | Element of TerminalGroup.The password to access the terminal group. | O(0-1) | xs:string
-| Location | Element of TerminalGroup.Location of the terminals in the group (e.g., A building name, or an area name of terminal devices installed). | O(0-1) | xs:string
-| Creation‌DateTime | Element of TerminalGroup.Creation time/date of the terminal group. | O(0-1) | xs:dateTime
-| ParentGroup‌IdRef | Element of TerminalGroup.To support nested groups, a reference identifier of the parent terminal group. | R(0-1) | xs:NMTOKEN
-| Inherited‌Depth | Element of TerminalGroup.The depth of the nested group when ParentGroupIdRef is assigned.If the value is bigger than 0, it is inherited. | R(0-1) | xs:non‌Negative‌Integer
-| TerminalId‌RefList | Element of TerminalGroup.A list of reference identifiers of the terminal devices (see <<table2>>). List of terminal devices that are assigned to this group. | M(1) | xs:NMTOKENS
+| Terminal‌GroupId a| Element of TerminalGroup. +
+An identifier of the group of terminal devices. | M(1) | xs:NMTOKEN
+| Name a| Element of TerminalGroup. +
+Name of the terminal group, which can be in different languages. | O(0-*) | xs:string
+| Username a| Element of TerminalGroup. +
+The user name to access the terminal group. | O(0-1) | xs:‌NMTOKEN
+| Password a| Element of TerminalGroup. +
+The password to access the terminal group. | O(0-1) | xs:string
+| Location a| Element of TerminalGroup. +
+Location of the terminals in the group (e.g., A building name, or an area name of terminal devices installed). | O(0-1) | xs:string
+| Creation‌DateTime a| Element of TerminalGroup. +
+Creation time/date of the terminal group. | O(0-1) | xs:dateTime
+| ParentGroup‌IdRef a| Element of TerminalGroup. +
+To support nested groups, a reference identifier of the parent terminal group. | R(0-1) | xs:NMTOKEN
+| Inherited‌Depth a| Element of TerminalGroup. +
+The depth of the nested group when ParentGroupIdRef is assigned. +
+If the value is bigger than 0, it is inherited. | R(0-1) | xs:non‌Negative‌Integer
+| TerminalId‌RefList a| Element of TerminalGroup. +
+A list of reference identifiers of the terminal devices (see <<table2>>). List of terminal devices that are assigned to this group. | M(1) | xs:NMTOKENS
 
 |===
 
@@ -569,22 +686,42 @@ image::T-REC-H.782/image007.png[]
 [[table10]]
 .Metadata for "play log"
 |===
-<.^| Element/ Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | PlayLog | Container to include information of play log reported by the client. | |
-| TerminalIdRef | Element of Playlog.A reference identifier of the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
-| LogItem | Element of Playlog.Container to include information of list of log items. | O(0-*) |
-| StartDateTime | Element of LogItem.Describes the start date and time of showing the content. | M(1) | xs:dateTime
-| EndDateTime | Element of LogItem.Describes the end date and time of showing the content.Either EndDateTime or Duration may exist for a single log item. | O(0-1) | xs:dateTime
-| Duration | Element of LogItem.Describes duration of showing the content.Either EndDateTime or Duration may exist for a single log item. | O(0-1) | xs:duration
-| LogItemType | Element of LogItem.Identifies the type of the single log.Various values are possible, suggested ones are ContentLog and PlayListLog. | R(1) | xs:‌NMTOKEN
-| ContentIdRef | Element of LogItem.A reference identifier of the content which is presented in the terminal device (see <<table14>>).Either ContentIdRef or PlayListIdRef exists for a single log. | O(0-1) | xs:NMTOKEN
-| PlaylistIdRef | Element of LogItem.A reference identifier of the playlist or playlist schedule which is presented in the terminal device (see <<table13>>).Either ContentIdRef or PlaylistIdRef exists for a single log. | O(0-1) | xs:NMTOKEN
-| PlayedScreen‌Region | Element of LogItem.A container to include reference identifier to screen layout and region in which the content/playlist has been played. | O(0-1) |
-| ScreenLayout‌IdRef | Element of PlayedScreenRegion.A reference identifier of the screen layout in which the content/playlist has been displayed (see <<table15>>). | O(0-1) | xs:NMTOKEN
-| RegionIdRef | Element of PlayedScreenRegion.A reference identifier of the region in which the content/playlist has been displayed (see <<table16>>).For a single region in the terminal device, it shall be omitted. | O(0-1) | xs:NMTOKEN
-| PlayStatus | Element of LogItem.Indicates the display status of the content/playlist.The suggested values are success, hardware failure, content failure, content interruption, but not limited. | R(1) | xs:string
-| ProofOfPlay | Element of LogItem.Anything that can identify the proof of play. | O(0-1) | xs:string
+| TerminalIdRef a| Element of Playlog. +
+A reference identifier of the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
+| LogItem a| Element of Playlog. +
+Container to include information of list of log items. | O(0-*) |
+| StartDateTime a| Element of LogItem. +
+Describes the start date and time of showing the content. | M(1) | xs:dateTime
+| EndDateTime a| Element of LogItem. +
+Describes the end date and time of showing the content. +
+Either EndDateTime or Duration may exist for a single log item. | O(0-1) | xs:dateTime
+| Duration a| Element of LogItem. +
+Describes duration of showing the content. +
+Either EndDateTime or Duration may exist for a single log item. | O(0-1) | xs:duration
+| LogItemType a| Element of LogItem. +
+Identifies the type of the single log. +
+Various values are possible, suggested ones are ContentLog and PlayListLog. | R(1) | xs:‌NMTOKEN
+| ContentIdRef a| Element of LogItem. +
+A reference identifier of the content which is presented in the terminal device (see <<table14>>). +
+Either ContentIdRef or PlayListIdRef exists for a single log. | O(0-1) | xs:NMTOKEN
+| PlaylistIdRef a| Element of LogItem. +
+A reference identifier of the playlist or playlist schedule which is presented in the terminal device (see <<table13>>). +
+Either ContentIdRef or PlaylistIdRef exists for a single log. | O(0-1) | xs:NMTOKEN
+| PlayedScreen‌Region a| Element of LogItem. +
+A container to include reference identifier to screen layout and region in which the content/playlist has been played. | O(0-1) |
+| ScreenLayout‌IdRef a| Element of PlayedScreenRegion. +
+A reference identifier of the screen layout in which the content/playlist has been displayed (see <<table15>>). | O(0-1) | xs:NMTOKEN
+| RegionIdRef a| Element of PlayedScreenRegion. +
+A reference identifier of the region in which the content/playlist has been displayed (see <<table16>>). +
+For a single region in the terminal device, it shall be omitted. | O(0-1) | xs:NMTOKEN
+| PlayStatus a| Element of LogItem. +
+Indicates the display status of the content/playlist. +
+The suggested values are success, hardware failure, content failure, content interruption, but not limited. | R(1) | xs:string
+| ProofOfPlay a| Element of LogItem. +
+Anything that can identify the proof of play. | O(0-1) | xs:string
 
 |===
 
@@ -623,16 +760,28 @@ image::T-REC-H.782/image008.png[]
 [[table11]]
 .Metadata for "content delivery schedule"
 |===
-<.^| Element/ Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Content‌Delivery‌Schedule | Container to include information of the content delivery schedule. | |
-| Content‌Delivery‌ScheduleId | Element of ContentDeliverySchedule.An identifier of the content delivery schedule. | M(1) | xs:NMTOKEN
-| ContentId‌Ref‌List | Element of ContentDeliverySchedule.A list of reference identifiers of content (see <<table14>>).Content to be delivered from the content delivery server to the content delivery client. | M(1) | xs:NMTOKENS
-| Terminal‌Group‌Id‌Ref‌List | Element of ContentDeliverySchedule.A list of reference identifiers of terminal group (see <<table9>>).Terminal group ID of the terminal devices in which this metadata applies.If omitted, applies to the terminal device that received this metadata. | O(0-1) | xs:NMTOKENS
-| Publication‌DateTime | Element of ContentDeliverySchedule.Time/date of the content delivery schedule issued by the server. | R(1) | xs:dateTime
-| Delivery‌Deadline | Element of ContentDeliverySchedule.Deadline time/date in which specified content must be received by the client. | O(0-1) | xs:dateTime
-| SendDate‌Time | Element of ContentDeliverySchedule.Time/date when the delivery of specified content starts.If neither Deadline nor SendDateTime are assigned, content may be sent immediately when the delivery server receives a sending request. | O(0-1) | xs:dateTime
-| Delivery‌Method | Element of ContentDeliverySchedule.Delivery method used between content the delivery server and the content delivery client.The suggested values are PushMode, PullMode, P2PMode, but not limited. | R(1) | xs:‌NMTOKENS
+| Content‌Delivery‌ScheduleId a| Element of ContentDeliverySchedule. +
+An identifier of the content delivery schedule. | M(1) | xs:NMTOKEN
+| ContentId‌Ref‌List a| Element of ContentDeliverySchedule. +
+A list of reference identifiers of content (see <<table14>>). +
+Content to be delivered from the content delivery server to the content delivery client. | M(1) | xs:NMTOKENS
+| Terminal‌Group‌Id‌Ref‌List a| Element of ContentDeliverySchedule. +
+A list of reference identifiers of terminal group (see <<table9>>). +
+Terminal group ID of the terminal devices in which this metadata applies. +
+If omitted, applies to the terminal device that received this metadata. | O(0-1) | xs:NMTOKENS
+| Publication‌DateTime a| Element of ContentDeliverySchedule. +
+Time/date of the content delivery schedule issued by the server. | R(1) | xs:dateTime
+| Delivery‌Deadline a| Element of ContentDeliverySchedule. +
+Deadline time/date in which specified content must be received by the client. | O(0-1) | xs:dateTime
+| SendDate‌Time a| Element of ContentDeliverySchedule. +
+Time/date when the delivery of specified content starts. +
+If neither Deadline nor SendDateTime are assigned, content may be sent immediately when the delivery server receives a sending request. | O(0-1) | xs:dateTime
+| Delivery‌Method a| Element of ContentDeliverySchedule. +
+Delivery method used between content the delivery server and the content delivery client. +
+The suggested values are PushMode, PullMode, P2PMode, but not limited. | R(1) | xs:‌NMTOKENS
 
 |===
 
@@ -667,22 +816,37 @@ A set of elements/attributes for "playlist schedule" are shown in <<table12>>.
 [[table12]]
 .Metadata for "playlist schedule"
 |===
-<.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Playlist‌Schedule | Container to include information of playlist schedule. | |
-| Playlist‌ScheduleId | Element of PlaylistSchedule.Identifier of the PlaylistSchedule. | M(1) | xs:NMTOKEN
-| Name | Element of PlaylistSchedule.Name of the playlist schedule, which can be in different languages | O(0-*) | xs:string
-| Terminal‌GroupIdRefList | Element of PlaylistSchedule.A list of reference identifiers of the terminal group (see <<table9>>). Terminal group ID of the terminals in which this playlist schedule applies. | O(0-1) | xs:NMTOKENS
-| Publication‌DateTime | Element of PlaylistSchedule.Time/date of the playlist schedule issued by the server. | R(1) | xs:dateTime
-| ValidDate‌Time | Element of PlaylistSchedule.Time/date in which this playlist schedule becomes valid. | O(0-1) | xs:dateTime
-| Expiration | Element of PlaylistSchedule.Expiration time/date of the playlist schedule.If omitted, handling of this element is implementation-dependent (e.g., expiration time is infinite until new PlaylistScheduleInformation with same identifier is received). | O(0-1) | xs:dateTime
-| Priority | Element of PlaylistSchedule.Priority of the playlist schedule. Pertaining playlist schedule is displayed when no playlist schedule with higher priority exists. | O(0-1) | xs:non‌Negative‌Integer
-| ApplyDate‌List | Element of PlaylistSchedule.List of specific single date in which the content should be played. | O(0-1) | xs:date
-| ApplyDay‌OfWeekList | Element of PlaylistSchedule.List of day of the week in which the playlist should be played.Among other possible values, the suggested values are Everyday,Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and PublicHolidays. | O(0-1) | xs:‌NMTOKEN
-| StartTime | Element of PlaylistSchedule.Time/date in which the content should start playing. | R(1) | xs:dateTime or xs:time
-| EndTime | Element of PlaylistSchedule.Time/date in which the content should stop playing. | O(0-1) | xs:dateTime or xs:time
-| PlaylistId‌Ref | Element of PlaylistSchedule.A reference identifier of the Playlist(see <<table13>>) which contains a list of contents to be played by the client. | M(1-*) | xs:NMTOKEN
-| Repeat‌Number | Element of PlaylistIdRef.Number of times the playlist should be repeated. | O(0-1) | xs:‌positiveInteger
+| Playlist‌ScheduleId a| Element of PlaylistSchedule. +
+Identifier of the PlaylistSchedule. | M(1) | xs:NMTOKEN
+| Name a| Element of PlaylistSchedule. +
+Name of the playlist schedule, which can be in different languages | O(0-*) | xs:string
+| Terminal‌GroupIdRefList a| Element of PlaylistSchedule. +
+A list of reference identifiers of the terminal group (see <<table9>>). Terminal group ID of the terminals in which this playlist schedule applies. | O(0-1) | xs:NMTOKENS
+| Publication‌DateTime a| Element of PlaylistSchedule. +
+Time/date of the playlist schedule issued by the server. | R(1) | xs:dateTime
+| ValidDate‌Time a| Element of PlaylistSchedule. +
+Time/date in which this playlist schedule becomes valid. | O(0-1) | xs:dateTime
+| Expiration a| Element of PlaylistSchedule. +
+Expiration time/date of the playlist schedule. +
+If omitted, handling of this element is implementation-dependent (e.g., expiration time is infinite until new PlaylistScheduleInformation with same identifier is received). | O(0-1) | xs:dateTime
+| Priority a| Element of PlaylistSchedule. +
+Priority of the playlist schedule. Pertaining playlist schedule is displayed when no playlist schedule with higher priority exists. | O(0-1) | xs:non‌Negative‌Integer
+| ApplyDate‌List a| Element of PlaylistSchedule. +
+List of specific single date in which the content should be played. | O(0-1) | xs:date
+| ApplyDay‌OfWeekList a| Element of PlaylistSchedule. +
+List of day of the week in which the playlist should be played. +
+Among other possible values, the suggested values are Everyday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and PublicHolidays. | O(0-1) | xs:‌NMTOKEN
+| StartTime a| Element of PlaylistSchedule. +
+Time/date in which the content should start playing. | R(1) | xs:dateTime or xs:time
+| EndTime a| Element of PlaylistSchedule. +
+Time/date in which the content should stop playing. | O(0-1) | xs:dateTime or xs:time
+| PlaylistId‌Ref a| Element of PlaylistSchedule. +
+A reference identifier of the Playlist(see <<table13>>) which contains a list of contents to be played by the client. | M(1-*) | xs:NMTOKEN
+| Repeat‌Number a| Element of PlaylistIdRef. +
+Number of times the playlist should be repeated. | O(0-1) | xs:‌positiveInteger
 
 |===
 
@@ -733,19 +897,31 @@ A set of elements/attributes for "playlist" are shown in <<table13>>.
 [[table13]]
 .Metadata for "playlist"
 |===
-<.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Playlist | Container to include information of playlist. | |
-| PlaylistId | Element of Playlist.Identifier of the playlist. | M(1) | xs:NMTOKEN
-| Name | Element of Playlist.Name of the playlist, which can be in different languages. | O(0-*) | xs:string
-| Priority | Element of Playlist.Priority of the playlist. Pertaining playlist is displayed when no playlist with higher priority exists. | O(0-1) | xs:positiveInteger
-| PlayOrder | Element of Playlist.Order of the list of contents to be played in the playlist.Suggested values are sequential, random, but not limited. | O(0-1) | xs:NMTOKEN
-| ContentIdRef | Element of Playlist.A reference identifier of the content (see <<table14>>).Content to be played by the terminal device. | M(1-*) | xs:NMTOKEN
-| TargetRegion | Element of Playlist.A container to include a reference identifier to screen layout and region in which the content is displayed. | O(0-1) |
-| ScreenLayout‌IdRef | Element of TargetRegion.A reference identifier to screen information (see <<table15>>) in which the content is displayed. | O(0-1) | xs:NMTOKEN
-| Region‌IdRef | Element of TargetRegion.A reference identifier to region information (see <<table16>>) in which the content is displayed. | O(0-1) | xs:NMTOKEN
-| Duration | Element of Playlist.Indicates the duration of the content played in the playlist. | O(0-1) | xs:duration
-| Transition‌Effect | Element of Playlist.Description of effects used between content displayed to allow smooth transition. | O(0-1) | xs:string
+| PlaylistId a| Element of Playlist. +
+Identifier of the playlist. | M(1) | xs:NMTOKEN
+| Name a| Element of Playlist. +
+Name of the playlist, which can be in different languages. | O(0-*) | xs:string
+| Priority a| Element of Playlist. +
+Priority of the playlist. Pertaining playlist is displayed when no playlist with higher priority exists. | O(0-1) | xs:positiveInteger
+| PlayOrder a| Element of Playlist. +
+Order of the list of contents to be played in the playlist. +
+Suggested values are sequential, random, but not limited. | O(0-1) | xs:NMTOKEN
+| ContentIdRef a| Element of Playlist. +
+A reference identifier of the content (see <<table14>>). +
+Content to be played by the terminal device. | M(1-*) | xs:NMTOKEN
+| TargetRegion a| Element of Playlist. +
+A container to include a reference identifier to screen layout and region in which the content is displayed. | O(0-1) |
+| ScreenLayout‌IdRef a| Element of TargetRegion. +
+A reference identifier to screen information (see <<table15>>) in which the content is displayed. | O(0-1) | xs:NMTOKEN
+| Region‌IdRef a| Element of TargetRegion. +
+A reference identifier to region information (see <<table16>>) in which the content is displayed. | O(0-1) | xs:NMTOKEN
+| Duration a| Element of Playlist. +
+Indicates the duration of the content played in the playlist. | O(0-1) | xs:duration
+| Transition‌Effect a| Element of Playlist. +
+Description of effects used between content displayed to allow smooth transition. | O(0-1) | xs:string
 
 |===
 
@@ -784,32 +960,56 @@ A set of elements/for "contents" are shown in <<table14>>.
 [[table14]]
 .Metadata for "contents"
 |===
-<.^| Element/ Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Contents | Container to include information of content. | |
-| ContentId | Element of Contents.An identifier of content. | M(1) | xs:NMTOKEN
-| Title | Element of Contents.Titles, which can be in different languages. | R(0-*) | xs:string
-| Synopsis | Element of Contents.A simple textual description of the content, which can be in different languages. | O(0-*) | xs:string
-| Explanation | Element of Contents.A detailed textual description of the content, which can be in different languages. | O(0-*) | xs:string
-| KeywordList | Element of Contents.Container to include a list of keywords. | O(0-1) |
-| Keyword | Element of KeywordList.A keyword for contents. A keyword can be a single word or an entire phrase made up of multiple words, which can be in different languages. | O(1-*) | xs:string
-| Genre | Element of Contents.A genre for the content. | O(0-*) | tva:‌GenreType
-| Preference‌Condition | Element of Contents.A combination of time, place and/or specific parts of content that can be associated with a particular set for usage restriction, which can be in different languages. | O(0-*) | xs:string
-| Language | Element of Contents.Container to include languages used in the content. | O(0-1) |
-| Audio‌Language‌List | Element of Language.Describes spoken language for the content.The suggested value for language codes are three-letter codes such as ENG, KOR, JPN <<iso639>>. | O(0-1) | xs:language
-| Caption‌LanguageList | Element of Language.Describes spoken languages for the content.The suggested value for language codes are three-letter codes such as ENG, KOR, JPN <<iso639>>. | O(0-1) | xs:language
-| MimeType | Element of Contents.Describes encoding used for the content. | R(0-*) | xs:string
-| Related‌Material | Element of Contents.A reference to any other material related to the content. | O(0-*) | xs:string
-| Production‌Date | Element of Contents.The date or time period when the content was produced. | O(0-1) | xs:dateTime or xs:date
-| Release | Element of Contents.Information about the region and date of release of the content. | O(0-1) | xs:string
-| Duration | Element of Contents.Indicates the approximate duration of the content. | O(0-1) | xs:duration
-| Availability | Element of Contents.Information about when the content is available for display. | O(0-*) | xs:dateTime
-| ContentType | Element of Contents.Type of media of the content (e.g., video, still image). | R(0-1) | xs:‌NMTOKEN
-| FileSize | Element of Contents.Indicates the size, in bytes, of the file where the content is stored. Suggested units are B, KB, MB, GB, and TB. | R(0-1) | xs:non‌Negative‌Integer
-| Promotional‌Information | Element of Contents.Information on the products/service in the content when the content is presented as a promotion or advertisement, which can be in different languages. | O(0-*) | xs:string
-| Creation‌Information | Element of Contents.Information concerning the content creation (e.g., title, creator, classification), which can be in different languages. | O(0-*) | xs:string
-| FileName | Element of Contents.Indicates the file name of the content in the local memory that is downloaded from the server. | R(0-1) | xs:anyURI
-| Content‌Delivery‌Server‌Id‌Ref‌List | Element of Contents.A list of reference identifiers of the content delivery servers (see <<table5>>). | O(0-1) | xs:NMTOKENS
+| ContentId a| Element of Contents. +
+An identifier of content. | M(1) | xs:NMTOKEN
+| Title a| Element of Contents. +
+Titles, which can be in different languages. | R(0-*) | xs:string
+| Synopsis a| Element of Contents. +
+A simple textual description of the content, which can be in different languages. | O(0-*) | xs:string
+| Explanation a| Element of Contents. +
+A detailed textual description of the content, which can be in different languages. | O(0-*) | xs:string
+| KeywordList a| Element of Contents. +
+Container to include a list of keywords. | O(0-1) |
+| Keyword a| Element of KeywordList. +
+A keyword for contents. A keyword can be a single word or an entire phrase made up of multiple words, which can be in different languages. | O(1-*) | xs:string
+| Genre a| Element of Contents. +
+A genre for the content. | O(0-*) | tva:‌GenreType
+| Preference‌Condition a| Element of Contents. +
+A combination of time, place and/or specific parts of content that can be associated with a particular set for usage restriction, which can be in different languages. | O(0-*) | xs:string
+| Language a| Element of Contents. +
+Container to include languages used in the content. | O(0-1) |
+| Audio‌Language‌List a| Element of Language. +
+Describes spoken language for the content. The suggested value for language codes are three-letter codes such as ENG, KOR, JPN <<iso639>>. | O(0-1) | xs:language
+| Caption‌LanguageList a| Element of Language. +
+Describes spoken languages for the content. +
+The suggested value for language codes are three-letter codes such as ENG, KOR, JPN <<iso639>>. | O(0-1) | xs:language
+| MimeType a| Element of Contents. +
+Describes encoding used for the content. | R(0-*) | xs:string
+| Related‌Material a| Element of Contents. +
+A reference to any other material related to the content. | O(0-*) | xs:string
+| Production‌Date a| Element of Contents. +
+The date or time period when the content was produced. | O(0-1) | xs:dateTime or xs:date
+| Release a| Element of Contents. +
+Information about the region and date of release of the content. | O(0-1) | xs:string
+| Duration a| Element of Contents. +
+Indicates the approximate duration of the content. | O(0-1) | xs:duration
+| Availability a| Element of Contents. +
+Information about when the content is available for display. | O(0-*) | xs:dateTime
+| ContentType a| Element of Contents. +
+Type of media of the content (e.g., video, still image). | R(0-1) | xs:‌NMTOKEN
+| FileSize a| Element of Contents. +
+Indicates the size, in bytes, of the file where the content is stored. Suggested units are B, KB, MB, GB, and TB. | R(0-1) | xs:non‌Negative‌Integer
+| Promotional‌Information a| Element of Contents. +
+Information on the products/service in the content when the content is presented as a promotion or advertisement, which can be in different languages. | O(0-*) | xs:string
+| Creation‌Information a| Element of Contents. +
+Information concerning the content creation (e.g., title, creator, classification), which can be in different languages. | O(0-*) | xs:string
+| FileName a| Element of Contents. +
+Indicates the file name of the content in the local memory that is downloaded from the server. | R(0-1) | xs:anyURI
+| Content‌Delivery‌Server‌Id‌Ref‌List a| Element of Contents. +
+A list of reference identifiers of the content delivery servers (see <<table5>>). | O(0-1) | xs:NMTOKENS
 
 |===
 
@@ -872,12 +1072,15 @@ A set of elements/attributes for "screen layout" are shown in <<table15>>.
 [[table15]]
 .Metadata for "screen layout"
 |===
-<.^h| Element/ Attribute <.^h| Definition/Semantics <.<h| Support <.<h| Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
-<.^| ScreenLayout | Container to include information of screen layout. | |
-| ScreenLayoutId | Element of ScreenLayout.Identifier of the screen layout. | M(1) | xs:NMTOKEN
-| Name | Element of ScreenLayout.Name of the screen, which can be in different languages. | O(0-*) | xs:string
-| Region | Element of ScreenLayout.A list of containers to include regions (see <<table16>>). | O(0-*) |
+| ScreenLayout | Container to include information of screen layout. | |
+| ScreenLayoutId a| Element of ScreenLayout. +
+Identifier of the screen layout. | M(1) | xs:NMTOKEN
+| Name a| Element of ScreenLayout. +
+Name of the screen, which can be in different languages. | O(0-*) | xs:string
+| Region a| Element of ScreenLayout. +
+A list of containers to include regions (see <<table16>>). | O(0-*) |
 
 |===
 
@@ -900,15 +1103,22 @@ A set of elements/attributes for region information are shown in <<table16>>.
 [[table16]]
 .Metadata for "region"
 |===
-<.^| Element/ Attribute <.^| Definition/Semantics | Support | Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 
 | Region | Container to include information of region of screen. | |
-| RegionId | Element of Region.Identifier of the region.Region is a portion of screen. | M(1) | xs:NMTOKEN
-| Name | Element of Region.Name of the region, which can be in different languages. | O(0-*) | xs:string
-| Referencing‌Position | Element of Region.A referencing point of the region, and (x,y) coordinate of the referencing point. Available values are (x, y), upper-left, upper-right, lower-left, lower-right and centre. | O(0-1) | xs:string
-| Pixel‌Resolution | Element of Region.Horizontal and vertical size of the region along with aspect ratio. | O(0-1) | xs:string
-| Z-depth | Element of Region.Indicates the number of hierarchy of the region. | O(0-1) | xs:integer
-| Background colour | Element of Region.Indicates the suggested background colour of the region. The suggested format is RGB, YCbCr, and HSV. | O(0-1) | xs:string
+| RegionId a| Element of Region. +
+Identifier of the region. +
+Region is a portion of screen. | M(1) | xs:NMTOKEN
+| Name a| Element of Region. +
+Name of the region, which can be in different languages. | O(0-*) | xs:string
+| Referencing‌Position a| Element of Region. +
+A referencing point of the region, and (x,y) coordinate of the referencing point. Available values are (x, y), upper-left, upper-right, lower-left, lower-right and centre. | O(0-1) | xs:string
+| Pixel‌Resolution a| Element of Region. +
+Horizontal and vertical size of the region along with aspect ratio. | O(0-1) | xs:string
+| Z-depth a| Element of Region. +
+Indicates the number of hierarchy of the region. | O(0-1) | xs:integer
+| Background colour a| Element of Region. +
+Indicates the suggested background colour of the region. The suggested format is RGB, YCbCr, and HSV. | O(0-1) | xs:string
 
 |===
 
@@ -924,7 +1134,7 @@ Supplemental explanations of elements are as follows:
 +
 NOTE: If the pixel resolution is not provided, the width and height of a region is the same as those of a display in a terminal device.
 
-* _Z-__depth_: describes the number of hierarchy of the region.
+* _Z-depth_: describes the number of hierarchy of the region.
 
 * _BackgroundColour_: describes the suggested background colour used in the region. The suggested format is RGB, YCbCr, and HSV.
 
@@ -946,14 +1156,22 @@ A set of elements/attributes for "event" metadata is shown in <<table17>>.
 [[table17]]
 .Metadata elements in "event"
 |===
-<.^h| Element/ Attribute <.^h| Definition/Semantics <.^h| Support <.^h| Type
+^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
 | Event | Container to include information of the event to be notified to the requester. | |
-| TerminalId‌Ref | Element of Event.A reference identifier to the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
-| Interactive‌DeviceIdRef | Element of Event.A reference identifier to the interactive device (see <<table4>>). | M(1) | xs:NMTOKEN
-| Event‌Data‌Type | Element of Event.Type of event data received from the interactive device.The suggested values are text, audio, video, position, but not limited. | O(0-1) | xs:‌NMTOKEN
-| EventData | Element of Event.Event input data value from the interactive device. | O(0-*) | xs:string
-| EventAction | Element of Event.Indicates the action made by the digital signage client.The suggested values are start notification, stop notification, but not limited. | M(1) | xs:‌NMTOKEN
-| EventDateTime | Element of Event.Time/date of the event occurred. | R(1) | xs:dateTime
+| TerminalId‌Ref a| Element of Event. +
+A reference identifier to the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
+| Interactive‌DeviceIdRef a| Element of Event. +
+A reference identifier to the interactive device (see <<table4>>). | M(1) | xs:NMTOKEN
+| Event‌Data‌Type a| Element of Event. +
+Type of event data received from the interactive device. +
+The suggested values are text, audio, video, position, but not limited. | O(0-1) | xs:‌NMTOKEN
+| EventData a| Element of Event. +
+Event input data value from the interactive device. | O(0-*) | xs:string
+| EventAction a| Element of Event. +
+Indicates the action made by the digital signage client. +
+The suggested values are start notification, stop notification, but not limited. | M(1) | xs:‌NMTOKEN
+| EventDateTime a| Element of Event. +
+Time/date of the event occurred. | R(1) | xs:dateTime
 
 |===
 
@@ -965,7 +1183,7 @@ Supplemental explanations of elements are as follows:
 
 * _EventDataType:_ denotes the data type of event that has occurred in the interactive device;
 
-* _EventData:_ denotes the input data received from the interactive device. This metadata has used `xs:string` for the type of _EventData_, however, it can be in any format (such as text, coordinate position of the screen, audio stream, video stream, etc.) in accordance with the _EventDataType_;
+* _EventData:_ denotes the input data received from the interactive device. This metadata has used xs:string for the type of _EventData_, however, it can be in any format (such as text, coordinate position of the screen, audio stream, video stream, etc.) in accordance with the _EventDataType_;
 
 * _EventAction:_ denotes the action performed by the digital signage client;
 +
@@ -1016,4 +1234,3 @@ image::T-REC-H.782/image010.png[]
 * [[[csstransitions,(b-W3C CSS Transitions)W3C CSS Transitions]]] W3C, _CSS_ _Transitions_. https://www.w3.org/TR/css3-transitions[https://www.w3.org/TR/css3-transitions] – [Last accessed 02 Oct. 2018].
 
 * [[[csstransforms,(b-W3C CSS Transforms)W3C CSS Transforms]]] W3C, _CSS_ _Transforms Module Level 1_. https://www.w3.org/TR/css-transforms-1/[https://www.w3.org/TR/css-transforms-1/] – [Last accessed 02 Oct. 2018].
-
