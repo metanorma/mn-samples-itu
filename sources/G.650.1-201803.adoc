@@ -2084,7 +2084,8 @@ The reference system is connected between the launching and the receiving system
 . Successively, the fibre under test is connected between the launching and the receiving systems. The received power P~2~ is then recorded.
 
 . Finally, the attenuation A of the fibre section is calculated in the following way:
-
++
+--
 *For option a)*
 
 [[eq6-16a]]
@@ -2127,6 +2128,7 @@ where C~a~ is the nominal average loss (in dB) of the connection between the fib
 NOTE: The intrinsic capability of option a) to evaluate the semi-connectors behaviour does not imply its use whenever this evaluation is required.
 
 Alternative possibilities are in using, even at an end where the semi-connector evaluation is required, an option b) set-up, previously connecting a single-mode cord to the fibre under test. The nominal loss of the fibre-to-cord connector is to be subtracted from the measured loss.
+--
 
 The test apparatus to be used in practice should be chosen to minimize the error sources, taking into account the available instrumentation and connecting devices. The use of a hybrid set-up (a-launch, b-receive) plus a cord at the receiving end is usually the best solution when both the semi-connectors have to be evaluated.
 
@@ -3038,8 +3040,8 @@ The refractive index profile of the reference fibre shall be similar to that of 
 
 . Obtain the bidirectional backscattering imperfection loss curve using the two measured and recorded unidirectional backscattering loss curves, according to the procedure outlined in the following:
 +
+--
 Let _S_~1~(_x_) and _S_~2~(_z_) be functions describing the two unidirectional backscattering loss curves expressed in dB, with _x_ and _z_ being the distances from the fibre ends nearest the respective launch sites and _L_ = _x_ + _z_. The bidirectional backscattering imperfection loss curve is given by:
-+
 
 [[eq-II-1]]
 [stem]
@@ -3047,10 +3049,11 @@ Let _S_~1~(_x_) and _S_~2~(_z_) be functions describing the two unidirectional b
 I(x,z) =
 (S_1(x,lambda)+S_2(L-x,lambda))/2
 ++++
+--
 
 . Obtain the imperfection loss normalized by that at position _x_~0~ in the reference fibre according to the procedure outlined in the following:
 +
-
+--
 [[eq-II-2]]
 [stem]
 ++++
@@ -3065,9 +3068,7 @@ I(x,lambda)-I(x_0,lambda)
 (W(x,lambda)) } + k
 ++++
 
-+
 where coefficient _k_ is defined as:
-+
 
 [[eq-II-3]]
 [stem]
@@ -3075,11 +3076,12 @@ where coefficient _k_ is defined as:
 k = 10 log [ { (1+0.62 Delta(x)) / (1+0.62 Delta(x_0))}
 { (50- Delta(x)) / (50- Delta(x_0))}]
 ++++
+--
 
 . Obtain the mode field diameter distribution 2 _W_ (_x_ , λ) according to the procedure outlined in the following:
 +
+--
 Let the mode field diameter at position _x_~0~ in the reference fibre be 2 _W_ (_x_~0~ , λ). The mode field diameter distribution is given by:
-+
 
 [[eq-II-4]]
 [stem]
@@ -3088,13 +3090,11 @@ Let the mode field diameter at position _x_~0~ in the reference fibre be 2 _W_ (
 2W(x_0,lambda) * 10^{(-I_n(x, lambda)+k) / 20}
 ++++
 
-+
 If the reference and test fibres have the same index profile and relative index difference, let coefficient _k_ = 0.
-+
+
 If the relative index difference in the test fibre is not the same as that in the reference fibre, determine coefficient _k_ by using <<eq-II-3>> and the mode field diameter value at _x_ in the test fibre which is evaluated in advance.
-+
+
 If the adjustment factors _f_ and _g_, which are determined as described in c) in clause <<mode_field_diameter_third_alternative_qualification_for_a_fibre_type>>, are given, the mode field diameter distribution is given by:
-+
 
 [[eq-II-5]]
 [stem]
@@ -3103,9 +3103,7 @@ If the adjustment factors _f_ and _g_, which are determined as described in c) i
 2W(x_0, lambda) * 10^{(-g * I_n(x, lambda)+f) / 20}
 ++++
 
-+
 If the relative index difference in the test fibre is unknown, the mode field diameter value at _x_ in the test fibre is obtained with <<eq-II-6>> considering the second position _x_~1~ in the reference fibre.
-+
 
 [[eq-II-6]]
 [stem]
@@ -3116,12 +3114,13 @@ If the relative index difference in the test fibre is unknown, the mode field di
 {(I(x,lambda)-I(x_0,lambda))/
 (I(x_1,lambda)-I(x_0,lambda))}
 ++++
+--
 
 . Repeat the above procedures for two or more different wavelengths.
 
 . Obtain the coefficients _g_~0~, _g_~1~, and _g_~2~ which satisfy <<eq-II-7>> using the above mode field radii _W_(_x_, λ):
 +
-
+--
 [[eq-II-7]]
 [stem]
 ++++
@@ -3129,9 +3128,7 @@ W(x,lambda) =
 g_0(x)+g_1(x) lambda^{1.5}+g_2(x) lambda^6
 ++++
 
-+
 (three or more wavelengths), or:
-+
 
 [[eq-II-8]]
 [stem]
@@ -3140,14 +3137,14 @@ W(x, lambda)=
 g_0(x)+g_1(x) lambda^{1.5}
 ++++
 
-+
 (two or more wavelengths)
-+
+
 This expression may be evaluated by a least squares fit of the data _W_(_x_, λ~i~) (_i_ = 1, ..., _n_).
+--
 
 . Obtain the waveguide dispersion distribution _D_~w~(_x_, l) in ps/(nm &times; km) outlined in the following:
 +
-
+--
 [[eq-II-9]]
 [stem]
 ++++
@@ -3158,9 +3155,7 @@ D_w(x,lambda) =
 6g_2(x) lambda^5) }
 ++++
 
-+
 (three or more wavelengths), or:
-+
 
 [[eq-II-10]]
 [stem]
@@ -3170,10 +3165,10 @@ D_w(x,lambda) =
 (3g_1(x) lambda^(1.5))/(W(x,lambda))}
 ++++
 
-+
 (two or more wavelengths)
-+
+
 where _c_ and _n_ show the light velocity in m/s and the maximum refractive index of the core, respectively.
+--
 
 . Obtain the relative index difference distribution Δ(_x_) in % according to the procedure outlined in the following:
 +
