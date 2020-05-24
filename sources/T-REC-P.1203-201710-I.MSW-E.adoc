@@ -296,6 +296,7 @@ The application areas for ITU-T P.1203 are:
 
 |===
 .<h| Applications for which the model is intended
+
 .<| In-service mid-point or client-side monitoring of encrypted HTTP/TCP based VoD/Live streaming services (mode 0, mode 1). This assumes that the required input for mode 0 or mode 1 is made available for the model, despite the stream being encrypted. See <<table4>> for details.
 .<| In-service mid-point or client-side monitoring of non-encrypted HTTP/TCP based VoD/Live streaming services (mode 0, mode 1, mode 2 and mode 3).
 .<| *Test factors for which the model has been validated*
@@ -317,6 +318,7 @@ NOTE: The audio quality module Pa is assumed to be valid also for other codecs, 
 
 |===
 .<h| Test factors for which the model has not been validated
+
 .<| Broad variations in audio quality; models were not validated for poor audio quality together with high video quality. Audio bitrate was varied but audio quality hardly seems to change/affect the overall audiovisual quality score.
 |===
 
@@ -325,6 +327,7 @@ NOTE: The audio quality module Pa is assumed to be valid also for other codecs, 
 .Application areas, test factors, and coding technologies for which ITU-T P.1203 is not intended to be used
 |===
 .<h| Applications for which the model is not intended
+
 .<| In-service monitoring of video UDP-based streaming, where packet loss introduces visible quality degradations
 .<| Direct comparison/benchmarking of encoder implementations, and thus of services that employ different encoder implementations
 .<| Evaluation of visual quality including display/device properties
@@ -347,6 +350,7 @@ The modes of operation are defined in <<table4>>, which also provides more infor
 .ITU-T P.1203 modes of operation
 |===
 ^.^h| Mode ^.^h| Encryption ^.^h| Input ^.^h| Complexity
+
 ^.^| 0 | Encrypted media payload and media frame headers | Meta-data | Low
 ^.^| 1 | Encrypted media payload | Meta-data and frame size/type information | Low
 ^.^| 2 | No encryption | Meta-data and up-to 2% of the media stream | Medium
@@ -387,6 +391,7 @@ The ITU-T P.1203 model will receive media information and prior knowledge about 
 
 |===
 ^.^h| ID ^.^h| Description ^.^h| Values ^.^h| Frequency ^.^h| Available to modes
+
 5+| *_I.GEN_*
 ^.^| 0 | The resolution of the image displayed to the user | Number of pixels (WxH) in displayed video | Per media session | All
 ^.^| 1 | The device type on which the media is played | "PC" or "mobile" | Per media session | All
@@ -663,6 +668,7 @@ The performance of the overall ITU-T P.1203 model on the databases described in 
 [%unnumbered]
 |===
 ^.^h| Performance measure ^.^h| Mode 0 ^.^h| Mode 1 ^.^h| Mode 2 ^.^h| Mode 3
+
 | *RMSE* ^.^| 0.465 ^.^| 0.415 ^.^| 0.381 ^.^| 0.333
 | *Pearson correlation* ^.^| 0.814 ^.^| 0.842 ^.^| 0.868 ^.^| 0.892
 |===
