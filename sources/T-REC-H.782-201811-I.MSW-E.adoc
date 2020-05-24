@@ -1157,6 +1157,7 @@ A set of elements/attributes for "event" metadata is shown in <<table17>>.
 .Metadata elements in "event"
 |===
 ^.^h| Element/ Attribute ^.^h| Definition/Semantics ^.^h| Support ^.^h| Type
+
 | Event | Container to include information of the event to be notified to the requester. | |
 | TerminalId‌Ref a| Element of Event. +
 A reference identifier to the terminal device (see <<table2>>). | M(1) | xs:NMTOKEN
