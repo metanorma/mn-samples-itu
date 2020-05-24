@@ -641,7 +641,7 @@ The OCP Server Project provides standardized server system specifications for sc
 .OCP related specifications
 [cols="a,2a,3a,a",cols="header"]
 |===
-^| Family ^| Specification ^| Summary ^| Published
+^h| Family ^h| Specification ^h| Summary ^h| Published
 
 .8+| OpenRack V2
 
@@ -855,7 +855,7 @@ DMTF has developed specifications related to management interface, which are rel
 .DMTF related specifications
 [cols="3a,4a,a",options="header"]
 |===
-^| Specification ^| Summary ^| Published
+^h| Specification ^h| Summary ^h| Published
 
 | Redfish Scalable Platforms ManagementAPI Specification <<b-DMTF_RFAPI>>
 | This specification is to define the protocols, data model and behaviors, as well as other architectural components needed for an interoperable, cross-vendor, remote and out-of-band capable interface that meets the expectations of Cloud and web-based IT professionals for scalable platform management. While large scale systems are the primary focus, the specifications are also capable of being used for more traditional system platform management implementations.
@@ -881,7 +881,7 @@ The Storage Networking Industry Association (SNIA) is a non-profit organization 
 .SNIA related specifications
 [cols="3a,4a,a",options="header"]
 |===
-^| Specification ^| Summary ^| Published
+^h| Specification ^h| Summary ^h| Published
 
 | SNIA Swordfish Specification V1.0.6 <<b-SNIA_SF>>
 | The Swordfish Scalable Storage Management API ("Swordfish") defines a RESTful interface and a standardized data model to provide a scalable, customer-centric interface for managing storage and related data services. It extends the Redfish Scalable Platforms Management API Specification (DSP0266) from the DMTF.
@@ -901,7 +901,7 @@ The ETSI NFV EVE Working Group seeks to develop the necessary requirements to en
 .ETSI related specifications
 [cols="3a,4a,a",options="header"]
 |===
-^| Specification ^| Summary ^| Published
+^h| Specification ^h| Summary ^h| Published
 
 | Hardware Interoperability Requirements Specification <<b-ETSI_EVE007>>
 | The document develops a set of normative interoperability requirements for the NFV hardware ecosystem and telecommunications physical environment to support NFV deployment.
@@ -924,7 +924,7 @@ Table I.5 analyses the relationship between functional requirement introduced in
 [[table-i-5]]
 [cols="a,3a,10a",options="header"]
 |===
-^| NO. ^| Requirements in this Recommendation ^| Relationship with related specifications from other SDOs
+^h| NO. ^h| Requirements in this Recommendation ^h| Relationship with related specifications from other SDOs
 
 
 | *1*
