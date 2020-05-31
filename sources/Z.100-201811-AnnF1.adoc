@@ -367,7 +367,7 @@ The notational conventions described above enable declaration of _basic names_ t
 
 Let _derivedName_ be an n-ary name, and let _formula_(stem:[v_1,..., v_n]) denote a formula of the domain stem:[D] with free variables stem:[v_1,..., v_n]  of domains stem:[D_1,..., D_N, n >= 0]. The general form of a _derived name definition_ is:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _derivedNameDefinition ::= derivedName(v~1~: D~1~, ..., v~n~: D~n~):D_ =~def~ _formula (v~1~,..., v~n~)_
@@ -379,7 +379,7 @@ The result domain stem:[D] is omitted in case of a derived domain definition.
 ====
 The following derived predicates are defined to refer to the status of an agent/token in a given state.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 =====
 [smallcap]#_Mode_# =~def~  {_exclusive_, _shared_} +
@@ -400,7 +400,7 @@ For an improved readability, use of the "." _-notation_ is allowed for unary fun
 
 The set of _initial states_ stem:[S_0 sube S] is defined by constraints imposed on domains, functions and predicates as associated with the names in stem:[V]. The initial constraints for predefined domains and operations are given implicitly (see <<predefined_names_and_special_symbols>>). Initial constraints have the following general form:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *initially* _ClosedFormula_
@@ -445,7 +445,7 @@ Transition rules specify update sets over ASM states. Complex rules are formed f
 
 * _update_ instruction
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule ::= f(t1,...,tn) := t0_ (stem:[n >= 0])
@@ -465,7 +465,7 @@ The construction of complex transition rules out of elementary update instructio
 
 * _if-then-constructor_
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::= *if* _g_ *then* +
@@ -479,7 +479,7 @@ The update set specified by _Rule_ in a given state stem:[s] is defined to be th
 
 * _do-in-parallel-constructor_
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::= *do in-parallel* +
@@ -493,7 +493,7 @@ The update set defined by _Rule_ in state stem:[s] is defined to be the union of
 
 * _do-forall-constructor_
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::= *do forall* _v: g(v)_ +
@@ -505,7 +505,7 @@ The effect of _Rule_ is that _Rule~0~_ is fired simultaneously for all elements 
 
 * _choose-constructor_
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::=  *choose* _v: g(v)_ +
@@ -517,7 +517,7 @@ The effect of _Rule_ is that _Rule~0~_ is fired for an element _v_ of the base s
 
 * _extend-constructor_
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::= *extend* _D_ *with* _v~1~,...,v~n~_ +
@@ -533,7 +533,7 @@ NOTE: _extend_ can be defined in terms of the _import_ constructor (not shown he
 
 * _let-constructor_
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::= *let* _v = expression_ *in* +
@@ -547,7 +547,7 @@ The effect of _Rule_ when fired in some state stem:[s] is that _v_ is bound to t
 ====
 The following transition rule defines the behaviour of agent _ag_ when requesting shared access, i.e., when _ag.mode_ = _shared_. The rule applies the if-then-constructor, the choose-constructor, and an update instruction.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ======
 *if* _ag.mode_  = _shared_  stem:[^^] _ag.waiting_ *then* +
@@ -574,7 +574,7 @@ Derived names are introduced (as explained in <<specifying_the_signature_vocabul
 
 Let _Rule~0~_  denote a transition rule with free variables stem:[v_1 ,..., v_n] _of domains_ stem:[D_1,...,  D_N,  n >= 0]. The general form of a rule macro definition is:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _RuleMacroDefinition_::= _RuleMacroName(v~1~: D~1~,...,v~n~: D~N~) stem:[-=]_
@@ -587,7 +587,7 @@ Rule macro names are, by convention, written in small capitals, with a leading c
 
 By default, _rule macros_ and _derived names_ have a global scope. However, their scope can also be restricted to a particular transition rule _Rule_ by using the where-part.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule ::= Rule~0~_ +
@@ -600,7 +600,7 @@ _Rule ::= Rule~0~_ +
 
 Rule macros are applied in transition rules as follows:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_ ::= _RuleMacroName (t~1~,...,t~n~)_
@@ -612,7 +612,7 @@ Formally, rule macros are syntactical abbreviations, i.e., each occurrence of a 
 ====
 The transition rule from the previous example can be stated using rule macros, and be defined as a macro itself. Here, [smallcap]#SharedAccess# is a macro definition with global scope that can be used in other places of the ASM model definition. [smallcap]#GetToken# is a parameterized macro definition with a local scope restricted to the rule [smallcap]#SharedAccess#, with formal parameter _a_. When [smallcap]#GetToken# is applied in [smallcap]#SharedAccess#, _a_ is replaced by the actual parameter _ag_.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 =====
 [smallcap]#SharedAccess# stem:[-=] +
@@ -634,7 +634,7 @@ The transition rule from the previous example can be stated using rule macros, a
 
 An _ASM program_ stem:[P] is given by a framed _transition rule_ (or _rule_ for short) of the following form:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_
@@ -648,7 +648,7 @@ In the basic ASM model there is just one ASM program, which is statically associ
 ====
 The ASM program stem:[P] of the system _RMS_ is defined as follows:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 =====
 *do in-parallel* +
@@ -698,7 +698,7 @@ A _distributed Abstract State Machine_ stem:[M] is defined over a given _vocabul
 
 The signature (vocabulary) stem:[V] of a multi-agent ASM stem:[M] includes distinguished domain names:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *controlled domain* [smallcap]#_Agent_# +
@@ -709,7 +709,7 @@ representing _a dynamic_ set stem:[A] of agents and an invariant set stem:[P] of
 
 Furthermore, stem:[V] includes a distinguished function name:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *controlled* _program_: [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Program_#
@@ -730,7 +730,7 @@ To assign a behaviour to an agent of stem:[M], the distinguished function _progr
 
 A special 0-ary function _Self_ serves as a _self-reference_ identifying the respective agent calling _Self_:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *monitored* _Self_: stem:[rarr] [smallcap]#_Agent_#
@@ -778,7 +778,7 @@ Partially ordered runs have certain characteristic properties that can be stated
 A distributed _ASM M_ has a finite set stem:[P] of programs. Eachprogram stem:[p in P] is given by a _program name_ and a _transition rule_ (or _rule_ for short). The program name uniquely identifies stem:[p] within stem:[P], and is represented by a unary static function. Programs are stated in the following form:
 
 [smallcap]#Asm-Program#:
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Rule_
@@ -790,7 +790,7 @@ Program names are, by convention, hyphenated and written in small capitals, with
 
 By default, the following implicit constraint applies:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *initially* [smallcap]#_Program_# = {[smallcap]#program#~1~ ,..., [smallcap]#program#~n~ }
@@ -802,7 +802,7 @@ where [smallcap]#program#~1~ ,..., [smallcap]#program#~N~  are the names of the 
 ====
 The distributed ASM program of the system _RMS_ defines a single program as follows:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 =====
 [smallcap]#Resource-Management-Program#: +
@@ -870,7 +870,7 @@ These domains, functions or predicates are visible to and may be altered by the 
 
 The vocabulary stem:[V] of the system _RMS_ is extended by a classification of dynamic functions and predicates:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 =====
 *shared* _mode_:           [smallcap]#_Agent_# stem:[rarr] [smallcap]#_Mode_# +
@@ -887,7 +887,7 @@ In general, the influence of the environment on the system through shared and mo
 
 Integrity constraints are stated in the following form:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _IntegrityConstraint_ ::= *constraint* _ClosedFormula_
@@ -899,7 +899,7 @@ _IntegrityConstraint_ ::= *constraint* _ClosedFormula_
 
 The following integrity constraint states that stop requests are only generated for busy agents:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 =====
 *constraint* stem:[AA a in] [smallcap]#_Agent_#: (_a.stop_stem:[=>]_a.busy_)
@@ -914,7 +914,7 @@ By introducing a notion of _real time_ and imposing additional constraints on ru
 
 To incorporate real-time behaviour into the underlying ASM execution model, we introduce a 0-ary monitored real-valued function _currentTime_. Intuitively, _currentTime_ refers to the physical time. As an integrity constraint on the nature of physical time, it is assumed that _currentTime_ changes its values monotonically increasing over ASM runs.
 
-[.pseudocode]
+[pseudocode]
 ====
 *monitored* _currentTime_: stem:[rarr] [smallcap]#_Real_#
 ====
@@ -956,7 +956,7 @@ In order to illustrate the ASM model, a simple resource management system _RMS_ 
 [[vocabulary]]
 ===== Vocabulary
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *static domain* [smallcap]#_Token_# +
@@ -968,7 +968,7 @@ In order to illustrate the ASM model, a simple resource management system _RMS_ 
 [[derived_names]]
 ===== Derived names
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 [smallcap]#_Mode_#                  =~def~ {_exclusive_, _shared_}
@@ -981,7 +981,7 @@ _available (t: [smallcap]#Token#): [smallcap]#Boolean#_ =~def~ _t.owner_ = _unde
 [[integrity_constraints]]
 ===== Integrity constraints
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *constraint* stem:[AA a in] [smallcap]#_Agent_#: (_a.stop_ stem:[=>] _a.busy_)
@@ -990,7 +990,7 @@ _available (t: [smallcap]#Token#): [smallcap]#Boolean#_ =~def~ _t.owner_ = _unde
 [[initial_constraints]]
 ===== Initial constraints
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *initially* |[smallcap]#_Agent_#| > 1 +
@@ -1004,7 +1004,7 @@ _available (t: [smallcap]#Token#): [smallcap]#Boolean#_ =~def~ _t.owner_ = _unde
 
 [smallcap]#Resource-Management-Program#
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *do in-parallel* +
@@ -1197,7 +1197,7 @@ Patterns are used to describe functions on the syntax tree. The non-terminal nam
 
 A case expression is used to determine a value depending on pattern matching.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _CaseExpression_ ::= *case* _Term_ *of* +
@@ -1215,7 +1215,7 @@ If the value of _Term_ matches at least one _Pattern~i~_, then the result of the
 
 Union domains contain the values of their constituent domains. They are used below as models for named and unnamed unions and alternative right sides to abstract syntax rules.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _D =~def~ D~1~ stem:[uu] D~2~_
@@ -1226,7 +1226,7 @@ _D =~def~ D~1~ stem:[uu] D~2~_
 
 Sequence domains contain sequences of the values of their constituent domains. They are used below as models for named and unnamed sequences, and sequences defined as (parts of) the right sides of abstract syntax rules expressed using extended BNF.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _D =~def~ D~1~^***^_
@@ -1237,7 +1237,7 @@ _D =~def~ D~1~^***^_
 
 Tuple domains contain elements of the Cartesian product of their constituent domains. They are used below as models for the tuples specified by the right sides of abstract syntax rules. For every declared tuple domain, several implied constructor and selector functions are defined. For example, the tuple definition:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _D =~def~ D~1~ stem:[xx] D~2~^*\**^ stem:[xx] D~3~ *-set* stem:[xx] D~1~ stem:[xx] (D~1~ stem:[uu] D~2~) stem:[xx] (D~1~ stem:[xx] D~2~)^***^ stem:[xx] (D~1~ stem:[xx] D~2~) *-set* stem:[xx] (D~1~ stem:[uu] D~2~)_ *-set*
@@ -1245,7 +1245,7 @@ _D =~def~ D~1~ stem:[xx] D~2~^*\**^ stem:[xx] D~3~ *-set* stem:[xx] D~1~ stem:[x
 
 also defines the following constructor and selector functions:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *mk-* _D: D~1~ stem:[xx] D~2~^*\**^ stem:[xx] D~3~ *-set* stem:[xx] D~1~ stem:[xx] (D~1~ stem:[uu] D~2~) stem:[rarr] D_ +
@@ -1271,7 +1271,7 @@ Abstract syntax rules from the language definition are directly translated to th
 
 An abstract syntax rule defined with "::" declares a domain of syntax nodes. Each syntax node has an identity and a value. The value is a member of an auxiliary domain of tuples of syntax nodes. For example, the rule
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ Symbol~2~_
@@ -1279,7 +1279,7 @@ _Symbol_ stem:[::] _Symbol~1~ Symbol~2~_
 
 declares
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *controlled domain* _Symbol_
@@ -1289,7 +1289,7 @@ _Symbol-aux =~def~ Symbol~1~ stem:[xx] Symbol~2~_
 
 The abbreviation **mk-**_Symbol_ creates new elements of the domain _Symbol_,
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 **mk-**_Symbol (s1: Symbol~1~, s2: Symbol~2~)_ stem:[-=] +
@@ -1302,7 +1302,7 @@ Note that **mk-**_Symbol_ is not an ASM function, but an abbreviation for an ASM
 
 Selector functions, s-, select the components of the tuple that is the value of a syntax node.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 **s-**_Symbol~1~: Symbol stem:[rarr] Symbol~1~_ +
@@ -1313,7 +1313,7 @@ Selector functions, s-, select the components of the tuple that is the value of 
 
 Here is a more elaborate example, illustrating the definitions introduced by a variety of extended BNF constructs.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ Symbol~2~^+^  Symbol~3~_ **-set**_[Symbol~4~]_ +
@@ -1322,7 +1322,7 @@ _Symbol_ stem:[::] _Symbol~1~ Symbol~2~^+^  Symbol~3~_ **-set**_[Symbol~4~]_ +
 
 which is translated to:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol-aux =~def~ Symbol~1~ stem:[xx] Symbol~2~^*\**^ stem:[xx] Symbol~3~_ *-set* stem:[xx] _Symbol~4~ stem:[xx] ( Symbol~1~ stem:[uu] Symbol~2~) stem:[xx] ( Symbol~1~ stem:[xx] Symbol~2~)^***^ stem:[xx] ( Symbol~1~ stem:[uu] Symbol~2~)_ *-set* +
@@ -1339,7 +1339,7 @@ _Symbol-aux =~def~ Symbol~1~ stem:[xx] Symbol~2~^*\**^ stem:[xx] Symbol~3~_ *-se
 
 As with the previous example, an abbreviation **mk**-_Symbol_ is also introduced. This abbreviation creates a new object of domain _Symbol_ using the *extend* primitive and sets the _contents-Symbol_ value of the newly produced object to the corresponding element of _Symbol-aux_.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *mk-* _Symbol(s1: Symbol~1~, s2seq: Symbol~2~^*\**^, s3set: Symbol~3~_ *-set*, _s4: Symbol~4~, s: (Symbol~1~ stem:[uu] Symbol~2~),_ +
@@ -1353,7 +1353,7 @@ The abbreviation **mk**-_Symbol_ is not a function, but in fact an ASM rule item
 
 If for a given _Symbol_, _sym_, the optional stem:[Symbol_4] is not present, that fact is expressed in the ASM model by leaving the corresponding value _undefined_: _sym.s-Symbol~4~_ = _undefined_. An empty sequence of symbols (constructor with no parts) is denoted by (). For example, the abstract syntax rule
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] ()
@@ -1365,7 +1365,7 @@ The equality for syntax nodes is always a structural equality, i.e., the content
 
 A rule of the form
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ | Symbol~2~ | ... | Symbol~n~_ (stem:[n >= 1])
@@ -1373,7 +1373,7 @@ _Symbol_ stem:[::] _Symbol~1~ | Symbol~2~ | ... | Symbol~n~_ (stem:[n >= 1])
 
 where each alternative right side consists of a single symbol, is equivalent to
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _{Symbol~1~ | Symbol~2~ | ... | Symbol~n~}_ (stem:[n >= 1])
@@ -1383,7 +1383,7 @@ In this case, there are selectors *.s-* _Symbol~i~_ , stem:[(i = 1, ..., n)] and
 
 More usually, rules like this will be represented as named unions. The syntax rules introducing named unions have the form:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol = Symbol~1~ | Symbol~2~ | ... | Symbol~n~_ (stem:[n >= 1])
@@ -1391,7 +1391,7 @@ _Symbol = Symbol~1~ | Symbol~2~ | ... | Symbol~n~_ (stem:[n >= 1])
 
 which is modelled as:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol =~def~ Symbol~1~ stem:[uu] Symbol~2~ stem:[uu] ... stem:[uu] Symbol~n~_
@@ -1403,7 +1403,7 @@ Of course, it is still possible to construct elements of _Symbol_ using any cons
 
 If a name is not required, unnamed unions may be introduced by rules like:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ { Symbol~21~ | ... | Symbol~2N~ }_
@@ -1411,7 +1411,7 @@ _Symbol_ stem:[::] _Symbol~1~ { Symbol~21~ | ... | Symbol~2N~ }_
 
 instead of introducing a name for the union:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ Symbol~2~_
@@ -1420,7 +1420,7 @@ _Symbol~2~ = Symbol~21~ | ... | Symbol~2N~_
 
 Named sequences can be introduced using rules like this:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol = Symbol~1~^***^_
@@ -1428,7 +1428,7 @@ _Symbol = Symbol~1~^***^_
 
 which defines the domain of sequences of elements of _Symbol~1~_. Similarly, a rule like
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol = { Symbol~1~ Symbol~2~}^***^_
@@ -1440,7 +1440,7 @@ As with named unions, _Symbol_ yields a domain definition, but not functions *mk
 
 It is not always necessary to name a sequence explicitly. Unnamed sequences may be introduced by rules like:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ { Symbol~21~ ... Symbol~2N~ }^***^_
@@ -1448,7 +1448,7 @@ _Symbol_ stem:[::] _Symbol~1~ { Symbol~21~ ... Symbol~2N~ }^***^_
 
 or like:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _Symbol_ stem:[::] _Symbol~1~ { Symbol~21~ | ... | Symbol~2N~}^***^_
@@ -1458,7 +1458,7 @@ Named and unnamed sets can be introduced in a similar way.
 
 For each SDL-2010 keyword *KEYWORD*, there is an associated keyword domain _Keyword_ with just one value:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *static domain* _Keyword_
@@ -1468,7 +1468,7 @@ It is required that all keyword domains are mutually disjoint.
 
 Given the abstract grammar, there is a derived domain called _DefinitionAS1_, which is composed of all abstract syntax symbol domains as follows:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _DefinitionAS1 =~def~ Symbol~1~ stem:[uu] Symbol~2~ stem:[uu] ... stem:[uu] Symbol~n~_
@@ -1485,7 +1485,7 @@ The syntax nodes declared by abstract syntax rules can be used to construct an a
 
 To navigate downward in a given abstract syntax tree, the functions *s-* can be used. To navigate upward, two parent functions are defined.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *controlled* _parentAS1: DefinitionAS1_ stem:[rarr] _DefinitionAS1_ +
@@ -1494,7 +1494,7 @@ To navigate downward in a given abstract syntax tree, the functions *s-* can be 
 
 Suppose _node_ is an abstract syntax node and a member of the domain _Symbol_, one of the constituent domains of _DefinitionAS1_:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _node_ stem:[in] _Symbol_ stem:[sub] _DefinitionAS1_
@@ -1502,7 +1502,7 @@ _node_ stem:[in] _Symbol_ stem:[sub] _DefinitionAS1_
 
 The parent of _node_, if it exists, includes _node_, in its _contents-Symbol_. That is,
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _parentAS1 (node: DefinitionAS1): DefinitionAS1_ =~def~ +
@@ -1515,7 +1515,7 @@ _parentAS1 (node: DefinitionAS1): DefinitionAS1_ =~def~ +
 
 Similarly, for _node_ stem:[in] _Symbol_ stem:[sub] _DefinitionAS0_:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _parentAS0 (node: DefinitionAS0): DefinitionAS0_ =~def~ +
@@ -1527,7 +1527,7 @@ _parentAS0 (node: DefinitionAS0): DefinitionAS0_ =~def~ +
 
 Moreover, two functions are defined to find the parent of a particular kind.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _parentAS0ofKind (from: DefinitionAS0, x: DefinitionAS0_ *-set*): _DefinitionAS0_ =~def~ +
@@ -1546,7 +1546,7 @@ _parentAS1ofKind (from: DefinitionAS1, x: DefinitionAS1_ *-set*): _DefinitionAS1
 
 The top node of the current abstract or concrete syntax tree is denoted by the following 0-ary functions:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 *controlled* _rootNodeAS1: stem:[rarr] DefinitionAS1_ +
@@ -1559,7 +1559,7 @@ The value of _rootNodeAS0.parentAS0_ is _undefined_.
 
 The functions _isAncestorAS1_ and _isAncestorAS0_ determine if the first node is an ancestor of the second one:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _isAncestorAS1 (n1: DefinitionAS1, n2: DefinitionAS1): [smallcap]#Boolean#_ =~def~
@@ -1572,7 +1572,7 @@ _isAncestorAS0 (n1: DefinitionAS0, n2: DefinitionAS0): [smallcap]#Boolean#_ =~de
 
 The functions _isSameNodeAS1_ and _isSameNodeAS0_ determine if the first node is the same node as the second one, that is they are equal and in the same position in the syntax tree:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _isSameNode1 (n1: DefinitionAS1, n2: DefinitionAS1): [smallcap]#Boolean#_ =~def~ +
@@ -1584,7 +1584,7 @@ _isSameNode0 (n1: DefinitionAS0, n2: DefinitionAS0): [smallcap]#Boolean#_ =~def~
 
 The abstract syntax tree AS0 can be modified using the following derived functions:
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _replaceInSyntaxTree0: DefinitionAS0 stem:[xx] DefinitionAS0 stem:[xx] DefinitionAS0 stem:[rarr] DefinitionAS0_
@@ -1592,7 +1592,7 @@ _replaceInSyntaxTree0: DefinitionAS0 stem:[xx] DefinitionAS0 stem:[xx] Definitio
 
 The first parameter of the function is the old sub-tree, the second one is the new sub-tree and the third parameter is the old tree. The function returns the new tree, where all old sub-trees are replaced by the new sub-tree.
 
-[.pseudocode]
+[pseudocode]
 [%unnumbered]
 ====
 _replaceInSyntaxTree0: DefinitionAS0 stem:[xx] DefinitionAS0 stem:[xx] DefinitionAS0 stem:[rarr] DefinitionAS0_
