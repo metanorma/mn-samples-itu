@@ -742,11 +742,6 @@ For every agent, _Self_ has a different interpretation. By using _Self_ as an ad
 ====
 In the following figure, a particular distributed ASM stem:[M], consisting of three agents stem:[ag_1], stem:[ag_2], and stem:[ag_3] is illustrated. The function _program_ associates, with each agent, one of the ASM programs stem:[P_1], stem:[P_2], and stem:[P_3]. Here, stem:[ag_1] and stem:[ag_2] are assigned the same program. Program stem:[P_2] is currently not associated with any agent; however, this may change during execution, as _program_ is a dynamic function. Each agent has its own _partial view_ on a given global state stem:[s] of stem:[M], in which it fires the rule of its current program. In the figure, this view is illustrated by the function _view_, which yields, for each agent, its local and its shared state. In fact, the current view of each agent is determined implicitly by the ASM model definition, including the ASM programs.
 
-[[fig-f1-3]]
-.Each agent has a partial view of the global ASM state
-image::Z.100-201811-AnnF1/image5.png[]
-
-
 The semantic model of concurrency underlying the distributed ASM model defines behaviour in terms of partially ordered runs. A _partially ordered run_ represents a certain class of (admissible) machine runs by restricting non-determinism with respect to the order in which the individual agents may perform their computation steps, so-called _moves_. To avoid that agents interfere with each other, moves of different agents need only be ordered if they are causally dependent (as detailed below).
 
 *Partially ordered runs*
@@ -771,6 +766,10 @@ Partially ordered runs have certain characteristic properties that can be stated
 
 * A property holds in every reachable state of a run stem:[rho] of stem:[M] if and only if it holds in every reachable state of every linearization of stem:[rho].
 ====
+
+[[fig-f1-3]]
+.Each agent has a partial view of the global ASM state
+image::Z.100-201811-AnnF1/image5.png[]
 
 [[distributed_asm_programs]]
 ===== Distributed ASM programs
