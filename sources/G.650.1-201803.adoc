@@ -1711,7 +1711,13 @@ Measurements may be made at one or more spot wavelengths, or alternatively, a sp
 
 [[fig13]]
 .The cut-back technique
-image::G.650.1-201803/image15.png[]
+====
+.Arrangement of test equipment to make one loss measurement
+image::G.650.1-201803/image15a.png[]
+
+.Arrangement of test equipment used to obtain the loss spectrum measurement
+image::G.650.1-201803/image15b.png[]
+====
 
 
 [[attenuation_reference_optical_source]]
@@ -3056,15 +3062,21 @@ I(x,z) =
 +
 --
 [[eq-II-2]]
-[stem]
+[stem%unnumbered]
 ++++
 I_n(x,lambda)=
 I(x,lambda)-I(x_0,lambda)
+++++
 
+[stem%unnumbered]
+++++
 = 20 log{ (W(x_0,lambda))/(W(x,lambda))} +
 10 log[ { (1+0.62 Delta(x))/(1+0.62 Delta(x_0))}
 { (50- Delta(x)) / (50- Delta(x_0))} ]
+++++
 
+[stem]
+++++
 = 20 log{ (W(x_0,lambda)) /
 (W(x,lambda)) } + k
 ++++
@@ -3129,7 +3141,10 @@ W(x,lambda) =
 g_0(x)+g_1(x) lambda^{1.5}+g_2(x) lambda^6
 ++++
 
-(three or more wavelengths), or:
+[align=center]
+(three or more wavelengths)
+
+or:
 
 [[eq-II-8]]
 [stem]
@@ -3138,6 +3153,7 @@ W(x, lambda)=
 g_0(x)+g_1(x) lambda^{1.5}
 ++++
 
+[align=center]
 (two or more wavelengths)
 
 This expression may be evaluated by a least squares fit of the data _W_(_x_, λ~i~) (_i_ = 1, ..., _n_).
@@ -3156,7 +3172,10 @@ D_w(x,lambda) =
 6g_2(x) lambda^5) }
 ++++
 
-(three or more wavelengths), or:
+[align=center]
+(three or more wavelengths)
+
+or:
 
 [[eq-II-10]]
 [stem]
@@ -3166,6 +3185,7 @@ D_w(x,lambda) =
 (3g_1(x) lambda^(1.5))/(W(x,lambda))}
 ++++
 
+[align=center]
 (two or more wavelengths)
 
 where _c_ and _n_ show the light velocity in m/s and the maximum refractive index of the core, respectively.
@@ -3293,7 +3313,7 @@ The following details shall be presented:
 
 The following is an example of an m &times; n = 38 &times; 3 matrix, as described in <<attenuation_third_alternative_calculation_procedure>>, for <<ITU-T_G.652>> fibres. Please note it is given for illustrative purposes only. If the spectral attenuation is to be estimated over the range of 1240 nm to 1600 nm (in steps of 10 nm) using 1310 nm, 1380 nm and 1550 nm as predictor wavelengths, an example of matrix elements which has been shown to be applicable <<b-Hanson>> for some <<ITU-T_G.652>> fibres follows:
 
-[%unnumbered,headerrows=2,cols="<,<,<,<"]
+[%unnumbered,headerrows=2,cols="^,^,^,^"]
 |===
 .2+^.^a| Output wavelength stem:[(μm)]
 3+^.^h| Predictive wavelengths
