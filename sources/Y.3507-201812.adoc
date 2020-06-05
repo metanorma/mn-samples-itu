@@ -5,7 +5,6 @@
 :series1: Cloud Computing
 :series2:
 :published-date: 2018-12-01
-:copyright-year: 2018
 :status: in-force
 :doctype: recommendation
 :keywords: Cloud computing, functional requirements, physical machine
@@ -15,6 +14,7 @@
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
+:hierarchical-object-numbering:
 :stem:
 
 
@@ -923,7 +923,7 @@ Table I.5 analyses the relationship between functional requirement introduced in
 .Relationship with related specifications from other SDOs
 
 [[table-i-5]]
-[cols="a,3a,10a",options="header"]
+[cols="^,3a,10a",options="header"]
 |===
 ^h| NO. ^h| Requirements in this Recommendation ^h| Relationship with related specifications from other SDOs
 
@@ -1072,7 +1072,7 @@ a|
 | *Hardware-assisted I/O virtualization*
 
 a|
-* <<b-OCP_OBIOS>> describes how Intel Virtualization Technology (Intel VT) must be supported via platform BIOS policy variable, in clause4.8.
+* <<b-OCP_OBIOS>> describes how Intel Virtualization Technology (Intel VT) must be supported via platform BIOS policy variable, in clause 4.8.
 
 | *14*
 | *I/O devices direct accessing*
