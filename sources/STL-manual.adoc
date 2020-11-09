@@ -3,7 +3,7 @@
 :docnumber:
 :series: ITU-T Users' Group on Software Tools
 :published-date: February 2019
-:copyright-year: 2005, 2006, 2009, and 2019
+:copyright-year: 2005, 2006, 2009, 2019
 :status: in-force
 :doctype: recommendation
 :keywords:
@@ -48,7 +48,7 @@ Terms and conditions on the usage of the ITU-T STL are found in Recommendation I
 The remaining chapters of this document describe the principles that guided the generation of the ITU-T STL, as well as the description of its organization. The various tools are described in separate chapters. These descriptions have the following general outline:
 
 . technical description of the method or algorithm involved;
-. description of the algorithm implementation in this release (including prototypes, parameters, returned value, etc.); and 
+. description of the algorithm implementation in this release (including prototypes, parameters, returned value, etc.); and
 . testing, applications and examples.
 
 
@@ -333,7 +333,7 @@ The segment of C code in <<find-big-ltl-end>> can be used to determine whether a
 
 [[find-big-ltl-end]]
 .Sample code for determination of byte organization
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include <string.h>
@@ -364,7 +364,7 @@ The approach above determines whether a platform is big- or little-endian, but i
 When the change of format is necessary for `short` and `long` data, the operations in <<fig:cvt-big-ltl-end>> should be used. The conversion between big- and little-endian data representation for 16-bit data is simple and is known as _byte swapping_. The byte swapping operation can be implemented in several fashions. For example,
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 short swap_one_short(short in)
 {
@@ -594,7 +594,7 @@ The compression functions are `alaw_compress` and `ulaw_compress`, and the expan
 
 ==== `alaw_compress` and `ulaw_compress`
 
-*Syntax:* 
+*Syntax:*
 
 [pseudocode%unnumbered]
 ====
@@ -615,13 +615,13 @@ _smpno_:: Is the number of samples in lin_buf.
 
 _lin_buf_:: Is the input samples' buffer; each `short` sample shall contain linear PCM (2's complement, 16-bit wide) samples, left-justified.
 
-_log_buf_:: Is the output samples' buffer; each `short` sample will contain right-justified 8-bit wide valid A or stem:[mu] law samples. 
- 
+_log_buf_:: Is the output samples' buffer; each `short` sample will contain right-justified 8-bit wide valid A or stem:[mu] law samples.
+
 *Return value:* None.
 
 ==== `alaw_expand` and `ulaw_expand`
 
-*Syntax:* 
+*Syntax:*
 
 [pseudocode%unnumbered]
 ====
@@ -662,13 +662,13 @@ Program `g711demo.c` accepts input files in 16-bit linear PCM format for compres
 
 ==== Simple example
 
-The following C code gives an example of companding using either the A- or stem:[mu]-law functions available in the STL. 
+The following C code gives an example of companding using either the A- or stem:[mu]-law functions available in the STL.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
-#include <stdio.h> 
-#include "ugstdemo.h" 
+#include <stdio.h>
+#include "ugstdemo.h"
 #include "g711.h"
 
 #define BLK_LEN 256
@@ -705,7 +705,7 @@ main(argc, argv)
      compress = ulaw_compress;
      expand = ulaw_expand;
   }
-  else 
+  else
     QUIT("Bad law chosen!\n",1);
 
  /* File processing */
@@ -780,7 +780,7 @@ g711plc_construct(_LowcFE_c*_); /* explicit constructor call */
 
 *Description:*
 
-Before the PLC algorithm can be called the data structure containing the algorithm's internal storage, such as the history buffer and buffer pointers, must be initialized. 
+Before the PLC algorithm can be called the data structure containing the algorithm's internal storage, such as the history buffer and buffer pointers, must be initialized.
 
 ===== Received Frames
 
@@ -830,7 +830,7 @@ If a frame is lost, the dofe routine is called. As with `addtohistory`, _s_ is a
 
 [pseudocode%unnumbered]
 ====
-#include "error.h" 
+#include "error.h"
 void error(char _*s_, ...);
 ====
 
@@ -887,7 +887,7 @@ void readplcmask close(readplcmask _*r_)
 The PLC algorithm is tested using g711iplc.c. The PLC test programs take 3 file arguments:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   g711iplc mask.g192 input.raw output.raw
 ----
@@ -897,7 +897,7 @@ The `mask.g192` file contains the lost frame pattern and should be in the G.192 
 A frame corresponds to 10 ms, or 80 samples. If the lost frame pattern file is shorter than the number of frames in the `input.raw` file, the program will roll-over back to the start of the pattern file. For example if the `mask.g192` file contains the binary data:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     0x6B21 0x6B21 0x6B21 0x6B21 0x6B21,
     0x6B21 0x6B21 0x6B21 0x6B21 0x6B20
@@ -908,7 +908,7 @@ a 10% uniform loss pattern will be applied to the whole file. Erasures will occu
 While the algorithm is designed for packets containing 10ms of speech, it can be applied to packetizations containing speech chunks that are integer multiples of 10ms. For example, for a 10% uniform loss pattern with 20ms packetization one could use:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     0x6B21 0x6B21 0x6B21 0x6B21 0x6B21,
     0x6B21 0x6B21 0x6B21 0x6B21 0x6B21,
@@ -938,7 +938,7 @@ Use the `-stats` option to print out the number and percentage of frames conceal
 A simplified version of the C++ test program is shown next. This program does not support any options, such as -noplc, or compensate for the algorithm delay, but demonstrates how the components work together.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdlib.h>
 #include <stdio.h>
@@ -981,7 +981,7 @@ int main(int argc, char *argv[]) {
 The PLC directory includes a tool, `asc2g192`, for converting ASCII loss pattern files containing sequences of 0s and 1s into G.192 format pattern files. In ASCII loss pattern files, a "1" represents a lost frame and a "0" represents a received frame. For example, to create a 10% uniform loss pattern with each loss being 10ms, use a text editor to create a text file called `fe10.txt`:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   0000000001
 ----
@@ -989,7 +989,7 @@ The PLC directory includes a tool, `asc2g192`, for converting ASCII loss pattern
 Then, convert it to the G.192 format for use by the g711iplc program with the following command:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   asc2g192 fe10.txt fe10.g192
 ----
@@ -997,7 +997,7 @@ Then, convert it to the G.192 format for use by the g711iplc program with the fo
 Similarly, to create a 10% uniform loss pattern with each loss being 20ms (2 frames for each loss), create the text file `fe10_2.txt`:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   00000000000000000011
 ----
@@ -1005,7 +1005,7 @@ Similarly, to create a 10% uniform loss pattern with each loss being 20ms (2 fra
 Then convert it to the G.192 format with:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   asc2g192 fe10_2.txt fe10_2.g192
 ----
@@ -1145,11 +1145,11 @@ _dq2_:: Quantized difference signal with delay 2
 _dq3_:: Quantized difference signal with delay 3
 _dq4_:: Quantized difference signal with delay 4
 _dq5_:: Quantized difference signal with delay 5
-_dmsp_:: Short term average of the stem:[F(I)] sequence 
+_dmsp_:: Short term average of the stem:[F(I)] sequence
 _dmlp_:: Long term average of the stem:[F(I)] sequence
 _apr_:: Triggered unlimited speed control parameter
-_yup_:: Fast quantizer scale factor 
-_tdr_:: Triggered tone detector 
+_yup_:: Fast quantizer scale factor
+_tdr_:: Triggered tone detector
 _pk0_:: Sign of dq+sez with delay 0
 _pk1_:: Sign of dq+sez with delay 1
 _ylp_:: Slow quantizer scale factor
@@ -1283,7 +1283,7 @@ Program `vbr-g726.c` can perform the same functions as `g726demo.c`, however it 
 The following C code gives an example of G.726 coding and decoding using as input speech previously encoded by either the A- or stem:[mu]-law functions available in the STL. The output samples will be encoded using the same law of the input signal.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include "ugstdemo.h"
@@ -1487,7 +1487,7 @@ Program `g727demo.c` accepts input files in either 16-bit, right-justified A- or
 The following C code gives an example of G.727 coding and decoding using as input speech previously encoded by either the A- or stem:[mu]-law functions available in the STL. The output samples are encoded using the same law of the input signal.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include "ugstdemo.h"
@@ -1575,7 +1575,7 @@ After populating the codebook, indices are assigned to these values to organize 
 
 ==== Type of algorithm specification
 
-The specification of an algorithm can be made in one of three methods <<LDCELP-VerProc>>: bit-exact, bitstream, and algorithm-exact specification. The bit-exact specification implies that all variables and operations inside the algorithm have the bit length and representation precisely defined; this is the type of specification historically used for ITU speech and audio codecs, e.g. G.722, G.726, and G.729. Another approach consists in only specifying the bitstream format (or syntax) and the decoder; additionally, it is common practice to provide a reference encoder and decoder, which can usually be modified to reduce complexity or improve performance. This type of specification was used for regional cellular codec standards in Japan and USA, e.g. VSELP, for video codecs, as well as in the MPEG suite of audio and video codecs. Finally, algorithm-exact specification implies in describing in detail all parts of the algorithm, without however specifying variable length or precision. An algorithm specification made in one of these three ways can additionally be defined in terms of fixed-point arithmetic (only integer variables) or of floating-point. 
+The specification of an algorithm can be made in one of three methods <<LDCELP-VerProc>>: bit-exact, bitstream, and algorithm-exact specification. The bit-exact specification implies that all variables and operations inside the algorithm have the bit length and representation precisely defined; this is the type of specification historically used for ITU speech and audio codecs, e.g. G.722, G.726, and G.729. Another approach consists in only specifying the bitstream format (or syntax) and the decoder; additionally, it is common practice to provide a reference encoder and decoder, which can usually be modified to reduce complexity or improve performance. This type of specification was used for regional cellular codec standards in Japan and USA, e.g. VSELP, for video codecs, as well as in the MPEG suite of audio and video codecs. Finally, algorithm-exact specification implies in describing in detail all parts of the algorithm, without however specifying variable length or precision. An algorithm specification made in one of these three ways can additionally be defined in terms of fixed-point arithmetic (only integer variables) or of floating-point.
 
 The original G.728 algorithm is specified in terms of floating-point operations. Therefore, it is a non-bit-exact specification that describes precisely the operations for its implementation <<LDCELP-VerProc>>. A fixed-point (albeit non-bit-exact) implementation of G.728 was subsequently designed to enable efficient implementation in digital circuit multiplication equipment, which maintained full interoperability with the original floating-point version {blank}footnote:[The concept of interoperability of two implementations of an algorithm comes as a consequence of algorithm-exact specifications. They refer to the need of two different implementations to speak to each other, even though the devices are different. For example, a floating-point DSP and a fixed-point DSP, or two floating-point DSPs of different manufacturers in which number representation has different precision. The small operation differences can cause the accumulation of errors that, as time goes by, can lead the two implementations to diverge, making them fail to interoperate <<LDCELP-VerProc>>.]. An implication of this approach is the need to define procedures for more sophisticated implementation and interoperability verification than the ones used for bit-exact algorithms.
 
@@ -1667,7 +1667,7 @@ with
 
 [latexmath%unnumbered]
 ++++
-r_{m+L}^{\cal R}(i) = \alpha^{2L} r_m^{\cal R}(i) + 
+r_{m+L}^{\cal R}(i) = \alpha^{2L} r_m^{\cal R}(i) +
          \sum_{k=m-N}^{m+L-N-1} s(k) s(k-i) f_{m+L}(k) f_{m+L}(k-i)
 ++++
 
@@ -1687,7 +1687,7 @@ The use of the auto-correlation method for the calculation of the LPC coefficien
 
 However, these are equivalent operations, and if the auto-correlation matrix is ill-conditioned footnote:[The auto-correlation matrix can be ill-conditioned because the signal representation has a finite numeric precision.], the LPC coefficients calculated by the Levinson-Durbin method can lead to an unstable filter. This effect will be even more pronounced when high-order LPC filters are used, as in this case. A simple technique to reduce the matrix ill-conditioning consists in adding white noise to the signal on which the prediction will be made, since this will fill the spectral valleys with noise and would reduce the dynamic range of the spectrum. From the computational point of view, however, it is interesting to adopt an equivalent procedure, designated in G.728 as "white noise correction".
 
-Let's consider a voice signal stem:[s(k)] whose auto-correlation function is stem:[R_s(i), i=1..M], where stem:[M] is the prediction filter order. In a synthetic notation, 
+Let's consider a voice signal stem:[s(k)] whose auto-correlation function is stem:[R_s(i), i=1..M], where stem:[M] is the prediction filter order. In a synthetic notation,
 
 [stem%unnumbered]
 ++++
@@ -1755,7 +1755,7 @@ Since the internal algorithm operations are performed in linear PCM format, the 
 
 === Encoder structures
 
-In the following, the LD-CELP encoder blocks are described, as illustrated in <<fig:G728a>>. 
+In the following, the LD-CELP encoder blocks are described, as illustrated in <<fig:G728a>>.
 
 ==== LPC synthesis filter
 
@@ -1774,7 +1774,7 @@ The general form of the perceptual weighting filter is <<Pond-Percep>>:
 
 [latexmath%unnumbered]
 ++++
-W(z)= { 1 - Q(z/\gamma_1) \over 1 - Q(z/\gamma_2) }, 
+W(z)= { 1 - Q(z/\gamma_1) \over 1 - Q(z/\gamma_2) },
               0 <\gamma_2<\gamma_1\le1.
 ++++
 
@@ -1915,7 +1915,7 @@ The source code for the floating-point version of G.728 resides in the directory
 The floating-point version of the coder can be compiled to use either double precision or single precision floating-point arithmetic. If compiled with `-DUSEDOUBLES`, g728.h defines the `Float` typedef as a C `double`. If compiled with `-DUSEFLOATS`, Float is a C `float`. `Float` is declared in g728.h as:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #ifdef USEDOUBLES
 typedef double Float;
@@ -1930,7 +1930,7 @@ Single precision runs faster. Double precision runs slower but is more likely to
 The include file, g728.h also defines a `Short` type:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 typedef short  Short;
 ----
@@ -1942,7 +1942,7 @@ to hold signed 16-bit integers.
 g728.h defines a C structure, `G728EncData`, to hold the encoder state variables. Its contents are described in the G.728 standard. Here we emphasize how to use it, rather than its internal members. Before calling the encoder `G728EncData` should be initialized with a call to `g728encinit`:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728encinit(
      G728EncData *e    /* encoder state, initialize */
@@ -1952,13 +1952,13 @@ void g728encinit(
 Once initialized, frames of speech can be encoded with:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728encode(
     Short       *index,  /* output indices */
     Float       *input,  /* input speech */
     int          sz,     /* input size - must be multiple of IDIM */
-    G728EncData *e       /* i/o encoder state */ 
+    G728EncData *e       /* i/o encoder state */
 );
 ----
 
@@ -1967,7 +1967,7 @@ The `input` speech should be an array of `Float`s in the range of -32768. to 327
 The floating-point G.728 software package includes utility functions for converting between `Short`s (16-bit integers) and `Float`s:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 extern void g728_cpyr2i( /* convert Floats to Shorts,
                       * with saturation and rounding */
@@ -1985,7 +1985,7 @@ extern void g728_cpyi2r( /* convert Shorts to Floats */
 These are used by the test program, `g728.c`. A simple encoder loop that reads in frames of 16-bit linear PCM, encodes them with floating-point G.728, and outputs the index vectors is in the following code fragment:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include "g728.h"
 
@@ -2009,7 +2009,7 @@ We have omitted the details of opening the files. The code in the `(mode == M_EN
 g728.h defines a C structure, `G728DecData`, to hold the decoder state variables. Many of the decoder state variables replicate the state variables in the encoder. There are additional sections for variables associated with the post-filter and packet loss concealment. As with the encoder, the `G728DecData` must be initialized before it can be used:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728decinit(
     G728DecData *d    /* decoder state, initialize */
@@ -2019,13 +2019,13 @@ void g728decinit(
 Once initialized, frames of speech can be decoded with:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728decode(
     Float       *speech, /* output: speech */
     Short       *index,  /* input: indices */
     int         sz,      /* input: size - must be multiple of IDIM */
-    G728DecData *d       /* i/o: decoder state */ 
+    G728DecData *d       /* i/o: decoder state */
 );
 ----
 
@@ -2034,7 +2034,7 @@ void g728decode(
 If the output speech is to be converted back to 16-bit linear PCM, the conversion routine should take care of rounding and saturation. The utility conversion routine, `g728_cpyr2i`, described above, takes care of this. Here is a code fragment that can be used to implement a floating-point decoder:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include "g728.h"
 
@@ -2056,7 +2056,7 @@ Again we have omitted the details of opening the files. The code in the `(mode =
 An additional interface routine, `g728setpostf`, allows the post-filter in decoder to be turned on or off. By default, the post-filter is on after initialization, but it can be disabled as required by several of the G.728 test vectors:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728setpostf(
     int          i,     /* in: 1 postfilter on, 0 off */
@@ -2069,7 +2069,7 @@ void g728setpostf(
 The following program fragment shows how to run the encoder and decoder together. It combines the fragment from the encoder, with the fragment from the decoder, and uses the utility functions to convert between Floats and Shorts. The loop sequence is: read in a frame of speech, convert to Float, encode, decode, convert the output from Float to Short, and write the resulting speech to a file:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include "g728.h"
 
@@ -2097,7 +2097,7 @@ The code that opens and closes the input and output files is omitted.
 The floating-point code supports the Packet Loss Concealment (PLC) algorithm in G.728 Annex I. This algorithm generates a synthetic speech output at the decoder and maintains the decoder internal state variables if the input codevectors are lost in transmission. This feature is implemented with two more functions. The first PLC function:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728setfesize(
     int    plc25msec,   /* input: PLC frame size, in 2.5msec */
@@ -2110,12 +2110,12 @@ sets the PLC frame size, in increments of 2.5ms (20 samples). This function shou
 The second PLC function:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 void g728decfe(
     Float       *speech,  /* output: speech */
     int         sz,       /* input: size, in samples, PLC framesize */
-    G728DecData *d        /* i/o: decoder state */ 
+    G728DecData *d        /* i/o: decoder state */
 );
 ----
 
@@ -2124,7 +2124,7 @@ is similar to the g728decode function except it takes no input index vector. It 
 A code fragment that shows how to call the PLC functions for a 10 ms PLC frame size (80 samples) is shown below:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include "g728.h"
 
@@ -2177,7 +2177,7 @@ Rather than repeating the interface presented in the floating-point section, the
 The program fragment below shows how to run the fixed-point encoder and decoder together. Speech is input from a file, encoded, decoded, and the output speech is written back to a file:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include "g728fp.h"
 
@@ -2226,7 +2226,7 @@ set the PLC concealment frame size, in milliseconds. This is how much speech wil
 The program has 4 modes: encode, decode, decode with PLC, and encode and decode. To run the encoder use:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   g728 enc speech.infile bitstream.outfile
 ----
@@ -2234,7 +2234,7 @@ The program has 4 modes: encode, decode, decode with PLC, and encode and decode.
 To run the decoder use:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   g728 dec bitstream.infile speech.outfile
 ----
@@ -2242,7 +2242,7 @@ To run the decoder use:
 To run the combined encoder and decoder use:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   g728 encdec speech.infile bitstream.outfile speech.outfile
 ----
@@ -2250,7 +2250,7 @@ To run the combined encoder and decoder use:
 To run the decoder with Packet Loss Concealment with the default 10ms PLC frame size:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
   g728 plc bitstream.infile plcmask.infile speech.outfile
 ----
@@ -2271,7 +2271,7 @@ An expert group was created in November 1983 whose mandate was to define a stand
 The full description on the implementation of the G.722 algorithm is found in <<G.722>>, and network aspects related to its operation are found in <<G.725>>. <<fig:G.722-systemic>> summarizes some systemic aspects of the G.722 algorithm. Overview and notes on the development of the G.722 algorithm can be found in several papers <<G.722:General>>, <<G.722:Overview>>, <<G.722:SubjTest>>, <<G.722:Implementation>>, <<G.722:Modes>>, <<G.722:Applications>>. The following description of the G.722 algorithm is based on the text in <<G.722:Summary>>.
 
 In 2006, upon ETSI DECT request, packet loss concealment (PLC) procedures for G.722 were standardized to ensure a sufficient robustness over the DECT wireless interface. ITU-T G.722 at 64 kbit/s codec is the mandatory coder in ETSI New Generation DECT (NG-DECT) standards (ETSI TS 102 527-1 and -3) <<G.722:ETSITS102527-1>>, <<G.722:ETSITS102527-3>>. These standards are intended for wideband audio enabled devices to be connected on VoIP networks.
- 
+
 In the above mentioned PLC standardization, G.722 software tool was updated. Originally, the ITU-T G.722 algorithm used its own binary bit stream format without synchronism headers; this made almost impossible to apply frame errors. In the STL 2009, G.722 codec software tool was made compliant with G.192 bitstream format and EID-XOR/G.192 style of frame and bit error application to G.722 is enabled. At the same time, STL basic operators and complexity counters were introduced. Furthermore, the standalone decoder tool now includes basic reference Packet Loss Concealment functionality.
 
 [[fig:G.722-systemic]]
@@ -2404,8 +2404,8 @@ In 2006, basic index domain PLC functionality (zero index and frame repeat algor
 | 0 (default) | All bits in the erroneous frame are set to "1". (every 8 kHz octet index is set to 0xFF)
 | 1 | same as PLC(0), but includes a decoder reset after the frame
 decoding and synthesis operation.
-| 2 | The bits from the previous frame(s) are repeated. After four erroneous frames, algorithm PLC(0) is used. 
-| 3 | as PLC(2), but the first (0.625 ms) bits of the first good frame after an erroneous frame are set to the value "1". 
+| 2 | The bits from the previous frame(s) are repeated. After four erroneous frames, algorithm PLC(0) is used.
+| 3 | as PLC(2), but the first (0.625 ms) bits of the first good frame after an erroneous frame are set to the value "1".
 |===
 
 The PLC actions in the G.722 standalone decoder are activated by incoming G.192 frames that do not have a valid G192_SYNC header tag. Note that in November 2006, ITU-T SG16 approved two new Appendices to G.722 for Packet Loss Concealment (PLC). These two Appendices (Appendices III and IV <<G.722:AppIII>>, <<G.722:AppIV>>) provide better quality over the basic PLC functionality included in
@@ -2416,7 +2416,7 @@ STL.
 ==== G.192 bit stream format for standalone G.722 encoder and decoder
 
 As described previously, G.722 is an embedded algorithm which supports network scaling of the bitstream in three bitrates: 48, 56 and 64 kbit/s. To support this functionality within the G.192 file format the G.722 encoder writes the 16 kbit/s embedded bits in the end of every G.192 bitstream frame.
- 
+
 For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <<fig:G722trame>>, <<fig:G722trame1>> and <<fig:G722trame2>> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <<G.722>> and as used in <<G.722:RFC3551>>).
 
 [[fig:G722trame]]
@@ -2434,7 +2434,7 @@ image::image8-10.png[]
 
 ==== Standalone G.722 Encoder specific operation
 
-If the encoder can not read a complete input frame it stops its processing, this means that the final decoder output file may be up to a frame shorter than the input speech file. 
+If the encoder can not read a complete input frame it stops its processing, this means that the final decoder output file may be up to a frame shorter than the input speech file.
 
 === ITU-T STL G.722 Implementation
 
@@ -2485,7 +2485,7 @@ long g722_encode (short _*inp_buf_, short _*g722_frame_, long _smpno_,
 
 *Description:*
 
-Simulation of the ITU-T G.722 64 kbit/s encoder. Takes the linear (16-bit, left-justified) input array of shorts _inp_buf_ (16 bit, right-justified, without sign extension) with _smpno_ samples, and saves the encoded bit-stream in the array of shorts _g722_frame_. 
+Simulation of the ITU-T G.722 64 kbit/s encoder. Takes the linear (16-bit, left-justified) input array of shorts _inp_buf_ (16 bit, right-justified, without sign extension) with _smpno_ samples, and saves the encoded bit-stream in the array of shorts _g722_frame_.
 
 The state variables are saved in the structure pointed by _g722_encode_, and the reset can be established by making a call to `g722_reset_encoder`.
 
@@ -2589,25 +2589,25 @@ _g722_decoder_:: A pointer to the G.722 decoder state variable structure which i
 
 The portability test for these routines has been performed using the test sequences designed by the ITU-T for the G.722 algorithm {blank}footnote:[The G.722 test sequences are freely downloadable from http://www.itu.int/rec/T-REC-G.722-198703-I!AppII/en.]. It should be noted that the G.722 test sequences are not designed to test the QMF filters, but only to exercise the upper and lower band encoder and decoder ADPCM algorithms. Therefore, testing of the codec with the test sequences was done with a special set of test programs that used the core G.722 upper- and lower-band ADPCM coding and decoding functions. All test sequences were correctly processed.
 
-This module has been compiled and tested on PC platform with Cygwin (CYGWIN_NT-5.0), using gcc(3.3.3), and with Microsoft Visual Studio 8. 
+This module has been compiled and tested on PC platform with Cygwin (CYGWIN_NT-5.0), using gcc(3.3.3), and with Microsoft Visual Studio 8.
 
 Please note that the 16 bit oriented G.192 files require correct octet swapping of inputs and outputs on big/little-endian machines.
 
 === Encoder(encg722) tool command line options
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 Usage:
-encg722  [-options] InpFile OutFile  
+encg722  [-options] InpFile OutFile
 where:
 InpFile     is the name of the speech file to be processed;
 OutFile     is the name with the processed bitstream;
 
 options:
 -fsize  #   Number of 16 kHz input samples per frame (must be an even number).
-            Default is 160 samples (16 kHz) (10 ms)  
--mode   #   Operating mode (1,2,3) (or rate 64, 56, 48 in kbit/s). 
+            Default is 160 samples (16 kHz) (10 ms)
+-mode   #   Operating mode (1,2,3) (or rate 64, 56, 48 in kbit/s).
             Default is mode 1 (= 64 kbit/s)
 -frames #   number of frames to process
             (values -1 or 0 processes the whole file )
@@ -2619,7 +2619,7 @@ options:
 === Decoder (decg722) tool command line options
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 Usage:
 
@@ -2635,9 +2635,9 @@ options:
             Default is mode 1/64 kbit/s.
             (others are mode 2/56 kbit/s and mode 3/48 kbit/s)
 
--fsize #    Number of samples per frame  
+-fsize #    Number of samples per frame
             Default is 160, 16 kHz samples (or 10ms)
-            (NB! must be the same as on the encoder side.) 
+            (NB! must be the same as on the encoder side.)
 
 -frames #   Number of frames to process
 
@@ -2647,7 +2647,7 @@ options:
             (2 = previous frame repetition, no decoder state reset)
             (3 = previous frame repetition, a few zero_indeces in first good
              frame, no decoder state reset)
-  
+
 -byte       Use legacy nonG192 G.722 format (byte oriented) without
             frame/synch headers.
 
@@ -2658,7 +2658,7 @@ options:
 
 ==== Description of the demonstration programs
 
-One demonstration program is provided for the G.722 module, g722demo.c. In addition, two programs are provided in the distribution when compliance testing of the encoder and decoder is necessary, tstcg722.c and tstdg722.c{blank}footnote:[. The demonstration program g722demo.c cannot be used for compliance verification because the test vectors for G.722 do not foresee processing through the quadrature mirror filters.]. 
+One demonstration program is provided for the G.722 module, g722demo.c. In addition, two programs are provided in the distribution when compliance testing of the encoder and decoder is necessary, tstcg722.c and tstdg722.c{blank}footnote:[. The demonstration program g722demo.c cannot be used for compliance verification because the test vectors for G.722 do not foresee processing through the quadrature mirror filters.].
 
 Program `g722demo.c` accepts 16-bit, linear PCM samples sampled at 16 kHz as encoder input. The decoder also produces files in the same format. The bitstream signals out of the encoder are always organized in 16-bit, right-justified words that use the lower 8 bits (i.e., 64 kbit/s). According to the user-specified mode, the decoder will decode the G.722-encoded bitstream using 64, 56, or 48 kbit/s (i.e. full 8 bits, discard 1 bit of the lower band, or discard 2 bits of the lower band). It should be noted that the demonstration programs g722demo.c, tstcg722.c and tstdg722.c only produce G.722 legacy bitstream. To produce bitstream compliant with G.192, please use encg722.c and decg722.c. Similarly, basic PLC functionnality is not supported the demonstration programs g722demo.cand tstdg722.c. Please use decg722.c for basic PLC functionnality.
 
@@ -2667,7 +2667,7 @@ Program `g722demo.c` accepts 16-bit, linear PCM samples sampled at 16 kHz as enc
 The following C code gives an example of G.722 coding and decoding using as input wideband speech which is encoded and decoded at either 64, 56, or 48 kbit/s, according to the user-specified parameter _mode_.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include "ugstdemo.h"
@@ -2718,24 +2718,24 @@ void main(argc, argv)
 ==== Example operation of encoder (encg722)
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 foreach mode ( 1 2 3 ) # (corresponds to 64,56,48 kbit/s)
-   foreach fsize ( 160 320 640) # (corresponds to 10,20,40 ms) 
-      encg722  -mode $mode -fsize $fsize inpsp.smp outp.g722.$fsize.$mode.g192 
-   end #fsize 
+   foreach fsize ( 160 320 640) # (corresponds to 10,20,40 ms)
+      encg722  -mode $mode -fsize $fsize inpsp.smp outp.g722.$fsize.$mode.g192
+   end #fsize
 end #mode
 ----
 
 ==== Example operation of decoder (decg722)
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 foreach mode ( 1 2 3 ) # (corresponds to 64,56,48 kbit/s)
-   foreach fsize ( 160 320 640) # (corresponds to 10,20,40 ms) 
+   foreach fsize ( 160 320 640) # (corresponds to 10,20,40 ms)
       decg722 -plc 0 -fsize $fsize outp.g722.$fsize.$mode.g192  outsp.smp
-      mv outpsp.smp outpsp.g722.$fsize.$mode.plc.0.smp 
+      mv outpsp.smp outpsp.g722.$fsize.$mode.plc.0.smp
    end #fsize
 end #mode
 ----
@@ -2985,7 +2985,7 @@ Program `rpedemo.c` accepts input files in either 16-bit linear PCM format, 16-b
 The following C code gives an example of RPE-LTP coding and decoding using as input 13-bit, linear-PCM speech samples, which are encoded and decoded at 13 kbit/s.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include "ugstdemo.h"
@@ -3143,7 +3143,7 @@ While the IRS filter is applicable to telephony bandwidth (or narrowband) speech
 
 ===== Other weightings
 
-In the process to select a wideband codec at 32 and 24 kbit/s, a 50 Hz --5 kHz bandpass filter was developed and incorporated in the STL. <<bp5k-16k-frq>> and <<bp5k-16k-ir>> display the respective frequency and impulse responses for the filter. 
+In the process to select a wideband codec at 32 and 24 kbit/s, a 50 Hz --5 kHz bandpass filter was developed and incorporated in the STL. <<bp5k-16k-frq>> and <<bp5k-16k-ir>> display the respective frequency and impulse responses for the filter.
 
 A 100 Hz -- 5 kHz filter was also designed for tests of another wideband codec. <<bp100_5k-16k-frq>>and <<bp100_5k-16k-ir>> show the respective frequency and impulse response of this filter.
 
@@ -3242,11 +3242,11 @@ The high-quality filters were implemented for rate-change factors of 2 and 3. Th
 Since the digital filters have memory, state variables are needed. In this version of the STL, a type `SCD_FIR` is defined, containing the past sample memory, as well as filter coefficients and other control variables. Its fields, whose values shall never be changed by the user, are as follows:
 
 _lenh0_:: Number of FIR coefficients
-_dwn_up_:: Down-sampling factor 
-_k0_:: Start index in next segment (needed in segment-wise filtering) 
-_h0_:: Pointer to array with FIR coefficients 
-_T_:: Pointer to delay line 
-_hswitch_:: Switch to FIR-kernel: up- or down-sampling 
+_dwn_up_:: Down-sampling factor
+_k0_:: Start index in next segment (needed in segment-wise filtering)
+_h0_:: Pointer to array with FIR coefficients
+_T_:: Pointer to delay line
+_hswitch_:: Switch to FIR-kernel: up- or down-sampling
 
 The relevant routines for each module are described in the next sections. footnote:[It should be noted that in the source code files there are local (privately-defined) functions which are not intended to be directly accessed by the user and therefore are not described here.]
 
@@ -4013,7 +4013,7 @@ each single frequency before and after filtered by the selected
 filter.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include <stdlib.h>
@@ -4187,7 +4187,7 @@ The EID module implements the four functionalities: random and bursty bit errors
 
 The burst frame erasure function requires a more elaborated model. For the specific application of wireless systems, a model based on Markov sequences is used. This is known within ITU as the Bellcore model <<Bellcore-Model-1>>, <<Bellcore-Model-2>>. This model was first used in the standardization of ITU-T G.729, and has been incorporated in the STL since.
 
-Upon development needs of scalable and embedded-variable bitrate codecs, a more elaborate EID simulation software was added in STL2009 release. This tools allows more complex error insertion simulations: layered application mode where upper layers are dependent on the error of lower layers, and (optional) individual application mode where errors are inserted separately to each layer. 
+Upon development needs of scalable and embedded-variable bitrate codecs, a more elaborate EID simulation software was added in STL2009 release. This tools allows more complex error insertion simulations: layered application mode where upper layers are dependent on the error of lower layers, and (optional) individual application mode where errors are inserted separately to each layer.
 
 === Description of Algorithm
 
@@ -4199,7 +4199,7 @@ This model (see <<fig:GEC>>) has two states, Good (stem:[G]) and Bad or Burst (s
 
 The probabilities associated with the channel states are stem:[P] and stem:[Q], stem:[P] being the probability of transition from state stem:[G] to stem:[B], and stem:[Q] the probability of transition from stem:[B] to stem:[G]. Hence, the probability of remaining in the same state is stem:[(1-P)] and stem:[(1-Q)] for states stem:[G] and stem:[B], respectively. For a given state, there are probabilities that a change in a bit occur, and this is stem:[P_G] for state stem:[G], and stem:[P_B] for state stem:[B].
 
-Therefore, the channel may be either in the good state stem:[G], where the mean bit error probability stem:[P_G] is very low (stem:[P_G ~~ 0]), or in the bad state stem:[B], where the mean bit error probability stem:[P_B] is rather high (stem:[P_B ~~ 0.5]). 
+Therefore, the channel may be either in the good state stem:[G], where the mean bit error probability stem:[P_G] is very low (stem:[P_G ~~ 0]), or in the bad state stem:[B], where the mean bit error probability stem:[P_B] is rather high (stem:[P_B ~~ 0.5]).
 
 [[fig:GEC]]
 .Gilbert Elliot Channel Model (GEC)
@@ -4242,7 +4242,7 @@ In the Error Insertion Device (EID) the special values stem:[P_G=0] and stem:[P_
 [[EQ5]]
 [stem]
 ++++
-P = 2 * (1-gamma) * BER 
+P = 2 * (1-gamma) * BER
 ++++
 
 [[EQ6]]
@@ -4319,17 +4319,17 @@ The frame error distribution can be controlled by selecting the transition proba
 
 A layered scalable codec provides a multi-layer bitstream that can be modified by application or network entities:
 
-* The core layer of the codec provides a minimum quality. 
+* The core layer of the codec provides a minimum quality.
 * Upper layers enable improving quality by increasing bitrate up to a maximum value.
 
-One main feature of a scalable codec lies in the layering flexibility. The layers can be transported over different channels or over the same channel but with different priorities. Further the bitrate can be adjusted between minimal and maximal values by any network element in the communication chain. 
+One main feature of a scalable codec lies in the layering flexibility. The layers can be transported over different channels or over the same channel but with different priorities. Further the bitrate can be adjusted between minimal and maximal values by any network element in the communication chain.
 
 To simulate the layering functionality a bitstream error application tool (eid-ev) was added for STL2009 release. This tool applies layer errors at desired levels. For each frame of an input bitstream, this tool performs the following operations:
 
 [class=steps]
 . Read and validate the input frame, (each input frame size needs to represent a valid layer boundary)
 . Read the frame error pattern files, (one error pattern file is read for each layer)
-. Apply errors by copying non-distorted layers to the output frame, and setting the bits of distorted layers to the softbit value zero. 
+. Apply errors by copying non-distorted layers to the output frame, and setting the bits of distorted layers to the softbit value zero.
 . Truncate output frame if consecutive higher layers are hit by errors.
 . Set the correct synchronization header of the output frame
 . Set the correct length of the output frame.
@@ -4362,7 +4362,7 @@ For burst frame erasures only, a different state variable structure type called 
 
 _seedptr_:: Memory for random number generator.
 _internal_:: Array with probabilities for each state of the Markov process.
-_index_:: Channel's current state. 
+_index_:: Channel's current state.
 
 The values of the fields shall not be altered and are not needed by user.
 
@@ -4574,7 +4574,7 @@ void BER_insertion (long _lseg_, short _*xbuff_, short _*ybuff_, short
 Disturbs an input bitstream _xbuff_ according to the error pattern provided in _error_pattern_, saving the disturbed bitstream in the output buffer _ybuff_. The input and output bitstream are compliant to the bitstream format described before, i.e. are comprised of a synchronization header (sync word followed by a frame length word) and softbits representing the encoded bitstream. The sync and frame length words are always located in the offsets 0 and 1 of the array, respectively. The error pattern contains only softbits. The following summarizes the bit error insertion rules:
 
 . input signal (after synchronization header):
-.. hard bit `'0'` represented as `0x007F`; 
+.. hard bit `'0'` represented as `0x007F`;
 .. hard bit `'1'` represented as `0x0081`.
 
 . error pattern:
@@ -4584,12 +4584,12 @@ Disturbs an input bitstream _xbuff_ according to the error pattern provided in _
 . output signal computation (does not affect the synchronization header, which is copied unmodified from the input buffer to the output buffer):
 +
 --
-For input `'1'` (`0x0081`): 
+For input `'1'` (`0x0081`):
 
 .. if the error pattern is in the range `0x00FF..0x0081` (255..129), then the output will be `0x0001..0x007F` (1..127), respectively;
 .. if the error pattern is in the range `0x0001..0x007F` (1..127), then the output will be `0x00FF..0x0081` (255..129), respectively.
 
-For input `'0'` (`0x007F`): 
+For input `'0'` (`0x007F`):
 
 .. if the error pattern is in the range ` 0x00FF..0x0081` (255..129), then the output will be `0x00FF..0x0081` (255..129), respectively;
 .. if the error pattern is in the range `0x0001..0x007F` (1..127), then the output will be `0x0001..0x007F` (1..127), respectively.
@@ -4652,7 +4652,7 @@ been erased, and 0 otherwise.
 
 Portability may be checked by running the same speech file on a proven platform and on a test platform, for the whole range of input parameters. Results should be identical when the compilation is done with the symbol `PORT_TEST` properly defined and the channel states are set to a same value.
 
-For the eid-ev program, please note that the 16 bit oriented G.192 files require correct byte swapping of inputs and outputs on big/little-endian machines. It checks for inconsistent sync headers and exits the program with a warning if incorrectly swapped synchronism headers are detected. 
+For the eid-ev program, please note that the 16 bit oriented G.192 files require correct byte swapping of inputs and outputs on big/little-endian machines. It checks for inconsistent sync headers and exits the program with a warning if incorrectly swapped synchronism headers are detected.
 
 The original EID routines had portability tested for VAX/VMS with VAX-C, MS-DOS with Turbo C v2.0, Sun-OS with Sun-C, and HPUX with gcc. The newly introduced eid-ev programs were tested for Microsoft C-compiler and gcc on Cygwin.
 
@@ -4685,7 +4685,7 @@ As a final note, it should be reinforced that the definition of the symbol `PORT
 ==== Using bit-error insertion routine
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include <stdlib.h>
@@ -4761,7 +4761,7 @@ void main(argc, argv)
 ==== Using frame erasure routine
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include <stdlib.h>
@@ -4833,12 +4833,12 @@ void main(argc, argv)
 
 ==== Using layered bitstream error routine (eid-ev)
 
-The demonstration program, `eid-ev.c` demonstrates the use of this module to apply errors in a scalable layered bit stream to simulate a flexible transport channel. 
+The demonstration program, `eid-ev.c` demonstrates the use of this module to apply errors in a scalable layered bit stream to simulate a flexible transport channel.
 
 G.192 bitstreams (with sync header), G.192 byte-oriented bitstreams (with sync header) can be processed with this tool. (The byte oriented G.192 input stream is however limited to a maximum frame size of 255). The supported frame error patterns formats for the layers are the G.192 16-bit softbit format (without synchronism header) and the byte-oriented version of the G.192 format (also without synchronism header).
 
 After processing the `eid-ev` program supplies statistics for the layer erasing operations performed for each layer. The statistics reported are the errors applied in the `eid-ev` error application ('erasing rate') as well as the total erasure rate ('total erasure rate'). The total erasure rate includes both input erasures and erasures performed in the `eid-ev` layer error application. When calculating the `eid-ev` 'erasing rate', applying an layer error to an already erased input layers is not counted as an layer erasure. The statistics can be suppressed by using the -q (quiet option).
- 
+
 To enable the simulation of cascaded network elements, the output of one eid-ev operation can be used as input to a subsequent eid-ev operation.
 
 ===== Error Application Modes
@@ -4856,7 +4856,7 @@ Note that a scalable decoder that wants to utilize the valid bits that may remai
 Usage:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 eid-ev [options] in_bs e0 [e1, ..., eN] out_bs
 ----
@@ -4876,7 +4876,7 @@ options:
 `-q`:: Quiet operation, skip statistics
 `-h`:: Displays this message
 `-help`:: Displays a complete instructive help message
- 
+
 ===== Examples
 
 For example, one frame of the input bitstream will comprise 640 bits for a 32 kbit/s codec operating a frame size of 20 ms, the core rate is 24 kbit/s (480 bits) and the higher layer is 8 kbit/s (160 bits). To apply correlated layered errors to the two layers of the bitstream the following command line may be issued:
@@ -5066,11 +5066,11 @@ The block diagram of the MNRU implemented in the STL is in <<STL96-MNRU>>.
 
 The MNRU works internally on a sample-by-sample basis but for ease of interface with other speech coding functions, access to it is made on a sample block basis. It should be noted however that the filters have memory, as well as do the random number generator, hence state variables are needed. These state variables have been arranged as fields of a structure whose `type` name is `MNRU_state`. The fields of the structure are:
 
-_seed_:: RNG's seed 
-_signal_gain_:: Gain of the signal path 
-_noise_gain_:: Gain of the noise path 
-_vet_:: Array for intermediate data 
-_last_xk_:: stem:[x(k-1)] used as memory for the DC-removal filter 
+_seed_:: RNG's seed
+_signal_gain_:: Gain of the signal path
+_noise_gain_:: Gain of the noise path
+_vet_:: Array for intermediate data
+_last_xk_:: stem:[x(k-1)] used as memory for the DC-removal filter
 _last_yk_:: stem:[xi(k-1)] (see <<STL96-MNRU>>), used as memory for the DC-removal filter
 _DLY[2][2]_:: Memory of delayed samples for two second-order stages (first index) for first- and second-order delays (second index)
 _A[2][2]_:: Numerator coefficients for the stage indicated by the first index and delay-order inidcated by the second index
@@ -5189,7 +5189,7 @@ The field in `RANDOM_state` should not be altered by the user in any situation.
 The operational modes are defined in `mnru.h`:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   #define RANDOM_RUN 0
   #define RANDOM_RESET 1
@@ -5228,7 +5228,7 @@ Although the MNRU algorithm operates on a sample-by-sample basis, `MNRU_process`
 The implementation of the MNRU algorithm has three operational states, called `MNRU_START`, `MNRU_CONTINUE` and `MNRU_STOP`. With `MNRU_START`, the state variables are set, as well as memory is allocated for the intermediate data, and this needs to be the first operation with the algorithm. Differently from the speech voltmeter module, after the initialization of the state variables, the normal calculations are carried out for the first block of data. Once reset, the algorithm changes the operation state to `MNRU_CONTINUE`, and the next calls to the MNRU algorithm will skip the reset operation. With the last block, it is adivisable to release the memory allocated to the intermediate data. This is accomplished by calling `MNRU_process` with the operational state set as `MNRU_STOP`. These three operational states are defined in `mnru.h` as follows:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   #define MNRU_START     1
   #define MNRU_CONTINUE  0
@@ -5287,7 +5287,7 @@ One demonstration program is provided for the MNRU module, mnrudemo.c. Irrespect
 The following C code gives an example of a possible use of the Duo-MNRU module. The input file speech is added to a multiplicative noise at a SNR defined by parameter Q. All samples in the file are processed.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include <stdlib.h>
@@ -5392,7 +5392,7 @@ After considering an input sample stem:[x_i], the speech voltmeter performs two 
 
 [stem%unnumbered]
 ++++
-p_i = g * p_(i-1) + (1-g) * :|:x_i:|: 
+p_i = g * p_(i-1) + (1-g) * :|:x_i:|:
 ++++
 
 [stem%unnumbered]
@@ -5412,11 +5412,11 @@ for stem:[f] as the sampling frequency, in Hz, and stem:[T], a time constant for
 With the envelope calculated, the algorithm calculates the number of times that the envelope exceeds each of the threshold levels. The thresholds are represented in a vector stem:[c] of stem:[B-1] positions, where stem:[B] is the resolution (number of bits) of the samples. The values in this vector range from half the maximum possible amplitude down to (or less than) one LSB (Least Significant Bit). In terms of practical implementations, the values of stem:[c_j] are a power of 2:
 
 [stem%unnumbered]
-++++ 
+++++
 c_j = 2^j, j=0 cdots B-2
 ++++
 
-There are three possible cases footnote:[It is interesting to remark that the lower the threshold level, the greater the activity count for that level will be.]: 
+There are three possible cases footnote:[It is interesting to remark that the lower the threshold level, the greater the activity count for that level will be.]:
 
 * *the envelope exceeds the threshold stem:[c_j]*: increment the _activity counter_ for the quantization level stem:[j], stem:[a_j], and set the timer vector (or _hangover counter_) stem:[h_j] to zero. This operation means that the segment is active as far as the level stem:[j] is concerned, and so the hangover counter must be set to zero, as well as the number of active samples (stem:[a_j]) incremented.
 
@@ -5519,7 +5519,7 @@ The algorithm has two operational parts, one that deals with the initialization 
 
 ==== `init_speech_voltmeter`
 
-*Syntax:* 
+*Syntax:*
 
 [pseudocode%unnumbered]
 ====
@@ -5535,7 +5535,7 @@ void init_speech_voltmeter (SVP56_state _*state_, double _f_);
 
 *Variables:*
 
-_state_:: Is a pointer to a speech voltmeter state variable. 
+_state_:: Is a pointer to a speech voltmeter state variable.
 
 _f_:: Is the sampling rate (in Hz) of the signal to be measured in the next calls of `speech_voltmeter`. If zero or negative, the sampling rate is initialized to 16000 Hz.
 
@@ -5546,7 +5546,7 @@ None.
 
 ==== `speech_voltmeter`
 
-*Syntax:* 
+*Syntax:*
 
 [pseudocode%unnumbered]
 ====
@@ -5625,7 +5625,7 @@ As a part of the speech voltmeter module, two example programs are provided. The
 
 Both example programs calculate the equalization factor to equalize the active speech level of a file 'NdB' dBs below the 0 dBov reference using the algorithm described in this chapter. However, only program `sv56demo.c` carry out the level-equalization of the input file, which is saved in an aoutput file. Levels are reported in dBov.
 
-In general, input files are in integer representation, 16-bit words, 2's complement (i.e., `short` data). In UGST convention, this data must be left-adjusted, _rather_ than right-adjusted. Since the speech voltmeter uses `float` input data, it is necessary to convert from `short` (in the mentioned format) to `float`; this is carried out by the function `sh2fl()`. In addition, the option to `normalize' the input data to the range -1..+1 is selected. After the equalization factor is found, results are reported on the screen, which varies according to the program used and some of the command-line options. 
+In general, input files are in integer representation, 16-bit words, 2's complement (i.e., `short` data). In UGST convention, this data must be left-adjusted, _rather_ than right-adjusted. Since the speech voltmeter uses `float` input data, it is necessary to convert from `short` (in the mentioned format) to `float`; this is carried out by the function `sh2fl()`. In addition, the option to `normalize' the input data to the range -1..+1 is selected. After the equalization factor is found, results are reported on the screen, which varies according to the program used and some of the command-line options.
 
 While program `actlevel.c` stops at this point, program `sv56demo.c` proceeds calling the function `scale()` to carry out the (amplitude) equalization using single (rather than double) float precision. After equalization, the samples are converted back to integer (short, right-justified) with the routine `fl2sh()` using truncation, no zero-padding of the least significant bits, left-justification of data, and hard-clipping of data above the overload point. After that, data is saved to the user-specified file .
 
@@ -5634,7 +5634,7 @@ While program `actlevel.c` stops at this point, program `sv56demo.c` proceeds ca
 Following is an simplification of the described demonstration programs. It only measures the statistics for the input file, without carrying out level equalizations and does not implement the several command-line options of `actlevel.c`.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include <stdio.h>
 #include <stdlib.h>
@@ -5687,13 +5687,13 @@ void main(argc, argv)
     printf("\n  Activity factor is ZERO -- the file is silence or idle noise");
   else
   {
-    printf("\n  DC level: ................ %7.0f [PCM]", 
+    printf("\n  DC level: ................ %7.0f [PCM]",
            SVP56_get_DC_level(state) * satur);
-    printf("\n  Maximum positive value: .. %7.0f [PCM]", 
+    printf("\n  Maximum positive value: .. %7.0f [PCM]",
            SVP56_get_pos_max(state) * satur);
-    printf("\n  Maximum negative value: .. %7.0f [PCM]", 
+    printf("\n  Maximum negative value: .. %7.0f [PCM]",
            SVP56_get_neg_max(state) * satur);
-    printf("\n  Long-term energy (rms): .. %7.3f [dBov]", 
+    printf("\n  Long-term energy (rms): .. %7.3f [dBov]",
            SVP56_get_rms_dB(state);
     printf("\n  Active speech level: ..... %7.3f [dBov]", ActiveLeveldB);
     printf("\n  Activity factor: ......... %7.3f [%%]",
@@ -5770,7 +5770,7 @@ The geometry characteristics are given in <<tbl:rev-geom-room>>. These rooms wer
 | ^h| Length (m) ^h| Width (m) ^h| Height (m) ^h| Volume (m^3^)
 
 | Video-conference room ^| 4.80 ^| 4.45 ^| 2.50 ^| 53.40
-| Meeting room ^| 8.55 ^| 5.30 ^| 2.70 ^| 122.35 
+| Meeting room ^| 8.55 ^| 5.30 ^| 2.70 ^| 122.35
 |===
 
 To give more information concerning the acoustical behaviour, the octave-band reverberation time was computed for frequencies below 8 kHz. The values represented in <<tbl:rev-revTime-room>> were estimated by the backward integration method applied in each octave-band of the measured impulse response.
@@ -5780,7 +5780,7 @@ To give more information concerning the acoustical behaviour, the octave-band re
 |===
 | 6+^h| Reverberation time (ms)
 
-| Octave band ^| 125 Hz ^| 250 Hz ^| 500 Hz ^| 1 kHz ^| 2 kHz ^| 4 kHz 
+| Octave band ^| 125 Hz ^| 250 Hz ^| 500 Hz ^| 1 kHz ^| 2 kHz ^| 4 kHz
 | Video-conference room ^| 600 ^| 450 ^| 360 ^| 295 ^| 280 ^| 250
 | Meeting room ^| 671 ^| 600 ^| 518 ^| 490 ^| 466 ^| 440
 |===
@@ -5794,7 +5794,7 @@ In STL 2009, stereo impulse responses were added. These stereo impulse responses
 |===
 | ^h| Length (m) ^h| Width (m) ^h| Height (m) ^h| Volume (m3)
 | Meeting room (Large) ^| 11.15 ^| 4.35 ^| 2.90 ^| 140.65
-| Video-conference room (Small) ^| 5.25 ^| 4.75 ^| 2.60 ^| 64.83 
+| Video-conference room (Small) ^| 5.25 ^| 4.75 ^| 2.60 ^| 64.83
 |===
 
 ===== Scenario 1
@@ -5829,8 +5829,8 @@ The naming defined here is: `[Room][Reverb][Mic]P[Position].[channel].IR32`, whe
 
 * `Room` is S=Small or L=Large,
 * `Reverb` is E=Echoic or A=Anechoic,
-* `Mic` is AB or MS or BI=binaural, 
-* `Position` is a two digit position number, 
+* `Mic` is AB or MS or BI=binaural,
+* `Position` is a two digit position number,
 * `Channel` is L=Left or R=Right.
 
 The detailed naming of stereo impulse responses is given in <<tbl:nameImpulseResponse>>.
@@ -5868,7 +5868,7 @@ a| Scenario 2, small conf room, 7 positions, AB microphone, including reverberat
 
 a| Scenario 2, small conf room, 7 positions, Binaural microphone, including reverberation. a| Small, Echoic, Binaural a| SEBIP04.L.IR32 SEBIP04.R.IR32
 
-a| Scenario 2, small conf room, 7 positions, MS microphone, 
+a| Scenario 2, small conf room, 7 positions, MS microphone,
 including reverberation. a| Small, Echoic, MS a| SEMSP07.L.IR32 SEMSP07.R.IR32
 |===
 
@@ -5962,7 +5962,7 @@ This tool truncates the bitstream at the desired bitrate (see <<trunc-principle>
 [class=steps]
 . Read the synchronization word and copy it to the output bitstream;
 . Write the new frame length word equal to the number N2 of bits to copy to the output bitstream (N2 depends on the desired bit rate);
-. Read the N1 words of the input bitstream and copy the first N2 16-bit words representing the first N2 bits of the input to the output bitstream. 
+. Read the N1 words of the input bitstream and copy the first N2 16-bit words representing the first N2 bits of the input to the output bitstream.
 
 [[trunc-principle]]
 .Bitstream truncation principle
@@ -6014,7 +6014,7 @@ module to truncate a bitstream to the desired bitrate.
 
 === Introduction
 
-In order to measure effective codec bandwidth, a frequency response measurement tool was created for the STL2005 <<STL2005>>. At Q10/16 January 2008 meeting, a window overlap option was proposed to make this tool more accurate when dealing with signals with quickly varying frequencies while allowing the tool to be used as before <<AC-0801-Q10-31>> and it was wondered whether this window overlap option should be the default mode. At this January 2008 meeting <<TD297R1>>, it was also suggested that an option to use other window sizes might be useful. In addition, during G.729.1 Superwideband qualification phase, it was found that the speed of the algorithm can be sometime a bit too slow. Therefore, at Q10/16 September 2008 meeting, an update was provided to allow variable frame size usage and to increase the computation speed <<AC-0809-Q10-35>>. In STL2009, the frequency response measurement tool has been revised to introduce these three options: window overlap, variable frame size, and increased computation speed. 
+In order to measure effective codec bandwidth, a frequency response measurement tool was created for the STL2005 <<STL2005>>. At Q10/16 January 2008 meeting, a window overlap option was proposed to make this tool more accurate when dealing with signals with quickly varying frequencies while allowing the tool to be used as before <<AC-0801-Q10-31>> and it was wondered whether this window overlap option should be the default mode. At this January 2008 meeting <<TD297R1>>, it was also suggested that an option to use other window sizes might be useful. In addition, during G.729.1 Superwideband qualification phase, it was found that the speed of the algorithm can be sometime a bit too slow. Therefore, at Q10/16 September 2008 meeting, an update was provided to allow variable frame size usage and to increase the computation speed <<AC-0809-Q10-35>>. In STL2009, the frequency response measurement tool has been revised to introduce these three options: window overlap, variable frame size, and increased computation speed.
 
 === Description of the algorithm
 
@@ -6218,7 +6218,7 @@ The syntax needed for using the variable size is following:
 
 If the `-nfft` option is not used, then the default size (2048) is used. The other usual options (e.g. sampling frequency,...) can still be set.
 
-The max length of FFT is defined by the macro "`NFFT_MAX`" and is set to 8192. 
+The max length of FFT is defined by the macro "`NFFT_MAX`" and is set to 8192.
 
 
 == ITU-T Stereo processing tool
@@ -6232,7 +6232,7 @@ For the development and characterization of stereo algorithms, properly conditio
 The tool operates on sample basis on 16-bit resolution input files, and provides the following functionalities:
 
 * Interleaving two single channel files into one single two-channel stereo file.
-* Splitting an interleaved two-channel file into individual single channel files 
+* Splitting an interleaved two-channel file into individual single channel files
 * Down-mixing a two-channel stereo file into a maximum channel energy analysis file (a single channel analysis signal for stereo scene level evaluation purposes).
 * Down-mixing a two-channel file into a single channel mono file
 
@@ -6271,7 +6271,7 @@ The input and output file byte order will be the native system byte order.
 ===== Prototype
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 #include "ugstdemo.h"
 enum Mode NONE = -1,INTER, SPLIT, LEFT, RIGHT, MAXENVAL, MONO, N MODES ;
@@ -6287,23 +6287,23 @@ stores the processed data into the output file (or files).
 ===== Variables
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
-FILE   *Fif[MAX_IFILES]; /* Pointer(s) to input files */ 
-FILE   *Fof[MAX_OFILES];      /* Pointer(s) to output files */ 
-char   ifname[MAX_IFILES][MAX_STR]; /* Input file names */ 
-char   ofname[MAX_OFILES][MAX_STR]; /* Output file names */ 
-enum   Mode mode=NONE;  /* Operation mode variable */ 
-short  tmp_short[2],tmp_short_1ch[1]; /* 16bit short read/write buffers */ 
+FILE   *Fif[MAX_IFILES]; /* Pointer(s) to input files */
+FILE   *Fof[MAX_OFILES];      /* Pointer(s) to output files */
+char   ifname[MAX_IFILES][MAX_STR]; /* Input file names */
+char   ofname[MAX_OFILES][MAX_STR]; /* Output file names */
+enum   Mode mode=NONE;  /* Operation mode variable */
+short  tmp_short[2],tmp_short_1ch[1]; /* 16bit short read/write buffers */
 ----
 
 ===== Command line syntax for channel manipulation operations
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
-stereoop -interleave  infile.L.1ch       infile.R.1ch   outfile.stereo.2ch  
-stereoop -split       infile.stereo.2ch  outfile.L.1ch  outfile.R.1ch  
+stereoop -interleave  infile.L.1ch       infile.R.1ch   outfile.stereo.2ch
+stereoop -split       infile.stereo.2ch  outfile.L.1ch  outfile.R.1ch
 stereoop -left        infile.stereo.2ch  outfile.L.1ch
 stereoop -right       infile.stereo.2ch  outfile.R.1ch
 ----
@@ -6311,7 +6311,7 @@ stereoop -right       infile.stereo.2ch  outfile.R.1ch
 ===== Command line syntax for channel down-mix operations
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 stereoop -maxenval  infile.stereo.2ch  outfile.maxenval.1ch
 stereoop -mono      infile.stereo.2ch  outfile.mono.1ch
@@ -6608,7 +6608,7 @@ Multiply `v1` by `v2` and shift the result left by 1. Add the 32-bit result to `
 
 [%unnumbered]
 ----
-  mac_r(L_v3, v1, v2) = 
+  mac_r(L_v3, v1, v2) =
     round_fx(L_mac(L_v3, v1, v2))=
     extract_h(L_add(L_add(L_v3, L_mult(v1, v2)), 32768))}
 ----
@@ -6659,8 +6659,8 @@ Multiply `v1` by `v2` and shift the result left by 1. Subtract the 32-bit result
 
 [%unnumbered]
 ----
-  msu_r(L_v3, v1, v2) = 
-    round_fx(L_msu(L_v3, v1, v2))= 
+  msu_r(L_v3, v1, v2) =
+    round_fx(L_msu(L_v3, v1, v2))=
     extract_h(L_add(L_sub(L_v3, L_mult(v1, v2)), 32768))
 ----
 
@@ -6794,11 +6794,11 @@ Same as `shr()` but with rounding. Saturate the result in case of underflows or 
 [%unnumbered]
 ----
   if (v2>0) then
-    if (sub(shl(shr(v1,v2),1), shr(v1,sub(v2,1)))==0) 
+    if (sub(shl(shr(v1,v2),1), shr(v1,sub(v2,1)))==0)
     then shr_r(v1, v2) = shr(v1, v2)
     else shr_r(v1, v2) = add(shr(v1, v2), 1)
 
-    else if (v2 ≤ 0) 
+    else if (v2 ≤ 0)
     then shr_r(v1, v2) = shr(v1, v2)}
 ----
 
@@ -6810,11 +6810,11 @@ Same as `L_shr(v1,v2)` but with rounding. Saturate the result in case of underfl
 [%unnumbered]
 ----
   if (v2 > 0) then
-    if (L_sub(L_shl(L_shr(L_v1,v2),1), L_shr(L_v1, sub(v2,1)))) == 0 
+    if (L_sub(L_shl(L_shr(L_v1,v2),1), L_shr(L_v1, sub(v2,1)))) == 0
     then L_shr_r(L_v1, v2) = L_shr(L_v1, v2)
     else L_shr_r(L_v1, v2) = L_add(L_shr(L_v1, v2), 1)
 
-    if (v2 ≤ 0) 
+    if (v2 ≤ 0)
     then L_shr_r(L_v1, v2) = L_shr(L_v1, v2)}
 ----
 
@@ -6907,7 +6907,7 @@ Produces a result which is the fractional integer division of a positive 32-bit 
 .Use of 32-bit basic operators in G.723.1, G.729 and ETSI GSM speech coding recommendations
 |===
 h| Operation h| Weight h| FR GSM h| HR GSM h| EFR GSM h| AMR GSM h| G.729 h| G.723.1 h| TETRA
- 
+
 | `add()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
 | `sub()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
 | `abs_s()` ^| 1 ^| X (1) ^| X ^| X ^| X ^| X ^| X ^| X
@@ -6917,35 +6917,35 @@ h| Operation h| Weight h| FR GSM h| HR GSM h| EFR GSM h| AMR GSM h| G.729 h| G.7
 | `extract_l()` ^| 1 ^| X (4) ^| X ^| X ^| X ^| X ^| X ^| X
 | `mult()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_mult()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
-| `negate()` ^| 1 ^| X (5) ^| X ^| X ^| X ^| X ^| X ^| 
+| `negate()` ^| 1 ^| X (5) ^| X ^| X ^| X ^| X ^| X ^|
 | `round_fx()` ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_mac()` ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_msu()` ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^| X
-| `L_macNs()` ^| 1 ^| ^| ^| X ^| ^| X ^| X ^| 
-| `L_msuNs()` ^| 1 ^| ^| ^| ^| ^| X ^| X ^| 
+| `L_macNs()` ^| 1 ^| ^| ^| X ^| ^| X ^| X ^|
+| `L_msuNs()` ^| 1 ^| ^| ^| ^| ^| X ^| X ^|
 | `L_add()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_sub()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_negate()` ^| 1 ^| X (6) ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_shl()` ^| 1 ^| X (7) ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_shr()` ^| 1 ^| X (8) ^| X ^| X ^| X ^| X ^| X ^| X
 | `mult_r()` ^| 1 ^| X ^| X ^| X ^| X ^| X ^| X ^| X
-| `mac_r()` ^| 1 ^| ^| X ^| ^| ^| ^| X ^| 
-| `msu_r()` ^| 1 ^| ^| X ^| ^| ^| ^| X ^| 
+| `mac_r()` ^| 1 ^| ^| X ^| ^| ^| ^| X ^|
+| `msu_r()` ^| 1 ^| ^| X ^| ^| ^| ^| X ^|
 | `L_deposit_h()` ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_deposit_l()` ^| 1 ^| X (9) ^| X ^| X ^| X ^| X ^| X ^| X
 | `L_abs()` ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^| X
-| `norm_s()`  ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^| 
+| `norm_s()`  ^| 1 ^| ^| X ^| X ^| X ^| X ^| X ^|
 | `norm_l()` ^| 1 ^| X (11) ^| X ^| X ^| X ^| X ^| X ^| X
-| `L_add_c()` ^| 2 ^| ^| ^| ^| ^| ^| X ^| 
-| `L_sub_c()` ^| 2 ^| ^| ^| ^| ^| ^| X ^| 
-| `shr_r()` ^| 3 ^| ^| X (12) ^| X ^| X ^| X ^| X ^| 
+| `L_add_c()` ^| 2 ^| ^| ^| ^| ^| ^| X ^|
+| `L_sub_c()` ^| 2 ^| ^| ^| ^| ^| ^| X ^|
+| `shr_r()` ^| 3 ^| ^| X (12) ^| X ^| X ^| X ^| X ^|
 | `L_shr_r()` ^| 3 ^| ^| X (13) ^| X ^| X ^| X ^| X ^| X
-| `L_sat()` ^| 4 ^| ^| ^| ^| ^| X ^| X ^| 
+| `L_sat()` ^| 4 ^| ^| ^| ^| ^| X ^| X ^|
 | `div_s()` ^| 18 ^| X (10) ^| X (14) ^| X ^| X ^| X ^| X ^| X
 
-| `i_mult()` ^| 3 ^| ^| ^| ^| ^| ^| X (15) ^| 
-| `L_mls()` ^| 5 ^| ^| ^| ^| ^| ^| X (15) ^| 
-| `div_l()` ^| 32 ^| ^| ^| ^| ^| ^| X (15) ^| 
+| `i_mult()` ^| 3 ^| ^| ^| ^| ^| ^| X (15) ^|
+| `L_mls()` ^| 5 ^| ^| ^| ^| ^| ^| X (15) ^|
+| `div_l()` ^| 32 ^| ^| ^| ^| ^| ^| X (15) ^|
 
 | `L_mult0()` ^| 1 ^| ^| ^| ^| ^| ^| ^| X (16)
 | `L_mac0()` ^| 1 ^| ^| ^| ^| ^| ^| ^| X (16)
@@ -7181,7 +7181,7 @@ Arithmetically shifts the 40-bit variable L40_v1 by v2 positions to the most sig
 `Mpy_32_16_ss(L_v1, v2, *L_v3_h, *v3_l)`
 
 [align=left]
-*Multiplies the 2 signed values* L_v1 (32-bit) and v2 (16-bit) with saturation control on 48-bit. The operation is performed in *fractional mode*: + 
+*Multiplies the 2 signed values* L_v1 (32-bit) and v2 (16-bit) with saturation control on 48-bit. The operation is performed in *fractional mode*: +
 When L_v1 is in 1Q31 format, and v2 is in 1Q15 format, the result is produced in 1Q47 format: L_v3_h bears the 32 most significant bits while v3_l bears the 16 least significant bits.
 
 `Mpy_32_32_ss(L_v1, L_v2, *L_v3_h, *L_v3_l)`
@@ -7226,7 +7226,7 @@ If var2 is positive, real and imaginary parts of CL_var1 are shifted to the leas
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_shr(CL_var1.re, L_shift_val);
   CL_result.im = L_shr(CL_var1.im, L_shift_val);
@@ -7241,7 +7241,7 @@ If var2 is positive, real and imaginary parts of CL_var1 are shifted to the most
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_shl(CL_var1.re, L_shift_val);
   CL_result.im = L_shl(CL_var1.im, L_shift_val);
@@ -7258,7 +7258,7 @@ The result forms the imaginary part of the result variable. +
 Following code snippet describe the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_add(CL_var1.re, CL_var2.re);
   CL_result.im = L_add(CL_var1.im, CL_var2.im);
@@ -7275,7 +7275,7 @@ The result forms the imaginary part of the result variable. +
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_sub(CL_var1.re, CL_var2.re);
   CL_result.im = L_sub(CL_var1.im, CL_var2.im);
@@ -7288,7 +7288,7 @@ Multiplies the real and imaginary parts of a 32-bit complex number CL_var by a 1
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = Mpy_32_16_r(CL_var.re, var1);
   CL_result.im = Mpy_32_16_r(CL_var.im, var1);
@@ -7301,7 +7301,7 @@ Multiplies the real parts of a 32-bit complex number CL_var3 by a 16-bit var1 an
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = Mpy_32_16_r(CL_var.re, var1);
   CL_result.im = Mpy_32_16_r(CL_var.im, var2);
@@ -7314,7 +7314,7 @@ Multiplies the 32-bit complex number CL_var2 with j and subtracts the result fro
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_add( CL_var1.re, CL_var2.im );
   CL_result.im = L_sub( CL_var1.im, CL_var2.re );
@@ -7327,7 +7327,7 @@ Multiplies the 32-bit complex number CL_var2 with j and adds the result to the 3
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_sub( CL_var1.re, CL_var2.im );
   CL_result.im = L_add( CL_var1.im, CL_var2.re );
@@ -7348,7 +7348,7 @@ Multiplies the real and imaginary parts of a 32-bit complex number CL_var by a 1
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = Mpy_32_16_r(CL_var.re, var1);
   CL_result.im = Mpy_32_16_r(CL_var.im, var1);
@@ -7361,7 +7361,7 @@ Multiplies the real parts of a 32-bit complex number CL_var by a 16-bit var1 and
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = Mpy_32_16_r(CL_var.re, var1);
   CL_result.im = Mpy_32_16_r(CL_var.im, var2);
@@ -7374,7 +7374,7 @@ Multiplies the 32-bit complex number CL_var2 with j and subtracts the result fro
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_add( CL_var1.re, CL_var2.im );
   CL_result.im = L_sub( CL_var1.im, CL_var2.re );
@@ -7387,7 +7387,7 @@ Multiplies the 32-bit complex number CL_var2 with j and adds the result to the 3
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_sub( CL_var1.re, CL_var2.im );
   CL_result.im = L_add( CL_var1.im, CL_var2.re );
@@ -7412,7 +7412,7 @@ Combines the two 32-bit variables L_re and L_im and returns a 32-bit complex num
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_re;
   CL_result.im = L_im;
@@ -7425,7 +7425,7 @@ Negates the 32-bit complex number, saturates and returns. +
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = L_negate(CL_var.re);
   CL_result.im = L_negate(CL_var.im);
@@ -7438,7 +7438,7 @@ Negates only the imaginary part of complex number CL_var with saturation. No cha
 The following code snippet describes the operations:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = CL_var.re;
   CL_result.im = L_negate(CL_var.im);
@@ -7459,7 +7459,7 @@ Adds the two 16-bit complex numbers C_var1 and C_var2 with 16-bit saturation con
 The following code snippet describe the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   C_result.re = add(C_var1.re, C_var2.re);
   C_result.im = add(C_var1.im, C_var2.im);
@@ -7472,7 +7472,7 @@ Subtracts the two 16-bit complex numbers C_var1 and C_var2 with 16-bit saturatio
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   C_result.re = sub(C_var1.re, C_var2.re);
   C_result.im = sub(C_var1.im, C_var2.im);
@@ -7493,7 +7493,7 @@ Multiplies the real and imaginary parts of a 32-bit complex number CL_var1 by a 
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = Mpy_32_32_r(CL_var1.re, L_var2);
   CL_result.im = Mpy_32_32_r(CL_var1.im, L_var2);
@@ -7506,7 +7506,7 @@ Multiplies the real parts of a 32-bit complex number CL_var1 by a 32-bit L_var2 
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   CL_result.re = Mpy_32_32_r(CL_var1.re, L_var2);
   CL_result.im = Mpy_32_32_r(CL_var1.im, L_var3);
@@ -7564,7 +7564,7 @@ Multiplication of 32-bit complex number CL_var with a 16-bit complex number C_co
 The formula for multiplying two complex numbers, `(x+iy)` and `(u+iv)` is:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   (x+iy)*(u+iv) = (xu – yv) + i(xv + yu);
 ----
@@ -7572,7 +7572,7 @@ The formula for multiplying two complex numbers, `(x+iy)` and `(u+iv)` is:
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_tmp1 = W_mult_32_16(CL_var.re, C_coeff.re);
   W_tmp2 = W_mult_32_16(CL_var.im, C_coeff.im);
@@ -7592,7 +7592,7 @@ Multiplies the 16-bit complex number C_var1 with the 16-bit complex number C_var
 The formula for multiplying two complex numbers, `(x+iy)` and `(u+iv)` is:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   (x+iy)*(u+iv) = (xu – yv) + i(xv + yu);
 ----
@@ -7600,7 +7600,7 @@ The formula for multiplying two complex numbers, `(x+iy)` and `(u+iv)` is:
 The following code snippet describes the operations performed on real & imaginary part of a complex number:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_tmp1 = W_mult_16_16(C_var1.re, C_var2.re);
   W_tmp2 = W_mult_16_16(C_var1.im, C_var2.im);
@@ -7618,7 +7618,7 @@ Complex multiplication of CL_var1 and CL_var2. Multiplication is in fractional m
 The following code snippet describes the performed operations:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_tmp1 = W_mult_32_32(CL_var1.re, CL_var2.re);
   W_tmp2 = W_mult_32_32(CL_var1.im, CL_var2.im);
@@ -7634,7 +7634,7 @@ The following code snippet describes the performed operations:
 Multiplies real and imaginary part of C_var2 by var3 and shifts the result left by 1. Adds the 32-bit result to CL_var1 with saturation. Rounds the 16 least significant bits of the result into the 16 most significant bits with saturation and shifts the result right by 16. Returns a 16-bit complex result.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 C_result = CL_round32_16( CL_add( Cl_var1, C_scale(C_var2, var3) ) );
 ----
@@ -7644,7 +7644,7 @@ C_result = CL_round32_16( CL_add( Cl_var1, C_scale(C_var2, var3) ) );
 Multiplies real and imaginary part of C_var2 by var3 and shifts the result left by 1. Subtracts the 32-bit result from CL_var1 with saturation. Rounds the 16 least significant bits of the result into the 16 most significant bits with saturation and shifts the result right by 16. Returns a 16-bit complex result.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
 C_result = CL_round32_16( CL_sub( Cl_var1, C_scale(C_var2, var3) ) );
 ----
@@ -7905,7 +7905,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q15 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_var1 = W_mult_32_16 ( L_var1, var2 );
   L_var_out = W_sat_m( W_var1 );
@@ -7921,7 +7921,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q15 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_var1 = W_mult_32_16( L_var1, var2 );
   L_var_out = W_round48_L (W_var1);
@@ -7937,7 +7937,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q31 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_var1 = (( Word64)L_var1 * L_var2);
   L_var_out = W_extract_h(W_shl(W_var1, 1) );
@@ -7953,7 +7953,7 @@ The operation is performed in fractional mode. For example, if L_var1 is in 1Q31
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   W_var1 = (( Word64)L_var1 * L_var2);
   W_var1 = W_var1 + 0x40000000LL;
@@ -7971,7 +7971,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q15 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_16_1(L_var1, var2);
   L_var_out = L_add(L_var3, L_var_out);
@@ -7989,7 +7989,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q15 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_16_r(L_var1, var2);
   L_var_out = L_add(L_var3, L_var_out);
@@ -8007,7 +8007,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q15 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_16_1(L_var1, var2);
   L_var_out = L_sub(L_var3, L_var_out);
@@ -8025,7 +8025,7 @@ For example, if L_var1 is in 1Q31 format and var2 is in 1Q15 format, then the pr
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_16_r(L_var1, var2);
   L_var_out = L_sub(L_var3, L_var_out);
@@ -8041,7 +8041,7 @@ The operation is performed in fractional mode. For example, if L_var1 is in 1Q31
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_32(L_var1, L_var2);
   L_var_out = L_add(L_var3, L_var_out);
@@ -8059,7 +8059,7 @@ For example, if L_var1 is in 1Q31 format and L_var2 is in 1Q31 format, then the 
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_32_r(L_var1, L_var2);
   L_var_out = L_add(L_var3, L_var_out);
@@ -8077,7 +8077,7 @@ For example, if L_var1 is in 1Q31 format and L_var2 is in 1Q31 format, then the 
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_32(L_var1, L_var2);
   L_var_out = L_sub(L_var3, L_var_out);
@@ -8095,7 +8095,7 @@ For example, if L_var1 is in 1Q31 format and L_var2 is in 1Q31 format, then the 
 The following code snippet describes the operations performed:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
   L_var_out = Mpy_32_32_r(L_var1, L_var2);
   L_var_out = L_sub(L_var3, L_var_out);
@@ -8331,16 +8331,16 @@ or
 | Complexity Weight | Basic Operator | Description
 
 | 0 | *DO*{...} while(expression) | The macro DO must be used instead of the 'do' C statement.
-| 3 | *FOR*(expr1; expr2; expr3) {...} | The macro FOR must be used instead of the 'for' C statement. The complexity is *independent* of the number of loop iterations that are performed. 
+| 3 | *FOR*(expr1; expr2; expr3) {...} | The macro FOR must be used instead of the 'for' C statement. The complexity is *independent* of the number of loop iterations that are performed.
 | 0 | *if*(expression) +
-*one_and_only_one_basic_operator (control operators excluded)* | *The macro IF must not be used* when the 'if' structure does not have any 'else if' nor 'else' statement and it conditions only one basic operator (control operators excluded). 
+*one_and_only_one_basic_operator (control operators excluded)* | *The macro IF must not be used* when the 'if' structure does not have any 'else if' nor 'else' statement and it conditions only one basic operator (control operators excluded).
 | 3 | *IF*(expression) {...} | The macro IF must be used instead of the 'if' C statement *in every other case*: when there is an 'else' or 'else if' statement, or when the 'if' conditions several basic operators, or when the 'if' conditions a function call or when the 'if' conditions a control operator.
 | 4 | if(expression) {...} [[ +
 *ELSE* if(expression2){...}] +
 *ELSE* {...}] | The macro ELSE must be used instead of the 'else' C statement.
 | 6 | *SWITCH*(expression) {...} | The macro SWITCH must be used instead of the 'switch' C statement.
 | 3 | *WHILE*(expression) {...} | The macro WHILE must be used instead of the 'while' C statement. The complexity is *proportional* to the number of loop iterations that are performed.
-| 2 | while(expression) { + 
+| 2 | while(expression) { +
 ... *CONTINUE*; ... +
 or +
 for(expr1; expr2; expr3) { +
@@ -8371,14 +8371,14 @@ switch(var) { +
 The *IF*() macro must be used instead of the classical C statement *if*(), wherever:
 
 * There is an else or else if statement,
-* There is *strictly more than one basic operators* to condition, 
+* There is *strictly more than one basic operators* to condition,
 * There is at least a function call to condition.
 * There is a control basic operator to condition.
 
 An example code:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     if (x == 0)
     z = add(z, sub(y, x)); /* more than one basic ops */
@@ -8390,7 +8390,7 @@ An example code:
 must be written as:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     IF (x == 0)
     z = add(z, sub(y, x));
@@ -8402,7 +8402,7 @@ must be written as:
 While below code must stay untouched since *only one* basic operator is conditioned.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     if (x == 0)
     z = add(z, x); /* one basic op */
@@ -8414,10 +8414,10 @@ While below code must stay untouched since *only one* basic operator is conditio
 The `FOR()` and `WHILE()` macros must be used to differentiate loops which can be handled by a h/w loop controller from complex loops which need to be controlled by additional control software.
 
 
-* Follows an example of a *simple h/w loop* that must be designed with the *FOR()* macro. It will iterate C-statement E0 to E20 a number of times *known at loop entry* (and at least once). Therefore, for such loops, there is no complexity associated to the computation of the decision to loop back or not: 
+* Follows an example of a *simple h/w loop* that must be designed with the *FOR()* macro. It will iterate C-statement E0 to E20 a number of times *known at loop entry* (and at least once). Therefore, for such loops, there is no complexity associated to the computation of the decision to loop back or not:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
         /* var1 > 0 is ensured  */
         FOR (n = 0; n < var1; n++) {
@@ -8430,7 +8430,7 @@ The `FOR()` and `WHILE()` macros must be used to differentiate loops which can b
 * Follows an example of a *complex s/w loop* that must be designed with the *WHILE()*. It will iterate C-statement E0 to E20 a number of times *undefined* at loop entry (eventually 0 times). Indeed, at the end of one loop iteration, the decision to loop back depends on the processing done within the elapsed iteration.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
         /* do not need to ensure n < var1 at loop entry */
         WHILE (n < var1) {
@@ -8458,17 +8458,17 @@ ANSI-C defines *for*() structures with *while*() structures, but by differencing
 It is important to *modify* below C code:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     do {
     x = sub(x, y)
     } while (x < 0);
 ----
 
-into following one: 
+into following one:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     DO {
     x = sub(x, y)
@@ -8478,7 +8478,7 @@ into following one:
 The following code is also possible but, although the associated complexity computation will be identical, it can generate parsing errors by some source code editors which perform on-the-fly syntax checking.
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     do {
     x = sub(x, y)
@@ -8494,7 +8494,7 @@ All arithmetic tests on data must be presented as a comparison to zero. To perfo
 For example, below examples leads to an under evaluation of the complexity:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     if (a > 3) { }
     while (a != 5) { } ...
@@ -8503,7 +8503,7 @@ For example, below examples leads to an under evaluation of the complexity:
 While, below examples leads to a correct evaluation of the complexity:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     if (sub(a,3) > 0) { }
     while (sub(a, 5) != 0) { } ...
@@ -8524,7 +8524,7 @@ The following code ...
 
 [%unnumbered]
 ----
-    *test*(); 
+    *test*();
     if ( (sub( a, b) > 0) && (sub( c, d) > 0)) {}
 ----
 
@@ -8534,8 +8534,8 @@ The following code ...
 
 [%unnumbered]
 ----
-    if ( (a > b) 
-    && (c > d) 
+    if ( (a > b)
+    && (c > d)
     ||(e > f)) {}
 ----
 
@@ -8543,8 +8543,8 @@ The following code ...
 
 [%unnumbered]
 ----
-    *test*(); 
-    *test*(); 
+    *test*();
+    *test*();
     if (  (sub( a, b) > 0)
     && ( sub( c, d) > 0)
     || (sub( e, f) > 0)) {
@@ -8562,7 +8562,7 @@ Therefore, instead of writing:
     (condition) ? (statement1) : (statement2)
 ----
 
-One must write: 
+One must write:
 
 [%unnumbered]
 ----
@@ -8599,7 +8599,7 @@ A "*for*" C statement must be limited to initializing, testing and incrementing 
     for(i=0, j=0; i<N & w>0 ; i++, j+=3)
 ----
 
-It must be replaced by: 
+It must be replaced by:
 
 [%unnumbered]
 ----
@@ -8607,12 +8607,12 @@ It must be replaced by:
     for(i=0; i<N ; i++) {
       j = add(j,3);
       if(w > 0)
-        break; 
+        break;
     }
 ----
 
 Actually, in order to respect the other recommendations, it must
-be replaced by: 
+be replaced by:
 
 [%unnumbered]
 ----
@@ -8667,7 +8667,7 @@ Data moves are only counted in the following cases:
 Following example shows necessity:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     const Word8 tbl[2] = {0x1, 0x2};
 
@@ -8684,7 +8684,7 @@ count, e.g. move16(), is not necessary because address computation is
 not counted as a part of the complexity. For example:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     Word16 *p;
     p = &(array[1]); /* move16() not necessary */
@@ -8695,7 +8695,7 @@ not counted as a part of the complexity. For example:
 When a return value of a function is assigned, it does not require move16() count. For example:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     Word16 a = function(b); /* move16() not necessary */
 ----
@@ -8703,7 +8703,7 @@ When a return value of a function is assigned, it does not require move16() coun
 Here is another example that does not require copy count:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     Word16 function(Word16 b) {
     return (add(b, 1)); /* move16() not necessary */.
@@ -8717,7 +8717,7 @@ Introducing dummy functions to avoid extra basop counts must be avoided.
 When copying return value of a complex macro to a variable, it does not require extra weight count as in a return value of a function:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     Word32 w = Mpy_32(); /* move32() not required */
 ----
@@ -8729,7 +8729,7 @@ Address computation must be excluded from the complexity evaluation. However, wh
 For example, incrementation of an address by one does not require an extra count, but followings would be considered complex:
 
 [%unnumbered]
-[source,html]
+[source,c]
 ----
     j=0; move16();
     FOR( i=0; i<5; i++) {
@@ -8768,7 +8768,7 @@ The tool consists of one ANSI C file `basop_cnt.c`.
 To use this tool the C source file `basop_cnt.c` has to be compiled and linked. The resulted executable file has to be called for each C source file of the examined application, with the following syntax:
 
 [%unnumbered]
-[source,html]
+[source,sh]
 ----
 basop_cnt input.c [result_file_name.txt]
 ----
@@ -8783,7 +8783,7 @@ If needed to further edit the black list of functions that should not be counted
 [align=left]
 This tool was first used to estimate the program ROM of the G.722 PLC candidate algorithms. The example below gives the execution of this tool with part of G.722 appendix IV footnote:[this example does not give the total complexity of G.722 appendix IV]. +
 - without a result file: `basop_cnt g722.c` +
-the output is : 
+the output is :
 
 [%unnumbered]
 ----
@@ -8798,14 +8798,14 @@ If the pre-processor directive `VERBOSE_BLACKLIST_FUNC` is defined, the list of 
 
 [%unnumbered]
 ----
-line   86: blacklist #   1:                                    return 
-line  160: blacklist #   2:                                    calloc 
-line  160: blacklist #   3:                                    sizeof 
-line  230: blacklist #   4:                                      free 
-line  271: blacklist #   5:                                    return 
-line  303: blacklist #   6:                                    calloc 
-line  303: blacklist #   7:                                    sizeof 
-line  318: blacklist #  8:                                       free 
+line   86: blacklist #   1:                                    return
+line  160: blacklist #   2:                                    calloc
+line  160: blacklist #   3:                                    sizeof
+line  230: blacklist #   4:                                      free
+line  271: blacklist #   5:                                    return
+line  303: blacklist #   6:                                    calloc
+line  303: blacklist #   7:                                    sizeof
+line  318: blacklist #  8:                                       free
 ----
 
 Note that the line numbers correspond to the comment free pre-processed file.
@@ -8819,15 +8819,15 @@ After the first call, the result file contains:
 
 [%unnumbered]
 |===
-| g722.c | 87 | 28 | 8 
+| g722.c | 87 | 28 | 8
 |===
 
 After the second call, the result file contains:
 
 [%unnumbered]
 |===
-| g722.c | 87 | 28 | 8 
-| funcg722.c | 389 | 41 | 19 
+| g722.c | 87 | 28 | 8
+| funcg722.c | 389 | 41 | 19
 |===
 
 
@@ -8877,23 +8877,23 @@ A scaling factor is used to estimate and print the complexity that would be obta
 | Operation | Counter | Example | Complexity Weights (Cycles) | Memory Weights (words)
 
 | Addition | ADD() | a=b+c | 1 | 1
-| Multiplication | MULT() | a=b*c | 1 | 1 
-| Multiplication-Addition | MAC() | a+=b*c | 1 | 1 
+| Multiplication | MULT() | a=b*c | 1 | 1
+| Multiplication-Addition | MAC() | a+=b*c | 1 | 1
 | Move | MOVE() | a=b, a[i]=b[i] ONLY +
-assignment or copy | 1 | 1 
+assignment or copy | 1 | 1
 | Storing Arithmetic Result in Array | STORE() | a[i]=b[i]+c[i] | 1 (for move only) | 0
-| Logical | LOGIC() | AND, OR, etc. | 1 | 1 
-| Shift | SHIFT() | a=b>>c | 1 | 1 
+| Logical | LOGIC() | AND, OR, etc. | 1 | 1
+| Shift | SHIFT() | a=b>>c | 1 | 1
 | Branch (tested with zero) | BRANCH() | if, +
 if...then...else...Count +
 1 BRANCH for each +
-"if" possibility | 4 | 2 
-| Division | DIV() | a=b/c, a=b%c | 18 | 2 
+"if" possibility | 4 | 2
+| Division | DIV() | a=b/c, a=b%c | 18 | 2
 | Square-root | SQRT() |a=sqrt(b), a=isqrt(b), +
 a=1/sqrt(b) | 10 | 2
 | Transcendental | TRANS() | sine, log, arctan | 25 | 2
 | Function call | FUNC() | a=func(b, c, d) | 2+i, where +
-i=number of 
+i=number of
 arguments passed +
 & returned | 2
 | Loop initialization | LOOP() |for (i=0; i<n; i++)| 3 |1
@@ -8907,7 +8907,7 @@ a=*(b+c) | 2 | 2
 | Double Precision Multiplication |DMULT() |a=b*c | 2| 1
 | Double Precision Move |DMOVE() |a=b| 2 |1
 | Double Precision Division |DDIV()| a=b/c |36| 2
-| Exponential | POWER() | pow, 1.0/x, exp(n) |25 |2 
+| Exponential | POWER() | pow, 1.0/x, exp(n) |25 |2
 | Logarithm |LOG()| log2, log10, Ln |25 |2
 | Extra conditional test| TEST()| used in conjunction +
 with BRANCH | 2 |1
@@ -8930,11 +8930,11 @@ BRANCH(1); TEST(1); | BRANCH for if, TEST for additional condition, ADD for two 
 
 | if (a!=b \|\| c==d){} else +
 if( a==c ){} | ADD(3); +
-BRANCH(2);TEST(1); | | 
+BRANCH(2);TEST(1); | |
 
 | b = a / L | MULT(1); | When L is constant; +
 (1/L) is a constant too, +
-So b = a * (1/L) | 
+So b = a * (1/L) |
 
 | *a = *b | MOVE(1); | Copy | <<tbl:flp-counters>>, Move
 
@@ -8948,7 +8948,7 @@ PTR_INIT(3), LOOP(1);(before) +
 ADD(1); +
 STORE(1); (inside)
 | When a loop begins with an offset,
-initialization of pointer is counted | 
+initialization of pointer is counted |
 
 | &pt = &(a+L) +
 &pt = &(a+b) | PTR_INIT(1); +
@@ -8966,18 +8966,18 @@ MOVE(1) in the loop +
 MOVE(1) outside the loop
 | Use of MOVE outside the loop because the pointer is already initialized
 | <<tbl:flp-counters>>, Pointer Initialization +
-<<tbl:flp-counters>>, Move 
+<<tbl:flp-counters>>, Move
 
 | pt_a += M | PTR_INIT(1); | M is constant, so this is equivalent to pt_a=&pt_a+M |
 
-| pt_a += m | ADD(1); PTR_INIT(1); | m is variable, so this is equivalent to pt_a=&pt_a+m | 
+| pt_a += m | ADD(1); PTR_INIT(1); | m is variable, so this is equivalent to pt_a=&pt_a+m |
 
-| *a=0.99*b | MULT(1); STORE(1); | A mathematical result is stored with a pointer | 
+| *a=0.99*b | MULT(1); STORE(1); | A mathematical result is stored with a pointer |
 
 | for(i=0;i<L;i++) +
-{a=*b+a;} | PTR_INIT(1); (before loop) ADD(1); (inside) | If a pointer is initialized before the loop, no need to count INDIRECT(1) inside | 
+{a=*b+a;} | PTR_INIT(1); (before loop) ADD(1); (inside) | If a pointer is initialized before the loop, no need to count INDIRECT(1) inside |
 
-| a[b][c]=x[y][z] | MOVE(1); | | <<tbl:flp-counters>>, Move 
+| a[b][c]=x[y][z] | MOVE(1); | | <<tbl:flp-counters>>, Move
 
 | switch(a){ +
 case b:break; +
@@ -8990,10 +8990,10 @@ else{...} |
 
 | st->a[0]=t[2]; +
 st->a[1]=t[3]; | INDIRECT(2); +
-MOVE(2) | Use INDIRECT(2) to remove double indirection and call MOVE(2) to copy data | 
+MOVE(2) | Use INDIRECT(2) to remove double indirection and call MOVE(2) to copy data |
 
 | (*rnd_T0)++ | ADD(1); STORE(1); | it can be replaced by +
-*rnd_T0=*rnd_T0+1; | 
+*rnd_T0=*rnd_T0+1; |
 
 | pit_shrp( code, +
 PIT_SHARP, *round_T0, +
@@ -9481,7 +9481,7 @@ In some cases truncated data is needed, what can be accomplished by setting stem
 
 Concerning the location of the fixed-point data within one 16 bit word, it is more practical to have the decimal point immediateley after the sign bit (between bit 15 and 14, if the bits are ordered from 0..15). Since this is well defined, software that processes the quantized data needs no knowledge about the resolution of the data. It is not important whether tha data comes from A or stem:[mu] law decoding routines or from 12-bit (13, 14, 16-bit) A/D converters.
 
-It should be noted that this routine only processes data in a normalized form (stem:[-1.0 <= x < +1.0]); it shall not be used if data is in the `short` range (-32768.0 .. 32767.0). 
+It should be noted that this routine only processes data in a normalized form (stem:[-1.0 <= x < +1.0]); it shall not be used if data is in the `short` range (-32768.0 .. 32767.0).
 
 *Variables:*
 
@@ -9835,7 +9835,7 @@ _g729e_convert_synch.c_:: convert G.192 word oriented analysis frames without SY
 
 === Test files
 
-_unsup/test_data_:: Test files for testing some of the unsupported tools: 
+_unsup/test_data_:: Test files for testing some of the unsupported tools:
 +
 --
 [%unnumbered]
