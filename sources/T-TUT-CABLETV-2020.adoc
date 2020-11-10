@@ -1,0 +1,253 @@
+= Integrated broadcast-broadband digital TV application cooperated with server for functional extension including functions of digital TV reception and processing
+:bureau: T
+:docnumber: JSTP-IBBDTV
+:title-en: Integrated broadcast-broadband digital TV application cooperated with server for functional extension including functions of digital TV reception and processing
+:published-date: 2020-04
+:copyright-year: 2020
+:status: in-force
+:language: en
+:doctype: technical-paper
+:keywords: IBB system, server-side processing, STB, streaming
+:fullname_1: Masayoshi Onishi
+:affiliation_1: NHK (Japan Broadcasting Corporation)
+:address_1: Japon
+:email_1: oonsihi.m-jc@nhk.or.jp
+:imagesdir: images/T-TUT-CABLETV-2020
+:docfile: T-TUT-CABLETV-2020.adoc
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+[abstract]
+== Summary
+
+This Technical Paper describes an integrated broadcast-broadband (IBB) digital television (TV) application that cooperates with the server for functional extension including functions of digital TV reception and processing. In the current cable TV (CATV) systems, services are dependent on functions of a set top box (STB); thus, the services that require functions beyond the capabilities of an STB cannot be introduced. This system allows for the introduction of new services that require furthering the capabilities of the existing STBs and smoothly transitioning to new STB models. The system is built on an IBB system as defined in <<j207>>.
+
+This system comprises servers and STBs with the following features. The server receives a cable broadcast signal, processes the required content elements and applications, and transfers the processed outputs to STBs. The STB presents the delivered processed outputs and provides user-interactive functions.
+
+NOTE: This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the sco pe of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.
+
+[preface]
+== Change log
+
+This document contains the first version of the ITU-T Technical Paper on "_Integrated Broadcast-Broadband digital TV application cooperated with server for functional extension including functions of digital TV reception and processing_" approved at the ITU-T Study Group 9 meeting held in E-meeting, 16-23 April 2020.
+
+== Scope
+
+This Technical Paper describes an IBB digital TV application that cooperates with the server for functional extension including functions of digital TV reception and processing. The system is built on an IBB system as defined in <<j207>>.
+
+[bibliography]
+== References
+
+* [[[h265,ITU-T H.265 (V7)]]]
+
+* [[[j207,ITU-T J.207]]]
+
+* [[[bt2267-10,ITU-R BT.2267-10]]], Report ITU-R BT.2267-10 (2019), _Integrated broadcast-broadband systems._
+
+* [[[webarch,W3C WebArch]]], W3C Recommendation (2004), _Architecture of the World Wide Web, Volume One._
+
+* [[[webrtc,W3C WebRTC]]], W3C Candidate Recommendation (2019), _WebRTC 1.0: Real-time Communication Between Browsers._
+
+* [[[websocket,W3C WebSocket]]], W3C Candidate Recommendation (2012), _The WebSocket API._
+
+== Terms and definitions
+
+=== Terms defined elsewhere
+
+This Technical Paper uses the following term defined elsewhere:
+
+==== user agent
+
+One type of web agent; a piece of software acting on behalf of a person.
+
+[.source]
+<<webarch>>
+
+=== Terms defined in this Technical Paper
+
+This Technical Paper defines the following term:
+
+==== functional extension server
+
+A server that receives and processes required content elements and applications. The server encodes the output of the process and then transmits them to set top boxes (STBs).
+
+== Abbreviations and acronyms
+
+This Technical Paper uses the following abbreviations and acronyms:
+
+API:: Application Programming Interface
+CATV:: Cable TV
+FES:: Functional Extension Server
+GPU:: Graphics processing unit
+HEVC:: High Efficiency Video Coding
+IBB:: Integrated broadcast-broadband
+IF:: Interface
+IP:: Internet Protocol
+RF:: Radio Frequency
+STB:: Set Top Box
+
+== Introduction
+
+An IBB digital TV application cooperates with the server for functional extension including functions of digital TV reception and processing can facilitate the transition and expansion of cable TV (CATV services) without requiring upgrades to the STBs.
+
+The services provided by analogue CATV systems are quite simple, and the STBs have long lifespans. Digitising such a system improves its service quality and allows for the development of new types of services. In contrast, digital services surrounding the CATV industry have gone through considerable development. However, the CATV systems have not been able to support all such digital services developments as the CATV systems must satisfy certain requirements in order to support them. For example, 4K ultra-high-definition content is efficiently distributed using high efficiency video coding (HEVC) <<h265>> and 360° video services which require high-performance graphics capability. Once the specifications of the CATV systems have been set, the STBs installed in each home can be updated to the STBs that support the new specifications.
+
+However, disseminating the STBs in compliance with any new specifications is both time consuming and expensive. Therefore, CATV operators cannot quickly provide such new services.
+
+Server-side processing technology is a possible solution to this problem. The most important aspect of this approach is that the functions of an STB are delegated to a server(s). With this approach, the STB is merely responsible for presenting the content and supporting interaction between the server and user. The servers rather than STB, performs all the processing required to provide the services and delivers the processed outputs to the STB.
+
+<<fig1>> shows an overview of the IBB digital TV application cooperates with the functional extension server (FES). The FES receives and processes CATV broadcaster services which are digital TV contents and web application. In this system, existing and advanced services are provided by a CATV broadcaster. Existing services can be supported by the STBs and comprise video streaming coded using a diffusion method through broadcasting radio frequency (RF) signals. Advanced services are not supported by the STBs. Examples of the advanced services are video streaming coded using a state-of-the-art method through broadcasting RF signals, as well as interactive content produced using graphics processing unit (GPU) through Internet protocol (IP) data signal. This system enables STBs to provide advanced services through the FES that receives and processes the advanced services from the broadcaster.
+
+With the goal of designing a system model for this approach, this Technical Paper describes the architecture of the IBB digital TV application cooperates with the FES. In addition, a few use cases are described.
+
+[[fig1]]
+.Overview of IBB digital TV application cooperating with the FES
+image::img01.png[]
+
+NOTE: The STB in this figure is assumed to have challenges to receive advanced services directly, i.e., without server-side reception and processing.
+
+NOTE: The server-side reception and processing may have impacts to the network on the data rate requirements or the qualities of services in case the coding method is changed.
+
+== Use cases
+
+This clause describes the use cases for the IBB digital TV application that cooperates with the FES.
+
+=== Use case 1: Utilizing an advanced function
+
+Continuous efforts are being made to develop audio-visual coding schemes with higher efficiencies. In some cases, these newly developed schemes may not be compatible with those used in existing STBs. Instead of replacing old STBs, transcoding in servers can be an alternative approach for introducing these new schemes.
+
+Once an STB is equipped with codecs according to specification decisions, the STB cannot play content encoded by a new coding scheme introduced later. The signals that employ new schemes are received by the cable broadcast reception components in a server and decoded. The audio-visual signals processed by the FES are delivered to the STB over a broadband network using the acceptable encoding schemes for STBs. <<fig2>> illustrates the process of use case 1.
+
+[[fig2]]
+.Use case 1: Utilizing an advanced function
+image::img02.png[]
+
+=== Use case 2: Utilizing functions not equipped for new services
+
+Current broadcasting stations are developing various web services related to programmes over the Internet. When the same services are offered to cable STBs, functions that exceed the capabilities of existing cable STBs may be required, such as 360° videos or multi-view functionality. The 360° videos require extremely high-performance graphics processing, which is typically provided by a GPU, while multi-view functionality requires multiple video decoders. By utilising the IBB digital TV application corporates with the FES, video image decoding is performed on the server(s) in accordance with interactions from a user, and the decoded images are delivered to an existing STB using an acceptable scheme for the STB. The scheme includes an encode and transmit method. Therefore, users who do not have the latest-model STB can still enjoy services such as 360° videos or multi-view functionalities for live sports programmes. <<fig3>> illustrates the process of use case 2. The 360° provider may be a CATV broadcaster or a third party.
+
+[[fig3]]
+.Use case 2: Overview of 360° video services for existing STBs
+image::img03.png[]
+
+== Architecture of IBB digital TV application cooperating with the FES
+
+=== Overview
+
+[[fig4]]
+.Architecture overview of IBB digital TV application cooperating with the FES
+image::img04.png[]
+
+<<fig4>> shows the architecture overview of the IBB digital TV application that cooperates with the FES. The system provides a server-side reception and processing service to the STB. This system is based on the Hybridcast system model described in Annex 2 of <<bt2267-10>>. Hybridcast is one of the IBB systems defined in <<j207>>. The architecture of the IBB digital TV application that cooperates with the FES consists of a broadcaster, a FES operator, and one or more STBs.
+
+The CATV broadcaster transmits a broadcasting RF signal including a programme and a signal for launching an application to the STB. The STB receives the broadcasting RF signal from the CATV broadcaster and transmits IP data signal to and from the FES. The FES operator executes FESs which make it possible to provide broadcaster services that cannot be handled by the STBs. The FES receives the broadcaster service through the broadcasting RF signal and IP data signal. The broadcaster services comprise audio-visual content and web applications. The broadcasting RF signal provides audio-visual contents from the CATV broadcaster to the FES and the IP data signal provides web applications from CATV broadcaster to the FES. The broadcasting RF signals are transmitted through the RF channels over the CATV network whereas the IP data signal are transmitted over the Internet which includes the CATV network. The broadcaster services through the IP data signal may be provided by a CATV broadcaster or a third party. The FESs receive and process the broadcaster services, and they transfer (via the IP data signal) the processed outputs using a method that can be interpreted by an existing STB. In addition, the FESs are within either the CATV network or the other cloud services network. The STB has a user agent that presents the processed outputs from the FES and transmits the user interaction signals through IP data signal.
+
+For an IBB system, an application is generally executed by the STB user agent ((a) in <<fig4>>). In the IBB digital TV application cooperates with the FES, a web application that requires an extension is executed on the FES when the user agent lacks the functionality to execute it ((b) in <<fig4>>). The FES utilization is switched by a capability check on the user agent. Once the FES utilization has been defined, the user agent executes a viewer application owned by the STB or provided by a web server to receive the processed output.
+
+=== Functions of each system element
+
+[[broadcaster]]
+==== Broadcaster
+
+The broadcaster shown in <<fig4>> is an entity in a cable network that performs the same role as a broadcaster in the system model described in Annex 2 of <<bt2267-10>>.
+
+==== Functional extension server operator
+
+The FES operator shown in <<fig4>> belongs to a service provider that performs the same roles as that in the system model described in Annex 2 of <<bt2267-10>>. The operator is intended to provide the output of processing received data using an acceptable method for the STB. The operator executes FESs.
+
+===== Functional extension server
+
+The FES handles the functions that cannot be executed by an existing STB. The FES receives data regarding broadcaster services from a broadcaster, processes the received data, and transmits the outputs of processing to the STB. The FES encodes the outputs of processing to a form acceptable by the STB and transmits the processed outputs to the STB. A block diagram of this process is shown in <<fig5>>. The FES also receives a control message, such as user interaction, from the STB and updates the processing. In addition, the server may provide a viewer application to the STB.
+
+The server is composed of the following components:
+
+* *broadcast signal interface (IF)*: Receives broadcast signals from broadcaster and sends the signals to the demux/decoder.
+* *demux/decoder*: Receives, demultiplexes, and decodes broadcast signals and sends the signals to the processing function.
+* *session establishment function*: Exchanges coding parameters, such as bitrate, video resolution, and video frame rate, between the FES and STB to establish a session and sends the parameters to the encoder.
+* *processing function*: Processes decoded data from the demux/decoder and application extension and sends the output of processing to the encoder.
+* *encoder*: Encodes the processed output from the processing function with the encoding method, as instructed by the session establishment function.
+* *data transmission function*: Transmits the output of the encoder to the STB.
+* *data reception function*: Transmits a control message, such as user interaction, from the STB to the processing function.
+
+[[fig5]]
+.Block diagram of processing server
+image::img05.png[]
+
+[[stb]]
+==== STB
+
+The STB is an entity on a cable network that plays the same role as the receiver in the system model described in Annex 2 of <<bt2267-10>>. The STB has a user agent that executes a viewer application.
+
+==== Viewer application
+
+The user agent in the STB executes the viewer application, which also communicates with the FES. <<fig6>> shows a block diagram of the viewer application. This application is owned by the STB or provided by a web server.
+
+The viewer application receives and presents the outputs from the FES. Additionally, it sends a control message, such as a remote controller operation, which is a type of user interaction, to the FES. The remote controller operation is the pressing or releasing of a button on the remote controller device of the STB. In this operation, the control message includes a key code that identifies the type of button for the remote controller device. To obtain the key code, the viewer application uses the application programming interface (API) of an IBB system, such as the Hybridcast API. The Hybridcast APIs include a keyboard event API that can obtain the key code. The viewer application has a control message listener that uses the keyboard event API for remote controller operations.
+
+The application performs the following functions:
+
+* *session establishment function*: Exchanges coding parameters, such as bitrate, video resolution, and video frame rate, between the STB and FES to establish a session. Additionally, it sends the parameters to the data presentation function.
+* *data reception function*: Transmits the output from the FES to the data presentation function.
+* *data presentation function*: Decodes and presents the output from the FES.
+* *control message listener*: Listens to control messages, such as user interactions, and sends control messages to the data transmission function.
+* *data transmission function*: Transmits control messages from the control message listener to the FES.
+
+[[fig6]]
+.Block diagram of viewer application
+image::img06.png[]
+
+=== Integration of FES and STB
+
+In the integration system of the FES and the STB, the capabilities that the STB possesses, and the capabilities required for the service are collated to determine the use of the FES. Then, the integration system establishes a session between the FES and the STB. Lastly, the integration system transmits the processed output from the FES to the STB.
+
+The procedure from determination processing to transmission can be described as follows:
+
+. A user launches the user agent on the STB.
+. The user agent obtains an application for determining FES utilization from an external server. The application for determining FES utilization has the following routines:
+
+.. The application for determining FES utilization obtains a list of capabilities required for the service that the user wishes to receive.
+.. The application for determining FES utilization collates information on whether the STB can be executed for each value obtained in routine I
+
+... If the collation result is fully successful, then the services that the user wants to receive are executed on the STB.
+... If the collation result includes one or more false value, then the application attempts to establish the session between the STB and FES (procedure 3).
+
+. In the case of FES utilization, the parameters for transmission are exchanged between the FES and the STB.
+. The session between the FES and the STB is established, and the processed output on the FES is then transmitted to the STB.
+
+The above procedure can be implemented as the following method in the case of Hybridcast:
+
+The Hybridcast defines non-broadcast-oriented managed applications that can be activated regardless of broadcast signal reception. In step 1, the procedure uses a user agent that can launch the application as a non-broadcast-oriented managed application. In step 2, the procedure executes the application for determining FES utilization as the non-broadcast-oriented managed applications.
+
+Here, the capability information collated in this procedure is classified into two types. The determination routines for each type are as follows:
+
+* Coding information: Because the decode function cannot be controlled by the user agent, this system uses the hasCapability API defined in Hybridcast as an API for determining the STB capabilities. The application for determination of FES utilization can execute routine II through the implementation of the hasCapability API by the STB, which returns the STB capabilities. For example, when collating ITU-T H.264 as a decode function, the value of the character string "H.264" is added as an item to the list of routine I, and the application in routine II executes the script statement such as "hasCapability ('H.264')".
+* API information: This is the information of APIs or objects for user agents. If the syntax for confirmation whether APIs or objects are defined is specified on the application platform, the syntax is used for collation. For example, in the case of JavaScript, which is the Hybridcast application execution engine, assuming that the API name for the collation is "exampleFunction", the value of the character string "exampleFunction" is added to the list of routine I, and the application in routine II executes a statement that processes "exampleFunction" as an undefined value with a strict equals operator, such as "exampleFunction === undefined".
+
+The process of acquiring the list of capabilities in routine I may be incorporated in the determination application, or the list of capabilities may be separately acquired from an external server.
+
+In procedure 3, the viewer application requests and establishes a session with the processing server. The following parameters are exchanged during session establishment:
+
+* Coding scheme for video/audio/subtitles
+* Video/audio bitrate
+* Video resolution
+* Video frame rate
+* Audio sampling rate
+* Number of audio channels
+
+During session establishment, the FES continues transmitting the processed video to the viewer application. The viewer application transmits control messages according to the user interactions. The processing functions of the FES update the received data in response to the control message.
+
+Low system response latency is achieved to improve user experience. Additionally, the integration system employs an IBB system similar to Hybridcast, which adopts web standard technology. Hence, it is recommended that the system uses web standard technologies for its transmission protocol. One of the technologies utilized for the low-delay transmission of video signals is WebRTC <<webrtc>>, which shows high affinities with Hybridcast systems. Additionally, WebSocket <<websocket>> can be easily used for interactive communication across devices, particularly in IBB systems involving web technology.
+
+== An implementation example
+
+An overview of the prototype implementation is shown in <<fig7>>. The prototype system includes a prototype receiver, which is implemented with WebRTC, to encode and transmit the processed output. Additionally, the receiver is equivalent to the STB described in <<stb>>, and it displays 360° videos on a TV screen with remote controller operations. The function of the 360° video streaming server in <<fig7>> is equivalent to the broadcast service from the broadcaster described in <<broadcaster>>. <<fig8>> shows an example of a 360° video displayed by the prototype receiver. The screen on the receiver is the output of processing from the FES. The screen is composed of the 360° video, operation navigation, and multi-view on the FES. The user can operate the viewing field of the 360° video using the remote controller device according to the operation navigation. Multi-view simultaneously displays three aspects of the 360° video.
+
+[[fig7]]
+.Overview of prototype of IBB digital TV application cooperated with the FES
+image::img07.png[]
+
+[[fig8]]
+.Example of a 360° video displayed by the prototype receiver
+image::img08.png[]
