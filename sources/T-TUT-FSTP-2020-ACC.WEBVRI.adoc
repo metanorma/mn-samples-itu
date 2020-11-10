@@ -1,0 +1,635 @@
+= Guideline on web-based remote sign language interpretation or video remote interpretation (VRI) system
+:bureau: T
+:docnumber: FSTP.ACC-WebVRI
+:title-en: Guideline on web-based remote sign language interpretation or video remote interpretation (VRI) system
+:published-date: 2020-07-03
+:copyright-year: 2020
+:language: en
+:status: in-force
+:doctype: technical-paper
+:keywords: Accessibility, distance learning, disaster resilience, online medicine, remote sign language interpretation, total conversation, VRI, video remote interpretation, WebRTC
+:fullname_1: Masahito Kawamori
+:affiliation_1: Keio University
+:address_1: Japan
+:phone_1: +81 (466) 49-1170
+:fax_1: +81 (466) 49-1171
+:email_1: masahito.kawamori@ties.itu.int
+:imagesdir: images/T-TUT-FSTP-2020-ACC.WEBVRI
+:docfile: T-TUT-FSTP-2020-ACC.WEBVRI.adoc
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+[abstract]
+== Summary
+
+Due to the COVID-19 pandemic, the practice of physical distancing makes it difficult for a sign language interpreter to accompany a deaf or a hard of hearing person when the latter visits places such as a government agency, a school, a meeting, or a hospital. It is now almost imperative that a remote sign language interpretation, or a video remote interpretation (VRI) be implemented.
+
+During the time of physical distancing when almost any schooling and medical consultation needs to be done remotely, a non-interoperable VRI system for deaf and hard of hearing persons will exclude them from important social services. It is therefore important to have a standard guideline for a VRI or VRI system, which considers interoperability and future effectiveness.
+
+Considering the immediacy of the need as well as the cost of system introduction and practicality of the implementation, such a guideline is most likely to be based on web-based technologies.
+
+This Technical Paper describes a web-based VRI, based on Web real time communication (RTC), and describes how it can be used in a scenario where community sign language interpreters can participate, as well as ways in which other remote services, online medical treatment and distance education, can harmonize with the Web-based VRI system.
+
+[preface]
+== Note
+
+This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.
+
+[preface]
+== Change Log
+
+This document contains Version 1 of the ITU-T Technical Paper on "_Guideline on Web-based remote sign language interpretation (VRI)_" approved at the ITU-T Study Group 16 virtual meeting held 22 June – 3 July 2020.
+
+== Scope
+
+This Technical Paper publication is of a non-normative nature and describes a guideline on introducing a web-based remote sign language interpretation system, or video remote interpretation (VRI) system. It describes the general requirements of a VRI system, terminals, and VRI functional components. It introduces a VRI system based on Web real time communication (RTC), and describes how it can be used in a scenario where community sign language interpreters can participate, as well as ways in which other remote services such as online medical treatment and distance education, can harmonize with the web-based VRI system.
+
+[bibliography]
+== References
+
+* [[[e800,ITU-T E.800]]]
+
+* [[[f703,ITU-T F.703]]]
+
+* [[[f742,ITU-T F.742]]]
+
+* [[[f791,ITU-T F.791]]]
+
+* [[[f930,ITU-T F.930]]]
+
+* [[[g711,ITU-T G.711]]]
+
+* [[[h264,ITU-T H.264]]]
+
+* [[[h265,ITU-T H.265 (V7)]]], Recommendation ITU-T H.265 (2019), _High efficiency video coding._
+
+* [[[h702,ITU-T H.702]]]
+
+* [[[v34,ITU-T V.34]]]
+
+* [[[rfc768,IETF RFC 768]]], IETF RFC 768, _User Datagram Protocol (UDP)._
+
+* [[[rfc793,IETF RFC 793]]], IETF RFC 793, _Transmission Control Protocol._
+
+* [[[rfc1738,IETF RFC 1738]]]
+
+* [[[rfc1983,IETF RFC 1983]]]
+
+* [[[rfc2818,IETF RFC 2818]]]
+
+* [[[rfc3551,IETF RFC 3551]]]
+
+* [[[rfc3711,IETF RFC 3711]]]
+
+* [[[rfc4347,IETF RFC 4347]]]
+
+* [[[rfc4733,IETF RFC 4733]]]
+
+* [[[rfc5246,IETF RFC 5246]]]
+
+* [[[rfc5321,IETF RFC 5321]]]
+
+* [[[rfc5322,IETF RFC 5322]]]
+
+* [[[rfc5764,IETF RFC 5764]]]
+
+* [[[rfc6101,IETF RFC 6101]]]
+
+* [[[rfc6347,IETF RFC 6347]]]
+
+* [[[rfc6716,IETF RFC 6716]]]
+
+* [[[rfc7874,IETF RFC 7874]]]
+
+* [[[rfc8445,IETF RFC 8445]]]
+
+* [[[w3c,W3C-WebRTC]]], W3C _WebRTC 1.0, Real-time Communication Between Browsers_.
+
+* [[[iso717-1,ISO 717-1]]]
+
+* [[[iso9241-210,ISO 9241-210]]]
+
+* [[[iso18004,ISO/IEC 18004]]]
+
+== Definitions
+
+=== Terms defined elsewhere
+
+This Technical Paper uses the following terms defined elsewhere:
+
+==== distance learning
+
+Learning experiences and environments distributed over space and time (asynchronous learning). In <<f742>>, it refers to distance learning using telecommunication services over telecommunication networks.
+
+[.source]
+<<f742>>
+
+==== quality of service
+
+Totality of characteristics of a telecommunications service that bear on its ability to satisfy stated and implied needs of the user of the service.
+
+[.source]
+<<e800>>
+
+==== sign language
+
+A natural language that, instead of relying on acoustically conveyed sound patterns, uses signs made by moving the hands combined with facial expressions and postures of the body to convey meaning It is also called signed language or simply visual signing.
+
+[.source]
+<<f930>>
+
+==== sign language interpretation
+
+Synchronized showing of an interpreter who uses sign language to convey the main audio content and dialogue to people who use sign language.
+
+[.source]
+<<f791>>
+
+==== sound transmission class
+
+An integer rating of how well a building partition attenuates airborne sound.
+
+[.source]
+<<e413>>
+
+==== user experience
+
+Person's perceptions and responses resulting from the use or anticipated use of a product, system or service, including navigation of physical and virtual environment.
+
+NOTE: User experience includes all the user's emotions, beliefs, preferences, perceptions, physical and psychological responses, behaviours and accomplishments that occur before, during and after use.
+
+NOTE: User experience is a consequence of brand image, presentation, functionality, system performance, interactive behaviour and assistive capabilities of the interactive system, the user's internal and physical state resulting from prior experiences, attitudes, skills and personality, as well as the context of use.
+
+NOTE: Usability, when interpreted from the perspective of the user's personal goals, can include the kind of perceptual and emotional aspects typically associated with user experience. Usability criteria can be used to assess aspects of user experience.
+
+NOTE 4: Adapted from <<iso9241-210>>.
+
+[.source]
+<<f791>>
+
+==== video relay (or video-to-speech relay)
+
+A telecommunications relay service that allows communication by individuals with speech and hearing disabilities. Visual information is converted by a communication assistant (CA) to verbal information over a voice telecommunication service.
+
+NOTE: Video relay allows persons with hearing or speech disabilities who use sign language to communicate with voice telephone users through video equipment. The video link allows the CA to view and interpret the party's signed conversation (or visual communication) and relay the conversation back and forth with a voice caller.
+
+[.source]
+<<f930>>
+
+=== Terms defined in this Technical Paper
+
+This Technical Paper defines the following terms:
+
+==== key performance indicators
+
+A set of measurement criteria that helps define the degree of achievement of a certain business or service.
+
+==== online medical examination recommendation
+
+Medical examination recommendation with the minimum necessary medical judgment according to the condition of the patient, based on the complaints of symptoms from patients and the collected information, via e.g., interviews on mental and physical conditions, the suspected diseases are judged, the names of the diseases are listed, and the appropriate department to be consulted is selected.
+
+==== video remote interpretation (VRI)
+
+A system or service that provides a remote sign language interpretation between a sign language user and a hearing person using a telecommunication means.
+
+NOTE: Video remote interpretation (VRI) can also mean any remote interpretation, but the use in this Recommendation is for the case where sign language interpretation is involved.
+
+==== VRI agent
+
+The sign language interpreter that performs the remote sign language interpretation in a video remote interpretation (VRI) session.
+
+==== VRI client
+
+An entity that requests a video remote interpretation (VRI) session, accepts the VRI notification, and further transmits VRI session data to a VRI agent using a VRI client terminal, thus initiating the VRI session.
+
+==== VRI coordinator
+
+An entity that accepts the request from the video remote interpretation (VRI) client, contacts a VRI agent, arranges a VRI session. It further sends VRI notification to the VRI client.
+
+==== VRI operation
+
+An act of providing a remote sign language interpretation service using video and telecommunication.
+
+==== VRI session
+
+A period that is marked by the beginning and the end of video remote interpretation (VRI) operation.
+
+NOTE: The beginning is usually pre-arranged, except for the time of emergency.
+
+== Abbreviations and acronyms
+
+This Technical Paper uses the following abbreviations and acronyms:
+
+AES:: Advanced Encryption Standard
+AFCEA:: Armed Forces Communications and Electronics Association
+AV1:: AOMedia Video 1
+DTLS:: Datagram Transport Layer Security
+HTML:: Hypertext Mark-Up Language
+HTTP:: Hypertext Transfer Protocol
+ICE:: Interactive Connectivity Establishment
+ICT:: Information Communication Technology
+IP:: Internet Protocol
+KPI:: Key Performance Indicator
+MD:: Medical Doctor
+NAT:: Network Address Translator
+P2P:: Peer-to-Peer
+PWD:: Persons With Disabilities
+QoS:: Quality of Service
+RTC:: Real Time Communication
+RTT:: Real-Time Text
+SL:: Sign Language
+SRTP:: Secure Real-time Transport Protocol
+STC:: Sound Transmission Class
+STUN:: Session Traversal Utilities for NAT
+TCP:: Transmission Control Protocol
+TRS:: Telecommunication Relay Service
+TURN:: Traversal Using Relay around NAT
+UDP:: User Datagram Protocol
+URL:: Universal Resource Locator
+VRI:: Video Remote Interpretation
+VRS:: Video Relay Service
+
+== Background
+
+Due to the COVID-19 pandemic, the practice of physical distancing makes it difficult for a sign language interpreter to accompany a deaf or a hard of hearing person when the latter visits places such as a government agency, a school, a meeting, or a hospital. It is now almost imperative that a remote sign language interpretation, or a video remote interpretation (VRI) system be implemented and made available to deaf and hard of hearing persons, not only for access to communication but also for protecting the lives of sign language interpreters.
+
+However, there are many video conferencing tools and it may be difficult immediately for (local) governments and communities to choose a VRI system off-the-shelf. Moreover, if each local government or community introduces a system based on its own proprietary specifications, it will hinder interoperability among the systems, especially during emergencies and will hinder cooperation in the medical, emergency, and welfare fields.
+
+Especially during the time of physical distancing when almost any schooling and medical consultation need to be done remotely, a non-interoperable VRI system for deaf and hard of hearing persons will exclude them from important social services. It is therefore important to have a standard guideline for a VRI or VRI system, which considers interoperability and future effectiveness.
+
+Considering the immediacy of the need as well as the cost of system introduction and practicality of the implementation, such a guideline is most likely to be based on web-based technologies.
+
+== Video remote interpretation (VRI) system
+
+<<fig1>> shows the general case of a web VRI system in a case where both the person with disabilities (PWD) and the hearing person are in the same location.
+
+[[fig1]]
+.Both PWD and hearing person (e.g., an MD) are in the same location
+image::img01.png[]
+
+The VRI service also includes the case where a PWD user and a hearing user both participate in an online conversation, such as an online medical consultation, and a VRI is provided for the PWD. This case is shown in <<fig2>>.
+
+[[fig2]]
+.PWD and hearing person are in different locations (e.g., telemedicine, tele-education)
+image::img02.png[]
+
+[[general_requirements]]
+== General requirements
+
+The following is a non-exhaustive list of general requirements:
+
+R1: It is recommended that the system can operate in accordance with the workflow of sign language interpreters in the community;
+
+R2: It is required that the system allows the sign language interpreter to perform remote sign language interpretation at a safe place;
+
+R3: It is recommended that the system allows the deaf and hard of hearing persons to use their own smartphones or tablets;
+
+R4: It is recommended that the system is based on standards and not be implementable by a single terminal equipment vendor in order to avoid vendor lock-in and interfering with fair competition;
+
+R5: It is required that the system protects confidentiality of privacy and interpreted content during the remote sign language interpretation;
+
+R6: It is required that the system does not impose any complications that might increase vulnerabilities of deaf and hard of hearing persons in operating terminals and systems. (e.g., App download, etc.);
+
+R7: It is recommended that the system can meet the advances in communication technology;
+
+R8: It is recommended that the system is portable and resistant to disasters;
+
+R9: It is recommended that the system does not require many complicated processes such as application download, installation, ID registration, etc.
+
+NOTE: Downloading and installing special applications is not desirable from the viewpoint of safety and ease of use by users. One of the problems from the viewpoint of safety when downloading an app is that the reliability of the app may be unclear. Downloading and installing a new app has the risk of potentially introducing malware. Especially in the case of a smartphone, the user does not know what kind of software is installed in the terminal along with the application. Also, it may not be known where the download source is; there are many cases where malicious apps are downloaded due to spoofing. See <<webrtc-security>> for more information.
+
+== Web-based video technology
+
+In order to meet the general requirement "R9: It is recommended that the system does not require application download, installation, ID registration, etc." mentioned in <<general_requirements>>, it is recommended to use the method to connect users to a website and to accept and implement services through this website through WebRTC
+
+=== WebRTC
+
+Web real time communication (WebRTC) refers to a set of standard protocols centred on <<w3c>> that enables peer-to-peer (P2P) sharing of audio and video signals between browsers. It includes JavaScript APIs and protocols such as <<rfc7874>>, <<rfc3551>>, <<rfc4733>> and <<g711>>. P2P is a communication method characterized in that when communicating between multiple terminals, peers and peers communicate with each other, and tasks or workloads are equally divided among the peers. In WebRTC, the browser is the peer.
+
+The WebRTC standard roughly consists of two technologies: media acquisition and P2P connection. Media acquisition mainly involves video cameras and microphones. P2P communication is specified in <<w3c>>. For the WebRTC software architecture, see <<webrtc-overview>>.
+
+=== VRI sequence
+
+<<fig3>> shows the sequence of a VRI session using WebRTC.
+
+[[fig3]]
+.Sequence of a VRI session
+image::img03.png[]
+
+==== Media acquisition
+
+It is recommended that the following codecs be used.
+
+===== Audio codecs
+
+* <<rfc6716>>
+* <<g711>>
+
+===== Video codecs
+
+* VP8
+* VP9
+* <<h264>>
+* <<h265>>
+* <<av1>>
+
+==== Security
+
+The WebRTC part must be protected according to the following WebRTC standards:
+
+===== Datagram transport layer security (DTLS)
+
+Datagram transport layer security (DTLS) is a communication protocol designed to protect the privacy of data and prevent eavesdropping and tampering, as defined by <<rfc4347>> and <<rfc6347>>. It is based on the transport layer security (TLS) protocol <<rfc5246>> for the security of communication networks. The main difference between DTSL and TLS is that DTLS uses user datagram protocol (UDP) <<rfc768>> and TLS uses transmission control protocol (TCP).
+
+===== Secure real-time transport protocol (SRTP)
+
+SRTP is an encrypted RTP that is used to send and receive encrypted audio and video. SRTP is defined in <<rfc3711>>.
+
+===== Encryption
+
+In the case of encryption, WebRTC uses the standard encryption algorithm, which is widely used internationally. Accordingly, advanced encryption standard (AES) shall be used.
+
+=== Quality of service (QoS)
+
+A VRI system must take quality of service quality of service (QoS) into consideration. QoS KPIs are for future study.
+
+== General requirements of web VRI service operation
+
+<<fig4>> shows that service architecture for the web-based remote sign language interpretation service, or web VRI service for short.
+
+[[fig4]]
+.Remote sign language interpretation service architecture
+image::img04.png[]
+
+The architecture includes three VRI functional components: VRI client function, VRI coordinator function and VRI agent function. This clause describes these functions.
+
+=== VRI functions
+
+==== VRI client function
+
+An entity that requests a VRI session, accepts the VRI notification, and further transmits VRI session data to a VRI agent using a VRI client terminal, thus initiating the VRI session. This is the function that the deaf or hard of hearing person plays.
+
+==== VRI coordinator function
+
+The VRI coordinator function accepts the VRI request from the client, contacts a VRI agent, and arranges the VRI session. The VRI coordinator function includes the VRI notification function, and, using the VRI notification function, it generates and returns the VRI notification to the VRI client.
+
+NOTE: If the VRI session is expected to be long, more than one sign language interpreter must be assigned.
+
+==== VRI agent function
+
+The VRI agent function is the function to perform VRI operation via the VRI system.
+
+A VRI agent waits at the booth at a predetermined time for his/her safety as well as for protecting the confidentiality of the contents of the VRI session, and performs sign language interpretation remotely. The VRI agent terminal receives the VRI session data, whereupon the VRI session is started.
+
+NOTE: In the event of an emergency, there is a possibility that the VRI agent operates at home. In this case, it is necessary to provide conditions such that the confidentiality can be sufficiently protected, such as by having a home-based booth function. Refer to <<booth>> for the requirements on a booth.
+
+=== VRI notification function
+
+The VRI notification function is part of the VRI coordinator function. After adjusting the VRI request, the confirmed result is stored as a VRI notification data item, and then as a VRI notification form. A function that generates and returns to the VRI client.
+
+==== VRI notification data format and communication format
+
+This clause describes the data format and communication format of the dispatch notice sent by the VRI coordinator to the dispatch requester after adjusting the VRI service provider.
+
+==== VRI notification data item
+
+It is recommended that at least the following data items are included in the VRI notification data:
+
+* date and time the VRI request was received
+* scheduled date and time for the VRI session
+* planned place for VRI
+* name(s) of the VRI agent(s) (sign language interpreter(s))
+* VRI session data
+
+==== VRI session data
+
+The VRI session data includes the information necessary for connecting the client's VRI receiving terminal to the VRI agent's terminal.
+
+==== VRI session data structure
+
+The following metadata is stored in the VRI session data.
+
+* VRI scheduled date and time
+* VRI server URL
+
+==== VRI session data encoding format
+
+For the convenience of the VRI client, encode the VRI session data by the following method. Also, it is desirable to use both methods to ensure that the VRI client can obtain the notification.
+
+* QR code: 2D barcode according to <<iso18004>>
+* URL: Data from <<rfc1738>>.
+
+==== VRI session data transmission method
+
+The following methods are used to notify the VRI notification:
+
+* Facsimile: Method according to <<v34>>
+* E-mail: Method according to <<rfc5321>> and <<rfc5322>>.
+
+An example of the above implementation is shown in <<figI-1>>.
+
+== General requirements on terminals
+
+=== Requirements for VRI client terminal function
+
+The following describes the recommended functional requirements for terminals that can connect to the VRI client terminal system and receive a VRI service. <<fig5>> shows the recommended functional specification for VRI terminal equipment.
+
+[[fig5]]
+.Recommended functional specification for VRI terminal equipment
+image::img05.png[]
+
+==== IP connection function
+
+The VRI client terminal must have the function of connecting to the IP network.
+
+==== Wireless communication function
+
+The VRI client terminal must have a wireless communication function.
+
+==== Audio input function (microphone)
+
+The VRI client terminal must have an input function for voice. It may be used as a headset together with headphones or earphones. The performance of voice input shall be specified separately.
+
+It is required that the VRI client terminal owned by deaf people not be set to the mute mode.
+
+==== Audio output function (speaker)
+
+The VRI client terminal must have the function of reproducing voice data and transmitting it as sound to the outside. In this case, it may be used as a headset together with the microphone.
+
+It is required that the VRI client terminal owned by deaf people not be set to the mute mode.
+
+==== Camera
+
+The VRI client terminal must have the function of converting the video data into data for communication. Built-in type is preferred.
+
+The requirements for camera performance will be specified separately.
+
+==== Video display function
+
+The VRI client terminal is required to have the function to acquire the video data from the communication channel, render it as video and display it. The video display should have sufficient size and resolution so that the sign language is understandable. The requirements for the performance of the video display function will be specified separately.
+
+=== Requirements for VRI agent terminal user interface
+
+The user interface of the VRI client terminal shall implement the following conditions in consideration of the ease of use by PWD. For user experience, standards such as <<iso9241-210>> should be consulted.
+
+NOTE: However, it is possible to add designs such as logos according to the characteristics of each area, as long as the operability is not hindered.
+
+==== Minimal motion
+
+There should be as few screen operations as possible before the video of the VRI is displayed.
+
+==== Use of symbolism
+
+It is recommended that the information about the operation on the screen be understandable without reading text, and the use of images such as icons is recommended.
+
+==== Simplicity of displayed information
+
+It is recommended to avoid providing too much unnecessary information and that the minimum essential information is presented so that the operations on the screen are easy to understand.
+
+==== Ease of operation
+
+It is recommended that the user interface allows exchange of necessary information without complicated operations.
+
+==== Responsive reaction
+
+It is required that the user interface is responsive and returns an easy-to-understand response to the user's operation: e.g., it should be clear whether the operation has been accepted, rejected, is on hold, or has ended.
+
+=== Requirements for VRI agent terminal function
+
+The following describes the specifications for a terminal that allows the VRI agent to connect to a VRI system and provide a VRI session.
+
+==== IP connection function
+
+The VRI agent terminal for the VRI must have the function of connecting to the IP network.
+
+==== Wireless communication function
+
+The VRI agent terminal for the VRI preferably has a wireless communication function.
+
+==== Audio input function (microphone)
+
+The VRI agent terminal must have an input function for voice. The performance of voice input shall be specified separately. Use of external input microphone or headset type microphone is preferable.
+
+==== Audio output function (speaker)
+
+The VRI agent terminal must have the function of playing voice data and transmitting it outside. In this case, it is assumed that the headphones and earphones are used together. A headset type speaker is desirable.
+
+==== Camera
+
+The VRI agent terminal must have the function of converting the video data into data for communication. It must have sufficient performance so that the video display on the VRI client terminal is clear.
+
+==== Video display function
+
+The VRI agent terminal shall have the function to acquire the video data from the communication channel, render it as video and display it. The video display of the VRI agent must be large enough and capable of reading the sign language of the VRI client.
+
+=== Requirements on the instalment of a VRI agent terminal
+
+The VRI agent terminal and its peripherals should be installed in a booth so that the VRI agent's safety and the contents of the interpretation can be kept secret. Only one sign language interpreter is generally expected to be accommodated in the booth at a time. However, it is possible to use one that can accommodate more than one person, such as a supervisor.
+
+The booths should be distributed among multiple locations with at least two locations to ensure the VRI service would have high availability and robustness.
+
+[[booth]]
+==== Booth
+
+The booth must have sufficient insulation for soundproofing to maintain confidentiality. It is recommended that the has the sound insulation performance equivalent to that of sound transmission class STC 35 or higher, as defined in <<e413>> or its equivalent by <<iso717-1>>.
+
+== Coordination with other online conversational services
+
+=== VRI and Telemedicine
+
+Under COVID-19, medical treatment online, including by telephone, is recommended to prevent infections. For example, it is expected that a regular patient with chronic disease can receive medical examination and consultation (and treatment) as well as prescriptions via telephones and other information communication technology (ICT) devices. Therefore, it is important that a VRI system can be used alongside telemedicine services.
+
+==== Telemedicine and online medical services
+
+<<fig6>> shows the demarcation among online medical treatment, online medical examination recommendation, and telehealth consultation in the general context of telemedicine.
+
+[[fig6]]
+.Demarcation between telemedicine and online medical services
+image::img06.png[]
+
+As can be seen from this figure, telemedicine includes both DtoD and DtoP, while online medical services are DtoP. VRI service is mainly required for DtoP, such as online medical treatment.
+
+==== Online medical treatment and VRI
+
+<<fig7>> shows the sequence diagram that can be considered for cooperation between the VRI and online medical care.
+
+[[fig7]]
+.VRI Sequence with online medical treatment
+image::img07.png[]
+
+It is assumed that the VRI client calls the VRI service and starts the VRI session. It is also assumed that the medical institution has a communication environment capable of receiving the communication requests (voice / video invitation) from the VRI agent.
+
+The VRI client terminal must be able to display and play two sets of audio and video signals: the VRI agent and the medical personnel. Also, it is usually desirable to be able to display a video monitoring the client. In addition, it is desirable that the image of the VRI agent is at least as large as the medical personnel so that the sign language can be easily read.
+
+Further details of the interaction between a web-VRI system and online medical treatment are for future study.
+
+=== Online education and distance learning
+
+When a VRI is provided to an online class, the method of VRI operation differs depending on the tool of the class. Therefore, it is desirable to formulate rules (protocol) for VRI operation methods for each tool.
+
+It is also desirable to take into account the guidelines for providing accessibility at remote international conferences such as <<rempart>>.
+
+Further, according to the general requirements of distance learning, the VRI system is recommended to meet at least the following requirements for cooperation with distance learning.
+
+* A flexible architecture be used so that terminals, software, communication networks, etc. can be selected from multiple perspectives.
+* Based on standard software that can be used in multiple fields, not as special specifications for schools.
+* Capable of introducing cloud computing, not restricted by hardware renewal cycle.
+* Able to introduce a thin client environment.
+* Capable of using secure browsers.
+* It should be possible to limit connection only with applications with a file encryption function.
+
+In the case of an online class, it may be difficult for a VRI client to receive a VRI service on a smartphone. It is also possible to use the IPTV set-top box or TV receiver, as defined in <<h702>> as a terminal for VRI.
+
+In addition, when captioning is provided, it is necessary to guarantee quality by humans so that text is not generated using only automatic speech recognition, as shown in <<wfd>>.
+
+=== Disaster resilience and VRI
+
+It has been pointed out that the VRI is effective for the deaf and hard of hearing people and others in the disaster-stricken area to obtain information.
+
+Taking COVID-19 into account, evacuation shelters are required to take measures against infectious diseases, and disaster prevention manuals in various places should be revised accordingly. As SL interpreters are most likely unavailable on site in such an event, VRI service must be included in disaster prevention measures.
+
+=== Total conversation and VRI
+
+As described in <<f703>>, it is recommended that the system described here be extended to include not only sign language but also communication support using text and images by total conversation. It is recommended that this Technical Paper be applied to communication support for hard of hearing people who do not use sign language. In such a case, as stated in <<wfd>>, it is required that the quality of the captioned text be checked and guaranteed by humans rather than using only automatic speech recognition.
+
+[[appendixI]]
+[appendix,obligation=informative]
+== Implementation example
+
+[[figI-1]]
+.Example of web VRI service
+image::img08.png[]
+
+The following is the VRI workflow based on this guideline, as depicted in <<figI-1>>:
+
+[class=steps]
+. The VRI client executes a VRI request.
+. After receiving the VRI request from the VRI client, the VRI coordinator contacts and coordinates with the registered VRI agent.
+. The result adjusted and confirmed by the VRI coordinator is generated as a VRI notification (with QR code) using the VRI notification function and sent to the VRI client by email or fax.
+[align=left]
+. The VRI client receives the VRI notification and moves to the place where the VRI session was requested at the requested time. +
+The VRI agent moves to the booth and waits at the assigned time.
+. The VRI client accesses the URL in the QR code or email on his or her terminal, and the VRI agent starts the VRI session.
+
+[bibliography]
+== Bibliography
+
+* [[[h-supl,b-ITU-T H.Sup1]]], ITU-T H-Series Supplement 1 (1999), _Application profile – Sign language and lip-reading real-time conversation using low bit rate video communication._
+
+* [[[l-supl,b-ITU-T L.Sup35]]], ITU-T L-Series Supplement 35 (2006) _Framework of disaster management for network resilience and recovery._
+
+* [[[rempart,b-ITU-RemPart]]], ITU-T FSTP-ACC-RemPart, _Guidelines for supporting remote participation in meetings for all._
+
+* [[[e413,b-ASTM E413-16]]], ASTM International _Classification for Rating Sound Insulation._
+
+* [[[av1,b-AV1]]], _AV1 Bitstream & Decoding Process Specification._ https://aomediacodec.github.io/av1-spec/av1-spec.pdf
+
+* [[[dod,b-WebRTC-DOD]]], Steven Boberski (2019), How WebRTC Can Benefit the Department of Defense, SIGNAL Media, January 30, published by _Armed Forces Communications and Electronics Association_, available at: https://www.afcea.org/content/how-webrtc-can-benefit-department-defense
+
+* [[[webrtc-overview,b-WebRTC-Overview]]], Overview: Real Time Protocols for Browser-based Applications. H. Alvestrand. IETF. 14 February 2014. Active Internet-Draft. URL: https://tools.ietf.org/html/draft-ietf-rtcweb-overview
+
+* [[[webrtc-security,b-WebRTC-Security]]], NTT Communications, A Study of WebRTC Security, available at: https://webrtc-security.github.io/
+
+* [[[wfd,b-WFD-ASR]]], WFD and IFHOH Joint Statement: _Automatic Speech Recognition in Telephone Relay Services and in Captioning Services._
