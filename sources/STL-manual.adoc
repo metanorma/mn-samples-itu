@@ -2835,7 +2835,7 @@ _fast_:: Enables fast but inaccurate computation. Does not properly process the 
 
 3+^h| Sub-frame No. 2
 ^| LTP lag ^| 26 ^| 7
-^| LTP gain ^| 27  & 2
+^| LTP gain ^| 27  ^| 2
 ^| RPE grid position ^| 28 ^| 2
 ^| Block amplitude ^| 29 ^| 6
 ^| RPE-pulse no. 1 ^| 30 ^| 3
@@ -6365,7 +6365,7 @@ A demonstration program, `stereoop.c` implements the described operations of the
 
 == BASOP: ITU-T Basic Operators
 
-==== Overview of basic operator libraries
+=== Overview of basic operator libraries
 
 Since the standardization of G.729 and G.723.1 footnote:[For older standards (G.711, G.726, G722, G.727, G.728), their C-codes are included in the software tools library.], ANSI-C source codes constitute integral parts of the ITU-T speech and audio coding Recommendations and their specification relies on bit-exact fixed-point C code using library of basic operators that simulates DSP operations. The fixed-point descriptions of G.723.1 and G.729 are based on 16- and 32-bit arithmetic operations defined by ETSI in 1993 for the standardisation of the half-rate GSM speech codec. These operations are also used to define the GSM enhanced full-rate (EFR) and adaptive multi-rate (AMR) speech codecs <<G.191>>.
 
@@ -9903,7 +9903,7 @@ _unsup/test_data_:: Test files for testing some of the unsupported tools:
 * [[[LD-CELP-Phase1:Globecom,39]]], J.-H. Chen. A robust Low-Delay CELP Speech Coder at 16 kb/s. In _Proc. IEEE Globecom,_ 1989.
 * [[[PostFilter-Basic,40]]], V. Ramamoorthy and N. S. Jayant and R. V. Cox and M. M. Sondhi. Enhancement of ADPCM Speech Coding using Backward-Adaptive Algorithms for Post-Filtering and Noise Feedback. _Journal on Selected Areas in Communications,_ 6(2), February 1988.
 * [[[LD-CELP-1-rev,41]]], AT&T. Detailed description of AT&T's LD-CELP algorithm. contribution AH.89-D02, CCITT, November 1989.
-* [[[G.722,(42)ITU-T G.72)]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722, 7 kHz audio-coding within 64 kbit/s._ ITU, Geneva, Switzerland, September 2012.
+* [[[G.722,(42)ITU-T G.722]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722, 7 kHz audio-coding within 64 kbit/s._ ITU, Geneva, Switzerland, September 2012.
 * [[[G.725,(43)ITU-T G.725]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.725, System Aspects for the Use of the 7kHz Audio Codec within 64 kbit/s,_ volume Fascicle III.4 of Blue Book, page 11. ITU, Geneva, Switzerland, 1989.
 * [[[G.722:General,44]]], P. Mermelstein. G.722, a new CCITT coding standard for digital transmission of wideband audio signals. _IEEE Communications Magazine,_ 26(1):8–15, January 1988.
 * [[[G.722:Overview,45]]], M. Taka, et. al. Overview of the 64 kbit/s (7 kHz) audio coding standard. In _Proc. IEEE Globecom_, pages 593–598, Houston, Texas, December 1986.
