@@ -38,10 +38,7 @@ jobs:
       - name: Setup Fonts
         run: |
           metanorma setup --agree-to-terms
-      - name: Install yq
-        run: |
-          sudo snap install yq
-          echo "::add-path::/snap/bin"
+      - run: sudo snap install yq
       - name: Use Ruby
         uses: ruby/setup-ruby@v1
         with:
