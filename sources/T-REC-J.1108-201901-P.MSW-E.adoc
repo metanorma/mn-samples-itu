@@ -1,12 +1,12 @@
-= Transmission specification for Radio over IP transmission systems
+= Transmission specification for radio over IP transmission systems
 :bureau: T
 :docnumber: J.1108
 :series: J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals
 :series1: Switched digital video over cable networks
 :published-date: 2019-01
 :copyright-year: 2019
-:status: in-force-prepublished
-:keywords: RoIP
+:status: in-force
+:keywords: Radio over IP, RoIP
 :imagesdir: images
 :doctype: recommendation
 :docfile: T-REC-J.1108-201901-P.MSW-E.adoc
@@ -15,155 +15,133 @@
 :local-cache-only:
 :data-uri-image:
 
-[abstract]
+[preface]
 == Summary
-As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.
 
-[[scope]]
+As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.
+
+Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.
+
+[preface]
+== History
+
+[%unnumbered]
+[cols="^,<,^,^,^"]
+|===
+| Edition | Recommendation | Approval | Study Group | Unique ID footnote:[To access the Recommendation, type the URL http://handle.itu.int/ in the address field of your web browser, followed by the Recommendation's unique ID. For example, http://handle.itu.int/11.1002/1000/11830-en.]
+| 1.0 | ITU-T J.1108 | 2019-01-13 | 9 | http://handle.itu.int/11.1002/1000/13838[11.1002/1000/13838]
+|===
+
 == Scope
 
-Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. [[_Hlk530637669]]The architecture described in this Draft [New] Recommendation are defined according to <<j1106>>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:
+Recommendation ITU-T J.1108 describes the transmission specification for a radio over IP (RoIP) transmission system in a hybrid fibre coaxial (HFC) based network. The architecture described in this Recommendation is defined according to <<j1106>>. The transmission specifications described in this Recommendation are defined as follows:
 
-* Radio over IP terminal system
-* Radio over IP headend system
+* Radio over IP terminal system.
+* Radio over IP headend system.
 
-The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Draft[New] Recommendation are defined the timing processing specification.
+The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Recommendation are defined in the timing processing specification.
 
 [bibliography]
-[[references]]
 == References
 
-* [[[j210, ITU-T J.210]]] Recommendation ITU-T J.210 (2006/11), _Downstream RF Interface for Cable Modem Termination Systems_
+* [[[j210,ITU-T J.210]]]
 
-* [[[j222-1, ITU-T J.222.1]]] Recommendation ITU-T J.222.1 (2007/07), _Physical Layer specification for third-generation transmission systems for interactive cable television services - IP cable modems_
+* [[[j222-1,ITU-T J.222.1]]]
 
-* [[[j222-2, ITU-T J.222.2]]] ITU-T Recommendation J.222.2 (2007/07), _MAC and Upper Layer Protocols for third-generation transmission systems for interactive cable television services - IP cable modems_
+* [[[j222-2,ITU-T J.222.2]]]
 
-* [[[j1106, ITU-T J.1106]]] ITU-T Recommendation J.1106(2017/05), _Requirement for Radio over IP transmission system_
+* [[[j1106,ITU-T J.1106]]]
 
-* [[[j1107, ITU-T J.1107]]] ITU-T Recommendation J.1107(2011/01), _Architecture and specification for Radio over IP transmission systems_
+* [[[j1107, ITU-T J.1107]]]
 
-* [[[x743, ITU-T X.743]]] ITU-T Recommendation X.743(1998/06), _Time Management Function_
-
-
-[[definitions]]
 == Definitions
 
-[[terms_defined_elsewhere]]
 === Terms defined elsewhere
 
-[[term_local_clock]]
+This Recommendation uses the following term defined elsewhere:
+
 ==== local clock
 
-The collection of hardware and software that comprises a local source of time for a system
+The collection of hardware and software that comprises a local source of time for a system.
 
 [.source]
 <<x743>>
 
-[[terms_defined_in_this_recommendation]]
 === Terms defined in this Recommendation
 
-None
+None.
 
-[[abbreviations_and_acronyms]]
 == Abbreviations and acronyms
 
 This Recommendation uses the following abbreviations and acronyms:
 
 CM:: Cable Modem
-
 CMTS:: Cable Modem Termination System
-
 DOCSIS:: Data Over Cable Service Interface Specifications
-
 DS:: Down Stream
-
 E/O:: Electric to Optic
-
-FTTH:: Fiber To The Home
-
-HFC:: Hybrid Fiber Coaxial
-
+FTTH:: Fibre To The Home
+HFC:: Hybrid Fibre Coaxial
 OLT:: Optical Line Terminal
-
 OMUX:: Optical Multiplexer
-
 PON:: Passive Optical Network
-
 RF:: Radio Frequency
-
 RoIP:: Radio over IP
-
 SO:: Service Operator
-
 STB:: Set-Top Box
-
 US:: Up Stream
 
-[[conventions]]
 == Conventions
 
 In this Recommendation:
 
-The keywords "*is required to"* indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.
+The keywords "is required to" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.
 
-The keywords "*is recommended"* indicate a requirement which is recommended but which is not absolutely required. Thus this requirement need not be present to claim conformance.
+The keywords "is recommended" indicate a requirement which is recommended but which is not absolutely required. Thus this requirement need not be present to claim conformance.
 
-The keywords "*is prohibited from"* indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.
+The keywords "is prohibited from" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.
 
-The keywords "*can optionally"* indicate an optional requirement which is permissible, without implying any sense of being recommended. This term is not intended to imply that the vendor's implementation must provide the option and the feature can be optionally enabled by the network operator/service provider. Rather, it means the vendor may optionally provide the feature and still claim conformance with the specification.
+The keywords "can optionally" indicate an optional requirement which is permissible, without implying any sense of being recommended. This term is not intended to imply that the vendor's implementation must provide the option and the feature can be optionally enabled by the network operator/service provider. Rather, it means the vendor may optionally provide the feature and still claim conformance with the specification.
 
-In the body of this document and its annexes, the words _shall_, _shall not_, _should_, and _may_ sometimes appear, in which case they are to be interpreted, respectively, as _is required to_, _is prohibited from_, _is recommended_, and _can optionally_. The appearance of such phrases or keywords in an appendix or in material explicitly marked as _informative_ are to be interpreted as having no normative intent.
+In the body of this Recommendation and its annexes, the words _shall, shall not, should_, and _may_ sometimes appear, in which case they are to be interpreted, respectively, as _is required to, is prohibited from, is recommended_, and _can optionally_. The appearance of such phrases or keywords in an appendix or in material explicitly marked as _informative_ are to be interpreted as having no normative intent.
 
-[[overview]]
 == Overview
 
-In this section, the overview is defined according to <<j1106,section 6>>.
+The overview is defined according to <<j1106, clause 6>>.
 
-[[functional_architecture]]
-== Functional Architecture
+== Functional architecture
 
-In this section, the functional architecture is defined according to <<j1107,section 7>>.
+The functional architecture is defined according to <<j1107, clause 7>>.
 
-[[timing_processing_specification]]
-== Timing Processing Specification
+== Timing processing specification
 
-It is important to synchronize upstream data based on the DOCSIS (Data Over Cable Service Interface Specification) with the existing cable network through the optical IP network (i.e. xPON networks). The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal.
+It is important to synchronize upstream data based on the data over cable service interface specification (DOCSIS) with the existing cable network through the optical IP network (i.e., xPON networks). The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal.
 
-Since many CMs on the subscriber side share one physical medium, it is required to transmit data according to a synchronous time-division multiplexing method, that is, the CMs is required to transmit data during time slots allocated thereto by the CMTS. In the uplink band, the collision avoidance time of the allocated band between the terminals is 1us or less, and very strict timing synchronization is required. In order to operate the RoIP transmission system, accurate timing synchronization between the terminal and the headend is required to be accompanied. Especially, it is necessary to establish synchronization between IP network and mixed heterogeneous network, not single RF network.
+Since many cable modems (CMs) on the subscriber side share one physical medium, it is required to transmit data according to a synchronous time-division multiplexing method, that is, the CMs are required to transmit data during time slots allocated by the cable modem termination system (CMTS). In the uplink band, the collision avoidance time of the allocated band between the terminals is 1us or less and very strict timing synchronization is required. In order to operate the RoIP transmission system, accurate timing synchronization between the terminal and the headend is required. Specifically, it is necessary to establish synchronization between the IP network and a mixed heterogeneous network, not a single RF network.
 
-Therefore, the following requirements is required to perform the function of timing processing.
+Therefore, the following requirements are required to perform the function of timing processing.
 
-[TIME-REQ-01] The RoIP terminal for terminal access network synchronization is required to synchronize the local clock which is adjusted to the CMTS reference clock using the timestamp in the SYNC message coming from the CMTS.
-
-[TIME-REQ-02] The RoIP terminal for terminal access network synchronization is required to acquire burst time information.
-
-[TIME-REQ-03] The RoIP terminal for terminal access network synchronization is required to estimate and compensate a transmission time.
-
-[TIME-REQ-04] The RoIP terminal for detection and acquisition of transmission RF burst is required to store the acquisition time information.
-
-[TIME-REQ-05] The RoIP terminal for IP network access is required to transmit the transmitted RF burst and the acquired time information.
-
-[TIME-REQ-06] The RoIP headend for headend access network synchronization is required to synchronize the local clock which is adjusted to the CM reference clock using MAP information during DOCSIS ranging.
-
-[TIME-REQ-07] The RoIP headend for headend access network synchronization is required to acquire the synchronized time information.
-
-[TIME-REQ-08] The RoIP headend for RF signal scheduling of IP network interworking is required to acquire burst time information.
-
-[TIME-REQ-09] The RoIP headend for RF signal scheduling of IP network interworking is required to schedule the received burst.
-
-[TIME-REQ-10] The RoIP headend for RF signal reconstruction is required to reconstruct RF compressed signal.
-
-[TIME-REQ-11] The RoIP headend for RF signal reconstruction is required to transform Digital to Analogue and frequency band.
+*TIME-REQ-01*:: The RoIP terminal for terminal access network synchronization is required to synchronize the local clock which is adjusted to the CMTS reference clock using the timestamp in the SYNC message coming from the CMTS.
+*TIME-REQ-02*:: The RoIP terminal for terminal access network synchronization is required to acquire burst time information.
+*TIME-REQ-03*:: The RoIP terminal for terminal access network synchronization is required to estimate and compensate a transmission time.
+*TIME-REQ-04*:: The RoIP terminal for detection and acquisition of transmission RF burst is required to store the acquisition time information.
+*TIME-REQ-05*:: The RoIP terminal for IP network access is required to transmit the transmitted RF burst and the acquired time information.
+*TIME-REQ-06*:: The RoIP headend for headend access network synchronization is required to synchronize the local clock which is adjusted to the CM reference clock using MAP information during DOCSIS ranging.
+*TIME-REQ-07*:: The RoIP headend for headend access network synchronization is required to acquire the synchronized time information.
+*TIME-REQ-08*:: The RoIP headend for RF signal scheduling of IP network interworking is required to acquire burst time information.
+*TIME-REQ-09*:: The RoIP headend for RF signal scheduling of IP network interworking is required to schedule the received burst.
+*TIME-REQ-10*:: The RoIP headend for RF signal reconstruction is required to reconstruct RF compressed signal.
+*TIME-REQ-11*:: The RoIP headend for RF signal reconstruction is required to transform Digital to Analogue and frequency band.
 
 [bibliography]
-[[bibliography]]
 == Bibliography
 
-* [[[docsis1, b-ANSI/SCTE 135-1 2008]]] DOCSIS 3.0 Part 1: Physical Layer Specification
+* [[[x743, (b-ITU-T X.743)ITU-T X.743]]], Recommendation ITU-T X.743 (1998), _Information technology – Open Systems Interconnection - Systems Management: Time Management Function_.
 
-* [[[docsis2, b-ANSI/SCTE 135-2 2008]]] DOCSIS 3.0 Part 2: MAC and Upper Layer Protocols
+* [[[scte135-1, (b-ANSI/SCTE 135-1)ANSI/SCTE 135-1]]], _DOCSIS 3.0 Part 1: Physical Layer Specification_.
 
-* [[[docsis4, b-ANSI/SCTE 135-4 2008]]] DOCSIS 3.0 Part 4: Operations Support Systems Interface
+* [[[scte135-2, (b-ANSI/SCTE 135-2)ANSI/SCTE 135-2]]], _DOCSIS 3.0 Part 2: MAC and Upper Layer Protocols_.
 
-* [[[docsis5, b-ANSI/SCTE 135-5 2009]]] DOCSIS 3.0 Part 5: Cable Modem to Customer Premise
+* [[[scte135-4, (b-ANSI/SCTE 135-4)ANSI/SCTE 135-4]]], _DOCSIS 3.0 Part 4: Operations Support Systems Interface_.
+
+* [[[scte135-5, (b-ANSI/SCTE 135-5)ANSI/SCTE 135-5]]], _DOCSIS 3.0 Part 5: Cable Modem to Customer Premise Equipment Interface_.
