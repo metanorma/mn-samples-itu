@@ -68,18 +68,6 @@ jobs:
           os.system("gem install specific_install")
           os.system("gem specific_install -l https://github.com/{}.git -b {}".format(repo, branch))
 
-      - name: Metanorma compile windows
-        if: matrix.os == 'windows-latest'
-        run: |
-          choco install -y gnuwin32-coreutils.install
-          metanorma site generate sources -c sources/collection.yml
-
-      - name: Metanorma compile macos
-        if: matrix.os == 'macos-latest'
-        run: |
-          metanorma site generate sources -c sources/collection.yml
-
-      - name: Metanorma compile linux
-        if: matrix.os == 'ubuntu-latest'
+      - name: Metanorma compile
         run: |
           metanorma site generate sources -c sources/collection.yml
