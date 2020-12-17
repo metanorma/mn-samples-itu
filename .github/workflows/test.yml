@@ -33,11 +33,12 @@ jobs:
         with:
           token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
           submodules: true
+
       - name: Use Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-      
+
       - name: Use Python
         uses: actions/setup-python@v1
         with:
@@ -70,17 +71,15 @@ jobs:
       - name: Metanorma compile windows
         if: matrix.os == 'windows-latest'
         run: |
-          choco install -y yq gnuwin32-coreutils.install
-          make -f Makefile.win clean all SKIP_BUNDLE=true SHELL=cmd
+          choco install -y gnuwin32-coreutils.install
+          metanorma site generate sources -c sources/collection.yml
 
       - name: Metanorma compile macos
         if: matrix.os == 'macos-latest'
         run: |
-          brew install yq
-          make clean all SKIP_BUNDLE=true
+          metanorma site generate sources -c sources/collection.yml
 
       - name: Metanorma compile linux
         if: matrix.os == 'ubuntu-latest'
         run: |
-          sudo snap install yq
-          make clean all SKIP_BUNDLE=true
+          metanorma site generate sources -c sources/collection.yml

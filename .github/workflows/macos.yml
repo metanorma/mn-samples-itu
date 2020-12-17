@@ -32,17 +32,15 @@ jobs:
           key: xml2rfc
           restore-key: xml2rfc
 
-      - run: brew install yq metanorma/metanorma/metanorma
+      - run: brew install metanorma/metanorma/metanorma
 
       - name: Use Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-      - name: Install relaton
-        run: |
-          gem install relaton-cli
+
       - name: Metanorma compile
         env:
           JAVA_OPTS: "java.awt.headless=true"
         run: |
-          make clean all SKIP_BUNDLE=true
+          metanorma site generate sources -c sources/collection.yml

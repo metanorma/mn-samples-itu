@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem "metanorma-cli"
+gem "metanorma-cli", github: "metanorma/metanorma-cli"
