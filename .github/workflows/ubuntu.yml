@@ -37,14 +37,10 @@ jobs:
           curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | sudo bash
           sudo chown -R $USER:$(id -gn $USER) $HOME/.config
 
-      - run: sudo snap install yq
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
 
-      - run: gem install relaton-cli
-
-      - run: make clean all publish SKIP_BUNDLE=true
+      - run: metanorma site generate sources -c sources/collection.yml
         env:
           JAVA_OPTS: "java.awt.headless=true"
