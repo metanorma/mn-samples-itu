@@ -32,7 +32,8 @@ jobs:
           key: xml2rfc
           restore-key: xml2rfc
 
-      - run: brew install metanorma/metanorma/metanorma
+      - name: Install Metanorma
+        run: brew install metanorma/metanorma/metanorma
 
       - name: Use Ruby
         uses: ruby/setup-ruby@v1
