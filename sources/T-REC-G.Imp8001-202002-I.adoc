@@ -1,0 +1,617 @@
+= Implementers' guide for Recommendation ITU-T G.8001/Y.1354
+:bureau: T
+:docnumber: G.8001/Y.1354 Implementers' Guide
+:series: G: Transmission Systems and Media, Digital Systems and Networks
+:series1: Digital networks – General aspects
+:published-date: 2020-02-07
+:copyright-year: 2020
+:status: in-force
+:group: 15
+:grouptype: study-group
+:keywords:
+:imagesdir: images
+:doctype: implementers-guide
+:docfile: T-TUT-CCIT-2017-E.adoc
+:fullname: Jessy Rouyer
+:affiliation: Nokia
+:role: rapporteur
+:phone: +1 469 661 2093
+:fax:
+:email: jessy.rouyer@nokia.com
+:fullname_2: Yuji Tochio
+:affiliation_2: Fujitsu
+:role_2: editor
+:phone_2: +81 44 280 9936
+:fax_2:
+:email_2: tochio@fujitsu.com
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+[abstract]
+== Summary
+
+This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).
+
+This version contains all updates submitted up to and including those at Study Group 15 meeting in January/February 2020.
+
+This document was approved by ITU-T Study Group 15 on 7 February 2020
+
+[preface]
+== Change log
+
+[%unnumbered]
+|===
+| 19 October 2018 | First version.
+| 07 February 2020 | Second version
+|===
+
+== Scope
+
+This guide provides a list of the definitions that were deleted from Recommendation ITU-T G.8001/Y.1354 when moved to their source Recommendations.
+
+== Introduction
+
+This implementers' guide is a compilation of reported defects for all versions of Recommendation ITU-T G.8001. In this edition of the guide, reported defects identified as of 2018-10 are given for:
+
+Recommendation ITU-T G.8001/Y.1354 (2016-04)
+
+The guide must be read in conjunction with Recommendation ITU-T G.8001/Y.1354 (2016-04) to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.
+
+== Defect resolution procedure
+
+Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.
+
+[bibliography]
+== References
+
+This document refers to the following ITU-T Recommendation:
+
+* [[[itu-g8001,ITU-T G.8001/Y.1354]]], ITU-T Recommendation G.8001/Y.1354 (2016-04), _Terms and definitions for Ethernet frames over transport._
+
+== Nomenclature
+
+In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:
+
+[%unnumbered]
+[cols="^,<"]
+|===
+h| Symbol ^h| Description
+| *_[Begin Correction]_* | Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_[End Correction]_* | Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_..._* | Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.
+| _--- SPECIAL INSTRUCTIONS --- {instructions}_ | Indicates a set of special editing instructions to be followed.
+|===
+
+== Technical and editorial corrections to Recommendation ITU-T G.8001
+
+[heading=terms and definitions]
+=== Section 3.2
+
+This Recommendation defines the following terms:
+
+==== backbone Ethernet connection
+
+An Ethernet connection of which the traffic units are encapsulated with a backbone VLAN tag (B-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone VLAN tag; the information transported in the backbone VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone VLAN tag and the demapping of these parameters from the backbone VLAN tag.
+
+NOTE: Backbone Ethernet connection is referred to in <<g8012-1>>.
+
+==== backbone service Ethernet connection
+
+An Ethernet connection of which the traffic units are encapsulated with the first 48 bits of a backbone service instance tag (I-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone service instance tag; the information transported in the backbone service instance tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone service instance tag and the demapping of these parameters from the backbone service instance tag.
+
+NOTE: Backbone service Ethernet connection is referred to in <<g8012-1>>.
+
+==== [strike]#customer#
+
+[strike]#The entity that has ownership authority over a set of flow points. The customer may have one or more service instances.#
+
+NOTE: [strike]#Customer is referred to in <<g8011>>.#
+
+==== customer Ethernet connection
+
+An Ethernet connection (EC) of which the traffic units are encapsulated with a customer VLAN tag (C-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a customer VLAN tag; the information transported in the customer VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the customer VLAN tag and the demapping of these parameters from the customer VLAN tag.
+
+NOTE: Customer Ethernet connection is referred to in <<g8012-1>>.
+
+==== [strike]#dual-ended#
+
+[strike]#A type of protocol messaging whereby an initiating MEP sends a request PDU to a receiving peer MEP, which does not send any response. In performance monitoring, the receiving MEP performs measurement calculations.#
+
+NOTE: [strike]#Dual-ended is referred to in <<g8013>>.#
+
+==== EoT-NNI
+
+An NNI for the transfer of ETH_CI traffic units over a transport layer network.
+
+NOTE: EoT-NNI is referred to in <<g8012>>.
+
+==== [strike]#ERP instance#
+
+[strike]#An entity that is responsible for the protection of a subset of the VLANs that transport traffic over the physical Ethernet ring. Each ERP instance is independent of other ERP instances that may be configured on the physical Ethernet ring.#
+
+NOTE: [strike]#ERP instance is referred to in <<g8032>>.#
+
+==== Ethernet management communication channel (ET.MCC)
+
+A function providing a management communication channel between a pair of maintenance entity group (MEG) end points (MEP). The MCC can be used to perform remote management. The specific use of MCC is outside the scope of this Recommendation. An MEP can send a frame with ETH-MCC information to its peer MEP with a remote maintenance request, remote maintenance reply, notification, etc. Configuration information needs to be provisioned to the MEP to support MCC functions. See <<g8013>> for detailed information and the protocol data unit (PDU) structure of the MCC.
+
+NOTE: ET.MCC is defined in <<g8051>> as EoT MCC.
+
+==== ETH_CI group
+
+A group of ETH_CI signals that is monitored as a single MEG. For this purpose, ETH OAM is added to one of the ETH_CI signals in the group.
+
+NOTE: ETH_CI group is referred to in <<g8010>>.
+
+==== ETH_CI traffic unit
+
+The following set of signals defined in <<g8010>>: ETH_CI Data (D), ETH_CI priority (P), ETH_CI drop eligibility (DE), ETH_CI server signal fail (SSF) and optionally ETH_CI automatic protection switching (APS). The ETH_CI_D signal carries the traffic unit that consists of the following fields: destination address (DA), source address (SA) and MAC service data unit (M_SDU).
+
+NOTE: ETH_CI traffic unit is defined in clause 6.3.1 of <<g8010>> and referred to in <<g8012>>.
+
+==== Ethernet flow replication point (ETHF_PP)
+
+Connection point between <Srv>/ETH adaptation source and sink. ETH_CI from source Ethernet flow point (ETH_FP) is replicated and delivered across ETHF_PP to sink Ethernet termination flow point (ETH_TFP).
+
+NOTE: ETHF_PP is referred to in <<g8021>>.
+
+==== Ethernet replicated information (ETH_PI)
+
+Replicated ETH_CI delivered across ETHTF_PP or ETHF_PP.
+
+NOTE: ETH_PI is referred to in <<g8021>>.
+
+==== [strike]#Ethernet ring#
+
+[strike]#A collection of Ethernet ring nodes forming a closed physical loop whereby each Ethernet ring node is connected to two adjacent Ethernet ring nodes via a duplex communications facility.#
+
+NOTE: [strike]#Ethernet ring is referred to in <<g8032>>.#
+
+==== [strike]#Ethernet ring node#
+
+[strike]#A network element that implements at least the following functionality.#
+
+. [strike]#One Ethernet connection function (ETH_C) with a dedicated Ethernet flow forwarding function (ETH_FF) for forwarding ring automatic protection switching (R-APS) control traffic.#
+. [strike]#Two ring ports, including ETHDi/ETH adaptation function at the ring maintenance entity group level (MEL).#
+. [strike]#Ethernet ring protection (ERP) control process controlling the blocking and unblocking of traffic over the ring ports.#
+
+NOTE: [strike]#Ethernet ring node is referred to in <<g8032>>.#
+
+==== [strike]#Ethernet service#
+
+[strike]#An Ethernet service supports an Ethernet flow (as specified in <<g8010>>). It is determined by the topology of the Ethernet network and a corresponding set of attributes associated with the Ethernet connection (EC), the UNI ports and NNI ports.#
+
+NOTE: [strike]#Ethernet service is referred to in <<g8011>>.#
+
+==== Ethernet termination flow replication point (ETHTF_PP)
+
+Connection point between <Srv>/ETH adaptation source and sink. ETH_CI from source Ethernet termination flow point (ETH_TFP) is replicated and delivered across ETHTF_PP to sink filter process.
+
+NOTE: ETHTF_PP is referred to in <<g8021>>.
+
+==== [strike]#Ethernet virtual connection (EVC)#
+
+NOTE: [strike]#EVC is defined in <<mef10-3>>.#
+
+==== ETH path
+
+The highest ETH MEG level in a set of eight MEG levels.
+
+NOTE: ETH path is referred to in <<g8010>>.
+
+==== ETH section
+
+The lowest ETH MEG level in a set of eight MEG levels.
+
+NOTE: ETH section is referred to in <<g8010>>.
+
+==== ETH tandem connection
+
+An intermediate ETH MEG level in a set of eight MEG levels.
+
+NOTE: ETH tandem connection is referred to in <<g8010>>.
+
+==== ET management network (ET.MN)
+
+A subset of a TMN that is responsible for managing those parts of a network element that contain ET layer network entities. An ET.MN may be subdivided into a set of ET management subnetworks.
+
+NOTE: ET.MN is referred to in <<g8051>>.
+
+==== ET management subnetwork (ET.MSN)
+
+Subnetwork consisting of a set of separate embedded communication channels (ECCs) and associated intra-site data communication links which are interconnected to form a data communication network (DCN) within any given ET topology. For ET, the physical channel supporting the ECC is the Ethernet management communication channel (MCC) as defined in <<g8013>>. An ET.MSN represents an ET specific local communications network (LCN) portion of a network operator's overall data communication network or TMN.
+
+NOTE: ET.MSN is referred to in <<g8051>>.
+
+==== ET network element (ET.NE)
+
+Element containing entities from one or more ET layer networks. An ET.NE may therefore be a stand-alone physical entity or a subset of a network element. It supports at least network element functions (NEFs) and may also support an operations system function (OSF). It contains managed objects (MOs), a message communication function (MCF) and a management application function (MAF). The functions of an ET.NE may be contained within an NE that also supports other layer networks. These layer network entities are considered to be managed separately from ET entities. As such, they are not part of the ET.MN or ET.MSN.
+
+NOTE: ET.NE is referred to in <<g8051>>.
+
+==== Ety-NNI
+
+An NNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.
+
+NOTE: Ety-NNI is referred to in <<g8012>>.
+
+==== Ety-UNI
+
+A UNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.
+
+NOTE: Ety-UNI is referred to in <<g8012>>.
+
+==== [strike]#external NNI (ENNI)#
+
+NOTE: [strike]#ENNI is defined by <<mef26-1>>.#
+
+==== [strike]#far-end#
+
+[strike]#In single-ended or dual-ended messaging, the direction and information relating to a one-way measurement from an initiating MEP) to a receiving or responding peer MEP.#
+
+NOTE: [strike]#Far-end is referred to in <<g8013>>.#
+
+==== [strike]#initiating MEP#
+
+[strike]#An initiating MEP initiates measurements by sending request PDUs, and in the case of single-ended messaging, receiving response PDUs.#
+
+NOTE: [strike]#Initiating MEP is referred to in <<g8013>>.#
+
+==== [strike]#interconnection node#
+
+[strike]#An Ethernet ring node that is common to two or more Ethernet rings or to a sub-ring and an interconnected network. At each interconnection node, there may be one or more Ethernet rings that can be accessed through a single ring port and not more than one Ethernet ring that is accessed by two ring ports. The former set of Ethernet rings is comprised of sub-rings, whereas the latter Ethernet ring is considered a major ring, relative to this interconnection node. If the interconnection node is used to connect a (set of) sub-ring(s) to another network, then there is no Ethernet ring accessed by two ring ports.#
+
+NOTE: [strike]#Interconnection node is referred to in <<g8032>>.#
+
+==== [strike]#in-profile#
+
+[strike]#For frames that belong to the same instance of an Ethernet service and priority, in-profile frames are defined as frames for which priority corresponds to a common value <X> and the network has determined that drop-eligibility corresponds to <false>. Procedures to determine drop-eligibility for a frame and procedures to convey priority and drop-eligibility on a frame are network and service specific.#
+
+NOTE: [strike]#In-profile is referred to in <<g8013>>.#
+
+==== [strike]#in-service OAM#
+
+[strike]#OAM actions that are carried out while the data traffic is not interrupted, with an expectation that data traffic remains transparent to OAM actions.#
+
+NOTE: [strike]#In-service OAM is referred to in <<g8013>>.#
+
+==== leaf group
+
+A group representing two or more leaf ports within an RMP EC which can transmit to and receive from other leafs in the leaf group. Leaf ports within a leaf group cannot transmit to or receive from leafs outside the group.
+
+NOTE: Leaf group is referred to in <<g8012-1>>.
+
+==== link Ethernet connection
+
+An Ethernet connection of which the traffic units are either not encapsulated or encapsulated with a priority tag.
+
+NOTE: Link Ethernet connection is referred to in <<g8012-1>>.
+
+==== maintenance entity
+
+The entity between two of the flow/connection points in a maintenance entity group.
+
+NOTE: Maintenance entity is referred to in <<g8010>>.
+
+==== maintenance entity group (MEG)
+
+A group defined, for the purpose of fragment or connection monitoring, between a set of flow or connection points within a fragment/connection. This set of flow or connection points may be located at the boundary of one administrative domain or a protection domain, or at the boundaries of two adjacent administrative domains. The maintenance entity group consists of one or more maintenance entities.
+
+NOTE: MEG is referred to in <<g8010>>.
+
+==== maintenance entity group end point compound sink function
+
+A compound transport processing function that accepts the characteristic information of the layer network at its input, extracts and processes the OAM information related to the monitoring of the maintenance entity group, filters the OAM information from within to the maintenance entity group, adapts the information and presents it as the characteristic information of the layer or a client layer at its output, potentially as a (client) layer maintenance signal (e.g., AIS).
+
+NOTE: MEP compound sink function is referred to in <<g8010>>.
+
+==== maintenance entity group end point compound source function
+
+A compound transport processing function that accepts the characteristic information of the layer or a client layer network at its input, adapts that information, filters it for OAM information interfering with its own OAM information, adds OAM information to allow the maintenance entity group to be monitored and presents the resulting information at its output.
+
+NOTE: MEP compound source function is referred to in <<g8010>>.
+
+==== maintenance entity group intermediate point compound function
+
+A compound transport processing function that accepts the characteristic information of the layer network at its input, reacts to OAM information related to on-demand monitoring of a maintenance entity group and presents the characteristic information without the OAM to which it reacted at its output.
+
+NOTE: MIP compound function is referred to in <<g8010>>.
+
+==== [strike]#major ring#
+
+[strike]#An Ethernet ring that is connected on two ports to an interconnection node.#
+
+NOTE: [strike]#Major ring is referred to in <<g8032>>.#
+
+==== [strike]#MEG end point (MEP)#
+
+[strike]#A point marking the end of an ETH MEG that is capable of initiating and terminating OAM frames for fault management and performance monitoring. A MEP does not add a new forwarding identifier to the transit ETH flows. A MEP does not terminate the transit ETH flows, though it can observe these flows (e.g., count frames).#
+
+NOTE: [strike]#MEP is referred to in <<g8013>>.#
+
+==== [strike]#MEG intermediate point (MIP)#
+
+[strike]#An intermediate point in a MEG that is capable of reacting to some OAM frames. A MIP does not initiate OAM frames. A MIP takes no action on the transit ETH flows.#
+
+NOTE: [strike]#MIP is referred to in <<g8013>>.#
+
+==== [strike]#near-end#
+
+[strike]#In single-ended messaging, the direction and information relating to a one-way measurement from a responding peer MEP to an initiating MEP.#
+
+NOTE: [strike]#Near-end is referred to in <<g8013>>.#
+
+==== network termination
+
+The network element in the transport network that is connected to the customer edge equipment.
+
+NOTE: Network termination is referred to in <<g8012>>.
+
+==== network-to-network interface (NNI)
+
+An interface that is used for the interconnection of network elements within a transport network.
+
+NOTE: NNI is referred to in <<g8012>>.
+
+==== [strike]#on-demand measurement#
+
+[strike]#A measurement (e.g., performance monitoring such as delay measurement, loss measurement) that is running at a specific request. An on-demand measurement has a defined start and end time or date.#
+
+NOTE: [strike]#On-demand measurement is referred to in <<g8052>>.#
+
+==== on-demand monitoring
+
+A method to infer a specific status or performance characteristic of a maintenance entity or a set of maintenance entities within a maintenance entity group at a specific time with the purpose of obtaining a snapshot of the performance or to diagnose an identified fault condition or performance degradation.
+
+NOTE: On-demand monitoring is referred to in <<g8010>>.
+
+==== [strike]#on-demand OAM#
+
+[strike]#OAM actions that are initiated via manual intervention for a limited time to carry out diagnostics. On-demand OAM can result in singular or periodic OAM actions during the diagnostics time interval.#
+
+NOTE: [strike]#On-demand OAM is referred to in <<g8013>>.#
+
+==== [strike]#one-way#
+
+[strike]#A measurement of the performance of frames that is achieved in one direction from an initiating MEP to a peer MEP, or vice versa; i.e., a unidirectional measurement.#
+
+NOTE: [strike]#One-way is referred to in <<g8013>>.#
+
+==== [strike]#out-of-service OAM#
+
+[strike]#OAM actions that are carried out while the data traffic is interrupted.#
+
+NOTE: [strike]#Out-of-service OAM is referred to in <<g8013>>.#
+
+==== [strike]#operator virtual connection (OVC)#
+
+NOTE: [strike]#OVC is defined by <<mef26-1>>.#
+
+==== [strike]#peer MEP#
+
+[strike]#In a given MEP, all of the other MEPs in the same MEG.#
+
+NOTE: [strike]#Peer MEP is referred to in <<g8013>>.#
+
+==== [strike]#proactive measurement#
+
+[strike]#A measurement (e.g., performance monitoring such as delay measurement, loss measurement.) that is running continuously after it has been established. Proactive measurements can only be temporarily disabled.#
+
+[strike]#NOTE: Proactive measurement is referred to in <<g8052>>.#
+
+==== proactive monitoring
+
+A method to continuously infer the status and performance of a maintenance entity group with the purpose of detecting disturbances, faults and degradations immediately after their occurrence in order to verify the service level agreement or initiate recovery actions to restore the service to the guaranteed level.
+
+NOTE: Proactive monitoring is referred to in <<g8010>>.
+
+==== [strike]#proactive OAM#
+
+[strike]#OAM actions that are carried out continuously to permit proactive reporting of fault or performance results.#
+
+NOTE: [strike]#Proactive OAM is referred to in <<g8013>>.#
+
+==== [strike]#R-APS virtual channel#
+
+[strike]#The R-APS channel connection between two interconnection nodes of a sub-ring in (an)other Ethernet ring(s) or network(s). Its connection characteristics (e.g., path, performance) are influenced by the characteristics of the network (e.g., Ethernet ring) providing connectivity between the interconnection nodes.#
+
+NOTE: [strike]#R-APS virtual channel is referred to in <<g8032>>.#
+
+==== [strike]#responding MEP#
+
+[strike]#In single-ended messaging, an MEP that receives request PDUs from an initiating MEP and transmits corresponding response PDUs.#
+
+NOTE: [strike]#Responding MEP is referred to in <<g8013>>.#
+
+==== [strike]#receiving MEP#
+
+[strike]#In dual-ended messaging, an MEP that receives request PDUs from an initiating MEP, and does not respond to them.#
+
+NOTE: [strike]#Receiving MEP is referred to in <<g8013>>.#
+
+==== [strike]#ring MEL#
+
+[strike]#The maintenance entity group (MEG) level providing a communication channel for ring automatic protection switching (R-APS) information.#
+
+NOTE: [strike]#Ring MEL is referred to in <<g8032>>.#
+
+==== [strike]#ring protection link (RPL)#
+
+[strike]#The ring link that under normal conditions, i.e., without any failure or request, is blocked (at one or both ends) to traffic channels, to prevent the formation of loops.#
+
+NOTE: [strike]#Ring protection link is referred to in <<g8032>>.#
+
+==== [strike]#RPL neighbour node#
+
+[strike]#When configured, an Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring) in addition to the block by the RPL owner node. However, it is not responsible for activating the reversion behaviour.#
+
+NOTE: [strike]#RPL neighbour node is referred to in <<g8032>>.#
+
+==== [strike]#RPL owner node#
+
+[strike]#An Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring). Furthermore, it is responsible for activating reversion behaviour from protected or manual switch/forced switch (MS/FS) conditions.#
+
+NOTE: [strike]#RPL owner node is referred to in <<g8032>>.#
+
+==== [strike]#server MEP#
+
+[strike]#A server MEP represents the compound function of the server layer termination function and server/ETH adaptation function, which is used to notify the ETH layer MEPs of conditions of the server layer that may be relevant to these ETH MEPs (e.g., failure or degradation detection by the server layer termination function or server/ETH adaptation function), where the server layer termination function is expected to run OAM mechanisms specific to that server layer.#
+
+NOTE: [strike]#Server MEP is referred to in <<g8013>>.#
+
+==== service Ethernet connection
+
+An Ethernet connection of which the traffic units are encapsulated with a service VLAN tag (S-Tag) when they are transported through an Ethernet link. Outside an Ethernet link footnote:[The term "Ethernet link" refers to the ETH link topological component specified in <<g8010>>.] the traffic units are without service VLAN tag; the information transported in the service VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the service VLAN tag and the demapping of these parameters from the service VLAN tag.
+
+NOTE: Service Ethernet connection is referred to in <<g8012-1>>.
+
+==== [strike]#service frame#
+
+NOTE: [strike]#Service frame is defined in <<mef10-3>>.#
+
+==== [strike]#single-ended#
+
+[strike]#A type of protocol messaging whereby an initiating MEP sends a request PDU to a responding peer MEP, and the peer MEP responds by sending a response PDU that contains the original request data plus any additional data added by the responder. In performance monitoring, the initiating MEP performs measurement calculations.#
+
+NOTE: [strike]#Single-ended is referred to in <<g8013>>.#
+
+==== [strike]#sub-ring#
+
+[strike]#An Ethernet ring that is connected to (an)other Ethernet ring(s) or network(s) through the use of a pair of interconnection nodes. On their own, the sub-ring links do not form a closed loop. A closed connection of traffic may be formed by the sub-ring links and one or more links, which are controlled by (an)other Ethernet ring(s) or network(s), between interconnection nodes.#
+
+NOTE: [strike]#Sub-ring is referred to in <<g8032>>.#
+
+==== [strike]#sub-ring link#
+
+[strike]#A span (e.g., link/port) connecting adjacent sub-ring nodes that are under the control of the Ethernet ring protection control process (ERP control process) of the sub-ring.#
+
+NOTE: [strike]#Sub-ring link is referred to in <<g8032>>.#
+
+==== [strike]#two-way#
+
+[strike]#A measurement of the performance of frames that is achieved from an initiating MEP to responding peer MEP, and back to the initiating MEP; i.e., a bidirectional or round-trip measurement.#
+
+NOTE: [strike]#Two-way is referred to in <<g8013>>.#
+
+==== traffic-conditioning function
+
+A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, polices non-conformant traffic units and presents the remaining traffic units at its output as characteristic information of the layer network.
+
+NOTE: Traffic-conditioning function is referred to in <<g8010>>.
+
+==== traffic-shaping function
+
+A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, controls non-conformant traffic units by buffering and scheduling them alternately with conformant traffic units for presentation at its output as characteristic information of the layer network.
+
+NOTE: Traffic-shaping function is referred to in <<g8021>>.
+
+==== [strike]#user network interface (UNI)#
+
+NOTE: [strike]#User network interface is referred to in <<mef10-3>>.#
+
+==== user-to-network interface (UNI)
+
+An interface that is used for the interconnection of customer equipment with a network element of the transport network.
+
+NOTE: User-to-network interface is referred to in <<g8012>>.
+
+==== [strike]#wait to block timer#
+
+[strike]#A timer that is employed by the RPL owner to delay reversion after a forced switch or manual switch has been cleared.#
+
+NOTE: [strike]#Wait to block timer is referred to in <<g8032>>.#
+
+=== Appendix I
+
+[[tableI-1]]
+[cols="^,^"]
+.Source Recommendations
+|===
+h| ITU-T Recommendation h| Latest version
+| ITU-T G.8010/Y.1306 | 02/2004 with Amd. 1 (2006), Err. 1 (2007), Err. 2 (2007) and Amd. 2 (2010).
+| [strike]#ITU-T G.8011/Y.1307# | [strike]#01/2015#
+| ITU-T G.8012/Y.1308 | 08/2004 with Amd.1 (2006)
+| ITU-T G.8012.1/Y.1308.1 | 12/2012
+| [strike]#ITU-T G.8013/Y.1731# | [strike]#08/2015#
+| ITU-T G.8021/Y.1341 | 04/2015 with Cor. 1 (2015)
+| [strike]#ITU-T G.8032/Y.1344# | [strike]#08/2015 with G-Sup.52 (2012)#
+| ITU-T G.8051/Y.1345 | 08/2015
+| [strike]#ITU-T G.8052/Y.1346# | [strike]#08/2013#
+|===
+
+[bibliography]
+=== Bibliography
+
+* [[[g800,ITU-T G.800]]], Recommendation ITU-T G.800 (2012), Unified functional architecture of transport networks.
+
+* [[[g805,ITU-T G.805]]], Recommendation ITU-T G.805 (2000), Generic functional architecture of transport networks.
+
+* [[[g808-1,ITU-T G.808.1]]], Recommendation ITU-T G.808.1 (2014), Generic protection switching – Linear trail and subnetwork protection.
+
+* [[[g809,ITU-T G.809]]], Recommendation ITU-T G.809 (2003), Functional architecture of connectionless layer networks.
+
+* [[[g870,ITU-T G.870]]], Recommendation ITU-T G.870/Y.1352 (2012), Terms and definitions for optical transport networks.
+
+* [[[g7710,ITU-T G.7710]]], Recommendation ITU-T G.7710/Y.1701 (2012), Common equipment management function requirements.
+
+* [[[g7712,ITU-T G.7712]]], Recommendation ITU-T G.7712/Y.1703 (2010), Architecture and specification of data communication network.
+
+* [[[g8010,ITU-T G.8010]]], Recommendation ITU-T G.8010/Y.1306 (2004), Architecture of Ethernet layer networks.
+
+* [[[g8011,ITU-T G.8011]]], [strike]#Recommendation ITU-T G.8011/Y.1307 (2015), Ethernet service characteristics.#
+
+* [[[g8012,ITU-T G.8012]]], Recommendation ITU-T G.8012/Y.1308 (2004), Ethernet UNI and Ethernet NNI.
+
+* [[[g8012-1,ITU-T G.8012.1]]], Recommendation ITU-T G.8012.1/Y.1308.1 (2012), Interfaces for the Ethernet transport network.
+
+* [[[g8013,ITU-T G.8013]]], [strike]#Recommendation ITU-T G.8013/Y.1731 (2015), Operations, administration and maintenance (OAM) functions and mechanisms for Ethernet-based networks.#
+
+* [[[g8021,ITU-T G.8021]]], Recommendation ITU-T G.8021/Y.1341 (2015), Characteristics of Ethernet transport network equipment functional blocks.
+
+* [[[g8031,ITU-T G.8031]]], [strike]#Recommendation ITU-T G.8031/Y.1342 (2015), Ethernet linear protection switching.#
+
+* [[[g8032,ITU-T G.8032]]], [strike]#Recommendation ITU-T G.8032/Y.1344 (2015), Ethernet ring protection switching.#
+
+* [[[g8051,ITU-T G.8051]]], Recommendation ITU-T G.8051/Y.1345 (2015). Management aspects of the Ethernet transport (ET) capable network element.
+
+* [[[g8052,ITU-T G.8052]]], [strike]#Recommendation ITU-T G.8052/Y.1346 (2013), Protocol-neutral management information model for the Ethernet transport capable network element.#
+
+* [[[sup52,ITU-T G.Sup52]]], ITU-T G-series Recommendations – Supplement 52 (2012), _Ethernet ring protection switching._
+
+* [[[m3010,ITU-T M.3010]]], Recommendation ITU-T M.3010 (2000), Principles for a telecommunications management network; Amendment 2 (2005).
+
+* [[[m3013,ITU-T M.3013]]], Recommendation ITU-T M.3013 (2000), Considerations for a telecommunications management network.
+
+* [[[m3100,ITU-T M.3100]]], Recommendation ITU-T M.3100 (2005), Generic network information model.
+
+* [[[x700,ITU-T X.700]]], Recommendation ITU-T X.700 (1992), Management framework for Open Systems Interconnection (OSI) for CCITT applications.
+
+* [[[x701,ITU-T X.701]]], Recommendation ITU-T X.701 (1997) | ISO/IEC 10040:1998, Information technology – Open Systems Interconnection – Systems management overview.
+
+* [[[mef10-3,MEF 10.3]]], [strike]#MEF (2013), _Ethernet Services Attributes Phase 3._#
+
+* [[[mef12-1,MEF 12.1]]], [strike]#MEF (2010), _Carrier Ethernet Network Architecture Framework Part 2: Ethernet Services Layer – Basic Elements._#
+
+* [[[mef26-1,MEF 26.1]]], [strike]#MEF (2012), _External Network Network Interface (ENNI) – Phase 2._#
+
+[appendix,obligation=normative]
+== Recommendation ITU-T G.8001/Y.1354 Defect Report Form
+
+[%unnumbered]
+|===
+| DATE: |
+a| CONTACT INFORMATION +
+NAME: +
+COMPANY: +
+ADDRESS: +
+TEL: +
+FAX: +
+E-MAIL: |
+| AFFECTED RECOMMENDATIONS: |
+| DESCRIPTION OF PROBLEM: |
+| SUGGESTIONS FOR RESOLUTION: |
+|===
+
+NOTE: Attach additional pages if more space is required than is provided above.
