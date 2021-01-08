@@ -1,0 +1,195 @@
+= Implementers' guide 2 for ITU-T P.863
+:bureau: T
+:docnumber: P.863 Implementers' Guide
+:edition: 2
+:series: P: Terminals and Subjective and Objective Assessment Methods
+:series1: Methods for objective and subjective assessment of speech quality
+:published-date: 2019-12-05
+:copyright-year: 2019
+:status: in-force
+:group: 12
+:grouptype: study-group
+:keywords:
+:imagesdir: images
+:doctype: implementers-guide
+:docfile: T-REC-P.Imp863-201912-I.adoc
+:fullname: Jens Berger
+:affiliation: Rohde & Schwarz
+:address: Switzerland
+:role: rapporteur
+:phone: +41 32 686 6565
+:fax: +41 32 686 6566
+:email: jens.berger@rohde-schwarz.com
+:fullname_2: Christian Schmidmer
+:affiliation_2: OPTICOM GmbH
+:address_2: Germany
+:role_2: editor
+:phone_2: +49 9131 530200
+:fax_2: +49 9131 5302020
+:email_2: cs@opticom.de
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+[abstract]
+== Summary
+
+This document contains all updates submitted up to and including those at Study Group 12 meeting in November 2019 except for those already published in the earlier implementer's guide (<<p-imp863>> (05/18)). 
+
+This document was agreed by ITU-T Study Group 12 on 5 December 2019 and is the initial version of this implementer's guide.
+
+[preface]
+== Change log
+
+[%unnumbered]
+|===
+| 2019-12 | Initial version
+|===
+
+== Scope
+
+This guide resolves defects in the following categories:
+
+* editorial errors
+* technical errors, such as omissions and inconsistencies
+* ambiguities
+
+In addition, the implementer's guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.
+
+This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories.  Proposals for new features should be made through contributions to ITU-T.
+
+== Introduction
+
+This implementer's guide is a compilation of reported defects for the version 2018-03 of <<p863>>, excluding all defects mentioned in <<p-imp863>> (05/18). In this edition of the guide, reported defects identified as of 2019-12 are given for:
+
+* Recommendation ITU-T P.863 (03/18)
+
+The guide must be read in conjunction with <<p863>> (03/18) and <<p-imp863>> (05/18) to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.
+
+== Defect resolution procedure
+
+Upon discovering technical defects with any components of the texts covered by this implementer's guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii).  The template for a defect report is located at the end of this guide.  Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed.  This defect resolution process is open to any interested party.  Formal membership in the ITU is not required to participate in this process.
+
+[bibliography]
+== References
+
+This document refers to the following ITU-T publications:
+
+* [[[p863,ITU-T P.863]]]
+
+* [[[p-imp863,ITU-T P.Imp863]]], _Implementers' guide for P.863._
+
+== Nomenclature
+
+In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:
+
+[%unnumbered]
+[cols="^,<"]
+|===
+h| Symbol ^h| Description
+| *_&#91;Begin Correction]_* | Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_&#91;End Correction]_* | Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_..._* | Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.
+| _--- SPECIAL INSTRUCTIONS --- {instructions}_ | Indicates a set of special editing instructions to be followed.
+|===
+
+== Technical and editorial corrections to Recommendation ITU-T P.863
+
+=== 6.1 Annex B, SpeechActiveFrameDetection.pdf
+
+_Fix calculation of flags indicating active speech sections in NB mode at 8kHz samplerate._
+
+_--- SPECIAL INSTRUCTIONS --- delete at line 1404_
+
+&#91;Begin Correction]
+
+[source%unnumbered]
+----
+1404       int End = i+Hangover;
+1405       for (;i<MaxNumFlags && i<End; i++) 
+1406              pFlags[i] = 0;
+1407       i++;
+----
+
+&#91;End Correction]
+
+_--- SPECIAL INSTRUCTIONS --- insert at line 1404_
+
+&#91;Begin Correction]
+
+[source%unnumbered]
+----
+1404       const int End = min(MaxNumFlags, i + Hangover + 1);
+1405       for (; i < End; i++)
+1406              pFlags[i] = 0;
+1407
+----
+
+&#91;End Correction]
+
+_--- SPECIAL INSTRUCTIONS --- delete at line 1416_
+
+&#91;Begin Correction]
+
+[source%unnumbered]
+----
+1416       return min(MaxNumFlags, (int)(mNumFeatureFrames[Signal]* fDownsampling));
+----
+
+&#91;End Correction]
+
+_--- SPECIAL INSTRUCTIONS --- insert at line 1416_
+
+&#91;Begin Correction]
+
+[source%unnumbered]
+----
+1416       return min(MaxNumFlags, (int)(mNumFeatureFrames[Signal] / fDownsampling));
+----
+
+&#91;End Correction]
+
+=== 6.2 Annex A, subfolder Results Ed. 3
+
+_The fixes in clauses 6.1 lead to minor changes in the conformance test results. Therefore, the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file. For convenience, the complete set of files is provided, although only the narrowband cases have to be updated. The changes from the <<p-imp863>> (2018-05) are already included._
+
+_--- SPECIAL INSTRUCTIONS ---Replace subfolder in Annex A_
+
+&#91;Begin Correction]
+
+_--- SPECIAL INSTRUCTIONS --- Old Subfolder_ 
+
+[source%unnumbered]
+----
+Results Ed. 3
+----
+
+_--- SPECIAL INSTRUCTIONS --- New Subfolder_
+
+[source%unnumbered]
+----
+Results Ed. 3 - IG 2019-11
+----
+
+&#91;End Correction]
+
+[appendix,obligation=normative]
+== Recommendation ITU-T P.863 Defect Report Form
+
+[%unnumbered]
+|===
+| DATE: |
+a| CONTACT INFORMATION +
+NAME: +
+COMPANY: +
+ADDRESS: +
+TEL: +
+FAX: +
+E-MAIL: |
+| AFFECTED RECOMMENDATIONS: |
+| DESCRIPTION OF PROBLEM: |
+| SUGGESTIONS FOR RESOLUTION: |
+|===
+
+NOTE: Attach additional pages if more space is required than is provided above.
