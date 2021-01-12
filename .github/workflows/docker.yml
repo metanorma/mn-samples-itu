@@ -13,7 +13,7 @@ on:
       - .github/workflows/ubuntu.yml
       - .github/workflows/windows.yml
       - .github/workflows/docker-pres_xml.yml
-      - Makefile.win
+
   repository_dispatch:
     types: [ metanorma/metanorma-docker ]
 
