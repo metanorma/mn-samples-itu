@@ -1,0 +1,309 @@
+= Implementers' guide for P.863
+:bureau: T
+:docnumber: P.863 Implementers' Guide
+:series: P: Terminals and Subjective and Objective Assessment Methods
+:series1: Methods for objective and subjective assessment of speech quality
+:published-date: 2018-05-10
+:copyright-year: 2018
+:status: in-force
+:group: 12
+:grouptype: study-group
+:keywords:
+:imagesdir: images
+:doctype: implementers-guide
+:docfile: T-REC-P.Imp863-201805-I.adoc
+:fullname: Jens Berger
+:affiliation: Rohde & Schwarz
+:address: Switzerland
+:role: rapporteur
+:phone: +41 32 686 6565
+:fax: +41 32 686 6566
+:email: jens.berger@rohde-schwarz.com
+:fullname_2: Joachim Pomy
+:affiliation_2: OPTICOM GmbH
+:address_2: Germany
+:role_2: editor
+:phone_2: +49 177 78 71958
+:fax_2: +49 6251 9454945
+:email_2: consultant@joachimpomy.de
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+[abstract]
+== Summary
+
+This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.
+
+This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.
+
+[preface]
+== Change log
+
+[%unnumbered]
+|===
+| 2018-05 | Initial version
+|===
+
+== Scope
+
+This guide resolves defects in the following categories:
+
+* editorial errors
+* technical errors, such as omissions and inconsistencies
+* ambiguities
+
+In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.
+
+This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.
+
+== Introduction
+
+This implementers' guide is a compilation of reported defects for the version 2018-03 of <<p863>>. In this edition of the guide, reported defects identified as of 2018-05 are given for:
+
+P.863
+
+The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.
+
+== Defect resolution procedure
+
+Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.
+
+[bibliography]
+== References
+
+This document refers to the following ITU-T Recommendation:
+
+* [[[p863,ITU-T P.863:2018]]]
+
+== Nomenclature
+
+In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:
+
+[%unnumbered]
+[cols="^,<"]
+|===
+h| Symbol ^h| Description
+| *_&#91;Begin Correction]_* | Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_&#91;End Correction]_* | Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.
+| *_..._* | Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.
+| _--- SPECIAL INSTRUCTIONS --- {instructions}_ | Indicates a set of special editing instructions to be followed.
+|===
+
+== Technical and editorial corrections to Recommendation P.863
+
+=== Annex B, TempAlignment.pdf
+
+_Missing statement, which rendered part of the surrounding code useless._
+
+_--- SPECIAL INSTRUCTIONS --- Insert at line 2655_
+
+&#91;Begin Correction]
+
+[source%unnumbered]
+----
+Done = true
+----
+
+&#91;End Correction]
+
+=== Annex B, TempAlignment.pdf
+
+_The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug._
+
+_--- SPECIAL INSTRUCTIONS --- Replace lines 3940 and 3941:_
+
+&#91;Begin Correction]
+
+_--- SPECIAL INSTRUCTIONS --- Old Description_ 
+
+[source%unnumbered]
+----
+mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples
+----
+
+_--- SPECIAL INSTRUCTIONS --- New Description_
+
+[source%unnumbered]
+----
+mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples
+----
+
+&#91;End Correction]
+
+=== Annex B, TempAlignment.pdf
+
+_The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence._
+
+_--- SPECIAL INSTRUCTIONS --- Modify lines 5092 to 5102:_
+
+&#91;Begin Correction]
+
+_--- SPECIAL INSTRUCTIONS --- Old Description_
+
+[source%unnumbered]
+----
+for (utt=0 utt<NumberOfUtterances-1 utt++)
+      {
+      if (pStartSampleUtterance[utt+1]-pStopSampleUtterance[utt] < 0.1*mProcessData.mSamplerate)
+           {
+            bool IsInsideActiveSection = true
+            while(LastUsedReparsePoint<NumReparsePoints-1 && pStartSampleUtterance[utt+1]>ReparsePoints[LastUsedReparsePoint].Deg.End)
+                  LastUsedReparsePoint++
+            if (pStartSampleUtterance[utt+1]<ReparsePoints[LastUsedReparsePoint].Deg.Start)
+                IsInsideActiveSection = false
+
+                if ((!IsInsideActiveSection &&
+----
+
+_--- SPECIAL INSTRUCTIONS --- New Description_
+
+[source%unnumbered]
+----
+for (utt=0 utt<NumberOfUtterances-1 utt++)
+     {
+        bool IsInsideActiveSection1 = true
+        bool IsInsideActiveSection2 = true
+        while(LastUsedReparsePoint<NumReparsePoints-1 && pStartSampleUtterance[utt]>ReparsePoints[LastUsedReparsePoint].Deg.End)
+            LastUsedReparsePoint++
+        if (pStartSampleUtterance[utt]<ReparsePoints[LastUsedReparsePoint].Deg.Start && pStopSampleUtterance[utt]<ReparsePoints[LastUsedReparsePoint].Deg.Start)
+            IsInsideActiveSection1 = false
+
+        int ReparsePoint2 = LastUsedReparsePoint
+        while(ReparsePoint2<NumReparsePoints-1 && pStartSampleUtterance[utt+1]>ReparsePoints[ReparsePoint2].Deg.End)
+            ReparsePoint2++
+        if (pStartSampleUtterance[utt+1]<ReparsePoints[LastUsedReparsePoint].Deg.Start && pStopSampleUtterance[utt+1]<ReparsePoints[ReparsePoint2].Deg.Start)
+            IsInsideActiveSection2 = false
+
+        if (ReparsePoint2==LastUsedReparsePoint && (IsInsideActiveSection1 && IsInsideActiveSection2) || (!IsInsideActiveSection1 && !IsInsideActiveSection2))
+        {
+            if ((!IsInsideActiveSection1 &&
+----
+
+_&#91;End Correction]_
+
+=== Annex B, TimeAlign.pdf
+
+_When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same._
+
+_--- SPECIAL INSTRUCTIONS --- replace line 878_
+
+&#91;Begin Correction]
+
+_--- SPECIAL INSTRUCTIONS --- Old Description_
+
+[source%unnumbered]
+----
+pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)
+----
+
+_--- SPECIAL INSTRUCTIONS --- New Description_
+
+[source%unnumbered]
+----
+pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);
+----
+
+&#91;End Correction]
+
+=== Annex B, SpeechTempAlign.pdf
+
+_Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier._
+
+_--- SPECIAL INSTRUCTIONS --- Insert at line 1439_
+
+&#91;Begin Correction]
+
+[source%unnumbered]
+----
+if (*NoiseLevelSilence<0.125) *NoiseLevelSilence = 0.125
+----
+
+&#91;End Correction]
+
+=== Annex B, TempAlignment.pdf
+
+_Avoid calculating correlation for signal segments which do not contain speech._
+
+_--- SPECIAL INSTRUCTIONS --- replace line 5146_
+
+&#91;Begin Correction]
+
+_--- SPECIAL INSTRUCTIONS --- Old Description_
+
+[source%unnumbered]
+----
+int Delay = FindSectionAInSectionB(&SecA, &SecB, &RefSig, &DegSig, 0, 1, 1, 2*MaxLagSamples);
+----
+
+_--- SPECIAL INSTRUCTIONS --- New Description_
+
+[source%unnumbered]
+----
+int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
+int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);
+int FrameNum = FrameNumStart;
+bool ActiveSeg = false;
+while ((!ActiveSeg) && (FrameNum<=FrameNumEnd) && (FrameNum>=FrameNumStart) && (FrameNum<ActiveFramesLen))
+{
+      ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];
+      FrameNum++;
+}
+if (!ActiveSeg)
+      continue;
+int Delay = 0;
+Delay = FindSectionAInSectionB(&SecA, &SecB, &RefSig, &DegSig, 0, 1, 1, 2*MaxLagSamples);
+----
+
+&#91;End Correction]
+
+=== Annex A, subfolder Results Ed. 3
+
+_The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file._
+
+_--- SPECIAL INSTRUCTIONS --- Replace subfolder in Annex A_
+
+&#91;Begin Correction]
+
+_--- SPECIAL INSTRUCTIONS --- Old Subfolder_
+
+[source%unnumbered]
+----
+Results Ed. 3
+----
+
+_--- SPECIAL INSTRUCTIONS --- New Subfolder_
+
+[source%unnumbered]
+----
+Results Ed. 3 - IG 2018-05
+----
+
+&#91;End Correction]
+
+=== Annex B - additional info
+
+NOTE: The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.
+
+[appendix,obligation=normative]
+== P.863 (2018-03) Defect Report Form
+
+[%unnumbered]
+|===
+| DATE: |
+a| CONTACT INFORMATION +
+NAME: +
+COMPANY: +
+ADDRESS: +
+TEL: +
+FAX: +
+E-MAIL: |
+| AFFECTED RECOMMENDATIONS: |
+| DESCRIPTION OF PROBLEM: |
+| SUGGESTIONS FOR RESOLUTION: |
+|===
+
+NOTE: Attach additional pages if more space is required than is provided above.
