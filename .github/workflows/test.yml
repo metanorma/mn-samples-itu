@@ -26,21 +26,25 @@ jobs:
             os: 'macos-latest'
             experimental: true
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
         with:
           token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
           submodules: true
-
-      - uses: ruby/setup-ruby@v1
+      - name: Use Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-
-      - uses: actions/setup-python@v1
+      
+      - name: Use Python
+        uses: actions/setup-python@v1
         with:
           python-version: '3.6'
           architecture: 'x64'
 
-      - run: pip install xml2rfc
+      - name: Install xml2rfc
+        run: |
+          pip install xml2rfc
 
       - name: Install metanorma
         shell: python
@@ -61,4 +65,4 @@ jobs:
           os.system("gem install specific_install")
           os.system("gem specific_install -l https://github.com/{}.git -b {}".format(repo, branch))
 
-      - run: metanorma site generate sources -c sources/collection.yml
+      - run: metanorma site generate . -o published -c metanorma.yml --agree-to-terms
