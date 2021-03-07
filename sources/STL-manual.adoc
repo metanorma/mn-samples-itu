@@ -313,7 +313,7 @@ For the so-called _little-endian_ systems, the first byte read from a multi-byte
 
 The concept is extended to other multi-byte data structures, such as 32-bit or 64-bit integers. For example, the consecutive bytes `0x12`, `0x34`, `0x56`, and `0x78` would be loaded as the 32-bit integer `0x78563412` on the accumulator of a big-endian CPU and as `0x12345678` on the accumulator of a little-endian CPU.
 
-[[tbl:known-endian]]
+[[tbl-known-endian]]
 .Example of big- and little-endian systems
 |===
 2+^.^| Big-endian 2+^.^| Little-endian
@@ -330,7 +330,7 @@ CISC: Complex Instruction Set Computer +
 RISC: Reduced Instruction Set Computer
 |===
 
-<<tbl:known-endian>> indicates the data organization for several computer platforms. It should be noted that the data organization is a function of the CPU family rather than of the operating system used. For example, Solaris on Sparc platforms uses big-endian data organization, while Solaris on Intel 80x86/Pentium platforms uses little-endian data organization. Similarly, most Linux systems are little-endian (because they run on Intel 80x86/Pentium CPUs), but several other implementations are actually big-endian (e.g. PowerPC CPU used in Macintosh machines).
+<<tbl-known-endian>> indicates the data organization for several computer platforms. It should be noted that the data organization is a function of the CPU family rather than of the operating system used. For example, Solaris on Sparc platforms uses big-endian data organization, while Solaris on Intel 80x86/Pentium platforms uses little-endian data organization. Similarly, most Linux systems are little-endian (because they run on Intel 80x86/Pentium CPUs), but several other implementations are actually big-endian (e.g. PowerPC CPU used in Macintosh machines).
 
 The segment of C code in <<find-big-ltl-end>> can be used to determine whether a given computer system has big- or little-endian data organization.
 
@@ -364,7 +364,7 @@ void main()
 
 The approach above determines whether a platform is big- or little-endian, but it does not answer the question of what is the byte orientation in a given file. Although there is no closed-form method for such a determination, there is an empirical method that can be carefully used for speech signals (usually represented using 16-bit linear PCM words) based on two speech properties: speech signals follow a gamma distribution (hence most of the samples have small amplitude), and levels in voiced segments are usually in the -15 dBov through -40 dBov range. For files that have a byte orientation mismatching that of the computer platform, the mostly small samples of the speech signal will be measured as having large amplitude. Hence, if a high-level power is found when measuring the power of a voiced segment (typically around -4 dBov), one can assume that the file needs to be byte-swapped. It is important however to measure the level for _voiced segments_, since for silent intervals the increase in gain is not so dramatic and will not allow for a conclusion on the byte-orientation of the file.
 
-When the change of format is necessary for `short` and `long` data, the operations in <<fig:cvt-big-ltl-end>> should be used. The conversion between big- and little-endian data representation for 16-bit data is simple and is known as _byte swapping_. The byte swapping operation can be implemented in several fashions. For example,
+When the change of format is necessary for `short` and `long` data, the operations in <<fig-cvt-big-ltl-end>> should be used. The conversion between big- and little-endian data representation for 16-bit data is simple and is known as _byte swapping_. The byte swapping operation can be implemented in several fashions. For example,
 
 [%unnumbered]
 [source,c]
@@ -375,14 +375,14 @@ short swap_one_short(short in)
 }
 ----
 
-[[fig:cvt-big-ltl-end]]
+[[fig-cvt-big-ltl-end]]
 .Conversion between big- and little-endian
 ====
-[[fig:cvt-big-ltl-enda]]
+[[fig-cvt-big-ltl-enda]]
 .Conversion between little− and big−endian for 32−bit data
 image::image2-3a.png[]
 
-[[fig:cvt-big-ltl-endb]]
+[[fig-cvt-big-ltl-endb]]
 .Conversion between little− and big−endian for 16−bit data
 image::image2-3b.png[]
 ====
@@ -1115,7 +1115,7 @@ This block is also unique to the decoder. It has been devised in order to preven
 
 ==== Extension for linear input and output signals
 
-An extension of the G.726 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <<G.726:LinearIO>>.
+An extension of the G.726 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <<G726-LinearIO>>.
 
 This extension bypasses the PCM format conversion block for linear input signals, and both the Output PCM Format Conversion and the Synchronous Coding Adjustment blocks, for linear output signals. These linear versions of the input and output signals are 14-bit, 2's complement samples.
 
@@ -1279,7 +1279,7 @@ Two programs are provided as demonstration programs for the G.726 module, g726de
 
 Program `g726demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by g711demo.c) and encodes and/or decodes using one of the G.726 bit rates (16, 24, 32, or 40 kbit/s). Linear PCM files are not accepted by the program. Three operations are possible: logarithmic in, logarithmic out (_lolo_) logarithmic in, ADPCM out (_load_), or ADPCM in, logarithmic out (_adlo_).
 
-Program `vbr-g726.c` can perform the same functions as `g726demo.c`, however it is capable of two additional features. It can perform in variable bit rate mode, which is switched at user-specified frame sizes (i.e. number of samples), and it can operate from 16-bit linear PCM input files. In the latter case, A-law is used to compand the linear signal prior to G.726 encoding, since G.726 Annex A <<G.726:LinearIO>> is not yet implemented in the STL.
+Program `vbr-g726.c` can perform the same functions as `g726demo.c`, however it is capable of two additional features. It can perform in variable bit rate mode, which is switched at user-specified frame sizes (i.e. number of samples), and it can operate from 16-bit linear PCM input files. In the latter case, A-law is used to compand the linear signal prior to G.726 encoding, since G.726 Annex A <<G726-LinearIO>> is not yet implemented in the STL.
 
 ==== Simple example
 
@@ -1342,12 +1342,12 @@ void main(argc, argv)
 
 === Description of the Embedded ADPCM
 
-The G.727 algorithm is specified in Recommendation ITU-T G.727 <<G.727>> with the block diagram shown in <<fig:G.727>>, and will not be further described here. Additional information can be found in <<ADPCM-Tech-Report>>, where a thorough comparison is made between different ADPCM schemes, including G.726 and G.727. Details on the linear interface for the G.727 algorithm are found in G.727 Annex A <<G.727:LinearIO>>.
+The G.727 algorithm is specified in Recommendation ITU-T G.727 <<G.727>> with the block diagram shown in <<fig-G727>>, and will not be further described here. Additional information can be found in <<ADPCM-Tech-Report>>, where a thorough comparison is made between different ADPCM schemes, including G.726 and G.727. Details on the linear interface for the G.727 algorithm are found in G.727 Annex A <<G727-LinearIO>>.
 
 
 ==== Extension for linear input and output signals
 
-An extension of the G.727 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <<G.727:LinearIO>>.
+An extension of the G.727 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <<G727-LinearIO>>.
 
 This extension bypasses the PCM format conversion block for linear input signals, and both the Output PCM Format Conversion and the Synchronous Coding Adjustment blocks, for linear output signals. These linear versions of the input and output signals are 14-bit, 2's complement samples.
 
@@ -1355,14 +1355,14 @@ The effect of removing the PCM encoding and decoding is to decrease the coding d
 
 Currently, this extension has not been incorporated in the STL.
 
-[[fig:G.727]]
+[[fig-G727]]
 .G.727 encoder and decoder block diagrams
 ====
-[[fig:G.727a]]
+[[fig-G727a]]
 .Encoder
 image::image6-1a.png[]
 
-[[fig:G.727b]]
+[[fig-G727b]]
 .Decoder
 image::image6-1b.png[]
 ====
@@ -1483,7 +1483,7 @@ These routines have been tested in in MS-DOS with Turbo C++ v1.0 (16-bit mode) a
 
 One program is provided as demonstration program for the G.727 module, g727demo.c.
 
-Program `g727demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by g711demo.c) and encodes and/or decodes using the G.727 algorithm for the user-specified number of stem:[N_c] core bits and stem:[N_e] enhancement bits. The effective encoding bitrate will then be stem:[16 xx (N_c+N_e)] kbit/s. Linear PCM files are not accepted by the program, since G.727 Annex A <<G.727:LinearIO>> is not yet implemented in the STL. Three operations are possible: logarithmic in, logarithmic out (default) logarithmic in, ADPCM out (option _-enc_), or ADPCM in, logarithmic out (option _-dec_).
+Program `g727demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by g711demo.c) and encodes and/or decodes using the G.727 algorithm for the user-specified number of stem:[N_c] core bits and stem:[N_e] enhancement bits. The effective encoding bitrate will then be stem:[16 xx (N_c+N_e)] kbit/s. Linear PCM files are not accepted by the program, since G.727 Annex A <<G727-LinearIO>> is not yet implemented in the STL. Three operations are possible: logarithmic in, logarithmic out (default) logarithmic in, ADPCM out (option _-enc_), or ADPCM in, logarithmic out (option _-dec_).
 
 ==== Simple example
 
@@ -1551,15 +1551,15 @@ CCITT, the predecessor of ITU-T, started an effort in 1985 to define a successor
 
 The process to identify the performance requirements and objectives (usually referred to as "Terms of Reference", or ToR) for the 16 kbit/s speech coder started in 1985 and lasted until about 1990. The process to identify suitable algorithms and their tests, after the creation of a group of experts in June 1988, started in March 1989, with two potential candidates: one from BNR (Canada) <<BNR-coder>> and another from AT&T (USA) <<LD-CELP-1>>. In 1989, BNR withdrew <<BNR-Letter>> its candidate, however another candidate appeared from the Consortium between a company called VoiceCraft (USA), University of California at Santa Barbara (USA) and Simon Fraser University (Canada), which would also soon withdraw <<Consort-Letter>>, <<LD-VCX-HLD>>, <<LD-VCX>>, <<LD-VCX2>>. This way, AT&T continued as the only candidate algorithm proponent in the CCITT standardization process.
 
-Its algorithm, the LD-CELP _(Low-Delay Code-Excited Linear Prediction)_, underwent two testing phases (Phase 1 in 1989-1990 and Phase 2 in 1992) that were organized by volunteers from eight organizations <<Q026>>. After tests ensuring that it met all performance requirements, the LD-CELP algorithm was approved and published as ITU-T Rec. G.728 <<G.728>>. Its simplified block diagram is found in <<fig:G728>>.
+Its algorithm, the LD-CELP _(Low-Delay Code-Excited Linear Prediction)_, underwent two testing phases (Phase 1 in 1989-1990 and Phase 2 in 1992) that were organized by volunteers from eight organizations <<Q026>>. After tests ensuring that it met all performance requirements, the LD-CELP algorithm was approved and published as ITU-T Rec. G.728 <<G.728>>. Its simplified block diagram is found in <<fig-G728>>.
 
-[[fig:G728]]
+[[fig-G728]]
 .Simplified LD-CELP block diagram
 ====
-[[fig:G728a]]
+[[fig-G728a]]
 .Encoder block diagram
 image::image7-1a.png[]
-[[fig:G728b]]
+[[fig-G728b]]
 .Decoder block diagram
 image::image7-1b.png[]
 ====
@@ -1594,7 +1594,7 @@ In the traditional CELP approach, the excitation, the LPC coefficients and gain 
 
 In the LD-CELP encoder there are three backward-adaptive structures: the LPC synthesis filter, the perceptual weighting filter and the excitation gain unit. In addition to these three structures, the decoder also has a backward adaptive post-filter.
 
-[[fig:hybwin]]
+[[fig-hybwin]]
 .LD-CELP hybrid windowing
 image::image7-2.png[]
 
@@ -1604,7 +1604,7 @@ In LD-CELP, except for the long-term post-filter in the decoder, all backward ad
 
 Normally, a Hamming window is used, but this is not appropriate for LD-CELP. The LD-CELP analysis block has only 5 samples, compared to the conventional 160 to 256 samples normally used. Hence, using a Hamming window would imply a significant overlap of windows across frames and a high computational complexity <<LD-CELP-FixedPt>>. It was noticed that in the backward adaptation context of LD-CELP, the Barnwell recursive windowing technique <<RecursWind>> gave higher prediction gains than the Hamming windowing, in addition to a higher subjective quality for the processed speech. For this reason, the LD-CELP version tested in Phase 1 of subjective assessments used a modified adaptive windowing <<LD-CELP-Phase2>>, <<LD-CELP-RecurWind>>. This way, it was possible to obtain a better quality, a more balanced computational load and a lower complexity for frequent predictor updates <<LD-CELP-Phase1>>.
 
-However, aiming at a future fixed-point implementation with minimal changes compared to the floating-point version (since interoperability was a requirement), a hybrid windowing technique was developed <<LD-CELP-FixedPt>>, <<G.728>>, with results equivalent to those of the Barnwell version {blank}footnote:[The prediction gain loss was below 0.1 dBm, a very small value.]. This was implemented in the version tested in Phase 2 of testings and today is present in G.728 (see <<fig:hybwin>>). With it, it was possible to keep the same quality (since the shape of both the hybrid and recursive windows is the same) while reducing the computational complexity between 20% and 30%. The objective was to reduce the complexity by mixing a recursive portion using the Barnwell technique with a non-recursive one, however maintaining the overall shape of the Barnwell window. The windowing was implemented such that the stem:[m] most recent samples are superimposed using the non-recursive portion of the window, and the samples previous to the stem:[m]-th sample are considering in the recursive portion of the window. This window has a characteristic that non-recursive part has a sinusoidal shape and the recursive part has a decaying exponential (so as to lessen the influence of older past samples).
+However, aiming at a future fixed-point implementation with minimal changes compared to the floating-point version (since interoperability was a requirement), a hybrid windowing technique was developed <<LD-CELP-FixedPt>>, <<G.728>>, with results equivalent to those of the Barnwell version {blank}footnote:[The prediction gain loss was below 0.1 dBm, a very small value.]. This was implemented in the version tested in Phase 2 of testings and today is present in G.728 (see <<fig-hybwin>>). With it, it was possible to keep the same quality (since the shape of both the hybrid and recursive windows is the same) while reducing the computational complexity between 20% and 30%. The objective was to reduce the complexity by mixing a recursive portion using the Barnwell technique with a non-recursive one, however maintaining the overall shape of the Barnwell window. The windowing was implemented such that the stem:[m] most recent samples are superimposed using the non-recursive portion of the window, and the samples previous to the stem:[m]-th sample are considering in the recursive portion of the window. This window has a characteristic that non-recursive part has a sinusoidal shape and the recursive part has a decaying exponential (so as to lessen the influence of older past samples).
 
 In terms of equations <<G.728>>, <<LD-CELP-Phase2>>, the hybrid window
 stem:[w_m(k)] is defined by:
@@ -1754,11 +1754,11 @@ The effect of the expansion is to move the predictor poles inside the unity circ
 
 Since LD-CELP is an algorithm also designed for use in the PSTN, the input and output signal representation follows the ITU-T Rec. G.711 format (either A or stem:[mu] law) {blank}footnote:[For the implementation verification and interoperability purposes (see G.728 Appendix I), however, the input signal format must be linear. Therefore, the stem:[A text(/) mu]-law compression and expansion blocks must be bypassed.].
 
-Since the internal algorithm operations are performed in linear PCM format, the first block in <<fig:G728a>> consists in the expansion of the log-PCM samples into linear format; complimentary, the last block in <<fig:G728b>>, after all decoding processing, does the compression of the linear samples into the selected log-PCM law.
+Since the internal algorithm operations are performed in linear PCM format, the first block in <<fig-G728a>> consists in the expansion of the log-PCM samples into linear format; complimentary, the last block in <<fig-G728b>>, after all decoding processing, does the compression of the linear samples into the selected log-PCM law.
 
 === Encoder structures
 
-In the following, the LD-CELP encoder blocks are described, as illustrated in <<fig:G728a>>.
+In the following, the LD-CELP encoder blocks are described, as illustrated in <<fig-G728a>>.
 
 ==== LPC synthesis filter
 
@@ -1792,13 +1792,13 @@ and stem:[q_i] are the quantized LPC coefficients and stem:[M] is the LPC predic
 
 Its function is to model the spectral envelope of the error signal, so that it becomes similar to the spectrum of the input voice signal, this way masking the distortion which, without this weighting, could be perceived by the user. By using the weighted error signal to select the codevector, this codevector will be the one that, on the decoder, will produce the lowest quantization noise perceived by the user, increasing in the decoder the subjective quality <<Expl-WeigFilt>>.
 
-For CELP coders, (stem:[gamma_1,gamma_2=(1.0,0.8)] are normally used. In LD-CELP Phase 1 and 2, stem:[(gamma_1,gamma_2)=(0.9,0.4)] and stem:[(gamma_1,gamma_2)=(0.9,0.6)] were used, respectively, what resulted in a lower perceived noise level. Parameter stem:[gamma_2] was changed to allow the codec to meet the three transcoding requirement, condition for which the codec had failed the performance requirement in Phase 1 <<LD-CELP:Exp2-Phase1>>.
+For CELP coders, (stem:[gamma_1,gamma_2=(1.0,0.8)] are normally used. In LD-CELP Phase 1 and 2, stem:[(gamma_1,gamma_2)=(0.9,0.4)] and stem:[(gamma_1,gamma_2)=(0.9,0.6)] were used, respectively, what resulted in a lower perceived noise level. Parameter stem:[gamma_2] was changed to allow the codec to meet the three transcoding requirement, condition for which the codec had failed the performance requirement in Phase 1 <<LD-CELP-Exp2-Phase1>>.
 
 The predictor order stem:[M] was set here to 10 to avoid artifacts {blank}footnote:[_Artifacts_ denote here instabilities with quasi-periodic signals with long duration (more than 2 to 3 seconds), as happens with artificial voice signals (ITU-T Rec. P.50), some types of musical passages, e.g. sustained violin sound, or sustained vocalic sounds, e.g., `/a/`. These instabilities are reproduced as a change in the sound timbre this reducing the subjective quality.] that appeared with the use of higher order filters (e.g. 50, as in the synthesis filter). To compensate for the low order, instead of using a sub-set of the main predictor coefficients (which in principle could be the same computational structure), an independent predictor is applied on the input signal (noting that the main predictor operates on the quantized samples). This is justified by two facts: since the perceptual weighting is not necessary on the decoder, nothing obliges the prediction to be made on the quantized signal; and (more importantly) the use of the original signal allows the more precise calculation of the spectral envelope.
 
 ==== Search of optimal excitation codevector
 
-For each sample vector stem:[s(n)], a search is made to find which of the 1024 codevectors generates the lowest (perceptually weighted) average quadratic error. The selected codevector has its index transmitted to the decoder and is fed back to the adaptive part of the encoder (a replica of the decoder inside the encoder), to be used as excitation for the synthesis filter. An efficient search algorithm was selected for the LD-CELP algorithm <<LD-CELP-Phase1:HQLD>>, <<LD-CELP-Phase1:Globecom>>, which is described in detail in the Recommendation <<G.728>>.
+For each sample vector stem:[s(n)], a search is made to find which of the 1024 codevectors generates the lowest (perceptually weighted) average quadratic error. The selected codevector has its index transmitted to the decoder and is fed back to the adaptive part of the encoder (a replica of the decoder inside the encoder), to be used as excitation for the synthesis filter. An efficient search algorithm was selected for the LD-CELP algorithm <<LD-CELP-Phase1-HQLD>>, <<LD-CELP-Phase1-Globecom>>, which is described in detail in the Recommendation <<G.728>>.
 
 ==== Denormalizing quantized excitation
 
@@ -1851,7 +1851,7 @@ The LPC predictor coefficients for the synthesis filter are adapted using the qu
 
 === Decoder structures
 
-The decoder structure is found in <<fig:G728b>>. The blocks that are identical to ones in the encoder will not be described again. The few blocks unique to the decoder are described in the following.
+The decoder structure is found in <<fig-G728b>>. The blocks that are identical to ones in the encoder will not be described again. The few blocks unique to the decoder are described in the following.
 
 ==== Post-filter and its adaptation
 
@@ -1897,9 +1897,9 @@ mu = overset(~)(gamma)_3k_1
 
 and stem:[overset(~)(gamma)_1], stem:[overset(~)(gamma)_2] and stem:[overset(~)(gamma)_3] are constants, stem:[a_i] are the LPC coefficients, stem:[M] is the predictor order and stem:[k_1] is the first reflection coefficient.
 
-It should be noted that the high-pass filter is implemented with an adaptive coefficient, the reflection coefficient stem:[k_1]. Therefore, the filter characteristics might not always be that of a high-pass. Long-term speech statistics measurements at the time of development of the algorithm using about 10 minutes of speech showed that stem:[k_1<0] for major part of time (around 92%) (see <<fig:distr-k1>>), thus guaranteeing that filter is a high-pass for the most part of the of the input signals.
+It should be noted that the high-pass filter is implemented with an adaptive coefficient, the reflection coefficient stem:[k_1]. Therefore, the filter characteristics might not always be that of a high-pass. Long-term speech statistics measurements at the time of development of the algorithm using about 10 minutes of speech showed that stem:[k_1<0] for major part of time (around 92%) (see <<fig-distr-k1>>), thus guaranteeing that filter is a high-pass for the most part of the of the input signals.
 
-[[fig:distr-k1]]
+[[fig-distr-k1]]
 .Histogram of stem:[k_1] values for 10 minutes of speech
 image::image7-3.png[]
 
@@ -2156,9 +2156,9 @@ The source code for the fixed-point version of G.728 resides in the directory `g
 
 The fixed-point G.728 algorithm internally uses double precision floating-point arithmetic to simulate some fixed-point operations. At the time this simulation was written, this sped up the run-time and allowed the coder to run in real-time on early Pentium-based computers. With today's 64 bit integer machines and faster processors, there are likely to be better alternatives for simulating accumulator guard bits. The fixed-point simulation code should generate bit-exact output for all the test vectors.
 
-Rather than repeating the interface presented in the floating-point section, the <<tbl:G728-FX-FL>> lists the differences between the fixed-point and floating-point versions.
+Rather than repeating the interface presented in the floating-point section, the <<tbl-G728-FX-FL>> lists the differences between the fixed-point and floating-point versions.
 
-[[tbl:G728-FX-FL]]
+[[tbl-G728-FX-FL]]
 .Differences between G.728 fixed-point and floating-point versions
 [cols="3*^"]
 |===
@@ -2271,13 +2271,13 @@ With the emergence of ISDN networks offering digital connectivity at 64 kbit/s b
 
 An expert group was created in November 1983 whose mandate was to define a standard for 7 kHz speech coding within 64 kbit/s. After many contributions received from several organisations, it has been decided to choose a coder which combined subband filtering and adaptive differential pulse-code modulation algorithms (SB-ADPCM). The final recommendation was produced in March 1986 and approved in July 1986 by the then CCITT SG XVIII as Recommendation ITU-T G.722 <<G.722>>.
 
-The full description on the implementation of the G.722 algorithm is found in <<G.722>>, and network aspects related to its operation are found in <<G.725>>. <<fig:G.722-systemic>> summarizes some systemic aspects of the G.722 algorithm. Overview and notes on the development of the G.722 algorithm can be found in several papers <<G.722:General>>, <<G.722:Overview>>, <<G.722:SubjTest>>, <<G.722:Implementation>>, <<G.722:Modes>>, <<G.722:Applications>>. The following description of the G.722 algorithm is based on the text in <<G.722:Summary>>.
+The full description on the implementation of the G.722 algorithm is found in <<G.722>>, and network aspects related to its operation are found in <<G.725>>. <<fig-G722-systemic>> summarizes some systemic aspects of the G.722 algorithm. Overview and notes on the development of the G.722 algorithm can be found in several papers <<G722-General>>, <<G722-Overview>>, <<G722-SubjTest>>, <<G722-Implementation>>, <<G722-Modes>>, <<G722-Applications>>. The following description of the G.722 algorithm is based on the text in <<G722-Summary>>.
 
-In 2006, upon ETSI DECT request, packet loss concealment (PLC) procedures for G.722 were standardized to ensure a sufficient robustness over the DECT wireless interface. ITU-T G.722 at 64 kbit/s codec is the mandatory coder in ETSI New Generation DECT (NG-DECT) standards (ETSI TS 102 527-1 and -3) <<G.722:ETSITS102527-1>>, <<G.722:ETSITS102527-3>>. These standards are intended for wideband audio enabled devices to be connected on VoIP networks.
+In 2006, upon ETSI DECT request, packet loss concealment (PLC) procedures for G.722 were standardized to ensure a sufficient robustness over the DECT wireless interface. ITU-T G.722 at 64 kbit/s codec is the mandatory coder in ETSI New Generation DECT (NG-DECT) standards (ETSI TS 102 527-1 and -3) <<G722-ETSITS102527-1>>, <<G722-ETSITS102527-3>>. These standards are intended for wideband audio enabled devices to be connected on VoIP networks.
 
 In the above mentioned PLC standardization, G.722 software tool was updated. Originally, the ITU-T G.722 algorithm used its own binary bit stream format without synchronism headers; this made almost impossible to apply frame errors. In the STL 2009, G.722 codec software tool was made compliant with G.192 bitstream format and EID-XOR/G.192 style of frame and bit error application to G.722 is enabled. At the same time, STL basic operators and complexity counters were introduced. Furthermore, the standalone decoder tool now includes basic reference Packet Loss Concealment functionality.
 
-[[fig:G.722-systemic]]
+[[fig-G722-systemic]]
 .G.722 encoder and decoder block diagrams
 image::image8-1.png[]
 
@@ -2303,12 +2303,12 @@ image::image8-1.png[]
 
 In order to improve the transmitted speech quality, the input signal has to be converted after antialiasing filtering by an analog-to-digital (A/D) converter operating at 16 kHz sampling rate and with a resolution of at least 14 uniform PCM bits. Similarly, at the receive side, a digital-to-analog (D/A) converter operating at 16 kHz sampling rate and with a resolution of at least 14 uniform PCM bits should be used. The specifications of the transmission characteristics of the audio parts suited for the G.722 algorithm are described in the Recommendation. Some flexibility of the output bit rate was implemented to allow the opening of an auxiliary data channel within the 64 kbit/s channel.
 
-[[G722:descr-encoder]]
+[[G722-descr-encoder]]
 ==== Functional description of the SB-ADPCM encoder
 
-<<G722:encoder>> shows block diagram of the SB-ADPCM encoder which comprises the following main blocks.
+<<G722-encoder>> shows block diagram of the SB-ADPCM encoder which comprises the following main blocks.
 
-[[G722:encoder]]
+[[G722-encoder]]
 .Block diagram of the SB-ADPCM encoder
 image::image8-2.png[]
 
@@ -2318,10 +2318,10 @@ The input signal stem:[X_(text(in))] is first filtered by two quadrature mirror 
 
 ===== Lower subband ADPCM encoder
 
-<<G722:low-encoder>> gives block diagram of the lower subband ADPCM encoder. To transmit the lower band, the encoder was designed to operate at 6, 5 or 4 bits per sample, corresponding to 48, 40 or 32 kbit/s, respectively. The ADPCM algorithm is very similar to the embedded ADPCM algorithm of Recommendation ITU-T G.727 <<G.727>>. It is an embedded ADPCM with 4 core bits and 2 additional bits. The embedded property was introduced to prevent degradation in speech quality when the encoder and the decoder operate during short intervals in different modes.
+<<G722-low-encoder>> gives block diagram of the lower subband ADPCM encoder. To transmit the lower band, the encoder was designed to operate at 6, 5 or 4 bits per sample, corresponding to 48, 40 or 32 kbit/s, respectively. The ADPCM algorithm is very similar to the embedded ADPCM algorithm of Recommendation ITU-T G.727 <<G.727>>. It is an embedded ADPCM with 4 core bits and 2 additional bits. The embedded property was introduced to prevent degradation in speech quality when the encoder and the decoder operate during short intervals in different modes.
 
 
-[[G722:low-encoder]]
+[[G722-low-encoder]]
 .Block diagram of the lower subband ADPCM encoder
 image::image8-3.png[]
 
@@ -2347,9 +2347,9 @@ The adaptive predictor structure is similar to the one used for G.727 ADPCM stan
 
 ===== Higher subband ADPCM encoder
 
-<<G722:high-encoder>> shows block diagram of the higher subband ADPCM encoder. This encoder is designed to operate at 2 bits per sample, corresponding to a fixed bitrate of 16 kbit/s. The encoder algorithm is very similar to the lower band one but with the following main differences. The quantizer is a 4-level non-linear adaptive quantizer. The higher subband ADPCM encoder is not embedded, hence the inverse quantizer uses the 2 bits in the feedback loop.
+<<G722-high-encoder>> shows block diagram of the higher subband ADPCM encoder. This encoder is designed to operate at 2 bits per sample, corresponding to a fixed bitrate of 16 kbit/s. The encoder algorithm is very similar to the lower band one but with the following main differences. The quantizer is a 4-level non-linear adaptive quantizer. The higher subband ADPCM encoder is not embedded, hence the inverse quantizer uses the 2 bits in the feedback loop.
 
-[[G722:high-encoder]]
+[[G722-high-encoder]]
 .Block diagram of the higher subband ADPCM encoder
 image::image8-4.png[]
 
@@ -2359,10 +2359,10 @@ image::image8-4.png[]
 The resulting codewords from the higher and lower subbands stem:[I_H] and stem:[I_L] are combined to obtain the output codeword stem:[I] with an octet format for transmission every 8 kHz frame resulting in 64 kbit/s. Note that the 8 kHz clock may be provided by the network as it is always done for 64 kbit/s A-law or stem:[mu]-law log-PCM (G.711) systems.
 
 
-[[G722:descr-decoder]]
+[[G722-descr-decoder]]
 ==== Functional description of the SB-ADPCM decoder
 
-<<G.722:decoder>> shows block diagram of the SB-ADPCM decoder.
+<<G722-decoder>> shows block diagram of the SB-ADPCM decoder.
 
 
 ===== Demultiplexer
@@ -2372,22 +2372,22 @@ The demultiplexer decomposes the received 64 kbit/s octet formatted signal stem:
 
 ===== Lower subband ADPCM decoder
 
-<<G.722:low-decoder>> shows a block diagram of the lower subband decoder. This decoder operates in three different modes depending on the received mode indication: 64, 56 and 48 kbit/s. The block which produces the estimate signal is identical to the feedback portion of the lower subband ADPCM encoder. The reconstructed signal stem:[r_L] is produced by adding the signal estimate to the relevant quantized difference signals stem:[d_(L,6)], stem:[d_(L,5)] or stem:[d_(L,4)], which are selected according to the received indication of the mode of operation.
+<<G722-low-decoder>> shows a block diagram of the lower subband decoder. This decoder operates in three different modes depending on the received mode indication: 64, 56 and 48 kbit/s. The block which produces the estimate signal is identical to the feedback portion of the lower subband ADPCM encoder. The reconstructed signal stem:[r_L] is produced by adding the signal estimate to the relevant quantized difference signals stem:[d_(L,6)], stem:[d_(L,5)] or stem:[d_(L,4)], which are selected according to the received indication of the mode of operation.
 
 
 ===== Higher subband ADPCM decoder
 
-This decoder (see <<G.722:high-decoder>>) is identical to the feedback portion of the higher subband ADPCM encoder described in the Section <<G722:descr-encoder>>. Here, the output is reconstructed signal stem:[r_H].
+This decoder (see <<G722-high-decoder>>) is identical to the feedback portion of the higher subband ADPCM encoder described in the Section <<G722-descr-encoder>>. Here, the output is reconstructed signal stem:[r_H].
 
-[[G.722:decoder]]
+[[G722-decoder]]
 .Block diagram of the SB-ADPCM decoder
 image::image8-5.png[]
 
-[[G.722:low-decoder]]
+[[G722-low-decoder]]
 .Block diagram of the lower subband ADPCM decoder
 image::image8-6.png[]
 
-[[G.722:high-decoder]]
+[[G722-high-decoder]]
 .Block diagram of the higher subband ADPCM decoder
 image::image8-7.png[]
 
@@ -2398,9 +2398,9 @@ The receive QMF are two reconstruction filters which interpolate the ouputs of t
 
 ==== Functional description of the basic Packet Loss Concealment functionality
 
-In 2006, basic index domain PLC functionality (zero index and frame repeat algorithms) for detected frame errors were included in the standalone decoder tool. The numbering and description of the four basic algorithms provided can be seen in <<tbl:G722StandaloneDecoder>>.
+In 2006, basic index domain PLC functionality (zero index and frame repeat algorithms) for detected frame errors were included in the standalone decoder tool. The numbering and description of the four basic algorithms provided can be seen in <<tbl-G722StandaloneDecoder>>.
 
-[[tbl:G722StandaloneDecoder]]
+[[tbl-G722StandaloneDecoder]]
 .Basic PLC algorithms supported by the G.722 standalone decoder
 |===
 | PLC algorithm number | Description of concealment action
@@ -2411,7 +2411,7 @@ decoding and synthesis operation.
 | 3 | as PLC(2), but the first (0.625 ms) bits of the first good frame after an erroneous frame are set to the value "1".
 |===
 
-The PLC actions in the G.722 standalone decoder are activated by incoming G.192 frames that do not have a valid G192_SYNC header tag. Note that in November 2006, ITU-T SG16 approved two new Appendices to G.722 for Packet Loss Concealment (PLC). These two Appendices (Appendices III and IV <<G.722:AppIII>>, <<G.722:AppIV>>) provide better quality over the basic PLC functionality included in
+The PLC actions in the G.722 standalone decoder are activated by incoming G.192 frames that do not have a valid G192_SYNC header tag. Note that in November 2006, ITU-T SG16 approved two new Appendices to G.722 for Packet Loss Concealment (PLC). These two Appendices (Appendices III and IV <<G722-AppIII>>, <<G722-AppIV>>) provide better quality over the basic PLC functionality included in
 STL.
 
 === Standalone G.192 compatible G.722 encoder and decoder tool
@@ -2420,17 +2420,17 @@ STL.
 
 As described previously, G.722 is an embedded algorithm which supports network scaling of the bitstream in three bitrates: 48, 56 and 64 kbit/s. To support this functionality within the G.192 file format the G.722 encoder writes the 16 kbit/s embedded bits in the end of every G.192 bitstream frame.
 
-For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <<fig:G722trame>>, <<fig:G722trame1>> and <<fig:G722trame2>> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <<G.722>> and as used in <<G.722:RFC3551>>).
+For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <<fig-G722trame>>, <<fig-G722trame1>> and <<fig-G722trame2>> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <<G.722>> and as used in <<G722-RFC3551>>).
 
-[[fig:G722trame]]
+[[fig-G722trame]]
 .Example of a G.192 compatible G.722 encoder output frame for a 10 ms input frame size. This frame has a length of 640 bits and a G192_SYNC (0x6B21) header tag, in the G.192 file each g722 bit is stored as a 16 bit word.
 image::image8-8.png[]
 
-[[fig:G722trame1]]
+[[fig-G722trame1]]
 .Example of a G.192 compatible G.722 56 kbit/s encoder output frame for a 5 ms input frame size. This frame has a length of 280 bits and a G192 SYNC (0x6B21) header tag.
 image::image8-9.png[]
 
-[[fig:G722trame2]]
+[[fig-G722trame2]]
 .Example of G.192 compatible G.722 48 kbit/s encoder output frame for a 20 ms input frame size. This frame has a length of 960 bits and a G192 SYNC (0x6B21) header tag.
 image::image8-10.png[]
 
@@ -2749,7 +2749,7 @@ In 1988, the Groupe Special Mobile of the Conference Europeéne des Postes et Te
 
 The current version of the STL includes a RPE-LTP implementation based on a freely available implementation originally produced at the Technical Institue of the University of Berlin, for a Unix environment. This code has been adapted, corrected to work on several platforms, and tested with the recommended test vectors, all properly processed.
 
-Details on the algorithm can be found in several references <<RPELTP:BasicConcept>>, <<RPELTP:ICASSP88>>, <<RPELTP:SpeechCommunication>>, besides the Recommendation itself <<GSM-06.10>>.
+Details on the algorithm can be found in several references <<RPELTP-BasicConcept>>, <<RPELTP-ICASSP88>>, <<RPELTP-SpeechCommunication>>, besides the Recommendation itself <<GSM-06.10>>.
 
 [[principles]]
 === Description of the 13 kbit/s RPE-LTP algorithm
@@ -2805,12 +2805,12 @@ _msr_:: Post-processing parameter
 _verbose_:: Flag used only if compiled with NDEBUG==0
 _fast_:: Enables fast but inaccurate computation. Does not properly process the test sequences with this mode turned on.
 
-<<RPE:bitstream>> presents the RPE-LTP encoder output parameters in order of occurence, with parameters defined in <<GSM-06.10>>. It should be noted that the bitstream file generated by the STL implementation of the RPE-LTP algorithm uses an unpacked format, as other codecs in the STL. Therefore, each of the 76 parameters indicated in <<RPE:bitstream>> occupy an unsigned, right-adjusted 16-bit word. Unlikely to the G.711 and G.726 algorithms, however, the number of significant bits per bitstream parameter is not the same for all the parameters, as can be seen from the table. An important implication is that the STL bit error insertion routines cannot be applied directly to the bitstream generated by the STL RPE-LTP encoder. This limitation is not a function of the EID module itself, but of the serialization and parallelization (S/P) routines `serialize_*` and `parallize_*` implemented in the Utility module, which are able only to handle bitstreams that have the same number of valid bits per sample. Solution to this problem still needs to be implemented in the STL. It should be noted however that, since the full-rate GSM channel coding is not implemented in the STL, bit error insertion directly in the unprotected RPE-LTP bitstream will generally not be used. Should the user need bit error insertion in the unprotected RPE-LTP bitstream, there are two possible solutions:
+<<RPE-bitstream>> presents the RPE-LTP encoder output parameters in order of occurence, with parameters defined in <<GSM-06.10>>. It should be noted that the bitstream file generated by the STL implementation of the RPE-LTP algorithm uses an unpacked format, as other codecs in the STL. Therefore, each of the 76 parameters indicated in <<RPE-bitstream>> occupy an unsigned, right-adjusted 16-bit word. Unlikely to the G.711 and G.726 algorithms, however, the number of significant bits per bitstream parameter is not the same for all the parameters, as can be seen from the table. An important implication is that the STL bit error insertion routines cannot be applied directly to the bitstream generated by the STL RPE-LTP encoder. This limitation is not a function of the EID module itself, but of the serialization and parallelization (S/P) routines `serialize_*` and `parallize_*` implemented in the Utility module, which are able only to handle bitstreams that have the same number of valid bits per sample. Solution to this problem still needs to be implemented in the STL. It should be noted however that, since the full-rate GSM channel coding is not implemented in the STL, bit error insertion directly in the unprotected RPE-LTP bitstream will generally not be used. Should the user need bit error insertion in the unprotected RPE-LTP bitstream, there are two possible solutions:
 
 * it will be necessary to pack the bits for each parameter in such a way that, as seen by the S/P routines, each sample in the packed bitstream will have a constant number of valid bits per bitstream sample. Since there are 260 (stem:[4 xx 5 xx 13]) bits for each frame, possible combinations are packed bitstreams with 65 16-bit words, of which the lower 4 bits are meaningful, or with 20 16-bit words, of which the lower 13 bits are meaningful. The former is preferred, despite the longer files generated.
 * the user may modify the demonstration program to generate or accept (depending on whether it is an encoding or decoding operation) a serial bitstream format, as understood by the EID module, instead of a parallel bitstream format.
 
-[[RPE:bitstream]]
+[[RPE-bitstream]]
 .RPE-LTP bitstream format for each 20 ms speech frame.
 |===
 ^.^h| Parameter ^.^h| Parameter Number ^.^h| Number of Bits
@@ -2863,7 +2863,7 @@ _fast_:: Enables fast but inaccurate computation. Does not properly process the 
 
 From the users' perspective, the encoding function is `rpeltp_encode`, and the decoding function is `rpeltp_decode`. Before using these functions, the state variable for either the encoder or the decoder must be initialized by `rpeltp_init`. It should be noted that encoder and decoder need individual state variables to work properly. After all the processing is performed, the memory allocated for the state variables can be freed by calling `rpeltp_delete`. The following sub-sections describe these four entry functions for the STL RPE-LTP module.
 
-[[sec:rpeencode]]
+[[sec-rpeencode]]
 ==== `rpeltp_encode`
 
 *Syntax:*
@@ -2892,7 +2892,7 @@ _rpe_frame_:: Is the encoded sample buffer. Each `short` sample will contain the
 
 *Return value:* None.
 
-[[sec:rpedecode]]
+[[sec-rpedecode]]
 ==== `rpeltp_decode`
 
 *Syntax:*
@@ -2981,7 +2981,7 @@ This routine has been tested in VAX/VMS with VAX-C and gcc, in the PC with Borla
 
 One program is provided as demonstration program for the RPE-LTP module, rpedemo.c.
 
-Program `rpedemo.c` accepts input files in either 16-bit linear PCM format, 16-bit, right-justified A-law format, or 16-bit, right-justified stem:[mu]-law format for the encoding operation. The output of the decoder can also be in any of these formats, but it will have the same format as the encoding operation if encoding and decoding is performed in a single pass (default). If the encoding and decoding operations are performed in separate steps, the format of the output signal does not need to match the format of the original linear PCM signal. The encoder output and decoder input are signals in 16-bit, right-justified samples, as described before in Sections <<sec:rpeencode>> and <<sec:rpedecode>>. Three operations are possible: encode and decode in a single pass (default), encode-only (option _-enc_), or decode-only (option _-dec_).
+Program `rpedemo.c` accepts input files in either 16-bit linear PCM format, 16-bit, right-justified A-law format, or 16-bit, right-justified stem:[mu]-law format for the encoding operation. The output of the decoder can also be in any of these formats, but it will have the same format as the encoding operation if encoding and decoding is performed in a single pass (default). If the encoding and decoding operations are performed in separate steps, the format of the output signal does not need to match the format of the original linear PCM signal. The encoder output and decoder input are signals in 16-bit, right-justified samples, as described before in Sections <<sec-rpeencode>> and <<sec-rpedecode>>. Three operations are possible: encode and decode in a single pass (default), encode-only (option _-enc_), or decode-only (option _-dec_).
 
 ==== Simple example
 
@@ -3089,13 +3089,13 @@ h(k)=h(N-1-k) text(, for   ) k=0..N-1
 
 ===== IRS weighting
 
-The IRS weighting corresponds to a bandpass filtering characteristic whose mask can be found in Recommendation ITU-T P.48 <<P.48>>. The send and receive spectral shapes of the IRS weighting were obtained in a round-robin series of measurements made on a number of analog telephones in the early 1970's <<BNR-ModIRS>>. From these measurements, the average send and receive frequency-response characteristics were derived. However, for the loudness balance purposes for which the IRS was designed, it was also necessary to include a 300-3400 Hz bandpass filter, known as the SRAEN _(Système de Référence pour la détermination de l'Affablissement équivalent pour la Netteté; Reference System for determining Articulation Ratings)_ filter <<P.11>>, <<G.111>>. The values of send and receive sensitivity currently given in ITU-T Rec. P.48 (columns 2 and 3 in <<tbl:IRS>>) are therefore composed of the average send and receive responses for a number of telephones, as well as the response of the SRAEN filter (see column 4 of <<tbl:IRS>>).
+The IRS weighting corresponds to a bandpass filtering characteristic whose mask can be found in Recommendation ITU-T P.48 <<P.48>>. The send and receive spectral shapes of the IRS weighting were obtained in a round-robin series of measurements made on a number of analog telephones in the early 1970's <<BNR-ModIRS>>. From these measurements, the average send and receive frequency-response characteristics were derived. However, for the loudness balance purposes for which the IRS was designed, it was also necessary to include a 300-3400 Hz bandpass filter, known as the SRAEN _(Système de Référence pour la détermination de l'Affablissement équivalent pour la Netteté; Reference System for determining Articulation Ratings)_ filter <<P.11>>, <<G.111>>. The values of send and receive sensitivity currently given in ITU-T Rec. P.48 (columns 2 and 3 in <<tbl-IRS>>) are therefore composed of the average send and receive responses for a number of telephones, as well as the response of the SRAEN filter (see column 4 of <<tbl-IRS>>).
 
 Because the P.48 IRS weighting used to be considered to model an average narrow-band telephone handset deployed in the PSTN, the IRS weighting has been chosen to simulate speech signals obtained from a regular handset. Examples of standardization efforts using the P.48 weighting characteristic are the Recommendations ITU-T G.711, G.721, and G.728. This weighting, as defined in P.48, is sometimes called "full-IRS" weighting.
 
-While the weighting characteristic in P.48 was considered to model connections over analog transmission facilities in the past (although it is not clear why the SRAEN filter should be included in both the send and receive paths), it is no longer representative of connections over modern digital facilities. In particular, the low frequency roll-off gives rise to unnecessary quality degradation. For the purpose of low bit-rate coder evaluation, especially where the coder is located in the telephone handset, a better characteristic can be obtained by modifying the P.48 full-IRS response to remove the SRAEN filter as shown in columns 5 and 6 of <<tbl:IRS>>. These values are specified in Annex D of ITU-T Recommendation P.830 <<P.830>> and define the so-called "modified" IRS weighting. The modified IRS has been used in the development of Recommendations ITU-T G.723.1 and G.729.
+While the weighting characteristic in P.48 was considered to model connections over analog transmission facilities in the past (although it is not clear why the SRAEN filter should be included in both the send and receive paths), it is no longer representative of connections over modern digital facilities. In particular, the low frequency roll-off gives rise to unnecessary quality degradation. For the purpose of low bit-rate coder evaluation, especially where the coder is located in the telephone handset, a better characteristic can be obtained by modifying the P.48 full-IRS response to remove the SRAEN filter as shown in columns 5 and 6 of <<tbl-IRS>>. These values are specified in Annex D of ITU-T Recommendation P.830 <<P.830>> and define the so-called "modified" IRS weighting. The modified IRS has been used in the development of Recommendations ITU-T G.723.1 and G.729.
 
-[[tbl:IRS]]
+[[tbl-IRS]]
 .Send and receive amplitude frequency characteristics for the IRS response as in ITU-T Rec.P.48, the SRAEN filter, and the modified IRS (P.48 IRS with SRAEN filter insertion loss removed).
 [cols=6*^, options="header"]
 |===
@@ -3132,7 +3132,7 @@ The most important part of either the full or the modified IRS weighting is the 
 
 An unspecified point in both P.48 and modified IRS is the phase response of the filter. There have been discussions within UGST on this topic and the conclusion was that, since the phase response is unspecified, it should be kept as generic as possible, what is better accomplished by keeping the phase linear {blank}footnote:[In spite of that, a non-linear phase IIR IRS filter is provided in the IIR module as an example of a cascade-form IIR filter implementation.]. If a certain non-linear phase characteristic is desired by the user, this can be implemented by cascading an all-pass filter with the desired phase response with one of the available FIR IRS implementations. Therefore, the IRS filters are implemented as FIR filters, as depicted in <<FIR-filter>>.
 
-Recommendation ITU-T P.48 presents the nominal values for the amplitude response in column 2 of its Table 1 (here reproduced in column 2 of <<tbl:IRS>>) and then the upper and lower tolerances listed in its Table 2. For the STL approach, it was decided to design IRS filters whose characteristic would deviate no more than 0.5 dB from the average values in P.48 (see in <<tx-reg-irs-frq>> the agreement of the nominal values, represented by dots, and the measured frequency response for the original P.48 IRS characteristic, represented by the continuous curve in the figure).
+Recommendation ITU-T P.48 presents the nominal values for the amplitude response in column 2 of its Table 1 (here reproduced in column 2 of <<tbl-IRS>>) and then the upper and lower tolerances listed in its Table 2. For the STL approach, it was decided to design IRS filters whose characteristic would deviate no more than 0.5 dB from the average values in P.48 (see in <<tx-reg-irs-frq>> the agreement of the nominal values, represented by dots, and the measured frequency response for the original P.48 IRS characteristic, represented by the continuous curve in the figure).
 
 ===== Other weighting
 
@@ -3154,7 +3154,7 @@ A 100 Hz -- 5 kHz filter was also designed for tests of another wideband codec. 
 
 ===== P.341 extension weighting
 
-For super-wideband signals, the mask for super-wideband videoconferencing terminals is based on the ITU-T Rec. P.341. The sensitivity/frequency characteristics of the P.341 filter were extended to a larger band [50 Hz - 14 kHz] with a sampling frequency of 32 kHz. The corresponding 50 Hz-14 kHz filter was developed and incorporated in the STL. <<fig:50_14k-32k-frq>> and <<fig:50_14k-32k-ir>> display the respective frequency and impulse responses for the filter.
+For super-wideband signals, the mask for super-wideband videoconferencing terminals is based on the ITU-T Rec. P.341. The sensitivity/frequency characteristics of the P.341 filter were extended to a larger band [50 Hz - 14 kHz] with a sampling frequency of 32 kHz. The corresponding 50 Hz-14 kHz filter was developed and incorporated in the STL. <<fig-50_14k-32k-frq>> and <<fig-50_14k-32k-ir>> display the respective frequency and impulse responses for the filter.
 
 
 ===== Other weightings
@@ -3238,7 +3238,7 @@ The frequency response of the STL psophometric filter is given in <<pso-08k-frq>
 
 For wideband signals, three weighting filters are available. The transmit-side ITU-T P.341 filter amplitude response is shown in <<tx-p341-frq>>, and its impulse response is shown in <<tx-p341-ir>>. Alternatively to the P.341 filter, the frequency and impulse responses of the two bandpass filters, 50 Hz-5 kHz bandpass filter and 100 Hz -5 kHz, are shown, respectively, in <<bp5k-16k-frq>> and <<bp5k-16k-ir>>, and in <<bp100_5k-16k-frq>> and <<bp100_5k-16k-ir>>.
 
-For super wideband signals, four weighting filters are available. The 50 Hz-14 kHz bandpass filter, extension of ITU-T P.341 filter, is presented in <<fig:50_14k-32k-frq>> (frequency response), and <<fig:50_14k-32k-ir>> (impulse response). Alternatively to this P.341 filter extension, the frequency responses of the three MUSHRA anchors filters, LP3.5, LP7 and LP10 filters, are shown <<LP35-frq>>, <<LP7-frq>> and <<LP10-frq>>, respectively. Their impulse responses are shown in <<LP35-ir>>, <<LP7-ir>> and <<LP10-ir>>, respectively.
+For super wideband signals, four weighting filters are available. The 50 Hz-14 kHz bandpass filter, extension of ITU-T P.341 filter, is presented in <<fig-50_14k-32k-frq>> (frequency response), and <<fig-50_14k-32k-ir>> (impulse response). Alternatively to this P.341 filter extension, the frequency responses of the three MUSHRA anchors filters, LP3.5, LP7 and LP10 filters, are shown <<LP35-frq>>, <<LP7-frq>> and <<LP10-frq>>, respectively. Their impulse responses are shown in <<LP35-ir>>, <<LP7-ir>> and <<LP10-ir>>, respectively.
 
 The high-quality filters were implemented for rate-change factors of 2 and 3. The IRS filters, band-limiting filters and MUSHRA anchors have been designed for specific _sampling rates_ (e.g. 8 and 48 kHz). It should be noted that, while the high-quality filters are independent of the rate, these filters are not, because their masks are specified in terms of Hz, rather than normalized frequencies. This means that to carry out a high-quality up-sampling from 8 to 16 kHz, and from 16 to 32 kHz, the same routines are called, while for IRS, band-limiting or MUSHRA anchors, there is no rate-change routine from 16 to 32 kHz.
 
@@ -3397,11 +3397,11 @@ image::image10-20.png[]
 .STL P.341 send-side filter impulse response
 image::image10-21.png[]
 
-[[fig:50_14k-32k-frq]]
+[[fig-50_14k-32k-frq]]
 .STL 50 Hz - 14 kHz band limiting filter frequency response for data sampled at 32 kHz (factor 1:1)
 image::image10-22.png[]
 
-[[fig:50_14k-32k-ir]]
+[[fig-50_14k-32k-ir]]
 .STL 50 Hz - 14 kHz band limiting filter impulse response
 image::image10-23.png[]
 
@@ -3560,7 +3560,7 @@ SCD_FIR *L20_48kHz_init (void);
 
 `p341_16khz_init` is the initialization routine for the P.341 send-side weighting filter for data sampled at 16 kHz. Input and output signals will be at 16 kHz since no rate change is performed by this function. Its frequency response is shown in <<tx-p341-frq>> and its impulse response is shown in <<tx-p341-ir>>. The -3 dB points for this filter are located at approximately 50 and 7000 Hz. Code is in file `fir-wb.c`.
 
-`bp14k_32khz_init` is the initialization routine for the [50 Hz - 14 kHz] filter for data sampled at 32 kHz. Input and output signals will be at 32 kHz since no rate change is performed by this function. Its frequency response is shown in <<fig:50_14k-32k-frq>> and its impulse response is shown in <<fig:50_14k-32k-ir>>. The -3 dB points for this filter are located at approximately 50 and 14000 Hz. Code is in file `fir-wb.c`.
+`bp14k_32khz_init` is the initialization routine for the [50 Hz - 14 kHz] filter for data sampled at 32 kHz. Input and output signals will be at 32 kHz since no rate change is performed by this function. Its frequency response is shown in <<fig-50_14k-32k-frq>> and its impulse response is shown in <<fig-50_14k-32k-ir>>. The -3 dB points for this filter are located at approximately 50 and 14000 Hz. Code is in file `fir-wb.c`.
 
 `bp5k_16khz_init` is the initialization routine for a 50 Hz - 5 kHz band limiting filter for wideband signals sampled at 16 kHz. Input and output signals will be at 16 kHz since no rate change is performed by this function. Its frequency response is shown in <<bp5k-16k-frq>> and its impulse response is shown in <<bp5k-16k-ir>>. The -3 dB points for this filter are located at approximately 50 and 4990 Hz. Code is in file `fir-wb.c`.
 
@@ -4198,13 +4198,13 @@ Upon development needs of scalable and embedded-variable bitrate codecs, a more 
 
 The bit error insertion algorithm of the EID is based on a channel model where (binary) data bitstreams are to be transmitted, and is based on the discrete _Gilbert Elliott channel_ (GEC) model, described in <<GEC>>.
 
-This model (see <<fig:GEC>>) has two states, Good (stem:[G]) and Bad or Burst (stem:[B]). Associated with these two states, there are four parameters (probabilities): two relating to the probability of remaining in state stem:[G] or stem:[B], and two relating to the probability of transition from the current state to the other state (i.e., the occurrence of a binary digit transition, or error).
+This model (see <<fig-GEC>>) has two states, Good (stem:[G]) and Bad or Burst (stem:[B]). Associated with these two states, there are four parameters (probabilities): two relating to the probability of remaining in state stem:[G] or stem:[B], and two relating to the probability of transition from the current state to the other state (i.e., the occurrence of a binary digit transition, or error).
 
 The probabilities associated with the channel states are stem:[P] and stem:[Q], stem:[P] being the probability of transition from state stem:[G] to stem:[B], and stem:[Q] the probability of transition from stem:[B] to stem:[G]. Hence, the probability of remaining in the same state is stem:[(1-P)] and stem:[(1-Q)] for states stem:[G] and stem:[B], respectively. For a given state, there are probabilities that a change in a bit occur, and this is stem:[P_G] for state stem:[G], and stem:[P_B] for state stem:[B].
 
 Therefore, the channel may be either in the good state stem:[G], where the mean bit error probability stem:[P_G] is very low (stem:[P_G ~~ 0]), or in the bad state stem:[B], where the mean bit error probability stem:[P_B] is rather high (stem:[P_B ~~ 0.5]).
 
-[[fig:GEC]]
+[[fig-GEC]]
 .Gilbert Elliot Channel Model (GEC)
 image::image11-1.png[]
 
@@ -4373,16 +4373,16 @@ The random number generator always starts from the same point, if the user does 
 
 The EID routines for random bit errors are `BER_generator` and `BER_insertion`; for random frame erasures, `FER_generator_random` and `FER_module`; for burst frame erasures `FER_generator_burst`; and `open_eid`, `open_burst_eid` and `close_eid` for initialization (allocation) and release of EID state structures `SCD_EID` and `BURST_EID`. Their description can be found next. Besides these, there are other routines which are local (private) to the EID module, and therefore are not described.
 
-[[sec:g192bitstream]]
+[[sec-g192bitstream]]
 ==== Bitstream format
 
 The EID module operates on _softbits_ basis. Softbits are defined as a multi-level representation of the binary ("hard") bits '1' and '0' which are associated to probabilities of being in error. The softbit definition adopted in the ITU-T STL uses 16-bit words as representation of the hardbits `'1'` and `'0'`, where a hardbit `'1'` is represented by the softbit `0x0081` and a hardbit `'0'` is represented by the softbit `0x007F`. This means that 8 significant bits in a softbit is available for other utilities. When soft-decision is not used, the hard bit information can be derived directly from Bit 7 of the 16-bit softbit word. It should also be noted that values `0x0081` and `0x007f` are equally spaced from `0x0000` (in other words, `0x0000` is exactly the middle of the two-complement range for `0x81` and `0x7F`), such that a softbit representation `0x0000` represents _total uncertainty_ of the true bit value.
 
 Error patterns produced and used by the EID module use this softbit definition. Input and output data (i.e. signals which are affected by bit errors or frame erasures) also use softbits, but additionally have a so-called synchronization header.
 
-The _synchronization header_ is defined as two consecutive 16-bit words, the first one always being a synchronization (sync) word in the range `0x6B21` to `0x6B2F`, followed by the bitstream length word, a two-complement number indicating the number of softbits in the frame. The sync word `0x6B20` is reserved to indicate that a frame erasure happened. For example, for the RPE-LTP algorithm, which uses 260 bits per frame, the soft bitstream would have the format indicated in <<fig:bs-rpeltp>>. It can be seen that each RPE-LTP frame will have 262 16-bit words, being one for the sync word (`0x6B21`) in the example), one for the frame length word (whose value here is 260), followed by 260 softbit words (here corresponding to `'1'`, `'0'`, ..., `'0'`, `'0'`). This combination of the synchronization header and a softbit "payload" is called the bitstream signal representation and is used in ITU-T Recommendation G.192 <<G.192>> to represent encoded signals between speech encoders, error-insertion devices, transmission channel models and speech decoders.
+The _synchronization header_ is defined as two consecutive 16-bit words, the first one always being a synchronization (sync) word in the range `0x6B21` to `0x6B2F`, followed by the bitstream length word, a two-complement number indicating the number of softbits in the frame. The sync word `0x6B20` is reserved to indicate that a frame erasure happened. For example, for the RPE-LTP algorithm, which uses 260 bits per frame, the soft bitstream would have the format indicated in <<fig-bs-rpeltp>>. It can be seen that each RPE-LTP frame will have 262 16-bit words, being one for the sync word (`0x6B21`) in the example), one for the frame length word (whose value here is 260), followed by 260 softbit words (here corresponding to `'1'`, `'0'`, ..., `'0'`, `'0'`). This combination of the synchronization header and a softbit "payload" is called the bitstream signal representation and is used in ITU-T Recommendation G.192 <<G.192>> to represent encoded signals between speech encoders, error-insertion devices, transmission channel models and speech decoders.
 
-[[fig:bs-rpeltp]]
+[[fig-bs-rpeltp]]
 .Soft bitstream format for the 13 kbit/s RPELTP algorithm, where 260 bits are transmitted per 20 ms transmission frame.
 image::image11-4.png[]
 
@@ -4896,56 +4896,56 @@ where `outp.ind` is the resulting G192 bitstream file after individual layer err
 
 ===== Default layering
 
-Consider a 20-ms frame example given in <<fig:ExampleG192InputFrame>>. Here, the default layering is "-layers 160,240,320,480,640", which corresponds to the accumulated layer bitrates of 8, 12, 16, 24 and 32 kbit/s. This default layering requires five error pattern files, e.g.
+Consider a 20-ms frame example given in <<fig-ExampleG192InputFrame>>. Here, the default layering is "-layers 160,240,320,480,640", which corresponds to the accumulated layer bitrates of 8, 12, 16, 24 and 32 kbit/s. This default layering requires five error pattern files, e.g.
 
 [align=center]
 `eid-ev inp f.00.g192 f.02.g192 f.06.g192 f.10.g192 f.20.g192 outp`
 
 Note that a 0 kbit/s input frames are allowed, there are two possible 0-kbit/s frames:
 
-* NoData frame (zero length and a G192_SYNC tag) (see <<fig:ExampleG192NoDataFrame>>).
-* A totally erased frame (zero length and a G192_FER tag), (see <<fig:G192outputFrameLayer034Error>>).
+* NoData frame (zero length and a G192_SYNC tag) (see <<fig-ExampleG192NoDataFrame>>).
+* A totally erased frame (zero length and a G192_FER tag), (see <<fig-G192outputFrameLayer034Error>>).
 
 
 ===== EID-EV G.192 Input frame examples
 
-<<fig:ExampleG192InputFrame>> and <<fig:ExampleG192NoDataFrame>> gives input frame examples.
+<<fig-ExampleG192InputFrame>> and <<fig-ExampleG192NoDataFrame>> gives input frame examples.
 
-[[fig:ExampleG192InputFrame]]
+[[fig-ExampleG192InputFrame]]
 .Example G.192 input frame with layering "-layers 160,240,320,480,640". This frame has a size of 640 bits and a G192 SYNC(0x6B21) header tag
 image::image11-5.png[]
 
-[[fig:ExampleG192NoDataFrame]]
+[[fig-ExampleG192NoDataFrame]]
 .Example G.192 NoData frame, sync tag is G192 SYNC and frame length is zero. NoData frames may be used to simulate DTX (Discontinuous Transmission) operation
 image::image11-6.png[]
 
 ===== EID-EV G.192 Output frame examples
 
-<<fig:G192outputFrameLayer3Error>> gives an output frame example where layer 3 is hit by a layer error in the layered application mode. Since layer 3 is a lower layer to layer 4 and 5, those two layers are also truncated from the frame data. In <<fig:G192outputFrameLayer134Error>>, the layer 1, 3 and 4 are hit by layer errors in layered error application mode. Here, all layers above 0 are truncated because layer 1 is hit. <<fig:G192outputFrameLayer034Error>> is an example where layer 0, 3 and 4 are hit in layered error application mode. All the layers were deleted because of hit of layer 0, and this is equivalent to a totally erased frame.
+<<fig-G192outputFrameLayer3Error>> gives an output frame example where layer 3 is hit by a layer error in the layered application mode. Since layer 3 is a lower layer to layer 4 and 5, those two layers are also truncated from the frame data. In <<fig-G192outputFrameLayer134Error>>, the layer 1, 3 and 4 are hit by layer errors in layered error application mode. Here, all layers above 0 are truncated because layer 1 is hit. <<fig-G192outputFrameLayer034Error>> is an example where layer 0, 3 and 4 are hit in layered error application mode. All the layers were deleted because of hit of layer 0, and this is equivalent to a totally erased frame.
 
-In individual error application modes, the hit layers are filled with "0"s. In an example give in <<fig:G192outputFrameLayer3ErrorIndividual>>, where layer 3 is hit, all he bits in layer 3 are changed to "0", and the sync header is changed to G192_FER (`0x6B20`) to indicate the presence of remaining layers with errors. <<fig:G192outputFrameLayer134ErrorIndividual>> shows an example where layers 1, 3 and 4 are hit in individual error application mode, and layer 3 and 4 are truncated with layer 1 filled with "0"s. Note here that the Sync header is also changed to G192_FER. Finally, for the case where layers 0, 3 and 4 are hit by layer errors in the individual error application mode, <<fig:G192outputFrameLayer034ErrorIndividual>> gives the resulting frame. Here, all layers are truncated because layer 0 is hit.
+In individual error application modes, the hit layers are filled with "0"s. In an example give in <<fig-G192outputFrameLayer3ErrorIndividual>>, where layer 3 is hit, all he bits in layer 3 are changed to "0", and the sync header is changed to G192_FER (`0x6B20`) to indicate the presence of remaining layers with errors. <<fig-G192outputFrameLayer134ErrorIndividual>> shows an example where layers 1, 3 and 4 are hit in individual error application mode, and layer 3 and 4 are truncated with layer 1 filled with "0"s. Note here that the Sync header is also changed to G192_FER. Finally, for the case where layers 0, 3 and 4 are hit by layer errors in the individual error application mode, <<fig-G192outputFrameLayer034ErrorIndividual>> gives the resulting frame. Here, all layers are truncated because layer 0 is hit.
 
-[[fig:G192outputFrameLayer3Error]]
+[[fig-G192outputFrameLayer3Error]]
 .Example G.192 output frame when layer 3 is hit by a layer error in the layered error application mode
 image::image11-7.png[]
 
-[[fig:G192outputFrameLayer134Error]]
+[[fig-G192outputFrameLayer134Error]]
 .Example G.192 output frame when layer 1, layer 3 and layer 4 are hit by layer errors in the layered error application mode
 image::image11-8.png[]
 
-[[fig:G192outputFrameLayer034Error]]
+[[fig-G192outputFrameLayer034Error]]
 .Example G.192 output frame when layers 0, 3 and 4 are hit by layer errors in the layered error application mode
 image::image11-9.png[]
 
-[[fig:G192outputFrameLayer3ErrorIndividual]]
+[[fig-G192outputFrameLayer3ErrorIndividual]]
 .Example G.192 output frame when layer 3 is hit by layer errors in the individual error application mode. Note that the Sync header is changed to G192 FER(0x6B20) to indicate the presence of remaining layers with errors
 image::image11-10.png[]
 
-[[fig:G192outputFrameLayer134ErrorIndividual]]
+[[fig-G192outputFrameLayer134ErrorIndividual]]
 .Example G.192 output frame when layers 1, 3 and 4 are hit by layer errors in the individual error application mode. Note that the frame is truncated and that the Sync header is changed to G192 FER(0x6B20) to indicate the presence of layers with remaining errors
 image::image11-11.png[]
 
-[[fig:G192outputFrameLayer034ErrorIndividual]]
+[[fig-G192outputFrameLayer034ErrorIndividual]]
 .Example G.192 output frame when layers 0, 3 and 4 are hit by layer errors in the individual error application mode
 image::image11-12.png[]
 
@@ -4960,13 +4960,13 @@ The Modulated Noise Reference Unity (MNRU) was introduced as a means to controll
 
 The concept of such reference unit was published in <<Q001.02.04.02>>. The first system aimed at was the PCM coding with logarithmic compression (today world-wide available by means of the Recommendation ITU-T G.711), whose main characteristic is to have a considerably uniform signal-to-noise ratio (SNR) over a wide range of amplitudes. Moreover, the quantizing noise is correlated to the signal: if no signal is present, no quantization noise is produced footnote:[This is obviously academic, because always there will be idle noise, among others, in the absence of an input signal.], and large signals will produce more quantization noise than small ones. Therefore, the main characteristic of this reference unit should output speech corrupted by a speech-correlated noise.
 
-[[fig:1-P.810]]
+[[fig-1-P.810]]
 .Block diagram of the "digital" MNRU. The bandwidth of the output filter h(k) is 0–3400 Hz for the narrowband case, and 0–7000 Hz for the wideband case
 image::image12-1.png[]
 
 In <<Q001.02.04.02>>, the speech-correlated noise generation was based on a double-balanced ring modulator, controlled by the input speech signal, which modulates a noise carrier generated by a noise generator having a relatively uniform energy distribution, there in the range of 0--20kHz. This correlated noise is then added to the input signal, with gains applied such that a controlled signal-to-noise ratio is obtained in the output, after the 300--3400Hz band-limiting filter.
 
-With the 1996 revision of the MNRU description published in Recommendation ITU-T P.810 footnote:[Formerly known as Recommendation ITU-T P.81.], specific guidelines were given for "digital implementations" footnote:[The revised P.81 define a "digital implementation" either as a digital hardware implementation or as a software implementation of the MNRU.], eliminating many of the ambiguities possible in earlier descriptions <<Old-P.81>>, as explained in the STL92 manual <<STL92-Manual>>, Chapter 8. <<fig:1-P.810>> shows a block diagram of the "digital" MNRU. Also, this implementation allows for transparent operation on narrowband or wideband speech, hence being known as Dual-mode MNRU, or "Duo-MNRU", for short.
+With the 1996 revision of the MNRU description published in Recommendation ITU-T P.810 footnote:[Formerly known as Recommendation ITU-T P.81.], specific guidelines were given for "digital implementations" footnote:[The revised P.81 define a "digital implementation" either as a digital hardware implementation or as a software implementation of the MNRU.], eliminating many of the ambiguities possible in earlier descriptions <<Old-P.81>>, as explained in the STL92 manual <<STL92-Manual>>, Chapter 8. <<fig-1-P.810>> shows a block diagram of the "digital" MNRU. Also, this implementation allows for transparent operation on narrowband or wideband speech, hence being known as Dual-mode MNRU, or "Duo-MNRU", for short.
 
 [CAUTION]
 ====
@@ -4977,7 +4977,7 @@ Special caution must be made when selecting frequency bandwidth of the input sig
 
 The de-facto reference implementation of the MNRU footnote:[Developed by the British Telecom and licenced to Malden Electronics.] is the same of the original description, whose specification can be found in Recommendation ITU-T P.810 <<P.810>> (formerly Recommendation ITU-T P.81 <<Old-P.81>>). This Recommendation describes two MNRU schemes, one called _Narrow-band MNRU_, and another, _Wideband MNRU_. Wideband MNRU is applicable to systems where wideband speech (70--7000Hz) is expected, whereas Narrow-band MNRU is for telephone bandwidth (300--3400Hz). Both narrowband and wideband MNRUs are implemented in this version of the ITU-T Software Tools Library.
 
-The basic block diagram of the P.810 MNRU is found in <<fig:1-P.810>>. In summary, there are two paths, one called _signal path_, another called _noise path_. In the noise path, gaussian noise (uniform in a range at least the cutoff frequency of the low-pass filter in the output of the MNRU) is modulated by the incoming signal. The result is then added with the output from the signal path. The gains are set such that the gain (in dB) applied in the output of the noise path is the signal-to-correlated-noise ratio stem:[Q], in the output of the band-pass filter, as calculated in the section to follow.
+The basic block diagram of the P.810 MNRU is found in <<fig-1-P.810>>. In summary, there are two paths, one called _signal path_, another called _noise path_. In the noise path, gaussian noise (uniform in a range at least the cutoff frequency of the low-pass filter in the output of the MNRU) is modulated by the incoming signal. The result is then added with the output from the signal path. The gains are set such that the gain (in dB) applied in the output of the noise path is the signal-to-correlated-noise ratio stem:[Q], in the output of the band-pass filter, as calculated in the section to follow.
 
 In analytical terms, the signal corrupted by the modulated noise stem:[y(k)] is
 
@@ -5086,40 +5086,40 @@ The values of the fields shall not be altered by the user.
 
 *Filters in the MNRU module*
 
-The composite frequency response of the narrowband and wideband MNRU filters is shown in <<MNRU:both-filters>>. <<MNRU:lp-filter>> shows the contribution of the output low-pass filter for (a) the narrowband, and (b) the wideband cases. <<MNRU:hp-filter>> shows the effect of the input DC-removal filter for (a) the narrowband and (b) the wideband operation modes of the MNRU. Details on the design of the output low-pass filters are given in <<Duo-MNRU>>. The frequency responses have been obtained by exciting the MNRU module with digital sinewaves and computing the ratio of input and output signals, in dB.
+The composite frequency response of the narrowband and wideband MNRU filters is shown in <<MNRU-both-filters>>. <<MNRU-lp-filter>> shows the contribution of the output low-pass filter for (a) the narrowband, and (b) the wideband cases. <<MNRU-hp-filter>> shows the effect of the input DC-removal filter for (a) the narrowband and (b) the wideband operation modes of the MNRU. Details on the design of the output low-pass filters are given in <<Duo-MNRU>>. The frequency responses have been obtained by exciting the MNRU module with digital sinewaves and computing the ratio of input and output signals, in dB.
 
-[[MNRU:both-filters]]
+[[MNRU-both-filters]]
 .Total frequency response of the Duo-MNRU filters
 ====
-[[MNRU:both-filtersa]]
+[[MNRU-both-filtersa]]
 .Narrowband Duo-MNRU
 image::image12-3a.png[]
 
-[[MNRU:both-filtersb]]
+[[MNRU-both-filtersb]]
 .Wideband Duo-MNRU
 image::image12-3b.png[]
 ====
 
-[[MNRU:hp-filter]]
+[[MNRU-hp-filter]]
 .DC removal filter for the Duo-MNRU
 ====
-[[MNRU:hp-filtera]]
+[[MNRU-hp-filtera]]
 .Narrowband Duo-MNRU
 image::image12-4a.png[]
 
-[[MNRU:hp-filterb]]
+[[MNRU-hp-filterb]]
 .Wideband Duo-MNRU
 image::image12-4b.png[]
 ====
 
-[[MNRU:lp-filter]]
+[[MNRU-lp-filter]]
 .Output low-pass filter for the Duo-MNRU
 ====
-[[MNRU:lp-filtera]]
+[[MNRU-lp-filtera]]
 .Narrowband Duo-MNRU
 image::image12-5a.png[]
 
-[[MNRU:lp-filterb]]
+[[MNRU-lp-filterb]]
 .Wideband Duo-MNRU
 image::image12-5b.png[]
 ====
@@ -5765,9 +5765,9 @@ image::image14-1a.png[]
 image::image14-1b.png[]
 ====
 
-The geometry characteristics are given in <<tbl:rev-geom-room>>. These rooms were acoustically treated in order to limit the reverberation (filled carpet, acoustically absorbent wall and ceiling). Note that the reverberation reduces the intelligibility of recorded speech and degrades the performance of acoustic echo canceler in case of hands-free communications.
+The geometry characteristics are given in <<tbl-rev-geom-room>>. These rooms were acoustically treated in order to limit the reverberation (filled carpet, acoustically absorbent wall and ceiling). Note that the reverberation reduces the intelligibility of recorded speech and degrades the performance of acoustic echo canceler in case of hands-free communications.
 
-[[tbl:rev-geom-room]]
+[[tbl-rev-geom-room]]
 .Characteristics of the rooms where mono impulse responses sampled at 32 kHz have been measured
 |===
 | ^h| Length (m) ^h| Width (m) ^h| Height (m) ^h| Volume (m^3^)
@@ -5776,9 +5776,9 @@ The geometry characteristics are given in <<tbl:rev-geom-room>>. These rooms wer
 | Meeting room ^| 8.55 ^| 5.30 ^| 2.70 ^| 122.35
 |===
 
-To give more information concerning the acoustical behaviour, the octave-band reverberation time was computed for frequencies below 8 kHz. The values represented in <<tbl:rev-revTime-room>> were estimated by the backward integration method applied in each octave-band of the measured impulse response.
+To give more information concerning the acoustical behaviour, the octave-band reverberation time was computed for frequencies below 8 kHz. The values represented in <<tbl-rev-revTime-room>> were estimated by the backward integration method applied in each octave-band of the measured impulse response.
 
-[[tbl:rev-revTime-room]]
+[[tbl-rev-revTime-room]]
 .Octave-band reverberation time of the rooms where mono impulse responses sampled at 32 kHz have been measured.
 |===
 | 6+^h| Reverberation time (ms)
@@ -5790,9 +5790,9 @@ To give more information concerning the acoustical behaviour, the octave-band re
 
 ==== Stereo impulse response
 
-In STL 2009, stereo impulse responses were added. These stereo impulse responses were measured in typical meeting rooms with various microphones. The meeting rooms and microphone were selected according to two scenario configurations using two rooms (one per scenario). Pictures of the two rooms are shown in <<STL09-LargeMeetingRoom>> and <<STL09-VideoConferencingRoom>>. Three types of microphone configurations were considered: MS microphone (Sony ECM-MS907), Binaural (two omnidirectional DPA 4060 inserted into the ears of a dummy head), AB microphone (two omnidirectional DPA 4060 microphones spaced 1 m apart). Moreover, the two scenarios were simulated in an anechoic room, i.e. the stereo impulse responses were also measured in this anechoic room for all the positions and all the microphones except for the binaural microphone. The geometry characteristics of the large (for scenario 1) and small (for scenario 2) rooms are given in the <<tbl:geom-charac-room>>. These rooms were acoustically treated in order to limit the reverberation (filled carpet, coustically absorbent wall and ceiling). The acoustic absorption was higher for room of scenario 2 because the room was especially designed for video conferencing.
+In STL 2009, stereo impulse responses were added. These stereo impulse responses were measured in typical meeting rooms with various microphones. The meeting rooms and microphone were selected according to two scenario configurations using two rooms (one per scenario). Pictures of the two rooms are shown in <<STL09-LargeMeetingRoom>> and <<STL09-VideoConferencingRoom>>. Three types of microphone configurations were considered: MS microphone (Sony ECM-MS907), Binaural (two omnidirectional DPA 4060 inserted into the ears of a dummy head), AB microphone (two omnidirectional DPA 4060 microphones spaced 1 m apart). Moreover, the two scenarios were simulated in an anechoic room, i.e. the stereo impulse responses were also measured in this anechoic room for all the positions and all the microphones except for the binaural microphone. The geometry characteristics of the large (for scenario 1) and small (for scenario 2) rooms are given in the <<tbl-geom-charac-room>>. These rooms were acoustically treated in order to limit the reverberation (filled carpet, coustically absorbent wall and ceiling). The acoustic absorption was higher for room of scenario 2 because the room was especially designed for video conferencing.
 
-[[tbl:geom-charac-room]]
+[[tbl-geom-charac-room]]
 .Characteristics of the rooms where stereo impulse responses have been measured.
 |===
 | ^h| Length (m) ^h| Width (m) ^h| Height (m) ^h| Volume (m3)
@@ -5836,7 +5836,7 @@ The naming defined here is: `[Room][Reverb][Mic]P[Position].[channel].IR32`, whe
 * `Position` is a two digit position number,
 * `Channel` is L=Left or R=Right.
 
-The detailed naming of stereo impulse responses is given in <<tbl:nameImpulseResponse>>.
+The detailed naming of stereo impulse responses is given in <<tbl-nameImpulseResponse>>.
 
 ===== Office noise recording
 
@@ -5854,7 +5854,7 @@ and
 
 The mono Impulse Response (IR) are stored into file with ".IR" filename extensions. The stereo IR measures are stored into files with ".IR32" filename extensions and the sampling rate is 32 kHz. When applying these IRs, attention must be paid to have consistency between the sampling frequency of input data and the sampling frequency of an IR.
 
-[[tbl:nameImpulseResponse]]
+[[tbl-nameImpulseResponse]]
 .Detailed naming of stereo impulse responses
 |===
 h| Scenario h| Main Characteristics h| Naming of impulse response pairs(with example positions):
@@ -6054,17 +6054,17 @@ In STL2005, the frequency measurement tool used non-overlapping windowed frames 
 
 In STL2005, the window size used for discrete Fourier transform was fixed to 2048 samples and could not provide changes in the frequency resolution. In order provide more freedom, a variable window size was implemented using Fast Fourier Transform (FFT) algorithm. The use of FFT implies that the window size is a power of 2, thus, available sizes are: 16, 32, 64, 128, 256, 512, 1024, 2048, 4096 and 8192. The dimensions of the bitmap file created by the tool (with option "-bmp") are adapted to the new variable size: if the size is smaller than 2048, then the bitmap file is in the same dimensions as for a 2048-sample bitmap file, because smaller dimensions would give unreadable figures. For windows sizes larger than 2048, the bitmap dimensions are increased to adapt to better frequency resolution.
 
-The <<fig:femaleVoice256>>, <<fig:femaleVoice2048>>, <<fig:femaleVoice8192>> give the bitmap files obtained with `freqresp` tool operating in 256-, 2048- and 8192-sample windowing, respectively. The input file was the artificial female voice standardized by ITU in <<P.50>>.
+The <<fig-femaleVoice256>>, <<fig-femaleVoice2048>>, <<fig-femaleVoice8192>> give the bitmap files obtained with `freqresp` tool operating in 256-, 2048- and 8192-sample windowing, respectively. The input file was the artificial female voice standardized by ITU in <<P.50>>.
 
-[[fig:femaleVoice256]]
+[[fig-femaleVoice256]]
 .P.50 female voice analyzed with a 256-sample window
 image::image16-1.png[]
 
-[[fig:femaleVoice2048]]
+[[fig-femaleVoice2048]]
 .P.50 female voice analyzed with a 2048-sample window
 image::image16-2.png[]
 
-[[fig:femaleVoice8192]]
+[[fig-femaleVoice8192]]
 .P.50 female voice analyzed with a 8192-sample window
 image::image16-3.png[]
 
@@ -6239,21 +6239,21 @@ The tool operates on sample basis on 16-bit resolution input files, and provides
 * Down-mixing a two-channel stereo file into a maximum channel energy analysis file (a single channel analysis signal for stereo scene level evaluation purposes).
 * Down-mixing a two-channel file into a single channel mono file
 
-<<fig:stereoopFig1>> illustrates the functionality that interleaves two single channel files into one single two-channel stereo file. <<fig:stereoopFig2>> illustrates the functionality that splits an interleaved two-channel file into individual single channel files. <<fig:stereoopFig3>> illustrates the functionality that down-mixes a two-channel file into a maximum channel energy analysis file. <<fig:stereoopFig4>> illustrates the functionality that down-mixes a two-channel file into a single channel mono file.
+<<fig-stereoopFig1>> illustrates the functionality that interleaves two single channel files into one single two-channel stereo file. <<fig-stereoopFig2>> illustrates the functionality that splits an interleaved two-channel file into individual single channel files. <<fig-stereoopFig3>> illustrates the functionality that down-mixes a two-channel file into a maximum channel energy analysis file. <<fig-stereoopFig4>> illustrates the functionality that down-mixes a two-channel file into a single channel mono file.
 
-[[fig:stereoopFig1]]
+[[fig-stereoopFig1]]
 .Interleaving two single channel files into one single two-channel stereo file
 image::image17-1.png[]
 
-[[fig:stereoopFig2]]
+[[fig-stereoopFig2]]
 .Splitting an interleaved two-channel file into two individual single channel files
 image::image17-2.png[]
 
-[[fig:stereoopFig3]]
+[[fig-stereoopFig3]]
 .Down-mixing a two-channel file into a maximum channel energy analysis file.
 image::image17-3.png[]
 
-[[fig:stereoopFig4]]
+[[fig-stereoopFig4]]
 .Down-mixing a two-channel file into a single channel mono file
 image::image17-4.png[]
 
@@ -6392,7 +6392,7 @@ In STL2019, new operators were introduced to account for modern DSP architecture
 . New control flow operators;
 . Revised complexity weights in order to reflect the evolution of processor capabilities.
 
-<<tbl:operators-weight>> provides an overview of the complexity weight history for each basic operator.
+<<tbl-operators-weight>> provides an overview of the complexity weight history for each basic operator.
 
 === Description of the 16-bit and 32-bit basic operators and associated weights
 
@@ -6886,7 +6886,7 @@ Produces a result which is the fractional integer division of a positive 32-bit 
 
 ==== Basic operator usage across standards
 
-<<tbl:basop-in-recs>> contains a survey of the 16-bit and 32-bit basic operators which are used in various standards. Follows some notes associated to <<tbl:basop-in-recs>>:
+<<tbl-basop-in-recs>> contains a survey of the 16-bit and 32-bit basic operators which are used in various standards. Follows some notes associated to <<tbl-basop-in-recs>>:
 
 [class=steps]
 . abs_s(v1) is referred to as abs(v1) in GSM 06.10 (GSM full-rate).
@@ -6906,7 +6906,7 @@ Produces a result which is the fractional integer division of a positive 32-bit 
 . Operator is not part of the original ETSI library.
 . Operator is not part of the original ETSI library but was accepted in the TETRA standard.
 
-[[tbl:basop-in-recs]]
+[[tbl-basop-in-recs]]
 .Use of 32-bit basic operators in G.723.1, G.729 and ETSI GSM speech coding recommendations
 |===
 h| Operation h| Weight h| FR GSM h| HR GSM h| EFR GSM h| AMR GSM h| G.729 h| G.723.1 h| TETRA
@@ -8325,9 +8325,9 @@ or
 ----
 --
 
-<<tbl:control-basicop>> summarizes the control basic operators and their associated complexity.
+<<tbl-control-basicop>> summarizes the control basic operators and their associated complexity.
 
-[[tbl:control-basicop]]
+[[tbl-control-basicop]]
 .Control basic operators and associated complexity
 [cols="^,<a,<a",options="header"]
 |===
@@ -8850,15 +8850,15 @@ The essential feature of the tool is that the instructions need to be executed t
 
 ==== Complexity Verification Method
 
-The computational complexity associated with a given speech and audio codec can be specified in terms of the number of instructions required per frame. The type and number of operations returned by the algorithm on a per-frame basis are specified for both the encoder and the decoder. Algorithms are broken down into sub-processing elements, each having a detailed breakdown of the types of operations and the number of operations required to complete the sub-processing element. Certain operations require several instructions in order to be computed. Thus all operations have associated with them a weight, indicative of this expansion, and given in <<tbl:flp-counters>> (column Complexity Weights).
+The computational complexity associated with a given speech and audio codec can be specified in terms of the number of instructions required per frame. The type and number of operations returned by the algorithm on a per-frame basis are specified for both the encoder and the decoder. Algorithms are broken down into sub-processing elements, each having a detailed breakdown of the types of operations and the number of operations required to complete the sub-processing element. Certain operations require several instructions in order to be computed. Thus all operations have associated with them a weight, indicative of this expansion, and given in <<tbl-flp-counters>> (column Complexity Weights).
 
 The total number of instructions required per frame is then given by summing the total number of weighted operations. This number represents the basic computational complexity of the codec in instructions per frame. The complexity in WMOPS is then obtained by dividing the number of operations per frame by the length of the frame in seconds. The complexity estimates are computed assuming average and worst case number of operations both per frame and per second. The complexity is computed separately for the encoder and the decoder.
 
-The operation count performed for the complexity measurement is re-used to get an estimate of the program memory. This operation count specifies operations in loops, loop counters, operations in subroutines, and subroutine counters. Each operation is weighted using the memory weights from the <<tbl:flp-counters>> (column Memory Weights) to produce a memory usage in words. Operations inside loops are counted only once. Similarly operations inside subroutines are counted only once.
+The operation count performed for the complexity measurement is re-used to get an estimate of the program memory. This operation count specifies operations in loops, loop counters, operations in subroutines, and subroutine counters. Each operation is weighted using the memory weights from the <<tbl-flp-counters>> (column Memory Weights) to produce a memory usage in words. Operations inside loops are counted only once. Similarly operations inside subroutines are counted only once.
 
 ==== Tool implementation
 
-The tool consists of one header file _flc.h_ and one ANSI C library file _flc.c_. Both files must be included into the project to use this tool. Further, the code must be instrumented using counters defined in the <<tbl:flp-counters>> (column Counter). Finally the following functions are needed:
+The tool consists of one header file _flc.h_ and one ANSI C library file _flc.c_. Both files must be included into the project to use this tool. Further, the code must be instrumented using counters defined in the <<tbl-flp-counters>> (column Counter). Finally the following functions are needed:
 
 * To initialize internal data structures, the function `FLC_init()` must be called before any counters are defined, usually at the beginning of the codec algorithm.
 * The function `FLC_frame_update()` must be called at the end of the frame loop in order the FLC tool can keep track of the per-frame maxima to evaluate the worst-case conditions.
@@ -8873,7 +8873,7 @@ A scaling factor is used to estimate and print the complexity that would be obta
 
 ==== List of complexity measurement counters
 
-[[tbl:flp-counters]]
+[[tbl-flp-counters]]
 .Floating-point Complexity Measurement Counters
 [cols="5*a",options="header"]
 |===
@@ -8920,9 +8920,9 @@ with BRANCH | 2 |1
 
 ==== Examples of instrumentation of the code
 
-The rules to compute the complexity are general and when they are implemented, some choices must be done. <<tbl:flp-usage>> contains some examples to show where the counters should be placed.
+The rules to compute the complexity are general and when they are implemented, some choices must be done. <<tbl-flp-usage>> contains some examples to show where the counters should be placed.
 
-[[tbl:flp-usage]]
+[[tbl-flp-usage]]
 .Usage of floating-point complexity measurement counters
 [cols="4*a",options="header"]
 |===
@@ -8939,7 +8939,7 @@ BRANCH(2);TEST(1); | |
 (1/L) is a constant too, +
 So b = a * (1/L) |
 
-| *a = *b | MOVE(1); | Copy | <<tbl:flp-counters>>, Move
+| *a = *b | MOVE(1); | Copy | <<tbl-flp-counters>>, Move
 
 | for(i=0;i<L;i++) +
 {x[i]=a[i]+b[i];} +
@@ -8968,8 +8968,8 @@ for(i=0;i<L;i++) +
 MOVE(1) in the loop +
 MOVE(1) outside the loop
 | Use of MOVE outside the loop because the pointer is already initialized
-| <<tbl:flp-counters>>, Pointer Initialization +
-<<tbl:flp-counters>>, Move
+| <<tbl-flp-counters>>, Pointer Initialization +
+<<tbl-flp-counters>>, Move
 
 | pt_a += M | PTR_INIT(1); | M is constant, so this is equivalent to pt_a=&pt_a+M |
 
@@ -8980,7 +8980,7 @@ MOVE(1) outside the loop
 | for(i=0;i<L;i++) +
 {a=*b+a;} | PTR_INIT(1); (before loop) ADD(1); (inside) | If a pointer is initialized before the loop, no need to count INDIRECT(1) inside |
 
-| a[b][c]=x[y][z] | MOVE(1); | | <<tbl:flp-counters>>, Move
+| a[b][c]=x[y][z] | MOVE(1); | | <<tbl-flp-counters>>, Move
 
 | switch(a){ +
 case b:break; +
@@ -9072,7 +9072,7 @@ Maximum complexity: 0.593780 WMOPS
 Average complexity: 0.593780 WMOPS
 ----
 
-[[tbl:operators-weight]]
+[[tbl-operators-weight]]
 .Complexity weight history for each basic operator
 [cols="5*^", options="header"]
 |===
@@ -9296,7 +9296,7 @@ This module does not relate to any ITU-T Recommendation, but implements several 
 
 In the process of implementing the STL modules, it was found that the interfacing between data representations (`float` and `short`; `serial` and `parallel`) could present problems. Hence, algorithms implementation these functions have been made available in the ITU-T STL. Additionally, a scaling routine for application of gain and loss to speech samples is included.
 
-[[def:serial-parallel]]
+[[def-serial-parallel]]
 === Some definitions
 
 Some functions in this module convert between a serial format and a parallel format. The _parallel format_ is defined to be a representation in which all the bits in a computer word have an information content, as in a multi-level representation of data. Speech samples in a computer file are a typical example of a parallel representation. A _serial format_ is defined as the representation of the data where each computer word refer to a single bit of information. An example would be the sequence of bits sent in a communication channel refering to an encoded digital signal. A _serial bitstream_, in the context of the ITU-T STL, refers to a multi-level representation of information bits in which each of the "hard" bits `'0'` or `'1'` are mapped respectively to the so-called softbits `0x007F` and `0x0081`, to which an error probability is associated. These softbits are stored in 16-bit right-justified words. In addition, if the bitstream is compliant to the bitstream signal representation in Annex B of Recommendation ITU-T G.192, the serial bitstream "payload" described above will be preceed by a synchronization header. A _synchronization header_ is composed by a synchronization word followed by a frame length word. _Synchronization words_ are words in the bitstream in the range `0x6B21` to `0x6B2F`. A synchronization word equal to `0x6B20` indicates a frame loss. The _frame length word_ is a two-complement word representing the number of softbits in the payload. Therefore, the frame length word does not account for the synchronization header length (which equals two, by definition). Typically (as in the EID module), encoded signals are represented using the bitstreams with a synchronization header, while error patterns are represented without a synchronization header.
@@ -9872,10 +9872,10 @@ _unsup/test_data_:: Test files for testing some of the unsupported tools:
 * [[[ADPCM-theor,89]]], M. Bonnet, O. Macchi, and M. Jaidane-Saidane. Theoretical analysis of the ADPCM CCITT algorithm. _IEEE Trans.on Communications,_ 38(6):847–858, June 1990.
 * [[[ADPCM-over,97]]], W. R. Daumer, X. Maitre, P. Mermelstein, and I. Tokizawa. Overview of the ADPCM coding algorithm. Proc. _IEEE Globecom,_ pages 774–777, 1984.
 * [[[ADPCM-Tech-Report,19]]], ITU Telecommunication Standardization Sector. Comparison of ADPCM Algorithms. In _Recommendation G.726_, chapter Appendix III. ITU, Geneva, Switzerland, November 1994.
-* [[[G.726:LinearIO,20]]], ITU Telecommunication Standardization Sector. Extensions of Recommendation ITU-T G.726 for use with uniform quantized input and output. In _Recommendation G.726_, chapter Annex A. ITU, Geneva, Switzerland, November 1994.
+* [[[G726-LinearIO,20]]], ITU Telecommunication Standardization Sector. Extensions of Recommendation ITU-T G.726 for use with uniform quantized input and output. In _Recommendation G.726_, chapter Annex A. ITU, Geneva, Switzerland, November 1994.
 * [[[f2c,21]]], S. I. Feldman, D. M. Gay, M. W. Maimone, and N. L. Schryer. A Fortran–to–C Converter. Technical Report Computing Science 149, AT&T Bell Laboratories, August 1990.
 * [[[G.727,(9)ITU G.727]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.727, 5-, 4-, 3- and 2-bits/sample embedded adaptive differential pulse code modulation (ADPCM)._ ITU, Geneva, Switzerland, December 1990.
-* [[[G.727:LinearIO,22]]], ITU Telecommunication Standardization Sector. Annex A to Recommendation ITU-T G.727, _Extensions of Recommendation ITU-T G.727 for use with uniform-quantized input and output._ ITU, Geneva, Switzerland, November 1994.
+* [[[G727-LinearIO,22]]], ITU Telecommunication Standardization Sector. Annex A to Recommendation ITU-T G.727, _Extensions of Recommendation ITU-T G.727 for use with uniform-quantized input and output._ ITU, Geneva, Switzerland, November 1994.
 * [[[G.728,(10)ITU G.728]]], CCITT. Recommendation ITU-T G.728, _Coding of Speech at 16 kbit/s using Low Delay Code Excited Linear Prediction (LD-CELP)._ ITU, Geneva, Switzerland, June 2012.
 * [[[G.728G,23]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.728 Annex G - 16 kbit/s fixed point specification._ ITU, Geneva, Switzerland, November 1994.
 * [[[G.728I,24]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.728 Annex I - Frame or packet loss concealment for the LD-CELP decoder._ ITU, Geneva, Switzerland, July 1999.
@@ -9898,28 +9898,28 @@ _unsup/test_data_:: Test files for testing some of the unsupported tools:
 * [[[LD-CELP-Phase1,42]]], J.-H. Chen. A robust Low-Delay CELP Speech Coder at 16 kb/s. In _Advances in Speech Coding._ Kluwer Academic Publishers, 1989.
 * [[[Pond-Percep,43]]], J.-H. Yao and A. Gersho. Real-time vector APC speech coding at 4800 bps with adaptive post-filtering. In _Proc. ICASSP,_ 1987.
 * [[[Expl-WeigFilt,44]]], D. Grant and M. Young and A. Gersho. Real Time Vector Excitation Coding of Speech at 4800 bps. In _Proc. ICASSP,_ 1987.
-* [[[LD-CELP:Exp2-Phase1,45]]], S. F. Campos Neto and H. Irii and J. Rosenberger and J. Sotcsheck and P. Usai. Effect of Tandeming and Input Level. technical report 2–2, CSELT, 1993.
-* [[[LD-CELP-Phase1:HQLD,46]]], J.-H. Chen and R. V. Cox. LD-CELP: A high quality 16 kb/s speech coder with low delay. In _Proc. IEEE Globecom,_ 1990.
-* [[[LD-CELP-Phase1:Globecom,47]]], J.-H. Chen. A robust Low-Delay CELP Speech Coder at 16 kb/s. In _Proc. IEEE Globecom,_ 1989.
+* [[[LD-CELP-Exp2-Phase1,45]]], S. F. Campos Neto and H. Irii and J. Rosenberger and J. Sotcsheck and P. Usai. Effect of Tandeming and Input Level. technical report 2–2, CSELT, 1993.
+* [[[LD-CELP-Phase1-HQLD,46]]], J.-H. Chen and R. V. Cox. LD-CELP: A high quality 16 kb/s speech coder with low delay. In _Proc. IEEE Globecom,_ 1990.
+* [[[LD-CELP-Phase1-Globecom,47]]], J.-H. Chen. A robust Low-Delay CELP Speech Coder at 16 kb/s. In _Proc. IEEE Globecom,_ 1989.
 * [[[PostFilter-Basic,49]]], V. Ramamoorthy and N. S. Jayant and R. V. Cox and M. M. Sondhi. Enhancement of ADPCM Speech Coding using Backward-Adaptive Algorithms for Post-Filtering and Noise Feedback. _Journal on Selected Areas in Communications,_ 6(2), February 1988.
 * [[[LD-CELP-1-rev,50]]], AT&T. Detailed description of AT&T's LD-CELP algorithm. contribution AH.89-D02, CCITT, November 1989.
 * [[[G.722,(6)ITU-T G.722]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722, 7 kHz audio-coding within 64 kbit/s._ ITU, Geneva, Switzerland, September 2012.
 * [[[G.725,(7)ITU-T G.725]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.725, System Aspects for the Use of the 7kHz Audio Codec within 64 kbit/s,_ volume Fascicle III.4 of Blue Book, page 11. ITU, Geneva, Switzerland, 1989.
-* [[[G.722:General,51]]], P. Mermelstein. G.722, a new CCITT coding standard for digital transmission of wideband audio signals. _IEEE Communications Magazine,_ 26(1):8–15, January 1988.
-* [[[G.722:Overview,52]]], M. Taka, et. al. Overview of the 64 kbit/s (7 kHz) audio coding standard. In _Proc. IEEE Globecom_, pages 593–598, Houston, Texas, December 1986.
-* [[[G.722:SubjTest,53]]], G. Modena, A. Coleman, P. Usai, and P. Coverdale. Subjective Performance Evaluation of the 7 KHz Audio Coder. In _Proc. IEEE Globecom_, pages 599–604, Houston, Texas, December 1986.
-* [[[G.722:Implementation,54]]], G. Le Tourneur, et. al. Implementation of the 7 kHz Audio Codec and its Transmission Characteristics. In _Proc. IEEE Globecom_, pages 605–609, 1986.
-* [[[G.722:Modes,55]]], M. Dietrich, et. al. Initialization and Mode Switching of 7 kHz Audio Terminals. In _Proc. IEEE Globecom_, pages 610–614, 1986.
-* [[[G.722:Applications,56]]], K. R. Harrison, et. al. Possible Applications for networking considerations relating to the 64 kbit (7 kHz) audio coding system. In _Proc. IEEE Globecom_, pages 615–622, 1986.
-* [[[G.722:Summary,57]]], X. Maitre. 7 kHz audio coding within 64 kbit/s. _IEEE Journal on Selected Areas in Communications,_ 6(2):283–298, February 1988.
-* [[[G.722:ETSITS102527-1,58]]], ETSI. _ETSI TS 102 527-1 V1.2.1 (2008-06) Digital Enhanced Cordless Telecommunications (DECT); New Generation DECT; Part 1: Wideband speech._ ETSI, France, June 2008.
-* [[[G.722:ETSITS102527-3,59]]], ETSI. _ETSI TS 102 527-1 V1.1.1 (2008-06) Digital Enhanced Cordless Telecommunications (DECT); New Generation DECT; Part 3: Extended wideband speech services._ ETSI, France, June 2008.
-* [[[G.722:AppIII,60]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722/Appendix III, A high quality packet loss concealment algorithm for G.722._ ITU, Geneva, Switzerland, 2006.
-* [[[G.722:AppIV,61]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722/Appendix IV, A low-complexity algorithm for packet loss concealment with G.722._ ITU, Geneva, Switzerland, 2006.
-* [[[G.722:RFC3551,62]]], H. Schulzrinne and S. Casner. _RTP Profile for Audio and Video Conferences with Minimal Control._ IETF, July 2003.
-* [[[RPELTP:BasicConcept,63]]], P. Kroon, R. J. Sluyter, and E. F. Deprettere. Regular-pulse excitation: a novel approach to effective and efficient multipulse coding of speech. _IEEE Trans. Acoust., Speech, Signal Processing,_ ASSP-34(5):1054–1063, October 1986.
-* [[[RPELTP:ICASSP88,64]]], P. Vary et al. Speech codec for the European Mobile Radio System. In _Proc. ICASSP,_ pages 227–230, 1988.
-* [[[RPELTP:SpeechCommunication,65]]], Ulrich Reute (Guest Editor). Special Issue on Medium Rate Speech Coding for Digital Mobile Technology. _Speech Communication,_ 7(2), July 1988.
+* [[[G722-General,51]]], P. Mermelstein. G.722, a new CCITT coding standard for digital transmission of wideband audio signals. _IEEE Communications Magazine,_ 26(1):8–15, January 1988.
+* [[[G722-Overview,52]]], M. Taka, et. al. Overview of the 64 kbit/s (7 kHz) audio coding standard. In _Proc. IEEE Globecom_, pages 593–598, Houston, Texas, December 1986.
+* [[[G722-SubjTest,53]]], G. Modena, A. Coleman, P. Usai, and P. Coverdale. Subjective Performance Evaluation of the 7 KHz Audio Coder. In _Proc. IEEE Globecom_, pages 599–604, Houston, Texas, December 1986.
+* [[[G722-Implementation,54]]], G. Le Tourneur, et. al. Implementation of the 7 kHz Audio Codec and its Transmission Characteristics. In _Proc. IEEE Globecom_, pages 605–609, 1986.
+* [[[G722-Modes,55]]], M. Dietrich, et. al. Initialization and Mode Switching of 7 kHz Audio Terminals. In _Proc. IEEE Globecom_, pages 610–614, 1986.
+* [[[G722-Applications,56]]], K. R. Harrison, et. al. Possible Applications for networking considerations relating to the 64 kbit (7 kHz) audio coding system. In _Proc. IEEE Globecom_, pages 615–622, 1986.
+* [[[G722-Summary,57]]], X. Maitre. 7 kHz audio coding within 64 kbit/s. _IEEE Journal on Selected Areas in Communications,_ 6(2):283–298, February 1988.
+* [[[G722-ETSITS102527-1,58]]], ETSI. _ETSI TS 102 527-1 V1.2.1 (2008-06) Digital Enhanced Cordless Telecommunications (DECT); New Generation DECT; Part 1: Wideband speech._ ETSI, France, June 2008.
+* [[[G722-ETSITS102527-3,59]]], ETSI. _ETSI TS 102 527-1 V1.1.1 (2008-06) Digital Enhanced Cordless Telecommunications (DECT); New Generation DECT; Part 3: Extended wideband speech services._ ETSI, France, June 2008.
+* [[[G722-AppIII,60]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722/Appendix III, A high quality packet loss concealment algorithm for G.722._ ITU, Geneva, Switzerland, 2006.
+* [[[G722-AppIV,61]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722/Appendix IV, A low-complexity algorithm for packet loss concealment with G.722._ ITU, Geneva, Switzerland, 2006.
+* [[[G722-RFC3551,62]]], H. Schulzrinne and S. Casner. _RTP Profile for Audio and Video Conferences with Minimal Control._ IETF, July 2003.
+* [[[RPELTP-BasicConcept,63]]], P. Kroon, R. J. Sluyter, and E. F. Deprettere. Regular-pulse excitation: a novel approach to effective and efficient multipulse coding of speech. _IEEE Trans. Acoust., Speech, Signal Processing,_ ASSP-34(5):1054–1063, October 1986.
+* [[[RPELTP-ICASSP88,64]]], P. Vary et al. Speech codec for the European Mobile Radio System. In _Proc. ICASSP,_ pages 227–230, 1988.
+* [[[RPELTP-SpeechCommunication,65]]], Ulrich Reute (Guest Editor). Special Issue on Medium Rate Speech Coding for Digital Mobile Technology. _Speech Communication,_ 7(2), July 1988.
 * [[[GSM-06.10,66]]], GSM-06.10. _Full Rate Speech Transcoding._ ETSI, France, October 1992. Released July 1, 1993.
 * [[[LDCELP-voitests,68]]], C. South and P. Usai. Subjective Performance of CCITT's 16 kbit/s LD-CELP Algorithm with Voice Signals. In _Proc. IEEE Globecom,_ 1992.
 * [[[ETSI-half,69]]], H. J. Braun, S. Feldes, and G. Schröder. Preselection for the Half-Rate GSM Standard. In _IEEE Workshop on Speech Coding for Telecommunications,_ pages 90–92, September 11-13 1991.
