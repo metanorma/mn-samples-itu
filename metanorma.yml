@@ -15,12 +15,8 @@ metanorma:
       - sources/T-Editing-Guidelines-201602.adoc
       - sources/STL-manual.adoc
       - sources/T-TUT-CABLETV-2020.adoc
-
-      # These two documents are crashing Metanorma with this message:
-      # "Numeric reference in normative references"
-      # - sources/T-TUT-CCIT-2015-E.adoc
-      # - sources/T-TUT-CCIT-2017-E.adoc
-
+      - sources/T-TUT-CCIT-2015-E.adoc
+      - sources/T-TUT-CCIT-2017-E.adoc
       - sources/T-TUT-FSTP-2020-ACC.WEBVRI.adoc
       - sources/T-TUT-L-2020-GLR.adoc
       - sources/D-REC-D.19-201003-E.adoc
