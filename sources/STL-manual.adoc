@@ -1,6 +1,6 @@
 = ITU-T Software Tool Library 2019 User’s Manual
 :bureau: T
-:docnumber: G.191 STL-2019 Manual (02/19)
+:docnumber: G.191 STL-2019 Manual
 :series: G: Transmission Systems and Media, Digital Systems and Networks
 :series1: International telephone connections and circuits
 :series2: Software tools for transmission systems
@@ -599,14 +599,15 @@ The compression functions are `alaw_compress` and `ulaw_compress`, and the expan
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g711.h"
 void alaw_compress (long _smpno_, short _*lin_buf_, short _*log_buf_)
 void ulaw_compress (long _smpno_, short _*lin_buf_, short _*log_buf_)
-====
+----
 
-*Prototype:* g711.h
+*Prototype:* `g711.h`
 
 *Description:*
 
@@ -626,14 +627,15 @@ _log_buf_:: Is the output samples' buffer; each `short` sample will contain righ
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g711.h"
 void alaw_expand (long _smpno_, short _*log_buf_, short _*lin_buf_)
 void alaw_expand (long _smpno_, short _*log_buf_, short _*lin_buf_)
-====
+----
 
-*Prototype:* g711.h
+*Prototype:* `g711.h`
 
 *Description:*
 
@@ -757,29 +759,31 @@ If the loss exceeds 10 ms the synthetic signal is also linearly attenuated at th
 
 ==== Introduction
 
-The g711iplc directory contains an ANSI C implementation of the G.711 Appendix I PLC algorithm. The C++ version of this algorithm is in the g711iplc\cpp_cod directory. Sample test programs read lost frame patterns in G.192 file format and apply the PLC algorithm to audio files. The software in the g711iplc directory is covered by a more restrictive copyright than the STL. See the copyrght.txt file for details.
+The g711iplc directory contains an ANSI C implementation of the G.711 Appendix I PLC algorithm. The C++ version of this algorithm is in the `g711iplc\cpp_cod` directory. Sample test programs read lost frame patterns in G.192 file format and apply the PLC algorithm to audio files. The software in the `g711iplc` directory is covered by a more restrictive copyright than the STL. See the `copyrght.txt` file for details.
 
 ==== PLC Algorithm Implementation
 
-A detailed line by line description of the C++ code can be found in section I.3 "Algorithm description with annotated C++ code" of G.711 Appendix I <<G711-appendix-I>> and will not be repeated here. The public interface functions that are called by applications are covered. The C++ version is in the g711iplc\cpp_code directory (files lowcfe.h and lowcfe.cc). The ANSI C version, contained in the files lowcfe.h and lowcfe.c, is a translation of the C++ code to C. The interface functions are the same for both versions, with the exception that the C versions of the routines take an extra argument for the data structure that is implicitly passed to C++ member functions in the class instance data. As for other STL modules, only the ANSI C version is compiled during STL2005 building.
+A detailed line by line description of the C\++ code can be found in section I.3 "Algorithm description with annotated C\++ code" of G.711 Appendix I <<G711-appendix-I>> and will not be repeated here. The public interface functions that are called by applications are covered. The C\++ version is in the `g711iplc\cpp_code` directory (files `lowcfe.h` and lowcfe.cc). The ANSI C version, contained in the files `lowcfe.h` and `lowcfe.c`, is a translation of the C\++ code to C. The interface functions are the same for both versions, with the exception that the C versions of the routines take an extra argument for the data structure that is implicitly passed to C++ member functions in the class instance data. As for other STL modules, only the ANSI C version is compiled during STL2005 building.
 
 ===== Constructor
 
 *C++ syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "lowcfe.h"
 LowcFE  _lc_; // No argument constructor
-====
+----
 
 *C syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "lowcfe_c.h"
 g711plc_construct(_LowcFE_c*_); /* explicit constructor call */
-====
+----
 
 *Description:*
 
@@ -789,41 +793,45 @@ Before the PLC algorithm can be called the data structure containing the algorit
 
 *C++ syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 void LowcFE::addtohistory(short _s_); /* add a frame to the history buffer */
-====
+----
 
 *C syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 void g711plc_addtohistory(_LowcFE_c*_, short _*s_);
-====
+----
 
 *Description:*
 
-Frames of speech received from the transmitter are given to the PLC algorithm with `addtohistory` function. The argument _s_ points to a short array of length FRAMESZ (80 samples, or 10 ms) that is used as both an input and output. Before the call is made _s_ is filled with the decoded G.711 data received from the transmitter. On return, it contains the data that is output to the listener. Addtohistory performs several operations. It stores the input speech into the history buffer for use in generating the synthetic signal if a loss occurs. If this is the first received frame after a loss, an OLA is performed with the synthetic signal to insure a smooth transition between the signals. In addition, it delays the output so an OLA can be performed at the start of a loss.
+Frames of speech received from the transmitter are given to the PLC algorithm with `addtohistory` function. The argument _s_ points to a short array of length FRAMESZ (80 samples, or 10 ms) that is used as both an input and output. Before the call is made _s_ is filled with the decoded G.711 data received from the transmitter. On return, it contains the data that is output to the listener. `addtohistory` performs several operations. It stores the input speech into the history buffer for use in generating the synthetic signal if a loss occurs. If this is the first received frame after a loss, an OLA is performed with the synthetic signal to insure a smooth transition between the signals. In addition, it delays the output so an OLA can be performed at the start of a loss.
 
 ===== Lost Frames
 
 *C++ syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 void LowcFE::dofe(short _*s)_;    /* synthesize speech during loss */
-====
+----
 
 *C syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 void g711plc_dofe(_LowcFE_c*_, short _*s_);
-====
+----
 
 *Description:*
 
-If a frame is lost, the dofe routine is called. As with `addtohistory`, _s_ is a pointer to short array of FRAMESZ samples. With dofe, _s_ is only an output. The PLC algorithm fills _s_ with the synthetic signal that conceals the missing frame.
+If a frame is lost, the `dofe` routine is called. As with `addtohistory`, _s_ is a pointer to short array of FRAMESZ samples. With `dofe`, _s_ is only an output. The PLC algorithm fills _s_ with the synthetic signal that conceals the missing frame.
 
 ===== Support Functions
 
@@ -831,25 +839,27 @@ If a frame is lost, the dofe routine is called. As with `addtohistory`, _s_ is a
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "error.h"
 void error(char _*s_, ...);
-====
+----
 
 *Description:*
 
-Error handles fatal errors in the programs. The pattern string, _s_, and optional following arguments should be in the format of arguments accepted by the C library printf function. Error prints its argument message on stderr and then exits the program. The error function never returns.
+Error handles fatal errors in the programs. The pattern string, _s_, and optional following arguments should be in the format of arguments accepted by the C library `printf` function. Error prints its argument message on stderr and then exits the program. The error function never returns.
 
 `readplcmask_open`
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "plcferio.h"
 void readplcmask open(readplcmask _*r_, char _*fname_);
-====
+----
 
 *Description:*
 
@@ -859,11 +869,12 @@ The `readplcmask_open` function opens a G.192 format file containing a packet lo
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "plcferio.h"
 int readplcmask erased(readplcmask _*r_);
-====
+----
 
 *Description:*
 
@@ -873,11 +884,12 @@ int readplcmask erased(readplcmask _*r_);
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "plcferio.h"
 void readplcmask close(readplcmask _*r_)
-====
+----
 
 *Description:*
 
@@ -895,7 +907,7 @@ The PLC algorithm is tested using g711iplc.c. The PLC test programs take 3 file 
   g711iplc mask.g192 input.raw output.raw
 ----
 
-The `mask.g192` file contains the lost frame pattern and should be in the G.192 format as specified in the software tools library. The g192, byte, and compact representations are supported. The G.192 file should contain only the frame headers words (G192_SYNC or G192_FER, see softbit.h), and not the data words.
+The `mask.g192` file contains the lost frame pattern and should be in the G.192 format as specified in the software tools library. The g192, byte, and compact representations are supported. The G.192 file should contain only the frame headers words (G192_SYNC or G192_FER, see `softbit.h`), and not the data words.
 
 A frame corresponds to 10 ms, or 80 samples. If the lost frame pattern file is shorter than the number of frames in the `input.raw` file, the program will roll-over back to the start of the pattern file. For example if the `mask.g192` file contains the binary data:
 
@@ -938,7 +950,7 @@ Use the `-stats` option to print out the number and percentage of frames conceal
 
 ===== Test Program Implementation
 
-A simplified version of the C++ test program is shown next. This program does not support any options, such as -noplc, or compensate for the algorithm delay, but demonstrates how the components work together.
+A simplified version of the C++ test program is shown next. This program does not support any options, such as `-noplc`, or compensate for the algorithm delay, but demonstrates how the components work together.
 
 [%unnumbered]
 [source,c]
@@ -1165,18 +1177,19 @@ In the following part a summary of calls to both functions is found.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g726.h"
 void G726 encode (short _*inp_buf_, short _*out_buf_, long _smpno_, char
                   _*law_, short _rate_, short _reset_, G726_state _*state_)
-====
+----
 
 [[G726-bs]]
 .Packing of G.726-encoded signals (right-aligned, parallel format)
 image::image5-1.png[]
 
-*Prototype:* g726.h
+*Prototype:* `g726.h`
 
 *Description:*
 
@@ -1217,14 +1230,15 @@ NOTE: Please note the difference between _reset_ and _law_: _reset_ must be eith
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g726.h"
 void G726 decode (short _*inp_buf_, short _*out_buf_, long _smpno_, char
                   _*law_, short _rate_, short _reset_, G726_state _*state_)
-====
+----
 
-*Prototype:* g726.h
+*Prototype:* `g726.h`
 
 *Description:*
 
@@ -1275,9 +1289,9 @@ These routines have been tested in VAX/VMS with VAX-C and GNU-C, in the PC with 
 
 ==== Description of the demonstration programs
 
-Two programs are provided as demonstration programs for the G.726 module, g726demo.c and vbr-g726.c.
+Two programs are provided as demonstration programs for the G.726 module, `g726demo.c` and vbr-g726.c.
 
-Program `g726demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by g711demo.c) and encodes and/or decodes using one of the G.726 bit rates (16, 24, 32, or 40 kbit/s). Linear PCM files are not accepted by the program. Three operations are possible: logarithmic in, logarithmic out (_lolo_) logarithmic in, ADPCM out (_load_), or ADPCM in, logarithmic out (_adlo_).
+Program `g726demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by `g711demo.c`) and encodes and/or decodes using one of the G.726 bit rates (16, 24, 32, or 40 kbit/s). Linear PCM files are not accepted by the program. Three operations are possible: logarithmic in, logarithmic out (_lolo_) logarithmic in, ADPCM out (_load_), or ADPCM in, logarithmic out (_adlo_).
 
 Program `vbr-g726.c` can perform the same functions as `g726demo.c`, however it is capable of two additional features. It can perform in variable bit rate mode, which is switched at user-specified frame sizes (i.e. number of samples), and it can operate from 16-bit linear PCM input files. In the latter case, A-law is used to compand the linear signal prior to G.726 encoding, since G.726 Annex A <<G726-LinearIO>> is not yet implemented in the STL.
 
@@ -1380,13 +1394,14 @@ The encoding function is `G727_encode`, and the decoding function is `G727_decod
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g727.h"
 void G727_reset (g727_state _*st_);
-====
+----
 
-*Prototype:* g727.h
+*Prototype:* `g727.h`
 
 *Description:*
 
@@ -1397,14 +1412,15 @@ Reset ITU-T G.727 embedded ADPCM encoder or decoder state variable.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g727.h"
 void G727_encode (short _*src_, short _*dst_, short _smpno_, short _law_,
                   short _cbits_, short _ebits_, g727_state _*state_);
-====
+----
 
-*Prototype:* g727.h
+*Prototype:* `g727.h`
 
 *Description:*
 
@@ -1435,14 +1451,15 @@ _state_:: The state variable structure; all the variables here are for internal 
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g727.h"
 void G727_decode (short _*src_, short _*dst_, short _smpno_, short _law_,
                   short _cbits_, short _ebits_, g727_state _*state_);
-====
+----
 
-*Prototype:* g727.h
+*Prototype:* `g727.h`
 
 *Description:*
 
@@ -1483,7 +1500,7 @@ These routines have been tested in in MS-DOS with Turbo C++ v1.0 (16-bit mode) a
 
 One program is provided as demonstration program for the G.727 module, g727demo.c.
 
-Program `g727demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by g711demo.c) and encodes and/or decodes using the G.727 algorithm for the user-specified number of stem:[N_c] core bits and stem:[N_e] enhancement bits. The effective encoding bitrate will then be stem:[16 xx (N_c+N_e)] kbit/s. Linear PCM files are not accepted by the program, since G.727 Annex A <<G727-LinearIO>> is not yet implemented in the STL. Three operations are possible: logarithmic in, logarithmic out (default) logarithmic in, ADPCM out (option _-enc_), or ADPCM in, logarithmic out (option _-dec_).
+Program `g727demo.c` accepts input files in either 16-bit, right-justified A- or stem:[mu]-law format (as generated by `g711demo.c`) and encodes and/or decodes using the G.727 algorithm for the user-specified number of stem:[N_c] core bits and stem:[N_e] enhancement bits. The effective encoding bitrate will then be stem:[16 xx (N_c+N_e)] kbit/s. Linear PCM files are not accepted by the program, since G.727 Annex A <<G727-LinearIO>> is not yet implemented in the STL. Three operations are possible: logarithmic in, logarithmic out (default) logarithmic in, ADPCM out (option _-enc_), or ADPCM in, logarithmic out (option _-dec_).
 
 ==== Simple example
 
@@ -1915,7 +1932,7 @@ This implementation of the G.728 algorithm is composed of source files in severa
 
 The source code for the floating-point version of G.728 resides in the directory `g728/g728float`. All public interface function declarations and data structures needed to call the coder can be found in the header file `g728.h`. The package includes a demonstration program, `g728.c`, that shows how to call the encoder, decoder, and decoder with packet loss concealment. The demonstration program can run the coder on the G.728 test vectors.
 
-The floating-point version of the coder can be compiled to use either double precision or single precision floating-point arithmetic. If compiled with `-DUSEDOUBLES`, g728.h defines the `Float` typedef as a C `double`. If compiled with `-DUSEFLOATS`, Float is a C `float`. `Float` is declared in g728.h as:
+The floating-point version of the coder can be compiled to use either double precision or single precision floating-point arithmetic. If compiled with `-DUSEDOUBLES`, `g728.h` defines the `Float` typedef as a C `double`. If compiled with `-DUSEFLOATS`, Float is a C `float`. `Float` is declared in `g728.h` as:
 
 [%unnumbered]
 [source,c]
@@ -1930,7 +1947,7 @@ typedef float  Float;
 
 Single precision runs faster. Double precision runs slower but is more likely to give results that are bit-exact across different machines. When compiling for use with the test vectors double precision arithmetic should be used.
 
-The include file, g728.h also defines a `Short` type:
+The include file, `g728.h` also defines a `Short` type:
 
 [%unnumbered]
 [source,c]
@@ -1942,7 +1959,7 @@ to hold signed 16-bit integers.
 
 ==== G.728 Floating-point Encoder
 
-g728.h defines a C structure, `G728EncData`, to hold the encoder state variables. Its contents are described in the G.728 standard. Here we emphasize how to use it, rather than its internal members. Before calling the encoder `G728EncData` should be initialized with a call to `g728encinit`:
+`g728.h` defines a C structure, `G728EncData`, to hold the encoder state variables. Its contents are described in the G.728 standard. Here we emphasize how to use it, rather than its internal members. Before calling the encoder `G728EncData` should be initialized with a call to `g728encinit`:
 
 [%unnumbered]
 [source,c]
@@ -2009,7 +2026,7 @@ We have omitted the details of opening the files. The code in the `(mode == M_EN
 
 ==== G.728 Floating-point Decoder
 
-g728.h defines a C structure, `G728DecData`, to hold the decoder state variables. Many of the decoder state variables replicate the state variables in the encoder. There are additional sections for variables associated with the post-filter and packet loss concealment. As with the encoder, the `G728DecData` must be initialized before it can be used:
+`g728.h` defines a C structure, `G728DecData`, to hold the decoder state variables. Many of the decoder state variables replicate the state variables in the encoder. There are additional sections for variables associated with the post-filter and packet loss concealment. As with the encoder, the `G728DecData` must be initialized before it can be used:
 
 [%unnumbered]
 [source,c]
@@ -2163,7 +2180,7 @@ Rather than repeating the interface presented in the floating-point section, the
 [cols="3*^"]
 |===
 | Object | Floating-Point | Fixed-Point
-| Include File | g728.h | g728fp.h
+| Include File | `g728.h` | `g728fp.h`
 | Encoder State | G728EncData | G728FpEncData
 | Decoder State | G728DecData | G728FpDecData
 | Encoder State Initialize | g728encinit | g728fp_encinit
@@ -2212,16 +2229,13 @@ Input PLC mask files are ASCII files that contain '0's and '1's. A '1' implies t
 
 The demonstration program supports several other options. Options should appear in the command line before the mode of the coder:
 
-[align=left]
-`-nopostf` +
+`-nopostf`::
 Turn off the post-filter in the decoder. This is required to run many of the test vectors. For normal operation the post-filter should be on.
 
-[align=left]
-`-stats` +
+`-stats`::
 PLC concealment option to print out statistics on how many frames were processed and concealed.
 
-[align=left]
-`-plcsize msec` +
+`-plcsize msec`::
 set the PLC concealment frame size, in milliseconds. This is how much speech will be concealed by a single lost packet. Only a limited set of values are acceptable: 2.5, 5, 7.5, 10, 12.5, 15, 17.5 and 20. The default value is 10 ms.
 
 ==== G.728 Demonstration Program Modes
@@ -2420,7 +2434,7 @@ STL.
 
 As described previously, G.722 is an embedded algorithm which supports network scaling of the bitstream in three bitrates: 48, 56 and 64 kbit/s. To support this functionality within the G.192 file format the G.722 encoder writes the 16 kbit/s embedded bits in the end of every G.192 bitstream frame.
 
-For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <<fig-G722trame>>, <<fig-G722trame1>> and <<fig-G722trame2>> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <<G.722>> and as used in <<G722-RFC3551>>).
+For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <<fig-G722trame>>, <<fig-G722trame1>> and <<fig-G722trame2>> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <<G.722>> and as used in <<IETFRFC3551>>).
 
 [[fig-G722trame]]
 .Example of a G.192 compatible G.722 encoder output frame for a 10 ms input frame size. This frame has a length of 640 bits and a G192_SYNC (0x6B21) header tag, in the G.192 file each g722 bit is stored as a 16 bit word.
@@ -2464,7 +2478,7 @@ _szh, szl_:: Zero section output signal for higher and lower band, respectively
 
 The default bitstream generated by the STL G.722 encoder is a G.192 compatible 16 bit output file and it is provided using the frame size specified by the -fsize command. Bits in a G.192 bitstream frame are ordered so that the frame can be truncated at 56 and 48 kbit/s. If the number of input samples are non divisible by the frame size, the output codeword stream is truncated at the last frame boundary.
 
-A legacy g722 octet stream can be obtained using the option -byte. The legacy bitstream generated by the STL G.722 encoder has 8 valid bits for each encoded sample, saved in right-justified `short`s. i.e., the codewords are located in the lower 8-bits of the encoded bitstream file. The MSB is always 0 for the 16 bit bitstream file. The lower 6 bits are the lower-subband encoded bits, and the upper two bits of the 8 valid bits are the upper-subband encoded bits. When the decoder is not in operation mode 1, the decoder will discard 1 or 2 of the lower bits of the lower-subband. It should be noted that, when bit errors are inserted in this bitstream and the operation mode is not mode 1, the actual bit error rate seen by the decoder may not be the one actually desired. One may consider that, in simulating a system where auxiliary data channels are used, such as modes 2 and 3, this is actually the desired behaviour, because errors hitting the auxiliary data will not affect the decoded speech quality. However, if simulation of modes 1-bis or 3-bis is intended, then the some of the errors hitting the lower 1 (mode 1-bis) or 2 bits (mode 3-bis) will not be seen by the decoder, and the overall bit error rate will actually be smaller than the desired one. There are two possible approaches to circumvent this problem:
+A legacy g722 octet stream can be obtained using the option -byte. The legacy bitstream generated by the STL G.722 encoder has 8 valid bits for each encoded sample, saved in right-justified ``short``s. i.e., the codewords are located in the lower 8-bits of the encoded bitstream file. The MSB is always 0 for the 16 bit bitstream file. The lower 6 bits are the lower-subband encoded bits, and the upper two bits of the 8 valid bits are the upper-subband encoded bits. When the decoder is not in operation mode 1, the decoder will discard 1 or 2 of the lower bits of the lower-subband. It should be noted that, when bit errors are inserted in this bitstream and the operation mode is not mode 1, the actual bit error rate seen by the decoder may not be the one actually desired. One may consider that, in simulating a system where auxiliary data channels are used, such as modes 2 and 3, this is actually the desired behaviour, because errors hitting the auxiliary data will not affect the decoded speech quality. However, if simulation of modes 1-bis or 3-bis is intended, then the some of the errors hitting the lower 1 (mode 1-bis) or 2 bits (mode 3-bis) will not be seen by the decoder, and the overall bit error rate will actually be smaller than the desired one. There are two possible approaches to circumvent this problem:
 
 * the use of an external program to shift the bitstream samples one or two bits (respectively for modes 1-bis or 3-bis) to the right before the bitstream serialization process for use with the STL EID module, and an external program to left-shift the bitream samples by one or two bits after error insertion and before using the STL G.722 decoder. This solution is valid for both random and burst bit errors.
 * to increase proportionally the bit error rate by 1/8 (mode 1-bis) or 1/4 (mode 3-bis), to statistically compensate for errors hitting unused bits. This solution is valid only for random bit errors.
@@ -2477,14 +2491,15 @@ In the following part a summary of calls to the three entry functions is found.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g722.h"
 long g722_encode (short _*inp_buf_, short _*g722_frame_, long _smpno_,
                   g722_state _*g722_encode_);
-====
+----
 
-*Prototype:* g722.h
+*Prototype:* `g722.h`
 
 *Description:*
 
@@ -2511,14 +2526,15 @@ Returns the number of speech samples encoded.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g722.h"
 short g722_decode (short _*g722_frame_, short _*out_buf_, int _mode_, long
                    _smpno_, g722_state _*g722_decoder,_ );
-====
+----
 
-*Prototype:* g722.h
+*Prototype:* `g722.h`
 
 *Description:*
 
@@ -2547,13 +2563,14 @@ Returns the number of speech samples encoded.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g722.h"
 void g722_reset_encoder (g722_state _*g722_encoder_);
-====
+----
 
-*Prototype:* g722.h
+*Prototype:* `g722.h`
 
 *Description:*
 
@@ -2570,13 +2587,14 @@ _g722_encoder_:: A pointer to the G.722 encoder state variable structure which i
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "g722.h"
 void g722 reset decoder (g722_state _*g722_decoder_);
-====
+----
 
-*Prototype:* g722.h
+*Prototype:* `g722.h`
 
 *Description:*
 
@@ -2661,9 +2679,9 @@ options:
 
 ==== Description of the demonstration programs
 
-One demonstration program is provided for the G.722 module, g722demo.c. In addition, two programs are provided in the distribution when compliance testing of the encoder and decoder is necessary, tstcg722.c and tstdg722.c{blank}footnote:[. The demonstration program g722demo.c cannot be used for compliance verification because the test vectors for G.722 do not foresee processing through the quadrature mirror filters.].
+One demonstration program is provided for the G.722 module, g722demo.c. In addition, two programs are provided in the distribution when compliance testing of the encoder and decoder is necessary, `tstcg722.c` and tstdg722.c{blank}footnote:[. The demonstration program `g722demo.c` cannot be used for compliance verification because the test vectors for G.722 do not foresee processing through the quadrature mirror filters.].
 
-Program `g722demo.c` accepts 16-bit, linear PCM samples sampled at 16 kHz as encoder input. The decoder also produces files in the same format. The bitstream signals out of the encoder are always organized in 16-bit, right-justified words that use the lower 8 bits (i.e., 64 kbit/s). According to the user-specified mode, the decoder will decode the G.722-encoded bitstream using 64, 56, or 48 kbit/s (i.e. full 8 bits, discard 1 bit of the lower band, or discard 2 bits of the lower band). It should be noted that the demonstration programs g722demo.c, tstcg722.c and tstdg722.c only produce G.722 legacy bitstream. To produce bitstream compliant with G.192, please use encg722.c and decg722.c. Similarly, basic PLC functionnality is not supported the demonstration programs g722demo.cand tstdg722.c. Please use decg722.c for basic PLC functionnality.
+Program `g722demo.c` accepts 16-bit, linear PCM samples sampled at 16 kHz as encoder input. The decoder also produces files in the same format. The bitstream signals out of the encoder are always organized in 16-bit, right-justified words that use the lower 8 bits (i.e., 64 kbit/s). According to the user-specified mode, the decoder will decode the G.722-encoded bitstream using 64, 56, or 48 kbit/s (i.e. full 8 bits, discard 1 bit of the lower band, or discard 2 bits of the lower band). It should be noted that the demonstration programs `g722demo.c`, `tstcg722.c` and `tstdg722.c` only produce G.722 legacy bitstream. To produce bitstream compliant with G.192, please use `encg722.c` and decg722.c. Similarly, basic PLC functionnality is not supported the demonstration programs g722demo.cand tstdg722.c. Please use `decg722.c` for basic PLC functionnality.
 
 ==== Simple example
 
@@ -2868,13 +2886,14 @@ From the users' perspective, the encoding function is `rpeltp_encode`, and the d
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "rpeltp.h"
 void rpeltp_encode (gsm _rpe_state_, short _*inp_buf_, short _*rpe_frame_);
-====
+----
 
-*Prototype:* rpeltp.h
+*Prototype:* `rpeltp.h`
 
 *Description:*
 
@@ -2897,13 +2916,14 @@ _rpe_frame_:: Is the encoded sample buffer. Each `short` sample will contain the
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "rpeltp.h"
 void rpeltp_decode (gsm _rpe_state_, short _*rpe_frame_, short _*out_buf_);
-====
+----
 
-*Prototype:* rpeltp.h
+*Prototype:* `rpeltp.h`
 
 *Description:*
 
@@ -2925,13 +2945,14 @@ _out_buf_:: Is the output samples buffer, which will contain 160 left-justified,
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "rpeltp.h"
 gsm rpeltp_init (void);
-====
+----
 
-*Prototype:* rpeltp.h
+*Prototype:* `rpeltp.h`
 
 *Description:*
 
@@ -2947,13 +2968,14 @@ A pointer to an initialized state variable structure defined by the type `gsm`. 
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "rpeltp.h"
 void rpeltp_init (gsm rpe_state);
-====
+----
 
-*Prototype:* rpeltp.h
+*Prototype:* `rpeltp.h`
 
 *Description:*
 
@@ -3489,8 +3511,9 @@ image::image10-43.png[]
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "firflt.h"
 SCD_FIR *delta_sm_16khz_init (void);
 SCD_FIR *hq_down_2_to_1_init (void);
@@ -3520,9 +3543,9 @@ SCD_FIR *LP10_48kHz_init (void);
 SCD_FIR *LP12_48kHz_init (void);
 SCD_FIR *LP14_48kHz_init (void);
 SCD_FIR *L20_48kHz_init (void);
-====
+----
 
-*Prototypes:* firflt.h
+*Prototypes:* `firflt.h`
 
 *Description:*
 
@@ -3595,15 +3618,16 @@ These functions return a pointer to a state variable structure of type `SCD_FIR`
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "firflt.h"
 long hq_kernel(long _lseg_, float _*x_ptr_, SCD_FIR _*fir_ptr_, float _*y_ptr_);
-====
+----
 
-*Prototype:* firflt.h
+*Prototype:* `firflt.h`
 
-*Source code:* fir-lib.c
+*Source code:* `fir-lib.c`
 
 *Description:*
 
@@ -3631,15 +3655,16 @@ The number of filtered samples as a `long`.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "firflt.h"
 void hq_reset (SCD_FIR _*fir_ptr_);
-====
+----
 
-*Prototype:* firflt.h
+*Prototype:* `firflt.h`
 
-*Source code:* fir-lib.c
+*Source code:* `fir-lib.c`
 
 *Description:*
 
@@ -3657,15 +3682,16 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "firflt.h"
 void hq_free (SCD_FIR _*fir_ptr_);
-====
+----
 
-*Prototype:* firflt.h
+*Prototype:* `firflt.h`
 
-*Source code:* fir-lib.c
+*Source code:* `fir-lib.c`
 
 *Description:*
 
@@ -3764,16 +3790,17 @@ image::image10-49.png[]
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 CASCADE_IIR *iir_G712_8khz_init (void);
 CASCADE_IIR *iir_irs_8khz_init (void);
 CASCADE_IIR *iir_casc_lp_3_to_1_init(void);
 CASCADE_IIR *iir_casc_lp_1_to_3_init(void);
-====
+----
 
-*Prototypes:* iirflt.h
+*Prototypes:* `iirflt.h`
 
 *Description:*
 
@@ -3789,16 +3816,17 @@ CASCADE_IIR *iir_casc_lp_1_to_3_init(void);
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 long cascade_iir_kernel (long _lseg_, float _*x_ptr_, CASCADE_IIR _*iir_ptr_,
                          float _*y_ptr_);
-====
+----
 
-*Prototype:* iirflt.h
+*Prototype:* `iirflt.h`
 
-*Source code:* iir-lib.c
+*Source code:* `iir-lib.c`
 
 *Description:*
 
@@ -3823,15 +3851,16 @@ The number of output samples is returned as a long.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 void cascade_iir_reset (CASCADE_IIR _*iir_ptr_);
-====
+----
 
-*Prototype:* iirflt.h
+*Prototype:* `iirflt.h`
 
-*Source code:* iir-lib.c
+*Source code:* `iir-lib.c`
 
 *Description:*
 
@@ -3849,15 +3878,16 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 void cascade_iir_free (SCD_IIR _*iir_ptr_);
-====
+----
 
-*Prototype:* iirflt.h
+*Prototype:* `iirflt.h`
 
-*Source code:* iir-lib.c
+*Source code:* `iir-lib.c`
 
 *Description:*
 
@@ -3875,15 +3905,16 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 SCD_IIR *stdpcm_16khz_init (void);
 SCD_IIR *stdpcm_1_to_2_init (void);
 SCD_IIR *stdpcm_2_to_1_init (void);
-====
+----
 
-*Prototypes:* iirflt.h
+*Prototypes:* `iirflt.h`
 
 *Description:*
 
@@ -3905,16 +3936,17 @@ This function returns a pointer to a state variable structure of type `SCD_IIR`.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 long stdpcm_kernel (long _lseg_, float _*x_ptr_, SCD_IIR _*iir_ptr_,
                     float _*y_ptr_);
-====
+----
 
-*Prototype:* iirflt.h
+*Prototype:* `iirflt.h`
 
-*Source code:* iir-lib.c
+*Source code:* `iir-lib.c`
 
 *Description:*
 
@@ -3938,15 +3970,16 @@ This function returns the number of output samples as a `long`.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 void stdpcm_reset (SCD_IIR _*iir_ptr_);
-====
+----
 
-*Prototype:* iirflt.h
+*Prototype:* `iirflt.h`
 
-*Source code:* iir-lib.c
+*Source code:* `iir-lib.c`
 
 *Description:*
 
@@ -3966,15 +3999,16 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "iirflt.h"
 void stdpcm_free (SCD_IIR _*iir_ptr_);
-====
+----
 
-*Prototype:* iirflt.h
+*Prototype:* `iirflt.h`
 
-*Source code:* iir-lib.c
+*Source code:* `iir-lib.c`
 
 *Description:*
 
@@ -4000,11 +4034,11 @@ Portability of this module was checked by running the same speech file on a prov
 
 ==== Description of the demonstration programs
 
-Three programs are provided as demonstration programs for the RATE module, firdemo.c, iirdemo.c, and filter.c.
+Three programs are provided as demonstration programs for the RATE module, `firdemo.c`, `iirdemo.c`, and filter.c.
 
 Programs `firdemo.c` and `iirdemo.c` were the first demonstration programs for the rate change module. The former is found in directory `fir` of the STL and contains a cascade processing of the FIR filters available upto the STL96. The latter is found in directory `iir` of the STL and contains a cascade processing of the IIR filters available up to the STL96. However, because of the increasing static memory requirement for cascade processing that came with the introduction of new filters in the STL, these two programs became prohibitive and their maintenance was discontinued. They are still functional, although outdated.
 
-Program `filter.c` is a single demonstration program that incorporates both IIR and FIR filters in the STL and has been kept up-to-date as new filters are added to the STL. Compared to the firdemo.c and iirdemo.c programs, filter.c can only perform one filtering operation per pass, while firdemo.c and iirdemo.c could perform a number of 1:1 operations combined with two up-sampling and two downsampling operations. Hence, several calls of the filter program are necessary to implement what was accomplished by a single call of firdemo.c and iirdemo.c, in addition to the cumulative quantization noise (from the successive float-to-short conversions). In applications where multiple filtering is needed and the user is concerned with the quantization noise accumulation, a custom-made program could be used e.g. based on a specialization of either firdemo.c, iirdemo.c, or filter.c.
+Program `filter.c` is a single demonstration program that incorporates both IIR and FIR filters in the STL and has been kept up-to-date as new filters are added to the STL. Compared to the `firdemo.c` and `iirdemo.c` programs, `filter.c` can only perform one filtering operation per pass, while `firdemo.c` and `iirdemo.c` could perform a number of 1:1 operations combined with two up-sampling and two downsampling operations. Hence, several calls of the filter program are necessary to implement what was accomplished by a single call of `firdemo.c` and `iirdemo.c`, in addition to the cumulative quantization noise (from the successive float-to-short conversions). In applications where multiple filtering is needed and the user is concerned with the quantization noise accumulation, a custom-made program could be used e.g. based on a specialization of either `firdemo.c`, `iirdemo.c`, or filter.c.
 
 ==== Example: Calculating frequency responses
 
@@ -4390,13 +4424,14 @@ image::image11-4.png[]
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 SCD_EID *open_eid (double _ber_, double _gamma_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4416,13 +4451,14 @@ Returns a pointer to struct `SCD_EID`; if the initialization failed, returns a n
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 BURST_EID *open_burst_eid (long _index_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4440,13 +4476,14 @@ This function returns a pointer to a structure of type `BURST_EID`. If the initi
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 void reset_burst_eid (BURST_EID _*burst_eid_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4462,13 +4499,14 @@ _burst_eid_:: `BURST_EID` structure to be reset.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 void close_eid (SCD_EID _*EID_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4485,13 +4523,14 @@ _EID_:: EID state variables' structure to be released.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 double BER_generator (SCD_EID _*EID_, long _lseg_, short _*EPbuff_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4513,13 +4552,14 @@ The bit error rate in the current frame is returned as a `double`.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 double FER_generator_random (SCD_EID _*EID_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4538,13 +4578,14 @@ Returns a `double` value: 0 if the current frame should not be erased ("good fra
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 double FER_generator_burst (BURST_EID _*EID_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4563,14 +4604,15 @@ This function returns a `double` value: 0 if the current frame should not be era
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 void BER_insertion (long _lseg_, short _*xbuff_, short _*ybuff_, short
                     _*error_pattern_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4615,14 +4657,15 @@ _error_pattern_:: Buffer with error pattern (without synchronization header), of
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "eid.h"
 double FER_module (SCD_EID _*EID_, long _lseg_, short _*xbuff_, short
                    _*ybuff_);
-====
+----
 
-*Prototype:* eid.h
+*Prototype:* `eid.h`
 
 *Description:*
 
@@ -4663,7 +4706,7 @@ The original EID routines had portability tested for VAX/VMS with VAX-C, MS-DOS 
 
 ==== Description of demonstration programs
 
-Number of programs are provided as demonstration programs for the EID module, eiddemo.c (version 3.2), eid8k.c (version 3.2), eid-xor.c (version 1.0), gen-patt.c (version 1.4), ep-stats.c (version 2.0), eid-int.c (version 1.0), eid-ev.c (version 1.0), gen_rate_profile.c (version 1.2).
+Number of programs are provided as demonstration programs for the EID module, `eiddemo.c` (version 3.2), `eid8k.c` (version 3.2), `eid-xor.c` (version 1.0), `gen-patt.c` (version 1.4), `ep-stats.c` (version 2.0), `eid-int.c` (version 1.0), `eid-ev.c` (version 1.0), `gen_rate_profile.c` (version 1.2).
 
 Program `eiddemo.c` uses input and output file in the form of a serial bit stream conforming to the bitstream signal representation, as defined in Annex B of ITU-T G.192. This program will disturb the input bitstream with errors using the Gilbert Elliot Channel model for random or burst bit error insertion and for random frame erasures. The Bellcore model, which is used for burst frame erasures, is supported as a command line option, but not as default. It should be noted that this program uses function `FER_module()`, not function `FER_generator_random()`, for random frame erasures.
 
@@ -4969,9 +5012,9 @@ In <<Q001.02.04.02>>, the speech-correlated noise generation was based on a doub
 With the 1996 revision of the MNRU description published in Recommendation ITU-T P.810 footnote:[Formerly known as Recommendation ITU-T P.81.], specific guidelines were given for "digital implementations" footnote:[The revised P.81 define a "digital implementation" either as a digital hardware implementation or as a software implementation of the MNRU.], eliminating many of the ambiguities possible in earlier descriptions <<Old-P.81>>, as explained in the STL92 manual <<STL92-Manual>>, Chapter 8. <<fig-1-P.810>> shows a block diagram of the "digital" MNRU. Also, this implementation allows for transparent operation on narrowband or wideband speech, hence being known as Dual-mode MNRU, or "Duo-MNRU", for short.
 
 [CAUTION]
-====
+----
 Special caution must be made when selecting frequency bandwidth of the input signal. The current implementation of tool is only useful for narrowband (200 -- 3400 Hz) and wideband (100 -- 7000 Hz) signal only, and should not be applied to superwideband or fullband signal.
-====
+----
 
 === Description of the Algorithm
 
@@ -5204,15 +5247,16 @@ The noise modulation routine is `MNRU_process`, which is described next.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "mnru.h"
 double *MNRU_process (char _operation_, MNRU_state _*s_, float _*input_,
                       float _*output_, long _n_, long _seed_, char _mode_,
                       double _Q_);
-====
+----
 
-*Prototype:* mnru.h
+*Prototype:* `mnru.h`
 
 *Description:*
 
@@ -5524,13 +5568,14 @@ The algorithm has two operational parts, one that deals with the initialization 
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "sv-p56.h"
 void init_speech_voltmeter (SVP56_state _*state_, double _f_);
-====
+----
 
-*Prototype:* sv-p56.h
+*Prototype:* `sv-p56.h`
 
 *Description:*
 
@@ -5551,13 +5596,14 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "sv-p56.h"
 double speech_voltmeter (float _*buffer_, long _smpno_, SVP56_state _*state_);
-====
+----
 
-*Prototype:* sv-p56.h
+*Prototype:* `sv-p56.h`
 
 *Description:*
 
@@ -5585,8 +5631,9 @@ Some macros are provided for the inspection of the speech voltmeter statistics:
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "sv-p56.h"
 SVP56_get_rms_dB(SVP56_state _state_);
 SVP56_get_DC_level(SVP56_state _state_);
@@ -5595,7 +5642,7 @@ SVP56_get_pos_max(SVP56_state _state_);
 SVP56_get_neg_max(SVP56_state _state_);
 SVP56_get_abs_max(SVP56_state _state_);
 SVP56_get_smpno(SVP56_state _state_);
-====
+----
 
 *Description:*
 
@@ -5617,7 +5664,12 @@ Compliance tests of this module have been done based on the compliance with othe
 
 Portability was checked by running the same speech file on a proven platform and on a test platform. Results have to be identical, in especial long-term and active levels, as well as the activity factor. During the development of this tool, the provided demonstration programs (see section <<sv56-examples>>) were used to measure and level-equalize a reference file. These test files are provided in the STL distribution.
 
-This module had portability tested for VAX/VMS with VAX-C and GNU C (gcc) and for MS-DOS with a number of Borland C/C++ compilers (Turbo C v2.0, Turbo-C++ v1.0, Borland C++ v3.1). Portability was also tested in a number of Unix workstations and compilers: Sun workstation with Sun-OS and Sun-C (cc), acc, and gcc; HP workstation with HP-UX and gcc.
+This module had portability tested for VAX/VMS with VAX-C and GNU C
+(gcc) and for MS-DOS with a number of Borland C/C++ compilers (Turbo
+C v2.0, Turbo-C++ v1.0, Borland C++ v3.1). Portability was also
+tested in a number of Unix workstations and compilers: Sun
+workstation with Sun-OS and Sun-C (`cc`), `acc`, and `gcc`;
+HP workstation with HP-UX and `gcc`.
 
 [[sv56-examples]]
 === Examples
@@ -5881,13 +5933,14 @@ including reverberation. a| Small, Echoic, MS a| SEMSP07.L.IR32 SEMSP07.R.IR32
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "reverb-lib.h"
 void shift (short* _buff_, long _N_);
-====
+----
 
-*Prototype:* reverb-lib.h
+*Prototype:* `reverb-lib.h`
 
 *Description:*
 
@@ -5903,14 +5956,15 @@ _N_:: length of each block (input);
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "reverb-lib.h"
 long conv (float* _IR_, short* _buffIn_, short* _buffRvb_, float
            _alignFact_, long _N_, long _L_);
-====
+----
 
-*Prototype:* reverb-lib.h
+*Prototype:* `reverb-lib.h`
 
 *Description:*
 
@@ -5979,14 +6033,15 @@ For example, one frame of the input bitstream will comprise 640 bits for a 32 kb
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "trunc-lib.h"
 void trunc (short _syncWord_, short _outFrameLgth_, short* _inpFrame_,
             short* _outFrame_);
-====
+----
 
-*Prototype:* trunc-lib.h
+*Prototype:* `trunc-lib.h`
 
 *Description:*
 
@@ -6070,8 +6125,8 @@ image::image16-3.png[]
 
 ==== Computation optimization
 
-[align=left]
-As the time needed for computing the frequency response of a long audio file can be rather long, the Discrete Fourier Transform (DFT) can be replaced by a split radix (4,2) Fast Fourier Transform (FFT) algorithm footnote:[Split-radix FFT algorithm, http://en.wikipedia.org/wiki/Split-radix_FFT_algorithm]. +
+As the time needed for computing the frequency response of a long audio file can be rather long, the Discrete Fourier Transform (DFT) can be replaced by a split radix (4,2) Fast Fourier Transform (FFT) algorithm footnote:[Split-radix FFT algorithm, http://en.wikipedia.org/wiki/Split-radix_FFT_algorithm].
+
 When this option is activated the frame size is limited to power of 2 values (16-32-64-128-256-512-1024-2048-4096-8192).
 
 === Test Signals
@@ -6101,13 +6156,14 @@ Therefore, ITU-T SG12 has been suggesting use of Composite Source (CS) Signal as
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "fft.h"
 void rdft (int _NFFT_, float* _x1_, float* _x2_, float* _y2_);
-====
+----
 
-*Prototype:* fft.h
+*Prototype:* `fft.h`
 
 *Description:*
 
@@ -6129,13 +6185,14 @@ _y2_:: output imaginary part of the Fourier Transform;
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "fft.h"
 void genHanning (int _n_, float* _hanning_);
-====
+----
 
-*Prototype:* fft.h
+*Prototype:* `fft.h`
 
 *Description:*
 
@@ -6152,13 +6209,14 @@ _hanning_:: buffer containing the coefficients of the hanning window;
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "fft.h"
 void powSpect (float* _real_, float* _imag_, float* _pws_, int _n_);
-====
+----
 
-*Prototype:* fft.h
+*Prototype:* `fft.h`
 
 *Description:*
 
@@ -6179,17 +6237,18 @@ _n_:: length of the input buffers;
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "fft.h"
 void actrdft (int _n_, int _isgn_, float* _a_, int* _ip_, float* _w_);
-====
+----
 
-*Prototype:* fft.h
+*Prototype:* `fft.h`
 
 *Description:*
 
-This routine computes actual fast discrete Fourier transform for real sequence. This routine replaces "rdft" defined above (newly introduced at STL2009 release).
+This routine computes actual fast discrete Fourier transform for real sequence. This routine replaces `rdft` defined above (newly introduced at STL2009 release).
 
 *Variables:*
 
@@ -6402,9 +6461,9 @@ This section describes the different 16-bit and 32-bit basic operators available
 
 The variables used in the operators are signed integers in 2's complements representation, defined by:
 
-[align=left]
-`v1`, `v2`: 16-bit variables +
-`L_v1`, `L_v2`, `L_v3`: 32-bit variables
+`v1`, `v2`:: 16-bit variables
+
+`L_v1`, `L_v2`, `L_v3`:: 32-bit variables
 
 ==== Operators with complexity weight of 1
 
@@ -6963,9 +7022,10 @@ This section describes the different basic operators for unsigned data types ava
 
 The variables used in the operators are signed integers in 2's complements representation, defined by:
 
-[align=left]
-`U_var1`, `U_varout_l`: 16-bit unsigned variables +
-`UL_var1`, `UL_var2`, `var1`, `UL_varout_h`, `UL_varout_l`: 32-bit unsigned variables
+
+`U_var1`, `U_varout_l`:: 16-bit unsigned variables
+
+`UL_var1`, `UL_var2`, `var1`, `UL_varout_h`, `UL_varout_l`:: 32-bit unsigned variables
 
 
 ==== Operators with complexity weight of 1
@@ -7010,10 +7070,11 @@ A set of coding guidelines must be followed in order to avoid algorithm complexi
 
 The variables used in the operators are signed integers in 2's complements representation, defined by:
 
-[align=left]
-`v1`, `v2`: 16-bit variables +
-`L_v1`, `L_v2`, `L_v3`: 32-bit variables +
-`L40_v1`, `L40_v2`, `L40_v3`: 40-bit variables
+`v1`, `v2`:: 16-bit variables
+
+`L_v1`, `L_v2`, `L_v3`:: 32-bit variables
+
+`L40_v1`, `L40_v2`, `L40_v3`:: 40-bit variables
 
 ==== Operators with complexity weight of 1
 
@@ -7212,11 +7273,10 @@ This section describes the complex basic operators available in the STL, organiz
 
 The variables used in the operators are signed integer in 2's complements representation, defined by:
 
-[align=left]
-`var1`, `var2`, `var3`, `re`, `im`: 16-bit variables +
-`C_var`, `C_var1`, `C_var2`, `C_coeff`: 16-bit complex variables +
-`L_var2`, `L_var3`, `L_re`, `L_im`: 32-bit variables +
-`CL_var`, `CL_var1`, `CL_var2`: 32-bit complex variables
+`var1`, `var2`, `var3`, `re`, `im`:: 16-bit variables
+`C_var`, `C_var1`, `C_var2`, `C_coeff`:: 16-bit complex variables
+`L_var2`, `L_var3`, `L_re`, `L_im`:: 32-bit variables
+`CL_var`, `CL_var1`, `CL_var2`:: 32-bit complex variables
 
 ==== Operators with complexity weight of 1
 
@@ -7661,10 +7721,9 @@ This section describes the 64-bit basic operators available in the STL, organize
 
 The variables used in the operators are signed integer in 2's complements representation, defined by:
 
-[align=left]
-`var1`, `var2`: 16-bit variables +
-`L_var1`, `L_var2`: 32-bit variables +
-`W_var`, `W_var1`, `W_var2`, `W_acc`: 64-bit variables
+`var1`, `var2`:: 16-bit variables
+`L_var1`, `L_var2`:: 32-bit variables
+`W_var`, `W_var1`, `W_var2`, `W_acc`:: 64-bit variables
 
 
 ==== Operators with complexity weight of 1
@@ -7892,9 +7951,8 @@ All basic operators in this section have a complexity weight of 1.
 
 The variables used in the operators are signed integers in 2's complements representation, defined by:
 
-[align=left]
-`var2`: 16-bit variables +
-`L_var1`, `L_var2`, `L_var3`: 32-bit variables
+`var2`:: 16-bit variables
+`L_var1`, `L_var2`, `L_var3`:: 32-bit variables
 
 
 ==== Operators
@@ -8115,10 +8173,9 @@ All operators in this section have a complexity weight of 1.
 
 The variables used in the operators are signed integers in 2's complements representation, defined by:
 
-[align=left]
-`var1`, `var2`: 16-bit variables +
-`L_var1`, `L_var2`: 32-bit variables +
-`W_var1`, `W_var2`: 64-bit variables
+`var1`, `var2`:: 16-bit variables
+`L_var1`, `L_var2`:: 32-bit variables
+`W_var1`, `W_var2`:: 64-bit variables
 
 
 `LT_16(var1, var2)`
@@ -8752,6 +8809,7 @@ The tool is meant to provide a consistent, platform independent method of obtain
 This tool works as follows:
 
 * In a first step, a pre-processing removes C and C++ style comments to avoid counting functions that are commented out. The result is written in the file with extension `.c_pre`. Note that the pre-processor directives are not taken into account, so functions of the source code deactivated by a pre-processor directive are counted by the tool.
+
 * In a second step, the pre-processed file is analysed and the number of basic operators (first group) and all other functions (second group) are counted. This second group of other functions is divided into two sub-groups as it is possible to define a so called "black list" that contains functions that should not be counted in the program ROM. Typically these functions are memory allocation functions (malloc, free,...), file manipulation functions (fopen, fclose, fwrite, printf,...) or even functions related to complexity counting (setCounter, WMOPS_output, fwc,...). This list is already initialized and can be further edited and completed if needed. The other subgroup is called user defined functions as it consists of all functions which are neither basic operators nor blacklist functions.
 
 At the end of the execution, the results are printed out on the standard output indicating the names of the C file and of the pre-processed file, the number of calls to basic operators, the number of calls to user defined functions, and the number of calls to blacklist functions.
@@ -8778,7 +8836,7 @@ basop_cnt input.c [result_file_name.txt]
 
 where _input.c_ is an ANSI C file and _result_file_name.txt_ the ouput result file.
 
-If needed to further edit the black list of functions that should not be counted in the program ROM, modify `const char blacklist[][20] = {...}` in basop_cnt.c before compilation.
+If needed to further edit the black list of functions that should not be counted in the program ROM, modify `const char blacklist[][20] = {...}` in `basop_cnt.c` before compilation.
 
 
 ==== Example
@@ -8790,7 +8848,7 @@ the output is :
 
 [%unnumbered]
 ----
-Input file:                 g722.c
+Input file:                 `g722.c`
 Output pre-processed file: g722.c_pre
   87  calls to STL basicops
   28  calls to user-defined functions
@@ -8815,22 +8873,22 @@ Note that the line numbers correspond to the comment free pre-processed file.
 
 * with a result file g722appIV_summary.xls:
 
-** `basop_cnt g722.c g722appIV_summary.xls`
-** `basop_cnt funcg722.c g722appIV_summary.xls`
+** `basop_cnt `g722.c` g722appIV_summary.xls`
+** `basop_cnt `funcg722.c` g722appIV_summary.xls`
 
 After the first call, the result file contains:
 
 [%unnumbered]
 |===
-| g722.c | 87 | 28 | 8
+| `g722.c` | 87 | 28 | 8
 |===
 
 After the second call, the result file contains:
 
 [%unnumbered]
 |===
-| g722.c | 87 | 28 | 8
-| funcg722.c | 389 | 41 | 19
+| `g722.c` | 87 | 28 | 8
+| `funcg722.c` | 389 | 41 | 19
 |===
 
 
@@ -9318,13 +9376,14 @@ Following you find a summary of calls to these functions.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "ugst-utl.h"
 long scale (float _*buffer_,long _smpno_,double _factor_);
-====
+----
 
-*Prototype:* ugst-utl.h
+*Prototype:* `ugst-utl.h`
 
 *Description:*
 
@@ -9356,13 +9415,14 @@ Return the number of scaled samples.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "ugst-utl.h"
 void sh2fl (long _n_, short _*ix_, float _*y_, long _resolution_, char _norm_);
-====
+----
 
-*Prototype:* ugst-utl.h
+*Prototype:* `ugst-utl.h`
 
 *Description:*
 
@@ -9400,13 +9460,14 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "ugst-utl.h"
 void sh2fl_alt (long _n_, short _*ix_, float _*y_, short _mask_);
-====
+----
 
-*Prototype:* ugst-utl.h
+*Prototype:* `ugst-utl.h`
 
 *Description:*
 
@@ -9429,14 +9490,15 @@ None.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "ugst-utl.h"
 long fl2sh (long _n_, float _*x_, short _*iy_, double _half_lsb_, unsigned
             _mask_);
-====
+----
 
-*Prototype:* ugst-utl.h
+*Prototype:* `ugst-utl.h`
 
 *Description:*
 
@@ -9502,16 +9564,17 @@ Returns the number of overflows that happened in the quantization process.
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "ugst-utl.h"
 long serialize_right_justified (short _*par_buf_, short _*bit_stm_, long _n_,
                                 long _resol_, char _sync_);
 long serialize_left_justified (short _*par_buf_, short _*bit_stm_, long _n_,
                                long _resol_, char _sync_);
-====
+----
 
-*Prototype:* ugst-utl.h
+*Prototype:* `ugst-utl.h`
 
 *Description:*
 
@@ -9541,16 +9604,17 @@ This function returns the total number of softbits in the output bitstream, incl
 
 *Syntax:*
 
-[pseudocode%unnumbered]
-====
+[%unnumbered]
+[source,c]
+----
 #include "ugst-utl.h"
 long parallelize_right_justified (short _*bit_stm_, short _*par_buf_, long _bs_len_,
                                   long _resol_, char _sync_);
 long parallelize_left_justified (short _*bit_stm_, short _*par_buf_, long _bs_len_,
                                  long _resol_, char _sync_);
-====
+----
 
-*Prototype:* ugst-utl.h
+*Prototype:* `ugst-utl.h`
 
 *Description:*
 
@@ -9594,7 +9658,7 @@ The routines in this module had portability tested for VAX/VMS with VAX-C and GN
 
 ==== Description of the demonstration programs
 
-Two programs are provided as demonstration programs for the UTL module, scaldemo.c (version 1.3) and spdemo.c (version 3.2).
+Two programs are provided as demonstration programs for the UTL module, `scaldemo.c` (version 1.3) and `spdemo.c` (version 3.2).
 
 Program `scaldemo.c` scales a 16-bit, linear PCM input file by a user-specified linear or dB gain value. Default resolution is 16 bits per sample, and rounding is used by default when converting from float to short. When resolutions different from 16 bits are used with rounding, versions 1.2 and earlier of the program might not produce the "expected" results. The program used to limit the resolution of the samples (by masking the _16-resolution_ least significant bits) when converting from short to float. Additional rounding is applied after scaling when converting from float to short. If the desired operation is, actually, scale and then reduce the resolution with rounding, masking before the scaling operation should be disabled. In version 1.3 and later, the default behavior is *not* to apply such mask, (same as the option _-nopremask_) for backward compatible behavior, the option _-premask_ should be explicitly used.
 
@@ -9602,7 +9666,7 @@ Program `spdemo.c` converts files between serial and parallel formats using a us
 
 ==== The master header file for the STL demonstration programs
 
-The module also contains the common demonstration program definition file ugstdemo.h (version 2.2), which is used by all STL demonstration programs. This header file contains the definition of a number of pseudo-functions and symbols that facilitate the use of a more homogeneous user interface for the different demonstration programs in the STL.
+The module also contains the common demonstration program definition file `ugstdemo.h` (version 2.2), which is used by all STL demonstration programs. This header file contains the definition of a number of pseudo-functions and symbols that facilitate the use of a more homogeneous user interface for the different demonstration programs in the STL.
 
 The available pseudo-functions include:
 
@@ -9613,7 +9677,7 @@ The available pseudo-functions include:
 `ARGS()`:: The pseudo-function `ARGS()` allows that the list of parameters that show up as its arguments be passed on to ANSI-C compliant compilers, or be discarded for old-vintage, K&R-style compilers that do not accept parameter list in function prototypes. This pseudo-function allows for safer function prototypes in compilers that support parameter declaration in function prototypes and avoids the need to edit function declarations (or long `#if/#else/#end` for prototype sections) for non-ANSI C compilers.
 
 
-Some of the symbols defined in ugstdemo.h include:
+Some of the symbols defined in `ugstdemo.h` include:
 
 * Symbols `WB`, `RB`, `WT`, `RT`, and `RWT` for file open (`fopen()`) operation. These symbols are portable across a large number of platforms and permit write-binary, read-binary, write-text, read-text, and read-write-text file mode operations.
 * Symbol `MSDOS`, which is necessary for proper compilation of some of the programs under the MS-DOS environment. The symbol is defined in case MS-DOS is detected, and undefined in case MS-DOS is not detected.
@@ -9916,7 +9980,7 @@ _unsup/test_data_:: Test files for testing some of the unsupported tools:
 * [[[G722-ETSITS102527-3,59]]], ETSI. _ETSI TS 102 527-1 V1.1.1 (2008-06) Digital Enhanced Cordless Telecommunications (DECT); New Generation DECT; Part 3: Extended wideband speech services._ ETSI, France, June 2008.
 * [[[G722-AppIII,60]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722/Appendix III, A high quality packet loss concealment algorithm for G.722._ ITU, Geneva, Switzerland, 2006.
 * [[[G722-AppIV,61]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T G.722/Appendix IV, A low-complexity algorithm for packet loss concealment with G.722._ ITU, Geneva, Switzerland, 2006.
-* [[[G722-RFC3551,62]]], H. Schulzrinne and S. Casner. _RTP Profile for Audio and Video Conferences with Minimal Control._ IETF, July 2003.
+* [[[IETFRFC3551,(62)IETF RFC 3551]]], H. Schulzrinne and S. Casner. _RTP Profile for Audio and Video Conferences with Minimal Control._ IETF, July 2003.
 * [[[RPELTP-BasicConcept,63]]], P. Kroon, R. J. Sluyter, and E. F. Deprettere. Regular-pulse excitation: a novel approach to effective and efficient multipulse coding of speech. _IEEE Trans. Acoust., Speech, Signal Processing,_ ASSP-34(5):1054–1063, October 1986.
 * [[[RPELTP-ICASSP88,64]]], P. Vary et al. Speech codec for the European Mobile Radio System. In _Proc. ICASSP,_ pages 227–230, 1988.
 * [[[RPELTP-SpeechCommunication,65]]], Ulrich Reute (Guest Editor). Special Issue on Medium Rate Speech Coding for Digital Mobile Technology. _Speech Communication,_ 7(2), July 1988.
@@ -9932,7 +9996,7 @@ _unsup/test_data_:: Test files for testing some of the unsupported tools:
 * [[[HeadphoneACR,72]]], S. Dimolitsas, F. Corcoran, and C. Ravishankar. Correlation between headphone and telephone-handset listener opinion scores for single-stimulus voice coder performance assessments. _IEEE Signal Processing Letters,_ 2(3):41–43, March 1995.
 * [[[HeadphoneDCR,73]]], S. Dimolitsas, F. Corcoran, and C. Ravishankar. Dependence of opinion scores on listening sets used in degradation category rating assessments. _IEEE Transactions on Speech and Audio Processing,_ 3(5):421–424, September 1995.
 * [[[P.341,(12)ITU-T P.341]]], ITU Telecommunication Standardization Sector. Recommendation ITU-T P.341, Characteristics of wideband terminals. ITU, Geneva, Switzerland, 1994.
-* [[[BS.1534,74]]], ITU-R. Recommendation ITU-R BS.1534-1: _Method for the subjective assessment of intermediate quality level of coding systems._ ITU, January 2003.
+* [[[BS.1534,(74)ITU-R BS.1534-1]]], ITU-R. Recommendation ITU-R BS.1534-1: _Method for the subjective assessment of intermediate quality level of coding systems._ ITU, January 2003.
 * [[[LTASS,75]]], D. Byrne, et. al. An international comparison of long-term average speech spectra. _Journal of the Acoutical Society of America,_ 96(4):2108–2120, October 1994.
 * [[[G.712,(5)ITU-T G.712]]], ITU Telecommunication Standardization Sector. Recommendation ITU-T G.712, _Performance Characteristics of PCM channels._ ITU, Geneva, Switzerland, November 2001.
 * [[[SCD-ETSI,76]]], Aachen University. An Implementation of the Signal Conditioning Device. Technical Report TD91/23, ETSI/TM/TM5/TCH-HS, April 1991.
@@ -9949,7 +10013,7 @@ _unsup/test_data_:: Test files for testing some of the unsupported tools:
 * [[[Duo-MNRU,85]]], S. F. Campos Neto. Characterization of the revised implementation of the Modulated Noise Reference Unit (MNRU) for the ITU-T Software Tool Library. White Contribution COM 15-182-E, ITU Telecommunication Standardization Sector, 1993-1996.
 * [[[Recipes,86]]], W. H. Press, B. P. Flannery, S. A. Teukolky, and W. T. Vetterling. _Numerical Recipes in C: The Art of Scientific Computing_ . Cambridge University Press, Cambridge, 1990.
 * [[[P.56,(18)ITU-T P.56:1989]]], ITU Telecommunication Standardization Sector. _Recommendation ITU-T P.56, Objective measurement of active speech level,_ volume V of _Blue Book_, pages 110–120. ITU, Geneva, Switzerland, 1989.
-* [[[P.56-rev,87]]], ITU Telecommunication Standardization Sector. _Recommendation ITUT P.56, Objective measurement of active speech level._ ITU, Geneva, Switzerland, December 2011.
+* [[[P.56-rev,(87)ITU-T P.56]]], ITU Telecommunication Standardization Sector. _Recommendation ITUT P.56, Objective measurement of active speech level._ ITU, Geneva, Switzerland, December 2011.
 * [[[Hndbk-tel,88]]], ITU Telecommunication Standardization Sector. _Handbook on Telephonometry._ ITU, Geneva, 1992. 2nd. Edition.
 * [[[kuttruff,90]]], H. Kuttruff. _Room acoustics._ Elsevier, 1991.
 * [[[AC-0809-Q10-26,91]]], France Telecom. Proposed update of ITU-T reverberation software tool. Input document ITU-T Q.10/16 Rapporteur meeting AC-0809-Q10-26, Geneva, Switzerland, September 2008.
