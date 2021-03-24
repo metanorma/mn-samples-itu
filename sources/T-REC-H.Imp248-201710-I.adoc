@@ -301,7 +301,7 @@ h| Reference: | Discussions resulting from H.248.66 (http://www.itu.int/md/meeti
 [b-IETF RFC 2279]:: IETF RFC 2279 (1998), UTF-8, _a transformation format of ISO 10646_.
 [b-IETF RFC 2326]:: IETF RFC 2326 (1998), _Real Time Streaming Protocol (RTSP)_.
 [b-IETF RFC 2805]:: IETF RFC 2805 (2000), _Media Gateway Control Protocol Architecture and Requirements_.
-[b-IETF RFC [strike\]#4234# [underline\]#5234#]:: IETF RFC [strike]#4234# [underline]#5234# ([strike]#2005# [underline]#2008#), _Augmented BNF for Syntax Specifications: ABNF_.
+&#91;b-IETF RFC [strike]#4234# [underline]#5234#&#93;:: IETF RFC [strike]#4234# [underline]#5234# ([strike]#2005# [underline]#2008#), _Augmented BNF for Syntax Specifications: ABNF_.
 [b-UN M.49]:: United Nations (1999), _Standard Country or Area Codes for Statistical Use_ Revision 4 Sales No. 98.XVII.9.
 [b-W3C EMMA]:: W3C (2009), _EMMA: Extensible Multimodal Annotation markup language_.
 
@@ -486,7 +486,7 @@ Recommendation ITU-T H.248.80 describes the interworking of the SDP described by
 * SDP capability negotiation (SDPCapNeg) defined in [IETF RFC 5939]
 * SDP media capabilities negotiation (MediaCapNeg) defined in [IETF RFC 6871]
 
-NOTE: The support of miscellaneous capabilities negotiation in the Session Description document [b-IETF RFC 7006] and Extension for PSTN bearers [b-IETF [strike\]#SDPCS# [underline\]#RFC 7195#] is for further study.
+NOTE: The support of miscellaneous capabilities negotiation in the Session Description document [b-IETF RFC 7006] and Extension for PSTN bearers &#91;b-IETF [strike]#SDPCS# [underline]#RFC 7195#&#93; is for further study.
 
 This Recommendation describes the relationship between the ITU-T H.248 group concept and the revised SDP offer/answer model concepts of actual and potential configurations. It provides guidelines for the inter-working between SDPCapNeg and normal ITU-T H.248.1 procedures. Rather than focussing on the SDPCapNeg procedures in the context of session handling, this Recommendation concentrates on mapping the between ITU-T H.248.1 and the SDP Capability negotiation framework SDP syntax. For interactions between the functions of SDPCapNeg and different SDP attributes, see [IETF RFC 5939] and associated IETF documents.
 
@@ -510,7 +510,7 @@ In order to address several deficiencies in interworking between SDPCapNeg and [
 [b-ITU-T V.152]:: Recommendation ITU-T V.152 (2010), _Procedures for supporting voice-band data over IP networks._
 [b-IETF RFC 3264]:: IETF RFC 3264 (2002), _An Offer/Answer Model with the Session Description Protocol (SDP)._
 [b-IETF RFC 7006]:: IETF RFC 7006 (2013), _Miscellaneous Capabilities Negotiation in the Session Description Protocol (SDP)._
-[b-IETF [strike\]#SDPCS# [underline\]#RFC 7195#]:: IETF [underline]#RFC 7195 (2014)# [strike]#draft-ietf-mmusic-sdp-cs-21 (2013)#, _Session Description Protocol (SDP) Extension for Setting up Audio and Video Media Streams over Circuit-Switched Bearers In The Public Switched Telephone Network (PSTN)._ [strike]#http://tools.ietf.org/html/draft-ietf-mmusic-sdp-cs-23#
+&#91;b-IETF [strike]#SDPCS# [underline]#RFC 7195#&#93;:: IETF [underline]#RFC 7195 (2014)# [strike]#draft-ietf-mmusic-sdp-cs-21 (2013)#, _Session Description Protocol (SDP) Extension for Setting up Audio and Video Media Streams over Circuit-Switched Bearers In The Public Switched Telephone Network (PSTN)._ [strike]#http://tools.ietf.org/html/draft-ietf-mmusic-sdp-cs-23#
 
 [align=center]
 *_&#91;End Proposed Correction]_*
@@ -568,10 +568,10 @@ Example metrics:
 
 These examples are based on the pure application data stream at receiver side:
 
-* Unimpaired seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
-* Concealed seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
-* Severely concealed seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
-* Unimpaired seconds [b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]
+* Unimpaired seconds &#91;b-IETF [strike]#rtcp-xr-conc# [underline]#RFC 7294#&#93;
+* Concealed seconds &#91;b-IETF [strike]#rtcp-xr-conc# [underline]#RFC 7294#&#93;
+* Severely concealed seconds &#91;b-IETF [strike]#rtcp-xr-conc# [underline]#RFC 7294#&#93;
+* Unimpaired seconds &#91;b-IETF [strike]#rtcp-xr-conc# [underline]#RFC 7294#&#93;
 * Frame impairment statistics summary [b-IETF RFC 7004].
 
 The following example relates to FAX-over-IP using [ITU-T T.38] in T.38-over-RTP transport mode and an ITU-T H.248 IP termination enabled with the IP FAX package [ITU-T H.248.2]:
@@ -589,7 +589,7 @@ For these metrics the measurement function must be media format aware based on t
 
 Example metrics:
 
-* MOS value (attributed by MOS type and calculation method) [b-IETF [underline]#RFC 7266# [strike]#rtcp-xr-qoe#]
+* MOS value (attributed by MOS type and calculation method) &#91;b-IETF [underline]#RFC 7266# [strike]#rtcp-xr-qoe#&#93;
 * Signal level [IETF RFC 3611]
 * Noise level [IETF RFC 3611]
 * Residual echo return loss [IETF RFC 3611]
@@ -613,9 +613,9 @@ Example metrics:
 
 [b-IETF RFC 7005]:: IETF RFC 7005 (2013), RTP Control Protocol (RTCP) Extended Report (XR) Block for De-Jitter Buffer Metric Reporting.
 
-[b-IETF [strike\]#rtcp-xr-qoe# [underline\]#RFC 7266#]:: IETF [underline]#RFC 7266 (06/2014)# [strike]#draft-ietf-xrblock-rtcp-xr-qoe (expected in 2014)#, RTP Control Protocol (RTCP) Extended Report (XR) Blocks for [underline]#Mean Opinion Score (MOS)# Metric Reporting. [strike]#<https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-qoe/>#
+&#91;b-IETF [strike]#rtcp-xr-qoe# [underline]#RFC 7266#&#93;:: IETF [underline]#RFC 7266 (06/2014)# [strike]#draft-ietf-xrblock-rtcp-xr-qoe (expected in 2014)#, RTP Control Protocol (RTCP) Extended Report (XR) Blocks for [underline]#Mean Opinion Score (MOS)# Metric Reporting. [strike]#<https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-qoe/>#
 
-[b-IETF [strike\]#rtcp-xr-conc# [underline\]#RFC 7294#]:: IETF [underline]#RFC 7294 (07/2014)# [strike]#draft-ietf-xrblock-rtcp-xr-conceal (expected in 2014)#, RTCP XR Report Block for Concealment metrics Reporting on Audio Applications. [strike]#<https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-loss-conceal/>#
+&#91;b-IETF [strike]#rtcp-xr-conc# [underline]#RFC 7294#&#93;:: IETF [underline]#RFC 7294 (07/2014)# [strike]#draft-ietf-xrblock-rtcp-xr-conceal (expected in 2014)#, RTCP XR Report Block for Concealment metrics Reporting on Audio Applications. [strike]#<https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-loss-conceal/>#
 
 [align=center]
 *_&#91;End Proposed Correction]_*
@@ -635,7 +635,7 @@ h| Reference: | https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T13-SG16-C-
 
 *7.2.2 Other RTP topologies*
 
-The high-level RTP topology models according to [b-IETF RFC 5117] have evolved since the publication of this RFC (in 2008) in terms of more detailed information (e.g., semantic clarifications), evaluation of whether the number of existing models can be reduced and the identification of new RTP topology models (see also [b-IETF [strike\]#rtp-topo# [underline\]#RFC 7667#]). This clause provides descriptions of such new/extended models.
+The high-level RTP topology models according to [b-IETF RFC 5117] have evolved since the publication of this RFC (in 2008) in terms of more detailed information (e.g., semantic clarifications), evaluation of whether the number of existing models can be reduced and the identification of new RTP topology models (see also &#91;b-IETF [strike]#rtp-topo# [underline]#RFC 7667#&#93;). This clause provides descriptions of such new/extended models.
 
 [align=center]
 *_&#91;End Proposed Correction]_*
@@ -648,7 +648,7 @@ The high-level RTP topology models according to [b-IETF RFC 5117] have evolved s
 
 *_..._*
 
-[b-IETF [strike\]#rtp-topo# [underline\]#RFC 7667#]:: IETF [strike]#draft-ietf-avtcore-rtp-topologies-update# [underline]#IETF RFC 7667#, _RTP Topologies_. <http://tools.ietf.org/html/draft-ietf-avtcore-rtp-topologies-update>
+&#91;b-IETF [strike]#rtp-topo# [underline]#RFC 7667#&#93;:: IETF [strike]#draft-ietf-avtcore-rtp-topologies-update# [underline]#IETF RFC 7667#, _RTP Topologies_. <http://tools.ietf.org/html/draft-ietf-avtcore-rtp-topologies-update>
 
 [align=center]
 *_&#91;End Proposed Correction]_*
