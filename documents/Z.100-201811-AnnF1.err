@@ -1,0 +1,136 @@
+/__w/mn-samples-itu/mn-samples-itu/site/documents/Z.100-201811-AnnF1.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000020): Hanging paragraph in clause
+	<clause>
+	      <title>FOREWORD</title>
+	<p id="_c4612eef-d3b5-46c7-94e4-12e2d0a480e3">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+	<p id="_df0226b4-7ef0-4aa7-b169-55b98d786d97">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+	<p id="_bd76b050-2c7d-4b80-8c57-4154f4e3b74f">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1 .</p>
+(XML Line 000075): Table should have title
+	<table id="_193b39a7-6c77-4fd7-9006-d459ddfeb80d" unnumbered="true">
+	<colgroup>
+	<col width="22.2222%"/>
+	<col width="22.2222%"/>
+	<col width="11.1111%"/>
+(XML Line 000508): Hanging paragraph in clause
+	<annex id="_sdl_2010_formal_definition_general_overview" inline-header="false" obligation="normative"><title>SDL 2010 formal definition: General overview</title><clause id="status_of_annex_f1" inline-header="false" obligation="normative"><title>Preface</title><p id="_8279911d-e495-47b4-b388-b561888f498a">The formal definition of SDL-2010 provided in this annex is a precise language definition, which supplements the definition given in the Recommendation text. It is for use by those requiring a very precise definition of SDL-2010, such as maintainers of the SDL-2010 language, designers of SDL-2010 tools and users of the SDL-2010 language.</p>
+	<p id="_13896b37-6060-4765-baf0-53e997ba1453">The formal definition consists of three annexes:</p>
+	<dl id="_201af682-3cf6-4fc5-a9f1-b92286da7b84">
+	<dt>
+	<strong>Annex F1</strong>
+(XML Line 000508): Hanging paragraph in clause
+	<clause id="status_of_annex_f1" inline-header="false" obligation="normative"><title>Preface</title><p id="_8279911d-e495-47b4-b388-b561888f498a">The formal definition of SDL-2010 provided in this annex is a precise language definition, which supplements the definition given in the Recommendation text. It is for use by those requiring a very precise definition of SDL-2010, such as maintainers of the SDL-2010 language, designers of SDL-2010 tools and users of the SDL-2010 language.</p>
+	<p id="_13896b37-6060-4765-baf0-53e997ba1453">The formal definition consists of three annexes:</p>
+	<dl id="_201af682-3cf6-4fc5-a9f1-b92286da7b84">
+	<dt>
+	<strong>Annex F1</strong>
+(XML Line 000608): Hanging paragraph in clause
+	<clause id="overview_of_the_semantics" inline-header="false" obligation="normative"><title>Overview of the semantics</title><p id="_cc516d9a-5633-4888-9d25-b95beb15f32e">In order to define the formal semantics of SDL-2010, the language definition is decomposed into several parts:</p>
+	<ul id="_86c412e7-bfca-4e6c-a5ed-de3ed0dbcfbe">
+	<li>
+	<p id="_3042b904-a521-47fe-8a1c-3fe7c636e52b">grammar</p>
+	</li>
+(XML Line 000699): Hanging paragraph in clause
+	<clause id="abstract_state_machines" inline-header="false" obligation="normative"><title>Abstract State Machines</title><p id="_2b04a36b-bc10-4847-a751-ceb3eeaa3442">This clause explains the basic notions and concepts of <em>Abstract State Machines</em> (<em>ASM</em>) as well as the notation used in these Annexes F1, F2 and F3 to define the SDL-2010 abstract machine model. The objective here is to provide an intuitive understanding of the formalism; for a rigorous definition of the mathematical foundations of ASM and its application, the reader is referred to <eref type="inline" bibitemid="b-Gurevich" citeas="b-Gurevich"/>, <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/>, <eref type="inline" bibitemid="b-Blass_2008" citeas="b-Blass 2008"/>, <eref type="inline" bibitemid="b-Glausch" citeas="b-Glausch"/>, <eref type="inline" bibitemid="b-BoergerStaerk" citeas="b-Börger &amp; Stärk"/> and <eref type="inline" bibitemid="b-Boerger" citeas="b-Börger"/>. A discussion and motivation of the appropriateness of the semantic framework used here is given in <eref type="inline" bibitemid="b-Eschbach" citeas="b-Eschbach"/>, <eref type="inline" bibitemid="b-Eschbach_2001" citeas="b-Eschbach 2001"/> and <eref type="inline" bibitemid="b-Glaesser" citeas="b-Glässer"/>. Further references on ASM-related material can also be found on the ASM webpages <eref type="inline" bibitemid="b-ASM" citeas="b-ASM"/>.</p>
+	<p id="_13fca152-7318-4c81-96a1-4fd3874403b4">The ASM model used to define the dynamic semantics of SDL-2010 is explained in several steps. Firstly, the <em>basic ASM model</em> with a single agent is treated (see <xref target="basic_asm_model"/>). Next, this model is extended to cover <em>multi-agent systems</em> (see <xref target="distributed_multi_agent_asm"/>). Then, <em>open systems</em>, i.e., systems interacting with an environment they cannot control, are addressed by adding the notion of <em>external world</em> (see <xref target="the_external_world"/>). Finally, the model is extended by introducing a notion of <em>real-time behaviour</em> (see <xref target="real_time_behaviour"/>). To illustrate these steps, an ASM model for a simple system is developed, step-by-step. The final ASM model of this system is summarized in <xref target="example_the_system_rms"/>. Additional notation used to define the dynamic semantics of SDL-2010 is explained in <xref target="predefined_names_and_special_symbols"/>.</p>
+	<example id="_9eca006b-15f2-46f6-a330-6cfd6e731431"><name>A simple resource management system (<em>RMS</em>):</name><p id="_c6ecc67a-23a7-459a-acf3-84605ee1c53a">In order to illustrate the ASM model, a simple resource management system (<em>RMS</em>) consisting of <em>a group of</em> <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&gt;</mo><mn>1</mn></math></stem> <em>agents</em> competing for a <em>resource</em> (for instance, a device or service) is defined. Informally, this system is characterized as follows:</p>
+	<ul id="_ba5cab9f-cf5d-4ace-b799-f509a52beab7">
+	<li>
+(XML Line 000726): Hanging paragraph in clause
+	<clause id="basic_asm_model" inline-header="false" obligation="normative"><title>Basic ASM model</title><clause id="overview" inline-header="false" obligation="normative"><title>Overview</title><p id="_3cde0c6c-0d55-41f6-98b3-3c4104287ce3">An abstract state machine (ASM) is a model of computation that treats first-order structures as dynamic entities whose states can change during a computation.</p>
+	<p id="_ca8437c6-a2fe-41ee-8d52-52e0aff36520">An abstract state machine has a set of states <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></stem>, a subset of initial states <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mi>S</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>⊆</mo><mi>S</mi></math></stem> and a function <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi><mi>:</mi><mi>S</mi><mo>→</mo><mi>S</mi></math></stem>, called the one-step transformation. Every state is a first-order structure. All the states of an ASM have the same signature, which is also called the signature of the ASM, and all the states have the same base set, called the base set of the ASM. <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math></stem> does not change the base set, but it does, in general, change the equivalences that hold between terms of the signature.</p>
+	<p id="_19e90575-48d2-41f5-a277-f0061acd0fef">The behaviour of an abstract state machine is modelled as a run or sequence of states. A run starts with an initial state, and each subsequent state is derived from its predecessor by application of the one-step transformation. Each application of the one-step transformation is called a move.</p>
+	<table id="_dc28f86e-5346-43bb-bc59-9691322a2eb3" unnumbered="true">
+	<tbody>
+(XML Line 000729): Table should have title
+	<table id="_dc28f86e-5346-43bb-bc59-9691322a2eb3" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="center"/>
+	<td valign="top" align="center">
+(XML Line 000853): Table should have title
+	<table id="_cb40caaf-a9ed-4a08-b6ab-58295ae5e84a" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="center"/>
+	<td valign="top" align="center">
+(XML Line 001095): Hanging paragraph in clause
+	<clause id="distributed_multi_agent_asm" inline-header="false" obligation="normative"><title>Distributed multi-agent ASM</title><p id="_443c057b-6976-42c8-b7fd-9a59ba6a58b4">Mathematical modelling of concurrent and reactive systems requires more than the basic ASM model described above. This section presents the concept of a <em>distributed ASM</em> operating in <em>parallel</em> with its external environment, where the environment behaves as one or more ASMs.</p>
+	<p id="_76ed7f8a-181e-4f1f-bd6a-27d2a9f1056c">A <em>distributed Abstract State Machine</em> <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi></math></stem> is defined over a given <em>vocabulary</em> <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi></math></stem> by its <em>states</em>  <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></stem>, its <em>initial states</em> <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mi>S</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>⊆</mo><mi>S</mi></math></stem>, its agents <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></stem>, and its <em>programs</em> <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi></math></stem>. These items will be explained in the following subclauses insofar as they differ from the basic ASM model.</p>
+	<clause id="signature" inline-header="false" obligation="normative"><title>Signature</title><p id="_e9cd30ce-468f-48c4-9b93-664725fe53e7">The signature (vocabulary) <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi></math></stem> of a multi-agent ASM <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi></math></stem> includes distinguished domain names:</p>
+	<figure id="_a1876de1-9bf6-4f42-9a1d-4776c8cb7066" unnumbered="true" class="pseudocode">
+	<p id="_fa95eec0-d12d-47a0-9112-dba56e9c5e0a"><strong>controlled domain</strong> <smallcap><em>Agent</em></smallcap><br/>
+(XML Line 001273): Hanging paragraph in clause
+	<clause id="example_the_system_rms" inline-header="false" obligation="normative"><title>Example: The system <em>RMS</em></title><p id="_8de4b17f-63e7-4c38-b8a2-65a04fe2f10b">In this clause, we assemble the pieces of the ASM model definition of the system <em>RMS</em> into their final version. For completeness, we also repeat the informal description.</p>
+	<clause id="informal_description" inline-header="false" obligation="normative"><title>Informal description</title><p id="_062eb120-4b4c-4357-9ef8-36a4677cbd91">In order to illustrate the ASM model, a simple resource management system <em>RMS</em> consisting of a group of <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&gt;</mo><mn>1</mn></math></stem> <em>agents</em> competing for a <em>resource</em>, for instance, a device or service, is defined. Informally, this system is characterized as follows:</p>
+	<ul id="_9b3cb872-7a9b-4f82-8d43-403f833b668c">
+	<li>
+	<p id="_78deb7e2-9289-4f34-b6d2-da1c6c9a2063">There is a set of <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></stem> <em>tokens</em>, <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi><mo>&lt;</mo><mi>n</mi></math></stem>, used to grant <em>exclusive</em> or <em>non-exclusive</em> (<em>shared</em>) access to the resource.</p>
+(XML Line 001363): Hanging paragraph in clause
+	<clause id="predefined_names_and_special_symbols" inline-header="false" obligation="normative"><title>Predefined names and special symbols</title><p id="_6c9c526e-900a-4fa3-9395-1c9c11c909fd">To define an ASM model, in particular the ASM model capturing the semantics of SDL-2010, certain names and their intended interpretation are predefined. These names are grouped and listed in this clause (where <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi></math></stem> refers to the syntactic category of domains). For prefix, infix and postfix operators, an underline ("_") is used to indicate the position of their arguments. Moreover, the precedence of the operators is indicated by prec(n), where n is a number. Higher numbers mean tighter binding. Monadic operators have a tighter binding than binary ones. Binary operators are associative to the left.</p>
+	<clause id="asm_specific_domains" inline-header="false" obligation="normative">
+	<title>ASM-specific domains</title>
+	<table id="_3e70cfd0-b68a-4d5e-8ed2-791ee486a841" unnumbered="true">
+	<tbody>
+(XML Line 001366): Table should have title
+	<table id="_3e70cfd0-b68a-4d5e-8ed2-791ee486a841" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left"><strong>static domain</strong> <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math></stem></td>
+	<td valign="top" align="left">ASM base set (meta domain)</td>
+(XML Line 001427): Table should have title
+	<table id="_91da84dc-e42e-44fd-92be-64285bef7280" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left"><strong>static</strong> <em>undefined</em>: <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>→</mo><mi>X</mi></math></stem></td>
+	<td valign="top" align="left">Indicator for undefined values</td>
+(XML Line 001450): Table should have title
+	<table id="_85df578e-8a29-4d05-8e0f-3ad34134551f" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left"><strong>static</strong> <em>true</em>: <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>→</mo></math></stem> <smallcap><em>Boolean</em></smallcap></td>
+	<td valign="top" align="left">Predefined literal</td>
+(XML Line 001505): Table should have title
+	<table id="_41f62ee3-712d-4292-ad45-4f3f93cd3ade" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left">
+	<em>X</em>
+(XML Line 001543): Table should have title
+	<table id="_81c03417-6ccd-46a4-8f25-0f41d5049437" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left">_ <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>+</mo></math></stem> _   prec(6)</td>
+	<td valign="top" align="left">String concatenation</td>
+(XML Line 001586): Table should have title
+	<table id="_f976c96f-e6b4-4f29-bbed-b224552e367f" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left">_ &gt; _, _ ≥ _, _ &lt; _ , _ ≤ _   prec(4)</td>
+	<td valign="top" align="left">Comparison operators</td>
+(XML Line 001621): Table should have title
+	<table id="_a7a8467f-4968-4969-9327-d976fde6d0a3" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left"><strong>static</strong> <em>empty</em>: <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>→</mo><msup><mrow><mi>D</mi></mrow><mrow><mo>*</mo></mrow></msup></math></stem></td>
+	<td valign="top" align="left">Empty sequence</td>
+(XML Line 001688): Table should have title
+	<table id="_5c80a7ce-f608-4e18-a1db-5f53a8d288e2" unnumbered="true">
+	<tbody>
+	<tr>
+	<td valign="top" align="left">_ <stem type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∪</mo></math></stem> _   prec(6)</td>
+	<td valign="top" align="left">Set union</td>
+
+
+== Style
+
+(): No Keywords have been provided
+
+
+== Metanorma XML Syntax
+
+(XML Line 000552:12): element "sections" incomplete; expected element "clause", "definitions" or "terms"
+(XML Line 002055:16): element "itu-standard" incomplete; missing required element "bibliography"
