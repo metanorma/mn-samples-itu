@@ -10,6 +10,7 @@ on:
       - .gitlab-ci.yml
       - .github/workflows/test.yml
       - .github/workflows/docker.yml
+      - .github/workflows/archlinux.yml
   workflow_dispatch:
 
 jobs:
