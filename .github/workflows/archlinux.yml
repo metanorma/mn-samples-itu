@@ -1,0 +1,40 @@
+name: archlinux
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    paths-ignore:
+      - .gitlab-ci.yml
+      - .github/workflows/test.yml
+      - .github/workflows/generate.yml
+      - .github/workflows/docker.yml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: docker://archlinux/archlinux:latest
+    steps:
+
+      - name: Update pacman repositories
+        run: pacman -Sy
+
+      - name: Install Metanorma dependencies via pacman
+        run: yes | pacman -Sy git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make
+
+      - name: Install Metanorma
+        run: gem install metanorma-cli
+
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
+          submodules: true
+
+      - run: |
+          PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+          metanorma site generate --agree-to-terms
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: site
+          path: site
