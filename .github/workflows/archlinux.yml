@@ -20,7 +20,7 @@ jobs:
         run: pacman -Sy
 
       - name: Install Metanorma dependencies via pacman
-        run: yes | pacman -Sy git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make
+        run: yes | pacman -Sy git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
 
       - name: Install Metanorma
         run: gem install metanorma-cli
