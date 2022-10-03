@@ -17,7 +17,7 @@ jobs:
     steps:
 
       - name: Update pacman repositories
-        run: pacman -Sy
+        run: pacman -Syu
 
       - name: Install Metanorma dependencies via pacman
         run: yes | pacman -Sy git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
