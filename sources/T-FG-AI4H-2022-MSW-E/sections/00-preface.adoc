@@ -1,0 +1,421 @@
+[abstract]
+== Summary
+
+Artificial Intelligence (AI) refers to the ability of algorithms encoded in
+technology to learn from data so that they can perform automated tasks without every
+step in the process having to be programmed explicitly by a human. While AI holds
+great promise for the practice of public health and medicine, ethical challenges for
+health care systems, practitioners and beneficiaries of medical and public health
+services must be addressed. Many of the ethical concerns described in this document
+predate the advent of AI, although AI itself presents a number of novel concerns.
+
+This document endorses a set of six key ethical principles:
+
+* Protect human autonomy
+* Promote human well-being and safety and the public interest
+* Ensure transparency, explainability and intelligibility
+* Foster responsibility and accountability
+* Ensure inclusiveness and equity
+* Promote AI that is responsive and sustainable
+
+It is hoped that these principles will be used as a basis for governments, technology
+developers, companies, civil society and inter-governmental organizations to adopt
+ethical approaches to appropriate use of AI for health.
+
+[preface]
+== Note
+
+This is an informative ITU-T publication. Mandatory provisions, such as those found
+in ITU-T Recommendations, are outside the scope of this publication. This publication
+should only be referenced bibliographically in ITU-T Recommendations.
+
+[preface]
+== Change Log
+
+This document contains Version 1 of the Deliverable DEL01 on "_Ethics and governance
+of artificial intelligence for health_" [approved at the ITU-T Focus Group on AI for
+Health (FG-AI4H) meeting held in (2 June 2022)].
+
+[preface]
+== Acknowledgements
+
+Original development of this guidance document was led by Andreas Reis (Co-Lead,
+Health Ethics and Governance Unit, department of Research for Health) and Sameer
+Pujari (department of Digital Health and Innovation), under the overall guidance of
+John Reeder (Director, Research for Health), Bernardo Mariano (Director, Digital
+Health and Innovation) and Soumya Swaminathan (Chief Scientist).
+
+Rohit Malpani (consultant, France) was the lead writer. The Co-Chairs of the Expert
+Group, Effy Vayena (ETH Zurich, Switzerland) and Partha Majumder (National Institute
+of Biomedical Genomics, India), provided overall guidance for the drafting of this
+document.
+
+WHO is grateful to the following individuals who contributed to development of this
+guidance.
+
+*_External expert group_*
+
+[align=left]
+Najeeb Al Shorbaji, eHealth Development Association, Jordan +
+Arisa Ema, Ito International Research Center (Institute for Future Initiative), Japan +
+Amel Ghoulia, H3Africa, H3ABioNet, Tunisia +
+Jennifer Gibson, Joint Centre for Bioethics, Dalla Lana School of Public Health,
+University of Toronto, Canada +
+Kenneth W. Goodman, Institute for Bioethics and Health Policy, University of Miami
+Miller School of Medicines, USA +
+Jeroen van den Hoven, Delft University of Technology, The Netherlands +
+Malavika Jayaram, Digital Asia Hub, Singapore +
+Daudi Jjingo, Makerere University, Uganda +
+Tze Yun Leong, National University of Singapore, Singapore. +
+Alex John London, Carnegie Mellon University, USA +
+Partha Majumder, National Institute of Biomedical Genomics, India +
+Tshilidzi Marwala, University of Johannesburg, South Africa +
+Roli Mathur, Indian Council of Medical Research, India +
+Timo Minssen, Centre for Advanced Studies in Biomedical Innovation Law (CeBIL),
+Faculty of Law, University of Copenhagen, Denmark +
+Andrew Morris, Health Data Research UK, United Kingdom +
+Daniela Paolotti, ISI Foundation, Italy +
+Maria Paz Canales, Derechos Digitales, Chile +
+Jerome Singh, University of Kwa-Zulu Natal, South Africa +
+Effy Vayena, ETH Zurich, Switzerland +
+Robyn Whittaker, University of Auckland, New Zealand +
+Yi Zeng, Chinese Academy of Sciences, China
+
+*_Observers_*
+
+[align=left]
+Tee Wee Ang, United Nations Educational, Scientific and Cultural Organization, France +
+Abdoulaye Banire Diallo, University of Quebec at Montreal, Canada +
+Julien Durand, Takeda, Switzerland +
+David Gruson, Jouve, France +
+Lee Hibbard, Council of Europe, France +
+Lauren Milner, US Food and Drug Administration, USA +
+Rasha Abdul Rahim, Amnesty Tech, United Kingdom +
+Elettra Ronchi, Organization for Economic Co-operation and Development, France
+
+*_External reviewers_*
+
+[align=left]
+Anurag Aggarwal, Council of Scientific and Industrial Research, India +
+Paolo Alcini, European Medicines Agency, Netherlands +
+Pamela Andanda, University of Witwatersrand, South Africa +
+Eva Blum-Dumontet, Privacy International, United Kingdom +
+Marcelo Corrales Compagnucci, CeBIL, Faculty of Law, University of Copenhagen, Denmark +
+Sara Leila Meg Davis, Graduate Institute, Switzerland +
+Juan M. Duran, Delft University of Technology, Netherlands +
+Osama El-Hassan, Dubai Health Authority, United Arab Emirates +
+Tomaso Falchetta, Privacy International, United Kingdom +
+Sara Gerke, Harvard Law School, USA +
+Tabitha Ha, STOP AIDS, United Kingdom +
+Henry Hoffman, ADA Health, Germany +
+Calvin Ho, University of Hong Kong, Hong Kong (China) +
+Prageeth Jayathissa, Vector Ltd, New Zealand +
+Otmar Kloiber, World Medical Association, Switzerland +
+Paulette Lacroix, International Medical Informatics Association, Canada +
+Hannah Lim, National University of Singapore, Singapore +
+Allan Maleche, Kenya Legal and Ethical Issues Network on HIV and AIDS, Kenya +
+Peter Micek, Access Now, USA +
+Thomas Neumark, University of Oslo, Norway +
+Laura O'Brien, Access Now, USA +
+Alexandrine Pirlot de Corbion, Privacy International, United Kingdom +
+Léonard Van Rompaey, University of Copenhagen, Denmark +
+Tony Joakim Sandset, University of Oslo, Norway +
+Jay Shaw, Women's College Hospital Institute for Health System Solutions and Virtual
+Care, Canada +
+Sam Smith, medConfidential, United Kingdom +
+David Stewart, International Council of Nurses, Switzerland
+
+*_External presenters at expert meetings_*
+
+[align=left]
+David Barbe, World Medical Association, USA +
+Elisabeth Bohn, Academy of Medical Sciences, United Kingdom +
+Katherine Chou, Google, USA +
+\I. Glenn Cohen, Harvard Law School, USA +
+Naomi Lee, The Lancet, United Kingdom +
+Nada Malou, Médecins Sans Frontières, France +
+Vasantha Muthuswamy, Indian Council of Medical Research (retired), India +
+Sharon Kaur, A/P Gurmukh Singh, University of Malaya, Malaysia +
+Christian Stammel, Wearable Technologies, Germany +
+Alex Wang, Tencent, China +
+Kirstie Whitaker, Turing Institute, United Kingdom +
+Thomas Wiegand, Fraunhofer Heinrich Hertz Institute, Germany
+
+*_WHO staff_*
+
+[align=left]
+Onyema Ajuebor, Technical Officer, Health Workforce, Geneva +
+Shada Al-Salamah, Consultant, Digital Health and Innovation, Geneva +
+Ryan Dimentberg, Intern, Health Ethics and Governance Unit, Geneva +
+Clayton Hamilton, Technical Officer, WHO Regional Office for Europe, Copenhagen +
+Katherine Littler, Co-Lead, Health Ethics and Governance Unit, Geneva +
+Rohit Malpani, Consultant, Health Ethics and Governance Unit, Geneva +
+Ahmed Mohamed Amin Mandil, Coordinator, Research and Innovation, WHO Regional Office
+for the Eastern Mediterranean, Cairo +
+Bernardo Mariano, Chief Information Officer, Geneva +
+Issa T. Matta, Legal Affairs, Geneva +
+Vasee Moorthy, Coordinator, Health Systems and Innovation, Information, Evidence and
+Research, Research, Ethics and Knowledge Management, Geneva +
+Mohammed Hassan Nour, Technical Officer, Digital Health and Innovation, WHO Regional
+Office for the Eastern Mediterranean, Cairo +
+Lee-Anne Pascoe, Consultant, Health Ethics and Governance Unit, Geneva +
+Sameer Pujari, Technical Officer, Digital Health and Innovation, Geneva +
+Andreas Reis, Co-Lead, Health Ethics and Governance Unit, Geneva +
+Soumya Swaminathan, Chief Scientist, Geneva +
+Mariam Shokralla, Consultant, Digital Health and Innovation, Geneva +
+Diana Zandi, Technical Officer, Integrated Health Services, Geneva +
+Yu Zhao, Technical Officer, Digital Health and Innovation, Geneva
+
+== Abbreviations and acronyms
+
+AI:: artificial intelligence
+CeBIL:: Centre for Advanced Studies in Biomedical Innovation Law
+EU:: European Union
+GDPR:: General Data Protection Regulation
+HIC:: high-income countries
+IP:: intellectual property
+LMIC:: low- and middle-income countries
+NHS:: National Health Service (United Kingdom)
+OECD:: Organization for Economic Co-operation and Development
+PPP:: private-public partnership
+SOFA:: Sequential Organ Failure Assessment
+UNESCO:: United Nations Economic, Scientific and Cultural Organization
+US:: United States (of America)
+USA:: United States of America
+
+== Executive summary
+
+Artificial Intelligence (AI) refers to the ability of algorithms encoded in
+technology to learn from data so that they can perform automated tasks without every
+step in the process having to be programmed explicitly by a human. WHO recognizes
+that AI holds great promise for the practice of public health and medicine. WHO also
+recognizes that, to fully reap the benefits of AI, ethical challenges for health care
+systems, practitioners and beneficiaries of medical and public health services must
+be addressed. Many of the ethical concerns described in this document predate the
+advent of AI, although AI itself presents a number of novel concerns.
+
+Whether AI can advance the interests of patients and communities depends on a
+collective effort to design and implement ethically defensible laws and policies and
+ethically designed AI technologies. There are also potential serious negative
+consequences if ethical principles and human rights obligations are not prioritized
+by those who fund, design, regulate or use AI technologies for health. AI's
+opportunities and challenges are thus inextricably linked.
+
+AI can augment the ability of health-care providers to improve patient care, provide
+accurate diagnoses, optimize treatment plans, support pandemic preparedness and
+response, inform the decisions of health policy-makers or allocate resources within
+health systems. To unlock this potential, health-care workers and health systems must
+have detailed information on the contexts in which such systems can function safely
+and effectively, the conditions necessary to ensure reliable, appropriate use, and
+the mechanisms for continuous auditing and assessment of system performance.
+Health-care workers and health systems must have access to education and training in
+order to use and maintain these systems under the conditions for their safe,
+effective use.
+
+AI can also empower patients and communities to assume control of their own health
+care and better understand their evolving needs. To achieve this, patients and
+communities require assurance that their rights and interests will not be
+subordinated to the powerful commercial interests of technology companies or the
+interests of governments in surveillance and social control. It also requires that
+the potential of AI to detect risks to patient or community health is incorporated
+into health systems in a way that advances human autonomy and dignity and does not
+displace humans from the centre of health decision-making.
+
+AI can enable resource-poor countries, where patients often have restricted access to
+health-care workers or medical professionals, to bridge gaps in access to health
+services. AI systems must be carefully designed to reflect the diversity of
+socio-economic and health-care settings and be accompanied by training in digital
+skills, community engagement and awareness-raising. Systems based primarily on data
+of individuals in high-income countries may not perform well for individuals in low-
+and middle-income settings. Country investments in AI and the supporting
+infrastructure should therefore help to build effective health-care systems by
+avoiding AI that encodes biases that are detrimental to equitable provision of and
+access to health-care services.
+
+This publication was issued in 2021 by the WHO as a WHO Guidance <<ethics-who>> and
+approved by the ITU/WHO Focus Group on Artificial Intelligence for Health (FG-AI4H)
+as its Deliverable 1 at its Meeting O in Berlin, 31 May -- 2 June 2022. It was
+originally produced jointly by WHO's Health Ethics and Governance unit in the
+department of Research for Health and by the department of Digital Health and
+Innovation, is based on the collective views of a WHO Expert Group on Ethics and
+Governance of AI for Health, which comprised 20 experts in public health, medicine,
+law, human rights, technology and ethics. FG-AI4H experts also contributed to the
+preparation of the document. The group analysed many opportunities and challenges of
+AI and recommended policies, principles and practices for ethical use of AI for
+health and means to avoid its misuse to undermine human rights and legal obligations.
+
+AI for health has been affected by the COVID-19 pandemic. Although the pandemic is
+not a focus of this document, it has illustrated the opportunities and challenges
+associated with AI for health. Numerous new applications have emerged for responding
+to the pandemic, while other applications have been found to be ineffective. Several
+applications have raised ethical concerns in relation to surveillance, infringement
+on the rights of privacy and autonomy, health and social inequity and the conditions
+necessary for trust and legitimate uses of data-intensive applications. During their
+deliberations on this document, members of the expert group prepared
+https://apps.who.int/iris/handle/10665/332200[interim WHO guidance] for the use of
+proximity tracking applications for COVID-19 contact-tracing.
+
+*_Key ethical principles for the use of AI for health_*
+
+This document endorses a set of key ethical principles. It is hoped that these
+principles will be used as a basis for governments, technology developers, companies,
+civil society and inter-governmental organizations to adopt ethical approaches to
+appropriate use of AI for health. The six principles are summarized below and
+explained in depth in <<sec-5>>.
+
+*Protecting human autonomy*: Use of AI can lead to situations in which
+decision-making power could be transferred to machines. The principle of autonomy
+requires that the use of AI or other computational systems does not undermine human
+autonomy. In the context of health care, this means that humans should remain in
+control of health-care systems and medical decisions. Respect for human autonomy also
+entails related duties to ensure that providers have the information necessary to
+make safe, effective use of AI systems and that people understand the role that such
+systems play in their care. It also requires protection of privacy and
+confidentiality and obtaining valid informed consent through appropriate legal
+frameworks for data protection.
+
+*Promoting human well-being and safety and the public interest*. AI technologies
+should not harm people. The designers of AI technologies should satisfy regulatory
+requirements for safety, accuracy and efficacy for well-defined use cases or
+indications. Measures of quality control in practice and quality improvement in the
+use of AI over time should be available. Preventing harm requires that AI not result
+in mental or physical harm that could be avoided by use of an alternative practice or
+approach.
+
+*Ensuring transparency, explainability and intelligibility*. AI technologies should
+be intelligible or understandable to developers, medical professionals, patients,
+users and regulators. Two broad approaches to intelligibility are to improve the
+transparency of AI technology and to make AI technology explainable. Transparency
+requires that sufficient information be published or documented before the design or
+deployment of an AI technology and that such information facilitate meaningful public
+consultation and debate on how the technology is designed and how it should or should
+not be used. AI technologies should be explainable according to the capacity of those
+to whom they are explained.
+
+*Fostering responsibility and accountability*.Humans require clear, transparent
+specification of the tasks that systems can perform and the conditions under which
+they can achieve the desired performance. Although AI technologies perform specific
+tasks, it is the responsibility of stakeholders to ensure that they can perform those
+tasks and that AI is used under appropriate conditions and by appropriately trained
+people. Responsibility can be assured by application of "human warranty", which
+implies evaluation by patients and clinicians in the development and deployment of AI
+technologies. Human warranty requires application of regulatory principles upstream
+and downstream of the algorithm by establishing points of human supervision. If
+something goes wrong with an AI technology, there should be accountability.
+Appropriate mechanisms should be available for questioning and for redress for
+individuals and groups that are adversely affected by decisions based on algorithms.
+
+*Ensuring inclusiveness and equity*.Inclusiveness requires that AI for health be
+designed to encourage the widest possible appropriate, equitable use and access,
+irrespective of age, sex, gender, income, race, ethnicity, sexual orientation,
+ability or other characteristics protected under human rights codes. AI technology,
+like any other technology, should be shared as widely as possible. AI technologies
+should be available for use not only in contexts and for needs in high-income
+settings but also in the contexts and for the capacity and diversity of LMIC. AI
+technologies should not encode biases to the disadvantage of identifiable groups,
+especially groups that are already marginalized. Bias is a threat to inclusiveness
+and equity, as it can result in a departure, often arbitrary, from equal treatment.
+AI technologies should minimize inevitable disparities in power that arise between
+providers and patients, between policy-makers and people and between companies and
+governments that create and deploy AI technologies and those that use or rely on
+them. AI tools and systems should be monitored and evaluated to identify
+disproportionate effects on specific groups of people. No technology, AI or
+otherwise, should sustain or worsen existing forms of bias and discrimination.
+
+*Promoting AI that is responsive and sustainable*.Responsiveness requires that
+designers, developers and users continuously, systematically and transparently assess
+AI applications during actual use. They should determine whether AI responds
+adequately and appropriately and according to communicated, legitimate expectations
+and requirements. Responsiveness also requires that AI technologies be consistent
+with wider promotion of the sustainability of health systems, environments and
+workplaces. AI systems should be designed to minimize their environmental
+consequences and increase energy efficiency. That is, use of AI should be consistent
+with global efforts to reduce the impact of human beings on the Earth's environment,
+ecosystems and climate. Sustainability also requires governments and companies to
+address anticipated disruptions in the workplace, including training for health-care
+workers to adapt to the use of AI systems, and potential job losses due to use of
+automated systems.
+
+*_Overview of this document_*
+
+This document is divided into nine sections and an annex. <<sec-1>> explains the
+rationale for WHO's engagement in this topic and the intended readership of the
+document's findings, analyses and recommendations. <<sec-2>> and <<sec-3>> define AI
+for health through its methods and applications. <<sec-2>> provides a non-technical
+definition of AI, which includes several forms of machine learning as a subset of AI
+techniques. It also defines "big data", including sources of data that comprise
+biomedical or health big data. <<sec-3>> provides a non-comprehensive classification
+and examples of AI technologies for health, including applications used in LMIC, such
+as for medicine, health research, drug development, health systems management and
+planning, and public health surveillance.
+
+<<sec-4>> summarizes the laws, policies and principles that apply or could apply to
+the use of AI for health. These include human rights obligations as they apply to AI,
+the role of data protection laws and frameworks and other health data laws and
+policies. The section describes several frameworks that commend ethical principles
+for the use of AI for health, as well as the roles of bioethics, law, public policy
+and regulatory frameworks as sources of ethical norms.
+
+<<sec-5>> describes the six ethical principles that the Expert Group identified as
+guiding the development and use of AI for health. <<sec-6>> presents the ethical
+challenges identified and discussed by the Expert Group to which these guiding
+ethical principles can be applied: whether AI should be used; AI and the digital
+divide; data collection and use; accountability and responsibility for
+decision-making with AI; autonomous decision-making; bias and discrimination
+associated with AI; risks of AI to safety and cybersecurity; impacts of AI on labour
+and employment in health care; challenges in the commercialization of AI for health
+care; and AI and climate change.
+
+The final sections of the document identify legal, regulatory and non-legal measures
+for promoting ethical use of AI for health, including appropriate governance
+frameworks. Recommendations are provided.
+
+<<sec-7>> examines how various stakeholders can introduce ethical practices,
+programmes and measures to anticipate or meet ethical norms and legal obligations.
+They include ethical, transparent design of AI technologies; mechanisms for the
+engagement and role of the public and demonstrating trustworthiness with providers
+and patients; impact assessment; and a research agenda for ethical use of AI for
+health care.
+
+<<sec-8>> is a discussion of how liability regimes may evolve with increasing use of
+AI for health care. It includes how liability could be assigned to a health-care
+provider, a technology provider and a health-care system or hospital that selects an
+AI technology and how the rules of liability might influence how a practitioner uses
+AI. The section also considers whether machine-learning algorithms are products, how
+to compensate individuals harmed by AI technologies, the role of regulatory agencies
+and specific aspects for LMIC.
+
+<<sec-9>> presents elements of a governance framework for AI for health. "Governance
+in health" refers to a range of functions for steering and rule-making by governments
+and other decision-makers, including international health agencies, to achieve
+national health policy objectives conducive to universal health coverage. The section
+analyses several governance frameworks either being developed or already matured. The
+frameworks discussed are: governance of data, control and benefit-sharing, governance
+of the private sector, governance of the public sector, regulatory considerations,
+the role of a policy observatory and model legislation and global governance of AI.
+
+Finally, the document provides practical advice for implementing the WHO guidance for
+three sets of stakeholders: AI technology developers, ministries of health and
+health-care providers. The considerations are intended only as a starting-point for
+context-specific discussions and decisions by diverse stakeholders.
+
+While the primary readership of this guidance document is ministries of health, it is
+also intended for other government agencies, ministries that will regulate AI and
+those who use AI technologies for health. The guidance is also intended for entities
+that design and finance AI technologies for health.
+
+Implementation of this guidance will require collective action. Companies and
+governments should introduce AI technologies only to improve the human condition and
+not for objectives such as unwarranted surveillance or to increase the sale of
+unrelated commercial goods and services. Providers should demand appropriate
+technologies and use them to maximize both the promise of AI and clinicians'
+expertise. Patients, community organizations and civil society should be able to hold
+governments and companies to account, to participate in the design of technologies
+and rules, to develop new standards and approaches and to demand and seek
+transparency to meet their own needs as well as those of their communities and health
+systems.
+
+AI for health is a fast-moving, evolving field, and many applications, not yet
+envisaged, will emerge with ever-greater public and private investment. WHO may
+consider issuing specific guidance for additional tools and applications and may
+update this guidance periodically to keep pace with this rapidly changing field.
