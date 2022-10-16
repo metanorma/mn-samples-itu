@@ -1,0 +1,815 @@
+[[annexA]]
+[appendix,obligation=normative]
+== Considerations for the ethical design, deployment and use of artificial intelligence technologies for health
+
+The following provides practical guidance for several key groups that use AI in the
+health field: AI designers and developers, ministries of health and health care
+institutions and providers. It reflects the main principles, ideas and
+recommendations in this document.
+
+[[sec-a1]]
+=== Considerations for AI developers
+
+The following considerations are for individuals, research organizations and
+companies involved in the design, deployment and updating of AI technologies used in
+health. AI developers include professionals with expertise in computer science or
+AI, who often also have a background in clinical or health care. Some AI developers
+are not sited in health systems, even though the products they design will play an
+increasingly important role in health. Some providers and hospitals are investing in
+and designing AI technologies and should consider the issues listed below with their
+existing ethical obligations as medical providers.
+
+Developers, research organizations and companies should consider systems to ensure
+that the values, principles and processes that guide their operations are aligned
+with the expectations of health systems.
+
+The considerations listed below are not comprehensive but are steps that developers
+and companies should take to ensure that the technologies they design and deploy are
+used for the benefit of patients and providers. Three areas should be considered:
+the design, development and deployment of an AI technology, with further
+consideration of improving it after deployment.
+
+[[sec-a1-1]]
+==== Designing an AI technology
+
+[class=steps]
+. *Clarify the objectives*
++
+--
+An AI technology or tool can be used alone or as an integral part of a system. The
+intended uses, the values and the indirect outcomes for users should be clearly
+defined.
+
+_Specific considerations_
+
+* Define the intended uses and the expected outcomes.
+
+* What are the main functions of the tool?
+
+* Who will use the tool?
+
+* How will it be used
+
+* When and where will it be used or not used?
+
+* Will there be secondary (indirect) users?
+
+* How should the objectives and functions be prioritized according to the available
+resources?
+
+* Will use of the tool have indirect outcomes?
+
+* Are the validity and efficiency of the tool limited over time?
+--
+
+. *Engage multiple stakeholders and understand contexts*
++
+--
+AI technologies used in health care depend on the context and must be designed to
+work appropriately for different types of health-care providers and different uses
+by patients or practitioners before, during or after clinical care.
+
+_Specific considerations_
+
+* Define all possible contexts in which the AI technology will be used, including
+geographical scope, users' background and main languages, digital skills and
+regulatory frameworks.
+
+* Involve individuals who understand various contexts in design to align the
+objectives and expected outcomes and avoid transferring bias from the data and
+amplifying it.
+
+* Design, discuss and validate the formulation, conceptualization, proposed approach
+and solution with stakeholders in the targeted settings, including policy- and
+decision-makers, project owners and leaders, project managers, solution engineers
+and developers, potential users, domain experts and experts in ethics and
+information privacy.
+
+* Clearly delineate responsibilities during design, development and deployment and
+the conditions to be fulfilled for attribution of responsibility.
+
+* Determine the operational and technical limitations to designing, developing,
+testing, using and maintaining the tool, including human resources, expertise and
+software and hardware requirements.
+--
+
+. *Define relevant ethical issues through consultation*
++
+--
+Each AI technology will require consideration of ethical issues, such as bias,
+privacy, data collection and use and human autonomy (among the principles listed in
+<<sec-5>> of this document). Ethical concerns that often emerge during consultation
+should be identified and integrated into the design and development.
+(Recommendations for addressing bias and privacy, two ethical issues that are often
+relevant for the design of AI technologies for health, are discussed below.)
+--
+
+. *Assess risks*
++
+--
+Risk assessment and mitigation are necessary in the design and development of
+technologies for use in human health. Risk should be assessed at each stage of
+development and reassessed regularly with stakeholders. The aim of developers should
+be for the AI technology to achieve the intended outcomes with a reduced level of
+risk. All major trade-offs should be clearly identified and considered.
+
+_Specific considerations_
+
+* What are the expected outcomes?
+
+* What are the potential secondary and unexpected outcomes?
+
+* What would be the impact and consequences of the unexpected outcomes?
+
+* What are the available resources and potential trade-offs?
+
+* What approaches would mitigate risk?
+--
+
+. *Address biases*
++
+--
+Biases in data due to past or continuing discrimination could be replicated. An AI
+technology should be used only if such bias can be mitigated. AI should be designed
+to reduce inequities and bias.
+
+_Specific considerations_
+
+* Determine how the study data were collected and how new study data will be
+collected, and look for any bias in the data according to the context.
+
+* Consider the majority and minority groups included in the data and whether any
+under-representation that results in bias can be mitigated.
+
+* Examine the effects of ethnicity, age, race, gender and other traits, and ensure
+that AI technologies with biases do not have negative impacts on individuals and
+groups according to these different characteristics.
+
+* Prepare effectively and demonstrably for post-implementation surveillance of the
+application.
+--
+
+. *Privacy by design and privacy by default*
++
+--
+All possible steps should be taken to safeguard the security, privacy and
+confidentiality of the information used to develop and validate an AI technology in
+relevant contexts and of the information and data collected and produced by the AI
+technology.
+
+_Specific considerations_
+
+* Map the possible vulnerability of an AI technology with respect to privacy and
+reverse engineering in context.
+
+* Identify data protection vulnerabilities in contracts and collaborations with
+(other) commercial parties and data-sharing systems and networks.
+
+* Select design options that favour privacy and ensure that any reduction in privacy
+is consciously agreed to.
+
+* Safeguard data protection and privacy preservation over time and with technology
+updates.
+--
+
+[[sec-a1-2]]
+==== Developing an AI technology
+
+[class=steps]
+. *Identify regulatory requirements*
++
+--
+Regulatory frameworks for AI are evolving. While most regulatory frameworks address
+data protection, data security and privacy, emerging governance guidelines include
+equal access and human autonomy. Compliance measures should be included in
+development and updates of a technology.
+
+_Specific considerations_
+
+* Adhere to country-specific or regional export rules and guidelines, such as the EU
+GDPR, Singapore's Personal Data Protection Act or the US Health Insurance
+Portability and Accountability Act.
+
+* Identify open concepts and open norms that should be specified for compliance,
+e.g., in GDPR Article 22, the "far reaching effects" in "Person may not be subjected
+solely to automated decision procedure with far reaching effects".
+
+* Define relevant open norms and concepts that can be justified to affected parties
+and experts with relevant knowledge of the application.
+--
+
+. *Establish data management plans*
++
+--
+Clear management plans and protection guidelines should be established for data
+collection, storage, organization and access to ensure data security and safeguard
+privacy and confidentiality.
+
+_Specific considerations_
+
+* Understand the data collection and sharing requirements and regulations in the
+countries, sectors and institutions of potential users, including legal requirements
+for managing consent for the use of training data.
+
+* Determine the type of data that are being collected and where and how the data
+will be stored.
+
+* Assess the physical infrastructure and operational processes that can be used to
+ensure data security and integrity.
+
+* Understand and determine how confidentiality and privacy will be protected in
+different contexts.
+
+* Establish guidelines and protocols for proper collection, storage, organization,
+access and use of personal, proprietary and public data in different contexts.
+
+* Determine how long the data will be stored, when the data could be shared and
+other temporal considerations.
+
+* Give preference to the use of anonymized data whenever possible.
+
+* Determine who is responsible for data governance and ensure appropriate follow-up.
+
+* Clearly identify all groups who will have access to the data throughout the
+product's life cycle.
+
+* Determine any type of secondary use of data that could be allowed.
+--
+
+. *Adopt standards and best practices*
++
+--
+Ensure the compliance and/or interoperability of the AI technology with other
+technologies that will be introduced into health systems. One or more established
+international, regional or national standards and/or performance benchmarks for an
+AI technology should be adopted according to regulations, guidance and application
+requirements, design and development plans.
+
+_Specific considerations (examples of standards)_
+
+* ISO standards (security and privacy)
+
+* US National Institute of Standards and Technology (security and privacy)
+
+* IEEE 7000 series (privacy and fairness)
+
+* Health Level 7 (transfer of administrative and clinical health data)
+--
+
+[[sec-a1-3]]
+==== Deploying an AI technology and improving it after deployment
+
+[class=steps]
+. *Engage and educate multiple stakeholders for deployment and maintenance*
++
+--
+Prioritize inclusivity throughout to ensure better understanding of needs and to
+build adapted solutions for multiple stakeholders.
+
+_Specific considerations_
+
+* Clearly delineate responsibility for what to do, when and how.
+
+* Design, discuss and validate the proposed approach with various stakeholders in
+all targeted regions, including policy- and decision-makers, project owners and
+leaders, project managers, solution engineers and developers, potential users,
+domain experts and experts in ethics and information privacy.
+
+* Train stakeholders in why, how and when to use the tool, including the main
+objectives, functions and features and differences among usage scenarios, when
+applicable.
+
+* Engage continuously with stakeholders, and support users.
+--
+
+. *Evaluate and improve performance*
++
+--
+The outcomes and impact on health care of the AI technology should be assessed
+formally, and the design and development of the technology continuously improved
+according to the ethical principles that initially guided its development and to new
+governance guidelines and all applicable legal obligations and regulations. The
+risks of the technology and of its intended usage in different health care settings
+should be assessed regularly to manage its deployment, continuous development and
+maintenance.
+
+_Specific considerations_
+
+The accuracy and risks of error of the AI technology should be evaluated to assess
+implications for:
+
+* Incorporating, verifying and validating changes to the tool or system;
+
+* monitoring and ensuring the effectiveness and usefulness of the tool or system
+over time;
+
+* how long the results or the technology can be used;
+
+* how often the tool or system should be updated; and
+
+* who is responsible for updating.
+--
+
+[[sec-a2]]
+=== Considerations for ministries of health
+
+The following considerations are intended for ministries of health, which will have
+the primary responsibility for determining whether and how AI technologies should be
+integrated into health systems, the conditions under which they should be used, the
+protection of individuals that must accompany use of such technologies and policies
+that can address both expected and unexpected ethical challenges. Evaluation,
+regulation, deployment and oversight of AI technologies will require
+inter-ministerial coordination. Thus, while these considerations are directed to
+ministries of health, implementation will require collaboration with other relevant
+ministries, such as of information technology and education.
+
+These considerations are not comprehensive but may be a starting-point for
+ministries of health to ensure that the use of AI technologies is consonant with the
+wider objective of the government to provide affordable, equitable, appropriate,
+effective health care, with the goal of attaining universal health coverage. Three
+areas should be considered: how ministries should protect the health and safety of
+patients, how they should prepare for the introduction and use of AI technologies
+and how they should address ethical and legal challenges and protect human rights.
+
+[[sec-a2-1]]
+==== How to protect the health and safety of patients
+
+[class=steps]
+. *Assess whether AI technologies are appropriate and necessary*
++
+--
+AI technologies should be used only if they are necessary and appropriate and
+contribute to achieving universal health coverage. They should not divert attention
+and resources from proven but underfunded interventions that would reduce morbidity
+and mortality.
+
+_Specific considerations_
+
+* Evaluate the institutional and regulatory context and infrastructure to determine
+whether the technology would be as cost-effective as "traditional" technologies and
+whether its introduction and use are in accordance with human rights.
+
+* Conduct an impact assessment before deciding whether to implement or continue use
+of AI in the health system.
+
+* Calculate the risk-benefit ratio of adoption, investment and uptake of an AI
+technology, and make the information available to stakeholders so that they can
+provide input to any evaluation or decision.
+
+* Manage the ethical challenges of the AI technology (e.g., equitable access,
+privacy) appropriately.
+--
+
+. *Testing, monitoring and evaluation*
++
+--
+AI must be rigorously tested, monitored and evaluated. Clinical trials can provide
+assurance that any unanticipated hazards or consequences of AI-based applications
+are identified and addressed (or avoided entirely) and an approved AI device can be
+re-tested and monitored to measure its performance and any changes that may occur
+once it has been approved.
+
+Regulatory agencies can support testing, transparent communication of outcomes and
+monitoring of' the performance and efficacy of a technology. Many LMIC still lack
+sufficient regulatory capacity to assess drugs, vaccines and devices, and the rapid
+arrival of AI technologies could mean that their regulatory agencies cannot
+accurately assess or regulate such technologies for the public good.
+
+_Specific considerations_
+
+* Countries should have sufficient regulatory capacity to ensure rigorous scrutiny
+of AI technologies on which countries rely in health care.
+
+* For certain low-risk AI technologies, regulators may consider "lighter" premarket
+scrutiny.
+
+* AI technologies should be tested prospectively in randomized trials and not
+against existing laboratory datasets.
+
+* Regulatory scrutiny should be applied when data from non-health devices are
+imputed and used to train AI health technologies.
+--
+
+. *Assign liability*
++
+--
+Reliance on AI technologies entails responsibility, accountability and liability and
+also compensation for any undue damage.
+
+_Specific considerations_
+
+* Ministry of health experts should evaluate AI tools to ensure accountability for
+any negative consequences that arise from their use.
+
+* Liability rules used in clinical care and medicine should be modified to assess
+and assign liability, including product liability, the personal liability of
+decision-makers, input liability and liability to data donors. The rules should
+include causal responsibility, objective liability regimes and liability for
+retrospective harm as well as mechanisms for assigning vicarious liability when
+appropriate.
+--
+
+. *Ensure that all people are guaranteed redress in the legal system*
++
+--
+Processes should be available for compensation of undue damage caused by use of AI
+technologies.
+
+_Specific considerations_
+
+* Independent oversight should be available to ensure equitable access to health
+care of appropriate quality.
+
+* Swift, accessible mechanisms should be available for complaint, including for
+patients and health staff to demand protection of personal data and particularly of
+sensitive health data.
+--
+
+[[sec-a2-2]]
+==== Prepare for the introduction and use of AI technologies
+
+[class=steps]
+. *Institutional preparedness and technical capacity*
++
+--
+Ministries of health should have the necessary human and technical resources to
+realize the full benefits of AI technologies for health while mitigating any
+negative impacts.
+
+_Specific considerations_
+
+* Training and capacity-building based on established criteria should be organized
+for government officials to evaluate whether an AI technology is based on ethical
+principles.
+
+* Health-care authorities and medical professionals should be involved and engaged
+in AI design and, when possible, software engineering.
+
+* Civil society, medical staff and patient groups should be consulted about the
+introduction of AI technology and included in both external audit and monitoring of
+its functioning.
+
+* The introduction of an AI technology should be accompanied by appropriate
+investments by the health system to capture its benefits. For example, tools to
+predict a disease outbreak should be complemented by robust surveillance systems and
+other measures to respond effectively to an outbreak.
+--
+
+. *Infrastructure for AI technologies*
++
+--
+The right infrastructure is a prerequisite for proper deployment of AI in a
+health-care system.
+
+_Specific considerations_
+
+* Criteria should be established to identify and measure the infrastructure
+requirements, including for operation, maintenance and oversight.
+
+* When necessary, infrastructure should be provided or strengthened with civil
+society support and international cooperation.
+
+* Ministries of health should identify effective alternatives if any infrastructure
+is lacking, if the AI technology is too expensive or if it poses a high risk to
+patients.
+--
+
+. *Management of data*
++
+--
+Data must be of high quality to prevent unintended harm from use of AI systems, as
+limited, low-quality or inaccurate data could result in biased inferences,
+misleading data analyses and poorly designed applications for health. Other critical
+elements of health data management include protecting the privacy and
+confidentiality of patient data and the rules for sharing such data.
+
+_Specific considerations_
+
+* Data processing (including from non-medical devices) and its representativeness,
+accuracy, harmonization, accessibility, interoperability and reusability should be
+regulated, with the informed consent of data providers (patients).
+
+* Access to and use of data from digital self-care applications and/or wearable
+technologies should also be regulated. Data from these applications and technologies
+should be collected, stored and used in accordance with principles for data
+minimization.
+
+* Patients and consumers who provide data should have access to and be allowed to
+reuse and thereby benefit from their data. Their data should not be monopolized by
+an AI technology provider.
+
+* Quality control measures should be implemented to ensure the representativeness of
+data from different population groups.
+
+* Mechanisms and procedures should be in place to collect relevant patient data to
+train AI technology according to the environment, culture and specifics of the
+community in which the technology is intended to be used.
+
+* Patients and consumers should know what data are used in training AI systems.
+--
+
+[[sec-a2-3]]
+==== Address ethical and legal challenges and protect human rights
+
+[class=steps]
+. *Preserve and enhance human autonomy*
++
+--
+AI technologies for health should enhance human decision-making and empower medical
+professionals (clinicians and providers) rather than replace them.
+
+_Specific considerations_
+
+* Human judgement should be used with regard to prediction of disease and/or
+recommended treatment by an AI technology.
+
+* Ministries of health should designate the types of information with which a
+clinician should be provided to make an independent judgement about an AI result or
+outcome.
+
+* Meaningful, clear information should be provided to patients to allow them to make
+informed decisions about health recommendations based on AI technology.
+--
+
+. *Patient agency with regard to predictive algorithms*
++
+--
+Use of AI predictive analytics in health care raises ethical concern with respect to
+informed consent and individual autonomy in decisions about patient and consumer
+health.
+
+_Specific considerations_
+
+* The need for an AI technology should be assessed, with the risk of the technology
+to patient autonomy and well-being.
+
+* Patients should be allowed to refuse AI technologies for health.
+
+* A mechanism should be available to inform patients of the benefits, risks, value,
+constraints, novelty and scope of an AI tool.
+--
+
+. *Privacy, confidentiality and informed consent in the collection and use of
+patient data*
++
+--
+The autonomy and trust of patients who provide data are paramount, especially
+meaningful individual control over data. Health-data processing should include
+respect for the right to privacy and should ensure that patients maintain control
+over decisions, including their informed consent.
+
+_Specific considerations_
+
+* Up-to-date data protection and confidentiality laws should be a prerequisite for
+use of AI.
+
+* Independent oversight and other forms of redress should be available to protect
+patient privacy and data confidentiality.
+
+* Data protection supervisory agencies should have sufficient resources for
+effective privacy protection.
+
+* Ministries of health should employ experts to determine whether AI tools meet
+standards of privacy to foster the general trust of patients who provide data.
+
+* Ministries of health should have a protocol for collecting, storing and sharing
+personal data or data that could be identified and ensure that the data are managed
+in such a way as to protect privacy, including confidentiality and informed consent.
+
+* Ministries of health should ensure that patients have the right to refuse data
+collection by and the data-sharing requirements of an AI technology. Explicit
+consent should be given for secondary uses of health data.
+
+* Ministries of health should limit the collection of data to those required and not
+collect additional data.
+
+* Ministries of health should provide training for health staff in the implications
+for the human rights of patients as part of capacity-building for use of AI
+technology.
+--
+
+. *Transparency of AI technologies for health*
++
+--
+AI technologies must be provided and relied on transparently in order to assign
+responsibility and ensure trust and protection of patient rights.
+
+_Specific considerations_
+
+* Ministry of health experts should transparently evaluate an AI technology
+developed by others and make the results of such assessments publicly available
+throughout the life-cycle of the AI system.
+
+* Ministries of health should ensure that clinicians can explain how an AI system
+has been validated to patients and their families.
+
+* External experts should have enough information about the AI system and its
+training data to make independent assessments.
+--
+
+. *Ensure equitable access to AI technologies and related health care*
++
+--
+When an AI technology is considered necessary (see above), ministries of health have
+an ethical obligation to ensure equitable access to that technology. Diagnostic use
+of AI should be extended carefully to avoid situations in which large numbers of
+people receive an accurate diagnosis of a health condition in the absence of
+appropriate treatment options.
+
+_Specific considerations_
+
+* Ministries of health have a duty to ensure equitable access to all to AI-based
+health care, regardless of gender, geography, ethnicity and other conditions.
+
+* Ministries of health have a duty to provide treatment after AI-based testing and
+confirmation of disease.
+
+* Ministries of health should ensure that the benefits of data from AI are fairly
+shared with the patients who provided the data for AI training and not monopolized
+by technology service providers.
+--
+
+[[sec-a3]]
+=== Considerations for health-care institutions and providers
+
+The following considerations are intended for health-care institutions and
+providers, such as hospitals, doctors and nurses. While programmers may be those
+primarily responsible for the design of AI technologies and ministries of health and
+regulatory agencies for approval and selection of such technologies for use,
+health-care providers determine which technologies to use and how and may also
+provide direct feedback to the health-care system, the medical community and the
+designers of the technologies about whether they meet the needs of patients.
+
+The following is not comprehensive but may be used as a starting point as
+health-care providers increase use of AI for health care. Use of AI technologies for
+health outside regular health-care settings is discussed in <<sec-3-1>> of this
+document. Three areas are considered: whether the AI technology is necessary and
+appropriate; whether the context in which the AI technology will be used is
+appropriate; and whether a health-care provider should use a particular AI technology.
+
+[[sec-a3-1]]
+==== Is the AI technology necessary and appropriate?
+
+[class=steps]
+. *Prioritize safety*
++
+--
+Use of AI technology in health care will inadvertently address and could amplify
+risk-prone decisions, procedures or both. Technology-related risks must be
+counteracted by risk mitigation strategies, which should be integrated into AI
+decision-making or be applicable to AI decisions.
+--
+
+. *Promote transparency*
++
+--
+Introduction of any AI technology must be sufficiently transparent that it can be
+criticized, by the public or by internal review mechanisms.
+
+_Specific considerations_
+
+* The source code should be fully disclosed.
+
+* Algorithms must be open to criticism by an in-house or other appropriate expert.
+
+* The data used to train the algorithm, whether certain groups were systematically
+excluded from such data, how the training data were labelled and by whom (including
+expertise and appropriateness of labelling) should be known.
+
+* The underlying principles and value sets used for decision trees should be
+transparent.
+
+* The learned code should be available for independent audit and review by
+appropriate third parties.
+--
+
+. *Address bias*
++
+--
+Bias due to past or continuing discrimination could be replicated. An AI technology
+should be used only if such bias can be mitigated, and AI should be designed to
+reduce inequity and bias.
+
+_Specific considerations_
+
+* Ensure that AI with certain biases does not have negative impacts according to
+race or ethnicity or that the bias can be mitigated.
+
+* If bias cannot be removed, ensure that this is stated transparently and reflected
+in decisions, e.g., to be taken into consideration by a provider or patient.
+--
+
+. *Safeguard privacy*
++
+--
+Health-care providers must prevent re-identification, especially for datasets that
+can be linked by third parties to re-identify individuals.
+
+_Specific considerations_
+
+* Understand issues related to privacy and reverse engineering.
+
+* Ensure that any option for use of an AI technology in a clinical setting favours
+privacy and that any reduction in privacy is actively agreed.
+
+* Take the necessary measures to prevent leakage of identifiable information.
+--
+
+. *Institute regular challenge and review*
++
+--
+Even if an AI technology is deemed appropriate up front, it must be subject to
+regular challenge and review. This may be necessary due to software erosion, changes
+in context over time and changes in the AI technology itself as it continues to
+learn from new data and evolves.
+
+_Specific considerations_
+
+* Establish regular technical review, including external review.
+
+* Review whether the AI is having the intended impact, is filling a gap in need and
+is improving health care.
+--
+
+[[sec-a3-2]]
+==== Is the context in which the AI technology will be used appropriate?
+
+[class=steps]
+. *Assess whether the AI technology is necessary and appropriate in each clinical setting*
++
+--
+_Specific considerations_
+
+* Determine whether the AI technology offers advantages over what is currently
+offered and fills a gap.
+
+* Compare the risks and benefits of the AI technology with those of current
+technology.
+
+* Ensure that the AI technology is necessary and that the problem is clearly stated
+to ensure effective delivery of care that justifies use of the technology.
+
+* Ensure that the AI technology is based on sufficient electronic health data.
+
+* Ensure that the health data used were acquired in an ethical manner.
+
+* Ensure the necessary infrastructure for use of the AI technology.
+
+* Confirm the support of experts, including partnerships with academic institutions
+and commercial entities, and appropriate agreements with respect to IP,
+accountability, confidentiality, ethics, access and commercialization.
+
+* Establish commonly agreed ethical principles for the collection, sharing and use
+of the data and its governance.
+--
+
+. *Understand local perspectives*
++
+--
+The perspectives of local consumers should be recognized, particularly the
+sovereignty of indigenous peoples over their data for the collective benefit of
+people. This includes determining whether the health service has a "social license"
+to use AI, i.e., the consent of communities and/or individuals.
+
+_Specific considerations_
+
+* Public and consumer communication and education about AI should be adequate.
+
+* Providers should secure a "social license" from the communities involved.
+
+* Providers should ensure sovereignty and governance of indigenous populations over
+their data.
+--
+
+[[sec-a3-3]]
+==== Should a health-care provider use the AI technology?
+
+[class=steps]
+. *Ensure that the information provided by an AI technology can be interpreted*
++
+--
+The information derived by an AI technology must be interpreted by a clinician.
+Human judgement is critical, and the context is important. Clinicians should be able
+understand the data and variables so that they can explain the principles of the AI
+application to themselves, colleagues, patients and families.
+--
+
+. *Understand the level of risk*
++
+--
+Decisions made by clinicians on the basis of an AI technology must be transparent
+and based on understanding that they are appropriate or commensurate with any risk.
+AI should be used in prevention, treatment, rehabilitation and/or palliative care
+only if it the risk-benefit ratio is positive. It should not be used if the
+influence of the technology on risk is unclear or if it could increase or exacerbate
+risk. Specific guidelines for medical research involving human beings must be
+followed if AI technology is used experimentally.
+--
+
+. *Ensure responsible use of AI*
++
+--
+Health-care providers must not only ensure that an AI technology is technically
+accurate but also consider whether it can be used responsibly. Health-care providers
+should state specifically why AI is appropriate in a particular situation.
+--

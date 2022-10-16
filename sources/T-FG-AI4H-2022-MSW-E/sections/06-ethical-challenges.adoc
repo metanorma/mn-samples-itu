@@ -1,0 +1,1549 @@
+[[sec-6]]
+== Ethical challenges to use of artificial intelligence for health care
+
+Several ethical challenges are emerging with the use of AI for health, many of which
+are especially relevant to LMIC. These challenges must be addressed if AI
+technologies are to support achievement of universal health coverage. Use of AI to
+extend health-care coverage and services in marginalized communities in HIC can
+raise similar ethical concerns, including an enduring digital divide, lack of
+good-quality data, collection of data that incorporate clinical biases (as well as
+inappropriate data collection practices) and lack of treatment options after
+diagnosis.
+
+[[sec-6-1]]
+=== Assessing whether artificial intelligence should be used
+
+There are risks of overstatement of what AI can accomplish, unrealistic estimates of
+what could be achieved as AI evolves and uptake of unproven products and services
+that have not been subjected to rigorous evaluation for safety and efficacy
+<<bioethics-committee>>. This is due partly to the enduring appeal of "technological
+solutionism", in which technologies such as AI are used as a "magic bullet" to
+remove deeper social, structural, economic and institutional barriers <<morozov>>.
+The appeal of technological solutions and the promise of technology can lead to
+overestimation of the benefits and dismissal of the challenges and problems that new
+technologies such as AI may introduce. This can result in an unbalanced health-care
+policy and misguided investments by countries that have few resources and by HIC
+that are under pressure to reduce public expenditure on health care <<matheny>>. It
+can also divert attention and resources from proven but underfunded interventions
+that would reduce morbidity and mortality in LMIC.
+
+First, the AI technology itself may not meet the standards of scientific validity
+and accuracy that are currently applied to medical technologies. For example,
+digital technologies developed in the early stages of the COVID-19 pandemic did not
+necessarily meet any objective standard of efficacy to justify their use
+<<gasseru>>. AI technologies have been introduced as part of the pandemic response
+without adequate evidence, such as from randomized clinical trials, or safeguards
+<<schwalbe>>. An emergency does not justify deployment of unproven technologies
+<<gasseru>>; in fact, efforts to ensure that resources were allocated where they
+were most urgently needed should have heightened the vigilance of both companies and
+governments (such as regulators and ministries of health) to ensure that the
+technologies were accurate and effective.
+
+Secondly, the benefits of AI may be overestimated when erroneous or overly
+optimistic assumptions are made about the infrastructure and institutional context
+in which the technologies will be used and where the intrinsic requirements for use
+of the technology cannot be met. In some low-income countries, financial resources
+and information and communication technology infrastructure lag those of HIC, and
+the significant investments that would be required might discourage use. This is
+discussed in greater detail in <<sec-6-2>>. The quality and availability of data may
+not be adequate for use of AI, especially in LMIC. There is a danger that
+poor-quality data will be collected for AI training, which may result in models that
+predict artefacts in the data instead of actual clinical outcomes. There may also be
+no data, which, with poor-quality data, could distort the performance of an
+algorithm, resulting in inaccurate performance, or an AI technology might not be
+available for a specific population because of insufficient usable data.
+Additionally, significant investment may be required to make non-uniform data sets
+collected in LMIC usable. Compilation of data in resource-poor settings is difficult
+and time-consuming, and the additional burden on community health workers should be
+considered. Data are unlikely to be available on the most vulnerable or marginalized
+populations, including those for whom health-care services are lacking, or they
+might be inaccurate. Data may also be difficult to collect because of language
+barriers, and mistrust may lead people to provide incorrect or incomplete
+information. Often, irrelevant data are collected, which can undermine the overall
+quality of a dataset. footnote:[Presentation by Dr Amel Ghoulia, Bill & Melinda
+Gates Foundation, 3 October 2019, to the WHO working group on ethics and governance
+of AI for health.] Broader concern about the collection and use of data, as well as
+bias in data, is discussed below.
+
+There may not be appropriate or enforceable regulations, stakeholder participation
+or oversight, all of which are required to ensure that ethical and legal concerns
+can be addressed and human rights are not violated. For example, AI technologies may
+be introduced in countries without up-to-date data protection and confidentiality
+laws (especially for health-related data) or without the oversight of data
+protection authorities to rigorously protect confidentiality and the privacy of
+individuals and communities. Furthermore, regulatory agencies in LMIC may not have
+the capacity or expertise to assess AI technologies to ensure that systematic errors
+do not affect diagnosis, surveillance and treatment.
+
+Thirdly, there may be enough ethical concern about a use case or a specific AI
+technology, even if it provides accurate, useful information and insights, to
+discourage a particular use. An AI technology that can predict which individuals are
+likely to develop type 2 diabetes or HIV infection could provide benefits to an
+at-risk individual or community but could also give rise to unnecessary
+stigmatization of individuals or communities, whose choices and behaviour are
+questioned or even criminalized, result in over-medicalization of otherwise healthy
+individuals, create unnecessary stress and anxiety and expose individuals to
+aggressive marketing by pharmaceutical companies and other for-profit health-care
+services <<fenech>>. Furthermore, certain AI technologies, if not deployed
+carefully, could exacerbate disparities in health care, including those related to
+ethnicity, socioeconomic status or gender.
+
+Fourthly, like all new heath technologies, even if an AI technology does not trigger
+an ethics warning, its benefits may not be justified by the extra expense or cost
+(beyond information and communication technology infrastructure) associated with the
+procurement, training and technology investment required <<ai>>. Robotic surgery may
+produce better outcomes, but the opportunity costs associated with the investment
+must also be considered.
+
+Fifthly, enough consideration may not be given to whether an AI technology is
+appropriate and adapted to the context of LMIC, such as diverse languages and
+scripts in a country or among countries <<schwalbe>>. Lack of investment in, for
+example, translation can mean that certain applications do not operate correctly or
+simply cannot be used by a population. Such lack of foresight points to a wider
+problem, which is that many AI technologies are designed by and for high-income
+populations and by individuals or companies with inadequate understanding of the
+characteristics of the target populations in LMIC.
+
+Unrealistic expectations of what AI can achieve may, however, unnecessarily
+discourage its use. Thus, machines and algorithms (and the data used for algorithms)
+are expected in the public imagination to be perfect, while humans can make
+mistakes. Medical professionals might overestimate their ability to perform tasks
+and ignore or underestimate the value of algorithmic decision tools, for which the
+challenges can be managed and for which evidence indicates a measurable benefit. Not
+using the technology could result in avoidable morbidity and mortality, making it
+blameworthy not to use a certain AI technology, especially if the standard of care
+is already shifting to its use <<londonaj>>. For medical professionals to make such
+an assessment, they require greater transparency with regard to the performance and
+utility of AI technologies, a principle enumerated in <<sec-5>> of this document, as
+well as effective regulatory oversight. The role of regulatory agencies in ensuring
+rigorous testing, transparent communication of outcomes and monitoring of
+performance is discussed in <<sec-9-5>>.
+
+Even after an AI technology has been introduced into a health-care system, its
+impact should be evaluated continuously during its real-world use, as should the
+performance of an algorithm if it learns from data that are different from its
+training data.
+
+Impact assessments can also guide a decision on use of AI in an area of health
+before and after its introduction <<londonaj>>. (See <<sec-7-3>>.) Assessment of
+whether to introduce an AI technology in a low-income country or resource-poor
+setting may lead to a different conclusion from such an assessment in a high-income
+setting. Risk-benefit calculations that do not favour a specific use of AI in HIC
+may be interpreted differently for a low-income country that lacks, for example,
+enough health-care workers to perform certain tasks or which would otherwise forego
+use of more accurate diagnostic instruments, such that individuals receive
+inaccurate diagnoses and the wrong treatment.
+
+The use of AI to resource-poor contexts should, however, be extended carefully to
+avoid situations in which large numbers of people receive accurate diagnoses of a
+health condition but have no access to appropriate treatment. Health-care workers
+have a duty to provide treatment after testing for and confirmation of disease, and
+the relatively low cost at which AI diagnostics can be deployed should be
+accompanied by careful planning to ensure that people are not left without
+treatment. footnote:[The International Council of Nurses noted: "Ethical issues may
+arise if there is the capability of AI diagnostics but not the capacity to provide
+treatment. Issues like this have arisen in the field of endoscopy in some countries
+where some diagnostic services for screening are withheld because of the limited
+access to surgical services." Communication from the International Council of Nurses
+to WHO on 6 January 2021.] Prediction tools for anticipating a disease outbreak will
+have to be complemented by robust surveillance systems and other effective measures.
+
+[[sec-6-2]]
+=== Artificial intelligence and the digital divide
+
+Many LMIC have sophisticated economies and digital infrastructure, while others,
+such as India, have both world-class digital infrastructure and millions of people
+without electricity. The countries with the greatest challenges to adoption of AI
+are classified as least developed; however, AI could allow those countries to
+leapfrog existing models of health-care delivery to improve health outcomes <<singh>>.
+
+One challenge that could affect the uptake of AI is the "digital divide", which
+refers to uneven distribution of access to, use of or effect of information and
+communication technologies among any number of distinct groups. Although the cost of
+digital technologies is falling, access has not become more equitable. For example,
+1.2 billion women (327 million fewer women than men) in LMIC do not use mobile
+Internet services because they cannot afford to or do not trust the technology, even
+though the cost of the devices should continue to fall <<intech>>. Gender is only
+one dimension of the digital divide; others are geography, culture, religion,
+language and generation. The digital divide begets other disparities and challenges,
+many of which affect the use of AI, and AI itself can reinforce and exacerbate the
+disparity. Thus, in 2019, the United Nations Secretary-General's High-level Panel on
+Digital Cooperation <<age-digital>> recommended that
+
+[quote]
+____
+by 2030, every adult should have affordable access to digital networks, as well as
+digitally enabled financial and health services, as a means to make a substantial
+contribution to achieving the Sustainable Development Goals.
+____
+
+The human and technical resources required to realize the benefits of digital
+technologies fully are also unequally distributed, and infrastructure to operate
+digital technologies may be limited or inexistent. Some technologies require an
+electricity grid and information and communication technology infrastructure,
+including electrification, Internet connectivity, wireless and mobile networks and
+devices. Solar energy may provide a path forward for many countries if the climate
+is appropriate, as investment is increasing and the cost of solar energy has
+decreased dramatically in the past decade <<schwerhoff>>. Nevertheless, at present,
+an estimated 860 million people worldwide do not have access to electricity,
+including 600 million people in sub-Saharan Africa, and there is growing pressure on
+the electrical grid in cities due to urbanization <<sdg7>>. Even in high-income
+economies with near-universal electrification and enough resources, the digital
+divide has persisted. In the USA, for example, millions of people in rural areas and
+in cities still lack access to high-speed broadband services, and 60% of health-care
+facilities outside metropolitan areas also lack broadband <<winslow>>.
+
+Even as countries overcome the digital divide, technology providers should be
+required to provide infrastructure, services and programs that are interoperable, so
+that different platforms and applications can work seamlessly with one another, as
+well as affordable devices (for example, smartphones) that do not require consumers
+to trade privacy for affordability <<buying-smartphone>>. This will ensure that the
+emerging digital health-care system is not fragmented and is equitable.
+
+[[sec-6-3]]
+=== Data collection and use
+
+The collection, analysis and use of health data, including from clinical trials,
+laboratory results and medical records, is the bedrock of medical research and the
+practice of medicine. Over the past two decades, the data that qualify as health
+data have expanded dramatically. They now include massive quantities of personal
+data about individuals from many sources, including genomic data, radiological
+images, medical records and non-health data converted into health data <<vayena>>.
+The various types of data, collectively known as "biomedical big data", form a
+health data ecosystem that includes data from standard sources (e.g., health
+services, public health, research) and further sources (environmental, lifestyle,
+socioeconomic, behavioural and social). See <<fig1>> <<evolving-health-ecosystem>>.
+
+[[fig1]]
+.Health data ecosystem <<vayenae>>
+image::001.png["",803,797]
+
+Thus, there are many more sources of health data, entities that wish to make use of
+such data and commercial and non-commercial applications. The development of a
+successful AI system for use in health care relies on high-quality data for both
+training the algorithm and validating the algorithmic model.
+
+The potential benefits of biomedical big data can be ethically important, as AI
+technologies based on high-quality data can improve the speed and accuracy of
+diagnosis, improve the quality of care and reduce subjective decision-making. The
+ubiquity of health data and the potential sensitivity of health care to data
+indicate possible benefits. Health care is still lagging in the adoption of data
+science and AI as compared with other sectors (although some would disagree), and
+individuals informed of the potential benefits of the collection and use of such
+data might support use of such data for their personal benefit or that of a wider
+group. footnote:[Presentation by Dr Andrew Morris, Health Data Research United
+Kingdom, 3 October 2019 to the WHO working group on ethics and governance of AI for
+health.]
+
+Several concerns may undermine effective use of health data in AI-guided research
+and drug development. Concern about the use of health data is not limited to their
+use in AI, although AI has exacerbated the problem. One concern with health data is
+their quality, especially with those from LMIC (see above). Furthermore, training
+data will always have one or more systemic biases because of under-representation of
+a gender, age, race, sexual orientation or other characteristic. These biases will
+emerge during modelling and subsequently diffuse through the resulting algorithm
+<<matheny>>. Concern about the impact of bias is discussed in <<sec-6-6>>.
+
+A second major concern is safeguarding individual privacy. The collection, use,
+analysis and sharing of health data have consistently raised broad concern about
+individual privacy, because lack of privacy may either harm an individual (such as
+future discrimination on the basis of one's health status) or cause a wrong, such as
+affecting a person's dignity if sensitive health data are shared or broadcast to
+others <<mcnair-price>>. There is a risk that sharing or transferring data leaves them
+vulnerable to cyber-theft or accidental disclosure <<mcnair-price>>. Recommendations
+generated by an algorithm from an individual's health data also raise privacy
+concerns, as a person may expect that such "new" health data are private <<mcnair-price>>,
+and it may be illegal for third parties to use "new" health data. Such privacy
+concerns are heightened for stigmatized and vulnerable populations, for whom data
+disclosure can lead to discrimination or punitive measures <<xafis>>. There is also
+concern about the rights of children <<whitepaper-ai>>, which could include future
+discrimination based on the data accumulated about a child, children's ability to
+protect their privacy and their autonomy to make choices about their health care.
+Measures to collect data or track an individual's status and to construct digital
+identities to store such information have accelerated during the COVID-19 pandemic.
+See Box 2.
+
+[%unnumbered]
+|===
+.<a| *Box 2 -- The emergence of digital identification in the COVID-19 pandemic*
+
+The COVID-19 pandemic is expanding and accelerating the creation of infrastructure
+for digital identities to store health data for several uses. In China, a QR code
+system has been established from the digital payment system established by Alipay, a
+mobile and online payment platform, to introduce an "Alipay Health Code", in which
+the data collected are used to establish an algorithm to "draw automated conclusions
+as to whether someone is a contagion risk" <<mozur>>. For a national programme to
+vaccinate millions of people against SARS-Cov2, India may use its national digital
+ID system, Aadhar, to avoid duplication and to track beneficiaries <<angwadi>>. Many
+entities around the world, including travel firms, airports, some governments and
+political leaders, as well as the digital ID industry, are calling for the
+introduction of immunity passports or a digital "credential given to a person who is
+assumed to be immune from SARS-CoV2 and so protected against re-infection"
+<<immunity-pass>>. In some countries, technologies such as proximity-tracking
+applications have been credited with improving the response to the pandemic, because
+there was already a system in place to support the use of such technologies,
+effective communication, widespread adoption and a "social compact" between
+policy-makers and the public <<fisherm>>.
+
+For many of these technologies, however, there is concern about whether they are
+effective (scientifically valid), whether they will create forms of discrimination
+or targeting of certain populations and whether they may exclude certain segments of
+the population or not be applicable by people who do not have access to the
+appropriate technology and infrastructure. They also raise concern about the
+generation of a permanent digital identity for individuals linked to their health
+and personal data, for which they may not have given consent, which could
+permanently undermine individual autonomy and privacy <<looming-disaster>>. In
+particular, there is concern that governments could use such information to
+establish mass surveillance or scoring systems to monitor everyday activities, or
+companies could use such data and systems for other purposes <<fair-shot>>.
+|===
+
+A third major concern is that health data collected by technology providers may
+exceed what is required and that such excess data, so-called "behavioural data
+surplus" <<zuboff>>, is repurposed for uses that raise serious ethical, legal and
+human rights concerns. The uses might include sharing such data with government
+agencies so that they can exercise control or use punitive measures against
+individuals <<gasseru>>. Such repurposing, or "function creep", is a challenge that
+predates but is heightened by the use of AI for health care. For example, in early
+2021, the Singapore Government admitted that data obtained from its COVID-19
+proximity-tracing application (Trace Together) could also be accessed "for the
+purpose of criminal investigation", despite prior assurances that this would not be
+permitted <<illmer>>. In February 2021, legislation was introduced to restrict the
+use of such data for only the most "serious" criminal investigations, such as for
+murder or terrorism-related charges, with penalties for any unauthorized use <<chee>>.
+
+Such data may also be shared with companies that use them to develop an AI
+technology for marketing goods and services or to create prediction-based products
+to be used, for example, by an insurance firm <<price>> or a large technology
+company. Such uses of health data, often unknown to those who have supplied the
+data, have generated front-page headlines and public concern <<copeland>>. The
+provision of health data to commercial entities has also resulted in the filing of
+legal actions by individuals whose health data (de-identified) have been disclosed
+on behalf of all affected individuals. See Box 3.
+
+[%unnumbered]
+|===
+.<a| *Box 3 -- Dinerstein vs Google*
+
+Google announced a strategic partnership with the University of Chicago and the
+University of Chicago Medicine in the USA in May 2017 <<wood>>. The aim of the
+partnership was to develop novel machine-learning tools to predict medical events
+such as unexpected hospital admissions. To realize this goal, the University shared
+hundreds of thousands of "de-identified" patients' records with Google. One of the
+University's patients, Matt Dinerstein, filed a class action complaint against the
+University and Google in June 2019 on behalf of all patients whose records were
+disclosed <<shachar>>.
+
+Dinerstein brought several claims, including breach of contract, against the
+University and Google, alleging prima facie violation of the US Health Insurance
+Portability and Accountability Act. According to an article published in 2018 by the
+defendants <<rajkomar>>, the patients' medical records shared with Google "were
+de-identified, except that dates of service were maintained in the (...) dataset".
+The dataset also included "free-text medical notes" <<rajkomar>>. Dinerstein accused
+the defendants of insufficient anonymization of the records, putting the patients'
+privacy at risk. He alleged that the patients could easily be re-identified by
+Google by combining the records with other available data sets, such as geolocation
+data from Google Maps (by so-called "data triangulation"). Moreover, Dinerstein
+asserted that the University had not obtained express consent from each patient to
+share their medical records with Google, despite the technology giant's commercial
+interest in the data.
+
+The issue of re-identification was largely avoided by the district judge, who
+dismissed Dinerstein's lawsuit in September 2020. The reasons given for dismissal
+included Dinerstein's failure to demonstrate damages that had occurred because of
+the partnership. This case illustrates the challenges of lawsuits related to
+data-sharing and highlights the lack of adequate protection of the privacy of health
+data. In the absence of ethical guidelines and adequate legislation, patients may
+have difficulty in maintaining control of their personal medical information,
+particularly in circumstances in which the data can be shared with third parties and
+in the absence of safeguards against re-identification.
+
+This case study was written by Marcelo Corrales Compagnucci (CeBIL Copenhagen), Sara
+Gerke (Harvard Law School) and Timo Minssen (CeBIL Copenhagen).
+|===
+
+Some companies have already collected large quantities of health data through their
+products and services, to which users voluntarily supply health data (user-generated
+health data) <<andanda>>. They may acquire further data through a data aggregator or
+broker <<fussell>> or may rely on governments to aggregate data that can be used by
+public, not-for-profit and private sector entities <<lewis>>. Such data may include
+"mundane" data that were not originally characterized as "health data"; however,
+machine learning can elicit sensitive details from such ordinary personal data and
+thus transform them into a special category of sensitive data <<hern-anonymous>>
+that may require protection.
+
+Concern about the commercialization of health data includes individual loss of
+autonomy, a principle stated in <<sec-5>>, loss of control over the data (with no
+explicit consent to such secondary use), how such data (or outcomes generated by
+such data) may be used by the company or a third party, with concern that companies
+are allowed to profit from the use of such data, and concern about privacy, as
+companies may not meet the duty of confidentiality, whether purposefully or
+inadvertently (for example due to a data breach) <<rossc>>. Thus, once an
+individual's medical history is exposed, it cannot be replaced in the same way as a
+new credit card can be obtained after a breach.
+
+[[sec-6-3-1]]
+==== Data colonialism
+
+A fourth concern with biomedical big data is that it may foster a divide between
+those who accumulate, acquire, analyse and control such data and those who provide
+the data but have little control over their use. This is especially true with
+respect to data collected from underrepresented groups, many of which are
+predominantly in LMIC, often with the broad ambition of collecting data for
+development or for humanitarian ends rather than to promote local economic
+development and governance <<mannl>>. Insufficient data from underrepresented groups
+affect them negatively, and attention has focused on either encouraging such groups
+to provide data or instituting measures to collect data. Generating more data from
+LMIC, however, also carries risks, including "data colonialism", in which the data
+are used for commercial or non-commercial purposes without due respect for consent,
+privacy or autonomy. Collection of data without the informed consent of individuals
+for the intended uses (commercial or otherwise) undermines the agency, dignity and
+human rights of those individuals; however, even informed consent may be
+insufficient to compensate for the power dissymmetry between the collectors of data
+and the individuals who are the sources. This is a particular concern because of the
+possibility that companies in countries with strict regulatory frameworks and data
+protection laws could extend data collection to LMIC without such control. While
+regulatory frameworks such as the EU's GDPR include an "extra-territorial" clause
+that requires compliance with its standards outside the EU, entities are not obliged
+to provide a right of redress as guaranteed under the EU GDPR, and companies may use
+such data but not provide appropriate products and services to the underserved
+communities and countries from which the data were obtained. Individuals in these
+regions therefore have little or no knowledge of how their data are being used, by a
+government or company, no opportunity to provide any form of consent for how the
+data could be used and often less bargaining power if recommendations based on the
+data have an adverse effect on an individual or a community <<hariri-survive>>.
+
+[[sec-6-3-2]]
+==== Mechanisms for safeguarding privacy -- Do they work?
+
+When meaningful consent is possible, it can overcome many concerns, including those
+related to privacy. Yet, true informed consent is increasingly infeasible in an era
+of biomedical big data, especially in an environment driven mainly by companies
+seeking to generate profits from the use of data <<vayena>>. The scale and
+complexity of biomedical big data make it impossible to keep track of and make
+meaningful decisions about all uses of personal data <<vayena>>. All the potential
+uses of health data may not be known, as they may eventually be linked to and used
+for a purpose that is far removed from the original intention. Patients may be
+unable to consent to current and future uses of their health data, such as for
+population-level data analytics or predictive-risk modelling <<vayena>>. Even if a
+use lends itself to consent, the procedures may fall short, individuals might not be
+able to consent, such as because they have insufficient access to a health data
+system, or access to health care is perceived or actually denied if consent is not
+provided.
+
+One concern is in the management of use of health data (probably collected for
+different purposes and not necessarily to support the use of AI) after an individual
+has died. Such data could provide numerous benefits for medical research
+<<krutzinna>>, to improve understanding of the causes of cancer <<shaw>> or to
+increase the diversity of data used for medical AI. These data must, however, also
+be protected against unauthorized use. Existing laws either define limited
+circumstances in which such data can be used or restrict how they can be used
+<<gdpr27>>. In the GDPR, a data protection law does not apply to deceased persons,
+and, under Article 27, EU Member States "may provide for rules regarding the
+processing of personal data of deceased persons" <<malgieri>>. Proposals have been
+made to improve the sharing of such data through voluntary and participatory
+approaches by which individuals can provide broad or selective consent for use of
+their data after death, much as individuals can provide consent for use of their
+organs for medical research <<malgieri>>.
+
+If patients' privacy cannot be safeguarded by consent mechanisms, other privacy
+safeguards, including a data holder's duty of confidentiality, also have
+shortcomings. Although confidentiality is a well-recognized pillar of medical
+practice, the duty of confidentiality may not be sufficient to cover the many types
+of data now used to guide AI health technologies and may also not be sufficient to
+control the production and transfer of health data <<vayena>>.
+
+A proactive approach to preserving privacy is de-identification or anonymization or
+pseudo-anonymization of health data. De-identification prevents connection of
+personal identifiers to information. Anonymization of personal data is a subcategory
+of de-identification whereby both direct and indirect personal identifiers are
+removed, and technical safeguards are used to ensure zero risk of re-identification,
+whereas de-identified data can be re-identified by use of a key <<at-a-glance>>.
+Pseudo-anonymization is defined in Article 5 of the GDPR <<gdpr5>> as:
+
+[quote]
+____
+processing of personal data in such a way that the data can no longer be attributed
+to a specific data subject without the use of additional information provided that
+such additional information is kept separately and is subject to technical and
+organisational measures to ensure that the personal data are not attributed to an
+identified or identifiable natural person.
+____
+
+The use of such techniques could safeguard privacy and encourage data-sharing but
+also raises several concerns and challenges. In the USA for example, fully
+de-identified health data can be used for other purposes without consent <<bari>>.
+De-identification may not always be successful, as "data triangulation" techniques
+can be used to reconstruct a de-identified, incomplete dataset by a third party for
+re-identification of an individual <<rocherl>>. It may be impossible completely to
+de-identify some types of data, such as genome sequences, as relationships to other
+people whose identity and partial sequence are known can be inferred. Such
+relationships may allow direct identification of small groups and to narrow down
+identification to families (<<price>>, <<mayt>>).
+
+Anonymization may not be possible during health data collection. For example, in
+predictive AI, time-course data must be collected from a single individual at
+several times, obviating anonymization until data at all time points are collected.
+Furthermore, while anonymization may minimize the risks of (re-)identification of a
+person, it can reduce the positive benefits of health data, including re-assembly of
+fragments of an individual's health data into a comprehensive profile of a patient,
+which is required for some forms of AI such as predictive algorithms of mortality.
+Furthermore, anonymization may undermine a person's right to control their own data
+and how it may be used <<vayena>>. Other techniques could be used to preserve
+privacy, including differential privacy, synthetic data generation and k-anonymity,
+which are briefly discussed in <<sec-7-1>>.
+
+[[sec-6-4]]
+=== Accountability and responsibility for decision-making with artificial intelligence
+
+This section addresses the challenges of assigning responsibility and accountability
+for the use of AI for health care, a guiding principle noted in <<sec-5>>. Much of
+the momentum of AI is based on the notion that use of such technologies for
+diagnosis, care or systems could improve clinical and institutional decision-making
+for health care. Clinicians and health-care workers have numerous cognitive biases
+and commit diagnostic errors. The US National Academy of Sciences found that 5% of
+US adults who seek health advice receive erroneous diagnoses and that such errors
+account for 10% of all patient deaths <<grote>>. At the institutional level, machine
+learning might reduce inefficiency and errors and ensure more appropriate allocation
+of resources, if the underlying data are both accurate and representative <<grote>>.
+
+AI-guided decision-making also introduces several trade-offs and risks. One set of
+trade-offs is associated with the displacement of human judgement and control and
+concern about using AI to predict a person's health status or the evolution of
+disease. This is a major ethical and epistemological challenge to humans as the
+centre of production of knowledge and also to the system of production of knowledge
+for medicine. These considerations are addressed in <<sec-6-5>>.
+
+Governments can violate human rights (and companies can fail to respect human
+rights), undermine human dignity or cause tangible harm to human health and
+well-being by using AI-guided technologies. These violations may not be foreseen
+during development of an AI technology and may emerge only once the technology
+evolves in real-world use. If proactive measures such as greater transparency and
+continuous updating of training data do not avoid harm, recourse may be made through
+civil (and occasionally criminal) liability. The use of liability regimes to address
+harm caused by AI-guided technologies is addressed in <<sec-8>>.
+
+Responsibility ensures that individuals and entities are held accountable for any
+adverse effects of their actions and is necessary to maintain trust and to protect
+human rights. Certain characteristics of AI technologies, however, affect notions of
+responsibility (and accountability), including their opacity, reliance on human
+input, interaction, discretion, scalability, capacity to generate hidden insights
+and the complexity of the software. One challenge to assigning responsibility is the
+'control problem' associated with AI, wherein developers and designers of AI may not
+be held responsible, as AI-guided systems function independently of their developers
+and may evolve in ways that the developer could claim were not foreseeable
+<<yeung>>. This creates a responsibility gap, which could place an undue burden on a
+victim of harm or on the clinician or health-care worker who uses the technology but
+was not involved in its development or design (<<yeung>>, <<habli>>). Assigning
+responsibility to the developer might provide an incentive to take all possible
+steps to minimize harm to the patient. Such expectations are already well
+established for the producers of other commonly used medical technologies, including
+drug and vaccine manufacturers, medical device companies and medical equipment makers.
+
+The 'control problem' will become ever more salient with the emergence of automated
+AI. Technology companies are making large investments in automating the programming
+of AI technologies, partly because of the scarcity of AI developers. Automation of
+AI programming, through programs such as BigML, Google AutoML and Data Robot, might
+be attractive to public health institutions that wish to use AI but lack the budget
+to hire AI developers <<hurtgen>>. While automated AI programming might be more
+accurate, its use might not be fair, ethical or safe in certain situations. If AI
+programming is automated, the checks and balances provided by the involvement of a
+human developer to ensure safety and identify errors would also be automated, and
+the control problem is abstracted one step further away from the patient.
+
+A second challenge is the "many hands problem" or the "'traceability" of harm, which
+bedevils health-care decision-making systems <<dixon-woods>> and other complex
+systems <<van-de-poel>> even in the absence of AI. As the development of AI involves
+contributions from many agents, it is difficult, both legally and morally, to assign
+responsibility <<yeung>>, which is diffused among all the contributors to the
+AI-guided technology. Participation of a machine in making decisions may also
+discourage assignment of responsibility to the humans involved in the design,
+selection and use of the technology <<yeung>>. Diffusion of responsibility may mean
+that an individual is not compensated for the harm he or she suffers, the harm
+itself and its cause are not fully detected, the harm is not addressed and societal
+trust in such technologies may be diminished if it appears that none of the
+developers or users of such technologies can be held responsible <<braunm>>.
+
+A third challenge to assigning responsibility is the issuance of ethics guidance by
+technology companies, separately or jointly <<metcalf>>. Such guidance sets out
+norms and standards to which the companies commit themselves to comply publicly and
+voluntarily. Many companies have issued such guidance in the absence of
+authoritative or legally binding international standards. Recognition by technology
+companies that AI technologies for use in health care and other sectors are of
+public concern and must be carefully designed and deployed to avoid harm, such as
+violations of human rights or bodily injury, is welcome. Such guidelines may,
+however, depending on how they are implemented, be little more than "ethics washing"
+<<yeung>>. First, the public tends to have little or no role in setting such
+standards <<whitaker>>. Secondly, such guidelines tend to apply to the prospective
+behaviour of companies for the technologies they design and deploy (role
+responsibility) and not historic responsibility for any harms for which
+responsibility should be allocated. This creates a responsibility gap, as it does
+not address causal responsibility or retrospective harm <<yeung>>. Thirdly,
+monitoring of whether companies are complying with their own guidance tends to be
+done internally, with little to no transparency, and without enforcement by
+institutions or mechanisms empowered to act independently to evaluate whether the
+commitments are being met (<<whitaker>>, <<vincent>>). Finally, these commitments
+are not legally enforceable if violated <<vincent>>.
+
+AI provides great power and benefits (including the possibility of profit) to those
+who design and deploy such systems. Thus, reciprocity should apply -- companies that
+reap direct and indirect benefits from AI-guided technologies should also have to
+shoulder responsibility for any negative consequences (<<sec-8>>), especially as it
+is health-care providers who will bear the immediate brunt of any psychological
+stress if an AI technology causes harm to a patient. Companies should also allow
+independent audits and oversight of enforcement of its own ethics standards to
+ensure that the standards are being met and that corrective action is taken if a
+problem arises.
+
+[[sec-6-4-1]]
+==== Accountability for AI-related errors and harm
+
+Clinicians already use many non-AI technologies in diagnosis and treatment, such as
+X-rays and computer software. As AI technologies are used to assist or improve
+clinical decision-making and not to replace it, there may be an argument to
+initially hold clinicians accountable for any harm that results from their use in
+health care. In the same way as for non-AI technologies, however, this
+oversimplifies the reasons for harm and who should be held accountable for such
+harm. If a clinician makes a mistake in using the technology, he or she may be held
+accountable if they were trained in its use that otherwise may not have been
+included in their medical training <<ai-healthcare>>. Yet, if there is an error in
+the algorithm or the data used to train the AI technology, for example,
+accountability might be better placed with those who developed or tested the AI
+technology rather than requiring the clinician to judge whether the AI technology is
+providing useful guidance <<ai-healthcare>>.
+
+There are other reasons for not holding clinicians solely accountable for decisions
+made by AI technologies, several of which apply to assigning accountability for the
+use of non-AI health technologies. First, clinicians do not exercise control over an
+AI-guided technology or its recommendations <<habli>>. Secondly, as AI technologies
+tend to be opaque and may use "black-box" algorithms, a physician may not understand
+how an AI system converts data into decisions <<habli>>. Thirdly, the clinician may
+not have chosen to use the AI technology but does so because of the preferences of
+the hospital system or of other external decision-makers.
+
+Furthermore, if physicians were made accountable for harm caused by an AI
+technology, technology companies and developers could avoid accountability, and
+human users of the technology would become the scapegoats of all faults arising from
+its use, with no control over the decisions made by the AI technology <<yeung>>.
+Furthermore, with the emergence of autonomous systems for driving and warfare, there
+is growing concern about whether humans can exert "meaningful control" over such
+technologies or whether the technologies will increasingly make decisions
+independently of human input. (See <<sec-6-5>>.)
+
+Clinicians should not, however, be fully exempt from accountability for errors in
+content, in order to avoid "automation bias" or lack of consideration of whether an
+automated technology meets their needs or those of the patient <<ai-healthcare>>. In
+automation bias, a clinician may overlook errors that should have been spotted by
+human-guided decision-making. While physicians must be able to trust an algorithm,
+they should not ignore their own expertise and judgement and simply rubber-stamp the
+recommendation of a machine <<ai-stockholm>>. Some AI technology may not issue a
+single decision but a set of options from which a physician must select. If the
+physician makes the wrong choice, what should the criteria be for holding the
+physician accountable?
+
+Assignation of accountability is even more complex when a decision is made to use an
+AI technology throughout a health-care system, as the developer, the institution and
+the physician may all have played a role in the medical harm, yet none is fully to
+blame <<grote>>. In such situations, accountability may rest not with the provider
+or the developer of the technology but with the government agency or institution
+that selected, validated and deployed it.
+
+[[sec-6-5]]
+=== Autonomous decision-making
+
+Decision-making has not yet been "fully transferred" from humans to machines in
+health care. While AI is used only to augment human decision-making in the practice
+of public health and medicine, epistemic authority has, in some circumstances, been
+displaced, whereby AI systems (such as with the use of computer simulations) are
+displacing humans from the centre of knowledge production (<<duran>>,
+<<humphreys>>). Furthermore, there are signs of full delegation of routine medical
+functions to AI. Delegation of clinical judgement introduces concern about whether
+full delegation is legal, as laws increasingly recognize the right of individuals
+not to be subject to solely automated decisions when such decisions would have a
+significant effect. Full delegation also creates a risk of automation bias on the
+part of the provider, as discussed above. Other concerns could emerge if human
+judgement is increasingly replaced by machine-guided judgement, and wider ethical
+concern would arise with loss of human control, especially if prediction-based
+health care becomes the norm. Yet, as for autonomous cars, it is unlikely that AI in
+medicine will ever achieve full autonomy. It may achieve only conditional automation
+or require human back-up <<topol>>.
+
+[[sec-6-5-1]]
+==== Implications of replacing human judgement for clinical care
+
+There are benefits of replacing human judgement and of humans ceding control over
+certain aspects of clinical care. Humans could make worse decisions that are less
+fair and more biased compared to machines (concern about bias in the use of AI is
+discussed below). Use of AI systems to make specific, well-defined decisions may be
+entirely justified if there is compelling clinical evidence that the system performs
+the task better than a human. Leaving decisions to humans when machines can perform
+them more rapidly, more accurately and with greater sensitivity and specificity can
+mean that some patients suffer avoidable morbidity and mortality without the
+prospect of some offsetting benefit <<londonaj>>.
+
+In some cases, automation of routine, mundane functions, such as recording
+information, could liberate a medical provider to build or enhance a relationship
+with a patient while AI-guided machines automate certain aspects of caregiving
+<<topol-preparing>>. Other mundane functions could be fully assumed by AI, such as
+automatic adjustment of a hospital ward temperature.
+
+The shift to applying AI technologies for more complex areas of clinical care will,
+however, present several challenges. One is the likely emergence of "peer
+disagreement" between two competent experts -- an AI machine and a doctor <<grote>>.
+In such situations, there is no means of combining the decisions or of reasoning
+with the algorithm, as it cannot be accessed or engaged to change its mind. There
+are also no clear rules for determining who is right, and if a patient is left to
+trust either a technology or a physician, the decision may depend on factors that
+have no basis in the "expertise" of the machine or the doctor. Choosing one of the
+two leads to an undesirable outcome. If the doctor ignores the machine, AI has added
+little value <<grote>>. If the doctor accepts the machine's decision, it may
+undermine his or her authority and weaken their accountability. Some may argue that
+the recommendation of an algorithm should be preferred, as it combines the expertise
+of multiple experts and many data points <<grote>>.
+
+The challenge of human-computer interactions has been addressed by validating
+systems, providing appropriate education for users and validating the systems
+continuously. It may, however, be ethically challenging for doctors to rely on the
+judgement of AI, as they have to accept decisions based on black-box algorithms
+<<ai-healthcare>>. The widely held convention is that many algorithms, e.g., those
+based on artificial neural networks or other complex models, are black boxes that
+make inferences and decisions that are not understood even by their developers
+<<pasquale>>. It may therefore be questioned whether doctors can be asked to act on
+decisions made by such black-box algorithms.
+
+AI should therefore be transparent and explainable, which is listed as a core
+guiding principle in <<sec-5>>. Some argue that, if a trade-off must be made between
+even greater transparency (and explainability) and accuracy, transparency should be
+preferred. This requirement, however, goes beyond what may be possible or even
+desirable in a medical context. While it is often possible to explain to a patient
+why a specific treatment is the best option for a specific condition, it is not
+always possible to explain how that treatment works or its mechanism of action,
+because some medical interventions are used before their mode of action is
+understood <<london-black-box>>. It may be more important to explain how a system
+has been validated and whether a particular use falls within the parameters with
+which the system can be expected to produce reliable results rather than explaining
+how an AI model arrives at a particular judgement <<duran-trust>>. Clinicians
+require other types of information, even if they do not understand exactly how an
+algorithm functions, including the data on which it was trained, how and who built
+the AI model and the variables underlying the AI model.
+
+[[sec-6-5-2]]
+==== Implications of the loss of human control in clinical care
+
+Loss of human control by assigning decision-making to AI-guided technologies could
+affect various aspects of clinical care and the health-care system. They include the
+patient, the clinician-patient relationship (and whether it interrupts communication
+between them), the relation of the health-care system to technology providers and
+the choices that societies should make about standards of care.
+
+Although providing individuals with more opportunities to share data and to obtain
+autonomous health advice could improve their agency and self-care, it could also
+generate anxiety and fatigue <<ai-healthcare>>. As more personal data are collected
+by such technologies and used by clinicians, patients might increasingly be excluded
+from shared decision-making and left unable to exercise agency or autonomy in
+decisions about their health <<grote>>. Most patients have insufficient knowledge
+about how and why AI technologies make certain decisions, and the technologies
+themselves may not be sufficiently transparent, even if a patient is well informed.
+In some situations, individuals may feel unable to refuse treatment, partly also
+because the patient cannot speak with or challenge the recommendation of an
+AI-guided technology (e.g., a notion that the "computer knows best") or is not given
+enough information or a rationale for providing informed consent <<grote>>.
+
+Hospitals and health-care providers are unlikely to inform patients that AI was used
+as a part of decision-making to guide, validate or overrule a provider. There is,
+however, no precedent for seeking the consent of patients to use technologies for
+diagnosis or treatment. Nevertheless, the use of AI in medicine and failure to
+disclose its use could challenge the core of informed consent and wider public trust
+in health care. This challenge depends on whether any of the reasons for obtaining
+informed consent -- protection, autonomy, prevention of abusive conduct, trust,
+self-ownership, non-domination and personal integrity -- is triggered by the use of
+AI in clinical care <<cohen>>. See Box 4 for additional discussion on whether and
+how providers should disclose the use of AI for clinical care.
+
+[%unnumbered]
+|===
+.<a| *Box 4 -- Informed consent during clinical care*
+
+Consider use of an AI in a hospital to make recommendations on a drug and dosage for
+a patient. The AI recommends a particular drug and dosage for patient A. The
+physician does not, however, understand how the AI reached its recommendation. The
+AI has a highly sophisticated algorithm and is thus a black box for the physician.
+Should the physician follow the AI's recommendation? If patients were to find out
+that an AI or machine-learning system was used to recommend their care but no one
+had told them, how would they feel? Does the physician have a moral or even a legal
+duty to tell patient A that he or she has consulted an AI technology? If so, what
+essential information should the physician provide to patient A? Should disclosure
+of the use of AI be part of obtaining informed consent and should a lack of
+sufficient information incur liability? <<cohen>>
+
+Transparency is crucial to promoting trust among all stakeholders, particularly
+patients. Physicians should be frank with patients from the onset and inform them of
+the use of AI rather than hiding the technology. They should try their best to
+explain to their patients the purpose of using AI, how it functions and whether it
+is explainable. They should describe what data are collected, how they are used and
+shared with third parties and the safeguards for protection of patients' privacy.
+Physicians should also be transparent about any weaknesses of the AI technology,
+such as any biases, data breaches or privacy concerns. Only with transparency can
+the deployment of AI for health care and health science, including hospital practice
+and clinical trials <<minssen>>, become a long-term success. Trust is key to
+facilitating the adoption of AI in medicine.
+
+NOTE: This case study was written by Marcelo Corrales Compagnucci (CeBIL
+Copenhagen), Sara Gerke (Harvard Law School) and Timo Minssen (CeBIL Copenhagen).
+|===
+
+Physicians who are left out of decision-making between a patient and an AI health
+technology may also feel loss of control, as they can no longer engage in the
+back-and-forth that is currently integral to clinical care and shared
+decision-making between providers and patients <<ai-stockholm>>. Some may consider
+loss of physician control over patients as promoting patient autonomy, but there is
+equally a risk of surrendering decision-making to an AI technology, which may be
+more likely if the technology is presented to the patient as providing better
+insight into their health status and prognosis than a physician <<ai-stockholm>>.
+
+Furthermore, if an AI technology reduces contact between a provider and a patient,
+it could reduce the opportunities for clinicians to offer health promotion
+interventions to the patient and undermine general supportive care, such as the
+benefits of human-human interaction when people are often at their most vulnerable
+<<ai-healthcare>>. Some AI technologies do not sever the relationship between doctor
+and patient but help to improve contact and communication, for example, by providing
+an analysis of different treatment options, which the doctor can talk through with
+the patient and explain the risks.
+
+Loss of control could be construed as surrendering not just to a technology but also
+to companies that exert power over the development, deployment and use of AI for
+health care. At present, technology companies are investing resources to accumulate
+data, computing power and human resources to develop new AI health technologies
+(<<mullin>>-<<mobihealthnews>>). This may be done by large companies in partnership
+with the public sector, as in the United Kingdom <<minssen>>, but could be done by
+concentrating different areas of expertise or decision-making in different
+companies, with the rules and standards of care governed by the companies that
+manage the technologies rather than health care systems. In China, several large
+technology companies, including Ping An <<mobihealthnews>>, Tencent
+<<bridging-gaps-shenzhen>>, Baidu <<baidu>> and Alibaba <<jourdan>>, are rapidly
+expanding the provision of both online and offline health services and new points of
+access to health care, backed by accumulation of data and use of AI. Companies,
+unlike health systems or governments, may, however, ignore the needs of citizens and
+the obligations owed to citizens, as there is a distinction between citizens and
+customers. These concerns heighten the importance of regulation and careful
+consideration of the role of companies in direct provision of health-care services.
+
+[[sec-6-5-3]]
+==== The ethics of using AI for resource allocation and prioritization
+
+Use of computerized decision-support programs -- AI or not -- to inform or guide
+resource allocation and prioritization for clinical care has long raised ethical
+issues <<goodman>>. They include managing conflicts between human and machine
+predictions, difficulty in assessing the quality and fitness for purpose of
+software, identifying appropriate users and the novel situation in which a decision
+for a patient is guided by a machine analysis of other patients' outcomes. In some
+situations, well-intentioned efforts to base decisions about allocations on an
+algorithm that relies only on a rules-based formula produce unintended outcomes.
+Such was the case in allocation of vaccines against COVID-19 at a medical
+institution in California, USA, on the basis of a rules-based formula in which very
+few of the available vaccine doses were allocated to those medical workers most at
+risk of contracting the virus, while prioritizing "higher-ranked" doctors at
+low-risk of COVID-19 <<chenc>>.
+
+Moreover, there is a familiar problem and risk that data in both traditional
+databases and machine-learning training sets might be biased. Such bias could lead
+to allocation of resources that discriminates against, for example, people of
+colour; decisions related to gender, ethnicity or socioeconomic status might
+similarly be biased. Such forms of bias and discrimination might not only be found
+in data but intentionally included in algorithms, such that formulas are written to
+discriminate against certain communities or individuals. At population level, this
+could encourage use of resources for people who will have the greatest net benefit,
+e.g., younger, healthier individuals, and divert resources and time from costly
+procedures intended for the elderly. Thus, if an AI technology is trained to
+"maximize global health", it may do so by allocating most resources to healthy
+people in order to keep them healthy and not to a disadvantaged population. This
+dovetails with a wider "conceptual revolution" in medicine, whereas
+
+[quote]
+____
+twentieth-century medicine aimed to heal the sick. Twenty-first-century medicine is
+increasingly aimed to upgrade the healthy.... Consequently, by 2070 the poor could
+very well enjoy much better healthcare than today, but the gap separating them from
+the rich will nevertheless be much greater <<hariri-homo>>.
+____
+
+As more data are amassed and AI technologies are increasingly integrated into
+decision-making, providers and administrators will probably rely on the advice given
+(while guarding against automation bias). Yet, such technologies, if designed for
+efficiency of resource use, could compromise human dignity and equitable access to
+treatment. They could mean that decisions about whether to provide certain costly
+treatments or operations are based on predicted life span and on estimates of
+quality-adjusted life years or new metrics based on data that are inherently biased.
+In some countries in which AI is not used, patients are already triaged to optimize
+patient flow, and such decisions often affect those who are disadvantaged or
+powerless, such as the elderly, people of colour and those with genetic defects or
+disabilities.
+
+Ethical design (see <<sec-7-1>>) could mitigate these risks and ensure that AI
+technologies are used to assist humans by appropriate resource allocation and
+prioritization. Furthermore, such technologies must be maintained as a means of
+aiding human decision-making and assuring that humans ultimately make the right
+critical life-and-death decisions by adequately addressing the risks of such uses of
+AI and providing those affected by such decisions with contestation rights.
+
+Use of AI tools for triage or rationing is one of the most compelling reasons for
+ensuring adequate governance or oversight. Although intentional harm is not
+ethically controversial -- it is wrong -- the possibilities of unintended bias and
+flawed inference emphasize the need to protect and insulate people and processes
+from computational misadventure.
+
+[[sec-6-5-4]]
+==== Use of AI for predictive analytics in health care
+
+Health care has always included and depended in part on predictions and prognoses
+and the use of predictive analytics. AI is one of the more recent tools for this
+purpose, and many possible benefits of prediction-based health care rely on use of
+AI. AI could also be used to assess an individual's risk of disease, which could be
+used for prevention of diseases, such as heart disease and diabetes. AI could also
+assist health-care providers in predicting illness or major health events. For
+example, early studies with limited datasets indicated that AI could be used to
+diagnose Alzheimer disease years before symptoms appear <<ding>>.
+
+Challenges to prediction in clinical care predate the emergence of AI and should not
+be attributed solely to AI techniques. Yet, various risks are associated with the
+use of AI to make predictions that affect patient care or influence the allocation
+of resources by a hospital or health-care system. Prediction technologies could be
+inaccurate because an AI technology bases its recommendations on an inference that
+optimizes markers of health rather than identifying an underlying patient need. An
+algorithm that predicts mortality from training data may have learnt that a patient
+who visits a chaplain is at increased risk of death <<chen-potential>>.
+
+While AI-based diagnosis is near term and its efficiency can be tested, thereby
+mitigating potential harm, efficacy and accuracy in long-term predictions may be
+more difficult or impossible to achieve. The risk of harm therefore increases
+dramatically, as predictions of limited reliability could affect an individual's
+health and well-being and result in unnecessary expenditure of scarce resources. For
+example, an AI-based mobile app developed by DeepMind to predict acute kidney
+failure produced two false-positive results for every correct result and therefore
+did not improve patient outcomes <<tomasev>>. Even if the system identified some
+patients who required treatment, this benefit was cancelled out by overdiagnosis.
+Such false-positive results can harm patients if they persuade doctors to take
+riskier courses of action, such as prescription of a more potent, addictive drug, in
+response to the prediction.
+
+Prediction-based health care, even if it is effective for diagnosis or accurate
+prediction of disease, may present significant risks of bias and discrimination for
+individuals because of a predisposition to certain health conditions <<morley>>,
+which could manifest itself in the workplace, health insurance or access to
+health-care resources.
+
+The use of predictions throughout health care also raises ethical concern about
+informed consent and individual autonomy if predictions are shared with people who
+did not consent to surveillance, detection or use of predictive models to draw
+inferences about their future health status or to provide them with a "predictive
+diagnosis" that they did not request in advance. Such non-consensual misuse could
+include, for example, screening to predict psychotic episodes by analysis of speech
+patterns <<bedig>> or use of AI to identify individuals with tuberculosis who do not
+know their status (as described above) or at high risk of HIV infection and thus
+candidates for pre-exposure prophylaxis <<marcus>>. The Convention for the
+Protection of Human Rights and Dignity of the Human Being about the Application of
+Biology and Medicine (Oviedo Convention) <<protection-human-rights>> states that:
+"Everyone is entitled to know any information collected about his or her health.
+However, the wishes of individuals not to be so informed shall be observed."
+
+Prediction-based technologies that are considered far more accurate or effective
+than older technologies could also challenge individual freedom of choice, even
+outside the doctor-patient relationship. Such use of AI, combined for example with
+"nudging", could transform an application for promoting healthy behaviour into a
+technology that could exert powerful control over the choices people make in their
+daily lives <<fenech>>, because nudging and the many ways in which it can be done
+can be far more effective than sporadic interactions between a health-care provider
+and a patient. If AI predicts that an individual is at high risk of a certain
+disease, will that individual still have the right to engage in behaviour that
+increases the likelihood of the disease? Such restrictions on autonomy could be
+imposed by a doctor but also by an employer or insurer or directly by an AI
+application on a wearable device.
+
+Thus, while the introduction of prediction-based algorithms is often
+well-intentioned, the challenges and problems associated with their use can cause
+more harm than benefit, as was a predictive algorithm for assessing the likelihood
+of pregnancy in adolescents in vulnerable populations (Box 5).
+
+[%unnumbered]
+|===
+.<a| *Box 5 -- Challenges associated with a system for predicting adolescent
+pregnancy in Argentina*
+
+In 2017, the province of Salta, Argentina, signed an agreement with Microsoft to use
+AI to prevent adolescent pregnancy, a public health objective, and a tool to prevent
+school dropout. Microsoft used data for AI training collected by the local
+government from populations in vulnerable situations. The local authorities
+described the system <<urtubey>> as:
+
+[quote]
+____
+intelligent algorithms that identify characteristics in people that can lead to some
+of these problems [adolescent pregnancy and school dropout] and warn the government
+so that they can work on prevention.
+____
+
+The data processed by Microsoft servers were distributed globally. It was claimed
+that, on the basis of the data collected, the algorithm would predict whether an
+adolescent would become pregnant with 86% accuracy <<pena>>. Once the partnership
+was publicized, however, it was challenged on technical grounds by local experts
+<<ap-buenos-aires>>, for two reasons.
+
+[class=steps]
+. Testing of the algorithms for predicting adolescent pregnancy had significant
+methodological shortcomings. The training data used to build the predictive
+algorithm and the data used to evaluate the algorithm's accuracy were almost
+identical, which gave rise to an erroneous conclusion about the predictive accuracy
+of the system.
+
+. The type of data collected was inappropriate for ascertaining a future risk of
+pregnancy. The training data used were extracted from a survey of adolescents living
+in the province of Salta, which included personal information (e.g., age, ethnicity,
+country of origin), information about their environment (e.g., number of people in
+the household, whether they have hot water in the bathroom) and whether the person
+was pregnant at the time of the survey. These data were not appropriate for
+determining whether an individual would become pregnant in the future (e.g., within
+the ensuing 6 years), which would have required data collected 5 or 6 years before a
+pregnancy occurred. The collected data could be used at best only to determine
+whether an adolescent had been or was now pregnant.
+
+The predictive algorithm was also inappropriate, as it provided predictions that
+were sensitive for adolescents without their (or their parents') consent, thereby
+undermining their privacy and autonomy. As the algorithm targeted individuals who
+were especially vulnerable, it was unlikely that they would have the opportunity to
+contest use of the interventions, and it could reinforce discriminatory attitudes
+and policies <<venturini>>.
+
+Despite the criticism and failings, the system continues to be used in at least two
+other countries (Brazil and Colombia) and in other provinces of Argentina <<pena>>.
+The flaws in the algorithm would have been identified more easily if there had been
+greater transparency about the data sets used to train and evaluate the algorithm,
+the technical specifications and the hypothesis that guided the model's design
+<<ortiz-freuler>>.
+
+This case study was written by Maria Paz Canales (Derechos Digitales).
+|===
+
+[[sec-6-5-5]]
+==== Use of AI for prediction in drug discovery and clinical development
+
+It is expected that machine-learning systems will be used to predict which drugs
+will be safe and effective and are best suited for human use. Machine learning may
+also be used to design drug combinations to optimize the use of promising AI or
+conventionally designed drug candidates. Such predictive models could allow
+pharmaceutical companies to take "regulatory shortcuts" and conduct fewer clinical
+trials and with fewer patient data. A possible benefit of AI may therefore be to
+accelerate the development of medicines and vaccines, especially for new diseases
+with pandemic potential for which there are ineffective or no medical countermeasures.
+
+Such approaches can, however, carry risks if AI is used incorrectly or too
+aggressively. Predictive models are based on algorithms that must be assessed for
+accuracy, which may be difficult because of lack of transparency or explainability
+about how the algorithms function. Furthermore, reducing the number of trials or
+patients studied can raise concern that patients may be exposed to risks that were
+not identified by the algorithm.
+
+[[sec-6-6]]
+=== Bias and discrimination associated with artificial intelligence
+
+Societal bias and discrimination are often replicated by AI technologies, including
+those used in the criminal justice system, banking, human resources and the
+provision of public services. The different forms of discrimination and bias that a
+person or a group of people suffer because of identities such as gender, race and
+sexual orientation must be considered. Racial bias (in the USA and other countries)
+is affecting the performance of AI technologies for health (Box 6).
+
+[%unnumbered]
+|===
+.<a| *Box 6 -- Discrimination and racial bias in AI technology*
+
+In a study published in Science in October 2019 <<obermeyer>>, researchers found
+significant racial bias in an algorithm used widely in the US health-care system to
+guide health decisions. The algorithm is based on cost (rather than illness) as a
+proxy for needs; however, the US health-care system spent less money on Black than
+on white patients with the same level of need. Thus, the algorithm incorrectly
+assumed that white patients were sicker than equally sick Black patients. The
+researchers estimated that the racial bias reduced the number of Black patients
+receiving extra care by more than half.
+
+This case highlights the importance of awareness of biases in AI and mitigating them
+from the onset to prevent discrimination (based on, e.g., race, gender, age or
+disability). Biases may be present not only in the algorithm but also, for example,
+in the data used to train the algorithm. Many other types of bias, such as
+contextual bias (<<prince-wn>>, <<minssen-regulatory>>), should be considered.
+Stakeholders, particularly AI programmers, should apply "ethics by design" and
+mitigate biases at the outset in developing a new AI technology for health <<gerkes>>.
+
+NOTE: This case study was written by Marcelo Corrales Compagnucci (CeBIL
+Copenhagen), Sara Gerke (Harvard Law School) and Timo Minssen (CeBIL Copenhagen).
+|===
+
+[[sec-6-6-1]]
+==== Bias in data
+
+The data sets used to train AI models are biased, as many exclude girls and women,
+ethnic minorities, elderly people, rural communities and disadvantaged groups. In
+general, AI is biased towards the majority data set (the populations for which there
+are most data), so that, in unequal societies, AI may be biased towards the majority
+and place a minority population at a disadvantage. Such systematic biases, when
+enshrined in AI, can become normative biases and can exacerbate and fix (in the
+algorithm) existing disparities in health care <<simonite>>. Such bias is generally
+present in any inferential model based on pattern recognition. Thus, the human
+decisions that:
+
+[quote]
+____
+comprise the data and shape the design of the algorithm [are] now hidden by the
+promise of neutrality and [have] the power to unjustly discriminate at a much larger
+scale than biased individuals <<benjamin>>.
+____
+
+Existing bias and established discrimination in health-care provision and the
+structures and practices of health care are captured in the data with which
+machine-learning models are trained and manifest in the recommendations made by
+AI-guided technologies. The consequence is that the recommendations will be
+irrelevant or inaccurate for the populations excluded from the data (Box 7), which
+is also the consequence of introducing an AI technology that is trained for use in
+one context into a different context.
+
+[%unnumbered]
+|===
+.<a| *Box 7 -- AI technologies for detecting skin cancer exclude people of colour*
+
+Machine learning has outperformed dermatologists in detecting potentially cancerous
+skin lesions. As rates of skin cancer increase in many countries, AI technology
+would improve the ability of dermatologists to diagnose skin cancer. The data used
+to train one highly accurate machine-learning model are, however, for "fair-skinned"
+populations in Australia, Europe and the USA. Thus, while the technology assists in
+diagnosis, prevention and treatment of skin cancer in white and light-skinned
+individuals, the algorithm was neither appropriate nor relevant for people of
+colour, as it was not trained on images of these populations.
+
+The inadequacy of the data on people of colour is due to several structural factors,
+including lack of medical professionals and of adequate information in communities
+of colour and economic barriers that prevent marginalized communities from seeking
+health care or participating in research that would allow such individuals to
+contribute data.
+
+Another reason that such machine-learning models are not relevant for people of
+colour is that developers seek to bring new technologies to the market as quickly as
+possible. Even if their haste is guided by a desire to reduce avoidable morbidity
+and mortality, it can replicate existing racial and ethnic disparities, while a more
+deliberate, inclusive approach to design and development would identify and avoid
+biased outcomes.
+
+[.source]
+<<lashbrook>>
+|===
+
+Such biases in data could also affect, for example, the use of AI for drug
+development. If an AI technology is based on a racially homogenous dataset,
+biomarkers that an AI technology identifies and that are responsive to a therapy may
+be appropriate only for the race or gender of the dataset and not for a more diverse
+population. In such cases, a drug that is approved may not be effective for the
+excluded population or may even be harmful to their health and well-being.
+
+Data biases are also due to other factors. One is the digital divide. (See
+<<sec-6-2>>.) Thus, women in LMIC are much less likely than men to have access to a
+mobile phone or mobile Internet; 327 million fewer women than men have access to
+mobile Internet <<bridging-paris>>. Thus, women not only contribute fewer data to
+data sets used to train AI but are less likely to benefit from services. Another
+cause is unbalanced collection of data, even where the digital divide is not a
+factor. For example, genetic data tend to be collected disproportionately from
+people of European descent (<<munshi>>, <<devlin>>). Furthermore, experimental and
+clinical studies tend to involve male experimental models or male subjects,
+resulting in neglect of sex-specific biological differences, although this gap may
+be closing slightly <<cirillo>>.
+
+Biases can also emerge when certain individuals or communities choose not to provide
+data. Data on certain population subsets may be difficult to collect if collection
+requires expensive devices such as wearable monitors. As noted above, improving data
+collection from such communities or individuals, while it may improve the
+performance of AI, carries a risk of data colonialism. (See <<sec-6-3>>.)
+
+[[sec-6-6-2]]
+==== Biases related to who develops AI and the origin of the data on which AI is trained
+
+Biases often depend on who funds and who designs an AI technology. AI-based
+technologies have tended to be developed by one demographic group and gender,
+increasing the likelihood of certain biases in the design. Thus, the first releases
+of the Apple Health Kit, which enabled specialized tracking of some health risks,
+did not include a menstrual cycle tracker, perhaps because there were no women on
+the development team <<rose>>.
+
+Bias can also arise from insufficient diversity of the people who label data or
+validate an algorithm. To reduce bias, people with diverse ethnic and social
+backgrounds should be included, and a diverse team is necessary to recognize flaws
+in the design or functionality of the AI in validating algorithms to ensure lack of
+bias.
+
+Bias may also be due to the origin of the data with which AI is designed and
+trained. It may not be possible to collect representative data if an AI technology
+is initially trained with data from local populations that have a different health
+profile from the populations in which the AI technology is used. Thus, an AI
+technology that is trained in one country and then used in a country with different
+characteristics may discriminate against, be ineffective or provide an incorrect
+diagnosis or prediction for a population of a different race, ethnicity or body
+type. AI is often trained with local data to which a company or research
+organization has access but sold globally with no consideration of the inadequacy of
+the training data.
+
+[[sec-6-6-3]]
+==== Bias in deployment
+
+Bias can also be introduced during implementation of systems in real-world settings.
+If the diversity of the populations that may require use of an AI system, due to
+variations in age, disability, co-morbidities or poverty, has not been considered,
+an AI technology will discriminate against or work improperly for these populations.
+Such bias may manifest itself at the workplace, in health insurance or in access to
+health-care resources, benefits and other opportunities. As AI is designed
+predominantly in HIC, there may be significant misunderstanding of how it should be
+deployed in LMIC, including the discriminatory impact (or worse) or that it cannot
+be used for certain populations.
+
+[[sec-6-7]]
+=== Risks of artificial intelligence technologies to safety and cybersecurity
+
+This section discusses several risks for safety and cybersecurity associated with
+use of AI technologies for health, which may be generalized to the use of many
+computing technologies for health care -- past and present.
+
+[[sec-6-7-1]]
+==== Safety of AI technologies
+
+Patient safety could be at risk from use of AI that may not be foreseen during
+regulatory review of the technology for approval. Errors in AI systems, including
+incorrect recommendations (e.g., which drug to use, which of two sick patients to
+treat) and recommendations based on false-negative or false-positive results, can
+cause injury to a patient <<ai-healthcare>> or a group of people with the same
+health condition. Model resilience, or how an AI technology performs over time, is a
+related risk. Health-care providers also commit errors of judgement and other human
+errors, but the risk with AI is that such an error, if fixed in an algorithm, could
+cause irreparable harm to thousands of people in a short time if the technology is
+used widely <<ai-healthcare>>. Furthermore, the psychological burden and stress of
+such errors is borne by the providers who operate such technologies.
+
+An AI application, like any information technology system, could also provide the
+wrong guidance if it has code errors due to human programming mistakes. For example,
+the United Kingdom NHS COVID-19 application, which was designed to notify
+individuals to self-isolate if exposed, was programmed incorrectly <<hern-fault>>. Thus, a
+user of the application had to be next to a highly infectious patient five times
+longer than that considered risky by the NHS before being instructed to
+self-isolate. Although up to 19 million people downloaded the application, a
+"shockingly low" number of people were told to isolate, thereby exposing themselves
+and others to risks of COVID-19 infection <<hern-fault>>.
+
+It is also possible that a developer (or an entity that funds or directs the design
+of AI technology) designs an AI technology unethically, to optimize an outcome that
+would generate profits for the provider or conceal certain practices. The design
+might in fact be more accurate than another modelling technique but generate
+unmerited sales revenue. Malicious design has affected other sectors, such as the
+automobile sector, in which algorithms used to measure emissions were programmed to
+conceal the true emissions profile of a major car manufacturer <<contag>>.
+
+Use of computers carries an inherent risk of flaws in safety due to insufficient
+attention to minimizing risk in the design of machines and also to flaws in the
+computer code and associated bugs and glitches. Injuries and deaths due to such
+flaws and breakdowns are underreported, and there are no official figures and few
+large-scale studies. In one study in the United Kingdom, for instance, it was
+estimated that up to 2000 deaths a year may be due to computer errors and flaws and
+that it is an "unnoticed killer" <<baraniuk>>.
+
+[[sec-6-7-2]]
+==== Cybersecurity
+
+As health-care systems become increasingly dependent on AI, these technologies may
+be expected to be targeted for malicious attacks and hacking in order to shut down
+certain systems, to manipulate the data used for training the algorithm, thereby
+changing its performance and recommendations, or to "kidnap" data for ransom
+<<chen-potential>>. AI developers might be targeted in "spear-fishing" attacks and
+by hacking, which could allow an attacker to modify an algorithm without the
+knowledge of the developer.
+
+An algorithm, especially one that runs independently of human oversight, could be
+hacked to generate revenue for certain recipients, and large sums are at stake:
+total spending on health care globally was US$ 7.8 trillion in 2017, or about 10% of
+global gross domestic product <<xuk>>. The United Kingdom Information Commission
+Office noted that cyberattacks on the health sector are the most frequent
+<<vayena-digital>>. Breaches of health data, which are some of the most sensitive
+data about individuals, could harm privacy and dignity and the broader exercise of
+human rights. A study in 2013 showed that four anonymized data points are sufficient
+for unique identification of an individual with 95% accuracy <<montjoye>>. Measures
+to avoid such breaches, which can be broadly categorized as infrastructural or
+algorithmic, are improving, although no defence is 100% effective and new defences
+can be broken as quickly as they are proposed <<chen-potential>>.
+
+[[sec-6-8]]
+=== Impacts of artificial intelligence on labour and employment in health and medicine
+
+The impact of AI on the health workforce is viewed with equal optimism and
+pessimism. It is perhaps less contested that nearly all jobs in health care will
+require a minimum level of digital and technological proficiency. The Topol Review:
+Preparing the health workforce to deliver the digital future <<topol-preparing>>, concluded
+that, within two decades, 90% of all jobs in the United Kingdom's NHS will require
+digital skills, including navigating the "data-rich" health-care environment, and
+also digital and genomics literacy. The requirement for digital literacy will not be
+limited to clinical care (although this section concentrates on clinical staff) but
+extends to health-care workers in public health, surveillance, the environment,
+prevention, protection, education, awareness, diet, nutrition and all the other
+social determinants of health that can be supported by AI. All health workers in
+these areas will have to be trained and retrained in use of AI to support and
+facilitate their tasks.
+
+Optimistic views include that in which AI will automate and thus reduce the burden
+of routine tasks on clinicians and allow them to focus on more challenging work and
+to engage with patients. It could also empower doctors to work in more areas and
+provide support in areas in which technology can be used for clinical
+decision-making. It is expected that digitization of health care and the
+introduction of AI technologies will create numerous new jobs in health care, such
+as software development, health-care systems analysis and training in the use of AI
+for health care and medicine. The last may include three types of jobs: trainers, or
+people that can evaluate and stress-test AI technologies; explainers, or those who
+can explain how and why an algorithm can be trusted; and "sustainers", or those who
+monitor behaviour and identify unintended consequences of AI systems
+<<chen-potential>>.
+
+AI could also extend one of the scarcest resources in health-care systems -- the
+time that doctors and nurses have to attend to patients. If doctors and nurses can
+hand over repetitive or administrative tasks to AI-supported technologies and
+therefore spend less time on "routine care cases", they would have more time to
+attend to more urgent, complex or rare cases and to improve the overall quality of
+care offered to patients <<topol-preparing>>. In some cases, however, as AI is being
+integrated into health-care systems as secondary medical support, during what could
+best be described as a transition period, AI may increase the tasks and add to the
+workload of doctors and nurses.
+
+Telemedicine has been used to extend health-care provision to people in remote areas
+and to refugees and other underserved populations that otherwise lack appropriate
+medical advice <<baraniuk>>. Yet, AI and its use in telemedicine could create
+inequitable access to health-care services (in particular to health-care personnel),
+for instance when people in rural areas or low-income countries have to make do with
+greater access to AI-based services and telemedicine <<chen-potential>> while
+individuals in HIC and urban areas continue to benefit from in-person care.
+
+Furthermore, health-care workers who already have to absorb large amounts of
+information to meet standards of care may regularly require new competence in the
+use of AI-supported technologies in everyday practice, and competence may have to
+evolve rapidly as the uptake of AI accelerates. Such continuing education may be
+neither available nor accessible to all health-care workers, although efforts are
+under way to improve digital literacy and training that includes use of AI and other
+health information technologies. (See <<sec-7-2>>.)
+
+Even as health-care workers have to obtain new competence, the use of AI to augment
+and possibly replace the daily tasks of health-care workers and physicians could
+also remove the need for maintaining certain skills, such as the ability to read an
+X-ray. At some point, physicians may be unable to conduct such a task without the
+assistance of a computer, and AI systems will have to be "trained" to use the
+repository of medical knowledge that was the domain of human providers
+<<ai-healthcare>>. Such dependence on AI systems could erode independent human
+judgement and, in the worst-case scenario, could leave providers and patients
+incapable of acting if an AI system fails or is compromised <<ai-healthcare>>. There
+should therefore be robust plans to provide back-up if technology systems fail or
+are breached.
+
+Another concern is that AI will automate many of the jobs and tasks of health-care
+personnel, resulting in significant loss of jobs in nearly every part of the health
+workforce, including certain types of doctors. AI has already replaced many jobs in
+other industries, reduced the total number of people required for certain roles or
+created the expectation that many jobs will be lost (e.g., up to 35% of all jobs in
+the United Kingdom) <<davenport-potential>>.
+
+In many countries, however, health care is not an industry but a core government
+function, so that administrators will not replace health-care workers with
+technology. Many countries, with high, middle or low income, are in fact facing
+shortages of health-care workers. WHO has estimated that, by 2030, there will be a
+shortage of 18 million health workers, mostly in low- and low- to middle-income
+countries <<health-geneva>>. AI may provide a means to bridge the gap between the
+workforce ideally available to provide appropriate health care and what exists.
+
+Other scenarios have been envisaged with the arrival of AI. One predicts that a
+decision to use AI will cause short-term instability, with many job losses in
+certain areas even as overall employment increases with the creation of new jobs,
+resulting in unemployment for those who may not be able to retrain for the new
+roles. In another scenario, job losses will not materialize, either because
+clinicians or health-care workers will fulfil other roles or because these
+technologies will be fully integrated only over a long time, during which other
+roles for health-care workers and clinicians will emerge, such as labelling data or
+designing and evaluating AI technologies <<davenport-potential>>.
+
+Even if AI does not displace clinicians, it could make doctors' jobs less secure and
+stable. One trend has been the "Uberization" of health care, in which AI facilitates
+the creation of health-care platforms on which contractors, including drivers,
+temporary workers, nurses, physician assistants and even doctors, work on demand
+(<<matheny>>, <<health-geneva>>). During the past decade, health care and education
+have seen the fastest growth of "gig workers", who work on a temporary basis with no
+stability of employment <<matheny>>. While this provides more flexible services, it
+could also sever relationships between patients and health-care givers and create
+insecurity for certain types of health workers. Such a trend may not occur in
+countries with either greater labour protection for its health workforce, such that
+labour shortages provide health-care workers with negotiating power, or in which AI
+is not used to reorganize health care but to reduce the workload.
+
+With increasing use of AI, the nature of medical practice and health-care provision
+will fundamentally change. As noted above, it could provide health-care workers with
+more time to care for patients or it could, if patients interact more frequently and
+directly with AI, result in doctors spending less time in direct contact with
+patients and more time in administering technology, analysing data and learning how
+to use new technologies. If introduction of AI is not effectively managed,
+physicians could become dissatisfied and even leave medical practice <<gawande>>.
+
+[[sec-6-9]]
+=== Challenges in commercialization of artificial intelligence for health care
+
+There are various ethical challenges to the practices of the largest technology
+firms in the field of AI for health, although some of the concerns also apply to
+mid-size firms and start-ups. The use of AI for health has been pushed by companies
+-- from small start-up firms to large technology companies -- mainly by significant
+advocacy and investment. Those who support a growing role for these companies expect
+that they will be able to marshal their capital, in-house expertise, computing
+resources and data to identify and build novel applications to support providers and
+health systems. During the COVID-19 pandemic, many companies have sought to provide
+services and products for the response, many of which are linked to forms of public
+health surveillance <<covid-response-london>>. This has raised a number of ethical
+and legal concerns, which are discussed throughout this document.
+
+Some services already widely used in health are for "back-office" functions and for
+managing health-care systems. Some of the companies involved in development of
+technology, such as the pharmaceutical and medical device industries, are
+integrating AI into their processes and products, and insurance firms are using AI
+for assessing risk or even automating the provision of insurance, which might raise
+ethical concerns with respect to algorithmic decision-making.
+
+A prominent use of AI for health care is to support diagnosis, treatment, monitoring
+and adherence to treatment. Such applications could have benefits for health-care
+systems; however, many concerns have emerged during the past as more technology
+firms, and especially the largest firms, have entered the health-care field.
+
+A general problem is lack of transparency. While many firms know much about their
+users, their users, civil society and regulators know little about the activities of
+the firms, including how they (and governments) operate in PPPs, which have a
+significant impact on the public interest <<powles>>. (See <<sec-9-3>>.) Their
+practices remain hidden partly because of commercial secrecy agreements or the lack
+of general obligations for transparent practices, including the role these firms
+play in health care and the data that are collected and used to train and validate
+an AI algorithm. Without transparency (and accountability), these firms have little
+incentive to act in a way that does not cross certain ethical boundaries or to
+disclose deeper problems in their technology, data or models <<powles>>. Many
+companies prefer to keep their algorithmic models proprietary and secret, as full
+transparency could lead to criticism of both the technology and the company
+<<ballantyne>>.
+
+A second broad concern is that the overall business model of the largest technology
+firms includes both aggressive collection and use of data to make their technologies
+effective and use of surplus data for commercial practices, considered by Professor
+Shoshana Zuboff as "surveillance capitalism" <<zuboff>>. Thus, during the past
+decade, there have been several examples of large technology firms using large
+datasets of sensitive health information in developing AI technologies for health
+care (<<copeland>>, <<hodson>>). While such health data may have been acquired and
+used to develop useful AI technologies for health, the data were not acquired with
+the explicit consent of those who provided them, the benefits of the data for these
+firms may be far in excess of what was required to deliver the product, and the
+firms may not provide equal benefits to the population that generated the data in
+the first place.
+
+Such acquisition of sensitive health information can give rise to legal concern.
+First, even if the data are anonymized by the firm that acquires them, the company
+would be able to combine data and de-anonymize relevant data sets from the amount of
+information it already has from other sources <<rocherl>>. Secondly, several large
+technology firms have been accused and even fined for mishandling data <<durkee>>,
+and this concern may be heightened for firms that acquire often-sensitive health
+data. Thirdly, as firms continue to accumulate large amounts of data, this can
+introduce anti-trust concerns (although it may not lead to regulatory enforcement
+<<mergers>>), related to the growing market power of such companies, including
+barriers to smaller companies that may wish to enter an AI market
+<<mergers-brussels>>.
+
+An additional concern is the growing power that some companies may exert over the
+development, deployment and use of AI for health (including drug development) and
+the extent to which corporations exert power and influence over individuals and
+governments and over both AI technology and the health-care market. Data, computing
+power, human resources and technology can be concentrated within a few companies,
+and technology can be owned either legally (IP protection) or because the size of a
+company's platform results in a monopoly. Monopoly power can concentrate
+decision-making in the hands of a few individuals and companies, which can act as
+gatekeepers of certain products and services <<competition-london>> and reduce
+competition, which could eventually translate into higher prices for goods and
+services, less consumer protection or less innovation.
+
+While the growing role of large companies in the USA, such as Google, Facebook and
+Amazon, in the development and provision of AI for health care has been under
+scrutiny, large technology companies in China and other Asian countries are playing
+a similar role in health through such services and technologies. They include Ping
+An, Tencent, Baidu and Alibaba, which are both building their own technology
+platforms and collaborating with user platforms such as WeChat to reach millions of
+people in China <<jourdan>>. Tencent, for example, is investing in at least three
+main areas of health: AI-based technologies to assist in diagnosis and treatment, a
+"smart hospital" to provide a web of online services and data connectivity through a
+smart health card (which itself raises concern about data privacy and use; see
+above) and a "medipedia" to provide health information to users online
+<<bridging-shenzhen>>. Alibaba is working with hospitals to predict patient demand
+in order to allocate health-care personnel and developing AI-assisted diagnostic
+tools for radiology <<jourdan>>.
+
+Such power and control of the market by large firms may be part of a 'first-mover'
+advantage that several large firms may eventually earn through their entry into AI
+for health. Even if the data used by a firm (for example, data from a public health
+system) could be used by others, other firms might be discouraged or unable to
+replicate use of such data for a similar purpose, especially if another company has
+already done so <<powles>>. Such power also means that the rules set by certain
+companies can force even the largest and wealthiest governments to change course.
+For example, during the COVID-19 pandemic, Google and Apple introduced a technical
+standard for where and how data should be stored in proximity-tracking applications
+that differed from the approach preferred by the governments of several HIC, which
+resulted in at least one government changing the technical design of its
+proximity-tracking application to comply with the technical standards of these two
+companies. Although the approach of these companies may have been consistent with
+privacy considerations, the wider concern is that these firms, by controlling the
+infrastructure with which such applications operate, can force governments to adopt
+a technical standard that is inconsistent with its own public policy and public
+health objectives <<veale>>.
+
+When most data, health analytics and algorithms are managed by large technology
+companies, it will be increasingly likely that those companies will govern decisions
+that should be taken by individuals, societies and governments, because of their
+control and power over the resources and information that underpins the digital
+economy <<fair-shot>>. This power imbalance also affects people who should be
+treated equitably by their governments or at least, if treated unfairly, can hold
+their governments accountable if inequity arises. Without a strong government role,
+companies might ignore the needs of individuals, particularly those at the margins
+of society and the global economy <<hariri-homo>>.
+
+Stringent oversight by governments and good governance are essential in this sector.
+(See <<sec-9-3>> on private sector governance.) Oversight mechanisms could be
+integrated into PPPs. If such partnerships are not carefully designed, they can lead
+to misappropriation of resources (usually patient data) or conflicts of interest in
+decision-making in such partnerships or could forestall or limit the use of
+regulation to protect the public interest when necessary (<<powles>>, <<ballantyne>>).
+
+[[sec-6-10]]
+=== Artificial intelligence and climate change
+
+Use of deep learning models in AI has been scrutinized for its impact on climate
+change. Researchers at the University of Massachusetts Amherst, USA, found that the
+emissions associated with training a single "big language" model were equal to
+approximately 300&nbsp;000 kg of carbon dioxide or 125 round-trip flights between
+New York City and Beijing <<haok>>. A single training session for another
+deep-learning model, GTP-3, requires energy equivalent to the annual consumption of
+126 Danish homes and creates a carbon footprint equivalent to travelling
+700&nbsp;000 km by car <<deweerdt>>. All the infrastructure required to support use
+of AI has an additional carbon cost <<deweerdt>>.
+
+WHO considers climate change to be an urgent, global health challenge that requires
+prioritized action now and in the decades to come. Between 2030 and 2050, climate
+change is expected to cause approximately 250 000 additional deaths per year from
+malnutrition, malaria, diarrhoea and heat stress alone. The cost of direct damage to
+health by 2030 is estimated to be US$ 2-4 billion per year. Areas with weak health
+infrastructure -- most in developing countries -- will be the least able to cope
+without assistance to prepare and respond <<climate-change-geneva>>.
+
+Reducing emissions of greenhouse gases through better transport, food and choices of
+energy, particularly reducing air pollution, results in better health
+<<climate-change-geneva>>. Extending the use of AI for health and in other sectors
+of the global economy could, however, contribute directly to dangerous climate
+change and poor health outcomes, especially of marginalized populations. Thus, the
+growing success and benefits for health outcomes of AI, which will predominate in
+HIC, would be directly linked to increased carbon emissions and negative
+consequences in low-income countries. AI technologies, for health and other uses,
+should therefore be designed and evaluated to minimize carbon emissions, such as by
+using smaller, more carefully curated data sets, which could also potentially
+improve the accuracy of AI models <<haok-we-read>>. Otherwise, the growing use of AI
+might have to be balanced against its impact on carbon emissions.

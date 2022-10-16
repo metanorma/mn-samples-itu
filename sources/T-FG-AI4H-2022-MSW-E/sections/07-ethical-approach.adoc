@@ -1,0 +1,461 @@
+[[sec-7]]
+== Building an ethical approach to use of artificial intelligence for health
+
+This section addresses how measures other than law and policy can ensure that AI
+improves human health and well-being.
+
+[[sec-7-1]]
+=== Ethical, transparent design of technologies
+
+Although technology designers and developers play critical roles in designing AI
+tools for use in health, there are no procedures for credentialing or licensing such
+as those required for health-care workers. In the absence of formal qualifications
+for ethics in the AI field, it is not enough merely to call for personal adherence
+to values such as reproducibility, transparency, fairness and human dignity.
+
+New approaches to software engineering in the past decade move beyond an appeal to
+abstract moral values, and improvements in design methods are not merely upgraded
+programming techniques. Methods for designing AI technologies that include moral
+values in health and other sectors have been proposed to support effective,
+systematic, transparent integration of ethical values. Such values in design have
+also been codified legally; for example, the GDPR includes specific obligations to
+include privacy by design and by default.
+
+One approach to integrating ethics and human rights standards is "Design for
+values", a paradigm for basing design on the values of human dignity, freedom,
+equality and solidarity (Box 8) and for construing them as non-functional
+requirements <<hovenj>>. This requires not a solutions-oriented approach but instead
+a process-oriented approach that satisfies stakeholder needs in conformity with the
+moral and social values embodied by human rights.
+
+[%unnumbered]
+|===
+.<a| *Box 8 -- Design for values <<aizenberg>>*
+
+"Design for values" is explicit transposition of moral and social values into
+context-dependent design requirements. It is an umbrella term for several pioneering
+methods, such as value-sensitive design, values in design and participatory design.
+Design for values presents a roadmap for stakeholders to translate human rights into
+context-dependent design requirements through a structured, inclusive, transparent
+process, such that abstract values are translated into design requirements and norms
+(properties that a technology should have to ensure certain values), and the norms
+then become a socio-technical design requirement. The process of identifying design
+requirements permits all stakeholders, including individuals affected by the
+technology, users, engineers, field experts and legal practitioners, to debate
+design choices and identify the advantages and shortcomings of each choice.
+
+Thus, a value such as privacy can be interpreted through certain norms, such as
+informed consent, right to erasure and confidentiality. These norms can then be
+converted by discussion and consultation into design requirements, such as positive
+opt-in (a means of ensuring informed consent) or homomorphic encryption techniques
+to assure confidentiality. Other techniques for safeguarding privacy, such as
+_k_-anonymity, differential privacy and coarse graining through clustering, could
+also be selected through consultation.
+|===
+
+Ethical design can also be applied to the socio-technical systems in which
+algorithms are developed, which comprise the ensemble of software, data, methods,
+procedure, personnel, protocols, laws, norms, incentive structures and institutional
+frameworks. All are brought together to ensure that products and services provide
+ethical outcomes for society and its health-care systems.
+
+More generally, ethical and transparent design of AI technologies should be ensured
+by prioritizing inclusivity in processes and methods (<<ais-ny>>,
+<<independent-brussels>>). Consideration of inclusivity when designing and
+developing an AI technology can overcome barriers to equitable use of the technology
+in health associated with geography, gender, age, culture, religion or language.
+
+Three approaches for promoting inclusivity are the following.
+
+* _Citizen science:_ Citizen science is defined by the Alan Turing Institute as the
+direct contribution of non-professional scientists to scientific research, for
+instance, by contributing data or performing tasks <<whitaker-london>>. Citizen
+science not only helps the public to understand a particular study or technology
+that may affect them personally but also ensures that the public is involved in
+research, discussions and tool-building. This ensures respectful co-creation of AI
+technologies that reduces the distance between the researcher or programmer and the
+individuals who the technology is intended to serve.
+
+* _Open-source software_: Transparency and participation can be increased by the use
+of open-source software for the underlying design of an AI technology or making the
+source code of the software publicly available. Open-source software is open to both
+contributions and feedback, which allows users to understand how the system works,
+to identify potential issues and to extend and adapt the software. Open-source
+software design must be accessible and welcoming, and the content should allow
+greater engagement and transparency.
+
+* _Increased diversity:_ Too often, efforts to increase the diversity of AI
+technologies involve increasing the diversity of the data on which they are based.
+Although this is necessary, it is not sufficient and might even amplify any biases
+inherent in the design. Minimizing and identifying potential biases requires greater
+involvement of people who are familiar with the nature of potential biases, contexts
+and regulations throughout software development, from its design to consultation
+with stakeholders, labelling of data, testing and deployment.
+
+Toolkits can be useful for providing concrete guidance to technology designers who
+wish to integrate ethical considerations into their work. Software developer kits
+can provide guidelines that include a code of ethics, with specific guidelines for
+health. Such kits could indicate, for example, how to manage data, including
+collection, de-identification and aggregation, and how to safeguard the destination
+of data.
+
+Kits have also been developed to facilitate certain ethical (and increasingly legal)
+requirements, such as the Sage Bionetworks toolkit for the elements of informed
+consent <<elements-toolkit>>. The toolkit provides use cases to explain its approach
+to informed consent, including eConsent, examples of how it should be put into
+practice, a checklist to ensure that programmers have considered all the necessary
+questions and additional resources.
+
+With the proliferation of use of AI for health, the emergence of more not-for-profit
+AI developers would be beneficial. Such developers, who are not constrained by
+internal or external revenue targets, can adhere to ethical principles and values
+more readily than private developers. Not-for-profit developers may include
+treatment providers, hospital systems and charities. They could emulate the many
+partnerships for not-for-profit product development that have been formed during the
+past two decades in the development of new medicines, diagnostics and vaccines. The
+partnerships are often with the public and private sectors and focus on neglected
+populations while ensuring affordability and access to all. A not-for-profit
+developer could address all areas of health but particularly areas of neglect, while
+ensuring that their technologies adhere to ethical values such as privacy,
+transparency and avoidance of bias.
+
+==== Putting prediction to good use
+
+Use of AI for prognosis will allow assessment of the relative risk of disease and
+predict illness. There are, however, several risks and challenges with the use of
+predictive analytics, including concern about the accuracy of the predictions and
+that prediction of a negative outcome could affect an individual's autonomy and
+well-being.
+
+In public health, predictive analytics can forecast major health events, including
+outbreaks, before they occur. For example, before the COVID-19 pandemic, WHO was
+developing EPI-BRAIN, a global platform that will allow experts in data and public
+health to analyse large datasets for use in emergency preparedness and response
+<<epi-geneva>>. It would allow forecasting and early detection of threats of
+infection and their impact on the basis of scenarios, simulation exercises and
+insights to improve coordinated decision-making and response.
+
+Ethical, transparent design allows governments and international health agencies,
+such as WHO, to encourage the development of AI technologies for predictive
+analytics to assist and augment decision-making by providers and policy-makers. Such
+technologies must adhere to ethical standards and human rights obligations, should
+be open to improvement and should be available for adaptation and use by governments
+and providers on a non-exclusive basis.
+
+_Recommendations_
+
+[class=steps]
+. Potential end-users and all direct and indirect stakeholders should be engaged
+from the early stages of AI development in structured, inclusive, transparent design
+and given opportunities to raise ethical issues, voice concerns and provide input
+for the AI application under consideration. Relevant ethical considerations should
+inform the design and translation of moral values into specific context-dependent
+design requirements.
+
+. Designers and other stakeholders should ensure that AI systems are designed to
+perform well-defined tasks with the accuracy and reliability necessary to improve
+the capacity of health systems and advance patient interests. Designers and other
+stakeholders should also be able to predict and understand potential secondary
+outcomes.
+
+. Designers should ensure that stakeholders have sufficient understanding of the
+task that an AI system is designed to perform, the conditions necessary to ensure
+that it can perform that task safely and effectively and conditions that might
+degrade system performance.
+
+. The procedures that designers use to "design for values" should be informed and
+updated by the consensus principles stated in this document, best practices (e.g.,
+privacy preserving technologies and techniques), standards of ethics by design,
+evolving professional norms (transparency of access to codes, processes that allow
+verification and inclusion).
+
+. Continuing education and training programmes should be available to designers and
+developers to ensure that they integrate evolving ethical considerations into design
+processes and choices. The establishment of formal accreditation procedures could
+ensure that designers and developers abide by ethical principles similar to those
+required of health-care workers.
+
+[[sec-7-2]]
+=== Engagement and role of the public and demonstration of trustworthiness to providers and patients
+
+Effective use of AI for health will require building the trust of the public,
+providers and patients. Social license requires hard-fought efforts that can be
+surrendered quickly if AI technologies are introduced without due care for the
+perspectives of those affected by its use. Public engagement and dialogue are means
+to ensure that use of AI for health care meets certain core societal expectations
+and greater trust and acceptance. Public dialogue also allows ascertainment of
+society's views, as far as possible, on the ethical dimensions of AI, its design and
+uses.
+
+A critical issue of public concern, discussed throughout this publication, is the
+collection and use of patient data for AI and other applications. In the United
+Kingdom, these concerns have been addressed in public debate and dialogue. Health
+Data Research, which collects health data and makes it available to public and
+private entities for health-related applications of AI,footnote:[Presentation by Dr
+Andrew Morris, Health Data Research United Kingdom, 3 October 2019 to the WHO
+working group on ethics and governance of AI for health.] has used public
+engagement, including with the Wellcome Trust's initiative, Understanding Patient
+Data <<understanding-london>>. Workshops held as part of the initiative provided a
+forum for participants to discuss their expectations and concerns about use of
+patient data in AI and other applications. Before these workshops, 18% of
+participants considered it acceptable to share anonymized patient data with
+commercial organizations for reasons other than direct care; after the workshops,
+the proportion had increased to 45% <<sharing-london>>. Individuals who expressed
+positive views considered that contributing data was a value exchange, with a
+societal benefit, and wanted the NHS to benefit from their data. They also
+considered it acceptable for commercial companies to have access to their data,
+provided that the benefit returned to the public and that the NHS administered the
+data for the public benefit.
+
+The United Kingdom Academy of Medical Sciences found at its meetings and workshops
+<<ai-health-london>> that:
+
+[quote]
+____
+ongoing engagement with patients, the public and healthcare professionals, including
+via co-creation, will be critical to ensuring new AI technologies respond to
+clinical unmet need, are fit for purpose, and are successfully deployed, adopted and
+used.
+____
+
+The Academy conducted a public dialogue on the "data-driven future" to understand
+awareness, expectations, aspirations and concerns about future technologies that
+would require patient data to be accessed, analysed or linked for clinical diagnosis
+and management <<ddf-london>>. The respondents considered that any new use of data
+must have a proven social benefit and that an appropriate organization (such as the
+government or the NHS) should oversee the data and administer it for the public
+benefit.
+
+Steps must be taken to build the trust of providers and patients who will
+increasingly rely on AI for routine clinical decision-making. The willingness of
+patients to rely on AI may sometimes be much lower than expected. For example, in a
+study conducted by HSBC Bank <<trust-london>>, only 8% of the respondents surveyed
+said that they would trust a machine offering mortgage advice, while 41% said they
+would trust a mortgage broker. Lack of wider trust could create significant
+divisions in a health-care system, in which, for example, older patients might be
+unwilling to adapt to and use new AI technologies, while younger patients might be
+more amenable <<braunm>>.
+
+With such a low level of trust, scandals that emerge from use of AI for health care
+and undermine patients' economic, personal or physical security could be fatal.
+After the Cambridge Analytica scandal in 2019, an estimated 15% of Facebook users
+surveyed indicated they would reduce their use of the social networking site. Trust
+could be eroded even more quickly and severely in the domain of health care if
+similar scandals or abuses of trust emerged into public discourse, destroying public
+trust overnight <<vincent>>.
+
+One means of mitigating and managing risk would be to allow health-care providers
+and developers to test a new AI product or service in a "live environment" in a
+testing facility, with safeguards and oversight to protect the health system from
+any risks or unintended consequences. Testing facilities could allow assessment,
+certification and validation of AI. In limited circumstances, testing facilities
+could build a "regulatory sandbox" <<trustworthy-paris>>, which might, however, be
+appropriate only in countries in which new health-care products and services and
+their specifications are subject to formal regulation and to data protection
+regulations <<blog-ico>>. Examples of the use of regulatory sandboxes are the United
+Kingdom's Care Quality Commission and by the Singapore Government to test new
+digital health models <<blog-ico>>.
+
+A second approach to building trust and facilitating a "graceful transition" of
+health care is to redesign training programmes for the health workforce (Box 9) and
+to improve general education <<fihn>>. Improvements in general education would
+include primary education in science, technology and mathematics.
+
+[%unnumbered]
+|===
+.<a| *Box 9 -- Supporting health workers in the use AI technologies, including
+through education and training*
+
+Medical professionals and health-care workers should receive sufficient technical,
+managerial and administrative support, capacity-building, regulatory protection
+(when appropriate) and training in the many uses of AI technologies and their
+advantages and in navigating the ethical challenges of AI <<paranjape>>. With regard
+to education and training, AI curricula should be seamlessly integrated into
+existing programmes <<paranjape>>. Curricula should be updated regularly, as AI is
+evolving continuously. Some members of the health-care profession will require
+training in basic use of computers before they adapt to use of AI. All health-care
+professionals will require a certain level of digital literacy, defined in the Topol
+review as "those digital capabilities that fit someone for living, learning,
+working, participating and thriving in a digital society" <<topol-preparing>>.
+
+Physicians and nurses will also require a wider range of competence to apply AI in
+clinical practice, including better understanding of mathematical concepts, the
+fundamentals of AI, data science, health data provenance, curation, integration and
+governance <<topol-preparing>>, and also of the ethical and legal issues associated with the
+use of AI for health. Such measures (including training) will be necessary to
+combine and analyse data from many sources adequately, supervise AI tools and detect
+inaccurate performance of AI <<paranjape>>. Good support and training will ensure
+that health-care workers and physicians, for example, can avoid common pitfalls such
+as automation bias when using AI technologies. Eventually, the knowledge, skills and
+capabilities required of health workers may be defined by professional and statutory
+regulatory bodies in collaboration with practitioners and educators <<topol-preparing>>.
+
+Significant changes may be made to medical education. Rather than rote memorization,
+which has been the hallmark of medical training, medical students might instead
+build and refine their competence for communication and negotiation, emotional
+intelligence, the ability to resolve ethical dilemmas and proficient use of
+computers. Medical training programmes will therefore require new educators who can
+teach these concepts and skills <<topol-preparing>>.
+|===
+
+A third approach, the use of human warranty, is discussed earlier in this document
+(<<sec-5>>), whereby developers of AI technologies work directly with providers and
+patients in patient and clinical evaluation at critical points in the development
+and deployment of the technologies. Human warranty can ensure meaningful public
+consultation and debate <<public-debate>>.
+
+_Recommendations_
+
+[class=steps]
+. The public should be engaged in the development of AI for health in order to
+understand forms of data sharing and use, to comment on the forms of AI that are
+socially and culturally acceptable and to fully express their concerns and
+expectations. Further, the general public's literacy in AI technology should be
+improved to enable them to determine which AI technologies are acceptable.
+
+. Training and continuing education programmes should be available to assist
+health-care professionals in understanding and adapting to use of AI, learning about
+its benefits and risks and understanding the ethical issues raised in their use.
+
+[[sec-7-3]]
+=== Impact assessment
+
+An impact assessment is used to predict the consequences of a current or proposed
+action, policy, law, regulation or, as in the case of use of AI for health, a new
+technology or service. Impact assessments can provide both technical information on
+possible consequences and risks (both positive and negative) and improve
+decision-making, transparency and participation of the public in decision-making and
+introduce a framework for appropriate follow-up and measurement. Such assessment
+might be especially important for the use of AI, as an AI technology can change over
+time <<impact-fargo>>. Impact assessments can also be used to determine whether a
+technology will respect or undermine ethical principles and human rights
+obligations, including privacy and non-discrimination. Several types of impact
+assessment for the use of AI for health have been proposed or used, which could be
+considered by governments, companies and providers.
+
+Businesses that design and introduce AI technologies for health have a particular
+obligation to conduct impact assessments, including on human rights. The UN Guiding
+Principles on Business and Human Rights of the United Nations Office of the High
+Commissioner for Human Rights establish corporate responsibility to respect human
+rights, including for companies to conduct due diligence to identify, avoid,
+mitigate and remedy impact on human rights for which they are responsible or
+indirectly involved <<guiding-geneva>>. Although the UN Guiding Principles do not
+require businesses to conduct human rights impact assessments, such an assessment
+can help companies to meet their obligations.
+
+Impact assessments allow identification, understanding, assessment and mitigation of
+the adverse effects of business projects or activities on human rights
+<<human-copenhagen>>. Although such assessments are relatively new, their use has
+increased, including for the deployment of AI. The United Nations Special Rapporteur
+on Freedom of Expression noted <<promotion-protection>>.
+
+[quote]
+____
+Human rights impact assessments and public consultations should be carried out
+during the design and deployment of new AI systems, including the deployment of
+existing AI systems in new global markets.
+____
+
+Human rights impact assessments have also been recognized in national laws as an
+obligation of companies. For example, the French Government enacted a law on "duty
+of vigilance" that requires parent companies to identify and prevent adverse impacts
+on human rights and the environment resulting from their activities, from the
+activities of companies that they control and from the activities of the
+subcontractors and suppliers with which they have commercial relations
+<<french-brussels>>. Furthermore, a EU Directive may require all companies with
+headquarters in Europe to conduct human rights due diligence, although the
+discussions will be completed only in 2021 <<marlow>>.
+
+Other types of impact assessment have been either proposed or implemented. One
+approach is an "ethical impact assessment" to identify the impacts of AI on human
+rights, including in vulnerable groups, labour rights, environmental rights and
+their ethical and social implications. A second approach, proposed by the AI Now
+Institute, is an "algorithmic impact assessment" for public agencies, as a
+"practical framework to assess automated decision systems and to ensure public
+accountability" <<algorithmic-ny>>. Such assessments would be both for affected
+communities to obtain information on how automated decision systems function and to
+determine whether they are acceptable and also for governments to assess how the
+systems are used, whether they have disparate impacts in particular on the basis of
+gender, race or another dimension and how to hold the systems accountable. This
+could be useful for governments as they turn to algorithmic decision-making for
+large- and small-scale health-care decisions.
+
+Several laws have been proposed or implemented that require impact assessments,
+including for the use of AI for health. In 2019, two senators in the USA
+co-sponsored the "Algorithmic Accountability Act", which would require companies to
+study and adjust flawed algorithms that result in inaccurate, unfair, biased or
+discriminatory decisions that would affect people in the USA <<maccarthy>>. It would
+also require companies, with enforcement by the US Federal Trade Commission, to
+"reasonably address" the results of such assessments, including algorithmic
+decisions that affect health. Such assessments would be made only for "high-risk"
+decisions, which would include health information or genetic data or decisions or
+analyses of sensitive aspects of individual lives, including their health and
+behaviour. The act has, however, only been proposed and is not enacted <<maccarthy>>.
+
+A separate proposal under the proposed legislation would require companies to
+conduct "data protection impact assessments" for high-risk information systems, such
+as those that store or use personal information, including health information. This
+would mirror the impact assessment required by law under the EU GDPR, which requires
+companies to conduct 'data impact assessments" of the risks of data processing
+operations to the "rights and freedoms of natural persons" and their impact on the
+protection of personal data <<dpia>>.
+
+_Recommendations_
+
+[class=steps]
+. Governments should enact laws and policies that require government agencies and
+companies to conduct impact assessments of AI technologies, which should address
+ethics, human rights, safety and data protection, throughout the life-cycle of an AI
+system.
+
+. Companies and developers should conduct impact assessments as per the UN Guiding
+Principles on Business and Human Rights, even if governments have not mandated them.
+
+. Impact assessments should be audited by an independent third party before and
+after introduction of an AI technology and published.
+
+[[sec-7-4]]
+=== Research agenda for ethical use of artificial intelligence for health care
+
+In a fast-moving field such as the use of AI for health, there are many unresolved
+technical and operational questions on how best to use AI. Use of AI also generates
+ethical quandaries. Each new application or use of AI raises opportunities and
+challenges that should be addressed before widespread adoption. This has been the
+case for the proliferation and deployment of new AI technologies during the COVID-19
+pandemic.
+
+*Suggested areas of research to address emerging issues and challenges*
+
+Some ethical concerns require research to substantiate and explain the challenges.
+Approaches to addressing concerns should be tested and validated with research, such
+as on computer science or on the consequences of using AI for a particular medical
+need or target population. Research on each of these topics should include
+consideration of different countries, cultures and types of health-care systems.
+Pertinent research questions include the following.
+
+* For what needs and gaps identified by health-care workers and patients could AI
+play a role in ensuring the delivery of equitable care?
+
+* How is AI changing the relationships between health-care workers and patients? Do
+these technologies allow providers to spend more "quality" time with patients, or do
+they make care less humane? Do specific contextual factors improve or undermine the
+quality of care?
+
+* What are that attitudes of health-care workers and patients towards the use of AI?
+Do they find these technologies acceptable? Do their attitudes depend on the type of
+intervention, the location of the intervention or current acceptance of these
+technologies both in the health-care system and in society?
+
+* Has the introduction and use of AI for health exacerbated the digital divide? Or
+does AI, with telemedicine, reduce the gap in access to care and ensure equitable
+access to high-quality care, irrespective of geography and other demographic factors?
+
+* How best can providers and programmers address any biases that will manifest in
+applications? What are the barriers to addressing biases?
+
+* What method should be used to assess whether AI is more cost-effective and
+appropriate than existing or "low-technology" solutions in LMIC? How should
+governments and providers assess fair resource allocation for existing interventions
+and new technologies?
+
+* Can ethical design be applied specifically to AI technologies for health?

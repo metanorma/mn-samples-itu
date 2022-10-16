@@ -1,0 +1,361 @@
+[[sec-5]]
+== Key ethical principles for use of artificial intelligence for health
+
+Ethical principles for the application of AI for health and other domains are
+intended to guide developers, users and regulators in improving and overseeing the
+design and use of such technologies. Human dignity and the inherent worth of humans
+are the central values upon which all other ethical principles rest.
+
+An ethical principle is a statement of a duty or a responsibility in the context of
+the development, deployment and continuing assessment of AI technologies for health.
+The ethical principles described below are grounded in basic ethical requirements
+that apply to all persons and that are considered noncontroversial. The requirements
+are as follows.
+
+* Avoid harming others (sometimes called "Do no harm" or nonmaleficence).
+
+* Promote the well-being of others when possible (sometimes called "beneficence").
+Risks of harm should be minimized, while maximizing benefits. Expected risks should
+be balanced against expected benefits.
+
+* Ensure that all persons are treated fairly, which includes the requirement to
+ensure that no person or group is subject to discrimination, neglect, manipulation,
+domination or abuse (sometimes called "justice" or "fairness").
+
+* Deal with persons in ways that respect their interests in making decisions about
+their lives and their person, including health-care decisions, according to informed
+understanding of the nature of the choice to be made, its significance, the person's
+interests and the likely consequences of the alternatives (sometimes called "respect
+for persons" or "autonomy").
+
+Additional moral requirements can be derived from this list of fundamental moral
+requirements. For example, safeguarding and protecting individual privacy is not
+only recognized as a legal requirement in many countries but is also important to
+enable people to control sensitive information about themselves and
+self-determination (respect for their autonomy) and to avoid harm.
+
+These ethical principles are intended to provide guidance to stakeholders about how
+basic moral requirements should direct or constrain their decisions and actions in
+the specific context of developing, deploying and assessing the performance of AI
+technologies for health. These principles are also intended to emphasize issues that
+arise from the use of a technology that could alter relations of moral significance.
+For example, it has long been recognized that health-care providers have a special
+duty to advance these values with respect to patients because of the centrality of
+health to individual well-being, because of the dependence of patients on health
+professionals for information about their diagnosis, prognosis and the relative
+merits of the available treatment or prevention options, and the importance of free
+and open exchange of information to the provider-patient relationship. If AI systems
+are used by health-care workers to conduct clinical tasks or to delegate clinical
+tasks that were once reserved for humans, programmers who design and program such AI
+technologies should also adhere to these ethical obligations.
+
+Thus, the ethical principles are important for all stakeholders who seek guidance in
+the responsible development, deployment and evaluation of AI technologies for
+health, including clinicians, systems developers, health system administrators,
+policy-makers in health authorities, and local and national governments. The ethical
+principles listed here should encourage and assist governments and public sector
+agencies to keep pace with the rapid evolution of AI technologies through
+legislation and regulation and should empower medical professionals to use AI
+technologies appropriately.
+
+Ethical principles should also be embedded within professional and technological
+standards for AI. Software engineers already are guided by standards such as for
+fitness for purpose, documentation and provenance, and version control. Standards
+are required to guide the interoperability and design of a program, for continuing
+education of those who develop and use such technologies and for governance.
+Moreover, the standards for the evaluation and external audit of systems are
+evolving in the context of their use. In health computing, there are standards for
+system integration, electronic health records, system interoperability,
+implementation and programming structures.
+
+Although ethical principles do not always clearly address limitations in the uses of
+such technologies, governments should ban or restrict the use of AI or other
+technologies if they violate or imperil the exercise of human rights, do not conform
+to other principles or regulations or would be introduced in unprepared or other
+inappropriate contexts. For example, many countries lack data protection laws or
+have inadequate regulatory frameworks to guide the introduction of AI technologies.
+
+The claim that certain basic moral requirements must constrain and guide the conduct
+of persons can also be expressed in the language of human rights. Human rights are
+intended to capture a basic set of moral and legal requirements for conduct to which
+every person is entitled regardless of race, sex, nationality, ethnicity, language,
+religion or any other feature. These rights include human dignity, equality,
+non-discrimination, privacy, freedom, participation, solidarity and accountability.
+
+Machine-learning systems could advance the protection and enforcement of human
+rights (including the human right to health) but could undermine core human rights
+such as non-discrimination and privacy. Human rights and ethical principles are
+intimately interlinked; because human rights are legally binding, they provide a
+powerful framework by which governments, international organizations and private
+actors are obligated to abide. Private sector actors have the responsibility to
+respect human rights, independently of state obligations. In fulfilling this
+responsibility, private sector actors must take continuous proactive and reactive
+steps to ensure that they do not abuse or contribute to the abuse of human rights.
+
+The existence of a human rights framework does not, however, obviate the need for
+continuing ethical deliberation. Indeed, much of ethics is intended to expand upon
+and complement the norms and obligations established in human rights agreements. In
+many situations, multiple ethical considerations are relevant and require weighing
+up and balancing to accommodate the multiple principles at stake. An ethically
+acceptable decision depends on consideration of the full range of appropriate
+ethical considerations, ensuring that multiple perspectives are factored into the
+analysis and creating a decision-making process that stakeholders will consider fair
+and legitimate.
+
+This guidance identifies six ethical principles to guide the development and use of
+AI technology for health. While ethical principles are universal, their
+implementation may differ according to the cultural, religious and other social
+context. Many of the ethical issues arising in the use of AI and machine learning
+are not completely new but have arisen for other applications of information and
+communication technologies for health, such as use of any computer to track a
+disease or make a diagnosis or prognosis. Computers were performing these tasks with
+various programs long before AI became noteworthy. Ethical guidance and related
+principles have been articulated for fields such as telemedicine and data-sharing.
+Likewise, several ethical frameworks have been developed for AI in general, outside
+the health sector. (See <<sec-4>>.) The ethical principles listed here are those
+identified by the WHO Expert Group as the most appropriate for the use of AI for
+health.
+
+[[sec-5-1]]
+=== Protect autonomy
+
+Adoption of AI can lead to situations in which decision-making could be or is in
+fact transferred to machines. The principle of autonomy requires that any extension
+of machine autonomy not undermine human autonomy. footnote:[Building on the work of
+W.D. Ross <<ross>>, Beauchamp and Childress <<beauchamp>> formulated a principle-based approach
+to bioethics in which they added a "principle of respect for autonomy" to Ross'
+three other principles. The Principles of Biomedical Ethics <<beauchamp>>, although highly
+influential, is not universally accepted as dispositive.] In the context of health
+care, this means that humans should remain in full control of health-care systems
+and medical decisions. AI systems should be designed demonstrably and systematically
+to conform to the principles and human rights with which they cohere; more
+specifically, they should be designed to assist humans, whether they be medical
+providers or patients, in making informed decisions. Human oversight may depend on
+the risks associated with an AI system but should always be meaningful and should
+thus include effective, transparent monitoring of human values and moral
+considerations. In practice, this could include deciding whether to use an AI system
+for a particular health-care decision, to vary the level of human discretion and
+decision-making and to develop AI technologies that can rank decisions when
+appropriate (as opposed to a single decision). These practices can ensure a
+clinician can override decisions made by AI systems and that machine autonomy can be
+restricted and made "intrinsically reversible".
+
+Respect for autonomy also entails the related duties to protect privacy and
+confidentiality and to ensure informed, valid consent by adopting appropriate legal
+frameworks for data protection. These should be fully supported and enforced by
+governments and respected by companies and their system designers, programmers,
+database creators and others. AI technologies should not be used for experimentation
+or manipulation of humans in a health-care system without valid informed consent.
+The use of machine-learning algorithms in diagnosis, prognosis and treatment plans
+should be incorporated into the process for informed and valid consent. Informed and
+valid consent means that essential services are not circumscribed or denied if an
+individual withholds consent and that additional incentives or inducements should
+not be offered by either a government or private parties to individuals who do
+provide consent.
+
+Data protection laws are one means of safeguarding individual rights and place
+obligations on data controllers and data processors. Such laws are necessary to
+protect privacy and the confidentiality of patient data and to establish patients'
+control over their data. Construed broadly, data protection laws should also make it
+easy for people to access their own health data and to move or share those data as
+they like. Because machine learning requires large amounts of data -- big data --
+these laws are increasingly important.
+
+[[sec-5-2]]
+=== Promote human well-being, human safety and the public interest
+
+AI technologies should not harm people. They should satisfy regulatory requirements
+for safety, accuracy and efficacy before deployment, and measures should be in place
+to ensure quality control and quality improvement. Thus, funders, developers and
+users have a continuous duty to measure and monitor the performance of AI algorithms
+to ensure that AI technologies work as designed and to assess whether they have any
+detrimental impact on individual patients or groups.
+
+Preventing harm requires that use of AI technologies does not result in any mental
+or physical harm. AI technologies that provide a diagnosis or warning that an
+individual cannot address because of lack of appropriate, accessible or affordable
+health care should be carefully managed and balanced against any "duty to warn" that
+might arise from incidental and other findings, and appropriate safeguards should be
+in place to protect individuals from stigmatization or discrimination due to their
+health status.
+
+[[sec-5-3]]
+=== Ensure transparency, explainability and intelligibility
+
+AI should be intelligible or understandable to developers, users and regulators. Two
+broad approaches to ensuring intelligibility are improving the transparency and
+explainability of AI technology.
+
+Transparency requires that sufficient information (described below) be published or
+documented before the design and deployment of an AI technology. Such information
+should facilitate meaningful public consultation and debate on how the AI technology
+is designed and how it should be used. Such information should continue to be
+published and documented regularly and in a timely manner after an AI technology is
+approved for use.
+
+Transparency will improve system quality and protect patient and public health
+safety. For instance, system evaluators require transparency in order to identify
+errors, and government regulators rely on transparency to conduct proper, effective
+oversight. It must be possible to audit an AI technology, including if something
+goes wrong. Transparency should include accurate information about the assumptions
+and limitations of the technology, operating protocols, the properties of the data
+(including methods of data collection, processing and labelling) and development of
+the algorithmic model.
+
+AI technologies should be explainable to the extent possible and according to the
+capacity of those to whom the explanation is directed. Data protection laws already
+create specific obligations of explainability for automated decision-making. Those
+who might request or require an explanation should be well informed, and the
+educational information must be tailored to each population, including, for example,
+marginalized populations. Many AI technologies are complex, and the complexity might
+frustrate both the explainer and the person receiving the explanation. There is a
+possible trade-off between full explainability of an algorithm (at the cost of
+accuracy) and improved accuracy (at the cost of explainability).
+
+All algorithms should be tested rigorously in the settings in which the technology
+will be used in order to ensure that it meets standards of safety and efficacy. The
+examination and validation should include the assumptions, operational protocols,
+data properties and output decisions of the AI technology. Tests and evaluations
+should be regular, transparent and of sufficient breadth to cover differences in the
+performance of the algorithm according to race, ethnicity, gender, age and other
+relevant human characteristics. There should be robust, independent oversight of
+such tests and evaluation to ensure that they are conducted safely and effectively.
+
+Health-care institutions, health systems and public health agencies should regularly
+publish information about how decisions have been made for adoption of an AI
+technology and how the technology will be evaluated periodically, its uses, its
+known limitations and the role of decision-making, which can facilitate external
+auditing and oversight.
+
+[[sec-5-4]]
+=== Foster responsibility and accountability
+
+Humans require clear, transparent specification of the tasks that systems can
+perform and the conditions under which they can achieve the desired level of
+performance; this helps to ensure that health-care providers can use an AI
+technology responsibly. Although AI technologies perform specific tasks, it is the
+responsibility of human stakeholders to ensure that they can perform those tasks and
+that they are used under appropriate conditions.
+
+Responsibility can be assured by application of "human warranty", which implies
+evaluation by patients and clinicians in the development and deployment of AI
+technologies. In human warranty, regulatory principles are applied upstream and
+downstream of the algorithm by establishing points of human supervision. The
+critical points of supervision are identified by discussions among professionals,
+patients and designers. The goal is to ensure that the algorithm remains on a
+machine-learning development path that is medically effective, can be interrogated
+and is ethically responsible; it involves active partnership with patients and the
+public, such as meaningful public consultation and debate <<public-debate>>.
+Ultimately, such work should be validated by regulatory agencies or other
+supervisory authorities.
+
+When something does go wrong in application of an AI technology, there should be
+accountability. Appropriate mechanisms should be adopted to ensure questioning by
+and redress for individuals and groups adversely affected by algorithmically
+informed decisions. This should include access to prompt, effective remedies and
+redress from governments and companies that deploy AI technologies for health care.
+Redress should include compensation, rehabilitation, restitution, sanctions where
+necessary and a guarantee of non-repetition.
+
+The use of AI technologies in medicine requires attribution of responsibility within
+complex systems in which responsibility is distributed among numerous agents. When
+medical decisions by AI technologies harm individuals, responsibility and
+accountability processes should clearly identify the relative roles of manufacturers
+and clinical users in the harm. This is an evolving challenge and remains unsettled
+in the laws of most countries. Institutions have not only legal liability but also a
+duty to assume responsibility for decisions made by the algorithms they use, even if
+it is not feasible to explain in detail how the algorithms produce their results.
+
+To avoid diffusion of responsibility, in which "everybody's problem becomes nobody's
+responsibility", a faultless responsibility model ("collective responsibility"), in
+which all the agents involved in the development and deployment of an AI technology
+are held responsible, can encourage all actors to act with integrity and minimize
+harm. In such a model, the actual intentions of each agent (or actor) or their
+ability to control an outcome are not considered.
+
+[[sec-5-5]]
+=== Ensure inclusiveness and equity
+
+Inclusiveness requires that AI used in health care is designed to encourage the
+widest possible appropriate, equitable use and access, irrespective of age, gender,
+income, ability or other characteristics. Institutions (e.g., companies, regulatory
+agencies, health systems) should hire employees from diverse backgrounds, cultures
+and disciplines to develop, monitor and deploy AI. AI technologies should be
+designed by and evaluated with the active participation of those who are required to
+use the system or will be affected by it, including providers and patients, and such
+participants should be sufficiently diverse. Participation can also be improved by
+adopting open-source software or making source codes publicly available.
+
+AI technology -- like any other technology -- should be shared as widely as
+possible. AI technologies should be available not only in HIC and for use in
+contexts and for needs that apply to high-income settings but they should also be
+adaptable to the types of devices, telecommunications infrastructure and data
+transfer capacity in LMIC. AI developers and vendors should also consider the
+diversity of languages, ability and forms of communication around the world to avoid
+barriers to use. Industry and governments should strive to ensure that the "digital
+divide" within and between countries is not widened and ensure equitable access to
+novel AI technologies.
+
+AI technologies should not be biased. Bias is a threat to inclusiveness and equity
+because it represents a departure, often arbitrary, from equal treatment. For
+example, a system designed to diagnose cancerous skin lesions that is trained with
+data on one skin colour may not generate accurate results for patients with a
+different skin colour, increasing the risk to their health.
+
+Unintended biases that may emerge with AI should be avoided or identified and
+mitigated. AI developers should be aware of the possible biases in their design,
+implementation and use and the potential harm that biases can cause to individuals
+and society. These parties also have a duty to address potential bias and avoid
+introducing or exacerbating health-care disparities, including when testing or
+deploying new AI technologies in vulnerable populations.
+
+AI developers should ensure that AI data, and especially training data, do not
+include sampling bias and are therefore accurate, complete and diverse. If a
+particular racial or ethnic minority (or other group) is underrepresented in a
+dataset, oversampling of that group relative to its population size may be necessary
+to ensure that an AI technology achieves the same quality of results in that
+population as in better-represented groups.
+
+AI technologies should minimize inevitable power disparities between providers and
+patients or between companies that create and deploy AI technologies and those that
+use or rely on them. Public sector agencies should have control over the data
+collected by private health-care providers, and their shared responsibilities should
+be defined and respected. Everyone -- patients, health-care providers and
+health-care systems -- should be able to benefit from an AI technology and not just
+the technology providers. AI technologies should be accompanied by means to provide
+patients with knowledge and skills to better understand their health status and to
+communicate effectively with health-care providers. Future health literacy should
+include an element of information technology literacy.
+
+The effects of use of AI technologies must be monitored and evaluated, including
+disproportionate effects on specific groups of people when they mirror or exacerbate
+existing forms of bias and discrimination. Special provision should be made to
+protect the rights and welfare of vulnerable persons, with mechanisms for redress if
+such bias and discrimination emerges or is alleged.
+
+[[sec-5-6]]
+=== Promote artificial intelligence that is responsive and sustainable
+
+Responsiveness requires that designers, developers and users continuously,
+systematically and transparently examine an AI technology to determine whether it is
+responding adequately, appropriately and according to communicated expectations and
+requirements in the context in which it is used. Thus, identification of a health
+need requires that institutions and governments respond to that need and its context
+with appropriate technologies with the aim of achieving the public interest in
+health protection and promotion. When an AI technology is ineffective or engenders
+dissatisfaction, the duty to be responsive requires an institutional process to
+resolve the problem, which may include terminating use of the technology.
+
+Responsiveness also requires that AI technologies be consistent with wider efforts
+to promote health systems and environmental and workplace sustainability. AI
+technologies should be introduced only if they can be fully integrated and sustained
+in the health-care system. Too often, especially in under-resourced health systems,
+new technologies are not used or are not repaired or updated, thereby wasting scare
+resources that could have been invested in proven interventions. Furthermore, AI
+systems should be designed to minimize their ecological footprints and increase
+energy efficiency, so that use of AI is consistent with society's efforts to reduce
+the impact of human beings on the earth's environment, ecosystems and climate.
+Sustainability also requires governments and companies to address anticipated
+disruptions to the workplace, including training of health-care workers to adapt to
+use of AI and potential job losses due to the use of automated systems for routine
+health-care functions and administrative tasks.

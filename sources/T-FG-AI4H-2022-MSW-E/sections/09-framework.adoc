@@ -1,0 +1,1513 @@
+[[sec-9]]
+== Elements of a framework for governance of artificial intelligence for health
+
+Human rights standards, data protection laws and ethical principles are all
+necessary to guide, regulate and manage the use of AI for health by developers,
+governments, providers and patients. Many stakeholders have called for a commonly
+accepted set of ethical principles for AI for health, and WHO hopes that the
+principles suggested in this document (See <<sec-5>>.) will encourage consensus.
+
+Use of AI for health introduces several challenges that cannot be resolved by
+ethical principles and existing laws and policies, in particular because the risks
+and opportunities of the use of AI are not yet well understood or will change over
+time. Furthermore, many principles, laws and standards were devised by and for HIC.
+LMIC will face additional challenges to introducing new AI technologies, which will
+require not only awareness of and adherence to ethical principles but also
+appropriate governance.
+
+Governance in health covers a range of steering and rule-making functions of
+governments and other decision-makers, including international health agencies, for
+the achievement of national health policy objectives conducive to universal health
+coverage. Governance is also a political process that involves balancing competing
+influences and demands.
+
+At the Seventy-first World Health Assembly in 2018, Member States unanimously
+adopted resolution WHA71.7, which calls on WHO to prepare a global strategy on
+digital health to support national health systems in achieving universal health
+coverage <<digital-health>>. A global strategy and other governance frameworks and
+standards established by WHO will contribute to a governance framework for AI for
+health. This section addresses the ethical dimensions of several areas of governance.
+
+[[sec-9-1]]
+=== Governance of data
+
+The definition of "health data" has widened dramatically over the past two decades.
+Successful development of an AI system for use in health care relies on high-quality
+data, which are used to both train and validate the algorithmic model. This section
+addresses the evolution of individual consent with the proliferation of health data
+as well as the principles, legal frameworks and measures used by governments. This
+section also addresses principles and mechanisms designed and used to govern health
+data by communities, academic or health-care institutions, companies or governments,
+including how these entities should share health data.
+
+[[sec-9-1-1]]
+==== Evolving approaches to consent
+
+As the types, quantity and applications of health data, including for commercial
+use, have grown, a patchwork of approaches has emerged to facilitate individuals'
+relation to their health data. The main challenge is safeguarding individual privacy
+and autonomy by controlling their data without limiting the purported benefits of
+their collection and use. These considerations are likely to apply whether the data
+are used for AI or for a relational database.
+
+Mechanisms for individual control of data, such as informed consent, a duty of
+confidentiality and de-identification, may not be sufficient and may interfere with
+positive uses. (See <<sec-6-3>>.) Therefore, several "modified" approaches to
+consent could be used as the quantity of health data and their possible uses
+increase. Consent must be given only after explanation of the consequences of
+providing it, including for example which data will be used and how and the
+consequences if consent is not given.
+
+One form of consent that could improve individual control and choice is electronic
+informed consent, in which online forms and communication are used to give consent
+for various uses of health data <<evolving-health-ecosystem>>. Electronic informed
+consent could allow users better understanding of how their data will be used and
+improve their control of the data. The content should, however, be presented simply
+so that it is readily accessible to the general public, such as with illustrations,
+to ensure that consent is given freely and that the risks are understood
+<<evolving-health-ecosystem>>. Sage Bionetworks, for example, has established a
+https://sagebionetworks.org/tools_resources/elements-of-informed-consent/[toolkit
+and information guide] for facilitating provision of electronic informed consent
+<<elements-seattle>>. Another approach is "dynamic consent", which allows users to
+modify their consent periodically for uses that they wish to permit and those that
+they specifically exclude <<evolving-health-ecosystem>>. A third approach to
+consent, discussed below, is to seek "broad consent" from individuals to facilitate
+secondary use of health data without undermining their rights to privacy and autonomy.
+
+Alternatively, governments might wish to define when consent can be waived in the
+public interest. This is already permissible under data protection laws if it is
+strictly necessary and proportionate to achievement of a legitimate aim. This
+implies that, in certain situations, government could have a duty to share health
+data for the benefit of the wider public or for other non-monetary benefits, such as
+better quality of life or health <<cohen-ig>>. Thus, consent would be waived because
+the data are considered a public good for which data can be "conscripted for
+publicly minded uses" <<price>>. This could include situations in which there are
+clear public health benefits of using data that would otherwise be unavailable
+because too many individuals have opted out of sharing such data. The burden of
+demonstrating that lack of consent is undermining a benefit should rest with the
+entity that seeks to avoid consent. It could imply that obtaining health data
+without the specific consent of the individual is justified if the benefit is
+broadly distributed and outweighs violation of privacy when the risk is "low"
+<<price>>. A system in which benefits and risks are weighed could, however,
+invariably lead to sharing of data without consent, as medical benefits -- whether
+better surveillance of disease or development of a new drug -- could always be
+considered more important than a "low risk" of violation of privacy from use of the
+data.
+
+Another concern is that a government or a company may define "public interest" in a
+way that is not based on public health or patient need. Whether patients share the
+benefits may depend on the entity with which they are shared, such as commercial
+actors, which may not share benefits if the medical products and services are
+neither affordable nor available (see below). Thus, conscripting health data with
+the broad goal of contributing to the public good is questionable when the data are
+shared with a commercial entity, whatever the intended product or service. Recent
+instances (described in <<sec-6-3>>) of patient data that were shared by
+not-for-profit entities or academic institutions with private companies without the
+consent of the patients has raised significant concern, as the patients were not
+notified that their data were shared, for what purpose or the identity of the
+private entity.
+
+In Japan, an approach to resolving such conflicts was passage of the Jisedan
+Iryo-kiban Ho (Next Generation Medical Infrastructure Law), which permits hospitals
+and clinics to provide patient data to accredited private sector companies, which
+are responsible for making the data anonymous and searchable <<otake>>. Before
+sharing data, hospitals and clinics must inform patients and give them the right to
+opt out. The accredited data companies anonymize and store the data and make it
+available to academic researchers, pharmaceutical companies and government agencies
+for a fee. Accredited data companies are required to institute safeguards for
+cybersecurity, unauthorized use of data and unauthorized disclosure by employees
+<<otake>>.
+
+In 2020, the EU proposed a means for use of data without consent under the concept
+of "data altruism", previously known as "data solidarity" <<regulations-brussels>>.
+This would allow companies to collect personal and non-personal data on individuals
+for projects that are in the public interest. The approach seeks to limit the type
+of company that can collect data by specifying that it must: be constituted to meet
+objectives of "general interest"; operate on a not-for-profit basis and be
+independent of any for-profit entity; ensure that any activities related to data
+altruism are undertaken through a legally independent structure separate from its
+other functions; and can voluntarily register as a "data altruism organization" in
+an EU Member State. To facilitate data altruism, a common European consent form will
+be developed, which can be tailored for different sectors and uses.
+
+Data altruism could raise concern. First, this form of data-sharing could lead to
+exceptions or "grey areas" in which health data are used for commercial purposes for
+which the individuals from whom the data were obtained would not wish to provide
+consent. Secondly, such a regulation could be rewritten over time to redefine the
+entities allowed to collect data for altruistic purposes. Thirdly, even if the
+health data were initially used for a non-commercial objective, such as in drug
+discovery, the product or service that emerges might eventually be licensed to or
+acquired by a commercial entity rather than remaining in the public domain.
+
+[[sec-9-1-2]]
+==== Broad consent
+
+Several not-for-profit institutions that have deposited health data in centralized
+biorepositories practise principles of informed consent for sharing such data, which
+ensures that the person who provides data understands consent at enrolment. Any
+industry partner is disclosed at the time of consent, and prospective, explicit
+consent is given for future secondary use of the data for research
+<<spector-bagdady>>. These standards do not prevent secondary use of health data,
+except when, for example, commercial actors that were not included in the initial
+consent seek to use the data or when commercial actors could otherwise gain access
+because they subsidize activities of not-for-profit entities that have access to the
+data. Even with additional standards in place, at a biorepository operated by the
+University of Michigan, USA, access to data was denied by a review committee for
+only 6 of 70 projects proposed over 2 years and only because of inadequate initial
+consent <<spector-bagdady>>.
+
+Another concern with use of health data for research arises when the data are
+user-generated, such as data obtained from digital devices and wearables and data
+supplied by users to social media and other platforms and to online patient
+communities. Governance of such data, which may not have been collected initially
+for research, is complex because of the "lack of international boundaries when using
+the internet" and because the "online information industry has failed to
+self-regulate" <<andanda>>. Andanda suggested that one means for improving
+governance of such data would be to encourage health researchers to adhere
+voluntarily to the "Global Code of Conduct", which encourages researchers and
+institutions to develop context-specific codes, be fair, respectful, caring and
+honest when dealing with online users and practise ethically informed research
+practices <<andanda>>.
+
+A more controversial issue is creating a market or system through which individuals
+can buy and sell health data. Health data are sensitive personal data, linked to
+human agency and dignity. A system that facilitates the sale of personal data could
+lead to a two-tier society in which the wealthy can protect their rights and afford
+to limit use of their data by other parties, whereas people living in poverty may
+feel compelled to sell their data to access social or material benefits. A system
+that facilitates the sale of data would be in contravention of several human rights
+standards. Furthermore, while the sale of data might contribute to uses that are
+commercially valuable but less beneficial to individual or public health, the data
+market itself may not function properly and could undervalue an individual's data.
+The sale of data could lead to loss of control by an individual of his or her health
+data. Such challenges with health data have emerged with commercial sale of blood
+and related products such as plasma <<greenberg>>.
+
+[[sec-9-1-3]]
+==== Data protection
+
+From a human rights perspective, an individual should always control his or her
+personal data. Individuals' right to their own data is grounded in concepts that are
+related to but distinct from ownership, including control, agency, privacy, autonomy
+and human dignity. Control may include various approaches to individual consent (see
+above) and also collective mechanisms to ensure that the data are used appropriately
+by third parties (see below). Data protection laws are rights-based approaches that
+include standards for the regulation of data-processing activities that both protect
+the rights of individuals and establish obligations for data controllers and
+processors, both private and public, and also include sanctions and remedies in case
+of actions that violate statutory rights. Data protection laws can also provide for
+exceptions for non-commercial uses by third parties. Over 100 countries have adopted
+data protection laws <<dpg-london>>.
+
+Data protection frameworks and regulations are essential for managing the use of
+health data. The EU GDPR, which applies to citizens and residents of the EU,
+irrespective of whether the data controller or processor is based in the EU, also
+has a global reach because it applies to non-EU citizens or residents if the data
+controller or processor is based in the EU. The GDPR is designed to limit the data
+collected about an individual to only that which is necessary, to allow collection
+of data only for listed legitimate purposes or with an individual's consent, and to
+notify individuals of data-processing activities. Health data are protected under
+GDPR unless an individual provides specific consent or if use of the data meets
+certain exceptions, such as for health-related operations or scientific research.
+Even when exceptions apply, data processors and controllers must respect certain
+obligations.
+
+GDPR also introduced "data portability", the right of individuals to obtain their
+personal data in a machine-readable format from one controller that can be sent to
+another controller <<vayena>>. Depending on how data portability is implemented in
+the EU, it could allow individuals to control their own data and to share them with
+additional entities. Data portability could decentralize the control and
+distribution of data and, with appropriate implementation, could be a novel form of
+data management that fosters both oversight and innovation.
+
+Data protection regulations are enforced by data protection authorities, which
+develop and administer regulations, provide guidance and technical advice and
+conduct investigations. South Africa, which introduced a data protection regime for
+the first time in July 2020 with enactment of the Protection of Personal Information
+Act 4, will introduce enforcement in mid-2021 through several means, including
+administrative fines that could exceed US$ 500&nbsp;000 and also civil cases and
+criminal liability <<bowan>>.
+
+Some governments have nominated additional supervisory authorities to facilitate the
+use of health data. The United Kingdom established a National Data Guardian in 2014
+for appropriate management of health data with respect to confidentiality and to
+improve the use of such data for beneficial purposes. In 2018, the entity was
+granted the power to issue official guidance on the use of data for health and adult
+and social care in England <<ndg-london>>.
+
+[[sec-9-1-4]]
+==== Community control of health data -- data sovereignty and data cooperatives
+
+Measures have been taken not only to promote the individual right to privacy and
+autonomy over health data but also to provide discrete communities with control over
+their data, including health data, through the exercise of data sovereignty or
+creation of data cooperatives. Several indigenous communities have sought to
+establish control over their data through data sovereignty. Māori (the indigenous
+population of New Zealand) have introduced principles for data sovereignty that
+establish, for example, control over data, including to protect against future harm,
+accountability to the people who provide such data by those who collect, use and
+disseminate them, an obligation for such data to provide a collective benefit, and
+free prior and informed consent, which, when not obtainable, should be accompanied
+by stronger governance <<tutohinga>>. Māori also recognize that the individual
+rights of data holders should be balanced by benefits for the community and that in
+some situations the collective rights of the Māori will prevail over those of
+individuals <<tutohinga>>.
+
+First Nations groups in Canada have also outlined principles for sovereignty over
+their data, with four elements: ownership of data, control of data, access to data
+and possession of data. It is expected that, over time, First Nation tribes will
+establish protocols to allow wider access to these data for uses that benefit them
+<<schnarch>>.
+
+A data cooperative gives people who provide data control over their data by storing
+the data for the members of a cooperative. Data cooperatives allow secondary uses of
+such data while allowing members of the cooperative to decide collectively how the
+data should be used <<vayena>>. Data cooperatives allow members to set common
+ethical standards, and some have developed their own tools and applications to
+ensure that the data are used beneficially <<vayena>>.
+
+[[sec-9-1-5]]
+==== Federated data
+
+Federated data systems have grown significantly. They include collaborations between
+research institutions, governments and the public and private sector and within the
+private sector. Federated data-sharing has been defined as "a promising way to
+enable access to health data, including genomic data, that must remain inside a
+country or institution because of their sensitivity" <<sharing-geneva>>. Data do not
+leave the participating organization that holds them, but authorized users can make
+queries that allow them to access data, for example to train an algorithm.
+Proponents have noted that federated data systems allow each entity to govern use of
+its data and that the approach preserves privacy and security <<sharing-geneva>>.
+While federated data-sharing may facilitate analysis of large data sets while
+maintaining local control, it does not overcome concern that informed consent might
+not have been sought for secondary uses of the data <<rossc>>.
+
+[[sec-9-1-6]]
+==== Government principles and guidelines
+
+Some governments that are collecting and using health data for commercial and public
+sector interventions have established principles for data collection and use. The
+United Kingdom's NHS has established five guiding principles for a framework in
+which data can be used in health innovation. A notable commitment under these
+principles is transparency -- that any commercial arrangements should be
+transparent, clearly communicated and not undermine public trust or confidence
+<<creating-london>>. As discussed below, however, many agreements between the public
+and the private sector are not transparent, which raises serious concern if there
+are also financial conflicts of interest.
+
+Other forms of transparency could be required, such as the transparency of sources
+and methods of obtaining and processing data, how and why certain types of data are
+excluded, the methods used to analyse the data and open discussion in publications
+of data bias.
+
+In New Zealand, an independent ministerial advisory group funded and appointed by
+the Government conducted a wide-ranging consultation to build an "inclusive,
+high-trust, and high-control data-sharing ecosystem" <<bhunia>>. The guidelines
+include eight questions about what matters most to people in building trust in data
+use and whether the use of data provides value, protection and choice for an
+individual (<<fig2>>).
+
+[[fig2]]
+.Elements of transparent data use <<bhunia>>
+image::002.png["",632,634]
+
+Although the guidelines are voluntary, each entity that seeks to use the data has
+been asked to publish answers to these questions so that the individuals who provide
+the data can determine whether the values of the entity align with their preferences
+<<bhunia>>.
+
+WHO has introduced its own data principles <<who-geneva>>, which are designed to
+provide a framework for data governance by WHO and to be used by staff to define the
+values and standards that govern how data that flow into, across and out of WHO are
+collected, processed, shared and used. The five principles are as follows.
+
+[class=steps]
+. WHO shall treat data as a public good.
+. WHO shall uphold Member States' trust in data.
+. WHO shall support Member States' data and health information systems capacity.
+. WHO shall be a responsible data manager and steward.
+. WHO shall strive to fill public health data gaps.
+
+WHO is also introducing a data governance framework that would introduce the
+necessary standards, solutions and structures to ensure the quality and integrity of
+WHO data, from collection, storage, analysis and validation through to use. To
+ensure that the principles can be put into practice, WHO will use a "hub-and-spoke"
+governance model to obtain feedback and approval, and data focal points at WHO will
+work with regional focal points on issues that arise during the ever-growing use of
+health data. They will also be guided by the Data Governance Committee constituted
+by WHO <<who-data-sharing>>.
+
+[[sec-9-1-7]]
+==== Data-sharing, including data hubs
+
+As health data have proliferated, governments have taken steps to improve
+data-sharing for scientific research and also for commercial development of health
+AI and other health applications. In 2014, the US National Institutes of Health
+introduced their Genomic Data Sharing Policy, which is intended to encourage "broad
+and responsible sharing of genomic research data" <<genomic>>. Legislation enacted
+in the USA in 2016, the 21st Century Cures Act, extended the remit and created
+statutory authority of the Director of the National Institutes of Health to require
+researchers who received awards from the Institutes to share their data and to
+provide the means for the Institutes to enforce data-sharing <<majumder>>.
+
+The Act also provides means to improve the access of individuals to their own health
+data, which was finalized in rules issued by the US Government in 2020 that create a
+requirement for health information technology providers to introduce a
+standards-based application programming interface to support an individual's use and
+control of electronic health information <<hhs-washington>>. Health information
+technology providers must meet three requirements for its interface to be certified:
+it must meet certain technical programming standards that ensure interoperability,
+it must be transparent, and it must be "pro-competitive" or promote efficient
+exchange, access and use of health data <<hhs-washington>>. The requirements for
+health information technology providers, such as anti-blocking or interoperability,
+show that governments can mandate and manage commercial use of AI and other
+technologies for health care.
+
+[[sec-9-1-8]]
+==== Data hubs
+
+Numerous data hubs pool various types of health data for use by third parties, which
+depend on the type of data hub. Several government-sponsored data hubs have emerged.
+In the USA, two such hubs are the Precision Medicine Initiative (All of Us)
+<<all-bethesda>> and the Department of Veteran Affairs health data hub. The EU is
+establishing a European Health Data Space to facilitate the exchange and sharing of
+health data (e.g., health records, genomics, registries) for purposes such as the
+delivery of primary care and the development of new treatments, medicines, medical
+devices and services, while ensuring that people have control of their own health
+data <<ehds-brussels>>.
+
+Health Data Research UK is an independent, not-for-profit organization of 22
+research institutions in the United Kingdom that collect health data and make it
+available to public and private entities for research on diseases and ways to
+prevent, treat and cure them. Principles of participation have been defined in
+consultation with policy-makers, the NHS, industry and the public <<hub-london>>.
+
+[[sec-9-1-9]]
+==== Data-sharing and data partnerships with the private sector
+
+One of the more difficult questions in the creation of government, not-for-profit or
+academic data hubs is how they should work with companies, either in accepting data
+that could improve their quality or allowing the companies to use their data for
+training or validation of algorithms. When commercial entities make use of such
+data, there is concern, which has sometimes materialized, that the people from whom
+they were derived did not knowingly given consent for their use for commercial
+purposes. There is an additional concern that such agreements are not disclosed to
+the public or to private sector parties to such agreements.
+
+For example, numerous agreements signed between the Mayo Clinic, a major health
+system in the USA, with 16 technology companies provided the Clinic with a "revenue
+stream and generated crucial insights for health tech firms eager to commercialise
+digital products and services" <<rossc>>. In some cases, the Clinic not only shared
+data with a company but subsequently took an equity stake in those companies, which
+provided the Clinic with additional revenue. De-identified patient data were shared
+without requesting consent or even notifying the people who had supplied their
+health data for products under development. The names of eight of the firms that
+signed agreements were not disclosed, and none of the contracts signed between the
+Mayo Clinic and its technology partners were made public <<rossc>>.
+
+In other cases, physicians or scientists in health-care systems who had access to
+raw data provided to health technology firms founded or invested in the companies.
+An investigation in 2018 found that board members and senior executives at the
+Memorial Sloan Kettering Hospital in the USA had either founded or invested in an AI
+start-up to improve cancer diagnosis and had used the Hospital's trove of 25 million
+patient tissue slides and six decades of pathology research for the company's
+benefit without open bidding or transparent consideration of whether the data should
+be shared. Memorial Sloan Kettering had also taken an ownership stake in the company
+<<ornstein>>.
+
+Some companies, either alone or in collaboration with other companies, have
+established health data hubs with data from one or more companies, which are used in
+the development of products and services. Such partnerships, which may result in
+useful products and services, raise concern about the transparency of the
+activities, oversight of activities, competition and whether such private carriers
+of data will seek consent or at least engage the communities and individuals that
+provided the data.
+
+_Recommendations_
+
+[class=steps]
+. Governments should have clear data protection laws and regulations for the use of
+health data and protecting individual rights, including the right to meaningful
+informed consent.
+
+. Governments should establish independent data protection authorities with adequate
+power and resources to monitor and enforce the rules and regulations in data
+protection laws.
+
+. Governments should require entities that seek to use health data to be transparent
+about the scope of the intended use of the data.
+
+. Mechanisms for community oversight of data should be supported. These include data
+collectives and establishment of data sovereignty by indigenous communities and
+other marginalized groups.
+
+. Data hubs should meet the highest standards of informed consent if their data
+might be used by the private or public sector, should be transparent in their
+agreements with companies and should ensure that the outcomes of data collaboration
+provide the widest possible public benefit.
+
+[[sec-9-2]]
+=== Control and benefit-sharing
+
+The application of big data and AI for health care raises questions about how to
+assess and govern data control, IP and other proprietary and privacy rights that
+might affect the use and control of medical data and AI-driven technologies. These
+include asserting exclusive rights over health datasets, algorithms, software and
+products that include AI and the outcomes of AI-based technologies, such as
+medicines and diagnostic technologies. Several wider questions should be resolved,
+including whether health big data can or should be controlled exclusively by
+individuals by an appropriate form of governance or by entities that may aggregate
+the data. (Control of personal data is discussed above.)
+
+A separate question is whether novel products created solely by a machine can be
+"owned" and, if so, whether ownership rights are conferred on the machine or on the
+entity that created or controls the machine. There is also the question of assigning
+appropriate value to the public's contribution to development of new AI
+technologies, such as investment in the development of algorithms, provision of data
+by individuals and health systems and from health data hubs accessed by private
+actors for the development of new AI technologies. If AI technologies are
+increasingly protected by exclusive rights, there is the wider question of whether
+they will be available, appropriate and affordable in LMIC.
+
+[[sec-9-2-1]]
+==== Control over and benefit-sharing of big data
+
+The central role of big data for AI, including medical big data for use of AI for
+health care, has led to labelling of data as the new "oil", a valuable commodity
+over which there will be increased commercial conflict for its control, use and
+access <<economist-oil>>. Such labelling has been criticized as unhelpful and
+conceptually inaccurate (<<rajan>>, <<marr>>). Unlike oil, the supply of data is
+virtually infinite, and they can be re-used in other contexts with valuable
+commercial or non-commercial applications. There is at least the possibility of
+control of and consent for use of one's data. While the intrinsic value of oil is
+captured once it is extracted or drilled (subject to processing and refining), data
+are not intrinsically valuable unless data science is used to generate something of
+value.
+
+Another view is that it is not so much the commercial value of data but its use in
+the development and deployment of AI-based applications that is important. In this
+view, data are the "oxygen", an indispensable resource for the public infrastructure
+required for AI and data science to serve the public and private sectors <<hilty>>.
+Whether data should be considered "oil" or "oxygen" (or neither) depends partly on
+whether exclusive rights can or should be associated with data, who should have such
+exclusive rights and to what extent they should impede others from access to and use
+of the data for public or private uses.
+
+Several types of IP rights may apply to data and software, including protection of
+trade secrets, copyright, database rights (in only a few jurisdictions), regulatory
+exclusivity and, in rare circumstances, patent rights. Data and software as such
+cannot be patented in most jurisdictions, but "functional" data used in technical
+applications may be patented (<<minssen-big-data>>, <<andanda-paradigm>>). It is
+beyond the scope of this publication to discuss the IP rights that could apply to
+large data sets or to big data, yet such rights, if they are to be expanded or
+minimized with respect to large data sets or big data depend on broader policy
+objectives and ethical considerations.
+
+There is a conflict between sharing data and the commercial prerogatives that are
+protected by IP rights <<sherkow>>. On the one hand, conferring IP and related
+rights to health big data could discourage open sharing of the data, which is
+necessary to advance scientific progress and the development of AI for health care
+and medicine (<<bioethics-committee>>, <<andanda-paradigm>>). Public or private
+"owners" of health big data might not grant third parties the right to use the data
+to develop novel AI technologies, thereby undermining open innovation
+<<minssen-challenges>> and giving commercial entities the power to exclude
+competitors or engage in "rent-seeking". Questions should arise about who is allowed
+access, the rationale for inclusion or exclusion and the conditions under which the
+data will be accessible (including whether fees must be paid), especially for third
+parties that wish to use the data for non-commercial purposes. On the other hand,
+lack of IP rights to health big data could discourage some commercial investments
+<<minssen-challenges>>. While the 21st Century Cures Act, enacted in the USA in
+2016, encourages the sharing of data (see <<sec-9-1>>), it asserts that proprietary
+interests supersede data-sharing interests and that the ability of the US Government
+to mandate data-sharing is limited by policies for prioritizing the protection of
+trade secrets, proprietary interests, confidential commercial information and IP
+rights <<majumder>>. Similar consideration apply, for example, to the FAIR Data
+principles of the European Open Science Cloud, which plans to create data-sharing
+clouds that are "as open as possible and as closed as necessary" and does not
+preclude respect for IP rights or the protection of privacy rights <<eosc>>.
+
+An additional concern is whether sharing of health data by communities, health
+systems or governments in LMIC will include sharing of benefits, especially if the
+data are used for commercial applications of AI <<bioethics-committee>>. If benefits
+are not shared, it may be either because there are no legal conventions or
+frameworks that mandate benefit-sharing of the uses of big data or because the
+entities that negotiate benefit-sharing on behalf of LMIC may have to negotiate from
+a weaker position <<andanda-paradigm>>. Benefit-sharing may include not only
+equitable access to and availability of technologies that arise from sharing health
+big data but also the assurance that enough investment is made in digital
+infrastructure, research capacity, training and infrastructure to ensure that the
+products of AI and big data are also generated by researchers and companies in LMIC
+<<andanda-paradigm>>. New technologies that require "state-of-the-art" capacity,
+such as quantum computing, might exacerbate inadequate benefit-sharing.
+
+Thus, while IP rights could be adjusted case by case to encourage open innovation,
+investment or benefit-sharing, control (and IP rights to assign control) may be
+inappropriate to encourage widespread use and application of health data, in view of
+numerous competing considerations, including an individual's right to privacy and
+control <<corrales>>, society's interest in scientific progress and the development
+of AI-guided technologies, commercial interest in exploiting such data for
+profitable activities and the interest of data contributors (communities, health
+systems, governments) in sharing the benefits generated by third parties <<corrales>>.
+
+It has been recommended that the focus be not on recalibrating or introducing new IP
+rights, which could impede data-sharing or intensify competing claims to control of
+data, but instead on establishing a legal framework based on custodianship
+<<bioethics-committee>>. Custodianship, or responsible oversight with ethical
+values, can ensure access to data, promote fair data-sharing and preserve privacy.
+While those who provide data maintain limited control, certain decisions are
+delegated to data custodians with custodial rights -- and not control (or IP rights)
+-- over big data. Custodial rights can include protecting the privacy of those who
+contribute data, disseminating research findings, ensuring freedom of scientific
+enquiry and providing attribution to those who invest in creating databases and
+agreeing on terms of use and access <<andanda-paradigm>>.
+
+[[sec-9-2-2]]
+==== Ownership of AI-based products, services and methods
+
+Products and services created with AI and big data could be patented or subject to
+other IP rights. These include algorithmic models that can be used in drug discovery
+and development and the end-products of such uses of AI, such as new medicines,
+medical devices or diagnostic methods. Thus, as noted in <<sec-3-2>>, the
+announcement by DeepMind of a new AI model, AlphaFold, may result in real progress
+in the development of new medicines but might be heavily protected by patents and
+other forms of IP and therefore not widely available. If other AI technologies and
+tools that could accelerate drug development are not placed in the public domain
+(e.g., without IP protection) and are not available for licensing on a royalty-free
+basis or under reasonable terms and conditions, the companies that own such
+technologies will exert greater power and control over the development of new
+medical technologies and services.
+
+An overlying concern in patenting (and other forms of ownership) of AI-generated
+inventions is therefore that IP rights could exclude affordable access to the
+products or services and that patent holders engage in rent-seeking behaviour to
+recuperate investments and earn outsized profits. As novel medicines, diagnostic
+methods and other products and services developed with AI may depend on publicly
+generated health data and other public-sector investments in AI and health-care
+infrastructure for identification, testing and validation, the question arises of
+whether the public investment will be rewarded, including by ensuring affordable
+access to the product. All science, including advances in AI, has been based on
+decades of publicly funded academic research.
+
+Assessing ownership is especially difficult when a product or research output is the
+result of a PPP for which governments may have provided funding and other forms of
+support but which maintain limited or no ownership of the research output. Ensuring
+a role for government in both the development of new AI technologies and the
+ownership of the outcomes would be fairer for the governments and citizens that
+contribute resources and data to collaboration with the private sector.
+
+Another concern is that issuing time-limited patent monopolies for such inventions,
+even if they encourage innovation, may discourage the companies that own AI
+technologies from considering the needs of people living in poverty in LMIC when
+developing or adapting such products. Thus, as AI is used more frequently to develop
+new technologies to improve health care, including new medicines, the use of
+incentives outside the patent system, such as those that separate the cost of
+research and development from the expectation of high prices, could encourage
+companies that develop these technologies to invest in use of AI or to adapt new
+products to meet global public health needs.
+
+Companies might refuse to disclose data that they consider an "essential facility"
+for developing, for example, a much-needed vaccine or choose to collaborate only in
+strategic areas of data application and with control of the data that are shared,
+with whom and under which conditions. This could replace healthy competition by
+collusion, with future effects on competition that are difficult to assess.
+Antitrust (competition) authorities will have to consider new approaches to address
+such issues <<minssen-challenges>>.
+
+Several legal issues will affect the patenting of AI technologies. One is whether
+AI-guided machines that develop new products or services can be considered
+inventors, which would lead to questions about defining the threshold for meeting
+the criteria for patenting an invention, such as an inventive step. Some legal
+experts have argued that recognition of machines as inventors would encourage the
+development of creative, powerful machines that can generate new innovations
+<<abbott>>. If, however, most such machines are owned by a few companies, the
+benefits of the inventions will accrue to those few companies, which will wield
+significant power through exclusive rights and use the machines to capture an entire
+field of technology. In January 2020, the European Patent Office ruled that machines
+cannot be listed as inventors under current patent laws <<epo-munich>>, and the US
+Patent and Trademark Office has issued a similar decision <<porter-us>>.
+
+Another legal issue is whether diagnostic methods and algorithms can be patented.
+While in the USA securing patent protection for diagnostic methods and mathematical
+models is highly restricted, the EU has provided several grounds for the issuance of
+patents <<aboy-patent>>. While patent monopolies could encourage the development of
+new technologies with greater medical benefits, patenting of such methods and
+services could limit their diffusion, access and benefit-sharing with the
+populations that contributed the data used to train or validate the technology.
+
+_Recommendations_
+
+[class=steps]
+. WHO should ensure clear understanding of which types of rights will apply to the
+use of health data and the ownership, control, sharing and use of algorithms and AI
+technologies for health.
+
+. Governments, research institutions and universities involved in the development of
+AI technologies should maintain an ownership interest in the outcomes so that the
+benefits are shared and are widely available and accessible, particularly to
+populations that contributed their data for AI development.
+
+. Governments should consider alternative "push-and-pull" incentives instead of IP
+rights, such as prizes or end-to-end push funding, to stimulate appropriate research
+and development.
+
+. Transparency in regulatory procedures and in interoperability should be enhanced
+and should be fostered by governments as deemed appropriate.
+
+[[sec-9-3]]
+=== Governance of the private sector
+
+The private sector plays a central role in the development and delivery of AI for
+health care. The "private sector" ranges from small start-ups to the world's largest
+technology companies, as well as companies that provide many of the materials
+necessary for AI, including health data collected by companies that supply wearable
+devices, data aggregators and software firms that write new algorithms for use in
+health care. Furthermore, many companies that were already providing products and
+services are transforming their businesses to integrate AI and big data. These
+include biopharmaceutical companies, diagnostic and medical device firms, insurance
+companies, private hospitals and health-care providers. Companies that are
+developing AI technologies for use in health care are also providing these
+applications and services outside the health-care system, raising the question of
+how such health-care provision should be regulated.
+
+This section addresses several issues related to the governance of such companies:
+To what extent should oversight and governance of the private sector be enforced by
+companies collectively or individually? What challenges and opportunities for
+effective governance are associated with PPPs for AI for health care? What are the
+challenges of oversight and governance of large technology companies involved in the
+use of AI for health? How should governments manage the growth of health-care
+services provided by companies outside the health system? How can governments ensure
+that they are effectively overseeing the private sector?
+
+[[sec-9-3-1]]
+==== The role of self-governance
+
+As companies often push the boundaries of innovation and act much more quickly than
+can be anticipated by regulators, governments and civil society, they often first
+set the rules in the code that they write, the services they design and the
+corporate practices and terms of services they offer <<west-washington>>. As some
+innovations have raised concern, companies have strengthened their internal
+processes and measures to avoid criticism and have pursued collaborations and
+partnerships. Thus, some have introduced their own ethical principles and internal
+processes for integrating ethical considerations into their business operations
+<<metcalf>>. This includes integrating ethics into the design of new technologies
+and design-related approaches to privacy and safety. Companies have also launched
+multi-stakeholder initiatives to develop best practices <<mittelstadt>>, although
+there is no such initiative yet for the use of AI for health.
+
+While integration of ethics into a company's operations is welcome, it raises as
+many concerns as hopes, the concerns including that companies may be engaging in
+"ethics-washing" and that the measures are intended to forestall regulation instead
+of adapting to oversight <<metcalf>>. In some companies, efforts by ethics teams to
+address ethical challenges and concerns may be discouraged or have repercussions.
+For example, a news report stated that Google had fired an AI ethics researcher who
+criticized Google's "approach to minority hiring and the biases built into today's
+artificial intelligence systems" <<metz>>. Even if attempts to formulate and
+integrate ethics into daily company operations are taken seriously, other challenges
+may limit their effectiveness.
+
+First, the incentives and values of AI firms and developers may differ from those of
+the patients, health-care providers and health-care systems <<metz>> that will use
+such products and services but have no role in establishing the culture or norms in
+which the products and services are developed <<cath>>. For example, large
+technology companies, which are based in only a few countries, may adopt values and
+belief systems that are not appropriate for other countries, health-care systems or
+communities. More generally, while medicine is guided by the objective of promoting
+the health and well-being of patients, an AI developer who is developing a product
+or service that provides benefits is ultimately working in the interests of the
+company to develop a profitable service or product and, in the case of publicly
+traded companies, for their shareholders <<mittelstadt>>. While medical
+professionals have a long-standing fiduciary relationship with patients, AI
+developers, however well-intentioned and with emerging expectations and legal
+obligations to protect individual privacy, have no fiduciary duty to patients or
+health-care providers. This complicates any attempt by an individual or a company to
+put the health and well-being of patients first <<mittelstadt>>.
+
+Secondly, the ethical norms adopted by companies might be difficult to translate
+into practice <<metcalf>>, either because AI developers have no suitable methods of
+doing so, as AI is a relatively new technology, or practical measures to adhere to
+high-level ethical norms may be difficult to reconcile with a culture of fast
+growth, fast failures and getting first to the market. Ethical principles may
+therefore be "watered down", modified or rendered ineffective. It may also be
+difficult to determine whether ethical norms are written into the source code for an
+AI technology, whereas, in the practice of medicine, numerous structures built over
+time, including professional societies and boards, ethics review committees,
+accreditation and licensing schemes, peer self-governance and codes of conduct,
+determine and shape what is acceptable, and bad practices and bad actors can be
+identified quickly <<mittelstadt>>.
+
+Thirdly, there are insufficient legal and professional accountability mechanisms to
+reinforce good-faith efforts of firms to turn ethical principles into practice
+<<mittelstadt>>. Unlike the medical profession, AI developers and technology firms
+have no effective self-governance mechanisms and do not face the legal penalties and
+repercussions of other professions, especially the medical profession.
+Accountability mechanisms in the medical profession reinforce its fiduciary duty to
+patients and are reinforced by sanctions to deter poor practices. AI development
+does not include professional or legally endorsed accountability mechanisms
+<<mittelstadt>>.
+
+Fourthly, it is questionable whether companies can govern their own AI products and
+services effectively to minimize any harmful direct or indirect impact on health
+care. For example, social media companies such as Facebook play an important role in
+sharing health information through platforms such as Facebook and WhatsApp. There
+has recently been significant concern about the spread of misinformation and
+disinformation on its platforms that undermines medical and public health
+information issued by governments and international agencies, and this has increased
+during the COVID-19 pandemic. The company has taken steps to address misinformation
+and disinformation, including a partnership with WHO to create a chatbot on Facebook
+Messenger and WhatsApp to provide accurate information through the WHO Global Alert
+Platform <<who-chatbot>>.
+
+A study by a not-for-profit group, Avaaz, found, however, that the spread of medical
+disinformation and misinformation on Facebook far exceeded information from
+trustworthy sources such as WHO. The most popular "super spreader" sites received
+four times more clicks than bodies such as WHO and the US Centers for Disease
+Control and Prevention <<facebook>>. According to Avaaz, this was due largely to
+amplification of public pages that featured misinformation in Facebook's algorithm.
+During the early stages of the COVID-19 pandemic, in April 2020, "disinformation
+sites attracted an estimated 420 million clicks to pages peddling harmful
+information -- such as supposed cures for SARS-CoV2" <<lee>>. Only 16% of misleading
+or false articles displayed a warning label by Facebook third-party fact-checkers
+<<lee>>. Furthermore, while Facebook has subsequently sought to address
+misinformation on COVID-19 by deleting false posts and directing users to valid
+information <<jin>>, some researchers have criticized Facebook for not identifying
+the misinformation and correcting it <<brodwin>>.
+
+The concern that a few companies manage information critical to the public good
+extends to whether such companies might withhold such information because of public
+policy or corporate disputes. In 2021, Facebook, having been unable to reach an
+agreement with the Australian Government about a new law that would require the
+company to pay news publishers for the content it placed on its site, decided to
+block users from accessing news stories on its platform <<isaac>>. The block
+included access to Australian state government health websites and prevented the
+state governments from posting on the website, even as the Government was preparing
+public announcements about vaccination against COVID-19 <<taylor-guardian>>.
+Websites that posted misinformation about vaccines were unaffected
+<<taylor-misinformation>>.
+
+None of these concerns should be a reason for companies not to invest in improving
+the design, oversight and self-regulation of their products. The improvements could
+include licensing requirements for developers of "high-risk" AI, such as that used
+in health care, which would bring AI developers in line with requirements in the
+medical profession and increase trust in their products and services. International
+standards organizations have made important contributions to improving applications
+of health information technology, from data structure and syntax to privacy and
+implementation. For instance, the International Standardization Organization
+<<iso-geneva>>, Health Level Seven International <<health7>> and other organizations
+have contributed to the governance of information technology, including machine
+learning, and such standards have been described as carrying ethical weight
+<<goodman>>.
+
+[[sec-9-3-2]]
+==== Public-private partnerships for AI for health care
+
+PPPs are common in health care, and, unsurprisingly, PPPs are emerging in the field
+of AI for health care. In one type of PPP, raw data are provided by the public
+sector, such as electronic medical records and other health data collected in
+health-care systems and hospitals, and these are used by one or more companies to
+develop products and services, such as diagnostic methods and predictive algorithms.
+
+Supporters of PPPs in both government and industry emphasize the benefit of
+leveraging the resources and innovative capacity of companies to generate products
+and services. Presumably, in such collaborations, governments can oversee the
+activities of the private companies and safeguard the public interest. There are,
+however, challenges in ensuring effective governance of the private sector. First,
+there is a significant asymmetry in information and skills between companies and
+government agencies in such partnerships. Companies often hire trained professionals
+who are well versed in the technology in question and in the parameters of a
+negotiated partnership. A second challenge is that the "social license" granted to
+the public sector for use of certain resources, such as patient data, may not extend
+to private companies, which may not be trusted and have goals and objectives that
+may not be aligned with public expectations <<ballantyne>>. Thirdly, public sector
+entities have several competing priorities that may undermine a government's ability
+to oversee the partnership effectively. A public sector entity may have difficulty
+in reconciling the objective of successful development of a new product or service,
+the obligation to protect the rights of individuals and patients and the wider
+responsibility to regulate all the operations of a private sector partner effectively.
+
+Fourthly, there is often concern that the contributions of the public sector and the
+community (technology, data, funding, expertise, testing sites) are not considered
+when allocating ownership rights (if any) to a technology between the public and
+private sector and in setting the price of such technologies or the rules under
+which the technology is used <<ballantyne>>. If the public sector and communities
+make significant contributions to a partnership but are not full beneficiaries, such
+collaborations may be considered exploitative.
+
+[[sec-9-3-3]]
+==== Governance and oversight of large technology companies
+
+Large technology companies, especially those located in China and the USA, are
+expected to play a central role in the development and deployment of AI for health,
+through partnerships, in-house development of AI or acquisition of other companies.
+The role and involvement of these companies raises further considerations for
+oversight of the private sector. Large technology companies, of which there are only
+a few, wield significant power in the field of AI because of their human, economic
+and technical resources, the data accumulated from their products and services, the
+political influence they may be able to exert through their relationships and
+partnerships with governments and their staff (see below) and their ability to use
+their platforms to introduce products and services to large numbers of users, who
+are regularly connected to their platforms.
+
+Over time, large technology companies may develop even more diversified products and
+services. Google is developing a range of diagnostic applications that are still
+being examined for safety and efficacy, and its parent holding company, Alphabet,
+has launched a new health insurance service that will work in partnership with
+SwissRe <<brownkv>>.
+
+Companies may also launch products and services that could compete with, replace or
+introduce a function or process that is usually managed by a government. Tencent has
+introduced an application that uses information voluntarily supplied by individuals
+to determine the type of health-care provider a patient should consult, partly to
+resolve a practice in China whereby patients use their own research or intuition to
+seek medical advice from specialists in areas unrelated to their condition.
+footnote:[Presentation by Alexander Ng, Tencent, 27 August 2020, to the WHO Expert
+Group on AI for health.] The growth of telemedicine is providing opportunities for
+company-owned platforms to move patients to their platforms, and they are enrolling
+doctors to provide services via the platform. For example, Tencent WeDoctor, which
+works with the Government, has enrolled at least 240&nbsp;000 providers onto its
+platform and also 2700 hospitals and 15&nbsp;000 pharmacies. At least 27 million
+monthly users consult the "health-care collaboration platform" for an AI-guided or a
+remote consultation. Users are then matched with the appropriate specialist in the
+health-care system <<ackroyd>>. This could mean that, in the long term, governments
+might not so much regulate companies that provide such services but might depend on
+them to fill gaps and manage parts of the health-care system. Technology companies
+may supply the infrastructure for operation of health-care services, which also
+creates dependence of governments on the services and capabilities of the companies,
+rather than regulating the industry to serve the needs of the government and the
+public.
+
+As noted above, technology companies have begun to issue guiding principles for the
+use of AI; however, they are sometimes viewed as "ethics washing", may create a gap
+in responsibility (assigning responsibility for retrospective harm), do not involve
+the public in their development and may be administered in a way that is not
+transparent to the public or to governments, with no involvement of the public or an
+independent authority for oversight of adherence to the principles.
+
+[[sec-9-3-4]]
+==== Provision of health care by the private sector outside the health-care system
+
+The proliferation of AI applications for health outside the health-care system may
+extend access to some health-care advice; however, such applications raise new
+questions and concerns. An application may be developed without appropriate
+reference to clinical standards; it may not be user friendly, especially for
+follow-up services or procedures; patient safety may be compromised if individuals
+are not connected to health-care services, such as lack of assistance to individuals
+with suicidal ideation who use an AI chatbot; the efficacy of applications such as
+chatbots that may not have been tested properly may be inadequate; and applications
+may not meet the standards of privacy required for sensitive health data
+<<ackroyd>>. As such applications are not necessarily labelled as health-care
+services and may not even be known to governments, the overall quality of health
+care could be compromised, and people with no other options may be relegated to
+subpar services. Governments should identify these applications, set common
+standards and regulations (or even prevent some applications from being deployed to
+the public) and ensure that individuals who use the applications retain access to
+appropriate health-care services that cannot be provided online.
+
+[[sec-9-3-5]]
+==== An enabling environment for effective governance of the private sector
+
+Appropriate governance of the private sector must overcome a number of hurdles. One
+is the power of many of the companies involved in delivering AI for health care.
+Many of them employ former government officials and regulators, who are asked to
+lobby and influence policy-makers and regulators charged with overseeing the use of
+AI for health care. This can affect the ability of governments to act independently
+of companies.
+
+A second challenge is that many of the technologies developed by companies are
+increasingly difficult to evaluate and oversee, partly because of their growing
+complexity, including the use of black-box algorithms and deep learning methods. The
+growing complexity has encouraged both governments and companies to consider models
+of "co-regulation", whereby each party relies on the other to assess and regulate a
+technology. While such models of oversight may assist governments in understanding a
+technology, they may limit the government's exercise of independent judgement and
+encourage them to trust that companies are willing to strictly self-regulate their
+practices.
+
+Improving governance of the private sector in other ways will require more
+independent in-house expertise and information so that governments can evaluate and
+regulate company practices effectively. Thus, capacity-building of government
+regulators and transparency will both play roles in improving government oversight
+of the private sector. Such measures could include greater transparency of the data
+collected and used by private companies, how ethical and legal principles are
+integrated into company operations and how products and services perform in
+practice, including how algorithms change over time.
+
+_Recommendations_
+
+[class=steps]
+. Governments should ensure that the growing provision of health-related services
+through online platforms that are not associated with the formal health-care system
+is identified, regulated (including standards of privacy protection guaranteed
+within health-care systems) and avoided for areas of health care in which the safety
+and care of patients cannot be guaranteed. Governments should ensure that patients
+who use such services also have access to appropriate formal health-care services
+when required.
+
+. Governments should consider adopting models of co-regulation with the private
+sector to understand an AI technology, without limiting independent regulatory
+oversight. Governments should also consider building their internal capacity to
+effectively regulate companies that deploy AI technologies and improve the
+transparency of a company's relevant operations.
+
+. Governments should consider establishing dedicated teams to conduct objective peer
+reviews of software and system implementation by examining safety and quality or
+general system functionality (fitness for purpose) without requiring review or
+approval of a code.
+
+. Governments should consider which aspects of health-care delivery, financing,
+services and access could be supplied by companies, how to hold them accountable and
+which aspects should remain the obligation of governments.
+
+. Public-Private Partnerships (PPPs) that develop or deploy AI technologies for
+health should be transparent (including in the terms and conditions of any agreement
+between a government and a company) through meaningful engagement by the public.
+Such partnerships should prioritize protection of individual and community rights
+and governments should seek ownership rights to products and services so that the
+outcomes of the PPP are affordable and available to all.
+
+. Companies must adhere to national and international laws and regulations on the
+development, commercialization and use of AI for health systems, including legally
+enforceable human rights and ethical obligations, data protection laws, measures to
+ensure appropriate informed consent and privacy.
+
+. Companies should invest in measures to improve the design, oversight, reliability
+and self-regulation of their products. Companies should also consider licensing or
+certification requirements for developers of "high-risk" AI, including AI for health.
+
+. Companies should ensure the greatest possible transparency in their internal
+policies and practices that implicate their legal, ethical and human rights
+obligations as established under the UN Guiding Principles on Business and Human
+Rights. They should be transparent about how those ethical principles are
+implemented in practice, including the outcomes of any actions taken to address
+violations of such principles.
+
+[[sec-9-4]]
+=== Governance of the public sector
+
+Use of AI in the public sector has increased recently, although it lags behind
+adoption by the private sector. In 2019, OECD identified 50 countries that have
+launched or are planning to launch national AI strategies, of which 36 plan to or
+have issued separate strategies for public sector AI <<hello-world>>. In 2017, the
+United Arab Emirates was the first country in the world to have a designated
+minister for AI, which has resulted in increased use of AI in the health-care
+system, such as "pods" to detect early signs of illness, AI-enabled telemedicine and
+use of AI to detect diabetic retinopathy <<ai-uae>>. Although use of AI has
+increased in the public sector, a review of nearly 1700 studies found only 59 on use
+of AI in the public sector <<hello-world>>. There is no comprehensive account of how
+governments are advancing the use of AI or integrating it into health care. The OECD
+identified six broad roles for governments in AI, as a:
+
+* financier or direct investor in AI technologies in both the public and the private
+sector;
+
+* "smart buyer" and co-developer, including PPPs and other forms of collaboration
+with companies;
+
+* regulator or rule-maker;
+
+* convenor and standard setter;
+
+* data steward; and
+
+* user and services provider.
+
+This section briefly addresses how governments should use AI ethically as investors
+in AI technologies, as smart buyers and/or co-developers and as users and service
+providers. It also addresses concern about ethics and human rights with increased
+use of AI to manage social protection and welfare, programmes that often directly
+influence access to health-care services and indirectly affect human health and
+well-being.
+
+[[sec-9-4-1]]
+==== Assessing whether AI is necessary and appropriate for use in the public sector
+
+As for any use of AI by health professionals, governments must assess whether an AI
+technology is necessary and appropriate for the intended use and can be used
+according to its laws. The assessment could include an evaluation of whether use of
+AI is appropriate. In India, the Government's internal think tank, Niti Aayog, has
+proposed constitution of an ethics committee to review procurement of AI in the
+public sector. According to a draft proposal released in 2020, the committee "may be
+constituted for the procurement, development, operations phase of AI systems and be
+made accountable for adherence to the Responsible AI principles" <<wd-aiforall>>. A
+requirement that both ministries of health and public and private health-care
+providers observe legal and ethical standards in the procurement of AI can encourage
+appropriate design of AI technologies and provide a safeguard against harm.
+
+The Government of the United Kingdom has established an analytical framework for use
+of AI <<assessing-ai>>, which consists of the following: whether the available data
+contain the required information; if it is ethical and safe to use the data and
+consistent with the Government's data ethics framework; if there are sufficient data
+for training AI; whether the task is too large or repetitive for a human to
+undertake without difficulty; and whether AI will provide information that a team
+could use to achieve real-world outcomes.
+
+[[sec-9-4-2]]
+==== Accountability through transparency and participation
+
+Governments are increasingly required to disclose the use of algorithms in services
+and operations in order to promote accountability for the use of AI, and many data
+protection laws require that decisions not be taken solely by automated systems and
+that use of automated decision-making be prevented in certain contexts. In France,
+the Government is required to provide a general explanation of how any algorithm it
+uses functions, personalized explanations of decisions issued by algorithms,
+justification for decisions and publication of the source code and other
+documentation about the algorithms <<hello-world>>.
+
+In general, there is growing expectation that governments will be transparent about
+their use of AI, including whether they are investing in AI, engaged in partnerships
+with companies or developing AI independently in state-owned enterprises or
+government agencies. It is also expected that governments will be transparent about
+any harm caused by use of AI and the measures taken to redress any harm. A review
+conducted by the United Kingdom Committee on Standards in Public Life found that the
+British Government (during the period examined) had not met established principles
+of openness and noted that "under the principle of openness, a current lack of
+information about government use of AI risks undermining transparency" <<spl-london>>.
+
+Yet, transparency may not be sufficient to ensure that government use of algorithms
+will not result in undue harm, especially for marginalized communities and
+populations. Greater public participation by a wide range of stakeholders is
+necessary to ensure that decisions about the introduction of an AI system in health
+care and elsewhere are not taken only by civil servants and companies but are based
+on public participation of a wider range of stakeholders, including representatives
+of public interest groups and leaders of vulnerable groups that are often not
+involved in making such decisions. Their perspectives should be obtained before and
+not only after identification of an adverse effect, which is too late.
+
+[[sec-9-4-3]]
+==== Appropriate collection, stewardship and use of data
+
+The collection, storage and use of data according to ethical and legal standards
+also applies to governments. Government use of data is prone to abuse, whether
+through the sale or provision of data to private companies that violates the public
+trust or sharing data obtained or collected for health-care purposes in other
+government programmes, including enforcement of immigration laws or criminal
+justice. Such health data, which often include information on location or behaviour,
+can then be used to infringe on civil liberties directly. These uses of data
+undermine trust in the health-care system and the willingness of individuals to
+provide data and use AI technologies that are intended to improve the administration
+of health care and medicine.
+
+Governments also face risks of bias in data that are collected for the development
+of AI for use in the public sector. The obligation of the public sector to remain
+objective may be undermined, as the "prevalence of data bias risks embedding and
+amplifying discrimination in everyday public sector practice" <<martinho>>. The
+review of use of AI in the public sector in the United Kingdom also found that "data
+bias is an issue of serious concern, and further work is needed on measuring and
+mitigating the impact of bias" <<spl-london>>.
+
+[[sec-9-4-4]]
+==== Risks and opportunities in use of AI for provision of public services and social protection
+
+Governments have used AI to provide public services, including assessment of whether
+an individual qualifies for certain services, in what is known generally as the
+"digital welfare state". Thus, digital data and technologies are used to automate,
+predict, identify or disqualify potential recipients of social welfare. While some
+have championed this use of AI as a means of eliminating redundant and repetitive
+tasks that both saves resources and gives government employees more time to address
+more difficult issues <<martinho>>, there is concern that the digital welfare state
+could undermine access to social services and welfare and especially affect poor and
+marginalized populations. According to a report by the United Nations Special
+Rapporteur on extreme poverty and human rights, the digital welfare state could
+become a "digital dystopia", constricting budgets intended for the provision of
+services, limiting those who qualify for government services, creating new
+conditionality and introducing new sanctions to discourage the use of services
+<<dt-geneva>>. The report also notes that administering a welfare state through a
+digital ecosystem can exacerbate inequality, as many poor and marginalized
+individuals do not have adequate access to online services <<dt-geneva>>. Although
+the report does not discuss use of AI to provide or refuse health-care services,
+such use could affect the provision of health care in the public sector or, for
+example, the provision of health insurance through the public or private sector.
+
+_Recommendations_
+
+[class=steps]
+. Governments should conduct transparent, inclusive impact assessments before
+selecting or using any AI technology for the health sector and regularly during
+deployment and use. This should consist of ethics, human rights, safety, and data
+protection impact assessments. Governments should also define legal and ethical
+standards for procurement of AI technologies and require public and private
+health-care providers to integrate those standards into their procurement practices.
+
+. Governments should be transparent about the use of AI for health, including
+investment in use, partnerships with companies and development of AI in state-owned
+enterprises or government agencies, and should also be transparent about any harm
+caused by use of AI.
+
+. Governments and national health authorities should ensure that decisions about
+introducing an AI system for health care and other purposes are taken not only by
+civil servants and companies but with the democratic participation of a wide range
+of stakeholders and in response to needs identified by the public health sector and
+patients. They should include representatives of public interest groups and leaders
+of marginalized groups, who are often not considered in making such decisions.
+
+. Governments should develop and implement ethical, legally compliant principles for
+the collection, storage and use of data in the health sector that are consistent
+with internationally recognized data protection principles. In particular,
+governments should take steps to avoid risks of bias in data that are collected and
+used for development and deployment of AI in the public sector.
+
+. Governments should ensure that any use of AI to facilitate access to health care
+is inclusive, such that uses of AI do not exacerbate existing health and social
+inequities or create new ones.
+
+[[sec-9-5]]
+=== Regulatory considerations
+
+The largest national regulatory agencies, such as the Food and Drug Administration
+in the USA, have been developing guidance and protocols to ensure the safety and
+efficacy of new AI technologies; however, other regulatory agencies may have neither
+the capacity nor the expertise to approve use of such devices. A WHO working group
+has been formed to address regulatory considerations for the use of AI for health
+care and drug development and will issue a report and recommendations in 2021. The
+present guidance identifies several ethical concerns that could be addressed by
+regulatory agencies and the challenges that could arise.
+
+[[sec-9-5-1]]
+==== Does regulation stifle innovation?
+
+It is commonly asserted that stringent regulations will limit innovation and deprive
+health-care systems, providers and patients of beneficial innovations. A balance
+must be struck between protecting the public and promoting growth and innovation
+<<ai-healthcare>>. Use of AI for health is still new and often untested, and
+policy-makers and regulators must consider numerous ethical, legal and human rights
+issues. For example, regulators must identify those applications and AI-based
+devices that may be best described as "snake oil", a euphemism for deceptive
+marketing, health-care fraud or a scam, which either misrepresents what an
+application can do, provides misinformation or persuades vulnerable individuals to
+follow health advice that may be contrary to their well-being <<derrington>>.
+
+Applications that provide no therapeutic or health benefit might be introduced
+solely for collecting health and biological data for use in commercial marketing or
+to encourage patients to pay for irrelevant or unproven health interventions
+<<ftd-twitter>>. For example, an academic obtained data from 300&nbsp;000 Facebook
+users who were told that the data were for a "psychological test". Their data and
+data from an estimated 50 million other users linked to them (Facebook "friends")
+were then sold to Cambridge Analytica, which used them to build a software program
+to predict and influence choices at the ballot box <<revealed-guardian>>. Such
+malicious use of data collected nominally for academic or health purposes could
+expose health systems, health providers and companies that provide health-related AI
+services to significant risk.
+
+Regulation could differ according to risk, such that those who are especially
+vulnerable, including people with mental illness, children and the elderly, are
+protected from misinformation and bad advice from health applications that exploit
+rather than assist such individuals <<ai-healthcare>>. People living in
+resource-poor settings, in countries with inadequate resources to regulate and
+monitor adverse consequences of AI applications and with diseases that result in
+marginalization and discrimination, such as HIV/AIDS or tuberculosis, also require
+greater protection and oversight by regulatory agencies than users of applications
+for lifestyle or wellness.
+
+[[sec-9-5-2]]
+==== Transparency and explainability of AI-based devices
+
+The black box of machine learning creates challenges for regulators, who may be
+unable to fully assess new AI technologies because the standard measures used to
+assess the safety and efficacy of medical technologies and scientific understanding
+and clinical trials are not appropriate for black-box medicine <<price-app>>.
+Complex algorithms are difficult for regulators to understand (partly because of
+lack of expertise in regulatory agencies) and difficult for developers to explain.
+
+Improving the scientific understanding (explainability) of an algorithm is
+considered necessary to ensure that regulators (and clinicians and patients)
+understand how a system arrives at a decision. Explainability is also a requirement
+of the EU's GDPR and is being introduced into legislation in other countries
+experiencing proliferation of AI for health care and other fields <<mcnair-price>>. It has
+been argued that, if a trade-off is to be made between transparency and accuracy,
+transparency should predominate. This requirement may, however, not be possible or
+even desirable in the medical context. While it is often possible to explain why a
+specific treatment is the best option for a specific condition, it is not always
+possible to explain how that treatment works or its mechanism of action, because
+medical interventions are sometimes used before their mode of action is understood.
+
+Trust in decisions and expert recommendations depends on the ability of experts to
+explain why a certain system is the best option for achieving a clinical goal. Such
+explanations should be based on reliable evidence of the superior accuracy and
+precision of an AI system over alternatives. The evidence should be generated by
+prospective testing of the system in randomized trials and not their performance
+against existing datasets in a laboratory.
+
+Understanding how a system arrives at judgements may be valuable for a variety of
+reasons, but it should not take precedence over or replace sound, prospective
+evidence of the system's performance in prospective clinical trials. Explanations of
+how a system arrives at a particular decision could encourage use of
+machine-learning systems for purposes for which they are not well suited, as the
+models created by such systems are based on associations among a wide range of
+variables, which are not necessarily causal. If the associations are causal,
+practitioners might rely on them to make decisions for which the system has not been
+tested or validated. Requiring every clinical AI decision to be "explainable" could
+also limit the capacity of AI developers to use AI technologies that outperform
+older systems but which are not explainable <<mcnair-price>>.
+
+Clinical trials provide assurance that unanticipated hazards and consequences of
+AI-based applications can be identified, addressed and avoided entirely, and
+additional testing and monitoring of an approved AI device can demonstrate its
+performance and any changes that may occur after it has been approved. Clinical
+trials, especially those carried out with diverse populations, can also indicate
+whether an AI technology is biased against certain sub-groups, races or ethnicities
+(see below). Clinical trials may not, however, be appropriate because of their cost,
+because it takes a long time to conduct a trial properly, because the validity of
+the results may be called into question if an algorithm is expected to change over
+time with new data, and because AI-based technologies and products are increasingly
+personalized to smaller populations and therefore more difficult to test with enough
+individuals <<price-app>>.
+
+Clinical trial designs and statistical analysis strategies should be re-evaluated,
+and innovation should be encouraged in these areas of AI validation. While AI should
+properly be validated in clinical trials or other applicable ways, AI itself could
+potentially allow even more accurate trials of device or drug effectiveness with
+smaller patient populations through enhanced patient-trial matching, data analytics
+efficiency and other approaches. This might become relevant during the COVID-19
+pandemic as recruitment and access to health-care facilities is challenged.
+
+Regulators could introduce "lighter premarket scrutiny" in the place of clinical
+trials for AI technologies for health, by assessing the safeguards put in place by
+developers, the quality of the data used, development techniques, validation
+procedures and "robust post-market oversight". This might, however, be difficult to
+implement in practice, especially post-market oversight of novel algorithms
+<<price-app>>, and may be too late to prevent harm to people who are especially
+vulnerable, such as those who have no access to a health-care provider who could
+protect them from a misguided diagnosis or advice. The transparency of the initial
+dataset could be improved, including the provenance of the data and how they were
+processed, as could the transparency of the system architecture <<vayenae>>. Such
+transparency would allow others to validate an AI technology independently and
+increase the trust of users.
+
+While greater transparency of the components of an AI system, including its source
+code, data inputs and analytical approach, can facilitate regulatory oversight, some
+transparency may misplace focus. Reviewing lines of code would be time-consuming and
+unlikely to be informative in comparison with the performance, functionality and
+accuracy of the system both before and after it is integrated into a health-care
+system.
+
+[[sec-9-5-3]]
+==== Addressing bias
+
+Regulatory agencies should create incentives to encourage developers to identify and
+avoid biases. One example is the addition of measures to a precertification
+programme hosted by the US Food and Drug Administration, the Digital Health
+Innovation Action Plan <<vayena-machine-learning>>. The programme already assesses
+medical software on the basis of criteria of excellence, including quality. The
+criteria for quality and other criteria set by regulatory agencies could include the
+risk of bias in training data <<vayena-machine-learning>>. Robust post-marketing
+surveillance to identify biases in machine-learning algorithms, including in
+collaboration with providers and communities likely to be affected by biased
+algorithms, could improve regulatory oversight.
+
+[[sec-9-5-4]]
+==== Ethical considerations for LMIC and HIC with poor health outcomes
+
+LMIC often have insufficient regulatory capacity, so that they are unable to assess
+the safety and efficacy of new technologies. Regulatory agencies in LMIC could
+consider either relying on regulatory approval of AI technologies in HIC or use of
+collaborative registration procedures to ensure that new technologies are
+appropriate for use. Global harmonization of regulatory standards would ensure that
+all countries benefit from rigorous testing, transparent communication of outcomes
+and monitoring of a technology's performance. International harmonization of
+regulatory standards, based on those of HIC, or reliance on other regulatory
+agencies or the assurances of product developers is founded on the assumption that
+the criteria used to develop or assess a new technology in HIC is appropriate for
+LMIC contexts and populations. This may not be the case, and it is likely that AI
+health technologies cannot be transposed between divergent settings, including
+between LMIC and HIC <<vayenae>>. This may be due not only to the types of data used
+to train the algorithm but also to the assumptions and definitions used in
+developing an AI technology, such as what constitutes "healthy", which may be
+defined by a small group of developers located in one company or country and
+validated by regulators in HIC with no consideration of whether the assumptions are
+appropriate for LMIC <<morley>>.
+
+Regulators may also make assumptions about the context in which an AI technology was
+introduced. AI technologies may have "contextual bias", whereby the algorithms may
+not recommend safe, appropriate or cost-effective treatments for low-income or
+low-resource settings <<minssen-regulatory>> or for countries that have resources
+but in which segments of the population still have poor health outcomes, as is often
+the case in some HIC. The developer of a technology for a high-income setting in
+which most of the population have good health outcomes may neither anticipate nor
+build an AI technology to anticipate differences from LMIC settings or from other
+HIC with poor health outcomes, and a regulator, even if it requires prospective
+clinical trials, may not require data on how the technology operates in LMIC or
+certain high-income settings.
+
+While the transparency of the data used to train algorithms, the context in which an
+algorithm is trained and other material assumptions are necessary, they may only
+delay use of an AI technology, thus avoiding harm, but not bestow any benefit.
+Improving the performance and use of AI technologies in LMIC and certain HIC and
+ensuring that the technologies are adapted to reality will require different
+incentives, approaches and developers of technologies that are appropriate for all
+people <<minssen-regulatory>>.
+
+_Recommendations_
+
+[class=steps]
+. Governments should introduce and enforce regulatory standards for new AI
+technologies to promote responsible innovation and to avoid the use of harmful,
+insecure or dangerous AI technologies for health.
+
+. Government regulators should require the transparency of certain aspects of an AI
+technology, while accounting for proprietary rights, to improve oversight and
+assurance of safety and efficacy. This may include an AI technology's source code,
+data inputs and analytical approach.
+
+. Government regulators should require that an AI system's performance be tested and
+sound evidence obtained from prospective testing in randomized trials and not merely
+from comparison of the system with existing datasets in a laboratory.
+
+. Government regulators should provide incentives to developers to identify, monitor
+and address relevant safety- and human rights-related concerns during product design
+and development and should integrate relevant guidelines into precertification
+programmes. Regulators should also mandate or conduct robust marketing surveillance
+to identify biases.
+
+[[sec-9-6]]
+=== Policy observatory and model legislation
+
+As AI plays a more prominent role in health systems, governments are introducing
+national policies and laws to govern its use in health. To ensure that such laws and
+policies address the ethical concerns and the opportunities associated with use of
+AI, the OECD launched a policy observatory in 2020 that "aims to help countries
+enable, nurture and monitor the responsible development of trustworthy artificial
+intelligence systems for the benefit of society" <<ai-policy>>.
+
+WHO supports such initiatives and, on the basis of the ethical principles and
+findings outlined in this document, is exploring collaboration with the OECD on a
+policy observatory to identify and analyse relevant policies and laws. It is
+critical that WHO collaborate with other well-placed intergovernmental organizations
+with wider membership, including of LMIC, such as other United Nations agencies. WHO
+may also consider issuing model legislation as a reference for governments to
+develop their own laws to ensure appropriate protection, regulations, rules and
+safeguards to build the trust of the general public, providers and patients in the
+use of AI in health-care systems, and, for example, for the management of data and
+information in ways that improve the accuracy and utility of AI while not
+compromising privacy, confidentiality or informed consent.
+
+_Recommendations_
+
+[class=steps]
+. WHO should work in a coordinated manner with appropriate intergovernmental
+organizations to identify and formulate laws, policies and best practices for
+ethical development, deployment and use of AI technologies for health.
+
+. WHO should consider issuing model legislation to be used as a reference for
+governments that wish to build an appropriate legal framework for the use of AI for
+health.
+
+[[sec-9-7]]
+=== Global governance of artificial intelligence
+
+AI is playing an ever-expanding role worldwide. AI has already contributed US$ 2
+trillion to global gross domestic product, which could rise to more than US$ 15
+trillion by 2030 <<raoas>>. The importance of AI can also be measured by the
+positive or negative role it might play in achievement of the Sustainable
+Development Goals. According to one study, AI could enable accomplishment of 134 of
+the targets but inhibit achievement of 59 targets <<vinuesa>>.
+
+Ethical principles, regulatory frameworks and national laws on AI continue to
+proliferate, providing a form of governance; however, the ethical principles and
+guidance on adherence to international human rights obligations related to AI remain
+nascent and differ widely among countries, in the public and the private sector and
+between governments and companies; the platforms of several companies boast more
+users or subscribers than those of the most populous countries. Thus, company
+standards influence the control of many AI technologies, including those used in
+health care.
+
+With the increase in AI standards and laws around the world and diffusion of how and
+where AI ethics is managed, additional international oversight and enforcement may
+be necessary to ensure convergence on a core set of principles and requirements that
+meet ethical principles and human rights obligations. Otherwise, the short-term
+economic gains that could be made with AI could encourage some governments and
+companies to ignore ethical requirements and human rights obligations and engage in
+a "race to the bottom".
+
+First, technical advice from and the engagement of WHO and other intergovernmental
+organizations such as the Council of Europe, OECD and UNESCO and respect for ethical
+principles and human rights standards can ensure that companies and governments both
+move towards common high standards <<davisslm>>. In the domain of global health,
+this will also require that major global health bodies, such as WHO, the Global Fund
+to Fight AIDS, Tuberculosis and Malaria, United Nations development agencies and
+foundations, agree on a common position about the risks associated with these
+technologies and clearly commit themselves to adherence to human rights and ethical
+standards as a core principle of all strategies and guidance <<davisslm>>.
+
+Secondly, global governance could strengthen the voice and role of LMIC, which are
+less involved in developing AI technologies or in setting international principles.
+LMIC also lag in use of AI, including in health, partly because of the enduring
+digital divide, and may not yet have the capacity to regulate use of AI. Thus,
+global governance could improve access to information and communication and digital
+technologies in LMIC, guide LMIC governments in accurate assessment of the benefits
+and risks of AI technologies and hold companies accountable for their practices in
+LMIC.
+
+Thirdly, global governance could ensure that all governments can adapt to the
+changes that will be wrought as these technologies become ever more sophisticated
+and powerful. Independent scientific advice and evidence will be necessary as AI
+technologies evolve and are translated into policy guidance. For the use of AI for
+health, it is critical that global health agencies promote only those AI
+technologies that have been rigorously tested and validated as health interventions
+by an appropriate authority, such as WHO, and assessed for risks <<davisslm>>.
+
+Global governance of use of AI for health will consist partly of adapting governance
+structures, including the policies and practices of global health agencies,
+treatment guidelines issued by WHO and global agreements to meet certain health
+objectives, such as eliminating HIV and AIDS by 2030. Furthermore, global standards
+should be set for all ethical concerns of AI for health, such as impacts on labour,
+data governance, privacy, ownership and autonomous decision-making.
+
+As for the use of many other health technologies, nongovernmental organizations and
+community groups will play critical roles in ensuring that human rights obligations
+and ethical principles are considered from the onset of decision-making and
+respected in practice and that governments and companies introduce appropriate
+safeguards to prevent and respond to any risks and swiftly redress any negative
+consequences of the use of AI. Civil society and affected communities should
+participate in the design of AI technologies, and international organizations should
+work with nongovernmental organizations and affected populations to develop and
+mainstream guidance for governments and companies.
+
+Several efforts have been made to improve global governance of AI, including the
+joint initiative of the governments of Canada and France to establish the Global
+Partnership on AI in June 2020, which now comprises 19 countries. It is intended to
+convene global AI experts and provide guidance on AI topics, including the future of
+work, data and privacy <<ai-canada>>. Its first summit was held in December 2020
+<<global-partnership>>.
+
+Such welcome bilateral and multilateral initiatives should feed into global
+processes based on the perspectives of all countries. For example, the United
+Nations Secretary-General's Roadmap for digital cooperation <<report-nyc>>
+recommended in 2019
+
+[quote]
+____
+creating a strategic and empowered multi-stakeholder high-level body, building on
+the experience of the existing multi-stakeholder advisory group, which would address
+urgent issues, coordinate follow-up action on Forum discussions and relay proposed
+policy approaches and recommendations from the Forum to the appropriate normative
+and decision-making forums.
+____
+
+Such a multi-stakeholder body would contribute to the wider governance and
+standard-setting required for AI and provide means for addressing many of the
+challenges and questions related to the ethics and governance of the use of AI for
+health.
+
+_Recommendations_
+
+[class=steps]
+. Governments should support global governance of AI for health to ensure that the
+development and diffusion of AI technologies is in accordance with the full spectrum
+of ethical norms, human rights protection and legal obligations.
+
+. Global health bodies such as WHO, Gavi, the Vaccines Alliance, the Global Fund to
+Fight AIDS, Tuberculosis and Malaria, Unitaid and major foundations should commit
+themselves to ensuring that adherence to human rights obligations, legal safeguards
+and ethical standards is a core obligation of all strategies and guidance.
+
+. International agencies, such as the Council of Europe, OECD, UNESCO and WHO,
+should develop a common plan to address the ethical challenges and the opportunities
+of using AI for health, for example through the United Nations Interagency Committee
+on Bioethics. The plan should include providing coherent legal and technical support
+to governments to comply with international ethical guidelines, human rights
+obligations and the guiding principles established in this document.
+
+. Governments and international agencies should engage nongovernmental and community
+organizations, particularly for marginalized groups, to provide diverse insights.
+
+. Civil society should participate in the design and use of AI technologies for
+health as early as possible in their conceptualization.

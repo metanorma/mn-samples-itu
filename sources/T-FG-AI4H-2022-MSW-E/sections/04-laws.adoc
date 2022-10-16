@@ -1,0 +1,264 @@
+[[sec-4]]
+== Laws, policies and principles that apply to artificial intelligence for health
+
+Laws, policies and principles for regulating and managing the use of AI and
+specifically use of AI for health are fragmented and limited. Numerous principles
+and guidelines have been developed for application of "ethical" AI in the private
+and public sectors and in research institutions <<jobin>>; however, there is no
+consensus on its definition, best practices or ethical requirements, and different
+legal regimes and governance models are associated with each set of principles.
+Other norms, rules and frameworks also apply to use of AI, including human rights
+obligations, bioethics laws and policies, data protection laws and regulatory
+standards. These are summarized below and discussed elsewhere in the document.
+<<sec-5>> provides a set of guiding principles agreed by the WHO Expert Group by
+consensus, on which this analysis and findings are based.
+
+[[sec-4-1]]
+=== Artificial intelligence and human rights
+
+Efforts to enumerate human rights and to fortify their observance through explicit
+legal mechanisms are reflected in international and regional human rights
+conventions, including the Universal Declaration on Human Rights, the International
+Covenant on Economic, Social and Cultural Rights (including General Comment No. 14,
+which defines the right to health), the International Covenant on Civil and
+Political Rights and regional human rights conventions, such as the African Charter
+on Human and People's Rights, the American Convention on Human Rights and the
+European Convention on Human Rights. Not all governments have acceded to key human
+rights instruments; some have signed but not ratified such charters or have
+expressed reservations to certain provisions. In general, however, human rights
+listed in international instruments establish a baseline for the protection and
+promotion of human dignity worldwide and are enforced through national legislation
+such as constitutions or human rights legislation.
+
+Machine-learning systems could advance human rights but could also undermine core
+human rights standards. The Office of the High Commissioner for Human Rights has
+issued several opinions on the relation of AI to the realization of human rights. In
+guidance issued in March 2020, the Office noted that AI and big data can improve the
+human right to health when "new technologies are designed in an accountable manner"
+and could ensure that certain vulnerable populations have efficient, individualized
+care, such as assistive devices, built-in environmental applications and robotics
+<<new-tech>>. The Office also noted, however, that such technologies could
+dehumanize care, undermine the autonomy and independence of older persons and pose
+significant risks to patient privacy -- all of which are contrary to the right to
+health <<new-tech>>.
+
+In February 2021, in a speech to the Human Rights Council, the United Nations
+Secretary-General noted a number of concerns for human rights associated with the
+growing collection and use of data on the COVID-19 pandemic and called on
+governments to "place human rights at the centre of regulatory frameworks and
+legislation on the development and use of digital technologies" <<secretary>>. Human
+rights organizations have interpreted and, when necessary, adapted existing human
+rights laws and standards to AI assessment and are reviewing them in the face of the
+challenges and opportunities associated with AI. The Toronto Declaration <<toronto>>
+addresses the impact of AI on human rights and situates AI within the universally
+binding, actionable framework of human rights laws and standards; it provides
+mechanisms for public and private sector accountability and the protection of people
+from discrimination and promotes equity, diversity and inclusion, while safeguarding
+equality and effective redress and remedy.
+
+In 2018, the Council of Europe's Committee of Ministers issued draft recommendations
+to Member States on the impact of algorithmic systems on human rights
+<<human-rights>>. The Council of Europe is further examining the feasibility and
+potential elements of a legal framework for the development, design and application
+of digital technologies according to its standards on human rights, democracy and
+the rule of law.
+
+Legal frameworks for human rights, bioethics and privacy adopted by countries are
+applicable to several aspects of AI for health. They include Article 8 of the
+European Convention on Human Rights: the right to respect for private and family
+life, home and correspondence <<ec-human-rights>>; the Oviedo Convention on Human
+Rights and Biomedicine, which covers ethical principles of individual human rights
+and responsibilities <<protection-human-rights>>; the Convention for the Protection
+of Individuals with Regard to Automatic Processing of Personal Data
+<<protection-individuals>> and guidelines on the protection of individuals with
+regard to the processing of personal data in a world of big data, prepared by the
+Consultative Committee of Convention 108+ <<protection-individuals>>.
+
+Yet, even with robust human rights standards, organizations and institutions
+recognize that better definition is required of how human rights standards and
+safeguards relate and apply to AI and that new laws and jurisprudence are required
+to address the interaction of AI and human rights. New legal guidance has been
+prepared by the Council of Europe. In 2019-2020, the Council established the Ad-hoc
+Committee on Artificial Intelligence to conduct broad multi-stakeholder
+consultations in order to determine the feasibility and potential elements of a
+legal framework for the design and application of AI according to the Council of
+Europe's standards on human rights, democracy and the rule of law. Further, in 2019,
+the Council of Europe released Guidelines on artificial intelligence and data
+protection <<guide-ai-protection>>, also based on the protection of human dignity
+and safeguarding human rights and fundamental freedom. In addition, the ethical
+charter of the European Commission for Efficiency of Justice includes five
+principles relevant to use of AI for health <<ethical-charter>>.
+
+[[sec-4-2]]
+=== Data protection laws and policies
+
+Data protection laws are "rights-based approaches" that provide standards for
+regulating data processing that both protect the rights of individuals and establish
+obligations for data controllers and processors. Data protection laws also
+increasingly recognize that people have the right not to be subject to decisions
+guided solely by automated processes. Over 100 countries have enacted data
+protection laws. One well-known set of data protection laws is the General Data
+Protection Regulation (GDPR) of the European Union (EU); in the USA, the Health
+Insurance Portability and Accountability Act, enacted in 1996, applies to privacy
+and to the security of health data.
+
+Some standards and guidelines are designed specifically to manage the use of
+personal data for AI. For example, the Ibero-American Data Protection Network, which
+consists of 22 data protection authorities in Portugal and Spain and in Mexico and
+other countries in Central and South America and the Caribbean, has issued General
+Recommendations for the Processing of Personal Data in Artificial Intelligence
+<<personal-data-ai>> and specific guidelines for compliance with the principles and
+rights that govern the protection of personal data in AI projects <<compliance-ai>>.
+
+[[sec-4-3]]
+=== Existing laws and policies related to health data
+
+Several types of laws and policies govern the collection, processing, analysis,
+transfer and use of health data. The Council of Europe's Committee of Ministers
+issued a recommendation to Member States on the protection of health-related data in
+2019 <<cm-rec>>, and the African Union's convention on cybersecurity and personal
+data protection [2014] <<african-union>> requires that personal data involving
+genetic information and health research be processed only with the authorization of
+the national data protection authority through the Personal Data Protection
+Guidelines for Africa <<internet-society>>. Generally, the African continent's
+digital transformation strategy <<digital-africa>> encourages African Union Member
+States to "have adequate regulation; particularly around data governance and digital
+platforms, to ensure that trust is preserved in the digitalization". In February
+2021, the African Academy of Sciences and the African Union Development Agency
+released recommendations for data and biospecimen governance in Africa to promote a
+participant-centred approach to research involving human participants, while
+enabling ethical research practices on the continent and providing guidelines for
+governance <<biospecimen>>.
+
+Laws that govern the transfer of data among countries include those defined in trade
+agreements, intellectual property (IP) rules for the ownership of data and the role
+of competition law and policy related to the accumulation and control of data
+(including health data). These are discussed in detail later in this document.
+
+[[sec-4-4]]
+=== General principles for the development and use of artificial intelligence
+
+An estimated 100 proposals for AI principles have been published in the past decade,
+and studies have been conducted to identify which principles are most cited
+<<zengy>>. In one study of mapping and analysis of current principles and guidelines
+for ethical use of AI, convergence was found on transparency, justice, fairness,
+non-maleficence and responsibility, while other principles such as privacy,
+solidarity, human dignity and sustainability were under-represented <<jobin>>.
+
+Several intergovernmental organizations and countries have proposed such principles
+(Box 1).
+
+[%unnumbered]
+|===
+.<a| *Box 1 -- Examples of AI ethics principles proposed by intergovernmental
+organizations and countries*
+
+The Recommendations of the OECD Council on Artificial Intelligence <<oecd-legal>>,
+the first intergovernmental standard on AI, were adopted in May 2019 by OECD's 36
+member countries and have since been applied by a number of partner economies. The
+OECD AI principles <<going-digital>> provided the basis for the AI principles
+endorsed by G20 governments in June 2019 <<eee-digital>>. While OECD recommendations
+are not legally binding, they carry a political commitment and have proved highly
+influential in setting international standards in other policy areas (e.g., privacy
+and data protection) and helping governments to design national legislation. The
+OECD launched an online platform for public policy on AI, the AI Policy Observatory
+<<oecd-ai>> (See <<sec-9-6>>.) and is cooperating on this and other initiatives on
+the ethical implications of AI with the Council of Europe, the United Nations
+Economic, Scientific and Cultural Organization (UNESCO) and WHO.
+
+* In 2019, the Council of Europe Commissioner for Human Rights issued
+recommendations to ensure that human rights are strengthened rather than undermined
+by AI: Unboxing artificial intelligence: 10 steps to protect human rights
+recommendations <<unboxing-ai10>>.
+
+* The European Commission appointed 52 representatives from academia, civil society
+and industry to its High-level Expert Group on Artificial Intelligence and issued
+Ethics Guidelines for Trustworthy AI <<ethics-brussels>>.
+
+* Japan has issued several guidelines on the use of AI, including on research and
+development and utilization <<ai-utilisation>>.
+
+* China has issued National Governance Principles for the New Generation Artificial
+Intelligence, which serves as the national principles for AI governance in China
+<<governance-ai>>. Academia and industry have jointly issued the Beijing Artificial
+Intelligence Principles <<beijing-ai>>. footnote:[Presentation by Professor Yi Zeng,
+Chinese Academy of Sciences, 4 October 2019, to the WHO working group on ethics and
+governance of AI for health.]
+
+* In Singapore, a series of initiatives on AI governance and ethics was designed to
+build an ecosystem of trust to support adoption of AI. They include Asia's first
+Model AI governance framework, released in January 2019; an international
+industry-led Advisory Council on the Ethical Use of AI and Data formed in June 2018;
+a research programme on the governance of AI and data use established in partnership
+with the Singapore Management University in September 2018 <<singapore-ai>>; and a
+certification programme for ethics and governance of AI for companies and developers
+<<singapore-cs>>.
+
+* The African Union's High-level Panel on Emerging Technologies is preparing broad
+guidance on the use of AI to promote economic development and its use in various
+sectors, including health care <<apet>>.
+|===
+
+[[sec-4-5]]
+=== Principles for use of artificial intelligence for health
+
+No specific ethical principles for use of AI for health have yet been proposed for
+adoption worldwide. Before WHO's work on guidance on the ethics and governance of AI
+for health, the WHO Global Conference on Primary Health Care issued the Astana
+Declaration <<astana-declaration>>, which includes principles for the use of digital
+technology. The Declaration calls for promotion of rational, safe use and protection
+of personal data and use of technology to improve access to health care, enrich
+health service delivery, improve the quality of service and patient safety and
+increase the efficiency and coordination of care.
+
+UNESCO has guidance and principles for the use of AI in general and for the use of
+big data in health. UNESCO's work on the ethical implications of AI is supported by
+two standing expert committees, the World Commission on the Ethics of Scientific
+Knowledge and Technology and the International Bioethics Committee. Other work
+includes the report of the International Bioethics Committee on big data and health
+in 2017, which identified important elements of a governance framework
+<<bioethics-committee>>; the World Commission on the Ethics of Scientific Knowledge
+and Technology report on robotics ethics in 2017 <<comest>>; a preliminary study on
+the ethics of AI by UNESCO in 2019, which raised ethical concern about education,
+science and gender <<study-paris>>; a recommendation on the ethics of AI to be
+considered by UNESCO's General Conference in 2021; and a report by the World
+Commission on the Ethics of Scientific Knowledge and Technology on the Internet of
+Things.
+
+In 2019, the United Kingdom's National Health Service (NHS) released a code of
+conduct, with 10 principles for the development and use of safe, ethical, effective,
+data-based health and care technologies <<guide-london>>. In October 2019, The
+Lancet and The Financial Times launched a joint commission, The Governing Health
+Futures 2030: Growing up in a Digital World Commission, on the convergence of
+digital health, AI and universal health coverage, which will consult between October
+2019 and December 2021 <<lancet>>.
+
+[[sec-4-6]]
+=== Bioethics laws and policies
+
+Bioethics laws and policies play a role in regulating the use of AI, and several
+bioethics laws have been revised in recent years to include recognition of the
+growing use of AI in science, health care and medicine. The French Government's most
+recent revision of its national bioethics law <<french-bioethics>>, which was
+endorsed in 2019, establishes standards to address the rapid growth of digital
+technologies in the health-care system. It includes standards for human supervision,
+or human warranty, that require evaluation by patients and clinicians at critical
+points in the development and deployment of AI. It also supports free, informed
+consent for the use of data and the creation of a secure national platform for the
+collection and processing of health data.
+
+[[sec-4-7]]
+=== Regulatory considerations
+
+Regulation of AI technologies is likely to be developed and implemented by health
+regulatory authorities responsible for ensuring the safety, efficacy and appropriate
+use of technologies for health care and therapeutic development. A WHO expert group
+that is preparing considerations for the regulation of AI for health has discussed
+areas that should be considered by stakeholders, including developers and
+regulators, in examining new AI technologies. They include documentation and
+transparency, risk management and the life-cycle approach, data quality, analytical
+and clinical validation, engagement and collaboration, and privacy and data
+protection. Many regulatory authorities are preparing considerations and frameworks
+for the use of AI, and they should be examined, potentially with the relevant
+regulatory agency. Governance of AI through regulatory frameworks and the ethical
+principles that should be considered are discussed in <<sec-9-5>>.
