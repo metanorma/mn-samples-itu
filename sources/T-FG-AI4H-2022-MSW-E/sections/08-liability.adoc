@@ -1,0 +1,223 @@
+[[sec-8]]
+== Liability regimes for artificial intelligence for health
+
+Although the performance of machine-learning algorithms is improving, there will
+still be errors and mistakes, for example because an algorithm has been trained with
+incomplete or inappropriate data, programming mistakes or security flaws. Even AI
+technologies designed with well-curated data and an appropriate algorithm could harm
+an individual. While AI technologies may be safe in practice, unforeseeable risks
+are likely <<rahwan>>.
+
+Lawmakers and regulators should ensure that rules and frameworks for safety are
+applicable to the use of AI technologies for health care and that they are
+proactively integrated into the design and deployment of AI-guided technologies.
+Updated liability rules for the use of AI in clinical care and medicine should at
+least include the same standards and damages already applied to health care. It is
+possible that reliance on AI technologies and the risks they may pose require
+additional obligations and damages. This section addresses how liability regimes
+could evolve, approaches to compensation, specific considerations for LMIC and the
+role of international institutions and organizations. It does not address liability
+that may arise from data processing.
+
+[[sec-8-1]]
+=== Liability for use of artificial intelligence in clinical care
+
+Use of AI to support or augment clinical decision-making raises several questions.
+Should doctors be held at fault if they follow the suggestion of an AI technology
+that results in a medical error or if they ignore a suggestion that would have
+avoided morbidity or mortality? The answers to these questions depend largely on
+other choices, such as the types of behaviour encouraged or discouraged by a legal
+system and the standard of care as use of AI in clinical practice becomes more common.
+
+Another choice is whether liability rules should encourage clinicians to rely upon
+AI to inform and confirm their clinical judgement or to deviate from their own
+judgement if an algorithm arrives at an unexpected conclusion. If liability rules
+penalize health-care providers for relying on the conclusions of an AI technology
+that prove to be incorrect, they may use the technology only to confirm their own
+judgement. While this may shield them from liability, it will discourage use of AI
+to its fullest potential, which is to augment and not just validate human judgement
+<<price-potential>>. If doctors are not penalized for relying on an AI technology,
+even if its suggestion runs counter to their own clinical judgement, they might be
+encouraged to make wider use of these technologies to improve patient care or might
+at least consider their use to challenge their own assumptions and conclusions.
+
+Whether a doctor uses AI also depends on the prevailing standard of care. If AI
+technologies are viewed as deviating from or are not recognized as meeting the
+standard of care, doctors will be discouraged from using them, since, otherwise,
+meeting the standard of care defends (although not absolutely) medical error. If the
+standard of care requires use of AI technologies, physicians would essentially be
+mandated to integrate their use into clinical practice <<price-potential>>.
+
+A separate but related issue is the liability of hospitals and health-care systems
+that select a specific technology. Hospitals could be held liable for failure to
+exercise due care in selecting the technology or in introducing, using or
+maintaining it <<vayenae>>. Generally, a hospital could be held vicariously liable
+for errors made by clinicians who work at the hospital. Hospitals are thus
+encouraged both to exercise due care in selecting technologies and to ensure that
+clinicians have clear guidance on how to use them for both patient care and to avoid
+errors that result in legal liability for the clinician and the hospital
+<<price-app>>. One possibility would be to establish hospital liability by
+"negligent credentialing". As, generally, hospitals are liable if they do not
+adequately review the credentials and practice history of health workers and
+physicians, they could have a similar duty when introducing AI <<gerke-ethical>>.
+For this, hospitals and health systems would have to have the necessary information
+and tools to identify appropriate AI technologies for clinical use
+<<gerke-ethical>>. Hospitals should also have a duty to re-establish control of a
+process or system that has been automated and that now presents actual or potential
+risks that were not previously foreseen.
+
+[[sec-8-2]]
+=== Are machine-learning algorithms products?
+
+As AI technologies and their software are integrated into or replace medical
+devices, it is not clear whether they can be characterized as products. Product
+liability, which holds the manufacturer or developer of a technology or a good to
+account even if they are not at fault, is a form of strict liability in which
+liability is imposed even in the absence of negligence, recklessness or intent to
+harm <<ordish>>.
+
+Until now, many jurisdictions have hesitated to apply traditional product liability
+theory to health-care software and algorithms. Product liability could apply insofar
+as an algorithm is integrated in a medical device or diagnostic. Both European and
+US courts and new regulations regard medical software as a medical device because of
+its intended use <<minssen-sa>>. Developers may, however, escape liability because
+in many cases the "actual uses" of a product differ from the "intended uses", even
+if some of the "actual uses" could have been foreseen <<minssen-sa>>. Product
+liability may also not apply if an AI algorithm is construed as a service and not as
+a product.
+
+Extension of product liability might be desirable; otherwise, patients might find
+difficulty in obtaining compensation (e.g., if a clinician followed the standard of
+care), and bringing a case to assign fault to a developer might be too costly and
+complex. The design, quality assurance and deployment of AI technologies may involve
+many people, which could also complicate assignment of liability. Product liability
+could ensure that developers take all possible steps during development of an
+algorithm to reduce the likelihood of error, including using diverse, complete data
+sets to train the algorithm and improving the explainability of the software
+<<evans-product>>. Unforeseeable risks and safety failures could, however, limit the
+effectiveness of current product liability standards.
+
+Assessment of the point to which a developer can be held strictly liable for the
+performance of an algorithm is complicated by the growing use of neural networks and
+deep learning in AI technologies, as the algorithms may perform differently over
+time when they are used in a clinical setting <<report-brussels>> if it is assumed
+that systems are allowed to update themselves and learn continuously and that use of
+neural networks and deep learning for AI technologies for health is acceptable and
+necessary.
+
+Holding a developer accountable for any error might ensure that a patient will be
+compensated if the error affects them; however, such continuing liability might
+discourage the use of increasingly sophisticated deep-learning techniques, and AI
+technology might therefore provide less beneficial observations and recommendations
+for medical care. It could be argued that liability provisions should be written
+such as to discourage development of a technology that cannot be fully understood.
+If this were to be interpreted as requiring the explainability of the mathematical
+processes that allow an algorithm to learn, however, most machine-learning
+techniques would be banned. Liability may depend partly on how much control the
+developer continues to have over an AI technology. In many EU Member States, the
+extent of a developer's control determines whether a "development risk defence"
+allows the developer to avoid strict liability <<report-brussels>>.
+
+Even if developers could be held strictly liable within a product liability
+framework, they could avoid liability under the "learned intermediary" doctrine,
+which limits recovery from a manufacturer when a doctor prescribes drugs or devices
+<<price-medical>> for which the manufacturer has provided adequate information, such
+as warnings about risks <<husgen>>. With adequate warnings, decisions by a
+physician, as the "learned intermediary", break the line of causation between a
+product developer and the patient who has suffered harm <<husgen>>.
+
+[[sec-8-3]]
+=== Compensation for errors
+
+A liability regime for AI might not be adequate to assign fault, as algorithms are
+evolving in ways that neither developers nor providers can fully control. In other
+areas of health care, compensation is occasionally provided without the assignment
+of fault or liability, such as for medical injuries resulting from adverse effects
+of vaccines <<thomas-ai>>. No-fault, no-liability compensation funds could be
+supplemented by requiring developers or the companies that develop or fund such
+technologies to obtain insurance that would pay out for an injury or to pay into an
+insurance fund, with a separate fund providing compensation when an insurance
+pay-out is not triggered. In New Zealand, for example, patients seek compensation
+for medical injuries through a no-fault, no-liability scheme. Injured patients
+receive Government-funded compensation, thereby giving up the right to seek damages,
+except in rare cases of reckless conduct <<no-fault>>. WHO should examine whether
+no-fault, no-liability compensation funds are an appropriate mechanism for providing
+payments to individuals who suffer medical injuries due to the use of AI
+technologies, including how to mobilize resources to pay any claims.
+
+[[sec-8-4]]
+=== Role of regulatory agencies and pre-emption
+
+AI technologies, like drugs and devices, will be increasingly subject to regulatory
+oversight and validation before use, especially as their uses expand and as
+clinicians increasingly rely upon them. If a commercial algorithm is approved by a
+regulatory agency, the doctrine of pre-emption may apply, i.e., that a decision
+taken by a central government agency to validate a technology will supersede any
+cause of action guided by civil laws <<mcnair>>. Pre-emption may not always be
+relevant, however, especially if the regulatory pathway for approval of an AI
+technology is abbreviated or regulatory approval is based on little information on
+how the algorithm was constructed and trained and may perform over time <<mcnair>>.
+Furthermore, as developers in some jurisdictions may not be held accountable for an
+algorithm as it evolves and learns after its sale, a doctrine of pre-emption may not
+be applicable if an algorithm evolves after a regulatory agency has approved the
+technology.
+
+[[sec-8-5]]
+=== Considerations for low- and middle-income countries
+
+Much of the literature, policy frameworks and court decisions on liability regimes
+are from the EU and the USA, which is where AI technologies are actively deployed.
+It is not known whether these approaches will be adopted in LMIC or whether those
+countries will take different approaches to liability. Liability rules play an
+important role in promoting safety and accountability, and, in some cases, they are
+the first and only line of defence against errors made by machine-learning
+technologies. Many LMIC still lack sufficient regulatory capacity to assess drugs,
+vaccines and devices and might be unable to accurately assess and regulate the
+rapidly arriving machine-learning technologies for the public good. Concern that
+such technologies might not operate as intended is heightened by the lack of
+good-quality data to train algorithms and the fact that AI technologies may have
+"contextual bias" <<prince-wn>>. Such concern should not preclude the use of AI in
+LMIC, but it highlights the importance of robust, effective liability regimes. Many
+LMIC may wish to use AI technologies in resource-poor settings for reasons that do
+not apply in the EU or the USA, such as lack of health-system infrastructure.
+
+In many LMIC, injured parties may not have access to justice, or it may be too
+expensive or too protracted, so that it not just difficult to obtain compensation
+for harm caused by AI technologies but it is also unlikely to serve as a deterrent
+to those responsible for the development and deployment of such technologies.
+Marginalized populations have even less protection and are often excluded from
+redress within the legal system. It might also be difficult to seek compensation if
+the AI technology was developed by an international company or developer with no
+physical presence where the harm occurs. These challenges must be addressed to
+increase the effectiveness of liability rules.
+
+LMIC might have to address challenges and risks that are not often considered in
+high-income economies. These include lack of appropriate training data for the
+algorithm to ensure that it performs accurately for patients with a different
+physical appearance and poor connectivity, which can compromise reliable, safe use
+of a technology.
+
+Even if legal systems in LMIC adopt the approaches of HIC for the introduction of AI
+technologies for clinical use, they will have to develop approaches that are
+consistent with legal practices and standards to compensate people who are harmed by
+such technologies, hold companies and governments accountable for the products they
+develop and calculate the risk-benefit for using or refusing AI technologies. WHO
+should work with other United Nations agencies and with governments in the design
+and introduction of appropriate liability rules.
+
+_Recommendations_
+
+[class=steps]
+. International agencies (and professional societies) should ensure that their
+clinical guidelines keep pace with the rapid introduction of AI technologies,
+accounting for the evolution of AI technologies by continuous learning.
+
+. WHO should support national regulatory agencies in assessing AI technologies for
+health.
+
+. WHO should support countries in evaluating the liability regimes that have been
+introduced for the use of AI technologies for health and how such regimes should be
+adapted to different health-care systems and country contexts.
+
+. WHO and partner agencies should seek to establish international norms and legal
+standards to ensure national accountability to protect patients from medical errors.

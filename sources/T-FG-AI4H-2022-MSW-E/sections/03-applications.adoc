@@ -1,0 +1,478 @@
+[[sec-3]]
+== Applications of artificial intelligence for health
+
+This section identifies AI technologies developed and used in HIC, although examples
+of such technologies are emerging (and being pilot-tested or used) in LMIC. Digital
+health technologies are already used widely in LMIC, including for data collection,
+dissemination of health information by mobile phones and extended use of electronic
+medical records on open-software platforms and cloud computing <<wahl>>. Schwabe and
+Wahl <<schwalbe>> have identified four uses of AI for health in LMIC: diagnosis,
+morbidity or mortality risk assessment, disease outbreak and surveillance, and health
+policy and planning.
+
+[[sec-3-1]]
+=== In health care
+
+The use of AI in medicine raises notions of AI replacing clinicians and human
+decision-making. The prevailing sentiment is, however, that AI is increasingly
+improving diagnosis and clinical care, based on earlier definitions of the role of
+computers in medicine <<miller>> and regulations in which AI is defined as a support
+tool (to improve judgement).
+
+[[sec-3-1-1]]
+==== Diagnosis and prediction-based diagnosis
+
+AI is being considered to support diagnosis in several ways, including in radiology
+and medical imaging. Such applications, while more widely used than other AI
+applications, are still relatively novel, and AI is not yet used routinely in
+clinical decision-making. Currently, AI is being evaluated for use in radiological
+diagnosis in oncology (thoracic imaging, abdominal and pelvic imaging, colonoscopy,
+mammography, brain imaging and dose optimization for radiological treatment), in
+non-radiological applications (dermatology, pathology), in diagnosis of diabetic
+retinopathy, in ophthalmology and for RNA and DNA sequencing to guide immunotherapy
+<<bi>>. In LMIC, AI may be used to improve detection of tuberculosis in a support
+system for interpreting staining images <<xiong>> or for scanning X-rays for signs of
+tuberculosis, COVID-19 or 27 other conditions <<mandavilli>>.
+
+Nevertheless, few such systems have been evaluated in prospective clinical trials. A
+recent comparison of deep-learning algorithms with health-care professionals in
+detection of diseases by medical imaging showed that AI is equivalent to human
+medical judgement in specific domains and applications in specific contexts but also
+that "few studies present externally validated results or compare the performance of
+deep learning models and health-care professionals using the same sample" <<liu>>.
+Other questions are whether the performance of AI can be generalized to
+implementation in practice and whether AI trained for use in one context can be used
+accurately and safely in a different geographical region or context.
+
+As AI improves, it could allow medical providers to make faster, more accurate
+diagnoses. AI could be used for prompt detection of conditions such as stroke,
+pneumonia, breast cancer by imaging <<rajpurkar>>, <<bejnordi>>, coronary heart
+disease by echocardiography <<alsharqi>> and detection of cervical cancer <<collis>>.
+Unitaid, a United Nations agency for improving diagnosis and treatment of infectious
+diseases in LMIC, launched a partnership with the Clinton Health Access Initiative in
+2018 to pilot-test use of an AI-based tool to screen for cervical cancer in India,
+Kenya, Malawi, Rwanda, South Africa and Zambia <<innovative>>. Many low-income
+settings facing chronic shortages of health-care workers require assistance in
+diagnosis and assessment and to reduce their workload. It has been suggested that AI
+could fill gaps in the absence of health-care services or skilled workers <<schwalbe>>.
+
+AI might be used to predict illness or major health events before they occur. For
+example, an AI technology could be adapted to assess the relative risk of disease,
+which could be used for prevention of lifestyle diseases such as cardiovascular
+disease (<<fan>>, <<yan>>) and diabetes <<chaki>>. Another use of AI for prediction
+could be to identify individuals with tuberculosis in LMIC who are not reached by the
+health system and therefore do not know their status <<singh>>. Predictive analytics
+could avert other causes of unnecessary morbidity and mortality in LMIC, such as
+birth asphyxia. An expert system used in LMIC is 77% sensitive and 95% specific for
+predicting the need for resuscitation <<wahl>>. Several ethical challenges to
+prediction-based health care are discussed in <<sec-6-5>>.
+
+[[sec-3-1-2]]
+==== Clinical care
+
+Clinicians might use AI to integrate patient records during consultations, identify
+patients at risk and vulnerable groups, as an aid in difficult treatment decisions
+and to catch clinical errors. In LMIC, for example, AI could be used in the
+management of antiretroviral therapy by predicting resistance to HIV drugs and
+disease progression, to help physicians optimize therapy <<singh>>. Yet, clinical
+experience and knowledge about patients is essential, and AI will not be a substitute
+for clinical due diligence for the foreseeable future. If it did, clinicians might
+engage in "automation bias" and not consider whether an AI technology meets their
+needs or those of the patient. (See <<sec-6-4>>.)
+
+The wider use of AI in medicine also has technological challenges. Although many
+prototypes developed in both the public and the private sectors have performed well
+in field tests, they often cannot be translated, commercialized or deployed. An
+additional obstacle is constant changes in computing and information technology
+management, whereby systems become obsolete ("software erosion") and companies
+disappear. In resource-poor countries, the lack of digital infrastructure and the
+digital divide (See <<sec-6-2>>.) will limit use of such technologies.
+
+Health-care workers will have to adapt their clinical practice significantly as use
+of AI increases. AI could automate tasks, giving doctors time to listen to patients,
+address their fears and concerns and ask about unrelated social factors, although
+they may still worry about their responsibility and accountability. Doctors will have
+to update their competence to communicate risks, make predictions and discuss
+trade-offs with patients and also express their ethical and legal concern about
+understanding AI technology. Even if technology makes the predicted gains, those
+gains will materialize only if the individuals who manage health systems use them to
+extend the capacity of the health system in other areas, such as better availability
+of medicines or other prescribed interventions or forms of clinical care.
+
+[[sec-3-1-3]]
+==== Emerging trends in the use of AI in clinical care
+
+Several important changes imposed by the use of AI in clinical care extend beyond the
+provider-patient relationship. Four trends described here are: the evolving role of
+the patient in clinical care; the shift from hospital to home-based care; use of AI
+to provide "clinical" care outside the formal health system; and use of AI for
+resource allocation and prioritization. Each of these trends has ethical
+implications, as discussed below.
+
+===== The evolving role of the patient in clinical care
+
+AI could eventually change how patients self-manage their own medical conditions,
+especially chronic diseases such as cardiovascular diseases, diabetes and mental
+problems <<topol-preparing>>. Patients already take significant responsibility for their own
+care, including taking medicines, improving their nutrition and diet, engaging in
+physical activity, caring for wounds or delivering injections. AI could assist in
+self-care, including through conversation agents (e.g., "chat bots"), health
+monitoring and risk prediction tools and technologies designed specifically for
+individuals with disabilities <<topol-preparing>>. While a shift to patient-based care may be
+considered empowering and beneficial for some patients, others might find the
+additional responsibility stressful, and it might limit an individual's access to
+formal health-care services.
+
+The growing use of digital self-management applications and technologies also raises
+wider questions about whether such technologies should be regulated as clinical
+applications, thus requiring greater regulatory scrutiny, or as "wellness
+applications", requiring less regulatory scrutiny. Many digital self-management
+technologies arguably fall into a "grey zone" between these two categories and may
+present a risk if they are used by patients for their own disease management or
+clinical care but remain largely unregulated or could be used without prior medical
+advice. Such concerns are exacerbated by the distribution of such applications by
+entities that are not a part of the formal health-care system. This related but
+separate trend is discussed below.
+
+===== The shift from hospital to home-based care
+
+Telemedicine is part of a larger shift from hospital- to home-based care, with use of
+AI technologies to facilitate the shift. They include remote monitoring systems, such
+as video-observed therapy for tuberculosis and virtual assistants to support patient
+care. Even before the COVID-19 pandemic, over 50 health-care systems in the USA were
+making use of telemedicine services <<hollander>>. COVID-19, having discouraged
+people in many settings from visiting health-care facilities, accelerated and
+expanded the use of telemedicine in 2020, and the trend is expected to continue. In
+China, the number of telemedicine providers has increased by nearly four times during
+the pandemic <<mou>>.
+
+The shift to home-based care has also partly been facilitated by increased use of
+search engines (which rely on algorithms) for medical information as well as by the
+growth in the number of text or speech chatbots for health care <<nadarzynski>>, the
+performance of which has improved with improvements in natural language processing, a
+form of AI that enables machines to understand human language. The use of chatbots
+has also accelerated during the COVID-19 pandemic <<dennis>>.
+
+Furthermore, AI technologies may play a more active role in the management of
+patients' health outside clinical settings, such as in "just-in-time adaptive
+interventions". These rely on sensors to provide patients with specific interventions
+according to data collected previously and currently; they also notify a health-care
+provider of any emerging concern <<roski>>. The growth and use of sensors and
+wearables may improve the effectiveness of "just-in-time adaptive interventions" but
+also raise concern, in view of the amount of data such technologies are collecting,
+how they are used and the burden such technologies may shift to patients.
+
+===== Use of AI to extend "clinical" care beyond the formal health-care system
+
+AI applications in health are no longer exclusively used in health-care systems (or
+home care), as AI technologies for health can be readily acquired and used by
+non-health system entities. This has meant that people can now obtain health-care
+services outside the health-care system. For example, AI applications for mental
+health are often provided through the education system, workplaces and social media
+and may even be linked to financial services <<marr-mental-health>>.
+While there may be support for
+such extended uses of health applications to compensate for both increased demand and
+a limited number of providers <<gamble>>, they generate new questions and concerns.
+(See <<sec-9-3>>.)
+
+These three trends may require near-continuous monitoring (and self-monitoring) of
+people, even when they are not sick (or are "patients"). AI-guided technologies
+require the use of mobile health applications and wearables, and their use has
+increased with the trend to self-management <<gamble>>. Wearable technologies include
+those placed in the body (artificial limbs, smart implants), on the body (insulin
+pump patches, electroencephalogram devices) or near the body (activity trackers,
+smart watches and smart glasses). By 2025, 1.5 billion wearable units may be
+purchased annually. footnote:[Presentation by Christian Stammel. Wearable
+Technologies, Germany, to the WHO Meeting of the Expert Group on Ethics and
+Governance of AI for Health, 6 March 2020.] Wearables will create more opportunities
+to monitor a person's health and to capture more data to predict health risks, often
+with greater efficiency and in a timelier manner.
+
+Although such monitoring of "healthy" individuals could generate data to predict or
+detect health risks or improve a person's treatment when necessary, it raises
+concern, as it permits near-constant surveillance and collection of excessive data
+that otherwise should remain unknown or uncollected. Such data collection also
+contributes to the ever-growing practice of "biosurveillance", a form of surveillance
+for health data and other biometrics, such as facial features, fingerprints,
+temperature and pulse <<biosurveillance>>. The growth of biosurveillance poses
+significant ethical and legal concerns, including the use of such data for medical
+and non-medical purposes for which explicit consent might not have been obtained or
+the repurposing of such data for non-health purposes by a government or company, such
+as within criminal justice or immigration systems. (See <<sec-6-3>>.) Thus, such data
+should be liable to the same levels of data protection and security as for data
+collected on an individual in a formal clinical care setting.
+
+===== Use of AI for resource allocation and prioritization
+
+AI is being considered for use to assist in decision-making about prioritization or
+allocation of scarce resources. Prognostic scoring systems have long been available
+in critical care units. One of the best-known, Sequential Organ Failure Assessment
+(SOFA) <<vincentjl>>, for analysis of the severity of illness and for predicting
+mortality, has been in use for decades, and SOFA scores have been widely used in some
+jurisdictions to guide allocation of resources for COVID-19 <<khanam>>. It is not an
+AI system; however, an AI version, "DeepSOFA" <<shickel>>, has been developed.
+
+The growing attraction of this use of AI has been due partly to the COVID-19
+pandemic, as many institutions lack bed capacity and others have inadequate
+ventilators. Thus, hospitals and clinics in the worst-affected countries have been
+overwhelmed. It has been suggested that machine-learning algorithms could be trained
+and used to assist in decisions to ration supplies, identify which individuals should
+receive critical care or when to discontinue certain interventions, especially
+ventilator support <<shea>>. AI tools could also be used to guide allocation of other
+scarce health resources during the COVID-19 pandemic, such as newly approved vaccines
+for which there is an insufficient initial supply <<babic>>.
+
+Several ethical challenges associated with the use of AI for resource allocation and
+prioritization are described in <<sec-6-5>>.
+
+[[sec-3-2]]
+=== In health research and drug development
+
+[[sec-3-2-1]]
+==== Application of AI for health research
+
+An important area of health research with AI is based on use of data generated for
+electronic health records. Such data may be difficult to use if the underlying
+information technology system and database do not discourage the proliferation of
+heterogeneous or low-quality data. AI can nevertheless be applied to electronic
+health records for biomedical research, quality improvement and optimization of
+clinical care. From electronic health records, AI that is accurately designed and
+trained with appropriate data can help to identify clinical best practices before the
+customary pathway of scientific publication, guideline development and clinical
+support tools. AI can also assist in analysing clinical practice patterns derived
+from electronic health records to develop new clinical practice models.
+
+A second (of many) application of AI for health research is in the field of genomics.
+Genomics is the study of the entire genetic material of an organism, which in humans
+consists of an estimated three billion DNA base pairs. Genomic medicine is an
+emerging discipline based on individuals' genomic information to guide clinical care
+and personalized approaches to diagnosis and treatment <<raza>>. As the analysis of
+such large datasets is complex, AI is expected to play an important role in genomics.
+In health research, for example, AI could improve human understanding of disease or
+identify new disease biomarkers <<raza>>, although the quality of the data and
+whether they are representative and unbiased (See <<sec-6-6>>.) could undermine the
+results.
+
+[[sec-3-2-2]]
+==== Uses of AI in drug development
+
+AI is expected in time to be used to both simplify and accelerate drug development.
+AI could change drug discovery from a labour-intensive to a capital- and
+data-intensive process with the use of robotics and models of genetic targets, drugs,
+organs, diseases and their progression, pharmacokinetics, safety and efficacy. AI
+could be used in drug discovery and throughout drug development to shorten the
+process and make it less expensive and more effective <<fleming>>. AI was used to
+identify potential treatments for Ebola virus disease, although, as in all drug
+development, identification of a lead compound may not result in safe, effective
+therapy <<ebola>>.
+
+In December 2020, DeepMind announced that its AlphaFold system had solved what is
+known as the "protein folding problem", in that the system can reliably predict the
+three-dimensional shape of a protein <<metzc>>. Although this achievement is only one
+part of a long process in understanding diseases and developing new medicines and
+vaccines, it should help to speed the development of new medicines and improve the
+repurposing of existing medicines for use against new viruses and new diseases
+<<metzc>>. While this advance could significantly accelerate drug discovery, there is
+ethical concern about ownership and control of an AI technology that could be
+critical to drug development, as it might eventually be available to government,
+not-for-profit, academic and LMIC researchers only under commercial terms and
+conditions that limit its diffusion and use.
+
+At present, drug development is led either by humans or by AI with human oversight.
+In the next two decades, as work with machines is optimized, the role of AI could
+evolve. Computing is starting to facilitate drug discovery and development by
+finding novel leads and evaluating whether they meet the criteria for new drugs,
+structuring unorganized data from medical imaging, searching large volumes of data,
+including health-care records, genetics data, laboratory tests, the Internet of
+Things, published literature and other types of health big data to identify
+structures and features, while recreating the body and its organs on chips (tissue
+chips) for AI analysis (<<fleming>>, <<low>>). By 2040, testing of medicines might
+be virtual -- without animals or humans -- based on computer models of the human
+body, tumours, safety, efficacy, epigenetics and other parameters. Prescription
+drugs could be designed for each person. Such efforts could contribute to precision
+medicine or health care that is individually tailored to a person's genes, lifestyle
+and environment.
+
+[[sec-3-3]]
+=== In health systems management and planning
+
+Health systems, even in a single-payer, government-run system, may be overly complex
+and involve numerous actors who contribute to, pay for or benefit from the provision
+of health-care services. The management and administration of care may be laborious.
+AI can be used to assist personnel in complex logistical tasks, such as optimization
+of the medical supply chain, to assume mundane, repetitive tasks or to support
+complex decision-making. Some possible functions of AI for health systems management
+include: identifying and eliminating fraud or waste, scheduling patients, predicting
+which patients are unlikely to attend a scheduled appointment and assisting in
+identification of staffing requirements <<ai>>.
+
+AI could also be useful in complex decision-making and planning, including in LMIC.
+For example, researchers in South Africa applied machine-learning models to
+administrative data to predict the length of stay of health workers in underserved
+communities <<schwalbe>>. In a study in Brazil, researchers used several government
+data sets and AI to optimize the allocation of health-system resources by
+geographical location according to current health challenges <<schwalbe>>.
+Allocation of scarce health resources through use of AI has raised concern, however,
+that resources may not be fairly allocated due, for example, to bias in the data.
+(See <<sec-6-5>>.)
+
+[[sec-3-4]]
+=== In public health and public health surveillance
+
+Several AI tools for population and public health can be used in public health
+programmes. For example, new developments in AI could, after rigorous evaluation,
+improve identification of disease outbreaks and support surveillance. Several
+concerns about the use of technology for public health surveillance, promotion and
+outbreak response must, however, be considered before use of AI for such purposes,
+including the tension between the public health benefits of surveillance and ethical
+and legal concern about individual (or community) privacy and autonomy <<who-guide>>.
+
+[[sec-3-4-1]]
+==== Health promotion
+
+AI can be used for health promotion or to identify target populations or locations
+with "high-risk" behaviour and populations that would benefit from health
+communication and messaging (micro-targeting). AI programmes can use different forms
+of data to identify such populations, with varying accuracy, to improve message
+targeting.
+
+Micro-targeting can also, however, raise concern, such as that with respect to
+commercial and political advertising, including the opaqueness of processes that
+facilitate micro-targeting. Furthermore, users who receive such messages may have no
+explanation or indication of why they have been targeted <<microtargeting>>.
+Micro-targeting also undermines a population's equal access to information, can
+affect public debate and can facilitate exclusion or discrimination if it is used
+improperly by the public or private sector.
+
+[[sec-3-4-2]]
+==== Disease prevention
+
+AI has also been used to address the underlying causes of poor health outcomes, such
+as risks related to environmental or occupational health. AI tools can be used to
+identify bacterial contamination in water treatment plants, simplify detection and
+lower the costs. Sensors can also be used to improve environmental health, such as
+by analysing air pollution patterns or using machine learning to make inferences
+between the physical environment and healthy behaviour <<roski>>. One concern with
+such use of AI is whether it is provided equitably or if such technologies are used
+only on behalf of wealthier populations and regions that have the relevant
+infrastructure for its use <<smart-cities>>.
+
+[[sec-3-4-3]]
+==== Surveillance (including prediction-based surveillance) and emergency preparedness
+
+AI has been used in public health surveillance for collecting evidence and using it
+to create mathematical models to make decisions. Technology is changing the types of
+data collected for public health surveillance by the addition of digital "traces",
+which are data that are not generated specifically for public health purposes (such
+as from blogs, videos, official reports and Internet searches). Videos (e.g.,
+YouTube) are another "rich" source of information for health insights <<ginsberg>>.
+
+Characterization of digital traces as "health data" raises questions about the types
+of privacy protection or other safeguards that should be attached to such datasets
+if they are not publicly available. For example, the use of digital traces as health
+data could violate the data protection principle of "purpose limitation", that
+individuals who generate such data should know what their data will be used for at
+the point of collection <<red-cross>>.
+
+Such use also raises questions of accuracy. Models are useful only when appropriate
+data are used. Machine-learning algorithms could be more valuable when augmented by
+digital traces of human activity, yet such digital traces could also negatively
+impact an algorithm's performance. Google Flu Trends, for example, was based on
+search engine queries about complications, remedies, symptoms and antiviral
+medications for influenza, which are used to estimate and predict influenza
+activity. While Google Flu Trends first provided relatively accurate predictions
+before those of the US Centers for Disease Control and Prevention, it overestimated
+the prevalence of flu between 2011 and 2013 because the system was not re-trained as
+human search behaviour evolved <<cho>>.
+
+Although many public health institutions are not yet making full use of these
+sources of data, surveillance itself is changing, especially real-time surveillance.
+For example, researchers could detect a surge in cases of severe pulmonary disease
+associated with the use of electronic cigarettes by mining disparate online sources
+of information and using Health Map, an online data-mining tool <<hswen>>.
+Similarly, Microsoft researchers have found early evidence of adverse drug reactions
+from web logs with an AI system. In 2013, the company's researchers detected
+side-effects of several prescription drugs before they were found by the US Food and
+Drug Administration's warning system <<white>>. In 2020, the US Food and Drug
+Administration sponsored a "challenge", soliciting public submissions to develop
+computation algorithms for automatic detection of adverse events from publicly
+available data <<precision-fda>>. Despite its potential benefits, real-time data
+collection, like the collection and use of digital traces, could violate data
+protection rules if surveillance was not the purpose of its initial collection,
+which is especially likely when data collection is automated.
+
+Before the COVID-19 pandemic, WHO had started to develop EPI-BRAIN, a global
+platform that will allow experts in data and public health to analyse large datasets
+for emergency preparedness and response. (See also <<sec-7-1>>.) AI has been used to
+assist in both detection and prediction during the COVID-19 pandemic, although some
+consider that the techniques and programming developed will "pay dividends" only
+during a subsequent pandemic <<cho>>. HealthMap first issued a short bulletin about
+a new type of pneumonia in Wuhan, China, at the end of December 2019 <<cho>>. Since
+then, AI has been used to "now-cast" (assess the current state of) the COVID-19
+pandemic <<cho>>, while, in some countries, real-time data on the movement and
+location of people has been used to build AI models to forecast regional
+transmission dynamics and guide border checks and surveillance <<whitelaw>>. In
+order to determine how such applications should be used, an assessment should be
+conducted of whether they are accurate, effective and useful.
+
+[[sec-3-4-4]]
+==== Outbreak response
+
+The possible uses of AI for different aspects of outbreak response have also
+expanded during the COVID-19 pandemic. They include studying SARS-CoV2 transmission,
+facilitating detection, developing possible vaccines and treatments and
+understanding the socio-economic impacts of the pandemic <<bullock>>. Such use of AI
+was already tested during the pandemic of Ebola virus disease in West Africa in
+2014, although the assumptions underlying use of AI technologies to predict the
+spread of the Ebola virus were based on erroneous views of how the virus was
+spreading (<<toh>>, <<mcdonald>>). While many possible uses of AI have been
+identified and used during the COVID-19 pandemic, their actual impact is likely to
+have been modest; in some cases, early AI screening tools for SARS-CoV2 "were utter
+junk" with which companies "were trying to capitalise on the panic and anxiety"
+<<haok>>.
+
+New applications <<ai-strasbourg>> are intended to support the off-line response,
+although not all may involve use of AI. These have included proximity tracking
+applications intended to notify users (and possibly health authorities) that they
+have been in the proximity (for some duration) of an individual who subsequently
+tested positive for SARS-CoV2. Concern has been raised about privacy and the utility
+and accuracy of proximity-tracking applications, and WHO issued interim guidance on
+the ethical use of proximity-tracking applications in 2020 <<ethical-considerations>>.
+
+WHO and many ministries of health have also deployed symptom checkers, which are
+intended to guide users through a series of questions to assist in determining
+whether they should seek additional medical advice or testing for SARS-CoV2. The
+first symptom checkers were "hard coded", based on accumulated clinical judgement,
+as there were no previous data, and on a simple decision tree from older AI
+techniques, which involved direct encoding of expert knowledge. AI systems based on
+machine learning require accurate training, while data are initially scarce for a
+new disease such as COVID-19 <<olson>>. New symptom checkers are based on machine
+learning to provide advice to patients <<horowitz>>, although their effectiveness is
+not yet known; all symptom checkers require that users provide accurate information.
+
+AI has also been introduced to map the movements of individuals in order to
+approximate the effectiveness of government-mandated orders to remain in
+confinement, and, in some countries, AI technology has been used to identify
+individuals who should self-quarantine and be tested. These technologies raise legal
+and ethical concerns about privacy and risk of discrimination and also about
+possibly unnecessary restriction of movement or access to services, which heavily
+impact the exercise of a range of human rights <<whitelaw>>. As for all AI
+technologies, their actual effectiveness depends on whether the datasets are
+representative of the populations in which the technologies are used, and they
+remain questionable without systematic testing and evaluation. The uses described
+above are therefore not yet established.
+
+[[sec-3-5]]
+=== The future of artificial intelligence for health
+
+While AI may not replace clinical decision-making, it could improve decisions made
+by clinicians. In settings with limited resources, AI could be used to conduct
+screening and evaluation if insufficient medical expertise is available, a common
+challenge in many resource-poor settings. Yet, whether AI can advance beyond narrow
+tasks depends on numerous factors beyond the state of AI science and on the trust of
+providers, patients and health-care professionals in AI-based technologies. In the
+following sections of this document, ethical concerns and risks associated with the
+expanding use of AI for health are discussed, including by whom and how such
+technologies are deployed and developed. Technological, legal, security and ethical
+challenges and concerns are discussed not to dissuade potential use of AI for health
+but to ensure that AI fulfils its great potential and promise.
