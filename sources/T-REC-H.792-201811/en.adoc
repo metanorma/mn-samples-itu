@@ -212,7 +212,7 @@ This Recommendation selects basic elements/attributes from these specifications 
 
 [[figure1]]
 .Digital signage service reference architecture
-image::T-REC-H.782/image003.png[]
+image::image003.png[]
 
 NOTE: <<figure1>> as per <<h781>>.
 
@@ -248,7 +248,7 @@ A set of elements/attributes for "client configuration" metadata is shown in <<t
 
 [[figure2]]
 .A flow for client configuration
-image::T-REC-H.782/image004.png[]
+image::image004.png[]
 
 [[table2]]
 .Metadata for "client configuration"
@@ -320,7 +320,7 @@ A set of elements/attributes for "terminal device" metadata is shown in <<table3
 
 [[figure3]]
 .A flow for terminal device
-image::T-REC-H.782/image005.png[]
+image::image005.png[]
 
 [[table3]]
 .Metadata for "terminal device"
@@ -564,7 +564,7 @@ A set of elements/attributes for "terminal device status" metadata is shown in <
 
 [[figure4]]
 .A flow for terminal device status
-image::T-REC-H.782/image006.png[]
+image::image006.png[]
 
 [[table8]]
 .Metadata for "terminal device status"
@@ -680,7 +680,7 @@ The digital signage client reports to the digital signage server of its play log
 
 [[figure5]]
 .Flows for reporting play log
-image::T-REC-H.782/image007.png[]
+image::image007.png[]
 
 [[table10]]
 .Metadata for "play log"
@@ -754,7 +754,7 @@ A set of elements/attributes for "content delivery schedule" metadata is shown i
 
 [[figure6]]
 .Flows for content delivery scheduling
-image::T-REC-H.782/image008.png[]
+image::image008.png[]
 
 [[table11]]
 .Metadata for "content delivery schedule"
@@ -1145,7 +1145,7 @@ Any function (such as digital signage server, audience measurement client and di
 
 [[figure7]]
 .Flow for interactive service
-image::T-REC-H.782/image009.png[]
+image::image009.png[]
 
 
 An example interactive service is as follows. The digital signage client has a touch screen that shows the map of a supermarket. The user touches the milk section to see the details of milk that are sold in the supermarket. The content displayed on the screen can be changed to display the details of milk products. For this use case, the function for scheduling a playlist will need to register an event to be notified from the touch screen.
@@ -1213,7 +1213,7 @@ Arrow (A&#x2192;B) shows a relation "A refers to B".
 
 [[figurea1]]
 .Relations among metadata entities
-image::T-REC-H.782/image010.png[]
+image::image010.png[]
 
 
 [bibliography]

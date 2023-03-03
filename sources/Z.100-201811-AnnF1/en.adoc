@@ -175,7 +175,7 @@ The first three parts of the formal semantics are collectively referred to as _s
 
 [[fig-f1-1]]
 .Static aspects of SDL-2010
-image::Z.100-201811-AnnF1/image3.png[]
+image::image3.png[]
 
 The _grammar_ defines the set of syntactically correct SDL-2010 specifications. The ITU-T Z.100 series for SDL-2010 defines a concrete graphical grammar, a concrete textual grammar, and an abstract grammar. The syntax of the concrete grammars is defined formally using the Backus-Naur form (BNF) with some extensions to capture the graphical language constructs (see clause 5.4.1 of [ITU-T Z.111]). The abstract grammar is obtained from the concrete grammars by removing irrelevant details such as separators and lexical rules, and by applying transformation rules (see below). The syntax of the abstract grammar is defined in the textual presentation metalanguage for abstract grammar (see clause 5.4.1.1 of [ITU-T Z.111]).
 
@@ -241,7 +241,7 @@ The _dynamic semantics_ (clauses F3.2 and F3.3) consists of the following parts 
 
 [[fig-f1-2]]
 .Overview of the dynamic semantics
-image::Z.100-201811-AnnF1/image4.png[]
+image::image4.png[]
 
 
 The formal semantics is formalized starting from the abstract syntax AS1 of SDL-2010. From this abstract syntax, a behaviour model for SDL-2010 specifications is derived that can be understood as abstract code generated from an SDL-2010 specification. The approach chosen here is based on an abstract operational view using the ASM formalism as the underlying mathematical framework for a rigorous semantic definition of the SAM model. The compilation defines an abstract compiler mapping the behaviour parts of SDL-2010 to abstract code (denotational semantics). Finally, the initialization describes an interpretation of the abstract syntax tree to build the initial system structure (operational semantics).
@@ -767,7 +767,7 @@ Partially ordered runs have certain characteristic properties that can be stated
 
 [[fig-f1-3]]
 .Each agent has a partial view of the global ASM state
-image::Z.100-201811-AnnF1/image5.png[]
+image::image5.png[]
 
 [[distributed_asm_programs]]
 ===== Distributed ASM programs

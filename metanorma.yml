@@ -2,25 +2,30 @@
 metanorma:
   source:
     files:
-      - sources/G.191.adoc
-      - sources/G.650.1-201803.adoc
-      - sources/T-REC-A.8-200810-I!!MSW-E.adoc
-      - sources/T-REC-H.782-201811-I.MSW-E.adoc
-      - sources/T-REC-H.Imp248-201710-I.adoc
-      - sources/T-REC-J.1108-201901-P.MSW-E-draft.adoc
-      - sources/T-REC-J.1108-201901-P.MSW-E.adoc
-      - sources/T-REC-P.1203-201710-I.MSW-E.adoc
-      - sources/T-RES-T.1-2016-MSW-E.adoc
-      - sources/Y.3507-201812.adoc
-      - sources/Z.100-201811-AnnF1.adoc
-      - sources/T-Editing-Guidelines-201602.adoc
-      - sources/STL-manual.adoc
-      - sources/T-TUT-CABLETV-2020.adoc
-      - sources/T-TUT-CCIT-2015-E.adoc
-      - sources/T-TUT-CCIT-2017-E.adoc
-      - sources/T-TUT-FSTP-2020-ACC.WEBVRI.adoc
-      - sources/T-TUT-L-2020-GLR.adoc
-      - sources/D-REC-D.19-201003-E.adoc
+      - sources/D-REC-D.19-201003/en.adoc
+      - sources/G.191/en.adoc
+      - sources/G.650.1-201803/en.adoc
+      - sources/STL-manual/en.adoc
+      - sources/T-Editing-Guidelines-201602/en.adoc
+      - sources/T-FG-AI4H-2022-MSW/en.adoc
+      - sources/T-REC-A.8-200810-I/en.adoc
+      - sources/T-REC-G.Imp8001-202002-I/en.adoc
+      - sources/T-REC-H.792-201811/en.adoc
+      - sources/T-REC-H.Imp248-201710-I/en.adoc
+      - sources/T-REC-J.1108-201901-P-draft/en.adoc
+      - sources/T-REC-J.1108-201901-P/en.adoc
+      - sources/T-REC-P.1203-201710-I/en.adoc
+      - sources/T-REC-P.Imp863-201805-I/en.adoc
+      - sources/T-REC-P.Imp863-201912-I/en.adoc
+      - sources/T-RES-T.1-2016/en.adoc
+      - sources/T-TUT-CABLETV-2020/en.adoc
+      - sources/T-TUT-CCIT-2015/en.adoc
+      - sources/T-TUT-CCIT-2017/en.adoc
+      - sources/T-TUT-FSTP-2020-ACC.WEBVRI/en.adoc
+      - sources/T-TUT-L-2020-GLR/en.adoc
+      - sources/Y.3507-201812/en.adoc
+      - sources/Z.100-201811-AnnF1/en.adoc
+
   collection:
     organization: "International Telecommunications Union"
     name: "ITU Documents in Metanorma"

@@ -259,7 +259,7 @@ It is inferred from the requirements that the physical machine supports scalable
 
 [[fig6-1]]
 .Concept of a computing machine in <<ITU-T_Y.3510>>
-image::Y.3507-201812/figure-1.png[]
+image::figure-1.png[]
 
 
 A virtual machine provides virtualized resource pools using virtualization technologies specific to physical resource types like CPU, memory, I/O and network from a physical machine. The virtual machine also covers management issues.
@@ -275,7 +275,7 @@ The physical machine is a type of computing machine in which the cloud services 
 
 [[fig6-2]]
 .Overview of the physical machine
-image::Y.3507-201812/figure-2.png[]
+image::figure-2.png[]
 
 
 The physical machine is composed of multiple components, which are described as follows:
@@ -318,7 +318,7 @@ NOTE: An example of single processing unit type is a rack server <<b-OCP_BS>>.
 
 [[fig6-3]]
 .Example of single processing unit type
-image::Y.3507-201812/figure-3.png[]
+image::figure-3.png[]
 
 
 [[multi_processing_unit_type]]
@@ -330,7 +330,7 @@ NOTE: Examples of a multi-processing unit type are blade servers <<b-OCP_OSR>> a
 
 [[fig6-5]]
 .Example of a multi-processing unit type
-image::Y.3507-201812/figure-4.png[]
+image::figure-4.png[]
 
 
 [[virtualization_in_physical_machines]]
@@ -1438,7 +1438,7 @@ This appendix describes physical machine related use cases.
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-1.png[]
+image::annex-figure-1.png[]
 
 | Pre-conditions (optional) | The virtual machine resides on the physical machine.
 
@@ -1482,7 +1482,7 @@ Based on the above steps to construct a physical machine, several physical machi
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-2.png[]
+image::annex-figure-2.png[]
 
 
 | Pre-conditions (optional) | CSP: cloud service operations manager wants to modify or expand the resources in a physical machine.
@@ -1508,7 +1508,7 @@ image::Y.3507-201812/annex-figure-2.png[]
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-3.png[]
+image::annex-figure-3.png[]
 
 | Pre-conditions (optional) | The cloud storage service resides on the physical machine.
 
@@ -1544,7 +1544,7 @@ When a cloud service operations manager makes this cabled network, it is constru
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-4.png[]
+image::annex-figure-4.png[]
 
 | Pre-conditions (optional) | CSC: Cloud service user wants to use a high performance computing application.
 
@@ -1571,7 +1571,7 @@ image::Y.3507-201812/annex-figure-4.png[]
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-5.jpg[]
+image::annex-figure-5.jpg[]
 
 In this type of deployment, physical machines are constructed for deployment in high-density racks specifically designed for the purpose. Each rack provides all the infrastructure required to support the machines, including power, network connectivity and ventilation/cooling. Individual physical machines are automatically initialised and provisioned with necessary software when plugged into an active rack. Once running, each machine is made available for the deployment of VMs or other functions requested by CSCs or CSP administrators. Fault tolerance is often provided by software across multiple machines, so an individual machine can fail without adverse effect on the overall system.
 
@@ -1600,7 +1600,7 @@ A data centre can be left unmanned for several days or weeks at a time. When vis
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-6.png[]
+image::annex-figure-6.png[]
 
 In this type of deployment, physical machines are constructed for deployment in locations where physical access is very tightly constrained. These will typically be inside some form of self-contained "capsule" rather than a normal building. +
 Examples are systems deployed in underwater containers for positioning close to coastal urban centres.
@@ -1634,7 +1634,7 @@ The data centre management system can deploy workloads to the machine. In the ev
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-7.jpeg[]
+image::annex-figure-7.jpeg[]
 
 In this type of deployment, physical machines are constructed for deployment at the edge of the network, usually co-located with access network transmission and/or multiplexing equipment. +
 Examples of such locations include:
@@ -1678,7 +1678,7 @@ In addition, the networking between each processing unit for clustering can be b
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-8.png[]
+image::annex-figure-8.png[]
 
 | Pre-conditions (optional) | CSC: cloud service user wants to use a cloud service.
 
@@ -1707,10 +1707,10 @@ image::Y.3507-201812/annex-figure-8.png[]
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-9.png[]
+image::annex-figure-9.png[]
 
 [%unnumbered]
-image::Y.3507-201812/annex-figure-10.png[]
+image::annex-figure-10.png[]
 
 To support replacement, the components are not coupled to the physical machine so that the components can be installed or uninstalled dynamically. Typically, the components are designed to follow certain specifications to ensure compatible interface and shape.
 
@@ -1743,7 +1743,7 @@ Trough RAID technology, data of physical machine is distributed across multiple 
 
 | Figure a|
 [%unnumbered]
-image::Y.3507-201812/annex-figure-11.png[]
+image::annex-figure-11.png[]
 
 | Pre-conditions (optional) | CSP wishes to deploy physical machines withhigh reliability.
 
