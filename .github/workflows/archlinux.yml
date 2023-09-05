@@ -15,12 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     container: docker://archlinux/archlinux:latest
     steps:
-
       - name: Update pacman repositories
-        run: pacman -Syu
+        run: pacman -Syu --noconfirm
 
       - name: Install Metanorma dependencies via pacman
-        run: yes | pacman -Sy git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
+        run: pacman -Sy --noconfirm git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
 
       - name: Install Metanorma
         run: gem install metanorma-cli
