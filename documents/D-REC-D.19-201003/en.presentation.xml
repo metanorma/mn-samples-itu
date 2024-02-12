@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="presentation" version="2.4.1" schema-version="v1.3.0">
+<bibdata type="standard">
+<title language="en" format="text/plain" type="main">Telecommunication for rural and remote areas</title>
+
+
+
+<docidentifier type="ITU">ITU-D D.19</docidentifier><docidentifier type="ITU-lang">ITU-D D.19-E</docidentifier><docnumber>D.19</docnumber><date type="published"><on>2019-01</on></date><date type="published" format="ddMMMyyyy">I.2019</date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language current="true">en</language><script current="true">Latn</script><status><stage>in-force</stage></status><copyright><from>2024</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><ext><doctype language="">recommendation</doctype><doctype language="en">Recommendation</doctype><editorialgroup><bureau>D</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>D</bureau><docnumber>D.19</docnumber></structuredidentifier></ext></bibdata><localized-strings><localized-string key="term_def_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="abbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="symbols" language="en">Abbreviations and acronyms</localized-string><localized-string key="table_of_contents" language="en">Table of Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Definitions</localized-string><localized-string key="termsdefsymbols" language="en">Definitions</localized-string><localized-string key="termsdefabbrev" language="en">Definitions</localized-string><localized-string key="normref" language="en">References</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">None.</localized-string><localized-string key="internal_terms_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="norm_with_refs_pref" language="en">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</localized-string><localized-string key="norm_empty_pref" language="en">None.</localized-string><localized-string key="external_terms_boilerplate" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>For the purposes of this document, the terms and definitions 
+  given in % and the following apply.</p>
+</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%2 in %1</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">NOTE %</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Equation</localized-string><localized-string key="inequality" language="en">Inequality</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where:</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">(This appendix does not form an integral part of this %.)</localized-string><localized-string key="norm_annex" language="en">(This annex forms an integral part of this %.)</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">%Spellout edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="editor.sg" language="en">editor</localized-string><localized-string key="editor.pl" language="en">editors</localized-string><localized-string key="conventions" language="en">Conventions</localized-string><localized-string key="summary" language="en">Summary</localized-string><localized-string key="elsewhere_terms" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="here_terms" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="annex_subclause" language="en">clause</localized-string><localized-string key="keywords" language="en">Keywords</localized-string><localized-string key="in" language="en">in</localized-string><localized-string key="to" language="en">to</localized-string><localized-string key="blankclause" language="en">This clause is intentionally left blank.</localized-string><localized-string key="internal_termsdef" language="en">Terms defined in this recommendation</localized-string><localized-string key="external_termsdef" language="en">Terms defined elsewhere</localized-string><localized-string key="symbols_boilerplate" language="en">This Recommendation uses the following abbreviations and acronyms:</localized-string><localized-string key="clause_empty" language="en">None.</localized-string><localized-string key="amendment" language="en">Amendment</localized-string><localized-string key="corrigendum" language="en">Corrigendum</localized-string><localized-string key="page" language="en">Page</localized-string><localized-string key="placedate" language="en">Geneva, %</localized-string><localized-string key="annex_to_itu_ob" language="en">Annex to ITU Operational Bulletin</localized-string><localized-string key="number_abbrev" language="en">No.</localized-string><localized-string key="annex_to_itu_ob_abbrev" language="en">Annex to ITU OB %</localized-string><localized-string key="international_telecommunication_union" language="en">International Telecommunication Union</localized-string><localized-string key="ITU" language="en">ITU</localized-string><localized-string key="position_on" language="en">(Position on %)</localized-string><localized-string key="revision_abbreviation" language="en">Rev.</localized-string><localized-string key="tsb" language="en">TSB</localized-string><localized-string key="br" language="en">BR</localized-string><localized-string key="bdt" language="en">BDT</localized-string><localized-string key="tsb_full" language="en">Telecommunication<br/>Standardization Bureau<br/>of ITU</localized-string><localized-string key="br_full" language="en">Radiocommunication Bureau<br/>of ITU</localized-string><localized-string key="bdt_full" language="en">Telecommunication<br/>Development Bureau<br/>of ITU</localized-string><localized-string key="prepub" language="en">Prepublished version</localized-string><localized-string key="draft_new" language="en">Draft new %</localized-string><localized-string key="email" language="en">E-mail</localized-string><localized-string key="editor_full" language="en">editor</localized-string><localized-string key="doctype_dict.resolution" language="en">Resolution</localized-string><localized-string key="doctype_dict.recommendation" language="en">Recommendation</localized-string><localized-string key="doctype_dict.recommendation-supplement" language="en">Recommendation Supplement</localized-string><localized-string key="doctype_dict.recommendation-amendment" language="en">Recommendation Amendment</localized-string><localized-string key="doctype_dict.recommendation-corrigendum" language="en">Recommendation Corrigendum</localized-string><localized-string key="doctype_dict.recommendation-errata" language="en">Recommendation Errata</localized-string><localized-string key="doctype_dict.recommendation-annex" language="en">Recommendation Annex</localized-string><localized-string key="doctype_dict.focus-group" language="en">Focus Group</localized-string><localized-string key="doctype_dict.implementers-guide" language="en">Implementers’ Guide</localized-string><localized-string key="doctype_dict.technical-paper" language="en">Technical Paper</localized-string><localized-string key="doctype_dict.technical-report" language="en">Technical Report</localized-string><localized-string key="doctype_dict.joint-itu-iso-iec" language="en">Joint ITU/ISO/IEC</localized-string><localized-string key="doctype_dict.service-publication" language="en">Service Publication</localized-string><localized-string key="doctype_abbrev.recommendation" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-supplement" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-amendment" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-corrigendum" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-errata" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-annex" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.focus-group" language="en">FG</localized-string><localized-string key="doctype_abbrev.implementers-guide" language="en">Imp.</localized-string><localized-string key="doctype_abbrev.technical-paper" language="en">TP</localized-string><localized-string key="doctype_abbrev.technical-report" language="en">TR</localized-string><localized-string key="doctype_abbrev.joint-itu-iso-iec" language="en">ITU/ISO/IEC</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__itu-standard type="semantic" version="2.4.1" schema-version="v1.3.0">
+<semantic__bibdata type="standard">
+<semantic__title language="en" format="text/plain" type="main">Telecommunication for rural and remote areas</semantic__title>
+
+
+
+<semantic__docidentifier type="ITU">ITU-D D.19</semantic__docidentifier><semantic__docidentifier type="ITU-lang">ITU-D D.19-E</semantic__docidentifier><semantic__docnumber>D.19</semantic__docnumber><semantic__date type="published"><semantic__on>2019-01</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
+<semantic__name>International Telecommunication Union</semantic__name>
+<semantic__abbreviation>ITU</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
+<semantic__name>International Telecommunication Union</semantic__name>
+<semantic__abbreviation>ITU</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__status><semantic__stage>in-force</semantic__stage></semantic__status><semantic__copyright><semantic__from>2024</semantic__from><semantic__owner><semantic__organization>
+<semantic__name>International Telecommunication Union</semantic__name>
+<semantic__abbreviation>ITU</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__ext><semantic__doctype>recommendation</semantic__doctype><semantic__editorialgroup><semantic__bureau>D</semantic__bureau></semantic__editorialgroup><semantic__ip-notice-received>false</semantic__ip-notice-received><semantic__structuredidentifier><semantic__bureau>D</semantic__bureau><semantic__docnumber>D.19</semantic__docnumber></semantic__structuredidentifier></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
+<semantic__boilerplate><semantic__copyright-statement>
+
+<semantic__clause id="semantic___47f07130-c82c-7e44-4389-2a6d8eb93156" inline-header="false" obligation="normative">
+<semantic__p id="semantic___bd802aaa-e8a3-8006-9bd8-52d0e1309cac">© ITU 2024</semantic__p>
+
+<semantic__p id="semantic___d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</semantic__p>
+</semantic__clause>
+</semantic__copyright-statement>
+
+<semantic__license-statement>
+
+<semantic__clause id="semantic___intellectual_property_rights" inline-header="false" obligation="normative">
+<semantic__title>INTELLECTUAL PROPERTY RIGHTS</semantic__title>
+<semantic__p id="semantic___f69eb2d8-e3f3-4319-2dce-41ae230d37ae">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</semantic__p>
+
+<semantic__p id="semantic___6f9c905a-7432-63f2-1fbc-3d7476d27115">As of the date of approval of this Recommendation, ITU had  received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <semantic__link target="http://www.itu.int/ITU-T/ipr/"/>.</semantic__p>
+</semantic__clause>
+</semantic__license-statement>
+
+<semantic__legal-statement>
+
+<semantic__clause id="semantic___foreword" inline-header="false" obligation="normative">
+<semantic__title>FOREWORD</semantic__title>
+<semantic__p id="semantic___e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</semantic__p>
+
+<semantic__p id="semantic___06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</semantic__p>
+
+<semantic__p id="semantic___0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</semantic__p>
+
+<semantic__p id="semantic___0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</semantic__p>
+
+<semantic__clause id="semantic___note" inline-header="false" obligation="normative">
+<semantic__title>NOTE</semantic__title>
+<semantic__p id="semantic___56570421-b373-1413-9648-1e440630df94">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</semantic__p>
+
+<semantic__p id="semantic___80edab97-2dbf-d0cc-086a-539f4730432e">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</semantic__p>
+</semantic__clause>
+</semantic__clause>
+</semantic__legal-statement>
+</semantic__boilerplate><semantic__sections><semantic__clause id="semantic___52a96470-9808-bdee-071d-420c230e7adb" inline-header="false" obligation="normative">
+<semantic__p id="semantic___5ee0baec-2f92-f0bc-ca23-e042368928d4">ITU-D</semantic__p>
+
+<semantic__p id="semantic___f3be5376-4527-da94-e623-5b0bfe43cbd2"><semantic__em>recognizing</semantic__em></semantic__p>
+
+<semantic__ol id="semantic___92b6236a-4ccc-ae95-83b5-535072b88956"><semantic__li><semantic__p id="semantic___60141b2b-ff78-13d7-948e-a6a7a57700f7">that the following Recommendations resulting from the ITU-D study periods 1998-2002 and 2002-2006 have provided guidance on a number of issues concerning telecommunications/ICTs in rural and remote areas:</semantic__p>
+<semantic__ul id="semantic___00343b9c-9034-4627-00b8-10af21ac3f9e"><semantic__li><semantic__p id="semantic___5f2cdb56-d8ca-a3b4-4c08-0191c25587d2">RECOMMENDATION ITU-D 6-1, Appropriate low-cost technology options for the provision of telecommunications in rural and remote areas, (January, 2002);</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___770f7d49-6268-c510-4c01-199a4e4ebce8">RECOMMENDATION ITU-D 7-1, Planning and implementation of national telecommunication development plans for rural and remote areas, (January, 2002)</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___74e952b5-fa54-5398-82f0-53088d38d5af">RECOMMENDATION ITU-D 8-1, Promotion of the application of telecommunication facilities for developing various sectors in rural and remote areas; (January, 2002);</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___01c3c480-3780-81e8-0565-8b793929b251">RECOMMENDATION ITU-D 9-1, Appropriate regulatory structures as a means of encouraging the extension of telecommunication services to remote and rural areas, (January, 2002);</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___6d9efc96-60fc-ae05-327a-4ee049821ea9">RECOMMENDATION ITU-D 10-1, Options available for financing rural and remote telecommunication programmes and projects, (January, 2002);</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___bd696c42-7fc0-df09-2cbd-cd62525202fc">RECOMMENDATION ITU-D 17, Sharing of facilities in rural and remote areas (January, 2002);</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___130790a8-c012-1308-3bc2-2ec958247c87">RECOMMENDATION ITU D 18, Potential benefits of rural telecommunications (March, 2006).</semantic__p>
+</semantic__li>
+</semantic__ul>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___11ff2334-2a32-228a-5bf3-45ae5fa8a7aa">that the Focus Group 7 addressed technological options, service potential and financing mechanisms for the provision of telecommunications/ICTs in rural and remote areas;</semantic__p>
+</semantic__li>
+</semantic__ol>
+
+<semantic__p id="semantic___999d6636-befc-c311-3dc0-0c8c506c8445"><semantic__em>noting</semantic__em></semantic__p>
+
+<semantic__ol id="semantic___c646b438-994b-f91f-a225-a4d08561153a"><semantic__li><semantic__p id="semantic___a3c732f0-843d-1e88-20bc-6ee9438391ce">that Focus Group 7 on Rural Telecommunications has paid particular attention to the role of Micro-Finance Institutions (MFI) in promoting access to ICT services and application by supporting small entrepreneurs</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___22562e7c-4956-2780-8b63-1614667b1678">the excellent results of the study period 2006-2010 which consolidate experiences world-wide on the successful provision of telecommunications/ICTs to rural and remote areas, based, inter alia, on information submitted to the case library and on e-Discussions on the issues identified by the Rapporteur Group;<semantic__fn reference="1"><semantic__p id="semantic___d472fd81-d454-5f02-d3ee-4dae87924899">The case library on Question 10-2/2 is available at <semantic__link target="http://www.itu.int/ITU-D/study_groups/SGP_2006-2010/events/Case_Library/index.asp"/>. e-Discussion web page is available at <semantic__link target="http://www.itu.int/ituweblogs/ITU-D-SG2-Q10/"/></semantic__p>
+</semantic__fn></semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___1c45b1d0-062d-6bee-c291-f48e29e3da13">that experiences all over the world, with emerging technologies deployed in rural and remote areas providing broadband, wired transmission media and wireless transmission media indicate rapid decrease of costs, increase of range and capacity, and that all these developments make connecting rural areas a feasible option;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___e87d96c6-f20f-1bc6-1660-7a63b8f497dd">that satellite technologies, including satellite backhaul solutions, play a unique role in extending service delivery and coverage areas and Very Small Aperture Terminals (VSAT) technology has established itself as a versatile communication platform for rural and remote areas;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___b32d10fc-b6d8-299e-d291-9f2f692927cb">that the deployment of IP based platforms serving wide areas can make a range of developmental services and applications such as education, health, agriculture etc., available to the rural population;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___094cd658-0aee-bf8f-273e-3f53796a3f26">that these developments make it possible that telecommunication/ICT services and applications can be provided by small and medium enterprises, local governments, non-governmental organizations in rural and remote areas with appropriate business models;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___79d40743-627b-bfcf-d10f-0ae759a1cf3c">that technical expertise and adoption capacity are important factors to plan, implement and operate such facilities;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___8a10c8df-b838-dbc1-f5ad-11abf6e4e2ce">that in rural and remote areas of developing countries, low incomes, lack of literacy and computer literacy limit the number of people who can have internet access in their homes. These communities need public ICT facilities which can be used for communication, delivery of services and various capacity building activities. There is a role for small entrepreneurs, local governments, schools and post offices in this process;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___6e831648-75ec-15c7-5dcb-8e3aed224887">that provision of ICT services and applications by small entrepreneurs in rural and remote areas have the potential of creating employment. These ventures can be supported by financial institutions and receive support from various government schemes;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___7b18acc8-d210-2e7f-047f-7ea69008caa4">that a well planned maintenance and operation programme in order to keep the infrastructure and associated equipment, including terminal equipment in good working condition is an essential aspect of the support structures in rural areas;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___68a26dd0-88d1-b6c3-c6a4-f8f3ab5a8e1c">the excellent collaboration between ITU/BDT and the Universal Postal Union in promoting the use of post offices as vehicles for provision of access to telecommunications/ICT services and applications in rural and remote areas;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___f7b8c693-c86c-d9be-ec9a-8ca080e24892">that energy supply is a basic bottleneck for the spread of telecommunications/ICTs in rural and remote areas and that innovative uses of solar power, mini-hydro power and windmill power sources, some times in combination are being successfully used in many countries to provide reliable energy sources for mobile base stations;</semantic__p>
+</semantic__li>
+</semantic__ol>
+
+<semantic__p id="semantic___8bdf4c04-a014-248c-4be8-68db8f2514d6"><semantic__em>considering</semantic__em></semantic__p>
+
+<semantic__ol id="semantic___de925c44-4975-19cc-8e60-d271c3c996aa"><semantic__li><semantic__p id="semantic___c2aa2655-35ff-81b8-8080-e8c2c49d343d">that the provision of telecommunications, ICT services and applications can make significant contribution to the quality of life of the population living rural and remote areas;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___36c1e01a-5162-c9e1-fa63-1f6912aee07a">that stimulation of demand for telecommunications/ICTs through proactive government policies is a key to realizing their benefits;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___e5ff5a36-acee-510a-bc1d-7a827fb38be8">that the accumulation of experiences world-wide on community access institutions (telekiosks, multipurpose community telecentres, multi-media centres), points to the need for pro-active and supportive government policies to simulate demand of the services available;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___1183536a-ec06-ecc1-0b44-56cab2c87f7c">that the availability of information should be reinforced by upgradation of skills and provision of capital in order that information is properly utilized; and</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___60f97115-6184-5aaa-8d31-1590b5c17f1e">that access to telecommunications/ICTs for all will maximize social welfare, increase productivity, conserve resources and will contribute to safeguarding human rights.</semantic__p>
+</semantic__li>
+</semantic__ol>
+
+<semantic__p id="semantic___40a62c65-9e99-d66d-0be1-7456a915196b"><semantic__em>recommends</semantic__em></semantic__p>
+
+<semantic__ol id="semantic___f24b1b57-252d-99af-3fd6-fb027ea1c531"><semantic__li><semantic__p id="semantic___c8328b95-1914-a480-17dc-b58d51576146">that developing countries should include provision of telecommunications/ICTs in rural and remote areas in their national development plans;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___9b1b8fbe-7116-b34d-ed87-baf8f88de878">that in planning infrastructure development in rural and remote areas it is important to assess all available technologies in the market taking into consideration the regulatory environment, geographical conditions, climate, costs (capital expenditure and operational expenditure), maintainability, operability, sustainability, etc., based on the results of the site survey;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___1a7a42cf-42f9-d642-0a32-61480fe83bff">that community access to ICT facilities and services is particularly important in rural and remote areas. Business models which can achieve financial and operational sustainability can be operated by local entrepreneurs supported by a variety of initiatives. These facilities, where necessary, should also be supported by Universal Service Funds as an essential component of rural communications;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___ef838746-9197-bf4d-5f79-bcd9bea531fa">that post offices have a communicative presence in the lives of the population in rural areas and their use as vehicles for provision of telecommunication/ICTs should be encouraged;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___e6f95b12-ba96-f59e-330c-932ddbd7ca36">that local institutions, such as village committees should be involved in planning and implementing ICT facilities;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___d27994b8-2dea-cfa9-9100-45f53dbc97e9">that enhancing local technical expertise and adoption are important for successful implementation of ICT services and applications in rural and remote areas. Attention should be paid to training, exchange of information, creation of shared maintenance facilities in order to achieve sustainability and viability;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___bbe1857e-1aab-2a44-f281-b017e090bec4">that migration to broadband technology should be encouraged;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___be03b0eb-80bd-8f2f-b2da-2b649ad1a2cf">that keeping even technologically obsolete equipment in good working condition through effective preventive maintenance programme is an essential part of making telecommunications in rural areas viable and should be encouraged, while guarding against making developing countries a dumping ground for obsolete technologies;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___f91c9e91-ab20-50bb-ffe1-e282464be61b">that it is important to take steps to ensure continued reliability of equipment in rural environments such as developing an appropriate maintenance and operation strategy and encouraging training for technical staff;</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___8351c3d5-801a-cf09-169e-bf68af0a788f">that given that lack of energy supply is a major bottleneck in the provision of telecommunications/ICTs in rural and remote areas, renewable energy sources should be used whenever feasible taking into consideration the environmental problems; and</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___a574a0f7-9b90-f4dc-cb8f-065ef782406f">that partnership among governments, industry, local agencies and international organizations is desirable in the development of low cost ICT infrastructure, including renewable energy sources and terminals for the provision of telecommunications/ICTs in rural and remote areas and should be pursued.</semantic__p>
+</semantic__li>
+</semantic__ol>
+</semantic__clause>
+</semantic__sections>
+</semantic__itu-standard></source></metanorma><render><preprocess-xslt format="xml">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',xml,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="xml">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="rxl">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',rxl,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="rxl">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="html">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',html,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="html">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="doc">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',doc,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="doc">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="pdf">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',pdf,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="pdf">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+</render><source-highlighter-css>sourcecode table td { padding: 5px; }
+sourcecode table pre { margin: 0; }
+sourcecode, sourcecode .w {
+  color: #444444;
+}
+sourcecode .cp {
+  color: #CC00A3;
+}
+sourcecode .cs {
+  color: #CC00A3;
+}
+sourcecode .c, sourcecode .ch, sourcecode .cd, sourcecode .cm, sourcecode .cpf, sourcecode .c1 {
+  color: #FF0000;
+}
+sourcecode .kc {
+  color: #C34E00;
+}
+sourcecode .kd {
+  color: #0000FF;
+}
+sourcecode .kr {
+  color: #007575;
+}
+sourcecode .k, sourcecode .kn, sourcecode .kp, sourcecode .kt, sourcecode .kv {
+  color: #0000FF;
+}
+sourcecode .s, sourcecode .sb, sourcecode .sc, sourcecode .ld, sourcecode .sd, sourcecode .s2, sourcecode .se, sourcecode .sh, sourcecode .si, sourcecode .sx, sourcecode .sr, sourcecode .s1, sourcecode .ss {
+  color: #009C00;
+}
+sourcecode .sa {
+  color: #0000FF;
+}
+sourcecode .nb, sourcecode .bp {
+  color: #C34E00;
+}
+sourcecode .nt {
+  color: #0000FF;
+}
+
+</source-highlighter-css></metanorma-extension>
+<boilerplate><copyright-statement displayorder="1">
+
+<clause id="_47f07130-c82c-7e44-4389-2a6d8eb93156" inline-header="false" obligation="normative">
+<p id="_bd802aaa-e8a3-8006-9bd8-52d0e1309cac">© ITU 2024</p>
+
+<p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<license-statement displayorder="2">
+
+<clause id="_intellectual_property_rights" inline-header="false" obligation="normative">
+<title depth="2">INTELLECTUAL PROPERTY RIGHTS</title>
+<p id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
+
+<p id="_6f9c905a-7432-63f2-1fbc-3d7476d27115">As of the date of approval of this Recommendation, ITU had  received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
+</clause>
+</license-statement>
+
+<legal-statement displayorder="3">
+
+<clause id="_foreword" inline-header="false" obligation="normative">
+<title depth="2">FOREWORD</title>
+<p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+
+<clause id="_note" inline-header="false" obligation="normative">
+<title depth="3">NOTE</title>
+<p id="_56570421-b373-1413-9648-1e440630df94">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
+
+<p id="_80edab97-2dbf-d0cc-086a-539f4730432e">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
+</clause>
+</clause>
+</legal-statement>
+</boilerplate><preface><clause type="toc" id="_88848655-3b0e-43f4-85d0-5cb69d4eaaad" displayorder="4"><title depth="1">Table of Contents</title></clause>
+ </preface><sections><p class="zzSTDTitle1" displayorder="5">Recommendation ITU-D D.19</p><p class="zzSTDTitle2" displayorder="6">Telecommunication for rural and remote areas</p><clause id="_52a96470-9808-bdee-071d-420c230e7adb" inline-header="false" obligation="normative" displayorder="7"><title>1.</title>
+<p id="_5ee0baec-2f92-f0bc-ca23-e042368928d4">ITU-D</p>
+
+<p id="_f3be5376-4527-da94-e623-5b0bfe43cbd2"><em>recognizing</em></p>
+
+<ol id="_92b6236a-4ccc-ae95-83b5-535072b88956" type="alphabet"><li id="_48d1f67f-872b-492c-94be-7a847fec9f03" label="a"><p id="_60141b2b-ff78-13d7-948e-a6a7a57700f7">that the following Recommendations resulting from the ITU-D study periods 1998-2002 and 2002-2006 have provided guidance on a number of issues concerning telecommunications/ICTs in rural and remote areas:</p>
+<ul id="_00343b9c-9034-4627-00b8-10af21ac3f9e"><li><p id="_5f2cdb56-d8ca-a3b4-4c08-0191c25587d2">RECOMMENDATION ITU-D 6-1, Appropriate low-cost technology options for the provision of telecommunications in rural and remote areas, (January, 2002);</p>
+</li>
+<li><p id="_770f7d49-6268-c510-4c01-199a4e4ebce8">RECOMMENDATION ITU-D 7-1, Planning and implementation of national telecommunication development plans for rural and remote areas, (January, 2002)</p>
+</li>
+<li><p id="_74e952b5-fa54-5398-82f0-53088d38d5af">RECOMMENDATION ITU-D 8-1, Promotion of the application of telecommunication facilities for developing various sectors in rural and remote areas; (January, 2002);</p>
+</li>
+<li><p id="_01c3c480-3780-81e8-0565-8b793929b251">RECOMMENDATION ITU-D 9-1, Appropriate regulatory structures as a means of encouraging the extension of telecommunication services to remote and rural areas, (January, 2002);</p>
+</li>
+<li><p id="_6d9efc96-60fc-ae05-327a-4ee049821ea9">RECOMMENDATION ITU-D 10-1, Options available for financing rural and remote telecommunication programmes and projects, (January, 2002);</p>
+</li>
+<li><p id="_bd696c42-7fc0-df09-2cbd-cd62525202fc">RECOMMENDATION ITU-D 17, Sharing of facilities in rural and remote areas (January, 2002);</p>
+</li>
+<li><p id="_130790a8-c012-1308-3bc2-2ec958247c87">RECOMMENDATION ITU D 18, Potential benefits of rural telecommunications (March, 2006).</p>
+</li>
+</ul>
+</li>
+<li id="_fb07a206-a618-481d-90a5-05ecf147c744" label="b"><p id="_11ff2334-2a32-228a-5bf3-45ae5fa8a7aa">that the Focus Group 7 addressed technological options, service potential and financing mechanisms for the provision of telecommunications/ICTs in rural and remote areas;</p>
+</li>
+</ol>
+
+<p id="_999d6636-befc-c311-3dc0-0c8c506c8445"><em>noting</em></p>
+
+<ol id="_c646b438-994b-f91f-a225-a4d08561153a" type="alphabet"><li id="_40e097ae-03ca-464d-ac1f-cebcf0e476d8" label="a"><p id="_a3c732f0-843d-1e88-20bc-6ee9438391ce">that Focus Group 7 on Rural Telecommunications has paid particular attention to the role of Micro-Finance Institutions (MFI) in promoting access to ICT services and application by supporting small entrepreneurs</p>
+</li>
+<li id="_52b8bce9-4ce2-4780-bb55-26d48baef287" label="b"><p id="_22562e7c-4956-2780-8b63-1614667b1678">the excellent results of the study period 2006-2010 which consolidate experiences world-wide on the successful provision of telecommunications/ICTs to rural and remote areas, based, inter alia, on information submitted to the case library and on e-Discussions on the issues identified by the Rapporteur Group;<fn reference="1"><p id="_d472fd81-d454-5f02-d3ee-4dae87924899">The case library on Question 10-2/2 is available at <link target="http://www.itu.int/ITU-D/study_groups/SGP_2006-2010/events/Case_Library/index.asp"/>. e-Discussion web page is available at <link target="http://www.itu.int/ituweblogs/ITU-D-SG2-Q10/"/></p>
+</fn></p>
+</li>
+<li id="_2f97ae82-0912-4d4e-8328-426f2403c6fe" label="c"><p id="_1c45b1d0-062d-6bee-c291-f48e29e3da13">that experiences all over the world, with emerging technologies deployed in rural and remote areas providing broadband, wired transmission media and wireless transmission media indicate rapid decrease of costs, increase of range and capacity, and that all these developments make connecting rural areas a feasible option;</p>
+</li>
+<li id="_45834aee-4f62-4f03-8294-7d091766ce14" label="d"><p id="_e87d96c6-f20f-1bc6-1660-7a63b8f497dd">that satellite technologies, including satellite backhaul solutions, play a unique role in extending service delivery and coverage areas and Very Small Aperture Terminals (VSAT) technology has established itself as a versatile communication platform for rural and remote areas;</p>
+</li>
+<li id="_9db071b3-41f6-4ec1-9539-b73f5f48087d" label="e"><p id="_b32d10fc-b6d8-299e-d291-9f2f692927cb">that the deployment of IP based platforms serving wide areas can make a range of developmental services and applications such as education, health, agriculture etc., available to the rural population;</p>
+</li>
+<li id="_73167853-482e-4b12-8d4f-6a7487ae071c" label="f"><p id="_094cd658-0aee-bf8f-273e-3f53796a3f26">that these developments make it possible that telecommunication/ICT services and applications can be provided by small and medium enterprises, local governments, non-governmental organizations in rural and remote areas with appropriate business models;</p>
+</li>
+<li id="_42b0ef5e-0d43-42ad-8f8e-9fea5c38e407" label="g"><p id="_79d40743-627b-bfcf-d10f-0ae759a1cf3c">that technical expertise and adoption capacity are important factors to plan, implement and operate such facilities;</p>
+</li>
+<li id="_40849e56-7f42-4bde-a8bc-04cd0497c7b5" label="h"><p id="_8a10c8df-b838-dbc1-f5ad-11abf6e4e2ce">that in rural and remote areas of developing countries, low incomes, lack of literacy and computer literacy limit the number of people who can have internet access in their homes. These communities need public ICT facilities which can be used for communication, delivery of services and various capacity building activities. There is a role for small entrepreneurs, local governments, schools and post offices in this process;</p>
+</li>
+<li id="_107f2634-7141-42ee-812c-1070bc516484" label="i"><p id="_6e831648-75ec-15c7-5dcb-8e3aed224887">that provision of ICT services and applications by small entrepreneurs in rural and remote areas have the potential of creating employment. These ventures can be supported by financial institutions and receive support from various government schemes;</p>
+</li>
+<li id="_b1034f3e-fc01-4660-a46b-45ff344d4511" label="j"><p id="_7b18acc8-d210-2e7f-047f-7ea69008caa4">that a well planned maintenance and operation programme in order to keep the infrastructure and associated equipment, including terminal equipment in good working condition is an essential aspect of the support structures in rural areas;</p>
+</li>
+<li id="_219cf2eb-cada-4788-be85-401ebe12fd3b" label="k"><p id="_68a26dd0-88d1-b6c3-c6a4-f8f3ab5a8e1c">the excellent collaboration between ITU/BDT and the Universal Postal Union in promoting the use of post offices as vehicles for provision of access to telecommunications/ICT services and applications in rural and remote areas;</p>
+</li>
+<li id="_7d70be48-7965-47e6-9458-9f409bd8bbbf" label="l"><p id="_f7b8c693-c86c-d9be-ec9a-8ca080e24892">that energy supply is a basic bottleneck for the spread of telecommunications/ICTs in rural and remote areas and that innovative uses of solar power, mini-hydro power and windmill power sources, some times in combination are being successfully used in many countries to provide reliable energy sources for mobile base stations;</p>
+</li>
+</ol>
+
+<p id="_8bdf4c04-a014-248c-4be8-68db8f2514d6"><em>considering</em></p>
+
+<ol id="_de925c44-4975-19cc-8e60-d271c3c996aa" type="alphabet"><li id="_b980f22a-c65e-44a8-b2ab-d5e6f22758e3" label="a"><p id="_c2aa2655-35ff-81b8-8080-e8c2c49d343d">that the provision of telecommunications, ICT services and applications can make significant contribution to the quality of life of the population living rural and remote areas;</p>
+</li>
+<li id="_ff6a45dd-403d-4a35-bb31-447210c562d7" label="b"><p id="_36c1e01a-5162-c9e1-fa63-1f6912aee07a">that stimulation of demand for telecommunications/ICTs through proactive government policies is a key to realizing their benefits;</p>
+</li>
+<li id="_92bb4d39-c794-4257-99e6-724939ef579f" label="c"><p id="_e5ff5a36-acee-510a-bc1d-7a827fb38be8">that the accumulation of experiences world-wide on community access institutions (telekiosks, multipurpose community telecentres, multi-media centres), points to the need for pro-active and supportive government policies to simulate demand of the services available;</p>
+</li>
+<li id="_ce70b29b-cd35-4a55-bacb-11840408178b" label="d"><p id="_1183536a-ec06-ecc1-0b44-56cab2c87f7c">that the availability of information should be reinforced by upgradation of skills and provision of capital in order that information is properly utilized; and</p>
+</li>
+<li id="_dfddc132-9da2-4d63-891f-c57acf7a4960" label="e"><p id="_60f97115-6184-5aaa-8d31-1590b5c17f1e">that access to telecommunications/ICTs for all will maximize social welfare, increase productivity, conserve resources and will contribute to safeguarding human rights.</p>
+</li>
+</ol>
+
+<p id="_40a62c65-9e99-d66d-0be1-7456a915196b"><em>recommends</em></p>
+
+<ol id="_f24b1b57-252d-99af-3fd6-fb027ea1c531" type="alphabet"><li id="_3af6c6cc-a2d0-4093-9b4b-26d0d33267a6" label="a"><p id="_c8328b95-1914-a480-17dc-b58d51576146">that developing countries should include provision of telecommunications/ICTs in rural and remote areas in their national development plans;</p>
+</li>
+<li id="_ac68213a-1c90-47e8-bb8d-b2f46861026d" label="b"><p id="_9b1b8fbe-7116-b34d-ed87-baf8f88de878">that in planning infrastructure development in rural and remote areas it is important to assess all available technologies in the market taking into consideration the regulatory environment, geographical conditions, climate, costs (capital expenditure and operational expenditure), maintainability, operability, sustainability, etc., based on the results of the site survey;</p>
+</li>
+<li id="_5e114748-324a-4af4-bebd-5efddf416719" label="c"><p id="_1a7a42cf-42f9-d642-0a32-61480fe83bff">that community access to ICT facilities and services is particularly important in rural and remote areas. Business models which can achieve financial and operational sustainability can be operated by local entrepreneurs supported by a variety of initiatives. These facilities, where necessary, should also be supported by Universal Service Funds as an essential component of rural communications;</p>
+</li>
+<li id="_f7d38845-2ea5-4597-94c2-201390e9e14e" label="d"><p id="_ef838746-9197-bf4d-5f79-bcd9bea531fa">that post offices have a communicative presence in the lives of the population in rural areas and their use as vehicles for provision of telecommunication/ICTs should be encouraged;</p>
+</li>
+<li id="_daccc476-563d-4275-80d0-af5c07cdd357" label="e"><p id="_e6f95b12-ba96-f59e-330c-932ddbd7ca36">that local institutions, such as village committees should be involved in planning and implementing ICT facilities;</p>
+</li>
+<li id="_8acaeac1-65de-4394-a86a-087feb2584dd" label="f"><p id="_d27994b8-2dea-cfa9-9100-45f53dbc97e9">that enhancing local technical expertise and adoption are important for successful implementation of ICT services and applications in rural and remote areas. Attention should be paid to training, exchange of information, creation of shared maintenance facilities in order to achieve sustainability and viability;</p>
+</li>
+<li id="_d4bf552a-dc0c-4357-ae65-3851fed042ac" label="g"><p id="_bbe1857e-1aab-2a44-f281-b017e090bec4">that migration to broadband technology should be encouraged;</p>
+</li>
+<li id="_ec607082-83ab-432f-94ea-5e7938100f89" label="h"><p id="_be03b0eb-80bd-8f2f-b2da-2b649ad1a2cf">that keeping even technologically obsolete equipment in good working condition through effective preventive maintenance programme is an essential part of making telecommunications in rural areas viable and should be encouraged, while guarding against making developing countries a dumping ground for obsolete technologies;</p>
+</li>
+<li id="_f7f1d01d-c256-4cf4-bb6f-1ec9190f434b" label="i"><p id="_f91c9e91-ab20-50bb-ffe1-e282464be61b">that it is important to take steps to ensure continued reliability of equipment in rural environments such as developing an appropriate maintenance and operation strategy and encouraging training for technical staff;</p>
+</li>
+<li id="_4ad3c67d-7292-40ad-86a8-19986ff10e84" label="j"><p id="_8351c3d5-801a-cf09-169e-bf68af0a788f">that given that lack of energy supply is a major bottleneck in the provision of telecommunications/ICTs in rural and remote areas, renewable energy sources should be used whenever feasible taking into consideration the environmental problems; and</p>
+</li>
+<li id="_08a26171-1eb2-462e-9e02-03bffa776cb5" label="k"><p id="_a574a0f7-9b90-f4dc-cb8f-065ef782406f">that partnership among governments, industry, local agencies and international organizations is desirable in the development of low cost ICT infrastructure, including renewable energy sources and terminals for the provision of telecommunications/ICTs in rural and remote areas and should be pursued.</p>
+</li>
+</ol>
+</clause>
+</sections>
+</itu-standard>

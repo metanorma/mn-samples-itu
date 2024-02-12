@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.4.1" schema-version="v1.3.0">
+<bibdata type="standard">
+<title language="en" format="text/plain" type="main">Implementers' guide for P.863</title>
+
+
+
+<docidentifier type="ITU">ITU-T P.863 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier><docnumber>P.863 Implementers' Guide</docnumber><date type="published"><on>2018-05-10</on></date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor">raporteur</role><person>
+<name><completename>Jens Berger</completename></name>
+<affiliation><organization>
+<name>Rohde &amp;amp; Schwarz</name>
+<address><formattedAddress>Switzerland</formattedAddress></address></organization></affiliation><phone>+41 32 686 6565</phone><phone type="fax">+41 32 686 6566</phone><email>jens.berger@rohde-schwarz.com</email></person></contributor><contributor><role type="editor"/><person>
+<name><completename>Joachim Pomy</completename></name>
+<affiliation><organization>
+<name>OPTICOM GmbH</name>
+<address><formattedAddress>Germany</formattedAddress></address></organization></affiliation><phone>+49 177 78 71958</phone><phone type="fax">+49 6251 9454945</phone><email>consultant@joachimpomy.de</email></person></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract><p>This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p>
+
+<p>This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p>
+</abstract><status><stage>in-force</stage></status><copyright><from>2018</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><series type="main">
+<title>P: Terminals and Subjective and Objective Assessment Methods</title>
+</series><series type="secondary">
+<title>Methods for objective and subjective assessment of speech quality</title>
+</series><ext><doctype>implementers-guide</doctype><editorialgroup><bureau>T</bureau><group type="study-group">
+<name>12</name>
+</group></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>P.863 Implementers' Guide</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_bbd9dfd2-b64e-eb3c-69e9-a5dfe29ef604" inline-header="false" obligation="normative">
+<p id="_c55f784e-df5e-1dee-00ee-4eea3cc145ed">© ITU 2018</p>
+
+<p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<legal-statement>
+
+<clause id="_foreword" inline-header="false" obligation="normative">
+<title>FOREWORD</title>
+<p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+</clause>
+</legal-statement>
+</boilerplate><preface><abstract id="_summary"><title>Summary</title><p id="_e6c896eb-0823-24ba-9615-7f01c98d9059">This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p>
+
+<p id="_d14fde0c-077a-36d7-d778-ac03579a0130">This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p>
+</abstract><clause id="_change_log" inline-header="false" obligation="informative">
+<title>Change log</title>
+<table id="_867e24a2-150d-f5af-f133-0a7ee148bc9b" unnumbered="true"><tbody><tr><td valign="top" align="left">2018-05</td>
+<td valign="top" align="left">Initial version</td>
+</tr></tbody>
+</table>
+</clause></preface><sections>
+
+
+<clause id="_scope" type="scope" inline-header="false" obligation="normative">
+<title>Scope</title>
+<p id="_e56c7a46-cf41-0a75-24a8-28e77b743f9b">This guide resolves defects in the following categories:</p>
+
+<ul id="_595354b1-bd9c-3dbb-0bf7-7126c43ae701"><li><p id="_0284502d-18d2-6b71-643f-597518cfa61c">editorial errors</p>
+</li>
+<li><p id="_e42637f7-2007-7fe0-1494-ab7c59f247d4">technical errors, such as omissions and inconsistencies</p>
+</li>
+<li><p id="_e71017d7-9926-cd77-afe8-7b854e5bd9c0">ambiguities</p>
+</li>
+</ul>
+
+<p id="_73484642-6bd0-36e5-8f37-6584cdda5765">In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
+
+<p id="_c1fd5090-79a1-fd4b-5601-3eba4b723cb2">This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</p>
+</clause>
+
+<clause id="_introduction" inline-header="false" obligation="normative">
+<title>Introduction</title>
+<p id="_e47bc0e4-380b-27f7-29be-bb6d6f72e506">This implementers' guide is a compilation of reported defects for the version 2018-03 of <eref type="inline" bibitemid="p863" citeas="ITU-T P.863"/>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
+
+<p id="_91075ce3-5f28-91f8-9c38-4b33e609f188">P.863</p>
+
+<p id="_ab8ccd22-975c-5d09-20f1-4bbf3f5e995a">The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
+</clause>
+
+<clause id="_defect_resolution_procedure" inline-header="false" obligation="normative">
+<title>Defect resolution procedure</title>
+<p id="_ed63e505-44a3-9634-19de-b3c1c734a1d7">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
+</clause>
+
+
+
+<clause id="_nomenclature" inline-header="false" obligation="normative">
+<title>Nomenclature</title>
+<p id="_1a62a3fe-7fd9-44d4-f902-d3c212698018">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
+
+<table id="_d359b8d7-601d-4154-4b2d-7e7794d68697" unnumbered="true"><tbody><tr><th valign="top" align="center">Symbol</th>
+<th valign="top" align="center">Description</th>
+</tr><tr><td valign="top" align="center"><strong><em>[Begin Correction]</em></strong></td>
+<td valign="top" align="left">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr><td valign="top" align="center"><strong><em>[End Correction]</em></strong></td>
+<td valign="top" align="left">Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr><td valign="top" align="center"><strong><em>…​</em></strong></td>
+<td valign="top" align="left">Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.</td>
+</tr><tr><td valign="top" align="center"><em>--- SPECIAL INSTRUCTIONS --- {instructions}</em></td>
+<td valign="top" align="left">Indicates a set of special editing instructions to be followed.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_technical_and_editorial_corrections_to_recommendation_p_863" inline-header="false" obligation="normative">
+<title>Technical and editorial corrections to Recommendation P.863</title>
+<clause id="_annex_b_tempalignment_pdf" inline-header="false" obligation="normative">
+<title>Annex B, TempAlignment.pdf</title>
+<p id="_c0b1f7ab-2234-58c3-2b7d-0fcf3ec774e8"><em>Missing statement, which rendered part of the surrounding code useless.</em></p>
+
+<p id="_4be8cd16-4171-7205-bee7-b4a71b6c93f6"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 2655</em></p>
+
+<p id="_3fbff269-98cb-6262-0cbb-23576cc2b347">[Begin Correction]</p>
+
+<sourcecode id="_09a9335e-0504-f257-42a9-32c84be4b0dc" unnumbered="true">Done = true</sourcecode>
+
+
+<p id="_8643cd3d-e43b-18ed-d929-c5bbb235606f">[End Correction]</p>
+</clause>
+
+<clause id="_annex_b_tempalignment_pdf_2" inline-header="false" obligation="normative">
+<title>Annex B, TempAlignment.pdf</title>
+<p id="_3a2976ab-e10e-6b4e-e137-9ca7a8fc4ec8"><em>The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug.</em></p>
+
+<p id="_7395bf5a-a741-0c38-1915-c9056a8b3618"><em>--- SPECIAL INSTRUCTIONS --- Replace lines 3940 and 3941:</em></p>
+
+<p id="_2d03b6e7-8cdd-9939-1d25-4321a4859cfa">[Begin Correction]</p>
+
+<p id="_e3cd04cb-897e-ec14-0fcb-b61dc0855b6a"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_98d6fb3b-fe5f-9709-db92-688e08984813" unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples</sourcecode>
+
+
+<p id="_d3187ea1-2f25-be50-0e96-1054b9b9da78"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_3c3cf96c-45f5-3839-7d8a-61154a15c217" unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</sourcecode>
+
+
+<p id="_81f139ed-f1fa-617b-b0ae-08cbc8e419ec">[End Correction]</p>
+</clause>
+
+<clause id="_annex_b_tempalignment_pdf_3" inline-header="false" obligation="normative">
+<title>Annex B, TempAlignment.pdf</title>
+<p id="_93ec2c6b-18c1-7c31-3fe8-fb65bc6ac744"><em>The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence.</em></p>
+
+<p id="_153754e3-445c-3d75-f2e1-0906fe491c41"><em>--- SPECIAL INSTRUCTIONS --- Modify lines 5092 to 5102:</em></p>
+
+<p id="_cfbca1e0-aee2-f1a3-64b9-29ed9e94a96d">[Begin Correction]</p>
+
+<p id="_2f5b6ed8-1325-e8ee-f325-0f1c2aeba08e"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_6e05e6b8-c621-fe94-13a9-948c983eb5ee" unnumbered="true">for (utt=0 utt&lt;NumberOfUtterances-1 utt++)
+      {
+      if (pStartSampleUtterance[utt+1]-pStopSampleUtterance[utt] &lt; 0.1*mProcessData.mSamplerate)
+           {
+            bool IsInsideActiveSection = true
+            while(LastUsedReparsePoint&lt;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&gt;ReparsePoints[LastUsedReparsePoint].Deg.End)
+                  LastUsedReparsePoint++
+            if (pStartSampleUtterance[utt+1]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start)
+                IsInsideActiveSection = false
+
+                if ((!IsInsideActiveSection &amp;&amp;</sourcecode>
+
+
+<p id="_481a2ef0-7ddd-54ff-b547-df33d5d1dc93"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_05154865-a253-22d7-d343-8416d9480812" unnumbered="true">for (utt=0 utt&lt;NumberOfUtterances-1 utt++)
+     {
+        bool IsInsideActiveSection1 = true
+        bool IsInsideActiveSection2 = true
+        while(LastUsedReparsePoint&lt;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt]&gt;ReparsePoints[LastUsedReparsePoint].Deg.End)
+            LastUsedReparsePoint++
+        if (pStartSampleUtterance[utt]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start)
+            IsInsideActiveSection1 = false
+
+        int ReparsePoint2 = LastUsedReparsePoint
+        while(ReparsePoint2&lt;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&gt;ReparsePoints[ReparsePoint2].Deg.End)
+            ReparsePoint2++
+        if (pStartSampleUtterance[utt+1]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt+1]&lt;ReparsePoints[ReparsePoint2].Deg.Start)
+            IsInsideActiveSection2 = false
+
+        if (ReparsePoint2==LastUsedReparsePoint &amp;&amp; (IsInsideActiveSection1 &amp;&amp; IsInsideActiveSection2) || (!IsInsideActiveSection1 &amp;&amp; !IsInsideActiveSection2))
+        {
+            if ((!IsInsideActiveSection1 &amp;&amp;</sourcecode>
+
+
+<p id="_9e0f912b-76ff-ade2-d751-e5817607c8bb"><em>[End Correction]</em></p>
+</clause>
+
+<clause id="_annex_b_timealign_pdf" inline-header="false" obligation="normative">
+<title>Annex B, TimeAlign.pdf</title>
+<p id="_eca1774c-fa1f-324a-5418-16c277650b50"><em>When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same.</em></p>
+
+<p id="_0003c7cd-d27c-4a63-2e97-9650a2481243"><em>--- SPECIAL INSTRUCTIONS --- replace line 878</em></p>
+
+<p id="_e4fbb1ac-eaa7-ace8-ef48-fbf5d69b5963">[Begin Correction]</p>
+
+<p id="_75b824cb-5582-7365-953a-f912864d2c22"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_1bdf1227-c57a-3324-134b-1acbe74e831c" unnumbered="true">pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)</sourcecode>
+
+
+<p id="_3fa1f970-26d1-cb69-29e9-7b986581d605"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_976cf036-f588-53f4-a014-3a5f8be34018" unnumbered="true">pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);</sourcecode>
+
+
+<p id="_84bf3a4c-93d9-9b9b-9442-b3e49ec5a00a">[End Correction]</p>
+</clause>
+
+<clause id="_annex_b_speechtempalign_pdf" inline-header="false" obligation="normative">
+<title>Annex B, SpeechTempAlign.pdf</title>
+<p id="_d28227aa-1f4e-e5c1-7c0b-954b83ddfcc1"><em>Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier.</em></p>
+
+<p id="_93197758-bbd7-119c-50f0-4109bedc82b8"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 1439</em></p>
+
+<p id="_9c8ed2a4-6ed0-7a62-2460-ce1d83b24cff">[Begin Correction]</p>
+
+<sourcecode id="_3a07427f-cc6b-ff49-4abe-f59c7be3c213" unnumbered="true">if (*NoiseLevelSilence&lt;0.125) *NoiseLevelSilence = 0.125</sourcecode>
+
+
+<p id="_296044ec-2fb6-e0e8-f6af-51f37cd74165">[End Correction]</p>
+</clause>
+
+<clause id="_annex_b_tempalignment_pdf_4" inline-header="false" obligation="normative">
+<title>Annex B, TempAlignment.pdf</title>
+<p id="_e74f9ad6-752a-41d9-500c-f65dd7a355d6"><em>Avoid calculating correlation for signal segments which do not contain speech.</em></p>
+
+<p id="_cc1bdcae-d696-1d89-14da-0ff736c2f00d"><em>--- SPECIAL INSTRUCTIONS --- replace line 5146</em></p>
+
+<p id="_33d82269-4dc9-926a-b1f7-a57ec9e37b2b">[Begin Correction]</p>
+
+<p id="_f01ec8bb-2661-c94c-e990-ed3caa5b9f23"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_74ebc559-4bf7-1b57-8023-a321fbc8be74" unnumbered="true">int Delay = FindSectionAInSectionB(&amp;#x26;SecA, &amp;#x26;SecB, &amp;#x26;RefSig, &amp;#x26;DegSig, 0, 1, 1, 2*MaxLagSamples);</sourcecode>
+
+
+<p id="_547fda56-23cd-1e5c-e9df-f68d8730d9d3"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_73af9d24-5bee-dc1d-dcd7-93d1d44da63c" unnumbered="true">int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
+int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);
+int FrameNum = FrameNumStart;
+bool ActiveSeg = false;
+while ((!ActiveSeg) &amp;&amp; (FrameNum&lt;=FrameNumEnd) &amp;&amp; (FrameNum&gt;=FrameNumStart) &amp;&amp; (FrameNum&lt;ActiveFramesLen))
+{
+      ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];
+      FrameNum++;
+}
+if (!ActiveSeg)
+      continue;
+int Delay = 0;
+Delay = FindSectionAInSectionB(&amp;#x26;SecA, &amp;#x26;SecB, &amp;#x26;RefSig, &amp;#x26;DegSig, 0, 1, 1, 2*MaxLagSamples);</sourcecode>
+
+
+<p id="_b346f3e2-017e-c109-91c2-5f20bd427219">[End Correction]</p>
+</clause>
+
+<clause id="_annex_a_subfolder_results_ed_3" inline-header="false" obligation="normative">
+<title>Annex A, subfolder Results Ed. 3</title>
+<p id="_f11a6ec3-334c-c8f5-6f9a-ce94a58f1f23"><em>The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file.</em></p>
+
+<p id="_585280a5-d8b7-e0dd-1c94-64c0847340f9"><em>--- SPECIAL INSTRUCTIONS --- Replace subfolder in Annex A</em></p>
+
+<p id="_9c89a647-37f8-a947-332d-5329a2cbc47c">[Begin Correction]</p>
+
+<p id="_da2e0119-8e97-d108-8af6-770ff2ed1f7e"><em>--- SPECIAL INSTRUCTIONS --- Old Subfolder</em></p>
+
+<sourcecode id="_b0106cb3-5ea5-5927-0bfb-83e15d507d60" unnumbered="true">Results Ed. 3</sourcecode>
+
+
+<p id="_8e5dd509-fa41-de29-b22c-1fde11217219"><em>--- SPECIAL INSTRUCTIONS --- New Subfolder</em></p>
+
+<sourcecode id="_fefd7a42-4c2d-ac32-07d5-a845a826fda2" unnumbered="true">Results Ed. 3 - IG 2018-05</sourcecode>
+
+
+<p id="_9b71d335-201e-647a-c8b2-3033176fe09a">[End Correction]</p>
+</clause>
+
+<clause id="_annex_b_additional_info" inline-header="false" obligation="normative">
+<title>Annex B - additional info</title>
+<note id="_c4b35716-15b9-24e3-3a82-1ae4528faab7"><p id="_fe810aab-cbb7-bc81-ed1e-44d1b9a534b5">The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p>
+</note>
+</clause>
+</clause>
+
+
+</sections><annex id="_p_863_2018_03_defect_report_form" inline-header="false" obligation="normative">
+<title>P.863 (2018-03) Defect Report Form</title>
+<table id="_29279feb-4b03-ec89-6274-686e9042a24c" unnumbered="true"><tbody><tr><td valign="top" align="left">DATE:</td>
+<td valign="top" align="left"/></tr><tr><td valign="top" align="left"><p id="_cf333606-8be2-996b-56ba-66283cc558c6">CONTACT INFORMATION<br/>
+NAME:<br/>
+COMPANY:<br/>
+ADDRESS:<br/>
+TEL:<br/>
+FAX:<br/>
+E-MAIL:</p>
+</td>
+<td valign="top" align="left"/></tr><tr><td valign="top" align="left">AFFECTED RECOMMENDATIONS:</td>
+<td valign="top" align="left"/></tr><tr><td valign="top" align="left">DESCRIPTION OF PROBLEM:</td>
+<td valign="top" align="left"/></tr><tr><td valign="top" align="left">SUGGESTIONS FOR RESOLUTION:</td>
+<td valign="top" align="left"/></tr></tbody>
+<note id="_144e87c5-7df0-e541-9081-f059f06d102e"><p id="_d2e95842-3a08-4c42-2171-d74f29d9268d">Attach additional pages if more space is required than is provided above.</p>
+</note></table>
+
+
+</annex><bibliography><references id="_references" normative="true" obligation="informative">
+<title>References</title><p id="_275a5bef-a7d6-9098-1663-185b6fe8dd33">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="p863" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title type="title-main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13570&amp;lang=en</uri>  <docidentifier type="ITU" primary="true">ITU-T P.863</docidentifier>  <date type="published">    <on>2018-03-16</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">Amendment 1 to Recommendation ITU-T P.863 replaces Appendix III, which gives advice on how ITU-T P.863 can be used for the prediction of listening quality of acoustically recorded speech data in a narrowband context.</abstract>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>2018</from>    <owner>      <organization>        
+<name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</formattedref>      <docidentifier type="ITU">P Suppl. 10 (11/1988)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</formattedref>      <docidentifier type="ITU">P Suppl. 16 (11/1988)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</formattedref>      <docidentifier type="ITU">P Suppl. 20 (03/1993)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</formattedref>      <docidentifier type="ITU">P Suppl. 23 (02/1998)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</formattedref>      <docidentifier type="ITU">P Suppl. 24 (10/2005)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</formattedref>      <docidentifier type="ITU">P Suppl. 25 (01/2011)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</formattedref>      <docidentifier type="ITU">P Suppl. 26 (09/2017)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 27 (01/2017)</formattedref>      <docidentifier type="ITU">P Suppl. 27 (01/2017)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</formattedref>      <docidentifier type="ITU">P Suppl. 28 (09/2020)</docidentifier>    </bibitem>
+  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 29 (01/2023)</formattedref>      <docidentifier type="ITU">P Suppl. 29 (01/2023)</docidentifier>    </bibitem>
+  </relation>  <place>Geneva</place></bibitem>
+
+
+
+</references></bibliography>
+</itu-standard>
