@@ -1,13 +1,13 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_b9de74c8.85a5.4456"
+Content-Type: multipart/related; boundary="----=_NextPart_3f4b5df6.7279.4973"
 
-------=_NextPart_b9de74c8.85a5.4456
+------=_NextPart_3f4b5df6.7279.4973
 Content-ID: <en.htm>
 Content-Disposition: inline; filename="en.htm"
 Content-Type: text/html; charset="utf-8"
 
 <?xml version="1.0"?>
-<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
   <head>
 <xml>
 <w:WordDocument>
@@ -212,6 +212,7 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -227,6 +228,7 @@ p.MsoHeaderLandscape, li.MsoHeaderLandscape, div.MsoHeaderLandscape {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -1912,6 +1914,45 @@ ol {
 ul {
   margin-bottom: 0cm;
   margin-left: 18pt; }
+p.Sourcecode table td { padding: 5px; }
+p.Sourcecode table pre { margin: 0; }
+p.Sourcecode, p.Sourcecode .w {
+  color: #444444;
+}
+p.Sourcecode .cp {
+  color: #CC00A3;
+}
+p.Sourcecode .cs {
+  color: #CC00A3;
+}
+p.Sourcecode .c, p.Sourcecode .ch, p.Sourcecode .cd, p.Sourcecode .cm, p.Sourcecode .cpf, p.Sourcecode .c1 {
+  color: #FF0000;
+}
+p.Sourcecode .kc {
+  color: #C34E00;
+}
+p.Sourcecode .kd {
+  color: #0000FF;
+}
+p.Sourcecode .kr {
+  color: #007575;
+}
+p.Sourcecode .k, p.Sourcecode .kn, p.Sourcecode .kp, p.Sourcecode .kt, p.Sourcecode .kv {
+  color: #0000FF;
+}
+p.Sourcecode .s, p.Sourcecode .sb, p.Sourcecode .sc, p.Sourcecode .ld, p.Sourcecode .sd, p.Sourcecode .s2, p.Sourcecode .se, p.Sourcecode .sh, p.Sourcecode .si, p.Sourcecode .sx, p.Sourcecode .sr, p.Sourcecode .s1, p.Sourcecode .ss {
+  color: #009C00;
+}
+p.Sourcecode .sa {
+  color: #0000FF;
+}
+p.Sourcecode .nb, p.Sourcecode .bp {
+  color: #C34E00;
+}
+p.Sourcecode .nt {
+  color: #0000FF;
+}
+
 
 -->
 ]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
@@ -2901,6 +2942,7 @@ div.WordSection1 {
 
   mso-page-numbers: roman-lower 1;
 
+
   mso-even-header: url(cid:header.html) eh2;
   mso-header: url(cid:header.html) h2;
   mso-even-footer: url(cid:header.html) ef2;
@@ -3142,7 +3184,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:70.9pt;mso-height-rule:   exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <p class="MsoNormal"><v:shapetype coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><a name="_x0000_t75" id="_x0000_t75"></a>
    <v:stroke joinstyle="miter"/>
    <v:formulas>
     <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -3160,40 +3202,40 @@ table.biblio td {
    </v:formulas>
    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
    <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f">
-  <v:imagedata src="cid:503411b4-c3e2-45c5-94aa-4ee28a4eba8a.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
-  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></a></p>
+  </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f"><a name="Picture_x0020_2" id="Picture_x0020_2"></a>
+  <v:imagedata src="cid:2dc2b12d-902c-43c7-b8fc-e90603271fb7.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
+  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></a></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   <br style="mso-ignore:vglayout" clear="ALL"/>
-  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:1;height:49.6pt;mso-height-rule:exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:2;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="168" valign="top" style="width:126.0pt;padding:0cm 4.25pt 0cm 4.25pt">
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="400" colspan="2" valign="top" style="width:300.0pt;padding:0cm 4.25pt 0cm 4.25pt">
   <p class="MsoNormal" align="right" style="margin-top:12.0pt;text-align:right"><span style="mso-bookmark:_Hlk526346232">
     
-    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T G.8001 Implementers&#x2019; Guide<o:p></o:p></span></b></a>
+    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T G.8001 Implementers&#x2019; Guide<o:p class="MsoNormal"></o:p></span></b></a>
     
               
           
@@ -3204,13 +3246,15 @@ table.biblio td {
  <tr style="mso-yfti-irow:3;height:48.7pt;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="303" colspan="2" valign="top" style="width:227.45pt;padding:0cm 4.25pt 0cm 4.25pt;   height:48.7pt">
-    
-  <p class="MsoNormal" align="left" style="text-align:left"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">TELECOMMUNICATION</span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><br/>
-  </span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">STANDARDIZATION SECTOR<br/>
-  OF ITU</span></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:10.0pt;   mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+
+  
+  
+  <p class="MsoNormal" align="left" style="text-align:left">
+  <span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;               mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">Telecommunication<br/>Standardization Bureau<br/>of ITU</span></p>
   
       
     
+  
 
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
@@ -3218,32 +3262,32 @@ table.biblio td {
   
   
   <p class="MsoNormal" align="right" style="margin-top:0cm;text-align:right">
-  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(02/2020)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p></o:p></span></a></span></p>
+  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(02/2020)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p class="MsoNormal"></o:p></span></a></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:ddatee"></span></span>
  </tr>
  <tr style="mso-yfti-irow:4;page-break-inside:avoid;height:6.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:6.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;border:none;   border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.0cm;   mso-height-rule:exactly">
     
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dsece" id="dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">SERIES G: TRANSMISSION SYSTEMS AND MEDIA, DIGITAL SYSTEMS AND NETWORKS<o:p></o:p></span></a></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dsece" id="dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">SERIES G: TRANSMISSION SYSTEMS AND MEDIA, DIGITAL SYSTEMS AND NETWORKS<o:p class="MsoNormal"></o:p></span></a></span></p>
   
   
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">Digital networks &#x2013; General aspects&#xA0;<o:p></o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">Digital networks &#x2013; General aspects&#xA0;<o:p class="MsoNormal"></o:p></span></span></span></p>
   
       
   
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
  </tr>
  <tr style="mso-yfti-irow:5;page-break-inside:avoid;height:4.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="top" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly">
@@ -3253,7 +3297,7 @@ table.biblio td {
     <br/>Implementers' guide for Recommendation ITU-T G.8001/Y.1354</b>
   
   </span>
-  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></span></p>
+  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"></span></span>
  </tr>
@@ -3267,18 +3311,18 @@ table.biblio td {
  
  <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;page-break-inside:avoid;   height:1.5cm;mso-height-rule:exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:1.5cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
   <p class="MsoNormal" align="left" style="margin-top:3.0pt;margin-right:0cm;   margin-bottom:12.0pt;margin-left:0cm;text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dnum2e" id="dnum2e"></a>
   
   <span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T G.8001 Implementers&#x2019; Guide<span style="mso-spacerun:yes">&#xA0;
-  </span>ITU&#x2011;T<span style="mso-spacerun:yes">&#xA0; </span>G.8001/Y.1354 Implementers' Guide<o:p></o:p></span>
+  </span>ITU&#x2011;T<span style="mso-spacerun:yes">&#xA0; </span>G.8001/Y.1354 Implementers' Guide<o:p class="MsoNormal"></o:p></span>
   
   </span></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3288,14 +3332,14 @@ table.biblio td {
 <p class="MsoNormal" align="right" style="margin-top:0.0pt;text-align:right; tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm">
   <span style="mso-bookmark: _Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt; font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-no-proof:yes" xml:lang="EN-US">
-      <v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square">
-<v:imagedata src="cid:4b7c387a-c0bb-4199-91a2-43b1d642412e.svg" o:title="logo_E" width="272" height="300"/>
+      <v:shape o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square"><a name="Picture_x0020_1" id="Picture_x0020_1"></a>
+<v:imagedata src="cid:0fd6dd38-c68f-4f03-bf6a-b1c3be68f805.svg" o:title="logo_E" width="272" height="300"/>
 </v:shape>
     </span>
   </span>
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif; mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">
-      <o:p></o:p>
+      <o:p class="MsoNormal"></o:p>
     </span>
   </span>
 </p>
@@ -3305,11 +3349,12 @@ table.biblio td {
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection2">
+
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers&#x2019; Guide ITU-T G.8001/Y.1354 Implementers' Guide<o:p></o:p></span></span></p>
-  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers' guide for Recommendation ITU-T G.8001/Y.1354<o:p></o:p></span></span></p>
+  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers&#x2019; Guide ITU-T G.8001/Y.1354 Implementers' Guide<o:p class="MsoNormal"></o:p></span></span></p>
+  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers' guide for Recommendation ITU-T G.8001/Y.1354<o:p class="MsoNormal"></o:p></span></span></p>
   
   
   
@@ -3317,7 +3362,7 @@ table.biblio td {
   
   
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3326,17 +3371,17 @@ table.biblio td {
 <p class="MsoNormal">
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH">
-      <o:p>&#xA0;</o:p>
+      <o:p class="MsoNormal">&#xA0;</o:p>
     </span>
   </span>
 </p>
 
 
 
-<p class="MsoNormal"><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+<p class="MsoNormal"><o:wrapblock><v:shapetype coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><a name="_x0000_t202" id="_x0000_t202"></a>
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF 90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA 0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893 SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY 22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA IQBJkvqzLAIAAFEEAAAOAAAAZHJzL2Uyb0RvYy54bWysVF1v2jAUfZ+0/2D5fSQwYG1EqFgrpklV WwmmPhvHIZHij9mGhP36HTuBom5P017M9b039+OcYxZ3nWzIUVhXa5XT8SilRCiui1rtc/pju/50 Q4nzTBWs0Urk9CQcvVt+/LBoTSYmutJNISxBEeWy1uS08t5kSeJ4JSRzI22EQrDUVjKPq90nhWUt qssmmaTpPGm1LYzVXDgH70MfpMtYvywF989l6YQnTU4xm4+njecunMlywbK9Zaaq+TAG+4cpJKsV ml5KPTDPyMHWf5SSNbfa6dKPuJaJLsuai7gDthmn77bZVMyIuAvAceYCk/t/ZfnT8cWSugB3lCgm QdFWdJ581R0ZB3Ra4zIkbQzSfAd3yBz8Ds6wdFdaGX6xDkEcOJ8u2IZiHM7Z/HY8TxHiiN1MJ1PY KJO8fW2s89+EliQYObXgLkLKjo/O96nnlNBM6XXdNPCzrFGkzen88yyNH1wiKN4o9Ag79LMGy3e7 blhgp4sT9rK614UzfF2j+SNz/oVZCAHzQtz+GUfZaDTRg0VJpe2vv/lDPvhBlJIWwsqp+3lgVlDS fFdg7nY8nQYlxst09mWCi72O7K4j6iDvNbQLdjBdNEO+b85mabV8xRtYha4IMcXRO6f+bN77Xu54 Q1ysVjEJ2jPMP6qN4aF0wDBAu+1emTUD/h7MPemzBFn2joY+N3zpzOrgQUbkKADcozrgDt1Gloc3 Fh7G9T1mvf0TLH8DAAD//wMAUEsDBBQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAZHJzL2Rvd25y ZXYueG1sTI/NTsMwEITvSLyDtUhcUGsnhShK41SoKOeqKQ/gxksS8E8UO014e5YTXFYa7e7MfOVh tYbdcAqDdxKSrQCGrvV6cJ2E90u9yYGFqJxWxjuU8I0BDtX9XakK7Rd3xlsTO0YmLhRKQh/jWHAe 2h6tCls/oqPdh5+siiSnjutJLWRuDU+FyLhVg6OEXo147LH9amYrwafLkzk3SX08LZ+1OM14aQJK +fiwvu1pvO6BRVzj3wf8MlB/qKjY1c9OB2YkbJKMgKKENN+9AKOLPBc7YFcJz0mWAq9K/h+k+gEA AP//AwBQSwECLQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRl bnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8B AABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQBJkvqzLAIAAFEEAAAOAAAAAAAAAAAAAAAAAC4C AABkcnMvZTJvRG9jLnhtbFBLAQItABQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAAAAAAAAAAAAA AIYEAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAlgUAAAAA " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
+ </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF 90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA 0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893 SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY 22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA IQBJkvqzLAIAAFEEAAAOAAAAZHJzL2Uyb0RvYy54bWysVF1v2jAUfZ+0/2D5fSQwYG1EqFgrpklV WwmmPhvHIZHij9mGhP36HTuBom5P017M9b039+OcYxZ3nWzIUVhXa5XT8SilRCiui1rtc/pju/50 Q4nzTBWs0Urk9CQcvVt+/LBoTSYmutJNISxBEeWy1uS08t5kSeJ4JSRzI22EQrDUVjKPq90nhWUt qssmmaTpPGm1LYzVXDgH70MfpMtYvywF989l6YQnTU4xm4+njecunMlywbK9Zaaq+TAG+4cpJKsV ml5KPTDPyMHWf5SSNbfa6dKPuJaJLsuai7gDthmn77bZVMyIuAvAceYCk/t/ZfnT8cWSugB3lCgm QdFWdJ581R0ZB3Ra4zIkbQzSfAd3yBz8Ds6wdFdaGX6xDkEcOJ8u2IZiHM7Z/HY8TxHiiN1MJ1PY KJO8fW2s89+EliQYObXgLkLKjo/O96nnlNBM6XXdNPCzrFGkzen88yyNH1wiKN4o9Ag79LMGy3e7 blhgp4sT9rK614UzfF2j+SNz/oVZCAHzQtz+GUfZaDTRg0VJpe2vv/lDPvhBlJIWwsqp+3lgVlDS fFdg7nY8nQYlxst09mWCi72O7K4j6iDvNbQLdjBdNEO+b85mabV8xRtYha4IMcXRO6f+bN77Xu54 Q1ysVjEJ2jPMP6qN4aF0wDBAu+1emTUD/h7MPemzBFn2joY+N3zpzOrgQUbkKADcozrgDt1Gloc3 Fh7G9T1mvf0TLH8DAAD//wMAUEsDBBQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAZHJzL2Rvd25y ZXYueG1sTI/NTsMwEITvSLyDtUhcUGsnhShK41SoKOeqKQ/gxksS8E8UO014e5YTXFYa7e7MfOVh tYbdcAqDdxKSrQCGrvV6cJ2E90u9yYGFqJxWxjuU8I0BDtX9XakK7Rd3xlsTO0YmLhRKQh/jWHAe 2h6tCls/oqPdh5+siiSnjutJLWRuDU+FyLhVg6OEXo147LH9amYrwafLkzk3SX08LZ+1OM14aQJK +fiwvu1pvO6BRVzj3wf8MlB/qKjY1c9OB2YkbJKMgKKENN+9AKOLPBc7YFcJz0mWAq9K/h+k+gEA AP//AwBQSwECLQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRl bnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8B AABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQBJkvqzLAIAAFEEAAAOAAAAAAAAAAAAAAAAAC4C AABkcnMvZTJvRG9jLnhtbFBLAQItABQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAAAAAAAAAAAAA AIYEAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAlgUAAAAA " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt"><a name="Text_x0020_Box_x0020_1" id="Text_x0020_Box_x0020_1"></a>
   <v:fill o:detectmouseclick="t"></v:fill>
   <v:textbox style="mso-fit-shape-to-text:t">
       <div><a name="abstractbox" id="abstractbox"></a>
@@ -3345,15 +3390,15 @@ table.biblio td {
   <w:wrap type="topAndBottom" anchory="margin"/>
   <w:anchorlock></w:anchorlock>
  </v:shape></o:wrapblock><br style="mso-ignore:vglayout" clear="ALL">
-<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></br>
+<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></br>
 
 
 
  
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <!--
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663"
@@ -3373,11 +3418,11 @@ table.biblio td {
 </table>
 -->
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <div><a name="sourcebox" id="sourcebox"></a></div>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
@@ -3393,7 +3438,7 @@ table.biblio td {
 
   
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 
   
@@ -3403,7 +3448,7 @@ table.biblio td {
 
 <div class="boilerplate-legal">
 
-<div><a name="_foreword" id="_foreword"></a><p class="boilerplateHdr">FOREWORD</p>
+<div><a name="_042e4e49-45b6-898c-6c97-17ed5ec802b5" id="_042e4e49-45b6-898c-6c97-17ed5ec802b5"></a><p class="boilerplateHdr">FOREWORD</p>
 
 <p class="boilerplate"><a name="_e39b916a-1911-02cf-fce1-6e2bbef3a82b" id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b"></a>The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -3425,52 +3470,85 @@ table.biblio td {
 </div>
 
 
+
 </p></p><div class="authority">
 
 
-</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_2a9fecf6-dcc4-425b-b27d-85ea1e13c1ce" id="_2a9fecf6-dcc4-425b-b27d-85ea1e13c1ce"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_50f5130c-5d86-493c-8eed-a20cf29e771e" id="_50f5130c-5d86-493c-8eed-a20cf29e771e"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc448187829">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc013187089">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc448187829 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc013187089 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc289526638">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc959379756">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc289526638 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc959379756 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc976281823">3. Introduction<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc196953956">3. Technical and editorial corrections to Recommendation ITU-T G.8001<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc976281823 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc196953956 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc496198282">3.1. Section 3.2<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc496198282 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc453751104">3.2. Appendix I<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc453751104 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc606406855">3.3. Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc606406855 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc546860053">4. Defect resolution procedure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc277527129">4. Introduction<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc546860053 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc277527129 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc818968656">5. Nomenclature<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc951777413">5. Defect resolution procedure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc818968656 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc951777413 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc701390825">
+<a href="#_Toc783843696">6. Nomenclature<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc783843696 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc132078878">
   Annex A
    
    
@@ -3478,12 +3556,12 @@ table.biblio td {
 <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc701390825 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc132078878 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
-<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></p>
-</div><div><a name="_change_log" id="_change_log"></a><p class="h1Preface">Change log</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_a052e737-82d7-8bde-ae0d-7c1a9a4a3b46" id="_a052e737-82d7-8bde-ae0d-7c1a9a4a3b46"></a><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">19 October 2018</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">First version.</td></tr><tr><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">07 February 2020</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Second version</td></tr></tbody></table></div></div><div><a name="_dbec5bbe-4ab9-4c15-af95-b921be839cf1" id="_dbec5bbe-4ab9-4c15-af95-b921be839cf1"></a><p class="h1Preface"></p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_0bafcc5b-0a3b-41f1-b6fa-80ec8d307d70" id="_0bafcc5b-0a3b-41f1-b6fa-80ec8d307d70"></a><tbody><tr><th valign="top" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Editors:</th><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Jessy Rouyer<br/>Nokia</td><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">E-mail: <a href="mailto:jessy.rouyer@nokia.com" class="url">jessy.rouyer@nokia.com</a></td></tr><tr><th valign="top" style="font-weight:bold;border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"></th><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Yuji Tochio<br/>Fujitsu</td><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">E-mail: <a href="mailto:tochio@fujitsu.com" class="url">tochio@fujitsu.com</a></td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
+<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
+</div><div><a name="_change_log" id="_change_log"></a><p class="h1Preface">Change log</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_a052e737-82d7-8bde-ae0d-7c1a9a4a3b46" id="_a052e737-82d7-8bde-ae0d-7c1a9a4a3b46"></a><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">19 October 2018</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">First version.</td></tr><tr><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">07 February 2020</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Second version</td></tr></tbody></table></div></div><div><a name="_46a453a8-8947-4db8-9305-3955735872e7" id="_46a453a8-8947-4db8-9305-3955735872e7"></a><p class="h1Preface"></p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_7fbd8d1a-2368-486c-9134-eb081888a0d0" id="_7fbd8d1a-2368-486c-9134-eb081888a0d0"></a><tbody><tr><th valign="top" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Editors:</th><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Jessy Rouyer<br/>Nokia</td><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">E-mail: <a href="mailto:jessy.rouyer@nokia.com" class="url">jessy.rouyer@nokia.com</a></td></tr><tr><th valign="top" style="font-weight:bold;border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"></th><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Yuji Tochio<br/>Fujitsu</td><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">E-mail: <a href="mailto:tochio@fujitsu.com" class="url">tochio@fujitsu.com</a></td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
     <p class="MsoNormal">
       <br clear="all" class="section"/>
     </p>
@@ -3506,27 +3584,626 @@ table.biblio td {
             </tr>
             <tr class="NormRef">
               <a name="itu-g8001" id="itu-g8001"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8001/Y.1354]</td>
-              <td>Recommendation ITU-T&#xA0;G.8001/Y.1354, <i>Terms and definitions for Ethernet frames over transport</i>, 8th edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8001/Y.1354&#xA0;(04/2016)]</td>
+              <td>Recommendation ITU-T&#xA0;G.8001/Y.1354&#xA0;(04/2016), <i>Terms and definitions for Ethernet frames over transport</i>, Eighth edition.</td>
             </tr>
           </tbody>
         </table>
       </div>
       <div>
+        <a name="_technical_and_editorial_corrections_to_recommendation_itu_t_g_8001" id="_technical_and_editorial_corrections_to_recommendation_itu_t_g_8001"></a>
+        <h1>3.<span style="mso-tab-count:1">&#xA0; </span>Technical and editorial corrections to Recommendation ITU-T G.8001</h1>
+        <div><a name="_section_3_2" id="_section_3_2"></a><h2>3.1.<span style="mso-tab-count:1">&#xA0; </span>Section 3.2</h2>
+
+<p class="MsoNormal"><a name="_5d37ed90-6bf8-a58b-b3f9-79e6484c845c" id="_5d37ed90-6bf8-a58b-b3f9-79e6484c845c"></a>This Recommendation defines the following terms:</p>
+
+<div><a name="term-backbone-Ethernet-connection" id="term-backbone-Ethernet-connection"></a><p class="TermNum"><a name="term-backbone-Ethernet-connection" id="term-backbone-Ethernet-connection"></a><b>3.1.1.<span style="mso-tab-count:1">&#xA0; </span><b>backbone Ethernet connection</b>:</b>An Ethernet connection of which the traffic units are encapsulated with a backbone VLAN tag (B-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone VLAN tag; the information transported in the backbone VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone VLAN tag and the demapping of these parameters from the backbone VLAN tag.</p>
+
+
+
+ <div class="Note"><a name="_c70802ad-e4ae-6a14-22ee-d92b7e934288" id="_c70802ad-e4ae-6a14-22ee-d92b7e934288"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Backbone Ethernet connection is referred to in <a href="#g8012-1">[ITU-T&#xA0;G.8012.1]</a>.</p></div></div>
+
+<div><a name="term-backbone-service-Ethernet-connection" id="term-backbone-service-Ethernet-connection"></a><p class="TermNum"><a name="term-backbone-service-Ethernet-connection" id="term-backbone-service-Ethernet-connection"></a><b>3.1.2.<span style="mso-tab-count:1">&#xA0; </span><b>backbone service Ethernet connection</b>:</b>An Ethernet connection of which the traffic units are encapsulated with the first 48 bits of a backbone service instance tag (I-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone service instance tag; the information transported in the backbone service instance tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone service instance tag and the demapping of these parameters from the backbone service instance tag.</p>
+
+
+
+ <div class="Note"><a name="_5b556020-8480-0700-6308-808c73198461" id="_5b556020-8480-0700-6308-808c73198461"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Backbone service Ethernet connection is referred to in <a href="#g8012-1">[ITU-T&#xA0;G.8012.1]</a>.</p></div></div>
+
+<div><a name="term-customer" id="term-customer"></a><p class="TermNum"><a name="term-customer" id="term-customer"></a><b>3.1.3.<span style="mso-tab-count:1">&#xA0; </span><b><s>customer</s></b>:</b>    <s>The entity that has ownership authority over a set of flow points. The customer may have one or more service instances.</s></p>
+
+
+
+ <div class="Note"><a name="_90263012-3951-2681-fbe3-c455516e8567" id="_90263012-3951-2681-fbe3-c455516e8567"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Customer is referred to in <a href="#g8011">[ITU-T&#xA0;G.8011]</a>.</s></p></div></div>
+
+<div><a name="term-customer-Ethernet-connection" id="term-customer-Ethernet-connection"></a><p class="TermNum"><a name="term-customer-Ethernet-connection" id="term-customer-Ethernet-connection"></a><b>3.1.4.<span style="mso-tab-count:1">&#xA0; </span><b>customer Ethernet connection</b>:</b>An Ethernet connection (EC) of which the traffic units are encapsulated with a customer VLAN tag (C-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a customer VLAN tag; the information transported in the customer VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the customer VLAN tag and the demapping of these parameters from the customer VLAN tag.</p>
+
+
+
+ <div class="Note"><a name="_e1e82776-fb37-103b-a626-c19a4228cb4d" id="_e1e82776-fb37-103b-a626-c19a4228cb4d"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Customer Ethernet connection is referred to in <a href="#g8012-1">[ITU-T&#xA0;G.8012.1]</a>.</p></div></div>
+
+<div><a name="term-dual-ended" id="term-dual-ended"></a><p class="TermNum"><a name="term-dual-ended" id="term-dual-ended"></a><b>3.1.5.<span style="mso-tab-count:1">&#xA0; </span><b><s>dual-ended</s></b>:</b>    <s>A type of protocol messaging whereby an initiating MEP sends a request PDU to a receiving peer MEP, which does not send any response. In performance monitoring, the receiving MEP performs measurement calculations.</s></p>
+
+
+
+ <div class="Note"><a name="_8850ce58-8d53-9d2c-74c8-668eb508bef9" id="_8850ce58-8d53-9d2c-74c8-668eb508bef9"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Dual-ended is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-EoT-NNI" id="term-EoT-NNI"></a><p class="TermNum"><a name="term-EoT-NNI" id="term-EoT-NNI"></a><b>3.1.6.<span style="mso-tab-count:1">&#xA0; </span><b>EoT-NNI</b>:</b>An NNI for the transfer of ETH_CI traffic units over a transport layer network.</p>
+
+
+
+ <div class="Note"><a name="_adb78eb4-d802-1ba0-74f8-b1e9fba7bda1" id="_adb78eb4-d802-1ba0-74f8-b1e9fba7bda1"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>EoT-NNI is referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-ERP-instance" id="term-ERP-instance"></a><p class="TermNum"><a name="term-ERP-instance" id="term-ERP-instance"></a><b>3.1.7.<span style="mso-tab-count:1">&#xA0; </span><b><s>ERP instance</s></b>:</b>    <s>An entity that is responsible for the protection of a subset of the VLANs that transport traffic over the physical Ethernet ring. Each ERP instance is independent of other ERP instances that may be configured on the physical Ethernet ring.</s></p>
+
+
+
+ <div class="Note"><a name="_8c24c41e-a3bc-e30e-38ec-ca33e7b60976" id="_8c24c41e-a3bc-e30e-38ec-ca33e7b60976"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>ERP instance is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-Ethernet-management-communication-channel-_ET.MCC_" id="term-Ethernet-management-communication-channel-_ET.MCC_"></a><p class="TermNum"><a name="term-Ethernet-management-communication-channel-_ET.MCC_" id="term-Ethernet-management-communication-channel-_ET.MCC_"></a><b>3.1.8.<span style="mso-tab-count:1">&#xA0; </span><b>Ethernet management communication channel (ET.MCC)</b>:</b>A function providing a management communication channel between a pair of maintenance entity group (MEG) end points (MEP). The MCC can be used to perform remote management. The specific use of MCC is outside the scope of this Recommendation. An MEP can send a frame with ETH-MCC information to its peer MEP with a remote maintenance request, remote maintenance reply, notification, etc. Configuration information needs to be provisioned to the MEP to support MCC functions. See <a href="#g8013">[ITU-T&#xA0;G.8013]</a> for detailed information and the protocol data unit (PDU) structure of the MCC.</p>
+
+
+
+ <div class="Note"><a name="_234ae4bd-8462-9343-783f-92000c8c4506" id="_234ae4bd-8462-9343-783f-92000c8c4506"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ET.MCC is defined in <a href="#g8051">[ITU-T&#xA0;G.8051&#xA0;(08/2024)]</a> as EoT MCC.</p></div></div>
+
+<div><a name="term-ETH_CI-group" id="term-ETH_CI-group"></a><p class="TermNum"><a name="term-ETH_CI-group" id="term-ETH_CI-group"></a><b>3.1.9.<span style="mso-tab-count:1">&#xA0; </span><b>ETH_CI group</b>:</b>A group of ETH_CI signals that is monitored as a single MEG. For this purpose, ETH OAM is added to one of the ETH_CI signals in the group.</p>
+
+
+
+ <div class="Note"><a name="_779cb008-055c-dc27-6acb-262b9bc09677" id="_779cb008-055c-dc27-6acb-262b9bc09677"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETH_CI group is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-ETH_CI-traffic-unit" id="term-ETH_CI-traffic-unit"></a><p class="TermNum"><a name="term-ETH_CI-traffic-unit" id="term-ETH_CI-traffic-unit"></a><b>3.1.10.<span style="mso-tab-count:1">&#xA0; </span><b>ETH_CI traffic unit</b>:</b>The following set of signals defined in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>: ETH_CI Data (D), ETH_CI priority (P), ETH_CI drop eligibility (DE), ETH_CI server signal fail (SSF) and optionally ETH_CI automatic protection switching (APS). The ETH_CI_D signal carries the traffic unit that consists of the following fields: destination address (DA), source address (SA) and MAC service data unit (M_SDU).</p>
+
+
+
+ <div class="Note"><a name="_208e26f6-0b06-badb-bb52-ab6004773112" id="_208e26f6-0b06-badb-bb52-ab6004773112"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETH_CI traffic unit is defined in clause 6.3.1 of <a href="#g8010">[ITU-T&#xA0;G.8010]</a> and referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-Ethernet-flow-replication-point-_ETHF_PP_" id="term-Ethernet-flow-replication-point-_ETHF_PP_"></a><p class="TermNum"><a name="term-Ethernet-flow-replication-point-_ETHF_PP_" id="term-Ethernet-flow-replication-point-_ETHF_PP_"></a><b>3.1.11.<span style="mso-tab-count:1">&#xA0; </span><b>Ethernet flow replication point (ETHF_PP)</b>:</b>Connection point between &lt;Srv&gt;/ETH adaptation source and sink. ETH_CI from source Ethernet flow point (ETH_FP) is replicated and delivered across ETHF_PP to sink Ethernet termination flow point (ETH_TFP).</p>
+
+
+
+ <div class="Note"><a name="_440ca823-1fff-d901-e0d7-02211c14dd91" id="_440ca823-1fff-d901-e0d7-02211c14dd91"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETHF_PP is referred to in <a href="#g8021">[ITU-T&#xA0;G.8021]</a>.</p></div></div>
+
+<div><a name="term-Ethernet-replicated-information-_ETH_PI_" id="term-Ethernet-replicated-information-_ETH_PI_"></a><p class="TermNum"><a name="term-Ethernet-replicated-information-_ETH_PI_" id="term-Ethernet-replicated-information-_ETH_PI_"></a><b>3.1.12.<span style="mso-tab-count:1">&#xA0; </span><b>Ethernet replicated information (ETH_PI)</b>:</b>Replicated ETH_CI delivered across ETHTF_PP or ETHF_PP.</p>
+
+
+
+ <div class="Note"><a name="_f5150678-4864-d66e-d7bb-e505ea12e238" id="_f5150678-4864-d66e-d7bb-e505ea12e238"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETH_PI is referred to in <a href="#g8021">[ITU-T&#xA0;G.8021]</a>.</p></div></div>
+
+<div><a name="term-Ethernet-ring" id="term-Ethernet-ring"></a><p class="TermNum"><a name="term-Ethernet-ring" id="term-Ethernet-ring"></a><b>3.1.13.<span style="mso-tab-count:1">&#xA0; </span><b><s>Ethernet ring</s></b>:</b>    <s>A collection of Ethernet ring nodes forming a closed physical loop whereby each Ethernet ring node is connected to two adjacent Ethernet ring nodes via a duplex communications facility.</s></p>
+
+
+
+ <div class="Note"><a name="_f67c8a92-575a-5092-1051-6fabb9e54b79" id="_f67c8a92-575a-5092-1051-6fabb9e54b79"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Ethernet ring is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-Ethernet-ring-node" id="term-Ethernet-ring-node"></a><p class="TermNum"><a name="term-Ethernet-ring-node" id="term-Ethernet-ring-node"></a><b>3.1.14.<span style="mso-tab-count:1">&#xA0; </span><b><s>Ethernet ring node</s></b>:</b>    <s>A network element that implements at least the following functionality.</s></p><div class="ol_wrap"><p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_5f05b8f2-8749-4246-a43c-abc8baa8247f" id="_5f05b8f2-8749-4246-a43c-abc8baa8247f"></a><s>One Ethernet connection function (ETH_C) with a dedicated Ethernet flow forwarding function (ETH_FF) for forwarding ring automatic protection switching (R-APS) control traffic.</s>
+</p>
+<p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpMiddle"><a name="_4b716646-829c-433d-855e-8a16770f8d0e" id="_4b716646-829c-433d-855e-8a16770f8d0e"></a><s>Two ring ports, including ETHDi/ETH adaptation function at the ring maintenance entity group level (MEL).</s>
+</p>
+<p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpLast"><a name="_d30d351c-83c2-475a-a94c-0be70df0b756" id="_d30d351c-83c2-475a-a94c-0be70df0b756"></a><s>Ethernet ring protection (ERP) control process controlling the blocking and unblocking of traffic over the ring ports.</s>
+</p>
+</div>
+
+
+
+
+
+ <div class="Note"><a name="_00074f95-3159-aa86-0182-00c81bc9b875" id="_00074f95-3159-aa86-0182-00c81bc9b875"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Ethernet ring node is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-Ethernet-service" id="term-Ethernet-service"></a><p class="TermNum"><a name="term-Ethernet-service" id="term-Ethernet-service"></a><b>3.1.15.<span style="mso-tab-count:1">&#xA0; </span><b><s>Ethernet service</s></b>:</b>    <s>An Ethernet service supports an Ethernet flow (as specified in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>). It is determined by the topology of the Ethernet network and a corresponding set of attributes associated with the Ethernet connection (EC), the UNI ports and NNI ports.</s></p>
+
+
+
+ <div class="Note"><a name="_dd8b9e3e-ca4f-6f0e-c9c2-38c778efa8de" id="_dd8b9e3e-ca4f-6f0e-c9c2-38c778efa8de"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Ethernet service is referred to in <a href="#g8011">[ITU-T&#xA0;G.8011]</a>.</s></p></div></div>
+
+<div><a name="term-Ethernet-termination-flow-replication-point-_ETHTF_PP_" id="term-Ethernet-termination-flow-replication-point-_ETHTF_PP_"></a><p class="TermNum"><a name="term-Ethernet-termination-flow-replication-point-_ETHTF_PP_" id="term-Ethernet-termination-flow-replication-point-_ETHTF_PP_"></a><b>3.1.16.<span style="mso-tab-count:1">&#xA0; </span><b>Ethernet termination flow replication point (ETHTF_PP)</b>:</b>Connection point between &lt;Srv&gt;/ETH adaptation source and sink. ETH_CI from source Ethernet termination flow point (ETH_TFP) is replicated and delivered across ETHTF_PP to sink filter process.</p>
+
+
+
+ <div class="Note"><a name="_25384de8-531a-14dd-0ca8-a2c38ef6f4ea" id="_25384de8-531a-14dd-0ca8-a2c38ef6f4ea"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETHTF_PP is referred to in <a href="#g8021">[ITU-T&#xA0;G.8021]</a>.</p></div></div>
+
+<div><a name="term-Ethernet-virtual-connection-_EVC_" id="term-Ethernet-virtual-connection-_EVC_"></a><p class="TermNum"><a name="term-Ethernet-virtual-connection-_EVC_" id="term-Ethernet-virtual-connection-_EVC_"></a><b>3.1.17.<span style="mso-tab-count:1">&#xA0; </span><b><s>Ethernet virtual connection (EVC)</s></b>:</b></p>
+
+ <div class="Note"><a name="_8608e293-4a64-12cb-ded3-ebc3df58c8e4" id="_8608e293-4a64-12cb-ded3-ebc3df58c8e4"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>EVC is defined in <a href="#mef10-3">[MEF&#xA0;10.3]</a>.</s></p></div></div>
+
+<div><a name="term-ETH-path" id="term-ETH-path"></a><p class="TermNum"><a name="term-ETH-path" id="term-ETH-path"></a><b>3.1.18.<span style="mso-tab-count:1">&#xA0; </span><b>ETH path</b>:</b>The highest ETH MEG level in a set of eight MEG levels.</p>
+
+
+
+ <div class="Note"><a name="_6e90e9e9-d87a-d0b3-e572-e2a00c714b24" id="_6e90e9e9-d87a-d0b3-e572-e2a00c714b24"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETH path is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-ETH-section" id="term-ETH-section"></a><p class="TermNum"><a name="term-ETH-section" id="term-ETH-section"></a><b>3.1.19.<span style="mso-tab-count:1">&#xA0; </span><b>ETH section</b>:</b>The lowest ETH MEG level in a set of eight MEG levels.</p>
+
+
+
+ <div class="Note"><a name="_b68b08a3-d83d-d1d0-7be2-ff9ad853ac6f" id="_b68b08a3-d83d-d1d0-7be2-ff9ad853ac6f"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETH section is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-ETH-tandem-connection" id="term-ETH-tandem-connection"></a><p class="TermNum"><a name="term-ETH-tandem-connection" id="term-ETH-tandem-connection"></a><b>3.1.20.<span style="mso-tab-count:1">&#xA0; </span><b>ETH tandem connection</b>:</b>An intermediate ETH MEG level in a set of eight MEG levels.</p>
+
+
+
+ <div class="Note"><a name="_44a158e1-38a6-b25a-bafb-96e10f0b6fc3" id="_44a158e1-38a6-b25a-bafb-96e10f0b6fc3"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ETH tandem connection is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-ET-management-network-_ET.MN_" id="term-ET-management-network-_ET.MN_"></a><p class="TermNum"><a name="term-ET-management-network-_ET.MN_" id="term-ET-management-network-_ET.MN_"></a><b>3.1.21.<span style="mso-tab-count:1">&#xA0; </span><b>ET management network (ET.MN)</b>:</b>A subset of a TMN that is responsible for managing those parts of a network element that contain ET layer network entities. An ET.MN may be subdivided into a set of ET management subnetworks.</p>
+
+
+
+ <div class="Note"><a name="_be32b66f-093c-c954-c9b5-5d3b21d49ff8" id="_be32b66f-093c-c954-c9b5-5d3b21d49ff8"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ET.MN is referred to in <a href="#g8051">[ITU-T&#xA0;G.8051&#xA0;(08/2024)]</a>.</p></div></div>
+
+<div><a name="term-ET-management-subnetwork-_ET.MSN_" id="term-ET-management-subnetwork-_ET.MSN_"></a><p class="TermNum"><a name="term-ET-management-subnetwork-_ET.MSN_" id="term-ET-management-subnetwork-_ET.MSN_"></a><b>3.1.22.<span style="mso-tab-count:1">&#xA0; </span><b>ET management subnetwork (ET.MSN)</b>:</b>Subnetwork consisting of a set of separate embedded communication channels (ECCs) and associated intra-site data communication links which are interconnected to form a data communication network (DCN) within any given ET topology. For ET, the physical channel supporting the ECC is the Ethernet management communication channel (MCC) as defined in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>. An ET.MSN represents an ET specific local communications network (LCN) portion of a network operator's overall data communication network or TMN.</p>
+
+
+
+ <div class="Note"><a name="_1a1cf1e1-74de-807c-6972-f26fdfbc7dfb" id="_1a1cf1e1-74de-807c-6972-f26fdfbc7dfb"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ET.MSN is referred to in <a href="#g8051">[ITU-T&#xA0;G.8051&#xA0;(08/2024)]</a>.</p></div></div>
+
+<div><a name="term-ET-network-element-_ET.NE_" id="term-ET-network-element-_ET.NE_"></a><p class="TermNum"><a name="term-ET-network-element-_ET.NE_" id="term-ET-network-element-_ET.NE_"></a><b>3.1.23.<span style="mso-tab-count:1">&#xA0; </span><b>ET network element (ET.NE)</b>:</b>Element containing entities from one or more ET layer networks. An ET.NE may therefore be a stand-alone physical entity or a subset of a network element. It supports at least network element functions (NEFs) and may also support an operations system function (OSF). It contains managed objects (MOs), a message communication function (MCF) and a management application function (MAF). The functions of an ET.NE may be contained within an NE that also supports other layer networks. These layer network entities are considered to be managed separately from ET entities. As such, they are not part of the ET.MN or ET.MSN.</p>
+
+
+
+ <div class="Note"><a name="_ff95001d-3339-00f9-6cf8-a13d43692d70" id="_ff95001d-3339-00f9-6cf8-a13d43692d70"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>ET.NE is referred to in <a href="#g8051">[ITU-T&#xA0;G.8051&#xA0;(08/2024)]</a>.</p></div></div>
+
+<div><a name="term-Ety-NNI" id="term-Ety-NNI"></a><p class="TermNum"><a name="term-Ety-NNI" id="term-Ety-NNI"></a><b>3.1.24.<span style="mso-tab-count:1">&#xA0; </span><b>Ety-NNI</b>:</b>An NNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.</p>
+
+
+
+ <div class="Note"><a name="_bc4210dc-acf0-54d7-8537-b8309bcad675" id="_bc4210dc-acf0-54d7-8537-b8309bcad675"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Ety-NNI is referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-Ety-UNI" id="term-Ety-UNI"></a><p class="TermNum"><a name="term-Ety-UNI" id="term-Ety-UNI"></a><b>3.1.25.<span style="mso-tab-count:1">&#xA0; </span><b>Ety-UNI</b>:</b>A UNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.</p>
+
+
+
+ <div class="Note"><a name="_247b49d7-0499-cee1-07a2-34fc76823832" id="_247b49d7-0499-cee1-07a2-34fc76823832"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Ety-UNI is referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-external-NNI-_ENNI_" id="term-external-NNI-_ENNI_"></a><p class="TermNum"><a name="term-external-NNI-_ENNI_" id="term-external-NNI-_ENNI_"></a><b>3.1.26.<span style="mso-tab-count:1">&#xA0; </span><b><s>external NNI (ENNI)</s></b>:</b></p>
+
+ <div class="Note"><a name="_32e1f49e-e481-e32d-c5ef-b5c81079bcf9" id="_32e1f49e-e481-e32d-c5ef-b5c81079bcf9"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>ENNI is defined by <a href="#mef26-1">[MEF&#xA0;26.1]</a>.</s></p></div></div>
+
+<div><a name="term-far-end" id="term-far-end"></a><p class="TermNum"><a name="term-far-end" id="term-far-end"></a><b>3.1.27.<span style="mso-tab-count:1">&#xA0; </span><b><s>far-end</s></b>:</b>    <s>In single-ended or dual-ended messaging, the direction and information relating to a one-way measurement from an initiating MEP) to a receiving or responding peer MEP.</s></p>
+
+
+
+ <div class="Note"><a name="_e9db8036-06c0-cfd5-3a32-a272fe382fab" id="_e9db8036-06c0-cfd5-3a32-a272fe382fab"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Far-end is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-initiating-MEP" id="term-initiating-MEP"></a><p class="TermNum"><a name="term-initiating-MEP" id="term-initiating-MEP"></a><b>3.1.28.<span style="mso-tab-count:1">&#xA0; </span><b><s>initiating MEP</s></b>:</b>    <s>An initiating MEP initiates measurements by sending request PDUs, and in the case of single-ended messaging, receiving response PDUs.</s></p>
+
+
+
+ <div class="Note"><a name="_bd634d44-13e5-6712-30c0-7c43086947dd" id="_bd634d44-13e5-6712-30c0-7c43086947dd"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Initiating MEP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-interconnection-node" id="term-interconnection-node"></a><p class="TermNum"><a name="term-interconnection-node" id="term-interconnection-node"></a><b>3.1.29.<span style="mso-tab-count:1">&#xA0; </span><b><s>interconnection node</s></b>:</b>    <s>An Ethernet ring node that is common to two or more Ethernet rings or to a sub-ring and an interconnected network. At each interconnection node, there may be one or more Ethernet rings that can be accessed through a single ring port and not more than one Ethernet ring that is accessed by two ring ports. The former set of Ethernet rings is comprised of sub-rings, whereas the latter Ethernet ring is considered a major ring, relative to this interconnection node. If the interconnection node is used to connect a (set of) sub-ring(s) to another network, then there is no Ethernet ring accessed by two ring ports.</s></p>
+
+
+
+ <div class="Note"><a name="_922b824f-8a25-372c-68aa-60da20026080" id="_922b824f-8a25-372c-68aa-60da20026080"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Interconnection node is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-in-profile" id="term-in-profile"></a><p class="TermNum"><a name="term-in-profile" id="term-in-profile"></a><b>3.1.30.<span style="mso-tab-count:1">&#xA0; </span><b><s>in-profile</s></b>:</b>    <s>For frames that belong to the same instance of an Ethernet service and priority, in-profile frames are defined as frames for which priority corresponds to a common value &lt;X&gt; and the network has determined that drop-eligibility corresponds to &lt;false&gt;. Procedures to determine drop-eligibility for a frame and procedures to convey priority and drop-eligibility on a frame are network and service specific.</s></p>
+
+
+
+ <div class="Note"><a name="_5d43fc61-28d0-720a-b227-0e30cf97cd7a" id="_5d43fc61-28d0-720a-b227-0e30cf97cd7a"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>In-profile is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-in-service-OAM" id="term-in-service-OAM"></a><p class="TermNum"><a name="term-in-service-OAM" id="term-in-service-OAM"></a><b>3.1.31.<span style="mso-tab-count:1">&#xA0; </span><b><s>in-service OAM</s></b>:</b>    <s>OAM actions that are carried out while the data traffic is not interrupted, with an expectation that data traffic remains transparent to OAM actions.</s></p>
+
+
+
+ <div class="Note"><a name="_82809aa1-8f13-c563-62d6-05f917fe7f2b" id="_82809aa1-8f13-c563-62d6-05f917fe7f2b"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>In-service OAM is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-leaf-group" id="term-leaf-group"></a><p class="TermNum"><a name="term-leaf-group" id="term-leaf-group"></a><b>3.1.32.<span style="mso-tab-count:1">&#xA0; </span><b>leaf group</b>:</b>A group representing two or more leaf ports within an RMP EC which can transmit to and receive from other leafs in the leaf group. Leaf ports within a leaf group cannot transmit to or receive from leafs outside the group.</p>
+
+
+
+ <div class="Note"><a name="_1d57d184-3c8c-848a-8afa-a6ce300e54cf" id="_1d57d184-3c8c-848a-8afa-a6ce300e54cf"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Leaf group is referred to in <a href="#g8012-1">[ITU-T&#xA0;G.8012.1]</a>.</p></div></div>
+
+<div><a name="term-link-Ethernet-connection" id="term-link-Ethernet-connection"></a><p class="TermNum"><a name="term-link-Ethernet-connection" id="term-link-Ethernet-connection"></a><b>3.1.33.<span style="mso-tab-count:1">&#xA0; </span><b>link Ethernet connection</b>:</b>An Ethernet connection of which the traffic units are either not encapsulated or encapsulated with a priority tag.</p>
+
+
+
+ <div class="Note"><a name="_26b04416-59f4-e66f-ed83-2a66344bf925" id="_26b04416-59f4-e66f-ed83-2a66344bf925"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Link Ethernet connection is referred to in <a href="#g8012-1">[ITU-T&#xA0;G.8012.1]</a>.</p></div></div>
+
+<div><a name="term-maintenance-entity" id="term-maintenance-entity"></a><p class="TermNum"><a name="term-maintenance-entity" id="term-maintenance-entity"></a><b>3.1.34.<span style="mso-tab-count:1">&#xA0; </span><b>maintenance entity</b>:</b>The entity between two of the flow/connection points in a maintenance entity group.</p>
+
+
+
+ <div class="Note"><a name="_3b18cf57-972d-35c8-c82d-a3f0d437cd64" id="_3b18cf57-972d-35c8-c82d-a3f0d437cd64"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Maintenance entity is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-maintenance-entity-group-_MEG_" id="term-maintenance-entity-group-_MEG_"></a><p class="TermNum"><a name="term-maintenance-entity-group-_MEG_" id="term-maintenance-entity-group-_MEG_"></a><b>3.1.35.<span style="mso-tab-count:1">&#xA0; </span><b>maintenance entity group (MEG)</b>:</b>A group defined, for the purpose of fragment or connection monitoring, between a set of flow or connection points within a fragment/connection. This set of flow or connection points may be located at the boundary of one administrative domain or a protection domain, or at the boundaries of two adjacent administrative domains. The maintenance entity group consists of one or more maintenance entities.</p>
+
+
+
+ <div class="Note"><a name="_c9895b2b-42a6-7ea7-dac3-4998abd75e33" id="_c9895b2b-42a6-7ea7-dac3-4998abd75e33"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>MEG is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-maintenance-entity-group-end-point-compound-sink-function" id="term-maintenance-entity-group-end-point-compound-sink-function"></a><p class="TermNum"><a name="term-maintenance-entity-group-end-point-compound-sink-function" id="term-maintenance-entity-group-end-point-compound-sink-function"></a><b>3.1.36.<span style="mso-tab-count:1">&#xA0; </span><b>maintenance entity group end point compound sink function</b>:</b>A compound transport processing function that accepts the characteristic information of the layer network at its input, extracts and processes the OAM information related to the monitoring of the maintenance entity group, filters the OAM information from within to the maintenance entity group, adapts the information and presents it as the characteristic information of the layer or a client layer at its output, potentially as a (client) layer maintenance signal (e.g., AIS).</p>
+
+
+
+ <div class="Note"><a name="_9627b9b5-d861-2eea-0d4d-182cd7b052d7" id="_9627b9b5-d861-2eea-0d4d-182cd7b052d7"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>MEP compound sink function is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-maintenance-entity-group-end-point-compound-source-function" id="term-maintenance-entity-group-end-point-compound-source-function"></a><p class="TermNum"><a name="term-maintenance-entity-group-end-point-compound-source-function" id="term-maintenance-entity-group-end-point-compound-source-function"></a><b>3.1.37.<span style="mso-tab-count:1">&#xA0; </span><b>maintenance entity group end point compound source function</b>:</b>A compound transport processing function that accepts the characteristic information of the layer or a client layer network at its input, adapts that information, filters it for OAM information interfering with its own OAM information, adds OAM information to allow the maintenance entity group to be monitored and presents the resulting information at its output.</p>
+
+
+
+ <div class="Note"><a name="_95bc83d9-76d2-13a3-c16d-44ab6b17533c" id="_95bc83d9-76d2-13a3-c16d-44ab6b17533c"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>MEP compound source function is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-maintenance-entity-group-intermediate-point-compound-function" id="term-maintenance-entity-group-intermediate-point-compound-function"></a><p class="TermNum"><a name="term-maintenance-entity-group-intermediate-point-compound-function" id="term-maintenance-entity-group-intermediate-point-compound-function"></a><b>3.1.38.<span style="mso-tab-count:1">&#xA0; </span><b>maintenance entity group intermediate point compound function</b>:</b>A compound transport processing function that accepts the characteristic information of the layer network at its input, reacts to OAM information related to on-demand monitoring of a maintenance entity group and presents the characteristic information without the OAM to which it reacted at its output.</p>
+
+
+
+ <div class="Note"><a name="_fb58f898-3b5f-6852-3781-900ab903b1f4" id="_fb58f898-3b5f-6852-3781-900ab903b1f4"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>MIP compound function is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-major-ring" id="term-major-ring"></a><p class="TermNum"><a name="term-major-ring" id="term-major-ring"></a><b>3.1.39.<span style="mso-tab-count:1">&#xA0; </span><b><s>major ring</s></b>:</b>    <s>An Ethernet ring that is connected on two ports to an interconnection node.</s></p>
+
+
+
+ <div class="Note"><a name="_ae369233-2be9-c56b-88ab-20952b37e224" id="_ae369233-2be9-c56b-88ab-20952b37e224"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Major ring is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-MEG-end-point-_MEP_" id="term-MEG-end-point-_MEP_"></a><p class="TermNum"><a name="term-MEG-end-point-_MEP_" id="term-MEG-end-point-_MEP_"></a><b>3.1.40.<span style="mso-tab-count:1">&#xA0; </span><b><s>MEG end point (MEP)</s></b>:</b>    <s>A point marking the end of an ETH MEG that is capable of initiating and terminating OAM frames for fault management and performance monitoring. A MEP does not add a new forwarding identifier to the transit ETH flows. A MEP does not terminate the transit ETH flows, though it can observe these flows (e.g., count frames).</s></p>
+
+
+
+ <div class="Note"><a name="_3ecba944-789b-fbca-76c8-5ecdbc78ae7b" id="_3ecba944-789b-fbca-76c8-5ecdbc78ae7b"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>MEP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-MEG-intermediate-point-_MIP_" id="term-MEG-intermediate-point-_MIP_"></a><p class="TermNum"><a name="term-MEG-intermediate-point-_MIP_" id="term-MEG-intermediate-point-_MIP_"></a><b>3.1.41.<span style="mso-tab-count:1">&#xA0; </span><b><s>MEG intermediate point (MIP)</s></b>:</b>    <s>An intermediate point in a MEG that is capable of reacting to some OAM frames. A MIP does not initiate OAM frames. A MIP takes no action on the transit ETH flows.</s></p>
+
+
+
+ <div class="Note"><a name="_cad311e5-33f3-d7f1-7dde-023aa75a7379" id="_cad311e5-33f3-d7f1-7dde-023aa75a7379"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>MIP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-near-end" id="term-near-end"></a><p class="TermNum"><a name="term-near-end" id="term-near-end"></a><b>3.1.42.<span style="mso-tab-count:1">&#xA0; </span><b><s>near-end</s></b>:</b>    <s>In single-ended messaging, the direction and information relating to a one-way measurement from a responding peer MEP to an initiating MEP.</s></p>
+
+
+
+ <div class="Note"><a name="_a795abed-29ec-b0a9-ed2d-63d93083061e" id="_a795abed-29ec-b0a9-ed2d-63d93083061e"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Near-end is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-network-termination" id="term-network-termination"></a><p class="TermNum"><a name="term-network-termination" id="term-network-termination"></a><b>3.1.43.<span style="mso-tab-count:1">&#xA0; </span><b>network termination</b>:</b>The network element in the transport network that is connected to the customer edge equipment.</p>
+
+
+
+ <div class="Note"><a name="_f37489b0-c617-a72d-d4df-f2061ea09c0a" id="_f37489b0-c617-a72d-d4df-f2061ea09c0a"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Network termination is referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-network-to-network-interface-_NNI_" id="term-network-to-network-interface-_NNI_"></a><p class="TermNum"><a name="term-network-to-network-interface-_NNI_" id="term-network-to-network-interface-_NNI_"></a><b>3.1.44.<span style="mso-tab-count:1">&#xA0; </span><b>network-to-network interface (NNI)</b>:</b>An interface that is used for the interconnection of network elements within a transport network.</p>
+
+
+
+ <div class="Note"><a name="_2b152b36-077c-b2c3-3e34-2a44f5fe1d1b" id="_2b152b36-077c-b2c3-3e34-2a44f5fe1d1b"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>NNI is referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-on-demand-measurement" id="term-on-demand-measurement"></a><p class="TermNum"><a name="term-on-demand-measurement" id="term-on-demand-measurement"></a><b>3.1.45.<span style="mso-tab-count:1">&#xA0; </span><b><s>on-demand measurement</s></b>:</b>    <s>A measurement (e.g., performance monitoring such as delay measurement, loss measurement) that is running at a specific request. An on-demand measurement has a defined start and end time or date.</s></p>
+
+
+
+ <div class="Note"><a name="_142d2a48-437e-4aa9-1ee9-28fdc1281b33" id="_142d2a48-437e-4aa9-1ee9-28fdc1281b33"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>On-demand measurement is referred to in <a href="#g8052">[ITU-T&#xA0;G.8052&#xA0;(01/2024)]</a>.</s></p></div></div>
+
+<div><a name="term-on-demand-monitoring" id="term-on-demand-monitoring"></a><p class="TermNum"><a name="term-on-demand-monitoring" id="term-on-demand-monitoring"></a><b>3.1.46.<span style="mso-tab-count:1">&#xA0; </span><b>on-demand monitoring</b>:</b>A method to infer a specific status or performance characteristic of a maintenance entity or a set of maintenance entities within a maintenance entity group at a specific time with the purpose of obtaining a snapshot of the performance or to diagnose an identified fault condition or performance degradation.</p>
+
+
+
+ <div class="Note"><a name="_a402bda8-69b1-374b-943a-0957b4a6a160" id="_a402bda8-69b1-374b-943a-0957b4a6a160"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>On-demand monitoring is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-on-demand-OAM" id="term-on-demand-OAM"></a><p class="TermNum"><a name="term-on-demand-OAM" id="term-on-demand-OAM"></a><b>3.1.47.<span style="mso-tab-count:1">&#xA0; </span><b><s>on-demand OAM</s></b>:</b>    <s>OAM actions that are initiated via manual intervention for a limited time to carry out diagnostics. On-demand OAM can result in singular or periodic OAM actions during the diagnostics time interval.</s></p>
+
+
+
+ <div class="Note"><a name="_004489f7-095c-21fa-f8fb-27a93be43206" id="_004489f7-095c-21fa-f8fb-27a93be43206"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>On-demand OAM is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-one-way" id="term-one-way"></a><p class="TermNum"><a name="term-one-way" id="term-one-way"></a><b>3.1.48.<span style="mso-tab-count:1">&#xA0; </span><b><s>one-way</s></b>:</b>    <s>A measurement of the performance of frames that is achieved in one direction from an initiating MEP to a peer MEP, or vice versa; i.e., a unidirectional measurement.</s></p>
+
+
+
+ <div class="Note"><a name="_cc058c3e-cff3-949e-e97d-00521b38a852" id="_cc058c3e-cff3-949e-e97d-00521b38a852"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>One-way is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-out-of-service-OAM" id="term-out-of-service-OAM"></a><p class="TermNum"><a name="term-out-of-service-OAM" id="term-out-of-service-OAM"></a><b>3.1.49.<span style="mso-tab-count:1">&#xA0; </span><b><s>out-of-service OAM</s></b>:</b>    <s>OAM actions that are carried out while the data traffic is interrupted.</s></p>
+
+
+
+ <div class="Note"><a name="_66a63688-e0c9-4915-2c72-8ec3d0735d33" id="_66a63688-e0c9-4915-2c72-8ec3d0735d33"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Out-of-service OAM is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-operator-virtual-connection-_OVC_" id="term-operator-virtual-connection-_OVC_"></a><p class="TermNum"><a name="term-operator-virtual-connection-_OVC_" id="term-operator-virtual-connection-_OVC_"></a><b>3.1.50.<span style="mso-tab-count:1">&#xA0; </span><b><s>operator virtual connection (OVC)</s></b>:</b></p>
+
+ <div class="Note"><a name="_c1c74b9b-1a84-5203-ff64-6b1bdc8a3b1e" id="_c1c74b9b-1a84-5203-ff64-6b1bdc8a3b1e"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>OVC is defined by <a href="#mef26-1">[MEF&#xA0;26.1]</a>.</s></p></div></div>
+
+<div><a name="term-peer-MEP" id="term-peer-MEP"></a><p class="TermNum"><a name="term-peer-MEP" id="term-peer-MEP"></a><b>3.1.51.<span style="mso-tab-count:1">&#xA0; </span><b><s>peer MEP</s></b>:</b>    <s>In a given MEP, all of the other MEPs in the same MEG.</s></p>
+
+
+
+ <div class="Note"><a name="_303bc7ea-b435-1c5b-f8e8-875b31188c27" id="_303bc7ea-b435-1c5b-f8e8-875b31188c27"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Peer MEP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-proactive-measurement" id="term-proactive-measurement"></a><p class="TermNum"><a name="term-proactive-measurement" id="term-proactive-measurement"></a><b>3.1.52.<span style="mso-tab-count:1">&#xA0; </span><b><s>proactive measurement</s></b>:</b>    <s>A measurement (e.g., performance monitoring such as delay measurement, loss measurement.) that is running continuously after it has been established. Proactive measurements can only be temporarily disabled.</s></p><p class="MsoNormal"><a name="_94be5e54-9aa1-d297-e285-ae8f1f121633" id="_94be5e54-9aa1-d297-e285-ae8f1f121633"></a>    <s>NOTE: Proactive measurement is referred to in <a href="#g8052">[ITU-T&#xA0;G.8052&#xA0;(01/2024)]</a>.</s></p>
+
+
+
+ </div>
+
+<div><a name="term-proactive-monitoring" id="term-proactive-monitoring"></a><p class="TermNum"><a name="term-proactive-monitoring" id="term-proactive-monitoring"></a><b>3.1.53.<span style="mso-tab-count:1">&#xA0; </span><b>proactive monitoring</b>:</b>A method to continuously infer the status and performance of a maintenance entity group with the purpose of detecting disturbances, faults and degradations immediately after their occurrence in order to verify the service level agreement or initiate recovery actions to restore the service to the guaranteed level.</p>
+
+
+
+ <div class="Note"><a name="_663334a1-c3d9-6f85-bf1a-2d66852ebe36" id="_663334a1-c3d9-6f85-bf1a-2d66852ebe36"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Proactive monitoring is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-proactive-OAM" id="term-proactive-OAM"></a><p class="TermNum"><a name="term-proactive-OAM" id="term-proactive-OAM"></a><b>3.1.54.<span style="mso-tab-count:1">&#xA0; </span><b><s>proactive OAM</s></b>:</b>    <s>OAM actions that are carried out continuously to permit proactive reporting of fault or performance results.</s></p>
+
+
+
+ <div class="Note"><a name="_21e923f9-ab9d-443e-fcb0-52a2826ffc44" id="_21e923f9-ab9d-443e-fcb0-52a2826ffc44"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Proactive OAM is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-R-APS-virtual-channel" id="term-R-APS-virtual-channel"></a><p class="TermNum"><a name="term-R-APS-virtual-channel" id="term-R-APS-virtual-channel"></a><b>3.1.55.<span style="mso-tab-count:1">&#xA0; </span><b><s>R-APS virtual channel</s></b>:</b>    <s>The R-APS channel connection between two interconnection nodes of a sub-ring in (an)other Ethernet ring(s) or network(s). Its connection characteristics (e.g., path, performance) are influenced by the characteristics of the network (e.g., Ethernet ring) providing connectivity between the interconnection nodes.</s></p>
+
+
+
+ <div class="Note"><a name="_69ea584f-9579-c28e-e7f4-63d23a9160af" id="_69ea584f-9579-c28e-e7f4-63d23a9160af"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>R-APS virtual channel is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-responding-MEP" id="term-responding-MEP"></a><p class="TermNum"><a name="term-responding-MEP" id="term-responding-MEP"></a><b>3.1.56.<span style="mso-tab-count:1">&#xA0; </span><b><s>responding MEP</s></b>:</b>    <s>In single-ended messaging, an MEP that receives request PDUs from an initiating MEP and transmits corresponding response PDUs.</s></p>
+
+
+
+ <div class="Note"><a name="_2661e366-f161-2b51-b349-c3aa2ff96e28" id="_2661e366-f161-2b51-b349-c3aa2ff96e28"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Responding MEP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-receiving-MEP" id="term-receiving-MEP"></a><p class="TermNum"><a name="term-receiving-MEP" id="term-receiving-MEP"></a><b>3.1.57.<span style="mso-tab-count:1">&#xA0; </span><b><s>receiving MEP</s></b>:</b>    <s>In dual-ended messaging, an MEP that receives request PDUs from an initiating MEP, and does not respond to them.</s></p>
+
+
+
+ <div class="Note"><a name="_fd2a1580-1e32-e68e-6419-19752ac5b4fd" id="_fd2a1580-1e32-e68e-6419-19752ac5b4fd"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Receiving MEP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-ring-MEL" id="term-ring-MEL"></a><p class="TermNum"><a name="term-ring-MEL" id="term-ring-MEL"></a><b>3.1.58.<span style="mso-tab-count:1">&#xA0; </span><b><s>ring MEL</s></b>:</b>    <s>The maintenance entity group (MEG) level providing a communication channel for ring automatic protection switching (R-APS) information.</s></p>
+
+
+
+ <div class="Note"><a name="_fd329d9e-2160-1d33-465c-ccd6f4a33d78" id="_fd329d9e-2160-1d33-465c-ccd6f4a33d78"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Ring MEL is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-ring-protection-link-_RPL_" id="term-ring-protection-link-_RPL_"></a><p class="TermNum"><a name="term-ring-protection-link-_RPL_" id="term-ring-protection-link-_RPL_"></a><b>3.1.59.<span style="mso-tab-count:1">&#xA0; </span><b><s>ring protection link (RPL)</s></b>:</b>    <s>The ring link that under normal conditions, i.e., without any failure or request, is blocked (at one or both ends) to traffic channels, to prevent the formation of loops.</s></p>
+
+
+
+ <div class="Note"><a name="_73ffc8ee-b1ba-f925-1bb6-7f28c4b15a57" id="_73ffc8ee-b1ba-f925-1bb6-7f28c4b15a57"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Ring protection link is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-RPL-neighbour-node" id="term-RPL-neighbour-node"></a><p class="TermNum"><a name="term-RPL-neighbour-node" id="term-RPL-neighbour-node"></a><b>3.1.60.<span style="mso-tab-count:1">&#xA0; </span><b><s>RPL neighbour node</s></b>:</b>    <s>When configured, an Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring) in addition to the block by the RPL owner node. However, it is not responsible for activating the reversion behaviour.</s></p>
+
+
+
+ <div class="Note"><a name="_948afa41-4032-d23d-34d7-ec23931c14c7" id="_948afa41-4032-d23d-34d7-ec23931c14c7"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>RPL neighbour node is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-RPL-owner-node" id="term-RPL-owner-node"></a><p class="TermNum"><a name="term-RPL-owner-node" id="term-RPL-owner-node"></a><b>3.1.61.<span style="mso-tab-count:1">&#xA0; </span><b><s>RPL owner node</s></b>:</b>    <s>An Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring). Furthermore, it is responsible for activating reversion behaviour from protected or manual switch/forced switch (MS/FS) conditions.</s></p>
+
+
+
+ <div class="Note"><a name="_0bb76c1f-3336-1dbb-e5a2-37801966a169" id="_0bb76c1f-3336-1dbb-e5a2-37801966a169"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>RPL owner node is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-server-MEP" id="term-server-MEP"></a><p class="TermNum"><a name="term-server-MEP" id="term-server-MEP"></a><b>3.1.62.<span style="mso-tab-count:1">&#xA0; </span><b><s>server MEP</s></b>:</b>    <s>A server MEP represents the compound function of the server layer termination function and server/ETH adaptation function, which is used to notify the ETH layer MEPs of conditions of the server layer that may be relevant to these ETH MEPs (e.g., failure or degradation detection by the server layer termination function or server/ETH adaptation function), where the server layer termination function is expected to run OAM mechanisms specific to that server layer.</s></p>
+
+
+
+ <div class="Note"><a name="_a6e20ad2-a70d-6379-c033-70296297e857" id="_a6e20ad2-a70d-6379-c033-70296297e857"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Server MEP is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-service-Ethernet-connection" id="term-service-Ethernet-connection"></a><p class="TermNum"><a name="term-service-Ethernet-connection" id="term-service-Ethernet-connection"></a><b>3.1.63.<span style="mso-tab-count:1">&#xA0; </span><b>service Ethernet connection</b>:</b>An Ethernet connection of which the traffic units are encapsulated with a service VLAN tag (S-Tag) when they are transported through an Ethernet link. Outside an Ethernet link<span style="mso-bookmark:_Ref927375990"><a class="FootnoteRef" href="#_ftn1" epub:type="footnote" style="mso-footnote-id:ftn1" name="_ftnref1" title="" id="_ftnref1"><span class="MsoFootnoteReference"><span style="mso-special-character:footnote"></span></span></a></span> the traffic units are without service VLAN tag; the information transported in the service VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the service VLAN tag and the demapping of these parameters from the service VLAN tag.</p>
+
+
+
+ <div class="Note"><a name="_f010270f-3e9f-a4fd-1cc4-a11f05e0681c" id="_f010270f-3e9f-a4fd-1cc4-a11f05e0681c"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Service Ethernet connection is referred to in <a href="#g8012-1">[ITU-T&#xA0;G.8012.1]</a>.</p></div></div>
+
+<div><a name="term-service-frame" id="term-service-frame"></a><p class="TermNum"><a name="term-service-frame" id="term-service-frame"></a><b>3.1.64.<span style="mso-tab-count:1">&#xA0; </span><b><s>service frame</s></b>:</b></p>
+
+ <div class="Note"><a name="_b7d5ed1b-693a-12bb-ad38-dba18b7f224b" id="_b7d5ed1b-693a-12bb-ad38-dba18b7f224b"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Service frame is defined in <a href="#mef10-3">[MEF&#xA0;10.3]</a>.</s></p></div></div>
+
+<div><a name="term-single-ended" id="term-single-ended"></a><p class="TermNum"><a name="term-single-ended" id="term-single-ended"></a><b>3.1.65.<span style="mso-tab-count:1">&#xA0; </span><b><s>single-ended</s></b>:</b>    <s>A type of protocol messaging whereby an initiating MEP sends a request PDU to a responding peer MEP, and the peer MEP responds by sending a response PDU that contains the original request data plus any additional data added by the responder. In performance monitoring, the initiating MEP performs measurement calculations.</s></p>
+
+
+
+ <div class="Note"><a name="_2e0bc960-7f78-6ce2-b9e5-82f36a638fda" id="_2e0bc960-7f78-6ce2-b9e5-82f36a638fda"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Single-ended is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-sub-ring" id="term-sub-ring"></a><p class="TermNum"><a name="term-sub-ring" id="term-sub-ring"></a><b>3.1.66.<span style="mso-tab-count:1">&#xA0; </span><b><s>sub-ring</s></b>:</b>    <s>An Ethernet ring that is connected to (an)other Ethernet ring(s) or network(s) through the use of a pair of interconnection nodes. On their own, the sub-ring links do not form a closed loop. A closed connection of traffic may be formed by the sub-ring links and one or more links, which are controlled by (an)other Ethernet ring(s) or network(s), between interconnection nodes.</s></p>
+
+
+
+ <div class="Note"><a name="_31d08430-aac2-1757-de72-8896ece6416e" id="_31d08430-aac2-1757-de72-8896ece6416e"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Sub-ring is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-sub-ring-link" id="term-sub-ring-link"></a><p class="TermNum"><a name="term-sub-ring-link" id="term-sub-ring-link"></a><b>3.1.67.<span style="mso-tab-count:1">&#xA0; </span><b><s>sub-ring link</s></b>:</b>    <s>A span (e.g., link/port) connecting adjacent sub-ring nodes that are under the control of the Ethernet ring protection control process (ERP control process) of the sub-ring.</s></p>
+
+
+
+ <div class="Note"><a name="_53806d71-8f38-f7b7-9262-d6054e82f610" id="_53806d71-8f38-f7b7-9262-d6054e82f610"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Sub-ring link is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+
+<div><a name="term-two-way" id="term-two-way"></a><p class="TermNum"><a name="term-two-way" id="term-two-way"></a><b>3.1.68.<span style="mso-tab-count:1">&#xA0; </span><b><s>two-way</s></b>:</b>    <s>A measurement of the performance of frames that is achieved from an initiating MEP to responding peer MEP, and back to the initiating MEP; i.e., a bidirectional or round-trip measurement.</s></p>
+
+
+
+ <div class="Note"><a name="_716bd79b-4b5b-3eeb-f7b7-ba478f7535e0" id="_716bd79b-4b5b-3eeb-f7b7-ba478f7535e0"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Two-way is referred to in <a href="#g8013">[ITU-T&#xA0;G.8013]</a>.</s></p></div></div>
+
+<div><a name="term-traffic-conditioning-function" id="term-traffic-conditioning-function"></a><p class="TermNum"><a name="term-traffic-conditioning-function" id="term-traffic-conditioning-function"></a><b>3.1.69.<span style="mso-tab-count:1">&#xA0; </span><b>traffic-conditioning function</b>:</b>A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, polices non-conformant traffic units and presents the remaining traffic units at its output as characteristic information of the layer network.</p>
+
+
+
+ <div class="Note"><a name="_4fc78d40-f063-bccf-4d1e-6b10abba1cdd" id="_4fc78d40-f063-bccf-4d1e-6b10abba1cdd"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Traffic-conditioning function is referred to in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p></div></div>
+
+<div><a name="term-traffic-shaping-function" id="term-traffic-shaping-function"></a><p class="TermNum"><a name="term-traffic-shaping-function" id="term-traffic-shaping-function"></a><b>3.1.70.<span style="mso-tab-count:1">&#xA0; </span><b>traffic-shaping function</b>:</b>A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, controls non-conformant traffic units by buffering and scheduling them alternately with conformant traffic units for presentation at its output as characteristic information of the layer network.</p>
+
+
+
+ <div class="Note"><a name="_3f1fa24e-ea47-915b-0ccf-772bf5b249a2" id="_3f1fa24e-ea47-915b-0ccf-772bf5b249a2"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>Traffic-shaping function is referred to in <a href="#g8021">[ITU-T&#xA0;G.8021]</a>.</p></div></div>
+
+<div><a name="term-user-network-interface-_UNI_" id="term-user-network-interface-_UNI_"></a><p class="TermNum"><a name="term-user-network-interface-_UNI_" id="term-user-network-interface-_UNI_"></a><b>3.1.71.<span style="mso-tab-count:1">&#xA0; </span><b><s>user network interface (UNI)</s></b>:</b></p>
+
+ <div class="Note"><a name="_c6b0146e-f88c-7574-0625-aa8b8941b592" id="_c6b0146e-f88c-7574-0625-aa8b8941b592"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>User network interface is referred to in <a href="#mef10-3">[MEF&#xA0;10.3]</a>.</s></p></div></div>
+
+<div><a name="term-user-to-network-interface-_UNI_" id="term-user-to-network-interface-_UNI_"></a><p class="TermNum"><a name="term-user-to-network-interface-_UNI_" id="term-user-to-network-interface-_UNI_"></a><b>3.1.72.<span style="mso-tab-count:1">&#xA0; </span><b>user-to-network interface (UNI)</b>:</b>An interface that is used for the interconnection of customer equipment with a network element of the transport network.</p>
+
+
+
+ <div class="Note"><a name="_b733cae1-e79d-7db0-7a46-f216db54f6f6" id="_b733cae1-e79d-7db0-7a46-f216db54f6f6"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span>User-to-network interface is referred to in <a href="#g8012">[ITU-T&#xA0;G.8012]</a>.</p></div></div>
+
+<div><a name="term-wait-to-block-timer" id="term-wait-to-block-timer"></a><p class="TermNum"><a name="term-wait-to-block-timer" id="term-wait-to-block-timer"></a><b>3.1.73.<span style="mso-tab-count:1">&#xA0; </span><b><s>wait to block timer</s></b>:</b>    <s>A timer that is employed by the RPL owner to delay reversion after a forced switch or manual switch has been cleared.</s></p>
+
+
+
+ <div class="Note"><a name="_c55645e4-60af-5b3d-8cdb-5ec50c0cf2a3" id="_c55645e4-60af-5b3d-8cdb-5ec50c0cf2a3"></a><p class="Note"><span class="termnote_label">NOTE &#x2013; </span><s>Wait to block timer is referred to in <a href="#g8032">[ITU-T&#xA0;G.8032]</a>.</s></p></div></div>
+</div>
+        <div><a name="_appendix_i" id="_appendix_i"></a><h2>3.2.<span style="mso-tab-count:1">&#xA0; </span>Appendix I</h2>
+
+<p class="TableTitle" style="text-align:center;">Table 1&#xA0;&#x2014; Source Recommendations</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="tableI-1" id="tableI-1"></a><tbody><tr><th valign="top" align="center" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">ITU-T Recommendation</th><th valign="top" align="center" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Latest version</th></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">ITU-T G.8010/Y.1306</td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">02/2004 with Amd. 1 (2006), Err. 1 (2007), Err. 2 (2007) and Amd. 2 (2010).</td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><s>ITU-T G.8011/Y.1307</s></td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><s>01/2015</s></td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">ITU-T G.8012/Y.1308</td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">08/2004 with Amd.1 (2006)</td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">ITU-T G.8012.1/Y.1308.1</td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">12/2012</td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><s>ITU-T G.8013/Y.1731</s></td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><s>08/2015</s></td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">ITU-T G.8021/Y.1341</td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">04/2015 with Cor. 1 (2015)</td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><s>ITU-T G.8032/Y.1344</s></td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><s>08/2015 with G-Sup.52 (2012)</s></td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">ITU-T G.8051/Y.1345</td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">08/2015</td></tr><tr><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"><s>ITU-T G.8052/Y.1346</s></td><td valign="top" align="center" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"><s>08/2013</s></td></tr></tbody></table></div>
+</div>
+        <div>
+          <h2 class="Section3">3.3.<span style="mso-tab-count:1">&#xA0; </span>Bibliography</h2>
+          <table class="biblio" border="0">
+            <tbody>
+              <tr class="Biblio">
+                <a name="g800" id="g800"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.800&#xA0;(04/2016)]</td>
+                <td>Recommendation ITU-T&#xA0;G.800&#xA0;(04/2016), <i>Unified functional architecture of transport networks</i>, Third edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g805" id="g805"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.805&#xA0;(03/2000)]</td>
+                <td>Recommendation ITU-T&#xA0;G.805&#xA0;(03/2000), <i>Generic functional architecture of transport networks</i>, Second edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8051" id="g8051"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8051&#xA0;(08/2024)]</td>
+                <td>Recommendation ITU-T&#xA0;G.8051&#xA0;(08/2024), <i>Management aspects of the Ethernet transport (ET) capable network element</i>, Seventh edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8052" id="g8052"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8052&#xA0;(01/2024)]</td>
+                <td>Recommendation ITU-T&#xA0;G.8052&#xA0;(01/2024), <i>Protocol-neutral management information model for the Ethernet transport capable network element</i>, Fourth edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g808-1" id="g808-1"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.808.1&#xA0;(05/2014)]</td>
+                <td>Recommendation ITU-T&#xA0;G.808.1&#xA0;(05/2014), <i>Generic protection switching &#x2013; Linear trail and subnetwork protection</i>, Fourth edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g809" id="g809"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.809&#xA0;(03/2003)]</td>
+                <td>Recommendation ITU-T&#xA0;G.809&#xA0;(03/2003), <i>Functional architecture of connectionless layer networks</i>, First edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="m3010" id="m3010"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;M.3010&#xA0;(10/1992)]</td>
+                <td>Recommendation ITU-T&#xA0;M.3010&#xA0;(10/1992), <i>Principles for a telecommunications management network</i>, Second edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="m3013" id="m3013"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;M.3013&#xA0;(02/2000)]</td>
+                <td>Recommendation ITU-T&#xA0;M.3013&#xA0;(02/2000), <i>Considerations for a telecommunications management network</i>, First edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="m3100" id="m3100"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;M.3100&#xA0;(10/1992)]</td>
+                <td>Recommendation ITU-T&#xA0;M.3100&#xA0;(10/1992), <i>Generic network information model</i>, First edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="x700" id="x700"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;X.700&#xA0;(09/1992)]</td>
+                <td>Recommendation ITU-T&#xA0;X.700&#xA0;(09/1992)&#xA0;| ISO/IEC&#xA0;7498-4, <i>Management framework for Open Systems Interconnection (OSI) for CCITT applications</i>, First edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="x701" id="x701"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;X.701&#xA0;(01/1992)]</td>
+                <td>Recommendation ITU-T&#xA0;X.701&#xA0;(01/1992)&#xA0;| ISO/IEC&#xA0;10040, <i>Information technology &#x2013; Open Systems Interconnection &#x2013; Systems management overview</i>, First edition.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g7710" id="g7710"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.7710]</td>
+                <td>Recommendation ITU-T&#xA0;G.7710, Recommendation ITU-T G.7710/Y.1701 (2012), Common equipment management function requirements.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g7712" id="g7712"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.7712]</td>
+                <td>Recommendation ITU-T&#xA0;G.7712, Recommendation ITU-T G.7712/Y.1703 (2010), Architecture and specification of data communication network.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8010" id="g8010"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8010]</td>
+                <td>Recommendation ITU-T&#xA0;G.8010, Recommendation ITU-T G.8010/Y.1306 (2004), Architecture of Ethernet layer networks.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8011" id="g8011"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8011]</td>
+                <td>Recommendation ITU-T&#xA0;G.8011,
+    <s>Recommendation ITU-T G.8011/Y.1307 (2015), Ethernet service characteristics.</s>
+  </td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8012" id="g8012"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8012]</td>
+                <td>Recommendation ITU-T&#xA0;G.8012, Recommendation ITU-T G.8012/Y.1308 (2004), Ethernet UNI and Ethernet NNI.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8012-1" id="g8012-1"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8012.1]</td>
+                <td>Recommendation ITU-T&#xA0;G.8012.1, Recommendation ITU-T G.8012.1/Y.1308.1 (2012), Interfaces for the Ethernet transport network.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8013" id="g8013"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8013]</td>
+                <td>Recommendation ITU-T&#xA0;G.8013,
+    <s>Recommendation ITU-T G.8013/Y.1731 (2015), Operations, administration and maintenance (OAM) functions and mechanisms for Ethernet-based networks.</s>
+  </td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8021" id="g8021"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8021]</td>
+                <td>Recommendation ITU-T&#xA0;G.8021, Recommendation ITU-T G.8021/Y.1341 (2015), Characteristics of Ethernet transport network equipment functional blocks.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8031" id="g8031"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8031]</td>
+                <td>Recommendation ITU-T&#xA0;G.8031,
+    <s>Recommendation ITU-T G.8031/Y.1342 (2015), Ethernet linear protection switching.</s>
+  </td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g8032" id="g8032"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.8032]</td>
+                <td>Recommendation ITU-T&#xA0;G.8032,
+    <s>Recommendation ITU-T G.8032/Y.1344 (2015), Ethernet ring protection switching.</s>
+  </td>
+              </tr>
+              <tr class="Biblio">
+                <a name="g870" id="g870"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.870]</td>
+                <td>Recommendation ITU-T&#xA0;G.870, Recommendation ITU-T G.870/Y.1352 (2012), Terms and definitions for optical transport networks.</td>
+              </tr>
+              <tr class="Biblio">
+                <a name="sup52" id="sup52"></a>
+                <td style="vertical-align:top">[ITU&#x2011;T&#xA0;G.Sup52]</td>
+                <td>Recommendation ITU-T&#xA0;G.Sup52, ITU-T G-series Recommendations &#x2013; Supplement 52 (2012), <i>Ethernet ring protection switching.</i></td>
+              </tr>
+              <tr class="Biblio">
+                <a name="mef10-3" id="mef10-3"></a>
+                <td style="vertical-align:top">[MEF&#xA0;10.3]</td>
+                <td>MEF&#xA0;10.3,
+    <s>MEF (2013), <i>Ethernet Services Attributes Phase 3.</i></s>
+  </td>
+              </tr>
+              <tr class="Biblio">
+                <a name="mef12-1" id="mef12-1"></a>
+                <td style="vertical-align:top">[MEF&#xA0;12.1]</td>
+                <td>MEF&#xA0;12.1,
+    <s>MEF (2010), <i>Carrier Ethernet Network Architecture Framework Part 2: Ethernet Services Layer &#x2013; Basic Elements.</i></s>
+  </td>
+              </tr>
+              <tr class="Biblio">
+                <a name="mef26-1" id="mef26-1"></a>
+                <td style="vertical-align:top">[MEF&#xA0;26.1]</td>
+                <td>MEF&#xA0;26.1,
+    <s>MEF (2012), <i>External Network Network Interface (ENNI) &#x2013; Phase 2.</i></s>
+  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
         <a name="_introduction" id="_introduction"></a>
-        <h1>3.<span style="mso-tab-count:1">&#xA0; </span>Introduction</h1>
+        <h1>4.<span style="mso-tab-count:1">&#xA0; </span>Introduction</h1>
         <p class="MsoNormal"><a name="_1ce9446a-5f6d-5602-fdf1-4a93a006d2cb" id="_1ce9446a-5f6d-5602-fdf1-4a93a006d2cb"></a>This implementers' guide is a compilation of reported defects for all versions of Recommendation ITU-T G.8001. In this edition of the guide, reported defects identified as of 2018-10 are given for:</p>
         <p class="MsoNormal"><a name="_6a1c1a28-254c-abef-67b5-27fbc9c0f3e5" id="_6a1c1a28-254c-abef-67b5-27fbc9c0f3e5"></a>Recommendation ITU-T G.8001/Y.1354 (2016-04)</p>
         <p class="MsoNormal"><a name="_a4c5a540-a97a-3c95-5952-329e595872b7" id="_a4c5a540-a97a-3c95-5952-329e595872b7"></a>The guide must be read in conjunction with Recommendation ITU-T G.8001/Y.1354 (2016-04) to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
       </div>
       <div>
         <a name="_defect_resolution_procedure" id="_defect_resolution_procedure"></a>
-        <h1>4.<span style="mso-tab-count:1">&#xA0; </span>Defect resolution procedure</h1>
+        <h1>5.<span style="mso-tab-count:1">&#xA0; </span>Defect resolution procedure</h1>
         <p class="MsoNormal"><a name="_b68f0404-3b9e-55d0-3f84-cef28fe99490" id="_b68f0404-3b9e-55d0-3f84-cef28fe99490"></a>Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
       </div>
       <div>
         <a name="_nomenclature" id="_nomenclature"></a>
-        <h1>5.<span style="mso-tab-count:1">&#xA0; </span>Nomenclature</h1>
+        <h1>6.<span style="mso-tab-count:1">&#xA0; </span>Nomenclature</h1>
         <p class="MsoNormal"><a name="_1a62a3fe-7fd9-44d4-f902-d3c212698018" id="_1a62a3fe-7fd9-44d4-f902-d3c212698018"></a>In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
         <div align="center" class="table_container">
           <table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;">
@@ -3581,23 +4258,17 @@ table.biblio td {
           <br/>
           <b>Recommendation ITU-T G.8001/Y.1354 Defect Report Form</b>
         </h1>
-        <p class="annex_obligation">(This annex forms an integral part of this Implementers Guide.)</p>
+        <p class="annex_obligation">(This annex forms an integral part of this Implementers&#x2019; Guide.)</p>
         <div align="center" class="table_container">
           <table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;">
-            <a name="_29279feb-4b03-ec89-6274-686e9042a24c" id="_29279feb-4b03-ec89-6274-686e9042a24c"></a>
+            <a name="_eaf01491-0f2e-1e71-6bb8-b6b78e004031" id="_eaf01491-0f2e-1e71-6bb8-b6b78e004031"></a>
             <tbody>
               <tr>
                 <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">DATE:</td>
                 <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"></td>
               </tr>
               <tr>
-                <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><p style="text-align: left;page-break-after:avoid" class="MsoNormal"><a name="_cf333606-8be2-996b-56ba-66283cc558c6" id="_cf333606-8be2-996b-56ba-66283cc558c6"></a>CONTACT INFORMATION<br/>
-NAME:<br/>
-COMPANY:<br/>
-ADDRESS:<br/>
-TEL:<br/>
-FAX:<br/>
-E-MAIL:</p>
+                <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><p style="text-align: left;page-break-after:avoid" class="MsoNormal"><a name="_667404a8-8ce5-6b28-2622-c61515a80f0b" id="_667404a8-8ce5-6b28-2622-c61515a80f0b"></a>CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
 </td>
                 <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"></td>
               </tr>
@@ -3619,7 +4290,7 @@ E-MAIL:</p>
                 <td colspan="2" style="border-top:0pt;mso-border-top-alt:0pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">
                   <div class="Note">
                     <a name="_144e87c5-7df0-e541-9081-f059f06d102e" id="_144e87c5-7df0-e541-9081-f059f06d102e"></a>
-                    <p class="Note"><span class="note_label">NOTE &#x2013; </span>Attach additional pages if more space is required than is provided above.</p>
+                    <p class="Note"><span class="note_label">NOTE&#xA0;&#x2013;&#xA0;</span>Attach additional pages if more space is required than is provided above.</p>
                   </div>
                 </td>
               </tr>
@@ -3628,12 +4299,15 @@ E-MAIL:</p>
         </div>
       </div>
     </div>
-    <div style="mso-element:footnote-list"/>
+    <div style="mso-element:footnote-list"><div style="mso-element:footnote" id="ftn1">
+  <p class="MsoFootnoteText"><a name="_523bd9b1-e051-dea0-bf9f-dc350d63e4c3" id="_523bd9b1-e051-dea0-bf9f-dc350d63e4c3"></a><a style="mso-footnote-id:ftn1" href="#_ftn1" name="_ftnref1" title="" id="_ftnref1"><span class="MsoFootnoteReference"><span style="mso-special-character:footnote"></span></span></a><span style="mso-tab-count:1"></span>The term "Ethernet link" refers to the ETH link topological component specified in <a href="#g8010">[ITU-T&#xA0;G.8010]</a>.</p>
+</div>
+</div>
   </body>
 </html>
 
 
-------=_NextPart_b9de74c8.85a5.4456
+------=_NextPart_3f4b5df6.7279.4973
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
@@ -3642,224 +4316,14 @@ Content-Type: application/xml
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
 ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1pdHUvbW4tc2FtcGxl
 cy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLUcuSW1wODAwMS0yMDIwMDItSS9lbi5odG0iLz4g
-IDxvOkZpbGUgSFJlZj0iNGI3YzM4N2EtYzBiYi00MTk5LTkxYTItNDNiMWQ2NDI0MTJlLnN2ZyIv
-PgogIDxvOkZpbGUgSFJlZj0iNTAzNDExYjQtYzNlMi00NWM1LTk0YWEtNGVlMjhhNGViYThhLnBu
+IDxvOkZpbGUgSFJlZj0iMGZkNmRkMzgtYzY4Zi00ZjAzLWJmNmEtYjFjM2JlNjhmODA1LnN2ZyIv
+PgogIDxvOkZpbGUgSFJlZj0iMmRjMmIxMmQtOTAyYy00M2M3LWI4ZmMtZTkwNjAzMjcxZmI3LnBu
 ZyIvPgogIDxvOkZpbGUgSFJlZj0iZmlsZWxpc3QueG1sIi8+CiAgPG86RmlsZSBIUmVmPSJoZWFk
 ZXIuaHRtbCIvPgo8L3htbD4K
 
-------=_NextPart_b9de74c8.85a5.4456
-Content-ID: <header.html>
-Content-Disposition: inline; filename="header.html"
-Content-Transfer-Encoding: base64
-Content-Type: text/html charset="utf-8"
-
-PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiDQp4bWxuczpvPSJ1
-cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiDQp4bWxuczp3PSJ1cm46c2No
-ZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTp3b3JkIg0KeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMu
-bWljcm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIg0KeG1sbnM6bXY9Imh0dHA6Ly9tYWNW
-bWxTY2hlbWFVcmkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwIj4NCg0K
-PGhlYWQ+DQo8bWV0YSBuYW1lPVRpdGxlIGNvbnRlbnQ9IiI+DQo8bWV0YSBuYW1lPUtleXdvcmRz
-IGNvbnRlbnQ9IiI+DQo8bWV0YSBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZSBjb250ZW50PSJ0ZXh0
-L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KPG1ldGEgbmFtZT1Qcm9nSWQgY29udGVudD1Xb3JkLkRv
-Y3VtZW50Pg0KPG1ldGEgbmFtZT1HZW5lcmF0b3IgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUi
-Pg0KPG1ldGEgbmFtZT1PcmlnaW5hdG9yIGNvbnRlbnQ9Ik1pY3Jvc29mdCBXb3JkIDE1Ij4NCjxs
-aW5rIGlkPU1haW4tRmlsZSByZWw9TWFpbi1GaWxlIGhyZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1p
-dHUvbW4tc2FtcGxlcy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLUcuSW1wODAwMS0yMDIwMDIt
-SS9lbi5odG1sIj4NCjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KIDxvOnNoYXBlZGVmYXVsdHMg
-djpleHQ9ImVkaXQiIHNwaWRtYXg9IjIwNDkiLz4NCjwveG1sPjwhW2VuZGlmXS0tPg0KPC9oZWFk
-Pg0KDQo8Ym9keSBsYW5nPUVOIGxpbms9Ymx1ZSB2bGluaz0iIzk1NEY3MiI+DQoNCjxkaXYgc3R5
-bGU9J21zby1lbGVtZW50OmZvb3Rub3RlLXNlcGFyYXRvcicgaWQ9ZnM+DQoNCjxwIGNsYXNzPU1z
-b05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTowY207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xp
-bmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3Bl
-Y2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtc2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rl
-c10+DQoNCjxociBhbGlnbj1sZWZ0IHNpemU9MSB3aWR0aD0iMzMlIj4NCg0KPCFbZW5kaWZdPjwv
-c3Bhbj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9v
-dG5vdGUtY29udGludWF0aW9uLXNlcGFyYXRvcicgaWQ9ZmNzPg0KDQo8cCBjbGFzcz1Nc29Ob3Jt
-YWwgc3R5bGU9J21hcmdpbi1ib3R0b206MGNtO21hcmdpbi1ib3R0b206LjAwMDFwdDtsaW5lLWhl
-aWdodDoNCm5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXNwZWNpYWwt
-Y2hhcmFjdGVyOmZvb3Rub3RlLWNvbnRpbnVhdGlvbi1zZXBhcmF0b3InPjwhW2lmICFzdXBwb3J0
-Rm9vdG5vdGVzXT4NCg0KPGhyIGFsaWduPWxlZnQgc2l6ZT0xPg0KDQo8IVtlbmRpZl0+PC9zcGFu
-Pjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDplbmRub3Rl
-LXNlcGFyYXRvcicgaWQ9ZXM+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJv
-dHRvbTowY207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3Bh
-biBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUt
-c2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rlc10+DQoNCjxociBhbGlnbj1sZWZ0IHNp
-emU9MSB3aWR0aD0iMzMlIj4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8L2Rp
-dj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZW5kbm90ZS1jb250aW51YXRpb24tc2VwYXJh
-dG9yJyBpZD1lY3M+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTow
-Y207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5n
-PUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtY29udGlu
-dWF0aW9uLXNlcGFyYXRvcic+PCFbaWYgIXN1cHBvcnRGb290bm90ZXNdPg0KDQo8aHIgYWxpZ249
-bGVmdCBzaXplPTE+DQoNCjwhW2VuZGlmXT48L3NwYW4+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoN
-CjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgxPg0KDQo8cCBjbGFzcz1Nc29I
-ZWFkZXIgYWxpZ249bGVmdCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBw
-dDsNCm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFu
-PjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDE+
-DQoNCjxwIGNsYXNzPU1zb0hlYWRlciBzdHlsZT0nbWFyZ2luLWJvdHRvbToxOC4wcHQnPjxzcGFu
-IGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZTox
-MS4wcHQ7Zm9udC13ZWlnaHQ6bm9ybWFsJz4NCjwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCDQpzdHls
-ZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0K
-DQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMT4NCg0KPHAgY2xhc3M9TXNv
-Rm9vdGVyIHN0eWxlPSdtYXJnaW4tdG9wOjEyLjBwdDtsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxp
-bmUtaGVpZ2h0LXJ1bGU6DQpleGFjdGx5Jz48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
-c28tZWxlbWVudDpoZWFkZXInIGlkPWVoMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1sZWZ0
-IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVp
-Z2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KPC9kaXY+DQoN
-CjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgybD4NCjxwIGNsYXNzPU1zb0hl
-YWRlckxhbmRzY2FwZSBhbGlnbj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWln
-aHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1H
-Qj48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicg
-aWQ9aDI+DQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxpZ246
-cmlnaHQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+
-PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1l
-bGVtZW50OmhlYWRlcicgaWQ9aDJsPg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBlIGFsaWdu
-PXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1s
-aW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCjwv
-ZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMj4NCjxwIGNsYXNz
-PUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6
-ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdm
-b250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2lu
-Jz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFn
-ZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnll
-cyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+
-XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdo
-dDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3Nw
-YW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1s
-YW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8L3Nw
-YW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13
-ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+
-PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1GUi1D
-SCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNv
-dW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIEcuODAw
-MS9ZLjEzNTQgSW1wbGVtZW50ZXJzJyBHdWlkZS1FICAgKDAyLzIwMjApPG86cD48L286cD48L3Nw
-YW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYy
-bD4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUt
-aGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVO
-LUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50
-OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28t
-YW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNv
-LXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVz
-Jz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxl
-PSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2Vw
-YXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxl
-PSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29m
-Onllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBz
-dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
-ZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAg
-ICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxl
-PSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAu
-IElUVS1UIEcuODAwMS9ZLjEzNTQgSW1wbGVtZW50ZXJzJyBHdWlkZS1FICAgKDAyLzIwMjApPC9z
-cGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYy
-Pg0KPHAgY2xhc3M9Rm9vdGVyUVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFu
-Zz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoyJz7CoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqAgPC9zcGFuPkltcC4gSVRVLVQgRy44MDAxL1kuMTM1NCBJbXBsZW1lbnRl
-cnMnIEd1aWRlLUUgICAoMDIvMjAyMCkNCiAgPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0Rmll
-bGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBz
-dHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0n
-bXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0n
-bXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxz
-cGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdt
-c28tbm8tcHJvb2Y6eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48
-c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0n
-bXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQps
-YW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwv
-cD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYybD4NCjxw
-IGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFu
-IGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIEcuODAwMS9ZLjEzNTQgSW1wbGVt
-ZW50ZXJzJyBHdWlkZS1FICAgKDAyLzIwMjApDQogIDxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50
-OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9y
-dEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNw
-YW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5
-bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bhbg0Kc3R5
-bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0t
-LT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHls
-ZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxk
-c10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5
-bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bh
-bg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bh
-bj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjM+
-DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhl
-aWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFuZz1FTi1H
-QiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpm
-aWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFu
-c2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1z
-cGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+
-wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0n
-Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFy
-YXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0n
-bXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1wcm9vZjp5
-ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5
-bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVu
-ZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAgICAgICAg
-IGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBzdHlsZT0n
-bXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+SW1wLiBJ
-VFUtVCBHLjgwMDEvWS4xMzU0IEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwMi8yMDIwKTwvc3Bh
-bj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjNs
-Pg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDtt
-c28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFu
-IGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Og0Kbm9ybWFsJz48c3BhbiBzdHlsZT0nbXNv
-LWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48L3NwYW4+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5
-bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0
-eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFj
-ZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKg0KTUVSR0VGT1JNQVQgPC9zcGFuPjxzcGFuIGxhbmc9RU4t
-R0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpm
-aWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1GUi1D
-SA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbDttc28t
-bm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5n
-PUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVu
-dDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCiAgICAgICAgICAg
-ICAgICAgICAgICBsYW5nPUZSLUNIIHN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSCc+PHNw
-YW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9z
-cGFuPkltcC4gSVRVLVQgRy44MDAxL1kuMTM1NCBJbXBsZW1lbnRlcnMnIEd1aWRlLUUgICAoMDIv
-MjAyMCk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3Rl
-cicgaWQ9ZjM+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48
-c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjInPsKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+SW1wLiBJVFUtVCBHLjgwMDEvWS4xMzU0IElt
-cGxlbWVudGVycycgR3VpZGUtRSAgICgwMi8yMDIwKQ0KICA8c3BhbiBzdHlsZT0nbXNvLXRhYi1j
-b3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1
-cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwn
-PjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0KUEFHRTxzcGFu
-IHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4N
-CnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5k
-aWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4g
-c3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRG
-aWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFu
-IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+
-PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48L286cD48
-L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9
-ZjNsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBw
-dCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoyJz7CoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPkltcC4gSVRVLVQgRy44MDAxL1kuMTM1
-NCBJbXBsZW1lbnRlcnMnIEd1aWRlLUUgICAoMDIvMjAyMCkNCiAgPHNwYW4gc3R5bGU9J21zby10
-YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtp
-ZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9y
-bWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8
-c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxz
-cGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwh
-W2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxz
-cGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBw
-b3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48
-c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlm
-XS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9v
-OnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8L2JvZHk+DQoNCjwvaHRtbD4NCg==
-
-------=_NextPart_b9de74c8.85a5.4456
-Content-ID: <503411b4-c3e2-45c5-94aa-4ee28a4eba8a.png>
-Content-Disposition: inline; filename="503411b4-c3e2-45c5-94aa-4ee28a4eba8a.png"
+------=_NextPart_3f4b5df6.7279.4973
+Content-ID: <2dc2b12d-902c-43c7-b8fc-e90603271fb7.png>
+Content-Disposition: inline; filename="2dc2b12d-902c-43c7-b8fc-e90603271fb7.png"
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -4263,9 +4727,227 @@ C7+w2Xb7Eb3o/8qNmGQMnLRiOgtj4OgmE+D4QbowaScm34WpzzFww2/qzparyA1MuOWqRprGNpt9
 e2wfOBmiVbYRslL9tQ8BUrd6JgExGYgGP2+SBj+gC2zppLgQoH0GxLx7ix3HWQBlaDjfTIMuKwYo
 7AdNOpT6a4JR2HSg3ZakAcg368qo/H9lWc/6NFehlQAAAABJRU5ErkJggg==
 
-------=_NextPart_b9de74c8.85a5.4456
-Content-ID: <4b7c387a-c0bb-4199-91a2-43b1d642412e.svg>
-Content-Disposition: inline; filename="4b7c387a-c0bb-4199-91a2-43b1d642412e.svg"
+------=_NextPart_3f4b5df6.7279.4973
+Content-ID: <header.html>
+Content-Disposition: inline; filename="header.html"
+Content-Transfer-Encoding: base64
+Content-Type: text/html charset="utf-8"
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiDQp4bWxuczpvPSJ1
+cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiDQp4bWxuczp3PSJ1cm46c2No
+ZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTp3b3JkIg0KeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMu
+bWljcm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIg0KeG1sbnM6bXY9Imh0dHA6Ly9tYWNW
+bWxTY2hlbWFVcmkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwIj4NCg0K
+PGhlYWQ+DQo8bWV0YSBuYW1lPVRpdGxlIGNvbnRlbnQ9IiI+DQo8bWV0YSBuYW1lPUtleXdvcmRz
+IGNvbnRlbnQ9IiI+DQo8bWV0YSBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZSBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KPG1ldGEgbmFtZT1Qcm9nSWQgY29udGVudD1Xb3JkLkRv
+Y3VtZW50Pg0KPG1ldGEgbmFtZT1HZW5lcmF0b3IgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUi
+Pg0KPG1ldGEgbmFtZT1PcmlnaW5hdG9yIGNvbnRlbnQ9Ik1pY3Jvc29mdCBXb3JkIDE1Ij4NCjxs
+aW5rIGlkPU1haW4tRmlsZSByZWw9TWFpbi1GaWxlIGhyZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1p
+dHUvbW4tc2FtcGxlcy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLUcuSW1wODAwMS0yMDIwMDIt
+SS9lbi5odG1sIj4NCjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KIDxvOnNoYXBlZGVmYXVsdHMg
+djpleHQ9ImVkaXQiIHNwaWRtYXg9IjIwNDkiLz4NCjwveG1sPjwhW2VuZGlmXS0tPg0KPC9oZWFk
+Pg0KDQo8Ym9keSBsYW5nPUVOIGxpbms9Ymx1ZSB2bGluaz0iIzk1NEY3MiI+DQoNCjxkaXYgc3R5
+bGU9J21zby1lbGVtZW50OmZvb3Rub3RlLXNlcGFyYXRvcicgaWQ9ZnM+DQoNCjxwIGNsYXNzPU1z
+b05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTowY207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xp
+bmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3Bl
+Y2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtc2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rl
+c10+DQoNCjxociBhbGlnbj1sZWZ0IHNpemU9MSB3aWR0aD0iMzMlIj4NCg0KPCFbZW5kaWZdPjwv
+c3Bhbj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9v
+dG5vdGUtY29udGludWF0aW9uLXNlcGFyYXRvcicgaWQ9ZmNzPg0KDQo8cCBjbGFzcz1Nc29Ob3Jt
+YWwgc3R5bGU9J21hcmdpbi1ib3R0b206MGNtO21hcmdpbi1ib3R0b206LjAwMDFwdDtsaW5lLWhl
+aWdodDoNCm5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXNwZWNpYWwt
+Y2hhcmFjdGVyOmZvb3Rub3RlLWNvbnRpbnVhdGlvbi1zZXBhcmF0b3InPjwhW2lmICFzdXBwb3J0
+Rm9vdG5vdGVzXT4NCg0KPGhyIGFsaWduPWxlZnQgc2l6ZT0xPg0KDQo8IVtlbmRpZl0+PC9zcGFu
+Pjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDplbmRub3Rl
+LXNlcGFyYXRvcicgaWQ9ZXM+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJv
+dHRvbTowY207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3Bh
+biBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUt
+c2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rlc10+DQoNCjxociBhbGlnbj1sZWZ0IHNp
+emU9MSB3aWR0aD0iMzMlIj4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8L2Rp
+dj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZW5kbm90ZS1jb250aW51YXRpb24tc2VwYXJh
+dG9yJyBpZD1lY3M+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTow
+Y207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5n
+PUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtY29udGlu
+dWF0aW9uLXNlcGFyYXRvcic+PCFbaWYgIXN1cHBvcnRGb290bm90ZXNdPg0KDQo8aHIgYWxpZ249
+bGVmdCBzaXplPTE+DQoNCjwhW2VuZGlmXT48L3NwYW4+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoN
+CjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgxPg0KDQo8cCBjbGFzcz1Nc29I
+ZWFkZXIgYWxpZ249bGVmdCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBw
+dDsNCm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFu
+PjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDE+
+DQoNCjxwIGNsYXNzPU1zb0hlYWRlciBzdHlsZT0nbWFyZ2luLWJvdHRvbToxOC4wcHQnPjxzcGFu
+IGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZTox
+MS4wcHQ7Zm9udC13ZWlnaHQ6bm9ybWFsJz4NCjwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCDQpzdHls
+ZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0K
+DQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMT4NCg0KPHAgY2xhc3M9TXNv
+Rm9vdGVyIHN0eWxlPSdtYXJnaW4tdG9wOjEyLjBwdDtsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxp
+bmUtaGVpZ2h0LXJ1bGU6DQpleGFjdGx5Jz48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
+c28tZWxlbWVudDpoZWFkZXInIGlkPWVoMj4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPWxl
+ZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1o
+ZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQoNCjwvZGl2
+Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWVoMmw+DQoNCjxwIGNsYXNz
+PU1zb0hlYWRlckxhbmRzY2FwZSBhbGlnbj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGlu
+ZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFu
+Zz1FTi1HQj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6
+aGVhZGVyJyBpZD1oMj4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPXJpZ2h0IHN0eWxlPSd0
+ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1ydWxl
+OmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYg
+c3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDJsPg0KDQo8cCBjbGFzcz1Nc29IZWFkZXJM
+YW5kc2NhcGUgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7bGluZS1oZWlnaHQ6
+MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj48
+L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBp
+ZD1maDI+DQoNCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGln
+bjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5
+Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
+c28tZWxlbWVudDpoZWFkZXInIGlkPWZoMmw+DQoNCjxwIGNsYXNzPU1zb0hlYWRlckxhbmRzY2Fw
+ZSBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7
+DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48
+L3A+DQoNCjwvZGl2Pg0KDQoNCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1l
+ZjI+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5l
+LWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVu
+dDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNv
+LWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21z
+by1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnll
+cyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBzdHls
+ZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNl
+cGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpzdHls
+ZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1wcm9v
+Zjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Ig
+c3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
+LWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAgICAg
+ICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBzdHls
+ZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+SW1w
+LiBJVFUtVCBHLjgwMDEvWS4xMzU0IEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwMi8yMDIwKTxv
+OnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpm
+b290ZXInIGlkPWVmMmw+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIu
+MHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxl
+PSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNI
+DQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bh
+bg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNv
+LXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFu
+Zz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVt
+ZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5n
+PUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFs
+O21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4N
+Cmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1l
+bGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAg
+ICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNI
+Jz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oCA8L3NwYW4+SW1wLiBJVFUtVCBHLjgwMDEvWS4xMzU0IEltcGxlbWVudGVycycgR3VpZGUtRSAg
+ICgwMi8yMDIwKTwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6
+Zm9vdGVyJyBpZD1mMj4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4w
+cHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIEcuODAwMS9ZLjEz
+NTQgSW1wbGVtZW50ZXJzJyBHdWlkZS1FICAgKDAyLzIwMjApDQogIDxzcGFuIHN0eWxlPSdtc28t
+dGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1b
+aWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5v
+cm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdF
+PHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8
+c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48
+IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48
+c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3Vw
+cG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+
+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRp
+Zl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwv
+bzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVy
+JyBpZD1mMmw+DQo8cCBjbGFzcz1Gb290ZXJRUExhbmRzY2FwZSBzdHlsZT0nbGluZS1oZWlnaHQ6
+MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjInPsKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+SW1wLiBJVFUtVCBHLjgwMDEv
+WS4xMzU0IEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwMi8yMDIwKQ0KICA8c3BhbiBzdHlsZT0n
+bXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48
+IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdo
+dDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0K
+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VGT1JN
+QVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3Nw
+YW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1h
+bCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lm
+IHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFb
+ZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86
+cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZv
+b3RlcicgaWQ9ZWYzPg0KPHAgY2xhc3M9Rm9vdGVyUVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBw
+dDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxz
+cGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Og0Kbm9ybWFsJz48c3BhbiBzdHlsZT0n
+bXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48L3NwYW4+PHNwYW4gbGFuZz1GUi1DSA0K
+c3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4N
+CnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1z
+cGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKg0KTUVSR0VGT1JNQVQgPC9zcGFuPjxzcGFuIGxhbmc9
+RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVu
+dDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1G
+Ui1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbDtt
+c28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQps
+YW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxl
+bWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCiAgICAgICAg
+ICAgICAgICAgICAgICBsYW5nPUZSLUNIIHN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSCc+
+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAg
+PC9zcGFuPkltcC4gSVRVLVQgRy44MDAxL1kuMTM1NCBJbXBsZW1lbnRlcnMnIEd1aWRlLUUgICAo
+MDIvMjAyMCk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZv
+b3RlcicgaWQ9ZWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSdsaW5lLWhl
+aWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0
+RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNw
+YW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxh
+bmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0
+eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48
+c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0n
+bXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxz
+cGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdo
+dDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRz
+XT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHls
+ZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFu
+DQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3Vh
+Z2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIEcuODAwMS9ZLjEzNTQgSW1wbGVtZW50ZXJzJyBH
+dWlkZS1FICAgKDAyLzIwMjApPC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28t
+ZWxlbWVudDpmb290ZXInIGlkPWYzPg0KPHAgY2xhc3M9Rm9vdGVyUVAgc3R5bGU9J2xpbmUtaGVp
+Z2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoy
+Jz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPkltcC4gSVRVLVQgRy44
+MDAxL1kuMTM1NCBJbXBsZW1lbnRlcnMnIEd1aWRlLUUgICAoMDIvMjAyMCkNCiAgPHNwYW4gc3R5
+bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3Nw
+YW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13
+ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bh
+bj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqIE1FUkdF
+Rk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+
+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXdlaWdodDpu
+b3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEt
+LVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6
+bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFu
+PjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwn
+PjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVu
+dDpmb290ZXInIGlkPWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSdsaW5l
+LWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291
+bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1U
+IEcuODAwMS9ZLjEzNTQgSW1wbGVtZW50ZXJzJyBHdWlkZS1FICAgKDAyLzIwMjApDQogIDxzcGFu
+IHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+
+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2Zv
+bnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48
+L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBN
+RVJHRUZPUk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9z
+cGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWln
+aHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFu
+PjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2Vp
+Z2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwv
+c3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9y
+bWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KDQoNCjwvYm9keT4NCg0KPC9o
+dG1sPg0K
+
+------=_NextPart_3f4b5df6.7279.4973
+Content-ID: <0fd6dd38-c68f-4f03-bf6a-b1c3be68f805.svg>
+Content-Disposition: inline; filename="0fd6dd38-c68f-4f03-bf6a-b1c3be68f805.svg"
 Content-Transfer-Encoding: base64
 Content-Type: image/svg+xml
 
@@ -4391,4 +5073,4 @@ MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
 OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
 NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
 
-------=_NextPart_b9de74c8.85a5.4456--
+------=_NextPart_3f4b5df6.7279.4973--

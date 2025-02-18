@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.4.1" schema-version="v1.3.0">
+<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.5.13" schema-version="v1.4.1">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Telecommunication for rural and remote areas</title>
 
 
 
-<docidentifier type="ITU">ITU-D D.19</docidentifier><docidentifier type="ITU-lang">ITU-D D.19-E</docidentifier><docnumber>D.19</docnumber><date type="published"><on>2019-01</on></date><contributor><role type="author"/><organization>
+
+
+<docidentifier type="ITU" primary="true">ITU-D D.19</docidentifier><docidentifier type="ITU-lang">ITU-D D.19-E</docidentifier><docnumber>D.19</docnumber><date type="published"><on>2019-01</on></date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Telecommunication Union</name>
-<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2024</from><owner><organization>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2025</from><owner><organization>
 <name>International Telecommunication Union</name>
-<abbreviation>ITU</abbreviation></organization></owner></copyright><ext><doctype>recommendation</doctype><editorialgroup><bureau>D</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>D</bureau><docnumber>D.19</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><ext><doctype>recommendation</doctype><flavor>itu</flavor><editorialgroup><bureau>D</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>D</bureau><docnumber>D.19</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
-<clause id="_47f07130-c82c-7e44-4389-2a6d8eb93156" inline-header="false" obligation="normative">
-<p id="_bd802aaa-e8a3-8006-9bd8-52d0e1309cac">© ITU 2024</p>
+<clause id="_0e33d45d-8046-e0eb-cdcd-a9962ac2c58e" inline-header="false" obligation="normative">
+<p id="_f5a6703c-c9c0-a0d5-520b-b051d6277b69">© ITU 2025</p>
 
 <p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </clause>
@@ -23,17 +25,17 @@
 
 <license-statement>
 
-<clause id="_intellectual_property_rights" inline-header="false" obligation="normative">
+<clause id="_4e168d71-002e-b69b-bbc5-c2db63824bd8" inline-header="false" obligation="normative">
 <title>INTELLECTUAL PROPERTY RIGHTS</title>
 <p id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p id="_6f9c905a-7432-63f2-1fbc-3d7476d27115">As of the date of approval of this Recommendation, ITU had  received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
+<p id="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
 </clause>
 </license-statement>
 
 <legal-statement>
 
-<clause id="_foreword" inline-header="false" obligation="normative">
+<clause id="_b5ff7f95-f781-a42e-99b6-87a561430419" inline-header="false" obligation="normative">
 <title>FOREWORD</title>
 <p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -43,7 +45,7 @@
 
 <p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 
-<clause id="_note" inline-header="false" obligation="normative">
+<clause id="_8520a161-8bbd-37df-d9aa-24c4f47aa144" inline-header="false" obligation="normative">
 <title>NOTE</title>
 <p id="_56570421-b373-1413-9648-1e440630df94">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
 

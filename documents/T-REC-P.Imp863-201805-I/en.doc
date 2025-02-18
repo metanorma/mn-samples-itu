@@ -1,13 +1,13 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_ffba893b.8b78.496f"
+Content-Type: multipart/related; boundary="----=_NextPart_edfc674b.2e4c.40a4"
 
-------=_NextPart_ffba893b.8b78.496f
+------=_NextPart_edfc674b.2e4c.40a4
 Content-ID: <en.htm>
 Content-Disposition: inline; filename="en.htm"
 Content-Type: text/html; charset="utf-8"
 
 <?xml version="1.0"?>
-<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
   <head>
 <xml>
 <w:WordDocument>
@@ -212,6 +212,7 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -227,6 +228,7 @@ p.MsoHeaderLandscape, li.MsoHeaderLandscape, div.MsoHeaderLandscape {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -1912,6 +1914,45 @@ ol {
 ul {
   margin-bottom: 0cm;
   margin-left: 18pt; }
+p.Sourcecode table td { padding: 5px; }
+p.Sourcecode table pre { margin: 0; }
+p.Sourcecode, p.Sourcecode .w {
+  color: #444444;
+}
+p.Sourcecode .cp {
+  color: #CC00A3;
+}
+p.Sourcecode .cs {
+  color: #CC00A3;
+}
+p.Sourcecode .c, p.Sourcecode .ch, p.Sourcecode .cd, p.Sourcecode .cm, p.Sourcecode .cpf, p.Sourcecode .c1 {
+  color: #FF0000;
+}
+p.Sourcecode .kc {
+  color: #C34E00;
+}
+p.Sourcecode .kd {
+  color: #0000FF;
+}
+p.Sourcecode .kr {
+  color: #007575;
+}
+p.Sourcecode .k, p.Sourcecode .kn, p.Sourcecode .kp, p.Sourcecode .kt, p.Sourcecode .kv {
+  color: #0000FF;
+}
+p.Sourcecode .s, p.Sourcecode .sb, p.Sourcecode .sc, p.Sourcecode .ld, p.Sourcecode .sd, p.Sourcecode .s2, p.Sourcecode .se, p.Sourcecode .sh, p.Sourcecode .si, p.Sourcecode .sx, p.Sourcecode .sr, p.Sourcecode .s1, p.Sourcecode .ss {
+  color: #009C00;
+}
+p.Sourcecode .sa {
+  color: #0000FF;
+}
+p.Sourcecode .nb, p.Sourcecode .bp {
+  color: #C34E00;
+}
+p.Sourcecode .nt {
+  color: #0000FF;
+}
+
 
 -->
 ]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
@@ -2901,6 +2942,7 @@ div.WordSection1 {
 
   mso-page-numbers: roman-lower 1;
 
+
   mso-even-header: url(cid:header.html) eh2;
   mso-header: url(cid:header.html) h2;
   mso-even-footer: url(cid:header.html) ef2;
@@ -3142,7 +3184,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:70.9pt;mso-height-rule:   exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <p class="MsoNormal"><v:shapetype coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><a name="_x0000_t75" id="_x0000_t75"></a>
    <v:stroke joinstyle="miter"/>
    <v:formulas>
     <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -3160,40 +3202,40 @@ table.biblio td {
    </v:formulas>
    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
    <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f">
-  <v:imagedata src="cid:1f3175aa-0ee6-442a-ba0b-3b2dba62c2be.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
-  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></a></p>
+  </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f"><a name="Picture_x0020_2" id="Picture_x0020_2"></a>
+  <v:imagedata src="cid:bd8faf4b-60fe-43f2-82bf-259ca73786b1.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
+  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></a></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   <br style="mso-ignore:vglayout" clear="ALL"/>
-  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:1;height:49.6pt;mso-height-rule:exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:2;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="168" valign="top" style="width:126.0pt;padding:0cm 4.25pt 0cm 4.25pt">
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="400" colspan="2" valign="top" style="width:300.0pt;padding:0cm 4.25pt 0cm 4.25pt">
   <p class="MsoNormal" align="right" style="margin-top:12.0pt;text-align:right"><span style="mso-bookmark:_Hlk526346232">
     
-    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T P.863 Implementers&#x2019; Guide<o:p></o:p></span></b></a>
+    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T P.863 Implementers&#x2019; Guide<o:p class="MsoNormal"></o:p></span></b></a>
     
               
           
@@ -3204,13 +3246,15 @@ table.biblio td {
  <tr style="mso-yfti-irow:3;height:48.7pt;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="303" colspan="2" valign="top" style="width:227.45pt;padding:0cm 4.25pt 0cm 4.25pt;   height:48.7pt">
-    
-  <p class="MsoNormal" align="left" style="text-align:left"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">TELECOMMUNICATION</span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><br/>
-  </span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">STANDARDIZATION SECTOR<br/>
-  OF ITU</span></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:10.0pt;   mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+
+  
+  
+  <p class="MsoNormal" align="left" style="text-align:left">
+  <span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;               mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">Telecommunication<br/>Standardization Bureau<br/>of ITU</span></p>
   
       
     
+  
 
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
@@ -3218,32 +3262,32 @@ table.biblio td {
   
   
   <p class="MsoNormal" align="right" style="margin-top:0cm;text-align:right">
-  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(05/2018)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p></o:p></span></a></span></p>
+  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(05/2018)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p class="MsoNormal"></o:p></span></a></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:ddatee"></span></span>
  </tr>
  <tr style="mso-yfti-irow:4;page-break-inside:avoid;height:6.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:6.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;border:none;   border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.0cm;   mso-height-rule:exactly">
     
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dsece" id="dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">SERIES P: TERMINALS AND SUBJECTIVE AND OBJECTIVE ASSESSMENT METHODS<o:p></o:p></span></a></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dsece" id="dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">SERIES P: TERMINALS AND SUBJECTIVE AND OBJECTIVE ASSESSMENT METHODS<o:p class="MsoNormal"></o:p></span></a></span></p>
   
   
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">Methods for objective and subjective assessment of speech quality&#xA0;<o:p></o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">Methods for objective and subjective assessment of speech quality&#xA0;<o:p class="MsoNormal"></o:p></span></span></span></p>
   
       
   
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
  </tr>
  <tr style="mso-yfti-irow:5;page-break-inside:avoid;height:4.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="top" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly">
@@ -3253,7 +3297,7 @@ table.biblio td {
     <br/>Implementers' guide for P.863</b>
   
   </span>
-  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></span></p>
+  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"></span></span>
  </tr>
@@ -3267,18 +3311,18 @@ table.biblio td {
  
  <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;page-break-inside:avoid;   height:1.5cm;mso-height-rule:exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:1.5cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
   <p class="MsoNormal" align="left" style="margin-top:3.0pt;margin-right:0cm;   margin-bottom:12.0pt;margin-left:0cm;text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dnum2e" id="dnum2e"></a>
   
   <span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T P.863 Implementers&#x2019; Guide<span style="mso-spacerun:yes">&#xA0;
-  </span>ITU&#x2011;T<span style="mso-spacerun:yes">&#xA0; </span>P.863 Implementers' Guide<o:p></o:p></span>
+  </span>ITU&#x2011;T<span style="mso-spacerun:yes">&#xA0; </span>P.863 Implementers' Guide<o:p class="MsoNormal"></o:p></span>
   
   </span></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3288,14 +3332,14 @@ table.biblio td {
 <p class="MsoNormal" align="right" style="margin-top:0.0pt;text-align:right; tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm">
   <span style="mso-bookmark: _Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt; font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-no-proof:yes" xml:lang="EN-US">
-      <v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square">
-<v:imagedata src="cid:e8ccc32d-5448-4856-b240-dafa0bce99b0.svg" o:title="logo_E" width="272" height="300"/>
+      <v:shape o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square"><a name="Picture_x0020_1" id="Picture_x0020_1"></a>
+<v:imagedata src="cid:517c0723-0ae0-4cd6-a957-57e5f7fdbd75.svg" o:title="logo_E" width="272" height="300"/>
 </v:shape>
     </span>
   </span>
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif; mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">
-      <o:p></o:p>
+      <o:p class="MsoNormal"></o:p>
     </span>
   </span>
 </p>
@@ -3305,11 +3349,12 @@ table.biblio td {
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection2">
+
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers&#x2019; Guide ITU-T P.863 Implementers' Guide<o:p></o:p></span></span></p>
-  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers' guide for P.863<o:p></o:p></span></span></p>
+  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers&#x2019; Guide ITU-T P.863 Implementers' Guide<o:p class="MsoNormal"></o:p></span></span></p>
+  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers' guide for P.863<o:p class="MsoNormal"></o:p></span></span></p>
   
   
   
@@ -3317,7 +3362,7 @@ table.biblio td {
   
   
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3326,17 +3371,17 @@ table.biblio td {
 <p class="MsoNormal">
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH">
-      <o:p>&#xA0;</o:p>
+      <o:p class="MsoNormal">&#xA0;</o:p>
     </span>
   </span>
 </p>
 
 
 
-<p class="MsoNormal"><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+<p class="MsoNormal"><o:wrapblock><v:shapetype coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><a name="_x0000_t202" id="_x0000_t202"></a>
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
+ </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt"><a name="Text_x0020_Box_x0020_1" id="Text_x0020_Box_x0020_1"></a>
   <v:fill o:detectmouseclick="t"></v:fill>
   <v:textbox style="mso-fit-shape-to-text:t">
       <div><a name="abstractbox" id="abstractbox"></a>
@@ -3345,15 +3390,15 @@ table.biblio td {
   <w:wrap type="topAndBottom" anchory="margin"/>
   <w:anchorlock></w:anchorlock>
  </v:shape></o:wrapblock><br style="mso-ignore:vglayout" clear="ALL">
-<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></br>
+<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></br>
 
 
 
  
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <!--
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663"
@@ -3373,11 +3418,11 @@ table.biblio td {
 </table>
 -->
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <div><a name="sourcebox" id="sourcebox"></a></div>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
@@ -3393,7 +3438,7 @@ table.biblio td {
 
   
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 
   
@@ -3403,7 +3448,7 @@ table.biblio td {
 
 <div class="boilerplate-legal">
 
-<div><a name="_foreword" id="_foreword"></a><p class="boilerplateHdr">FOREWORD</p>
+<div><a name="_042e4e49-45b6-898c-6c97-17ed5ec802b5" id="_042e4e49-45b6-898c-6c97-17ed5ec802b5"></a><p class="boilerplateHdr">FOREWORD</p>
 
 <p class="boilerplate"><a name="_e39b916a-1911-02cf-fce1-6e2bbef3a82b" id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b"></a>The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -3425,124 +3470,125 @@ table.biblio td {
 </div>
 
 
+
 </p></p><div class="authority">
 
 
-</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_cf25181e-163a-480a-a161-08c086982bbe" id="_cf25181e-163a-480a-a161-08c086982bbe"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_c6a2e461-73b7-4310-8915-cc10cd2fcb31" id="_c6a2e461-73b7-4310-8915-cc10cd2fcb31"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc834118302">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc814345541">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc834118302 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc814345541 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc220271063">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc115689655">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc220271063 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc115689655 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc101130612">3. Introduction<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc023583972">3. Introduction<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc101130612 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc023583972 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc698316849">4. Defect resolution procedure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc862849180">4. Defect resolution procedure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc698316849 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc862849180 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc330133401">5. Nomenclature<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc959835726">5. Nomenclature<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc330133401 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc959835726 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc502737135">6. Technical and editorial corrections to Recommendation P.863<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc182720250">6. Technical and editorial corrections to Recommendation P.863<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc502737135 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc182720250 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc395928783">6.1. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc161442841">6.1. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc395928783 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc161442841 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc626751489">6.2. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc423467093">6.2. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc626751489 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc423467093 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc755600635">6.3. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc446273767">6.3. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc755600635 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc446273767 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc248725301">6.4. Annex B, TimeAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc636637380">6.4. Annex B, TimeAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc248725301 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc636637380 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc536531329">6.5. Annex B, SpeechTempAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc504964177">6.5. Annex B, SpeechTempAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc536531329 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc504964177 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc929789308">6.6. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc476632043">6.6. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc929789308 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc476632043 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc593717319">6.7. Annex A, subfolder Results Ed. 3<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc466542308">6.7. Annex A, subfolder Results Ed. 3<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc593717319 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc466542308 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc413148891">6.8. Annex B - additional info<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc039015635">6.8. Annex B - additional info<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc413148891 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc039015635 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc639805225">
+<a href="#_Toc967823537">
   Annex A
    
    
@@ -3550,25 +3596,32 @@ table.biblio td {
 <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc639805225 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc967823537 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
-<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></p>
-</div><div><a name="_change_log" id="_change_log"></a><p class="h1Preface">Change log</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_867e24a2-150d-f5af-f133-0a7ee148bc9b" id="_867e24a2-150d-f5af-f133-0a7ee148bc9b"></a><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">2018-05</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Initial version</td></tr></tbody></table></div></div><div><a name="_d8f69078-c636-4961-bd0c-770dacc9142b" id="_d8f69078-c636-4961-bd0c-770dacc9142b"></a><p class="h1Preface"></p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_31c8909c-d7de-4c1b-a1ea-46919ab09e09" id="_31c8909c-d7de-4c1b-a1ea-46919ab09e09"></a><tbody><tr><th valign="top" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Editors:</th><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Jens Berger<br/>Rohde &amp; Schwarz, Switzerland</td><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">E-mail: <a href="mailto:jens.berger@rohde-schwarz.com" class="url">jens.berger@rohde-schwarz.com</a></td></tr><tr><th valign="top" style="font-weight:bold;border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"></th><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Joachim Pomy<br/>OPTICOM GmbH, Germany</td><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">E-mail: <a href="mailto:consultant@joachimpomy.de" class="url">consultant@joachimpomy.de</a></td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
+<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
+</div><div><a name="_change_log" id="_change_log"></a><p class="h1Preface">Change log</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_867e24a2-150d-f5af-f133-0a7ee148bc9b" id="_867e24a2-150d-f5af-f133-0a7ee148bc9b"></a><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">2018-05</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Initial version</td></tr></tbody></table></div></div><div><a name="_bf7057d3-a52f-4594-b2f1-dcf626ce767a" id="_bf7057d3-a52f-4594-b2f1-dcf626ce767a"></a><p class="h1Preface"></p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_011217c5-597e-40a0-8e9b-25ed65645351" id="_011217c5-597e-40a0-8e9b-25ed65645351"></a><tbody><tr><th valign="top" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Editors:</th><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Jens Berger<br/>Rohde &amp; Schwarz, Switzerland</td><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">E-mail: <a href="mailto:jens.berger@rohde-schwarz.com" class="url">jens.berger@rohde-schwarz.com</a></td></tr><tr><th valign="top" style="font-weight:bold;border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"></th><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Joachim Pomy<br/>OPTICOM GmbH, Germany</td><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">E-mail: <a href="mailto:consultant@joachimpomy.de" class="url">consultant@joachimpomy.de</a></td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
     <p class="MsoNormal">
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection3">
       <p class="zzSTDTitle1">Implementers Guide ITU-T P.863 Implementers' Guide</p>
       <p class="zzSTDTitle2">Implementers' guide for P.863</p>
-      <div><a name="_scope" id="_scope"></a><h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1><p class="MsoNormal"><a name="_e56c7a46-cf41-0a75-24a8-28e77b743f9b" id="_e56c7a46-cf41-0a75-24a8-28e77b743f9b"></a>This guide resolves defects in the following categories:</p><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst">editorial errors
+      <div>
+        <a name="_scope" id="_scope"></a>
+        <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1>
+        <p class="MsoNormal"><a name="_e56c7a46-cf41-0a75-24a8-28e77b743f9b" id="_e56c7a46-cf41-0a75-24a8-28e77b743f9b"></a>This guide resolves defects in the following categories:</p>
+        <div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst">editorial errors
 </p>
 <p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpMiddle">technical errors, such as omissions and inconsistencies
 </p>
 <p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast">ambiguities
 </p>
-<p class="MsoNormal"><a name="_73484642-6bd0-36e5-8f37-6584cdda5765" id="_73484642-6bd0-36e5-8f37-6584cdda5765"></a>In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p><p class="MsoNormal"><a name="_c1fd5090-79a1-fd4b-5601-3eba4b723cb2" id="_c1fd5090-79a1-fd4b-5601-3eba4b723cb2"></a>This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</p></div>
+</div>
+        <p class="MsoNormal"><a name="_73484642-6bd0-36e5-8f37-6584cdda5765" id="_73484642-6bd0-36e5-8f37-6584cdda5765"></a>In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
+        <p class="MsoNormal"><a name="_c1fd5090-79a1-fd4b-5601-3eba4b723cb2" id="_c1fd5090-79a1-fd4b-5601-3eba4b723cb2"></a>This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</p>
+      </div>
       <div>
         <h1>2.<span style="mso-tab-count:1">&#xA0; </span>References</h1>
         <table class="biblio" border="0">
@@ -3580,8 +3633,8 @@ table.biblio td {
             </tr>
             <tr class="NormRef">
               <a name="p863" id="p863"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;P.863]</td>
-              <td>Recommendation ITU-T&#xA0;P.863 (    2018), <i>Perceptual objective listening quality prediction</i>, 3rd edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;P.863&#xA0;(03/2018)]</td>
+              <td>Recommendation ITU-T&#xA0;P.863&#xA0;(03/2018) (2018), <i>Perceptual objective listening quality prediction</i>, Third edition.</td>
             </tr>
           </tbody>
         </table>
@@ -3589,7 +3642,7 @@ table.biblio td {
       <div>
         <a name="_introduction" id="_introduction"></a>
         <h1>3.<span style="mso-tab-count:1">&#xA0; </span>Introduction</h1>
-        <p class="MsoNormal"><a name="_e47bc0e4-380b-27f7-29be-bb6d6f72e506" id="_e47bc0e4-380b-27f7-29be-bb6d6f72e506"></a>This implementers' guide is a compilation of reported defects for the version 2018-03 of <a href="#p863">[ITU-T&#xA0;P.863]</a>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
+        <p class="MsoNormal"><a name="_e47bc0e4-380b-27f7-29be-bb6d6f72e506" id="_e47bc0e4-380b-27f7-29be-bb6d6f72e506"></a>This implementers' guide is a compilation of reported defects for the version 2018-03 of <a href="#p863">[ITU-T&#xA0;P.863&#xA0;(03/2018)]</a>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
         <p class="MsoNormal"><a name="_91075ce3-5f28-91f8-9c38-4b33e609f188" id="_91075ce3-5f28-91f8-9c38-4b33e609f188"></a>P.863</p>
         <p class="MsoNormal"><a name="_ab8ccd22-975c-5d09-20f1-4bbf3f5e995a" id="_ab8ccd22-975c-5d09-20f1-4bbf3f5e995a"></a>The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
       </div>
@@ -3743,12 +3796,12 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_f01ec8bb-2661-c94c-e990-ed3caa5b9f23" id="_f01ec8bb-2661-c94c-e990-ed3caa5b9f23"></a><i>--- SPECIAL INSTRUCTIONS --- Old Description</i></p>
 
-<p class="Sourcecode"><a name="_74ebc559-4bf7-1b57-8023-a321fbc8be74" id="_74ebc559-4bf7-1b57-8023-a321fbc8be74"></a>int Delay = FindSectionAInSectionB(&amp;#x26;SecA, &amp;#x26;SecB, &amp;#x26;RefSig, &amp;#x26;DegSig, 0, 1, 1, 2*MaxLagSamples);</p>
+<p class="Sourcecode"><a name="_d6fac2fd-23ad-a16b-697f-281e329c7748" id="_d6fac2fd-23ad-a16b-697f-281e329c7748"></a>int Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</p>
 
 
 <p class="MsoNormal"><a name="_547fda56-23cd-1e5c-e9df-f68d8730d9d3" id="_547fda56-23cd-1e5c-e9df-f68d8730d9d3"></a><i>--- SPECIAL INSTRUCTIONS --- New Description</i></p>
 
-<p class="Sourcecode"><a name="_73af9d24-5bee-dc1d-dcd7-93d1d44da63c" id="_73af9d24-5bee-dc1d-dcd7-93d1d44da63c"></a>int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);<br/>int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);<br/>int FrameNum = FrameNumStart;<br/>bool ActiveSeg = false;<br/>while ((!ActiveSeg) &amp;&amp; (FrameNum&lt;=FrameNumEnd) &amp;&amp; (FrameNum&gt;=FrameNumStart) &amp;&amp; (FrameNum&lt;ActiveFramesLen))<br/>{<br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];<br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; FrameNum++;<br/>}<br/>if (!ActiveSeg)<br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; continue;<br/>int Delay = 0;<br/>Delay = FindSectionAInSectionB(&amp;#x26;SecA, &amp;#x26;SecB, &amp;#x26;RefSig, &amp;#x26;DegSig, 0, 1, 1, 2*MaxLagSamples);</p>
+<p class="Sourcecode"><a name="_9029d551-f587-2694-d666-7b88ed7f6c99" id="_9029d551-f587-2694-d666-7b88ed7f6c99"></a>int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);<br/>int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);<br/>int FrameNum = FrameNumStart;<br/>bool ActiveSeg = false;<br/>while ((!ActiveSeg) &amp;&amp; (FrameNum&lt;=FrameNumEnd) &amp;&amp; (FrameNum&gt;=FrameNumStart) &amp;&amp; (FrameNum&lt;ActiveFramesLen))<br/>{<br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];<br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; FrameNum++;<br/>}<br/>if (!ActiveSeg)<br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; continue;<br/>int Delay = 0;<br/>Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</p>
 
 
 <p class="MsoNormal"><a name="_b346f3e2-017e-c109-91c2-5f20bd427219" id="_b346f3e2-017e-c109-91c2-5f20bd427219"></a>[End Correction]</p>
@@ -3775,7 +3828,7 @@ table.biblio td {
 </div>
         <div><a name="_annex_b_additional_info" id="_annex_b_additional_info"></a><h2>6.8.<span style="mso-tab-count:1">&#xA0; </span>Annex B - additional info</h2>
 
-<div class="Note"><a name="_c4b35716-15b9-24e3-3a82-1ae4528faab7" id="_c4b35716-15b9-24e3-3a82-1ae4528faab7"></a><p class="Note"><span class="note_label">NOTE &#x2013; </span>The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p></div>
+<div class="Note"><a name="_c4b35716-15b9-24e3-3a82-1ae4528faab7" id="_c4b35716-15b9-24e3-3a82-1ae4528faab7"></a><p class="Note"><span class="note_label">NOTE&#xA0;&#x2013;&#xA0;</span>The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p></div>
 </div>
       </div>
       <p class="MsoNormal">
@@ -3789,23 +3842,17 @@ table.biblio td {
           <br/>
           <b>P.863 (2018-03) Defect Report Form</b>
         </h1>
-        <p class="annex_obligation">(This annex forms an integral part of this Implementers Guide.)</p>
+        <p class="annex_obligation">(This annex forms an integral part of this Implementers&#x2019; Guide.)</p>
         <div align="center" class="table_container">
           <table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;">
-            <a name="_29279feb-4b03-ec89-6274-686e9042a24c" id="_29279feb-4b03-ec89-6274-686e9042a24c"></a>
+            <a name="_eaf01491-0f2e-1e71-6bb8-b6b78e004031" id="_eaf01491-0f2e-1e71-6bb8-b6b78e004031"></a>
             <tbody>
               <tr>
                 <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">DATE:</td>
                 <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"></td>
               </tr>
               <tr>
-                <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><p style="text-align: left;page-break-after:avoid" class="MsoNormal"><a name="_cf333606-8be2-996b-56ba-66283cc558c6" id="_cf333606-8be2-996b-56ba-66283cc558c6"></a>CONTACT INFORMATION<br/>
-NAME:<br/>
-COMPANY:<br/>
-ADDRESS:<br/>
-TEL:<br/>
-FAX:<br/>
-E-MAIL:</p>
+                <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><p style="text-align: left;page-break-after:avoid" class="MsoNormal"><a name="_667404a8-8ce5-6b28-2622-c61515a80f0b" id="_667404a8-8ce5-6b28-2622-c61515a80f0b"></a>CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
 </td>
                 <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"></td>
               </tr>
@@ -3827,7 +3874,7 @@ E-MAIL:</p>
                 <td colspan="2" style="border-top:0pt;mso-border-top-alt:0pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">
                   <div class="Note">
                     <a name="_144e87c5-7df0-e541-9081-f059f06d102e" id="_144e87c5-7df0-e541-9081-f059f06d102e"></a>
-                    <p class="Note"><span class="note_label">NOTE &#x2013; </span>Attach additional pages if more space is required than is provided above.</p>
+                    <p class="Note"><span class="note_label">NOTE&#xA0;&#x2013;&#xA0;</span>Attach additional pages if more space is required than is provided above.</p>
                   </div>
                 </td>
               </tr>
@@ -3841,7 +3888,7 @@ E-MAIL:</p>
 </html>
 
 
-------=_NextPart_ffba893b.8b78.496f
+------=_NextPart_edfc674b.2e4c.40a4
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
@@ -3850,12 +3897,12 @@ Content-Type: application/xml
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
 ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1pdHUvbW4tc2FtcGxl
 cy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLVAuSW1wODYzLTIwMTgwNS1JL2VuLmh0bSIvPiAg
-PG86RmlsZSBIUmVmPSIxZjMxNzVhYS0wZWU2LTQ0MmEtYmEwYi0zYjJkYmE2MmMyYmUucG5nIi8+
-CiAgPG86RmlsZSBIUmVmPSJlOGNjYzMyZC01NDQ4LTQ4NTYtYjI0MC1kYWZhMGJjZTk5YjAuc3Zn
+PG86RmlsZSBIUmVmPSI1MTdjMDcyMy0wYWUwLTRjZDYtYTk1Ny01N2U1ZjdmZGJkNzUuc3ZnIi8+
+CiAgPG86RmlsZSBIUmVmPSJiZDhmYWY0Yi02MGZlLTQzZjItODJiZi0yNTljYTczNzg2YjEucG5n
 Ii8+CiAgPG86RmlsZSBIUmVmPSJmaWxlbGlzdC54bWwiLz4KICA8bzpGaWxlIEhSZWY9ImhlYWRl
 ci5odG1sIi8+CjwveG1sPgo=
 
-------=_NextPart_ffba893b.8b78.496f
+------=_NextPart_edfc674b.2e4c.40a4
 Content-ID: <header.html>
 Content-Disposition: inline; filename="header.html"
 Content-Transfer-Encoding: base64
@@ -3910,163 +3957,171 @@ PSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoN
 CjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYxPg0KDQo8cCBjbGFzcz1Nc29G
 b290ZXIgc3R5bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGlu
 ZS1oZWlnaHQtcnVsZToNCmV4YWN0bHknPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21z
-by1lbGVtZW50OmhlYWRlcicgaWQ9ZWgyPg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPWxlZnQg
-c3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWln
-aHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0K
-PGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1laDJsPg0KPHAgY2xhc3M9TXNvSGVh
-ZGVyTGFuZHNjYXBlIGFsaWduPWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdo
-dDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdC
-Pjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBp
-ZD1oMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpy
-aWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48
-c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVs
-ZW1lbnQ6aGVhZGVyJyBpZD1oMmw+DQo8cCBjbGFzcz1Nc29IZWFkZXJMYW5kc2NhcGUgYWxpZ249
-cmlnaHQgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxp
-bmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KPC9k
-aXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYyPg0KPHAgY2xhc3M9
-Rm9vdGVyUVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpl
-eGFjdGx5Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2Zv
-bnQtd2VpZ2h0Og0Kbm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4n
-Pjwvc3Bhbj48L3NwYW4+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdl
-OkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVz
-Jz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5c
-Kg0KTUVSR0VGT1JNQVQgPC9zcGFuPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0
-Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bh
-bj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxh
-bmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbDttc28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bh
-bj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
-aWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48
-L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCiAgICAgICAgICAgICAgICAgICAgICBsYW5nPUZSLUNI
-IHN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSCc+PHNwYW4gc3R5bGU9J21zby10YWItY291
-bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPkltcC4gSVRVLVQgUC44NjMg
-SW1wbGVtZW50ZXJzJyBHdWlkZS1FICAgKDA1LzIwMTgpPG86cD48L286cD48L3NwYW4+PC9wPg0K
-PC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYybD4NCjxwIGNs
-YXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1
-bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxl
-PSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJl
-Z2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5n
-dWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVu
-Onllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3Nw
-YW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
-aWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48
-L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5z
-aS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8
-L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9u
-dC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3Nw
-YW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1G
-Ui1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFi
-LWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIFAu
-ODYzIEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwNS8yMDE4KTwvc3Bhbj48L3A+DQo8L2Rpdj4N
-Cg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMj4NCjxwIGNsYXNzPUZvb3Rl
-clFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5
-bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+by1lbGVtZW50OmhlYWRlcicgaWQ9ZWgyPg0KDQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249bGVm
+dCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhl
+aWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0KPC9kaXY+
+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgybD4NCg0KPHAgY2xhc3M9
+TXNvSGVhZGVyTGFuZHNjYXBlIGFsaWduPWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5l
+LWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5n
+PUVOLUdCPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpo
+ZWFkZXInIGlkPWgyPg0KDQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249cmlnaHQgc3R5bGU9J3Rl
+eHQtYWxpZ246cmlnaHQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6
+ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBz
+dHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1oMmw+DQoNCjxwIGNsYXNzPU1zb0hlYWRlckxh
+bmRzY2FwZSBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDox
+Mi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwv
+c3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlk
+PWZoMj4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWdu
+OnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHkn
+PjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21z
+by1lbGVtZW50OmhlYWRlcicgaWQ9ZmgybD4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBl
+IGFsaWduPXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsN
+Cm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwv
+cD4NCg0KPC9kaXY+DQoNCg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVm
+Mj4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUt
+aGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVO
+LUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50
+OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28t
+YW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNv
+LXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVz
+Jz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxl
+PSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2Vw
+YXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxl
+PSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29m
+Onllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBz
+dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
+ZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAg
+ICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxl
+PSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAu
+IElUVS1UIFAuODYzIEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwNS8yMDE4KTxvOnA+PC9vOnA+
+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlk
+PWVmMmw+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1s
+aW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFu
+Zz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxl
+bWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0n
+bXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9
+J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVu
+Onllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBz
+dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
+LXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpz
+dHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1w
+cm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4t
+R0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZp
+ZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAg
+ICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBz
+dHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+
+SW1wLiBJVFUtVCBQLjg2MyBJbXBsZW1lbnRlcnMnIEd1aWRlLUUgICAoMDUvMjAxOCk8L3NwYW4+
+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjI+DQo8
+cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVO
+LUdCPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjInPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwv
-c3Bhbj5JbXAuIElUVS1UIFAuODYzIEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwNS8yMDE4KQ0K
-ICA8c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAg
-PC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0
-eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1i
-ZWdpbic+PC9zcGFuPg0KUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3Nw
-YW4+XCogTUVSR0VGT1JNQVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0
-b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2Zv
-bnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFu
-Pjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdm
-b250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwv
-c3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2Vp
-Z2h0Om5vcm1hbCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9
-J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjJsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUg
-c3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0n
-bXNvLXRhYi1jb3VudDoyJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFu
-PkltcC4gSVRVLVQgUC44NjMgSW1wbGVtZW50ZXJzJyBHdWlkZS1FICAgKDA1LzIwMTgpDQogIDxz
-cGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3Nw
-YW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9
-J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2lu
-Jz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5c
-KiBNRVJHRUZPUk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+
-PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13
-ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9z
-cGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQt
-d2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFu
-Pjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6
-bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNv
-LWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjM+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1o
-ZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9y
-dEZpZWxkc10+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxz
-cGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBs
-YW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9y
-bWFsJz48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBz
-dHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+
-PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9
-J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48
-c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWln
-aHQ6bm9ybWFsO21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxk
-c10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5
-bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bh
-bg0KICAgICAgICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1
-YWdlOkZSLUNIJz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoCA8L3NwYW4+SW1wLiBJVFUtVCBQLjg2MyBJbXBsZW1lbnRlcnMnIEd1aWRlLUUg
-ICAoMDUvMjAxOCk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50
-OmZvb3RlcicgaWQ9ZWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSdsaW5l
-LWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBw
-b3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+
-PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFu
-IGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpu
-b3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFu
-IHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bh
-bj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHls
-ZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0t
-PjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdl
-aWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0Rmll
-bGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBz
-dHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxz
-cGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFu
-Z3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIFAuODYzIEltcGxlbWVudGVycycgR3VpZGUt
-RSAgICgwNS8yMDE4KTwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1l
-bnQ6Zm9vdGVyJyBpZD1mMz4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDox
-Mi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDC
+ICAoMDUvMjAxOCkNCiAgPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0K
+bGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVs
+ZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVu
+Onllcyc+wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6
+ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4t
+R0INCnN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6
+eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6
+ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0
+eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0K
+DQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYybD4NCjxwIGNsYXNzPUZvb3Rl
+clFQTGFuZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+
+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIFAuODYzIElt
-cGxlbWVudGVycycgR3VpZGUtRSAgICgwNS8yMDE4KQ0KICA8c3BhbiBzdHlsZT0nbXNvLXRhYi1j
-b3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1
-cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwn
-PjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0KUEFHRTxzcGFu
-IHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4N
-CnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5k
-aWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4g
-c3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRG
-aWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFu
-IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+
-PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48L286cD48
-L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9
-ZjNsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBw
-dCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoyJz7CoMKgwqDC
+wqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1UIFAuODYzIEltcGxlbWVudGVycycgR3VpZGUtRSAgICgw
+NS8yMDE4KQ0KICA8c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5n
+PUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVu
+dDpmaWVsZC1iZWdpbic+PC9zcGFuPg0KUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVz
+Jz7CoCA8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVs
+ZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0K
+c3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMn
+PjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdC
+IHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVs
+ZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9
+J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxk
+aXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYzPg0KPHAgY2xhc3M9Rm9vdGVyUVAg
+c3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48
+IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0
+Og0Kbm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48
+L3NwYW4+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2Zv
+bnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bh
+bj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKg0KTUVSR0VG
+T1JNQVQgPC9zcGFuPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+
+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+
+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZS
+LUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbDttc28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48IS0tW2lm
+IHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFb
+ZW5kaWZdLS0+PHNwYW4NCiAgICAgICAgICAgICAgICAgICAgICBsYW5nPUZSLUNIIHN0eWxlPSdt
+c28tYW5zaS1sYW5ndWFnZTpGUi1DSCc+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPkltcC4gSVRVLVQgUC44NjMgSW1wbGVtZW50
+ZXJzJyBHdWlkZS1FICAgKDA1LzIwMTgpPC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxl
+PSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmM2w+DQo8cCBjbGFzcz1Gb290ZXJRUExhbmRzY2Fw
+ZSBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHkn
+PjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWln
+aHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFu
+Pjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7
+Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9z
+cGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpNRVJH
+RUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFs
+Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bh
+bj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6
+RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1b
+aWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5v
+cm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48
+IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9
+J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7C
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+SW1wLiBJVFUtVCBQLjg2MyBJbXBsZW1l
+bnRlcnMnIEd1aWRlLUUgICAoMDUvMjAxOCk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5
+bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjM+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0n
+bGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tdGFi
+LWNvdW50OjInPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+SW1wLiBJ
+VFUtVCBQLjg2MyBJbXBsZW1lbnRlcnMnIEd1aWRlLUUgICAoMDUvMjAxOCkNCiAgPHNwYW4gc3R5
+bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3Nw
+YW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13
+ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bh
+bj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqIE1FUkdF
+Rk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+
+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXdlaWdodDpu
+b3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEt
+LVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6
+bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFu
+PjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwn
+PjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVu
+dDpmb290ZXInIGlkPWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSdsaW5l
+LWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291
+bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPkltcC4gSVRVLVQgUC44NjMgSW1wbGVt
-ZW50ZXJzJyBHdWlkZS1FICAgKDA1LzIwMTgpDQogIDxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50
-OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9y
-dEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNw
-YW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5
-bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bhbg0Kc3R5
-bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0t
-LT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHls
-ZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxk
-c10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5
-bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bh
-bg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bh
-bj48L3A+DQo8L2Rpdj4NCg0KPC9ib2R5Pg0KDQo8L2h0bWw+DQo=
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5JbXAuIElUVS1U
+IFAuODYzIEltcGxlbWVudGVycycgR3VpZGUtRSAgICgwNS8yMDE4KQ0KICA8c3BhbiBzdHlsZT0n
+bXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48
+IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdo
+dDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0K
+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VGT1JN
+QVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3Nw
+YW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1h
+bCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lm
+IHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFb
+ZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86
+cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCg0KDQo8L2JvZHk+DQoNCjwvaHRtbD4NCg==
 
-------=_NextPart_ffba893b.8b78.496f
-Content-ID: <1f3175aa-0ee6-442a-ba0b-3b2dba62c2be.png>
-Content-Disposition: inline; filename="1f3175aa-0ee6-442a-ba0b-3b2dba62c2be.png"
+
+------=_NextPart_edfc674b.2e4c.40a4
+Content-ID: <bd8faf4b-60fe-43f2-82bf-259ca73786b1.png>
+Content-Disposition: inline; filename="bd8faf4b-60fe-43f2-82bf-259ca73786b1.png"
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -4470,9 +4525,9 @@ C7+w2Xb7Eb3o/8qNmGQMnLRiOgtj4OgmE+D4QbowaScm34WpzzFww2/qzparyA1MuOWqRprGNpt9
 e2wfOBmiVbYRslL9tQ8BUrd6JgExGYgGP2+SBj+gC2zppLgQoH0GxLx7ix3HWQBlaDjfTIMuKwYo
 7AdNOpT6a4JR2HSg3ZakAcg368qo/H9lWc/6NFehlQAAAABJRU5ErkJggg==
 
-------=_NextPart_ffba893b.8b78.496f
-Content-ID: <e8ccc32d-5448-4856-b240-dafa0bce99b0.svg>
-Content-Disposition: inline; filename="e8ccc32d-5448-4856-b240-dafa0bce99b0.svg"
+------=_NextPart_edfc674b.2e4c.40a4
+Content-ID: <517c0723-0ae0-4cd6-a957-57e5f7fdbd75.svg>
+Content-Disposition: inline; filename="517c0723-0ae0-4cd6-a957-57e5f7fdbd75.svg"
 Content-Transfer-Encoding: base64
 Content-Type: image/svg+xml
 
@@ -4598,4 +4653,4 @@ MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
 OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
 NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
 
-------=_NextPart_ffba893b.8b78.496f--
+------=_NextPart_edfc674b.2e4c.40a4--

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.4.1" schema-version="v1.3.0">
+<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.5.13" schema-version="v1.4.1">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Survey report on counterfeit ICT devices in Africa region</title>
 
 
 
-<docidentifier type="ITU">ITU-T QTR-CICT</docidentifier><docidentifier type="ITU-lang">ITU-T QTR-CICT-E</docidentifier><docnumber>QTR-CICT</docnumber><date type="published"><on>2017-02-15</on></date><contributor><role type="author"/><organization>
+
+
+<docidentifier type="ITU" primary="true">ITU-T QTR-CICT</docidentifier><docidentifier type="ITU-lang">ITU-T QTR-CICT-E</docidentifier><docnumber>QTR-CICT</docnumber><date type="published"><on>2017-02-15</on></date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor"/><person>
 <name><completename>Isaac Boateng</completename></name>
@@ -46,7 +48,7 @@
 <p>It is therefore concluded from these findings that establishing ITU-T SG11 Regional Group for Africa to provide the regional views and influence ICT standards developments activities, particularly on counterfeit ICT devices, Conformance and Interoperability Testing and other related topics aimed at bridging the ICT digital divide is of essence. This report also recommends improved public sensitization and awareness creation on the negative impacts of counterfeit ICT devices as well as the development of regulatory frameworks to combat counterfeit ICT devices. The report should be used to progress the work currently on-going in ITU-T SG11 Question 8 and Question 11 as well as ITU-D SG 1 &amp; SG 2.</p>
 </abstract><status><stage>in-force</stage></status><copyright><from>2017</from><owner><organization>
 <name>International Telecommunication Union</name>
-<abbreviation>ITU</abbreviation></organization></owner></copyright><keyword>Counterfeiting</keyword><keyword>ICT devices</keyword><ext><doctype>technical-report</doctype><editorialgroup><bureau>T</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>QTR-CICT</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><keyword>Counterfeiting</keyword><keyword>ICT devices</keyword><ext><doctype>technical-report</doctype><flavor>itu</flavor><editorialgroup><bureau>T</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>QTR-CICT</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_5fe7e1af-6a5f-3bb2-8621-65c3a7db9065" inline-header="false" obligation="normative">
@@ -58,7 +60,7 @@
 
 <legal-statement>
 
-<clause id="_foreword" inline-header="false" obligation="normative">
+<clause id="_042e4e49-45b6-898c-6c97-17ed5ec802b5" inline-header="false" obligation="normative">
 <title>FOREWORD</title>
 <p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -1135,12 +1137,9 @@
 </table>
 </annex><annex id="_questionnaire_itu_survey_on_counterfeit_ict_devices_in_africa_region" inline-header="false" obligation="informative">
 <title>Questionnaire: ITU Survey on Counterfeit ICT Devices in Africa Region</title>
-<p id="_17669530-2e23-995e-e718-97c66ab150fa" align="left"><em>PART 1: TO BE COMPLETED BY ICT MINISTRIES/REGULATORY AUTHORITIES</em><br/>
-<em>PART 2: TO BE COMPLETED BY OPERATORS &amp; DEALERS IN ICT DEVICES</em><br/>
-<em>PART 3: TO BE COMPLETED BY CONSUMER GROUPS</em></p>
+<p id="_d80eb0ff-2358-35f4-3f2f-1c6d45ef3aec" align="left"><em>PART 1: TO BE COMPLETED BY ICT MINISTRIES/REGULATORY AUTHORITIES</em><br/> <em>PART 2: TO BE COMPLETED BY OPERATORS &amp; DEALERS IN ICT DEVICES</em><br/> <em>PART 3: TO BE COMPLETED BY CONSUMER GROUPS</em></p>
 
-<p id="_f329a0b1-6615-c58e-2ff0-e5a2cfa7f6de" align="left"><em>PLEASE SUBMIT YOUR REPLY BY 15 MARCH 2016 TO:</em><br/>
-<em>Isaac BOATENG, vice-chairman ITU-T SG11 ( <link target="mailto:isaac.boateng@nca.org.gh"/>; <link target="mailto:tsbsg11@itu.int"/>)</em></p>
+<p id="_6d35fbee-2506-ac7b-b6eb-6e5a9090919a" align="left"><em>PLEASE SUBMIT YOUR REPLY BY 15 MARCH 2016 TO:</em><br/> <em>Isaac BOATENG, vice-chairman ITU-T SG11 ( <link target="mailto:isaac.boateng@nca.org.gh"/>; <link target="mailto:tsbsg11@itu.int"/>)</em></p>
 
 <clause id="_part_1_to_be_completed_by_ict_ministriesregulatory_authorities" inline-header="false" obligation="informative">
 <title>PART 1: [TO BE COMPLETED BY ICT MINISTRIES/REGULATORY AUTHORITIES]</title>
@@ -1192,10 +1191,9 @@
 </li>
 </ul>
 
-<ul id="_17d99a3f-67fe-e4e6-20aa-cf6d08e3dd61"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_c334416d-c843-1fc9-0b31-420e56777df1">Yes.</p>
+<ul id="_8356d762-79f4-62b4-2715-cfb09aa00d05"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_c334416d-c843-1fc9-0b31-420e56777df1">Yes.</p>
 </li>
-<li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_22dbaf04-9bdd-93c4-f112-a5e296beb204">No.<br/>
-<em>If <strong>Yes</strong>, please specify</em>: __________</p>
+<li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_2d15ab37-8451-0e0c-f6a7-bb02d315d22e">No.<br/> <em>If <strong>Yes</strong>, please specify</em>: __________</p>
 <ol id="_8587811e-5e82-cfd3-79fd-88b58f623685"><li><p id="_93d7950b-c318-098a-560b-272a4acfe398">Are you aware of any counterfeit ICT device in your country?</p>
 </li>
 </ol>
@@ -1282,8 +1280,7 @@
 
 <p id="_3562a56c-766a-478c-c465-5f38f76922d0"><em>[Please skip question <xref target="q6b"/> if you answered No to question <xref target="q6a"/> above]</em></p>
 
-<ol id="_8cd59a7d-6667-dda2-96c7-cd6e5f662977"><li id="q6b"><p id="_ad0ac4a8-ad3e-6efe-4865-ae043afb4832">If <strong><em>Yes</em></strong> to question <xref target="q6a"/>, what do you perceive to be the level of public awareness?<br/>
-<em>(Please indicate a number on a scale of 1 to 5, with 5 being Very high and 1 being very low)</em>.</p>
+<ol id="_578dd5b3-4dbe-2b26-204c-cdbb08970746"><li id="q6b"><p id="_46e866ee-3fda-bf20-03d8-5e14d8bf700e">If <strong><em>Yes</em></strong> to question <xref target="q6a"/>, what do you perceive to be the level of public awareness?<br/> <em>(Please indicate a number on a scale of 1 to 5, with 5 being Very high and 1 being very low)</em>.</p>
 </li>
 </ol>
 
@@ -1310,12 +1307,11 @@
 
 <p id="_1095b0ed-cc2c-9440-8fea-082c05cf43e3"><em>[Please skip question <xref target="q7b"/> if you answered No to question <xref target="q7a"/> above]</em></p>
 
-<ol id="_309914a6-15e7-fd2f-ecc3-61b7ed53443a"><li id="q7b"><p id="_d820a721-92ad-2882-53ec-7264db6042f6">To what extent do you consider the need for such public education described in <xref target="q7a"/> above?<br/>
-<em>(Please indicate your rating by circling a number on a scale of 1 to 5, with 5 being highly intensive and 1 being not intensive).</em></p>
+<ol id="_32e530b8-0d2e-f33a-6fb9-d68a0e7bec4c"><li id="q7b"><p id="_db77be83-5262-897a-75fc-bc228da609dd">To what extent do you consider the need for such public education described in <xref target="q7a"/> above?<br/> <em>(Please indicate your rating by circling a number on a scale of 1 to 5, with 5 being highly intensive and 1 being not intensive).</em></p>
 </li>
 </ol>
 
-<ul id="_fd51e3cc-be03-f26d-e895-5ccf17015a7a"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_3378f976-4504-47c9-17da-be3e3d46d127">1</p>
+<ul id="_7167dbce-8c2c-8cc1-25f6-f3e64f5443ef"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_3378f976-4504-47c9-17da-be3e3d46d127">1</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_72ffca76-3ea1-9a98-e6f7-f8d2775c17fc">2</p>
 </li>
@@ -1324,8 +1320,7 @@
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_ba14b614-288b-cb67-0f6c-3017e9cb88e6">4</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_31575d14-8bde-124c-7ace-5764dfd610c9">5</p>
-<ol id="_35b1e255-4391-ad11-c767-4308fbd05d20"><li><p id="_19f0770c-e92e-16ee-90f3-4e7eeba7844e">Do you perceive any positive impact of counterfeiting ICT devices and accessories, if so which?<br/>
-(<em>Please tick (✓) all that applies</em>).</p>
+<ol id="_275d5ba5-a421-0ee2-98cb-f6ade64c6a3a"><li><p id="_08408eb1-5195-beaa-675d-55ee1a59d93b">Do you perceive any positive impact of counterfeiting ICT devices and accessories, if so which?<br/> ( <em>Please tick (✓) all that applies</em>).</p>
 </li>
 </ol>
 </li>
@@ -1420,8 +1415,7 @@
 
 <p id="_e3401163-f83a-9c75-9df1-121a7c65138c">If <strong><em>Yes</em></strong>, which one(s)?</p>
 
-<ol id="_ac84b6b9-2867-6dc7-ccda-79f0ef0f4ad8"><li id="q13b"><p id="_b6d8f924-d657-f828-f4a6-40d39c8609f6">If <strong><em>Yes</em></strong>, what measures have been put in place to enforce the framework and regulation?<br/>
-<em>Please specify below</em>:</p>
+<ol id="_16d8aab6-7d9b-5f65-af06-a1da78f92e4f"><li id="q13b"><p id="_3c90f6c5-0434-ecd1-abc9-4cf73cc52bca">If <strong><em>Yes</em></strong>, what measures have been put in place to enforce the framework and regulation?<br/> <em>Please specify below</em>:</p>
 <ol id="_aa3845f6-5f6d-ae7e-d42c-5c5ee68c9a8d"><li><p id="_a97fefee-5a8b-25ed-8c38-883ab450c5d1">__________<br/></p>
 </li>
 <li><p id="_b6627e2f-fc0c-84a8-78e7-3a4c4cec259c">__________<br/></p>
@@ -1769,8 +1763,7 @@
 
 <p id="_ae351078-9d92-31ec-c153-55a3b5b3ecb9"><em>[Please skip question <xref target="q6b-2"/> if you answered No to question <xref target="q6a-2"/> above]</em></p>
 
-<ol id="_3096d82f-eec7-7df7-5c61-fd488d832f54"><li id="q6b-2"><p id="_c3175d3f-edb7-d404-4178-31abfba8c2d7">If <strong><em>Yes</em></strong> to question <xref target="q6a-2"/>, what do you perceive to be the level of public awareness on counterfeiting in your country?<br/>
-(<em>Please indicate a number on a scale of 1 to 5, with 5 being Very high and 1 being very low</em>).</p>
+<ol id="_5a183ecb-ee57-20ba-fa54-3f8fc65db260"><li id="q6b-2"><p id="_3d6f13c2-8377-f761-cf77-cc21427a27bf">If <strong><em>Yes</em></strong> to question <xref target="q6a-2"/>, what do you perceive to be the level of public awareness on counterfeiting in your country?<br/> ( <em>Please indicate a number on a scale of 1 to 5, with 5 being Very high and 1 being very low</em>).</p>
 </li>
 </ol>
 
@@ -1797,12 +1790,11 @@
 
 <p id="_19352411-046b-9e6e-2a1e-0d42d3bb8460"><em>[Please skip question <xref target="q7b-2"/> if you answered No to question <xref target="q7a-2"/> above]</em></p>
 
-<ol id="_bd83cda8-d730-2290-cdfa-b80fb34b83bb"><li id="q7b-2"><p id="_781fb87e-dfdf-31fb-ee7c-2ba5bee998ff">To what extent do you consider there is the need for such public education described in <xref target="q7a-2"/> above?<br/>
-(<em>Please indicate your rating by indicating a number on a scale of 1 to 5, with 5 being highly intensive and 1 being not intensive</em>).</p>
+<ol id="_a456c76b-adcd-1918-63cb-9cd31f7f257d"><li id="q7b-2"><p id="_4e6f76ee-4b28-3cf2-8b52-4982a9e48dcf">To what extent do you consider there is the need for such public education described in <xref target="q7a-2"/> above?<br/> ( <em>Please indicate your rating by indicating a number on a scale of 1 to 5, with 5 being highly intensive and 1 being not intensive</em>).</p>
 </li>
 </ol>
 
-<ul id="_a93b991e-6667-a7da-72b4-2c90505d9726"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_838cb314-1f7a-2aa0-46ef-3f4d482cdd68">1</p>
+<ul id="_7910b472-da61-4b1a-6426-fb52a63dfac6"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_838cb314-1f7a-2aa0-46ef-3f4d482cdd68">1</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_39a8b2e6-5adc-61f0-d10c-e18e62562a7d">2</p>
 </li>
@@ -1811,8 +1803,7 @@
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_3ec1dd05-8ee4-0e66-23f7-698fa28f7ea7">4</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_495d20d0-5248-5fa1-8aba-b1ec8134dc82">5</p>
-<ol id="_a3b47468-eb72-3646-d0f6-7d2a526b8788"><li><p id="_5baedb65-cab7-e903-838a-4e1c002de21f">Do you perceive any positive impact of counterfeiting ICT devices and accessories, if so which?<br/>
-(<em>Please tick (✓) all that applies</em>).</p>
+<ol id="_7e50d8e1-c0fe-48f1-b26d-9b458b14319c"><li><p id="_713646bd-711d-6c1f-6242-d326027f972d">Do you perceive any positive impact of counterfeiting ICT devices and accessories, if so which?<br/> ( <em>Please tick (✓) all that applies</em>).</p>
 </li>
 </ol>
 </li>
@@ -1842,11 +1833,10 @@
 </li>
 </ul>
 
-<ul id="_d58fbc38-d3ab-72c8-4cbc-dd052f29176d"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_385a1a3a-3f3d-8f20-3a34-b77f51238aad">Yes.</p>
+<ul id="_3a229816-818e-626c-3080-cba48cbe8a11"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_385a1a3a-3f3d-8f20-3a34-b77f51238aad">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a0623b04-50ac-4667-e75d-d57f7b0b2878">No.</p>
-<ol id="_3996d0c7-5a25-259e-bbb8-b32509f0fc45"><li><p id="_ba310e74-7a42-8796-03bf-3f73b6dce1cf">How effective is this national body?
-(<em>Please indicate a number on a scale of 1 to 5, with 5 being highly effective and 1 being highly ineffective</em>)</p>
+<ol id="_e695abe6-ee2f-418c-95da-a43616eb5f7a"><li><p id="_ca1c2350-3650-dfd4-1b15-e5eb65cda4c2">How effective is this national body? ( <em>Please indicate a number on a scale of 1 to 5, with 5 being highly effective and 1 being highly ineffective</em>)</p>
 </li>
 </ol>
 </li>
@@ -1891,11 +1881,10 @@
 </li>
 </ul>
 
-<ul id="_c0068376-beb7-104d-b395-32462abba488"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a725a79b-734c-aeec-af20-ab15d19a89db">Yes.</p>
+<ul id="_7ce854fa-2709-854d-afdf-db4913fdc2f4"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a725a79b-734c-aeec-af20-ab15d19a89db">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_6b07b4b4-ae8e-3e06-6596-dcf1a91560b7">No.</p>
-<ol id="_353937d2-98ea-9148-8954-3e46db975d3d"><li><p id="_094d728c-6cec-de80-443d-ec9bae6b75dc">If <strong><em>Yes</em></strong>, what measures have been put in place to enforce the framework and regulation?<br/>
-<em>Please specify below</em>:</p>
+<ol id="_28b5f3cc-4a81-64a8-00dd-e0c5e6b3abc8"><li><p id="_5e2ef899-3d45-a284-fd14-0a36e73115f3">If <strong><em>Yes</em></strong>, what measures have been put in place to enforce the framework and regulation?<br/> <em>Please specify below</em>:</p>
 <ol id="_3881af09-d7e8-9770-1d8c-dc030b9f42e9"><li><p id="_f1dab229-5b5a-a494-e1f0-a09921d200e5">__________<br/></p>
 </li>
 <li><p id="_ecd5b092-3850-8698-f38f-ea31f7e431e4">__________<br/></p>
@@ -2164,7 +2153,7 @@
 </li>
 </ul>
 
-<ul id="_20568706-55f8-f4fd-5d8a-90a67b68ce10"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a5a922e3-6ed5-1f25-79d5-7e7b6d253263">Checking of device description/specifications on manufacturer's website.</p>
+<ul id="_425304c9-f0a0-d490-d11e-7fa958542b82"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a5a922e3-6ed5-1f25-79d5-7e7b6d253263">Checking of device description/specifications on manufacturer's website.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_afb71126-6447-98d0-08a8-f5637ed8624b">Checking device authentication and certification from websites of national ICT authorities.</p>
 </li>
@@ -2173,8 +2162,7 @@
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_ac1e7c2c-6fb9-07f8-fe6b-4ab6b9aca186">Buying from authorised dealers.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_95bff7a2-fbba-1287-b338-7f2cf2226149">Other, <em>please specify</em>: __________</p>
-<ol id="_56d53f75-bf0f-e05f-eef8-3dc3649cf96d"><li><p id="_e168283b-e8a0-ff2a-47d0-2462aaec8bc2">Which of the following ICT devices do you know or perceive to have been counterfeited?<br/>
-(<em>Please tick (✓) all that applies in the table below.</em>)</p>
+<ol id="_9a88b895-4fa3-74b9-c7b6-09f5067183e1"><li><p id="_c3fb0a1f-a7dd-f112-2896-dd8959c93300">Which of the following ICT devices do you know or perceive to have been counterfeited?<br/> ( <em>Please tick (✓) all that applies in the table below.</em>)</p>
 </li>
 </ol>
 </li>
@@ -2207,7 +2195,7 @@
 </li>
 </ul>
 
-<ul id="_b2fa4b82-1edd-716f-f4b1-c6283097948b"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_ca96c830-e009-abe5-b27c-d2d1121dbcbc">There is no patronage</p>
+<ul id="_85f1a87b-39b1-f9c7-71c0-44b853090816"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_ca96c830-e009-abe5-b27c-d2d1121dbcbc">There is no patronage</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_264fc58b-f5a2-3820-7f38-77df98c25014">Availability</p>
 </li>
@@ -2216,8 +2204,7 @@
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_7b097928-9f52-9a3b-8509-51a45cb533cb">Multi-functionality</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_c87bfc27-535e-c41f-e06c-bbd2f4fbbdd4">Others, <em>please specify</em>: __________</p>
-<ol id="_e9df098b-44a3-e402-7809-686cee1769e1"><li><p id="_befd1c3b-7d8a-c48c-ff75-5c67dc2ce2dd">What have been the negative effects of counterfeit ICT devices in your country?<br/>
-(<em>Please tick (✓) all that applies in the table below.</em>)</p>
+<ol id="_b2c69d01-592a-e90e-89e5-e24e5eaa8300"><li><p id="_bf0a942e-9a46-ae02-e479-fb774c1c2617">What have been the negative effects of counterfeit ICT devices in your country?<br/> ( <em>Please tick (✓) all that applies in the table below.</em>)</p>
 </li>
 </ol>
 </li>
@@ -2252,8 +2239,7 @@
 
 <p id="_cf757654-bd76-fbab-0cff-892957578a31"><em>[Please skip question <xref target="q8b-3"/> if you answered No to question <xref target="q8a-3"/> above]</em></p>
 
-<ol id="_65cea0cc-a2f1-b408-d027-47f8e03512d1"><li id="q8b-3"><p id="_91416631-15ea-67a0-3842-7977d6e0b1c9">If <strong><em>Yes</em></strong> to question <xref target="q8a-3"/>, what do you perceive to be the level public awareness in your country?<br/>
-(<em>Please indicate a number on a scale of 1 to 5, with 5 being Very high and 1 being very low</em>).</p>
+<ol id="_e9aa3e27-14c3-317a-fc40-80c476a1f3d2"><li id="q8b-3"><p id="_00f2748d-6418-539e-be5a-5d7f621e4eca">If <strong><em>Yes</em></strong> to question <xref target="q8a-3"/>, what do you perceive to be the level public awareness in your country?<br/> ( <em>Please indicate a number on a scale of 1 to 5, with 5 being Very high and 1 being very low</em>).</p>
 </li>
 </ol>
 
@@ -2280,8 +2266,7 @@
 
 <p id="_50788193-da5e-47a9-fe84-84db77fd381b"><em>[Please skip question <xref target="q9b-3"/> if you answered No to question <xref target="q9a-3"/> above]</em></p>
 
-<ol id="_211e6d04-ce84-ac9c-f7f3-f1e6120caeee"><li id="q9b-3"><p id="_54fb64fe-99a9-7562-6695-e1d786363bda">To what extent do you consider there is the need for such public education described in <xref target="q9a-3"/> above?<br/>
-(<em>Please indicate your rating by indicating a number on a scale of 1 to 5, with 5 being highly intensive and 1 being not intensive</em>).</p>
+<ol id="_220098be-57fa-c2c6-f209-ba8f321ddb05"><li id="q9b-3"><p id="_39080e53-d4d2-70ef-0c16-d6cb00ce2116">To what extent do you consider there is the need for such public education described in <xref target="q9a-3"/> above?<br/> ( <em>Please indicate your rating by indicating a number on a scale of 1 to 5, with 5 being highly intensive and 1 being not intensive</em>).</p>
 </li>
 </ol>
 
@@ -2309,17 +2294,16 @@
 </li>
 </ul>
 
-<ul id="_d4c4f5b8-de96-4ad5-91a6-b77754b10bb9"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_0dfa0a37-5b86-2417-6ae7-22d5ade34529">Yes.</p>
+<ul id="_f9c0a7c7-3d42-2dac-438e-dc5230284da1"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_0dfa0a37-5b86-2417-6ae7-22d5ade34529">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_0bba6df0-b14a-cfca-168d-b946aa8390cf">No.</p>
-<ol id="_64057d42-25af-cddb-98f3-9386e2dd69ff"><li><p id="_605e8c1f-b2ee-ab23-1e6e-8201f1f629bc">How effective is this national body?<br/>
-(<em>Please indicate a number on a scale of 1 to 5, with 5 being highly effective and 1 being highly ineffective</em>)</p>
+<ol id="_78fb64c1-89ed-c842-db37-991cf05fd000"><li><p id="_8fdd913f-fe04-71f4-a4b3-5cabfb8b38c3">How effective is this national body?<br/> ( <em>Please indicate a number on a scale of 1 to 5, with 5 being highly effective and 1 being highly ineffective</em>)</p>
 </li>
 </ol>
 </li>
 </ul>
 
-<ul id="_567ec448-c02e-cf32-10c3-39fdfe1f9375"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a953c661-bb06-0b74-9422-9a6056fff69b">1</p>
+<ul id="_e1222ca0-934f-6e11-de4e-fb742c492dfc"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_a953c661-bb06-0b74-9422-9a6056fff69b">1</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_11f263e0-55e3-d37d-87c4-8521a4e0ebdc">2</p>
 </li>
@@ -2328,8 +2312,7 @@
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_7ed142a1-8c1e-3695-1d53-adf325a15e12">4</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_8315e93e-b02d-add0-4971-0da0dec8608e">5</p>
-<ol id="_562c57e4-06da-f984-42d2-091db3cd678c"><li><p id="_ea5a0036-b9dc-f8c4-c46a-37feefab6e22">Do you perceive any positive impact of counterfeiting ICT devices and accessories, if so which?<br/>
-(<em>Please tick (✓) all that applies</em>).</p>
+<ol id="_473b8a6b-28e3-2829-9f95-8b48828a906b"><li><p id="_eef27aa0-7239-c017-67df-aa7db4b7d563">Do you perceive any positive impact of counterfeiting ICT devices and accessories, if so which?<br/> ( <em>Please tick (✓) all that applies</em>).</p>
 </li>
 </ol>
 </li>
@@ -2350,11 +2333,10 @@
 </li>
 </ul>
 
-<ul id="_02eff5bc-a5b1-67a2-7e8d-b1aa6ff74bf2"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_00d671e4-7dc3-4f6c-c398-cf715f0e6935">Yes.</p>
+<ul id="_a4855bd7-6354-a550-1050-edb6e5cd8e12"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_00d671e4-7dc3-4f6c-c398-cf715f0e6935">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_938965e6-f9f4-0209-5e6d-729737ad229e">No.</p>
-<ol id="_c7554d29-5c03-0eb4-1d55-59f061dd4396"><li><p id="_0453d570-e541-2309-2bf6-4fc5c2fef6ba"><em>If <strong>Yes</strong> to question <xref target="q13"/> above</em>, in your opinion how effective are these laws and statutory enactments in combating counterfeit ICT devices in your country?<br/>
-(<em>Please indicate a number on a scale of 1 to 5, with 5 being highly effective and 1 being highly ineffective</em>).</p>
+<ol id="_af89d8bc-966c-178d-de36-7bd2c1ef8641"><li><p id="_e56b1519-ee36-fd9c-abbf-66cfbe34cebe"><em>If <strong>Yes</strong> to question <xref target="q13"/> above</em>, in your opinion how effective are these laws and statutory enactments in combating counterfeit ICT devices in your country?<br/> ( <em>Please indicate a number on a scale of 1 to 5, with 5 being highly effective and 1 being highly ineffective</em>).</p>
 </li>
 </ol>
 </li>
@@ -2375,11 +2357,10 @@
 </li>
 </ul>
 
-<ul id="_dfcf0de1-5d3e-ec5d-7767-18d20bffadee"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_1beedc7c-b0a9-6ce0-bcae-2fb402551682">Yes.</p>
+<ul id="_39f4efb8-cdab-2db0-6af9-5bc0033ab7a6"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_1beedc7c-b0a9-6ce0-bcae-2fb402551682">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_603c854f-3015-6705-581f-250b15f652b8">No.</p>
-<ol id="_687c73fc-58b4-27cd-c407-e5c558a1036e"><li><p id="_7cc68782-6b0d-6286-6229-d3f2035f97a5">If <strong><em>Yes</em></strong>, what measures have been put in place to enforce the framework and regulation?<br/>
-Please specify below:</p>
+<ol id="_ac22e7e9-c252-a04b-2651-2c9424f49a1a"><li><p id="_70267ab4-4156-4d34-9543-bb06ac0cdb4a">If <strong><em>Yes</em></strong>, what measures have been put in place to enforce the framework and regulation?<br/> Please specify below:</p>
 <ol id="_de3a064f-94d5-6d8f-1b69-1e5fb83152e1"><li><p id="_a0945c91-a322-442e-6b71-5de85a4b47c8">__________<br/></p>
 </li>
 <li><p id="_eb937d29-1d4f-0e0b-8e15-c5515ee22c9a">__________<br/></p>
@@ -2403,11 +2384,10 @@ Please specify below:</p>
 </li>
 </ul>
 
-<ul id="_f8087335-4a12-72c6-f419-5170e8c0fd79"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_b5891f44-e6ec-91bd-4c9f-d9de85cf04df">Yes.</p>
+<ul id="_216a47a9-7f20-e84d-37a1-8c690a767ae4"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_b5891f44-e6ec-91bd-4c9f-d9de85cf04df">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_93dbd135-9632-7453-5254-7812585e0b7b">No.</p>
-<ol id="_03da1894-ec56-973b-9187-715400f3265b"><li id="q17b-3"><p id="_28cc8ff2-ce37-5628-880f-0f5bbab0d12d">If <strong><em>Yes</em></strong> to questions <xref target="q17a-3"/>, how informed are they?
-(<em>Please indicate a number on a scale of 1 to 5, with 5 being highly informed and 1 being not informed</em>).</p>
+<ol id="_f2aa98ea-3489-708a-df6a-f2a9dbf30716"><li id="q17b-3"><p id="_e8e78957-0914-ce1e-9491-475634d88b93">If <strong><em>Yes</em></strong> to questions <xref target="q17a-3"/>, how informed are they? ( <em>Please indicate a number on a scale of 1 to 5, with 5 being highly informed and 1 being not informed</em>).</p>
 </li>
 </ol>
 </li>
@@ -2437,11 +2417,10 @@ Please specify below:</p>
 </li>
 </ul>
 
-<ul id="_405b8990-6c3c-923b-9fe6-eb67d29941b6"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_fafd6a07-b33b-4671-1b61-7552fac5771f">Yes.</p>
+<ul id="_a1c88a74-40dd-f170-8381-e3b28b0d4666"><li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_fafd6a07-b33b-4671-1b61-7552fac5771f">Yes.</p>
 </li>
 <li uncheckedcheckbox="true" checkedcheckbox="false"><p id="_424f2230-3bcd-e5b7-122d-626a3839f6d0">No.</p>
-<ol id="_29b1c493-2ff3-48ae-b3a4-d96f690e6cf9"><li><p id="_86fc57ce-1875-b3ce-879e-390939f67a65">What initiative the ITU, as UN body, could take a lead in the area of ICT counterfeiting?<br/>
-Please check what applies:</p>
+<ol id="_8a22b3e1-eeed-b924-4599-2b7aa10d4074"><li><p id="_06edf952-5087-f5e8-d7e5-6252e45c95f8">What initiative the ITU, as UN body, could take a lead in the area of ICT counterfeiting?<br/> Please check what applies:</p>
 </li>
 </ol>
 </li>

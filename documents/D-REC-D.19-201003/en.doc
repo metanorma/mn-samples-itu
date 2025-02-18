@@ -1,13 +1,13 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_b774ded4.25fd.4f6f"
+Content-Type: multipart/related; boundary="----=_NextPart_bfc7e47a.4a94.45cb"
 
-------=_NextPart_b774ded4.25fd.4f6f
+------=_NextPart_bfc7e47a.4a94.45cb
 Content-ID: <en.htm>
 Content-Disposition: inline; filename="en.htm"
 Content-Type: text/html; charset="utf-8"
 
 <?xml version="1.0"?>
-<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
   <head>
 <xml>
 <w:WordDocument>
@@ -212,6 +212,7 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -227,6 +228,7 @@ p.MsoHeaderLandscape, li.MsoHeaderLandscape, div.MsoHeaderLandscape {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -1912,6 +1914,45 @@ ol {
 ul {
   margin-bottom: 0cm;
   margin-left: 18pt; }
+p.Sourcecode table td { padding: 5px; }
+p.Sourcecode table pre { margin: 0; }
+p.Sourcecode, p.Sourcecode .w {
+  color: #444444;
+}
+p.Sourcecode .cp {
+  color: #CC00A3;
+}
+p.Sourcecode .cs {
+  color: #CC00A3;
+}
+p.Sourcecode .c, p.Sourcecode .ch, p.Sourcecode .cd, p.Sourcecode .cm, p.Sourcecode .cpf, p.Sourcecode .c1 {
+  color: #FF0000;
+}
+p.Sourcecode .kc {
+  color: #C34E00;
+}
+p.Sourcecode .kd {
+  color: #0000FF;
+}
+p.Sourcecode .kr {
+  color: #007575;
+}
+p.Sourcecode .k, p.Sourcecode .kn, p.Sourcecode .kp, p.Sourcecode .kt, p.Sourcecode .kv {
+  color: #0000FF;
+}
+p.Sourcecode .s, p.Sourcecode .sb, p.Sourcecode .sc, p.Sourcecode .ld, p.Sourcecode .sd, p.Sourcecode .s2, p.Sourcecode .se, p.Sourcecode .sh, p.Sourcecode .si, p.Sourcecode .sx, p.Sourcecode .sr, p.Sourcecode .s1, p.Sourcecode .ss {
+  color: #009C00;
+}
+p.Sourcecode .sa {
+  color: #0000FF;
+}
+p.Sourcecode .nb, p.Sourcecode .bp {
+  color: #C34E00;
+}
+p.Sourcecode .nt {
+  color: #0000FF;
+}
+
 
 -->
 ]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
@@ -2901,6 +2942,7 @@ div.WordSection1 {
 
   mso-page-numbers: roman-lower 1;
 
+
   mso-even-header: url(cid:header.html) eh2;
   mso-header: url(cid:header.html) h2;
   mso-even-footer: url(cid:header.html) ef2;
@@ -3142,7 +3184,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:70.9pt;mso-height-rule:   exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <p class="MsoNormal"><v:shapetype coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><a name="_x0000_t75" id="_x0000_t75"></a>
    <v:stroke joinstyle="miter"/>
    <v:formulas>
     <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -3160,40 +3202,40 @@ table.biblio td {
    </v:formulas>
    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
    <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f">
-  <v:imagedata src="cid:cdfefb5e-d812-4d00-80b7-88062b0048a4.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
-  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></a></p>
+  </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f"><a name="Picture_x0020_2" id="Picture_x0020_2"></a>
+  <v:imagedata src="cid:c0b69d63-f76c-4d32-bb08-bf9250a5f24d.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
+  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></a></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   <br style="mso-ignore:vglayout" clear="ALL"/>
-  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:1;height:49.6pt;mso-height-rule:exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:2;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="168" valign="top" style="width:126.0pt;padding:0cm 4.25pt 0cm 4.25pt">
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-D</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-D</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="400" colspan="2" valign="top" style="width:300.0pt;padding:0cm 4.25pt 0cm 4.25pt">
   <p class="MsoNormal" align="right" style="margin-top:12.0pt;text-align:right"><span style="mso-bookmark:_Hlk526346232">
     
-    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">D.19<o:p></o:p></span></b></a>
+    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">D.19<o:p class="MsoNormal"></o:p></span></b></a>
     
               
           
@@ -3204,13 +3246,15 @@ table.biblio td {
  <tr style="mso-yfti-irow:3;height:48.7pt;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="303" colspan="2" valign="top" style="width:227.45pt;padding:0cm 4.25pt 0cm 4.25pt;   height:48.7pt">
-    
+
+  
+  
       
-  <p class="MsoNormal" align="left" style="text-align:left"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">TELECOMMUNICATION</span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><br/>
-  </span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">DEVELOPMENT SECTOR<br/>
-  OF ITU</span></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:10.0pt;   mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left">
+  <span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;               mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">Telecommunication<br/>Development Bureau<br/>of ITU</span></p>
   
     
+  
 
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
@@ -3218,13 +3262,13 @@ table.biblio td {
   
   
   <p class="MsoNormal" align="right" style="margin-top:0cm;text-align:right">
-  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(01/2019)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p></o:p></span></a></span></p>
+  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(01/2019)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p class="MsoNormal"></o:p></span></a></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:ddatee"></span></span>
  </tr>
  <tr style="mso-yfti-irow:4;page-break-inside:avoid;height:6.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:6.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;border:none;   border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.0cm;   mso-height-rule:exactly">
@@ -3233,13 +3277,13 @@ table.biblio td {
       
   
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
  </tr>
  <tr style="mso-yfti-irow:5;page-break-inside:avoid;height:4.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="top" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly">
@@ -3248,7 +3292,7 @@ table.biblio td {
   <b>Telecommunication for rural and remote areas</b>
   
   </span>
-  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></span></p>
+  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"></span></span>
  </tr>
@@ -3262,18 +3306,18 @@ table.biblio td {
  
  <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;page-break-inside:avoid;   height:1.5cm;mso-height-rule:exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:1.5cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
   <p class="MsoNormal" align="left" style="margin-top:3.0pt;margin-right:0cm;   margin-bottom:12.0pt;margin-left:0cm;text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dnum2e" id="dnum2e"></a>
   
   <span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">Recommendation<span style="mso-spacerun:yes">&#xA0;
-  </span>ITU&#x2011;D<span style="mso-spacerun:yes">&#xA0; </span>D.19<o:p></o:p></span>
+  </span>ITU&#x2011;D<span style="mso-spacerun:yes">&#xA0; </span>D.19<o:p class="MsoNormal"></o:p></span>
   
   </span></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3283,14 +3327,14 @@ table.biblio td {
 <p class="MsoNormal" align="right" style="margin-top:0.0pt;text-align:right; tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm">
   <span style="mso-bookmark: _Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt; font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-no-proof:yes" xml:lang="EN-US">
-      <v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square">
-<v:imagedata src="cid:badf3a25-a68c-4584-ac81-84a54628b7bb.svg" o:title="logo_E" width="272" height="300"/>
+      <v:shape o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square"><a name="Picture_x0020_1" id="Picture_x0020_1"></a>
+<v:imagedata src="cid:95daf955-e9c7-4667-a914-6d5958306087.svg" o:title="logo_E" width="272" height="300"/>
 </v:shape>
     </span>
   </span>
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif; mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">
-      <o:p></o:p>
+      <o:p class="MsoNormal"></o:p>
     </span>
   </span>
 </p>
@@ -3300,11 +3344,12 @@ table.biblio td {
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection2">
+
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Recommendation ITU-D D.19<o:p></o:p></span></span></p>
-  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Telecommunication for rural and remote areas<o:p></o:p></span></span></p>
+  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Recommendation ITU-D D.19<o:p class="MsoNormal"></o:p></span></span></p>
+  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Telecommunication for rural and remote areas<o:p class="MsoNormal"></o:p></span></span></p>
   
   
   
@@ -3312,7 +3357,7 @@ table.biblio td {
   
   
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3321,17 +3366,17 @@ table.biblio td {
 <p class="MsoNormal">
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH">
-      <o:p>&#xA0;</o:p>
+      <o:p class="MsoNormal">&#xA0;</o:p>
     </span>
   </span>
 </p>
 
 
 
-<p class="MsoNormal"><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+<p class="MsoNormal"><o:wrapblock><v:shapetype coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><a name="_x0000_t202" id="_x0000_t202"></a>
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF 90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA 0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893 SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY 22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA IQBJkvqzLAIAAFEEAAAOAAAAZHJzL2Uyb0RvYy54bWysVF1v2jAUfZ+0/2D5fSQwYG1EqFgrpklV WwmmPhvHIZHij9mGhP36HTuBom5P017M9b039+OcYxZ3nWzIUVhXa5XT8SilRCiui1rtc/pju/50 Q4nzTBWs0Urk9CQcvVt+/LBoTSYmutJNISxBEeWy1uS08t5kSeJ4JSRzI22EQrDUVjKPq90nhWUt qssmmaTpPGm1LYzVXDgH70MfpMtYvywF989l6YQnTU4xm4+njecunMlywbK9Zaaq+TAG+4cpJKsV ml5KPTDPyMHWf5SSNbfa6dKPuJaJLsuai7gDthmn77bZVMyIuAvAceYCk/t/ZfnT8cWSugB3lCgm QdFWdJ581R0ZB3Ra4zIkbQzSfAd3yBz8Ds6wdFdaGX6xDkEcOJ8u2IZiHM7Z/HY8TxHiiN1MJ1PY KJO8fW2s89+EliQYObXgLkLKjo/O96nnlNBM6XXdNPCzrFGkzen88yyNH1wiKN4o9Ag79LMGy3e7 blhgp4sT9rK614UzfF2j+SNz/oVZCAHzQtz+GUfZaDTRg0VJpe2vv/lDPvhBlJIWwsqp+3lgVlDS fFdg7nY8nQYlxst09mWCi72O7K4j6iDvNbQLdjBdNEO+b85mabV8xRtYha4IMcXRO6f+bN77Xu54 Q1ysVjEJ2jPMP6qN4aF0wDBAu+1emTUD/h7MPemzBFn2joY+N3zpzOrgQUbkKADcozrgDt1Gloc3 Fh7G9T1mvf0TLH8DAAD//wMAUEsDBBQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAZHJzL2Rvd25y ZXYueG1sTI/NTsMwEITvSLyDtUhcUGsnhShK41SoKOeqKQ/gxksS8E8UO014e5YTXFYa7e7MfOVh tYbdcAqDdxKSrQCGrvV6cJ2E90u9yYGFqJxWxjuU8I0BDtX9XakK7Rd3xlsTO0YmLhRKQh/jWHAe 2h6tCls/oqPdh5+siiSnjutJLWRuDU+FyLhVg6OEXo147LH9amYrwafLkzk3SX08LZ+1OM14aQJK +fiwvu1pvO6BRVzj3wf8MlB/qKjY1c9OB2YkbJKMgKKENN+9AKOLPBc7YFcJz0mWAq9K/h+k+gEA AP//AwBQSwECLQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRl bnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8B AABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQBJkvqzLAIAAFEEAAAOAAAAAAAAAAAAAAAAAC4C AABkcnMvZTJvRG9jLnhtbFBLAQItABQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAAAAAAAAAAAAA AIYEAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAlgUAAAAA " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
+ </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF 90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA 0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893 SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY 22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA IQBJkvqzLAIAAFEEAAAOAAAAZHJzL2Uyb0RvYy54bWysVF1v2jAUfZ+0/2D5fSQwYG1EqFgrpklV WwmmPhvHIZHij9mGhP36HTuBom5P017M9b039+OcYxZ3nWzIUVhXa5XT8SilRCiui1rtc/pju/50 Q4nzTBWs0Urk9CQcvVt+/LBoTSYmutJNISxBEeWy1uS08t5kSeJ4JSRzI22EQrDUVjKPq90nhWUt qssmmaTpPGm1LYzVXDgH70MfpMtYvywF989l6YQnTU4xm4+njecunMlywbK9Zaaq+TAG+4cpJKsV ml5KPTDPyMHWf5SSNbfa6dKPuJaJLsuai7gDthmn77bZVMyIuAvAceYCk/t/ZfnT8cWSugB3lCgm QdFWdJ581R0ZB3Ra4zIkbQzSfAd3yBz8Ds6wdFdaGX6xDkEcOJ8u2IZiHM7Z/HY8TxHiiN1MJ1PY KJO8fW2s89+EliQYObXgLkLKjo/O96nnlNBM6XXdNPCzrFGkzen88yyNH1wiKN4o9Ag79LMGy3e7 blhgp4sT9rK614UzfF2j+SNz/oVZCAHzQtz+GUfZaDTRg0VJpe2vv/lDPvhBlJIWwsqp+3lgVlDS fFdg7nY8nQYlxst09mWCi72O7K4j6iDvNbQLdjBdNEO+b85mabV8xRtYha4IMcXRO6f+bN77Xu54 Q1ysVjEJ2jPMP6qN4aF0wDBAu+1emTUD/h7MPemzBFn2joY+N3zpzOrgQUbkKADcozrgDt1Gloc3 Fh7G9T1mvf0TLH8DAAD//wMAUEsDBBQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAZHJzL2Rvd25y ZXYueG1sTI/NTsMwEITvSLyDtUhcUGsnhShK41SoKOeqKQ/gxksS8E8UO014e5YTXFYa7e7MfOVh tYbdcAqDdxKSrQCGrvV6cJ2E90u9yYGFqJxWxjuU8I0BDtX9XakK7Rd3xlsTO0YmLhRKQh/jWHAe 2h6tCls/oqPdh5+siiSnjutJLWRuDU+FyLhVg6OEXo147LH9amYrwafLkzk3SX08LZ+1OM14aQJK +fiwvu1pvO6BRVzj3wf8MlB/qKjY1c9OB2YkbJKMgKKENN+9AKOLPBc7YFcJz0mWAq9K/h+k+gEA AP//AwBQSwECLQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRl bnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8B AABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQBJkvqzLAIAAFEEAAAOAAAAAAAAAAAAAAAAAC4C AABkcnMvZTJvRG9jLnhtbFBLAQItABQABgAIAAAAIQBNZwQU4wAAABABAAAPAAAAAAAAAAAAAAAA AIYEAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAlgUAAAAA " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt"><a name="Text_x0020_Box_x0020_1" id="Text_x0020_Box_x0020_1"></a>
   <v:fill o:detectmouseclick="t"></v:fill>
   <v:textbox style="mso-fit-shape-to-text:t">
       <div><a name="abstractbox" id="abstractbox"></a>
@@ -3340,15 +3385,15 @@ table.biblio td {
   <w:wrap type="topAndBottom" anchory="margin"/>
   <w:anchorlock></w:anchorlock>
  </v:shape></o:wrapblock><br style="mso-ignore:vglayout" clear="ALL">
-<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></br>
+<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></br>
 
 
 
  
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <!--
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663"
@@ -3368,11 +3413,11 @@ table.biblio td {
 </table>
 -->
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <div><a name="sourcebox" id="sourcebox"></a></div>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
@@ -3388,7 +3433,7 @@ table.biblio td {
 
   
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 
   
@@ -3398,7 +3443,7 @@ table.biblio td {
 
 <div class="boilerplate-legal">
 
-<div><a name="_foreword" id="_foreword"></a><p class="boilerplateHdr">FOREWORD</p>
+<div><a name="_b5ff7f95-f781-a42e-99b6-87a561430419" id="_b5ff7f95-f781-a42e-99b6-87a561430419"></a><p class="boilerplateHdr">FOREWORD</p>
 
 <p class="boilerplate"><a name="_e39b916a-1911-02cf-fce1-6e2bbef3a82b" id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b"></a>The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -3408,7 +3453,7 @@ table.biblio td {
 
 <p class="boilerplate"><a name="_0af791e0-9f42-316a-0bcf-cc393f69fe2b" id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b"></a>In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 
-<div><a name="_note" id="_note"></a><h3>NOTE</h3>
+<div><a name="_8520a161-8bbd-37df-d9aa-24c4f47aa144" id="_8520a161-8bbd-37df-d9aa-24c4f47aa144"></a><h3>NOTE</h3>
 
 <p class="boilerplate"><a name="_56570421-b373-1413-9648-1e440630df94" id="_56570421-b373-1413-9648-1e440630df94"></a>In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
 
@@ -3418,21 +3463,22 @@ table.biblio td {
 <p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p></div>
 <div class="boilerplate-license">
 
-<div><a name="_intellectual_property_rights" id="_intellectual_property_rights"></a><p class="boilerplateHdr">INTELLECTUAL PROPERTY RIGHTS</p>
+<div><a name="_4e168d71-002e-b69b-bbc5-c2db63824bd8" id="_4e168d71-002e-b69b-bbc5-c2db63824bd8"></a><p class="boilerplateHdr">INTELLECTUAL PROPERTY RIGHTS</p>
 
 <p class="boilerplate"><a name="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae" id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae"></a>ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p class="boilerplate"><a name="_6f9c905a-7432-63f2-1fbc-3d7476d27115" id="_6f9c905a-7432-63f2-1fbc-3d7476d27115"></a>As of the date of approval of this Recommendation, ITU had  received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <a href="http://www.itu.int/ITU-T/ipr/" class="url">http://www.itu.int/ITU-T/ipr/</a>.</p>
+<p class="boilerplate"><a name="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf" id="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf"></a>As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <a href="http://www.itu.int/ITU-T/ipr/" class="url">http://www.itu.int/ITU-T/ipr/</a>.</p>
 </div>
 <p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p></div>
 <div class="boilerplate-copyright">
 
-<div><a name="_47f07130-c82c-7e44-4389-2a6d8eb93156" id="_47f07130-c82c-7e44-4389-2a6d8eb93156"></a>
-<p class="boilerplateHdr"><a name="_bd802aaa-e8a3-8006-9bd8-52d0e1309cac" id="_bd802aaa-e8a3-8006-9bd8-52d0e1309cac"></a>&#xA9; ITU 2024</p>
+<div><a name="_0e33d45d-8046-e0eb-cdcd-a9962ac2c58e" id="_0e33d45d-8046-e0eb-cdcd-a9962ac2c58e"></a>
+<p class="boilerplateHdr"><a name="_f5a6703c-c9c0-a0d5-520b-b051d6277b69" id="_f5a6703c-c9c0-a0d5-520b-b051d6277b69"></a>&#xA9; ITU 2025</p>
 
 <p class="boilerplate"><a name="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76" id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76"></a>All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </div>
 </div>
+
 
 
 </p></p><div class="authority">
@@ -3440,16 +3486,16 @@ table.biblio td {
 
 
 
-</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_88848655-3b0e-43f4-85d0-5cb69d4eaaad" id="_88848655-3b0e-43f4-85d0-5cb69d4eaaad"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_25cf7f1b-1b45-4421-b57d-4b922f361211" id="_25cf7f1b-1b45-4421-b57d-4b922f361211"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc392260940">1.<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc608319327">1.<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc392260940 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc608319327 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
-<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></p>
+<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
 </div><p class="MsoNormal">&#xA0;</p></div>
     <p class="MsoNormal">
       <br clear="all" class="section"/>
@@ -3457,8 +3503,16 @@ table.biblio td {
     <div class="WordSection3">
       <p class="zzSTDTitle1">Recommendation ITU-D D.19</p>
       <p class="zzSTDTitle2">Telecommunication for rural and remote areas</p>
-      <div><a name="_52a96470-9808-bdee-071d-420c230e7adb" id="_52a96470-9808-bdee-071d-420c230e7adb"></a><h1>1.</h1><p class="MsoNormal"><a name="_5ee0baec-2f92-f0bc-ca23-e042368928d4" id="_5ee0baec-2f92-f0bc-ca23-e042368928d4"></a>ITU-D</p><p class="MsoNormal"><a name="_f3be5376-4527-da94-e623-5b0bfe43cbd2" id="_f3be5376-4527-da94-e623-5b0bfe43cbd2"></a><i>recognizing</i></p><p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_48d1f67f-872b-492c-94be-7a847fec9f03" id="_48d1f67f-872b-492c-94be-7a847fec9f03"></a>that the following Recommendations resulting from the ITU-D study periods 1998-2002 and 2002-2006 have provided guidance on a number of issues concerning telecommunications/ICTs in rural and remote areas:
-<p style="mso-list:l3 level2 lfo1;" class="MsoListParagraphCxSpFirst">RECOMMENDATION ITU-D 6-1, Appropriate low-cost technology options for the provision of telecommunications in rural and remote areas, (January, 2002);
+      <div>
+        <a name="_52a96470-9808-bdee-071d-420c230e7adb" id="_52a96470-9808-bdee-071d-420c230e7adb"></a>
+        <h1>1.</h1>
+        <p class="MsoNormal"><a name="_5ee0baec-2f92-f0bc-ca23-e042368928d4" id="_5ee0baec-2f92-f0bc-ca23-e042368928d4"></a>ITU-D</p>
+        <p class="MsoNormal">
+          <a name="_f3be5376-4527-da94-e623-5b0bfe43cbd2" id="_f3be5376-4527-da94-e623-5b0bfe43cbd2"></a>
+          <i>recognizing</i>
+        </p>
+        <div class="ol_wrap"><p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_95404833-925e-48f8-8ffc-3fed2904f10b" id="_95404833-925e-48f8-8ffc-3fed2904f10b"></a>that the following Recommendations resulting from the ITU-D study periods 1998-2002 and 2002-2006 have provided guidance on a number of issues concerning telecommunications/ICTs in rural and remote areas:
+<div class="ListContLevel1"><div class="ul_wrap"><p style="mso-list:l3 level2 lfo1;" class="MsoListParagraphCxSpFirst">RECOMMENDATION ITU-D 6-1, Appropriate low-cost technology options for the provision of telecommunications in rural and remote areas, (January, 2002);
 </p>
 <p style="mso-list:l3 level2 lfo1;" class="MsoListParagraphCxSpMiddle">RECOMMENDATION ITU-D 7-1, Planning and implementation of national telecommunication development plans for rural and remote areas, (January, 2002)
 </p>
@@ -3472,67 +3526,83 @@ table.biblio td {
 </p>
 <p style="mso-list:l3 level2 lfo1;" class="MsoListParagraphCxSpLast">RECOMMENDATION ITU D 18, Potential benefits of rural telecommunications (March, 2006).
 </p>
-
+</div></div>
 </p>
-<p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpLast"><a name="_fb07a206-a618-481d-90a5-05ecf147c744" id="_fb07a206-a618-481d-90a5-05ecf147c744"></a>that the Focus Group 7 addressed technological options, service potential and financing mechanisms for the provision of telecommunications/ICTs in rural and remote areas;
-</p>
-<p class="MsoNormal"><a name="_999d6636-befc-c311-3dc0-0c8c506c8445" id="_999d6636-befc-c311-3dc0-0c8c506c8445"></a><i>noting</i></p><p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpFirst"><a name="_40e097ae-03ca-464d-ac1f-cebcf0e476d8" id="_40e097ae-03ca-464d-ac1f-cebcf0e476d8"></a>that Focus Group 7 on Rural Telecommunications has paid particular attention to the role of Micro-Finance Institutions (MFI) in promoting access to ICT services and application by supporting small entrepreneurs
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_52b8bce9-4ce2-4780-bb55-26d48baef287" id="_52b8bce9-4ce2-4780-bb55-26d48baef287"></a>the excellent results of the study period 2006-2010 which consolidate experiences world-wide on the successful provision of telecommunications/ICTs to rural and remote areas, based, inter alia, on information submitted to the case library and on e-Discussions on the issues identified by the Rapporteur Group;<span style="mso-bookmark:_Ref492644877"><a class="FootnoteRef" href="#_ftn1" epub:type="footnote" style="mso-footnote-id:ftn1" name="_ftnref1" title="" id="_ftnref1"><span class="MsoFootnoteReference"><span style="mso-special-character:footnote"></span></span></a></span>
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_2f97ae82-0912-4d4e-8328-426f2403c6fe" id="_2f97ae82-0912-4d4e-8328-426f2403c6fe"></a>that experiences all over the world, with emerging technologies deployed in rural and remote areas providing broadband, wired transmission media and wireless transmission media indicate rapid decrease of costs, increase of range and capacity, and that all these developments make connecting rural areas a feasible option;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_45834aee-4f62-4f03-8294-7d091766ce14" id="_45834aee-4f62-4f03-8294-7d091766ce14"></a>that satellite technologies, including satellite backhaul solutions, play a unique role in extending service delivery and coverage areas and Very Small Aperture Terminals (VSAT) technology has established itself as a versatile communication platform for rural and remote areas;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_9db071b3-41f6-4ec1-9539-b73f5f48087d" id="_9db071b3-41f6-4ec1-9539-b73f5f48087d"></a>that the deployment of IP based platforms serving wide areas can make a range of developmental services and applications such as education, health, agriculture etc., available to the rural population;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_73167853-482e-4b12-8d4f-6a7487ae071c" id="_73167853-482e-4b12-8d4f-6a7487ae071c"></a>that these developments make it possible that telecommunication/ICT services and applications can be provided by small and medium enterprises, local governments, non-governmental organizations in rural and remote areas with appropriate business models;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_42b0ef5e-0d43-42ad-8f8e-9fea5c38e407" id="_42b0ef5e-0d43-42ad-8f8e-9fea5c38e407"></a>that technical expertise and adoption capacity are important factors to plan, implement and operate such facilities;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_40849e56-7f42-4bde-a8bc-04cd0497c7b5" id="_40849e56-7f42-4bde-a8bc-04cd0497c7b5"></a>that in rural and remote areas of developing countries, low incomes, lack of literacy and computer literacy limit the number of people who can have internet access in their homes. These communities need public ICT facilities which can be used for communication, delivery of services and various capacity building activities. There is a role for small entrepreneurs, local governments, schools and post offices in this process;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_107f2634-7141-42ee-812c-1070bc516484" id="_107f2634-7141-42ee-812c-1070bc516484"></a>that provision of ICT services and applications by small entrepreneurs in rural and remote areas have the potential of creating employment. These ventures can be supported by financial institutions and receive support from various government schemes;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_b1034f3e-fc01-4660-a46b-45ff344d4511" id="_b1034f3e-fc01-4660-a46b-45ff344d4511"></a>that a well planned maintenance and operation programme in order to keep the infrastructure and associated equipment, including terminal equipment in good working condition is an essential aspect of the support structures in rural areas;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_219cf2eb-cada-4788-be85-401ebe12fd3b" id="_219cf2eb-cada-4788-be85-401ebe12fd3b"></a>the excellent collaboration between ITU/BDT and the Universal Postal Union in promoting the use of post offices as vehicles for provision of access to telecommunications/ICT services and applications in rural and remote areas;
-</p>
-<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpLast"><a name="_7d70be48-7965-47e6-9458-9f409bd8bbbf" id="_7d70be48-7965-47e6-9458-9f409bd8bbbf"></a>that energy supply is a basic bottleneck for the spread of telecommunications/ICTs in rural and remote areas and that innovative uses of solar power, mini-hydro power and windmill power sources, some times in combination are being successfully used in many countries to provide reliable energy sources for mobile base stations;
-</p>
-<p class="MsoNormal"><a name="_8bdf4c04-a014-248c-4be8-68db8f2514d6" id="_8bdf4c04-a014-248c-4be8-68db8f2514d6"></a><i>considering</i></p><p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpFirst"><a name="_b980f22a-c65e-44a8-b2ab-d5e6f22758e3" id="_b980f22a-c65e-44a8-b2ab-d5e6f22758e3"></a>that the provision of telecommunications, ICT services and applications can make significant contribution to the quality of life of the population living rural and remote areas;
-</p>
-<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpMiddle"><a name="_ff6a45dd-403d-4a35-bb31-447210c562d7" id="_ff6a45dd-403d-4a35-bb31-447210c562d7"></a>that stimulation of demand for telecommunications/ICTs through proactive government policies is a key to realizing their benefits;
-</p>
-<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpMiddle"><a name="_92bb4d39-c794-4257-99e6-724939ef579f" id="_92bb4d39-c794-4257-99e6-724939ef579f"></a>that the accumulation of experiences world-wide on community access institutions (telekiosks, multipurpose community telecentres, multi-media centres), points to the need for pro-active and supportive government policies to simulate demand of the services available;
-</p>
-<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpMiddle"><a name="_ce70b29b-cd35-4a55-bacb-11840408178b" id="_ce70b29b-cd35-4a55-bacb-11840408178b"></a>that the availability of information should be reinforced by upgradation of skills and provision of capital in order that information is properly utilized; and
-</p>
-<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpLast"><a name="_dfddc132-9da2-4d63-891f-c57acf7a4960" id="_dfddc132-9da2-4d63-891f-c57acf7a4960"></a>that access to telecommunications/ICTs for all will maximize social welfare, increase productivity, conserve resources and will contribute to safeguarding human rights.
-</p>
-<p class="MsoNormal"><a name="_40a62c65-9e99-d66d-0be1-7456a915196b" id="_40a62c65-9e99-d66d-0be1-7456a915196b"></a><i>recommends</i></p><p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpFirst"><a name="_3af6c6cc-a2d0-4093-9b4b-26d0d33267a6" id="_3af6c6cc-a2d0-4093-9b4b-26d0d33267a6"></a>that developing countries should include provision of telecommunications/ICTs in rural and remote areas in their national development plans;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_ac68213a-1c90-47e8-bb8d-b2f46861026d" id="_ac68213a-1c90-47e8-bb8d-b2f46861026d"></a>that in planning infrastructure development in rural and remote areas it is important to assess all available technologies in the market taking into consideration the regulatory environment, geographical conditions, climate, costs (capital expenditure and operational expenditure), maintainability, operability, sustainability, etc., based on the results of the site survey;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_5e114748-324a-4af4-bebd-5efddf416719" id="_5e114748-324a-4af4-bebd-5efddf416719"></a>that community access to ICT facilities and services is particularly important in rural and remote areas. Business models which can achieve financial and operational sustainability can be operated by local entrepreneurs supported by a variety of initiatives. These facilities, where necessary, should also be supported by Universal Service Funds as an essential component of rural communications;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_f7d38845-2ea5-4597-94c2-201390e9e14e" id="_f7d38845-2ea5-4597-94c2-201390e9e14e"></a>that post offices have a communicative presence in the lives of the population in rural areas and their use as vehicles for provision of telecommunication/ICTs should be encouraged;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_daccc476-563d-4275-80d0-af5c07cdd357" id="_daccc476-563d-4275-80d0-af5c07cdd357"></a>that local institutions, such as village committees should be involved in planning and implementing ICT facilities;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_8acaeac1-65de-4394-a86a-087feb2584dd" id="_8acaeac1-65de-4394-a86a-087feb2584dd"></a>that enhancing local technical expertise and adoption are important for successful implementation of ICT services and applications in rural and remote areas. Attention should be paid to training, exchange of information, creation of shared maintenance facilities in order to achieve sustainability and viability;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_d4bf552a-dc0c-4357-ae65-3851fed042ac" id="_d4bf552a-dc0c-4357-ae65-3851fed042ac"></a>that migration to broadband technology should be encouraged;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_ec607082-83ab-432f-94ea-5e7938100f89" id="_ec607082-83ab-432f-94ea-5e7938100f89"></a>that keeping even technologically obsolete equipment in good working condition through effective preventive maintenance programme is an essential part of making telecommunications in rural areas viable and should be encouraged, while guarding against making developing countries a dumping ground for obsolete technologies;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_f7f1d01d-c256-4cf4-bb6f-1ec9190f434b" id="_f7f1d01d-c256-4cf4-bb6f-1ec9190f434b"></a>that it is important to take steps to ensure continued reliability of equipment in rural environments such as developing an appropriate maintenance and operation strategy and encouraging training for technical staff;
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_4ad3c67d-7292-40ad-86a8-19986ff10e84" id="_4ad3c67d-7292-40ad-86a8-19986ff10e84"></a>that given that lack of energy supply is a major bottleneck in the provision of telecommunications/ICTs in rural and remote areas, renewable energy sources should be used whenever feasible taking into consideration the environmental problems; and
-</p>
-<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpLast"><a name="_08a26171-1eb2-462e-9e02-03bffa776cb5" id="_08a26171-1eb2-462e-9e02-03bffa776cb5"></a>that partnership among governments, industry, local agencies and international organizations is desirable in the development of low cost ICT infrastructure, including renewable energy sources and terminals for the provision of telecommunications/ICTs in rural and remote areas and should be pursued.
+<p style="mso-list:l2 level1 lfo1;" class="MsoListParagraphCxSpLast"><a name="_5f4bc657-97be-4f51-adcb-98ad6a8e8ff4" id="_5f4bc657-97be-4f51-adcb-98ad6a8e8ff4"></a>that the Focus Group 7 addressed technological options, service potential and financing mechanisms for the provision of telecommunications/ICTs in rural and remote areas;
 </p>
 </div>
+        <p class="MsoNormal">
+          <a name="_999d6636-befc-c311-3dc0-0c8c506c8445" id="_999d6636-befc-c311-3dc0-0c8c506c8445"></a>
+          <i>noting</i>
+        </p>
+        <div class="ol_wrap"><p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpFirst"><a name="_65635360-7ad9-42a9-b6b0-4216fc3d091c" id="_65635360-7ad9-42a9-b6b0-4216fc3d091c"></a>that Focus Group 7 on Rural Telecommunications has paid particular attention to the role of Micro-Finance Institutions (MFI) in promoting access to ICT services and application by supporting small entrepreneurs
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_597b5f11-4817-49c1-9bee-1fb620b41811" id="_597b5f11-4817-49c1-9bee-1fb620b41811"></a>the excellent results of the study period 2006-2010 which consolidate experiences world-wide on the successful provision of telecommunications/ICTs to rural and remote areas, based, inter alia, on information submitted to the case library and on e-Discussions on the issues identified by the Rapporteur Group;<span style="mso-bookmark:_Ref665827272"><a class="FootnoteRef" href="#_ftn1" epub:type="footnote" style="mso-footnote-id:ftn1" name="_ftnref1" title="" id="_ftnref1"><span class="MsoFootnoteReference"><span style="mso-special-character:footnote"></span></span></a></span>
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_a622d4a0-02c3-4065-914d-3cf983d02529" id="_a622d4a0-02c3-4065-914d-3cf983d02529"></a>that experiences all over the world, with emerging technologies deployed in rural and remote areas providing broadband, wired transmission media and wireless transmission media indicate rapid decrease of costs, increase of range and capacity, and that all these developments make connecting rural areas a feasible option;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_97ab566b-9c26-400f-bb4b-2b5f12da6cda" id="_97ab566b-9c26-400f-bb4b-2b5f12da6cda"></a>that satellite technologies, including satellite backhaul solutions, play a unique role in extending service delivery and coverage areas and Very Small Aperture Terminals (VSAT) technology has established itself as a versatile communication platform for rural and remote areas;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_20708ead-e27a-4fb0-8d91-1a7349e767b2" id="_20708ead-e27a-4fb0-8d91-1a7349e767b2"></a>that the deployment of IP based platforms serving wide areas can make a range of developmental services and applications such as education, health, agriculture etc., available to the rural population;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_067275b2-3cd6-47c7-b30e-15516ed015e0" id="_067275b2-3cd6-47c7-b30e-15516ed015e0"></a>that these developments make it possible that telecommunication/ICT services and applications can be provided by small and medium enterprises, local governments, non-governmental organizations in rural and remote areas with appropriate business models;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_65c210ee-cb72-4341-a56f-296034642673" id="_65c210ee-cb72-4341-a56f-296034642673"></a>that technical expertise and adoption capacity are important factors to plan, implement and operate such facilities;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_5fc2e88a-3d30-4a62-b60a-2e6079a88c0e" id="_5fc2e88a-3d30-4a62-b60a-2e6079a88c0e"></a>that in rural and remote areas of developing countries, low incomes, lack of literacy and computer literacy limit the number of people who can have internet access in their homes. These communities need public ICT facilities which can be used for communication, delivery of services and various capacity building activities. There is a role for small entrepreneurs, local governments, schools and post offices in this process;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_311ef3ed-88ef-4247-8cea-73a464cce7eb" id="_311ef3ed-88ef-4247-8cea-73a464cce7eb"></a>that provision of ICT services and applications by small entrepreneurs in rural and remote areas have the potential of creating employment. These ventures can be supported by financial institutions and receive support from various government schemes;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_e5d5fb88-d5fb-4b6e-aec0-3aea98001c3f" id="_e5d5fb88-d5fb-4b6e-aec0-3aea98001c3f"></a>that a well planned maintenance and operation programme in order to keep the infrastructure and associated equipment, including terminal equipment in good working condition is an essential aspect of the support structures in rural areas;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpMiddle"><a name="_91090099-30c9-469d-adf0-513fd6a0759d" id="_91090099-30c9-469d-adf0-513fd6a0759d"></a>the excellent collaboration between ITU/BDT and the Universal Postal Union in promoting the use of post offices as vehicles for provision of access to telecommunications/ICT services and applications in rural and remote areas;
+</p>
+<p style="mso-list:l2 level1 lfo2;" class="MsoListParagraphCxSpLast"><a name="_47cead60-41ac-4c68-9926-f24bb5f0f681" id="_47cead60-41ac-4c68-9926-f24bb5f0f681"></a>that energy supply is a basic bottleneck for the spread of telecommunications/ICTs in rural and remote areas and that innovative uses of solar power, mini-hydro power and windmill power sources, some times in combination are being successfully used in many countries to provide reliable energy sources for mobile base stations;
+</p>
+</div>
+        <p class="MsoNormal">
+          <a name="_8bdf4c04-a014-248c-4be8-68db8f2514d6" id="_8bdf4c04-a014-248c-4be8-68db8f2514d6"></a>
+          <i>considering</i>
+        </p>
+        <div class="ol_wrap"><p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpFirst"><a name="_cddcbfe3-ebb5-4c62-a4d3-60aaec8a114c" id="_cddcbfe3-ebb5-4c62-a4d3-60aaec8a114c"></a>that the provision of telecommunications, ICT services and applications can make significant contribution to the quality of life of the population living rural and remote areas;
+</p>
+<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpMiddle"><a name="_93975cb2-2a61-4dde-83d2-0cf9fab04bf7" id="_93975cb2-2a61-4dde-83d2-0cf9fab04bf7"></a>that stimulation of demand for telecommunications/ICTs through proactive government policies is a key to realizing their benefits;
+</p>
+<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpMiddle"><a name="_e64ac887-f45b-4f6a-ab48-85375a73d2a4" id="_e64ac887-f45b-4f6a-ab48-85375a73d2a4"></a>that the accumulation of experiences world-wide on community access institutions (telekiosks, multipurpose community telecentres, multi-media centres), points to the need for pro-active and supportive government policies to simulate demand of the services available;
+</p>
+<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpMiddle"><a name="_94aabaae-ff23-41ed-b3a0-adc61df7b5c7" id="_94aabaae-ff23-41ed-b3a0-adc61df7b5c7"></a>that the availability of information should be reinforced by upgradation of skills and provision of capital in order that information is properly utilized; and
+</p>
+<p style="mso-list:l2 level1 lfo3;" class="MsoListParagraphCxSpLast"><a name="_3ce4b9b6-09d7-4575-b3d5-48b9e3f510ad" id="_3ce4b9b6-09d7-4575-b3d5-48b9e3f510ad"></a>that access to telecommunications/ICTs for all will maximize social welfare, increase productivity, conserve resources and will contribute to safeguarding human rights.
+</p>
+</div>
+        <p class="MsoNormal">
+          <a name="_40a62c65-9e99-d66d-0be1-7456a915196b" id="_40a62c65-9e99-d66d-0be1-7456a915196b"></a>
+          <i>recommends</i>
+        </p>
+        <div class="ol_wrap"><p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpFirst"><a name="_9e9e4a70-0781-4c96-9497-7471d9d4ce9e" id="_9e9e4a70-0781-4c96-9497-7471d9d4ce9e"></a>that developing countries should include provision of telecommunications/ICTs in rural and remote areas in their national development plans;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_4091e29b-669c-4d08-a2d1-2141d2ae6457" id="_4091e29b-669c-4d08-a2d1-2141d2ae6457"></a>that in planning infrastructure development in rural and remote areas it is important to assess all available technologies in the market taking into consideration the regulatory environment, geographical conditions, climate, costs (capital expenditure and operational expenditure), maintainability, operability, sustainability, etc., based on the results of the site survey;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_633dabdf-53b3-4d90-a859-5dc0582a12cc" id="_633dabdf-53b3-4d90-a859-5dc0582a12cc"></a>that community access to ICT facilities and services is particularly important in rural and remote areas. Business models which can achieve financial and operational sustainability can be operated by local entrepreneurs supported by a variety of initiatives. These facilities, where necessary, should also be supported by Universal Service Funds as an essential component of rural communications;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_75717f4b-7bd6-436f-915f-c9dcb5148160" id="_75717f4b-7bd6-436f-915f-c9dcb5148160"></a>that post offices have a communicative presence in the lives of the population in rural areas and their use as vehicles for provision of telecommunication/ICTs should be encouraged;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_8c117eda-f7e5-4db7-b209-151bee148ffe" id="_8c117eda-f7e5-4db7-b209-151bee148ffe"></a>that local institutions, such as village committees should be involved in planning and implementing ICT facilities;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_4b5b9c24-911f-4146-a588-d0ee6254cc72" id="_4b5b9c24-911f-4146-a588-d0ee6254cc72"></a>that enhancing local technical expertise and adoption are important for successful implementation of ICT services and applications in rural and remote areas. Attention should be paid to training, exchange of information, creation of shared maintenance facilities in order to achieve sustainability and viability;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_79492deb-ca9c-4bb7-8612-b97922dd2144" id="_79492deb-ca9c-4bb7-8612-b97922dd2144"></a>that migration to broadband technology should be encouraged;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_76f8555c-8242-4c5d-b6c1-9f3147c8136b" id="_76f8555c-8242-4c5d-b6c1-9f3147c8136b"></a>that keeping even technologically obsolete equipment in good working condition through effective preventive maintenance programme is an essential part of making telecommunications in rural areas viable and should be encouraged, while guarding against making developing countries a dumping ground for obsolete technologies;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_34e7ad6d-4886-4bc9-bf96-4b36fb9f2bc8" id="_34e7ad6d-4886-4bc9-bf96-4b36fb9f2bc8"></a>that it is important to take steps to ensure continued reliability of equipment in rural environments such as developing an appropriate maintenance and operation strategy and encouraging training for technical staff;
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpMiddle"><a name="_2c836cd2-ae28-4448-8e18-e818edbf3f30" id="_2c836cd2-ae28-4448-8e18-e818edbf3f30"></a>that given that lack of energy supply is a major bottleneck in the provision of telecommunications/ICTs in rural and remote areas, renewable energy sources should be used whenever feasible taking into consideration the environmental problems; and
+</p>
+<p style="mso-list:l2 level1 lfo4;" class="MsoListParagraphCxSpLast"><a name="_e9b7dee1-a1c7-4115-a50f-9356011326de" id="_e9b7dee1-a1c7-4115-a50f-9356011326de"></a>that partnership among governments, industry, local agencies and international organizations is desirable in the development of low cost ICT infrastructure, including renewable energy sources and terminals for the provision of telecommunications/ICTs in rural and remote areas and should be pursued.
+</p>
+</div>
+      </div>
     </div>
     <div style="mso-element:footnote-list"><div style="mso-element:footnote" id="ftn1">
   <p class="MsoFootnoteText"><a name="_d472fd81-d454-5f02-d3ee-4dae87924899" id="_d472fd81-d454-5f02-d3ee-4dae87924899"></a><a style="mso-footnote-id:ftn1" href="#_ftn1" name="_ftnref1" title="" id="_ftnref1"><span class="MsoFootnoteReference"><span style="mso-special-character:footnote"></span></span></a><span style="mso-tab-count:1"></span>The case library on Question 10-2/2 is available at <a href="http://www.itu.int/ITU-D/study_groups/SGP_2006-2010/events/Case_Library/index.asp" class="url">http://www.itu.int/ITU-D/study_groups/SGP_2006-2010/events/Case_Library/index.asp</a>. e-Discussion web page is available at <a href="http://www.itu.int/ituweblogs/ITU-D-SG2-Q10/" class="url">http://www.itu.int/ituweblogs/ITU-D-SG2-Q10/</a></p>
@@ -3542,7 +3612,7 @@ table.biblio td {
 </html>
 
 
-------=_NextPart_b774ded4.25fd.4f6f
+------=_NextPart_bfc7e47a.4a94.45cb
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
@@ -3551,12 +3621,12 @@ Content-Type: application/xml
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
 ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1pdHUvbW4tc2FtcGxl
 cy1pdHUvX3NpdGUvZG9jdW1lbnRzL0QtUkVDLUQuMTktMjAxMDAzL2VuLmh0bSIvPiAgPG86Rmls
-ZSBIUmVmPSJiYWRmM2EyNS1hNjhjLTQ1ODQtYWM4MS04NGE1NDYyOGI3YmIuc3ZnIi8+CiAgPG86
-RmlsZSBIUmVmPSJjZGZlZmI1ZS1kODEyLTRkMDAtODBiNy04ODA2MmIwMDQ4YTQucG5nIi8+CiAg
+ZSBIUmVmPSI5NWRhZjk1NS1lOWM3LTQ2NjctYTkxNC02ZDU5NTgzMDYwODcuc3ZnIi8+CiAgPG86
+RmlsZSBIUmVmPSJjMGI2OWQ2My1mNzZjLTRkMzItYmIwOC1iZjkyNTBhNWYyNGQucG5nIi8+CiAg
 PG86RmlsZSBIUmVmPSJmaWxlbGlzdC54bWwiLz4KICA8bzpGaWxlIEhSZWY9ImhlYWRlci5odG1s
 Ii8+CjwveG1sPgo=
 
-------=_NextPart_b774ded4.25fd.4f6f
+------=_NextPart_bfc7e47a.4a94.45cb
 Content-ID: <header.html>
 Content-Disposition: inline; filename="header.html"
 Content-Transfer-Encoding: base64
@@ -3611,288 +3681,167 @@ LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYg
 c3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYxPg0KDQo8cCBjbGFzcz1Nc29Gb290ZXIg
 c3R5bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWln
 aHQtcnVsZToNCmV4YWN0bHknPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVt
-ZW50OmhlYWRlcicgaWQ9ZWgyPg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPWxlZnQgc3R5bGU9
-J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVs
-ZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBz
-dHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1laDJsPg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFu
-ZHNjYXBlIGFsaWduPWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4w
-cHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bh
-bj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1oMj4N
-CjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDts
-aW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBs
-YW5nPUVOLUdCPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6
-aGVhZGVyJyBpZD1oMmw+DQo8cCBjbGFzcz1Nc29IZWFkZXJMYW5kc2NhcGUgYWxpZ249cmlnaHQg
-c3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVp
-Z2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KPC9kaXY+DQoN
-CjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYyPg0KPHAgY2xhc3M9Rm9vdGVy
-UVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5
-Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2Vp
-Z2h0Og0Kbm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bh
-bj48L3NwYW4+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNI
-O2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwv
-c3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKg0KTUVS
-R0VGT1JNQVQgPC9zcGFuPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1h
-bCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3Nw
-YW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdl
-OkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbDttc28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48IS0t
+ZW50OmhlYWRlcicgaWQ9ZWgyPg0KDQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249bGVmdCBzdHls
+ZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1y
+dWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxk
+aXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgybD4NCg0KPHAgY2xhc3M9TXNvSGVh
+ZGVyTGFuZHNjYXBlIGFsaWduPWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdo
+dDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdC
+Pjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXIn
+IGlkPWgyPg0KDQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxp
+Z246cmlnaHQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3Rs
+eSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0n
+bXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1oMmw+DQoNCjxwIGNsYXNzPU1zb0hlYWRlckxhbmRzY2Fw
+ZSBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7
+DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48
+L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWZoMj4N
+Cg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0
+O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFu
+IGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVt
+ZW50OmhlYWRlcicgaWQ9ZmgybD4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBlIGFsaWdu
+PXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1s
+aW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0K
+PC9kaXY+DQoNCg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMj4NCjxw
+IGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0
+LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0
+eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
+LWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1s
+YW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNl
+cnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8
+L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250
+LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9y
+Jz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28t
+YW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+
+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0n
+Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48
+L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFu
+Zz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28t
+dGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1E
+IEQuMTktRSAgICgwMS8yMDE5KTxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2
+IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMmw+DQo8cCBjbGFzcz1Gb290ZXJRUCBz
+dHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwh
+LS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6
+DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwv
+c3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9u
+dC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFu
+PlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZP
+Uk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48
+c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48
+IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlIt
+Q0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYg
+c3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1h
+bCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtl
+bmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21z
+by1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+UmVjLiBJVFUtRCBELjE5LUUgICAoMDEvMjAx
+OSk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3Rlcicg
+aWQ9ZjI+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3Bh
+biBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjInPsKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+UmVjLiBJVFUtRCBELjE5LUUgICAoMDEvMjAxOSkN
+CiAgPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+IDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBz
+dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
+YmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9z
+cGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJh
+dG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdm
+b250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4yOTwvc3Bh
+bj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0n
+Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48
+L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
+aWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxl
+PSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYybD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBl
+IHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9
+J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bh
+bj5SZWMuIElUVS1EIEQuMTktRSAgICgwMS8yMDE5KQ0KICA8c3BhbiBzdHlsZT0nbXNvLXRhYi1j
+b3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1
+cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwn
+PjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0KUEFHRTxzcGFu
+IHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4N
+CnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5k
+aWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4g
+c3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRG
+aWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFu
+IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+
+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48L286cD48
+L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9
+ZWYzPg0KPHAgY2xhc3M9Rm9vdGVyUVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGlu
+ZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuIGxhbmc9
+RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Og0Kbm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1l
+bnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48L3NwYW4+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21z
+by1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdt
+c28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5
+ZXMnPsKgIDwvc3Bhbj5cKg0KTUVSR0VGT1JNQVQgPC9zcGFuPjxzcGFuIGxhbmc9RU4tR0Igc3R5
+bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1z
+ZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5
+bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0Om5vcm1hbDttc28tbm8tcHJv
+b2Y6eWVzJz5paTwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdC
+IHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVs
+ZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCiAgICAgICAgICAgICAgICAg
+ICAgICBsYW5nPUZSLUNIIHN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSCc+PHNwYW4gc3R5
+bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJl
+Yy4gSVRVLUQgRC4xOS1FICAgKDAxLzIwMTkpPC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0
+eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmM2w+DQo8cCBjbGFzcz1Gb290ZXJRUExhbmRz
+Y2FwZSBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0
+bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13
+ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9z
+cGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlIt
+Q0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKg
+PC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpN
+RVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9y
+bWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwv
+c3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3Vh
+Z2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwh
+LS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0
+Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bh
+bj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5
+bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDox
+Jz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+UmVjLiBJVFUtRCBELjE5LUUgICAo
+MDEvMjAxOSk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZv
+b3RlcicgaWQ9ZjM+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0
+Jz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjInPsKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+UmVjLiBJVFUtRCBELjE5LUUgICAoMDEv
+MjAxOSkNCiAgPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6
+ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+
+wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
+c2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0
+eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4y
+OTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBz
+dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
+ZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdm
+b250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2
+IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFu
+ZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4g
+c3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+IDwvc3Bhbj5SZWMuIElUVS1EIEQuMTktRSAgICgwMS8yMDE5KQ0KICA8c3BhbiBzdHlsZT0nbXNv
+LXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0t
 W2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpu
-b3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+
-PCFbZW5kaWZdLS0+PHNwYW4NCiAgICAgICAgICAgICAgICAgICAgICBsYW5nPUZSLUNIIHN0eWxl
-PSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSCc+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJlYy4gSVRVLUQgRC4xOS1FICAgKDAx
-LzIwMTkpPG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1l
-bGVtZW50OmZvb3RlcicgaWQ9ZWYybD4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhl
-aWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0
-RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNw
-YW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxh
-bmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3Jt
-YWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0
-eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48
-c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0n
-bXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxz
-cGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdo
-dDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRz
-XT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHls
-ZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFu
-DQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3Vh
-Z2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1EIEQuMTktRSAgICgwMS8yMDE5KTwvc3Bhbj48L3A+
-DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMj4NCjxwIGNs
-YXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+
-PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1EIEQuMTktRSAgICgwMS8yMDE5KQ0KICA8c3BhbiBzdHls
-ZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bh
-bj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
-aWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFu
-Pg0KUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VG
-T1JNQVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48
-L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5v
-cm1hbCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0t
-W2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpu
-b3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+
-PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+
-PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50
-OmZvb3RlcicgaWQ9ZjJsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUgc3R5bGU9J2xpbmUt
-aGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3Vu
-dDoyJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJlYy4gSVRVLUQg
-RC4xOS1FICAgKDAxLzIwMTkpDQogIDxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
-PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9
-J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1z
-cGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1l
-bGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBs
-YW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLW5v
-LXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4N
-Cmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1l
-bGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1F
-Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8
-L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjM+DQo8cCBjbGFz
-cz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxl
-OmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0n
-Zm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdp
-bic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3Vh
-Z2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5
-ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFu
-PlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWln
-aHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9z
-cGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2kt
-bGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1wcm9vZjp5ZXMnPmlpPC9z
-cGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQt
-d2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFu
-Pjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAgICAgICAgIGxhbmc9RlIt
-Q0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBzdHlsZT0nbXNvLXRhYi1j
-b3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+UmVjLiBJVFUtRCBELjE5
-LUUgICAoMDEvMjAxOSk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVt
-ZW50OmZvb3RlcicgaWQ9ZWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSds
-aW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBz
-dXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1h
-bCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxz
-cGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdo
-dDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxz
-cGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwv
-c3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpz
-dHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlm
-XS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250
-LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0
-RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bh
-biBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0t
-PjxzcGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2kt
-bGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1EIEQuMTktRSAgICgwMS8yMDE5KTwvc3Bh
-bj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMz4N
-CjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9
-RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1EIEQuMTktRSAgICgwMS8yMDE5KQ0KICA8c3Bh
-biBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFu
-Pjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdm
-b250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+
-PC9zcGFuPg0KUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCog
-TUVSR0VGT1JNQVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwv
-c3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2Vp
-Z2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bh
-bj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
-aWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48
-L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5v
-cm1hbCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1l
-bGVtZW50OmZvb3RlcicgaWQ9ZjNsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUgc3R5bGU9
-J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRh
-Yi1jb3VudDoyJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJlYy4g
-SVRVLUQgRC4xOS1FICAgKDAxLzIwMTkpDQogIDxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEn
-PsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZp
-ZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4g
-c3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9
-J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bhbg0Kc3R5bGU9
-J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48
-c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0n
-bXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
-PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9
-J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0K
-bGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48
-L3A+DQo8L2Rpdj4NCg0KPC9ib2R5Pg0KDQo8L2h0bWw+DQo=
+b3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0KUEFH
+RTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCogTUVSR0VGT1JNQVQg
+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+
+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+
+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI5PC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1
+cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwn
+PjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5k
+aWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48
+L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCg0KDQo8L2JvZHk+DQoNCjwvaHRtbD4NCg==
 
-------=_NextPart_b774ded4.25fd.4f6f
-Content-ID: <badf3a25-a68c-4584-ac81-84a54628b7bb.svg>
-Content-Disposition: inline; filename="badf3a25-a68c-4584-ac81-84a54628b7bb.svg"
-Content-Transfer-Encoding: base64
-Content-Type: image/svg+xml
-
-PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53
-My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzIiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMjcy
-IDMwMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxNmEwZGI7fTwvc3R5bGU+PC9kZWZzPjx0
-aXRsZT5JVFU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjk1MTc2LDEyNC4wNDMz
-NGExLjM5OTEzLDEuMzk5MTMsMCwwLDEsMS40MDA2OCwxLjQwMDk0djg0LjgwNzM4YTEuNDA0LDEu
-NDA0LDAsMCwxLTEuNDAwNjgsMS40MDY2NkgyOC41NjI2MWExLjQwNzY0LDEuNDA3NjQsMCwwLDEt
-MS40MDA2OC0xLjQwNjY2VjEyNS40NDQyOGExLjQwMjcyLDEuNDAyNzIsMCwwLDEsMS40MDA2OC0x
-LjQwMDk0SDUzLjk1MTc2Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ1LjY3MTA1LDEyNC4w
-NDMzNGExLjM5OTE0LDEuMzk5MTQsMCwwLDEsMS40MDA2OCwxLjQwMDk0VjE0Ni4zMjZhMS40MDQs
-MS40MDQsMCwwLDEtMS40MDA2OCwxLjQwNjY4SDEyMy41MDg2N2ExLjQwNCwxLjQwNCwwLDAsMC0x
-LjQwNjYzLDEuNDAwOTJ2NjEuMTE4YTEuNDA0MSwxLjQwNDEsMCwwLDEtMS40MDEsMS40MDY2Nkg5
-NS4zMTIyMWExLjQwNCwxLjQwNCwwLDAsMS0xLjQwMDY4LTEuNDA2NjZ2LTYxLjExOGExLjQwMjc3
-LDEuNDAyNzcsMCwwLDAtMS40MDEtMS40MDA5Mkg3MC44NTk0MWExLjQwODksMS40MDg5LDAsMCwx
-LTEuNDA2NjQtMS40MDY2OFYxMjUuNDQ0MjhhMS40MDQsMS40MDQsMCwwLDEsMS40MDY2NC0xLjQw
-MDk0aDc0LjgxMTY0Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjQ0LjQ2OTQyLDEyNC4wNDMz
-NGExLjQwNDIyLDEuNDA0MjIsMCwwLDEsMS40MDY2MywxLjQwMDk0djQzLjIyMTg1YzAsMjguNjI3
-LTE1LjAwMjcsNDMuNzYxNTQtNDMuMzgyNzksNDMuNzYxNTQtMjcuNDE1NywwLTQxLjMxNTU5LTE0
-LjkzOTMzLTQxLjMxNTU5LTQ0LjQwNDZWMTI1LjQ0NDI4YTEuMzk5MjEsMS4zOTkyMSwwLDAsMSwx
-LjQwMS0xLjQwMDk0aDI1LjM4Mjg0YTEuNDAwNDMsMS40MDA0MywwLDAsMSwxLjQwNjY0LDEuNDAw
-OTR2NDIuNDQxYzAsOS4zMzU2NCwyLjQ1NzU4LDIwLjQ2MjYzLDE0LjE1ODUsMjAuNDYyNjMsOS41
-MjUxLDAsMTQuMTUyOS02LjY5NDU3LDE0LjE1MjktMjAuNDYyNjN2LTQyLjQ0MWExLjQwNCwxLjQw
-NCwwLDAsMSwxLjQwNjY0LTEuNDAwOTRoMjUuMzgzMiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0i
-TTI3MS4xMjAxMiwyOTljLTE2Ljg0NTYyLTguMzA3OTItMzUuODA0LTE3Ljc4NzEtNTMuMjg2Ny0y
-OC4yMDc4OXE0LjQ2OTYtMy40NjIwNyw4LjYzNS03LjI4MDE4QTEzMy4wMzkxNSwxMzMuMDM5MTUs
-MCwwLDAsMjQ3LjI4MTI4LDg5LjI2OTVhMTM0LjQ3NDU3LDEzNC40NzQ1NywwLDAsMC0xODMuMzM2
-OTUtMzguOTFDNTMuMDEyNiwzNS4xMTU4OCw0Mi4wMzUsMTguNTgwNDMsMzAuNDMxNDYsMSwzNC4w
-ODMsOC40MTIyNSw0NC45MTEzMSwzMS4yNjMzNiw1Ny42MDU3Miw1NC42MDgyMkExMzUuMDM4OSwx
-MzUuMDM4OSwwLDAsMCwuODc5ODgsMTY0LjUxMTYxLDEzMi4zOTY3MywxMzIuMzk2NzMsMCwwLDAs
-MTQuMTk0NTQsMjIyLjU1MjIsMTM0LjUxNDI0LDEzNC41MTQyNCwwLDAsMCwyMDkuOTc4ODQsMjc2
-LjQzNmMyMC40ODU1Niw4LjQ3NDQyLDQxLjA3NDQ5LDE1LjU1MzY3LDYxLjE0MTI4LDIyLjU2NE0x
-MjIuOTMyNTYsMjg3LjMxMDM1YTEyNC40MjI5LDEyNC40MjI5LDAsMCwxLTc5LjEyOTMxLTM5LjYz
-MzQyLDMzLjYwMjI5LDMzLjYwMjI5LDAsMCwxLTUuNTU3NS0xNS45NjcwNiwxNzUuNjM4OTMsMTc1
-LjYzODkzLDAsMCwwLDQ2LjIzNiwzMS42Mjk4LDE4Ny4wMDE0OCwxODcuMDAxNDgsMCwwLDAsNTku
-Nzk3MzgsMTcuNDQyNjFjLTYuOTc1Nyw0Ljg3NDUzLTE0LjE5Mjg1LDcuMTMwOTMtMjEuMzQ2NTcs
-Ni41MjgwN00zNS4yODg4LDIyMC4zNjQ3MmMtLjEyMDU1LDEuMjQwMTYtLjE5NTE5LDIuNDUxNi0u
-MjQ3MDUsMy42NTE1Ny0xLjExMzY4LTEuMjExNDUtMi4yMTA1My0yLjQyMjkxLTMuMjU1MTctMy42
-NTE1N0gyNy43OTAyNmMyLjIzMzY1LDIuNzQ0NDEsNC42NTY1NCw1LjQ0ODY1LDcuMjI4NzEsOC4x
-MDdhNDUuNzc1NDYsNDUuNzc1NDYsMCwwLDAsMS41MjcxOCwxMC41NTI4NUExMjIuNjg4OTEsMTIy
-LjY4ODkxLDAsMCwxLDMxLjkxMjc0LDk2LjQ5MjNhNjcuMDQyODMsNjcuMDQyODMsMCwwLDAtMS45
-MTc1NywxOC44MjYzMUgzMi45OThhNjAuMDE2NDEsNjAuMDE2NDEsMCwwLDEsNC45MzE2My0yNy4w
-OTk3OUExMjQuOTczMywxMjQuOTczMywwLDAsMSw1NC4zOTA1LDcxLjExNXE0LjcwMjQ1LTIuNjQz
-OTUsOS42NTE2LTQuOTI2MmM3LjMzNzcsMTIuODc4MTYsMTQuOTc5NTcsMjUuMTMwNDQsMjIuMDA3
-MTQsMzQuMTg0NzVhMTQ4LjM2Mzc5LDE0OC4zNjM3OSwwLDAsMS0yMy43MTIzNC0uNDkzNzVsMS4y
-ODYwOS4zNjE3MWMtLjQwNzU2LS4wMzQ0NS0uODA5NS0uMDc0NjQtMS4yMjMtLjExNDgzLDIuNTAz
-MTMsNS4yMDc1LDUuMjQyMTEsMTAuMjY1NzUsOC4xNDcxOSwxNS4xOTJoNTEuMTc0cS00LjAxMzMy
-LTMuMjgxMjctNy45MDA0OS02LjgwMzY2QTIxNC44Mzc1NywyMTQuODM3NTcsMCwwLDEsMTUwLjQ1
-NjksODQuMzc3NzhhNTMuMzQ5NDUsNTMuMzQ5NDUsMCwwLDAsMTUuMzMsMTEuNzI0MSw1NS44Njg3
-Myw1NS44Njg3MywwLDAsMCwyMy42OTQ4Miw2LjQ2NDljLjkwMTY2LDQuMTM5NjEsMS42NzY4MSw4
-LjM5OTc5LDIuMzE5ODYsMTIuNzUxODNoMy4wNTQzNnEtLjk0NzIyLTYuNTM2NjctMi4yOTA3Ny0x
-Mi43NzQ4MWM3LjY0NzQ4LS4zMjE1MiwxNC4xNjQxMS0yLjc3MzEyLDE4LjA3NDIzLTcuMjUxNDZh
-MTM0LjA3MTM5LDEzNC4wNzEzOSwwLDAsMSwxNy4wMjMyOSwyMC4wMjYyN2gzLjY0NTlBMTM2Ljk3
-NzQ5LDEzNi45Nzc0OSwwLDAsMCwyMTIuNDE5MjUsOTIuODEyYTE2Ljc5MTg0LDE2Ljc5MTg0LDAs
-MCwwLDEuMzY2MzMtMTIuOTM1NTIsMjguNzQ0MzMsMjguNzQ0MzMsMCwwLDAtNC4zMTc2Ny04Ljk1
-Njc0LDMwLjc1OTkyLDMwLjc1OTkyLDAsMCwxLDE0Ljk2OCw3LjAyNzYxLDEyMi43NzIsMTIyLjc3
-MiwwLDAsMSwyNy4zOTI1OCwxMzEuMDcyMmMtMTAuNTI0MTgsMjEuODkyMjUtMzUuOTg3NjIsMzMu
-NzgyODUtNjcuMjg0MzYsMzQuNjU1NTYsMTMuMjE2ODktMy4zNDE1MiwyMy43NDY2OC03LjkyMzIz
-LDM2LjIyODcyLTE1LjgyOTI2LTQuNjY3NzYtMi4xNDE1NS05LjM1MjY4LTQuNDg0MDgtMTQuMDM4
-LTYuOTg3MzctMS40NDY1OC4wNzQ2NC0yLjkxMDY5LjEyMDU3LTQuNDIwNy4xMjA1Ny0yNi4wNzIx
-NSwwLTQyLjMwOTA3LTExLjQ4My00Ny41OTExMy0zNC4xODQ3Ni04LjE4NzQ5LTYuMjc1NDUtMTYu
-MTg1NDEtMTIuODE1LTIzLjkxOTA5LTE5LjQ4MDg1VjE4Ni4zMTJjMTAuOTU0ODYsOS45Nzg3LDIx
-Ljg5MjE5LDE5LjE0MjExLDMyLjEwNjIzLDI3LjU4NzgtNy44NTk4NCw1LjIzNjI1LTMzLjMwNjEx
-LDEyLjk2NDI4LTM4LjI5LDEzLjgzN3E2LjQyNSw1LjE0MTQ5LDEzLjAwNDU0LDkuNzgzNDdhMTkz
-LjE1NzMyLDE5My4xNTczMiwwLDAsMS0zMS40MjI5LTExLjgzODkzcS0xLjUwNzU1LS43MjM0Mi0y
-Ljk5NzI0LTEuNDY5ODJjLS4xNDMzMy0uMDY4OTEtLjI4MTQtLjEzNzc5LS40MTkxMi0uMjA2Njlx
-LTIuNzkwMTQtMS40MDM4MS01LjUwNi0yLjg3NjQ4YTE0Mi43NDkyMiwxNDIuNzQ5MjIsMCwwLDEt
-MzMuMjQ5LTI0LjYzMXY0LjIxNDI1cTQuNDM1NDEsNC4yOTc1LDkuNDEwMTUsOC4yOTA3YTE2MS4z
-Njc0NCwxNjEuMzY3NDQsMCwwLDAsMzMuNzcxNDksMjAuNDc0MSwxOTMuODc3NzYsMTkzLjg3Nzc2
-LDAsMCwwLDM3LjU5NTQsMTMuMDA0NDVxMTAuNDgwOSw2Ljk3NTkxLDIxLjIyNiwxMi45NDEzYy0u
-MDgwMjUuMTQzNTUtLjE2NjQ2LjI5MjgxLS4yNTI2Ny40NDIxLTUuNTI4NzYsOS4zNzU4My0xMS41
-NDA0MiwxNi43ODIzMy0xNy43OTI4MywyMi4wNTg3NS0xOS43Nzk0NC0xLjcyMjQ0LTQxLjMzODM3
-LTcuNTA0MTEtNjIuMjY2MTgtMTcuNTExNS0xOC44MjYyNi05LjAwMjY1LTM1LjE5NTI5LTIwLjU4
-MzItNDcuNzI4ODUtMzMuMzA2MzJhNTkuMjU4MjUsNTkuMjU4MjUsMCwwLDEsLjMyMTM1LTYuNzQw
-NDlaTTE0My40MDA2LDcxLjkzMDI2YTI5LjUwMDcxLDI5LjUwMDcxLDAsMCwwLDUuMDkyODMsMTAu
-MDU5MDYsMjE5LjMzMjU3LDIxOS4zMzI1NywwLDAsMC0zNi45MzQ4NCwyNC40NjQ0M2MtMTMuNjI0
-NDUtMTIuNjQ4NDctMjYuMjUwMTctMjcuNDI3LTM4LjcyNjI1LTQzLjk4NTQ3LjA2ODY5LS4wMjMu
-MTMyMTEtLjA1NzM4LjIwMDgtLjA4MDM4LjAxMTU2LS4wMDU3NC4wMjg3My0uMDExNDcuMDQwMy0u
-MDE3MjF2LjAwNTc0QTEwOS41MjEsMTA5LjUyMSwwLDAsMSw5MC42NDgsNTcuNDI3MjdhMTI2LjY3
-MzYsMTI2LjY3MzYsMCwwLDEsNTQuMTEzNzIsMS41NzMxOCwxNi43NTQxMiwxNi43NTQxMiwwLDAs
-MC0xLjM2MTA4LDEyLjkyOTgxbTIuOTE3LS43NzUxMmExMy43MDIyMSwxMy43MDIyMSwwLDAsMSwx
-LjM4MzUtMTEuMTg0MzljLjA0MDMtLjA2MzE2LjA5MTgyLS4xMjA1OS4xMzIxMi0uMTgzNzFhMTQz
-LjQ0NzgzLDE0My40NDc4MywwLDAsMSwyOC4zMjg1NywxMC45MzE3N3EtMi44Njc5Mi44MjY3OC01
-LjgyNzY4LDEuODM3MjdhMTU3LjYxMzg1LDE1Ny42MTM4NSwwLDAsMC0xOS4wNjE3NSw4LjAzMjM0
-LDI2LjgxMTYyLDI2LjgxMTYyLDAsMCwxLTQuOTU0NzYtOS40MzMyOG0zMS4wNTU2NC0zLjE5OEEx
-NDcuMTg3NTIsMTQ3LjE4NzUyLDAsMCwwLDE1MC4wMjY1Nyw1Ny4yNTVjMy43MjAxOS0zLjM3MDI0
-LDkuNDc5MTktNS4wODEyMywxNi4xNDQ3Ni01LjA5MjdhNjkuNTE3NTcsNjkuNTE3NTcsMCwwLDEs
-MTEuMjAxOTEsMTUuNzk0OG0tNi43NjkzLTE1LjU1OTRhNTQuNzc1NjUsNTQuNzc1NjUsMCwwLDEs
-MTkuNDAwMjcsNS45OTQxLDUyLjQyOTUxLDUyLjQyOTUxLDAsMCwxLDEyLjA2ODg4LDguNTgzNTIs
-NzguNjE0MDcsNzguNjE0MDcsMCwwLDAtMjAuNTc3NzIsMi4zNDgyNSw3OS4xNDIzNCw3OS4xNDIz
-NCwwLDAsMC0xMC44OTE0My0xNi45MjU4N20uNzA2MTIsMjMuMDE3NjFjMi45MDUwOC0uOTkzMyw1
-LjczNTg3LTEuODM3MjgsOC41MDg4NC0yLjU1NXExLjgzNDUxLDMuOTUzLDMuNDc5NDQsOC4zNDIz
-NGExNTIuMTc5MzMsMTUyLjE3OTMzLDAsMCwxLDUuNTAwMzgsMTguMzc4NDgsNTMuNjYwNDQsNTMu
-NjYwNDQsMCwwLDEtMjEuNjE2NzUtNi4xNjA2LDUwLjkxNzU1LDUwLjkxNzU1LDAsMCwxLTEzLjkw
-MDI0LTEwLjQ2MSwxNTQuNDA0NzMsMTU0LjQwNDczLDAsMCwxLDE4LjAyODMzLTcuNTQ0MjdtMTQu
-ODE4NzIsNC43MzFxLS45NzMtMi42MDA5MS0yLjAxNTMzLTUuMDUyNDlhMTQyLjYzMzc2LDE0Mi42
-MzM3NiwwLDAsMSwyNC4zMzI2LDE4LjEyNTg0Yy0zLjQ1MDcxLDQuMDc2NDUtOS40MzMyOCw2LjIy
-OTUtMTYuNTI5ODgsNi40MDc0OGExNTcuNjYzNDcsMTU3LjY2MzQ3LDAsMCwwLTUuNzg3MzktMTku
-NDgwODNNMTg0LjQxMiw3MS43ODFhNjkuNTI4ODcsNjkuNTI4ODcsMCwwLDEsMjAuNzQ5NzgtMS40
-ODdBMjcuNjEwMTUsMjcuNjEwMTUsMCwwLDEsMjEwLjg2Myw4MC42NTE1NWExNC4wNzU1NywxNC4w
-NzU1NywwLDAsMS0uNzE3NjksMTAuMDE4ODlBMTQ2LjEyMTc4LDE0Ni4xMjE3OCwwLDAsMCwxODQu
-NDEyLDcxLjc4MW02Ljk4MTY1LTE2LjA3MDM4YTU1LjY4MDMsNTUuNjgwMywwLDAsMC0yMy43MTc5
-NC02LjQ1OTE2LDQzLjMyMjUsNDMuMzIyNSwwLDAsMC03LjA1MDY5LTUuNzEyNzksMTI0LjI3Njc1
-LDEyNC4yNzY3NSwwLDAsMSw1My45NTg0OCwyNS40NzQ5Myw0Mi40OTEyMiw0Mi40OTEyMiwwLDAs
-MC03Ljk2MzIyLTEuNjkzNzMsNTMuMjIzNjQsNTMuMjIzNjQsMCwwLDAtMTUuMjI2NjMtMTEuNjA5
-MjVtLTI4LjE5MDUtNi4zNTU4M2MtNi45NTI5My41NDU0NS0xMi44NjA4NiwyLjg5OTQ0LTE2LjUz
-NTQ5LDcuMDEwMzVhMTI5LjkzNzQzLDEyOS45Mzc0MywwLDAsMC01Ni41OTkzNC0xLjkwMDQzLDEx
-My4wMzIzMywxMTMuMDMyMzMsMCwwLDAtMTguNTc0LDUuMjcwNjd2LjAxMTQ4Yy0uMTc4LjA2ODkt
-LjM2MTY0LjE0MzU0LS41NDUyNy4yMTI0NS0uMTM3NzItLjE4OTUtLjI4Ny0uMzg0NjktLjQyNTA4
-LS41NzQxNGExMjQuNTM1MTUsMTI0LjUzNTE1LDAsMCwxLDY1LjIyMzQ3LTE4LjMxNTMzcTUuNTU0
-NTMsMCwxMC45ODkyLjQ3NjU0YzUuNzQ3MDkuNjc3NDcsMTEuMzA0OTQsMy4zNTMsMTYuNDY2NDYs
-Ny44MDg0MU0xNDguNzI4OTIsMjgxLjIwMTQxYzMuODUyNjUuMzA0MzEsNy42NjQ2NS40NzY1NSwx
-MS40MTk4OC40NzY1NSwyLjc4NDUzLDAsNS41NDYyOS0uMDg2MTIsOC4yNjE3OS0uMjU4MzcsMy42
-OTc0MS0uMjI5NjUsNy4yNTc0NC0uNjMxNTYsMTAuNjc5MDYtMS4xNzEyNWExMjQuODQzODUsMTI0
-Ljg0Mzg1LDAsMCwxLTQxLjYwODIsNy42ODIwOSw0NS41MjA1OCw0NS41MjA1OCwwLDAsMCwxMS4y
-NDc0Ny02LjcyOW0zLjQ0NDc1LTIuOTc0MDhhOTIuNjEwNDksOTIuNjEwNDksMCwwLDAsMTYuMjA4
-MTgtMjAuODMwMDljLjEwMzM4LS4xNzIyNC4yMDExNS0uMzQ0NDcuMjk4NTctLjUxNjcxLDkuNzA5
-MDcsNS4zMTA4NiwxOS41NDM5NSwxMC4wODc3OCwyOS40MjUwOCwxNC40NzQyNS0uNjgzLjM5NjE2
-LTEuMzc3OS43NjkzNi0yLjA2Njg1LDEuMTQ4My0xMi4yNjk2OCw0Ljc0ODItMjcuMzY5OCw2LjY4
-ODgyLTQzLjg2NSw1LjcyNDI1bTMxLjM0My0zMS41MTVjNC4xOTY3OC0uMDg2MTIsOC4zMzY0My0u
-MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
-OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
-NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
-
-------=_NextPart_b774ded4.25fd.4f6f
-Content-ID: <cdfefb5e-d812-4d00-80b7-88062b0048a4.png>
-Content-Disposition: inline; filename="cdfefb5e-d812-4d00-80b7-88062b0048a4.png"
+------=_NextPart_bfc7e47a.4a94.45cb
+Content-ID: <c0b69d63-f76c-4d32-bb08-bf9250a5f24d.png>
+Content-Disposition: inline; filename="c0b69d63-f76c-4d32-bb08-bf9250a5f24d.png"
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -4296,4 +4245,132 @@ C7+w2Xb7Eb3o/8qNmGQMnLRiOgtj4OgmE+D4QbowaScm34WpzzFww2/qzparyA1MuOWqRprGNpt9
 e2wfOBmiVbYRslL9tQ8BUrd6JgExGYgGP2+SBj+gC2zppLgQoH0GxLx7ix3HWQBlaDjfTIMuKwYo
 7AdNOpT6a4JR2HSg3ZakAcg368qo/H9lWc/6NFehlQAAAABJRU5ErkJggg==
 
-------=_NextPart_b774ded4.25fd.4f6f--
+------=_NextPart_bfc7e47a.4a94.45cb
+Content-ID: <95daf955-e9c7-4667-a914-6d5958306087.svg>
+Content-Disposition: inline; filename="95daf955-e9c7-4667-a914-6d5958306087.svg"
+Content-Transfer-Encoding: base64
+Content-Type: image/svg+xml
+
+PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53
+My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzIiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMjcy
+IDMwMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxNmEwZGI7fTwvc3R5bGU+PC9kZWZzPjx0
+aXRsZT5JVFU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjk1MTc2LDEyNC4wNDMz
+NGExLjM5OTEzLDEuMzk5MTMsMCwwLDEsMS40MDA2OCwxLjQwMDk0djg0LjgwNzM4YTEuNDA0LDEu
+NDA0LDAsMCwxLTEuNDAwNjgsMS40MDY2NkgyOC41NjI2MWExLjQwNzY0LDEuNDA3NjQsMCwwLDEt
+MS40MDA2OC0xLjQwNjY2VjEyNS40NDQyOGExLjQwMjcyLDEuNDAyNzIsMCwwLDEsMS40MDA2OC0x
+LjQwMDk0SDUzLjk1MTc2Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ1LjY3MTA1LDEyNC4w
+NDMzNGExLjM5OTE0LDEuMzk5MTQsMCwwLDEsMS40MDA2OCwxLjQwMDk0VjE0Ni4zMjZhMS40MDQs
+MS40MDQsMCwwLDEtMS40MDA2OCwxLjQwNjY4SDEyMy41MDg2N2ExLjQwNCwxLjQwNCwwLDAsMC0x
+LjQwNjYzLDEuNDAwOTJ2NjEuMTE4YTEuNDA0MSwxLjQwNDEsMCwwLDEtMS40MDEsMS40MDY2Nkg5
+NS4zMTIyMWExLjQwNCwxLjQwNCwwLDAsMS0xLjQwMDY4LTEuNDA2NjZ2LTYxLjExOGExLjQwMjc3
+LDEuNDAyNzcsMCwwLDAtMS40MDEtMS40MDA5Mkg3MC44NTk0MWExLjQwODksMS40MDg5LDAsMCwx
+LTEuNDA2NjQtMS40MDY2OFYxMjUuNDQ0MjhhMS40MDQsMS40MDQsMCwwLDEsMS40MDY2NC0xLjQw
+MDk0aDc0LjgxMTY0Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjQ0LjQ2OTQyLDEyNC4wNDMz
+NGExLjQwNDIyLDEuNDA0MjIsMCwwLDEsMS40MDY2MywxLjQwMDk0djQzLjIyMTg1YzAsMjguNjI3
+LTE1LjAwMjcsNDMuNzYxNTQtNDMuMzgyNzksNDMuNzYxNTQtMjcuNDE1NywwLTQxLjMxNTU5LTE0
+LjkzOTMzLTQxLjMxNTU5LTQ0LjQwNDZWMTI1LjQ0NDI4YTEuMzk5MjEsMS4zOTkyMSwwLDAsMSwx
+LjQwMS0xLjQwMDk0aDI1LjM4Mjg0YTEuNDAwNDMsMS40MDA0MywwLDAsMSwxLjQwNjY0LDEuNDAw
+OTR2NDIuNDQxYzAsOS4zMzU2NCwyLjQ1NzU4LDIwLjQ2MjYzLDE0LjE1ODUsMjAuNDYyNjMsOS41
+MjUxLDAsMTQuMTUyOS02LjY5NDU3LDE0LjE1MjktMjAuNDYyNjN2LTQyLjQ0MWExLjQwNCwxLjQw
+NCwwLDAsMSwxLjQwNjY0LTEuNDAwOTRoMjUuMzgzMiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0i
+TTI3MS4xMjAxMiwyOTljLTE2Ljg0NTYyLTguMzA3OTItMzUuODA0LTE3Ljc4NzEtNTMuMjg2Ny0y
+OC4yMDc4OXE0LjQ2OTYtMy40NjIwNyw4LjYzNS03LjI4MDE4QTEzMy4wMzkxNSwxMzMuMDM5MTUs
+MCwwLDAsMjQ3LjI4MTI4LDg5LjI2OTVhMTM0LjQ3NDU3LDEzNC40NzQ1NywwLDAsMC0xODMuMzM2
+OTUtMzguOTFDNTMuMDEyNiwzNS4xMTU4OCw0Mi4wMzUsMTguNTgwNDMsMzAuNDMxNDYsMSwzNC4w
+ODMsOC40MTIyNSw0NC45MTEzMSwzMS4yNjMzNiw1Ny42MDU3Miw1NC42MDgyMkExMzUuMDM4OSwx
+MzUuMDM4OSwwLDAsMCwuODc5ODgsMTY0LjUxMTYxLDEzMi4zOTY3MywxMzIuMzk2NzMsMCwwLDAs
+MTQuMTk0NTQsMjIyLjU1MjIsMTM0LjUxNDI0LDEzNC41MTQyNCwwLDAsMCwyMDkuOTc4ODQsMjc2
+LjQzNmMyMC40ODU1Niw4LjQ3NDQyLDQxLjA3NDQ5LDE1LjU1MzY3LDYxLjE0MTI4LDIyLjU2NE0x
+MjIuOTMyNTYsMjg3LjMxMDM1YTEyNC40MjI5LDEyNC40MjI5LDAsMCwxLTc5LjEyOTMxLTM5LjYz
+MzQyLDMzLjYwMjI5LDMzLjYwMjI5LDAsMCwxLTUuNTU3NS0xNS45NjcwNiwxNzUuNjM4OTMsMTc1
+LjYzODkzLDAsMCwwLDQ2LjIzNiwzMS42Mjk4LDE4Ny4wMDE0OCwxODcuMDAxNDgsMCwwLDAsNTku
+Nzk3MzgsMTcuNDQyNjFjLTYuOTc1Nyw0Ljg3NDUzLTE0LjE5Mjg1LDcuMTMwOTMtMjEuMzQ2NTcs
+Ni41MjgwN00zNS4yODg4LDIyMC4zNjQ3MmMtLjEyMDU1LDEuMjQwMTYtLjE5NTE5LDIuNDUxNi0u
+MjQ3MDUsMy42NTE1Ny0xLjExMzY4LTEuMjExNDUtMi4yMTA1My0yLjQyMjkxLTMuMjU1MTctMy42
+NTE1N0gyNy43OTAyNmMyLjIzMzY1LDIuNzQ0NDEsNC42NTY1NCw1LjQ0ODY1LDcuMjI4NzEsOC4x
+MDdhNDUuNzc1NDYsNDUuNzc1NDYsMCwwLDAsMS41MjcxOCwxMC41NTI4NUExMjIuNjg4OTEsMTIy
+LjY4ODkxLDAsMCwxLDMxLjkxMjc0LDk2LjQ5MjNhNjcuMDQyODMsNjcuMDQyODMsMCwwLDAtMS45
+MTc1NywxOC44MjYzMUgzMi45OThhNjAuMDE2NDEsNjAuMDE2NDEsMCwwLDEsNC45MzE2My0yNy4w
+OTk3OUExMjQuOTczMywxMjQuOTczMywwLDAsMSw1NC4zOTA1LDcxLjExNXE0LjcwMjQ1LTIuNjQz
+OTUsOS42NTE2LTQuOTI2MmM3LjMzNzcsMTIuODc4MTYsMTQuOTc5NTcsMjUuMTMwNDQsMjIuMDA3
+MTQsMzQuMTg0NzVhMTQ4LjM2Mzc5LDE0OC4zNjM3OSwwLDAsMS0yMy43MTIzNC0uNDkzNzVsMS4y
+ODYwOS4zNjE3MWMtLjQwNzU2LS4wMzQ0NS0uODA5NS0uMDc0NjQtMS4yMjMtLjExNDgzLDIuNTAz
+MTMsNS4yMDc1LDUuMjQyMTEsMTAuMjY1NzUsOC4xNDcxOSwxNS4xOTJoNTEuMTc0cS00LjAxMzMy
+LTMuMjgxMjctNy45MDA0OS02LjgwMzY2QTIxNC44Mzc1NywyMTQuODM3NTcsMCwwLDEsMTUwLjQ1
+NjksODQuMzc3NzhhNTMuMzQ5NDUsNTMuMzQ5NDUsMCwwLDAsMTUuMzMsMTEuNzI0MSw1NS44Njg3
+Myw1NS44Njg3MywwLDAsMCwyMy42OTQ4Miw2LjQ2NDljLjkwMTY2LDQuMTM5NjEsMS42NzY4MSw4
+LjM5OTc5LDIuMzE5ODYsMTIuNzUxODNoMy4wNTQzNnEtLjk0NzIyLTYuNTM2NjctMi4yOTA3Ny0x
+Mi43NzQ4MWM3LjY0NzQ4LS4zMjE1MiwxNC4xNjQxMS0yLjc3MzEyLDE4LjA3NDIzLTcuMjUxNDZh
+MTM0LjA3MTM5LDEzNC4wNzEzOSwwLDAsMSwxNy4wMjMyOSwyMC4wMjYyN2gzLjY0NTlBMTM2Ljk3
+NzQ5LDEzNi45Nzc0OSwwLDAsMCwyMTIuNDE5MjUsOTIuODEyYTE2Ljc5MTg0LDE2Ljc5MTg0LDAs
+MCwwLDEuMzY2MzMtMTIuOTM1NTIsMjguNzQ0MzMsMjguNzQ0MzMsMCwwLDAtNC4zMTc2Ny04Ljk1
+Njc0LDMwLjc1OTkyLDMwLjc1OTkyLDAsMCwxLDE0Ljk2OCw3LjAyNzYxLDEyMi43NzIsMTIyLjc3
+MiwwLDAsMSwyNy4zOTI1OCwxMzEuMDcyMmMtMTAuNTI0MTgsMjEuODkyMjUtMzUuOTg3NjIsMzMu
+NzgyODUtNjcuMjg0MzYsMzQuNjU1NTYsMTMuMjE2ODktMy4zNDE1MiwyMy43NDY2OC03LjkyMzIz
+LDM2LjIyODcyLTE1LjgyOTI2LTQuNjY3NzYtMi4xNDE1NS05LjM1MjY4LTQuNDg0MDgtMTQuMDM4
+LTYuOTg3MzctMS40NDY1OC4wNzQ2NC0yLjkxMDY5LjEyMDU3LTQuNDIwNy4xMjA1Ny0yNi4wNzIx
+NSwwLTQyLjMwOTA3LTExLjQ4My00Ny41OTExMy0zNC4xODQ3Ni04LjE4NzQ5LTYuMjc1NDUtMTYu
+MTg1NDEtMTIuODE1LTIzLjkxOTA5LTE5LjQ4MDg1VjE4Ni4zMTJjMTAuOTU0ODYsOS45Nzg3LDIx
+Ljg5MjE5LDE5LjE0MjExLDMyLjEwNjIzLDI3LjU4NzgtNy44NTk4NCw1LjIzNjI1LTMzLjMwNjEx
+LDEyLjk2NDI4LTM4LjI5LDEzLjgzN3E2LjQyNSw1LjE0MTQ5LDEzLjAwNDU0LDkuNzgzNDdhMTkz
+LjE1NzMyLDE5My4xNTczMiwwLDAsMS0zMS40MjI5LTExLjgzODkzcS0xLjUwNzU1LS43MjM0Mi0y
+Ljk5NzI0LTEuNDY5ODJjLS4xNDMzMy0uMDY4OTEtLjI4MTQtLjEzNzc5LS40MTkxMi0uMjA2Njlx
+LTIuNzkwMTQtMS40MDM4MS01LjUwNi0yLjg3NjQ4YTE0Mi43NDkyMiwxNDIuNzQ5MjIsMCwwLDEt
+MzMuMjQ5LTI0LjYzMXY0LjIxNDI1cTQuNDM1NDEsNC4yOTc1LDkuNDEwMTUsOC4yOTA3YTE2MS4z
+Njc0NCwxNjEuMzY3NDQsMCwwLDAsMzMuNzcxNDksMjAuNDc0MSwxOTMuODc3NzYsMTkzLjg3Nzc2
+LDAsMCwwLDM3LjU5NTQsMTMuMDA0NDVxMTAuNDgwOSw2Ljk3NTkxLDIxLjIyNiwxMi45NDEzYy0u
+MDgwMjUuMTQzNTUtLjE2NjQ2LjI5MjgxLS4yNTI2Ny40NDIxLTUuNTI4NzYsOS4zNzU4My0xMS41
+NDA0MiwxNi43ODIzMy0xNy43OTI4MywyMi4wNTg3NS0xOS43Nzk0NC0xLjcyMjQ0LTQxLjMzODM3
+LTcuNTA0MTEtNjIuMjY2MTgtMTcuNTExNS0xOC44MjYyNi05LjAwMjY1LTM1LjE5NTI5LTIwLjU4
+MzItNDcuNzI4ODUtMzMuMzA2MzJhNTkuMjU4MjUsNTkuMjU4MjUsMCwwLDEsLjMyMTM1LTYuNzQw
+NDlaTTE0My40MDA2LDcxLjkzMDI2YTI5LjUwMDcxLDI5LjUwMDcxLDAsMCwwLDUuMDkyODMsMTAu
+MDU5MDYsMjE5LjMzMjU3LDIxOS4zMzI1NywwLDAsMC0zNi45MzQ4NCwyNC40NjQ0M2MtMTMuNjI0
+NDUtMTIuNjQ4NDctMjYuMjUwMTctMjcuNDI3LTM4LjcyNjI1LTQzLjk4NTQ3LjA2ODY5LS4wMjMu
+MTMyMTEtLjA1NzM4LjIwMDgtLjA4MDM4LjAxMTU2LS4wMDU3NC4wMjg3My0uMDExNDcuMDQwMy0u
+MDE3MjF2LjAwNTc0QTEwOS41MjEsMTA5LjUyMSwwLDAsMSw5MC42NDgsNTcuNDI3MjdhMTI2LjY3
+MzYsMTI2LjY3MzYsMCwwLDEsNTQuMTEzNzIsMS41NzMxOCwxNi43NTQxMiwxNi43NTQxMiwwLDAs
+MC0xLjM2MTA4LDEyLjkyOTgxbTIuOTE3LS43NzUxMmExMy43MDIyMSwxMy43MDIyMSwwLDAsMSwx
+LjM4MzUtMTEuMTg0MzljLjA0MDMtLjA2MzE2LjA5MTgyLS4xMjA1OS4xMzIxMi0uMTgzNzFhMTQz
+LjQ0NzgzLDE0My40NDc4MywwLDAsMSwyOC4zMjg1NywxMC45MzE3N3EtMi44Njc5Mi44MjY3OC01
+LjgyNzY4LDEuODM3MjdhMTU3LjYxMzg1LDE1Ny42MTM4NSwwLDAsMC0xOS4wNjE3NSw4LjAzMjM0
+LDI2LjgxMTYyLDI2LjgxMTYyLDAsMCwxLTQuOTU0NzYtOS40MzMyOG0zMS4wNTU2NC0zLjE5OEEx
+NDcuMTg3NTIsMTQ3LjE4NzUyLDAsMCwwLDE1MC4wMjY1Nyw1Ny4yNTVjMy43MjAxOS0zLjM3MDI0
+LDkuNDc5MTktNS4wODEyMywxNi4xNDQ3Ni01LjA5MjdhNjkuNTE3NTcsNjkuNTE3NTcsMCwwLDEs
+MTEuMjAxOTEsMTUuNzk0OG0tNi43NjkzLTE1LjU1OTRhNTQuNzc1NjUsNTQuNzc1NjUsMCwwLDEs
+MTkuNDAwMjcsNS45OTQxLDUyLjQyOTUxLDUyLjQyOTUxLDAsMCwxLDEyLjA2ODg4LDguNTgzNTIs
+NzguNjE0MDcsNzguNjE0MDcsMCwwLDAtMjAuNTc3NzIsMi4zNDgyNSw3OS4xNDIzNCw3OS4xNDIz
+NCwwLDAsMC0xMC44OTE0My0xNi45MjU4N20uNzA2MTIsMjMuMDE3NjFjMi45MDUwOC0uOTkzMyw1
+LjczNTg3LTEuODM3MjgsOC41MDg4NC0yLjU1NXExLjgzNDUxLDMuOTUzLDMuNDc5NDQsOC4zNDIz
+NGExNTIuMTc5MzMsMTUyLjE3OTMzLDAsMCwxLDUuNTAwMzgsMTguMzc4NDgsNTMuNjYwNDQsNTMu
+NjYwNDQsMCwwLDEtMjEuNjE2NzUtNi4xNjA2LDUwLjkxNzU1LDUwLjkxNzU1LDAsMCwxLTEzLjkw
+MDI0LTEwLjQ2MSwxNTQuNDA0NzMsMTU0LjQwNDczLDAsMCwxLDE4LjAyODMzLTcuNTQ0MjdtMTQu
+ODE4NzIsNC43MzFxLS45NzMtMi42MDA5MS0yLjAxNTMzLTUuMDUyNDlhMTQyLjYzMzc2LDE0Mi42
+MzM3NiwwLDAsMSwyNC4zMzI2LDE4LjEyNTg0Yy0zLjQ1MDcxLDQuMDc2NDUtOS40MzMyOCw2LjIy
+OTUtMTYuNTI5ODgsNi40MDc0OGExNTcuNjYzNDcsMTU3LjY2MzQ3LDAsMCwwLTUuNzg3MzktMTku
+NDgwODNNMTg0LjQxMiw3MS43ODFhNjkuNTI4ODcsNjkuNTI4ODcsMCwwLDEsMjAuNzQ5NzgtMS40
+ODdBMjcuNjEwMTUsMjcuNjEwMTUsMCwwLDEsMjEwLjg2Myw4MC42NTE1NWExNC4wNzU1NywxNC4w
+NzU1NywwLDAsMS0uNzE3NjksMTAuMDE4ODlBMTQ2LjEyMTc4LDE0Ni4xMjE3OCwwLDAsMCwxODQu
+NDEyLDcxLjc4MW02Ljk4MTY1LTE2LjA3MDM4YTU1LjY4MDMsNTUuNjgwMywwLDAsMC0yMy43MTc5
+NC02LjQ1OTE2LDQzLjMyMjUsNDMuMzIyNSwwLDAsMC03LjA1MDY5LTUuNzEyNzksMTI0LjI3Njc1
+LDEyNC4yNzY3NSwwLDAsMSw1My45NTg0OCwyNS40NzQ5Myw0Mi40OTEyMiw0Mi40OTEyMiwwLDAs
+MC03Ljk2MzIyLTEuNjkzNzMsNTMuMjIzNjQsNTMuMjIzNjQsMCwwLDAtMTUuMjI2NjMtMTEuNjA5
+MjVtLTI4LjE5MDUtNi4zNTU4M2MtNi45NTI5My41NDU0NS0xMi44NjA4NiwyLjg5OTQ0LTE2LjUz
+NTQ5LDcuMDEwMzVhMTI5LjkzNzQzLDEyOS45Mzc0MywwLDAsMC01Ni41OTkzNC0xLjkwMDQzLDEx
+My4wMzIzMywxMTMuMDMyMzMsMCwwLDAtMTguNTc0LDUuMjcwNjd2LjAxMTQ4Yy0uMTc4LjA2ODkt
+LjM2MTY0LjE0MzU0LS41NDUyNy4yMTI0NS0uMTM3NzItLjE4OTUtLjI4Ny0uMzg0NjktLjQyNTA4
+LS41NzQxNGExMjQuNTM1MTUsMTI0LjUzNTE1LDAsMCwxLDY1LjIyMzQ3LTE4LjMxNTMzcTUuNTU0
+NTMsMCwxMC45ODkyLjQ3NjU0YzUuNzQ3MDkuNjc3NDcsMTEuMzA0OTQsMy4zNTMsMTYuNDY2NDYs
+Ny44MDg0MU0xNDguNzI4OTIsMjgxLjIwMTQxYzMuODUyNjUuMzA0MzEsNy42NjQ2NS40NzY1NSwx
+MS40MTk4OC40NzY1NSwyLjc4NDUzLDAsNS41NDYyOS0uMDg2MTIsOC4yNjE3OS0uMjU4MzcsMy42
+OTc0MS0uMjI5NjUsNy4yNTc0NC0uNjMxNTYsMTAuNjc5MDYtMS4xNzEyNWExMjQuODQzODUsMTI0
+Ljg0Mzg1LDAsMCwxLTQxLjYwODIsNy42ODIwOSw0NS41MjA1OCw0NS41MjA1OCwwLDAsMCwxMS4y
+NDc0Ny02LjcyOW0zLjQ0NDc1LTIuOTc0MDhhOTIuNjEwNDksOTIuNjEwNDksMCwwLDAsMTYuMjA4
+MTgtMjAuODMwMDljLjEwMzM4LS4xNzIyNC4yMDExNS0uMzQ0NDcuMjk4NTctLjUxNjcxLDkuNzA5
+MDcsNS4zMTA4NiwxOS41NDM5NSwxMC4wODc3OCwyOS40MjUwOCwxNC40NzQyNS0uNjgzLjM5NjE2
+LTEuMzc3OS43NjkzNi0yLjA2Njg1LDEuMTQ4My0xMi4yNjk2OCw0Ljc0ODItMjcuMzY5OCw2LjY4
+ODgyLTQzLjg2NSw1LjcyNDI1bTMxLjM0My0zMS41MTVjNC4xOTY3OC0uMDg2MTIsOC4zMzY0My0u
+MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
+OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
+NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
+
+------=_NextPart_bfc7e47a.4a94.45cb--

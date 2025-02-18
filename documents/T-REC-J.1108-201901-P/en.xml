@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.4.1" schema-version="v1.3.0">
+<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.5.13" schema-version="v1.4.1">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Transmission specification for radio over IP transmission systems</title>
 
 
 
-<docidentifier type="ITU">ITU-T J.1108</docidentifier><docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier><docnumber>J.1108</docnumber><date type="published"><on>2019-01</on></date><contributor><role type="author"/><organization>
+
+
+<docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier><docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier><docnumber>J.1108</docnumber><date type="published"><on>2019-01</on></date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Telecommunication Union</name>
@@ -18,7 +20,7 @@
 <title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
 </series><series type="secondary">
 <title>Switched digital video over cable networks</title>
-</series><keyword>Radio over IP</keyword><keyword>RoIP</keyword><ext><doctype>recommendation</doctype><editorialgroup><bureau>T</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>J.1108</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+</series><keyword>Radio over IP</keyword><keyword>RoIP</keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><editorialgroup><bureau>T</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>J.1108</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_4db49d21-f1db-50e5-6c63-bbbc3efb293f" inline-header="false" obligation="normative">
@@ -30,17 +32,17 @@
 
 <license-statement>
 
-<clause id="_intellectual_property_rights" inline-header="false" obligation="normative">
+<clause id="_4e168d71-002e-b69b-bbc5-c2db63824bd8" inline-header="false" obligation="normative">
 <title>INTELLECTUAL PROPERTY RIGHTS</title>
 <p id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p id="_6f9c905a-7432-63f2-1fbc-3d7476d27115">As of the date of approval of this Recommendation, ITU had  received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
+<p id="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
 </clause>
 </license-statement>
 
 <legal-statement>
 
-<clause id="_foreword" inline-header="false" obligation="normative">
+<clause id="_b5ff7f95-f781-a42e-99b6-87a561430419" inline-header="false" obligation="normative">
 <title>FOREWORD</title>
 <p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -50,7 +52,7 @@
 
 <p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 
-<clause id="_note" inline-header="false" obligation="normative">
+<clause id="_8520a161-8bbd-37df-d9aa-24c4f47aa144" inline-header="false" obligation="normative">
 <title>NOTE</title>
 <p id="_56570421-b373-1413-9648-1e440630df94">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
 
@@ -81,7 +83,7 @@
 
 <clause id="_scope" type="scope" inline-header="false" obligation="normative">
 <title>Scope</title>
-<p id="_3b0c961f-d087-0d2c-954e-3979d2bffab2">Recommendation ITU-T J.1108 describes the transmission specification for a radio over IP (RoIP) transmission system in a hybrid fibre coaxial (HFC) based network. The architecture described in this Recommendation is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106"/>. The transmission specifications described in this Recommendation are defined as follows:</p>
+<p id="_3b0c961f-d087-0d2c-954e-3979d2bffab2">Recommendation ITU-T J.1108 describes the transmission specification for a radio over IP (RoIP) transmission system in a hybrid fibre coaxial (HFC) based network. The architecture described in this Recommendation is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)"/>. The transmission specifications described in this Recommendation are defined as follows:</p>
 
 <ul id="_da3f751b-d200-e675-51ab-d66a255c75d0"><li><p id="_fc81c357-6b1a-8e4b-f001-76a62b61893d">Radio over IP terminal system.</p>
 </li>
@@ -94,7 +96,7 @@
 
 
 
-<clause id="_definitions" obligation="normative">
+<clause id="_definitions" obligation="normative" type="terms">
 <title>Definitions</title>
 <terms id="_terms_defined_elsewhere" type="external" obligation="normative">
 <title>Terms defined elsewhere</title>
@@ -184,12 +186,12 @@
 
 <clause id="_overview" inline-header="false" obligation="normative">
 <title>Overview</title>
-<p id="_f9ac4cbf-1d3e-9d67-134b-4e6d0a8eea9b">The overview is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106"><localityStack><locality type="clause"><referenceFrom>6</referenceFrom></locality></localityStack></eref>.</p>
+<p id="_f9ac4cbf-1d3e-9d67-134b-4e6d0a8eea9b">The overview is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)"><localityStack><locality type="clause"><referenceFrom>6</referenceFrom></locality></localityStack></eref>.</p>
 </clause>
 
 <clause id="_functional_architecture" inline-header="false" obligation="normative">
 <title>Functional architecture</title>
-<p id="_25453ae0-f02c-daa9-3407-fb96c9f7c379">The functional architecture is defined according to <eref type="inline" bibitemid="j1107" citeas="ITU-T J.1107"><localityStack><locality type="clause"><referenceFrom>7</referenceFrom></locality></localityStack></eref>.</p>
+<p id="_25453ae0-f02c-daa9-3407-fb96c9f7c379">The functional architecture is defined according to <eref type="inline" bibitemid="j1107" citeas="ITU-T J.1107 (03/2018)"><localityStack><locality type="clause"><referenceFrom>7</referenceFrom></locality></localityStack></eref>.</p>
 </clause>
 
 <clause id="_timing_processing_specification" inline-header="false" obligation="normative">
@@ -238,216 +240,1242 @@
 
 
 </sections><bibliography><references id="_references" normative="true" obligation="informative">
-<title>References</title><p id="_c3377b30-bbc8-69c0-d72c-df07d68a9ed2">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="j1106" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title>References</title><p id="_c3377b30-bbc8-69c0-d72c-df07d68a9ed2">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
+<bibitem id="j1106" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-18</fetched>
+  
 <title type="title-main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
+
   
 <title type="main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
-  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13287&amp;lang=en</uri>  <uri type="obp">https://handle.itu.int/11.1002/1000/13287-en?locatt=format:pdf&amp;auth</uri>  <docidentifier type="ITU" primary="true">ITU-T J.1106</docidentifier>  <contributor>    <role type="publisher"/>    <organization>      
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13287&amp;lang=en</uri>
+  <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1106-201707-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1106 (07/2017)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
 <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>2017</from>    <owner>      <organization>        
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        
 <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>      <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-18</fetched>
+      
 <title type="title-main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
+
       
 <title type="main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
-      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13287&amp;lang=en</uri>      <uri type="obp">https://handle.itu.int/11.1002/1000/13287-en?locatt=format:pdf&amp;auth</uri>      <docidentifier type="ITU" primary="true">ITU-T J.1106</docidentifier>      <date type="published">        <on>2017-07-29</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+
+      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13287&amp;lang=en</uri>
+      <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1106-201707-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.1106 (07/2017)</docidentifier>
+      <date type="published">
+        <on>2017-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
 <name>International Telecommunication Union</name>
-          <abbreviation>ITU</abbreviation>          <uri>www.itu.int</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">As cable television (TV) networks migrate to deep fibre or fibre to the home (FTTH) architecture, it is now easier to provide bidirectional high-quality media services that require very high-speed digital transmission of various high-quality contents. As cable TV networks provide services by transmitting radio frequency (RF) signals between headend and a cable modem (CM), the configuration and devices of the cable TV network are optimized for RF signal transmission. For migration to all-fibre access, the existing cable TV network devices of service operators (SOs), which provide broadcasting services and various data services through a TV network based on hybrid fibre coaxial (HFC) cable, are recommended for change to new network devices. Therefore, a cost-effective solution for deployable and acceptable migration towards optic-based cable TV networks is required. Recommendation ITU‑TJ.1106 provides a cost-effective solution to convert HFC-based cable TV network devices into those based on optic cable.</abstract>      <status>        <stage>Published</stage>      </status>      <copyright>        <from>2017</from>        <owner>          <organization>            
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">As cable television (TV) networks migrate to deep fibre or fibre to the home (FTTH) architecture, it is now easier to provide bidirectional high-quality media services that require very high-speed digital transmission of various high-quality contents. As cable TV networks provide services by transmitting radio frequency (RF) signals between headend and a cable modem (CM), the configuration and devices of the cable TV network are optimized for RF signal transmission. For migration to all-fibre access, the existing cable TV network devices of service operators (SOs), which provide broadcasting services and various data services through a TV network based on hybrid fibre coaxial (HFC) cable, are recommended for change to new network devices. Therefore, a cost-effective solution for deployable and acceptable migration towards optic-based cable TV networks is required. Recommendation ITU‑TJ.1106 provides a cost-effective solution to convert HFC-based cable TV network devices into those based on optic cable.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2017</from>
+        <owner>
+          <organization>
+            
 <name>International Telecommunication Union</name>
-            <abbreviation>ITU</abbreviation>            <uri>www.itu.int</uri>          </organization>        </owner>      </copyright>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>          <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="j1107" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j1107" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-18</fetched>
+  
 <title type="title-main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
+
   
 <title type="main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
-  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13564&amp;lang=en</uri>  <uri type="obp">https://handle.itu.int/11.1002/1000/13564-en?locatt=format:pdf&amp;auth</uri>  <docidentifier type="ITU" primary="true">ITU-T J.1107</docidentifier>  <contributor>    <role type="publisher"/>    <organization>      
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13564&amp;lang=en</uri>
+  <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1107-201803-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1107 (03/2018)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
 <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>2018</from>    <owner>      <organization>        
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
 <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>      <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-18</fetched>
+      
 <title type="title-main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
+
       
 <title type="main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
-      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13564&amp;lang=en</uri>      <uri type="obp">https://handle.itu.int/11.1002/1000/13564-en?locatt=format:pdf&amp;auth</uri>      <docidentifier type="ITU" primary="true">ITU-T J.1107</docidentifier>      <date type="published">        <on>2018-03-16</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+
+      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13564&amp;lang=en</uri>
+      <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1107-201803-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.1107 (03/2018)</docidentifier>
+      <date type="published">
+        <on>2018-03-16</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
 <name>International Telecommunication Union</name>
-          <abbreviation>ITU</abbreviation>          <uri>www.itu.int</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">As cable television (TV) networks migrate to deep fibre or fibre to the home (FTTH) architectures, it is now possible and easy to provide bidirectional high-quality media services that require very high-speed digital transmission of high-quality content. Cable TV networks provide services by transmitting radio frequency (RF) signals between the headend and a cable modem (CM). The configuration and devices of these networks are optimized for RF signal transmission. When migrating to all-fibre cable TV networks, changing the existing network devices to new network devices for service operators (SOs), who provide broadcasting and various data services through hybrid fibre coaxial (HFC)-based cable TV networks, is recommended. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV networks is required. Recommendation ITU-T J.1107 provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV networks. The purpose of the radio over Internet protocol (RoIP) system is to transmit data over cable service interface specifications (DOCSIS)‑based upstream (US) RF signals of CM to cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.</abstract>      <status>        <stage>Published</stage>      </status>      <copyright>        <from>2018</from>        <owner>          <organization>            
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">As cable television (TV) networks migrate to deep fibre or fibre to the home (FTTH) architectures, it is now possible and easy to provide bidirectional high-quality media services that require very high-speed digital transmission of high-quality content. Cable TV networks provide services by transmitting radio frequency (RF) signals between the headend and a cable modem (CM). The configuration and devices of these networks are optimized for RF signal transmission. When migrating to all-fibre cable TV networks, changing the existing network devices to new network devices for service operators (SOs), who provide broadcasting and various data services through hybrid fibre coaxial (HFC)-based cable TV networks, is recommended. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV networks is required. Recommendation ITU-T J.1107 provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV networks. The purpose of the radio over Internet protocol (RoIP) system is to transmit data over cable service interface specifications (DOCSIS)‑based upstream (US) RF signals of CM to cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2018</from>
+        <owner>
+          <organization>
+            
 <name>International Telecommunication Union</name>
-            <abbreviation>ITU</abbreviation>            <uri>www.itu.int</uri>          </organization>        </owner>      </copyright>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>          <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="j210" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j210" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-18</fetched>
+  
 <title type="title-main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
+
   
 <title type="main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
-  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=8932&amp;lang=en</uri>  <uri type="obp">https://handle.itu.int/11.1002/1000/8932-en?locatt=format:pdf&amp;auth</uri>  <docidentifier type="ITU" primary="true">ITU-T J.210</docidentifier>  <contributor>    <role type="publisher"/>    <organization>      
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=8932&amp;lang=en</uri>
+  <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.210-200611-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.210 (11/2006)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
 <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>2006</from>    <owner>      <organization>        
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2006</from>
+    <owner>
+      <organization>
+        
 <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>      <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-18</fetched>
+      
 <title type="title-main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
+
       
 <title type="main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
-      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=8932&amp;lang=en</uri>      <uri type="obp">https://handle.itu.int/11.1002/1000/8932-en?locatt=format:pdf&amp;auth</uri>      <docidentifier type="ITU" primary="true">ITU-T J.210</docidentifier>      <date type="published">        <on>2006-11-29</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+
+      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=8932&amp;lang=en</uri>
+      <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.210-200611-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.210 (11/2006)</docidentifier>
+      <date type="published">
+        <on>2006-11-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
 <name>International Telecommunication Union</name>
-          <abbreviation>ITU</abbreviation>          <uri>www.itu.int</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This Recommendation defines the downstream radio frequency interface (DRFI) specifications for:</abstract>      <status>        <stage>Published</stage>      </status>      <copyright>        <from>2006</from>        <owner>          <organization>            
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This Recommendation defines the downstream radio frequency interface (DRFI) specifications for:</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2006</from>
+        <owner>
+          <organization>
+            
 <name>International Telecommunication Union</name>
-            <abbreviation>ITU</abbreviation>            <uri>www.itu.int</uri>          </organization>        </owner>      </copyright>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>          <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="j222-1" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j222-1" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-18</fetched>
+  
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
   
 <title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
-  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9194&amp;lang=en</uri>  <uri type="obp">https://handle.itu.int/11.1002/1000/9194-en?locatt=format:pdf&amp;auth</uri>  <docidentifier type="ITU" primary="true">ITU-T J.222.1</docidentifier>  <contributor>    <role type="publisher"/>    <organization>      
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9194&amp;lang=en</uri>
+  <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.222.1-200707-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.222.1 (07/2007)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
 <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>2007</from>    <owner>      <organization>        
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
 <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>      <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-18</fetched>
+      
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
       
 <title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
-      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9194&amp;lang=en</uri>      <uri type="obp">https://handle.itu.int/11.1002/1000/9194-en?locatt=format:pdf&amp;auth</uri>      <docidentifier type="ITU" primary="true">ITU-T J.222.1</docidentifier>      <date type="published">        <on>2007-07-29</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+
+      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9194&amp;lang=en</uri>
+      <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.222.1-200707-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.222.1 (07/2007)</docidentifier>
+      <date type="published">
+        <on>2007-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
 <name>International Telecommunication Union</name>
-          <abbreviation>ITU</abbreviation>          <uri>www.itu.int</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ITU-T Recommendation J.222.1 defines the electrical characteristics and signal processing operations for a cable modem (CM) and cable modem termination system (CMTS) over third generation high‑speed data-over-cable systems. This Recommendation defines physical layer requirements that support the channel bonding operations defined in ITU-T RecommendationJ.222.2.</abstract>      <status>        <stage>Published</stage>      </status>      <copyright>        <from>2007</from>        <owner>          <organization>            
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ITU-T Recommendation J.222.1 defines the electrical characteristics and signal processing operations for a cable modem (CM) and cable modem termination system (CMTS) over third generation high‑speed data-over-cable systems. This Recommendation defines physical layer requirements that support the channel bonding operations defined in ITU-T RecommendationJ.222.2.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
 <name>International Telecommunication Union</name>
-            <abbreviation>ITU</abbreviation>            <uri>www.itu.int</uri>          </organization>        </owner>      </copyright>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>          <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="j222-2" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j222-2" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-18</fetched>
+  
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
   
 <title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
-  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9195&amp;lang=en</uri>  <docidentifier type="ITU" primary="true">ITU-T J.222.2</docidentifier>  <contributor>    <role type="publisher"/>    <organization>      
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9195&amp;lang=en</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.222.2 (07/2007)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
 <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>2007</from>    <owner>      <organization>        
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
 <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>      <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>    </bibitem>
-  </relation>  <relation type="complementOf">    <bibitem type="standard">      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+      <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-18</fetched>
+      
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
       
 <title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
-      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9195&amp;lang=en</uri>      <docidentifier type="ITU" primary="true">ITU-T J.222.2</docidentifier>      <date type="published">        <on>2007-07-29</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+
+      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=9195&amp;lang=en</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.222.2 (07/2007)</docidentifier>
+      <date type="published">
+        <on>2007-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
 <name>International Telecommunication Union</name>
-          <abbreviation>ITU</abbreviation>          <uri>www.itu.int</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ITU-T Recommendation J.222.2 is part of a series of Recommendations that define the third generation of high-speed data‑over‑cable systems. This Recommendation was developed for the benefit of the cable industry, and includes contributions by operators and vendors from North America, Europe and other regions. The third-generation transmission systems introduce a number ofnew features that build uponwhat was present in previous Recommendations (ITU‑TRecommendations J.112 and J.122). This Recommendation includes key new features for the MAC and Upper Layer Protocols Interface, and defines the MAC layer protocols as well as requirements for upper layer protocols (e.g., IP, DHCP,etc.).ITU-T Recommendation J.222.2 has been published in two volumes.Volume 1 contains the core Recommendation and Volume 2 contains the annexes and appendices. This is Volume 1.ITU-T Recommendation J.222.2 is part of a series of Recommendations that define the third generation of high-speed data‑over‑cable systems. This Recommendation was developed for the benefit of the cable industry, and includes contributions by operators and vendors from North America, Europe and other regions. The third-generation transmission systems introduce a number ofnew features that build uponwhat was present in previous Recommendations(ITU-T Recommendations J.112 and J.122). This Recommendation includes key new features for the MAC and Upper Layer Protocols Interface, and defines the MAC layer protocols as well as requirements for upper layer protocols (e.g., IP, DHCP,etc.).ITU-T Recommendation J.222.2 has been published in two volumes.Volume 1 contains the core Recommendation and Volume 2 contains the annexes and appendices. This is Volume 2.</abstract>      <status>        <stage>Published</stage>      </status>      <copyright>        <from>2007</from>        <owner>          <organization>            
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ITU-T Recommendation J.222.2 is part of a series of Recommendations that define the third generation of high-speed data‑over‑cable systems. This Recommendation was developed for the benefit of the cable industry, and includes contributions by operators and vendors from North America, Europe and other regions. The third-generation transmission systems introduce a number ofnew features that build uponwhat was present in previous Recommendations (ITU‑TRecommendations J.112 and J.122). This Recommendation includes key new features for the MAC and Upper Layer Protocols Interface, and defines the MAC layer protocols as well as requirements for upper layer protocols (e.g., IP, DHCP,etc.).ITU-T Recommendation J.222.2 has been published in two volumes.Volume 1 contains the core Recommendation and Volume 2 contains the annexes and appendices. This is Volume 1.ITU-T Recommendation J.222.2 is part of a series of Recommendations that define the third generation of high-speed data‑over‑cable systems. This Recommendation was developed for the benefit of the cable industry, and includes contributions by operators and vendors from North America, Europe and other regions. The third-generation transmission systems introduce a number ofnew features that build uponwhat was present in previous Recommendations(ITU-T Recommendations J.112 and J.122). This Recommendation includes key new features for the MAC and Upper Layer Protocols Interface, and defines the MAC layer protocols as well as requirements for upper layer protocols (e.g., IP, DHCP,etc.).ITU-T Recommendation J.222.2 has been published in two volumes.Volume 1 contains the core Recommendation and Volume 2 contains the annexes and appendices. This is Volume 2.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
 <name>International Telecommunication Union</name>
-            <abbreviation>ITU</abbreviation>            <uri>www.itu.int</uri>          </organization>        </owner>      </copyright>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (05/2023)</formattedref>          <docidentifier type="ITU">J Suppl. 10 (05/2023)</docidentifier>        </bibitem>
-      </relation>      <relation type="complementOf">        <bibitem type="standard">          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>        </bibitem>
-      </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem type="standard">
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (04/2021)</formattedref>
+          <docidentifier type="ITU">J Suppl. 11 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem>
 
 
 
 
 
 </references><references id="_bibliography" normative="false" obligation="informative">
-<title>Bibliography</title><bibitem id="x743" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title>Bibliography</title><bibitem id="x743" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-18</fetched>
+  
 <title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
   
 <title type="main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
-  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=3086&amp;lang=en</uri>  <uri type="obp">https://handle.itu.int/11.1002/1000/3086-en?locatt=format:pdf&amp;auth</uri>  <docidentifier type="ITU" primary="true">ITU-T X.743</docidentifier><docidentifier type="metanorma">[b-ITU-T X.743]</docidentifier>  <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>  <contributor>    <role type="publisher"/>    <organization>      
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=3086&amp;lang=en</uri>
+  <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.743-199806-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T X.743 (06/1998)</docidentifier><docidentifier type="metanorma">[b-ITU-T X.743]</docidentifier>
+  <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
 <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>      <uri>www.itu.int</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>Published</stage>  </status>  <copyright>    <from>1998</from>    <owner>      <organization>        
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>1998</from>
+    <owner>
+      <organization>
+        
 <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>        <uri>www.itu.int</uri>      </organization>    </owner>  </copyright>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-18</fetched>
+      
 <title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
       
 <title type="main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
-      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=3086&amp;lang=en</uri>      <uri type="obp">https://handle.itu.int/11.1002/1000/3086-en?locatt=format:pdf&amp;auth</uri>      <docidentifier type="ITU" primary="true">ITU-T X.743</docidentifier>      <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>      <date type="published">        <on>1998-06-26</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+
+      <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=3086&amp;lang=en</uri>
+      <uri type="obp">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.743-199806-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T X.743 (06/1998)</docidentifier>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>
+      <date type="published">
+        <on>1998-06-26</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
 <name>International Telecommunication Union</name>
-          <abbreviation>ITU</abbreviation>          <uri>www.itu.int</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This corrigendum corrects text in Annex A: A.5 and A.6 and Annex B.</abstract>      <status>        <stage>Published</stage>      </status>      <copyright>        <from>1998</from>        <owner>          <organization>            
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>1998</from>
+        <owner>
+          <organization>
+            
 <name>International Telecommunication Union</name>
-            <abbreviation>ITU</abbreviation>            <uri>www.itu.int</uri>          </organization>        </owner>      </copyright>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="scte135-1">
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="scte135-1">
   <formattedref format="application/x-isodoc+xml"><em>DOCSIS 3.0 Part 1: Physical Layer Specification</em>.</formattedref>
   <docidentifier type="metanorma">[b-ANSI/SCTE 135-1]</docidentifier>
   <docidentifier>ANSI/SCTE 135-1</docidentifier>

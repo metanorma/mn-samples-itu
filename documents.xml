@@ -1,11 +1,11 @@
-<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>ITU Documents in Metanorma</title><contributor><role type='author'/><organization><name>International Telecommunications Union</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
-  <title type="main" format="text/plain" language="en">Rules of procedure of the ITU Telecommunication Standardization Sector</title>
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>ITU Documents in Metanorma</title><contributor><role type='author'/><organization><name>International Telecommunications Union</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Rules of procedure of the ITU Telecommunication Standardization Sector &lt;fn reference="1"&gt;&lt;p&gt;Previously published (Geneva, 1956 and 1958; New Delhi, 1960; Geneva, 1964; Mar del Plata, 1968; Geneva, 1972, 1976 and 1980, Malaga-Torremolinos, 1984; Melbourne, 1988; Helsinki, 1993; Geneva, 1996; Montreal, 2000; Florianópolis, 2004; Johannesburg, 2008; Dubai, 2012).&lt;/p&gt;&lt;/fn&gt; &lt;fn reference="2"&gt;&lt;p&gt;This Hammamet, 2016 edition was initially published in 2016 and then republished in November 2017 to move the contents of Annex A (ITU-T Documentation) to Section 1&lt;em&gt;bis&lt;/em&gt;, as approved during the Assembly.&lt;/p&gt;&lt;/fn&gt;</title>
   <uri type="xml">documents/T-RES-T.1-2016/en.xml</uri>
   <uri type="pdf">documents/T-RES-T.1-2016/en.pdf</uri>
   <uri type="doc">documents/T-RES-T.1-2016/en.doc</uri>
   <uri type="html">documents/T-RES-T.1-2016/en.html</uri>
   <uri type="rxl">documents/T-RES-T.1-2016/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T 1</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T 1</docidentifier>
   <docidentifier type="ITU-lang">ITU-T 1-E</docidentifier>
   <docnumber>1</docnumber>
   <contributor>
@@ -23,10 +23,6 @@
     </organization>
   </contributor>
   <edition>Hammamet, 2016</edition>
-  <note type="title-footnote">Previously published (Geneva, 1956 and 1958; New Delhi, 1960; Geneva, 1964; Mar del Plata, 1968; Geneva, 1972, 1976 and 1980, Malaga-Torremolinos, 1984; Melbourne, 1988; Helsinki, 1993; Geneva, 1996; Montreal, 2000; Florianópolis, 2004; Johannesburg, 2008; Dubai, 2012).
-</note>
-  <note type="title-footnote">This Hammamet, 2016 edition was initially published in 2016 and then republished in November 2017 to move the contents of Annex A (ITU-T Documentation) to Section 1bis, as approved during the Assembly.
-</note>
   <language>en</language>
   <script>Latn</script>
   <status>
@@ -52,14 +48,14 @@
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Telecommunication for rural and remote areas</title>
   <uri type="xml">documents/D-REC-D.19-201003/en.xml</uri>
   <uri type="pdf">documents/D-REC-D.19-201003/en.pdf</uri>
   <uri type="doc">documents/D-REC-D.19-201003/en.doc</uri>
   <uri type="html">documents/D-REC-D.19-201003/en.html</uri>
   <uri type="rxl">documents/D-REC-D.19-201003/en.rxl</uri>
-  <docidentifier type="ITU">ITU-D D.19</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-D D.19</docidentifier>
   <docidentifier type="ITU-lang">ITU-D D.19-E</docidentifier>
   <docnumber>D.19</docnumber>
   <date type="published">
@@ -85,7 +81,7 @@
     <stage>in-force</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>International Telecommunication Union</name>
@@ -104,14 +100,14 @@
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Software tools for speech and audio coding standardization</title>
   <uri type="xml">documents/G.191/en.xml</uri>
   <uri type="pdf">documents/G.191/en.pdf</uri>
   <uri type="doc">documents/G.191/en.doc</uri>
   <uri type="html">documents/G.191/en.html</uri>
   <uri type="rxl">documents/G.191/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T G.191</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.191</docidentifier>
   <docidentifier type="ITU-lang">ITU-T G.191-E</docidentifier>
   <docnumber>G.191</docnumber>
   <date type="published">
@@ -183,14 +179,14 @@
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Definitions and test methods for linear, deterministic attributes of single-mode fibre and cable</title>
   <uri type="xml">documents/G.650.1-201803/en.xml</uri>
   <uri type="pdf">documents/G.650.1-201803/en.pdf</uri>
   <uri type="doc">documents/G.650.1-201803/en.doc</uri>
   <uri type="html">documents/G.650.1-201803/en.html</uri>
   <uri type="rxl">documents/G.650.1-201803/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T G.650.1</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.650.1</docidentifier>
   <docidentifier type="ITU-lang">ITU-T G.650.1-E</docidentifier>
   <docnumber>G.650.1</docnumber>
   <date type="published">
@@ -219,7 +215,7 @@
 &lt;p&gt;The history of this Recommendation is as follows:&lt;/p&gt;
 
 &lt;dl&gt;&lt;dt&gt;1993&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;Definitions and test methods were removed from single-mode fibre Recommendations such as Recommendation &lt;eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652"/&gt; and used to create the initial version of Recommendation ITU-T G.650.&lt;/p&gt;
+&lt;dd&gt;&lt;p&gt;Definitions and test methods were removed from single-mode fibre Recommendations such as Recommendation &lt;eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652 (08/2024)"/&gt; and used to create the initial version of Recommendation ITU-T G.650.&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt&gt;1997&lt;/dt&gt;
 &lt;dd&gt;&lt;p&gt;The second version of Recommendation ITU-T G.650 added definitions and test methods for polarization mode dispersion and appendices I, II and III. The improved determination of cut-off wavelength (clause 5.3.1.3.4) was also added.&lt;/p&gt;
@@ -237,7 +233,7 @@
 &lt;dd&gt;&lt;p&gt;The third version of Recommendation ITU-TG.650.1 added the test method "Test methods for the macrobend loss" (clause 5.6). Jumper cut-off wavelength has been deleted from clause 5.3. An additional description has been added in cut-off wavelength test method (clause 5.3.1.3.2). Equation 5-1 has been corrected. A detailed description has been added in proof test method (clause 5.7). Appendix II has been updated.&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt&gt;2018&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;The fourth version of Recommendation ITU-TG.650.1 added Appendix IV (from Amendment 1 published in 2012) to provide measurement procedures for coherent multipath interference (MPI). The interferometric technique for chromatic dispersion measurement has been deleted from clause 6.5 and moved to Appendix V. The description of measurement details for &lt;eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657"/&gt; fibre on MFD, cut-off wavelength and spectral attenuation tests has been improved. The RTM and ATM of cable cut-off wavelength measurement has been modified. An example of the interpolation method has been added in clause I.3. Equation 6-1 has been corrected.&lt;/p&gt;
+&lt;dd&gt;&lt;p&gt;The fourth version of Recommendation ITU-TG.650.1 added Appendix IV (from Amendment 1 published in 2012) to provide measurement procedures for coherent multipath interference (MPI). The interferometric technique for chromatic dispersion measurement has been deleted from clause 6.5 and moved to Appendix V. The description of measurement details for &lt;eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657 (08/2024)"/&gt; fibre on MFD, cut-off wavelength and spectral attenuation tests has been improved. The RTM and ATM of cable cut-off wavelength measurement has been modified. An example of the interpolation method has been added in clause I.3. Equation 6-1 has been corrected.&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;</abstract>
   <status>
@@ -275,14 +271,14 @@
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">ITU-T Software Tool Library 2019 User's Manual</title>
   <uri type="xml">documents/STL-manual/en.xml</uri>
   <uri type="pdf">documents/STL-manual/en.pdf</uri>
   <uri type="doc">documents/STL-manual/en.doc</uri>
   <uri type="html">documents/STL-manual/en.html</uri>
   <uri type="rxl">documents/STL-manual/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T G.191 STL-2019 Manual</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.191 STL-2019 Manual</docidentifier>
   <docidentifier type="ITU-lang">ITU-T G.191 STL-2019 Manual-E</docidentifier>
   <docnumber>G.191 STL-2019 Manual</docnumber>
   <date type="published">
@@ -336,14 +332,14 @@
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Author's guide for drafting ITU-T Recommendations</title>
   <uri type="xml">documents/T-Editing-Guidelines-201602/en.xml</uri>
   <uri type="pdf">documents/T-Editing-Guidelines-201602/en.pdf</uri>
   <uri type="doc">documents/T-Editing-Guidelines-201602/en.doc</uri>
   <uri type="html">documents/T-Editing-Guidelines-201602/en.html</uri>
   <uri type="rxl">documents/T-Editing-Guidelines-201602/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T A.1500 (fictitious)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T A.1500 (fictitious)</docidentifier>
   <docidentifier type="ITU-lang">ITU-T A.1500 (fictitious)-E</docidentifier>
   <docnumber>A.1500 (fictitious)</docnumber>
   <date type="published">
@@ -394,14 +390,14 @@
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Ethics and governance of artificial intelligence for health</title>
   <uri type="xml">documents/T-FG-AI4H-2022-MSW/en.xml</uri>
   <uri type="pdf">documents/T-FG-AI4H-2022-MSW/en.pdf</uri>
   <uri type="doc">documents/T-FG-AI4H-2022-MSW/en.doc</uri>
   <uri type="html">documents/T-FG-AI4H-2022-MSW/en.html</uri>
   <uri type="rxl">documents/T-FG-AI4H-2022-MSW/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T FG-AI4H DEL01</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T FG-AI4H DEL01</docidentifier>
   <docidentifier type="ITU-lang">ITU-T FG-AI4H DEL01-E</docidentifier>
   <docidentifier type="ITU-Recommendation">ITU-T FG-AI4H</docidentifier>
   <docnumber>FG-AI4H DEL01</docnumber>
@@ -453,13 +449,7 @@
   <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;Artificial Intelligence (AI) refers to the ability of algorithms encoded in
-technology to learn from data so that they can perform automated tasks without every
-step in the process having to be programmed explicitly by a human. While AI holds
-great promise for the practice of public health and medicine, ethical challenges for
-health care systems, practitioners and beneficiaries of medical and public health
-services must be addressed. Many of the ethical concerns described in this document
-predate the advent of AI, although AI itself presents a number of novel concerns.&lt;/p&gt;
+  <abstract>&lt;p&gt;Artificial Intelligence (AI) refers to the ability of algorithms encoded in technology to learn from data so that they can perform automated tasks without every step in the process having to be programmed explicitly by a human. While AI holds great promise for the practice of public health and medicine, ethical challenges for health care systems, practitioners and beneficiaries of medical and public health services must be addressed. Many of the ethical concerns described in this document predate the advent of AI, although AI itself presents a number of novel concerns.&lt;/p&gt;
 
 &lt;p&gt;This document endorses a set of six key ethical principles:&lt;/p&gt;
 
@@ -477,9 +467,7 @@ predate the advent of AI, although AI itself presents a number of novel concerns
 &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It is hoped that these principles will be used as a basis for governments, technology
-developers, companies, civil society and inter-governmental organizations to adopt
-ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
+&lt;p&gt;It is hoped that these principles will be used as a basis for governments, technology developers, companies, civil society and inter-governmental organizations to adopt ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
   <status>
     <stage>in-force</stage>
   </status>
@@ -510,7 +498,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Alternative approval process for new and revised ITU-T Recommendations</title>
   <title type="subtitle" format="text/plain" language="en">(2000; 2004; 2006; 2008)</title>
   <uri type="xml">documents/T-REC-A.8-200810-I/en.xml</uri>
@@ -518,7 +506,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
   <uri type="doc">documents/T-REC-A.8-200810-I/en.doc</uri>
   <uri type="html">documents/T-REC-A.8-200810-I/en.html</uri>
   <uri type="rxl">documents/T-REC-A.8-200810-I/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T A.8</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T A.8</docidentifier>
   <docidentifier type="ITU-lang">ITU-T A.8-E</docidentifier>
   <docnumber>A.8</docnumber>
   <date type="published">
@@ -567,14 +555,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
   <uri type="xml">documents/T-REC-G.Imp8001-202002-I/en.xml</uri>
   <uri type="pdf">documents/T-REC-G.Imp8001-202002-I/en.pdf</uri>
   <uri type="doc">documents/T-REC-G.Imp8001-202002-I/en.doc</uri>
   <uri type="html">documents/T-REC-G.Imp8001-202002-I/en.html</uri>
   <uri type="rxl">documents/T-REC-G.Imp8001-202002-I/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier>
   <docidentifier type="ITU-lang">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier>
   <docidentifier type="ITU-Recommendation">ITU-T G.8001</docidentifier>
   <docidentifier type="ITU-Recommendation">Y</docidentifier>
@@ -658,6 +646,10 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
       <bureau>T</bureau>
       <group type="study-group">
         <name>15</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
       </group>
     </editorialgroup>
     <structuredidentifier>
@@ -666,14 +658,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Digital signage: Metadata</title>
   <uri type="xml">documents/T-REC-H.792-201811/en.xml</uri>
   <uri type="pdf">documents/T-REC-H.792-201811/en.pdf</uri>
   <uri type="doc">documents/T-REC-H.792-201811/en.doc</uri>
   <uri type="html">documents/T-REC-H.792-201811/en.html</uri>
   <uri type="rxl">documents/T-REC-H.792-201811/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T H.782</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.782</docidentifier>
   <docidentifier type="ITU-lang">ITU-T H.782-E</docidentifier>
   <docnumber>H.782</docnumber>
   <date type="published">
@@ -733,14 +725,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Implementors' Guide for the H.248 Sub-series of Recommendations ("Media Gateway Control Protocol")</title>
   <uri type="xml">documents/T-REC-H.Imp248-201710-I/en.xml</uri>
   <uri type="pdf">documents/T-REC-H.Imp248-201710-I/en.pdf</uri>
   <uri type="doc">documents/T-REC-H.Imp248-201710-I/en.doc</uri>
   <uri type="html">documents/T-REC-H.Imp248-201710-I/en.html</uri>
   <uri type="rxl">documents/T-REC-H.Imp248-201710-I/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T H.248 Sub-series Implementors Guide</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248 Sub-series Implementors Guide</docidentifier>
   <docidentifier type="ITU-lang">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier>
   <docidentifier type="ITU-Recommendation">ITU-T H.248</docidentifier>
   <docnumber>H.248 Sub-series Implementors Guide</docnumber>
@@ -827,6 +819,10 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
       <bureau>T</bureau>
       <group type="study-group">
         <name>16</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
       </group>
     </editorialgroup>
     <structuredidentifier>
@@ -835,14 +831,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Transmission specification for radio over IP transmission systems</title>
   <uri type="xml">documents/T-REC-J.1108-201901-P/en.xml</uri>
   <uri type="pdf">documents/T-REC-J.1108-201901-P/en.pdf</uri>
   <uri type="doc">documents/T-REC-J.1108-201901-P/en.doc</uri>
   <uri type="html">documents/T-REC-J.1108-201901-P/en.html</uri>
   <uri type="rxl">documents/T-REC-J.1108-201901-P/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T J.1108</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier>
   <docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier>
   <docnumber>J.1108</docnumber>
   <date type="published">
@@ -898,14 +894,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Transmission specification for Radio over IP transmission systems</title>
   <uri type="xml">documents/T-REC-J.1108-201901-P-draft/en.xml</uri>
   <uri type="pdf">documents/T-REC-J.1108-201901-P-draft/en.pdf</uri>
   <uri type="doc">documents/T-REC-J.1108-201901-P-draft/en.doc</uri>
   <uri type="html">documents/T-REC-J.1108-201901-P-draft/en.html</uri>
   <uri type="rxl">documents/T-REC-J.1108-201901-P-draft/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T J.1108</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier>
   <docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier>
   <docnumber>J.1108</docnumber>
   <date type="published">
@@ -958,14 +954,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport</title>
   <uri type="xml">documents/T-REC-P.1203-201710-I/en.xml</uri>
   <uri type="pdf">documents/T-REC-P.1203-201710-I/en.pdf</uri>
   <uri type="doc">documents/T-REC-P.1203-201710-I/en.doc</uri>
   <uri type="html">documents/T-REC-P.1203-201710-I/en.html</uri>
   <uri type="rxl">documents/T-REC-P.1203-201710-I/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T P.1203</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.1203</docidentifier>
   <docidentifier type="ITU-lang">ITU-T P.1203-E</docidentifier>
   <docnumber>P.1203</docnumber>
   <date type="published">
@@ -1013,7 +1009,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
 &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The ITU-T P.1203-series of Recommendations addresses two application areas, which are respectively indicated in the module-related Recommendations &lt;eref type="inline" bibitemid="ITU-T_P.1203.1" citeas="ITU-T P.1203.1"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.2" citeas="ITU-T P.1203.2"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.3" citeas="ITU-T P.1203.3"/&gt;:&lt;/p&gt;
+&lt;p&gt;The ITU-T P.1203-series of Recommendations addresses two application areas, which are respectively indicated in the module-related Recommendations &lt;eref type="inline" bibitemid="ITU-T_P.1203.1" citeas="ITU-T P.1203.1 (01/2019)"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.2" citeas="ITU-T P.1203.2 (10/2017)"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.3" citeas="ITU-T P.1203.3 (01/2019)"/&gt;:&lt;/p&gt;
 
 &lt;ul&gt;&lt;li&gt;&lt;p&gt;Large-screen presentation as with fixed-network video streaming&lt;/p&gt;
 &lt;/li&gt;
@@ -1066,14 +1062,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Implementers' guide for P.863</title>
   <uri type="xml">documents/T-REC-P.Imp863-201805-I/en.xml</uri>
   <uri type="pdf">documents/T-REC-P.Imp863-201805-I/en.pdf</uri>
   <uri type="doc">documents/T-REC-P.Imp863-201805-I/en.doc</uri>
   <uri type="html">documents/T-REC-P.Imp863-201805-I/en.html</uri>
   <uri type="rxl">documents/T-REC-P.Imp863-201805-I/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T P.863 Implementers' Guide</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier>
   <docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier>
   <docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier>
   <docnumber>P.863 Implementers' Guide</docnumber>
@@ -1161,6 +1157,10 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
       <bureau>T</bureau>
       <group type="study-group">
         <name>12</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
       </group>
     </editorialgroup>
     <structuredidentifier>
@@ -1169,14 +1169,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Implementers' guide 2 for ITU-T P.863</title>
   <uri type="xml">documents/T-REC-P.Imp863-201912-I/en.xml</uri>
   <uri type="pdf">documents/T-REC-P.Imp863-201912-I/en.pdf</uri>
   <uri type="doc">documents/T-REC-P.Imp863-201912-I/en.doc</uri>
   <uri type="html">documents/T-REC-P.Imp863-201912-I/en.html</uri>
   <uri type="rxl">documents/T-REC-P.Imp863-201912-I/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T P.863 Implementers' Guide</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier>
   <docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier>
   <docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier>
   <docnumber>P.863 Implementers' Guide</docnumber>
@@ -1238,7 +1238,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
   <edition>2</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;This document contains all updates submitted up to and including those at Study Group 12 meeting in November 2019 except for those already published in the earlier implementer's guide (&lt;eref type="inline" bibitemid="p-imp863" citeas="P.Imp863"/&gt; (05/18)).&lt;/p&gt;
+  <abstract>&lt;p&gt;This document contains all updates submitted up to and including those at Study Group 12 meeting in November 2019 except for those already published in the earlier implementer's guide (&lt;eref type="inline" bibitemid="p-imp863" citeas="ITU-T P.Imp863 (06/2022)"/&gt; (05/18)).&lt;/p&gt;
 
 &lt;p&gt;This document was agreed by ITU-T Study Group 12 on 5 December 2019 and is the initial version of this implementer's guide.&lt;/p&gt;</abstract>
   <status>
@@ -1265,6 +1265,10 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
       <bureau>T</bureau>
       <group type="study-group">
         <name>12</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
       </group>
     </editorialgroup>
     <structuredidentifier>
@@ -1273,14 +1277,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Integrated broadcast-broadband digital TV application cooperated with server for functional extension including functions of digital TV reception and processing</title>
   <uri type="xml">documents/T-TUT-CABLETV-2020/en.xml</uri>
   <uri type="pdf">documents/T-TUT-CABLETV-2020/en.pdf</uri>
   <uri type="doc">documents/T-TUT-CABLETV-2020/en.doc</uri>
   <uri type="html">documents/T-TUT-CABLETV-2020/en.html</uri>
   <uri type="rxl">documents/T-TUT-CABLETV-2020/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T JSTP-IBBDTV</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T JSTP-IBBDTV</docidentifier>
   <docidentifier type="ITU-lang">ITU-T JSTP-IBBDTV-E</docidentifier>
   <docnumber>JSTP-IBBDTV</docnumber>
   <date type="published">
@@ -1319,7 +1323,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;This Technical Paper describes an integrated broadcast-broadband (IBB) digital television (TV) application that cooperates with the server for functional extension including functions of digital TV reception and processing. In the current cable TV (CATV) systems, services are dependent on functions of a set top box (STB); thus, the services that require functions beyond the capabilities of an STB cannot be introduced. This system allows for the introduction of new services that require furthering the capabilities of the existing STBs and smoothly transitioning to new STB models. The system is built on an IBB system as defined in &lt;eref type="inline" bibitemid="j207" citeas="ITU-T J.207"/&gt;.&lt;/p&gt;
+  <abstract>&lt;p&gt;This Technical Paper describes an integrated broadcast-broadband (IBB) digital television (TV) application that cooperates with the server for functional extension including functions of digital TV reception and processing. In the current cable TV (CATV) systems, services are dependent on functions of a set top box (STB); thus, the services that require functions beyond the capabilities of an STB cannot be introduced. This system allows for the introduction of new services that require furthering the capabilities of the existing STBs and smoothly transitioning to new STB models. The system is built on an IBB system as defined in &lt;eref type="inline" bibitemid="j207" citeas="ITU-T J.207 (07/2019)"/&gt;.&lt;/p&gt;
 
 &lt;p&gt;This system comprises servers and STBs with the following features. The server receives a cable broadcast signal, processes the required content elements and applications, and transfers the processed outputs to STBs. The STB presents the delivered processed outputs and provides user-interactive functions.&lt;note&gt;&lt;p&gt;This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.&lt;/p&gt;
 &lt;/note&gt;&lt;/p&gt;</abstract>
@@ -1350,14 +1354,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Counterfeit ICT equipment</title>
   <uri type="xml">documents/T-TUT-CCIT-2015/en.xml</uri>
   <uri type="pdf">documents/T-TUT-CCIT-2015/en.pdf</uri>
   <uri type="doc">documents/T-TUT-CCIT-2015/en.doc</uri>
   <uri type="html">documents/T-TUT-CCIT-2015/en.html</uri>
   <uri type="rxl">documents/T-TUT-CCIT-2015/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T QSTR-COUNTERFEIT</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T QSTR-COUNTERFEIT</docidentifier>
   <docidentifier type="ITU-lang">ITU-T QSTR-COUNTERFEIT-E</docidentifier>
   <docnumber>QSTR-COUNTERFEIT</docnumber>
   <date type="published">
@@ -1419,14 +1423,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Survey report on counterfeit ICT devices in Africa region</title>
   <uri type="xml">documents/T-TUT-CCIT-2017/en.xml</uri>
   <uri type="pdf">documents/T-TUT-CCIT-2017/en.pdf</uri>
   <uri type="doc">documents/T-TUT-CCIT-2017/en.doc</uri>
   <uri type="html">documents/T-TUT-CCIT-2017/en.html</uri>
   <uri type="rxl">documents/T-TUT-CCIT-2017/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T QTR-CICT</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T QTR-CICT</docidentifier>
   <docidentifier type="ITU-lang">ITU-T QTR-CICT-E</docidentifier>
   <docnumber>QTR-CICT</docnumber>
   <date type="published">
@@ -1521,14 +1525,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Guideline on web-based remote sign language interpretation or video remote interpretation (VRI) system</title>
   <uri type="xml">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.xml</uri>
   <uri type="pdf">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.pdf</uri>
   <uri type="doc">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.doc</uri>
   <uri type="html">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.html</uri>
   <uri type="rxl">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T FSTP.ACC-WebVRI</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T FSTP.ACC-WebVRI</docidentifier>
   <docidentifier type="ITU-lang">ITU-T FSTP.ACC-WebVRI-E</docidentifier>
   <docnumber>FSTP.ACC-WebVRI</docnumber>
   <date type="published">
@@ -1608,14 +1612,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant</title>
   <uri type="xml">documents/T-TUT-L-2020-GLR/en.xml</uri>
   <uri type="pdf">documents/T-TUT-L-2020-GLR/en.pdf</uri>
   <uri type="doc">documents/T-TUT-L-2020-GLR/en.doc</uri>
   <uri type="html">documents/T-TUT-L-2020-GLR/en.html</uri>
   <uri type="rxl">documents/T-TUT-L-2020-GLR/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T LSTP-GLSR</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T LSTP-GLSR</docidentifier>
   <docidentifier type="ITU-lang">ITU-T LSTP-GLSR-E</docidentifier>
   <docnumber>LSTP-GLSR</docnumber>
   <date type="published">
@@ -1678,14 +1682,14 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Cloud computing - Functional requirements of physical machine</title>
   <uri type="xml">documents/Y.3507-201812/en.xml</uri>
   <uri type="pdf">documents/Y.3507-201812/en.pdf</uri>
   <uri type="doc">documents/Y.3507-201812/en.doc</uri>
   <uri type="html">documents/Y.3507-201812/en.html</uri>
   <uri type="rxl">documents/Y.3507-201812/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T Y.3507</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T Y.3507</docidentifier>
   <docidentifier type="ITU-lang">ITU-T Y.3507-E</docidentifier>
   <docnumber>Y.3507</docnumber>
   <date type="published">
@@ -1744,7 +1748,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title type="main" format="text/plain" language="en">Specification and Description Language – Overview of SDL-2010</title>
   <title type="annex" format="text/plain" language="en">SDL-2010 formal definition: General overview</title>
   <uri type="xml">documents/Z.100-201811-AnnF1/en.xml</uri>
@@ -1752,7 +1756,7 @@ ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
   <uri type="doc">documents/Z.100-201811-AnnF1/en.doc</uri>
   <uri type="html">documents/Z.100-201811-AnnF1/en.html</uri>
   <uri type="rxl">documents/Z.100-201811-AnnF1/en.rxl</uri>
-  <docidentifier type="ITU">ITU-T Z.100</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T Z.100</docidentifier>
   <docidentifier type="ITU-lang">ITU-T Z.100-E</docidentifier>
   <docnumber>Z.100</docnumber>
   <date type="published">

@@ -1,13 +1,13 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_ae97ccb3.2bbd.4937"
+Content-Type: multipart/related; boundary="----=_NextPart_215ba586.cf11.4f3d"
 
-------=_NextPart_ae97ccb3.2bbd.4937
+------=_NextPart_215ba586.cf11.4f3d
 Content-ID: <en.htm>
 Content-Disposition: inline; filename="en.htm"
 Content-Type: text/html; charset="utf-8"
 
 <?xml version="1.0"?>
-<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
   <head>
 <xml>
 <w:WordDocument>
@@ -212,6 +212,7 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -227,6 +228,7 @@ p.MsoHeaderLandscape, li.MsoHeaderLandscape, div.MsoHeaderLandscape {
   mso-layout-grid-align: none;
   punctuation-wrap: simple;
   text-autospace: none;
+          
   font-size: 9.0pt;
   mso-bidi-font-size: 10.0pt;
   font-family: "Times New Roman",serif;
@@ -1912,6 +1914,45 @@ ol {
 ul {
   margin-bottom: 0cm;
   margin-left: 18pt; }
+p.Sourcecode table td { padding: 5px; }
+p.Sourcecode table pre { margin: 0; }
+p.Sourcecode, p.Sourcecode .w {
+  color: #444444;
+}
+p.Sourcecode .cp {
+  color: #CC00A3;
+}
+p.Sourcecode .cs {
+  color: #CC00A3;
+}
+p.Sourcecode .c, p.Sourcecode .ch, p.Sourcecode .cd, p.Sourcecode .cm, p.Sourcecode .cpf, p.Sourcecode .c1 {
+  color: #FF0000;
+}
+p.Sourcecode .kc {
+  color: #C34E00;
+}
+p.Sourcecode .kd {
+  color: #0000FF;
+}
+p.Sourcecode .kr {
+  color: #007575;
+}
+p.Sourcecode .k, p.Sourcecode .kn, p.Sourcecode .kp, p.Sourcecode .kt, p.Sourcecode .kv {
+  color: #0000FF;
+}
+p.Sourcecode .s, p.Sourcecode .sb, p.Sourcecode .sc, p.Sourcecode .ld, p.Sourcecode .sd, p.Sourcecode .s2, p.Sourcecode .se, p.Sourcecode .sh, p.Sourcecode .si, p.Sourcecode .sx, p.Sourcecode .sr, p.Sourcecode .s1, p.Sourcecode .ss {
+  color: #009C00;
+}
+p.Sourcecode .sa {
+  color: #0000FF;
+}
+p.Sourcecode .nb, p.Sourcecode .bp {
+  color: #C34E00;
+}
+p.Sourcecode .nt {
+  color: #0000FF;
+}
+
 
 -->
 ]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
@@ -2901,6 +2942,7 @@ div.WordSection1 {
 
   mso-page-numbers: roman-lower 1;
 
+
   mso-even-header: url(cid:header.html) eh2;
   mso-header: url(cid:header.html) h2;
   mso-even-footer: url(cid:header.html) ef2;
@@ -3144,7 +3186,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:70.9pt;mso-height-rule:   exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <p class="MsoNormal"><v:shapetype coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><a name="_x0000_t75" id="_x0000_t75"></a>
    <v:stroke joinstyle="miter"/>
    <v:formulas>
     <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -3162,40 +3204,40 @@ table.biblio td {
    </v:formulas>
    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
    <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f">
-  <v:imagedata src="cid:f1ba2771-e2eb-45eb-91fe-f8d36860b5c0.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
-  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></a></p>
+  </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f"><a name="Picture_x0020_2" id="Picture_x0020_2"></a>
+  <v:imagedata src="cid:cc1b16df-1c0c-4d8e-b23c-927c2835ec35.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
+  </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></a></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   <br style="mso-ignore:vglayout" clear="ALL"/>
-  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal" style="margin-top:14.2pt"><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,sans-serif;color:gray;letter-spacing:   5.0pt" xml:lang="EN-GB">International Telecommunication Union</span></b></span><span style="mso-bookmark:_Hlk526346232"><b><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:1;height:49.6pt;mso-height-rule:exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="568" colspan="3" valign="top" style="width:426.0pt;padding:0cm 5.4pt 0cm 5.4pt;   height:49.6pt;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
  <tr style="mso-yfti-irow:2;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="168" valign="top" style="width:126.0pt;padding:0cm 4.25pt 0cm 4.25pt">
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:36.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;letter-spacing:2.0pt;mso-ansi-language:EN-US" xml:lang="EN-US">ITU-T</span></b></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="400" colspan="2" valign="top" style="width:300.0pt;padding:0cm 4.25pt 0cm 4.25pt">
   <p class="MsoNormal" align="right" style="margin-top:12.0pt;text-align:right"><span style="mso-bookmark:_Hlk526346232">
     
-    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">J.1108<o:p></o:p></span></b></a>
+    <a name="dnume" id="dnume"><b style="mso-bidi-font-weight:   normal"><span lang="EN-US" style="font-size:30.0pt;mso-bidi-font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">J.1108<o:p class="MsoNormal"></o:p></span></b></a>
     
               
           
@@ -3206,13 +3248,15 @@ table.biblio td {
  <tr style="mso-yfti-irow:3;height:48.7pt;mso-row-margin-left:71.4pt">
   <td style="mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm" width="95" colspan="2"><p class="MsoNormal">&#xA0;</p></td>
   <td width="303" colspan="2" valign="top" style="width:227.45pt;padding:0cm 4.25pt 0cm 4.25pt;   height:48.7pt">
-    
-  <p class="MsoNormal" align="left" style="text-align:left"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">TELECOMMUNICATION</span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;   font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><br/>
-  </span></span><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">STANDARDIZATION SECTOR<br/>
-  OF ITU</span></span><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:10.0pt;   mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></p>
+
+  
+  
+  <p class="MsoNormal" align="left" style="text-align:left">
+  <span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;               mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">Telecommunication<br/>Standardization Bureau<br/>of ITU</span></p>
   
       
     
+  
 
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
@@ -3220,32 +3264,32 @@ table.biblio td {
   
   
   <p class="MsoNormal" align="right" style="margin-top:0cm;text-align:right">
-  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(01/2019)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p></o:p></span></a></span></p>
+  <span style="mso-bookmark:_Hlk526346232"><a name="ddatee" id="ddatee"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">(01/2019)<span style="mso-spacerun:yes">&#xA0;&#xA0; </span><o:p class="MsoNormal"></o:p></span></a></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:ddatee"></span></span>
  </tr>
  <tr style="mso-yfti-irow:4;page-break-inside:avoid;height:6.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:6.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;border:none;   border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.0cm;   mso-height-rule:exactly">
     
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dsece" id="dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">SERIES J: CABLE NETWORKS AND TRANSMISSION OF TELEVISION, SOUND PROGRAMME AND OTHER MULTIMEDIA SIGNALS<o:p></o:p></span></a></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dsece" id="dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">SERIES J: CABLE NETWORKS AND TRANSMISSION OF TELEVISION, SOUND PROGRAMME AND OTHER MULTIMEDIA SIGNALS<o:p class="MsoNormal"></o:p></span></a></span></p>
   
   
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">Switched digital video over cable networks&#xA0;<o:p></o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US">Switched digital video over cable networks&#xA0;<o:p class="MsoNormal"></o:p></span></span></span></p>
   
       
   
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
-  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></span></p>
+  <p class="MsoNormal" align="left" style="text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:dsece"></span></span>
  </tr>
  <tr style="mso-yfti-irow:5;page-break-inside:avoid;height:4.0cm;mso-height-rule:   exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="top" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:4.0cm;mso-height-rule:exactly">
@@ -3254,7 +3298,7 @@ table.biblio td {
   <b>Transmission specification for Radio over IP transmission systems</b>
   
   </span>
-  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p></o:p></span></b></span></span></p>
+  </a></span><span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"><b><span lang="EN-US" style="font-size:18.0pt;mso-bidi-font-size:10.0pt;font-family:   &quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:   EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></b></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"><span style="mso-bookmark:c1tite"></span></span>
  </tr>
@@ -3262,15 +3306,12 @@ table.biblio td {
   
  <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;page-break-inside:avoid;   height:2.5cm;mso-height-rule:exactly">
   <td width="95" valign="top" style="width:70.9pt;border:none;border-right:solid windowtext 2.25pt;   padding:0cm 5.4pt 0cm 5.4pt;height:4.0cm;mso-height-rule:exactly">
-  <p class="MsoNormal" style="tab-stops:right 17.0cm"><span lang="EN-GB" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-bidi-font-family:&quot;Times New Roman&quot;" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></p>
+  <p class="MsoNormal" style="tab-stops:right 17.0cm"><span lang="EN-GB" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-bidi-font-family:&quot;Times New Roman&quot;" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
   </td>
   <td width="569" colspan="4" style="width:426.5pt;border-top:none;border-left:   none;border-bottom:solid windowtext 2.25pt;border-right:solid windowtext 2.25pt;   mso-border-top-alt:solid windowtext 2.25pt;mso-border-left-alt:solid windowtext 2.25pt;   padding:0cm 5.4pt 0cm 5.4pt;height:4.0cm;mso-height-rule:exactly">
     <div><a name="draft-warning" id="draft-warning"></a><p class="draftwarningHdr">CAUTION! PREPUBLISHED RECOMMENDATION</p>
 
-<p class="MsoNormal"><a name="_70eaf4fb-5407-a798-95eb-e6d3b858436a" id="_70eaf4fb-5407-a798-95eb-e6d3b858436a"></a>This prepublication is an unedited version of a recently approved Recommendation.
-It will be replaced by the published version after editing. Therefore,
-there will be differences between this prepublication and the published
-version.</p>
+<p class="MsoNormal"><a name="_2454530b-cd90-fb16-7c83-60871631d68b" id="_2454530b-cd90-fb16-7c83-60871631d68b"></a>This prepublication is an unedited version of a recently approved Recommendation. It will be replaced by the published version after editing. Therefore, there will be differences between this prepublication and the published version.</p>
 </div>
   </td>
  </tr>
@@ -3278,18 +3319,18 @@ version.</p>
  
  <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;page-break-inside:avoid;   height:1.5cm;mso-height-rule:exactly">
   <td width="95" valign="top" style="width:70.9pt;padding:0cm 5.4pt 0cm 5.4pt;   height:1.5cm;mso-height-rule:exactly"><span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" style="tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="font-size:9.0pt;   mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:   &quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <td width="569" colspan="4" valign="bottom" style="width:426.5pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
   <p class="MsoNormal" align="left" style="margin-top:3.0pt;margin-right:0cm;   margin-bottom:12.0pt;margin-left:0cm;text-align:left;tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:_Hlk526346232"><a name="dnum2e" id="dnum2e"></a>
   
   <span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;   mso-ansi-language:EN-US" xml:lang="EN-US">Recommendation<span style="mso-spacerun:yes">&#xA0;
-  </span>ITU&#x2011;T<span style="mso-spacerun:yes">&#xA0; </span>J.1108<o:p></o:p></span>
+  </span>ITU&#x2011;T<span style="mso-spacerun:yes">&#xA0; </span>J.1108<o:p class="MsoNormal"></o:p></span>
   
   </span></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal" align="left" style="margin-top:3.0pt;text-align:left;   tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm"><span style="mso-bookmark:   _Hlk526346232"><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:   10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3299,14 +3340,14 @@ version.</p>
 <p class="MsoNormal" align="right" style="margin-top:0.0pt;text-align:right; tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm">
   <span style="mso-bookmark: _Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt; font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-no-proof:yes" xml:lang="EN-US">
-      <v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square">
-<v:imagedata src="cid:6de7e294-4f8f-4e02-aa54-5d2401071caa.svg" o:title="logo_E" width="272" height="300"/>
+      <v:shape o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square"><a name="Picture_x0020_1" id="Picture_x0020_1"></a>
+<v:imagedata src="cid:d3f78877-38ab-47c6-86c9-364c0111e142.svg" o:title="logo_E" width="272" height="300"/>
 </v:shape>
     </span>
   </span>
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif; mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US" xml:lang="EN-US">
-      <o:p></o:p>
+      <o:p class="MsoNormal"></o:p>
     </span>
   </span>
 </p>
@@ -3316,11 +3357,12 @@ version.</p>
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection2">
+
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Recommendation ITU-T J.1108<o:p></o:p></span></span></p>
-  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Transmission specification for Radio over IP transmission systems<o:p></o:p></span></span></p>
+  <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Recommendation ITU-T J.1108<o:p class="MsoNormal"></o:p></span></span></p>
+  <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Transmission specification for Radio over IP transmission systems<o:p class="MsoNormal"></o:p></span></span></p>
   
   
   
@@ -3328,7 +3370,7 @@ version.</p>
   
   
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p>&#xA0;</o:p></span></span></p>
+  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3337,17 +3379,17 @@ version.</p>
 <p class="MsoNormal">
   <span style="mso-bookmark:_Hlk526346232">
     <span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH">
-      <o:p>&#xA0;</o:p>
+      <o:p class="MsoNormal">&#xA0;</o:p>
     </span>
   </span>
 </p>
 
 
 
-<p class="MsoNormal"><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+<p class="MsoNormal"><o:wrapblock><v:shapetype coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><a name="_x0000_t202" id="_x0000_t202"></a>
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
+ </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt"><a name="Text_x0020_Box_x0020_1" id="Text_x0020_Box_x0020_1"></a>
   <v:fill o:detectmouseclick="t"></v:fill>
   <v:textbox style="mso-fit-shape-to-text:t">
       <div><a name="abstractbox" id="abstractbox"></a>
@@ -3356,15 +3398,15 @@ version.</p>
   <w:wrap type="topAndBottom" anchory="margin"/>
   <w:anchorlock></w:anchorlock>
  </v:shape></o:wrapblock><br style="mso-ignore:vglayout" clear="ALL">
-<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p></o:p></span></br>
+<span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal"></o:p></span></br>
 
 
 
  
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <!--
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663"
@@ -3384,11 +3426,11 @@ version.</p>
 </table>
 -->
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <div><a name="sourcebox" id="sourcebox"></a></div>
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
@@ -3404,7 +3446,7 @@ version.</p>
 
   
 
-<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p>&#xA0;</o:p></span></span></p>
+<p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="EN-US" style="mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
 
 
   
@@ -3414,7 +3456,7 @@ version.</p>
 
 <div class="boilerplate-legal">
 
-<div><a name="_foreword" id="_foreword"></a><p class="boilerplateHdr">FOREWORD</p>
+<div><a name="_1fba8ccf-6f24-0dad-4055-1e17b8aab376" id="_1fba8ccf-6f24-0dad-4055-1e17b8aab376"></a><p class="boilerplateHdr">FOREWORD</p>
 
 <p class="boilerplate"><a name="_f4854233-2d6a-cf7b-e65a-329b5f5ac2cd" id="_f4854233-2d6a-cf7b-e65a-329b5f5ac2cd"></a>The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
@@ -3424,7 +3466,7 @@ version.</p>
 
 <p class="boilerplate"><a name="_f5700abd-cb53-4bd6-2685-6e94ca2ed603" id="_f5700abd-cb53-4bd6-2685-6e94ca2ed603"></a>In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 
-<div><a name="_note" id="_note"></a><h3>NOTE</h3>
+<div><a name="_967e0234-669f-e6ea-b30f-c876f4cdd454" id="_967e0234-669f-e6ea-b30f-c876f4cdd454"></a><h3>NOTE</h3>
 
 <p class="boilerplate"><a name="_18bb5e59-371f-db8f-97bf-41e97c00aaa5" id="_18bb5e59-371f-db8f-97bf-41e97c00aaa5"></a>In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
 
@@ -3436,11 +3478,11 @@ version.</p>
 <p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p></div>
 <div class="boilerplate-license">
 
-<div><a name="_intellectual_property_rights" id="_intellectual_property_rights"></a><p class="boilerplateHdr">INTELLECTUAL PROPERTY RIGHTS</p>
+<div><a name="_4e168d71-002e-b69b-bbc5-c2db63824bd8" id="_4e168d71-002e-b69b-bbc5-c2db63824bd8"></a><p class="boilerplateHdr">INTELLECTUAL PROPERTY RIGHTS</p>
 
 <p class="boilerplate"><a name="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae" id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae"></a>ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p class="boilerplate"><a name="_6f9c905a-7432-63f2-1fbc-3d7476d27115" id="_6f9c905a-7432-63f2-1fbc-3d7476d27115"></a>As of the date of approval of this Recommendation, ITU had  received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <a href="http://www.itu.int/ITU-T/ipr/" class="url">http://www.itu.int/ITU-T/ipr/</a>.</p>
+<p class="boilerplate"><a name="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf" id="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf"></a>As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <a href="http://www.itu.int/ITU-T/ipr/" class="url">http://www.itu.int/ITU-T/ipr/</a>.</p>
 </div>
 <p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p></div>
 <div class="boilerplate-copyright">
@@ -3453,101 +3495,102 @@ version.</p>
 </div>
 
 
+
 </p></p><div class="authority">
 
 
 
 
-</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_eadabf7f-9c95-452f-864a-c7d38a63fe2f" id="_eadabf7f-9c95-452f-864a-c7d38a63fe2f"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_2ea89a20-6b60-440b-84f6-48722c6b210d" id="_2ea89a20-6b60-440b-84f6-48722c6b210d"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc993913492">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc619914630">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc993913492 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc619914630 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc536510991">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc259913996">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc536510991 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc259913996 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc646123662">3. Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc830798232">3. Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc646123662 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc830798232 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc738484093">3.1. Terms defined elsewhere<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc118844653">3.1. Terms defined elsewhere<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc738484093 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc118844653 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc331149906">3.2. Terms defined in this recommendation<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc836876963">3.2. Terms defined in this recommendation<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc331149906 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc836876963 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc108815072">4. Abbreviations and acronyms<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc886932478">4. Abbreviations and acronyms<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc108815072 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc886932478 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc756542493">5. Conventions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc678550048">5. Conventions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc756542493 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc678550048 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc672369869">6. Overview<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc511279684">6. Overview<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc672369869 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc511279684 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc784233217">7. Functional Architecture<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc571788523">7. Functional Architecture<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc784233217 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc571788523 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc939234145">8. Timing Processing Specification<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc233560559">8. Timing Processing Specification<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc939234145 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc233560559 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc223301108">Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc756276818">Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc223301108 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc756276818 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
-<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p>&#xA0;</o:p></span></p>
+<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
 </div><p class="MsoNormal">&#xA0;</p></div>
     <p class="MsoNormal">
       <br clear="all" class="section"/>
@@ -3555,11 +3598,17 @@ version.</p>
     <div class="WordSection3">
       <p class="zzSTDTitle1">Draft new Recommendation ITU-T J.1108</p>
       <p class="zzSTDTitle2">Transmission specification for Radio over IP transmission systems</p>
-      <div><a name="scope" id="scope"></a><h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1><p class="MsoNormal"><a name="_6675198e-deaf-f44c-52d3-f5c94739dfa9" id="_6675198e-deaf-f44c-52d3-f5c94739dfa9"></a>Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. <a><a name="_Hlk530637669" id="_Hlk530637669"></a></a>The architecture described in this Draft [New] Recommendation are defined according to <a href="#j1106">[ITU-T&#xA0;J.1106]</a>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:</p><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst">Radio over IP terminal system
+      <div>
+        <a name="scope" id="scope"></a>
+        <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1>
+        <p class="MsoNormal"><a name="_6675198e-deaf-f44c-52d3-f5c94739dfa9" id="_6675198e-deaf-f44c-52d3-f5c94739dfa9"></a>Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. <a><a name="_Hlk530637669" id="_Hlk530637669"></a></a>The architecture described in this Draft [New] Recommendation are defined according to <a href="#j1106">[ITU-T&#xA0;J.1106&#xA0;(07/2017)]</a>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:</p>
+        <div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst">Radio over IP terminal system
 </p>
 <p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast">Radio over IP headend system
 </p>
-<p class="MsoNormal"><a name="_a0fc87f4-e08a-349a-8a28-8a03244ad356" id="_a0fc87f4-e08a-349a-8a28-8a03244ad356"></a>The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Draft[New] Recommendation are defined the timing processing specification.</p></div>
+</div>
+        <p class="MsoNormal"><a name="_a0fc87f4-e08a-349a-8a28-8a03244ad356" id="_a0fc87f4-e08a-349a-8a28-8a03244ad356"></a>The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Draft[New] Recommendation are defined the timing processing specification.</p>
+      </div>
       <div>
         <h1>2.<span style="mso-tab-count:1">&#xA0; </span>References</h1>
         <table class="biblio" border="0">
@@ -3571,33 +3620,33 @@ version.</p>
             </tr>
             <tr class="NormRef">
               <a name="j1106" id="j1106"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1106]</td>
-              <td>Recommendation ITU-T&#xA0;J.1106, <i>Requirement for radio over IP transmission system</i>, 1st edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1106&#xA0;(07/2017)]</td>
+              <td>Recommendation ITU-T&#xA0;J.1106&#xA0;(07/2017), <i>Requirement for radio over IP transmission system</i>, First edition.</td>
             </tr>
             <tr class="NormRef">
               <a name="j1107" id="j1107"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1107]</td>
-              <td>Recommendation ITU-T&#xA0;J.1107, <i>Architecture and specification for radio over IP transmission systems</i>, 1st edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1107&#xA0;(03/2018)]</td>
+              <td>Recommendation ITU-T&#xA0;J.1107&#xA0;(03/2018), <i>Architecture and specification for radio over IP transmission systems</i>, First edition.</td>
             </tr>
             <tr class="NormRef">
               <a name="j210" id="j210"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.210]</td>
-              <td>Recommendation ITU-T&#xA0;J.210, <i>Downstream RF interface for cable modem termination systems</i>, 1st edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.210&#xA0;(11/2006)]</td>
+              <td>Recommendation ITU-T&#xA0;J.210&#xA0;(11/2006), <i>Downstream RF interface for cable modem termination systems</i>, First edition.</td>
             </tr>
             <tr class="NormRef">
               <a name="j222-1" id="j222-1"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.1]</td>
-              <td>Recommendation ITU-T&#xA0;J.222.1, <i>Third-generation transmission systems for interactive cable television services &#x2013; IP cable modems: Physical layer specification</i>, 1st edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.1&#xA0;(07/2007)]</td>
+              <td>Recommendation ITU-T&#xA0;J.222.1&#xA0;(07/2007), <i>Third-generation transmission systems for interactive cable television services &#x2013; IP cable modems: Physical layer specification</i>, First edition.</td>
             </tr>
             <tr class="NormRef">
               <a name="j222-2" id="j222-2"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.2]</td>
-              <td>Recommendation ITU-T&#xA0;J.222.2, <i>Third-generation transmission systems for interactive cable television services &#x2013; IP cable modems: MAC and Upper Layer protocols</i>, 1st edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.2&#xA0;(07/2007)]</td>
+              <td>Recommendation ITU-T&#xA0;J.222.2&#xA0;(07/2007), <i>Third-generation transmission systems for interactive cable television services &#x2013; IP cable modems: MAC and Upper Layer protocols</i>, First edition.</td>
             </tr>
             <tr class="NormRef">
               <a name="x743" id="x743"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;X.743]</td>
-              <td>Recommendation ITU-T&#xA0;X.743&#xA0;| ISO/IEC&#xA0;10164-20, <i>Information technology &#x2013; Open Systems Interconnection &#x2013; Systems Management: Time Management Function</i>, 1st edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;X.743&#xA0;(06/1998)]</td>
+              <td>Recommendation ITU-T&#xA0;X.743&#xA0;(06/1998)&#xA0;| ISO/IEC&#xA0;10164-20, <i>Information technology &#x2013; Open Systems Interconnection &#x2013; Systems Management: Time Management Function</i>, First edition.</td>
             </tr>
           </tbody>
         </table>
@@ -3607,7 +3656,7 @@ version.</p>
         <h1>3.<span style="mso-tab-count:1">&#xA0; </span>Definitions</h1>
         <div><a name="terms_defined_elsewhere" id="terms_defined_elsewhere"></a><h2>3.1.<span style="mso-tab-count:1">&#xA0; </span>Terms defined elsewhere</h2>
 <p class="MsoNormal"><a name="_3dbc9634-f569-55ae-7b84-3286d36336bf" id="_3dbc9634-f569-55ae-7b84-3286d36336bf"></a>This Recommendation uses the following terms defined elsewhere:</p>
-<div><a name="term_local_clock" id="term_local_clock"></a><p class="TermNum"><a name="term_local_clock" id="term_local_clock"></a><b>3.1.1.<span style="mso-tab-count:1">&#xA0; </span><b>local clock</b></b>: The collection of hardware and software that comprises a local source of time for a system</p>
+<div><a name="term_local_clock" id="term_local_clock"></a><p class="TermNum"><a name="term_local_clock" id="term_local_clock"></a><b>3.1.1.<span style="mso-tab-count:1">&#xA0; </span><b>local clock</b>:</b>The collection of hardware and software that comprises a local source of time for a system</p>
 
 
 
@@ -3622,114 +3671,92 @@ version.</p>
         <a name="abbreviations_and_acronyms" id="abbreviations_and_acronyms"></a>
         <h1>4.<span style="mso-tab-count:1">&#xA0; </span>Abbreviations and acronyms</h1>
         <p class="MsoNormal"><a name="_6edbfb90-221f-451a-f24e-aa6e3d3ecfda" id="_6edbfb90-221f-451a-f24e-aa6e3d3ecfda"></a>This Recommendation uses the following abbreviations and acronyms:</p>
-        <table class="dl">
-          <a name="_f74aa587-1538-366e-f1b9-ae3fca51c359" id="_f74aa587-1538-366e-f1b9-ae3fca51c359"></a>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">CM</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_6c89ffd0-926b-1941-1557-f9fc6fa96fe0" id="_6c89ffd0-926b-1941-1557-f9fc6fa96fe0"></a>Cable Modem</p>
+        <div align="center" class="table_container">
+          <table class="dl" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;">
+            <a name="_f74aa587-1538-366e-f1b9-ae3fca51c359" id="_f74aa587-1538-366e-f1b9-ae3fca51c359"></a>
+            <colgroup>
+              <col width="20%"/>
+              <col width="80%"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">CM</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_6c89ffd0-926b-1941-1557-f9fc6fa96fe0" id="_6c89ffd0-926b-1941-1557-f9fc6fa96fe0"></a>Cable Modem</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">CMTS</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_b067385a-ff67-62df-405f-bdfeaaef23d6" id="_b067385a-ff67-62df-405f-bdfeaaef23d6"></a>Cable Modem Termination System</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">CMTS</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_b067385a-ff67-62df-405f-bdfeaaef23d6" id="_b067385a-ff67-62df-405f-bdfeaaef23d6"></a>Cable Modem Termination System</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">DOCSIS</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_baa53dc7-23bf-245f-544c-8f5501094638" id="_baa53dc7-23bf-245f-544c-8f5501094638"></a>Data Over Cable Service Interface Specifications</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">DOCSIS</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_baa53dc7-23bf-245f-544c-8f5501094638" id="_baa53dc7-23bf-245f-544c-8f5501094638"></a>Data Over Cable Service Interface Specifications</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">DS</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_72ee78e9-4151-8b4a-0785-a5146e33a4ce" id="_72ee78e9-4151-8b4a-0785-a5146e33a4ce"></a>Down Stream</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">DS</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_72ee78e9-4151-8b4a-0785-a5146e33a4ce" id="_72ee78e9-4151-8b4a-0785-a5146e33a4ce"></a>Down Stream</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">E/O</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_0177c4ff-506d-2974-b033-059cb121cab6" id="_0177c4ff-506d-2974-b033-059cb121cab6"></a>Electric to Optic</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">E/O</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_0177c4ff-506d-2974-b033-059cb121cab6" id="_0177c4ff-506d-2974-b033-059cb121cab6"></a>Electric to Optic</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">FTTH</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_5e1ad5e9-8132-ed1e-a9d9-ed81e94e9446" id="_5e1ad5e9-8132-ed1e-a9d9-ed81e94e9446"></a>Fiber To The Home</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">FTTH</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_5e1ad5e9-8132-ed1e-a9d9-ed81e94e9446" id="_5e1ad5e9-8132-ed1e-a9d9-ed81e94e9446"></a>Fiber To The Home</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">HFC</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_f3c7ee2a-8c3d-c6b4-8293-fd2fab1612be" id="_f3c7ee2a-8c3d-c6b4-8293-fd2fab1612be"></a>Hybrid Fiber Coaxial</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">HFC</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_f3c7ee2a-8c3d-c6b4-8293-fd2fab1612be" id="_f3c7ee2a-8c3d-c6b4-8293-fd2fab1612be"></a>Hybrid Fiber Coaxial</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">OLT</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_5106f870-d920-2c10-a001-9dfb57a5849c" id="_5106f870-d920-2c10-a001-9dfb57a5849c"></a>Optical Line Terminal</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">OLT</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_5106f870-d920-2c10-a001-9dfb57a5849c" id="_5106f870-d920-2c10-a001-9dfb57a5849c"></a>Optical Line Terminal</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">OMUX</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_44c551ec-171b-09c6-23d9-3c81231cd742" id="_44c551ec-171b-09c6-23d9-3c81231cd742"></a>Optical Multiplexer</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">OMUX</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_44c551ec-171b-09c6-23d9-3c81231cd742" id="_44c551ec-171b-09c6-23d9-3c81231cd742"></a>Optical Multiplexer</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">PON</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_be2845e4-e5d1-faa1-6f78-32ed8f425acc" id="_be2845e4-e5d1-faa1-6f78-32ed8f425acc"></a>Passive Optical Network</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">PON</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_be2845e4-e5d1-faa1-6f78-32ed8f425acc" id="_be2845e4-e5d1-faa1-6f78-32ed8f425acc"></a>Passive Optical Network</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">RF</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_88bb6f48-363d-3ef3-e0b2-a0fd8cb20216" id="_88bb6f48-363d-3ef3-e0b2-a0fd8cb20216"></a>Radio Frequency</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">RF</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_88bb6f48-363d-3ef3-e0b2-a0fd8cb20216" id="_88bb6f48-363d-3ef3-e0b2-a0fd8cb20216"></a>Radio Frequency</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">RoIP</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_b8684a1b-2e7e-bc1b-c868-17eae5bf78c6" id="_b8684a1b-2e7e-bc1b-c868-17eae5bf78c6"></a>Radio over IP</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">RoIP</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_b8684a1b-2e7e-bc1b-c868-17eae5bf78c6" id="_b8684a1b-2e7e-bc1b-c868-17eae5bf78c6"></a>Radio over IP</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">SO</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_c22328f4-2c67-2481-edc0-95338975af82" id="_c22328f4-2c67-2481-edc0-95338975af82"></a>Service Operator</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">SO</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_c22328f4-2c67-2481-edc0-95338975af82" id="_c22328f4-2c67-2481-edc0-95338975af82"></a>Service Operator</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">STB</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_8e4d028e-a6ff-c7e6-ccb2-89fecae36563" id="_8e4d028e-a6ff-c7e6-ccb2-89fecae36563"></a>Set-Top Box</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">STB</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_8e4d028e-a6ff-c7e6-ccb2-89fecae36563" id="_8e4d028e-a6ff-c7e6-ccb2-89fecae36563"></a>Set-Top Box</p>
 </td>
-          </tr>
-          <tr>
-            <td valign="top" align="left">
-              <p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">US</p>
-            </td>
-            <td valign="top"><p class="MsoNormal"><a name="_79948f0b-b00f-0e83-89bb-1c5267039d17" id="_79948f0b-b00f-0e83-89bb-1c5267039d17"></a>Up Stream</p>
+              </tr>
+              <tr>
+                <th valign="top" style="font-weight:bold;page-break-after:auto;" width="20.0%">US</th>
+                <td valign="top" style="page-break-after:auto;" width="80.0%"><p style="page-break-after:auto" class="MsoNormal"><a name="_79948f0b-b00f-0e83-89bb-1c5267039d17" id="_79948f0b-b00f-0e83-89bb-1c5267039d17"></a>Up Stream</p>
 </td>
-          </tr>
-        </table>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div>
         <a name="conventions" id="conventions"></a>
@@ -3744,12 +3771,12 @@ version.</p>
       <div>
         <a name="overview" id="overview"></a>
         <h1>6.<span style="mso-tab-count:1">&#xA0; </span>Overview</h1>
-        <p class="MsoNormal"><a name="_e6d70f47-1e8a-d909-261b-dfec067ca11c" id="_e6d70f47-1e8a-d909-261b-dfec067ca11c"></a>In this section, the overview is defined according to <a href="#j1106">[ITU-T&#xA0;J.1106], Section 6</a>.</p>
+        <p class="MsoNormal"><a name="_e6d70f47-1e8a-d909-261b-dfec067ca11c" id="_e6d70f47-1e8a-d909-261b-dfec067ca11c"></a>In this section, the overview is defined according to <a href="#j1106">[ITU-T&#xA0;J.1106&#xA0;(07/2017)], Section 6</a>.</p>
       </div>
       <div>
         <a name="functional_architecture" id="functional_architecture"></a>
         <h1>7.<span style="mso-tab-count:1">&#xA0; </span>Functional Architecture</h1>
-        <p class="MsoNormal"><a name="_986ea7f9-ce46-a21a-fc3f-1f1f0859f3f9" id="_986ea7f9-ce46-a21a-fc3f-1f1f0859f3f9"></a>In this section, the functional architecture is defined according to <a href="#j1107">[ITU-T&#xA0;J.1107], Section 7</a>.</p>
+        <p class="MsoNormal"><a name="_986ea7f9-ce46-a21a-fc3f-1f1f0859f3f9" id="_986ea7f9-ce46-a21a-fc3f-1f1f0859f3f9"></a>In this section, the functional architecture is defined according to <a href="#j1107">[ITU-T&#xA0;J.1107&#xA0;(03/2018)], Section 7</a>.</p>
       </div>
       <div>
         <a name="timing_processing_specification" id="timing_processing_specification"></a>
@@ -3779,22 +3806,22 @@ version.</p>
             <tr class="Biblio">
               <a name="docsis1" id="docsis1"></a>
               <td style="vertical-align:top">[b&#x2011;ANSI/SCTE&#xA0;135&#x2011;1&#xA0;2008]</td>
-              <td>b-ANSI/SCTE 135-1 2008, DOCSIS 3.0 Part 1: Physical Layer Specification.</td>
+              <td>b-ANSI/SCTE&#xA0;135-1&#xA0;2008, DOCSIS 3.0 Part 1: Physical Layer Specification.</td>
             </tr>
             <tr class="Biblio">
               <a name="docsis2" id="docsis2"></a>
               <td style="vertical-align:top">[b&#x2011;ANSI/SCTE&#xA0;135&#x2011;2&#xA0;2008]</td>
-              <td>b-ANSI/SCTE 135-2 2008, DOCSIS 3.0 Part 2: MAC and Upper Layer Protocols.</td>
+              <td>b-ANSI/SCTE&#xA0;135-2&#xA0;2008, DOCSIS 3.0 Part 2: MAC and Upper Layer Protocols.</td>
             </tr>
             <tr class="Biblio">
               <a name="docsis4" id="docsis4"></a>
               <td style="vertical-align:top">[b&#x2011;ANSI/SCTE&#xA0;135&#x2011;4&#xA0;2008]</td>
-              <td>b-ANSI/SCTE 135-4 2008, DOCSIS 3.0 Part 4: Operations Support Systems Interface.</td>
+              <td>b-ANSI/SCTE&#xA0;135-4&#xA0;2008, DOCSIS 3.0 Part 4: Operations Support Systems Interface.</td>
             </tr>
             <tr class="Biblio">
               <a name="docsis5" id="docsis5"></a>
               <td style="vertical-align:top">[b&#x2011;ANSI/SCTE&#xA0;135&#x2011;5&#xA0;2009]</td>
-              <td>b-ANSI/SCTE 135-5 2009, DOCSIS 3.0 Part 5: Cable Modem to Customer Premise.</td>
+              <td>b-ANSI/SCTE&#xA0;135-5&#xA0;2009, DOCSIS 3.0 Part 5: Cable Modem to Customer Premise.</td>
             </tr>
           </tbody>
         </table>
@@ -3805,7 +3832,7 @@ version.</p>
 </html>
 
 
-------=_NextPart_ae97ccb3.2bbd.4937
+------=_NextPart_215ba586.cf11.4f3d
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
@@ -3814,12 +3841,12 @@ Content-Type: application/xml
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
 ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1pdHUvbW4tc2FtcGxl
 cy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLUouMTEwOC0yMDE5MDEtUC1kcmFmdC9lbi5odG0i
-Lz4gIDxvOkZpbGUgSFJlZj0iNmRlN2UyOTQtNGY4Zi00ZTAyLWFhNTQtNWQyNDAxMDcxY2FhLnN2
-ZyIvPgogIDxvOkZpbGUgSFJlZj0iZjFiYTI3NzEtZTJlYi00NWViLTkxZmUtZjhkMzY4NjBiNWMw
-LnBuZyIvPgogIDxvOkZpbGUgSFJlZj0iZmlsZWxpc3QueG1sIi8+CiAgPG86RmlsZSBIUmVmPSJo
+Lz4gIDxvOkZpbGUgSFJlZj0iY2MxYjE2ZGYtMWMwYy00ZDhlLWIyM2MtOTI3YzI4MzVlYzM1LnBu
+ZyIvPgogIDxvOkZpbGUgSFJlZj0iZDNmNzg4NzctMzhhYi00N2M2LTg2YzktMzY0YzAxMTFlMTQy
+LnN2ZyIvPgogIDxvOkZpbGUgSFJlZj0iZmlsZWxpc3QueG1sIi8+CiAgPG86RmlsZSBIUmVmPSJo
 ZWFkZXIuaHRtbCIvPgo8L3htbD4K
 
-------=_NextPart_ae97ccb3.2bbd.4937
+------=_NextPart_215ba586.cf11.4f3d
 Content-ID: <header.html>
 Content-Disposition: inline; filename="header.html"
 Content-Transfer-Encoding: base64
@@ -3874,125 +3901,80 @@ dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2
 Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMT4NCg0KPHAgY2xhc3M9
 TXNvRm9vdGVyIHN0eWxlPSdtYXJnaW4tdG9wOjEyLjBwdDtsaW5lLWhlaWdodDoxMi4wcHQ7bXNv
 LWxpbmUtaGVpZ2h0LXJ1bGU6DQpleGFjdGx5Jz48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxl
-PSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWVoMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1s
-ZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUt
-aGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KPC9kaXY+
-DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgybD4NCjxwIGNsYXNzPU1z
-b0hlYWRlckxhbmRzY2FwZSBhbGlnbj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1o
-ZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1F
-Ti1HQj48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRl
-cicgaWQ9aDI+DQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxp
-Z246cmlnaHQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3Rs
-eSc+PHNwYW4gbGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21z
-by1lbGVtZW50OmhlYWRlcicgaWQ9aDJsPg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBlIGFs
-aWduPXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1z
-by1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4N
-CjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMj4NCjxwIGNs
-YXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1
-bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxl
-PSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJl
-Z2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5n
-dWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVu
-Onllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3Nw
-YW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
-aWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48
-L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5z
-aS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8
-L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9u
-dC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3Nw
-YW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1G
-Ui1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFi
-LWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1UIEou
-MTEwOC1FICAgKDAxLzIwMTkpICYjeDIwMTM7IFByZXB1Ymxpc2hlZCB2ZXJzaW9uPG86cD48L286
-cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3Rlcicg
-aWQ9ZWYybD4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNv
-LWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBs
-YW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1l
-bGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxl
-PSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHls
-ZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2Vy
-dW46eWVzJz7CoCA8L3NwYW4+XCoNCk1FUkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdC
-IHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6Zmll
-bGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gN
-CnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5v
-LXByb29mOnllcyc+aWk8L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1F
-Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6
-ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAg
-ICAgICAgICAgbGFuZz1GUi1DSCBzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFu
-IHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bh
-bj5SZWMuIElUVS1UIEouMTEwOC1FICAgKDAxLzIwMTkpICYjeDIwMTM7IFByZXB1Ymxpc2hlZCB2
-ZXJzaW9uPC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290
-ZXInIGlkPWYyPg0KPHAgY2xhc3M9Rm9vdGVyUVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+
-PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoyJz7CoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJlYy4gSVRVLVQgSi4xMTA4LUUgICAoMDEv
-MjAxOSkgJiN4MjAxMzsgUHJlcHVibGlzaGVkIHZlcnNpb24NCiAgPHNwYW4gc3R5bGU9J21zby10
-YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtp
-ZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9y
-bWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8
-c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxz
-cGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwh
-W2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxz
-cGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBw
-b3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48
-c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlm
-XS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9v
-OnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXIn
-IGlkPWYybD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDox
-Mi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1UIEouMTEwOC1F
-ICAgKDAxLzIwMTkpICYjeDIwMTM7IFByZXB1Ymxpc2hlZCB2ZXJzaW9uDQogIDxzcGFuIHN0eWxl
-PSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFu
-PjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2Vp
-Z2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+
-DQpQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZP
-Uk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwv
-c3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9y
-bWFsJz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1b
-aWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5v
-cm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48
-IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48
-bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6
-Zm9vdGVyJyBpZD1lZjM+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIu
-MHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
-PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxl
-PSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNI
-DQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bh
-bg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNv
-LXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFu
-Zz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVt
-ZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5n
+PSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWVoMj4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWdu
+PWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGlu
+ZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQoNCjwv
+ZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWVoMmw+DQoNCjxwIGNs
+YXNzPU1zb0hlYWRlckxhbmRzY2FwZSBhbGlnbj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7
+bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4g
+bGFuZz1FTi1HQj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1l
+bnQ6aGVhZGVyJyBpZD1oMj4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPXJpZ2h0IHN0eWxl
+PSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1y
+dWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxk
+aXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDJsPg0KDQo8cCBjbGFzcz1Nc29IZWFk
+ZXJMYW5kc2NhcGUgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7bGluZS1oZWln
+aHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1H
+Qj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVy
+JyBpZD1maDI+DQoNCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1h
+bGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFj
+dGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxl
+PSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWZoMmw+DQoNCjxwIGNsYXNzPU1zb0hlYWRlckxhbmRz
+Y2FwZSBhbGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4w
+cHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPjwvc3Bh
+bj48L3A+DQoNCjwvZGl2Pg0KDQoNCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBp
+ZD1lZjI+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1s
+aW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4gbGFu
+Zz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxl
+bWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5nPUZSLUNIDQpzdHlsZT0n
+bXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9
+J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVu
+Onllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQiBz
+dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
+LXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUZSLUNIDQpz
+dHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFsO21zby1uby1w
+cm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4t
+R0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZp
+ZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAgICAgICAgICAg
+ICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIJz48c3BhbiBz
+dHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+
+UmVjLiBJVFUtVCBKLjExMDgtRSAgICgwMS8yMDE5KSAmI3gyMDEzOyBQcmVwdWJsaXNoZWQgdmVy
+c2lvbjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxl
+bWVudDpmb290ZXInIGlkPWVmMmw+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0nbGluZS1oZWln
+aHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZp
+ZWxkc10+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6DQpub3JtYWwnPjxzcGFu
+IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjwvc3Bhbj48c3BhbiBsYW5n
 PUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6bm9ybWFs
-O21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4N
-Cmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1l
-bGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KICAgICAg
-ICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNI
-Jz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oCA8L3NwYW4+UmVjLiBJVFUtVCBKLjExMDgtRSAgICgwMS8yMDE5KSAmI3gyMDEzOyBQcmVwdWJs
-aXNoZWQgdmVyc2lvbjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1l
-bnQ6Zm9vdGVyJyBpZD1lZjNsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUgc3R5bGU9J2xp
-bmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48IS0tW2lmIHN1
-cHBvcnRGaWVsZHNdPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Og0Kbm9ybWFs
-Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48L3NwYW4+PHNw
-YW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0
-Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNw
-YW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKg0KTUVSR0VGT1JNQVQgPC9z
-cGFuPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0
-eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZd
-LS0+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQt
-d2VpZ2h0Om5vcm1hbDttc28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48IS0tW2lmIHN1cHBvcnRG
-aWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFu
-IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+
-PHNwYW4NCiAgICAgICAgICAgICAgICAgICAgICBsYW5nPUZSLUNIIHN0eWxlPSdtc28tYW5zaS1s
-YW5ndWFnZTpGUi1DSCc+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJlYy4gSVRVLVQgSi4xMTA4LUUgICAoMDEvMjAxOSkgJiN4
-MjAxMzsgUHJlcHVibGlzaGVkIHZlcnNpb248L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5
-bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjM+DQo8cCBjbGFzcz1Gb290ZXJRUCBzdHlsZT0n
+Jz48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHls
+ZT0nbXNvLXNwYWNlcnVuOnllcyc+wqAgPC9zcGFuPlwqDQpNRVJHRUZPUk1BVCA8L3NwYW4+PHNw
+YW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0Kc3R5bGU9J21z
+by1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bh
+biBsYW5nPUZSLUNIDQpzdHlsZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0g7Zm9udC13ZWlnaHQ6
+bm9ybWFsO21zby1uby1wcm9vZjp5ZXMnPmlpPC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9
+J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0K
+ICAgICAgICAgICAgICAgICAgICAgIGxhbmc9RlItQ0ggc3R5bGU9J21zby1hbnNpLWxhbmd1YWdl
+OkZSLUNIJz48c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoCA8L3NwYW4+UmVjLiBJVFUtVCBKLjExMDgtRSAgICgwMS8yMDE5KSAmI3gyMDEzOyBQ
+cmVwdWJsaXNoZWQgdmVyc2lvbjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNv
+LWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMj4NCjxwIGNsYXNzPUZvb3RlclFQIHN0eWxlPSdsaW5lLWhl
+aWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6
+Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1UIEou
+MTEwOC1FICAgKDAxLzIwMTkpICYjeDIwMTM7IFByZXB1Ymxpc2hlZCB2ZXJzaW9uDQogIDxzcGFu
+IHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+
+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2Zv
+bnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48
+L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBN
+RVJHRUZPUk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9z
+cGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWln
+aHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFu
+PjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2Vp
+Z2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwv
+c3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9y
+bWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVs
+ZW1lbnQ6Zm9vdGVyJyBpZD1mMmw+DQo8cCBjbGFzcz1Gb290ZXJRUExhbmRzY2FwZSBzdHlsZT0n
 bGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tdGFi
 LWNvdW50OjInPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
@@ -4010,29 +3992,81 @@ Pjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdm
 b250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwv
 c3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2Vp
 Z2h0Om5vcm1hbCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9
-J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjNsPg0KPHAgY2xhc3M9Rm9vdGVyUVBMYW5kc2NhcGUg
-c3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0n
-bXNvLXRhYi1jb3VudDoyJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYzPg0KPHAgY2xhc3M9Rm9vdGVyUVAgc3R5bGU9J2xp
+bmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48IS0tW2lmIHN1
+cHBvcnRGaWVsZHNdPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Og0Kbm9ybWFs
+Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48L3NwYW4+PHNw
+YW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQtd2VpZ2h0
+Om5vcm1hbCc+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNw
+YW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKg0KTUVSR0VGT1JNQVQgPC9z
+cGFuPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCnN0
+eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZd
+LS0+PHNwYW4gbGFuZz1GUi1DSA0Kc3R5bGU9J21zby1hbnNpLWxhbmd1YWdlOkZSLUNIO2ZvbnQt
+d2VpZ2h0Om5vcm1hbDttc28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48IS0tW2lmIHN1cHBvcnRG
+aWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFu
+IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+
+PHNwYW4NCiAgICAgICAgICAgICAgICAgICAgICBsYW5nPUZSLUNIIHN0eWxlPSdtc28tYW5zaS1s
+YW5ndWFnZTpGUi1DSCc+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqAgPC9zcGFuPlJlYy4gSVRVLVQgSi4xMTA4LUUgICAoMDEvMjAxOSkgJiN4
+MjAxMzsgUHJlcHVibGlzaGVkIHZlcnNpb248L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5
+bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYzbD4NCjxwIGNsYXNzPUZvb3RlclFQTGFuZHNj
+YXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3Rs
+eSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdl
+aWdodDoNCm5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3Nw
+YW4+PC9zcGFuPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFnZTpGUi1D
+SDtmb250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8
+L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoCA8L3NwYW4+XCoNCk1F
+UkdFRk9STUFUIDwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9z
+cGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RlItQ0gNCnN0eWxlPSdtc28tYW5zaS1sYW5ndWFn
+ZTpGUi1DSDtmb250LXdlaWdodDpub3JtYWw7bXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PCEt
+LVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6
+bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFu
+PjwhW2VuZGlmXS0tPjxzcGFuDQogICAgICAgICAgICAgICAgICAgICAgbGFuZz1GUi1DSCBzdHls
+ZT0nbXNvLWFuc2ktbGFuZ3VhZ2U6RlItQ0gnPjxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEn
+PsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1UIEouMTEwOC1FICAg
+KDAxLzIwMTkpICYjeDIwMTM7IFByZXB1Ymxpc2hlZCB2ZXJzaW9uPC9zcGFuPjwvcD4NCjwvZGl2
+Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYzPg0KPHAgY2xhc3M9Rm9v
+dGVyUVAgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBz
+dHlsZT0nbXNvLXRhYi1jb3VudDoyJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFu
-PlJlYy4gSVRVLVQgSi4xMTA4LUUgICAoMDEvMjAxOSkgJiN4MjAxMzsgUHJlcHVibGlzaGVkIHZl
-cnNpb24NCiAgPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1F
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAg
+PC9zcGFuPlJlYy4gSVRVLVQgSi4xMTA4LUUgICAoMDEvMjAxOSkgJiN4MjAxMzsgUHJlcHVibGlz
+aGVkIHZlcnNpb24NCiAgPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0K
+bGFuZz1FTi1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVs
+ZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVu
+Onllcyc+wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6
+ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4t
+R0INCnN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6
+eWVzJz4yOTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1F
 Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6
-ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+
-wqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
-c2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0
-eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4y
-OTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBz
-dHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
-ZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdm
-b250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8L2Jv
-ZHk+DQoNCjwvaHRtbD4NCg==
+ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0
+eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0K
+DQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYzbD4NCjxwIGNsYXNzPUZvb3Rl
+clFQTGFuZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0I+
+PHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6Mic+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgIDwvc3Bhbj5SZWMuIElUVS1UIEouMTEwOC1FICAgKDAxLzIwMTkpICYjeDIwMTM7IFBy
+ZXB1Ymxpc2hlZCB2ZXJzaW9uDQogIDxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9
+J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1z
+cGFjZXJ1bjp5ZXMnPsKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1l
+bGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBs
+YW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBzdHlsZT0nbXNvLW5v
+LXByb29mOnllcyc+Mjk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4N
+Cmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gc3R5bGU9J21zby1l
+bGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8
+L2Rpdj4NCg0KDQoNCjwvYm9keT4NCg0KPC9odG1sPg0K
 
-------=_NextPart_ae97ccb3.2bbd.4937
-Content-ID: <f1ba2771-e2eb-45eb-91fe-f8d36860b5c0.png>
-Content-Disposition: inline; filename="f1ba2771-e2eb-45eb-91fe-f8d36860b5c0.png"
+------=_NextPart_215ba586.cf11.4f3d
+Content-ID: <cc1b16df-1c0c-4d8e-b23c-927c2835ec35.png>
+Content-Disposition: inline; filename="cc1b16df-1c0c-4d8e-b23c-927c2835ec35.png"
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -4436,9 +4470,9 @@ C7+w2Xb7Eb3o/8qNmGQMnLRiOgtj4OgmE+D4QbowaScm34WpzzFww2/qzparyA1MuOWqRprGNpt9
 e2wfOBmiVbYRslL9tQ8BUrd6JgExGYgGP2+SBj+gC2zppLgQoH0GxLx7ix3HWQBlaDjfTIMuKwYo
 7AdNOpT6a4JR2HSg3ZakAcg368qo/H9lWc/6NFehlQAAAABJRU5ErkJggg==
 
-------=_NextPart_ae97ccb3.2bbd.4937
-Content-ID: <6de7e294-4f8f-4e02-aa54-5d2401071caa.svg>
-Content-Disposition: inline; filename="6de7e294-4f8f-4e02-aa54-5d2401071caa.svg"
+------=_NextPart_215ba586.cf11.4f3d
+Content-ID: <d3f78877-38ab-47c6-86c9-364c0111e142.svg>
+Content-Disposition: inline; filename="d3f78877-38ab-47c6-86c9-364c0111e142.svg"
 Content-Transfer-Encoding: base64
 Content-Type: image/svg+xml
 
@@ -4564,4 +4598,4 @@ MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
 OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
 NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
 
-------=_NextPart_ae97ccb3.2bbd.4937--
+------=_NextPart_215ba586.cf11.4f3d--
