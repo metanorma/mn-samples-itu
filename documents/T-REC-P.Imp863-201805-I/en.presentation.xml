@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="presentation" version="2.5.13" schema-version="v1.4.1">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.6.2" schema-version="v2.0.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Implementers' guide for P.863</title>
 
@@ -31,440 +31,7 @@
 </series><ext><doctype language="">implementers-guide</doctype><doctype language="en">Implementers’ Guide</doctype><flavor>itu</flavor><editorialgroup><bureau>T</bureau><group type="study-group">
 <name>12</name>
 <period><start>2024</start><end>2026</end></period></group></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>P.863 Implementers' Guide</docnumber></structuredidentifier></ext></bibdata><localized-strings><localized-string key="term_def_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="abbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="symbols" language="en">Abbreviations and acronyms</localized-string><localized-string key="table_of_contents" language="en">Table of Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Definitions</localized-string><localized-string key="termsdefsymbols" language="en">Definitions</localized-string><localized-string key="termsdefabbrev" language="en">Definitions</localized-string><localized-string key="normref" language="en">References</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">None.</localized-string><localized-string key="internal_terms_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="norm_with_refs_pref" language="en">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</localized-string><localized-string key="norm_empty_pref" language="en">None.</localized-string><localized-string key="external_terms_boilerplate" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="internal_external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % and the following apply.
-</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="multiple_and" language="en">%1<enum-comma>,</enum-comma> <conn>and</conn> %2</localized-string><localized-string key="binary_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="multiple_or" language="en">%1<enum-comma>,</enum-comma> <conn>or</conn> %2</localized-string><localized-string key="chain_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="chain_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="chain_from" language="en">%1 <conn>from</conn> %2</localized-string><localized-string key="chain_to" language="en">%1 <conn>to</conn> %2</localized-string><localized-string key="nested_xref" language="en">%2 <conn>in</conn> %1</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en"><span class="fmt-element-name">NOTE</span> %</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Equation</localized-string><localized-string key="inequality" language="en">Inequality</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where:</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">(This appendix does not form an integral part of this %.)</localized-string><localized-string key="norm_annex" language="en">(This annex forms an integral part of this %.)</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="editor.sg" language="en">editor</localized-string><localized-string key="editor.pl" language="en">editors</localized-string><localized-string key="questions" language="en">Question(s)</localized-string><localized-string key="studyperiod" language="en">Study Period %</localized-string><localized-string key="original" language="en">Original</localized-string><localized-string key="contact" language="en">Contact</localized-string><localized-string key="tel_abbrev" language="en">Tel.</localized-string><localized-string key="document_source" language="en">Source</localized-string><localized-string key="title" language="en">Title</localized-string><localized-string key="current_language" language="en">English</localized-string><localized-string key="conventions" language="en">Conventions</localized-string><localized-string key="summary" language="en">Summary</localized-string><localized-string key="elsewhere_terms" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="here_terms" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="annex_subclause" language="en">clause</localized-string><localized-string key="keywords" language="en">Keywords</localized-string><localized-string key="in" language="en">in</localized-string><localized-string key="to" language="en">to</localized-string><localized-string key="blankclause" language="en">This clause is intentionally left blank.</localized-string><localized-string key="internal_termsdef" language="en">Terms defined in this recommendation</localized-string><localized-string key="external_termsdef" language="en">Terms defined elsewhere</localized-string><localized-string key="symbols_boilerplate" language="en">This Recommendation uses the following abbreviations and acronyms:</localized-string><localized-string key="clause_empty" language="en">None.</localized-string><localized-string key="amendment" language="en">Amendment</localized-string><localized-string key="corrigendum" language="en">Corrigendum</localized-string><localized-string key="page" language="en">Page</localized-string><localized-string key="placedate" language="en">Geneva, %</localized-string><localized-string key="annex_to_itu_ob" language="en">Annex to ITU Operational Bulletin</localized-string><localized-string key="number_abbrev" language="en">No.</localized-string><localized-string key="annex_to_itu_ob_abbrev" language="en">Annex to ITU OB %</localized-string><localized-string key="international_telecommunication_union" language="en">International Telecommunication Union</localized-string><localized-string key="ITU" language="en">ITU</localized-string><localized-string key="position_on" language="en">(Position on %)</localized-string><localized-string key="revision_abbreviation" language="en">Rev.</localized-string><localized-string key="tsb" language="en">TSB</localized-string><localized-string key="br" language="en">BR</localized-string><localized-string key="bdt" language="en">BDT</localized-string><localized-string key="tsb_short" language="en">Telecommunication Standardization Bureau</localized-string><localized-string key="br_short" language="en">Radiocommunication Bureau</localized-string><localized-string key="bdt_short" language="en">Telecommunication Development Bureau</localized-string><localized-string key="tsb_full" language="en">Telecommunication<br/>Standardization Bureau<br/>of ITU</localized-string><localized-string key="br_full" language="en">Radiocommunication Bureau<br/>of ITU</localized-string><localized-string key="bdt_full" language="en">Telecommunication<br/>Development Bureau<br/>of ITU</localized-string><localized-string key="prepub" language="en">Prepublished version</localized-string><localized-string key="draft_new" language="en">Draft new %</localized-string><localized-string key="email" language="en">E-mail</localized-string><localized-string key="editor_full" language="en">editor</localized-string><localized-string key="doctype_dict.resolution" language="en">Resolution</localized-string><localized-string key="doctype_dict.recommendation" language="en">Recommendation</localized-string><localized-string key="doctype_dict.recommendation-supplement" language="en">Recommendation Supplement</localized-string><localized-string key="doctype_dict.recommendation-amendment" language="en">Recommendation Amendment</localized-string><localized-string key="doctype_dict.recommendation-corrigendum" language="en">Recommendation Corrigendum</localized-string><localized-string key="doctype_dict.recommendation-errata" language="en">Recommendation Errata</localized-string><localized-string key="doctype_dict.recommendation-annex" language="en">Recommendation Annex</localized-string><localized-string key="doctype_dict.focus-group" language="en">Focus Group</localized-string><localized-string key="doctype_dict.implementers-guide" language="en">Implementers’ Guide</localized-string><localized-string key="doctype_dict.technical-paper" language="en">Technical Paper</localized-string><localized-string key="doctype_dict.technical-report" language="en">Technical Report</localized-string><localized-string key="doctype_dict.joint-itu-iso-iec" language="en">Joint ITU/ISO/IEC</localized-string><localized-string key="doctype_dict.service-publication" language="en">Service Publication</localized-string><localized-string key="doctype_dict.contribution" language="en">Contribution</localized-string><localized-string key="doctype_abbrev.recommendation" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-supplement" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-amendment" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-corrigendum" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-errata" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-annex" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.focus-group" language="en">FG</localized-string><localized-string key="doctype_abbrev.implementers-guide" language="en">Imp.</localized-string><localized-string key="doctype_abbrev.technical-paper" language="en">TP</localized-string><localized-string key="doctype_abbrev.technical-report" language="en">TR</localized-string><localized-string key="doctype_abbrev.joint-itu-iso-iec" language="en">ITU/ISO/IEC</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__itu-standard type="semantic" version="2.5.13" schema-version="v1.4.1">
-<semantic__bibdata type="standard">
-<semantic__title language="en" format="text/plain" type="main">Implementers' guide for P.863</semantic__title>
-
-
-
-
-
-<semantic__docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</semantic__docidentifier><semantic__docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</semantic__docidentifier><semantic__docidentifier type="ITU-Recommendation">ITU-T P.863</semantic__docidentifier><semantic__docnumber>P.863 Implementers' Guide</semantic__docnumber><semantic__date type="published"><semantic__on>2018-05-10</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
-<semantic__name>International Telecommunication Union</semantic__name>
-<semantic__abbreviation>ITU</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="editor">raporteur</semantic__role><semantic__person>
-<semantic__name><semantic__completename>Jens Berger</semantic__completename></semantic__name>
-<semantic__affiliation><semantic__organization>
-<semantic__name>Rohde &amp;amp; Schwarz</semantic__name>
-<semantic__address><semantic__formattedAddress>Switzerland</semantic__formattedAddress></semantic__address></semantic__organization></semantic__affiliation><semantic__phone>+41 32 686 6565</semantic__phone><semantic__phone type="fax">+41 32 686 6566</semantic__phone><semantic__email>jens.berger@rohde-schwarz.com</semantic__email></semantic__person></semantic__contributor><semantic__contributor><semantic__role type="editor"/><semantic__person>
-<semantic__name><semantic__completename>Joachim Pomy</semantic__completename></semantic__name>
-<semantic__affiliation><semantic__organization>
-<semantic__name>OPTICOM GmbH</semantic__name>
-<semantic__address><semantic__formattedAddress>Germany</semantic__formattedAddress></semantic__address></semantic__organization></semantic__affiliation><semantic__phone>+49 177 78 71958</semantic__phone><semantic__phone type="fax">+49 6251 9454945</semantic__phone><semantic__email>consultant@joachimpomy.de</semantic__email></semantic__person></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
-<semantic__name>International Telecommunication Union</semantic__name>
-<semantic__abbreviation>ITU</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__abstract><semantic__p>This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</semantic__p>
-
-<semantic__p>This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</semantic__p>
-</semantic__abstract><semantic__status><semantic__stage>in-force</semantic__stage></semantic__status><semantic__copyright><semantic__from>2018</semantic__from><semantic__owner><semantic__organization>
-<semantic__name>International Telecommunication Union</semantic__name>
-<semantic__abbreviation>ITU</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__series type="main">
-<semantic__title>P: Terminals and Subjective and Objective Assessment Methods</semantic__title>
-</semantic__series><semantic__series type="secondary">
-<semantic__title>Methods for objective and subjective assessment of speech quality</semantic__title>
-</semantic__series><semantic__ext><semantic__doctype>implementers-guide</semantic__doctype><semantic__flavor>itu</semantic__flavor><semantic__editorialgroup><semantic__bureau>T</semantic__bureau><semantic__group type="study-group">
-<semantic__name>12</semantic__name>
-<semantic__period><semantic__start>2024</semantic__start><semantic__end>2026</semantic__end></semantic__period></semantic__group></semantic__editorialgroup><semantic__ip-notice-received>false</semantic__ip-notice-received><semantic__structuredidentifier><semantic__bureau>T</semantic__bureau><semantic__docnumber>P.863 Implementers' Guide</semantic__docnumber></semantic__structuredidentifier></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>document-scheme</semantic__name><semantic__value>current</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
-<semantic__boilerplate><semantic__copyright-statement>
-
-<semantic__clause id="semantic___bbd9dfd2-b64e-eb3c-69e9-a5dfe29ef604" inline-header="false" obligation="normative">
-<semantic__p id="semantic___c55f784e-df5e-1dee-00ee-4eea3cc145ed">© ITU 2018</semantic__p>
-
-<semantic__p id="semantic___d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</semantic__p>
-</semantic__clause>
-</semantic__copyright-statement>
-
-<semantic__legal-statement>
-
-<semantic__clause id="semantic___042e4e49-45b6-898c-6c97-17ed5ec802b5" inline-header="false" obligation="normative">
-<semantic__title>FOREWORD</semantic__title>
-<semantic__p id="semantic___e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</semantic__p>
-
-<semantic__p id="semantic___06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</semantic__p>
-
-<semantic__p id="semantic___0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</semantic__p>
-
-<semantic__p id="semantic___0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</semantic__p>
-</semantic__clause>
-</semantic__legal-statement>
-</semantic__boilerplate><semantic__preface><semantic__abstract id="semantic___summary"><semantic__title>Summary</semantic__title><semantic__p id="semantic___e6c896eb-0823-24ba-9615-7f01c98d9059">This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</semantic__p>
-
-<semantic__p id="semantic___d14fde0c-077a-36d7-d778-ac03579a0130">This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</semantic__p>
-</semantic__abstract><semantic__clause id="semantic___change_log" inline-header="false" obligation="informative">
-<semantic__title>Change log</semantic__title>
-<semantic__table id="semantic___867e24a2-150d-f5af-f133-0a7ee148bc9b" unnumbered="true"><semantic__tbody><semantic__tr><semantic__td valign="top" align="left">2018-05</semantic__td>
-<semantic__td valign="top" align="left">Initial version</semantic__td>
-</semantic__tr></semantic__tbody>
-</semantic__table>
-</semantic__clause></semantic__preface><semantic__sections>
-
-
-<semantic__clause id="semantic___scope" type="scope" inline-header="false" obligation="normative">
-<semantic__title>Scope</semantic__title>
-<semantic__p id="semantic___e56c7a46-cf41-0a75-24a8-28e77b743f9b">This guide resolves defects in the following categories:</semantic__p>
-
-<semantic__ul id="semantic___595354b1-bd9c-3dbb-0bf7-7126c43ae701"><semantic__li><semantic__p id="semantic___0284502d-18d2-6b71-643f-597518cfa61c">editorial errors</semantic__p>
-</semantic__li>
-<semantic__li><semantic__p id="semantic___e42637f7-2007-7fe0-1494-ab7c59f247d4">technical errors, such as omissions and inconsistencies</semantic__p>
-</semantic__li>
-<semantic__li><semantic__p id="semantic___e71017d7-9926-cd77-afe8-7b854e5bd9c0">ambiguities</semantic__p>
-</semantic__li>
-</semantic__ul>
-
-<semantic__p id="semantic___73484642-6bd0-36e5-8f37-6584cdda5765">In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</semantic__p>
-
-<semantic__p id="semantic___c1fd5090-79a1-fd4b-5601-3eba4b723cb2">This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___introduction" inline-header="false" obligation="normative">
-<semantic__title>Introduction</semantic__title>
-<semantic__p id="semantic___e47bc0e4-380b-27f7-29be-bb6d6f72e506">This implementers' guide is a compilation of reported defects for the version 2018-03 of <semantic__eref type="inline" bibitemid="semantic__p863" citeas="ITU-T P.863 (03/2018)"/>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</semantic__p>
-
-<semantic__p id="semantic___91075ce3-5f28-91f8-9c38-4b33e609f188">P.863</semantic__p>
-
-<semantic__p id="semantic___ab8ccd22-975c-5d09-20f1-4bbf3f5e995a">The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___defect_resolution_procedure" inline-header="false" obligation="normative">
-<semantic__title>Defect resolution procedure</semantic__title>
-<semantic__p id="semantic___ed63e505-44a3-9634-19de-b3c1c734a1d7">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</semantic__p>
-</semantic__clause>
-
-
-
-<semantic__clause id="semantic___nomenclature" inline-header="false" obligation="normative">
-<semantic__title>Nomenclature</semantic__title>
-<semantic__p id="semantic___1a62a3fe-7fd9-44d4-f902-d3c212698018">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</semantic__p>
-
-<semantic__table id="semantic___d359b8d7-601d-4154-4b2d-7e7794d68697" unnumbered="true"><semantic__tbody><semantic__tr><semantic__th valign="top" align="center">Symbol</semantic__th>
-<semantic__th valign="top" align="center">Description</semantic__th>
-</semantic__tr><semantic__tr><semantic__td valign="top" align="center"><semantic__strong><semantic__em>[Begin Correction]</semantic__em></semantic__strong></semantic__td>
-<semantic__td valign="top" align="left">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</semantic__td>
-</semantic__tr><semantic__tr><semantic__td valign="top" align="center"><semantic__strong><semantic__em>[End Correction]</semantic__em></semantic__strong></semantic__td>
-<semantic__td valign="top" align="left">Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.</semantic__td>
-</semantic__tr><semantic__tr><semantic__td valign="top" align="center"><semantic__strong><semantic__em>…​</semantic__em></semantic__strong></semantic__td>
-<semantic__td valign="top" align="left">Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.</semantic__td>
-</semantic__tr><semantic__tr><semantic__td valign="top" align="center"><semantic__em>--- SPECIAL INSTRUCTIONS --- {instructions}</semantic__em></semantic__td>
-<semantic__td valign="top" align="left">Indicates a set of special editing instructions to be followed.</semantic__td>
-</semantic__tr></semantic__tbody>
-</semantic__table>
-</semantic__clause>
-
-<semantic__clause id="semantic___technical_and_editorial_corrections_to_recommendation_p_863" inline-header="false" obligation="normative">
-<semantic__title>Technical and editorial corrections to Recommendation P.863</semantic__title>
-<semantic__clause id="semantic___annex_b_tempalignment_pdf" inline-header="false" obligation="normative">
-<semantic__title>Annex B, TempAlignment.pdf</semantic__title>
-<semantic__p id="semantic___c0b1f7ab-2234-58c3-2b7d-0fcf3ec774e8"><semantic__em>Missing statement, which rendered part of the surrounding code useless.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___4be8cd16-4171-7205-bee7-b4a71b6c93f6"><semantic__em>--- SPECIAL INSTRUCTIONS --- Insert at line 2655</semantic__em></semantic__p>
-
-<semantic__p id="semantic___3fbff269-98cb-6262-0cbb-23576cc2b347">[Begin Correction]</semantic__p>
-
-<semantic__sourcecode id="semantic___09a9335e-0504-f257-42a9-32c84be4b0dc" unnumbered="true">Done = true</semantic__sourcecode>
-
-
-<semantic__p id="semantic___8643cd3d-e43b-18ed-d929-c5bbb235606f">[End Correction]</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_b_tempalignment_pdf_2" inline-header="false" obligation="normative">
-<semantic__title>Annex B, TempAlignment.pdf</semantic__title>
-<semantic__p id="semantic___3a2976ab-e10e-6b4e-e137-9ca7a8fc4ec8"><semantic__em>The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___7395bf5a-a741-0c38-1915-c9056a8b3618"><semantic__em>--- SPECIAL INSTRUCTIONS --- Replace lines 3940 and 3941:</semantic__em></semantic__p>
-
-<semantic__p id="semantic___2d03b6e7-8cdd-9939-1d25-4321a4859cfa">[Begin Correction]</semantic__p>
-
-<semantic__p id="semantic___e3cd04cb-897e-ec14-0fcb-b61dc0855b6a"><semantic__em>--- SPECIAL INSTRUCTIONS --- Old Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___98d6fb3b-fe5f-9709-db92-688e08984813" unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
-mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples</semantic__sourcecode>
-
-
-<semantic__p id="semantic___d3187ea1-2f25-be50-0e96-1054b9b9da78"><semantic__em>--- SPECIAL INSTRUCTIONS --- New Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___3c3cf96c-45f5-3839-7d8a-61154a15c217" unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
-mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</semantic__sourcecode>
-
-
-<semantic__p id="semantic___81f139ed-f1fa-617b-b0ae-08cbc8e419ec">[End Correction]</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_b_tempalignment_pdf_3" inline-header="false" obligation="normative">
-<semantic__title>Annex B, TempAlignment.pdf</semantic__title>
-<semantic__p id="semantic___93ec2c6b-18c1-7c31-3fe8-fb65bc6ac744"><semantic__em>The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___153754e3-445c-3d75-f2e1-0906fe491c41"><semantic__em>--- SPECIAL INSTRUCTIONS --- Modify lines 5092 to 5102:</semantic__em></semantic__p>
-
-<semantic__p id="semantic___cfbca1e0-aee2-f1a3-64b9-29ed9e94a96d">[Begin Correction]</semantic__p>
-
-<semantic__p id="semantic___2f5b6ed8-1325-e8ee-f325-0f1c2aeba08e"><semantic__em>--- SPECIAL INSTRUCTIONS --- Old Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___6e05e6b8-c621-fe94-13a9-948c983eb5ee" unnumbered="true">for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
-      {
-      if (pStartSampleUtterance[utt+1]-pStopSampleUtterance[utt] &#x3c; 0.1*mProcessData.mSamplerate)
-           {
-            bool IsInsideActiveSection = true
-            while(LastUsedReparsePoint&#x3c;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&#x3e;ReparsePoints[LastUsedReparsePoint].Deg.End)
-                  LastUsedReparsePoint++
-            if (pStartSampleUtterance[utt+1]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start)
-                IsInsideActiveSection = false
-
-                if ((!IsInsideActiveSection &amp;&amp;</semantic__sourcecode>
-
-
-<semantic__p id="semantic___481a2ef0-7ddd-54ff-b547-df33d5d1dc93"><semantic__em>--- SPECIAL INSTRUCTIONS --- New Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___05154865-a253-22d7-d343-8416d9480812" unnumbered="true">for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
-     {
-        bool IsInsideActiveSection1 = true
-        bool IsInsideActiveSection2 = true
-        while(LastUsedReparsePoint&#x3c;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt]&#x3e;ReparsePoints[LastUsedReparsePoint].Deg.End)
-            LastUsedReparsePoint++
-        if (pStartSampleUtterance[utt]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start)
-            IsInsideActiveSection1 = false
-
-        int ReparsePoint2 = LastUsedReparsePoint
-        while(ReparsePoint2&#x3c;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&#x3e;ReparsePoints[ReparsePoint2].Deg.End)
-            ReparsePoint2++
-        if (pStartSampleUtterance[utt+1]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt+1]&#x3c;ReparsePoints[ReparsePoint2].Deg.Start)
-            IsInsideActiveSection2 = false
-
-        if (ReparsePoint2==LastUsedReparsePoint &amp;&amp; (IsInsideActiveSection1 &amp;&amp; IsInsideActiveSection2) || (!IsInsideActiveSection1 &amp;&amp; !IsInsideActiveSection2))
-        {
-            if ((!IsInsideActiveSection1 &amp;&amp;</semantic__sourcecode>
-
-
-<semantic__p id="semantic___9e0f912b-76ff-ade2-d751-e5817607c8bb"><semantic__em>[End Correction]</semantic__em></semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_b_timealign_pdf" inline-header="false" obligation="normative">
-<semantic__title>Annex B, TimeAlign.pdf</semantic__title>
-<semantic__p id="semantic___eca1774c-fa1f-324a-5418-16c277650b50"><semantic__em>When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___0003c7cd-d27c-4a63-2e97-9650a2481243"><semantic__em>--- SPECIAL INSTRUCTIONS --- replace line 878</semantic__em></semantic__p>
-
-<semantic__p id="semantic___e4fbb1ac-eaa7-ace8-ef48-fbf5d69b5963">[Begin Correction]</semantic__p>
-
-<semantic__p id="semantic___75b824cb-5582-7365-953a-f912864d2c22"><semantic__em>--- SPECIAL INSTRUCTIONS --- Old Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___1bdf1227-c57a-3324-134b-1acbe74e831c" unnumbered="true">pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)</semantic__sourcecode>
-
-
-<semantic__p id="semantic___3fa1f970-26d1-cb69-29e9-7b986581d605"><semantic__em>--- SPECIAL INSTRUCTIONS --- New Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___976cf036-f588-53f4-a014-3a5f8be34018" unnumbered="true">pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);</semantic__sourcecode>
-
-
-<semantic__p id="semantic___84bf3a4c-93d9-9b9b-9442-b3e49ec5a00a">[End Correction]</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_b_speechtempalign_pdf" inline-header="false" obligation="normative">
-<semantic__title>Annex B, SpeechTempAlign.pdf</semantic__title>
-<semantic__p id="semantic___d28227aa-1f4e-e5c1-7c0b-954b83ddfcc1"><semantic__em>Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___93197758-bbd7-119c-50f0-4109bedc82b8"><semantic__em>--- SPECIAL INSTRUCTIONS --- Insert at line 1439</semantic__em></semantic__p>
-
-<semantic__p id="semantic___9c8ed2a4-6ed0-7a62-2460-ce1d83b24cff">[Begin Correction]</semantic__p>
-
-<semantic__sourcecode id="semantic___3a07427f-cc6b-ff49-4abe-f59c7be3c213" unnumbered="true">if (*NoiseLevelSilence&#x3c;0.125) *NoiseLevelSilence = 0.125</semantic__sourcecode>
-
-
-<semantic__p id="semantic___296044ec-2fb6-e0e8-f6af-51f37cd74165">[End Correction]</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_b_tempalignment_pdf_4" inline-header="false" obligation="normative">
-<semantic__title>Annex B, TempAlignment.pdf</semantic__title>
-<semantic__p id="semantic___e74f9ad6-752a-41d9-500c-f65dd7a355d6"><semantic__em>Avoid calculating correlation for signal segments which do not contain speech.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___cc1bdcae-d696-1d89-14da-0ff736c2f00d"><semantic__em>--- SPECIAL INSTRUCTIONS --- replace line 5146</semantic__em></semantic__p>
-
-<semantic__p id="semantic___33d82269-4dc9-926a-b1f7-a57ec9e37b2b">[Begin Correction]</semantic__p>
-
-<semantic__p id="semantic___f01ec8bb-2661-c94c-e990-ed3caa5b9f23"><semantic__em>--- SPECIAL INSTRUCTIONS --- Old Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___d6fac2fd-23ad-a16b-697f-281e329c7748" unnumbered="true">int Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</semantic__sourcecode>
-
-
-<semantic__p id="semantic___547fda56-23cd-1e5c-e9df-f68d8730d9d3"><semantic__em>--- SPECIAL INSTRUCTIONS --- New Description</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___9029d551-f587-2694-d666-7b88ed7f6c99" unnumbered="true">int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
-int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);
-int FrameNum = FrameNumStart;
-bool ActiveSeg = false;
-while ((!ActiveSeg) &amp;&amp; (FrameNum&#x3c;=FrameNumEnd) &amp;&amp; (FrameNum&#x3e;=FrameNumStart) &amp;&amp; (FrameNum&#x3c;ActiveFramesLen))
-{
-      ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];
-      FrameNum++;
-}
-if (!ActiveSeg)
-      continue;
-int Delay = 0;
-Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</semantic__sourcecode>
-
-
-<semantic__p id="semantic___b346f3e2-017e-c109-91c2-5f20bd427219">[End Correction]</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_a_subfolder_results_ed_3" inline-header="false" obligation="normative">
-<semantic__title>Annex A, subfolder Results Ed. 3</semantic__title>
-<semantic__p id="semantic___f11a6ec3-334c-c8f5-6f9a-ce94a58f1f23"><semantic__em>The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___585280a5-d8b7-e0dd-1c94-64c0847340f9"><semantic__em>--- SPECIAL INSTRUCTIONS --- Replace subfolder in Annex A</semantic__em></semantic__p>
-
-<semantic__p id="semantic___9c89a647-37f8-a947-332d-5329a2cbc47c">[Begin Correction]</semantic__p>
-
-<semantic__p id="semantic___da2e0119-8e97-d108-8af6-770ff2ed1f7e"><semantic__em>--- SPECIAL INSTRUCTIONS --- Old Subfolder</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___b0106cb3-5ea5-5927-0bfb-83e15d507d60" unnumbered="true">Results Ed. 3</semantic__sourcecode>
-
-
-<semantic__p id="semantic___8e5dd509-fa41-de29-b22c-1fde11217219"><semantic__em>--- SPECIAL INSTRUCTIONS --- New Subfolder</semantic__em></semantic__p>
-
-<semantic__sourcecode id="semantic___fefd7a42-4c2d-ac32-07d5-a845a826fda2" unnumbered="true">Results Ed. 3 - IG 2018-05</semantic__sourcecode>
-
-
-<semantic__p id="semantic___9b71d335-201e-647a-c8b2-3033176fe09a">[End Correction]</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_b_additional_info" inline-header="false" obligation="normative">
-<semantic__title>Annex B - additional info</semantic__title>
-<semantic__note id="semantic___c4b35716-15b9-24e3-3a82-1ae4528faab7"><semantic__p id="semantic___fe810aab-cbb7-bc81-ed1e-44d1b9a534b5">The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</semantic__p>
-</semantic__note>
-</semantic__clause>
-</semantic__clause>
-
-
-</semantic__sections><semantic__annex id="semantic___p_863_2018_03_defect_report_form" inline-header="false" obligation="normative">
-<semantic__title>P.863 (2018-03) Defect Report Form</semantic__title>
-<semantic__table id="semantic___eaf01491-0f2e-1e71-6bb8-b6b78e004031" unnumbered="true"><semantic__tbody><semantic__tr><semantic__td valign="top" align="left">DATE:</semantic__td>
-<semantic__td valign="top" align="left"/></semantic__tr><semantic__tr><semantic__td valign="top" align="left"><semantic__p id="semantic___667404a8-8ce5-6b28-2622-c61515a80f0b">CONTACT INFORMATION<semantic__br/> NAME: <semantic__br/> COMPANY: <semantic__br/> ADDRESS: <semantic__br/> TEL: <semantic__br/> FAX: <semantic__br/> E-MAIL:</semantic__p>
-</semantic__td>
-<semantic__td valign="top" align="left"/></semantic__tr><semantic__tr><semantic__td valign="top" align="left">AFFECTED RECOMMENDATIONS:</semantic__td>
-<semantic__td valign="top" align="left"/></semantic__tr><semantic__tr><semantic__td valign="top" align="left">DESCRIPTION OF PROBLEM:</semantic__td>
-<semantic__td valign="top" align="left"/></semantic__tr><semantic__tr><semantic__td valign="top" align="left">SUGGESTIONS FOR RESOLUTION:</semantic__td>
-<semantic__td valign="top" align="left"/></semantic__tr></semantic__tbody>
-<semantic__note id="semantic___144e87c5-7df0-e541-9081-f059f06d102e"><semantic__p id="semantic___d2e95842-3a08-4c42-2171-d74f29d9268d">Attach additional pages if more space is required than is provided above.</semantic__p>
-</semantic__note></semantic__table>
-
-
-</semantic__annex><semantic__bibliography><semantic__references id="semantic___references" normative="true" obligation="informative">
-<semantic__title>References</semantic__title><semantic__p id="semantic___275a5bef-a7d6-9098-1663-185b6fe8dd33">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</semantic__p>
-<semantic__bibitem id="semantic__p863" type="standard" schema-version="v1.2.9">
-  <semantic__fetched>2025-02-18</semantic__fetched>
-  
-<semantic__title type="title-main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</semantic__title>
-
-  
-<semantic__title type="main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</semantic__title>
-
-  <semantic__uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13570&amp;lang=en</semantic__uri>
-  <semantic__docidentifier type="ITU" primary="true">ITU-T P.863 (03/2018)</semantic__docidentifier>
-  <semantic__date type="published">
-    <semantic__on>2018-03-16</semantic__on>
-  </semantic__date>
-  <semantic__contributor>
-    <semantic__role type="publisher"/>
-    <semantic__organization>
-      
-<semantic__name>International Telecommunication Union</semantic__name>
-
-      <semantic__abbreviation>ITU</semantic__abbreviation>
-      <semantic__uri>www.itu.int</semantic__uri>
-    </semantic__organization>
-  </semantic__contributor>
-  <semantic__edition>3</semantic__edition>
-  <semantic__language>en</semantic__language>
-  <semantic__script>Latn</semantic__script>
-  <semantic__status>
-    <semantic__stage>Published</semantic__stage>
-  </semantic__status>
-  <semantic__copyright>
-    <semantic__from>2018</semantic__from>
-    <semantic__owner>
-      <semantic__organization>
-        
-<semantic__name>International Telecommunication Union</semantic__name>
-
-        <semantic__abbreviation>ITU</semantic__abbreviation>
-        <semantic__uri>www.itu.int</semantic__uri>
-      </semantic__organization>
-    </semantic__owner>
-  </semantic__copyright>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 10 (11/1988)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 16 (11/1988)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 20 (03/1993)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 23 (02/1998)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 24 (10/2005)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 25 (01/2011)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 26 (09/2017)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 27 (01/2017)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 27 (01/2017)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 28 (09/2020)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__relation type="complementOf">
-    <semantic__bibitem type="standard">
-      <semantic__formattedref format="text/plain" language="en" script="Latn">P Suppl. 29 (01/2023)</semantic__formattedref>
-      <semantic__docidentifier type="ITU">P Suppl. 29 (01/2023)</semantic__docidentifier>
-    </semantic__bibitem>
-
-  </semantic__relation>
-  <semantic__place>Geneva</semantic__place>
-</semantic__bibitem>
-
-
-
-</semantic__references></semantic__bibliography>
-</semantic__itu-standard></source></metanorma><source-highlighter-css>sourcecode table td { padding: 5px; }
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="multiple_and" language="en">%1<enum-comma>,</enum-comma> <conn>and</conn> %2</localized-string><localized-string key="binary_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="multiple_or" language="en">%1<enum-comma>,</enum-comma> <conn>or</conn> %2</localized-string><localized-string key="chain_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="chain_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="chain_from" language="en">%1 <conn>from</conn> %2</localized-string><localized-string key="chain_to" language="en">%1 <conn>to</conn> %2</localized-string><localized-string key="nested_xref" language="en">%2 <conn>in</conn> %1</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en"><span class="fmt-element-name">NOTE</span> %</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Equation</localized-string><localized-string key="inequality" language="en">Inequality</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where:</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">(This appendix does not form an integral part of this %.)</localized-string><localized-string key="norm_annex" language="en">(This annex forms an integral part of this %.)</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="editor.sg" language="en">editor</localized-string><localized-string key="editor.pl" language="en">editors</localized-string><localized-string key="questions" language="en">Question(s)</localized-string><localized-string key="studyperiod" language="en">Study Period %</localized-string><localized-string key="original" language="en">Original</localized-string><localized-string key="contact" language="en">Contact</localized-string><localized-string key="tel_abbrev" language="en">Tel.</localized-string><localized-string key="document_source" language="en">Source</localized-string><localized-string key="title" language="en">Title</localized-string><localized-string key="current_language" language="en">English</localized-string><localized-string key="conventions" language="en">Conventions</localized-string><localized-string key="summary" language="en">Summary</localized-string><localized-string key="elsewhere_terms" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="here_terms" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="annex_subclause" language="en">clause</localized-string><localized-string key="keywords" language="en">Keywords</localized-string><localized-string key="in" language="en">in</localized-string><localized-string key="to" language="en">to</localized-string><localized-string key="blankclause" language="en">This clause is intentionally left blank.</localized-string><localized-string key="internal_termsdef" language="en">Terms defined in this recommendation</localized-string><localized-string key="external_termsdef" language="en">Terms defined elsewhere</localized-string><localized-string key="symbols_boilerplate" language="en">This Recommendation uses the following abbreviations and acronyms:</localized-string><localized-string key="clause_empty" language="en">None.</localized-string><localized-string key="amendment" language="en">Amendment</localized-string><localized-string key="corrigendum" language="en">Corrigendum</localized-string><localized-string key="page" language="en">Page</localized-string><localized-string key="placedate" language="en">Geneva, %</localized-string><localized-string key="annex_to_itu_ob" language="en">Annex to ITU Operational Bulletin</localized-string><localized-string key="number_abbrev" language="en">No.</localized-string><localized-string key="annex_to_itu_ob_abbrev" language="en">Annex to ITU OB %</localized-string><localized-string key="international_telecommunication_union" language="en">International Telecommunication Union</localized-string><localized-string key="ITU" language="en">ITU</localized-string><localized-string key="position_on" language="en">(Position on %)</localized-string><localized-string key="revision_abbreviation" language="en">Rev.</localized-string><localized-string key="tsb" language="en">TSB</localized-string><localized-string key="br" language="en">BR</localized-string><localized-string key="bdt" language="en">BDT</localized-string><localized-string key="tsb_short" language="en">Telecommunication Standardization Bureau</localized-string><localized-string key="br_short" language="en">Radiocommunication Bureau</localized-string><localized-string key="bdt_short" language="en">Telecommunication Development Bureau</localized-string><localized-string key="tsb_full" language="en">Telecommunication<br/>Standardization Bureau<br/>of ITU</localized-string><localized-string key="br_full" language="en">Radiocommunication Bureau<br/>of ITU</localized-string><localized-string key="bdt_full" language="en">Telecommunication<br/>Development Bureau<br/>of ITU</localized-string><localized-string key="prepub" language="en">Prepublished version</localized-string><localized-string key="draft_new" language="en">Draft new %</localized-string><localized-string key="email" language="en">E-mail</localized-string><localized-string key="editor_full" language="en">editor</localized-string><localized-string key="doctype_dict.resolution" language="en">Resolution</localized-string><localized-string key="doctype_dict.recommendation" language="en">Recommendation</localized-string><localized-string key="doctype_dict.recommendation-supplement" language="en">Recommendation Supplement</localized-string><localized-string key="doctype_dict.recommendation-amendment" language="en">Recommendation Amendment</localized-string><localized-string key="doctype_dict.recommendation-corrigendum" language="en">Recommendation Corrigendum</localized-string><localized-string key="doctype_dict.recommendation-errata" language="en">Recommendation Errata</localized-string><localized-string key="doctype_dict.recommendation-annex" language="en">Recommendation Annex</localized-string><localized-string key="doctype_dict.focus-group" language="en">Focus Group</localized-string><localized-string key="doctype_dict.implementers-guide" language="en">Implementers’ Guide</localized-string><localized-string key="doctype_dict.technical-paper" language="en">Technical Paper</localized-string><localized-string key="doctype_dict.technical-report" language="en">Technical Report</localized-string><localized-string key="doctype_dict.joint-itu-iso-iec" language="en">Joint ITU/ISO/IEC</localized-string><localized-string key="doctype_dict.service-publication" language="en">Service Publication</localized-string><localized-string key="doctype_dict.contribution" language="en">Contribution</localized-string><localized-string key="doctype_abbrev.recommendation" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-supplement" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-amendment" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-corrigendum" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-errata" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-annex" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.focus-group" language="en">FG</localized-string><localized-string key="doctype_abbrev.implementers-guide" language="en">Imp.</localized-string><localized-string key="doctype_abbrev.technical-paper" language="en">TP</localized-string><localized-string key="doctype_abbrev.technical-report" language="en">TR</localized-string><localized-string key="doctype_abbrev.joint-itu-iso-iec" language="en">ITU/ISO/IEC</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><source-highlighter-css>sourcecode table td { padding: 5px; }
 sourcecode table pre { margin: 0; }
 sourcecode, sourcecode .w {
   color: #444444;
@@ -504,82 +71,82 @@ sourcecode .nt {
 }
 
 </source-highlighter-css></metanorma-extension>
-<boilerplate><copyright-statement displayorder="1">
+<boilerplate><copyright-statement>
 
-<clause id="_bbd9dfd2-b64e-eb3c-69e9-a5dfe29ef604" inline-header="false" obligation="normative">
-<p id="_c55f784e-df5e-1dee-00ee-4eea3cc145ed">© ITU 2018</p>
+<clause id="_f1f445f2-06f2-abca-49ac-16e500ea8d49" inline-header="false" obligation="normative" displayorder="1">
+<p id="_d10aa1d5-f372-c5d0-5605-ee511b386173">© ITU 2018</p>
 
-<p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </clause>
 </copyright-statement>
 
-<legal-statement displayorder="2">
+<legal-statement>
 
-<clause id="_042e4e49-45b6-898c-6c97-17ed5ec802b5" inline-header="false" obligation="normative">
-<title id="_ee5a94b2-419a-475c-ac61-b67811993d1f">FOREWORD</title><fmt-title depth="2"><semx element="title" source="_ee5a94b2-419a-475c-ac61-b67811993d1f">FOREWORD</semx></fmt-title>
-<p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+<clause id="_003f845c-f32a-7960-3b0f-9c85330adade" inline-header="false" obligation="normative" displayorder="2">
+<title id="_31294614-b65f-418a-96d3-b62049cc05f5">FOREWORD</title><fmt-title depth="1"><semx element="title" source="_31294614-b65f-418a-96d3-b62049cc05f5">FOREWORD</semx></fmt-title>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
-<p id="_06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+<p id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
 
-<p id="_0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
 
-<p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 </clause>
 </legal-statement>
-</boilerplate><preface><clause type="toc" id="_c6a2e461-73b7-4310-8915-cc10cd2fcb31" displayorder="3"><fmt-title depth="1">Table of Contents</fmt-title></clause>
-<abstract id="_summary" displayorder="4"><title id="_07dfb878-6e39-4153-9505-57b8565d7dc6">Summary</title><fmt-title depth="1"><semx element="title" source="_07dfb878-6e39-4153-9505-57b8565d7dc6">Summary</semx></fmt-title><p id="_e6c896eb-0823-24ba-9615-7f01c98d9059">This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p>
+</boilerplate><preface><clause type="toc" id="_cec79f2f-fc4f-4c13-a0b3-7998fe281a7c" displayorder="3"><fmt-title depth="1">Table of Contents</fmt-title></clause>
+<abstract id="_summary" displayorder="4"><title id="_dfc6b0ba-3df5-45ea-b0c7-24625411a2c9">Summary</title><fmt-title depth="1"><semx element="title" source="_dfc6b0ba-3df5-45ea-b0c7-24625411a2c9">Summary</semx></fmt-title><p id="_1dfebe3c-046f-6b81-87e3-70dea8293a0e">This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p>
 
-<p id="_d14fde0c-077a-36d7-d778-ac03579a0130">This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p>
+<p id="_be206765-85dd-592a-b4ed-0678f65f41cf">This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p>
 </abstract><clause id="_change_log" inline-header="false" obligation="informative" displayorder="5">
-<title id="_c0d89350-3518-4fbf-a5d5-5ad18c118eb2">Change log</title><fmt-title depth="1"><semx element="title" source="_c0d89350-3518-4fbf-a5d5-5ad18c118eb2">Change log</semx></fmt-title>
-<table id="_867e24a2-150d-f5af-f133-0a7ee148bc9b" unnumbered="true"><tbody><tr><td valign="top" align="left">2018-05</td>
+<title id="_63be5ef3-44c4-4262-838f-17adef8de8d4">Change log</title><fmt-title depth="1"><semx element="title" source="_63be5ef3-44c4-4262-838f-17adef8de8d4">Change log</semx></fmt-title>
+<table id="_11a20585-392a-89b9-c931-1939edfc226a" unnumbered="true"><tbody><tr><td valign="top" align="left">2018-05</td>
 <td valign="top" align="left">Initial version</td>
 </tr></tbody>
 </table>
-</clause><clause id="_bf7057d3-a52f-4594-b2f1-dcf626ce767a" type="editors" displayorder="6">
-<table id="_011217c5-597e-40a0-8e9b-25ed65645351" unnumbered="true"><tbody>
-<tr><th>Editors:</th><td>Jens Berger<br/>Rohde &amp; Schwarz, Switzerland</td><td>E-mail: <link target="mailto:jens.berger@rohde-schwarz.com">jens.berger@rohde-schwarz.com</link></td></tr>
-<tr><th/><td>Joachim Pomy<br/>OPTICOM GmbH, Germany</td><td>E-mail: <link target="mailto:consultant@joachimpomy.de">consultant@joachimpomy.de</link></td></tr></tbody></table></clause></preface><sections><p class="zzSTDTitle1" displayorder="7">Implementers Guide ITU-T P.863 Implementers' Guide</p><p class="zzSTDTitle2" displayorder="8">Implementers' guide for P.863</p>
+</clause><clause id="_4821ae9a-a008-4cba-98c1-a2d1f0fe1e6a" type="editors" displayorder="6">
+<table id="_9183259d-acd1-4fa5-9d02-969552419672" unnumbered="true"><tbody>
+<tr><th>Editors:</th><td>Jens Berger<br/>Rohde &amp; Schwarz, Switzerland</td><td>E-mail: <link target="mailto:jens.berger@rohde-schwarz.com" id="_01d32d89-8f85-4bb3-b19e-1472abf433ed">jens.berger@rohde-schwarz.com</link><semx element="link" source="_01d32d89-8f85-4bb3-b19e-1472abf433ed"><fmt-link target="mailto:jens.berger@rohde-schwarz.com">jens.berger@rohde-schwarz.com</fmt-link></semx></td></tr>
+<tr><th/><td>Joachim Pomy<br/>OPTICOM GmbH, Germany</td><td>E-mail: <link target="mailto:consultant@joachimpomy.de" id="_44ad4800-fa7c-4a2d-ba96-f6d6777b8892">consultant@joachimpomy.de</link><semx element="link" source="_44ad4800-fa7c-4a2d-ba96-f6d6777b8892"><fmt-link target="mailto:consultant@joachimpomy.de">consultant@joachimpomy.de</fmt-link></semx></td></tr></tbody></table></clause></preface><sections><p class="zzSTDTitle1" displayorder="7">Implementers Guide ITU-T P.863 Implementers' Guide</p><p class="zzSTDTitle2" displayorder="8">Implementers' guide for P.863</p>
 
 
 <clause id="_scope" type="scope" inline-header="false" obligation="normative" displayorder="9">
-<title id="_72f17120-cdd9-42f7-9f51-e9f21965a646">Scope</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_scope">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_72f17120-cdd9-42f7-9f51-e9f21965a646">Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_scope">1</semx></fmt-xref-label>
-<p id="_e56c7a46-cf41-0a75-24a8-28e77b743f9b">This guide resolves defects in the following categories:</p>
+<title id="_2de5441d-f58d-40f8-92dc-aa513d1da02b">Scope</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_scope">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2de5441d-f58d-40f8-92dc-aa513d1da02b">Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_scope">1</semx></fmt-xref-label>
+<p id="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265">This guide resolves defects in the following categories:</p>
 
-<ul id="_595354b1-bd9c-3dbb-0bf7-7126c43ae701"><li><p id="_0284502d-18d2-6b71-643f-597518cfa61c">editorial errors</p>
+<ul id="_0f46587a-4a22-b099-bcfc-949dc1ebf367"><li><p id="_145ebb3b-63ab-a2b9-b86a-b9226239e968">editorial errors</p>
 </li>
-<li><p id="_e42637f7-2007-7fe0-1494-ab7c59f247d4">technical errors, such as omissions and inconsistencies</p>
+<li><p id="_396c4cb0-8334-908d-3168-a016a39de6f5">technical errors, such as omissions and inconsistencies</p>
 </li>
-<li><p id="_e71017d7-9926-cd77-afe8-7b854e5bd9c0">ambiguities</p>
+<li><p id="_c1f22a18-0ece-5b78-95b4-3db77530a99b">ambiguities</p>
 </li>
 </ul>
 
-<p id="_73484642-6bd0-36e5-8f37-6584cdda5765">In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
+<p id="_b5fca65c-b073-e623-4f07-8e57cc4c15d1">In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
 
-<p id="_c1fd5090-79a1-fd4b-5601-3eba4b723cb2">This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</p>
+<p id="_0bf9cac4-4901-700f-ff01-bba0741fba67">This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</p>
 </clause>
 
 <clause id="_introduction" inline-header="false" obligation="normative" displayorder="11">
-<title id="_6d9f2ab5-7080-4837-b777-676ff5e0d09f">Introduction</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_introduction">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_6d9f2ab5-7080-4837-b777-676ff5e0d09f">Introduction</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_introduction">3</semx></fmt-xref-label>
-<p id="_e47bc0e4-380b-27f7-29be-bb6d6f72e506">This implementers' guide is a compilation of reported defects for the version 2018-03 of <xref type="inline" target="p863">[ITU-T P.863 (03/2018)]</xref>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
+<title id="_1a1a03f3-7090-4891-a816-d0ca66673922">Introduction</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_introduction">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1a1a03f3-7090-4891-a816-d0ca66673922">Introduction</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_introduction">3</semx></fmt-xref-label>
+<p id="_e15ac562-4a67-cb8e-a233-c6f9dbd3e392">This implementers' guide is a compilation of reported defects for the version 2018-03 of <eref type="inline" bibitemid="p863" citeas="ITU-T P.863 (03/2018)" id="_a52a201f-f844-4bec-a268-86329c81f1a6"/><semx element="eref" source="_a52a201f-f844-4bec-a268-86329c81f1a6"><fmt-xref type="inline" target="p863">[ITU-T P.863 (03/2018)]</fmt-xref></semx>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
 
-<p id="_91075ce3-5f28-91f8-9c38-4b33e609f188">P.863</p>
+<p id="_457d763d-98a1-3c2c-2faf-5fdf575bf76a">P.863</p>
 
-<p id="_ab8ccd22-975c-5d09-20f1-4bbf3f5e995a">The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
+<p id="_5308c9ad-ac84-ca4a-2f58-3a376ee26636">The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
 </clause>
 
 <clause id="_defect_resolution_procedure" inline-header="false" obligation="normative" displayorder="12">
-<title id="_7149deda-a553-4ada-b8c0-3cef7209551f">Defect resolution procedure</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_defect_resolution_procedure">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7149deda-a553-4ada-b8c0-3cef7209551f">Defect resolution procedure</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_defect_resolution_procedure">4</semx></fmt-xref-label>
-<p id="_ed63e505-44a3-9634-19de-b3c1c734a1d7">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
+<title id="_b80ea7d5-d3cc-4cfc-9fe1-c7683e6b9e70">Defect resolution procedure</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_defect_resolution_procedure">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b80ea7d5-d3cc-4cfc-9fe1-c7683e6b9e70">Defect resolution procedure</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_defect_resolution_procedure">4</semx></fmt-xref-label>
+<p id="_8568ddf5-78a5-d0cf-8bac-a26231c0407d">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
 </clause>
 
 
 
 <clause id="_nomenclature" inline-header="false" obligation="normative" displayorder="13">
-<title id="_9769397a-6d75-4092-a0c0-5bbfdb43b664">Nomenclature</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_nomenclature">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9769397a-6d75-4092-a0c0-5bbfdb43b664">Nomenclature</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_nomenclature">5</semx></fmt-xref-label>
-<p id="_1a62a3fe-7fd9-44d4-f902-d3c212698018">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
+<title id="_d5e6f2ad-82e2-43be-bf29-0b70657fa943">Nomenclature</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_nomenclature">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d5e6f2ad-82e2-43be-bf29-0b70657fa943">Nomenclature</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_nomenclature">5</semx></fmt-xref-label>
+<p id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
 
-<table id="_d359b8d7-601d-4154-4b2d-7e7794d68697" unnumbered="true"><tbody><tr><th valign="top" align="center">Symbol</th>
+<table id="_0ae75d4e-57ab-689e-6be2-8b22c20a9e73" unnumbered="true"><tbody><tr><th valign="top" align="center">Symbol</th>
 <th valign="top" align="center">Description</th>
 </tr><tr><td valign="top" align="center"><strong><em>[Begin Correction]</em></strong></td>
 <td valign="top" align="left">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
@@ -594,55 +161,57 @@ sourcecode .nt {
 </clause>
 
 <clause id="_technical_and_editorial_corrections_to_recommendation_p_863" inline-header="false" obligation="normative" displayorder="14">
-<title id="_b1f13322-bf81-4810-9f0e-74d36827c126">Technical and editorial corrections to Recommendation P.863</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b1f13322-bf81-4810-9f0e-74d36827c126">Technical and editorial corrections to Recommendation P.863</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx></fmt-xref-label>
+<title id="_b2ccfc5c-8b1f-41e8-9a9c-a7fd041eab9d">Technical and editorial corrections to Recommendation P.863</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b2ccfc5c-8b1f-41e8-9a9c-a7fd041eab9d">Technical and editorial corrections to Recommendation P.863</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx></fmt-xref-label>
 <clause id="_annex_b_tempalignment_pdf" inline-header="false" obligation="normative">
-<title id="_16703ac1-064a-4a89-b219-5630470a3147">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_16703ac1-064a-4a89-b219-5630470a3147">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf">1</semx></fmt-xref-label>
-<p id="_c0b1f7ab-2234-58c3-2b7d-0fcf3ec774e8"><em>Missing statement, which rendered part of the surrounding code useless.</em></p>
+<title id="_5ee63c0c-dd37-4dc5-9259-35f176adcb6f">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5ee63c0c-dd37-4dc5-9259-35f176adcb6f">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf">1</semx></fmt-xref-label>
+<p id="_9ff6fe16-cb2d-61d6-54d9-17484b2929bb"><em>Missing statement, which rendered part of the surrounding code useless.</em></p>
 
-<p id="_4be8cd16-4171-7205-bee7-b4a71b6c93f6"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 2655</em></p>
+<p id="_d51f874b-5948-9338-5cbe-70df4db32df1"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 2655</em></p>
 
-<p id="_3fbff269-98cb-6262-0cbb-23576cc2b347">[Begin Correction]</p>
+<p id="_4b308a13-9581-7ab1-f8a0-577fa4c2dce7">[Begin Correction]</p>
 
-<sourcecode id="_09a9335e-0504-f257-42a9-32c84be4b0dc" unnumbered="true">Done = true</sourcecode>
+<sourcecode id="_7c2f8e6a-fa0a-338b-4d0f-785bf64e21e6" unnumbered="true"><body>Done = true</body><fmt-sourcecode unnumbered="true">Done = true</fmt-sourcecode></sourcecode>
 
 
-<p id="_8643cd3d-e43b-18ed-d929-c5bbb235606f">[End Correction]</p>
+<p id="_c200a9b3-b096-ca85-bff8-e5e0cbde8625">[End Correction]</p>
 </clause>
 
 <clause id="_annex_b_tempalignment_pdf_2" inline-header="false" obligation="normative">
-<title id="_0f816388-95f8-4848-bf9a-70fbe8ad43d4">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0f816388-95f8-4848-bf9a-70fbe8ad43d4">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_2">2</semx></fmt-xref-label>
-<p id="_3a2976ab-e10e-6b4e-e137-9ca7a8fc4ec8"><em>The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug.</em></p>
+<title id="_20230d0f-2e7d-44bc-bea1-6ae0595f3c7b">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_20230d0f-2e7d-44bc-bea1-6ae0595f3c7b">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_2">2</semx></fmt-xref-label>
+<p id="_d238be08-f54f-4331-7d07-0071fd210301"><em>The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug.</em></p>
 
-<p id="_7395bf5a-a741-0c38-1915-c9056a8b3618"><em>--- SPECIAL INSTRUCTIONS --- Replace lines 3940 and 3941:</em></p>
+<p id="_554d41a7-324b-3aeb-12ff-e1162146bec7"><em>--- SPECIAL INSTRUCTIONS --- Replace lines 3940 and 3941:</em></p>
 
-<p id="_2d03b6e7-8cdd-9939-1d25-4321a4859cfa">[Begin Correction]</p>
+<p id="_e6827bb4-8f20-81c9-75db-8e38ad92bf2c">[Begin Correction]</p>
 
-<p id="_e3cd04cb-897e-ec14-0fcb-b61dc0855b6a"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+<p id="_bcd658ba-4020-08c8-d1ea-4937a7da9df8"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
 
-<sourcecode id="_98d6fb3b-fe5f-9709-db92-688e08984813" unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
-mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples</sourcecode>
-
-
-<p id="_d3187ea1-2f25-be50-0e96-1054b9b9da78"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
-
-<sourcecode id="_3c3cf96c-45f5-3839-7d8a-61154a15c217" unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
-mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</sourcecode>
+<sourcecode id="_9bf4a377-7b81-e941-e76e-9364b13f13f1" unnumbered="true"><body>mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples</body><fmt-sourcecode unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples</fmt-sourcecode></sourcecode>
 
 
-<p id="_81f139ed-f1fa-617b-b0ae-08cbc8e419ec">[End Correction]</p>
+<p id="_73d4cbea-0599-8978-f324-2f35a2cc5d98"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_778931a9-bc3e-4f3e-497f-a8a91958be89" unnumbered="true"><body>mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</body><fmt-sourcecode unnumbered="true">mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</fmt-sourcecode></sourcecode>
+
+
+<p id="_894efce1-9ef8-d209-e3fb-4662fd1405a9">[End Correction]</p>
 </clause>
 
 <clause id="_annex_b_tempalignment_pdf_3" inline-header="false" obligation="normative">
-<title id="_c782e790-60a5-4bb7-95c7-85ed018b6333">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_3">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c782e790-60a5-4bb7-95c7-85ed018b6333">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_3">3</semx></fmt-xref-label>
-<p id="_93ec2c6b-18c1-7c31-3fe8-fb65bc6ac744"><em>The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence.</em></p>
+<title id="_3c435b1f-d988-4faa-ac1d-7c90c5aa2950">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_3">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3c435b1f-d988-4faa-ac1d-7c90c5aa2950">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_3">3</semx></fmt-xref-label>
+<p id="_39095eec-6a6b-afbe-72fc-b6372f3ca7c6"><em>The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence.</em></p>
 
-<p id="_153754e3-445c-3d75-f2e1-0906fe491c41"><em>--- SPECIAL INSTRUCTIONS --- Modify lines 5092 to 5102:</em></p>
+<p id="_fc56aa06-9575-3eb2-d9b4-1080c82140e1"><em>--- SPECIAL INSTRUCTIONS --- Modify lines 5092 to 5102:</em></p>
 
-<p id="_cfbca1e0-aee2-f1a3-64b9-29ed9e94a96d">[Begin Correction]</p>
+<p id="_b34f881c-eda2-c823-12e4-79098c72adbc">[Begin Correction]</p>
 
-<p id="_2f5b6ed8-1325-e8ee-f325-0f1c2aeba08e"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+<p id="_5c26de3e-0c81-157f-f255-19148e93f76d"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
 
-<sourcecode id="_6e05e6b8-c621-fe94-13a9-948c983eb5ee" unnumbered="true">for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
+<sourcecode id="_567c55b0-170f-f5b9-e2ef-fa5382c2ace0" unnumbered="true"><body>for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
       {
       if (pStartSampleUtterance[utt+1]-pStopSampleUtterance[utt] &#x3c; 0.1*mProcessData.mSamplerate)
            {
@@ -652,12 +221,22 @@ mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</sourcecode
             if (pStartSampleUtterance[utt+1]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start)
                 IsInsideActiveSection = false
 
-                if ((!IsInsideActiveSection &amp;&amp;</sourcecode>
+                if ((!IsInsideActiveSection &amp;&amp;</body><fmt-sourcecode unnumbered="true">for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
+      {
+      if (pStartSampleUtterance[utt+1]-pStopSampleUtterance[utt] &#x3c; 0.1*mProcessData.mSamplerate)
+           {
+            bool IsInsideActiveSection = true
+            while(LastUsedReparsePoint&#x3c;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&#x3e;ReparsePoints[LastUsedReparsePoint].Deg.End)
+                  LastUsedReparsePoint++
+            if (pStartSampleUtterance[utt+1]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start)
+                IsInsideActiveSection = false
+
+                if ((!IsInsideActiveSection &amp;&amp;</fmt-sourcecode></sourcecode>
 
 
-<p id="_481a2ef0-7ddd-54ff-b547-df33d5d1dc93"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+<p id="_095a3752-e9dd-8f0d-a5a8-b00bc70779a4"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
 
-<sourcecode id="_05154865-a253-22d7-d343-8416d9480812" unnumbered="true">for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
+<sourcecode id="_ff7f6eae-197b-211c-8db3-152f33b9ecbd" unnumbered="true"><body>for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
      {
         bool IsInsideActiveSection1 = true
         bool IsInsideActiveSection2 = true
@@ -674,63 +253,80 @@ mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</sourcecode
 
         if (ReparsePoint2==LastUsedReparsePoint &amp;&amp; (IsInsideActiveSection1 &amp;&amp; IsInsideActiveSection2) || (!IsInsideActiveSection1 &amp;&amp; !IsInsideActiveSection2))
         {
-            if ((!IsInsideActiveSection1 &amp;&amp;</sourcecode>
+            if ((!IsInsideActiveSection1 &amp;&amp;</body><fmt-sourcecode unnumbered="true">for (utt=0 utt&#x3c;NumberOfUtterances-1 utt++)
+     {
+        bool IsInsideActiveSection1 = true
+        bool IsInsideActiveSection2 = true
+        while(LastUsedReparsePoint&#x3c;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt]&#x3e;ReparsePoints[LastUsedReparsePoint].Deg.End)
+            LastUsedReparsePoint++
+        if (pStartSampleUtterance[utt]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start)
+            IsInsideActiveSection1 = false
+
+        int ReparsePoint2 = LastUsedReparsePoint
+        while(ReparsePoint2&#x3c;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&#x3e;ReparsePoints[ReparsePoint2].Deg.End)
+            ReparsePoint2++
+        if (pStartSampleUtterance[utt+1]&#x3c;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt+1]&#x3c;ReparsePoints[ReparsePoint2].Deg.Start)
+            IsInsideActiveSection2 = false
+
+        if (ReparsePoint2==LastUsedReparsePoint &amp;&amp; (IsInsideActiveSection1 &amp;&amp; IsInsideActiveSection2) || (!IsInsideActiveSection1 &amp;&amp; !IsInsideActiveSection2))
+        {
+            if ((!IsInsideActiveSection1 &amp;&amp;</fmt-sourcecode></sourcecode>
 
 
-<p id="_9e0f912b-76ff-ade2-d751-e5817607c8bb"><em>[End Correction]</em></p>
+<p id="_526c0414-be6f-fcc4-9ed0-c76b719b8734"><em>[End Correction]</em></p>
 </clause>
 
 <clause id="_annex_b_timealign_pdf" inline-header="false" obligation="normative">
-<title id="_d738b649-62c1-4be8-b885-6ad6a5f87c18">Annex B, TimeAlign.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_timealign_pdf">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d738b649-62c1-4be8-b885-6ad6a5f87c18">Annex B, TimeAlign.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_timealign_pdf">4</semx></fmt-xref-label>
-<p id="_eca1774c-fa1f-324a-5418-16c277650b50"><em>When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same.</em></p>
+<title id="_bb8afca5-82eb-48b3-8766-3c9988f48e1b">Annex B, TimeAlign.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_timealign_pdf">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bb8afca5-82eb-48b3-8766-3c9988f48e1b">Annex B, TimeAlign.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_timealign_pdf">4</semx></fmt-xref-label>
+<p id="_79163186-8dc9-2a87-a0e7-5eb450a630d0"><em>When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same.</em></p>
 
-<p id="_0003c7cd-d27c-4a63-2e97-9650a2481243"><em>--- SPECIAL INSTRUCTIONS --- replace line 878</em></p>
+<p id="_e900ace2-370c-10b9-d163-ee657b85c163"><em>--- SPECIAL INSTRUCTIONS --- replace line 878</em></p>
 
-<p id="_e4fbb1ac-eaa7-ace8-ef48-fbf5d69b5963">[Begin Correction]</p>
+<p id="_ede87ba2-59ce-4b34-9563-b1c4ca88fd1a">[Begin Correction]</p>
 
-<p id="_75b824cb-5582-7365-953a-f912864d2c22"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+<p id="_dd2b8233-65bd-11a3-061e-68df79da1fec"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
 
-<sourcecode id="_1bdf1227-c57a-3324-134b-1acbe74e831c" unnumbered="true">pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)</sourcecode>
-
-
-<p id="_3fa1f970-26d1-cb69-29e9-7b986581d605"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
-
-<sourcecode id="_976cf036-f588-53f4-a014-3a5f8be34018" unnumbered="true">pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);</sourcecode>
+<sourcecode id="_6395d6c0-f506-d934-2efc-c48500f8baef" unnumbered="true"><body>pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)</body><fmt-sourcecode unnumbered="true">pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)</fmt-sourcecode></sourcecode>
 
 
-<p id="_84bf3a4c-93d9-9b9b-9442-b3e49ec5a00a">[End Correction]</p>
+<p id="_8e8d0e35-b6d8-6a52-1b8f-2ceecbfe240c"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_1a10b9d0-65ab-5a10-8018-c9fe0d8e071e" unnumbered="true"><body>pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);</body><fmt-sourcecode unnumbered="true">pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);</fmt-sourcecode></sourcecode>
+
+
+<p id="_534ce186-ba40-d7c1-b310-088e0d62e34f">[End Correction]</p>
 </clause>
 
 <clause id="_annex_b_speechtempalign_pdf" inline-header="false" obligation="normative">
-<title id="_d68f742e-6803-48cf-91f6-f7061a623ca0">Annex B, SpeechTempAlign.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_speechtempalign_pdf">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d68f742e-6803-48cf-91f6-f7061a623ca0">Annex B, SpeechTempAlign.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_speechtempalign_pdf">5</semx></fmt-xref-label>
-<p id="_d28227aa-1f4e-e5c1-7c0b-954b83ddfcc1"><em>Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier.</em></p>
+<title id="_7b0f9d02-9c56-4e25-b433-5c393fe99057">Annex B, SpeechTempAlign.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_speechtempalign_pdf">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7b0f9d02-9c56-4e25-b433-5c393fe99057">Annex B, SpeechTempAlign.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_speechtempalign_pdf">5</semx></fmt-xref-label>
+<p id="_c18e2018-17e4-6e03-7c8a-566ab69f7866"><em>Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier.</em></p>
 
-<p id="_93197758-bbd7-119c-50f0-4109bedc82b8"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 1439</em></p>
+<p id="_59fa7676-876d-697d-e7ae-9f481d4c6f09"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 1439</em></p>
 
-<p id="_9c8ed2a4-6ed0-7a62-2460-ce1d83b24cff">[Begin Correction]</p>
+<p id="_10b3e69b-6579-e864-e04f-da3fc270a491">[Begin Correction]</p>
 
-<sourcecode id="_3a07427f-cc6b-ff49-4abe-f59c7be3c213" unnumbered="true">if (*NoiseLevelSilence&#x3c;0.125) *NoiseLevelSilence = 0.125</sourcecode>
+<sourcecode id="_5fa85c79-bf3e-a760-00bb-1916ec656b81" unnumbered="true"><body>if (*NoiseLevelSilence&#x3c;0.125) *NoiseLevelSilence = 0.125</body><fmt-sourcecode unnumbered="true">if (*NoiseLevelSilence&#x3c;0.125) *NoiseLevelSilence = 0.125</fmt-sourcecode></sourcecode>
 
 
-<p id="_296044ec-2fb6-e0e8-f6af-51f37cd74165">[End Correction]</p>
+<p id="_9a4f7498-c00a-8290-658a-b77a07782a25">[End Correction]</p>
 </clause>
 
 <clause id="_annex_b_tempalignment_pdf_4" inline-header="false" obligation="normative">
-<title id="_e0f2e0fd-85b0-46dd-a2f9-34ffed8efa5d">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_4">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e0f2e0fd-85b0-46dd-a2f9-34ffed8efa5d">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_4">6</semx></fmt-xref-label>
-<p id="_e74f9ad6-752a-41d9-500c-f65dd7a355d6"><em>Avoid calculating correlation for signal segments which do not contain speech.</em></p>
+<title id="_fb077b52-f2db-4239-a8c6-563ed164cf0c">Annex B, TempAlignment.pdf</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_4">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fb077b52-f2db-4239-a8c6-563ed164cf0c">Annex B, TempAlignment.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_tempalignment_pdf_4">6</semx></fmt-xref-label>
+<p id="_7dde7f31-1bf7-5019-2e65-76e36ea700ca"><em>Avoid calculating correlation for signal segments which do not contain speech.</em></p>
 
-<p id="_cc1bdcae-d696-1d89-14da-0ff736c2f00d"><em>--- SPECIAL INSTRUCTIONS --- replace line 5146</em></p>
+<p id="_55233cea-f0c4-5f4c-2717-3324b1093872"><em>--- SPECIAL INSTRUCTIONS --- replace line 5146</em></p>
 
-<p id="_33d82269-4dc9-926a-b1f7-a57ec9e37b2b">[Begin Correction]</p>
+<p id="_3a9da272-d5c6-ada0-9a29-2d17cebba95a">[Begin Correction]</p>
 
-<p id="_f01ec8bb-2661-c94c-e990-ed3caa5b9f23"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+<p id="_0719714a-64e1-63b7-d7df-9928b67a138c"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
 
-<sourcecode id="_d6fac2fd-23ad-a16b-697f-281e329c7748" unnumbered="true">int Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</sourcecode>
+<sourcecode id="_0d75fb8e-c679-7c51-8891-cbd702ea7ea8" unnumbered="true"><body>int Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</body><fmt-sourcecode unnumbered="true">int Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</fmt-sourcecode></sourcecode>
 
 
-<p id="_547fda56-23cd-1e5c-e9df-f68d8730d9d3"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+<p id="_30856a83-86ed-f971-b145-062e77f4cd7d"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
 
-<sourcecode id="_9029d551-f587-2694-d666-7b88ed7f6c99" unnumbered="true">int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
+<sourcecode id="_41316bdf-119e-4b59-5ab3-669ffbea41d8" unnumbered="true"><body>int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
 int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);
 int FrameNum = FrameNumStart;
 bool ActiveSeg = false;
@@ -742,61 +338,183 @@ while ((!ActiveSeg) &amp;&amp; (FrameNum&#x3c;=FrameNumEnd) &amp;&amp; (FrameNum
 if (!ActiveSeg)
       continue;
 int Delay = 0;
-Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</sourcecode>
+Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</body><fmt-sourcecode unnumbered="true">int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
+int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);
+int FrameNum = FrameNumStart;
+bool ActiveSeg = false;
+while ((!ActiveSeg) &amp;&amp; (FrameNum&#x3c;=FrameNumEnd) &amp;&amp; (FrameNum&#x3e;=FrameNumStart) &amp;&amp; (FrameNum&#x3c;ActiveFramesLen))
+{
+      ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];
+      FrameNum++;
+}
+if (!ActiveSeg)
+      continue;
+int Delay = 0;
+Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</fmt-sourcecode></sourcecode>
 
 
-<p id="_b346f3e2-017e-c109-91c2-5f20bd427219">[End Correction]</p>
+<p id="_d8c798e9-414b-2cc0-3ce4-984e20bb8dca">[End Correction]</p>
 </clause>
 
 <clause id="_annex_a_subfolder_results_ed_3" inline-header="false" obligation="normative">
-<title id="_ce752dbb-ff41-4590-8636-9ee48a450e90">Annex A, subfolder Results Ed. 3</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_a_subfolder_results_ed_3">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ce752dbb-ff41-4590-8636-9ee48a450e90">Annex A, subfolder Results Ed. 3</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_a_subfolder_results_ed_3">7</semx></fmt-xref-label>
-<p id="_f11a6ec3-334c-c8f5-6f9a-ce94a58f1f23"><em>The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file.</em></p>
+<title id="_ca1e7366-665e-4c77-b2ea-704e1f6b08cc">Annex A, subfolder Results Ed. 3</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_a_subfolder_results_ed_3">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ca1e7366-665e-4c77-b2ea-704e1f6b08cc">Annex A, subfolder Results Ed. 3</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_a_subfolder_results_ed_3">7</semx></fmt-xref-label>
+<p id="_a8c8061d-bc65-acd6-4e2f-a201332c6250"><em>The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file.</em></p>
 
-<p id="_585280a5-d8b7-e0dd-1c94-64c0847340f9"><em>--- SPECIAL INSTRUCTIONS --- Replace subfolder in Annex A</em></p>
+<p id="_25ba672d-e19e-f016-9c65-2f552e014f69"><em>--- SPECIAL INSTRUCTIONS --- Replace subfolder in Annex A</em></p>
 
-<p id="_9c89a647-37f8-a947-332d-5329a2cbc47c">[Begin Correction]</p>
+<p id="_888563d7-4d3b-727d-6bf7-c0430580a590">[Begin Correction]</p>
 
-<p id="_da2e0119-8e97-d108-8af6-770ff2ed1f7e"><em>--- SPECIAL INSTRUCTIONS --- Old Subfolder</em></p>
+<p id="_92b89b90-d8cf-1bd6-b9de-0647de03a19a"><em>--- SPECIAL INSTRUCTIONS --- Old Subfolder</em></p>
 
-<sourcecode id="_b0106cb3-5ea5-5927-0bfb-83e15d507d60" unnumbered="true">Results Ed. 3</sourcecode>
-
-
-<p id="_8e5dd509-fa41-de29-b22c-1fde11217219"><em>--- SPECIAL INSTRUCTIONS --- New Subfolder</em></p>
-
-<sourcecode id="_fefd7a42-4c2d-ac32-07d5-a845a826fda2" unnumbered="true">Results Ed. 3 - IG 2018-05</sourcecode>
+<sourcecode id="_a442a017-4822-9364-e834-c34ec0f1d8dc" unnumbered="true"><body>Results Ed. 3</body><fmt-sourcecode unnumbered="true">Results Ed. 3</fmt-sourcecode></sourcecode>
 
 
-<p id="_9b71d335-201e-647a-c8b2-3033176fe09a">[End Correction]</p>
+<p id="_edfed8db-a5cb-552c-b999-03f9f4f2e025"><em>--- SPECIAL INSTRUCTIONS --- New Subfolder</em></p>
+
+<sourcecode id="_ff39c493-cbd7-6601-3aba-d483ba6d7f21" unnumbered="true"><body>Results Ed. 3 - IG 2018-05</body><fmt-sourcecode unnumbered="true">Results Ed. 3 - IG 2018-05</fmt-sourcecode></sourcecode>
+
+
+<p id="_70e19d08-10b4-5f3c-d6a6-9b652ce85dcf">[End Correction]</p>
 </clause>
 
 <clause id="_annex_b_additional_info" inline-header="false" obligation="normative">
-<title id="_061d15fa-d4be-4b25-ac0a-b14749be62cf">Annex B - additional info</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_additional_info">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_061d15fa-d4be-4b25-ac0a-b14749be62cf">Annex B - additional info</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_additional_info">8</semx></fmt-xref-label>
-<note id="_c4b35716-15b9-24e3-3a82-1ae4528faab7" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim"> – </span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_annex_b_additional_info"><span class="fmt-element-name">Note</span> <span class="fmt-conn">in</span> <span class="fmt-xref-container"><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_additional_info">8</semx></span></fmt-xref-label><p id="_fe810aab-cbb7-bc81-ed1e-44d1b9a534b5">The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p>
+<title id="_51904091-64e5-48e8-9f12-1672628e1dfc">Annex B - additional info</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_additional_info">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_51904091-64e5-48e8-9f12-1672628e1dfc">Annex B - additional info</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_additional_info">8</semx></fmt-xref-label>
+<note id="_100e0ee3-c202-0067-f9bd-7d2f479492d4" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim"> – </span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_annex_b_additional_info"><span class="fmt-element-name">Note</span> <span class="fmt-conn">in</span> <span class="fmt-xref-container"><span class="fmt-element-name">clause</span> <semx element="autonum" source="_technical_and_editorial_corrections_to_recommendation_p_863">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_b_additional_info">8</semx></span></fmt-xref-label><p id="_11fc618b-7644-b5fe-5f81-4aa8704f44c0">The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p>
 </note>
 </clause>
 </clause>
 
 
 <references id="_references" normative="true" obligation="informative" displayorder="10">
-<title id="_fbb6e196-8fab-4a40-a518-91eba53e5074">References</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_references">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fbb6e196-8fab-4a40-a518-91eba53e5074">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_references">2</semx></fmt-xref-label><p id="_275a5bef-a7d6-9098-1663-185b6fe8dd33">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
-<bibitem id="p863" type="standard" schema-version="v1.2.9"><formattedref>Recommendation ITU-T P.863 (03/2018) (2018), <em>Perceptual objective listening quality prediction</em>, Third edition.</formattedref><uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13570&amp;lang=en</uri><docidentifier type="ITU" primary="true">ITU-T P.863 (03/2018)</docidentifier><date type="published">
+<title id="_4b538908-e5a8-4993-ba0f-3b28b6b798b2">References</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_references">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4b538908-e5a8-4993-ba0f-3b28b6b798b2">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_references">2</semx></fmt-xref-label><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
+<bibitem id="p863" type="standard" schema-version="v1.2.9"><formattedref>Recommendation ITU-T P.863 (03/2018) (2018), <em>Perceptual objective listening quality prediction</em>, Third edition.</formattedref>
+  <fetched>2025-03-28</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+
+  <uri type="src">https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=13570&amp;lang=en</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.863 (03/2018)</docidentifier>
+  <date type="published">
     <on>2018-03-16</on>
-  </date><biblio-tag>[ITU‑T P.863 (03/2018)]</biblio-tag></bibitem>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</formattedref>
+      <docidentifier type="ITU">P Suppl. 10 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</formattedref>
+      <docidentifier type="ITU">P Suppl. 16 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</formattedref>
+      <docidentifier type="ITU">P Suppl. 20 (03/1993)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</formattedref>
+      <docidentifier type="ITU">P Suppl. 23 (02/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</formattedref>
+      <docidentifier type="ITU">P Suppl. 24 (10/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</formattedref>
+      <docidentifier type="ITU">P Suppl. 25 (01/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</formattedref>
+      <docidentifier type="ITU">P Suppl. 26 (09/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 27 (01/2017)</formattedref>
+      <docidentifier type="ITU">P Suppl. 27 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</formattedref>
+      <docidentifier type="ITU">P Suppl. 28 (09/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 29 (01/2023)</formattedref>
+      <docidentifier type="ITU">P Suppl. 29 (01/2023)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+<biblio-tag>[ITU‑T P.863 (03/2018)]</biblio-tag></bibitem>
 
 
 
 </references></sections><annex id="_p_863_2018_03_defect_report_form" inline-header="false" obligation="normative" autonum="A" displayorder="15">
-<title id="_66c8bbcb-d806-4453-b725-a2d1482037a2"><strong>P.863 (2018-03) Defect Report Form</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_p_863_2018_03_defect_report_form">A</semx></span></strong><span class="fmt-caption-delim"><br/><br/></span><semx element="title" source="_66c8bbcb-d806-4453-b725-a2d1482037a2"><strong>P.863 (2018-03) Defect Report Form</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_p_863_2018_03_defect_report_form">A</semx></fmt-xref-label><p class="annex_obligation"><span class="fmt-obligation">(This annex forms an integral part of this Implementers’ Guide.)</span></p>
-<table id="_eaf01491-0f2e-1e71-6bb8-b6b78e004031" unnumbered="true"><tbody><tr><td valign="top" align="left">DATE:</td>
-<td valign="top" align="left"/></tr><tr><td valign="top" align="left"><p id="_667404a8-8ce5-6b28-2622-c61515a80f0b">CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
+<title id="_f2c0b164-fdf7-44b5-8186-04b3a18cf320"><strong>P.863 (2018-03) Defect Report Form</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_p_863_2018_03_defect_report_form">A</semx></span></strong><span class="fmt-caption-delim"><br/><br/></span><semx element="title" source="_f2c0b164-fdf7-44b5-8186-04b3a18cf320"><strong>P.863 (2018-03) Defect Report Form</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_p_863_2018_03_defect_report_form">A</semx></fmt-xref-label><p class="annex_obligation"><span class="fmt-obligation">(This annex forms an integral part of this Implementers’ Guide.)</span></p>
+<table id="_42b75c9a-c152-d54c-4fc5-fef84ee2dd1d" unnumbered="true"><tbody><tr><td valign="top" align="left">DATE:</td>
+<td valign="top" align="left"/></tr><tr><td valign="top" align="left"><p id="_b7fd4069-24f3-7089-2cb5-e8aea0ec3d02">CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
 </td>
 <td valign="top" align="left"/></tr><tr><td valign="top" align="left">AFFECTED RECOMMENDATIONS:</td>
 <td valign="top" align="left"/></tr><tr><td valign="top" align="left">DESCRIPTION OF PROBLEM:</td>
 <td valign="top" align="left"/></tr><tr><td valign="top" align="left">SUGGESTIONS FOR RESOLUTION:</td>
 <td valign="top" align="left"/></tr></tbody>
-<note id="_144e87c5-7df0-e541-9081-f059f06d102e" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim"> – </span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_p_863_2018_03_defect_report_form"><span class="fmt-element-name">Note</span> <span class="fmt-conn">in</span> <span class="fmt-xref-container"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_p_863_2018_03_defect_report_form">A</semx></span></fmt-xref-label><p id="_d2e95842-3a08-4c42-2171-d74f29d9268d">Attach additional pages if more space is required than is provided above.</p>
+<note id="_7f4aa079-2475-c564-7dbf-b175d4f88c43" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim"> – </span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_p_863_2018_03_defect_report_form"><span class="fmt-element-name">Note</span> <span class="fmt-conn">in</span> <span class="fmt-xref-container"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_p_863_2018_03_defect_report_form">A</semx></span></fmt-xref-label><p id="_4cb1a61f-0ee3-1f2b-0db7-0aee0ceb1294">Attach additional pages if more space is required than is provided above.</p>
 </note></table>
 
 
 </annex><bibliography/>
-</itu-standard>
+</metanorma>

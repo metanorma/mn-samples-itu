@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.5.13" schema-version="v1.4.1">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.6.2" schema-version="v2.0.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Telecommunication for rural and remote areas</title>
 
@@ -16,137 +16,137 @@
 <abbreviation>ITU</abbreviation></organization></owner></copyright><ext><doctype>recommendation</doctype><flavor>itu</flavor><editorialgroup><bureau>D</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>D</bureau><docnumber>D.19</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
-<clause id="_0e33d45d-8046-e0eb-cdcd-a9962ac2c58e" inline-header="false" obligation="normative">
-<p id="_f5a6703c-c9c0-a0d5-520b-b051d6277b69">© ITU 2025</p>
+<clause id="_4e5801f1-15aa-80b6-2618-b9fd407bbea9" inline-header="false" obligation="normative">
+<p id="_46c9ddee-1108-a79f-c040-54c17f384d34">© ITU 2025</p>
 
-<p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </clause>
 </copyright-statement>
 
 <license-statement>
 
-<clause id="_4e168d71-002e-b69b-bbc5-c2db63824bd8" inline-header="false" obligation="normative">
+<clause id="_911011c5-3ac9-4f6f-405c-8c131b41e73d" inline-header="false" obligation="normative">
 <title>INTELLECTUAL PROPERTY RIGHTS</title>
-<p id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
+<p id="_1bc27970-25ee-7492-ddb6-24f4a18210f0">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p id="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
+<p id="_b4a64942-dd7c-4fca-5f4f-c2617402905e">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
 </clause>
 </license-statement>
 
 <legal-statement>
 
-<clause id="_b5ff7f95-f781-a42e-99b6-87a561430419" inline-header="false" obligation="normative">
+<clause id="_2b781dc0-471d-a33d-1ac6-572edaacc9e2" inline-header="false" obligation="normative">
 <title>FOREWORD</title>
-<p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
-<p id="_06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+<p id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
 
-<p id="_0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
 
-<p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 
-<clause id="_8520a161-8bbd-37df-d9aa-24c4f47aa144" inline-header="false" obligation="normative">
+<clause id="_41e5e0bc-a21e-256d-638e-5dc8395a0ac5" inline-header="false" obligation="normative">
 <title>NOTE</title>
-<p id="_56570421-b373-1413-9648-1e440630df94">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
+<p id="_b25685df-1663-3743-f3b7-38634a384a7e">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
 
-<p id="_80edab97-2dbf-d0cc-086a-539f4730432e">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
+<p id="_371c101c-c636-6cb0-7046-ec1c35c7c470">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
 </clause>
 </clause>
 </legal-statement>
-</boilerplate><sections><clause id="_52a96470-9808-bdee-071d-420c230e7adb" inline-header="false" obligation="normative">
-<p id="_5ee0baec-2f92-f0bc-ca23-e042368928d4">ITU-D</p>
+</boilerplate><sections><clause id="_b0735d71-3357-809b-b0df-69adce39bef9" inline-header="false" obligation="normative">
+<p id="_918fb89c-9f3d-ac83-e328-9886f50efd1e">ITU-D</p>
 
-<p id="_f3be5376-4527-da94-e623-5b0bfe43cbd2"><em>recognizing</em></p>
+<p id="_f778f52a-ce04-0f39-5278-714edbdebd73"><em>recognizing</em></p>
 
-<ol id="_92b6236a-4ccc-ae95-83b5-535072b88956"><li><p id="_60141b2b-ff78-13d7-948e-a6a7a57700f7">that the following Recommendations resulting from the ITU-D study periods 1998-2002 and 2002-2006 have provided guidance on a number of issues concerning telecommunications/ICTs in rural and remote areas:</p>
-<ul id="_00343b9c-9034-4627-00b8-10af21ac3f9e"><li><p id="_5f2cdb56-d8ca-a3b4-4c08-0191c25587d2">RECOMMENDATION ITU-D 6-1, Appropriate low-cost technology options for the provision of telecommunications in rural and remote areas, (January, 2002);</p>
+<ol id="_169576ba-b9e6-55d0-a483-d4db458f4f1b"><li><p id="_8fcd139f-8898-3c27-6a1b-7727b86b374e">that the following Recommendations resulting from the ITU-D study periods 1998-2002 and 2002-2006 have provided guidance on a number of issues concerning telecommunications/ICTs in rural and remote areas:</p>
+<ul id="_d94a81a3-0ca9-3469-4361-aec2eeb2e2fc"><li><p id="_ca164e0a-4b0a-9af1-1195-6c222e9465ee">RECOMMENDATION ITU-D 6-1, Appropriate low-cost technology options for the provision of telecommunications in rural and remote areas, (January, 2002);</p>
 </li>
-<li><p id="_770f7d49-6268-c510-4c01-199a4e4ebce8">RECOMMENDATION ITU-D 7-1, Planning and implementation of national telecommunication development plans for rural and remote areas, (January, 2002)</p>
+<li><p id="_4dcf2203-7c7f-c3b2-2d8a-beb45c1b6220">RECOMMENDATION ITU-D 7-1, Planning and implementation of national telecommunication development plans for rural and remote areas, (January, 2002)</p>
 </li>
-<li><p id="_74e952b5-fa54-5398-82f0-53088d38d5af">RECOMMENDATION ITU-D 8-1, Promotion of the application of telecommunication facilities for developing various sectors in rural and remote areas; (January, 2002);</p>
+<li><p id="_0966a877-3c5a-0c79-fb9d-a87f57e18f97">RECOMMENDATION ITU-D 8-1, Promotion of the application of telecommunication facilities for developing various sectors in rural and remote areas; (January, 2002);</p>
 </li>
-<li><p id="_01c3c480-3780-81e8-0565-8b793929b251">RECOMMENDATION ITU-D 9-1, Appropriate regulatory structures as a means of encouraging the extension of telecommunication services to remote and rural areas, (January, 2002);</p>
+<li><p id="_4f460d06-c4a7-0ca6-ebb3-ef08dbdf823e">RECOMMENDATION ITU-D 9-1, Appropriate regulatory structures as a means of encouraging the extension of telecommunication services to remote and rural areas, (January, 2002);</p>
 </li>
-<li><p id="_6d9efc96-60fc-ae05-327a-4ee049821ea9">RECOMMENDATION ITU-D 10-1, Options available for financing rural and remote telecommunication programmes and projects, (January, 2002);</p>
+<li><p id="_61a1f714-0f04-3e25-ccc2-b225b4505393">RECOMMENDATION ITU-D 10-1, Options available for financing rural and remote telecommunication programmes and projects, (January, 2002);</p>
 </li>
-<li><p id="_bd696c42-7fc0-df09-2cbd-cd62525202fc">RECOMMENDATION ITU-D 17, Sharing of facilities in rural and remote areas (January, 2002);</p>
+<li><p id="_30b5eb10-4f7f-ad3b-55ac-a9af09a31b97">RECOMMENDATION ITU-D 17, Sharing of facilities in rural and remote areas (January, 2002);</p>
 </li>
-<li><p id="_130790a8-c012-1308-3bc2-2ec958247c87">RECOMMENDATION ITU D 18, Potential benefits of rural telecommunications (March, 2006).</p>
+<li><p id="_bf300302-c6c4-26dd-9b1d-2f1a94513efa">RECOMMENDATION ITU D 18, Potential benefits of rural telecommunications (March, 2006).</p>
 </li>
 </ul>
 </li>
-<li><p id="_11ff2334-2a32-228a-5bf3-45ae5fa8a7aa">that the Focus Group 7 addressed technological options, service potential and financing mechanisms for the provision of telecommunications/ICTs in rural and remote areas;</p>
+<li><p id="_b871c2c3-fb22-83d9-3f49-0fc6a9093c80">that the Focus Group 7 addressed technological options, service potential and financing mechanisms for the provision of telecommunications/ICTs in rural and remote areas;</p>
 </li>
 </ol>
 
-<p id="_999d6636-befc-c311-3dc0-0c8c506c8445"><em>noting</em></p>
+<p id="_4eae56f8-7209-6946-681e-ebc73ca817e4"><em>noting</em></p>
 
-<ol id="_c646b438-994b-f91f-a225-a4d08561153a"><li><p id="_a3c732f0-843d-1e88-20bc-6ee9438391ce">that Focus Group 7 on Rural Telecommunications has paid particular attention to the role of Micro-Finance Institutions (MFI) in promoting access to ICT services and application by supporting small entrepreneurs</p>
+<ol id="_3637dd5b-8a2b-b082-815f-45b46abcf97e"><li><p id="_599f8665-6797-170a-fcf9-12a392bcfaef">that Focus Group 7 on Rural Telecommunications has paid particular attention to the role of Micro-Finance Institutions (MFI) in promoting access to ICT services and application by supporting small entrepreneurs</p>
 </li>
-<li><p id="_22562e7c-4956-2780-8b63-1614667b1678">the excellent results of the study period 2006-2010 which consolidate experiences world-wide on the successful provision of telecommunications/ICTs to rural and remote areas, based, inter alia, on information submitted to the case library and on e-Discussions on the issues identified by the Rapporteur Group;<fn reference="1"><p id="_d472fd81-d454-5f02-d3ee-4dae87924899">The case library on Question 10-2/2 is available at <link target="http://www.itu.int/ITU-D/study_groups/SGP_2006-2010/events/Case_Library/index.asp"/>. e-Discussion web page is available at <link target="http://www.itu.int/ituweblogs/ITU-D-SG2-Q10/"/></p>
+<li><p id="_3ecf61e5-0ed0-ec62-bdfe-a582e4905453">the excellent results of the study period 2006-2010 which consolidate experiences world-wide on the successful provision of telecommunications/ICTs to rural and remote areas, based, inter alia, on information submitted to the case library and on e-Discussions on the issues identified by the Rapporteur Group;<fn reference="1"><p id="_42a4fb38-eded-92ce-9971-2a0baa28b9ca">The case library on Question 10-2/2 is available at <link target="http://www.itu.int/ITU-D/study_groups/SGP_2006-2010/events/Case_Library/index.asp"/>. e-Discussion web page is available at <link target="http://www.itu.int/ituweblogs/ITU-D-SG2-Q10/"/></p>
 </fn></p>
 </li>
-<li><p id="_1c45b1d0-062d-6bee-c291-f48e29e3da13">that experiences all over the world, with emerging technologies deployed in rural and remote areas providing broadband, wired transmission media and wireless transmission media indicate rapid decrease of costs, increase of range and capacity, and that all these developments make connecting rural areas a feasible option;</p>
+<li><p id="_e5516c1c-46fb-36de-3474-2b30b748acbe">that experiences all over the world, with emerging technologies deployed in rural and remote areas providing broadband, wired transmission media and wireless transmission media indicate rapid decrease of costs, increase of range and capacity, and that all these developments make connecting rural areas a feasible option;</p>
 </li>
-<li><p id="_e87d96c6-f20f-1bc6-1660-7a63b8f497dd">that satellite technologies, including satellite backhaul solutions, play a unique role in extending service delivery and coverage areas and Very Small Aperture Terminals (VSAT) technology has established itself as a versatile communication platform for rural and remote areas;</p>
+<li><p id="_fe659745-cd85-5d4a-ea01-a4840ab86a4d">that satellite technologies, including satellite backhaul solutions, play a unique role in extending service delivery and coverage areas and Very Small Aperture Terminals (VSAT) technology has established itself as a versatile communication platform for rural and remote areas;</p>
 </li>
-<li><p id="_b32d10fc-b6d8-299e-d291-9f2f692927cb">that the deployment of IP based platforms serving wide areas can make a range of developmental services and applications such as education, health, agriculture etc., available to the rural population;</p>
+<li><p id="_646b99fd-1314-756b-471b-bb75df1a7be8">that the deployment of IP based platforms serving wide areas can make a range of developmental services and applications such as education, health, agriculture etc., available to the rural population;</p>
 </li>
-<li><p id="_094cd658-0aee-bf8f-273e-3f53796a3f26">that these developments make it possible that telecommunication/ICT services and applications can be provided by small and medium enterprises, local governments, non-governmental organizations in rural and remote areas with appropriate business models;</p>
+<li><p id="_7bfa22e6-2dbf-6820-2cab-b7429b55d141">that these developments make it possible that telecommunication/ICT services and applications can be provided by small and medium enterprises, local governments, non-governmental organizations in rural and remote areas with appropriate business models;</p>
 </li>
-<li><p id="_79d40743-627b-bfcf-d10f-0ae759a1cf3c">that technical expertise and adoption capacity are important factors to plan, implement and operate such facilities;</p>
+<li><p id="_fae89ffb-0bd6-246f-2a76-c7f52c6a2c80">that technical expertise and adoption capacity are important factors to plan, implement and operate such facilities;</p>
 </li>
-<li><p id="_8a10c8df-b838-dbc1-f5ad-11abf6e4e2ce">that in rural and remote areas of developing countries, low incomes, lack of literacy and computer literacy limit the number of people who can have internet access in their homes. These communities need public ICT facilities which can be used for communication, delivery of services and various capacity building activities. There is a role for small entrepreneurs, local governments, schools and post offices in this process;</p>
+<li><p id="_12ac911f-0d94-c92e-0a32-57def7c13193">that in rural and remote areas of developing countries, low incomes, lack of literacy and computer literacy limit the number of people who can have internet access in their homes. These communities need public ICT facilities which can be used for communication, delivery of services and various capacity building activities. There is a role for small entrepreneurs, local governments, schools and post offices in this process;</p>
 </li>
-<li><p id="_6e831648-75ec-15c7-5dcb-8e3aed224887">that provision of ICT services and applications by small entrepreneurs in rural and remote areas have the potential of creating employment. These ventures can be supported by financial institutions and receive support from various government schemes;</p>
+<li><p id="_960c78af-83f8-3d25-1219-c7884d6c6e71">that provision of ICT services and applications by small entrepreneurs in rural and remote areas have the potential of creating employment. These ventures can be supported by financial institutions and receive support from various government schemes;</p>
 </li>
-<li><p id="_7b18acc8-d210-2e7f-047f-7ea69008caa4">that a well planned maintenance and operation programme in order to keep the infrastructure and associated equipment, including terminal equipment in good working condition is an essential aspect of the support structures in rural areas;</p>
+<li><p id="_b94c0fe8-01ac-c03d-d754-47920b311833">that a well planned maintenance and operation programme in order to keep the infrastructure and associated equipment, including terminal equipment in good working condition is an essential aspect of the support structures in rural areas;</p>
 </li>
-<li><p id="_68a26dd0-88d1-b6c3-c6a4-f8f3ab5a8e1c">the excellent collaboration between ITU/BDT and the Universal Postal Union in promoting the use of post offices as vehicles for provision of access to telecommunications/ICT services and applications in rural and remote areas;</p>
+<li><p id="_4e643080-8103-4ed5-9fd0-05625f4b0394">the excellent collaboration between ITU/BDT and the Universal Postal Union in promoting the use of post offices as vehicles for provision of access to telecommunications/ICT services and applications in rural and remote areas;</p>
 </li>
-<li><p id="_f7b8c693-c86c-d9be-ec9a-8ca080e24892">that energy supply is a basic bottleneck for the spread of telecommunications/ICTs in rural and remote areas and that innovative uses of solar power, mini-hydro power and windmill power sources, some times in combination are being successfully used in many countries to provide reliable energy sources for mobile base stations;</p>
-</li>
-</ol>
-
-<p id="_8bdf4c04-a014-248c-4be8-68db8f2514d6"><em>considering</em></p>
-
-<ol id="_de925c44-4975-19cc-8e60-d271c3c996aa"><li><p id="_c2aa2655-35ff-81b8-8080-e8c2c49d343d">that the provision of telecommunications, ICT services and applications can make significant contribution to the quality of life of the population living rural and remote areas;</p>
-</li>
-<li><p id="_36c1e01a-5162-c9e1-fa63-1f6912aee07a">that stimulation of demand for telecommunications/ICTs through proactive government policies is a key to realizing their benefits;</p>
-</li>
-<li><p id="_e5ff5a36-acee-510a-bc1d-7a827fb38be8">that the accumulation of experiences world-wide on community access institutions (telekiosks, multipurpose community telecentres, multi-media centres), points to the need for pro-active and supportive government policies to simulate demand of the services available;</p>
-</li>
-<li><p id="_1183536a-ec06-ecc1-0b44-56cab2c87f7c">that the availability of information should be reinforced by upgradation of skills and provision of capital in order that information is properly utilized; and</p>
-</li>
-<li><p id="_60f97115-6184-5aaa-8d31-1590b5c17f1e">that access to telecommunications/ICTs for all will maximize social welfare, increase productivity, conserve resources and will contribute to safeguarding human rights.</p>
+<li><p id="_a9cbda8f-cc53-fe84-2871-7021f2088686">that energy supply is a basic bottleneck for the spread of telecommunications/ICTs in rural and remote areas and that innovative uses of solar power, mini-hydro power and windmill power sources, some times in combination are being successfully used in many countries to provide reliable energy sources for mobile base stations;</p>
 </li>
 </ol>
 
-<p id="_40a62c65-9e99-d66d-0be1-7456a915196b"><em>recommends</em></p>
+<p id="_ae65788d-316a-8c57-6b6b-b214dc6c24c9"><em>considering</em></p>
 
-<ol id="_f24b1b57-252d-99af-3fd6-fb027ea1c531"><li><p id="_c8328b95-1914-a480-17dc-b58d51576146">that developing countries should include provision of telecommunications/ICTs in rural and remote areas in their national development plans;</p>
+<ol id="_4f522642-6156-41a0-3160-77e387e68b1a"><li><p id="_6770c470-a915-deed-bb74-d58e1102172f">that the provision of telecommunications, ICT services and applications can make significant contribution to the quality of life of the population living rural and remote areas;</p>
 </li>
-<li><p id="_9b1b8fbe-7116-b34d-ed87-baf8f88de878">that in planning infrastructure development in rural and remote areas it is important to assess all available technologies in the market taking into consideration the regulatory environment, geographical conditions, climate, costs (capital expenditure and operational expenditure), maintainability, operability, sustainability, etc., based on the results of the site survey;</p>
+<li><p id="_67425bdc-acb8-8bba-4a6b-8dd6f0c65a51">that stimulation of demand for telecommunications/ICTs through proactive government policies is a key to realizing their benefits;</p>
 </li>
-<li><p id="_1a7a42cf-42f9-d642-0a32-61480fe83bff">that community access to ICT facilities and services is particularly important in rural and remote areas. Business models which can achieve financial and operational sustainability can be operated by local entrepreneurs supported by a variety of initiatives. These facilities, where necessary, should also be supported by Universal Service Funds as an essential component of rural communications;</p>
+<li><p id="_861bb900-dcf4-1208-24bd-12496a8ae7d4">that the accumulation of experiences world-wide on community access institutions (telekiosks, multipurpose community telecentres, multi-media centres), points to the need for pro-active and supportive government policies to simulate demand of the services available;</p>
 </li>
-<li><p id="_ef838746-9197-bf4d-5f79-bcd9bea531fa">that post offices have a communicative presence in the lives of the population in rural areas and their use as vehicles for provision of telecommunication/ICTs should be encouraged;</p>
+<li><p id="_14700674-767b-2340-f039-53c10ec23951">that the availability of information should be reinforced by upgradation of skills and provision of capital in order that information is properly utilized; and</p>
 </li>
-<li><p id="_e6f95b12-ba96-f59e-330c-932ddbd7ca36">that local institutions, such as village committees should be involved in planning and implementing ICT facilities;</p>
+<li><p id="_954775a4-a02b-f4f4-fc3a-ed4cdf94cbd0">that access to telecommunications/ICTs for all will maximize social welfare, increase productivity, conserve resources and will contribute to safeguarding human rights.</p>
 </li>
-<li><p id="_d27994b8-2dea-cfa9-9100-45f53dbc97e9">that enhancing local technical expertise and adoption are important for successful implementation of ICT services and applications in rural and remote areas. Attention should be paid to training, exchange of information, creation of shared maintenance facilities in order to achieve sustainability and viability;</p>
+</ol>
+
+<p id="_79917b6d-d0b2-9c1b-4115-0aaedad270cf"><em>recommends</em></p>
+
+<ol id="_dbdbb258-c189-73dd-90aa-cff37cc9264c"><li><p id="_f659c8b0-1af3-778e-83c1-5d999648701d">that developing countries should include provision of telecommunications/ICTs in rural and remote areas in their national development plans;</p>
 </li>
-<li><p id="_bbe1857e-1aab-2a44-f281-b017e090bec4">that migration to broadband technology should be encouraged;</p>
+<li><p id="_8ff161e8-2bbd-73a4-c827-95530ee962f0">that in planning infrastructure development in rural and remote areas it is important to assess all available technologies in the market taking into consideration the regulatory environment, geographical conditions, climate, costs (capital expenditure and operational expenditure), maintainability, operability, sustainability, etc., based on the results of the site survey;</p>
 </li>
-<li><p id="_be03b0eb-80bd-8f2f-b2da-2b649ad1a2cf">that keeping even technologically obsolete equipment in good working condition through effective preventive maintenance programme is an essential part of making telecommunications in rural areas viable and should be encouraged, while guarding against making developing countries a dumping ground for obsolete technologies;</p>
+<li><p id="_4bbe1614-9bbb-e83a-65a3-7dc06a51c7ca">that community access to ICT facilities and services is particularly important in rural and remote areas. Business models which can achieve financial and operational sustainability can be operated by local entrepreneurs supported by a variety of initiatives. These facilities, where necessary, should also be supported by Universal Service Funds as an essential component of rural communications;</p>
 </li>
-<li><p id="_f91c9e91-ab20-50bb-ffe1-e282464be61b">that it is important to take steps to ensure continued reliability of equipment in rural environments such as developing an appropriate maintenance and operation strategy and encouraging training for technical staff;</p>
+<li><p id="_0f3c2400-8d8f-7d19-e1a6-f7e7f40b2dc3">that post offices have a communicative presence in the lives of the population in rural areas and their use as vehicles for provision of telecommunication/ICTs should be encouraged;</p>
 </li>
-<li><p id="_8351c3d5-801a-cf09-169e-bf68af0a788f">that given that lack of energy supply is a major bottleneck in the provision of telecommunications/ICTs in rural and remote areas, renewable energy sources should be used whenever feasible taking into consideration the environmental problems; and</p>
+<li><p id="_c32c9369-7d43-19f8-9df3-38f3b4352ea5">that local institutions, such as village committees should be involved in planning and implementing ICT facilities;</p>
 </li>
-<li><p id="_a574a0f7-9b90-f4dc-cb8f-065ef782406f">that partnership among governments, industry, local agencies and international organizations is desirable in the development of low cost ICT infrastructure, including renewable energy sources and terminals for the provision of telecommunications/ICTs in rural and remote areas and should be pursued.</p>
+<li><p id="_803f88b2-4e5f-f059-26d4-b396b4dad940">that enhancing local technical expertise and adoption are important for successful implementation of ICT services and applications in rural and remote areas. Attention should be paid to training, exchange of information, creation of shared maintenance facilities in order to achieve sustainability and viability;</p>
+</li>
+<li><p id="_496aa767-b74d-61b8-8b27-6c60aa2b7e9d">that migration to broadband technology should be encouraged;</p>
+</li>
+<li><p id="_127e3189-1605-3faf-9a7d-ea1b2de3d5ee">that keeping even technologically obsolete equipment in good working condition through effective preventive maintenance programme is an essential part of making telecommunications in rural areas viable and should be encouraged, while guarding against making developing countries a dumping ground for obsolete technologies;</p>
+</li>
+<li><p id="_f82f63de-c211-6ac2-3ae6-42c969c54113">that it is important to take steps to ensure continued reliability of equipment in rural environments such as developing an appropriate maintenance and operation strategy and encouraging training for technical staff;</p>
+</li>
+<li><p id="_507b312b-8ef8-54a8-19ce-a3ebd72a803a">that given that lack of energy supply is a major bottleneck in the provision of telecommunications/ICTs in rural and remote areas, renewable energy sources should be used whenever feasible taking into consideration the environmental problems; and</p>
+</li>
+<li><p id="_0bc74706-71af-c5e4-8b8d-4bc019fec64a">that partnership among governments, industry, local agencies and international organizations is desirable in the development of low cost ICT infrastructure, including renewable energy sources and terminals for the provision of telecommunications/ICTs in rural and remote areas and should be pursued.</p>
 </li>
 </ol>
 </clause>
 </sections>
-</itu-standard>
+</metanorma>

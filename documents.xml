@@ -1,5 +1,5 @@
 <relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>ITU Documents in Metanorma</title><contributor><role type='author'/><organization><name>International Telecommunications Union</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Rules of procedure of the ITU Telecommunication Standardization Sector &lt;fn reference="1"&gt;&lt;p&gt;Previously published (Geneva, 1956 and 1958; New Delhi, 1960; Geneva, 1964; Mar del Plata, 1968; Geneva, 1972, 1976 and 1980, Malaga-Torremolinos, 1984; Melbourne, 1988; Helsinki, 1993; Geneva, 1996; Montreal, 2000; Florianópolis, 2004; Johannesburg, 2008; Dubai, 2012).&lt;/p&gt;&lt;/fn&gt; &lt;fn reference="2"&gt;&lt;p&gt;This Hammamet, 2016 edition was initially published in 2016 and then republished in November 2017 to move the contents of Annex A (ITU-T Documentation) to Section 1&lt;em&gt;bis&lt;/em&gt;, as approved during the Assembly.&lt;/p&gt;&lt;/fn&gt;</title>
+  <title type="main" format="text/plain" language="en">Rules of procedure of the ITU Telecommunication Standardization Sector</title>
   <uri type="xml">documents/T-RES-T.1-2016/en.xml</uri>
   <uri type="pdf">documents/T-RES-T.1-2016/en.pdf</uri>
   <uri type="doc">documents/T-RES-T.1-2016/en.doc</uri>
@@ -23,6 +23,10 @@
     </organization>
   </contributor>
   <edition>Hammamet, 2016</edition>
+  <note type="title-footnote">Previously published (Geneva, 1956 and 1958; New Delhi, 1960; Geneva, 1964; Mar del Plata, 1968; Geneva, 1972, 1976 and 1980, Malaga-Torremolinos, 1984; Melbourne, 1988; Helsinki, 1993; Geneva, 1996; Montreal, 2000; Florianópolis, 2004; Johannesburg, 2008; Dubai, 2012).
+</note>
+  <note type="title-footnote">This Hammamet, 2016 edition was initially published in 2016 and then republished in November 2017 to move the contents of Annex A (ITU-T Documentation) to Section 1bis, as approved during the Assembly.
+</note>
   <language>en</language>
   <script>Latn</script>
   <status>
@@ -49,625 +53,16 @@
   </ext>
 </bibdata></relation>
 <relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Telecommunication for rural and remote areas</title>
-  <uri type="xml">documents/D-REC-D.19-201003/en.xml</uri>
-  <uri type="pdf">documents/D-REC-D.19-201003/en.pdf</uri>
-  <uri type="doc">documents/D-REC-D.19-201003/en.doc</uri>
-  <uri type="html">documents/D-REC-D.19-201003/en.html</uri>
-  <uri type="rxl">documents/D-REC-D.19-201003/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-D D.19</docidentifier>
-  <docidentifier type="ITU-lang">ITU-D D.19-E</docidentifier>
-  <docnumber>D.19</docnumber>
-  <date type="published">
-    <on>2019-01-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2025</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>D</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>D</bureau>
-      <docnumber>D.19</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Software tools for speech and audio coding standardization</title>
-  <uri type="xml">documents/G.191/en.xml</uri>
-  <uri type="pdf">documents/G.191/en.pdf</uri>
-  <uri type="doc">documents/G.191/en.doc</uri>
-  <uri type="html">documents/G.191/en.html</uri>
-  <uri type="rxl">documents/G.191/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.191</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T G.191-E</docidentifier>
-  <docnumber>G.191</docnumber>
-  <date type="published">
-    <on>2019-01-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;Recommendation ITU-T G.191 provides source code for speech and audio processing modules for narrowband, wideband and super-wideband telephony applications. The set includes codecs, filters and noise generators.&lt;/p&gt;
-
-&lt;p&gt;This edition introduces changes to &lt;xref target="annexA" style="short"/&gt;, which describes the ITU-T software tool library (STL) containing a high-quality, portable C code library for speech-processing applications. This release of the STL, also known as STL2019, incorporates new basic operators to accommodate state-of-the-art processor architectures that support wide accumulators, single instruction multiple data (SIMD) and very long instruction word (VLIW). Thus, the new operators provide support for 64-bit accumulator, complex numbers, enhanced 32-bit operations and additional control code operators.&lt;/p&gt;
-
-&lt;p&gt;The software package was reworked to make it available as a truly open-source project and is therefore hosted on an open-source collaboration platform. The build toolchain now uses CMake to generate platform-dependent and tool-dependent build scripts, as well as to execute regression tests for each module in the STL.&lt;/p&gt;
-
-&lt;p&gt;Recommendation ITU-T G.191 includes an electronic attachment containing STL2019 and manual.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2019</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
-  </series>
-  <series type="secondary">
-    <title>International telephone connections and circuits</title>
-  </series>
-  <series type="tertiary">
-    <title>Software tools for transmission systems</title>
-  </series>
-  <keyword>DSP operators</keyword>
-  <keyword>G.711</keyword>
-  <keyword>G.722</keyword>
-  <keyword>G.726</keyword>
-  <keyword>G.728</keyword>
-  <keyword>MNRU</keyword>
-  <keyword>STL2019</keyword>
-  <keyword>filters</keyword>
-  <keyword>open source</keyword>
-  <keyword>reverb</keyword>
-  <keyword>sv56</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>G.191</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Definitions and test methods for linear, deterministic attributes of single-mode fibre and cable</title>
-  <uri type="xml">documents/G.650.1-201803/en.xml</uri>
-  <uri type="pdf">documents/G.650.1-201803/en.pdf</uri>
-  <uri type="doc">documents/G.650.1-201803/en.doc</uri>
-  <uri type="html">documents/G.650.1-201803/en.html</uri>
-  <uri type="rxl">documents/G.650.1-201803/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.650.1</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T G.650.1-E</docidentifier>
-  <docnumber>G.650.1</docnumber>
-  <date type="published">
-    <on>2018-03-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;Recommendation ITU-T G.650.1 contains definitions of the linear, deterministic parameters of single-mode optical fibres and cables. It also contains both reference test methods and alternative test methods for characterizing these parameters.&lt;/p&gt;
-
-&lt;p&gt;These test methods are suitable mainly for factory measurements of the linear, deterministic attributes of single-mode fibres and cables. Some of the test methods may also be used to characterize discrete optical components.&lt;/p&gt;
-
-&lt;p&gt;The history of this Recommendation is as follows:&lt;/p&gt;
-
-&lt;dl&gt;&lt;dt&gt;1993&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;Definitions and test methods were removed from single-mode fibre Recommendations such as Recommendation &lt;eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652 (08/2024)"/&gt; and used to create the initial version of Recommendation ITU-T G.650.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;dt&gt;1997&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;The second version of Recommendation ITU-T G.650 added definitions and test methods for polarization mode dispersion and appendices I, II and III. The improved determination of cut-off wavelength (clause 5.3.1.3.4) was also added.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;dt&gt;2000&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;The third version established reference and alternative test methods for polarization mode dispersion, modified the definitions and test methods for core concentricity error (clauses 3.4 and 5.2), and added clause 5.1.4 and appendices IV, V and VI.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;dt&gt;2002&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;In order to facilitate maintenance, Recommendation ITU-T G.650 was divided into smaller Recommendations. Recommendation ITU-T G.650.2 contains definitions and test methods for statistical and non-linear attributes of single-mode fibre and cable.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;dt&gt;2004&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;The second version of Recommendation ITU-TG.650.1 added a third alternative test method "Spectral attenuation modelling" (clause 5.4.4) and new Appendix III "Example of a matrix model". This material has been moved from the single-mode fibre Recommendations into this Recommendation ITU-T G.650.1. In addition, chromatic dispersion fitting procedures have been added (Annex A).&lt;/p&gt;
-&lt;/dd&gt;
-&lt;dt&gt;2010&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;The third version of Recommendation ITU-TG.650.1 added the test method "Test methods for the macrobend loss" (clause 5.6). Jumper cut-off wavelength has been deleted from clause 5.3. An additional description has been added in cut-off wavelength test method (clause 5.3.1.3.2). Equation 5-1 has been corrected. A detailed description has been added in proof test method (clause 5.7). Appendix II has been updated.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;dt&gt;2018&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;The fourth version of Recommendation ITU-TG.650.1 added Appendix IV (from Amendment 1 published in 2012) to provide measurement procedures for coherent multipath interference (MPI). The interferometric technique for chromatic dispersion measurement has been deleted from clause 6.5 and moved to Appendix V. The description of measurement details for &lt;eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657 (08/2024)"/&gt; fibre on MFD, cut-off wavelength and spectral attenuation tests has been improved. The RTM and ATM of cable cut-off wavelength measurement has been modified. An example of the interpolation method has been added in clause I.3. Equation 6-1 has been corrected.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2018</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
-  </series>
-  <series type="secondary">
-    <title>Transmission media and optical systems characteristics</title>
-  </series>
-  <series type="tertiary">
-    <title>Optical fibre cables</title>
-  </series>
-  <keyword>Deterministic attributes</keyword>
-  <keyword>linear attributes</keyword>
-  <keyword>single-mode fibre characterization</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>G.650.1</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">ITU-T Software Tool Library 2019 User's Manual</title>
-  <uri type="xml">documents/STL-manual/en.xml</uri>
-  <uri type="pdf">documents/STL-manual/en.pdf</uri>
-  <uri type="doc">documents/STL-manual/en.doc</uri>
-  <uri type="html">documents/STL-manual/en.html</uri>
-  <uri type="rxl">documents/STL-manual/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.191 STL-2019 Manual</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T G.191 STL-2019 Manual-E</docidentifier>
-  <docnumber>G.191 STL-2019 Manual</docnumber>
-  <date type="published">
-    <on>2019-02-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2005</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
-  </series>
-  <series type="secondary">
-    <title>International telephone connections and circuits</title>
-  </series>
-  <series type="tertiary">
-    <title>Software tools for transmission systems</title>
-  </series>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>G.191 STL-2019 Manual</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Author's guide for drafting ITU-T Recommendations</title>
-  <uri type="xml">documents/T-Editing-Guidelines-201602/en.xml</uri>
-  <uri type="pdf">documents/T-Editing-Guidelines-201602/en.pdf</uri>
-  <uri type="doc">documents/T-Editing-Guidelines-201602/en.doc</uri>
-  <uri type="html">documents/T-Editing-Guidelines-201602/en.html</uri>
-  <uri type="rxl">documents/T-Editing-Guidelines-201602/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T A.1500 (fictitious)</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T A.1500 (fictitious)-E</docidentifier>
-  <docnumber>A.1500 (fictitious)</docnumber>
-  <date type="published">
-    <on>2016-02-05</on>
-  </date>
-  <date type="created">
-    <on>2011-03-15</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;This author's guide for drafting ITU-T Recommendations permits uniform, efficient preparation of texts by TSB for publication. It covers the rules for drafting a Recommendation in a standard manner. Its provisions should be applied in all instances where texts (such as draft Recommendations) are being prepared by study group authors for approval and publication. The methods presented in this author's guide are the basis for a template and will remain stable until changes to current publication procedures necessitate their modification.&lt;/p&gt;
-
-&lt;p&gt;In order to facilitate comparison with other presentation styles, this author's guide has been prepared in accordance with the presentation rules that it mandates. The examples used within the text, such as references, are for illustrative purposes only. Thus, this author's guide constitutes an example of the proposed presentation style. Please note that Recommendation ITU-T A.1500 is a fictitious Recommendation used to illustrate the points given in this guide.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2016</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>A.1500 (fictitious)</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Ethics and governance of artificial intelligence for health</title>
-  <uri type="xml">documents/T-FG-AI4H-2022-MSW/en.xml</uri>
-  <uri type="pdf">documents/T-FG-AI4H-2022-MSW/en.pdf</uri>
-  <uri type="doc">documents/T-FG-AI4H-2022-MSW/en.doc</uri>
-  <uri type="html">documents/T-FG-AI4H-2022-MSW/en.html</uri>
-  <uri type="rxl">documents/T-FG-AI4H-2022-MSW/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T FG-AI4H DEL01</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T FG-AI4H DEL01-E</docidentifier>
-  <docidentifier type="ITU-Recommendation">ITU-T FG-AI4H</docidentifier>
-  <docnumber>FG-AI4H DEL01</docnumber>
-  <date type="published">
-    <on>2022-06-02</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Andreas Reis</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>World Health Organization</name>
-        </organization>
-      </affiliation>
-      <email>reisa@who.int</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Sameer Pujari</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>World Health Organization</name>
-        </organization>
-      </affiliation>
-      <email>pujaris@who.int</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <edition>1</edition>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;Artificial Intelligence (AI) refers to the ability of algorithms encoded in technology to learn from data so that they can perform automated tasks without every step in the process having to be programmed explicitly by a human. While AI holds great promise for the practice of public health and medicine, ethical challenges for health care systems, practitioners and beneficiaries of medical and public health services must be addressed. Many of the ethical concerns described in this document predate the advent of AI, although AI itself presents a number of novel concerns.&lt;/p&gt;
-
-&lt;p&gt;This document endorses a set of six key ethical principles:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;Protect human autonomy&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Promote human well-being and safety and the public interest&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ensure transparency, explainability and intelligibility&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Foster responsibility and accountability&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ensure inclusiveness and equity&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Promote AI that is responsive and sustainable&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It is hoped that these principles will be used as a basis for governments, technology developers, companies, civil society and inter-governmental organizations to adopt ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2022</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>Focus Group on Artificial Intelligence for Health (FG-AI4H)</title>
-  </series>
-  <keyword>AI for health</keyword>
-  <keyword>Artificial intelligence</keyword>
-  <keyword>Ethics</keyword>
-  <keyword>Governance</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>focus-group</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>FG-AI4H DEL01</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Alternative approval process for new and revised ITU-T Recommendations</title>
-  <title type="subtitle" format="text/plain" language="en">(2000; 2004; 2006; 2008)</title>
-  <uri type="xml">documents/T-REC-A.8-200810-I/en.xml</uri>
-  <uri type="pdf">documents/T-REC-A.8-200810-I/en.pdf</uri>
-  <uri type="doc">documents/T-REC-A.8-200810-I/en.doc</uri>
-  <uri type="html">documents/T-REC-A.8-200810-I/en.html</uri>
-  <uri type="rxl">documents/T-REC-A.8-200810-I/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T A.8</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T A.8-E</docidentifier>
-  <docnumber>A.8</docnumber>
-  <date type="published">
-    <on>2008-10-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;This Recommendation provides working methods and procedures for approving draft new and revised ITU-T Recommendations using the alternative approval process.&lt;/p&gt;</abstract>
-  <status>
-    <stage>published</stage>
-  </status>
-  <copyright>
-    <from>2008</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>A: ORGANIZATION OF THE WORK OF ITU-T</title>
-  </series>
-  <ext schema-version="v1.0.0">
-    <doctype>resolution</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>A.8</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
-  <uri type="xml">documents/T-REC-G.Imp8001-202002-I/en.xml</uri>
-  <uri type="pdf">documents/T-REC-G.Imp8001-202002-I/en.pdf</uri>
-  <uri type="doc">documents/T-REC-G.Imp8001-202002-I/en.doc</uri>
-  <uri type="html">documents/T-REC-G.Imp8001-202002-I/en.html</uri>
-  <uri type="rxl">documents/T-REC-G.Imp8001-202002-I/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier>
-  <docidentifier type="ITU-Recommendation">ITU-T G.8001</docidentifier>
-  <docidentifier type="ITU-Recommendation">Y</docidentifier>
-  <docidentifier type="ITU-Recommendation">1354</docidentifier>
-  <docnumber>G.8001/Y.1354 Implementers' Guide</docnumber>
-  <date type="published">
-    <on>2020-02-07</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Jessy Rouyer</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>Nokia</name>
-        </organization>
-      </affiliation>
-      <phone>+1 469 661 2093</phone>
-      <email>jessy.rouyer@nokia.com</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Yuji Tochio</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>Fujitsu</name>
-        </organization>
-      </affiliation>
-      <phone>+81 44 280 9936</phone>
-      <email>tochio@fujitsu.com</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).&lt;/p&gt;
-
-&lt;p&gt;This version contains all updates submitted up to and including those at Study Group 15 meeting in January/February 2020.&lt;/p&gt;
-
-&lt;p&gt;This document was approved by ITU-T Study Group 15 on 7 February 2020&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2020</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
-  </series>
-  <series type="secondary">
-    <title>Digital networks – General aspects</title>
-  </series>
-  <ext schema-version="v1.0.0">
-    <doctype>implementers-guide</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-      <group type="study-group">
-        <name>15</name>
-        <period>
-          <start>2024</start>
-          <end>2026</end>
-        </period>
-      </group>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>G.8001/Y.1354 Implementers' Guide</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Digital signage: Metadata</title>
-  <uri type="xml">documents/T-REC-H.792-201811/en.xml</uri>
-  <uri type="pdf">documents/T-REC-H.792-201811/en.pdf</uri>
-  <uri type="doc">documents/T-REC-H.792-201811/en.doc</uri>
-  <uri type="html">documents/T-REC-H.792-201811/en.html</uri>
-  <uri type="rxl">documents/T-REC-H.792-201811/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.782</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T H.782-E</docidentifier>
-  <docnumber>H.782</docnumber>
+  <title type="main" format="text/plain" language="en">Specification and Description Language – Overview of SDL-2010</title>
+  <title type="annex" format="text/plain" language="en">SDL-2010 formal definition: General overview</title>
+  <uri type="xml">documents/Z.100-201811-AnnF1/en.xml</uri>
+  <uri type="pdf">documents/Z.100-201811-AnnF1/en.pdf</uri>
+  <uri type="doc">documents/Z.100-201811-AnnF1/en.doc</uri>
+  <uri type="html">documents/Z.100-201811-AnnF1/en.html</uri>
+  <uri type="rxl">documents/Z.100-201811-AnnF1/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T Z.100</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T Z.100-E</docidentifier>
+  <docnumber>Z.100</docnumber>
   <date type="published">
     <on>2018-11-01</on>
   </date>
@@ -687,9 +82,7 @@
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;Recommendation ITU-T H.782 specifies the data elements and structures of the metadata for digital signage services. The metadata describes information for contents, terminal devices, play logs, playlist schedule, screen layout, etc. The metadata is handled by a digital signage server, a digital signage client, a content delivery server, and a content delivery client. It also specifies general information flows to describe how the metadata are used in the digital signage services.&lt;/p&gt;
-
-&lt;p&gt;This revision updates the data types of elements/attributes of identifiers. This update aims to widen applicability of the specifications at the price of easy extensible markup language (XML) validation.&lt;/p&gt;</abstract>
+  <abstract>&lt;p&gt;Annex F1 provides the motivation for and the main objectives of a formal semantics definition for SDL-2010. It gives an overview of the structure of the formal semantics, and it also contains an introduction to the Abstract State Machine (ASM) formalism, which is used to define the SDL-2010 semantics.&lt;/p&gt;</abstract>
   <status>
     <stage>in-force</stage>
   </status>
@@ -703,17 +96,88 @@
     </owner>
   </copyright>
   <series type="main">
-    <title>H: Audiovisual and Multimedia Systems</title>
+    <title>Z: Languages and General Software Aspects for Telecommunication Systems</title>
   </series>
   <series type="secondary">
-    <title>IPTV multimedia services and applications for IPTV</title>
+    <title>Formal description techniques (FDT)</title>
   </series>
   <series type="tertiary">
-    <title>Digital Signage</title>
+    <title>Specification and Description Language (SDL)</title>
   </series>
-  <keyword>Digital signage</keyword>
-  <keyword>information flows</keyword>
-  <keyword>metadata</keyword>
+  <keyword>ASM</keyword>
+  <keyword>SDL-2010</keyword>
+  <keyword>abstract state machines</keyword>
+  <keyword>formal definition</keyword>
+  <keyword>overview</keyword>
+  <keyword>overview of semantics</keyword>
+  <keyword>specification and description language</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation-annex</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>Z.100</docnumber>
+      <annexid>F1</annexid>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Cloud computing - Functional requirements of physical machine</title>
+  <uri type="xml">documents/Y.3507-201812/en.xml</uri>
+  <uri type="pdf">documents/Y.3507-201812/en.pdf</uri>
+  <uri type="doc">documents/Y.3507-201812/en.doc</uri>
+  <uri type="html">documents/Y.3507-201812/en.html</uri>
+  <uri type="rxl">documents/Y.3507-201812/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T Y.3507</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T Y.3507-E</docidentifier>
+  <docnumber>Y.3507</docnumber>
+  <date type="published">
+    <on>2018-12-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;The physical machine is a type of computing machine to provide physical resources. Since all cloud services have to reside and operate on physical machines, it is important for the cloud service providers as well as for the manufacturers to identify specific functional requirements of the physical machine.&lt;/p&gt;
+
+&lt;p&gt;Recommendation ITU-T Y.3507 provides an introduction to the physical machine including the physical machine components, physical machine types, virtualizations in the physical machine as well as the scalability of components in the physical machine.&lt;/p&gt;
+
+&lt;p&gt;In addition, this Recommendation provides functional requirements for the physical machine derived from various use cases described in &lt;xref target="_use_cases_of_the_physical_machine_for_cloud_computing"/&gt;. The relationship with other related specifications developed in other Standards Development Organizations (SDOs) has is introduced in &lt;xref target="_comparison_between_functional_requirements_and_other_specifications"/&gt;.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Y: Global Information Infrastructure, Internet Protocol Aspects, Next-Generation Networks, Internet of Things and Smart Cities</title>
+  </series>
+  <series type="secondary">
+    <title>Cloud Computing</title>
+  </series>
+  <keyword>Cloud computing</keyword>
+  <keyword>functional requirements</keyword>
+  <keyword>physical machine</keyword>
   <ext schema-version="v1.0.0">
     <doctype>recommendation</doctype>
     <editorialgroup>
@@ -721,23 +185,179 @@
     </editorialgroup>
     <structuredidentifier>
       <bureau>T</bureau>
-      <docnumber>H.782</docnumber>
+      <docnumber>Y.3507</docnumber>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
 <relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Implementors' Guide for the H.248 Sub-series of Recommendations ("Media Gateway Control Protocol")</title>
-  <uri type="xml">documents/T-REC-H.Imp248-201710-I/en.xml</uri>
-  <uri type="pdf">documents/T-REC-H.Imp248-201710-I/en.pdf</uri>
-  <uri type="doc">documents/T-REC-H.Imp248-201710-I/en.doc</uri>
-  <uri type="html">documents/T-REC-H.Imp248-201710-I/en.html</uri>
-  <uri type="rxl">documents/T-REC-H.Imp248-201710-I/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248 Sub-series Implementors Guide</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier>
-  <docidentifier type="ITU-Recommendation">ITU-T H.248</docidentifier>
-  <docnumber>H.248 Sub-series Implementors Guide</docnumber>
+  <title type="main" format="text/plain" language="en">Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant</title>
+  <uri type="xml">documents/T-TUT-L-2020-GLR/en.xml</uri>
+  <uri type="pdf">documents/T-TUT-L-2020-GLR/en.pdf</uri>
+  <uri type="doc">documents/T-TUT-L-2020-GLR/en.doc</uri>
+  <uri type="html">documents/T-TUT-L-2020-GLR/en.html</uri>
+  <uri type="rxl">documents/T-TUT-L-2020-GLR/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T LSTP-GLSR</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T LSTP-GLSR-E</docidentifier>
+  <docnumber>LSTP-GLSR</docnumber>
   <date type="published">
-    <on>2017-10-27</on>
+    <on>2020-02-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;ITU-T Technical Report "Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant" provides information on the background, development and uses of L-series Recommendations prepared by Working Party 2 of ITU-T Study Group 15.&lt;/p&gt;
+
+&lt;p&gt;These Recommendations are related to the design, construction, maintenance and operation of the optical fibre outside plant.&lt;/p&gt;
+
+&lt;p&gt;The items covered are related to the following areas:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;optical fibre cable characteristics, evaluation and installation techniques;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;construction of optical infrastructure;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;network design;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;network maintenance and operation, including disaster management;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;passive optical components.&lt;/p&gt;
+&lt;/li&gt;
+&lt;note&gt;&lt;p&gt;This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.&lt;/p&gt;
+&lt;/note&gt;&lt;/ul&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>technical-paper</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>LSTP-GLSR</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Guideline on web-based remote sign language interpretation or video remote interpretation (VRI) system</title>
+  <uri type="xml">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.xml</uri>
+  <uri type="pdf">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.pdf</uri>
+  <uri type="doc">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.doc</uri>
+  <uri type="html">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.html</uri>
+  <uri type="rxl">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T FSTP.ACC-WebVRI</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T FSTP.ACC-WebVRI-E</docidentifier>
+  <docnumber>FSTP.ACC-WebVRI</docnumber>
+  <date type="published">
+    <on>2020-07-03</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Masahito Kawamori</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>Keio University</name>
+          <address>
+            <formattedAddress>Japan</formattedAddress>
+          </address>
+        </organization>
+      </affiliation>
+      <phone>+81 (466) 49-1170</phone>
+      <phone type="fax">+81 (466) 49-1171</phone>
+      <email>masahito.kawamori@ties.itu.int</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;Due to the COVID-19 pandemic, the practice of physical distancing makes it difficult for a sign language interpreter to accompany a deaf or a hard of hearing person when the latter visits places such as a government agency, a school, a meeting, or a hospital. It is now almost imperative that a remote sign language interpretation, or a video remote interpretation (VRI) be implemented.&lt;/p&gt;
+
+&lt;p&gt;During the time of physical distancing when almost any schooling and medical consultation needs to be done remotely, a non-interoperable VRI system for deaf and hard of hearing persons will exclude them from important social services. It is therefore important to have a standard guideline for a VRI or VRI system, which considers interoperability and future effectiveness.&lt;/p&gt;
+
+&lt;p&gt;Considering the immediacy of the need as well as the cost of system introduction and practicality of the implementation, such a guideline is most likely to be based on web-based technologies.&lt;/p&gt;
+
+&lt;p&gt;This Technical Paper describes a web-based VRI, based on Web real time communication (RTC), and describes how it can be used in a scenario where community sign language interpreters can participate, as well as ways in which other remote services, online medical treatment and distance education, can harmonize with the Web-based VRI system.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>Accessibility</keyword>
+  <keyword>VRI</keyword>
+  <keyword>WebRTC</keyword>
+  <keyword>disaster resilience</keyword>
+  <keyword>distance learning</keyword>
+  <keyword>online medicine</keyword>
+  <keyword>remote sign language interpretation</keyword>
+  <keyword>total conversation</keyword>
+  <keyword>video remote interpretation</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>technical-paper</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>FSTP.ACC-WebVRI</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Survey report on counterfeit ICT devices in Africa region</title>
+  <uri type="xml">documents/T-TUT-CCIT-2017/en.xml</uri>
+  <uri type="pdf">documents/T-TUT-CCIT-2017/en.pdf</uri>
+  <uri type="doc">documents/T-TUT-CCIT-2017/en.doc</uri>
+  <uri type="html">documents/T-TUT-CCIT-2017/en.html</uri>
+  <uri type="rxl">documents/T-TUT-CCIT-2017/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T QTR-CICT</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T QTR-CICT-E</docidentifier>
+  <docnumber>QTR-CICT</docnumber>
+  <date type="published">
+    <on>2017-02-15</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -750,34 +370,11 @@
     <role type="editor"/>
     <person>
       <name>
-        <completename>Patrick Luthi</completename>
+        <completename>Isaac Boateng</completename>
       </name>
-      <affiliation>
-        <organization>
-          <name>IEEE</name>
-          <address>
-            <formattedAddress>Switzerland</formattedAddress>
-          </address>
-        </organization>
-      </affiliation>
-      <email>pluthi@ieee.org</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Christian Groves</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <address>
-            <formattedAddress>Australia</formattedAddress>
-          </address>
-        </organization>
-      </affiliation>
-      <phone>+61 3 9391 3457</phone>
-      <email>cngroves.std@gmail.com</email>
+      <phone>+233 302 763434/776621</phone>
+      <phone type="fax">+233 302 763449</phone>
+      <email>isaac.boateng@nca.org.gh</email>
     </person>
   </contributor>
   <contributor>
@@ -789,17 +386,192 @@
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;This document is a compilation of reported defects identified in the ITU-T H.248 sub-series of Recommendations currently in force. It must be read in conjunction with the Recommendations to serve as an additional authoritative source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248 sub-series Recommendations.&lt;/p&gt;
+  <abstract>&lt;p&gt;The survey on Counterfeit ICT Devices in Africa was aimed at gathering information on challenges, use cases and efforts in place to address the problem of counterfeit ICT devices and collect information from Member States in the region to progress the on-going study on Counterfeit ICT devices, in ITU-T Study Group 11 and ITU- D Study Groups.&lt;/p&gt;
 
-&lt;p&gt;This edition contains all updates submitted up to and including those at Study Group 16 meeting in Macao, China, 16-27 October 2017.&lt;/p&gt;
+&lt;p&gt;The survey explored the perspectives of Africa on counterfeit ICT devices. It also provides background information on the national initiatives to combat ICT counterfeit devices. The report of the survey is organized into five thematic blocks, as a result of responses obtained from the survey. These themes are:&lt;/p&gt;
 
-&lt;p&gt;This Implementors' Guide was approved by ITU-T Study Group 16 on 27 October 2017 and obsoletes the earlier version of this implementers' guide approved on 23 October 2015.&lt;note&gt;&lt;p&gt;The Implementors' Guides for H.248.1 Version 1 and Version 2 are published as separate documents. (ITU-T H.248.1 is currently in its version 3.)&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;Common perceptions of counterfeit ICT devices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Available Laws, Regulations and Enforcement&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Impact Assessment on counterfeit ICT devices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Existing measures and techniques to combat counterfeit ICT devices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ITU involvement and a possible creation of a regional group of ITU-T SG11&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;
+    &lt;em&gt;Conclusions from the findings showed among others that:&lt;/em&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;Counterfeit ICT devices are commonly understood to mean "fake and substandard".&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ICT devices perceived to have been counterfeited are mobile phones, tablets and personal computers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Affordability and availability are the major reasons for the larger market and higher patronage of counterfeit ICT devices in the Africa Region.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ITU's involvement in addressing the problem of counterfeit ICT devices through its standardisation work is essential.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conformity Assessment Schemes can be used one of the tools to combat counterfeit ICT devices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Member States recommend the establishment of an ITU-T SG11 Regional Group for Africa. They would support and participate in such group's activities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is therefore concluded from these findings that establishing ITU-T SG11 Regional Group for Africa to provide the regional views and influence ICT standards developments activities, particularly on counterfeit ICT devices, Conformance and Interoperability Testing and other related topics aimed at bridging the ICT digital divide is of essence. This report also recommends improved public sensitization and awareness creation on the negative impacts of counterfeit ICT devices as well as the development of regulatory frameworks to combat counterfeit ICT devices. The report should be used to progress the work currently on-going in ITU-T SG11 Question 8 and Question 11 as well as ITU-D SG 1 &amp; SG 2.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>Counterfeiting</keyword>
+  <keyword>ICT devices</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>technical-report</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>QTR-CICT</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Counterfeit ICT equipment</title>
+  <uri type="xml">documents/T-TUT-CCIT-2015/en.xml</uri>
+  <uri type="pdf">documents/T-TUT-CCIT-2015/en.pdf</uri>
+  <uri type="doc">documents/T-TUT-CCIT-2015/en.doc</uri>
+  <uri type="html">documents/T-TUT-CCIT-2015/en.html</uri>
+  <uri type="rxl">documents/T-TUT-CCIT-2015/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T QSTR-COUNTERFEIT</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T QSTR-COUNTERFEIT-E</docidentifier>
+  <docnumber>QSTR-COUNTERFEIT</docnumber>
+  <date type="published">
+    <on>2015-12-11</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Keith Mainwaring</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>UNIS</name>
+        </organization>
+      </affiliation>
+      <phone>+46 76 107 6877</phone>
+      <email>keith.mainwaring@ukrainesystems.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2015</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>Counterfeit</keyword>
+  <keyword>substandard</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>technical-report</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>QSTR-COUNTERFEIT</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Integrated broadcast-broadband digital TV application cooperated with server for functional extension including functions of digital TV reception and processing</title>
+  <uri type="xml">documents/T-TUT-CABLETV-2020/en.xml</uri>
+  <uri type="pdf">documents/T-TUT-CABLETV-2020/en.pdf</uri>
+  <uri type="doc">documents/T-TUT-CABLETV-2020/en.doc</uri>
+  <uri type="html">documents/T-TUT-CABLETV-2020/en.html</uri>
+  <uri type="rxl">documents/T-TUT-CABLETV-2020/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T JSTP-IBBDTV</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T JSTP-IBBDTV-E</docidentifier>
+  <docnumber>JSTP-IBBDTV</docnumber>
+  <date type="published">
+    <on>2020-04-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Masayoshi Onishi</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>NHK (Japan Broadcasting Corporation)</name>
+          <address>
+            <formattedAddress>Japon</formattedAddress>
+          </address>
+        </organization>
+      </affiliation>
+      <email>oonsihi.m-jc@nhk.or.jp</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;This Technical Paper describes an integrated broadcast-broadband (IBB) digital television (TV) application that cooperates with the server for functional extension including functions of digital TV reception and processing. In the current cable TV (CATV) systems, services are dependent on functions of a set top box (STB); thus, the services that require functions beyond the capabilities of an STB cannot be introduced. This system allows for the introduction of new services that require furthering the capabilities of the existing STBs and smoothly transitioning to new STB models. The system is built on an IBB system as defined in &lt;eref type="inline" bibitemid="j207" citeas="ITU-T J.207 (07/2019)"/&gt;.&lt;/p&gt;
+
+&lt;p&gt;This system comprises servers and STBs with the following features. The server receives a cable broadcast signal, processes the required content elements and applications, and transfers the processed outputs to STBs. The STB presents the delivered processed outputs and provides user-interactive functions.&lt;note&gt;&lt;p&gt;This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.&lt;/p&gt;
 &lt;/note&gt;&lt;/p&gt;</abstract>
   <status>
     <stage>in-force</stage>
   </status>
   <copyright>
-    <from>2017</from>
+    <from>2020</from>
     <owner>
       <organization>
         <name>International Telecommunication Union</name>
@@ -807,365 +579,18 @@
       </organization>
     </owner>
   </copyright>
-  <series type="main">
-    <title>H: Audiovisual and Multimedia Systems</title>
-  </series>
-  <series type="secondary">
-    <title>Infrastructure of audiovisual services – Communication procedures</title>
-  </series>
+  <keyword>IBB system</keyword>
+  <keyword>STB</keyword>
+  <keyword>server-side processing</keyword>
+  <keyword>streaming</keyword>
   <ext schema-version="v1.0.0">
-    <doctype>implementers-guide</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-      <group type="study-group">
-        <name>16</name>
-        <period>
-          <start>2024</start>
-          <end>2026</end>
-        </period>
-      </group>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>H.248 Sub-series Implementors Guide</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Transmission specification for radio over IP transmission systems</title>
-  <uri type="xml">documents/T-REC-J.1108-201901-P/en.xml</uri>
-  <uri type="pdf">documents/T-REC-J.1108-201901-P/en.pdf</uri>
-  <uri type="doc">documents/T-REC-J.1108-201901-P/en.doc</uri>
-  <uri type="html">documents/T-REC-J.1108-201901-P/en.html</uri>
-  <uri type="rxl">documents/T-REC-J.1108-201901-P/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier>
-  <docnumber>J.1108</docnumber>
-  <date type="published">
-    <on>2019-01-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.&lt;/p&gt;
-
-&lt;p&gt;Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2019</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
-  </series>
-  <series type="secondary">
-    <title>Switched digital video over cable networks</title>
-  </series>
-  <keyword>Radio over IP</keyword>
-  <keyword>RoIP</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
+    <doctype>technical-paper</doctype>
     <editorialgroup>
       <bureau>T</bureau>
     </editorialgroup>
     <structuredidentifier>
       <bureau>T</bureau>
-      <docnumber>J.1108</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Transmission specification for Radio over IP transmission systems</title>
-  <uri type="xml">documents/T-REC-J.1108-201901-P-draft/en.xml</uri>
-  <uri type="pdf">documents/T-REC-J.1108-201901-P-draft/en.pdf</uri>
-  <uri type="doc">documents/T-REC-J.1108-201901-P-draft/en.doc</uri>
-  <uri type="html">documents/T-REC-J.1108-201901-P-draft/en.html</uri>
-  <uri type="rxl">documents/T-REC-J.1108-201901-P-draft/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier>
-  <docnumber>J.1108</docnumber>
-  <date type="published">
-    <on>2019-01-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force-prepublished</stage>
-  </status>
-  <copyright>
-    <from>2019</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
-  </series>
-  <series type="secondary">
-    <title>Switched digital video over cable networks</title>
-  </series>
-  <keyword>RoIP</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>J.1108</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport</title>
-  <uri type="xml">documents/T-REC-P.1203-201710-I/en.xml</uri>
-  <uri type="pdf">documents/T-REC-P.1203-201710-I/en.pdf</uri>
-  <uri type="doc">documents/T-REC-P.1203-201710-I/en.doc</uri>
-  <uri type="html">documents/T-REC-P.1203-201710-I/en.html</uri>
-  <uri type="rxl">documents/T-REC-P.1203-201710-I/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.1203</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T P.1203-E</docidentifier>
-  <docnumber>P.1203</docnumber>
-  <date type="published">
-    <on>2017-10-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;Recommendation ITU-T P.1203 provides the introductory document for a set of documents that describe model algorithms for monitoring the integral media session quality for TCP-type video streaming. The models comprise modules for short-term audio- and video-quality estimation. The per-one-second outputs of these short-term modules are integrated into estimates of audiovisual quality and, together with information about initial loading delay and media playout stalling events, further integrated into the final model output, the estimate of integral quality. The respective ITU-T work item has formerly been referred to as P.NATS (Parametric non-intrusive assessment of TCP-based multimedia streaming quality).&lt;/p&gt;
-
-&lt;p&gt;The structure of the set of recommendations reflects the different functionality of modules described in each document:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;ITU-T P.1203: Introductory document (this Recommendation)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ITU-T P.1203.1: Video quality estimation module (short-term, providing per-one-second output information)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ITU-T P.1203.2: Audio quality estimation module (short-term, providing per-one-second output information)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ITU-T P.1203.3: Audiovisual integration and integration of final score, reflecting remembered quality for viewing sessions between 30 s and 5 min duration&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The input used by the models consists of information obtained by prior stream inspection. Four different levels of inspection are included, resulting in models of different complexity both of the input information and the model algorithms, which are called "modes of operation" in the following:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;Mode 0: Information obtained from meta-information available during progressive download or adaptive streaming, for example from manifest files used in DASH, about codec and bitrate, and initial loading delay and stalling.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mode 1: All information from Mode 0, with additional video and audio frame information based on packet header inspection&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mode 2: All information from Mode 1, and up to 2% (in Bytes) of the overall media stream information based on deep packet inspection and partial bitstream parsing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mode 3: All information from Mode 1, and complete media stream information based on bitstream parsing&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The ITU-T P.1203-series of Recommendations addresses two application areas, which are respectively indicated in the module-related Recommendations &lt;eref type="inline" bibitemid="ITU-T_P.1203.1" citeas="ITU-T P.1203.1 (01/2019)"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.2" citeas="ITU-T P.1203.2 (10/2017)"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.3" citeas="ITU-T P.1203.3 (01/2019)"/&gt;:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;Large-screen presentation as with fixed-network video streaming&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mobile streaming on handheld devices such as smartphones&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The ITU-T P.1203 module algorithms are no-reference, bitstream-based models.&lt;/p&gt;
-
-&lt;pagebreak/&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2017</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>P: TELEPHONE TRANSMISSION QUALITY, TELEPHONE INSTALLATIONS, LOCAL LINE NETWORKS</title>
-  </series>
-  <series type="secondary">
-    <title>Models and tools for quality assessment of streamed media</title>
-  </series>
-  <keyword>Adaptive streaming</keyword>
-  <keyword>IPTV</keyword>
-  <keyword>QoE</keyword>
-  <keyword>TV</keyword>
-  <keyword>audio</keyword>
-  <keyword>audiovisual</keyword>
-  <keyword>mean opinion score (MOS)</keyword>
-  <keyword>mobile TV</keyword>
-  <keyword>mobile video</keyword>
-  <keyword>monitoring</keyword>
-  <keyword>multimedia</keyword>
-  <keyword>progressive download</keyword>
-  <keyword>video</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>recommendation</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>P.1203</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Implementers' guide for P.863</title>
-  <uri type="xml">documents/T-REC-P.Imp863-201805-I/en.xml</uri>
-  <uri type="pdf">documents/T-REC-P.Imp863-201805-I/en.pdf</uri>
-  <uri type="doc">documents/T-REC-P.Imp863-201805-I/en.doc</uri>
-  <uri type="html">documents/T-REC-P.Imp863-201805-I/en.html</uri>
-  <uri type="rxl">documents/T-REC-P.Imp863-201805-I/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier>
-  <docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier>
-  <docnumber>P.863 Implementers' Guide</docnumber>
-  <date type="published">
-    <on>2018-05-10</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Jens Berger</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>Rohde &amp; Schwarz</name>
-          <address>
-            <formattedAddress>Switzerland</formattedAddress>
-          </address>
-        </organization>
-      </affiliation>
-      <phone>+41 32 686 6565</phone>
-      <phone type="fax">+41 32 686 6566</phone>
-      <email>jens.berger@rohde-schwarz.com</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="editor"/>
-    <person>
-      <name>
-        <completename>Joachim Pomy</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>OPTICOM GmbH</name>
-          <address>
-            <formattedAddress>Germany</formattedAddress>
-          </address>
-        </organization>
-      </affiliation>
-      <phone>+49 177 78 71958</phone>
-      <phone type="fax">+49 6251 9454945</phone>
-      <email>consultant@joachimpomy.de</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.&lt;/p&gt;
-
-&lt;p&gt;This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2018</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <series type="main">
-    <title>P: Terminals and Subjective and Objective Assessment Methods</title>
-  </series>
-  <series type="secondary">
-    <title>Methods for objective and subjective assessment of speech quality</title>
-  </series>
-  <ext schema-version="v1.0.0">
-    <doctype>implementers-guide</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-      <group type="study-group">
-        <name>12</name>
-        <period>
-          <start>2024</start>
-          <end>2026</end>
-        </period>
-      </group>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>P.863 Implementers' Guide</docnumber>
+      <docnumber>JSTP-IBBDTV</docnumber>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
@@ -1278,94 +703,18 @@
   </ext>
 </bibdata></relation>
 <relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Integrated broadcast-broadband digital TV application cooperated with server for functional extension including functions of digital TV reception and processing</title>
-  <uri type="xml">documents/T-TUT-CABLETV-2020/en.xml</uri>
-  <uri type="pdf">documents/T-TUT-CABLETV-2020/en.pdf</uri>
-  <uri type="doc">documents/T-TUT-CABLETV-2020/en.doc</uri>
-  <uri type="html">documents/T-TUT-CABLETV-2020/en.html</uri>
-  <uri type="rxl">documents/T-TUT-CABLETV-2020/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T JSTP-IBBDTV</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T JSTP-IBBDTV-E</docidentifier>
-  <docnumber>JSTP-IBBDTV</docnumber>
+  <title type="main" format="text/plain" language="en">Implementers' guide for P.863</title>
+  <uri type="xml">documents/T-REC-P.Imp863-201805-I/en.xml</uri>
+  <uri type="pdf">documents/T-REC-P.Imp863-201805-I/en.pdf</uri>
+  <uri type="doc">documents/T-REC-P.Imp863-201805-I/en.doc</uri>
+  <uri type="html">documents/T-REC-P.Imp863-201805-I/en.html</uri>
+  <uri type="rxl">documents/T-REC-P.Imp863-201805-I/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier>
+  <docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier>
+  <docnumber>P.863 Implementers' Guide</docnumber>
   <date type="published">
-    <on>2020-04-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <person>
-      <name>
-        <completename>Masayoshi Onishi</completename>
-      </name>
-      <affiliation>
-        <organization>
-          <name>NHK (Japan Broadcasting Corporation)</name>
-          <address>
-            <formattedAddress>Japon</formattedAddress>
-          </address>
-        </organization>
-      </affiliation>
-      <email>oonsihi.m-jc@nhk.or.jp</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;This Technical Paper describes an integrated broadcast-broadband (IBB) digital television (TV) application that cooperates with the server for functional extension including functions of digital TV reception and processing. In the current cable TV (CATV) systems, services are dependent on functions of a set top box (STB); thus, the services that require functions beyond the capabilities of an STB cannot be introduced. This system allows for the introduction of new services that require furthering the capabilities of the existing STBs and smoothly transitioning to new STB models. The system is built on an IBB system as defined in &lt;eref type="inline" bibitemid="j207" citeas="ITU-T J.207 (07/2019)"/&gt;.&lt;/p&gt;
-
-&lt;p&gt;This system comprises servers and STBs with the following features. The server receives a cable broadcast signal, processes the required content elements and applications, and transfers the processed outputs to STBs. The STB presents the delivered processed outputs and provides user-interactive functions.&lt;note&gt;&lt;p&gt;This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.&lt;/p&gt;
-&lt;/note&gt;&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2020</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <keyword>IBB system</keyword>
-  <keyword>STB</keyword>
-  <keyword>server-side processing</keyword>
-  <keyword>streaming</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>technical-paper</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>JSTP-IBBDTV</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Counterfeit ICT equipment</title>
-  <uri type="xml">documents/T-TUT-CCIT-2015/en.xml</uri>
-  <uri type="pdf">documents/T-TUT-CCIT-2015/en.pdf</uri>
-  <uri type="doc">documents/T-TUT-CCIT-2015/en.doc</uri>
-  <uri type="html">documents/T-TUT-CCIT-2015/en.html</uri>
-  <uri type="rxl">documents/T-TUT-CCIT-2015/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T QSTR-COUNTERFEIT</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T QSTR-COUNTERFEIT-E</docidentifier>
-  <docnumber>QSTR-COUNTERFEIT</docnumber>
-  <date type="published">
-    <on>2015-12-11</on>
+    <on>2018-05-10</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -1378,190 +727,38 @@
     <role type="editor"/>
     <person>
       <name>
-        <completename>Keith Mainwaring</completename>
+        <completename>Jens Berger</completename>
       </name>
       <affiliation>
         <organization>
-          <name>UNIS</name>
+          <name>Rohde &amp; Schwarz</name>
+          <address>
+            <formattedAddress>Switzerland</formattedAddress>
+          </address>
         </organization>
       </affiliation>
-      <phone>+46 76 107 6877</phone>
-      <email>keith.mainwaring@ukrainesystems.com</email>
+      <phone>+41 32 686 6565</phone>
+      <phone type="fax">+41 32 686 6566</phone>
+      <email>jens.berger@rohde-schwarz.com</email>
     </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2015</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <keyword>Counterfeit</keyword>
-  <keyword>substandard</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>technical-report</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>QSTR-COUNTERFEIT</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Survey report on counterfeit ICT devices in Africa region</title>
-  <uri type="xml">documents/T-TUT-CCIT-2017/en.xml</uri>
-  <uri type="pdf">documents/T-TUT-CCIT-2017/en.pdf</uri>
-  <uri type="doc">documents/T-TUT-CCIT-2017/en.doc</uri>
-  <uri type="html">documents/T-TUT-CCIT-2017/en.html</uri>
-  <uri type="rxl">documents/T-TUT-CCIT-2017/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T QTR-CICT</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T QTR-CICT-E</docidentifier>
-  <docnumber>QTR-CICT</docnumber>
-  <date type="published">
-    <on>2017-02-15</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
   </contributor>
   <contributor>
     <role type="editor"/>
     <person>
       <name>
-        <completename>Isaac Boateng</completename>
-      </name>
-      <phone>+233 302 763434/776621</phone>
-      <phone type="fax">+233 302 763449</phone>
-      <email>isaac.boateng@nca.org.gh</email>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;The survey on Counterfeit ICT Devices in Africa was aimed at gathering information on challenges, use cases and efforts in place to address the problem of counterfeit ICT devices and collect information from Member States in the region to progress the on-going study on Counterfeit ICT devices, in ITU-T Study Group 11 and ITU- D Study Groups.&lt;/p&gt;
-
-&lt;p&gt;The survey explored the perspectives of Africa on counterfeit ICT devices. It also provides background information on the national initiatives to combat ICT counterfeit devices. The report of the survey is organized into five thematic blocks, as a result of responses obtained from the survey. These themes are:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;Common perceptions of counterfeit ICT devices&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Available Laws, Regulations and Enforcement&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Impact Assessment on counterfeit ICT devices&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Existing measures and techniques to combat counterfeit ICT devices&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ITU involvement and a possible creation of a regional group of ITU-T SG11&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-  &lt;strong&gt;
-    &lt;em&gt;Conclusions from the findings showed among others that:&lt;/em&gt;
-  &lt;/strong&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;Counterfeit ICT devices are commonly understood to mean "fake and substandard".&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ICT devices perceived to have been counterfeited are mobile phones, tablets and personal computers.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Affordability and availability are the major reasons for the larger market and higher patronage of counterfeit ICT devices in the Africa Region.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ITU's involvement in addressing the problem of counterfeit ICT devices through its standardisation work is essential.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conformity Assessment Schemes can be used one of the tools to combat counterfeit ICT devices.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Member States recommend the establishment of an ITU-T SG11 Regional Group for Africa. They would support and participate in such group's activities.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It is therefore concluded from these findings that establishing ITU-T SG11 Regional Group for Africa to provide the regional views and influence ICT standards developments activities, particularly on counterfeit ICT devices, Conformance and Interoperability Testing and other related topics aimed at bridging the ICT digital divide is of essence. This report also recommends improved public sensitization and awareness creation on the negative impacts of counterfeit ICT devices as well as the development of regulatory frameworks to combat counterfeit ICT devices. The report should be used to progress the work currently on-going in ITU-T SG11 Question 8 and Question 11 as well as ITU-D SG 1 &amp; SG 2.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2017</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <keyword>Counterfeiting</keyword>
-  <keyword>ICT devices</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>technical-report</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>QTR-CICT</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Guideline on web-based remote sign language interpretation or video remote interpretation (VRI) system</title>
-  <uri type="xml">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.xml</uri>
-  <uri type="pdf">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.pdf</uri>
-  <uri type="doc">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.doc</uri>
-  <uri type="html">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.html</uri>
-  <uri type="rxl">documents/T-TUT-FSTP-2020-ACC.WEBVRI/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T FSTP.ACC-WebVRI</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T FSTP.ACC-WebVRI-E</docidentifier>
-  <docnumber>FSTP.ACC-WebVRI</docnumber>
-  <date type="published">
-    <on>2020-07-03</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <person>
-      <name>
-        <completename>Masahito Kawamori</completename>
+        <completename>Joachim Pomy</completename>
       </name>
       <affiliation>
         <organization>
-          <name>Keio University</name>
+          <name>OPTICOM GmbH</name>
           <address>
-            <formattedAddress>Japan</formattedAddress>
+            <formattedAddress>Germany</formattedAddress>
           </address>
         </organization>
       </affiliation>
-      <phone>+81 (466) 49-1170</phone>
-      <phone type="fax">+81 (466) 49-1171</phone>
-      <email>masahito.kawamori@ties.itu.int</email>
+      <phone>+49 177 78 71958</phone>
+      <phone type="fax">+49 6251 9454945</phone>
+      <email>consultant@joachimpomy.de</email>
     </person>
   </contributor>
   <contributor>
@@ -1573,149 +770,9 @@
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;Due to the COVID-19 pandemic, the practice of physical distancing makes it difficult for a sign language interpreter to accompany a deaf or a hard of hearing person when the latter visits places such as a government agency, a school, a meeting, or a hospital. It is now almost imperative that a remote sign language interpretation, or a video remote interpretation (VRI) be implemented.&lt;/p&gt;
+  <abstract>&lt;p&gt;This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.&lt;/p&gt;
 
-&lt;p&gt;During the time of physical distancing when almost any schooling and medical consultation needs to be done remotely, a non-interoperable VRI system for deaf and hard of hearing persons will exclude them from important social services. It is therefore important to have a standard guideline for a VRI or VRI system, which considers interoperability and future effectiveness.&lt;/p&gt;
-
-&lt;p&gt;Considering the immediacy of the need as well as the cost of system introduction and practicality of the implementation, such a guideline is most likely to be based on web-based technologies.&lt;/p&gt;
-
-&lt;p&gt;This Technical Paper describes a web-based VRI, based on Web real time communication (RTC), and describes how it can be used in a scenario where community sign language interpreters can participate, as well as ways in which other remote services, online medical treatment and distance education, can harmonize with the Web-based VRI system.&lt;/p&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2020</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <keyword>Accessibility</keyword>
-  <keyword>VRI</keyword>
-  <keyword>WebRTC</keyword>
-  <keyword>disaster resilience</keyword>
-  <keyword>distance learning</keyword>
-  <keyword>online medicine</keyword>
-  <keyword>remote sign language interpretation</keyword>
-  <keyword>total conversation</keyword>
-  <keyword>video remote interpretation</keyword>
-  <ext schema-version="v1.0.0">
-    <doctype>technical-paper</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>FSTP.ACC-WebVRI</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant</title>
-  <uri type="xml">documents/T-TUT-L-2020-GLR/en.xml</uri>
-  <uri type="pdf">documents/T-TUT-L-2020-GLR/en.pdf</uri>
-  <uri type="doc">documents/T-TUT-L-2020-GLR/en.doc</uri>
-  <uri type="html">documents/T-TUT-L-2020-GLR/en.html</uri>
-  <uri type="rxl">documents/T-TUT-L-2020-GLR/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T LSTP-GLSR</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T LSTP-GLSR-E</docidentifier>
-  <docnumber>LSTP-GLSR</docnumber>
-  <date type="published">
-    <on>2020-02-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;ITU-T Technical Report "Guide on the use of ITU-T L-series Recommendations related to optical technologies for outside plant" provides information on the background, development and uses of L-series Recommendations prepared by Working Party 2 of ITU-T Study Group 15.&lt;/p&gt;
-
-&lt;p&gt;These Recommendations are related to the design, construction, maintenance and operation of the optical fibre outside plant.&lt;/p&gt;
-
-&lt;p&gt;The items covered are related to the following areas:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;p&gt;optical fibre cable characteristics, evaluation and installation techniques;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;construction of optical infrastructure;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;network design;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;network maintenance and operation, including disaster management;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;passive optical components.&lt;/p&gt;
-&lt;/li&gt;
-&lt;note&gt;&lt;p&gt;This is an informative ITU-T publication. Mandatory provisions, such as those found in ITU-T Recommendations, are outside the scope of this publication. This publication should only be referenced bibliographically in ITU-T Recommendations.&lt;/p&gt;
-&lt;/note&gt;&lt;/ul&gt;</abstract>
-  <status>
-    <stage>in-force</stage>
-  </status>
-  <copyright>
-    <from>2020</from>
-    <owner>
-      <organization>
-        <name>International Telecommunication Union</name>
-        <abbreviation>ITU</abbreviation>
-      </organization>
-    </owner>
-  </copyright>
-  <ext schema-version="v1.0.0">
-    <doctype>technical-paper</doctype>
-    <editorialgroup>
-      <bureau>T</bureau>
-    </editorialgroup>
-    <structuredidentifier>
-      <bureau>T</bureau>
-      <docnumber>LSTP-GLSR</docnumber>
-    </structuredidentifier>
-  </ext>
-</bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Cloud computing - Functional requirements of physical machine</title>
-  <uri type="xml">documents/Y.3507-201812/en.xml</uri>
-  <uri type="pdf">documents/Y.3507-201812/en.pdf</uri>
-  <uri type="doc">documents/Y.3507-201812/en.doc</uri>
-  <uri type="html">documents/Y.3507-201812/en.html</uri>
-  <uri type="rxl">documents/Y.3507-201812/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T Y.3507</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T Y.3507-E</docidentifier>
-  <docnumber>Y.3507</docnumber>
-  <date type="published">
-    <on>2018-12-01</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>International Telecommunication Union</name>
-      <abbreviation>ITU</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract>&lt;p&gt;The physical machine is a type of computing machine to provide physical resources. Since all cloud services have to reside and operate on physical machines, it is important for the cloud service providers as well as for the manufacturers to identify specific functional requirements of the physical machine.&lt;/p&gt;
-
-&lt;p&gt;Recommendation ITU-T Y.3507 provides an introduction to the physical machine including the physical machine components, physical machine types, virtualizations in the physical machine as well as the scalability of components in the physical machine.&lt;/p&gt;
-
-&lt;p&gt;In addition, this Recommendation provides functional requirements for the physical machine derived from various use cases described in &lt;xref target="_use_cases_of_the_physical_machine_for_cloud_computing"/&gt;. The relationship with other related specifications developed in other Standards Development Organizations (SDOs) has is introduced in &lt;xref target="_comparison_between_functional_requirements_and_other_specifications"/&gt;.&lt;/p&gt;</abstract>
+&lt;p&gt;This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.&lt;/p&gt;</abstract>
   <status>
     <stage>in-force</stage>
   </status>
@@ -1729,14 +786,126 @@
     </owner>
   </copyright>
   <series type="main">
-    <title>Y: Global Information Infrastructure, Internet Protocol Aspects, Next-Generation Networks, Internet of Things and Smart Cities</title>
+    <title>P: Terminals and Subjective and Objective Assessment Methods</title>
   </series>
   <series type="secondary">
-    <title>Cloud Computing</title>
+    <title>Methods for objective and subjective assessment of speech quality</title>
   </series>
-  <keyword>Cloud computing</keyword>
-  <keyword>functional requirements</keyword>
-  <keyword>physical machine</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>implementers-guide</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+      <group type="study-group">
+        <name>12</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
+      </group>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>P.863 Implementers' Guide</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport</title>
+  <uri type="xml">documents/T-REC-P.1203-201710-I/en.xml</uri>
+  <uri type="pdf">documents/T-REC-P.1203-201710-I/en.pdf</uri>
+  <uri type="doc">documents/T-REC-P.1203-201710-I/en.doc</uri>
+  <uri type="html">documents/T-REC-P.1203-201710-I/en.html</uri>
+  <uri type="rxl">documents/T-REC-P.1203-201710-I/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.1203</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T P.1203-E</docidentifier>
+  <docnumber>P.1203</docnumber>
+  <date type="published">
+    <on>2017-10-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;Recommendation ITU-T P.1203 provides the introductory document for a set of documents that describe model algorithms for monitoring the integral media session quality for TCP-type video streaming. The models comprise modules for short-term audio- and video-quality estimation. The per-one-second outputs of these short-term modules are integrated into estimates of audiovisual quality and, together with information about initial loading delay and media playout stalling events, further integrated into the final model output, the estimate of integral quality. The respective ITU-T work item has formerly been referred to as P.NATS (Parametric non-intrusive assessment of TCP-based multimedia streaming quality).&lt;/p&gt;
+
+&lt;p&gt;The structure of the set of recommendations reflects the different functionality of modules described in each document:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;ITU-T P.1203: Introductory document (this Recommendation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ITU-T P.1203.1: Video quality estimation module (short-term, providing per-one-second output information)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ITU-T P.1203.2: Audio quality estimation module (short-term, providing per-one-second output information)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ITU-T P.1203.3: Audiovisual integration and integration of final score, reflecting remembered quality for viewing sessions between 30 s and 5 min duration&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The input used by the models consists of information obtained by prior stream inspection. Four different levels of inspection are included, resulting in models of different complexity both of the input information and the model algorithms, which are called "modes of operation" in the following:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;Mode 0: Information obtained from meta-information available during progressive download or adaptive streaming, for example from manifest files used in DASH, about codec and bitrate, and initial loading delay and stalling.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mode 1: All information from Mode 0, with additional video and audio frame information based on packet header inspection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mode 2: All information from Mode 1, and up to 2% (in Bytes) of the overall media stream information based on deep packet inspection and partial bitstream parsing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mode 3: All information from Mode 1, and complete media stream information based on bitstream parsing&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The ITU-T P.1203-series of Recommendations addresses two application areas, which are respectively indicated in the module-related Recommendations &lt;eref type="inline" bibitemid="ITU-T_P.1203.1" citeas="ITU-T P.1203.1 (01/2019)"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.2" citeas="ITU-T P.1203.2 (10/2017)"/&gt;, &lt;eref type="inline" bibitemid="ITU-T_P.1203.3" citeas="ITU-T P.1203.3 (01/2019)"/&gt;:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;Large-screen presentation as with fixed-network video streaming&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mobile streaming on handheld devices such as smartphones&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The ITU-T P.1203 module algorithms are no-reference, bitstream-based models.&lt;/p&gt;
+
+&lt;pagebreak/&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>P: TELEPHONE TRANSMISSION QUALITY, TELEPHONE INSTALLATIONS, LOCAL LINE NETWORKS</title>
+  </series>
+  <series type="secondary">
+    <title>Models and tools for quality assessment of streamed media</title>
+  </series>
+  <keyword>Adaptive streaming</keyword>
+  <keyword>IPTV</keyword>
+  <keyword>QoE</keyword>
+  <keyword>TV</keyword>
+  <keyword>audio</keyword>
+  <keyword>audiovisual</keyword>
+  <keyword>mean opinion score (MOS)</keyword>
+  <keyword>mobile TV</keyword>
+  <keyword>mobile video</keyword>
+  <keyword>monitoring</keyword>
+  <keyword>multimedia</keyword>
+  <keyword>progressive download</keyword>
+  <keyword>video</keyword>
   <ext schema-version="v1.0.0">
     <doctype>recommendation</doctype>
     <editorialgroup>
@@ -1744,21 +913,249 @@
     </editorialgroup>
     <structuredidentifier>
       <bureau>T</bureau>
-      <docnumber>Y.3507</docnumber>
+      <docnumber>P.1203</docnumber>
     </structuredidentifier>
   </ext>
 </bibdata></relation>
 <relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" format="text/plain" language="en">Specification and Description Language – Overview of SDL-2010</title>
-  <title type="annex" format="text/plain" language="en">SDL-2010 formal definition: General overview</title>
-  <uri type="xml">documents/Z.100-201811-AnnF1/en.xml</uri>
-  <uri type="pdf">documents/Z.100-201811-AnnF1/en.pdf</uri>
-  <uri type="doc">documents/Z.100-201811-AnnF1/en.doc</uri>
-  <uri type="html">documents/Z.100-201811-AnnF1/en.html</uri>
-  <uri type="rxl">documents/Z.100-201811-AnnF1/en.rxl</uri>
-  <docidentifier type="ITU" primary="true">ITU-T Z.100</docidentifier>
-  <docidentifier type="ITU-lang">ITU-T Z.100-E</docidentifier>
-  <docnumber>Z.100</docnumber>
+  <title type="main" format="text/plain" language="en">Transmission specification for Radio over IP transmission systems</title>
+  <uri type="xml">documents/T-REC-J.1108-201901-P-draft/en.xml</uri>
+  <uri type="pdf">documents/T-REC-J.1108-201901-P-draft/en.pdf</uri>
+  <uri type="doc">documents/T-REC-J.1108-201901-P-draft/en.doc</uri>
+  <uri type="html">documents/T-REC-J.1108-201901-P-draft/en.html</uri>
+  <uri type="rxl">documents/T-REC-J.1108-201901-P-draft/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier>
+  <docnumber>J.1108</docnumber>
+  <date type="published">
+    <on>2019-01-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force-prepublished</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
+  </series>
+  <series type="secondary">
+    <title>Switched digital video over cable networks</title>
+  </series>
+  <keyword>RoIP</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>J.1108</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Transmission specification for radio over IP transmission systems</title>
+  <uri type="xml">documents/T-REC-J.1108-201901-P/en.xml</uri>
+  <uri type="pdf">documents/T-REC-J.1108-201901-P/en.pdf</uri>
+  <uri type="doc">documents/T-REC-J.1108-201901-P/en.doc</uri>
+  <uri type="html">documents/T-REC-J.1108-201901-P/en.html</uri>
+  <uri type="rxl">documents/T-REC-J.1108-201901-P/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier>
+  <docnumber>J.1108</docnumber>
+  <date type="published">
+    <on>2019-01-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.&lt;/p&gt;
+
+&lt;p&gt;Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
+  </series>
+  <series type="secondary">
+    <title>Switched digital video over cable networks</title>
+  </series>
+  <keyword>Radio over IP</keyword>
+  <keyword>RoIP</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>J.1108</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Implementors' Guide for the H.248 Sub-series of Recommendations ("Media Gateway Control Protocol")</title>
+  <uri type="xml">documents/T-REC-H.Imp248-201710-I/en.xml</uri>
+  <uri type="pdf">documents/T-REC-H.Imp248-201710-I/en.pdf</uri>
+  <uri type="doc">documents/T-REC-H.Imp248-201710-I/en.doc</uri>
+  <uri type="html">documents/T-REC-H.Imp248-201710-I/en.html</uri>
+  <uri type="rxl">documents/T-REC-H.Imp248-201710-I/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248 Sub-series Implementors Guide</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier>
+  <docidentifier type="ITU-Recommendation">ITU-T H.248</docidentifier>
+  <docnumber>H.248 Sub-series Implementors Guide</docnumber>
+  <date type="published">
+    <on>2017-10-27</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Patrick Luthi</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>IEEE</name>
+          <address>
+            <formattedAddress>Switzerland</formattedAddress>
+          </address>
+        </organization>
+      </affiliation>
+      <email>pluthi@ieee.org</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Christian Groves</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <address>
+            <formattedAddress>Australia</formattedAddress>
+          </address>
+        </organization>
+      </affiliation>
+      <phone>+61 3 9391 3457</phone>
+      <email>cngroves.std@gmail.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;This document is a compilation of reported defects identified in the ITU-T H.248 sub-series of Recommendations currently in force. It must be read in conjunction with the Recommendations to serve as an additional authoritative source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248 sub-series Recommendations.&lt;/p&gt;
+
+&lt;p&gt;This edition contains all updates submitted up to and including those at Study Group 16 meeting in Macao, China, 16-27 October 2017.&lt;/p&gt;
+
+&lt;p&gt;This Implementors' Guide was approved by ITU-T Study Group 16 on 27 October 2017 and obsoletes the earlier version of this implementers' guide approved on 23 October 2015.&lt;note&gt;&lt;p&gt;The Implementors' Guides for H.248.1 Version 1 and Version 2 are published as separate documents. (ITU-T H.248.1 is currently in its version 3.)&lt;/p&gt;
+&lt;/note&gt;&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>H: Audiovisual and Multimedia Systems</title>
+  </series>
+  <series type="secondary">
+    <title>Infrastructure of audiovisual services – Communication procedures</title>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>implementers-guide</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+      <group type="study-group">
+        <name>16</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
+      </group>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>H.248 Sub-series Implementors Guide</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Digital signage: Metadata</title>
+  <uri type="xml">documents/T-REC-H.792-201811/en.xml</uri>
+  <uri type="pdf">documents/T-REC-H.792-201811/en.pdf</uri>
+  <uri type="doc">documents/T-REC-H.792-201811/en.doc</uri>
+  <uri type="html">documents/T-REC-H.792-201811/en.html</uri>
+  <uri type="rxl">documents/T-REC-H.792-201811/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.782</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T H.782-E</docidentifier>
+  <docnumber>H.782</docnumber>
   <date type="published">
     <on>2018-11-01</on>
   </date>
@@ -1778,7 +1175,9 @@
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;Annex F1 provides the motivation for and the main objectives of a formal semantics definition for SDL-2010. It gives an overview of the structure of the formal semantics, and it also contains an introduction to the Abstract State Machine (ASM) formalism, which is used to define the SDL-2010 semantics.&lt;/p&gt;</abstract>
+  <abstract>&lt;p&gt;Recommendation ITU-T H.782 specifies the data elements and structures of the metadata for digital signage services. The metadata describes information for contents, terminal devices, play logs, playlist schedule, screen layout, etc. The metadata is handled by a digital signage server, a digital signage client, a content delivery server, and a content delivery client. It also specifies general information flows to describe how the metadata are used in the digital signage services.&lt;/p&gt;
+
+&lt;p&gt;This revision updates the data types of elements/attributes of identifiers. This update aims to widen applicability of the specifications at the price of easy extensible markup language (XML) validation.&lt;/p&gt;</abstract>
   <status>
     <stage>in-force</stage>
   </status>
@@ -1792,30 +1191,635 @@
     </owner>
   </copyright>
   <series type="main">
-    <title>Z: Languages and General Software Aspects for Telecommunication Systems</title>
+    <title>H: Audiovisual and Multimedia Systems</title>
   </series>
   <series type="secondary">
-    <title>Formal description techniques (FDT)</title>
+    <title>IPTV multimedia services and applications for IPTV</title>
   </series>
   <series type="tertiary">
-    <title>Specification and Description Language (SDL)</title>
+    <title>Digital Signage</title>
   </series>
-  <keyword>ASM</keyword>
-  <keyword>SDL-2010</keyword>
-  <keyword>abstract state machines</keyword>
-  <keyword>formal definition</keyword>
-  <keyword>overview</keyword>
-  <keyword>overview of semantics</keyword>
-  <keyword>specification and description language</keyword>
+  <keyword>Digital signage</keyword>
+  <keyword>information flows</keyword>
+  <keyword>metadata</keyword>
   <ext schema-version="v1.0.0">
-    <doctype>recommendation-annex</doctype>
+    <doctype>recommendation</doctype>
     <editorialgroup>
       <bureau>T</bureau>
     </editorialgroup>
     <structuredidentifier>
       <bureau>T</bureau>
-      <docnumber>Z.100</docnumber>
-      <annexid>F1</annexid>
+      <docnumber>H.782</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
+  <uri type="xml">documents/T-REC-G.Imp8001-202002-I/en.xml</uri>
+  <uri type="pdf">documents/T-REC-G.Imp8001-202002-I/en.pdf</uri>
+  <uri type="doc">documents/T-REC-G.Imp8001-202002-I/en.doc</uri>
+  <uri type="html">documents/T-REC-G.Imp8001-202002-I/en.html</uri>
+  <uri type="rxl">documents/T-REC-G.Imp8001-202002-I/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier>
+  <docidentifier type="ITU-Recommendation">ITU-T G.8001</docidentifier>
+  <docidentifier type="ITU-Recommendation">Y</docidentifier>
+  <docidentifier type="ITU-Recommendation">1354</docidentifier>
+  <docnumber>G.8001/Y.1354 Implementers' Guide</docnumber>
+  <date type="published">
+    <on>2020-02-07</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Jessy Rouyer</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>Nokia</name>
+        </organization>
+      </affiliation>
+      <phone>+1 469 661 2093</phone>
+      <email>jessy.rouyer@nokia.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Yuji Tochio</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>Fujitsu</name>
+        </organization>
+      </affiliation>
+      <phone>+81 44 280 9936</phone>
+      <email>tochio@fujitsu.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).&lt;/p&gt;
+
+&lt;p&gt;This version contains all updates submitted up to and including those at Study Group 15 meeting in January/February 2020.&lt;/p&gt;
+
+&lt;p&gt;This document was approved by ITU-T Study Group 15 on 7 February 2020&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
+  </series>
+  <series type="secondary">
+    <title>Digital networks – General aspects</title>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>implementers-guide</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+      <group type="study-group">
+        <name>15</name>
+        <period>
+          <start>2024</start>
+          <end>2026</end>
+        </period>
+      </group>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>G.8001/Y.1354 Implementers' Guide</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Alternative approval process for new and revised ITU-T Recommendations</title>
+  <title type="subtitle" format="text/plain" language="en">(2000; 2004; 2006; 2008)</title>
+  <uri type="xml">documents/T-REC-A.8-200810-I/en.xml</uri>
+  <uri type="pdf">documents/T-REC-A.8-200810-I/en.pdf</uri>
+  <uri type="doc">documents/T-REC-A.8-200810-I/en.doc</uri>
+  <uri type="html">documents/T-REC-A.8-200810-I/en.html</uri>
+  <uri type="rxl">documents/T-REC-A.8-200810-I/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T A.8</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T A.8-E</docidentifier>
+  <docnumber>A.8</docnumber>
+  <date type="published">
+    <on>2008-10-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;This Recommendation provides working methods and procedures for approving draft new and revised ITU-T Recommendations using the alternative approval process.&lt;/p&gt;</abstract>
+  <status>
+    <stage>published</stage>
+  </status>
+  <copyright>
+    <from>2008</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>A: ORGANIZATION OF THE WORK OF ITU-T</title>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>resolution</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>A.8</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Ethics and governance of artificial intelligence for health</title>
+  <uri type="xml">documents/T-FG-AI4H-2022-MSW/en.xml</uri>
+  <uri type="pdf">documents/T-FG-AI4H-2022-MSW/en.pdf</uri>
+  <uri type="doc">documents/T-FG-AI4H-2022-MSW/en.doc</uri>
+  <uri type="html">documents/T-FG-AI4H-2022-MSW/en.html</uri>
+  <uri type="rxl">documents/T-FG-AI4H-2022-MSW/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T FG-AI4H DEL01</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T FG-AI4H DEL01-E</docidentifier>
+  <docidentifier type="ITU-Recommendation">ITU-T FG-AI4H</docidentifier>
+  <docnumber>FG-AI4H DEL01</docnumber>
+  <date type="published">
+    <on>2022-06-02</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Andreas Reis</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>World Health Organization</name>
+        </organization>
+      </affiliation>
+      <email>reisa@who.int</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Sameer Pujari</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>World Health Organization</name>
+        </organization>
+      </affiliation>
+      <email>pujaris@who.int</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;Artificial Intelligence (AI) refers to the ability of algorithms encoded in technology to learn from data so that they can perform automated tasks without every step in the process having to be programmed explicitly by a human. While AI holds great promise for the practice of public health and medicine, ethical challenges for health care systems, practitioners and beneficiaries of medical and public health services must be addressed. Many of the ethical concerns described in this document predate the advent of AI, although AI itself presents a number of novel concerns.&lt;/p&gt;
+
+&lt;p&gt;This document endorses a set of six key ethical principles:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;Protect human autonomy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Promote human well-being and safety and the public interest&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ensure transparency, explainability and intelligibility&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Foster responsibility and accountability&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ensure inclusiveness and equity&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Promote AI that is responsive and sustainable&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is hoped that these principles will be used as a basis for governments, technology developers, companies, civil society and inter-governmental organizations to adopt ethical approaches to appropriate use of AI for health.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Focus Group on Artificial Intelligence for Health (FG-AI4H)</title>
+  </series>
+  <keyword>AI for health</keyword>
+  <keyword>Artificial intelligence</keyword>
+  <keyword>Ethics</keyword>
+  <keyword>Governance</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>focus-group</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>FG-AI4H DEL01</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Author's guide for drafting ITU-T Recommendations</title>
+  <uri type="xml">documents/T-Editing-Guidelines-201602/en.xml</uri>
+  <uri type="pdf">documents/T-Editing-Guidelines-201602/en.pdf</uri>
+  <uri type="doc">documents/T-Editing-Guidelines-201602/en.doc</uri>
+  <uri type="html">documents/T-Editing-Guidelines-201602/en.html</uri>
+  <uri type="rxl">documents/T-Editing-Guidelines-201602/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T A.1500 (fictitious)</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T A.1500 (fictitious)-E</docidentifier>
+  <docnumber>A.1500 (fictitious)</docnumber>
+  <date type="published">
+    <on>2016-02-05</on>
+  </date>
+  <date type="created">
+    <on>2011-03-15</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;This author's guide for drafting ITU-T Recommendations permits uniform, efficient preparation of texts by TSB for publication. It covers the rules for drafting a Recommendation in a standard manner. Its provisions should be applied in all instances where texts (such as draft Recommendations) are being prepared by study group authors for approval and publication. The methods presented in this author's guide are the basis for a template and will remain stable until changes to current publication procedures necessitate their modification.&lt;/p&gt;
+
+&lt;p&gt;In order to facilitate comparison with other presentation styles, this author's guide has been prepared in accordance with the presentation rules that it mandates. The examples used within the text, such as references, are for illustrative purposes only. Thus, this author's guide constitutes an example of the proposed presentation style. Please note that Recommendation ITU-T A.1500 is a fictitious Recommendation used to illustrate the points given in this guide.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>A.1500 (fictitious)</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">ITU-T Software Tool Library 2019 User's Manual</title>
+  <uri type="xml">documents/STL-manual/en.xml</uri>
+  <uri type="pdf">documents/STL-manual/en.pdf</uri>
+  <uri type="doc">documents/STL-manual/en.doc</uri>
+  <uri type="html">documents/STL-manual/en.html</uri>
+  <uri type="rxl">documents/STL-manual/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.191 STL-2019 Manual</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T G.191 STL-2019 Manual-E</docidentifier>
+  <docnumber>G.191 STL-2019 Manual</docnumber>
+  <date type="published">
+    <on>2019-02-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2005</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
+  </series>
+  <series type="secondary">
+    <title>International telephone connections and circuits</title>
+  </series>
+  <series type="tertiary">
+    <title>Software tools for transmission systems</title>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>G.191 STL-2019 Manual</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Definitions and test methods for linear, deterministic attributes of single-mode fibre and cable</title>
+  <uri type="xml">documents/G.650.1-201803/en.xml</uri>
+  <uri type="pdf">documents/G.650.1-201803/en.pdf</uri>
+  <uri type="doc">documents/G.650.1-201803/en.doc</uri>
+  <uri type="html">documents/G.650.1-201803/en.html</uri>
+  <uri type="rxl">documents/G.650.1-201803/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.650.1</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T G.650.1-E</docidentifier>
+  <docnumber>G.650.1</docnumber>
+  <date type="published">
+    <on>2018-03-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;Recommendation ITU-T G.650.1 contains definitions of the linear, deterministic parameters of single-mode optical fibres and cables. It also contains both reference test methods and alternative test methods for characterizing these parameters.&lt;/p&gt;
+
+&lt;p&gt;These test methods are suitable mainly for factory measurements of the linear, deterministic attributes of single-mode fibres and cables. Some of the test methods may also be used to characterize discrete optical components.&lt;/p&gt;
+
+&lt;p&gt;The history of this Recommendation is as follows:&lt;/p&gt;
+
+&lt;dl&gt;&lt;dt&gt;1993&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;Definitions and test methods were removed from single-mode fibre Recommendations such as Recommendation &lt;eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652 (08/2024)"/&gt; and used to create the initial version of Recommendation ITU-T G.650.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;1997&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;The second version of Recommendation ITU-T G.650 added definitions and test methods for polarization mode dispersion and appendices I, II and III. The improved determination of cut-off wavelength (clause 5.3.1.3.4) was also added.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;2000&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;The third version established reference and alternative test methods for polarization mode dispersion, modified the definitions and test methods for core concentricity error (clauses 3.4 and 5.2), and added clause 5.1.4 and appendices IV, V and VI.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;2002&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;In order to facilitate maintenance, Recommendation ITU-T G.650 was divided into smaller Recommendations. Recommendation ITU-T G.650.2 contains definitions and test methods for statistical and non-linear attributes of single-mode fibre and cable.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;2004&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;The second version of Recommendation ITU-TG.650.1 added a third alternative test method "Spectral attenuation modelling" (clause 5.4.4) and new Appendix III "Example of a matrix model". This material has been moved from the single-mode fibre Recommendations into this Recommendation ITU-T G.650.1. In addition, chromatic dispersion fitting procedures have been added (Annex A).&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;2010&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;The third version of Recommendation ITU-TG.650.1 added the test method "Test methods for the macrobend loss" (clause 5.6). Jumper cut-off wavelength has been deleted from clause 5.3. An additional description has been added in cut-off wavelength test method (clause 5.3.1.3.2). Equation 5-1 has been corrected. A detailed description has been added in proof test method (clause 5.7). Appendix II has been updated.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;2018&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;The fourth version of Recommendation ITU-TG.650.1 added Appendix IV (from Amendment 1 published in 2012) to provide measurement procedures for coherent multipath interference (MPI). The interferometric technique for chromatic dispersion measurement has been deleted from clause 6.5 and moved to Appendix V. The description of measurement details for &lt;eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657 (08/2024)"/&gt; fibre on MFD, cut-off wavelength and spectral attenuation tests has been improved. The RTM and ATM of cable cut-off wavelength measurement has been modified. An example of the interpolation method has been added in clause I.3. Equation 6-1 has been corrected.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
+  </series>
+  <series type="secondary">
+    <title>Transmission media and optical systems characteristics</title>
+  </series>
+  <series type="tertiary">
+    <title>Optical fibre cables</title>
+  </series>
+  <keyword>Deterministic attributes</keyword>
+  <keyword>linear attributes</keyword>
+  <keyword>single-mode fibre characterization</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>G.650.1</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Software tools for speech and audio coding standardization</title>
+  <uri type="xml">documents/G.191/en.xml</uri>
+  <uri type="pdf">documents/G.191/en.pdf</uri>
+  <uri type="doc">documents/G.191/en.doc</uri>
+  <uri type="html">documents/G.191/en.html</uri>
+  <uri type="rxl">documents/G.191/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.191</docidentifier>
+  <docidentifier type="ITU-lang">ITU-T G.191-E</docidentifier>
+  <docnumber>G.191</docnumber>
+  <date type="published">
+    <on>2019-01-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;Recommendation ITU-T G.191 provides source code for speech and audio processing modules for narrowband, wideband and super-wideband telephony applications. The set includes codecs, filters and noise generators.&lt;/p&gt;
+
+&lt;p&gt;This edition introduces changes to &lt;xref target="annexA" style="short"/&gt;, which describes the ITU-T software tool library (STL) containing a high-quality, portable C code library for speech-processing applications. This release of the STL, also known as STL2019, incorporates new basic operators to accommodate state-of-the-art processor architectures that support wide accumulators, single instruction multiple data (SIMD) and very long instruction word (VLIW). Thus, the new operators provide support for 64-bit accumulator, complex numbers, enhanced 32-bit operations and additional control code operators.&lt;/p&gt;
+
+&lt;p&gt;The software package was reworked to make it available as a truly open-source project and is therefore hosted on an open-source collaboration platform. The build toolchain now uses CMake to generate platform-dependent and tool-dependent build scripts, as well as to execute regression tests for each module in the STL.&lt;/p&gt;
+
+&lt;p&gt;Recommendation ITU-T G.191 includes an electronic attachment containing STL2019 and manual.&lt;/p&gt;</abstract>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
+  </series>
+  <series type="secondary">
+    <title>International telephone connections and circuits</title>
+  </series>
+  <series type="tertiary">
+    <title>Software tools for transmission systems</title>
+  </series>
+  <keyword>DSP operators</keyword>
+  <keyword>G.711</keyword>
+  <keyword>G.722</keyword>
+  <keyword>G.726</keyword>
+  <keyword>G.728</keyword>
+  <keyword>MNRU</keyword>
+  <keyword>STL2019</keyword>
+  <keyword>filters</keyword>
+  <keyword>open source</keyword>
+  <keyword>reverb</keyword>
+  <keyword>sv56</keyword>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>T</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>G.191</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="main" format="text/plain" language="en">Telecommunication for rural and remote areas</title>
+  <uri type="xml">documents/D-REC-D.19-201003/en.xml</uri>
+  <uri type="pdf">documents/D-REC-D.19-201003/en.pdf</uri>
+  <uri type="doc">documents/D-REC-D.19-201003/en.doc</uri>
+  <uri type="html">documents/D-REC-D.19-201003/en.html</uri>
+  <uri type="rxl">documents/D-REC-D.19-201003/en.rxl</uri>
+  <docidentifier type="ITU" primary="true">ITU-D D.19</docidentifier>
+  <docidentifier type="ITU-lang">ITU-D D.19-E</docidentifier>
+  <docnumber>D.19</docnumber>
+  <date type="published">
+    <on>2019-01-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2025</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>recommendation</doctype>
+    <editorialgroup>
+      <bureau>D</bureau>
+    </editorialgroup>
+    <structuredidentifier>
+      <bureau>D</bureau>
+      <docnumber>D.19</docnumber>
     </structuredidentifier>
   </ext>
 </bibdata></relation>

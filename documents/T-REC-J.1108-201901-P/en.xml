@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.5.13" schema-version="v1.4.1">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.6.2" schema-version="v2.0.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Transmission specification for radio over IP transmission systems</title>
 
@@ -23,53 +23,53 @@
 </series><keyword>Radio over IP</keyword><keyword>RoIP</keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><editorialgroup><bureau>T</bureau></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>J.1108</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
-<clause id="_4db49d21-f1db-50e5-6c63-bbbc3efb293f" inline-header="false" obligation="normative">
-<p id="_f5378ab7-f79c-2e00-3d0c-0abe98f1ea8e">© ITU 2019</p>
+<clause id="_1b54c7a6-0bb7-1613-f8fa-400b0ebd7641" inline-header="false" obligation="normative">
+<p id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d">© ITU 2019</p>
 
-<p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </clause>
 </copyright-statement>
 
 <license-statement>
 
-<clause id="_4e168d71-002e-b69b-bbc5-c2db63824bd8" inline-header="false" obligation="normative">
+<clause id="_911011c5-3ac9-4f6f-405c-8c131b41e73d" inline-header="false" obligation="normative">
 <title>INTELLECTUAL PROPERTY RIGHTS</title>
-<p id="_f69eb2d8-e3f3-4319-2dce-41ae230d37ae">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
+<p id="_1bc27970-25ee-7492-ddb6-24f4a18210f0">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p id="_6b2a90e4-f1cf-365a-7a51-c9188a6cfedf">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
+<p id="_b4a64942-dd7c-4fca-5f4f-c2617402905e">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
 </clause>
 </license-statement>
 
 <legal-statement>
 
-<clause id="_b5ff7f95-f781-a42e-99b6-87a561430419" inline-header="false" obligation="normative">
+<clause id="_2b781dc0-471d-a33d-1ac6-572edaacc9e2" inline-header="false" obligation="normative">
 <title>FOREWORD</title>
-<p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
-<p id="_06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+<p id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
 
-<p id="_0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
 
-<p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 
-<clause id="_8520a161-8bbd-37df-d9aa-24c4f47aa144" inline-header="false" obligation="normative">
+<clause id="_41e5e0bc-a21e-256d-638e-5dc8395a0ac5" inline-header="false" obligation="normative">
 <title>NOTE</title>
-<p id="_56570421-b373-1413-9648-1e440630df94">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
+<p id="_b25685df-1663-3743-f3b7-38634a384a7e">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
 
-<p id="_80edab97-2dbf-d0cc-086a-539f4730432e">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
+<p id="_371c101c-c636-6cb0-7046-ec1c35c7c470">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
 </clause>
 </clause>
 </legal-statement>
-</boilerplate><preface><abstract id="_summary"><title>Summary</title><p id="_e84ca9af-d9a5-80df-4396-9e3bed85858e">As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.</p>
+</boilerplate><preface><abstract id="_summary"><title>Summary</title><p id="_365349b9-9e87-baff-f002-97acfe5b16d7">As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.</p>
 
-<p id="_33a25449-c1cc-d0e9-804f-df6fd1a5d0e5">Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.</p>
+<p id="_fd295b9b-bddb-d017-bb32-94902021385a">Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.</p>
 </abstract><clause id="_history" type="history" inline-header="false" obligation="informative">
 <title>History</title>
-<table id="_a2ce3d5e-f311-8ad1-1a8b-0b6b34de7c23" unnumbered="true"><tbody><tr><td valign="top" align="center">Edition</td>
+<table id="_7b96913d-f193-cbb0-a1db-398fb49245cf" unnumbered="true"><tbody><tr><td valign="top" align="center">Edition</td>
 <td valign="top" align="left">Recommendation</td>
 <td valign="top" align="center">Approval</td>
 <td valign="top" align="center">Study Group</td>
-<td valign="top" align="center">Unique ID<fn reference="a"><p id="_34c1eea8-a34d-7959-17ba-e2cd763a5d6d">To access the Recommendation, type the URL <link target="http://handle.itu.int/"/> in the address field of your web browser, followed by the Recommendation's unique ID. For example, <link target="http://handle.itu.int/11.1002/1000/11830-en"/>.</p>
+<td valign="top" align="center">Unique ID<fn reference="a"><p id="_bb66d8c0-83cc-a8c5-76c8-4e3d8a832072">To access the Recommendation, type the URL <link target="http://handle.itu.int/"/> in the address field of your web browser, followed by the Recommendation's unique ID. For example, <link target="http://handle.itu.int/11.1002/1000/11830-en"/>.</p>
 </fn></td>
 </tr><tr><td valign="top" align="center">1.0</td>
 <td valign="top" align="left">ITU-T J.1108</td>
@@ -83,15 +83,15 @@
 
 <clause id="_scope" type="scope" inline-header="false" obligation="normative">
 <title>Scope</title>
-<p id="_3b0c961f-d087-0d2c-954e-3979d2bffab2">Recommendation ITU-T J.1108 describes the transmission specification for a radio over IP (RoIP) transmission system in a hybrid fibre coaxial (HFC) based network. The architecture described in this Recommendation is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)"/>. The transmission specifications described in this Recommendation are defined as follows:</p>
+<p id="_8a503f91-8858-29a6-2763-776c4fe38799">Recommendation ITU-T J.1108 describes the transmission specification for a radio over IP (RoIP) transmission system in a hybrid fibre coaxial (HFC) based network. The architecture described in this Recommendation is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)"/>. The transmission specifications described in this Recommendation are defined as follows:</p>
 
-<ul id="_da3f751b-d200-e675-51ab-d66a255c75d0"><li><p id="_fc81c357-6b1a-8e4b-f001-76a62b61893d">Radio over IP terminal system.</p>
+<ul id="_5291a18b-95ba-7df4-985b-bbbdeaf7e7bf"><li><p id="_535df243-f930-80e9-fbb9-40a831eda50c">Radio over IP terminal system.</p>
 </li>
-<li><p id="_f4e7c2fa-8967-87b2-ccfe-7d423d3295ad">Radio over IP headend system.</p>
+<li><p id="_3b418e3e-4a50-0277-f028-50bddc1fffa6">Radio over IP headend system.</p>
 </li>
 </ul>
 
-<p id="_db7e93ab-a21a-dc3a-7c8e-7c247e38f136">The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Recommendation are defined in the timing processing specification.</p>
+<p id="_2515cf39-cd18-6028-f865-003a7d34cc67">The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Recommendation are defined in the timing processing specification.</p>
 </clause>
 
 
@@ -100,13 +100,13 @@
 <title>Definitions</title>
 <terms id="_terms_defined_elsewhere" type="external" obligation="normative">
 <title>Terms defined elsewhere</title>
-<p id="_c22f0d1a-c3c8-a905-b70c-e6cdb871fcf9">This Recommendation uses the following term defined elsewhere:</p>
+<p id="_ce9f7cec-6cc0-f253-4894-592f8c167765">This Recommendation uses the following term defined elsewhere:</p>
 
 <term id="term-local-clock"><preferred><expression>
 <name>local clock</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_9ebfc79b-d098-96b5-2247-93f3d8981398">The collection of hardware and software that comprises a local source of time for a system.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_f5aa13a6-e750-b3ac-c98d-3b9de1564f86">The collection of hardware and software that comprises a local source of time for a system.</p></verbal-definition></definition>
 
 
  <termsource status="identical" type="authoritative"><origin bibitemid="x743" type="inline" citeas="[b-ITU-T X.743]"/></termsource></term>
@@ -114,135 +114,135 @@
 
 <terms id="_terms_defined_in_this_recommendation" type="internal" obligation="normative">
 <title>Terms defined in this recommendation</title>
-<p id="_a24f3df1-4919-0874-82c3-f09c559776f7">None.</p>
+<p id="_bbea538f-ac54-cf64-4d64-ae0fe87669aa">None.</p>
 </terms>
 </clause>
 
 <definitions id="_abbreviations_and_acronyms" obligation="normative">
 <title>Abbreviations and acronyms</title>
-<p id="_6edbfb90-221f-451a-f24e-aa6e3d3ecfda">This Recommendation uses the following abbreviations and acronyms:</p>
+<p id="_9b554fa8-d000-11a8-1624-1c04abd8c71c">This Recommendation uses the following abbreviations and acronyms:</p>
 
-<dl id="_c0bf7826-d405-acc4-ac45-2e03553f7395"><dt id="symbol-CM">CM</dt>
-<dd><p id="_6c89ffd0-926b-1941-1557-f9fc6fa96fe0">Cable Modem</p>
+<dl id="_d504859e-76ed-6cea-6ecb-338d9ead8af1"><dt id="symbol-CM">CM</dt>
+<dd><p id="_0739b9be-726a-e559-3bf8-89b741656edf">Cable Modem</p>
 </dd>
 <dt id="symbol-CMTS">CMTS</dt>
-<dd><p id="_b067385a-ff67-62df-405f-bdfeaaef23d6">Cable Modem Termination System</p>
+<dd><p id="_1b4554ba-15c5-0d0a-f30f-673328a85e9f">Cable Modem Termination System</p>
 </dd>
 <dt id="symbol-DOCSIS">DOCSIS</dt>
-<dd><p id="_baa53dc7-23bf-245f-544c-8f5501094638">Data Over Cable Service Interface Specifications</p>
+<dd><p id="_ef4c4226-d1d5-0166-8ac7-53c87d5fa713">Data Over Cable Service Interface Specifications</p>
 </dd>
 <dt id="symbol-DS">DS</dt>
-<dd><p id="_72ee78e9-4151-8b4a-0785-a5146e33a4ce">Down Stream</p>
+<dd><p id="_3b8c8cfb-a86a-528e-bfda-a856a3dbeb8d">Down Stream</p>
 </dd>
 <dt id="symbol-E_O">E/O</dt>
-<dd><p id="_0177c4ff-506d-2974-b033-059cb121cab6">Electric to Optic</p>
+<dd><p id="_4c2b11b4-5bfd-aa43-d32f-36a858b6b5f5">Electric to Optic</p>
 </dd>
 <dt id="symbol-FTTH">FTTH</dt>
-<dd><p id="_5c292589-a572-b8bd-5694-4d98e6aa9202">Fibre To The Home</p>
+<dd><p id="_f258be62-b5d9-42bf-e655-b650a9ad0ce9">Fibre To The Home</p>
 </dd>
 <dt id="symbol-HFC">HFC</dt>
-<dd><p id="_5c85c487-a5ca-0e50-c02c-f55ed4819803">Hybrid Fibre Coaxial</p>
+<dd><p id="_35bdac7e-28b1-cd9b-d527-fb2f8a89f623">Hybrid Fibre Coaxial</p>
 </dd>
 <dt id="symbol-OLT">OLT</dt>
-<dd><p id="_5106f870-d920-2c10-a001-9dfb57a5849c">Optical Line Terminal</p>
+<dd><p id="_b8df0a4c-31ce-c317-a4ac-494556816128">Optical Line Terminal</p>
 </dd>
 <dt id="symbol-OMUX">OMUX</dt>
-<dd><p id="_44c551ec-171b-09c6-23d9-3c81231cd742">Optical Multiplexer</p>
+<dd><p id="_fd63969f-3dd7-987a-02ba-ac9df6ed059e">Optical Multiplexer</p>
 </dd>
 <dt id="symbol-PON">PON</dt>
-<dd><p id="_be2845e4-e5d1-faa1-6f78-32ed8f425acc">Passive Optical Network</p>
+<dd><p id="_1298a6de-a232-ec84-c838-abf088b2db36">Passive Optical Network</p>
 </dd>
 <dt id="symbol-RF">RF</dt>
-<dd><p id="_88bb6f48-363d-3ef3-e0b2-a0fd8cb20216">Radio Frequency</p>
+<dd><p id="_c9ad0864-0aa3-ee2b-54a4-f4186f44a229">Radio Frequency</p>
 </dd>
 <dt id="symbol-RoIP">RoIP</dt>
-<dd><p id="_b8684a1b-2e7e-bc1b-c868-17eae5bf78c6">Radio over IP</p>
+<dd><p id="_7d9fb9a1-023d-7503-1628-5c5da0587e01">Radio over IP</p>
 </dd>
 <dt id="symbol-SO">SO</dt>
-<dd><p id="_c22328f4-2c67-2481-edc0-95338975af82">Service Operator</p>
+<dd><p id="_c6c7b7b5-ae9a-5e89-10cf-804d46003743">Service Operator</p>
 </dd>
 <dt id="symbol-STB">STB</dt>
-<dd><p id="_8e4d028e-a6ff-c7e6-ccb2-89fecae36563">Set-Top Box</p>
+<dd><p id="_7900b97d-10ed-6e02-3708-96c0d5ef2c8a">Set-Top Box</p>
 </dd>
 <dt id="symbol-US">US</dt>
-<dd><p id="_79948f0b-b00f-0e83-89bb-1c5267039d17">Up Stream</p>
+<dd><p id="_b77a9bc2-24ef-73ea-7497-529b1fdbc141">Up Stream</p>
 </dd>
 </dl>
 </definitions>
 <clause id="_conventions" type="conventions" inline-header="false" obligation="normative">
 <title>Conventions</title>
-<p id="_d8da0f0a-9ea2-161b-e0cf-c4c4aeba8f65">In this Recommendation:</p>
+<p id="_c02e1b4a-cd15-7308-9f52-7e76cbcab1bc">In this Recommendation:</p>
 
-<p id="_59fd4d5b-d87c-e6bb-9399-68fddb4d47e6">The keywords "is required to" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.</p>
+<p id="_3a478673-4bb3-8962-c825-269ddc229934">The keywords "is required to" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.</p>
 
-<p id="_1a7d43ec-1df3-11cd-04c2-6c3e36b2008e">The keywords "is recommended" indicate a requirement which is recommended but which is not absolutely required. Thus this requirement need not be present to claim conformance.</p>
+<p id="_2c5586cb-9cc6-ed5b-9a69-6d209d7212da">The keywords "is recommended" indicate a requirement which is recommended but which is not absolutely required. Thus this requirement need not be present to claim conformance.</p>
 
-<p id="_9545adb7-0d0d-a866-3ba0-9a5eb9ecc215">The keywords "is prohibited from" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.</p>
+<p id="_e763ccdf-0059-1e50-750e-cf76c77cdea9">The keywords "is prohibited from" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.</p>
 
-<p id="_8b84ecf1-a9e3-afe5-72da-3dcae16b10d7">The keywords "can optionally" indicate an optional requirement which is permissible, without implying any sense of being recommended. This term is not intended to imply that the vendor's implementation must provide the option and the feature can be optionally enabled by the network operator/service provider. Rather, it means the vendor may optionally provide the feature and still claim conformance with the specification.</p>
+<p id="_556efd81-d7a0-f3a5-8b73-b078d2c1db83">The keywords "can optionally" indicate an optional requirement which is permissible, without implying any sense of being recommended. This term is not intended to imply that the vendor's implementation must provide the option and the feature can be optionally enabled by the network operator/service provider. Rather, it means the vendor may optionally provide the feature and still claim conformance with the specification.</p>
 
-<p id="_e056d1f1-b26e-c29d-e963-8860a272c587">In the body of this Recommendation and its annexes, the words <em>shall, shall not, should</em>, and <em>may</em> sometimes appear, in which case they are to be interpreted, respectively, as <em>is required to, is prohibited from, is recommended</em>, and <em>can optionally</em>. The appearance of such phrases or keywords in an appendix or in material explicitly marked as <em>informative</em> are to be interpreted as having no normative intent.</p>
+<p id="_dba9ac9b-ac46-28c0-c8dc-09f331af06ed">In the body of this Recommendation and its annexes, the words <em>shall, shall not, should</em>, and <em>may</em> sometimes appear, in which case they are to be interpreted, respectively, as <em>is required to, is prohibited from, is recommended</em>, and <em>can optionally</em>. The appearance of such phrases or keywords in an appendix or in material explicitly marked as <em>informative</em> are to be interpreted as having no normative intent.</p>
 </clause>
 
 <clause id="_overview" inline-header="false" obligation="normative">
 <title>Overview</title>
-<p id="_f9ac4cbf-1d3e-9d67-134b-4e6d0a8eea9b">The overview is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)"><localityStack><locality type="clause"><referenceFrom>6</referenceFrom></locality></localityStack></eref>.</p>
+<p id="_4acf9d51-edf8-b946-c6db-11539757acc0">The overview is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)"><localityStack><locality type="clause"><referenceFrom>6</referenceFrom></locality></localityStack></eref>.</p>
 </clause>
 
 <clause id="_functional_architecture" inline-header="false" obligation="normative">
 <title>Functional architecture</title>
-<p id="_25453ae0-f02c-daa9-3407-fb96c9f7c379">The functional architecture is defined according to <eref type="inline" bibitemid="j1107" citeas="ITU-T J.1107 (03/2018)"><localityStack><locality type="clause"><referenceFrom>7</referenceFrom></locality></localityStack></eref>.</p>
+<p id="_cf7cb7d6-2836-be91-c011-b60e5a8fa01f">The functional architecture is defined according to <eref type="inline" bibitemid="j1107" citeas="ITU-T J.1107 (03/2018)"><localityStack><locality type="clause"><referenceFrom>7</referenceFrom></locality></localityStack></eref>.</p>
 </clause>
 
 <clause id="_timing_processing_specification" inline-header="false" obligation="normative">
 <title>Timing processing specification</title>
-<p id="_9182d407-2d88-ba19-6bae-a7f8688ea2c8">It is important to synchronize upstream data based on the data over cable service interface specification (DOCSIS) with the existing cable network through the optical IP network (i.e., xPON networks). The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal.</p>
+<p id="_d4f5ab74-555e-3d43-9455-95856c21bcf2">It is important to synchronize upstream data based on the data over cable service interface specification (DOCSIS) with the existing cable network through the optical IP network (i.e., xPON networks). The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal.</p>
 
-<p id="_7a5f1502-0370-33b6-eca4-95c705c676ef">Since many cable modems (CMs) on the subscriber side share one physical medium, it is required to transmit data according to a synchronous time-division multiplexing method, that is, the CMs are required to transmit data during time slots allocated by the cable modem termination system (CMTS). In the uplink band, the collision avoidance time of the allocated band between the terminals is 1us or less and very strict timing synchronization is required. In order to operate the RoIP transmission system, accurate timing synchronization between the terminal and the headend is required. Specifically, it is necessary to establish synchronization between the IP network and a mixed heterogeneous network, not a single RF network.</p>
+<p id="_b3df03b0-a45e-917a-a334-c2f5ca1ea053">Since many cable modems (CMs) on the subscriber side share one physical medium, it is required to transmit data according to a synchronous time-division multiplexing method, that is, the CMs are required to transmit data during time slots allocated by the cable modem termination system (CMTS). In the uplink band, the collision avoidance time of the allocated band between the terminals is 1us or less and very strict timing synchronization is required. In order to operate the RoIP transmission system, accurate timing synchronization between the terminal and the headend is required. Specifically, it is necessary to establish synchronization between the IP network and a mixed heterogeneous network, not a single RF network.</p>
 
-<p id="_863ecb10-c520-8aaf-b281-51e1808d7504">Therefore, the following requirements are required to perform the function of timing processing.</p>
+<p id="_80989782-6394-c356-b04e-921437e081df">Therefore, the following requirements are required to perform the function of timing processing.</p>
 
-<dl id="_1d02c8c1-680a-a61e-cd4c-a4cdb6f0cca7"><dt><strong>TIME-REQ-01</strong></dt>
-<dd><p id="_9cde73f9-fa7f-09c2-860e-b5963c666b8f">The RoIP terminal for terminal access network synchronization is required to synchronize the local clock which is adjusted to the CMTS reference clock using the timestamp in the SYNC message coming from the CMTS.</p>
+<dl id="_8a64db7c-9810-b1f9-c7fb-765b0eb09328"><dt><strong>TIME-REQ-01</strong></dt>
+<dd><p id="_327414f1-360c-f5c9-3411-844dbc7ee13f">The RoIP terminal for terminal access network synchronization is required to synchronize the local clock which is adjusted to the CMTS reference clock using the timestamp in the SYNC message coming from the CMTS.</p>
 </dd>
 <dt><strong>TIME-REQ-02</strong></dt>
-<dd><p id="_17db8b49-9e05-ba17-df59-15aa152f7954">The RoIP terminal for terminal access network synchronization is required to acquire burst time information.</p>
+<dd><p id="_9419cf84-f7e4-258d-7a87-f9b0a3d04e22">The RoIP terminal for terminal access network synchronization is required to acquire burst time information.</p>
 </dd>
 <dt><strong>TIME-REQ-03</strong></dt>
-<dd><p id="_0f7c54c8-ee1b-dfab-b8d2-edaedbd0ba39">The RoIP terminal for terminal access network synchronization is required to estimate and compensate a transmission time.</p>
+<dd><p id="_e8017ed7-0b7e-f6fb-fb6e-76afd0b5c1dd">The RoIP terminal for terminal access network synchronization is required to estimate and compensate a transmission time.</p>
 </dd>
 <dt><strong>TIME-REQ-04</strong></dt>
-<dd><p id="_f7e5a516-8fa1-8432-8e87-89903e6c15d2">The RoIP terminal for detection and acquisition of transmission RF burst is required to store the acquisition time information.</p>
+<dd><p id="_b26f1fa8-8162-e7e5-586a-39734f0dea9b">The RoIP terminal for detection and acquisition of transmission RF burst is required to store the acquisition time information.</p>
 </dd>
 <dt><strong>TIME-REQ-05</strong></dt>
-<dd><p id="_9b4c7bcd-24e5-78cc-9176-7ea61cce600e">The RoIP terminal for IP network access is required to transmit the transmitted RF burst and the acquired time information.</p>
+<dd><p id="_611c91c0-b6f8-205c-0c1d-7fc914b7d153">The RoIP terminal for IP network access is required to transmit the transmitted RF burst and the acquired time information.</p>
 </dd>
 <dt><strong>TIME-REQ-06</strong></dt>
-<dd><p id="_ffb23f7f-2a6a-ecaa-49e9-a0b5cc25fe33">The RoIP headend for headend access network synchronization is required to synchronize the local clock which is adjusted to the CM reference clock using MAP information during DOCSIS ranging.</p>
+<dd><p id="_223bd99d-528a-c2ef-e504-090d8ce11e2c">The RoIP headend for headend access network synchronization is required to synchronize the local clock which is adjusted to the CM reference clock using MAP information during DOCSIS ranging.</p>
 </dd>
 <dt><strong>TIME-REQ-07</strong></dt>
-<dd><p id="_c85345e3-87b1-ebee-23be-e0d8cba706bc">The RoIP headend for headend access network synchronization is required to acquire the synchronized time information.</p>
+<dd><p id="_cef379fc-8d87-be8b-fab4-e827016392c8">The RoIP headend for headend access network synchronization is required to acquire the synchronized time information.</p>
 </dd>
 <dt><strong>TIME-REQ-08</strong></dt>
-<dd><p id="_62c1cd5d-637e-3f90-7a24-7a7b16234cab">The RoIP headend for RF signal scheduling of IP network interworking is required to acquire burst time information.</p>
+<dd><p id="_751893d6-ab60-ab86-09c1-b1a9ca673f2e">The RoIP headend for RF signal scheduling of IP network interworking is required to acquire burst time information.</p>
 </dd>
 <dt><strong>TIME-REQ-09</strong></dt>
-<dd><p id="_7dd9b4b5-d185-cd03-95c9-353286f7f3ce">The RoIP headend for RF signal scheduling of IP network interworking is required to schedule the received burst.</p>
+<dd><p id="_00de3c3e-ed55-01f9-42ba-cd5556ac75e3">The RoIP headend for RF signal scheduling of IP network interworking is required to schedule the received burst.</p>
 </dd>
 <dt><strong>TIME-REQ-10</strong></dt>
-<dd><p id="_7515522f-69fa-d92f-948e-82c62f54dc92">The RoIP headend for RF signal reconstruction is required to reconstruct RF compressed signal.</p>
+<dd><p id="_17d9b46f-431f-bb83-31ab-a55f4375c07d">The RoIP headend for RF signal reconstruction is required to reconstruct RF compressed signal.</p>
 </dd>
 <dt><strong>TIME-REQ-11</strong></dt>
-<dd><p id="_60c5c684-118e-7963-9c69-a6f2ecdfb970">The RoIP headend for RF signal reconstruction is required to transform Digital to Analogue and frequency band.</p>
+<dd><p id="_0370dcc2-1ace-236d-6cff-46394dfe6c9a">The RoIP headend for RF signal reconstruction is required to transform Digital to Analogue and frequency band.</p>
 </dd>
 </dl>
 </clause>
 
 
 </sections><bibliography><references id="_references" normative="true" obligation="informative">
-<title>References</title><p id="_c3377b30-bbc8-69c0-d72c-df07d68a9ed2">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
+<title>References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
 <bibitem id="j1106" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
 
@@ -352,7 +352,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
 
@@ -470,7 +470,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="j1107" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
 
@@ -580,7 +580,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
 
@@ -698,7 +698,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="j210" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
 
@@ -808,7 +808,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
 
@@ -926,7 +926,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="j222-1" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
 
@@ -1036,7 +1036,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
 
@@ -1154,7 +1154,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="j222-2" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
 
@@ -1263,7 +1263,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
 
@@ -1387,7 +1387,7 @@
 
 </references><references id="_bibliography" normative="false" obligation="informative">
 <title>Bibliography</title><bibitem id="x743" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
 
@@ -1428,7 +1428,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
 
@@ -1502,4 +1502,4 @@
 
 
 </references></bibliography>
-</itu-standard>
+</metanorma>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itu-standard xmlns="https://www.metanorma.org/ns/itu" type="semantic" version="2.5.13" schema-version="v1.4.1">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.6.2" schema-version="v2.0.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="main">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
 
@@ -35,34 +35,34 @@
 <period><start>2024</start><end>2026</end></period></group></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>G.8001/Y.1354 Implementers' Guide</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><presentation-metadata><name>document-scheme</name><value>current</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
-<clause id="_b910446f-4bf2-29f9-08fa-a7c008644fe7" inline-header="false" obligation="normative">
-<p id="_6755ae81-fadf-b3b0-aef0-c5390e52917c">© ITU 2020</p>
+<clause id="_c8b392bb-77c8-41ac-ac62-a95cb8bfe7b3" inline-header="false" obligation="normative">
+<p id="_0df9c85a-14aa-76fe-4436-ee1f81a923e2">© ITU 2020</p>
 
-<p id="_d0cc06a4-da8a-928d-1a6f-a56d62dc6a76">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </clause>
 </copyright-statement>
 
 <legal-statement>
 
-<clause id="_042e4e49-45b6-898c-6c97-17ed5ec802b5" inline-header="false" obligation="normative">
+<clause id="_003f845c-f32a-7960-3b0f-9c85330adade" inline-header="false" obligation="normative">
 <title>FOREWORD</title>
-<p id="_e39b916a-1911-02cf-fce1-6e2bbef3a82b">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
 
-<p id="_06f59af6-f0ab-5af2-fd46-4e11f29b088c">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+<p id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
 
-<p id="_0f1c6d74-13b6-c31a-fd1e-9499f627b4ef">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
 
-<p id="_0af791e0-9f42-316a-0bcf-cc393f69fe2b">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
 </clause>
 </legal-statement>
-</boilerplate><preface><abstract id="_summary"><title>Summary</title><p id="_0d3f1ce3-3ec0-ae4e-3d26-cab4411c6c1a">This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).</p>
+</boilerplate><preface><abstract id="_summary"><title>Summary</title><p id="_de3c9d5f-c191-ce57-a4aa-100e246f7339">This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).</p>
 
-<p id="_0c1eaace-1d1b-6a53-ace9-fb86fcf5df0b">This version contains all updates submitted up to and including those at Study Group 15 meeting in January/February 2020.</p>
+<p id="_14b01233-ec2e-40ea-7040-48b9196462c7">This version contains all updates submitted up to and including those at Study Group 15 meeting in January/February 2020.</p>
 
-<p id="_82ee4de9-cc11-aa12-cddd-9fb1b726f592">This document was approved by ITU-T Study Group 15 on 7 February 2020</p>
+<p id="_24c26724-09b5-7db0-6609-9c972dcfb587">This document was approved by ITU-T Study Group 15 on 7 February 2020</p>
 </abstract><clause id="_change_log" inline-header="false" obligation="informative">
 <title>Change log</title>
-<table id="_a052e737-82d7-8bde-ae0d-7c1a9a4a3b46" unnumbered="true"><tbody><tr><td valign="top" align="left">19 October 2018</td>
+<table id="_d3ce1554-d46e-2c42-2397-562115bc0538" unnumbered="true"><tbody><tr><td valign="top" align="left">19 October 2018</td>
 <td valign="top" align="left">First version.</td>
 </tr><tr><td valign="top" align="left">07 February 2020</td>
 <td valign="top" align="left">Second version</td>
@@ -73,30 +73,30 @@
 
 <clause id="_scope" type="scope" inline-header="false" obligation="normative">
 <title>Scope</title>
-<p id="_711762cd-2f98-16a3-b781-eab8204e5214">This guide provides a list of the definitions that were deleted from Recommendation ITU-T G.8001/Y.1354 when moved to their source Recommendations.</p>
+<p id="_17b3cd5e-8993-6eca-8394-e6ccb4b7cad3">This guide provides a list of the definitions that were deleted from Recommendation ITU-T G.8001/Y.1354 when moved to their source Recommendations.</p>
 </clause>
 
 <clause id="_introduction" inline-header="false" obligation="normative">
 <title>Introduction</title>
-<p id="_1ce9446a-5f6d-5602-fdf1-4a93a006d2cb">This implementers' guide is a compilation of reported defects for all versions of Recommendation ITU-T G.8001. In this edition of the guide, reported defects identified as of 2018-10 are given for:</p>
+<p id="_c05bd50d-43e4-f392-fe26-0bae2f339c5a">This implementers' guide is a compilation of reported defects for all versions of Recommendation ITU-T G.8001. In this edition of the guide, reported defects identified as of 2018-10 are given for:</p>
 
-<p id="_6a1c1a28-254c-abef-67b5-27fbc9c0f3e5">Recommendation ITU-T G.8001/Y.1354 (2016-04)</p>
+<p id="_287f1bfc-2efa-b44a-64f7-c56a993b7f3e">Recommendation ITU-T G.8001/Y.1354 (2016-04)</p>
 
-<p id="_a4c5a540-a97a-3c95-5952-329e595872b7">The guide must be read in conjunction with Recommendation ITU-T G.8001/Y.1354 (2016-04) to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
+<p id="_7634d719-0f69-9afc-b43c-320536053017">The guide must be read in conjunction with Recommendation ITU-T G.8001/Y.1354 (2016-04) to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
 </clause>
 
 <clause id="_defect_resolution_procedure" inline-header="false" obligation="normative">
 <title>Defect resolution procedure</title>
-<p id="_b68f0404-3b9e-55d0-3f84-cef28fe99490">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
+<p id="_b5b0353e-0429-a65c-f094-8420f231eb54">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
 </clause>
 
 
 
 <clause id="_nomenclature" inline-header="false" obligation="normative">
 <title>Nomenclature</title>
-<p id="_1a62a3fe-7fd9-44d4-f902-d3c212698018">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
+<p id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
 
-<table id="_d359b8d7-601d-4154-4b2d-7e7794d68697" unnumbered="true"><tbody><tr><th valign="top" align="center">Symbol</th>
+<table id="_0ae75d4e-57ab-689e-6be2-8b22c20a9e73" unnumbered="true"><tbody><tr><th valign="top" align="center">Symbol</th>
 <th valign="top" align="center">Description</th>
 </tr><tr><td valign="top" align="center"><strong><em>[Begin Correction]</em></strong></td>
 <td valign="top" align="left">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
@@ -114,174 +114,174 @@
 <title>Technical and editorial corrections to Recommendation ITU-T G.8001</title>
 <terms id="_section_3_2" obligation="normative">
 <title>Section 3.2</title>
-<p id="_5d37ed90-6bf8-a58b-b3f9-79e6484c845c">This Recommendation defines the following terms:</p>
+<p id="_4711f71e-b652-4a54-b4e3-eb486402a1dd">This Recommendation defines the following terms:</p>
 
 <term id="term-backbone-Ethernet-connection"><preferred><expression>
 <name>backbone Ethernet connection</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_629a4b5d-e1d3-5c14-998e-6a1bd14f42dd">An Ethernet connection of which the traffic units are encapsulated with a backbone VLAN tag (B-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone VLAN tag; the information transported in the backbone VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone VLAN tag and the demapping of these parameters from the backbone VLAN tag.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_a266c7bb-0699-dc38-d8bf-42c28541ca4f">An Ethernet connection of which the traffic units are encapsulated with a backbone VLAN tag (B-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone VLAN tag; the information transported in the backbone VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone VLAN tag and the demapping of these parameters from the backbone VLAN tag.</p></verbal-definition></definition>
 
 
- <termnote id="_c70802ad-e4ae-6a14-22ee-d92b7e934288"><p id="_b55e2098-9b9f-a5d5-babb-7c4778794923">Backbone Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
+ <termnote id="_1739ac9f-12a1-19dc-6022-306d88755a5f"><p id="_355a3590-18fb-48c4-750b-0c2e3ae32527">Backbone Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
 </termnote></term>
 
 <term id="term-backbone-service-Ethernet-connection"><preferred><expression>
 <name>backbone service Ethernet connection</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_04d5e2ca-4376-d18a-0f72-98c5b27f29f2">An Ethernet connection of which the traffic units are encapsulated with the first 48 bits of a backbone service instance tag (I-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone service instance tag; the information transported in the backbone service instance tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone service instance tag and the demapping of these parameters from the backbone service instance tag.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_dea904ce-3936-9a00-3510-b1d10c41ff42">An Ethernet connection of which the traffic units are encapsulated with the first 48 bits of a backbone service instance tag (I-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a backbone service instance tag; the information transported in the backbone service instance tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the backbone service instance tag and the demapping of these parameters from the backbone service instance tag.</p></verbal-definition></definition>
 
 
- <termnote id="_5b556020-8480-0700-6308-808c73198461"><p id="_e58c0df5-a092-eb47-a119-beb4334a3489">Backbone service Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
+ <termnote id="_6039f057-fa4e-4b40-f334-95df7aa47271"><p id="_635c18c4-1430-e52d-a6d5-6b625f37cc36">Backbone service Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
 </termnote></term>
 
 <term id="term-customer"><preferred><expression>
 <name><strike>customer</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_8488d2f7-77f3-de0c-04b9-18217d0a7ba6">    <strike>The entity that has ownership authority over a set of flow points. The customer may have one or more service instances.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_115b5d3c-abab-1aa3-b03d-84880340cfbb">    <strike>The entity that has ownership authority over a set of flow points. The customer may have one or more service instances.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_90263012-3951-2681-fbe3-c455516e8567"><p id="_9c343aa2-349d-58a6-eac2-2c31ed111bbe"><strike>Customer is referred to in <eref type="inline" bibitemid="g8011" citeas="ITU-T G.8011"/>.</strike></p>
+ <termnote id="_162c394c-ada8-ca94-43e8-76bb091997d3"><p id="_fe161a29-ffa3-1efc-2302-d117c3b72b7e"><strike>Customer is referred to in <eref type="inline" bibitemid="g8011" citeas="ITU-T G.8011"/>.</strike></p>
 </termnote></term>
 
 <term id="term-customer-Ethernet-connection"><preferred><expression>
 <name>customer Ethernet connection</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_cf62e2e2-14f2-2fda-c824-0058b8b2d519">An Ethernet connection (EC) of which the traffic units are encapsulated with a customer VLAN tag (C-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a customer VLAN tag; the information transported in the customer VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the customer VLAN tag and the demapping of these parameters from the customer VLAN tag.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_d4af9d18-ff1f-e534-15cf-48056f25495f">An Ethernet connection (EC) of which the traffic units are encapsulated with a customer VLAN tag (C-Tag) when they are transported through an Ethernet link. Outside an Ethernet link, the traffic units are without a customer VLAN tag; the information transported in the customer VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the customer VLAN tag and the demapping of these parameters from the customer VLAN tag.</p></verbal-definition></definition>
 
 
- <termnote id="_e1e82776-fb37-103b-a626-c19a4228cb4d"><p id="_06bb7674-f99d-8cb1-388c-add6389350f2">Customer Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
+ <termnote id="_3973d47c-4537-25d3-083d-2a25de83b4d9"><p id="_ebe9bde1-a89a-29c3-2f2d-b524787ef22b">Customer Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
 </termnote></term>
 
 <term id="term-dual-ended"><preferred><expression>
 <name><strike>dual-ended</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_4d9af968-6185-21ab-74dd-664f7a31a604">    <strike>A type of protocol messaging whereby an initiating MEP sends a request PDU to a receiving peer MEP, which does not send any response. In performance monitoring, the receiving MEP performs measurement calculations.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_a897d8c5-2783-b92d-4644-f74209d6547f">    <strike>A type of protocol messaging whereby an initiating MEP sends a request PDU to a receiving peer MEP, which does not send any response. In performance monitoring, the receiving MEP performs measurement calculations.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_8850ce58-8d53-9d2c-74c8-668eb508bef9"><p id="_942a6f50-c0ce-7a86-878e-9df82d0c47f6"><strike>Dual-ended is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_9116be9b-525f-7f91-7201-f43a5b7be550"><p id="_7c0a3c2e-2637-3b68-0c68-c8adea07a45e"><strike>Dual-ended is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-EoT-NNI"><preferred><expression>
 <name>EoT-NNI</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_e2887f89-0db9-ec55-4bf0-d6f3c3d3d2c6">An NNI for the transfer of ETH_CI traffic units over a transport layer network.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_c5f75131-beb4-c6a6-bb94-1b603d4c2bc8">An NNI for the transfer of ETH_CI traffic units over a transport layer network.</p></verbal-definition></definition>
 
 
- <termnote id="_adb78eb4-d802-1ba0-74f8-b1e9fba7bda1"><p id="_656278e4-ddca-8e41-f451-1239f7379e81">EoT-NNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_cc9cd204-1ca6-1407-5e16-38a1d0b5e8a1"><p id="_b97e2315-e921-6b95-a6f0-cdc246225929">EoT-NNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-ERP-instance"><preferred><expression>
 <name><strike>ERP instance</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_65db09be-a635-dfff-0e44-49b0df7c9f11">    <strike>An entity that is responsible for the protection of a subset of the VLANs that transport traffic over the physical Ethernet ring. Each ERP instance is independent of other ERP instances that may be configured on the physical Ethernet ring.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_d1380d27-6053-b250-9f0f-a0ed6a13fa91">    <strike>An entity that is responsible for the protection of a subset of the VLANs that transport traffic over the physical Ethernet ring. Each ERP instance is independent of other ERP instances that may be configured on the physical Ethernet ring.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_8c24c41e-a3bc-e30e-38ec-ca33e7b60976"><p id="_4a9258d5-caa8-0836-90b8-65b5b0caedfc"><strike>ERP instance is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_a96006ea-e38a-fbad-d8e9-3670838584ae"><p id="_c407538b-12a8-b157-5e91-00c0d1223926"><strike>ERP instance is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-Ethernet-management-communication-channel-_ET.MCC_"><preferred><expression>
 <name>Ethernet management communication channel (ET.MCC)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_0dbb1714-f022-0912-5510-137a34eda544">A function providing a management communication channel between a pair of maintenance entity group (MEG) end points (MEP). The MCC can be used to perform remote management. The specific use of MCC is outside the scope of this Recommendation. An MEP can send a frame with ETH-MCC information to its peer MEP with a remote maintenance request, remote maintenance reply, notification, etc. Configuration information needs to be provisioned to the MEP to support MCC functions. See <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/> for detailed information and the protocol data unit (PDU) structure of the MCC.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_6cd375c2-7e7a-3a4e-3c31-a45d1d7956b5">A function providing a management communication channel between a pair of maintenance entity group (MEG) end points (MEP). The MCC can be used to perform remote management. The specific use of MCC is outside the scope of this Recommendation. An MEP can send a frame with ETH-MCC information to its peer MEP with a remote maintenance request, remote maintenance reply, notification, etc. Configuration information needs to be provisioned to the MEP to support MCC functions. See <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/> for detailed information and the protocol data unit (PDU) structure of the MCC.</p></verbal-definition></definition>
 
 
- <termnote id="_234ae4bd-8462-9343-783f-92000c8c4506"><p id="_f346532f-2a06-6ed3-f551-3ba004f6107d">ET.MCC is defined in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/> as EoT MCC.</p>
+ <termnote id="_06264c27-fe00-0e96-cdfe-e33cb65735a4"><p id="_c50520df-bdb2-0d83-6c58-d7cfa0c5fb99">ET.MCC is defined in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/> as EoT MCC.</p>
 </termnote></term>
 
 <term id="term-ETH_CI-group"><preferred><expression>
 <name>ETH_CI group</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_54c814e5-2c47-2499-6ecf-832b914387bb">A group of ETH_CI signals that is monitored as a single MEG. For this purpose, ETH OAM is added to one of the ETH_CI signals in the group.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_9a255e5b-655a-40cd-fff2-018469874572">A group of ETH_CI signals that is monitored as a single MEG. For this purpose, ETH OAM is added to one of the ETH_CI signals in the group.</p></verbal-definition></definition>
 
 
- <termnote id="_779cb008-055c-dc27-6acb-262b9bc09677"><p id="_4189aebd-bbc5-e370-cc73-9162abc10b96">ETH_CI group is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_b9ddf41b-7415-eb8c-5be2-9eb252b261bf"><p id="_61379bb5-5a4f-053a-5ec1-514b7f1fcbc8">ETH_CI group is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-ETH_CI-traffic-unit"><preferred><expression>
 <name>ETH_CI traffic unit</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_b2da8577-ee34-fbdc-c690-cd64dcc1839f">The following set of signals defined in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>: ETH_CI Data (D), ETH_CI priority (P), ETH_CI drop eligibility (DE), ETH_CI server signal fail (SSF) and optionally ETH_CI automatic protection switching (APS). The ETH_CI_D signal carries the traffic unit that consists of the following fields: destination address (DA), source address (SA) and MAC service data unit (M_SDU).</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_653df170-0449-807c-500c-5a5e86823cd1">The following set of signals defined in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>: ETH_CI Data (D), ETH_CI priority (P), ETH_CI drop eligibility (DE), ETH_CI server signal fail (SSF) and optionally ETH_CI automatic protection switching (APS). The ETH_CI_D signal carries the traffic unit that consists of the following fields: destination address (DA), source address (SA) and MAC service data unit (M_SDU).</p></verbal-definition></definition>
 
 
- <termnote id="_208e26f6-0b06-badb-bb52-ab6004773112"><p id="_24362fae-8189-9171-0a42-09bb19b36879">ETH_CI traffic unit is defined in clause 6.3.1 of <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/> and referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_133de886-99c9-072d-3b70-0db7ff3c3f29"><p id="_4bbe1dd1-83db-ae92-791c-12d8fd20fcca">ETH_CI traffic unit is defined in clause 6.3.1 of <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/> and referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-Ethernet-flow-replication-point-_ETHF_PP_"><preferred><expression>
 <name>Ethernet flow replication point (ETHF_PP)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_41a50427-2bff-dab0-d08c-aa68d3636f16">Connection point between &lt;Srv&gt;/ETH adaptation source and sink. ETH_CI from source Ethernet flow point (ETH_FP) is replicated and delivered across ETHF_PP to sink Ethernet termination flow point (ETH_TFP).</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_6205cb47-f7f7-49bb-6eda-a4017b12fe84">Connection point between &lt;Srv&gt;/ETH adaptation source and sink. ETH_CI from source Ethernet flow point (ETH_FP) is replicated and delivered across ETHF_PP to sink Ethernet termination flow point (ETH_TFP).</p></verbal-definition></definition>
 
 
- <termnote id="_440ca823-1fff-d901-e0d7-02211c14dd91"><p id="_944d6c19-a72a-f279-cfdd-7aaf7d8eecf2">ETHF_PP is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
+ <termnote id="_887a9425-f764-75d9-1583-66760cd14913"><p id="_e8fe9115-5dce-e0b1-2318-3b65b80b29a4">ETHF_PP is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
 </termnote></term>
 
 <term id="term-Ethernet-replicated-information-_ETH_PI_"><preferred><expression>
 <name>Ethernet replicated information (ETH_PI)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_e65c92fe-efb0-cd84-8ebd-3888fce3a291">Replicated ETH_CI delivered across ETHTF_PP or ETHF_PP.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_4ea61026-73d6-401d-b2ad-0c4abc545ba3">Replicated ETH_CI delivered across ETHTF_PP or ETHF_PP.</p></verbal-definition></definition>
 
 
- <termnote id="_f5150678-4864-d66e-d7bb-e505ea12e238"><p id="_26bfecd3-96ca-aa4a-4cb1-6c885894d4fd">ETH_PI is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
+ <termnote id="_fe438887-d30b-d307-d161-bd84892397b1"><p id="_29a6bddb-af51-2ae5-837f-8609ed36a6be">ETH_PI is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
 </termnote></term>
 
 <term id="term-Ethernet-ring"><preferred><expression>
 <name><strike>Ethernet ring</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_b881a15b-eb90-915b-11f7-aedc599f267d">    <strike>A collection of Ethernet ring nodes forming a closed physical loop whereby each Ethernet ring node is connected to two adjacent Ethernet ring nodes via a duplex communications facility.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_21ee8ef0-968e-ec02-5784-fce543604827">    <strike>A collection of Ethernet ring nodes forming a closed physical loop whereby each Ethernet ring node is connected to two adjacent Ethernet ring nodes via a duplex communications facility.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_f67c8a92-575a-5092-1051-6fabb9e54b79"><p id="_62014cd3-80b0-962f-e874-19df874521f0"><strike>Ethernet ring is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_b19e066f-0447-2cad-0097-835efed8afbb"><p id="_481fa78e-6455-12a8-e150-c295697856c7"><strike>Ethernet ring is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-Ethernet-ring-node"><preferred><expression>
 <name><strike>Ethernet ring node</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_737691dc-3529-97b5-acb8-38bb7fa27db8">    <strike>A network element that implements at least the following functionality.</strike></p><ol id="_f2b8908c-1ed1-6e98-92e5-c2dbdbd14ddb"><li><p id="_d578c552-c70a-87d9-0ac3-3d99aa546312"><strike>One Ethernet connection function (ETH_C) with a dedicated Ethernet flow forwarding function (ETH_FF) for forwarding ring automatic protection switching (R-APS) control traffic.</strike></p>
+<definition><verbal-definition><p id="_481735aa-27b5-678c-8d2d-fb83e59ed22d">    <strike>A network element that implements at least the following functionality.</strike></p><ol id="_0c32f30a-c728-7395-dbf5-3b1a1bbde670"><li><p id="_17f87a27-968d-407c-bc25-b84dc9880871"><strike>One Ethernet connection function (ETH_C) with a dedicated Ethernet flow forwarding function (ETH_FF) for forwarding ring automatic protection switching (R-APS) control traffic.</strike></p>
 </li>
-<li><p id="_532b718d-2452-4b97-e034-d8f57111cf8c"><strike>Two ring ports, including ETHDi/ETH adaptation function at the ring maintenance entity group level (MEL).</strike></p>
+<li><p id="_94db2ed4-0a16-3d9f-b07c-841c0990fb89"><strike>Two ring ports, including ETHDi/ETH adaptation function at the ring maintenance entity group level (MEL).</strike></p>
 </li>
-<li><p id="_89ae2b26-c266-4c0e-c5b9-b5ce814e331b"><strike>Ethernet ring protection (ERP) control process controlling the blocking and unblocking of traffic over the ring ports.</strike></p>
+<li><p id="_81d22d6d-7f2c-8070-94c7-efdd6123f244"><strike>Ethernet ring protection (ERP) control process controlling the blocking and unblocking of traffic over the ring ports.</strike></p>
 </li>
 </ol></verbal-definition></definition>
 
 
 
 
- <termnote id="_00074f95-3159-aa86-0182-00c81bc9b875"><p id="_aa8d8058-dd24-d25e-90b0-db71bebc9fec"><strike>Ethernet ring node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_46327319-1631-b7d3-6ad4-e324b167c34b"><p id="_d0206cd5-0d49-baa2-e2dd-0a759c8275a0"><strike>Ethernet ring node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-Ethernet-service"><preferred><expression>
 <name><strike>Ethernet service</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_070520b8-47be-99f4-8c3a-b135e14fa459">    <strike>An Ethernet service supports an Ethernet flow (as specified in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>). It is determined by the topology of the Ethernet network and a corresponding set of attributes associated with the Ethernet connection (EC), the UNI ports and NNI ports.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_9644bdac-2c7b-d1d1-d54c-7e7e0c76c6a0">    <strike>An Ethernet service supports an Ethernet flow (as specified in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>). It is determined by the topology of the Ethernet network and a corresponding set of attributes associated with the Ethernet connection (EC), the UNI ports and NNI ports.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_dd8b9e3e-ca4f-6f0e-c9c2-38c778efa8de"><p id="_bd611a33-8070-28d8-e91b-b702acd09f9b"><strike>Ethernet service is referred to in <eref type="inline" bibitemid="g8011" citeas="ITU-T G.8011"/>.</strike></p>
+ <termnote id="_850a1562-80f3-b594-c159-d8b1d070200f"><p id="_6f79d37c-a570-c01a-d887-919d864b7251"><strike>Ethernet service is referred to in <eref type="inline" bibitemid="g8011" citeas="ITU-T G.8011"/>.</strike></p>
 </termnote></term>
 
 <term id="term-Ethernet-termination-flow-replication-point-_ETHTF_PP_"><preferred><expression>
 <name>Ethernet termination flow replication point (ETHTF_PP)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_88572c23-987b-c58c-f1c1-d4e1667f72c9">Connection point between &lt;Srv&gt;/ETH adaptation source and sink. ETH_CI from source Ethernet termination flow point (ETH_TFP) is replicated and delivered across ETHTF_PP to sink filter process.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_c694d83b-ff4d-bc58-5af2-a8c786d9ba75">Connection point between &lt;Srv&gt;/ETH adaptation source and sink. ETH_CI from source Ethernet termination flow point (ETH_TFP) is replicated and delivered across ETHTF_PP to sink filter process.</p></verbal-definition></definition>
 
 
- <termnote id="_25384de8-531a-14dd-0ca8-a2c38ef6f4ea"><p id="_b41c7d06-49fe-fbcc-08e7-b9156f2133db">ETHTF_PP is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
+ <termnote id="_69efc87c-5012-0770-f7c5-af32b1a4e149"><p id="_1ba9d65d-5f74-bcfb-ed1a-eec7a22c4e12">ETHTF_PP is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
 </termnote></term>
 
 <term id="term-Ethernet-virtual-connection-_EVC_"><preferred><expression>
@@ -289,87 +289,87 @@
 </expression>
 </preferred>
 
- <termnote id="_8608e293-4a64-12cb-ded3-ebc3df58c8e4"><p id="_f78bbd9a-897b-3e4f-3afc-5001b7327256"><strike>EVC is defined in <eref type="inline" bibitemid="mef10-3" citeas="MEF 10.3"/>.</strike></p>
+ <termnote id="_936dcfca-7fe1-a3a8-2852-aa0502e87f7c"><p id="_e151967a-6943-233f-de88-5ad749abbfde"><strike>EVC is defined in <eref type="inline" bibitemid="mef10-3" citeas="MEF 10.3"/>.</strike></p>
 </termnote></term>
 
 <term id="term-ETH-path"><preferred><expression>
 <name>ETH path</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_b81abe87-28b3-6c29-c25b-72cafe6b85ff">The highest ETH MEG level in a set of eight MEG levels.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_3fc7db09-1887-23e5-0b25-c9ba0856511b">The highest ETH MEG level in a set of eight MEG levels.</p></verbal-definition></definition>
 
 
- <termnote id="_6e90e9e9-d87a-d0b3-e572-e2a00c714b24"><p id="_53d5fde1-dfb1-933e-352d-b38c71745005">ETH path is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_e70d1678-9d94-33e4-5b63-53a935ca055c"><p id="_6e282fae-f6e7-9cdf-823e-463b0224ea31">ETH path is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-ETH-section"><preferred><expression>
 <name>ETH section</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_c2224a5d-9962-d948-3356-d0acea9fa157">The lowest ETH MEG level in a set of eight MEG levels.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_a009e955-2f89-b9cf-1376-e089e5252007">The lowest ETH MEG level in a set of eight MEG levels.</p></verbal-definition></definition>
 
 
- <termnote id="_b68b08a3-d83d-d1d0-7be2-ff9ad853ac6f"><p id="_61452673-7d80-c878-f551-92a42e2905f3">ETH section is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_e1497c00-06a3-ef40-64d1-cdab0711132b"><p id="_1d0c8f8f-6d65-7e04-fbed-b09df118f585">ETH section is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-ETH-tandem-connection"><preferred><expression>
 <name>ETH tandem connection</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_c2a966e3-d348-f3cf-cb3b-6f49ccfd211d">An intermediate ETH MEG level in a set of eight MEG levels.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_ec5d3d79-3feb-0d98-bfd2-215221b1b301">An intermediate ETH MEG level in a set of eight MEG levels.</p></verbal-definition></definition>
 
 
- <termnote id="_44a158e1-38a6-b25a-bafb-96e10f0b6fc3"><p id="_41cb48fb-98cf-1624-9a01-8cd3a4333f73">ETH tandem connection is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_334dff8b-dca6-34a1-54c0-1a73cdfdc655"><p id="_d26fef18-a446-9699-fc43-99fe980922ba">ETH tandem connection is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-ET-management-network-_ET.MN_"><preferred><expression>
 <name>ET management network (ET.MN)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_08d1bb19-7744-26f5-b0c4-768341a4861b">A subset of a TMN that is responsible for managing those parts of a network element that contain ET layer network entities. An ET.MN may be subdivided into a set of ET management subnetworks.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_35899a09-fdf9-0e81-b3bc-2dfdc6987bc0">A subset of a TMN that is responsible for managing those parts of a network element that contain ET layer network entities. An ET.MN may be subdivided into a set of ET management subnetworks.</p></verbal-definition></definition>
 
 
- <termnote id="_be32b66f-093c-c954-c9b5-5d3b21d49ff8"><p id="_25924754-9863-e0e9-f028-a45ac100bc87">ET.MN is referred to in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/>.</p>
+ <termnote id="_dc9f12eb-e974-323e-b229-e36f6490e8ac"><p id="_076c39e4-aa6c-bf87-8672-7af7f675de41">ET.MN is referred to in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/>.</p>
 </termnote></term>
 
 <term id="term-ET-management-subnetwork-_ET.MSN_"><preferred><expression>
 <name>ET management subnetwork (ET.MSN)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_77ab2807-2ae4-f73b-a1f7-e22e667d74ea">Subnetwork consisting of a set of separate embedded communication channels (ECCs) and associated intra-site data communication links which are interconnected to form a data communication network (DCN) within any given ET topology. For ET, the physical channel supporting the ECC is the Ethernet management communication channel (MCC) as defined in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>. An ET.MSN represents an ET specific local communications network (LCN) portion of a network operator's overall data communication network or TMN.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_b2051ac3-1a22-d43f-0613-7a2f17563eed">Subnetwork consisting of a set of separate embedded communication channels (ECCs) and associated intra-site data communication links which are interconnected to form a data communication network (DCN) within any given ET topology. For ET, the physical channel supporting the ECC is the Ethernet management communication channel (MCC) as defined in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>. An ET.MSN represents an ET specific local communications network (LCN) portion of a network operator's overall data communication network or TMN.</p></verbal-definition></definition>
 
 
- <termnote id="_1a1cf1e1-74de-807c-6972-f26fdfbc7dfb"><p id="_0a65f5f1-eaed-c6cd-5284-29312283fe6a">ET.MSN is referred to in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/>.</p>
+ <termnote id="_3367eb52-ac3e-3de3-b067-5619b1a9aa3c"><p id="_1dbc5f11-a616-a68a-99ad-8b315d961102">ET.MSN is referred to in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/>.</p>
 </termnote></term>
 
 <term id="term-ET-network-element-_ET.NE_"><preferred><expression>
 <name>ET network element (ET.NE)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_76246973-b9c3-c4fa-1d83-ca3e63f68972">Element containing entities from one or more ET layer networks. An ET.NE may therefore be a stand-alone physical entity or a subset of a network element. It supports at least network element functions (NEFs) and may also support an operations system function (OSF). It contains managed objects (MOs), a message communication function (MCF) and a management application function (MAF). The functions of an ET.NE may be contained within an NE that also supports other layer networks. These layer network entities are considered to be managed separately from ET entities. As such, they are not part of the ET.MN or ET.MSN.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_09bd3fa1-7c71-6041-da4e-81d93fb93438">Element containing entities from one or more ET layer networks. An ET.NE may therefore be a stand-alone physical entity or a subset of a network element. It supports at least network element functions (NEFs) and may also support an operations system function (OSF). It contains managed objects (MOs), a message communication function (MCF) and a management application function (MAF). The functions of an ET.NE may be contained within an NE that also supports other layer networks. These layer network entities are considered to be managed separately from ET entities. As such, they are not part of the ET.MN or ET.MSN.</p></verbal-definition></definition>
 
 
- <termnote id="_ff95001d-3339-00f9-6cf8-a13d43692d70"><p id="_63be266e-9acc-d370-7bb6-5d56499ce1b3">ET.NE is referred to in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/>.</p>
+ <termnote id="_a28d75c9-5b12-ac0a-4f4f-facdc97dae87"><p id="_3191afe6-3448-2ef4-89d4-6c3e5d1e2072">ET.NE is referred to in <eref type="inline" bibitemid="g8051" citeas="ITU-T G.8051 (08/2024)"/>.</p>
 </termnote></term>
 
 <term id="term-Ety-NNI"><preferred><expression>
 <name>Ety-NNI</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_e1ca2c01-729e-5f90-034e-fa0ccc6f8a6e">An NNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_b94d5238-e2fd-ced9-a2dd-c4b20f132e82">An NNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.</p></verbal-definition></definition>
 
 
- <termnote id="_bc4210dc-acf0-54d7-8537-b8309bcad675"><p id="_c059faad-a696-5cfc-6a3b-ffc48dc23bc7">Ety-NNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_df287801-8887-bd84-d6e0-95b4344d1833"><p id="_dac703ac-21b4-498b-f770-5bd6fc7cb754">Ety-NNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-Ety-UNI"><preferred><expression>
 <name>Ety-UNI</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_cdcde0e5-02a5-b06c-d1f3-db0a8352d5f7">A UNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_baaf20ce-f694-76c6-5d71-175fe1506c32">A UNI for the transfer of ETH_CI traffic units over a physical Ethernet interface.</p></verbal-definition></definition>
 
 
- <termnote id="_247b49d7-0499-cee1-07a2-34fc76823832"><p id="_4ac49290-1441-86f6-06be-ba581a3b3648">Ety-UNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_6d3d2d5b-ad48-d381-966a-395d0fc84b44"><p id="_43525810-5e33-ddde-f395-f9180aba1a21">Ety-UNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-external-NNI-_ENNI_"><preferred><expression>
@@ -377,237 +377,237 @@
 </expression>
 </preferred>
 
- <termnote id="_32e1f49e-e481-e32d-c5ef-b5c81079bcf9"><p id="_a2804f45-f104-328d-e599-be85b8ab7417"><strike>ENNI is defined by <eref type="inline" bibitemid="mef26-1" citeas="MEF 26.1"/>.</strike></p>
+ <termnote id="_1d7ede45-66e9-784a-5f91-d437c112f3ec"><p id="_9e2e1b08-4920-f756-d260-ab4d653ad71e"><strike>ENNI is defined by <eref type="inline" bibitemid="mef26-1" citeas="MEF 26.1"/>.</strike></p>
 </termnote></term>
 
 <term id="term-far-end"><preferred><expression>
 <name><strike>far-end</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_fa069ce9-17bb-90a6-0f5c-9659385b8067">    <strike>In single-ended or dual-ended messaging, the direction and information relating to a one-way measurement from an initiating MEP) to a receiving or responding peer MEP.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_a4bc035b-b474-7d84-be29-847690046b68">    <strike>In single-ended or dual-ended messaging, the direction and information relating to a one-way measurement from an initiating MEP) to a receiving or responding peer MEP.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_e9db8036-06c0-cfd5-3a32-a272fe382fab"><p id="_013a3325-314e-c48b-8d84-78783f4a9417"><strike>Far-end is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_5952ec02-e516-3dfe-b9d3-28bbff338e92"><p id="_ac94b155-d6c1-7418-e50d-dac75b103630"><strike>Far-end is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-initiating-MEP"><preferred><expression>
 <name><strike>initiating MEP</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_28e39c1d-7fd0-406b-5528-f52bee1f2a23">    <strike>An initiating MEP initiates measurements by sending request PDUs, and in the case of single-ended messaging, receiving response PDUs.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_f657c0f0-e886-389e-0b87-44e3e07d0744">    <strike>An initiating MEP initiates measurements by sending request PDUs, and in the case of single-ended messaging, receiving response PDUs.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_bd634d44-13e5-6712-30c0-7c43086947dd"><p id="_6439cac0-cb9e-f197-0cfd-4c4d5dd86429"><strike>Initiating MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_2828a3ec-5bee-2f86-1963-29ce5982eb99"><p id="_2f9d91d5-9925-9ae6-02de-8a655873dbdc"><strike>Initiating MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-interconnection-node"><preferred><expression>
 <name><strike>interconnection node</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_74c0dcf1-780a-3098-2b77-7b793cfe2a83">    <strike>An Ethernet ring node that is common to two or more Ethernet rings or to a sub-ring and an interconnected network. At each interconnection node, there may be one or more Ethernet rings that can be accessed through a single ring port and not more than one Ethernet ring that is accessed by two ring ports. The former set of Ethernet rings is comprised of sub-rings, whereas the latter Ethernet ring is considered a major ring, relative to this interconnection node. If the interconnection node is used to connect a (set of) sub-ring(s) to another network, then there is no Ethernet ring accessed by two ring ports.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e11cef82-ac5a-7084-b69a-dde723e60828">    <strike>An Ethernet ring node that is common to two or more Ethernet rings or to a sub-ring and an interconnected network. At each interconnection node, there may be one or more Ethernet rings that can be accessed through a single ring port and not more than one Ethernet ring that is accessed by two ring ports. The former set of Ethernet rings is comprised of sub-rings, whereas the latter Ethernet ring is considered a major ring, relative to this interconnection node. If the interconnection node is used to connect a (set of) sub-ring(s) to another network, then there is no Ethernet ring accessed by two ring ports.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_922b824f-8a25-372c-68aa-60da20026080"><p id="_864dfcb0-4f1b-7734-dd60-1f1dc0638d70"><strike>Interconnection node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_55fc8985-b331-0233-250a-bdbad2df633d"><p id="_01d86699-8214-19bc-aeee-3cb636651851"><strike>Interconnection node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-in-profile"><preferred><expression>
 <name><strike>in-profile</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_4356dc9a-a704-30c4-6b74-815797bbecf2">    <strike>For frames that belong to the same instance of an Ethernet service and priority, in-profile frames are defined as frames for which priority corresponds to a common value &lt;X&gt; and the network has determined that drop-eligibility corresponds to &lt;false&gt;. Procedures to determine drop-eligibility for a frame and procedures to convey priority and drop-eligibility on a frame are network and service specific.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_ea5afb0f-ce62-1b0d-f541-878b1545fb78">    <strike>For frames that belong to the same instance of an Ethernet service and priority, in-profile frames are defined as frames for which priority corresponds to a common value &lt;X&gt; and the network has determined that drop-eligibility corresponds to &lt;false&gt;. Procedures to determine drop-eligibility for a frame and procedures to convey priority and drop-eligibility on a frame are network and service specific.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_5d43fc61-28d0-720a-b227-0e30cf97cd7a"><p id="_51faca2d-65a9-5996-2f8e-eac9da3e7f38"><strike>In-profile is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_f7f93fdd-a5d3-b2bb-4af3-f6ce9064d241"><p id="_f5b4c402-782f-1ef2-1e9e-fc1e2a4442b4"><strike>In-profile is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-in-service-OAM"><preferred><expression>
 <name><strike>in-service OAM</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_489c4332-83fc-80df-6aff-cd4ddd625ba6">    <strike>OAM actions that are carried out while the data traffic is not interrupted, with an expectation that data traffic remains transparent to OAM actions.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_7020f2b7-979e-1a71-77ac-5608d2de4d3f">    <strike>OAM actions that are carried out while the data traffic is not interrupted, with an expectation that data traffic remains transparent to OAM actions.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_82809aa1-8f13-c563-62d6-05f917fe7f2b"><p id="_d40dd489-839d-25cb-c393-331e5819e65c"><strike>In-service OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_bda1a54a-9150-96da-86fa-8f5aa15aa7cf"><p id="_7aeb66f7-3e15-ff67-d5fb-05ea7cabce5b"><strike>In-service OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-leaf-group"><preferred><expression>
 <name>leaf group</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_26f45e6e-25ef-65a9-8bfd-ebc9d1ff747d">A group representing two or more leaf ports within an RMP EC which can transmit to and receive from other leafs in the leaf group. Leaf ports within a leaf group cannot transmit to or receive from leafs outside the group.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e0ecdf3e-3728-2eff-93d4-284effbb98d2">A group representing two or more leaf ports within an RMP EC which can transmit to and receive from other leafs in the leaf group. Leaf ports within a leaf group cannot transmit to or receive from leafs outside the group.</p></verbal-definition></definition>
 
 
- <termnote id="_1d57d184-3c8c-848a-8afa-a6ce300e54cf"><p id="_c52d4eae-b470-2630-9f93-51916a04744e">Leaf group is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
+ <termnote id="_4d0aab53-527d-0bd2-1486-8b2d53d9b57c"><p id="_caba081b-4507-1663-7965-de00250f64ad">Leaf group is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
 </termnote></term>
 
 <term id="term-link-Ethernet-connection"><preferred><expression>
 <name>link Ethernet connection</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_cdf6fc2b-4982-79ec-7864-a187a9af20f9">An Ethernet connection of which the traffic units are either not encapsulated or encapsulated with a priority tag.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_3cce173f-f965-f4e6-b9b8-651787152cc9">An Ethernet connection of which the traffic units are either not encapsulated or encapsulated with a priority tag.</p></verbal-definition></definition>
 
 
- <termnote id="_26b04416-59f4-e66f-ed83-2a66344bf925"><p id="_1e4ccec5-2906-1012-4e6a-ea05c08d70dc">Link Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
+ <termnote id="_9a4d0628-c549-7094-8044-d70626b88a4d"><p id="_7525cdb9-7531-32d0-97b9-f4ed6f721a96">Link Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
 </termnote></term>
 
 <term id="term-maintenance-entity"><preferred><expression>
 <name>maintenance entity</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_c27ed479-35eb-56fc-dde9-aea858efbe0a">The entity between two of the flow/connection points in a maintenance entity group.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e418fca7-2fdb-d0d1-4a48-c0a4106678ea">The entity between two of the flow/connection points in a maintenance entity group.</p></verbal-definition></definition>
 
 
- <termnote id="_3b18cf57-972d-35c8-c82d-a3f0d437cd64"><p id="_00fe2c0b-e78e-3814-4762-cb6b45885264">Maintenance entity is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_7ace337b-27cb-7878-2845-d7bbe488cedc"><p id="_9d9ebca7-d65e-aa33-438e-19e780f7cd2d">Maintenance entity is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-maintenance-entity-group-_MEG_"><preferred><expression>
 <name>maintenance entity group (MEG)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_24266c89-e4cc-a36e-797b-5fe633b245d3">A group defined, for the purpose of fragment or connection monitoring, between a set of flow or connection points within a fragment/connection. This set of flow or connection points may be located at the boundary of one administrative domain or a protection domain, or at the boundaries of two adjacent administrative domains. The maintenance entity group consists of one or more maintenance entities.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_8754e25c-a79f-2757-8e48-911e0c22a7cd">A group defined, for the purpose of fragment or connection monitoring, between a set of flow or connection points within a fragment/connection. This set of flow or connection points may be located at the boundary of one administrative domain or a protection domain, or at the boundaries of two adjacent administrative domains. The maintenance entity group consists of one or more maintenance entities.</p></verbal-definition></definition>
 
 
- <termnote id="_c9895b2b-42a6-7ea7-dac3-4998abd75e33"><p id="_56f95b35-6693-25cf-1d95-bb57bb364a60">MEG is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_fc8f6368-f659-070d-dc8b-51f95d19f50b"><p id="_032338b8-e1ee-6509-37ec-326023ed3fb6">MEG is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-maintenance-entity-group-end-point-compound-sink-function"><preferred><expression>
 <name>maintenance entity group end point compound sink function</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_ce3101d0-5c49-90b5-2e11-9a003363ceb8">A compound transport processing function that accepts the characteristic information of the layer network at its input, extracts and processes the OAM information related to the monitoring of the maintenance entity group, filters the OAM information from within to the maintenance entity group, adapts the information and presents it as the characteristic information of the layer or a client layer at its output, potentially as a (client) layer maintenance signal (e.g., AIS).</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_858f0927-314c-e6c1-e873-be14c906197c">A compound transport processing function that accepts the characteristic information of the layer network at its input, extracts and processes the OAM information related to the monitoring of the maintenance entity group, filters the OAM information from within to the maintenance entity group, adapts the information and presents it as the characteristic information of the layer or a client layer at its output, potentially as a (client) layer maintenance signal (e.g., AIS).</p></verbal-definition></definition>
 
 
- <termnote id="_9627b9b5-d861-2eea-0d4d-182cd7b052d7"><p id="_f6ea634c-4a06-2e5d-fb39-2b7114b4e564">MEP compound sink function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_8590344e-8e9d-970f-6dc5-ba0ed39dc4c9"><p id="_171bbff8-4a77-5a1a-a614-0b6ed223651c">MEP compound sink function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-maintenance-entity-group-end-point-compound-source-function"><preferred><expression>
 <name>maintenance entity group end point compound source function</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_cb1854e6-4118-835a-9f86-9a117a4f8b2e">A compound transport processing function that accepts the characteristic information of the layer or a client layer network at its input, adapts that information, filters it for OAM information interfering with its own OAM information, adds OAM information to allow the maintenance entity group to be monitored and presents the resulting information at its output.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_6cfccef4-1bd1-dfff-de2c-dfc1aa67616b">A compound transport processing function that accepts the characteristic information of the layer or a client layer network at its input, adapts that information, filters it for OAM information interfering with its own OAM information, adds OAM information to allow the maintenance entity group to be monitored and presents the resulting information at its output.</p></verbal-definition></definition>
 
 
- <termnote id="_95bc83d9-76d2-13a3-c16d-44ab6b17533c"><p id="_3814eba6-ef07-16b3-db3f-40161da22bc6">MEP compound source function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_c0b02293-dfd8-d344-b287-038ab5de4cda"><p id="_42ca43a9-7340-3262-fbb6-c81d10ead467">MEP compound source function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-maintenance-entity-group-intermediate-point-compound-function"><preferred><expression>
 <name>maintenance entity group intermediate point compound function</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_79eab4df-21e1-8991-3a74-988d800c8e69">A compound transport processing function that accepts the characteristic information of the layer network at its input, reacts to OAM information related to on-demand monitoring of a maintenance entity group and presents the characteristic information without the OAM to which it reacted at its output.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_2312a385-302a-0638-d6e4-6abcc0bb4d55">A compound transport processing function that accepts the characteristic information of the layer network at its input, reacts to OAM information related to on-demand monitoring of a maintenance entity group and presents the characteristic information without the OAM to which it reacted at its output.</p></verbal-definition></definition>
 
 
- <termnote id="_fb58f898-3b5f-6852-3781-900ab903b1f4"><p id="_f9316fb7-e81a-519d-15c5-847c750529d9">MIP compound function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_e4372db7-8f3d-b5a9-6f23-4583a5ea4ebf"><p id="_79980c99-84ad-ead2-7a60-0c01111a201b">MIP compound function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-major-ring"><preferred><expression>
 <name><strike>major ring</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_8c0ab726-cec3-81b1-c98c-e7d497a7dede">    <strike>An Ethernet ring that is connected on two ports to an interconnection node.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_3c1b70ec-70d9-9927-0541-906622402559">    <strike>An Ethernet ring that is connected on two ports to an interconnection node.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_ae369233-2be9-c56b-88ab-20952b37e224"><p id="_d92d51b2-8559-3d15-95bb-2ca2e225dfc0"><strike>Major ring is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_cbdace7b-71e6-63e0-54a3-4a1a166f7da8"><p id="_e7464ceb-544b-3118-1d3b-c56b90c918f6"><strike>Major ring is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-MEG-end-point-_MEP_"><preferred><expression>
 <name><strike>MEG end point (MEP)</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_82711176-80fc-6b96-a89a-4d777fa7b7c3">    <strike>A point marking the end of an ETH MEG that is capable of initiating and terminating OAM frames for fault management and performance monitoring. A MEP does not add a new forwarding identifier to the transit ETH flows. A MEP does not terminate the transit ETH flows, though it can observe these flows (e.g., count frames).</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_1cd05766-7f42-7586-9995-573ebcf55e1a">    <strike>A point marking the end of an ETH MEG that is capable of initiating and terminating OAM frames for fault management and performance monitoring. A MEP does not add a new forwarding identifier to the transit ETH flows. A MEP does not terminate the transit ETH flows, though it can observe these flows (e.g., count frames).</strike></p></verbal-definition></definition>
 
 
- <termnote id="_3ecba944-789b-fbca-76c8-5ecdbc78ae7b"><p id="_8c7a6ad9-1650-3df0-e9f8-6556ab0c1e88"><strike>MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_23f0fe83-3f52-cc88-bcc6-f135425a73c2"><p id="_352158a6-0e76-9a50-0ace-12b8abf0338d"><strike>MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-MEG-intermediate-point-_MIP_"><preferred><expression>
 <name><strike>MEG intermediate point (MIP)</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_c08be88a-ce85-ed72-188d-d52fb463fa3d">    <strike>An intermediate point in a MEG that is capable of reacting to some OAM frames. A MIP does not initiate OAM frames. A MIP takes no action on the transit ETH flows.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e0c80db7-9bd4-4213-8223-bd9e971f8ff7">    <strike>An intermediate point in a MEG that is capable of reacting to some OAM frames. A MIP does not initiate OAM frames. A MIP takes no action on the transit ETH flows.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_cad311e5-33f3-d7f1-7dde-023aa75a7379"><p id="_d22d57a2-649b-0255-70e8-f798d04da2a5"><strike>MIP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_ab068c92-242a-afce-a31c-e9b722bd04fe"><p id="_a8b9a070-e004-59bf-e47d-a0597b8c3423"><strike>MIP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-near-end"><preferred><expression>
 <name><strike>near-end</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_e4ba16a7-8026-725e-ce21-cefcf138d4fb">    <strike>In single-ended messaging, the direction and information relating to a one-way measurement from a responding peer MEP to an initiating MEP.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_d9c499c2-9b54-6fe3-1689-5acb63b79629">    <strike>In single-ended messaging, the direction and information relating to a one-way measurement from a responding peer MEP to an initiating MEP.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_a795abed-29ec-b0a9-ed2d-63d93083061e"><p id="_9aec20fb-5b03-5ce1-ca30-fe2500c90a34"><strike>Near-end is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_52501a28-4db7-39c4-2fb4-a63c1b5fe2aa"><p id="_968160b3-a25a-c256-e361-9175484a193c"><strike>Near-end is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-network-termination"><preferred><expression>
 <name>network termination</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_305b48ac-b240-dc75-b816-4e9901d54b3a">The network element in the transport network that is connected to the customer edge equipment.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_23c4651f-d50b-47e9-e6d2-fa4733baad83">The network element in the transport network that is connected to the customer edge equipment.</p></verbal-definition></definition>
 
 
- <termnote id="_f37489b0-c617-a72d-d4df-f2061ea09c0a"><p id="_3d105c3a-1c44-c07b-f0a4-5a7d6e291138">Network termination is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_4ff98037-c98d-9bb7-37aa-45242d60b14b"><p id="_7e92bb8a-91b9-43e7-a31f-73d711b67a8f">Network termination is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-network-to-network-interface-_NNI_"><preferred><expression>
 <name>network-to-network interface (NNI)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_0adafea9-5621-6de5-8c05-10ca3d559a94">An interface that is used for the interconnection of network elements within a transport network.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_c56b30bb-9692-11a3-2dec-ae44dec76506">An interface that is used for the interconnection of network elements within a transport network.</p></verbal-definition></definition>
 
 
- <termnote id="_2b152b36-077c-b2c3-3e34-2a44f5fe1d1b"><p id="_f92202bc-3d19-02cc-a33e-ad2665e29b11">NNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_007f7d7c-ad41-a228-ced5-d5eba7b834da"><p id="_3fe71eea-c6e2-afbc-27d4-945b71f465e8">NNI is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-on-demand-measurement"><preferred><expression>
 <name><strike>on-demand measurement</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_b13c81c7-a5b9-de0c-d034-1849abe9d9b5">    <strike>A measurement (e.g., performance monitoring such as delay measurement, loss measurement) that is running at a specific request. An on-demand measurement has a defined start and end time or date.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_2429cbcc-fb27-3592-57e2-4b3b6ed4dbca">    <strike>A measurement (e.g., performance monitoring such as delay measurement, loss measurement) that is running at a specific request. An on-demand measurement has a defined start and end time or date.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_142d2a48-437e-4aa9-1ee9-28fdc1281b33"><p id="_cc625100-786c-5a51-0d76-a9578c08ea1c"><strike>On-demand measurement is referred to in <eref type="inline" bibitemid="g8052" citeas="ITU-T G.8052 (01/2024)"/>.</strike></p>
+ <termnote id="_25327435-33ab-c2f9-9ae3-dee8da66a1d4"><p id="_8b005eac-4c8f-0481-5c12-cf01e61bdf52"><strike>On-demand measurement is referred to in <eref type="inline" bibitemid="g8052" citeas="ITU-T G.8052 (01/2024)"/>.</strike></p>
 </termnote></term>
 
 <term id="term-on-demand-monitoring"><preferred><expression>
 <name>on-demand monitoring</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_e44ecc1a-fcd0-2b43-5492-66efe3faa121">A method to infer a specific status or performance characteristic of a maintenance entity or a set of maintenance entities within a maintenance entity group at a specific time with the purpose of obtaining a snapshot of the performance or to diagnose an identified fault condition or performance degradation.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_fa5c3d5d-3cbc-6abd-7546-cf73f8b1afeb">A method to infer a specific status or performance characteristic of a maintenance entity or a set of maintenance entities within a maintenance entity group at a specific time with the purpose of obtaining a snapshot of the performance or to diagnose an identified fault condition or performance degradation.</p></verbal-definition></definition>
 
 
- <termnote id="_a402bda8-69b1-374b-943a-0957b4a6a160"><p id="_507591df-acdc-a55a-0fc9-94440f1ee6d2">On-demand monitoring is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_aef7ae7b-ff55-98f8-09c0-ef08b2ffe38f"><p id="_af85973c-a524-3f58-b805-2c361e7f4e27">On-demand monitoring is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-on-demand-OAM"><preferred><expression>
 <name><strike>on-demand OAM</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_79266ede-33ff-7029-0f9f-d9c2000b87c0">    <strike>OAM actions that are initiated via manual intervention for a limited time to carry out diagnostics. On-demand OAM can result in singular or periodic OAM actions during the diagnostics time interval.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_d32eae0a-e616-2213-3b5a-165f24e62ff5">    <strike>OAM actions that are initiated via manual intervention for a limited time to carry out diagnostics. On-demand OAM can result in singular or periodic OAM actions during the diagnostics time interval.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_004489f7-095c-21fa-f8fb-27a93be43206"><p id="_0cc906a3-bdbd-8ec9-9fa2-ab84a6b2db1c"><strike>On-demand OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_13abecb1-cc94-354e-8681-349c36cd81df"><p id="_259dc788-57ee-e346-05a1-f3c67d3cfd45"><strike>On-demand OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-one-way"><preferred><expression>
 <name><strike>one-way</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_9325de10-4e30-059c-c78f-f2a602b3e9bb">    <strike>A measurement of the performance of frames that is achieved in one direction from an initiating MEP to a peer MEP, or vice versa; i.e., a unidirectional measurement.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_6f933fe7-eb7d-cd04-3235-281c2e46553f">    <strike>A measurement of the performance of frames that is achieved in one direction from an initiating MEP to a peer MEP, or vice versa; i.e., a unidirectional measurement.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_cc058c3e-cff3-949e-e97d-00521b38a852"><p id="_825ba7ad-b1d8-4665-369c-8edbc580e0bb"><strike>One-way is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_1f431f5d-d34e-a51f-ab3e-b66356f43b2f"><p id="_8724a123-a507-a1c4-fc5e-a26197d2c9bb"><strike>One-way is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-out-of-service-OAM"><preferred><expression>
 <name><strike>out-of-service OAM</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_554847be-3a55-71ff-06bc-949ee974aa89">    <strike>OAM actions that are carried out while the data traffic is interrupted.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_59868ba7-5a5b-5f64-6542-f4d4d61be751">    <strike>OAM actions that are carried out while the data traffic is interrupted.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_66a63688-e0c9-4915-2c72-8ec3d0735d33"><p id="_51eebe51-5b3f-1926-fae7-0880c0cda017"><strike>Out-of-service OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_f347eae8-4db2-1431-e8b1-a5239dd899f0"><p id="_09b9e383-c4fb-eab2-2f08-9b4c13d8e8e4"><strike>Out-of-service OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-operator-virtual-connection-_OVC_"><preferred><expression>
@@ -615,24 +615,24 @@
 </expression>
 </preferred>
 
- <termnote id="_c1c74b9b-1a84-5203-ff64-6b1bdc8a3b1e"><p id="_e09d5b6f-fd61-1bc9-7133-3c91a21fd36a"><strike>OVC is defined by <eref type="inline" bibitemid="mef26-1" citeas="MEF 26.1"/>.</strike></p>
+ <termnote id="_bde1ce34-40c9-132c-12fc-29b61607ddb2"><p id="_131ae529-bd30-d93a-2cfd-6d1ffecad4e2"><strike>OVC is defined by <eref type="inline" bibitemid="mef26-1" citeas="MEF 26.1"/>.</strike></p>
 </termnote></term>
 
 <term id="term-peer-MEP"><preferred><expression>
 <name><strike>peer MEP</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_0af2ec98-76a0-8e40-a482-e9fc8f2de899">    <strike>In a given MEP, all of the other MEPs in the same MEG.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_ee12b49e-90b5-b25d-a0e5-005c437f9190">    <strike>In a given MEP, all of the other MEPs in the same MEG.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_303bc7ea-b435-1c5b-f8e8-875b31188c27"><p id="_865e603f-205d-4485-f5f7-cae35b725806"><strike>Peer MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_0a2bca2b-e6f9-5d7c-1d13-f4f0cb114049"><p id="_3ef285c2-f968-ad16-3113-5e30ec666992"><strike>Peer MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-proactive-measurement"><preferred><expression>
 <name><strike>proactive measurement</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_10cb2321-6fb6-2208-2c26-fe0bc4adcb53">    <strike>A measurement (e.g., performance monitoring such as delay measurement, loss measurement.) that is running continuously after it has been established. Proactive measurements can only be temporarily disabled.</strike></p><p id="_94be5e54-9aa1-d297-e285-ae8f1f121633">    <strike>NOTE: Proactive measurement is referred to in <eref type="inline" bibitemid="g8052" citeas="ITU-T G.8052 (01/2024)"/>.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_6d7888b4-5da0-184f-1668-c59bdf9a0346">    <strike>A measurement (e.g., performance monitoring such as delay measurement, loss measurement.) that is running continuously after it has been established. Proactive measurements can only be temporarily disabled.</strike></p><p id="_4a7258a3-9489-ab36-7160-8bedff8913e0">    <strike>NOTE: Proactive measurement is referred to in <eref type="inline" bibitemid="g8052" citeas="ITU-T G.8052 (01/2024)"/>.</strike></p></verbal-definition></definition>
 
 
  </term>
@@ -641,111 +641,111 @@
 <name>proactive monitoring</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_6d855f54-dae6-097b-60ad-8683a015c761">A method to continuously infer the status and performance of a maintenance entity group with the purpose of detecting disturbances, faults and degradations immediately after their occurrence in order to verify the service level agreement or initiate recovery actions to restore the service to the guaranteed level.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_d848edfb-1dd1-b409-e6d9-3b2d7cd9e3b6">A method to continuously infer the status and performance of a maintenance entity group with the purpose of detecting disturbances, faults and degradations immediately after their occurrence in order to verify the service level agreement or initiate recovery actions to restore the service to the guaranteed level.</p></verbal-definition></definition>
 
 
- <termnote id="_663334a1-c3d9-6f85-bf1a-2d66852ebe36"><p id="_99b0d75b-0ade-3348-0e3a-290a405095bf">Proactive monitoring is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_6b1b575a-8644-1992-05d9-4ed1b94fe6b9"><p id="_992d1abd-065f-a409-a8d1-a62b20afc4e7">Proactive monitoring is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-proactive-OAM"><preferred><expression>
 <name><strike>proactive OAM</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_2e67ee82-a3dd-6fe5-8dcd-78e101717081">    <strike>OAM actions that are carried out continuously to permit proactive reporting of fault or performance results.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e8f6f3e5-910e-afd1-6396-4dbf88cb0d90">    <strike>OAM actions that are carried out continuously to permit proactive reporting of fault or performance results.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_21e923f9-ab9d-443e-fcb0-52a2826ffc44"><p id="_1f96d40e-8ce4-6ea0-7cd6-505ef892eee3"><strike>Proactive OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_5ae44258-2f8f-2b46-7dc8-2f58e229e0d6"><p id="_53472257-bc2a-3d33-33b9-1f0b6b46b19e"><strike>Proactive OAM is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-R-APS-virtual-channel"><preferred><expression>
 <name><strike>R-APS virtual channel</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_79719f0e-36d9-4d51-4451-3aa9fbcee6cf">    <strike>The R-APS channel connection between two interconnection nodes of a sub-ring in (an)other Ethernet ring(s) or network(s). Its connection characteristics (e.g., path, performance) are influenced by the characteristics of the network (e.g., Ethernet ring) providing connectivity between the interconnection nodes.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_7e460243-9158-b023-972f-64f3efee78ee">    <strike>The R-APS channel connection between two interconnection nodes of a sub-ring in (an)other Ethernet ring(s) or network(s). Its connection characteristics (e.g., path, performance) are influenced by the characteristics of the network (e.g., Ethernet ring) providing connectivity between the interconnection nodes.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_69ea584f-9579-c28e-e7f4-63d23a9160af"><p id="_57430679-8e90-a8ee-df3a-370453735a6c"><strike>R-APS virtual channel is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_f491cb81-7af2-06fc-b1c1-747533dc0039"><p id="_56717faf-24c0-3b0c-6216-42fbedb3b353"><strike>R-APS virtual channel is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-responding-MEP"><preferred><expression>
 <name><strike>responding MEP</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_c95ed11a-2edb-94b7-625d-552aa04b8c86">    <strike>In single-ended messaging, an MEP that receives request PDUs from an initiating MEP and transmits corresponding response PDUs.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_3da147a6-e043-3cd8-d556-63da3daa366c">    <strike>In single-ended messaging, an MEP that receives request PDUs from an initiating MEP and transmits corresponding response PDUs.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_2661e366-f161-2b51-b349-c3aa2ff96e28"><p id="_01751dfe-9e0b-4a09-4a96-e9d9f761fbeb"><strike>Responding MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_059a78c9-8819-14c4-d007-2238a107d054"><p id="_c4fc1543-d40f-d254-7b19-863b79a13826"><strike>Responding MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-receiving-MEP"><preferred><expression>
 <name><strike>receiving MEP</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_f316c382-e6a4-fecc-e927-d417e79f3d03">    <strike>In dual-ended messaging, an MEP that receives request PDUs from an initiating MEP, and does not respond to them.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_0a202366-cf0a-e4aa-fe3d-674ba4c2bcee">    <strike>In dual-ended messaging, an MEP that receives request PDUs from an initiating MEP, and does not respond to them.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_fd2a1580-1e32-e68e-6419-19752ac5b4fd"><p id="_a6fc4bd3-9d9a-a97e-a730-8402c8b8149d"><strike>Receiving MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_2b55d027-8ec8-d2fc-e05a-e2890c2ee024"><p id="_4cee2d32-c81c-9011-9a7e-3dcf874a5dda"><strike>Receiving MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-ring-MEL"><preferred><expression>
 <name><strike>ring MEL</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_09e92aed-ba29-c379-0a17-9ff7bbb275d5">    <strike>The maintenance entity group (MEG) level providing a communication channel for ring automatic protection switching (R-APS) information.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_fbc92a04-4a77-d9d8-ce97-d290df2d970a">    <strike>The maintenance entity group (MEG) level providing a communication channel for ring automatic protection switching (R-APS) information.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_fd329d9e-2160-1d33-465c-ccd6f4a33d78"><p id="_7ae317af-07d5-741c-6ab0-a5a008fca094"><strike>Ring MEL is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_697b3236-0253-bcb9-09aa-fc89af0ea8e8"><p id="_0281da27-8ca4-f8f8-fd60-0d7cf86ebc83"><strike>Ring MEL is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-ring-protection-link-_RPL_"><preferred><expression>
 <name><strike>ring protection link (RPL)</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_e51ae9b2-841b-6330-7faf-00d47c8a1f87">    <strike>The ring link that under normal conditions, i.e., without any failure or request, is blocked (at one or both ends) to traffic channels, to prevent the formation of loops.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_43d3307c-ca52-7bd2-1a23-1dfd67272f62">    <strike>The ring link that under normal conditions, i.e., without any failure or request, is blocked (at one or both ends) to traffic channels, to prevent the formation of loops.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_73ffc8ee-b1ba-f925-1bb6-7f28c4b15a57"><p id="_2a62b3b0-226a-8146-5dd4-bcadf834d941"><strike>Ring protection link is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_d0c0bdba-254c-3be0-2976-c408f6aee6ae"><p id="_8e8f47e3-7c5e-711b-a4b3-f08e3f84af77"><strike>Ring protection link is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-RPL-neighbour-node"><preferred><expression>
 <name><strike>RPL neighbour node</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_6d478052-7488-b82a-1c85-8bf1a3c94161">    <strike>When configured, an Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring) in addition to the block by the RPL owner node. However, it is not responsible for activating the reversion behaviour.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_080e804c-6b36-64c7-0d43-b6def3d79e52">    <strike>When configured, an Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring) in addition to the block by the RPL owner node. However, it is not responsible for activating the reversion behaviour.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_948afa41-4032-d23d-34d7-ec23931c14c7"><p id="_80f6e24f-9c41-040d-cfad-db58da8e4339"><strike>RPL neighbour node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_dad71c16-0d96-54b7-c865-65c7e28aaa3b"><p id="_a5af500c-f370-c7bd-e28c-6c1b57d4747f"><strike>RPL neighbour node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-RPL-owner-node"><preferred><expression>
 <name><strike>RPL owner node</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_8bbda915-2c22-2605-659e-a7579cdc92fd">    <strike>An Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring). Furthermore, it is responsible for activating reversion behaviour from protected or manual switch/forced switch (MS/FS) conditions.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_b4b40531-0742-4820-f2e0-0cdfa518d8d1">    <strike>An Ethernet ring node adjacent to the RPL that is responsible for blocking its end of the RPL under normal conditions (i.e., the ring is established and no requests are present in the ring). Furthermore, it is responsible for activating reversion behaviour from protected or manual switch/forced switch (MS/FS) conditions.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_0bb76c1f-3336-1dbb-e5a2-37801966a169"><p id="_ad1bb21e-0105-4d5f-27bc-00dfb8ba537e"><strike>RPL owner node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_3585812e-a376-85d4-e962-105975208330"><p id="_6941ad2e-0146-0fcd-83a2-2a4186d52482"><strike>RPL owner node is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-server-MEP"><preferred><expression>
 <name><strike>server MEP</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_23bfe04c-eadf-2443-ed2b-b83be942f96e">    <strike>A server MEP represents the compound function of the server layer termination function and server/ETH adaptation function, which is used to notify the ETH layer MEPs of conditions of the server layer that may be relevant to these ETH MEPs (e.g., failure or degradation detection by the server layer termination function or server/ETH adaptation function), where the server layer termination function is expected to run OAM mechanisms specific to that server layer.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_00b06a46-73d2-4cb4-69a9-ea7f1a69071c">    <strike>A server MEP represents the compound function of the server layer termination function and server/ETH adaptation function, which is used to notify the ETH layer MEPs of conditions of the server layer that may be relevant to these ETH MEPs (e.g., failure or degradation detection by the server layer termination function or server/ETH adaptation function), where the server layer termination function is expected to run OAM mechanisms specific to that server layer.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_a6e20ad2-a70d-6379-c033-70296297e857"><p id="_32b3c53a-f2cf-3905-daaa-9f8e89d3fa05"><strike>Server MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_233f27b1-4b2f-b904-8294-48b5d5367370"><p id="_d32b7afd-3af8-eba1-e87e-0a28ba75f82e"><strike>Server MEP is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-service-Ethernet-connection"><preferred><expression>
 <name>service Ethernet connection</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_999cfce8-6b9f-2cf0-fe62-4d014db163f2">An Ethernet connection of which the traffic units are encapsulated with a service VLAN tag (S-Tag) when they are transported through an Ethernet link. Outside an Ethernet link<fn reference="1"><p id="_523bd9b1-e051-dea0-bf9f-dc350d63e4c3">The term "Ethernet link" refers to the ETH link topological component specified in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+<definition><verbal-definition><p id="_0a01363f-8a38-0594-0da6-edd7fdc7450f">An Ethernet connection of which the traffic units are encapsulated with a service VLAN tag (S-Tag) when they are transported through an Ethernet link. Outside an Ethernet link<fn reference="1"><p id="_ec2c93c3-8b99-c153-9c2c-e23990e2bd6c">The term "Ethernet link" refers to the ETH link topological component specified in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </fn> the traffic units are without service VLAN tag; the information transported in the service VLAN tag is presented as a set of parameters: priority, drop eligible and EC identifier. The link end performs the mapping of those parameters into the service VLAN tag and the demapping of these parameters from the service VLAN tag.</p></verbal-definition></definition>
 
 
- <termnote id="_f010270f-3e9f-a4fd-1cc4-a11f05e0681c"><p id="_df862c13-38bd-f2f3-e20d-5c4cccf8867e">Service Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
+ <termnote id="_e1dd6365-940b-de3a-2679-2a5cdaec5300"><p id="_93550b9b-2b1d-79f5-f77d-175f5ad161c4">Service Ethernet connection is referred to in <eref type="inline" bibitemid="g8012-1" citeas="ITU-T G.8012.1"/>.</p>
 </termnote></term>
 
 <term id="term-service-frame"><preferred><expression>
@@ -753,67 +753,67 @@
 </expression>
 </preferred>
 
- <termnote id="_b7d5ed1b-693a-12bb-ad38-dba18b7f224b"><p id="_c7e9403f-0f53-16bd-977e-a78924cef82e"><strike>Service frame is defined in <eref type="inline" bibitemid="mef10-3" citeas="MEF 10.3"/>.</strike></p>
+ <termnote id="_3bf90fa0-d263-4bdb-21df-43f5a43d8887"><p id="_5371fb14-77b1-376c-7370-7b75e7abe94c"><strike>Service frame is defined in <eref type="inline" bibitemid="mef10-3" citeas="MEF 10.3"/>.</strike></p>
 </termnote></term>
 
 <term id="term-single-ended"><preferred><expression>
 <name><strike>single-ended</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_d5438fd3-2b16-7398-ce5f-17ee4f1c9f93">    <strike>A type of protocol messaging whereby an initiating MEP sends a request PDU to a responding peer MEP, and the peer MEP responds by sending a response PDU that contains the original request data plus any additional data added by the responder. In performance monitoring, the initiating MEP performs measurement calculations.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_1e7b6695-1269-63aa-4875-f35365109d77">    <strike>A type of protocol messaging whereby an initiating MEP sends a request PDU to a responding peer MEP, and the peer MEP responds by sending a response PDU that contains the original request data plus any additional data added by the responder. In performance monitoring, the initiating MEP performs measurement calculations.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_2e0bc960-7f78-6ce2-b9e5-82f36a638fda"><p id="_068ee103-1de2-a051-3807-3f7559d3a89c"><strike>Single-ended is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_ad032325-acee-fdba-ed91-8180e6c07832"><p id="_0c89108d-eb36-464c-20c5-01aeef97b72f"><strike>Single-ended is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-sub-ring"><preferred><expression>
 <name><strike>sub-ring</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_4c092904-bbae-1bb7-c56f-50606e03551f">    <strike>An Ethernet ring that is connected to (an)other Ethernet ring(s) or network(s) through the use of a pair of interconnection nodes. On their own, the sub-ring links do not form a closed loop. A closed connection of traffic may be formed by the sub-ring links and one or more links, which are controlled by (an)other Ethernet ring(s) or network(s), between interconnection nodes.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_fbb4e9cb-6521-f0d6-9e10-1bd3cf4fc991">    <strike>An Ethernet ring that is connected to (an)other Ethernet ring(s) or network(s) through the use of a pair of interconnection nodes. On their own, the sub-ring links do not form a closed loop. A closed connection of traffic may be formed by the sub-ring links and one or more links, which are controlled by (an)other Ethernet ring(s) or network(s), between interconnection nodes.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_31d08430-aac2-1757-de72-8896ece6416e"><p id="_40ba0ea2-6779-94ee-ec83-9de00f4f6b63"><strike>Sub-ring is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_ebff5dc3-6b85-da95-ca62-9346279dc293"><p id="_e1418870-5a60-21fa-b481-99bdd2d27cd9"><strike>Sub-ring is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-sub-ring-link"><preferred><expression>
 <name><strike>sub-ring link</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_be3ebf8c-b812-c685-af60-e4faedf9274b">    <strike>A span (e.g., link/port) connecting adjacent sub-ring nodes that are under the control of the Ethernet ring protection control process (ERP control process) of the sub-ring.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e30eb1e5-e0a4-f660-54c5-4839a23d4592">    <strike>A span (e.g., link/port) connecting adjacent sub-ring nodes that are under the control of the Ethernet ring protection control process (ERP control process) of the sub-ring.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_53806d71-8f38-f7b7-9262-d6054e82f610"><p id="_38692015-921b-5e20-6969-45338078f37d"><strike>Sub-ring link is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_f2e01834-7941-ed6a-6fdf-c23b2e5bf0c4"><p id="_95904792-0212-a004-6392-37fa2901ca8a"><strike>Sub-ring link is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 
 <term id="term-two-way"><preferred><expression>
 <name><strike>two-way</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_bf518203-8e61-d94b-355e-55700f29dba4">    <strike>A measurement of the performance of frames that is achieved from an initiating MEP to responding peer MEP, and back to the initiating MEP; i.e., a bidirectional or round-trip measurement.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_af247d9c-5abc-4adf-4f11-5cdf5592b99f">    <strike>A measurement of the performance of frames that is achieved from an initiating MEP to responding peer MEP, and back to the initiating MEP; i.e., a bidirectional or round-trip measurement.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_716bd79b-4b5b-3eeb-f7b7-ba478f7535e0"><p id="_2b3ac580-6b75-a815-9042-558f58292550"><strike>Two-way is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
+ <termnote id="_95d8412c-1552-33e6-1e60-b964cea8eb8d"><p id="_3a061757-3604-483d-b0ff-16c27ada435f"><strike>Two-way is referred to in <eref type="inline" bibitemid="g8013" citeas="ITU-T G.8013"/>.</strike></p>
 </termnote></term>
 
 <term id="term-traffic-conditioning-function"><preferred><expression>
 <name>traffic-conditioning function</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_95625228-a4a8-e602-c4fd-9fa329fac294">A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, polices non-conformant traffic units and presents the remaining traffic units at its output as characteristic information of the layer network.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_95ec12f5-c54c-75ed-43b1-58352ae37dd2">A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, polices non-conformant traffic units and presents the remaining traffic units at its output as characteristic information of the layer network.</p></verbal-definition></definition>
 
 
- <termnote id="_4fc78d40-f063-bccf-4d1e-6b10abba1cdd"><p id="_cc7c9722-2983-47cb-3b54-3388360712f7">Traffic-conditioning function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
+ <termnote id="_9aa2dcb8-f971-1414-dd3e-bd7af4162e47"><p id="_e908d893-a99f-e7d7-986d-0a33bd9e56b3">Traffic-conditioning function is referred to in <eref type="inline" bibitemid="g8010" citeas="ITU-T G.8010"/>.</p>
 </termnote></term>
 
 <term id="term-traffic-shaping-function"><preferred><expression>
 <name>traffic-shaping function</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_aaff92a3-4ba5-1ac5-3e78-227e25d445a9">A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, controls non-conformant traffic units by buffering and scheduling them alternately with conformant traffic units for presentation at its output as characteristic information of the layer network.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_6c2cfda8-059a-42ac-1f41-7d35a628a3d8">A transport processing function that accepts the characteristic information of the layer network at its input, classifies the traffic units according to configured rules, meters each traffic unit within its class to determine its eligibility, controls non-conformant traffic units by buffering and scheduling them alternately with conformant traffic units for presentation at its output as characteristic information of the layer network.</p></verbal-definition></definition>
 
 
- <termnote id="_3f1fa24e-ea47-915b-0ccf-772bf5b249a2"><p id="_9cc2fea0-3107-0800-c367-47bf3708b1d5">Traffic-shaping function is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
+ <termnote id="_412a4fef-d264-2662-4ead-df81b50a1e0a"><p id="_1851e4c2-fe50-f529-fa62-938d705cbb93">Traffic-shaping function is referred to in <eref type="inline" bibitemid="g8021" citeas="ITU-T G.8021"/>.</p>
 </termnote></term>
 
 <term id="term-user-network-interface-_UNI_"><preferred><expression>
@@ -821,27 +821,27 @@
 </expression>
 </preferred>
 
- <termnote id="_c6b0146e-f88c-7574-0625-aa8b8941b592"><p id="_e9499106-3030-e4fa-2bad-67ff9b5409ba"><strike>User network interface is referred to in <eref type="inline" bibitemid="mef10-3" citeas="MEF 10.3"/>.</strike></p>
+ <termnote id="_4b3bcb5f-f97d-7efd-cff5-5eb2f64736d4"><p id="_fe7e9faf-31f6-00f1-16db-2e3f04b8cdbe"><strike>User network interface is referred to in <eref type="inline" bibitemid="mef10-3" citeas="MEF 10.3"/>.</strike></p>
 </termnote></term>
 
 <term id="term-user-to-network-interface-_UNI_"><preferred><expression>
 <name>user-to-network interface (UNI)</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_27020bf6-39f6-7064-3572-661ca0ab2270">An interface that is used for the interconnection of customer equipment with a network element of the transport network.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_3faec64f-5a94-d83e-8ad8-0b88cf7dfb5d">An interface that is used for the interconnection of customer equipment with a network element of the transport network.</p></verbal-definition></definition>
 
 
- <termnote id="_b733cae1-e79d-7db0-7a46-f216db54f6f6"><p id="_874264ed-2558-76ed-7834-5bd53a75009b">User-to-network interface is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
+ <termnote id="_28bb7059-2f3f-a4f6-571e-279965987d2b"><p id="_66a7d248-3cb3-9e51-d6b9-e1f17a2f93d9">User-to-network interface is referred to in <eref type="inline" bibitemid="g8012" citeas="ITU-T G.8012"/>.</p>
 </termnote></term>
 
 <term id="term-wait-to-block-timer"><preferred><expression>
 <name><strike>wait to block timer</strike></name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_da027e32-c80f-bef8-2e0c-1a8b8c469137">    <strike>A timer that is employed by the RPL owner to delay reversion after a forced switch or manual switch has been cleared.</strike></p></verbal-definition></definition>
+<definition><verbal-definition><p id="_c3d8fe41-636e-f8d4-f2e2-596e768810c2">    <strike>A timer that is employed by the RPL owner to delay reversion after a forced switch or manual switch has been cleared.</strike></p></verbal-definition></definition>
 
 
- <termnote id="_c55645e4-60af-5b3d-8cdb-5ec50c0cf2a3"><p id="_7f93b5de-2c7a-e6fa-767a-cd9474de7c3f"><strike>Wait to block timer is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
+ <termnote id="_eb994898-4c2d-3424-071d-94875f8ef6ed"><p id="_694afff4-928f-168c-2f3d-1c6a5d574b28"><strike>Wait to block timer is referred to in <eref type="inline" bibitemid="g8032" citeas="ITU-T G.8032"/>.</strike></p>
 </termnote></term>
 </terms>
 
@@ -875,7 +875,7 @@
 
 <references id="_bibliography" normative="false" obligation="informative">
 <title>Bibliography</title><bibitem id="g800" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Unified functional architecture of transport networks</title>
 
@@ -1314,7 +1314,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Unified functional architecture of transport networks</title>
 
@@ -1761,7 +1761,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="g805" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Generic functional architecture of transport networks</title>
 
@@ -2200,7 +2200,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Generic functional architecture of transport networks</title>
 
@@ -2647,7 +2647,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="g8051" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Management aspects of the Ethernet transport (ET) capable network element</title>
 
@@ -3086,7 +3086,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Management aspects of the Ethernet transport (ET) capable network element</title>
 
@@ -3533,7 +3533,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="g8052" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Protocol-neutral management information model for the Ethernet transport capable network element</title>
 
@@ -3972,7 +3972,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Protocol-neutral management information model for the Ethernet transport capable network element</title>
 
@@ -4419,7 +4419,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="g808-1" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Generic protection switching – Linear trail and subnetwork protection</title>
 
@@ -4858,7 +4858,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Generic protection switching – Linear trail and subnetwork protection</title>
 
@@ -5305,7 +5305,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="g809" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Functional architecture of connectionless layer networks</title>
 
@@ -5744,7 +5744,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Functional architecture of connectionless layer networks</title>
 
@@ -6191,7 +6191,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="m3010" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Principles for a telecommunications management network</title>
 
@@ -6231,7 +6231,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Principles for a telecommunications management network</title>
 
@@ -6278,7 +6278,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="m3013" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Considerations for a telecommunications management network</title>
 
@@ -6318,7 +6318,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Considerations for a telecommunications management network</title>
 
@@ -6366,7 +6366,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="m3100" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Generic network information model</title>
 
@@ -6406,7 +6406,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Generic network information model</title>
 
@@ -6453,7 +6453,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="x700" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Management framework for Open Systems Interconnection (OSI) for CCITT applications</title>
 
@@ -6494,7 +6494,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Management framework for Open Systems Interconnection (OSI) for CCITT applications</title>
 
@@ -6542,7 +6542,7 @@
   </relation>
   <place>Geneva</place>
 </bibitem><bibitem id="x701" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems management overview</title>
 
@@ -6583,7 +6583,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems management overview</title>
 
@@ -6737,21 +6737,21 @@
 
 </sections><annex id="_recommendation_itu_t_g_8001y_1354_defect_report_form" inline-header="false" obligation="normative">
 <title>Recommendation ITU-T G.8001/Y.1354 Defect Report Form</title>
-<table id="_eaf01491-0f2e-1e71-6bb8-b6b78e004031" unnumbered="true"><tbody><tr><td valign="top" align="left">DATE:</td>
-<td valign="top" align="left"/></tr><tr><td valign="top" align="left"><p id="_667404a8-8ce5-6b28-2622-c61515a80f0b">CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
+<table id="_42b75c9a-c152-d54c-4fc5-fef84ee2dd1d" unnumbered="true"><tbody><tr><td valign="top" align="left">DATE:</td>
+<td valign="top" align="left"/></tr><tr><td valign="top" align="left"><p id="_b7fd4069-24f3-7089-2cb5-e8aea0ec3d02">CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
 </td>
 <td valign="top" align="left"/></tr><tr><td valign="top" align="left">AFFECTED RECOMMENDATIONS:</td>
 <td valign="top" align="left"/></tr><tr><td valign="top" align="left">DESCRIPTION OF PROBLEM:</td>
 <td valign="top" align="left"/></tr><tr><td valign="top" align="left">SUGGESTIONS FOR RESOLUTION:</td>
 <td valign="top" align="left"/></tr></tbody>
-<note id="_144e87c5-7df0-e541-9081-f059f06d102e"><p id="_d2e95842-3a08-4c42-2171-d74f29d9268d">Attach additional pages if more space is required than is provided above.</p>
+<note id="_7f4aa079-2475-c564-7dbf-b175d4f88c43"><p id="_4cb1a61f-0ee3-1f2b-0db7-0aee0ceb1294">Attach additional pages if more space is required than is provided above.</p>
 </note></table>
 
 
 </annex><bibliography><references id="_references" normative="true" obligation="informative">
-<title>References</title><p id="_275a5bef-a7d6-9098-1663-185b6fe8dd33">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
+<title>References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
 <bibitem id="itu-g8001" type="standard" schema-version="v1.2.9">
-  <fetched>2025-02-18</fetched>
+  <fetched>2025-03-28</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Terms and definitions for Ethernet frames over transport</title>
 
@@ -6791,7 +6791,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-02-18</fetched>
+      <fetched>2025-03-28</fetched>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Terms and definitions for Ethernet frames over transport</title>
 
@@ -6843,4 +6843,4 @@
 
 
 </references></bibliography>
-</itu-standard>
+</metanorma>
