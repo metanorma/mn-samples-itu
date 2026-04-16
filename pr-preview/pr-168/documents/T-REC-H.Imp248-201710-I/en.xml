@@ -1,0 +1,3117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.6" schema-version="v2.1.5" flavor="itu">
+<bibdata type="standard">
+<title language="en" type="main">Implementors' Guide for the H.248 Sub-series of Recommendations ("Media Gateway Control Protocol")</title>
+<docidentifier type="ITU" primary="true">ITU-T H.248 Sub-series Implementors Guide</docidentifier><docidentifier type="ITU-lang">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T H.248</docidentifier><docnumber>H.248 Sub-series Implementors Guide</docnumber><date type="published"><on>2017-10-27</on></date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor">raporteur</role><person>
+<name><completename>Patrick Luthi</completename></name>
+<affiliation><organization>
+<name>IEEE</name>
+<address><formattedAddress>Switzerland</formattedAddress></address></organization></affiliation><email>pluthi@ieee.org</email></person></contributor><contributor><role type="editor"/><person>
+<name><completename>Christian Groves</completename></name>
+<affiliation><organization><address><formattedAddress>Australia</formattedAddress></address></organization></affiliation><phone>+61 3 9391 3457</phone><email>cngroves.std@gmail.com</email></person></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Telecommunication Union</name>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><subdivision type="Group" subtype="study-group">
+<name>16</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract>
+
+<p>This document is a compilation of reported defects identified in the ITU-T H.248 sub-series of Recommendations currently in force. It must be read in conjunction with the Recommendations to serve as an additional authoritative source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248 sub-series Recommendations.</p>
+
+<p>This edition contains all updates submitted up to and including those at Study Group 16 meeting in Macao, China, 16-27 October 2017.</p>
+
+<p>This Implementors' Guide was approved by ITU-T Study Group 16 on 27 October 2017 and obsoletes the earlier version of this implementers' guide approved on 23 October 2015.<note><p>The Implementors' Guides for H.248.1 Version 1 and Version 2 are published as separate documents. (ITU-T H.248.1 is currently in its version 3.)</p>
+</note></p>
+
+
+</abstract><status><stage>in-force</stage></status><copyright><from>2017</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><series type="main">
+<title>H: Audiovisual and Multimedia Systems</title>
+</series><series type="secondary">
+<title>Infrastructure of audiovisual services – Communication procedures</title>
+</series><ext><doctype>implementers-guide</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>H.248 Sub-series Implementors Guide</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_3fff877d-2656-1361-d311-aee34f82e300" inline-header="false" obligation="normative"><p id="_7b4a6e29-934e-678f-c898-93f2c62b1965">© ITU 2017</p>
+
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<legal-statement>
+
+<clause id="_003f845c-f32a-7960-3b0f-9c85330adade" inline-header="false" obligation="normative">
+<title id="_89ed9c08-e3b7-2077-1fcb-dabb1102e0b7">FOREWORD</title>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+</clause>
+</legal-statement>
+</boilerplate><preface><abstract id="_b987a8bc-3a23-b0fb-22d8-289f628af0ca">
+<title id="_bddaac0f-3db8-580b-f6b0-f25cdc8b8c2d">Summary</title>
+<p id="_e7b94c22-c414-6990-d384-1a7b73ed50fa">This document is a compilation of reported defects identified in the ITU-T H.248 sub-series of Recommendations currently in force. It must be read in conjunction with the Recommendations to serve as an additional authoritative source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248 sub-series Recommendations.</p>
+
+<p id="_30c55f26-d815-e5f8-5678-edb208209b0f">This edition contains all updates submitted up to and including those at Study Group 16 meeting in Macao, China, 16-27 October 2017.</p>
+
+<p id="_5c9e5802-bca2-c100-14c2-00d747a7e71d">This Implementors' Guide was approved by ITU-T Study Group 16 on 27 October 2017 and obsoletes the earlier version of this implementers' guide approved on 23 October 2015.<note id="_d1a8dbe9-c965-a821-af38-ccff56d3f900"><p id="_b0f7804e-97fb-aec6-84f1-5847b6cc2160">The Implementors' Guides for H.248.1 Version 1 and Version 2 are published as separate documents. (ITU-T H.248.1 is currently in its version 3.)</p>
+</note></p>
+
+
+</abstract><clause id="_28ab1f9c-e4e5-22a8-e204-ffb727391b4a" inline-header="false" obligation="informative">
+<title id="_0ade76fc-012b-5fe8-c33f-9ecec202be36">Change Log</title>
+<p id="_f81c1bcf-6910-bd00-e595-cebb9a86c831">(All changes that were included in corrigenda, amendments or revisions to the Recommendations in the H.248 subseries are omitted here.)</p>
+
+<table id="_d6c24366-26d7-3953-9a1e-1d00644836d6">
+<name id="_6d0a730a-8f1f-f0bc-4524-0b7719568aa0">V1 (Geneva, 23 October 2015)</name>
+<tbody><tr id="_6ad8a452-0778-327a-978a-754f7844530b"><td id="_bd552ecf-6bfe-12d0-f131-fc2355aeb53f" valign="top" align="left">New H.248.1 section</td>
+<td id="_841e8998-51a4-b28e-b9c5-4147afafeba1" valign="top" align="left"><p id="_cc9f20bb-4c2a-dbc3-f06f-cf3256e262b2">6.1 Usage of DOT in digitmaps<br/> 6.2 Updated ABNF reference<br/> 6.3 Reserve Properties clarifications</p>
+</td>
+</tr><tr id="_2c04185e-d070-011b-985e-619f67dc9fc9"><td id="_9528221d-53a1-942d-a370-685f53c951fa" valign="top" align="left">New H.248.9 section</td>
+<td id="_27d57490-462c-3743-3ef6-ae1beffd6a4d" valign="top" align="left">7.1 Updated ABNF reference</td>
+</tr><tr id="_260024d0-b447-21d6-7c44-d8d08e114d7a"><td id="_ebe65fc1-29fc-45d7-e3e1-23b0568cb9dc" valign="top" align="left">New H.248.40 section</td>
+<td id="_d4155c68-95f8-7baa-d03a-bf9ca51148a8" valign="top" align="left">8.1 Packet types subject to detection logic</td>
+</tr><tr id="_464897b1-0ef6-6c17-7b18-36a9f3e5eae5"><td id="_a6906115-787c-e1b9-6671-08eca798331f" valign="top" align="left">New H.248.53 section</td>
+<td id="_88c26e08-e41c-f92c-9463-07d32f4a479f" valign="top" align="left">9.1 Rate policing clarifications</td>
+</tr><tr id="_d5843506-d63c-2874-9a87-400504708fe1"><td id="_3f3385eb-0657-dfd7-5a56-6e095cbb39cc" valign="top" align="left">New H.248.69 section</td>
+<td id="_c0dfb218-ec0b-dc5b-a221-b5dd255263db" valign="top" align="left">10.1 Superfluous reference</td>
+</tr><tr id="_69d96b35-e283-3975-d4bf-9fa84b4d0213"><td id="_82096b0f-9912-a8f0-d9bd-f759e7d6416a" valign="top" align="left">New H.248.80 section</td>
+<td id="_c8c08297-65c9-5194-92a0-97aa177ec320" valign="top" align="left">11.1 Updated reference</td>
+</tr><tr id="_3c1848b6-690c-81d7-3000-b9c60dce4b11"><td id="_2b710474-d69b-4d0d-4e80-3406dafb4121" valign="top" align="left">New H.248.83 section</td>
+<td id="_de3bb5e2-b167-9383-00f1-b46a25f68844" valign="top" align="left">12.1 Incorrect reference</td>
+</tr><tr id="_c185e3a1-4c51-12a1-4779-084cc8ad461f"><td id="_14d30592-b8bf-2271-f67f-1844eb038a62" valign="top" align="left">New H.248.87 section</td>
+<td id="_a3f327ea-8694-43a7-540d-9823edf48e0c" valign="top" align="left">13.1 Updated reference</td>
+</tr></tbody>
+</table>
+
+<table id="_e0bc68d9-4292-f4b5-5096-f00435448642">
+<name id="_ab8f15a4-9b09-cb2a-bae4-4daab5b66756">V2 (Macao, China, 27 October 2017)</name>
+<tbody><tr id="_fbcd4eba-d319-aa73-a9db-ac72a1345a53"><td id="_89eebc15-135f-2c85-2253-8c54eec09f1d" valign="top" align="left">New H.248.88 section</td>
+<td id="_86a54b4b-7a36-3b58-7624-c8bd50e82763" valign="top" align="left">14.1 Updated reference</td>
+</tr></tbody>
+</table>
+</clause></preface><sections>
+
+
+<clause id="_bf2ba1ba-1630-cae7-1bcc-629e04904101" type="scope" inline-header="false" obligation="normative">
+<title id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title>
+<p id="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265">This guide resolves defects in the following categories:</p>
+
+<ul id="_0f46587a-4a22-b099-bcfc-949dc1ebf367"><li><p id="_145ebb3b-63ab-a2b9-b86a-b9226239e968">editorial errors</p>
+</li>
+<li><p id="_396c4cb0-8334-908d-3168-a016a39de6f5">technical errors, such as omissions and inconsistencies</p>
+</li>
+<li><p id="_c1f22a18-0ece-5b78-95b4-3db77530a99b">ambiguities</p>
+</li>
+</ul>
+
+<p id="_54f6b400-c21c-6606-6dda-d4f9f9b6d7c2">In addition, the Implementors' Guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
+
+<p id="_db812e80-8d34-08aa-7fb0-7f0245a60ba0">This Guide will not address proposed additions, deletions, or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to the ITU-T.</p>
+</clause>
+
+<clause id="_13ccd784-1a90-f8da-5c2f-d90913a8098a" inline-header="false" obligation="normative">
+<title id="_61998878-2bff-eff7-7263-05a3fe373b29">Introduction</title>
+<p id="_61b62ed1-8ac4-5fa0-3ee2-fb7f5238a379">The H.248 Implementors' Guide is a compilation of reported defects for all versions of the H.248.x sub-series of Recommendations, except H.248.1 Version 1 (03/2002) and H.248.1 Version 2 (05/2002) Corrigendum 1 (03/2004). <em>For the defects in Version 1, see the H.248.1 Version 1 Implementors' Guide. For the defects in Version 2, see the H.248.1 Version 2 Implementors' Guide.</em></p>
+
+<p id="_e081d648-6632-a9bd-e8aa-1e79be121935">In this edition of the Guide, reported defects identified as of 23 October 2015 are given for:</p>
+
+<ul id="_2a51115c-7d41-d980-a605-f44168fc7963"><li><p id="_82ab3f12-4d99-2a06-95f8-f791e3de47e0">H.248.1 (03/2013)</p>
+</li>
+<li><p id="_422c7168-fda9-66bd-8c0c-5a2e50bc1ad3">H.248.9 (12/2009)</p>
+</li>
+<li><p id="_afc25a5e-e6cb-0fdf-c7b2-47089c0dcbb0">H.248.40 (03/2013)</p>
+</li>
+<li><p id="_c67dd9de-7490-361f-3158-f40b9051aa43">H.248.53 (03/2009)</p>
+</li>
+<li><p id="_a3281774-a295-8d0e-a434-7efae84b98d4">H.248.69 (03/2009)</p>
+</li>
+<li><p id="_a993024f-d9b9-7bb5-83ca-bed222ef0c98">H.248.80 (01/2014)</p>
+</li>
+<li><p id="_99c64735-1e6e-9561-af5a-cfff890af420">H.248.83 (02/2012)</p>
+</li>
+<li><p id="_d046b2c7-15d6-55f6-93e8-ce3fe1e6df05">H.248.87 (01/2014)</p>
+</li>
+<li><p id="_afd3279f-942d-e439-1198-43ee8f2f2a16">H.248.88 (01/2014)</p>
+</li>
+</ul>
+
+<p id="_7a025c90-a921-0f0c-bcce-72e552d99422">The Guide must be read in conjunction with the H.248.x sub-series of Recommendations to serve as an additional source of information for implementors. The changes, clarifications and corrections defined herein are expected to be included in future versions of affected H.248.x Recommendations.</p>
+</clause>
+
+<clause id="_bd511b5b-c4f0-bd3a-8b8a-8d9ece11b8f4" inline-header="false" obligation="normative">
+<title id="_6970a7dc-5ccf-670d-0e1a-663635b37738">Defect Resolution Procedure</title>
+<p id="_362a7ff9-85ab-2719-be39-06bd7245a17f">Upon discovering technical defects with any components of the H.248.x Sub-series Recommendations, please provide a written description directly to the editors of the affected Recommendations with a copy to the Q.3/16 Rapporteur. The template for a defect report is located at the end of the Guide. Contact information for these parties is included at the front of the document. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
+</clause>
+
+
+
+<clause id="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a" inline-header="false" obligation="normative">
+<title id="_7a78976d-4b13-fb1e-1bad-14eb19b4702c">Nomenclature</title>
+<p id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
+
+<table id="_0ae75d4e-57ab-689e-6be2-8b22c20a9e73" unnumbered="true"><tbody><tr id="_07249b8d-649f-f5af-8e24-dd514d6d293b"><th id="_c1c1ac00-93c0-bb77-a5a4-11c2fc8c3f69" valign="top" align="center">Symbol</th>
+<th id="_2b43d866-0e6f-65c1-a4cd-28ee6cbc2d2f" valign="top" align="center">Description</th>
+</tr><tr id="_7494b805-6848-df16-e571-fb23cf6943f5"><td id="_6752e28a-047a-99e8-7676-1c1c82eac638" valign="top" align="center"><strong><em>[Begin Correction]</em></strong></td>
+<td id="_93b2c980-bacd-d04d-6790-df1b5bba5f4a" valign="top" align="left">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr id="_28b07906-e300-eaa1-7c85-62e2b85e6a44"><td id="_540b2331-8a7c-c22f-1661-0fa694646cff" valign="top" align="center"><strong><em>[End Correction]</em></strong></td>
+<td id="_5507813e-9dcd-d8da-0519-d7dc34b2bfd8" valign="top" align="left">Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr id="_7a71bb72-ccc4-9abd-9c92-65be79ccbc2d"><td id="_2840d8ee-4384-0f5a-5964-35536a1b2287" valign="top" align="center"><strong><em>…​</em></strong></td>
+<td id="_dec60427-b524-b636-1ff8-4d75798a03ae" valign="top" align="left">Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.</td>
+</tr><tr id="_c1f817ed-a8ed-6065-108a-f7df4bd7d199"><td id="_69892512-7e73-176d-6a90-d0eb77ada347" valign="top" align="center"><em>--- SPECIAL INSTRUCTIONS --- {instructions}</em></td>
+<td id="_554a0521-943d-4d95-2b51-7a8ba4cd471c" valign="top" align="left">Indicates a set of special editing instructions to be followed.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_28e545cd-1976-5dab-77a0-d122444af6a8" inline-header="false" obligation="normative">
+<title id="_19dec934-bef4-e3b0-72d1-5b6130642a7f">Technical and Editorial Corrections to H.248.1 (03/2013)</title>
+<clause id="_30bb765d-ccf0-663f-c5c0-408de5d0066d" inline-header="false" obligation="normative">
+<title id="_78f5a9f1-5319-04a1-1587-8d0ad0cb8d94">Usage of DOT in digitmaps</title>
+<table id="_36a3cf41-6c7f-cf3d-3294-4307aa597817" unnumbered="true"><tbody><tr id="_820f3792-2fb3-e963-cb7c-c2584aee0627"><th id="_2c65dbaa-3b86-d352-d982-c49cbd11c94d" valign="top" align="left">Issue:</th>
+<td id="_1a417589-2ddb-549c-c608-4822088c0cec" valign="top" align="left"><p id="_8724fe51-b2fe-8e12-ba9c-e2d906c67fd9">Digit maps allow the specification of a "." DOT in a digit map. This DOT indicates that the preceding element may be repeated zero or more times.<br/> The example in 7.1.14.9/[ITU-T H.248.1] shows its usage:<br/> 9011 + up to 15 digits is denoted by "9011x."<br/> However there has been some confusion over whether the preceding element to the DOT has to be matched for a successful digit map completion. I.e. for the above example is "9011" a successful match?<br/> This question has been posted to the IETF Megaco mailing list on two previous occasions previously: (29/09/2008, "Megaco question about interpretation of dot in a digitmap") and (16/05/2007, "DOT in H.248 Digit map syntax").<br/> The reply on both those occasions was the key word is "repetitions" and that there must be at least occurrence of the preceding element. I.e. In the above example "90112" would result in a successful match but "9011" would not.</p>
+</td>
+</tr><tr id="_549b4b31-1222-91c5-70c6-95b2e50cacaa"><th id="_73f46eb8-ee1d-6392-38ae-54f41dd8cc0b" valign="top" align="left">Reference:</th>
+<td id="_d088f1df-882c-5964-7879-b8a0258f9adc" valign="top" align="left"><link target="http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4448.zip">AVD-4448</link></td>
+</tr></tbody>
+</table>
+
+<p id="_191d62a3-08bf-603b-4f57-c89c196c3af6" align="center"><strong><em>[Begin Correction]</em></strong></p>
+
+<p id="_95992846-e686-ee33-df43-5a86349a479f"><strong>7.1.14.3 DigitMap syntax</strong></p>
+
+<p id="_4e0fb8be-1f74-3b15-13b8-f7de9f85d0ec">The formal syntax of the DigitMap is described by the DigitMap rule in the formal syntax description of the protocol (see Annexes A and B). A DigitMap, according to this syntax, is defined either by a string or by a list of strings. Each string in the list is an alternative event sequence, specified either as a sequence of DigitMap symbols or as a regular expression of DigitMap symbols. These DigitMap symbols, the digits "0" through "9" and letters "A" through a maximum value depending on the signalling system concerned, but never exceeding "K", correspond to specified events within a package which has been designated in the Events Descriptor on the termination to which the DigitMap is being applied. (The mapping between events and DigitMap symbols is defined in the documentation for packages associated with channel-associated signalling systems such as DTMF, MF, or R2. Digits "0" through "9" must be mapped to the corresponding digit events within the signalling system concerned. Letters should be allocated in logical fashion, facilitating the use of range notation for alternative events.)</p>
+
+<p id="_ff35ee83-e4a8-4c86-ef23-98e76cb3ed0f">The letter "x" is used as a wildcard, designating any event corresponding to symbols in the range "0"-"9". The string may also contain explicit ranges and, more generally, explicit sets of symbols, designating alternative events any one of which satisfies that position of the DigitMap. Finally, the dot symbol "." stands for <underline>one occurrence and</underline> zero or more repetitions of the event selector (event, range of events, set of alternative events, or wildcard) that precedes it. As a consequence of the third timing rule above, inter-event timing while matching a terminal dot symbol uses the short timer by default.</p>
+
+<p id="_c228356a-fd94-e5bf-5305-cb0624cbb3a6">In addition to these event symbols, the string may contain "S" and "L" inter-event timing specifiers and the "Z" duration modifier. "S" and "L" respectively indicate that the MG should use the short (S) timer or the long (L) timer for subsequent events, overriding the timing rules described above. If an explicit timing specifier is in effect in one alternative event sequence, but none is given in any other candidate alternative, the timer value set by the explicit timing specifier must be used. If all sequences with explicit timing controls are dropped from the candidate set, timing reverts to the default rules given above. If used inside a range notation, the S and L specifiers shall be ignored. Finally, if conflicting timing specifiers are in effect in different alternative sequences, the long timer shall be used.</p>
+
+<p id="_69feb669-4a44-c265-cc24-644b037cf33a">A "Z" designates a long duration event: placed in front of the symbol(s) designating the event(s) which satisfy a given digit position, it indicates that that position is satisfied only if the duration of the event exceeds the long-duration threshold. The value of this threshold is assumed to be provisioned in the MG, but, like the T, L, and S timers, can be overridden by specification within the DigitMap. If the Z specifier is not followed by a digit (0-9 or A-K), then the MG shall reject the digitmap as invalid procedure. When used in a range notation, the Z specifier applies solely to the immediately following digit. When used immediately prior to a range, the Z modifier applies to all digits in the range (thereby requiring a match in the range to be long duration).</p>
+
+<p id="_3013dd6f-9b3f-f9db-dab0-124babbc63bd" align="center"><strong><em>[End Correction]</em></strong></p>
+</clause>
+
+<clause id="_c6c3fd62-087b-c18c-156c-0224c7d3d86d" inline-header="false" obligation="normative">
+<title id="_f6bf03d1-dcdb-05c2-1042-aa5c7a8f6cb8">Updated ABNF reference</title>
+<table id="_e4b59fcc-9200-8ec9-713d-5f88a6e0a8e0" unnumbered="true"><tbody><tr id="_ea226ceb-8c71-a68b-20d3-2474585cb124"><th id="_0d3fbc54-cf70-679e-ea0c-5b16bc48d2c0" valign="top" align="left">Issue:</th>
+<td id="_0328affc-2abf-04fb-4531-237a8935e311" valign="top" align="left"><p id="_2763afe9-49d7-7fce-fb3e-0e9ed46039ef">H.248.1 contains a reference to RFC2234 for ABNF syntax. This RFC has been obsoleted. The latest definition of ABNF is RFC 5234 which is also known as STD 68. The updates to the RFC are mainly with regards to its use with email. There are no changes that effect H.248 encoding.</p>
+</td>
+</tr><tr id="_8dc61545-3c13-4890-9599-03d350c04b45"><th id="_22eada2b-b967-3c07-d62d-bd725c4bb311" valign="top" align="left">Reference:</th>
+<td id="_a27b9b78-282c-9fce-4e37-33333eecb875" valign="top" align="left">Discussions resulting from H.248.66 (<link target="http://www.itu.int/md/meetingdoc.asp?lang=en&amp;parent=T13-SG16-C-0351">COM16-C.351</link>).</td>
+</tr></tbody>
+</table>
+
+<p id="_5671c257-4a6a-9c25-b122-c0ea59e077b6" align="center"><strong><em>[Begin Correction]</em></strong></p>
+
+<p id="_88ee22b9-4f5c-9ebe-8f9f-0c4114b52fc7"><strong>2 References</strong></p>
+
+<p id="_b1d17516-de24-8411-53ce-013fc119b0bd">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
+
+<p id="_56010f11-78ef-646c-4bf5-dc2a552ba23a" align="center"><strong><em>…​</em></strong></p>
+
+<p id="_7337d3a4-471b-f20d-e818-9190a4e20198"><strike>[IETF RFC 2234] IETF RFC 2234 (1997), <em>Augmented BNF for Syntax Specifications: ABNF</em>.</strike></p>
+
+<p id="_14fd3600-2e40-d209-10ed-796c0f340dc4" align="center"><strong><em>…​</em></strong></p>
+
+<p id="_b74809a3-1f22-c875-81a6-7f244630b86c"><underline>[IETF RFC 5234] IETF RFC 5234 (2008), <em>Augmented BNF for Syntax Specifications: ABNF</em>.</underline></p>
+
+<p id="_ef3d1782-30f5-1ff3-d129-bb3b5b964c26" align="center"><strong><em>[End Correction]</em></strong><note id="_bdd1c589-c3fd-7469-60e4-77e700045cfd"><p id="_a5ce8f94-cb07-af82-a57a-39eb98c8202b">For brevity, the changes to the references inside H.248.1 have not been included. The references to [IETF RFC 2234] in clauses 7.2.10, A.3 and B.2 shall be changed to [IETF RFC 5234].</p>
+</note></p>
+
+
+</clause>
+
+<clause id="_ce88b6f4-44fd-e210-d405-78defcb666fb" inline-header="false" obligation="normative">
+<title id="_1202fc95-39dd-c049-924c-172e0b4df074">Reserve Properties clarifications</title>
+<table id="_626baebb-f0f1-e90a-1691-1704630ca1d9" unnumbered="true"><tbody><tr id="_123a5445-0b3a-f856-7eab-20164f719649"><th id="_81c9224c-af1d-a370-703d-d2e7e7a91432" valign="top" align="left">Issue:</th>
+<td id="_0dc1692d-a4ed-8104-df3f-5752c757b586" valign="top" align="left">There has been some confusion with regards to the behaviour of property overspecification and the use of ReserveValue and ReserveGroup. Clarifying text is added to clause 7.1.7 on the relation between the concepts. The note in clause 7.1.8.2.3.2 is related to ReserveGroup=True and thus should be placed in clause 7.1.8.2.3.3.</td>
+</tr><tr id="_c897324c-483e-4446-0053-78156e002722"><th id="_b36ecad4-ede3-486a-447a-6fd8fcf168ff" valign="top" align="left">Reference:</th>
+<td id="_f33fbb21-615b-7959-3910-898306997402" valign="top" align="left"><link target="http://www.itu.int/md/meetingdoc.asp?lang=en&amp;parent=T13-SG16-C-0686">COM16-C.686</link></td>
+</tr></tbody>
+</table>
+
+<p id="_0064d6e3-df1d-9365-ac32-4e8bf730075b" align="center"><strong><em>[Begin Correction]</em></strong></p>
+
+<p id="_408858cd-6b59-64e4-2d08-ddca8aabeb33"><strong>7.1.7 LocalControl Descriptor</strong></p>
+
+<ol id="_4b7ad64b-c6e6-9a3c-7a49-0005f17ef5f5" class=""><li><p id="_17deec6f-dd35-1a9a-3645-ef386c1eee7d"><strong>Overview</strong><br/> The LocalControl Descriptor contains the Mode Property, the ReserveGroup and ReserveValue Properties and properties of a termination (defined in packages) that are stream specific, and are of interest between the MG and the MGC. Values of properties may be specified as in clause 7.1.1.</p>
+</li>
+<li><p id="_5f4206da-28e8-5b91-64d9-473aa8800b03"><strong>Mode Property (for directionality control)</strong><br/> The allowed values for the Mode Property are "SendOnly", "RecvOnly", "SendRecv", "Inactive" and "LoopBack". "SendOnly", "RecvOnly" and "LoopBack" are with respect to the exterior of the context, so that, for example, a stream set to mode = "SendOnly" does not pass received media into the context. When a stream is set to "LoopBack" on a termination, media received (Local Descriptor) on the termination will be looped back to the sending side (Remote Descriptor) of the termination and no media is passed between that termination and other terminations in the context. The looped back media shall be sent according to the Remote Descriptor. The default value for the Mode Property is "Inactive". Signals and events are not affected by the Mode Property. Statistics may or may not be affected by the Mode property depending on the semantic of the statistic. For example: if the Mode was set to "SendOnly" and the Octet Received Statistic was set, then the statistic would not be affected. If the Octet Sent Statistic was set, then it would be affected by the mode. The LocalControl Mode Property takes precedence over any mode specified in the Local and Remote Descriptors. However, duplication and use of mode information in the SDP should be avoided. Due to the default of LocalControl Mode Property being "Inactive", if mode information was added to the Local and Remote Descriptor SDP and the LocalControl Mode was not explicitly sent, the effective mode would still be inactive.</p>
+</li>
+<li><p id="_a344b7fd-0c5d-c71d-83ef-9b5c87ce9cc4"><strong>Reserve Properties (for resource handling control)</strong></p>
+<p id="_af97b5bb-cefb-3fbc-ca21-438a87eda9c8">The boolean-valued Reserve Properties, ReserveValue and ReserveGroup, of a termination indicate what the MG is expected to do when it receives a Local and/or Remote Descriptor.</p>
+
+<p id="_8b77b78b-7a82-4e23-96f5-d7f44da2d607">If the value of a Reserve Property is "True", the MG shall reserve resources for all alternatives specified in the Local and/or Remote Descriptors for which it currently has resources available. It shall respond with the alternatives for which it reserves resources. If it cannot support any of the alternatives, it shall respond with a reply to the MGC that contains empty Local and/or Remote Descriptors. If media begins to flow while more than a single alternative is reserved, media packets may be sent or received on any of the alternatives and must be processed, although only a single alternative may be active at any given time.</p>
+
+<p id="_b9a43a43-875a-badc-4712-e9fe01763dc6">If the value of a Reserve Property is False, the MG shall choose one of the alternatives specified in the Local Descriptor (if present) and one of the alternatives specified in the Remote Descriptor (if present)<strike>.</strike> <underline>as per the behaviour associated with "overspecification" (see clause 7.1.1, list item 3).</underline> If the MG has not yet reserved resources to support the selected alternative, it shall reserve the resources. If, on the other hand, it already reserved resources for the termination addressed (because of a prior exchange with ReserveValue and/or ReserveGroup equal to "True"), it shall release any excess resources it reserved previously. Finally, the MG shall send a reply to the MGC containing the alternatives for the Local and/or Remote Descriptor that it selected. If the MG does not have sufficient resources to support any of the alternatives specified, it shall respond with Error Code 510 ("Insufficient resources").</p>
+
+<p id="_870ba2a8-a164-29b2-e45b-416936a4353e">The default value of ReserveValue and ReserveGroup is "False". More information on the use of the two Reserve Properties is provided in clause 7.1.8.</p>
+</li>
+<li><p id="_b501340e-ded1-8080-e0b7-61f86e74e41d"><strong>Descriptor usage</strong></p>
+<p id="_c526f4e5-8507-3dfc-07ce-390bc688abe7">A new setting of the LocalControl Descriptor completely replaces the previous setting of that descriptor in the MG. Thus, to retain information from the previous setting, the MGC must include that information in the new setting. If the MGC wishes to delete some information from the existing descriptor, it merely resends the descriptor (in a Modify Command) with the unwanted information stripped out.<note id="_60df26c3-d482-0a69-e179-b8584dd31128"><p id="_81589e2c-7b21-7941-9c26-40d82dd90947">The Mode Property is also known as "StreamMode" in the encoding definitions in Annexes A and B. These terms are interchangeable within ITU-T H.248.</p>
+</note></p>
+
+
+</li>
+</ol>
+
+<p id="_1a48814b-a875-2fec-aea3-68bb18558291" align="center"><strong><em>[End Correction]</em></strong></p>
+
+<p id="_ce473b08-df7e-5007-09e5-a0939b079143" align="center"><strong><em>[Begin Correction]</em></strong></p>
+
+<p id="_d47b8f4e-67c8-7801-5313-a2f67cebd80b"><strong>7.1.8.2.3 Resource reservation rules for ReserveValue and ReserveGroup properties</strong></p>
+
+<p id="_4088ab9d-679b-dbf4-5e48-839b535b5717">Subject to the above rules, subsequent action depends on the values of the ReserveValue and ReserveGroup Properties in LocalControl.</p>
+
+<p id="_47e27810-f7f9-b4b9-f4ea-e9a1639d978d"><strong>7.1.8.2.3.1 ReserveValue = "False" AND ReserveGroup = "True"</strong></p>
+
+<p id="_077a76c7-de3f-558c-1742-b78b54553cf5">If ReserveGroup is "True", the MG reserves the resources required to support as many as possible of the requested property group alternatives that it can currently support.</p>
+
+<p id="_dae4164f-22a0-1080-89e3-046d5bb67811"><strong>7.1.8.2.3.2 ReserveValue = "True" AND ReserveGroup = "False"</strong></p>
+
+<p id="_86059c7a-9d49-781e-b6ba-d8a35c0a806e">If ReserveValue is "True", the MG reserves the resources required to support as many as possible of the requested property value alternatives that it can currently support.</p>
+
+<p id="_ff4aa4b0-6328-3ae1-e2dd-37a5260e8fae"><strike>NOTE:</strike> <strike>If a Local or Remote Descriptor contains multiple groups of properties, and ReserveGroup is "True", then the MG is requested to reserve resources so that it can decode or encode the media stream according to any of the alternatives. For instance, if the Local Descriptor contains two groups of properties, one specifying packetized ITU-T G.711 A-law audio and the other ITU-T G.723.1 audio, the MG reserves resources so that it can decode one audio stream encoded in either ITU-T G.711 A-law format or ITU-T G.723.1 format. The MG does not have to reserve resources to decode two audio streams simultaneously, one encoded in ITU-T G.711 A-law and one in ITU-T G.723.1. The intention for the use of ReserveValue is analogous.</strike></p>
+
+<p id="_f990a1cf-dec9-53ff-8c54-86554fb6dc10"><strong>7.1.8.2.3.3 ReserveValue = "True" OR ReserveGroup = "True"</strong></p>
+
+<p id="_395abbd6-52f0-b122-9aa3-75922686539a">If ReserveGroup is "True" or ReserveValue is "True", then the following rules apply:</p>
+
+<ul id="_9430647f-2cda-10bf-2c22-ef269d2cb6f1"><li><p id="_6049ee18-4768-c06f-9bbe-6aded82e2b5e">If the MG has insufficient resources to support all alternatives requested by the MGC, and the MGC requested resources in both Local and Remote, the MG should reserve resources to support at least one alternative each within Local and Remote.</p>
+</li>
+<li><p id="_b0427541-2a7e-dcf4-dcba-7ce1c8505f3e">If the MG has insufficient resources to support at least one alternative within a Local (Remote) Descriptor received from the MGC, it shall return an empty Local (Remote) in response.</p>
+</li>
+<li><p id="_a30a733a-db6c-a00f-b9a5-dff7f462f9f1">In its response to the MGC, when the MGC included Local and Remote Descriptors, the MG shall include Local and Remote Descriptors for all groups of properties and property values it reserved resources for. If the MG is incapable of supporting at least one of the alternatives within the Local (Remote) Descriptor received from the MGC, it shall return an empty Local (Remote) Descriptor.</p>
+</li>
+<li><p id="_5c664e99-232c-be8b-4c6d-9d2a14c7e575">If the Mode Property of the LocalControl Descriptor is "RecvOnly", "SendRecv", or "LoopBack", the MG must be prepared to receive media encoded according to any of the alternatives included in its response to the MGC.</p>
+</li>
+</ul>
+
+<p id="_6c14d67f-41e8-d199-ea49-79b5675c38fa"><underline>NOTE:</underline> <underline>If a Local or Remote Descriptor contains multiple groups of properties, and ReserveGroup is "True", then the MG is requested to reserve resources so that it can decode or encode the media stream according to any of the alternatives. For instance, if the Local Descriptor contains two groups of properties, one specifying packetized ITU-T G.711 A-law audio and the other ITU-T G.723.1 audio, the MG reserves resources so that it can decode one audio stream encoded in either ITU-T G.711 A-law format or ITU-T G.723.1 format. The MG does not have to reserve resources to decode two audio streams simultaneously, one encoded in ITU-T G.711 A-law and one in ITU-T G.723.1. The intention for the use of ReserveValue is analogous.</underline></p>
+
+<p id="_bc7a8efb-28fd-f75f-1109-44d64b79d3eb"><strong>7.1.8.2.3.4 ReserveValue = "False" AND ReserveGroup = "False"</strong></p>
+
+<p id="_c98aabbf-0e9d-82eb-7174-1d01e4a10d20">If ReserveGroup is "False" and ReserveValue is "False", then the MG should apply the following rules to resolve Local and Remote to a single alternative each:</p>
+
+<ul id="_a99b4fd2-e61f-8c0a-c468-1cd8b2ff0a39"><li><p id="_aff1010f-065c-27eb-14f1-ecd70436eda3">The MG chooses the first alternative in Local for which it is able to support at least one alternative in Remote.</p>
+</li>
+<li><p id="_1daca90a-6973-75d4-615a-627133900090">If the MG is unable to support at least one Local and one Remote alternative, it returns Error Code 510 ("Insufficient resources").</p>
+</li>
+<li><p id="_c1378c93-fda2-fc72-ef9e-728b7a7f840e">The MG returns its selected alternative in each of Local and Remote.</p>
+</li>
+<note id="_98beb6d0-d6df-ae1a-4b3e-3138d4054a29"><p id="_5dbda77e-2ae5-567a-aeb0-5bae261ed819">The above rules allow the MG to prioritize the selection of the same codec in both the Local and Remote Descriptors; however, it also permits the MG to choose different codecs in each descriptor.</p>
+</note></ul>
+
+
+
+<p id="_4d377850-56f9-0e65-7ed1-49bd918200bc">A new setting of a Local or Remote Descriptor completely replaces the previous setting of that descriptor in the MG. Thus, to retain information from the previous setting, the MGC must include that information in the new setting. If the MGC wishes to delete some information from the existing descriptor, it merely resends the descriptor (in a Modify Command) with the unwanted information stripped out.</p>
+
+<p id="_f7c53bf7-5d09-6d56-0edd-4af4307aecb0" align="center"><strong><em>[End Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_3b196650-4454-d6ab-ac52-6689fb8943ea" inline-header="false" obligation="normative">
+<title id="_955436c5-beb9-3771-2692-61d0cf99db52">Technical and Editorial Corrections to H.248.9 (12/2009)</title>
+<clause id="_72c6f424-f068-e49b-8679-5c4bfa2e355e" inline-header="false" obligation="normative">
+<title id="_11f6cbf5-917a-6bbc-6c62-5daa351fa681">Updated ABNF reference</title>
+<table id="_adee7e1e-5c6f-2bd9-6371-b86fd036e94f" unnumbered="true"><tbody><tr id="_565a2f02-4d49-6b39-5a77-4ae8f3cd7289"><th id="_cb23c8e1-c14a-5bc9-350b-05d86f2ad34e" valign="top" align="left">Issue:</th>
+<td id="_d30d8b16-6f2e-6b58-b49a-3d9a128301e0" valign="top" align="left">H.248.9 contains a reference to RFC4234 for ABNF syntax. This RFC has been obsoleted. The latest definition of ABNF is RFC 5234 which is also known as STD 68. The updates to the RFC are mainly with regards to its use with email. There are no changes that effect H.248 encoding.</td>
+</tr><tr id="_60d6545d-8207-4425-34ad-cd740c641f5b"><th id="_b87f3f38-f142-ce2b-2cf8-e588b2ab8be8" valign="top" align="left">Reference:</th>
+<td id="_12329b8f-27ce-6f9f-a8e5-4e2bfaa41848" valign="top" align="left">Discussions resulting from H.248.66 (<link target="http://www.itu.int/md/meetingdoc.asp?lang=en&amp;parent=T13-SG16-C-0351">COM16-C.351</link>).</td>
+</tr></tbody>
+</table>
+
+<p id="_78c4219d-1d35-9ae8-e971-ebb66580ac7b" align="center"><strong><em>[Begin Correction]</em></strong></p>
+
+<p id="_2738614c-9afe-4be5-eb3e-6283be5753fc" align="center"><strong>Bibliography</strong></p>
+
+<dl id="_e2174c6f-5cd9-7765-7621-34bd997a42bb"><dt>[b-IETF RFC 2279]</dt>
+<dd id="_9b28d386-f0f6-fb47-c3d7-dd4d34f00216"><p id="_e2f7d442-a2df-df65-c47c-769990ccce8f">IETF RFC 2279 (1998), UTF-8, <em>a transformation format of ISO 10646</em>.</p>
+</dd>
+<dt>[b-IETF RFC 2326]</dt>
+<dd id="_2aeb79f9-f0ce-1755-7936-1d08634536f4"><p id="_08f7db55-5aae-1542-83c4-9b594dcb4461">IETF RFC 2326 (1998), <em>Real Time Streaming Protocol (RTSP)</em>.</p>
+</dd>
+<dt>[b-IETF RFC 2805]</dt>
+<dd id="_db09f9b8-7cbd-8469-30ff-79dbf1e6b686"><p id="_fe076f98-64c7-c306-a477-0df6820c168a">IETF RFC 2805 (2000), <em>Media Gateway Control Protocol Architecture and Requirements</em>.</p>
+</dd>
+<dt>[b-IETF RFC <strike>4234</strike> <underline>5234</underline>]</dt>
+<dd id="_5cebc792-4132-2b8c-7b59-8cc5ec2903c4"><p id="_4dc0c492-10a8-6d15-5dd3-f82e05f9379d">IETF RFC <strike>4234</strike> <underline>5234</underline> (<strike>2005</strike> <underline>2008</underline>), <em>Augmented BNF for Syntax Specifications: ABNF</em>.</p>
+</dd>
+<dt>[b-UN M.49]</dt>
+<dd id="_6371d6f2-6c7c-559b-5615-72d8448a1dab"><p id="_56ddaa08-9a5f-c629-8f61-0da7dd3b8717">United Nations (1999), <em>Standard Country or Area Codes for Statistical Use</em> Revision 4 Sales No. 98.XVII.9.</p>
+</dd>
+<dt>[b-W3C EMMA]</dt>
+<dd id="_578ac8d0-b8fa-fa0e-9b4f-0ad390309522"><p id="_c8bea770-f7c6-328d-8120-257bcc11bac2">W3C (2009), <em>EMMA: Extensible Multimodal Annotation markup language</em>.</p>
+</dd>
+</dl>
+
+<p id="_7dffdfa4-be9f-187d-accb-3f786fdd4c77" align="center"><strong><em>[End Correction]</em></strong><note id="_46b29ca2-eb78-723d-0033-40b16742def3"><p id="_18944453-03b1-517c-226c-7ca8300e9409">For brevity the changes to the references inside H.248.1 have not been included. The references to [IETF RFC 4234] in clause 6.4.5.3 shall be changed to [IETF RFC 5234].</p>
+</note></p>
+
+
+</clause>
+</clause>
+
+<clause id="_6a0a0a3a-7a95-37ef-5cf6-0fe77cfb3467" inline-header="false" obligation="normative">
+<title id="_94ccf722-bc3c-08fd-7bfc-dd03587e7f73">Technical and Editorial Corrections to H.248.40 (03/2013)</title>
+<clause id="_e69a0aca-93b3-d02f-c56e-8ac5a633c7fc" inline-header="false" obligation="normative">
+<title id="_8b1e8c9c-00fc-3ca7-d122-e639758908ec">Packet types subject to detection logic</title>
+<table id="_8eca22a9-29df-482c-688e-ad54d46d64df" unnumbered="true"><tbody><tr id="_e0987559-f51d-ead2-1098-bc9700ae0ff4"><th id="_d75b883f-5138-4fba-8a47-8f95532b3d33" valign="top" align="left">Issue:</th>
+<td id="_a5a4fb2c-b81d-2b6f-0abb-7773dded22db" valign="top" align="left"><p id="_e9fe385a-b8b6-6042-14a7-7a0c08f529d4">The context of H.248.40 usage was apparently fairly straightforward when H.248.40 was developed in 2006/07. Since that time some weaknesses (from specification perspective) have been observed, primarily related to following three items:</p>
+
+<ul id="_3075bd69-a8f5-4c4e-af24-e778e5862115"><li><p id="_4a838b3a-bbdb-1fc7-cddd-5ab07ad25217">The definition of the <em>adid/ipstop</em> event itself (in clause 6.2.1) is lacking the precise semantics related to the detection condition. This information is contained in the scope section (clause 1).</p>
+</li>
+<li><p id="_c4b70261-b9eb-5e8b-1c00-05a65317d114">Notion of "<em>application data</em>", leading to the question that there might be potentially application (protocol) specific detection conditions.</p>
+</li>
+<li><p id="_3503b74a-22f7-287a-85e4-ee04605c6846">Notion of "<em>IP data packet</em>", hence there are obviously also IP control packets? Is there any relation to H.248 media flow and H.248 control flow components? These should be clarified.</p>
+</li>
+</ul>
+</td>
+</tr><tr id="_a00dda70-8147-0cee-e666-d6fe86d64a16"><th id="_497279e8-bcff-e891-7768-36127134895b" valign="top" align="left">Reference:</th>
+<td id="_647456aa-7976-35ba-87f9-319c6a3e6ca3" valign="top" align="left"><link target="http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4426.zip">AVD-4426</link></td>
+</tr></tbody>
+</table>
+
+<p id="_cda78422-df2d-c5c6-e981-80d4132bef8a" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_d5bc17bf-1099-40c9-61e1-fc9502a86859"><strong>1 Scope</strong></p>
+
+<p id="_cca4e425-10ad-c2d9-16e2-d1b97d353acd">This Recommendation allows a media gateway controller to request the media gateway to detect that after a certain period of time no Internet protocol application data has flowed on a particular termination/stream. The ability to detect if Internet protocol application data flow has stopped or has not started is useful to avoid dead lock in latching scenarios and also may be of use to detect hanging bearers.</p>
+
+<p id="_05670c8a-267e-762b-090f-077cab869660">This Recommendation defines an event which is related to one or more IP 2-tuples[strike]<span class="fmt-hi"> </span>. An individual 2-tuple is given by &lt;IP address, IP port&gt; of an IP flow of a H.248 stream or termination. The set of conditions for inactivity detection is related to IP packet arrival and/or departure events for all 2-tuples of a stream/termination. The condition of packet arrivals or departures respectively is controlled via a dedicated parameter (called "<em>direction</em>").</p>
+
+<p id="_2e364f19-d7d0-721b-661f-729d35371a78"><underline>It has to be noted that there might be typically more detection conditions on top of the pure observation of "IP transport endpoint" (given by IP 2-tuple) activity. The entire detection conditions are effectively given by the stream/termination specific <em>lookup key</em> (clause 3.1.2/[ITU-T H.248.79]), which defines the particular packet-to/from-Context delivery process, according clause 6/[ITU-T H.248.79]. Appendix IV provides some examples for traffic components which would match (or not) such lookup keys.</underline></p>
+
+<p id="_3642507e-528c-c265-b16b-7773a92095a4">The flexibility of inactivity detection logic configurations allows the usage of H.248.40 for various applications (see also appendices <underline>I to III</underline>).</p>
+
+<p id="_01118fe4-bd44-1eb7-1422-1ccfd23178f7"><strong>6 Application data inactivity detection package</strong></p>
+
+<dl id="_419f0f34-e85c-a6ef-5b46-cab46e49b329"><dt><strong>Package Name</strong></dt>
+<dd id="_d32424bd-770b-ffc4-f1cb-cfd230fd887a"><p id="_707acc45-e72e-54d2-5631-1063fbef5051">Application data inactivity detection package</p>
+</dd>
+<dt><strong>Package ID</strong></dt>
+<dd id="_1787bc49-3146-d06a-0d34-0bb4ef345985"><p id="_e8e0ac13-c9c6-e4eb-1841-60087dbba81d">adid (0x009c)</p>
+</dd>
+<dt><strong>Description</strong></dt>
+<dd id="_46560c63-ecb6-09ce-9b5b-0f4a3ae9412e"><p id="_7b6e2105-d1be-c603-5a0c-8775d2670d10">This package enables the MGC to be notified when the MG has detected that no IP application data flow has been detected on a termination/stream.<br/> <underline>The condition of packet arrivals or departures respectively is controlled via a dedicated parameter (called "direction").</underline></p>
+</dd>
+<dt><strong>Version</strong></dt>
+<dd id="_e0289a7b-7aec-3abf-8429-d66a488139b0"><p id="_32f5f763-fafb-65c4-581c-59342213bd24">1</p>
+</dd>
+<dt><strong>Extends</strong></dt>
+<dd id="_688143df-1fcf-91b7-c565-ede67253a8a2"><p id="_50721a45-e879-e3a3-70b6-eebd44e056cc">None</p>
+</dd>
+</dl>
+
+<p id="_2c47b531-b529-f2ec-af3a-43ae5866fe5c" align="center"><strong><em>…​</em></strong></p>
+
+<p id="_dbde3994-e5c5-d95c-e95c-92deb0d9cefe" align="center"><underline><strong>Appendix IV</strong></underline></p>
+
+<p id="_fbbd5871-b938-cb0e-cbe2-58e6028f5b42" align="center"><underline><strong>Examples for IP application data traffic</strong></underline><br/> <underline>(This appendix does not form an integral part of this Recommendation)</underline></p>
+
+<p id="_71092775-b498-2b8c-f2f7-e4c8936e5e5d"><underline>The <em>ipstop</em> event related detection logic for <em>application data inactivity</em> is based on the observation of the n-tuple, given by stream/termination specific lookup key.</underline></p>
+
+<p id="_94da9f81-f683-8b67-e1d8-3de6a29ca865">Such a condition comprises following IP traffic components, such as:</p>
+
+<ul id="_08c33378-0a79-7f42-9395-70ae73312867"><li><p id="_2e9d251b-fbe7-978a-56b7-341fb70b74db">ALL IP packets related to a H.248 media flow and H.248 control flow components</p>
+</li>
+<li><p id="_cd8f559e-629f-567b-1a0f-255fe153fef0">Bearer and service specific examples:</p>
+<ul id="_66cdc335-9af8-4abf-ebb1-87816e7c0b94"><li><p id="_534d9cf2-e87d-7128-a25a-d833034cb12f">RTP session: RTCP and RTP, and not only RTP</p>
+</li>
+<li><p id="_0f715565-06cc-d3ee-4236-08c97594894c">T.38 session: e.g. all UDPTL/UDP packets in case of T.38-over-UDP</p>
+</li>
+<li><p id="_144002a1-3738-d22a-5347-28f2819c53d9">XoTCP: all TCP packets</p>
+</li>
+<li><p id="_80ffe45c-dcc5-275c-742b-33e36b0ed57a">WWW services: all HTTP/TCP packets</p>
+</li>
+<li><p id="_8bd08dd3-e54d-c6ab-4eb3-b3573dc6a33c">Streaming service: e.g., RTSP, RTP, RTCP</p>
+</li>
+<li><p id="_36c6e05a-ebb8-430c-e706-2662fdeba480">WebRTC service: all UDP packets (for audio, video, text, data, security key exchange, RTCP XR, etc)</p>
+</li>
+</ul>
+</li>
+</ul>
+
+<p id="_a6c1b702-75e6-ff0a-a7cd-4436f9f6cbb3">Out <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="false">
+    <mstyle mathcolor="red">
+      <mtext>of the</mtext>
+    </mstyle>
+  </mstyle>
+</math><asciimath>color(red)("of the")</asciimath></stem> scope of <em>adid</em> logic are:</p>
+
+<ul id="_df99b69a-fa0f-c1b3-aec3-09544b6f666b"><li><p id="_ad05982a-8751-2778-3ff3-132e155faec7">ICMP/IP packets</p>
+</li>
+<li><p id="_71bd867f-70d7-0775-517b-9475ecdfe8f3">IP packets related to IP routing protocols (e.g., OSPF/IP packets)</p>
+</li>
+</ul>
+
+<p id="_28b1a295-85aa-358f-150e-1ad3c14d78a8" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_12271fdd-ba7c-ea77-8d0e-f6519daebf65" inline-header="false" obligation="normative">
+<title id="_e291d438-0adc-d4c3-bbae-1e08597b1f25">Technical and Editorial Corrections to H.248.53 (03/2009)</title>
+<clause id="_3229916e-dcda-3991-d1bf-6e00888cf875" inline-header="false" obligation="normative">
+<title id="_12eef790-36f4-9811-f8b0-c9122687fffd">Rate policing clarifications</title>
+<table id="_41a3b03e-c4d4-f0be-ab60-70d9dabc5cf6" unnumbered="true"><tbody><tr id="_67fa3e36-273f-d6dd-b0fb-bca66bf13526"><th id="_03f44130-7ce3-8860-0265-09e2dfe092aa" valign="top" align="left">Issue:</th>
+<td id="_ce051bdd-b616-96dc-2fe8-614be78658ba" valign="top" align="left"><p id="_c6d9de64-a689-72be-1470-f5a0d51b7a73">H.248.53 does not specifically discuss relevant traffic components of an IP flow as part (or not) of traffic policy, e.g. when considering IP bearer traffic policing (clause 9.4/H.248.53 and applied packages from clauses 7 and 8).<br/> Following basic issue was observed: A single or multiple IP flow(s) associated to an H.248 stream/termination could be basically divided in two IP traffic portions:<br/> IP application data traffic related to the communication application itself, i.e., with end-to-end significance; and<br/> IP-based control traffic along the bearer path, with purpose of NAT traversal, authentication procedures, bearer control protocol for (segmented) IP transport connections (e.g., TCP segment), bearer control protocol for (segmented) IP security sessions, etc., i.e., without end-to-end significance (rather type hop-to-hop).<br/> Both traffic portions provide following difference from H.248 Context point of view: the e2e traffic (1) is going through the Context, and traffic (2) is terminated by a SEP.<br/> That's an important distinction concerning traffic policing, which has originally only e2e traffic (1) in scope, but not (2) (in our understanding).</p>
+</td>
+</tr><tr id="_7f306b42-d326-c02d-2b53-98d32bb55d73"><th id="_2d5e9842-aa13-120f-a7c3-f5492fee124e" valign="top" align="left">Reference:</th>
+<td id="_0f7498fc-a388-7ad4-6841-d81781ff5962" valign="top" align="left"><link target="http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4427.zip">AVD-4427</link></td>
+</tr></tbody>
+</table>
+
+<p id="_3eecadd8-ec82-3c2f-371f-b5ee7b196f5a" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_a17806e1-18e0-2830-a811-ea87205c9ed0"><strong>6 Traffic management package</strong></p>
+
+<dl id="_b8db0ac3-089d-f049-6340-da52281d3f84"><dt><strong>Package name</strong></dt>
+<dd id="_4d2c984c-9bc8-2287-63d6-b905f8f6c95d"><p id="_87696046-d8e1-ae47-299a-ac3161765165">Traffic management package</p>
+</dd>
+<dt><strong>Package ID</strong></dt>
+<dd id="_ed65f27c-67a0-28e9-33ce-7f7d8c697d76"><p id="_de8284a5-a22f-aff8-0db5-8586b2d2e934">tman (0x008d)</p>
+</dd>
+<dt><strong>Description</strong></dt>
+<dd id="_51562ea7-7924-a23b-8c6c-d1f67c0e61f7"><p id="_d31708c2-44cc-d475-8cdb-d980bc924972">This package allows traffic descriptors to be defined for a stream and allows policing to be explicitly enabled. Version 1 is defined for a single traffic flow per H.248 stream. Version 2 supports multiple traffic flows per H.248 stream.<br/> <underline>Traffic related to the control (establishment, maintenance or release) of a H.248 flow is excluded from traffic policing. E.g. RTCP flows are still included.</underline></p>
+</dd>
+<dt><strong>Version</strong></dt>
+<dd id="_dcea78d1-c0cc-14f6-9df6-19eab74951e3"><p id="_40d38ed8-8c02-6b9c-0962-3f1dd377612e">2</p>
+</dd>
+<dt><strong>Extends</strong></dt>
+<dd id="_144e8dc4-d504-7758-aba8-2ae297d03d75"><p id="_8dea6e4c-4778-185c-5926-4f11073df53b">None.</p>
+</dd>
+</dl>
+
+<p id="_d5194327-2562-6f22-2a17-b9591bbf0806" align="center"><strong><em>…​</em></strong></p>
+
+<p id="_5222e823-e4b9-a42c-decf-1d3f20afe477"><strong>8 Packet size package</strong></p>
+
+<dl id="_81a37833-dbe5-fd41-78f4-b304a841eddc"><dt><strong>Package name</strong></dt>
+<dd id="_015808c0-c775-b04e-3ba5-d774f7816911"><p id="_38fa29ac-3b25-08c1-b393-bc4b0a6319f8">Packet size package</p>
+</dd>
+<dt><strong>Package ID</strong></dt>
+<dd id="_b7effed1-ef53-19db-f692-321c782c2cb0"><p id="_d2292c03-30f8-2015-d0e3-6d71d8abf655">pacs (0x00c9)</p>
+</dd>
+<dt><strong>Description</strong></dt>
+<dd id="_433705d3-883f-3cb9-6fc1-75d9f093d410"><p id="_71bd0dc3-b03c-0f76-e548-7d235cf9bf78">This package defines a property for the maximum allowed packet size. Such a traffic parameter may be used for traffic policing. This package is typically used for "media-agnostic" ephemeral terminations (Note 1), and/or when provisioning is insufficient (Note 2).<note id="_32a871df-537d-5909-ad40-e99b64451d50"><p id="_586dd43e-9b88-cdac-c76f-9557616dd141">The MG may not be aware of the media type/format behind an IP termination (e.g., a MG implementing the ETSI_BGF profile according to [b-ETSI ES 283 018]). It is impossible for such a MG to derive or estimate the maximum possible packet size from information elements of the media descriptor.</p>
+</note><note id="_902c07b6-695e-e9fd-2297-68d2cc2eab7b"><p id="_279db6c9-091e-ed93-e7c9-292eecf758f1">The provisioning possibility is excluded for multimedia applications with different packet size distribution functions for the various media components.<br/> This package defines also a property for the minimum policed unit, which is also typically used for traffic policing.</p>
+</note></p>
+
+
+
+
+<p id="_b8311d19-9a80-2dbb-ae2d-822393ebb62e"><underline>Traffic related to the control (establishment, maintenance or release) of a H.248 flow is excluded from traffic policing. E.g. RTCP flows are still included.</underline></p>
+</dd>
+<dt><strong>Version</strong></dt>
+<dd id="_a7b25813-b33a-d555-11f8-bddeac329ef3"><p id="_b1f341ae-3aaa-d477-5dc6-ffac056ce6ba">1</p>
+</dd>
+<dt><strong>Extends</strong></dt>
+<dd id="_ce340930-2529-16c0-bdf1-4bf9e96b5f48"><p id="_345f13eb-736c-8f09-0cc1-b6e61906013d">tman version 1</p>
+</dd>
+</dl>
+
+<p id="_ab085231-7e18-5088-881e-43a12edcc80b" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_4c70b9d5-c8e8-5ec7-4a14-d82b12b6795d" inline-header="false" obligation="normative">
+<title id="_edda98d6-719b-7035-6085-a0793587c72f">Technical and Editorial Corrections to H.248.69 (03/2009)</title>
+<clause id="_1a694d3c-b177-b0be-08a8-1b4041ea8665" inline-header="false" obligation="normative">
+<title id="_7c635925-258c-bf28-c849-c4b6ae3f97ab">Superfluous reference</title>
+<table id="_2f4348e7-b79c-48da-df0e-956086c2daee" unnumbered="true"><tbody><tr id="_532e60bb-3896-fa93-d783-0d93f4cfdd32"><th id="_1cadaa21-afe4-4d38-9700-56837ab54c0a" valign="top" align="left">Issue:</th>
+<td id="_0a797d2c-0743-5d08-ba96-67d7ffad1d9b" valign="top" align="left">ITU-T H.248.69 contains a reference to IETF RFC 4976 however it is not used in the main text. Therefore the reference can be removed.</td>
+</tr><tr id="_9796d55d-ad9f-87e3-ffdb-2f659d3793b4"><th id="_04441276-0bfe-fc1a-0431-87cc514d62b1" valign="top" align="left">Reference:</th>
+<td id="_4c0a870c-b944-04f5-0701-16137637b64f" valign="top" align="left"><link target="http://wftp3.itu.int/av-arch/avc-site/2013-2016/1306_Osl/AVD-4397.zip">AVD-4397</link></td>
+</tr></tbody>
+</table>
+
+<p id="_e26ee820-f173-543b-ed1e-f5475835c848" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_c7518053-1731-0343-d890-dfdb9376a384"><strong>2 References</strong></p>
+
+<p id="_6f7a270f-eaed-ecf2-4612-7933d2c1762c">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p>
+
+<dl id="_c62f2cd5-1f37-e63f-fd15-295a0127b5f8"><dt>[ITU-T H.248.1]</dt>
+<dd id="_85bc91b6-d091-34b1-1e94-f3e1f142e86d"><p id="_ec74b7f9-97ee-0788-49d2-fa39cd3df006">Recommendation ITU-T H.248.1 (2005), Gateway control protocol: Version 3.</p>
+</dd>
+<dt>[ITU-T H.248.7]</dt>
+<dd id="_3410570e-1fbc-d014-e772-5f9f25257e7a"><p id="_85815c80-bb03-9acf-2f2e-04ba67b8b783">Recommendation ITU-T H.248.7 (2004), Gateway control protocol: Generic announcement package.</p>
+</dd>
+<dt>[ITU-T H.248.9]</dt>
+<dd id="_adc8c2ef-a065-99f3-9121-ab00eff619fd"><p id="_2d77bca8-c53b-3200-ade4-d98815918352">Recommendation ITU-T H.248.9 (2005), Gateway control protocol: Advanced media server packages.</p>
+</dd>
+<dt>[ITU-T H.248.19]</dt>
+<dd id="_8fa8658d-4e1a-6322-c667-3cdf8877bb3b"><p id="_96ac908e-8b28-3876-772a-4da4ea3656cd">Recommendation ITU-T H.248.19 (2004), Gateway control protocol: Decomposed multipoint control unit, audio, video and data conferencing packages.</p>
+</dd>
+<dt>[ITU-T H.248.43]</dt>
+<dd id="_9b046100-281a-6227-1066-02780dde58c0"><p id="_84e04109-aaea-cae9-ed0f-ac9ca25c08eb">Recommendation ITU-T H.248.43 (2008), Gateway control protocol: Packages for gate management and gate control.</p>
+</dd>
+<dt>[ITU-T H.248.47]</dt>
+<dd id="_3eb5a161-5b21-1402-51de-3fb2d98ccd8a"><p id="_927ae627-ecec-a741-b6fa-40de7afb7f96">Recommendation ITU-T H.248.47 (2008), Gateway control protocol: Statistic conditional reporting package.</p>
+</dd>
+<dt>[IETF RFC 2822]</dt>
+<dd id="_0bc6e808-464a-f146-9b13-59ed7f93e6da"><p id="_b9bc4753-43c2-bf8e-2b2a-ca89467313d2">IETF RFC 2822 (2001), Internet Message Format.</p>
+</dd>
+<dt>[IETF RFC 3339]</dt>
+<dd id="_0f0a2bff-e93c-6a16-e960-bd6f14953145"><p id="_c4215f54-1c89-826e-b82a-dfd74869c8dc">IETF RFC 3339 (2002), Date and Time on the Internet: Timestamps.</p>
+</dd>
+<dt>[IETF RFC 3860]</dt>
+<dd id="_b08f0efa-1257-2ac6-bd92-2e612704ad79"><p id="_c3477b74-91d2-6bd1-0a91-958cb14d85a4">IETF RFC 3860 (2004), Common Profile for Instant Messaging (CPIM).</p>
+</dd>
+<dt>[IETF RFC 3862]</dt>
+<dd id="_9b675cc5-3215-3949-0937-3344fe66cbe1"><p id="_cf72f2bd-fa09-aee2-be9a-b75e7ab498cb">IETF RFC 3862 (2004), Common Presence and Instant Messaging (CPIM): Message format.</p>
+</dd>
+<dt>[IETF RFC 3986]</dt>
+<dd id="_386fd721-e6be-53f5-4519-0373751d1a11"><p id="_e27e4998-7057-5c48-ee44-317b90d4f534">IETF RFC 3986 (2005), Uniform Resource Identifier (URI): Generic Syntax.</p>
+</dd>
+<dt>[IETF RFC 4021]</dt>
+<dd id="_7c25df20-076a-43bd-5672-ca66f77e3bb2"><p id="_9d177b50-91d0-054f-002d-9c8333cbd463">IETF RFC 4021 (2005), Registration of Mail and MIME Header Fields.</p>
+</dd>
+<dt>[IETF RFC 4975]</dt>
+<dd id="_c388c919-b4c6-502c-d44c-8b04227113f0"><p id="_fc8aa22a-599d-d466-197b-15bb113cb55c">IETF RFC 4975 (2007), The Message Session Relay Protocol (MSRP).</p>
+</dd>
+<dt><strike>[IETF RFC 4976]</strike></dt>
+<dd id="_91e4232f-4cab-9472-3308-44e7783761b6"><p id="_ba215ac4-1e3b-c529-9c3e-041d0145b677"><strike>IETF RFC 4976 (2007), Relay Extensions for the Message Session Relay Protocol (MSRP).</strike></p>
+</dd>
+<dt>[IETF RFC 5228]</dt>
+<dd id="_82378100-337a-9309-922e-96131c4e493f"><p id="_c3ce4229-ae75-3130-95d1-7aa6132f5320">IETF RFC 5228 (2008), Sieve: An Email Filtering Language.</p>
+</dd>
+</dl>
+
+<p id="_54fa9282-6049-6cc9-a55c-e84904c87b7d" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_796792b3-929e-596f-2141-627d7c1c8b21" inline-header="false" obligation="normative">
+<title id="_31c6f965-0fe1-0901-323a-20c7ca78d93e">Technical and Editorial Corrections to H.248.80 (01/2014)</title>
+<clause id="_48c2c418-1eeb-02f6-719e-b894b7f948a0" inline-header="false" obligation="normative">
+<title id="_65597f87-c3e3-4003-fea4-9283b5b90718">Updated reference</title>
+<table id="_0cd9832e-ed72-c4dc-42fb-9cbd0338636e" unnumbered="true"><tbody><tr id="_74a37938-faea-f7db-b222-291514c2ca47"><th id="_c5f02c92-b119-2f99-8fff-bca71d9ac841" valign="top" align="left">Issue:</th>
+<td id="_0029c0cc-6205-afe4-3f48-bac53dbdc010" valign="top" align="left">The remaining IETF draft &lt; draft-ietf-mmusic-sdp-cs-21&gt; in the Bibliography has been published as RFC and could be corrected in the Recommendation.</td>
+</tr><tr id="_656fc543-ee31-6937-3050-cea345f816f6"><th id="_336852a2-8ef5-3d96-5444-18a441b9bd5d" valign="top" align="left">Reference:</th>
+<td id="_5eb80934-aca5-e3eb-a10d-3607b964d402" valign="top" align="left"><link target="http://wftp3.itu.int/av-arch/avc-site/2013-2016/1411_Seo/AVD-4650.zip">AVD-4650</link></td>
+</tr></tbody>
+</table>
+
+<p id="_ceabdf53-ed9d-9f46-dd18-d33e65ee210b" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_4817f44c-5ef2-473d-a259-f16805a1a8f7"><strong>1 Scope</strong></p>
+
+<p id="_8f474de0-238f-2264-24fd-565ba04f2128">Recommendation ITU-T H.248.80 describes the interworking of the SDP described by the "Revised SDP Offer/Answer (O/A) model" with ITU-T H.248. The "Revised SDP Offer/Answer model" is characterized by the following documents:</p>
+
+<ul id="_4a753638-8382-87ae-3eb8-068c7b41ca6b"><li><p id="_183373df-2642-2137-fa15-c17d2ee4c230">SDP capability negotiation (SDPCapNeg) defined in [IETF RFC 5939]</p>
+</li>
+<li><p id="_4f269c12-4d80-6c59-f908-c1a27149693f">SDP media capabilities negotiation (MediaCapNeg) defined in [IETF RFC 6871]</p>
+</li>
+<note id="_38ab12b7-edd1-519e-e68a-38d4ac3142ad"><p id="_6190ebf6-162b-42df-d638-30b11def811a">The support of miscellaneous capabilities negotiation in the Session Description document [b-IETF RFC 7006] and Extension for PSTN bearers [b-IETF <strike>SDPCS</strike> <underline>RFC 7195</underline>] is for further study.</p>
+</note></ul>
+
+
+
+<p id="_8e749515-44bb-bc31-3c57-981f05888bf9">This Recommendation describes the relationship between the ITU-T H.248 group concept and the revised SDP offer/answer model concepts of actual and potential configurations. It provides guidelines for the inter-working between SDPCapNeg and normal ITU-T H.248.1 procedures. Rather than focussing on the SDPCapNeg procedures in the context of session handling, this Recommendation concentrates on mapping the between ITU-T H.248.1 and the SDP Capability negotiation framework SDP syntax. For interactions between the functions of SDPCapNeg and different SDP attributes, see [IETF RFC 5939] and associated IETF documents.</p>
+
+<p id="_1f543e31-2dfc-603a-4f7d-b341b754bb36">This Recommendation also discusses the support of [IETF RFC 6871] by ITU-T H.248.</p>
+
+<p id="_c05f021a-9fcd-578e-af50-d3bef9df7097">In order to address several deficiencies in interworking between SDPCapNeg and [IETF RFC 6871] and ITU-T H.248 this Recommendation defines two packages that allow a more optimized support of the revised SDP offer/answer procedures on MGCs that also support ITU-T H.248.</p>
+
+<p id="_a06bb772-f5af-41b3-7525-0049d3e48c1f" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+
+<p id="_128a022a-f4a0-c8d6-9604-760892c97414" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_201396f0-dafe-122b-2b9f-f4d2b11eaed1" align="center"><strong>Bibliography</strong></p>
+
+<dl id="_9fe2507b-f4ad-f3f6-48f6-8c58b45e2c75"><dt>[b-ITU-T G.711]</dt>
+<dd id="_cf3caf88-5f79-491e-606d-558230bcd1f4"><p id="_51a74e8a-86b6-caee-f95a-92343f3380e1">Recommendation ITU-T G.711 (1988), <em>Pulse code modulation (PCM) of voice frequencies.</em></p>
+</dd>
+<dt>[b-ITU-T G.729]</dt>
+<dd id="_bfb23d78-c4c4-491f-fab6-c7321dbc13c7"><p id="_c20cb619-4691-b765-be45-3c5c53ab2162">Recommendation ITU-T G.729 (1996), <em>Coding of speech at 8 kbit/s using conjugate-structure algebraic-code-excited linear prediction (CS-ACELP).</em></p>
+</dd>
+<dt>[b-ITU-T H.263]</dt>
+<dd id="_e6c5849c-2f53-5079-cdbb-57b043a60d16"><p id="_b1a22c35-c45c-dc0d-2926-09babab807f0">Recommendation ITU-T H.263 (2005), <em>Video coding for low bit rate communication.</em></p>
+</dd>
+<dt>[b-ITU-T H.264]</dt>
+<dd id="_5e019b9d-e24e-2b4e-95ea-e77321075ef2"><p id="_98a081bb-01c2-9536-e0c2-47179395b497">Recommendation ITU-T H.264 (2012), <em>Advanced video coding for generic audiovisual services.</em></p>
+</dd>
+<dt>[b-ITU-T V.152]</dt>
+<dd id="_60b35217-daa2-cf28-1ae7-60006361d8d3"><p id="_6b274b2b-6fe2-5022-1e11-25ad293068e7">Recommendation ITU-T V.152 (2010), <em>Procedures for supporting voice-band data over IP networks.</em></p>
+</dd>
+<dt>[b-IETF RFC 3264]</dt>
+<dd id="_eb96e8d4-6cb1-27ae-1274-b0da711f9df6"><p id="_4a37d88f-2c2a-7e01-6528-a503ff9a4d1a">IETF RFC 3264 (2002), <em>An Offer/Answer Model with the Session Description Protocol (SDP).</em></p>
+</dd>
+<dt>[b-IETF RFC 7006]</dt>
+<dd id="_a291454a-bbb4-7cda-ee8c-b761318b5dd5"><p id="_2fba5304-3209-95f8-edbb-3f7360324cd1">IETF RFC 7006 (2013), <em>Miscellaneous Capabilities Negotiation in the Session Description Protocol (SDP).</em></p>
+</dd>
+<dt>[b-IETF <strike>SDPCS</strike> <underline>RFC 7195</underline>]</dt>
+<dd id="_bd13d7b7-a7a7-8bc3-0b4b-910c9b98f5c7"><p id="_1f5d5376-b0bb-dca4-d933-c9104333ed4c">IETF <underline>RFC 7195 (2014)</underline> <strike>draft-ietf-mmusic-sdp-cs-21 (2013)</strike>, <em>Session Description Protocol (SDP) Extension for Setting up Audio and Video Media Streams over Circuit-Switched Bearers In The Public Switched Telephone Network (PSTN).</em> <strike><link target="http://tools.ietf.org/html/draft-ietf-mmusic-sdp-cs-23"/></strike></p>
+</dd>
+</dl>
+
+<p id="_98cc844e-e726-624a-9ac7-a17a6342da82" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_0684971d-b574-789e-4580-620ceaf1ad20" inline-header="false" obligation="normative">
+<title id="_76f8b7ab-431d-c9e2-fb3f-ed20df306d85">Technical and Editorial Corrections to H.248.83 (02/2012)</title>
+<clause id="_65483914-7c61-3790-6e4e-90735106cb1e" inline-header="false" obligation="normative">
+<title id="_4bc9de59-cdee-716e-0d57-3716c8b0e1b6">Incorrect reference</title>
+<table id="_eefc6286-6b6d-2f85-5fb3-934595779888" unnumbered="true"><tbody><tr id="_363e10ef-fad7-c709-9f1c-470f866e069d"><th id="_462b2349-43cd-06b0-29a1-a75fefc07391" valign="top" align="left">Issue:</th>
+<td id="_a9114471-a34e-93f8-6ad8-5d4d69064ba2" valign="top" align="left">ITU-T H.248.83, clause 1 makes reference to a 3GPP reference point. The named the reference point "Mn" provides a reference to [b-3gpp TS 29.232] which is in fact the specification for the "Mc" reference point. The reference point name needs to be corrected.</td>
+</tr><tr id="_e2b68e0e-cc95-e865-c1c0-3fe162d0f495"><th id="_3ba1407b-bc2e-2774-e8db-5c578943f274" valign="top" align="left">Reference:</th>
+<td id="_c9ca8cec-5e8d-d3c9-3b37-3e0be8a7c964" valign="top" align="left"><link target="http://www.itu.int/md/meetingdoc.asp?lang=en&amp;parent=T13-SG16-C-0470">COM16-C.470</link></td>
+</tr></tbody>
+</table>
+
+<p id="_bfd1e299-c842-2c35-287b-b2ef008ed4e1" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_a4bd7daa-e23e-6c6b-f725-fd1c9a270d3d"><strong>1 Scope</strong></p>
+
+<p id="_1e432dbb-147b-0934-d7bc-7006a8e1cdf2">There has been a trend towards virtualized or cloud-based networks where a physical device or network hosts several virtual instances meeting the needs of different customers. Different service models exist, usually utilizing the terminology "x – as a service (xASS)", e.g., platform as a service (PAAS) and infrastructure as a service (IAAS).</p>
+
+<p id="_6a983adc-611d-f69b-b0b0-defe10f54330">A common aspect of the different cloud service models is that a certain set of resources is allocated (via an operations and maintenance (O&amp;M) system) based on a set of customer requirements. These requirements may detail the applications, libraries, data, memory, processing resources, storage, and associated configuration settings.</p>
+
+<p id="_b95f681b-c30e-0c88-d5cc-63f57a5fc3b2">One of the main concepts of ITU-T H.248 is the use of the virtual media gateway (VMG). This allows multiple VMG instances per physical media gateway (MG). Each VMG is treated as a separate MG instance and thus has its own control association and set of resources, configurations, etc. Thus, it has similarities to cloud virtualization concepts.</p>
+
+<p id="_0508f5fe-1895-8827-0404-f2f3939d0976">ITU-T H.248 is largely silent on provisioning resources for VMGs, apart from clause 11.1 of [ITU-T H.248.1], which states that the mechanism for allocating terminations to VMGs is a management method outside the scope of [ITU-T H.248.1]. Whilst the provisioning of terminations is out of the scope of ITU-T H.248, it does have the "ITU-T H.248 Profile" concept. Profiles specify what options associated with [ITU-T H.248.1] have been used. Appendix III of [ITU-T H.248.1] provides an example profile template showing the information that can be derived from the profile ID. ITU-T H.248 profiles, when used by a virtual media gateway (VMG), indicate what ITU-T H.248 elements can be used. Profiles have been defined by several standards development organizations (e.g., 3GPP, ETSI TISPAN, MSF) and several vendors to define the ITU-T H.248 functionality of certain interfaces.</p>
+
+<p id="_f59af857-5d95-4125-28e0-9f4aba93d955">ITU-T H.248 provides an abstraction model for an MGC to access and control physical resources on an MG without having to address these physical resources. The concepts of Contexts, Terminations, Streams and Descriptors are used. Whilst terminations are typically statically provisioned, the underlying resources may be statically or dynamically allocated between the VMGs. The physical resources may relate to the central processing unit (CPU), digital signal processor (DSP), memory, storage, or power use. So whilst the ITU-T H.248 options defined by an ITU-T H.248 Profile are related to these resources, there is not a one–to-one mapping due to the abstraction layer. Some form of provisioning is required to assign the physical resources to a VMG instance.</p>
+
+<p id="_1e3762fe-def4-0c9d-f104-7b1cbfc85c21">ITU-T H.248 allows an MG and MGC to negotiate the use of a certain profile (functionality set) via the use of the <em>ServiceChangeProfile</em> parameter (see clause 7.2.8.1.5 of [ITU-T H.248.1]). An example profile is the <em>Mc</em> <underline>reference point</underline> <strike><em>n</em> interface</strike> (profile name: <em>threegbicsn</em>) defined by [b-3GPP TS 29.232]. However, this does not identify a particular resource profile. The MGC cannot deduce from the profile name how resources are provisioned on the (V)MG. The set of provisioned resources could be tied to the media gateway identity (ITU-T H.248 Mid) but this unnecessarily ties the transport network configuration to the MG hardware configuration. Many ITU-T H.248 packages specify a default of "provisioned" for the elements defined by the package. It is assumed that these are co-ordinated via other provisioning means (e.g., SNMP MIBs). As an ITU-T H.248 MG can be provisioned with different sets of resources per ITU-T H.248 Profile Name and/or Mid another form of correlation identity between the MGC and MG to coordinate what has been provisioned is required.</p>
+
+<p id="_68b1fda9-9ce1-8b90-7cb6-833709f77a9b">This identifier can be used by network operators as a pointer to a set of provisioned configuration data. Upon reception of the identifier, the MGC can uniquely identify the provisioned defaults and other configuration data and then request (V)MG resources accordingly.</p>
+
+<p id="_d84900f1-2806-5314-a20f-c1f5d8c7153c">This Recommendation defines functionality that allows an MG to indicate to an MGC what media gateway instance is in use. It also allows an MGC to audit an MG to determine the MG instance in use. This Recommendation utilises a ServiceChangeExtension parameter that allows the MG instance to be reported during an initial ServiceChange command exchange. An ITU-T H.248 package is defined to allow an MGC to audit packages to determine if the MG instance functionality is supported. It also allows the auditing of a root Termination property to determine the MG instance.</p>
+
+<p id="_4a0ded11-86b9-c50a-fc32-9ad34475b77a" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_1c2775ef-b4d1-8f2d-e97c-8922dd904e7b" inline-header="false" obligation="normative">
+<title id="_9875963d-17b9-b208-ca82-f159cd2735a2">Technical and Editorial Corrections to H.248.87 (01/2014)</title>
+<clause id="_5580a24b-df8c-41cb-533c-1069e03d6a9e" inline-header="false" obligation="normative">
+<title id="_c59f2f56-6c07-42e4-4c13-3351ae6cebcf">Updated reference</title>
+<table id="_c82119c1-1fbf-6a56-7e1e-1c1cf2d03fa5" unnumbered="true"><tbody><tr id="_59b7ed3d-f425-a978-6f2f-8f2a689f55a6"><th id="_c9aff8a4-0fac-a439-98be-bef9850656db" valign="top" align="left">Issue</th>
+<td id="_266c91f6-0f09-25e6-0d7a-61df4a65d77c" valign="top" align="left">Two of the IETF drafts in the Bibliography have been published as IETF RFCs. The references should be updated.</td>
+</tr><tr id="_6b653122-9b77-a399-6684-cfec618a182f"><th id="_d593cd1e-40d7-5e08-1192-f1d6a369913f" valign="top" align="left">Reference:</th>
+<td id="_6ced35ee-5e89-5572-4b88-03770de8c0d3" valign="top" align="left"><link target="http://wftp3.itu.int/av-arch/avc-site/2013-2016/1411_Seo/AVD-4601.zip">AVD-4601</link></td>
+</tr></tbody>
+</table>
+
+<p id="_d2de3141-87a5-f0d9-0669-adefbc0daab9" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_f68ee9c9-726c-9802-12b1-1fff099f1b09"><strong>III.3.1 RTP-agnostic application level metrics</strong></p>
+
+<p id="_17481fdc-bfff-9ca1-fa6a-67b40bab3110">Example metrics:</p>
+
+<p id="_5db48c4a-25aa-6137-6436-4034d8d000d7">These examples are based on the pure application data stream at receiver side:</p>
+
+<ul id="_27646db2-fcf6-61ec-146e-043ffab126b3"><li><p id="_55aaf49b-afe6-9518-449b-a2733dbb3a50">Unimpaired seconds [b-IETF <strike>rtcp-xr-conc</strike> <underline>RFC 7294</underline>]</p>
+</li>
+<li><p id="_39c5d98b-57ed-8cc6-0fa1-86fd2515c6a1">Concealed seconds [b-IETF <strike>rtcp-xr-conc</strike> <underline>RFC 7294</underline>]</p>
+</li>
+<li><p id="_72ee06e7-78f4-dc16-4090-c83ec2d3067d">Severely concealed seconds [b-IETF <strike>rtcp-xr-conc</strike> <underline>RFC 7294</underline>]</p>
+</li>
+<li><p id="_67a10c59-58b5-8263-9296-d864ac1e8a7d">Unimpaired seconds [b-IETF <strike>rtcp-xr-conc</strike> <underline>RFC 7294</underline>]</p>
+</li>
+<li><p id="_91642591-f319-ee3f-8783-47da2130c315">Frame impairment statistics summary [b-IETF RFC 7004].</p>
+</li>
+</ul>
+
+<p id="_0c8e1137-0baa-aae3-e0f0-bc2681dfa965">The following example relates to FAX-over-IP using [ITU-T T.38] in T.38-over-RTP transport mode and an ITU-T H.248 IP termination enabled with the IP FAX package [ITU-T H.248.2]:</p>
+
+<ul id="_705dbcfb-d363-9002-b258-b87907c2914e"><li><p id="_cfd06bd2-3a73-2bf1-4fc1-b02c52f83dce">Pages transferred defined by ITU-T H.248 statistic <em>ipfax/pagestrans</em>; is an application level metric due to data object 'page' and RTP-agnostic due to independence of RTP header information.</p>
+</li>
+</ul>
+
+<p id="_b2cbe223-4b2e-43e3-439a-1e82d1a1583e">Statistics of RTP application data package [ITU-T H.248.58] (again due to RTP payload relation only (application data) but independence of RTP header information):</p>
+
+<ul id="_4ab24ccd-e03d-3ee5-d787-e31c7dc32f74"><li><p id="_bd9c9860-a854-a18d-4a6e-bee5009336de">RTP payload octets sent and</p>
+</li>
+<li><p id="_e3213111-9bd7-523d-84ba-d83dbf0d942b">RTP payload octets received.</p>
+</li>
+</ul>
+
+<p id="_1348f558-69a6-989e-8ef1-ec6d5a185dfb"><strong>III.3.2 RTP-aware application level metrics</strong></p>
+
+<p id="_46e1eab7-c363-d727-65aa-3fd8f08bf8a2">For these metrics the measurement function must be media format aware based on the RTP payload type codepoint in contrast to the examples of clause III.3.1.</p>
+
+<p id="_bc43dbbf-829f-1010-d7c3-d1d6ca065637">Example metrics:</p>
+
+<ul id="_2add99f3-9420-1c4f-f81f-1c6e8d4abb6a"><li><p id="_bd19fd85-8157-10ca-98ae-cc4e622d7412">MOS value (attributed by MOS type and calculation method) [b-IETF <underline>RFC 7266</underline> <strike>rtcp-xr-qoe</strike>]</p>
+</li>
+<li><p id="_2be1e3c0-ef6f-a03a-2c6d-056b4a77c6b7">Signal level [IETF RFC 3611]</p>
+</li>
+<li><p id="_59b122d8-538b-7207-778e-86e11d6584ed">Noise level [IETF RFC 3611]</p>
+</li>
+<li><p id="_8ca3f5cd-9cdb-94e4-c65d-166f479c53a7">Residual echo return loss [IETF RFC 3611]</p>
+</li>
+<li><p id="_4fccc170-c952-0172-6866-c1b6412a935d">R factor [IETF RFC 3611]</p>
+</li>
+<li><p id="_444e255e-3f9d-c73a-6874-fe0e9389263d">External R factor [IETF RFC 3611]</p>
+</li>
+<li><p id="_c2fc707f-9f9c-5631-12df-1857884ea522">End system delay [b-IETF RFC 6843] (virtual internal round-trip delay in topology RTP end system; it is an application level metric due to inclusion of encoding/decoding delays).</p>
+</li>
+</ul>
+
+<p id="_4de694ea-3ba5-1a41-2cae-c4cd2f64f143" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+
+<p id="_fb3c28f0-fd98-fd0d-db9e-57a2a0dde7e3" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_27841ebb-a366-3d56-29ad-2c9d0c03e4a4" align="center"><strong>Bibliography</strong></p>
+
+<dl id="_fddd7fb2-0800-1a79-29c8-978b850a9b0f"><dt>[b-ITU-T H.248.xnq]</dt>
+<dd id="_97a0bee6-5211-c052-1562-fc0498737fd4"><p id="_e2309ade-da71-5444-4523-39318e7801dc">(Expired) Draft of Recommendation ITU-T H.248.xnq (2005), <em>Gateway control protocol: Extended network quality metrics packages for next generation networks (NGNs)</em>. Document AVD-2773 from WP2/16 Rapporteur Meeting (Geneva 28 November – 2 December 2005). &lt;<link target="http://ftp3.itu.int/av-arch/avc-site/2017-2020/0511_Gen/AVD-2773.zip"/>&gt;</p>
+</dd>
+</dl>
+
+<p id="_410185cf-150e-02ff-e5f0-6bfa4b41eb35"><strong><em>…​</em></strong></p>
+
+<dl id="_eb44b4e9-1a9d-2803-2563-6cea643f1d12"><dt>[b-IETF RFC 7005]</dt>
+<dd id="_89fa53ab-fdd7-d271-91e1-6829b36d9ff6"><p id="_837cbed3-434b-8e5c-55cb-488e11836b6d">IETF RFC 7005 (2013), RTP Control Protocol (RTCP) Extended Report (XR) Block for De-Jitter Buffer Metric Reporting.</p>
+</dd>
+<dt>[b-IETF <strike>rtcp-xr-qoe</strike> <underline>RFC 7266</underline>]</dt>
+<dd id="_97af3853-3a6d-7350-ba6d-84c7bbd2f9b4"><p id="_8aea45dd-4c37-1e34-7481-0958f5df7adb">IETF <underline>RFC 7266 (06/2014)</underline> <strike>draft-ietf-xrblock-rtcp-xr-qoe (expected in 2014)</strike>, RTP Control Protocol (RTCP) Extended Report (XR) Blocks for <underline>Mean Opinion Score (MOS)</underline> Metric Reporting. [strike]#&lt;<link target="https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-qoe/&gt;#"/></p>
+</dd>
+<dt>[b-IETF <strike>rtcp-xr-conc</strike> <underline>RFC 7294</underline>]</dt>
+<dd id="_5547d6c6-ca5b-0d43-e1e1-56aeca42900d"><p id="_5df77d0b-985f-6488-2080-28e0eb9c5d7d">IETF <underline>RFC 7294 (07/2014)</underline> <strike>draft-ietf-xrblock-rtcp-xr-conceal (expected in 2014)</strike>, RTCP XR Report Block for Concealment metrics Reporting on Audio Applications. [strike]#&lt;<link target="https://datatracker.ietf.org/doc/draft-ietf-xrblock-rtcp-xr-loss-conceal/&gt;#"/></p>
+</dd>
+</dl>
+
+<p id="_2e26293b-570f-1a26-1b17-10bce2df4197" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+<clause id="_905f96e3-0fc5-08b3-dcd6-d93554afece1" inline-header="false" obligation="normative">
+<title id="_1e9eaa90-d385-48f2-391a-04f8dc615b7a">Technical and Editorial Corrections to H.248.88 (01/2014)</title>
+<clause id="_cde5e46f-9b9c-c68f-f2f3-3a7485267d42" inline-header="false" obligation="normative">
+<title id="_97d125be-24a8-e528-825a-10f2d2d0d6ab">Updated reference</title>
+<table id="_cf13e59e-1485-3c9e-709e-32537541587b" unnumbered="true"><tbody><tr id="_9b52a848-f267-8685-9969-e650bf20cfbf"><th id="_ee677235-c33f-7862-9057-ddfbb3399792" valign="top" align="left">Issue:</th>
+<td id="_32099801-125d-980e-67cd-f8d4de31348a" valign="top" align="left">RFC 7667 "RTP topologies" obsoletes RFC 5117, the baseline RFC of H.248.88. RFC 7667 was published after the publication of H.248.88.</td>
+</tr><tr id="_24dcea19-7e0b-20ac-ebe8-594fdaa1a79c"><th id="_fc6886bb-b8a5-797a-eac2-3a0236d7c286" valign="top" align="left">Reference:</th>
+<td id="_5220dbd9-7b20-0674-16b3-522b25e6411d" valign="top" align="left"><link target="https://www.itu.int/md/meetingdoc.asp?lang=en&amp;parent=T13-SG16-C-1054">COM16-C.1054</link></td>
+</tr></tbody>
+</table>
+
+<p id="_50a16f91-5f0e-b0d1-3874-eec1611d75ea" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_01a68601-7343-6932-603c-8922e79a6892"><strong>7.2.2 Other RTP topologies</strong></p>
+
+<p id="_afbc3fcd-727b-cdbd-1d9f-7da032506907">The high-level RTP topology models according to [b-IETF RFC 5117] have evolved since the publication of this RFC (in 2008) in terms of more detailed information (e.g., semantic clarifications), evaluation of whether the number of existing models can be reduced and the identification of new RTP topology models (see also [b-IETF <strike>rtp-topo</strike> <underline>RFC 7667</underline>]). This clause provides descriptions of such new/extended models.</p>
+
+<p id="_ef287045-7ba7-d6b7-44d4-0cf6e4a09f62" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+
+<p id="_2d31a61f-68ec-faeb-626b-90daefeb64ab" align="center"><strong><em>[Begin Proposed Correction]</em></strong></p>
+
+<p id="_eaaa7b7e-d85a-c7ef-b109-9a7a77db7659" align="center"><strong>Bibliography</strong></p>
+
+<p id="_0cf67d1a-3ceb-2b43-6465-d272cd108f95"><strong><em>…​</em></strong></p>
+
+<dl id="_def20f5d-8719-456c-26a3-93fca6ff9a05"><dt>[b-IETF <strike>rtp-topo</strike> <underline>RFC 7667</underline>]</dt>
+<dd id="_fcc937b7-f7b7-de0c-c9c9-ec32b2899206"><p id="_ea120096-c9f1-b83b-65e8-a60eb0749ea8">IETF <strike>draft-ietf-avtcore-rtp-topologies-update</strike> <underline>IETF RFC 7667</underline>, <em>RTP Topologies</em>. &lt;<link target="http://tools.ietf.org/html/draft-ietf-avtcore-rtp-topologies-update"/>&gt;</p>
+</dd>
+</dl>
+
+<p id="_c6efc842-3ced-4dfd-10df-bcfc27f59474" align="center"><strong><em>[End Proposed Correction]</em></strong></p>
+</clause>
+</clause>
+
+
+</sections><annex id="_87e18be2-4467-8ed7-c895-4bc981a2b659" inline-header="false" obligation="normative">
+<title id="_cee09770-6a22-d2be-bbbc-63eb288d8964">Defect Report Form for the H.248 Sub-series</title>
+<table id="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369" unnumbered="true"><tbody><tr id="_9adb776d-78a6-a04d-4de3-c8a8b98167f8"><td id="_5fcc1f9b-b475-f8f4-2b9e-c027ccf76cf7" valign="top" align="left">DATE:</td>
+<td id="_597b7bfa-defe-9a70-4403-6bf46fd254c3" valign="top" align="left"/></tr><tr id="_a59c2c84-b33d-977d-0905-ce2b40edd53f"><td id="_8e3afad6-b8cb-9cff-a983-14c77e7f0711" valign="top" align="left"><p id="_c689d0f9-96b4-2efb-8e2f-3ecae1e516a2">CONTACT INFORMATION<br/> NAME:<br/> COMPANY:<br/> ADDRESS:<br/> TEL:<br/> FAX:<br/> E-MAIL:</p>
+</td>
+<td id="_ea5015f0-3129-e662-a902-c5772d06d16f" valign="top" align="left"/></tr><tr id="_c6618471-40fc-3453-7ec9-b2b22ea2fc69"><td id="_37527c18-6aa7-5dba-1f0d-70e22eb9e614" valign="top" align="left">AFFECTED RECOMMENDATIONS:</td>
+<td id="_b1d9cf44-6796-9485-852e-4bfde7b62246" valign="top" align="left"/></tr><tr id="_7b144116-1af7-906a-33ed-e4ebd05ac9b2"><td id="_4b8a9a12-a575-07a1-3ddb-21ed5b11d3d6" valign="top" align="left">DESCRIPTION OF PROBLEM:</td>
+<td id="_25a6933c-1163-8a30-cf79-476ab63a7ba4" valign="top" align="left"/></tr><tr id="_d4b846b7-0b70-ff10-a69f-5f1cc30a6469"><td id="_fcdadf1d-341e-26b0-9f2d-d7d31072ed18" valign="top" align="left">SUGGESTIONS FOR RESOLUTION:</td>
+<td id="_27cd5dbe-880e-04ab-1bf2-09090f20d6ee" valign="top" align="left"/></tr></tbody>
+<note id="_7f4aa079-2475-c564-7dbf-b175d4f88c43"><p id="_4cb1a61f-0ee3-1f2b-0db7-0aee0ceb1294">Attach additional pages if more space is required than is provided above.</p>
+</note></table>
+
+
+</annex><bibliography><references id="_c8ad1831-099b-9d06-6795-de26e15a143e" normative="true" obligation="informative">
+<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_5a25b839-088e-5c1c-cd56-f28745220156" type="standard" schema-version="v1.2.9" anchor="h248-1">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Version 3</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Version 3</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11853</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.1-201303-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.1</docidentifier>
+  <date type="published">
+    <on>2013-03-16</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>5</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">To achieve greater scalability, this Recommendation decomposes the ITU-T H.323 Gateway function defined in Recommendation ITU-T H.246 into functional subcomponents and specifies the protocols these components use to communicate. This allows implementations of ITU-T H.323 gateways to be highly scalable and encourages leverage of widely deployed Switched Circuit Network (SCN) capabilities such as SS7 switches. This also enables ITU-T H.323 gateways to be composed of components from multiple vendors distributed across multiple physical platforms. The purpose of this Recommendation is to add capabilities currently defined for ITU-T H.323 systems and is intended to provide new ways of performing operations already supported in ITU-T H.323.
+This revision contains a number of clarifications on:
+–	Signal behaviour on new Streams; 
+–	time based Statistics and their applicability to multi flow streams;
+–	the impact of the Mode property on Statistics; 
+–	Event behaviour with respect to new Streams;
+–	ServiceChange version handling.</abstract>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2013</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v3 (2005) Amd. 2 (12/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.1 v3 (2005) Amd. 2 (12/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v3 (2005) Amd. 1 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.1 v3 (2005) Amd. 1 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v3 (09/2005)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.1 v3 (09/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v2 (2002) Cor. 1 (03/2004)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.1 v2 (2002) Cor. 1 (03/2004)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v2 (05/2002)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.1 v2 (05/2002)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v1 (03/2002)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.1 v1 (03/2002)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex M4 (07/2001)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex M4 (07/2001)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex M2 (07/2001)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex M2 (07/2001)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex L (07/2001)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex L (07/2001)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex K (11/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex K (11/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex J (11/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex J (11/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex I (11/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex I (11/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex H (11/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex H (11/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex G (11/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex G (11/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex F (11/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 Annex F (11/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248 (06/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248 (06/2000)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_5ad2febd-5310-5eea-de46-c8e5c26268b2" type="standard" schema-version="v1.2.9" anchor="h248-40">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11835</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.40-201303-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.40 (03/2013)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2013</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.40 (01/2007)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.40 (01/2007)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/11835</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.40-201303-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.40 (03/2013)</docidentifier>
+      <date type="published">
+        <on>2013-03-16</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.40 describes the principle used to detect application data inactivity for IP transport connections in general, like e.g., avoid a potential situation of deadlock if latching was set but no application data stream is incoming to latch on. The solution is based on an event to detect if application data had stopped (or not started).
+This revision provides additional information regarding the setting of the detection time for the IP flow stop event.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2013</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H.248.40 (01/2007)</formattedref>
+          <docidentifier type="ITU" primary="true">H.248.40 (01/2007)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_476eac38-9b8b-8cd8-655c-72291812f35a" type="standard" schema-version="v1.2.9" anchor="h248-53">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/9700</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.53-200903-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.53 (03/2009)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2009</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.53 (06/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.53 (06/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/9700</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.53-200903-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.53 (03/2009)</docidentifier>
+      <date type="published">
+        <on>2009-03-16</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">H.248 media gateways may support interfaces with packet-switched networks (via ephemeral terminations). Such types of bearer connections could be subject of traffic control mechanisms. Recommendation ITU-T H.248.53 provides three H.248 packages addressing traffic management, traffic policing and packet size control. This Recommendation focuses on the traffic policing function.This revision contains an update to the traffic policing statistics package. The update adds new statistic elements and expands these package's procedures allowing the reporting of finer-grained information regarding any violations of the policing parameters.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2009</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H.248.53 (06/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H.248.53 (06/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_7a5b4ea0-81cd-1a1e-b831-ec0d5c74929c" type="standard" schema-version="v1.2.9" anchor="h248-69">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/9707</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.69-200903-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.69 (03/2009)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2009</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/9707</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.69-200903-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.69 (03/2009)</docidentifier>
+      <date type="published">
+        <on>2009-03-16</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.69 defines packages and procedures to enable the message session relay protocol (MSRP) to be sent and received on a H.248 controlled media gateway (MG). It further allows communication between an MGC and MG regarding the messaging policy, messaging statistics and message protocol connection state.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2009</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_577521c7-b501-fd6b-75a0-ccbc7b5c31d9" type="standard" schema-version="v1.2.9" anchor="h248-80">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/12060</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.80-201401-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.80 (01/2014)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2014</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/12060</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.80-201401-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.80 (01/2014)</docidentifier>
+      <date type="published">
+        <on>2014-01-13</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.80 describes the interworking of the session description protocol (SDP) described by the "Revised SDP Offer/Answer (O/A) model with ITU-T H.248". This allows SDP capability negotiation and SDP media capabilities negotiation to be supported within ITUT H.248.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2014</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_eeabcc5c-4613-51ca-f1a9-43e6ab4b5e4e" type="standard" schema-version="v1.2.9" anchor="h248-83">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11544</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.83-201202-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.83 (02/2012)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/11544</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.83-201202-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.83 (02/2012)</docidentifier>
+      <date type="published">
+        <on>2012-02-13</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.83 defines functionality that allows a media gateway (MG) to indicate to a media gateway controller (MGC) what media gateway instance is in use. A media gateway instance relates to a named set of configuration parameters associated with a media gateway (or virtual media gateway). These configuration parameters may relate to (but are not limited to) the provisioned values associated with ITU-T H.248 packages, allocated memory, allocated storage and allocated processing resources, etc.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2012</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_330bbfc1-3ee2-25c2-a0f9-826acd313c6b" type="standard" schema-version="v1.2.9" anchor="h248-87">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/12061</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.87-201401-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.87 (01/2014)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2014</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/12061</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.87-201401-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.87 (01/2014)</docidentifier>
+      <date type="published">
+        <on>2014-01-13</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.87 provides guidelines on the use of performance monitoring tools for real-time transport protocol (RTP) traffic in ITU-T H.248 profiles. Such tools are related to RTP control protocol (RTCP) reports and the use of the ITU-T H.248-based gateway control interface for configuring measurement, filtering and reporting activities. These profile guidelines may be used by other standards developing organizations (SDOs) when defining their ITU-T H.248.1 profiles in support of ITU-T H.248 procedures and packages related to RTP bearer traffic with associated RTCP reports.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2014</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_383a96ee-f5e7-c3ad-c643-cfcc6ad2da3d" type="standard" schema-version="v1.2.9" anchor="h248-88">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/12062</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.88-201401-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.88 (01/2014)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2014</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/12062</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.88-201401-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.88 (01/2014)</docidentifier>
+      <date type="published">
+        <on>2014-01-13</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">RTCP is the control protocol associated to RTP, which has various connection models called RTP topologies. The handling of RTCP information may be RTP topology dependent. ITUT H.248 media gateways may support various types of RTP topologies, driven by network application scenarios. Recommendation ITU-T H.248.88 provides both general and detailed information about this topic, as well as explicit control means to enforce dedicated RTP topologies in such media gateways.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2014</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_176f733b-2a02-001b-6469-dffca09ccaa6" type="standard" schema-version="v1.2.9" anchor="h248-9">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/10630</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.9-200912-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.9 (12/2009)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2009</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.9 (2005) Amd. 1 (08/2007)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.9 (2005) Amd. 1 (08/2007)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.9 (01/2005)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.9 (01/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H.248.9 (03/2002)</formattedref>
+      <docidentifier type="ITU" primary="true">H.248.9 (03/2002)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/10630</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.9-200912-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.248.9 (12/2009)</docidentifier>
+      <date type="published">
+        <on>2009-12-14</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>3</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.9 provides two sets of packages: syntactic and functional. The syntactic packages provide the ability to specify announcements with variable content, with a degree of flexibility constrained only by the provisioning of the MG and MGC. This syntax may in principle be used to specify multimedia announcements, although its application in this Recommendation is to evoke audio content. The functional packages provide advanced control of an Audio Resource Function using the ITU-T H.248.1 protocol. The packages provide the ability to play recorded announcements with variable content, carry out prompted collection of digits, and carry out prompted collection of recorded audio. An additional package provides the ability to manage recorded media segments on the media gateway.
+Additional functionality incorporated by ITU-T H.248.9 (2005) Amendment 1 (2007):
+•            6.3.6.11          New variable type "Tone" for dynamic audio segment specification.
+•            6.4               Set extension of basic syntax: introduction of a new selector for text attributes.
+•            6.5.5.1         Variable type "Phrase": introduction of subtypes.
+•            9.3.1            Signal PlayCollect: enhanced functionality, new parameters.
+NOTE – This Recommendation has been renumbered in 2002. It was formerly known as Rec. ITU‑T H.248 Annex M.1.
+ITU-T H.248.9 (2005) Amendment 1 (2007) defines packages which enable automatic speech recognition (ASR), text to speech (TTS) and multimedia playout functionality between a media gateway controller (MGC) and a media gateway (MG) controlled by ITU-T H.248.1. In this scenario, the MGC may take the form of a media controller (MC) and the MG may take the form of a media processor (MP).
+This revision introduces a number of new functions. The new functions include:
+–           A playout completion event to determine the duration of the played announcement and the offset into the announcement the playout ended.
+–           The ability to report the key that terminates a recording as well as the length in time and bytes of the recording. It allows the MGC to specify whether recordings are amended to or overwrite a storage uniform resource identifier (URI).
+–           The ability to specify an offset into the announcement, where to start playing from.
+–           The ability to specify an absolute volume for an announcement.
+–           The ability to detect and report control digits and whether they are associated with the announcement or collection phases.
+–           The ability for control digits to request the MG to pause, resume, fast forward and rewind an announcement or to increase or decrease the volume of an announcement and to adjust the speed of delivery.
+–           The ability to indicate whether the collected digits should be stored in a log file or not. For example: digits related to a pin code would not be stored.
+–           The ability to detect "marks" within text to speech grammar script.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2009</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H.248.9 (2005) Amd. 1 (08/2007)</formattedref>
+          <docidentifier type="ITU" primary="true">H.248.9 (2005) Amd. 1 (08/2007)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H.248.9 (01/2005)</formattedref>
+          <docidentifier type="ITU" primary="true">H.248.9 (01/2005)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H.248.9 (03/2002)</formattedref>
+          <docidentifier type="ITU" primary="true">H.248.9 (03/2002)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem>
+
+
+
+
+
+
+
+
+
+
+
+</references></bibliography>
+</metanorma>

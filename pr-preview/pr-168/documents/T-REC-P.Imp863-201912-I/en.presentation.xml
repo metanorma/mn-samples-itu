@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.8.6" schema-version="v2.1.5" flavor="itu">
+<bibdata type="standard">
+<title language="en" type="main">Implementers' guide 2 for ITU-T P.863</title>
+<docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier><docnumber>P.863 Implementers' Guide</docnumber><date type="published"><on>2019-12-05</on></date><date type="published" format="ddMMMyyyy">5.XII.2019</date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor">raporteur</role><person>
+<name><completename>Jens Berger</completename></name>
+<affiliation><organization>
+<name>Rohde &amp; Schwarz</name>
+<address><formattedAddress>Switzerland</formattedAddress></address></organization></affiliation><phone>+41 32 686 6565</phone><phone type="fax">+41 32 686 6566</phone><email>jens.berger@rohde-schwarz.com</email></person></contributor><contributor><role type="editor"/><person>
+<name><completename>Christian Schmidmer</completename></name>
+<affiliation><organization>
+<name>OPTICOM GmbH</name>
+<address><formattedAddress>Germany</formattedAddress></address></organization></affiliation><phone>+49 9131 530200</phone><phone type="fax">+49 9131 5302020</phone><email>cs@opticom.de</email></person></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Telecommunication Union</name>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><subdivision type="Group" subtype="study-group">
+<name>12</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><edition language="">2</edition><edition language="en">second edition</edition><language current="true">en</language><script current="true">Latn</script><abstract>
+
+<p>This document contains all updates submitted up to and including those at Study Group 12 meeting in November 2019 except for those already published in the earlier implementer's guide (<eref type="inline" bibitemid="p-imp863" citeas="ITU-T P.Imp863 (06/2022)" id="_a969c115-c918-a4a7-eb97-9bfb82029049"/><semx element="eref" source="_a969c115-c918-a4a7-eb97-9bfb82029049"><fmt-xref type="inline" target="p-imp863">[ITU-T P.Imp863 (06/2022)]</fmt-xref></semx> (05/18)).</p>
+
+<p>This document was agreed by ITU-T Study Group 12 on 5 December 2019 and is the initial version of this implementer's guide.</p>
+</abstract><status><stage>in-force</stage></status><copyright><from>2019</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><series type="main">
+<title>P: Terminals and Subjective and Objective Assessment Methods</title>
+</series><series type="secondary">
+<title>Methods for objective and subjective assessment of speech quality</title>
+</series><ext><doctype language="">implementers-guide</doctype><doctype language="en">Implementers’ Guide</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>P.863 Implementers' Guide</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><localized-strings><localized-string key="term_def_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="abbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="symbols" language="en">Abbreviations and acronyms</localized-string><localized-string key="table_of_contents" language="en">Table of Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="executivesummary" language="en">Executive summary</localized-string><localized-string key="termsdef" language="en">Definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Definitions</localized-string><localized-string key="termsdefsymbols" language="en">Definitions</localized-string><localized-string key="termsdefabbrev" language="en">Definitions</localized-string><localized-string key="normref" language="en">References</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">None.</localized-string><localized-string key="internal_terms_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="norm_with_refs_pref" language="en">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</localized-string><localized-string key="norm_empty_pref" language="en">None.</localized-string><localized-string key="external_terms_boilerplate" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="internal_external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % and the following apply.
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="multiple_and" language="en">%1<enum-comma>,</enum-comma> <conn>and</conn> %2</localized-string><localized-string key="binary_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="multiple_or" language="en">%1<enum-comma>,</enum-comma> <conn>or</conn> %2</localized-string><localized-string key="chain_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="chain_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="chain_from" language="en">%1 <conn>from</conn> %2</localized-string><localized-string key="chain_to" language="en">%1 <conn>to</conn> %2</localized-string><localized-string key="nested_xref" language="en">%2 <conn>in</conn> %1</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en"><span class="fmt-element-name">NOTE</span> %</localized-string><localized-string key="para_xref" language="en">Paragraph</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Equation</localized-string><localized-string key="inequality" language="en">Inequality</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where:</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">(This appendix does not form an integral part of this %.)</localized-string><localized-string key="norm_annex" language="en">(This annex forms an integral part of this %.)</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition_cardinal" language="en">edition {{ var1 }}</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="title_prefixes.part" language="en">Part</localized-string><localized-string key="title_prefixes.amendment" language="en">Amendment</localized-string><localized-string key="title_prefixes.corrigendum" language="en">Corrigendum</localized-string><localized-string key="title_prefixes.addendum" language="en">Addendum</localized-string><localized-string key="title_prefixes.supplement" language="en">Supplement</localized-string><localized-string key="title_prefixes.annex" language="en">Annex</localized-string><localized-string key="title_prefixes.appendix" language="en">Appendix</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="editor.sg" language="en">editor</localized-string><localized-string key="editor.pl" language="en">editors</localized-string><localized-string key="punct.colon" language="en">:</localized-string><localized-string key="punct.comma" language="en">,</localized-string><localized-string key="punct.enum-comma" language="en">,</localized-string><localized-string key="punct.semicolon" language="en">;</localized-string><localized-string key="punct.period" language="en">.</localized-string><localized-string key="punct.close-paren" language="en">)</localized-string><localized-string key="punct.open-paren" language="en">(</localized-string><localized-string key="punct.close-bracket" language="en">]</localized-string><localized-string key="punct.open-bracket" language="en">[</localized-string><localized-string key="punct.question-mark" language="en">?</localized-string><localized-string key="punct.exclamation-mark" language="en">!</localized-string><localized-string key="punct.em-dash" language="en">—</localized-string><localized-string key="punct.en-dash" language="en">–</localized-string><localized-string key="punct.number-en-dash" language="en">–</localized-string><localized-string key="punct.open-quote" language="en">“</localized-string><localized-string key="punct.close-quote" language="en">”</localized-string><localized-string key="punct.open-nested-quote" language="en">‘</localized-string><localized-string key="punct.close-nested-quote" language="en">’</localized-string><localized-string key="punct.ellipse" language="en">…</localized-string><localized-string key="questions" language="en">Question(s)</localized-string><localized-string key="studyperiod" language="en">Study Period %</localized-string><localized-string key="original" language="en">Original</localized-string><localized-string key="contact" language="en">Contact</localized-string><localized-string key="tel_abbrev" language="en">Tel.</localized-string><localized-string key="document_source" language="en">Source</localized-string><localized-string key="title" language="en">Title</localized-string><localized-string key="current_language" language="en">English</localized-string><localized-string key="conventions" language="en">Conventions</localized-string><localized-string key="summary" language="en">Summary</localized-string><localized-string key="elsewhere_terms" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="here_terms" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="annex_subclause" language="en">clause</localized-string><localized-string key="keywords" language="en">Keywords</localized-string><localized-string key="international_standard" language="en">International Standard</localized-string><localized-string key="in" language="en">in</localized-string><localized-string key="to" language="en">to</localized-string><localized-string key="blankclause" language="en">This clause is intentionally left blank.</localized-string><localized-string key="internal_termsdef" language="en">Terms defined in this recommendation</localized-string><localized-string key="external_termsdef" language="en">Terms defined elsewhere</localized-string><localized-string key="symbols_boilerplate" language="en">This Recommendation uses the following abbreviations and acronyms:</localized-string><localized-string key="clause_empty" language="en">None.</localized-string><localized-string key="amendment" language="en">Amendment</localized-string><localized-string key="corrigendum" language="en">Corrigendum</localized-string><localized-string key="page" language="en">Page</localized-string><localized-string key="placedate" language="en">Geneva, %</localized-string><localized-string key="annex_to_itu_ob" language="en">Annex to ITU Operational Bulletin</localized-string><localized-string key="number_abbrev" language="en">No.</localized-string><localized-string key="annex_to_itu_ob_abbrev" language="en">Annex to ITU OB %</localized-string><localized-string key="international_telecommunication_union" language="en">International Telecommunication Union</localized-string><localized-string key="ITU" language="en">ITU</localized-string><localized-string key="position_on" language="en">(Position on %)</localized-string><localized-string key="revision_abbreviation" language="en">Rev.</localized-string><localized-string key="tsb" language="en">TSB</localized-string><localized-string key="br" language="en">BR</localized-string><localized-string key="bdt" language="en">BDT</localized-string><localized-string key="tsb_short" language="en">Telecommunication Standardization Bureau</localized-string><localized-string key="br_short" language="en">Radiocommunication Bureau</localized-string><localized-string key="bdt_short" language="en">Telecommunication Development Bureau</localized-string><localized-string key="tsb_full" language="en">Telecommunication<br/>Standardization Bureau<br/>of ITU</localized-string><localized-string key="br_full" language="en">Radiocommunication Bureau<br/>of ITU</localized-string><localized-string key="bdt_full" language="en">Telecommunication<br/>Development Bureau<br/>of ITU</localized-string><localized-string key="prepub" language="en">Prepublished version</localized-string><localized-string key="draft_new" language="en">Draft new %</localized-string><localized-string key="email" language="en">E-mail</localized-string><localized-string key="editor_full" language="en">editor</localized-string><localized-string key="doctype_dict.resolution" language="en">Resolution</localized-string><localized-string key="doctype_dict.recommendation" language="en">Recommendation</localized-string><localized-string key="doctype_dict.recommendation-supplement" language="en">Recommendation Supplement</localized-string><localized-string key="doctype_dict.recommendation-amendment" language="en">Recommendation Amendment</localized-string><localized-string key="doctype_dict.recommendation-corrigendum" language="en">Recommendation Corrigendum</localized-string><localized-string key="doctype_dict.recommendation-errata" language="en">Recommendation Errata</localized-string><localized-string key="doctype_dict.recommendation-annex" language="en">Recommendation Annex</localized-string><localized-string key="doctype_dict.focus-group" language="en">Focus Group</localized-string><localized-string key="doctype_dict.implementers-guide" language="en">Implementers’ Guide</localized-string><localized-string key="doctype_dict.technical-paper" language="en">Technical Paper</localized-string><localized-string key="doctype_dict.technical-report" language="en">Technical Report</localized-string><localized-string key="doctype_dict.joint-itu-iso-iec" language="en">Joint ITU/ISO/IEC</localized-string><localized-string key="doctype_dict.service-publication" language="en">Service Publication</localized-string><localized-string key="doctype_dict.contribution" language="en">Contribution</localized-string><localized-string key="doctype_abbrev.recommendation" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-supplement" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-amendment" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-corrigendum" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-errata" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-annex" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.focus-group" language="en">FG</localized-string><localized-string key="doctype_abbrev.implementers-guide" language="en">Imp.</localized-string><localized-string key="doctype_abbrev.technical-paper" language="en">TP</localized-string><localized-string key="doctype_abbrev.technical-report" language="en">TR</localized-string><localized-string key="doctype_abbrev.joint-itu-iso-iec" language="en">ITU/ISO/IEC</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata><source-highlighter-css>sourcecode table td { padding: 5px; }
+sourcecode table pre { margin: 0; }
+sourcecode, sourcecode .w {
+  color: #444444;
+}
+sourcecode .cp {
+  color: #CC00A3;
+}
+sourcecode .cs {
+  color: #CC00A3;
+}
+sourcecode .c, sourcecode .ch, sourcecode .cd, sourcecode .cm, sourcecode .cpf, sourcecode .c1 {
+  color: #FF0000;
+}
+sourcecode .kc {
+  color: #C34E00;
+}
+sourcecode .kd {
+  color: #0000FF;
+}
+sourcecode .kr {
+  color: #007575;
+}
+sourcecode .k, sourcecode .kn, sourcecode .kp, sourcecode .kt, sourcecode .kv {
+  color: #0000FF;
+}
+sourcecode .s, sourcecode .sb, sourcecode .sc, sourcecode .ld, sourcecode .sd, sourcecode .s2, sourcecode .se, sourcecode .sh, sourcecode .si, sourcecode .sx, sourcecode .sr, sourcecode .s1, sourcecode .ss {
+  color: #009C00;
+}
+sourcecode .sa {
+  color: #0000FF;
+}
+sourcecode .nb, sourcecode .bp {
+  color: #C34E00;
+}
+sourcecode .nt {
+  color: #0000FF;
+}
+
+</source-highlighter-css></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_60a6cc77-6559-b78c-5111-c6908a13f2be" inline-header="false" obligation="normative" semx-id="_60a6cc77-6559-b78c-5111-c6908a13f2be" displayorder="1"><p id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d" semx-id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d">© ITU 2019</p>
+
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890" semx-id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<legal-statement>
+
+<clause id="_003f845c-f32a-7960-3b0f-9c85330adade" inline-header="false" obligation="normative" semx-id="_003f845c-f32a-7960-3b0f-9c85330adade" displayorder="2">
+<title id="_2fd05f8f-2995-f8e8-4ae7-daa19a5d8870" semx-id="_89ed9c08-e3b7-2077-1fcb-dabb1102e0b7">FOREWORD</title><fmt-title depth="1" id="_e186b4b7-562f-c1f5-40a9-edc4c872b5fe"><semx element="title" source="_2fd05f8f-2995-f8e8-4ae7-daa19a5d8870">FOREWORD</semx></fmt-title>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530" semx-id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_34051732-c502-607b-42ae-79538f27ca51" semx-id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44" semx-id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300" semx-id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+</clause>
+</legal-statement>
+</boilerplate><preface><clause type="toc" id="_79bda703-4de4-e387-3f90-33444dda93f0" displayorder="3"><fmt-title depth="1" id="_922ccd0a-c209-2109-91bd-7e13decf6f5c">Table of Contents</fmt-title></clause>
+<abstract id="_ad4df5b0-95d3-acb8-2822-93178e890b1f" semx-id="_ad4df5b0-95d3-acb8-2822-93178e890b1f" displayorder="4">
+<title id="_8938e609-4170-af4f-dc02-002db0005249" semx-id="_bddaac0f-3db8-580b-f6b0-f25cdc8b8c2d">Summary</title><fmt-title depth="1" id="_0aeedff8-0688-0697-92a6-dad759d8a6f2"><semx element="title" source="_8938e609-4170-af4f-dc02-002db0005249">Summary</semx></fmt-title>
+<p id="_97ed6da4-e622-9159-36ca-2ce6e915a659" semx-id="_97ed6da4-e622-9159-36ca-2ce6e915a659">This document contains all updates submitted up to and including those at Study Group 12 meeting in November 2019 except for those already published in the earlier implementer's guide (<eref type="inline" bibitemid="p-imp863" citeas="ITU-T P.Imp863 (06/2022)" id="_9913baa9-df22-7205-c0ae-7663d0822ded"/><semx element="eref" source="_9913baa9-df22-7205-c0ae-7663d0822ded"><fmt-xref type="inline" target="p-imp863">[ITU-T P.Imp863 (06/2022)]</fmt-xref></semx> (05/18)).</p>
+
+<p id="_c9e53ac0-6217-2d4e-320c-f02525f5b50e" semx-id="_c9e53ac0-6217-2d4e-320c-f02525f5b50e">This document was agreed by ITU-T Study Group 12 on 5 December 2019 and is the initial version of this implementer's guide.</p>
+</abstract><clause id="_00bc0150-325b-d725-99c1-afc70356887f" inline-header="false" obligation="informative" semx-id="_00bc0150-325b-d725-99c1-afc70356887f" displayorder="5">
+<title id="_e2de7248-8d08-4c72-90ff-a0f9c4304f88" semx-id="_e780bd3f-ad64-4234-3bea-1529d5b370c6">Change log</title><fmt-title depth="1" id="_150b19e5-1c69-7e28-a131-94082bd13264"><semx element="title" source="_e2de7248-8d08-4c72-90ff-a0f9c4304f88">Change log</semx></fmt-title>
+<table id="_f53c4b29-c16d-752d-663f-70b476716759" unnumbered="true" semx-id="_f53c4b29-c16d-752d-663f-70b476716759"><tbody><tr id="_42a0aa5f-0c97-7486-a1fc-b3054b2136ca" semx-id="_42a0aa5f-0c97-7486-a1fc-b3054b2136ca"><td id="_e1267a34-a2ac-df33-6f0a-5ef5de742e93" valign="top" align="left" semx-id="_e1267a34-a2ac-df33-6f0a-5ef5de742e93">2019-12</td>
+<td id="_51f0062d-b45c-a6c2-357d-8d6a5a15ccd1" valign="top" align="left" semx-id="_51f0062d-b45c-a6c2-357d-8d6a5a15ccd1">Initial version</td>
+</tr></tbody>
+</table>
+</clause><clause id="_10ff1429-ba8d-f95d-9704-e56506e5ecd6" type="editors" displayorder="6">
+<table id="_cdf85949-a653-ca89-6e7b-8aedfa753187" unnumbered="true"><tbody>
+<tr id="_d6168cd5-c140-f708-031f-e14f952b4868"><th id="_5a7665f2-fdeb-1dd9-8f56-93863d98bcb4">Editors:</th><td id="_8ee8f614-81d6-4182-67ca-c1d68c63ab61">Jens Berger<br/>Rohde  Schwarz, Switzerland</td><td id="_742c5496-abd4-74c6-a238-63b4e5afb361">E-mail: <link target="mailto:jens.berger@rohde-schwarz.com" id="_f01680be-14d5-49c5-5af2-906abc2791f0">jens.berger@rohde-schwarz.com</link><semx element="link" source="_f01680be-14d5-49c5-5af2-906abc2791f0"><fmt-link target="mailto:jens.berger@rohde-schwarz.com">jens.berger@rohde-schwarz.com</fmt-link></semx></td></tr>
+
+<tr id="_4527a107-c787-187b-8eda-465c29efd359"><th id="_89e28be6-8de1-ffa1-528f-8970218de055"/><td id="_c0bd3abd-93b5-8a4f-cb41-c0b4f7130133">Christian Schmidmer<br/>OPTICOM GmbH, Germany</td><td id="_559aa2ef-df6e-36a4-6841-791c95ece8bb">E-mail: <link target="mailto:cs@opticom.de" id="_417e28ef-b89f-712f-08e6-d200bc984247">cs@opticom.de</link><semx element="link" source="_417e28ef-b89f-712f-08e6-d200bc984247"><fmt-link target="mailto:cs@opticom.de">cs@opticom.de</fmt-link></semx></td></tr>
+</tbody></table></clause></preface><sections>
+<p class="zzSTDTitle1" displayorder="7">Implementers’ Guide
+  ITU-T P.863 Implementers' Guide</p>
+<p class="zzSTDTitle2" displayorder="8">Implementers' guide 2 for ITU-T P.863</p>
+
+
+
+
+<clause id="_0c31ec52-c10c-321c-2886-8fb7c09d5107" type="scope" inline-header="false" obligation="normative" semx-id="_0c31ec52-c10c-321c-2886-8fb7c09d5107" displayorder="9">
+<title id="_270e63bf-66c1-08f9-6f73-a416136d2fee" semx-id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title><fmt-title depth="1" id="_47fcec7e-e4a1-a7b5-02cd-8a466fcf5f8f"><span class="fmt-caption-label"><semx element="autonum" source="_0c31ec52-c10c-321c-2886-8fb7c09d5107">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_270e63bf-66c1-08f9-6f73-a416136d2fee">Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_0c31ec52-c10c-321c-2886-8fb7c09d5107">1</semx></fmt-xref-label>
+<p id="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265" semx-id="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265">This guide resolves defects in the following categories:</p>
+
+<ul id="_0f46587a-4a22-b099-bcfc-949dc1ebf367" semx-id="_0f46587a-4a22-b099-bcfc-949dc1ebf367"><li id="_33d61e7f-f017-e5e5-0d39-eb4db89c428c"><fmt-name id="_16335c5e-366c-5e92-13c1-61981a28a76c"><semx element="autonum" source="_33d61e7f-f017-e5e5-0d39-eb4db89c428c">–</semx></fmt-name><p id="_145ebb3b-63ab-a2b9-b86a-b9226239e968" semx-id="_145ebb3b-63ab-a2b9-b86a-b9226239e968">editorial errors</p>
+</li>
+<li id="_5679cb8b-ecbf-c86e-aa11-29834a64b32c"><fmt-name id="_146f5cad-503f-4b6e-2093-cf00ec3f854d"><semx element="autonum" source="_5679cb8b-ecbf-c86e-aa11-29834a64b32c">–</semx></fmt-name><p id="_396c4cb0-8334-908d-3168-a016a39de6f5" semx-id="_396c4cb0-8334-908d-3168-a016a39de6f5">technical errors, such as omissions and inconsistencies</p>
+</li>
+<li id="_99c19d4f-3e2d-bc34-8d88-9ae5ac4f9e73"><fmt-name id="_e69a1910-3ddd-bcbe-519c-1bc6fa8ffe30"><semx element="autonum" source="_99c19d4f-3e2d-bc34-8d88-9ae5ac4f9e73">–</semx></fmt-name><p id="_c1f22a18-0ece-5b78-95b4-3db77530a99b" semx-id="_c1f22a18-0ece-5b78-95b4-3db77530a99b">ambiguities</p>
+</li>
+</ul>
+
+<p id="_f75d0bca-edaa-3558-8017-f46d5ad59cc3" semx-id="_f75d0bca-edaa-3558-8017-f46d5ad59cc3">In addition, the implementer's guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
+
+<p id="_4880124f-b74c-8f25-9681-724fdeea2726" semx-id="_4880124f-b74c-8f25-9681-724fdeea2726">This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories.  Proposals for new features should be made through contributions to ITU-T.</p>
+</clause>
+
+<clause id="_d883beeb-6b85-66f9-b7a5-b6c27347b2a1" inline-header="false" obligation="normative" semx-id="_d883beeb-6b85-66f9-b7a5-b6c27347b2a1" displayorder="11">
+<title id="_50a4151c-34e4-f40f-4c7d-0ddaebf6e209" semx-id="_61998878-2bff-eff7-7263-05a3fe373b29">Introduction</title><fmt-title depth="1" id="_a56e70de-cd17-dcfe-a3eb-b50a47a5b923"><span class="fmt-caption-label"><semx element="autonum" source="_d883beeb-6b85-66f9-b7a5-b6c27347b2a1">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_50a4151c-34e4-f40f-4c7d-0ddaebf6e209">Introduction</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_d883beeb-6b85-66f9-b7a5-b6c27347b2a1">3</semx></fmt-xref-label>
+<p id="_444e1c68-c781-c471-eca8-a446f3c423f4" semx-id="_444e1c68-c781-c471-eca8-a446f3c423f4">This implementer's guide is a compilation of reported defects for the version 2018-03 of <eref type="inline" bibitemid="p863" citeas="ITU-T P.863 (03/2018)" id="_28f3541e-2355-c54e-abb3-10e4746c9c09"/><semx element="eref" source="_28f3541e-2355-c54e-abb3-10e4746c9c09"><fmt-xref type="inline" target="p863">[ITU-T P.863 (03/2018)]</fmt-xref></semx>, excluding all defects mentioned in <eref type="inline" bibitemid="p-imp863" citeas="ITU-T P.Imp863 (06/2022)" id="_5632c36a-6e8f-9a15-1cee-fa0b2780c536"/><semx element="eref" source="_5632c36a-6e8f-9a15-1cee-fa0b2780c536"><fmt-xref type="inline" target="p-imp863">[ITU-T P.Imp863 (06/2022)]</fmt-xref></semx> (05/18). In this edition of the guide, reported defects identified as of 2019-12 are given for:</p>
+
+<ul id="_f71c4a54-2984-a09b-7fbd-241a188f71d7" semx-id="_f71c4a54-2984-a09b-7fbd-241a188f71d7"><li id="_29e5b180-ebfc-5b1a-f448-c6eafd06c0d5"><fmt-name id="_54235ad1-1323-9c21-7b82-92e7f86dbeb9"><semx element="autonum" source="_29e5b180-ebfc-5b1a-f448-c6eafd06c0d5">–</semx></fmt-name><p id="_3bd84554-19f2-c369-f8d3-41b51cedbb25" semx-id="_3bd84554-19f2-c369-f8d3-41b51cedbb25">Recommendation ITU-T P.863 (03/18)</p>
+</li>
+</ul>
+
+<p id="_cf9d7d04-27c2-9c18-9bf9-746c22a8c449" semx-id="_cf9d7d04-27c2-9c18-9bf9-746c22a8c449">The guide must be read in conjunction with <eref type="inline" bibitemid="p863" citeas="ITU-T P.863 (03/2018)" id="_6e78ae8c-b9a2-aa37-a342-d45e08401940"/><semx element="eref" source="_6e78ae8c-b9a2-aa37-a342-d45e08401940"><fmt-xref type="inline" target="p863">[ITU-T P.863 (03/2018)]</fmt-xref></semx> (03/18) and <eref type="inline" bibitemid="p-imp863" citeas="ITU-T P.Imp863 (06/2022)" id="_16c8eed6-604d-3c6f-325c-5e0b69fc0c4a"/><semx element="eref" source="_16c8eed6-604d-3c6f-325c-5e0b69fc0c4a"><fmt-xref type="inline" target="p-imp863">[ITU-T P.Imp863 (06/2022)]</fmt-xref></semx> (05/18) to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
+</clause>
+
+<clause id="_e9d18deb-3d02-1e1d-d5d8-471bb76d423c" inline-header="false" obligation="normative" semx-id="_e9d18deb-3d02-1e1d-d5d8-471bb76d423c" displayorder="12">
+<title id="_409f0314-4ce8-56b3-0c7d-b39ce461b9fb" semx-id="_6c9d2e6a-bc1d-bdf5-cd77-639f2c902e7b">Defect resolution procedure</title><fmt-title depth="1" id="_02a4cf83-18a6-6aa2-859e-ffa1e8b3ea69"><span class="fmt-caption-label"><semx element="autonum" source="_e9d18deb-3d02-1e1d-d5d8-471bb76d423c">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_409f0314-4ce8-56b3-0c7d-b39ce461b9fb">Defect resolution procedure</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_e9d18deb-3d02-1e1d-d5d8-471bb76d423c">4</semx></fmt-xref-label>
+<p id="_3fe9754f-1b89-528b-2905-cf1472993f62" semx-id="_3fe9754f-1b89-528b-2905-cf1472993f62">Upon discovering technical defects with any components of the texts covered by this implementer's guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii).  The template for a defect report is located at the end of this guide.  Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed.  This defect resolution process is open to any interested party.  Formal membership in the ITU is not required to participate in this process.</p>
+</clause>
+
+
+
+<clause id="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a" inline-header="false" obligation="normative" semx-id="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a" displayorder="13">
+<title id="_28b736f5-61d5-ef3d-aa65-efae11c7b9f2" semx-id="_7a78976d-4b13-fb1e-1bad-14eb19b4702c">Nomenclature</title><fmt-title depth="1" id="_e91e019a-2541-fa96-0e6b-02da4e17b5cd"><span class="fmt-caption-label"><semx element="autonum" source="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_28b736f5-61d5-ef3d-aa65-efae11c7b9f2">Nomenclature</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a">5</semx></fmt-xref-label>
+<p id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642" semx-id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
+
+<table id="_0ae75d4e-57ab-689e-6be2-8b22c20a9e73" unnumbered="true" semx-id="_0ae75d4e-57ab-689e-6be2-8b22c20a9e73"><tbody><tr id="_07249b8d-649f-f5af-8e24-dd514d6d293b" semx-id="_07249b8d-649f-f5af-8e24-dd514d6d293b"><th id="_c1c1ac00-93c0-bb77-a5a4-11c2fc8c3f69" valign="top" align="center" semx-id="_c1c1ac00-93c0-bb77-a5a4-11c2fc8c3f69">Symbol</th>
+<th id="_2b43d866-0e6f-65c1-a4cd-28ee6cbc2d2f" valign="top" align="center" semx-id="_2b43d866-0e6f-65c1-a4cd-28ee6cbc2d2f">Description</th>
+</tr><tr id="_7494b805-6848-df16-e571-fb23cf6943f5" semx-id="_7494b805-6848-df16-e571-fb23cf6943f5"><td id="_6752e28a-047a-99e8-7676-1c1c82eac638" valign="top" align="center" semx-id="_6752e28a-047a-99e8-7676-1c1c82eac638"><strong><em>[Begin Correction]</em></strong></td>
+<td id="_93b2c980-bacd-d04d-6790-df1b5bba5f4a" valign="top" align="left" semx-id="_93b2c980-bacd-d04d-6790-df1b5bba5f4a">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr id="_28b07906-e300-eaa1-7c85-62e2b85e6a44" semx-id="_28b07906-e300-eaa1-7c85-62e2b85e6a44"><td id="_540b2331-8a7c-c22f-1661-0fa694646cff" valign="top" align="center" semx-id="_540b2331-8a7c-c22f-1661-0fa694646cff"><strong><em>[End Correction]</em></strong></td>
+<td id="_5507813e-9dcd-d8da-0519-d7dc34b2bfd8" valign="top" align="left" semx-id="_5507813e-9dcd-d8da-0519-d7dc34b2bfd8">Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr id="_7a71bb72-ccc4-9abd-9c92-65be79ccbc2d" semx-id="_7a71bb72-ccc4-9abd-9c92-65be79ccbc2d"><td id="_2840d8ee-4384-0f5a-5964-35536a1b2287" valign="top" align="center" semx-id="_2840d8ee-4384-0f5a-5964-35536a1b2287"><strong><em>…​</em></strong></td>
+<td id="_dec60427-b524-b636-1ff8-4d75798a03ae" valign="top" align="left" semx-id="_dec60427-b524-b636-1ff8-4d75798a03ae">Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.</td>
+</tr><tr id="_c1f817ed-a8ed-6065-108a-f7df4bd7d199" semx-id="_c1f817ed-a8ed-6065-108a-f7df4bd7d199"><td id="_69892512-7e73-176d-6a90-d0eb77ada347" valign="top" align="center" semx-id="_69892512-7e73-176d-6a90-d0eb77ada347"><em>--- SPECIAL INSTRUCTIONS --- {instructions}</em></td>
+<td id="_554a0521-943d-4d95-2b51-7a8ba4cd471c" valign="top" align="left" semx-id="_554a0521-943d-4d95-2b51-7a8ba4cd471c">Indicates a set of special editing instructions to be followed.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_09e98382-c631-8971-bdf4-aa35438517c3" inline-header="false" obligation="normative" semx-id="_09e98382-c631-8971-bdf4-aa35438517c3" displayorder="14">
+<title id="_c0bb895a-2e46-3181-8ca7-226c11b5b09f" semx-id="_b1d5bd24-e03e-2e68-1434-bb4a12e4fdcb">Technical and editorial corrections to Recommendation ITU-T P.863</title><fmt-title depth="1" id="_50c41816-1bc8-d540-6ac6-18d6e76437c0"><span class="fmt-caption-label"><semx element="autonum" source="_09e98382-c631-8971-bdf4-aa35438517c3">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c0bb895a-2e46-3181-8ca7-226c11b5b09f">Technical and editorial corrections to Recommendation ITU-T P.863</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_09e98382-c631-8971-bdf4-aa35438517c3">6</semx></fmt-xref-label>
+<clause id="_4260d9dd-2eb7-9fe8-3d9a-ff1a42279e29" inline-header="false" obligation="normative" semx-id="_4260d9dd-2eb7-9fe8-3d9a-ff1a42279e29">
+<title id="_0039b55a-b928-2103-19ad-35c3d8b0ae6b" semx-id="_a98f124d-6630-70b3-a4fb-36e0c80d21b0">6.1 Annex B, SpeechActiveFrameDetection.pdf</title><fmt-title depth="2" id="_7155d4d6-aefa-2885-7c19-be037b4ceba1"><span class="fmt-caption-label"><semx element="autonum" source="_09e98382-c631-8971-bdf4-aa35438517c3">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_4260d9dd-2eb7-9fe8-3d9a-ff1a42279e29">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0039b55a-b928-2103-19ad-35c3d8b0ae6b">6.1 Annex B, SpeechActiveFrameDetection.pdf</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_09e98382-c631-8971-bdf4-aa35438517c3">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_4260d9dd-2eb7-9fe8-3d9a-ff1a42279e29">1</semx></fmt-xref-label>
+<p id="_a938499f-3ae1-d7ae-2aea-952804e110f1" semx-id="_a938499f-3ae1-d7ae-2aea-952804e110f1"><em>Fix calculation of flags indicating active speech sections in NB mode at 8kHz samplerate.</em></p>
+
+<p id="_27a13d61-5cec-423d-cebc-82242b13aa58" semx-id="_27a13d61-5cec-423d-cebc-82242b13aa58"><em>--- SPECIAL INSTRUCTIONS --- delete at line 1404</em></p>
+
+<p id="_4b308a13-9581-7ab1-f8a0-577fa4c2dce7" semx-id="_4b308a13-9581-7ab1-f8a0-577fa4c2dce7">[Begin Correction]</p>
+
+<sourcecode id="_e98329a0-96a8-db65-1ce8-2800ea4f97ff" unnumbered="true" semx-id="_e98329a0-96a8-db65-1ce8-2800ea4f97ff"><body>1404       int End = i+Hangover;
+1405       for (;i&#x3c;MaxNumFlags &amp;&amp; i&#x3c;End; i++)
+1406              pFlags[i] = 0;
+1407       i++;</body><fmt-sourcecode unnumbered="true" semx-id="_e98329a0-96a8-db65-1ce8-2800ea4f97ff" id="_0cb9ef83-db1a-c5ab-79a5-33cfdd7c078a">1404       int End = i+Hangover;
+1405       for (;i&#x3c;MaxNumFlags &amp;&amp; i&#x3c;End; i++)
+1406              pFlags[i] = 0;
+1407       i++;</fmt-sourcecode></sourcecode>
+
+
+<p id="_c200a9b3-b096-ca85-bff8-e5e0cbde8625" semx-id="_c200a9b3-b096-ca85-bff8-e5e0cbde8625">[End Correction]</p>
+
+<p id="_19d6d48f-f84f-9124-9a91-62a05c16ce3d" semx-id="_19d6d48f-f84f-9124-9a91-62a05c16ce3d"><em>--- SPECIAL INSTRUCTIONS --- insert at line 1404</em></p>
+
+<p id="_5a19ab47-d492-2744-1cd6-c5dc88e58be9" semx-id="_5a19ab47-d492-2744-1cd6-c5dc88e58be9">[Begin Correction]</p>
+
+<sourcecode id="_ef14cf2b-6079-b7e5-e8f5-8d46bc3e2b1a" unnumbered="true" semx-id="_ef14cf2b-6079-b7e5-e8f5-8d46bc3e2b1a"><body>1404       const int End = min(MaxNumFlags, i + Hangover + 1);
+1405       for (; i &#x3c; End; i++)
+1406              pFlags[i] = 0;
+1407</body><fmt-sourcecode unnumbered="true" semx-id="_ef14cf2b-6079-b7e5-e8f5-8d46bc3e2b1a" id="_8ce9a6b9-65f3-e043-92c9-014b264afd18">1404       const int End = min(MaxNumFlags, i + Hangover + 1);
+1405       for (; i &#x3c; End; i++)
+1406              pFlags[i] = 0;
+1407</fmt-sourcecode></sourcecode>
+
+
+<p id="_3013dd6f-9b3f-f9db-dab0-124babbc63bd" semx-id="_3013dd6f-9b3f-f9db-dab0-124babbc63bd">[End Correction]</p>
+
+<p id="_52a1ca48-e57a-1c95-02d2-53a225775133" semx-id="_52a1ca48-e57a-1c95-02d2-53a225775133"><em>--- SPECIAL INSTRUCTIONS --- delete at line 1416</em></p>
+
+<p id="_7e0ebe50-13c9-c0a7-fc9d-ea4bf7ba8a36" semx-id="_7e0ebe50-13c9-c0a7-fc9d-ea4bf7ba8a36">[Begin Correction]</p>
+
+<sourcecode id="_91b242b1-84fa-3bb7-14b1-f77821c25795" unnumbered="true" semx-id="_91b242b1-84fa-3bb7-14b1-f77821c25795"><body>1416       return min(MaxNumFlags, (int)(mNumFeatureFrames[Signal]* fDownsampling));</body><fmt-sourcecode unnumbered="true" semx-id="_91b242b1-84fa-3bb7-14b1-f77821c25795" id="_85537c10-cf65-c5a4-bf7a-7eb57c6c4d22">1416       return min(MaxNumFlags, (int)(mNumFeatureFrames[Signal]* fDownsampling));</fmt-sourcecode></sourcecode>
+
+
+<p id="_e256b91d-3d99-b60b-9785-70303baf69ad" semx-id="_e256b91d-3d99-b60b-9785-70303baf69ad">[End Correction]</p>
+
+<p id="_4135b338-251f-afc6-56a4-dbb25831c85e" semx-id="_4135b338-251f-afc6-56a4-dbb25831c85e"><em>--- SPECIAL INSTRUCTIONS --- insert at line 1416</em></p>
+
+<p id="_c581e125-84a7-9b2f-0630-e97707e5a74a" semx-id="_c581e125-84a7-9b2f-0630-e97707e5a74a">[Begin Correction]</p>
+
+<sourcecode id="_ecb9cdbf-640f-bfbd-b4f9-3f6572e69867" unnumbered="true" semx-id="_ecb9cdbf-640f-bfbd-b4f9-3f6572e69867"><body>1416       return min(MaxNumFlags, (int)(mNumFeatureFrames[Signal] / fDownsampling));</body><fmt-sourcecode unnumbered="true" semx-id="_ecb9cdbf-640f-bfbd-b4f9-3f6572e69867" id="_ce2f405e-f0ff-1081-9192-f7dbf98f3c39">1416       return min(MaxNumFlags, (int)(mNumFeatureFrames[Signal] / fDownsampling));</fmt-sourcecode></sourcecode>
+
+
+<p id="_4c636de3-fa3d-b618-1340-8fbbd25d2754" semx-id="_4c636de3-fa3d-b618-1340-8fbbd25d2754">[End Correction]</p>
+</clause>
+
+<clause id="_71aba8bb-a155-1be5-501f-5eff4f86272e" inline-header="false" obligation="normative" semx-id="_71aba8bb-a155-1be5-501f-5eff4f86272e">
+<title id="_1bce074a-eb2b-1cd6-427e-d16e1b2c3020" semx-id="_05b56069-307a-b359-4244-3a61f81f04e2">6.2 Annex A, subfolder Results Ed. 3</title><fmt-title depth="2" id="_552dbc4d-26f8-0fc3-0d04-eb1f4f4dbcaa"><span class="fmt-caption-label"><semx element="autonum" source="_09e98382-c631-8971-bdf4-aa35438517c3">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_71aba8bb-a155-1be5-501f-5eff4f86272e">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1bce074a-eb2b-1cd6-427e-d16e1b2c3020">6.2 Annex A, subfolder Results Ed. 3</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_09e98382-c631-8971-bdf4-aa35438517c3">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_71aba8bb-a155-1be5-501f-5eff4f86272e">2</semx></fmt-xref-label>
+<p id="_7e45cff4-6dbf-2679-a5ed-7561190613d5" semx-id="_7e45cff4-6dbf-2679-a5ed-7561190613d5"><em>The fixes in clauses 6.1 lead to minor changes in the conformance test results. Therefore, the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file. For convenience, the complete set of files is provided, although only the narrowband cases have to be updated. The changes from the <eref type="inline" bibitemid="p-imp863" citeas="ITU-T P.Imp863 (06/2022)" id="_b7e09912-38c7-642f-559f-60490c9b37bc"/><semx element="eref" source="_b7e09912-38c7-642f-559f-60490c9b37bc"><fmt-xref type="inline" target="p-imp863">[ITU-T P.Imp863 (06/2022)]</fmt-xref></semx> (2018-05) are already included.</em></p>
+
+<p id="_4d27a16d-5eca-d2ed-abab-f703a22f97a8" semx-id="_4d27a16d-5eca-d2ed-abab-f703a22f97a8"><em>--- SPECIAL INSTRUCTIONS ---Replace subfolder in Annex A</em></p>
+
+<p id="_e6827bb4-8f20-81c9-75db-8e38ad92bf2c" semx-id="_e6827bb4-8f20-81c9-75db-8e38ad92bf2c">[Begin Correction]</p>
+
+<p id="_55155a93-b3f0-cc7b-33f4-2f1da0119a25" semx-id="_55155a93-b3f0-cc7b-33f4-2f1da0119a25"><em>--- SPECIAL INSTRUCTIONS --- Old Subfolder</em></p>
+
+<sourcecode id="_295f8b69-b410-b232-1203-6b3a4d3c3420" unnumbered="true" semx-id="_295f8b69-b410-b232-1203-6b3a4d3c3420"><body>Results Ed. 3</body><fmt-sourcecode unnumbered="true" semx-id="_295f8b69-b410-b232-1203-6b3a4d3c3420" id="_6ac97ec6-6223-083b-356b-b1ad66d93440">Results Ed. 3</fmt-sourcecode></sourcecode>
+
+
+<p id="_68da9a9e-a30c-f79b-1eb7-d5f94f6ab257" semx-id="_68da9a9e-a30c-f79b-1eb7-d5f94f6ab257"><em>--- SPECIAL INSTRUCTIONS --- New Subfolder</em></p>
+
+<sourcecode id="_7afc355a-2fd0-bd77-3afd-dcc216e49124" unnumbered="true" semx-id="_7afc355a-2fd0-bd77-3afd-dcc216e49124"><body>Results Ed. 3 - IG 2019-11</body><fmt-sourcecode unnumbered="true" semx-id="_7afc355a-2fd0-bd77-3afd-dcc216e49124" id="_fad1cd6f-c337-837f-29a0-a4123ae67505">Results Ed. 3 - IG 2019-11</fmt-sourcecode></sourcecode>
+
+
+<p id="_894efce1-9ef8-d209-e3fb-4662fd1405a9" semx-id="_894efce1-9ef8-d209-e3fb-4662fd1405a9">[End Correction]</p>
+</clause>
+</clause>
+
+
+<references id="_eea9f7f9-8aa4-91ac-6a29-1fee44cf7cd2" normative="true" obligation="informative" semx-id="_eea9f7f9-8aa4-91ac-6a29-1fee44cf7cd2" displayorder="10">
+<title id="_7ac01280-cbfb-b0d3-113f-4deae84c4348" semx-id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><fmt-title depth="1" id="_f3ec53e0-fc8b-3f26-38d4-b6843434e81f"><span class="fmt-caption-label"><semx element="autonum" source="_eea9f7f9-8aa4-91ac-6a29-1fee44cf7cd2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7ac01280-cbfb-b0d3-113f-4deae84c4348">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_eea9f7f9-8aa4-91ac-6a29-1fee44cf7cd2">2</semx></fmt-xref-label><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb" semx-id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="p863" type="standard" schema-version="v1.2.9" anchor="p863" semx-id="_bfc4d790-7e4e-29a2-a264-ad2e283f4879"><biblio-tag>[ITU‑T P.863 (03/2018)]</biblio-tag><formattedref>Recommendation ITU-T P.863 (03/2018) (2018), <em>Perceptual objective listening quality prediction</em>, Third edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13570</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.863 (03/2018)</docidentifier>
+  <date type="published">
+    <on>2018-03-16</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T P.863 describes an objective method for predicting overall listening speech quality from narrowband (NB) (300 to 3 400 Hz) to fullband (FB) (20 to 20 000 Hz) telecommunication scenarios as perceived by the user in an ITU-T P.800 or ITU-T P.830 absolute category rating (ACR) listening-only test. Recommendation ITU-T P.863 supports two operational modes, one for narrowband and one for fullband. Super-wideband (50 to 14 000 Hz) experiments can be simulated by band limiting the reference and accordingly the degraded signal. This Recommendation presents a high-level description of the method, advice on how to use it. All essential parts of the model are described in detail, and are provided in separate pdf-files (see Annex B). These files form an integral part of this Recommendation and shall take precedence in case of conflicts between the high-level descriptions included in the main body of this Recommendation and the corresponding detailed description parts. A conformance testing procedure is also specified in Annex A to allow a user to validate that an alternative implementation of the model is correct. 
+
+This Recommendation includes an electronic attachment containing detailed descriptions in pdf format (see Annex B) and conformance testing data (see Annex A).
+
+ 
+
+Ed. 3 of P.863 does not apply an initial 14 kHz low-pass filter anymore and it is therefore able to consider spectral components above 14 kHz in its analysis now. This expands the scope of application to fullband speech codecs such as OPUS or EVS. Additionally, the 'shift-jitter' which could be observed by repeated measurements with slightly differing delay, is decreased. The gain variation introduced by automatic gain control as well as slowly time-varying linear frequency distortions are now adequately considered.
+
+Furthermore, the problems of P.863 Ed. 2 documented in the following implementer's guides were addressed and are resolved now:
+
+·       Former Implementer's Guide on assessment of EVS coded speech with Recommendation ITU-T P.863 (2016)
+
+·       Former Implementer's Guide on non-validated test conditions with inserted gaps in speech by Recommendation ITU-T P.863 (2016)
+
+·       Former Implementer's Guide on discrimination of wideband and super-wideband speech by Recommendation ITU-T P.863 (2016)
+•Former Implementer's Guide on correction of Recommendation ITU-T P.863 regarding reverb (2016)</abstract>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (2018) Amd. 1 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (2018) Amd. 1 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (09/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (09/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (2011) Amd. 1 (11/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (2011) Amd. 1 (11/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (01/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (01/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 10 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 16 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 20 (03/1993)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 23 (02/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 24 (10/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 25 (01/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 26 (09/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 27 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 27 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 28 (09/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 29 (01/2023)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 29 (01/2023)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 31 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 31 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="p-imp863" type="standard" schema-version="v1.2.9" anchor="p-imp863" semx-id="_1cb37020-f036-4c72-bbe0-ab550760e808"><biblio-tag>[ITU‑T P.Imp863 (06/2022)]</biblio-tag><formattedref>Recommendation ITU-T P.Imp863 (06/2022), <em>Implementer's Guide 2 for Recommendation ITU-T P.863</em>, Third edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Implementer's Guide 2 for Recommendation ITU-T P.863</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Implementer's Guide 2 for Recommendation ITU-T P.863</title>
+
+  <uri type="src">https://www.itu.int/rec/T-REC-P.Imp863-201912-I</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.Imp863 (06/2022)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Withdrawal</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.Imp863 (12/2019)</formattedref>
+      <docidentifier type="ITU" primary="true">P.Imp863 (12/2019)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.Imp863 (05/2018)</formattedref>
+      <docidentifier type="ITU" primary="true">P.Imp863 (05/2018)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Implementer's Guide 2 for Recommendation ITU-T P.863</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Implementer's Guide 2 for Recommendation ITU-T P.863</title>
+
+      <uri type="src">https://www.itu.int/rec/T-REC-P.Imp863-201912-I</uri>
+      <docidentifier type="ITU" primary="true">ITU-T P.Imp863 (06/2022)</docidentifier>
+      <date type="published">
+        <on>2019-12-05</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>3</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <status>
+        <stage>Withdrawal</stage>
+      </status>
+      <copyright>
+        <from>2019</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P.Imp863 (12/2019)</formattedref>
+          <docidentifier type="ITU" primary="true">P.Imp863 (12/2019)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P.Imp863 (05/2018)</formattedref>
+          <docidentifier type="ITU" primary="true">P.Imp863 (05/2018)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem>
+
+
+
+
+</references></sections><annex id="_a6185c39-e1bd-3729-b830-5b77ae1bc038" inline-header="false" obligation="normative" semx-id="_a6185c39-e1bd-3729-b830-5b77ae1bc038" autonum="A" displayorder="15">
+<title id="_a450dd40-971c-a142-1072-745d9ade580e" semx-id="_0278e45b-0fa3-1f9f-fe03-21907d2c070a">Recommendation ITU-T P.863 Defect Report Form</title><fmt-title id="_9e25d6e7-7d39-4068-efdd-0d8f909755d0"><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_a6185c39-e1bd-3729-b830-5b77ae1bc038">A</semx></span></strong><span class="fmt-caption-delim"><br/><br/></span><semx element="title" source="_a450dd40-971c-a142-1072-745d9ade580e"><strong>Recommendation ITU-T P.863 Defect Report Form</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_a6185c39-e1bd-3729-b830-5b77ae1bc038">A</semx></fmt-xref-label><p class="annex_obligation"><span class="fmt-obligation">(This annex forms an integral part of this Implementers’ Guide.)</span></p>
+<variant-title type="toc"><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_a6185c39-e1bd-3729-b830-5b77ae1bc038">A</semx></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a450dd40-971c-a142-1072-745d9ade580e">Recommendation ITU-T P.863 Defect Report Form</semx></variant-title>
+<table id="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369" unnumbered="true" semx-id="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369"><tbody><tr id="_9adb776d-78a6-a04d-4de3-c8a8b98167f8" semx-id="_9adb776d-78a6-a04d-4de3-c8a8b98167f8"><td id="_5fcc1f9b-b475-f8f4-2b9e-c027ccf76cf7" valign="top" align="left" semx-id="_5fcc1f9b-b475-f8f4-2b9e-c027ccf76cf7">DATE:</td>
+<td id="_597b7bfa-defe-9a70-4403-6bf46fd254c3" valign="top" align="left" semx-id="_597b7bfa-defe-9a70-4403-6bf46fd254c3"/></tr><tr id="_a59c2c84-b33d-977d-0905-ce2b40edd53f" semx-id="_a59c2c84-b33d-977d-0905-ce2b40edd53f"><td id="_8e3afad6-b8cb-9cff-a983-14c77e7f0711" valign="top" align="left" semx-id="_8e3afad6-b8cb-9cff-a983-14c77e7f0711"><p id="_c689d0f9-96b4-2efb-8e2f-3ecae1e516a2" semx-id="_c689d0f9-96b4-2efb-8e2f-3ecae1e516a2">CONTACT INFORMATION<br/> NAME:<br/> COMPANY:<br/> ADDRESS:<br/> TEL:<br/> FAX:<br/> E-MAIL:</p>
+</td>
+<td id="_ea5015f0-3129-e662-a902-c5772d06d16f" valign="top" align="left" semx-id="_ea5015f0-3129-e662-a902-c5772d06d16f"/></tr><tr id="_c6618471-40fc-3453-7ec9-b2b22ea2fc69" semx-id="_c6618471-40fc-3453-7ec9-b2b22ea2fc69"><td id="_37527c18-6aa7-5dba-1f0d-70e22eb9e614" valign="top" align="left" semx-id="_37527c18-6aa7-5dba-1f0d-70e22eb9e614">AFFECTED RECOMMENDATIONS:</td>
+<td id="_b1d9cf44-6796-9485-852e-4bfde7b62246" valign="top" align="left" semx-id="_b1d9cf44-6796-9485-852e-4bfde7b62246"/></tr><tr id="_7b144116-1af7-906a-33ed-e4ebd05ac9b2" semx-id="_7b144116-1af7-906a-33ed-e4ebd05ac9b2"><td id="_4b8a9a12-a575-07a1-3ddb-21ed5b11d3d6" valign="top" align="left" semx-id="_4b8a9a12-a575-07a1-3ddb-21ed5b11d3d6">DESCRIPTION OF PROBLEM:</td>
+<td id="_25a6933c-1163-8a30-cf79-476ab63a7ba4" valign="top" align="left" semx-id="_25a6933c-1163-8a30-cf79-476ab63a7ba4"/></tr><tr id="_d4b846b7-0b70-ff10-a69f-5f1cc30a6469" semx-id="_d4b846b7-0b70-ff10-a69f-5f1cc30a6469"><td id="_fcdadf1d-341e-26b0-9f2d-d7d31072ed18" valign="top" align="left" semx-id="_fcdadf1d-341e-26b0-9f2d-d7d31072ed18">SUGGESTIONS FOR RESOLUTION:</td>
+<td id="_27cd5dbe-880e-04ab-1bf2-09090f20d6ee" valign="top" align="left" semx-id="_27cd5dbe-880e-04ab-1bf2-09090f20d6ee"/></tr></tbody>
+<note id="_7f4aa079-2475-c564-7dbf-b175d4f88c43" semx-id="_7f4aa079-2475-c564-7dbf-b175d4f88c43" autonum=""><fmt-name id="_f810c997-efae-6189-6c32-603e261ec3d7"><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim"> – </span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369"><span class="fmt-element-name">Note</span> <span class="fmt-conn">in</span> <span class="fmt-xref-container"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369">(??)</semx></span></fmt-xref-label><p id="_4cb1a61f-0ee3-1f2b-0db7-0aee0ceb1294" semx-id="_4cb1a61f-0ee3-1f2b-0db7-0aee0ceb1294">Attach additional pages if more space is required than is provided above.</p>
+</note></table>
+
+
+</annex><bibliography/>
+</metanorma>

@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.8.6" schema-version="v2.1.5" flavor="itu">
+<bibdata type="standard">
+<title language="en" type="main">Transmission specification for radio over IP transmission systems</title>
+<docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier><docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier><docnumber>J.1108</docnumber><date type="published"><on>2019-01</on></date><date type="published" format="ddMMMyyyy">I.2019</date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Telecommunication Union</name>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language current="true">en</language><script current="true">Latn</script><abstract>
+
+<p>As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.</p>
+
+<p>Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.</p>
+</abstract><status><stage>in-force</stage></status><copyright><from>2019</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><series type="main">
+<title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
+</series><series type="secondary">
+<title>Switched digital video over cable networks</title>
+</series><keyword>Radio over IP</keyword><keyword>RoIP</keyword><ext><doctype language="">recommendation</doctype><doctype language="en">Recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>J.1108</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><localized-strings><localized-string key="term_def_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="abbrev" language="en">Abbreviations and acronyms</localized-string><localized-string key="symbols" language="en">Abbreviations and acronyms</localized-string><localized-string key="table_of_contents" language="en">Table of Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="executivesummary" language="en">Executive summary</localized-string><localized-string key="termsdef" language="en">Definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Definitions</localized-string><localized-string key="termsdefsymbols" language="en">Definitions</localized-string><localized-string key="termsdefabbrev" language="en">Definitions</localized-string><localized-string key="normref" language="en">References</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">None.</localized-string><localized-string key="internal_terms_boilerplate" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="norm_with_refs_pref" language="en">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</localized-string><localized-string key="norm_empty_pref" language="en">None.</localized-string><localized-string key="external_terms_boilerplate" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="internal_external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % and the following apply.
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="multiple_and" language="en">%1<enum-comma>,</enum-comma> <conn>and</conn> %2</localized-string><localized-string key="binary_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="multiple_or" language="en">%1<enum-comma>,</enum-comma> <conn>or</conn> %2</localized-string><localized-string key="chain_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="chain_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="chain_from" language="en">%1 <conn>from</conn> %2</localized-string><localized-string key="chain_to" language="en">%1 <conn>to</conn> %2</localized-string><localized-string key="nested_xref" language="en">%2 <conn>in</conn> %1</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en"><span class="fmt-element-name">NOTE</span> %</localized-string><localized-string key="para_xref" language="en">Paragraph</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Equation</localized-string><localized-string key="inequality" language="en">Inequality</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where:</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">(This appendix does not form an integral part of this %.)</localized-string><localized-string key="norm_annex" language="en">(This annex forms an integral part of this %.)</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition_cardinal" language="en">edition {{ var1 }}</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="title_prefixes.part" language="en">Part</localized-string><localized-string key="title_prefixes.amendment" language="en">Amendment</localized-string><localized-string key="title_prefixes.corrigendum" language="en">Corrigendum</localized-string><localized-string key="title_prefixes.addendum" language="en">Addendum</localized-string><localized-string key="title_prefixes.supplement" language="en">Supplement</localized-string><localized-string key="title_prefixes.annex" language="en">Annex</localized-string><localized-string key="title_prefixes.appendix" language="en">Appendix</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="editor.sg" language="en">editor</localized-string><localized-string key="editor.pl" language="en">editors</localized-string><localized-string key="punct.colon" language="en">:</localized-string><localized-string key="punct.comma" language="en">,</localized-string><localized-string key="punct.enum-comma" language="en">,</localized-string><localized-string key="punct.semicolon" language="en">;</localized-string><localized-string key="punct.period" language="en">.</localized-string><localized-string key="punct.close-paren" language="en">)</localized-string><localized-string key="punct.open-paren" language="en">(</localized-string><localized-string key="punct.close-bracket" language="en">]</localized-string><localized-string key="punct.open-bracket" language="en">[</localized-string><localized-string key="punct.question-mark" language="en">?</localized-string><localized-string key="punct.exclamation-mark" language="en">!</localized-string><localized-string key="punct.em-dash" language="en">—</localized-string><localized-string key="punct.en-dash" language="en">–</localized-string><localized-string key="punct.number-en-dash" language="en">–</localized-string><localized-string key="punct.open-quote" language="en">“</localized-string><localized-string key="punct.close-quote" language="en">”</localized-string><localized-string key="punct.open-nested-quote" language="en">‘</localized-string><localized-string key="punct.close-nested-quote" language="en">’</localized-string><localized-string key="punct.ellipse" language="en">…</localized-string><localized-string key="questions" language="en">Question(s)</localized-string><localized-string key="studyperiod" language="en">Study Period %</localized-string><localized-string key="original" language="en">Original</localized-string><localized-string key="contact" language="en">Contact</localized-string><localized-string key="tel_abbrev" language="en">Tel.</localized-string><localized-string key="document_source" language="en">Source</localized-string><localized-string key="title" language="en">Title</localized-string><localized-string key="current_language" language="en">English</localized-string><localized-string key="conventions" language="en">Conventions</localized-string><localized-string key="summary" language="en">Summary</localized-string><localized-string key="elsewhere_terms" language="en">This Recommendation uses the following terms defined elsewhere:</localized-string><localized-string key="here_terms" language="en">This Recommendation defines the following terms:</localized-string><localized-string key="annex_subclause" language="en">clause</localized-string><localized-string key="keywords" language="en">Keywords</localized-string><localized-string key="international_standard" language="en">International Standard</localized-string><localized-string key="in" language="en">in</localized-string><localized-string key="to" language="en">to</localized-string><localized-string key="blankclause" language="en">This clause is intentionally left blank.</localized-string><localized-string key="internal_termsdef" language="en">Terms defined in this recommendation</localized-string><localized-string key="external_termsdef" language="en">Terms defined elsewhere</localized-string><localized-string key="symbols_boilerplate" language="en">This Recommendation uses the following abbreviations and acronyms:</localized-string><localized-string key="clause_empty" language="en">None.</localized-string><localized-string key="amendment" language="en">Amendment</localized-string><localized-string key="corrigendum" language="en">Corrigendum</localized-string><localized-string key="page" language="en">Page</localized-string><localized-string key="placedate" language="en">Geneva, %</localized-string><localized-string key="annex_to_itu_ob" language="en">Annex to ITU Operational Bulletin</localized-string><localized-string key="number_abbrev" language="en">No.</localized-string><localized-string key="annex_to_itu_ob_abbrev" language="en">Annex to ITU OB %</localized-string><localized-string key="international_telecommunication_union" language="en">International Telecommunication Union</localized-string><localized-string key="ITU" language="en">ITU</localized-string><localized-string key="position_on" language="en">(Position on %)</localized-string><localized-string key="revision_abbreviation" language="en">Rev.</localized-string><localized-string key="tsb" language="en">TSB</localized-string><localized-string key="br" language="en">BR</localized-string><localized-string key="bdt" language="en">BDT</localized-string><localized-string key="tsb_short" language="en">Telecommunication Standardization Bureau</localized-string><localized-string key="br_short" language="en">Radiocommunication Bureau</localized-string><localized-string key="bdt_short" language="en">Telecommunication Development Bureau</localized-string><localized-string key="tsb_full" language="en">Telecommunication<br/>Standardization Bureau<br/>of ITU</localized-string><localized-string key="br_full" language="en">Radiocommunication Bureau<br/>of ITU</localized-string><localized-string key="bdt_full" language="en">Telecommunication<br/>Development Bureau<br/>of ITU</localized-string><localized-string key="prepub" language="en">Prepublished version</localized-string><localized-string key="draft_new" language="en">Draft new %</localized-string><localized-string key="email" language="en">E-mail</localized-string><localized-string key="editor_full" language="en">editor</localized-string><localized-string key="doctype_dict.resolution" language="en">Resolution</localized-string><localized-string key="doctype_dict.recommendation" language="en">Recommendation</localized-string><localized-string key="doctype_dict.recommendation-supplement" language="en">Recommendation Supplement</localized-string><localized-string key="doctype_dict.recommendation-amendment" language="en">Recommendation Amendment</localized-string><localized-string key="doctype_dict.recommendation-corrigendum" language="en">Recommendation Corrigendum</localized-string><localized-string key="doctype_dict.recommendation-errata" language="en">Recommendation Errata</localized-string><localized-string key="doctype_dict.recommendation-annex" language="en">Recommendation Annex</localized-string><localized-string key="doctype_dict.focus-group" language="en">Focus Group</localized-string><localized-string key="doctype_dict.implementers-guide" language="en">Implementers’ Guide</localized-string><localized-string key="doctype_dict.technical-paper" language="en">Technical Paper</localized-string><localized-string key="doctype_dict.technical-report" language="en">Technical Report</localized-string><localized-string key="doctype_dict.joint-itu-iso-iec" language="en">Joint ITU/ISO/IEC</localized-string><localized-string key="doctype_dict.service-publication" language="en">Service Publication</localized-string><localized-string key="doctype_dict.contribution" language="en">Contribution</localized-string><localized-string key="doctype_abbrev.recommendation" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-supplement" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-amendment" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-corrigendum" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-errata" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.recommendation-annex" language="en">Rec.</localized-string><localized-string key="doctype_abbrev.focus-group" language="en">FG</localized-string><localized-string key="doctype_abbrev.implementers-guide" language="en">Imp.</localized-string><localized-string key="doctype_abbrev.technical-paper" language="en">TP</localized-string><localized-string key="doctype_abbrev.technical-report" language="en">TR</localized-string><localized-string key="doctype_abbrev.joint-itu-iso-iec" language="en">ITU/ISO/IEC</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata><source-highlighter-css>sourcecode table td { padding: 5px; }
+sourcecode table pre { margin: 0; }
+sourcecode, sourcecode .w {
+  color: #444444;
+}
+sourcecode .cp {
+  color: #CC00A3;
+}
+sourcecode .cs {
+  color: #CC00A3;
+}
+sourcecode .c, sourcecode .ch, sourcecode .cd, sourcecode .cm, sourcecode .cpf, sourcecode .c1 {
+  color: #FF0000;
+}
+sourcecode .kc {
+  color: #C34E00;
+}
+sourcecode .kd {
+  color: #0000FF;
+}
+sourcecode .kr {
+  color: #007575;
+}
+sourcecode .k, sourcecode .kn, sourcecode .kp, sourcecode .kt, sourcecode .kv {
+  color: #0000FF;
+}
+sourcecode .s, sourcecode .sb, sourcecode .sc, sourcecode .ld, sourcecode .sd, sourcecode .s2, sourcecode .se, sourcecode .sh, sourcecode .si, sourcecode .sx, sourcecode .sr, sourcecode .s1, sourcecode .ss {
+  color: #009C00;
+}
+sourcecode .sa {
+  color: #0000FF;
+}
+sourcecode .nb, sourcecode .bp {
+  color: #C34E00;
+}
+sourcecode .nt {
+  color: #0000FF;
+}
+
+</source-highlighter-css></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_60a6cc77-6559-b78c-5111-c6908a13f2be" inline-header="false" obligation="normative" semx-id="_60a6cc77-6559-b78c-5111-c6908a13f2be" displayorder="1"><p id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d" semx-id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d">© ITU 2019</p>
+
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890" semx-id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_911011c5-3ac9-4f6f-405c-8c131b41e73d" inline-header="false" obligation="normative" semx-id="_911011c5-3ac9-4f6f-405c-8c131b41e73d" displayorder="2">
+<title id="_749314eb-d2ac-dff9-356c-42796cd7512d" semx-id="_f27e451a-4f9c-d727-571d-87f0a607acfc">INTELLECTUAL PROPERTY RIGHTS</title><fmt-title depth="1" id="_ef146510-5d28-2bca-b4c6-bce7a6608248"><semx element="title" source="_749314eb-d2ac-dff9-356c-42796cd7512d">INTELLECTUAL PROPERTY RIGHTS</semx></fmt-title>
+<p id="_1bc27970-25ee-7492-ddb6-24f4a18210f0" semx-id="_1bc27970-25ee-7492-ddb6-24f4a18210f0">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
+
+<p id="_b4a64942-dd7c-4fca-5f4f-c2617402905e" semx-id="_b4a64942-dd7c-4fca-5f4f-c2617402905e">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/" id="_47ef56be-fe49-25ac-f013-2429d80bcf63"/><semx element="link" source="_47ef56be-fe49-25ac-f013-2429d80bcf63"><fmt-link target="http://www.itu.int/ITU-T/ipr/"/></semx>.</p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_2b781dc0-471d-a33d-1ac6-572edaacc9e2" inline-header="false" obligation="normative" semx-id="_2b781dc0-471d-a33d-1ac6-572edaacc9e2" displayorder="3">
+<title id="_0068e671-fe24-8a35-a0f1-5565ec706aa8" semx-id="_89ed9c08-e3b7-2077-1fcb-dabb1102e0b7">FOREWORD</title><fmt-title depth="1" id="_0b86349a-9573-55cf-64b8-3f4f4d8611ee"><semx element="title" source="_0068e671-fe24-8a35-a0f1-5565ec706aa8">FOREWORD</semx></fmt-title>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530" semx-id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_34051732-c502-607b-42ae-79538f27ca51" semx-id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44" semx-id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300" semx-id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+
+<clause id="_41e5e0bc-a21e-256d-638e-5dc8395a0ac5" inline-header="false" obligation="normative" semx-id="_41e5e0bc-a21e-256d-638e-5dc8395a0ac5">
+<title id="_718ac943-a8a0-b553-06a9-f81b2f83e82c" semx-id="_08d66f13-e742-c116-7a85-937542b937c1">NOTE</title><fmt-title depth="2" id="_2d37d21f-8f20-d245-0b3b-813d670f56ff"><semx element="title" source="_718ac943-a8a0-b553-06a9-f81b2f83e82c">NOTE</semx></fmt-title>
+<p id="_b25685df-1663-3743-f3b7-38634a384a7e" semx-id="_b25685df-1663-3743-f3b7-38634a384a7e">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
+
+<p id="_371c101c-c636-6cb0-7046-ec1c35c7c470" semx-id="_371c101c-c636-6cb0-7046-ec1c35c7c470">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
+</clause>
+</clause>
+</legal-statement>
+</boilerplate><preface><clause type="toc" id="_79bda703-4de4-e387-3f90-33444dda93f0" displayorder="4"><fmt-title depth="1" id="_922ccd0a-c209-2109-91bd-7e13decf6f5c">Table of Contents</fmt-title></clause>
+<abstract id="_ae9993ce-84b3-77c3-7c7e-0afe68f8a59f" semx-id="_ae9993ce-84b3-77c3-7c7e-0afe68f8a59f" displayorder="5">
+<title id="_8938e609-4170-af4f-dc02-002db0005249" semx-id="_bddaac0f-3db8-580b-f6b0-f25cdc8b8c2d">Summary</title><fmt-title depth="1" id="_0aeedff8-0688-0697-92a6-dad759d8a6f2"><semx element="title" source="_8938e609-4170-af4f-dc02-002db0005249">Summary</semx></fmt-title>
+<p id="_365349b9-9e87-baff-f002-97acfe5b16d7" semx-id="_365349b9-9e87-baff-f002-97acfe5b16d7">As cable TV network is migrating to deep fibre or fibre to the home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV networks provide services by transmitting radio frequency (RF) signals between headend and cable modems (CM), the configuration and devices of cable TV networks are optimized for RF signal transmission. For the migration of all-fibre access cable TV networks, the existing network devices of service operators (SOs) providing broadcasting services and various data services through the hybrid fibre coaxial (HFC) based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward an optic-based cable TV network is required.</p>
+
+<p id="_fd295b9b-bddb-d017-bb32-94902021385a" semx-id="_fd295b9b-bddb-d017-bb32-94902021385a">Recommendation ITU-T J.1108 provides a cost-effective adaptable solution for HFC-based cable TV network devices in an optic-based cable TV network. The purpose of a radio over IP (RoIP) system is to transmit data over cable service interface specifications (DOCSIS) based up stream (US) RF signals of a cable modem (CM) to a cable modem termination system (CMTS) through IP transmission in optic-based cable TV networks.</p>
+</abstract><clause id="_a93d4609-5b0a-79d6-9891-efc14507fbf1" type="keyword" displayorder="6"><fmt-title id="_2aa64cc4-77bd-7a2b-1a90-7fae2dc8001f" depth="1">Keywords</fmt-title>
+  <p>Radio over IP, RoIP.</p>
+</clause><clause id="_9055c752-ca06-7cb0-bc62-26d46559f446" type="history" inline-header="false" obligation="informative" semx-id="_9055c752-ca06-7cb0-bc62-26d46559f446" displayorder="7">
+<title id="_f3296dbe-e3cc-5c6b-0fab-0936af780d08" semx-id="_958228f8-50fe-32a1-cb08-a266c5874a6e">History</title><fmt-title depth="1" id="_92a9e47f-69bc-202c-38c5-dff2b4a6c338"><semx element="title" source="_f3296dbe-e3cc-5c6b-0fab-0936af780d08">History</semx></fmt-title>
+<table id="_7b96913d-f193-cbb0-a1db-398fb49245cf" unnumbered="true" semx-id="_7b96913d-f193-cbb0-a1db-398fb49245cf"><tbody><tr id="_c4ccf8fa-70f4-0e1d-5928-089a8aa5d4a0" semx-id="_c4ccf8fa-70f4-0e1d-5928-089a8aa5d4a0"><td id="_ae90c77d-8aef-a441-cb4b-57355ebcef74" valign="top" align="center" semx-id="_ae90c77d-8aef-a441-cb4b-57355ebcef74">Edition</td>
+<td id="_6b534066-6aad-98fe-1681-6038d35213d5" valign="top" align="left" semx-id="_6b534066-6aad-98fe-1681-6038d35213d5">Recommendation</td>
+<td id="_37ca0ba2-efed-4bbc-6fe5-40fc15f4e422" valign="top" align="center" semx-id="_37ca0ba2-efed-4bbc-6fe5-40fc15f4e422">Approval</td>
+<td id="_edbc2a6b-d8f5-ec5d-52e4-50ac4be93fb5" valign="top" align="center" semx-id="_edbc2a6b-d8f5-ec5d-52e4-50ac4be93fb5">Study Group</td>
+<td id="_3f5c08da-98bb-8b89-28a2-41a15834b50d" valign="top" align="center" semx-id="_3f5c08da-98bb-8b89-28a2-41a15834b50d">Unique ID<fn id="_8c3ba54c-7ba4-7d48-8ce1-4e056052a24e" reference="a" semx-id="_8c3ba54c-7ba4-7d48-8ce1-4e056052a24e" target="_200c9d4d-b99b-cdb3-f88a-4de2bdb66c37"><p semx-id="_bb66d8c0-83cc-a8c5-76c8-4e3d8a832072" original-id="_bb66d8c0-83cc-a8c5-76c8-4e3d8a832072">To access the Recommendation, type the URL <link target="http://handle.itu.int/" id="_8f2fc32b-cf74-28bd-7691-7e552d516067"/><semx element="link" source="_8f2fc32b-cf74-28bd-7691-7e552d516067"><fmt-link target="http://handle.itu.int/"/></semx> in the address field of your web browser, followed by the Recommendation's unique ID. For example, <link target="http://handle.itu.int/11.1002/1000/11830-en" id="_998032ae-4d9b-2af8-7bc6-a8d1294b8fb5"/><semx element="link" source="_998032ae-4d9b-2af8-7bc6-a8d1294b8fb5"><fmt-link target="http://handle.itu.int/11.1002/1000/11830-en"/></semx>.</p>
+<fmt-fn-label><span class="fmt-caption-label"><sup><semx element="autonum" source="_8c3ba54c-7ba4-7d48-8ce1-4e056052a24e">a</semx><span class="fmt-label-delim">)</span></sup></span></fmt-fn-label></fn></td>
+</tr><tr id="_b58325a6-423f-c23e-1cab-f81b0ae745f1" semx-id="_b58325a6-423f-c23e-1cab-f81b0ae745f1"><td id="_f43c9760-fb3a-b19b-7c5c-c4b7839d3274" valign="top" align="center" semx-id="_f43c9760-fb3a-b19b-7c5c-c4b7839d3274">1.0</td>
+<td id="_adcaed45-9c57-3107-c374-b9b545087eca" valign="top" align="left" semx-id="_adcaed45-9c57-3107-c374-b9b545087eca">ITU-T J.1108</td>
+<td id="_328ec16c-0153-fcba-be23-30d99a90759d" valign="top" align="center" semx-id="_328ec16c-0153-fcba-be23-30d99a90759d">2019-01-13</td>
+<td id="_8f15b217-5c44-e4b7-228a-47d210cd2b1e" valign="top" align="center" semx-id="_8f15b217-5c44-e4b7-228a-47d210cd2b1e">9</td>
+<td id="_9712dca1-5fe5-ee45-b02e-1296132e8b01" valign="top" align="center" semx-id="_9712dca1-5fe5-ee45-b02e-1296132e8b01"><link target="http://handle.itu.int/11.1002/1000/13838" id="_4fc595b8-673e-287e-98d2-5678a1cd450d">11.1002/1000/13838</link><semx element="link" source="_4fc595b8-673e-287e-98d2-5678a1cd450d"><fmt-link target="http://handle.itu.int/11.1002/1000/13838">11.1002/1000/13838</fmt-link></semx></td>
+</tr></tbody>
+<fmt-footnote-container><fmt-fn-body id="_200c9d4d-b99b-cdb3-f88a-4de2bdb66c37" target="_8c3ba54c-7ba4-7d48-8ce1-4e056052a24e" reference="a"><semx element="fn" source="_8c3ba54c-7ba4-7d48-8ce1-4e056052a24e"><p id="_bb66d8c0-83cc-a8c5-76c8-4e3d8a832072" semx-id="_bb66d8c0-83cc-a8c5-76c8-4e3d8a832072"><fmt-fn-label><span class="fmt-caption-label"><sup><semx element="autonum" source="_8c3ba54c-7ba4-7d48-8ce1-4e056052a24e">a</semx><span class="fmt-label-delim">)</span></sup></span><span class="fmt-caption-delim"><tab/></span></fmt-fn-label>To access the Recommendation, type the URL <link target="http://handle.itu.int/" id="_95ed78e9-9b21-0974-4b13-600fcfa95943"/><semx element="link" source="_95ed78e9-9b21-0974-4b13-600fcfa95943"><fmt-link target="http://handle.itu.int/"/></semx> in the address field of your web browser, followed by the Recommendation's unique ID. For example, <link target="http://handle.itu.int/11.1002/1000/11830-en" id="_e29c62cd-562b-a0b6-3724-6ecaff6bc863"/><semx element="link" source="_e29c62cd-562b-a0b6-3724-6ecaff6bc863"><fmt-link target="http://handle.itu.int/11.1002/1000/11830-en"/></semx>.</p>
+</semx></fmt-fn-body></fmt-footnote-container></table>
+</clause></preface><sections>
+<p class="zzSTDTitle1" displayorder="8">Recommendation
+  ITU-T J.1108</p>
+<p class="zzSTDTitle2" displayorder="9">Transmission specification for radio over IP transmission systems</p>
+
+
+
+
+<clause id="_bd023260-7da5-0a6f-e06d-71fda318f0e3" type="scope" inline-header="false" obligation="normative" semx-id="_bd023260-7da5-0a6f-e06d-71fda318f0e3" displayorder="10">
+<title id="_270e63bf-66c1-08f9-6f73-a416136d2fee" semx-id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title><fmt-title depth="1" id="_47fcec7e-e4a1-a7b5-02cd-8a466fcf5f8f"><span class="fmt-caption-label"><semx element="autonum" source="_bd023260-7da5-0a6f-e06d-71fda318f0e3">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_270e63bf-66c1-08f9-6f73-a416136d2fee">Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_bd023260-7da5-0a6f-e06d-71fda318f0e3">1</semx></fmt-xref-label>
+<p id="_8a503f91-8858-29a6-2763-776c4fe38799" semx-id="_8a503f91-8858-29a6-2763-776c4fe38799">Recommendation ITU-T J.1108 describes the transmission specification for a radio over IP (RoIP) transmission system in a hybrid fibre coaxial (HFC) based network. The architecture described in this Recommendation is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)" id="_706fa49d-c54f-6bd6-5126-17c6a30f8d94"/><semx element="eref" source="_706fa49d-c54f-6bd6-5126-17c6a30f8d94"><fmt-xref type="inline" target="j1106">[ITU-T J.1106 (07/2017)]</fmt-xref></semx>. The transmission specifications described in this Recommendation are defined as follows:</p>
+
+<ul id="_5291a18b-95ba-7df4-985b-bbbdeaf7e7bf" semx-id="_5291a18b-95ba-7df4-985b-bbbdeaf7e7bf"><li id="_75f4639f-be47-ae1a-4f2d-7a823fb6e898"><fmt-name id="_16335c5e-366c-5e92-13c1-61981a28a76c"><semx element="autonum" source="_75f4639f-be47-ae1a-4f2d-7a823fb6e898">–</semx></fmt-name><p id="_535df243-f930-80e9-fbb9-40a831eda50c" semx-id="_535df243-f930-80e9-fbb9-40a831eda50c">Radio over IP terminal system.</p>
+</li>
+<li id="_5cdb883b-9f58-f665-bf8a-7ca3afedcf86"><fmt-name id="_146f5cad-503f-4b6e-2093-cf00ec3f854d"><semx element="autonum" source="_5cdb883b-9f58-f665-bf8a-7ca3afedcf86">–</semx></fmt-name><p id="_3b418e3e-4a50-0277-f028-50bddc1fffa6" semx-id="_3b418e3e-4a50-0277-f028-50bddc1fffa6">Radio over IP headend system.</p>
+</li>
+</ul>
+
+<p id="_2515cf39-cd18-6028-f865-003a7d34cc67" semx-id="_2515cf39-cd18-6028-f865-003a7d34cc67">The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Recommendation are defined in the timing processing specification.</p>
+</clause>
+
+
+
+<clause id="_57888ffd-a564-8443-847a-0c5d98d83549" obligation="normative" type="terms" semx-id="_57888ffd-a564-8443-847a-0c5d98d83549" displayorder="12">
+<title id="_3092a19c-bbf1-c249-032e-a1b4f8009364" semx-id="_66eddf26-4111-3b7e-0cb7-548b7ab875c7">Definitions</title><fmt-title depth="1" id="_b1a9522c-f76d-f5ce-676e-5d6dfb2e5914"><span class="fmt-caption-label"><semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3092a19c-bbf1-c249-032e-a1b4f8009364">Definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx></fmt-xref-label>
+<terms id="_11cf3f52-712b-b844-ca9d-557dd159239b" type="external" obligation="normative" semx-id="_11cf3f52-712b-b844-ca9d-557dd159239b">
+<title id="_08c9de47-ceb3-eb53-ac21-ef723f44422f" semx-id="_6fd16f3a-e358-afdf-109b-6395e3625cfc">Terms defined elsewhere</title><fmt-title depth="2" id="_bc41a751-5154-a2f5-d9fc-1cd1784ba36f"><span class="fmt-caption-label"><semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_11cf3f52-712b-b844-ca9d-557dd159239b">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_08c9de47-ceb3-eb53-ac21-ef723f44422f">Terms defined elsewhere</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_11cf3f52-712b-b844-ca9d-557dd159239b">1</semx></fmt-xref-label>
+<p id="_ce9f7cec-6cc0-f253-4894-592f8c167765" semx-id="_ce9f7cec-6cc0-f253-4894-592f8c167765">This Recommendation uses the following term defined elsewhere:</p>
+
+<term id="term-local-clock" anchor="term-local-clock" semx-id="_4f82ab10-8e73-1f8c-d84b-d1926695bdb7"><fmt-name id="_b903d3b4-5452-7130-e941-b00afaaeda97"><span class="fmt-caption-label"><semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_11cf3f52-712b-b844-ca9d-557dd159239b">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="term-local-clock">1</semx><span class="fmt-autonum-delim">.</span></span></fmt-name><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_11cf3f52-712b-b844-ca9d-557dd159239b">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="term-local-clock">1</semx></fmt-xref-label><preferred id="_2105d9d0-db05-aa6a-dc1e-1a4572bf0770"><expression>
+<name id="_e477fcd8-b63a-a13b-f59b-53a08210f454">local clock</name>
+</expression>
+</preferred><fmt-preferred><semx element="preferred" source="_2105d9d0-db05-aa6a-dc1e-1a4572bf0770"><strong><semx element="expression/name" source="_e477fcd8-b63a-a13b-f59b-53a08210f454">local clock</semx></strong>:</semx></fmt-preferred>
+<definition id="_3170b4e2-73ec-0aab-a5ce-f31770070f79" semx-id="_3170b4e2-73ec-0aab-a5ce-f31770070f79"><verbal-definition semx-id="_095a080b-2fd5-678f-78aa-835fbafb63c3" id="_095a080b-2fd5-678f-78aa-835fbafb63c3"><p semx-id="_f5aa13a6-e750-b3ac-c98d-3b9de1564f86" original-id="_f5aa13a6-e750-b3ac-c98d-3b9de1564f86">The collection of hardware and software that comprises a local source of time for a system.</p></verbal-definition></definition><fmt-definition id="_45c371da-1d67-41cb-e0de-2eec911a1a5c"><semx element="definition" source="_3170b4e2-73ec-0aab-a5ce-f31770070f79"><p id="_f5aa13a6-e750-b3ac-c98d-3b9de1564f86" semx-id="_f5aa13a6-e750-b3ac-c98d-3b9de1564f86">The collection of hardware and software that comprises a local source of time for a system.</p></semx></fmt-definition>
+
+
+ <source status="identical" type="authoritative" id="_cf0989c9-d302-d4e0-dc78-9046501739a6"><origin bibitemid="x743" type="inline" citeas="[b-ITU-T X.743]"/></source><fmt-termsource status="identical" type="authoritative"><semx element="source" source="_cf0989c9-d302-d4e0-dc78-9046501739a6"><origin bibitemid="x743" type="inline" citeas="[b-ITU-T X.743]" id="_d2aa0f87-882b-987a-b2c2-87afd86339fb"/><semx element="origin" source="_d2aa0f87-882b-987a-b2c2-87afd86339fb"><fmt-xref type="inline" target="x743">[b-ITU-T X.743]</fmt-xref></semx></semx></fmt-termsource></term>
+</terms>
+
+<terms id="_0178acd2-3c2a-e729-70b8-befc255c5874" type="internal" obligation="normative" semx-id="_0178acd2-3c2a-e729-70b8-befc255c5874">
+<title id="_513c9503-be10-2452-6811-68fa5f6ec52f" semx-id="_6f1b5406-5c7a-5992-b9a5-1fb0a666c2f2">Terms defined in this recommendation</title><fmt-title depth="2" id="_6c750efe-3e2a-6537-b11c-b07b67c81eee"><span class="fmt-caption-label"><semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_0178acd2-3c2a-e729-70b8-befc255c5874">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_513c9503-be10-2452-6811-68fa5f6ec52f">Terms defined in this recommendation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_57888ffd-a564-8443-847a-0c5d98d83549">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_0178acd2-3c2a-e729-70b8-befc255c5874">2</semx></fmt-xref-label>
+<p id="_bbea538f-ac54-cf64-4d64-ae0fe87669aa" semx-id="_bbea538f-ac54-cf64-4d64-ae0fe87669aa">None.</p>
+</terms>
+</clause>
+
+<definitions id="_ae5aeaae-4a0f-6afe-4c07-5943952356d8" obligation="normative" semx-id="_ae5aeaae-4a0f-6afe-4c07-5943952356d8" displayorder="13">
+<title id="_5683a42d-7bfa-8450-ed99-2f1e306c2f3f" semx-id="_f8eef99e-0c21-e355-e32a-6c1a675f5661">Abbreviations and acronyms</title><fmt-title depth="1" id="_0960acec-3619-335d-76d7-aa67465150b6"><span class="fmt-caption-label"><semx element="autonum" source="_ae5aeaae-4a0f-6afe-4c07-5943952356d8">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5683a42d-7bfa-8450-ed99-2f1e306c2f3f">Abbreviations and acronyms</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_ae5aeaae-4a0f-6afe-4c07-5943952356d8">4</semx></fmt-xref-label>
+<p id="_9b554fa8-d000-11a8-1624-1c04abd8c71c" semx-id="_9b554fa8-d000-11a8-1624-1c04abd8c71c">This Recommendation uses the following abbreviations and acronyms:</p>
+
+<dl id="_d504859e-76ed-6cea-6ecb-338d9ead8af1" semx-id="_d504859e-76ed-6cea-6ecb-338d9ead8af1"><colgroup><col width="20%"/><col width="80%"/></colgroup><dt anchor="symbol-CM" id="symbol-CM" semx-id="_50497610-60ce-570c-9c1f-07ed8278814a">CM</dt>
+<dd id="_b170ebdb-6752-180a-0646-5719abcf2b2c" semx-id="_b170ebdb-6752-180a-0646-5719abcf2b2c"><p id="_0739b9be-726a-e559-3bf8-89b741656edf" semx-id="_0739b9be-726a-e559-3bf8-89b741656edf">Cable Modem</p>
+</dd>
+<dt anchor="symbol-CMTS" id="symbol-CMTS" semx-id="_eb4f783c-c6af-bf45-5d9c-054ec692ffbe">CMTS</dt>
+<dd id="_9109f8e2-2f9c-0c0c-36d4-ff43eb8b9750" semx-id="_9109f8e2-2f9c-0c0c-36d4-ff43eb8b9750"><p id="_1b4554ba-15c5-0d0a-f30f-673328a85e9f" semx-id="_1b4554ba-15c5-0d0a-f30f-673328a85e9f">Cable Modem Termination System</p>
+</dd>
+<dt anchor="symbol-DOCSIS" id="symbol-DOCSIS" semx-id="_0b203d5f-2003-8a5d-81f0-209189cdd1fe">DOCSIS</dt>
+<dd id="_b6ca5015-a2e8-8ef4-264b-d912e7db43da" semx-id="_b6ca5015-a2e8-8ef4-264b-d912e7db43da"><p id="_ef4c4226-d1d5-0166-8ac7-53c87d5fa713" semx-id="_ef4c4226-d1d5-0166-8ac7-53c87d5fa713">Data Over Cable Service Interface Specifications</p>
+</dd>
+<dt anchor="symbol-DS" id="symbol-DS" semx-id="_2b3bfe5d-3aed-e2e7-47a8-06271568bcd9">DS</dt>
+<dd id="_1a1e7469-f7f9-0080-0084-107bd3564c6d" semx-id="_1a1e7469-f7f9-0080-0084-107bd3564c6d"><p id="_3b8c8cfb-a86a-528e-bfda-a856a3dbeb8d" semx-id="_3b8c8cfb-a86a-528e-bfda-a856a3dbeb8d">Down Stream</p>
+</dd>
+<dt anchor="symbol-E_O" id="symbol-E_O" semx-id="_85324654-4385-1e1f-f14f-3fa061508d0b">E/O</dt>
+<dd id="_08c636b1-c3c3-8291-75c4-07fe9cd1ab0c" semx-id="_08c636b1-c3c3-8291-75c4-07fe9cd1ab0c"><p id="_4c2b11b4-5bfd-aa43-d32f-36a858b6b5f5" semx-id="_4c2b11b4-5bfd-aa43-d32f-36a858b6b5f5">Electric to Optic</p>
+</dd>
+<dt anchor="symbol-FTTH" id="symbol-FTTH" semx-id="_b452e61b-8763-f6a7-4320-b07d607d598f">FTTH</dt>
+<dd id="_35f55d68-1845-17c7-25d3-ff65596f5592" semx-id="_35f55d68-1845-17c7-25d3-ff65596f5592"><p id="_f258be62-b5d9-42bf-e655-b650a9ad0ce9" semx-id="_f258be62-b5d9-42bf-e655-b650a9ad0ce9">Fibre To The Home</p>
+</dd>
+<dt anchor="symbol-HFC" id="symbol-HFC" semx-id="_8e24c8e5-0277-d08b-bd34-19221d0e7f0f">HFC</dt>
+<dd id="_2b9c87fe-6ccb-4e49-39a9-bd39d6c9c3af" semx-id="_2b9c87fe-6ccb-4e49-39a9-bd39d6c9c3af"><p id="_35bdac7e-28b1-cd9b-d527-fb2f8a89f623" semx-id="_35bdac7e-28b1-cd9b-d527-fb2f8a89f623">Hybrid Fibre Coaxial</p>
+</dd>
+<dt anchor="symbol-OLT" id="symbol-OLT" semx-id="_e31e5567-759b-4cbc-2daa-9bec701dc97b">OLT</dt>
+<dd id="_8957254d-49ae-e804-2bfe-a0717640c2ab" semx-id="_8957254d-49ae-e804-2bfe-a0717640c2ab"><p id="_b8df0a4c-31ce-c317-a4ac-494556816128" semx-id="_b8df0a4c-31ce-c317-a4ac-494556816128">Optical Line Terminal</p>
+</dd>
+<dt anchor="symbol-OMUX" id="symbol-OMUX" semx-id="_ce6cc9d3-907f-10d6-793b-dc67392a2324">OMUX</dt>
+<dd id="_3d4add84-8fb7-f758-ca54-d9e1ce60b36e" semx-id="_3d4add84-8fb7-f758-ca54-d9e1ce60b36e"><p id="_fd63969f-3dd7-987a-02ba-ac9df6ed059e" semx-id="_fd63969f-3dd7-987a-02ba-ac9df6ed059e">Optical Multiplexer</p>
+</dd>
+<dt anchor="symbol-PON" id="symbol-PON" semx-id="_a3542e36-51f7-b986-1259-a3a244f37fb3">PON</dt>
+<dd id="_d6cc45dc-afe5-ae1f-91f4-46ea9b1a8087" semx-id="_d6cc45dc-afe5-ae1f-91f4-46ea9b1a8087"><p id="_1298a6de-a232-ec84-c838-abf088b2db36" semx-id="_1298a6de-a232-ec84-c838-abf088b2db36">Passive Optical Network</p>
+</dd>
+<dt anchor="symbol-RF" id="symbol-RF" semx-id="_bf36e436-19c1-6e36-4cef-4a91b3eb061d">RF</dt>
+<dd id="_bcf33ddb-4fb7-f842-08c8-a89b0b591146" semx-id="_bcf33ddb-4fb7-f842-08c8-a89b0b591146"><p id="_c9ad0864-0aa3-ee2b-54a4-f4186f44a229" semx-id="_c9ad0864-0aa3-ee2b-54a4-f4186f44a229">Radio Frequency</p>
+</dd>
+<dt anchor="symbol-RoIP" id="symbol-RoIP" semx-id="_2606dd2c-b683-e501-8d86-10bca3bd7e75">RoIP</dt>
+<dd id="_b74f5dd3-16e5-247e-6735-273cc3464c6c" semx-id="_b74f5dd3-16e5-247e-6735-273cc3464c6c"><p id="_7d9fb9a1-023d-7503-1628-5c5da0587e01" semx-id="_7d9fb9a1-023d-7503-1628-5c5da0587e01">Radio over IP</p>
+</dd>
+<dt anchor="symbol-SO" id="symbol-SO" semx-id="_49df9c7c-dcc9-c12f-f3f7-effb5a6ce154">SO</dt>
+<dd id="_e4e8d00c-3626-9769-ff59-32f3300f66f0" semx-id="_e4e8d00c-3626-9769-ff59-32f3300f66f0"><p id="_c6c7b7b5-ae9a-5e89-10cf-804d46003743" semx-id="_c6c7b7b5-ae9a-5e89-10cf-804d46003743">Service Operator</p>
+</dd>
+<dt anchor="symbol-STB" id="symbol-STB" semx-id="_aa149504-db45-2779-d6f1-66d290270117">STB</dt>
+<dd id="_5283924a-22c2-0124-f977-d747b3f31549" semx-id="_5283924a-22c2-0124-f977-d747b3f31549"><p id="_7900b97d-10ed-6e02-3708-96c0d5ef2c8a" semx-id="_7900b97d-10ed-6e02-3708-96c0d5ef2c8a">Set-Top Box</p>
+</dd>
+<dt anchor="symbol-US" id="symbol-US" semx-id="_6a42e04b-8938-085e-485a-564b549dbc33">US</dt>
+<dd id="_408b46df-52bf-89c6-60c4-cab7b6f39a85" semx-id="_408b46df-52bf-89c6-60c4-cab7b6f39a85"><p id="_b77a9bc2-24ef-73ea-7497-529b1fdbc141" semx-id="_b77a9bc2-24ef-73ea-7497-529b1fdbc141">Up Stream</p>
+</dd>
+</dl>
+</definitions>
+<clause id="_b46f1119-6bb3-7109-b0b1-594fdc6a31fe" type="conventions" inline-header="false" obligation="normative" semx-id="_b46f1119-6bb3-7109-b0b1-594fdc6a31fe" displayorder="14">
+<title id="_facb20fd-6e5f-6d60-ce65-7c90a8bfceca" semx-id="_6948b4ae-f705-e7f5-8bc1-a5f5e5f04db2">Conventions</title><fmt-title depth="1" id="_2b477520-e959-e1ff-9574-36550fc20231"><span class="fmt-caption-label"><semx element="autonum" source="_b46f1119-6bb3-7109-b0b1-594fdc6a31fe">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_facb20fd-6e5f-6d60-ce65-7c90a8bfceca">Conventions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_b46f1119-6bb3-7109-b0b1-594fdc6a31fe">5</semx></fmt-xref-label>
+<p id="_c02e1b4a-cd15-7308-9f52-7e76cbcab1bc" semx-id="_c02e1b4a-cd15-7308-9f52-7e76cbcab1bc">In this Recommendation:</p>
+
+<p id="_3a478673-4bb3-8962-c825-269ddc229934" semx-id="_3a478673-4bb3-8962-c825-269ddc229934">The keywords "is required to" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.</p>
+
+<p id="_2c5586cb-9cc6-ed5b-9a69-6d209d7212da" semx-id="_2c5586cb-9cc6-ed5b-9a69-6d209d7212da">The keywords "is recommended" indicate a requirement which is recommended but which is not absolutely required. Thus this requirement need not be present to claim conformance.</p>
+
+<p id="_e763ccdf-0059-1e50-750e-cf76c77cdea9" semx-id="_e763ccdf-0059-1e50-750e-cf76c77cdea9">The keywords "is prohibited from" indicate a requirement which must be strictly followed and from which no deviation is permitted if conformance to this document is to be claimed.</p>
+
+<p id="_556efd81-d7a0-f3a5-8b73-b078d2c1db83" semx-id="_556efd81-d7a0-f3a5-8b73-b078d2c1db83">The keywords "can optionally" indicate an optional requirement which is permissible, without implying any sense of being recommended. This term is not intended to imply that the vendor's implementation must provide the option and the feature can be optionally enabled by the network operator/service provider. Rather, it means the vendor may optionally provide the feature and still claim conformance with the specification.</p>
+
+<p id="_dba9ac9b-ac46-28c0-c8dc-09f331af06ed" semx-id="_dba9ac9b-ac46-28c0-c8dc-09f331af06ed">In the body of this Recommendation and its annexes, the words <em>shall, shall not, should</em>, and <em>may</em> sometimes appear, in which case they are to be interpreted, respectively, as <em>is required to, is prohibited from, is recommended</em>, and <em>can optionally</em>. The appearance of such phrases or keywords in an appendix or in material explicitly marked as <em>informative</em> are to be interpreted as having no normative intent.</p>
+</clause>
+
+<clause id="_fee40315-0bba-a53d-4e13-d9a9f344028b" inline-header="false" obligation="normative" semx-id="_fee40315-0bba-a53d-4e13-d9a9f344028b" displayorder="15">
+<title id="_74a233b4-5ccb-d764-03b2-005b65200d78" semx-id="_07312b42-a993-be07-d2f8-4375a986b378">Overview</title><fmt-title depth="1" id="_40fbccb4-ef5e-a88a-9460-154feab5b41c"><span class="fmt-caption-label"><semx element="autonum" source="_fee40315-0bba-a53d-4e13-d9a9f344028b">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_74a233b4-5ccb-d764-03b2-005b65200d78">Overview</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_fee40315-0bba-a53d-4e13-d9a9f344028b">6</semx></fmt-xref-label>
+<p id="_4acf9d51-edf8-b946-c6db-11539757acc0" semx-id="_4acf9d51-edf8-b946-c6db-11539757acc0">The overview is defined according to <eref type="inline" bibitemid="j1106" citeas="ITU-T J.1106 (07/2017)" id="_65658d1d-4104-8017-bb9c-9d64481e6aff"><localityStack><locality type="clause"><referenceFrom>6</referenceFrom></locality></localityStack></eref><semx element="eref" source="_65658d1d-4104-8017-bb9c-9d64481e6aff"><fmt-xref type="inline" target="j1106">[ITU-T J.1106 (07/2017)],  Clause 6</fmt-xref></semx>.</p>
+</clause>
+
+<clause id="_eb4b0f22-6034-fd7a-25ea-ea20eb219ba4" inline-header="false" obligation="normative" semx-id="_eb4b0f22-6034-fd7a-25ea-ea20eb219ba4" displayorder="16">
+<title id="_6029f5b5-c10b-c978-b20f-a384668790dd" semx-id="_b893daa5-1c21-c1af-5cef-14067fb17591">Functional architecture</title><fmt-title depth="1" id="_b50c4260-1968-b0d0-270f-36ed3f1f8bce"><span class="fmt-caption-label"><semx element="autonum" source="_eb4b0f22-6034-fd7a-25ea-ea20eb219ba4">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_6029f5b5-c10b-c978-b20f-a384668790dd">Functional architecture</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_eb4b0f22-6034-fd7a-25ea-ea20eb219ba4">7</semx></fmt-xref-label>
+<p id="_cf7cb7d6-2836-be91-c011-b60e5a8fa01f" semx-id="_cf7cb7d6-2836-be91-c011-b60e5a8fa01f">The functional architecture is defined according to <eref type="inline" bibitemid="j1107" citeas="ITU-T J.1107 (03/2018)" id="_eaf98aa0-71c4-4181-0e37-db7bee582c4a"><localityStack><locality type="clause"><referenceFrom>7</referenceFrom></locality></localityStack></eref><semx element="eref" source="_eaf98aa0-71c4-4181-0e37-db7bee582c4a"><fmt-xref type="inline" target="j1107">[ITU-T J.1107 (03/2018)],  Clause 7</fmt-xref></semx>.</p>
+</clause>
+
+<clause id="_d961deb4-4be3-230e-0750-85e82cfbd4ee" inline-header="false" obligation="normative" semx-id="_d961deb4-4be3-230e-0750-85e82cfbd4ee" displayorder="17">
+<title id="_ba189093-7c75-629e-2b54-86d873d5d31f" semx-id="_8931734d-a72f-db50-5128-f3ca004bf3f3">Timing processing specification</title><fmt-title depth="1" id="_c4af34d6-a90b-ea6a-dfb5-7be71f5632b0"><span class="fmt-caption-label"><semx element="autonum" source="_d961deb4-4be3-230e-0750-85e82cfbd4ee">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ba189093-7c75-629e-2b54-86d873d5d31f">Timing processing specification</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_d961deb4-4be3-230e-0750-85e82cfbd4ee">8</semx></fmt-xref-label>
+<p id="_d4f5ab74-555e-3d43-9455-95856c21bcf2" semx-id="_d4f5ab74-555e-3d43-9455-95856c21bcf2">It is important to synchronize upstream data based on the data over cable service interface specification (DOCSIS) with the existing cable network through the optical IP network (i.e., xPON networks). The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal.</p>
+
+<p id="_b3df03b0-a45e-917a-a334-c2f5ca1ea053" semx-id="_b3df03b0-a45e-917a-a334-c2f5ca1ea053">Since many cable modems (CMs) on the subscriber side share one physical medium, it is required to transmit data according to a synchronous time-division multiplexing method, that is, the CMs are required to transmit data during time slots allocated by the cable modem termination system (CMTS). In the uplink band, the collision avoidance time of the allocated band between the terminals is 1us or less and very strict timing synchronization is required. In order to operate the RoIP transmission system, accurate timing synchronization between the terminal and the headend is required. Specifically, it is necessary to establish synchronization between the IP network and a mixed heterogeneous network, not a single RF network.</p>
+
+<p id="_80989782-6394-c356-b04e-921437e081df" semx-id="_80989782-6394-c356-b04e-921437e081df">Therefore, the following requirements are required to perform the function of timing processing.</p>
+
+<dl id="_8a64db7c-9810-b1f9-c7fb-765b0eb09328" semx-id="_8a64db7c-9810-b1f9-c7fb-765b0eb09328"><colgroup><col width="20%"/><col width="80%"/></colgroup><dt><strong>TIME-REQ-01</strong></dt>
+<dd id="_a4f754f7-e90a-c782-37b7-6058468e29e6" semx-id="_a4f754f7-e90a-c782-37b7-6058468e29e6"><p id="_327414f1-360c-f5c9-3411-844dbc7ee13f" semx-id="_327414f1-360c-f5c9-3411-844dbc7ee13f">The RoIP terminal for terminal access network synchronization is required to synchronize the local clock which is adjusted to the CMTS reference clock using the timestamp in the SYNC message coming from the CMTS.</p>
+</dd>
+<dt><strong>TIME-REQ-02</strong></dt>
+<dd id="_5bfae84a-5593-a1c7-6955-675ccece5d86" semx-id="_5bfae84a-5593-a1c7-6955-675ccece5d86"><p id="_9419cf84-f7e4-258d-7a87-f9b0a3d04e22" semx-id="_9419cf84-f7e4-258d-7a87-f9b0a3d04e22">The RoIP terminal for terminal access network synchronization is required to acquire burst time information.</p>
+</dd>
+<dt><strong>TIME-REQ-03</strong></dt>
+<dd id="_8635d577-5c6f-30ba-ed00-231a918af634" semx-id="_8635d577-5c6f-30ba-ed00-231a918af634"><p id="_e8017ed7-0b7e-f6fb-fb6e-76afd0b5c1dd" semx-id="_e8017ed7-0b7e-f6fb-fb6e-76afd0b5c1dd">The RoIP terminal for terminal access network synchronization is required to estimate and compensate a transmission time.</p>
+</dd>
+<dt><strong>TIME-REQ-04</strong></dt>
+<dd id="_c8d167d8-30a1-5f68-2851-6e8ebfdcdd56" semx-id="_c8d167d8-30a1-5f68-2851-6e8ebfdcdd56"><p id="_b26f1fa8-8162-e7e5-586a-39734f0dea9b" semx-id="_b26f1fa8-8162-e7e5-586a-39734f0dea9b">The RoIP terminal for detection and acquisition of transmission RF burst is required to store the acquisition time information.</p>
+</dd>
+<dt><strong>TIME-REQ-05</strong></dt>
+<dd id="_eee95644-4ca6-9927-0117-51fadb06f837" semx-id="_eee95644-4ca6-9927-0117-51fadb06f837"><p id="_611c91c0-b6f8-205c-0c1d-7fc914b7d153" semx-id="_611c91c0-b6f8-205c-0c1d-7fc914b7d153">The RoIP terminal for IP network access is required to transmit the transmitted RF burst and the acquired time information.</p>
+</dd>
+<dt><strong>TIME-REQ-06</strong></dt>
+<dd id="_b00e46c3-c43a-5190-53ed-964ea32b20fd" semx-id="_b00e46c3-c43a-5190-53ed-964ea32b20fd"><p id="_223bd99d-528a-c2ef-e504-090d8ce11e2c" semx-id="_223bd99d-528a-c2ef-e504-090d8ce11e2c">The RoIP headend for headend access network synchronization is required to synchronize the local clock which is adjusted to the CM reference clock using MAP information during DOCSIS ranging.</p>
+</dd>
+<dt><strong>TIME-REQ-07</strong></dt>
+<dd id="_4abd499b-b497-c6d4-75c9-42272e9cb337" semx-id="_4abd499b-b497-c6d4-75c9-42272e9cb337"><p id="_cef379fc-8d87-be8b-fab4-e827016392c8" semx-id="_cef379fc-8d87-be8b-fab4-e827016392c8">The RoIP headend for headend access network synchronization is required to acquire the synchronized time information.</p>
+</dd>
+<dt><strong>TIME-REQ-08</strong></dt>
+<dd id="_0b2074df-1e33-a8fc-6b28-8afe567112d2" semx-id="_0b2074df-1e33-a8fc-6b28-8afe567112d2"><p id="_751893d6-ab60-ab86-09c1-b1a9ca673f2e" semx-id="_751893d6-ab60-ab86-09c1-b1a9ca673f2e">The RoIP headend for RF signal scheduling of IP network interworking is required to acquire burst time information.</p>
+</dd>
+<dt><strong>TIME-REQ-09</strong></dt>
+<dd id="_8ea3ee03-7092-2f47-2160-2f6857d27287" semx-id="_8ea3ee03-7092-2f47-2160-2f6857d27287"><p id="_00de3c3e-ed55-01f9-42ba-cd5556ac75e3" semx-id="_00de3c3e-ed55-01f9-42ba-cd5556ac75e3">The RoIP headend for RF signal scheduling of IP network interworking is required to schedule the received burst.</p>
+</dd>
+<dt><strong>TIME-REQ-10</strong></dt>
+<dd id="_34f275a9-9418-fb78-dd75-ebca6958d56b" semx-id="_34f275a9-9418-fb78-dd75-ebca6958d56b"><p id="_17d9b46f-431f-bb83-31ab-a55f4375c07d" semx-id="_17d9b46f-431f-bb83-31ab-a55f4375c07d">The RoIP headend for RF signal reconstruction is required to reconstruct RF compressed signal.</p>
+</dd>
+<dt><strong>TIME-REQ-11</strong></dt>
+<dd id="_3c568686-733f-6047-940e-5ccde760d571" semx-id="_3c568686-733f-6047-940e-5ccde760d571"><p id="_0370dcc2-1ace-236d-6cff-46394dfe6c9a" semx-id="_0370dcc2-1ace-236d-6cff-46394dfe6c9a">The RoIP headend for RF signal reconstruction is required to transform Digital to Analogue and frequency band.</p>
+</dd>
+</dl>
+</clause>
+
+
+<references id="_453df95d-5d8f-bd12-86bb-020b5549e6ec" normative="true" obligation="informative" semx-id="_453df95d-5d8f-bd12-86bb-020b5549e6ec" displayorder="11">
+<title id="_b310bd29-42f7-fac9-1bd6-e43fcd91f22e" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_3bdb67f5-026a-68d9-4e8e-d8d2e72f939c"><span class="fmt-caption-label"><semx element="autonum" source="_453df95d-5d8f-bd12-86bb-020b5549e6ec">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b310bd29-42f7-fac9-1bd6-e43fcd91f22e">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_453df95d-5d8f-bd12-86bb-020b5549e6ec">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="j1106" type="standard" schema-version="v1.2.9" anchor="j1106" semx-id="_2c0c4b71-af03-49d6-95d2-85c7df15c553"><biblio-tag>[ITU‑T J.1106 (07/2017)]</biblio-tag><formattedref>Recommendation ITU-T J.1106 (07/2017), <em>Requirement for radio over IP transmission system</em>, First edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13287</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1106-201707-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1106 (07/2017)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Requirement for radio over IP transmission system</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/13287</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1106-201707-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.1106 (07/2017)</docidentifier>
+      <date type="published">
+        <on>2017-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">As cable TV network is migrating to deep fiber or fiber to the home (FTTH) architecture, it is now easier to provide bidirectional high quality media services that requires very high speed digital transmission of various high quality contents. As Cable TV network provides services by transmitting RF signal between headend and cable modem (CM), the configuration and devices of the cable TV network are optimized for RF signal transmission. For the migration to all-fiber access, the existing cable TV network devices of the service operators (SO), which provide broadcasting services and various data services through the HFC-based cable TV network, are recommended to be changed by new network devices. Therefore, a cost-effective solution for deployable and acceptable migration towards optic-based cable TV network is required. This Recommendation provides a cost-effective solution to adapt the HFC-based cable TV network devices into optic-based cable TV network devices.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2017</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j1107" type="standard" schema-version="v1.2.9" anchor="j1107" semx-id="_f6a367c7-b3ea-4c5c-93b6-f8ae89c8be74"><biblio-tag>[ITU‑T J.1107 (03/2018)]</biblio-tag><formattedref>Recommendation ITU-T J.1107 (03/2018), <em>Architecture and specification for radio over IP transmission systems</em>, First edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13564</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1107-201803-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1107 (03/2018)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Architecture and specification for radio over IP transmission systems</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/13564</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1107-201803-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.1107 (03/2018)</docidentifier>
+      <date type="published">
+        <on>2018-03-16</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2018</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j210" type="standard" schema-version="v1.2.9" anchor="j210" semx-id="_d44e5252-3d08-30aa-77e4-e7cb96613c0e"><biblio-tag>[ITU‑T J.210 (11/2006)]</biblio-tag><formattedref>Recommendation ITU-T J.210 (11/2006), <em>Downstream RF interface for cable modem termination systems</em>, First edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/8932</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.210-200611-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.210 (11/2006)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2006</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Downstream RF interface for cable modem termination systems</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/8932</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.210-200611-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.210 (11/2006)</docidentifier>
+      <date type="published">
+        <on>2006-11-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This Recommendation defines the downstream radio frequency interface (DRFI) specifications for:
+• an edgeQAM (EQAM) modular device; or
+• an integrated cable modem termination system (CMTS) with multiple downstream channels per RF port; or
+• an integrated CMTS beyond DOCSIS 2.0.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2006</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j222-1" type="standard" schema-version="v1.2.9" anchor="j222-1" semx-id="_5ba2e8d7-51ef-d3ee-84c8-e4eeb854a82e"><biblio-tag>[ITU‑T J.222.1 (07/2007)]</biblio-tag><formattedref>Recommendation ITU-T J.222.1 (07/2007), <em>Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</em>, First edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/9194</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.222.1-200707-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.222.1 (07/2007)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/9194</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.222.1-200707-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.222.1 (07/2007)</docidentifier>
+      <date type="published">
+        <on>2007-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ITU-T Recommendation J.222.1 defines the electrical characteristics and signal processing operations for a cable modem (CM) and cable modem termination system (CMTS) over third generation high-speed data-over-cable systems. This Recommendation defines physical layer requirements that support the channel bonding operations defined in ITU-T Recommendation J.222.2.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="j222-2" type="standard" schema-version="v1.2.9" anchor="j222-2" semx-id="_1c68a619-732c-6d76-12c0-01a390dce174"><biblio-tag>[ITU‑T J.222.2 (07/2007)]</biblio-tag><formattedref>Recommendation ITU-T J.222.2 (07/2007), <em>Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</em>, First edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/9195</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.222.2 (07/2007)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/9195</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.222.2 (07/2007)</docidentifier>
+      <date type="published">
+        <on>2007-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ITU-T Recommendation J.222.2 is part of a series of Recommendations that define the third generation of high-speed data over cable systems. This Recommendation was developed for the benefit of the cable industry, and includes contributions by operators and vendors from North America, Europe and other regions. The third-generation transmission systems introduce a number of new features that build upon what was present in previous Recommendations (ITU T Recommendations J.112 and J.122). This Recommendation includes key new features for the MAC and Upper Layer Protocols Interface, and defines the MAC layer protocols as well as requirements for upper layer protocols (e.g., IP, DHCP, etc.).
+ITU-T Recommendation J.222.2 has been published in two volumes.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 1 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 2 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 3 (11/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 5 (09/1999)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 6 (09/2016)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 7 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 8 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 9 (04/2020)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 10 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 11 (10/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">J Suppl. 14 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem>
+
+
+
+
+
+</references></sections><bibliography><references id="_f9727897-4d45-357a-d2e2-19705ae192aa" normative="false" obligation="informative" semx-id="_f9727897-4d45-357a-d2e2-19705ae192aa" displayorder="18">
+<title id="_79a2af9e-6853-19a3-fcb8-27eb8dad0c44" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_2da55403-b11b-078e-f7e8-f49a7def2e71"><semx element="title" source="_79a2af9e-6853-19a3-fcb8-27eb8dad0c44">Bibliography</semx></fmt-title><bibitem id="x743" type="standard" schema-version="v1.2.9" anchor="x743" semx-id="_57b06f1c-d5a7-8118-ddd8-67deabcf4bb6"><biblio-tag>[b‑ITU‑T X.743]</biblio-tag><formattedref>Recommendation ITU-T X.743 (06/1998) | ISO/IEC 10164-20, <em>Information technology – Open Systems Interconnection – Systems Management: Time Management Function</em>, First edition.</formattedref>
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/3086</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.743-199806-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T X.743 (06/1998)</docidentifier><docidentifier type="metanorma">[b-ITU-T X.743]</docidentifier>
+  <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>1998</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">X.743 (1998) Technical Cor. 1 (03/2001)</formattedref>
+      <docidentifier type="ITU" primary="true">X.743 (1998) Technical Cor. 1 (03/2001)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/3086</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.743-199806-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T X.743 (06/1998)</docidentifier>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>
+      <date type="published">
+        <on>1998-06-26</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This Recommendation | International Standard defines a Systems Management Function that may be used by an application process in a centralized or decentralized management environment to interact for the purpose of systems management, as defined by Rec. ITU-T X.200 | ISO/IEC 7498-1. This Recommendation | International Standard defines a function which consists of generic definitions, services, and functional units. This function is positioned in the application layer of Rec. ITU-T X.200 | ISO/IEC 7498-1 and is defined according to the model provided by ISO 9545. The role of systems management functions is described by Rec. ITU-T X.701 | ISO /IEC 10040.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>1998</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">X.743 (1998) Technical Cor. 1 (03/2001)</formattedref>
+          <docidentifier type="ITU" primary="true">X.743 (1998) Technical Cor. 1 (03/2001)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem anchor="scte135-1" id="scte135-1" semx-id="_eed295f0-dba4-54c5-4d81-165bd0cea052"><biblio-tag>[b‑ANSI/SCTE 135‑1]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">ANSI/SCTE 135-1, <em>DOCSIS 3.0 Part 1: Physical Layer Specification</em>.</formattedref>
+  <docidentifier type="metanorma">[b-ANSI/SCTE 135-1]</docidentifier>
+  <docidentifier>ANSI/SCTE 135-1</docidentifier><docidentifier scope="biblio-tag">ANSI/SCTE 135-1</docidentifier>
+  <docnumber>135-1</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="scte135-2" id="scte135-2" semx-id="_390a8710-6505-f4a9-c44a-465a10af568b"><biblio-tag>[b‑ANSI/SCTE 135‑2]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">ANSI/SCTE 135-2, <em>DOCSIS 3.0 Part 2: MAC and Upper Layer Protocols</em>.</formattedref>
+  <docidentifier type="metanorma">[b-ANSI/SCTE 135-2]</docidentifier>
+  <docidentifier>ANSI/SCTE 135-2</docidentifier><docidentifier scope="biblio-tag">ANSI/SCTE 135-2</docidentifier>
+  <docnumber>135-2</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="scte135-4" id="scte135-4" semx-id="_42846f0a-a9c4-5947-7056-8360882e9cd9"><biblio-tag>[b‑ANSI/SCTE 135‑4]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">ANSI/SCTE 135-4, <em>DOCSIS 3.0 Part 4: Operations Support Systems Interface</em>.</formattedref>
+  <docidentifier type="metanorma">[b-ANSI/SCTE 135-4]</docidentifier>
+  <docidentifier>ANSI/SCTE 135-4</docidentifier><docidentifier scope="biblio-tag">ANSI/SCTE 135-4</docidentifier>
+  <docnumber>135-4</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="scte135-5" id="scte135-5" semx-id="_3e6f5521-9ea5-52b4-5008-9b460393a2d9"><biblio-tag>[b‑ANSI/SCTE 135‑5]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">ANSI/SCTE 135-5, <em>DOCSIS 3.0 Part 5: Cable Modem to Customer Premise Equipment Interface</em>.</formattedref>
+  <docidentifier type="metanorma">[b-ANSI/SCTE 135-5]</docidentifier>
+  <docidentifier>ANSI/SCTE 135-5</docidentifier><docidentifier scope="biblio-tag">ANSI/SCTE 135-5</docidentifier>
+  <docnumber>135-5</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem>
+
+
+
+
+
+</references></bibliography>
+</metanorma>

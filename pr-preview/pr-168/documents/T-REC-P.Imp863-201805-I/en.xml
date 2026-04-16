@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.6" schema-version="v2.1.5" flavor="itu">
+<bibdata type="standard">
+<title language="en" type="main">Implementers' guide for P.863</title>
+<docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier><docnumber>P.863 Implementers' Guide</docnumber><date type="published"><on>2018-05-10</on></date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor">raporteur</role><person>
+<name><completename>Jens Berger</completename></name>
+<affiliation><organization>
+<name>Rohde &amp; Schwarz</name>
+<address><formattedAddress>Switzerland</formattedAddress></address></organization></affiliation><phone>+41 32 686 6565</phone><phone type="fax">+41 32 686 6566</phone><email>jens.berger@rohde-schwarz.com</email></person></contributor><contributor><role type="editor"/><person>
+<name><completename>Joachim Pomy</completename></name>
+<affiliation><organization>
+<name>OPTICOM GmbH</name>
+<address><formattedAddress>Germany</formattedAddress></address></organization></affiliation><phone>+49 177 78 71958</phone><phone type="fax">+49 6251 9454945</phone><email>consultant@joachimpomy.de</email></person></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Telecommunication Union</name>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><subdivision type="Group" subtype="study-group">
+<name>12</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract>
+
+<p>This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p>
+
+<p>This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p>
+</abstract><status><stage>in-force</stage></status><copyright><from>2018</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><series type="main">
+<title>P: Terminals and Subjective and Objective Assessment Methods</title>
+</series><series type="secondary">
+<title>Methods for objective and subjective assessment of speech quality</title>
+</series><ext><doctype>implementers-guide</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>P.863 Implementers' Guide</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_8d313973-2235-f756-5550-6205500a3451" inline-header="false" obligation="normative"><p id="_d10aa1d5-f372-c5d0-5605-ee511b386173">© ITU 2018</p>
+
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<legal-statement>
+
+<clause id="_003f845c-f32a-7960-3b0f-9c85330adade" inline-header="false" obligation="normative">
+<title id="_89ed9c08-e3b7-2077-1fcb-dabb1102e0b7">FOREWORD</title>
+<p id="_a863a5a5-bd00-f39c-3abd-899e9b521530">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_34051732-c502-607b-42ae-79538f27ca51">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_a3e261ee-304f-23d7-0933-b89fbf4bcd44">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_2b90a785-cba5-8327-dfd8-c1127faff300">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+</clause>
+</legal-statement>
+</boilerplate><preface><abstract id="_37acbf9a-8868-bddd-782b-e35d81cdd352">
+<title id="_bddaac0f-3db8-580b-f6b0-f25cdc8b8c2d">Summary</title>
+<p id="_1dfebe3c-046f-6b81-87e3-70dea8293a0e">This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p>
+
+<p id="_be206765-85dd-592a-b4ed-0678f65f41cf">This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p>
+</abstract><clause id="_9797e404-e124-d442-e2d0-6ae502f5369a" inline-header="false" obligation="informative">
+<title id="_e780bd3f-ad64-4234-3bea-1529d5b370c6">Change log</title>
+<table id="_11a20585-392a-89b9-c931-1939edfc226a" unnumbered="true"><tbody><tr id="_23c5e1ea-d0b7-d1ec-6311-fa5c28a25fc7"><td id="_1ce29026-b18e-99c9-a630-74aed46fe0d6" valign="top" align="left">2018-05</td>
+<td id="_51f0062d-b45c-a6c2-357d-8d6a5a15ccd1" valign="top" align="left">Initial version</td>
+</tr></tbody>
+</table>
+</clause></preface><sections>
+
+
+<clause id="_8cabe646-0bfa-aa5f-c57c-c3548666eac2" type="scope" inline-header="false" obligation="normative">
+<title id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title>
+<p id="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265">This guide resolves defects in the following categories:</p>
+
+<ul id="_0f46587a-4a22-b099-bcfc-949dc1ebf367"><li><p id="_145ebb3b-63ab-a2b9-b86a-b9226239e968">editorial errors</p>
+</li>
+<li><p id="_396c4cb0-8334-908d-3168-a016a39de6f5">technical errors, such as omissions and inconsistencies</p>
+</li>
+<li><p id="_c1f22a18-0ece-5b78-95b4-3db77530a99b">ambiguities</p>
+</li>
+</ul>
+
+<p id="_b5fca65c-b073-e623-4f07-8e57cc4c15d1">In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
+
+<p id="_0bf9cac4-4901-700f-ff01-bba0741fba67">This guide will not address proposed additions, deletions or modifications to the Recommendations that are not strictly related to implementation difficulties in the above categories. Proposals for new features should be made through contributions to ITU-T.</p>
+</clause>
+
+<clause id="_d68e13cd-0196-187d-3daf-45a6b95698ea" inline-header="false" obligation="normative">
+<title id="_61998878-2bff-eff7-7263-05a3fe373b29">Introduction</title>
+<p id="_e15ac562-4a67-cb8e-a233-c6f9dbd3e392">This implementers' guide is a compilation of reported defects for the version 2018-03 of <eref type="inline" bibitemid="p863" citeas="ITU-T P.863 (03/2018)"/>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
+
+<p id="_457d763d-98a1-3c2c-2faf-5fdf575bf76a">P.863</p>
+
+<p id="_5308c9ad-ac84-ca4a-2f58-3a376ee26636">The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
+</clause>
+
+<clause id="_a3bfa48c-a96a-b654-901e-af6035d61128" inline-header="false" obligation="normative">
+<title id="_6c9d2e6a-bc1d-bdf5-cd77-639f2c902e7b">Defect resolution procedure</title>
+<p id="_8568ddf5-78a5-d0cf-8bac-a26231c0407d">Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
+</clause>
+
+
+
+<clause id="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a" inline-header="false" obligation="normative">
+<title id="_7a78976d-4b13-fb1e-1bad-14eb19b4702c">Nomenclature</title>
+<p id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642">In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
+
+<table id="_0ae75d4e-57ab-689e-6be2-8b22c20a9e73" unnumbered="true"><tbody><tr id="_07249b8d-649f-f5af-8e24-dd514d6d293b"><th id="_c1c1ac00-93c0-bb77-a5a4-11c2fc8c3f69" valign="top" align="center">Symbol</th>
+<th id="_2b43d866-0e6f-65c1-a4cd-28ee6cbc2d2f" valign="top" align="center">Description</th>
+</tr><tr id="_7494b805-6848-df16-e571-fb23cf6943f5"><td id="_6752e28a-047a-99e8-7676-1c1c82eac638" valign="top" align="center"><strong><em>[Begin Correction]</em></strong></td>
+<td id="_93b2c980-bacd-d04d-6790-df1b5bba5f4a" valign="top" align="left">Identifies the start of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr id="_28b07906-e300-eaa1-7c85-62e2b85e6a44"><td id="_540b2331-8a7c-c22f-1661-0fa694646cff" valign="top" align="center"><strong><em>[End Correction]</em></strong></td>
+<td id="_5507813e-9dcd-d8da-0519-d7dc34b2bfd8" valign="top" align="left">Identifies the end of revision marked text based on extractions from the published Recommendations affected by the correction being described.</td>
+</tr><tr id="_7a71bb72-ccc4-9abd-9c92-65be79ccbc2d"><td id="_2840d8ee-4384-0f5a-5964-35536a1b2287" valign="top" align="center"><strong><em>…​</em></strong></td>
+<td id="_dec60427-b524-b636-1ff8-4d75798a03ae" valign="top" align="left">Indicates that the portion of the Recommendation between the text appearing before and after this symbol has remained unaffected by the correction being described and has been omitted for brevity.</td>
+</tr><tr id="_c1f817ed-a8ed-6065-108a-f7df4bd7d199"><td id="_69892512-7e73-176d-6a90-d0eb77ada347" valign="top" align="center"><em>--- SPECIAL INSTRUCTIONS --- {instructions}</em></td>
+<td id="_554a0521-943d-4d95-2b51-7a8ba4cd471c" valign="top" align="left">Indicates a set of special editing instructions to be followed.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_87d7249f-69f7-a196-ad64-e1d8cbdc3911" inline-header="false" obligation="normative">
+<title id="_c1393c3b-6610-c610-7468-aefb0115f06e">Technical and editorial corrections to Recommendation P.863</title>
+<clause id="_09de59f7-1725-14fd-0158-8fb7903859b6" inline-header="false" obligation="normative">
+<title id="_f17b4912-9abb-321c-5803-956db3f9066b">Annex B, TempAlignment.pdf</title>
+<p id="_9ff6fe16-cb2d-61d6-54d9-17484b2929bb"><em>Missing statement, which rendered part of the surrounding code useless.</em></p>
+
+<p id="_d51f874b-5948-9338-5cbe-70df4db32df1"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 2655</em></p>
+
+<p id="_4b308a13-9581-7ab1-f8a0-577fa4c2dce7">[Begin Correction]</p>
+
+<sourcecode id="_7c2f8e6a-fa0a-338b-4d0f-785bf64e21e6" unnumbered="true"><body>Done = true</body></sourcecode>
+
+
+<p id="_c200a9b3-b096-ca85-bff8-e5e0cbde8625">[End Correction]</p>
+</clause>
+
+<clause id="_98e3218b-db54-fead-b72f-6cb7514dcd99" inline-header="false" obligation="normative">
+<title id="_9f1b6196-6292-071e-7b9e-fda7715d325a">Annex B, TempAlignment.pdf</title>
+<p id="_d238be08-f54f-4331-7d07-0071fd210301"><em>The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug.</em></p>
+
+<p id="_554d41a7-324b-3aeb-12ff-e1162146bec7"><em>--- SPECIAL INSTRUCTIONS --- Replace lines 3940 and 3941:</em></p>
+
+<p id="_e6827bb4-8f20-81c9-75db-8e38ad92bf2c">[Begin Correction]</p>
+
+<p id="_bcd658ba-4020-08c8-d1ea-4937a7da9df8"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_9bf4a377-7b81-e941-e76e-9364b13f13f1" unnumbered="true"><body>mpReparsePoints[r].MinDelayVarInSamples = -2*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 2*WorstResolutionInSamples</body></sourcecode>
+
+
+<p id="_73d4cbea-0599-8978-f324-2f35a2cc5d98"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_778931a9-bc3e-4f3e-497f-a8a91958be89" unnumbered="true"><body>mpReparsePoints[r].MinDelayVarInSamples = -4*WorstResolutionInSamples
+mpReparsePoints[r].MaxDelayVarInSamples = 4*WorstResolutionInSamples</body></sourcecode>
+
+
+<p id="_894efce1-9ef8-d209-e3fb-4662fd1405a9">[End Correction]</p>
+</clause>
+
+<clause id="_2da0e71b-28d7-a4e6-d7a1-5ca13ce2b580" inline-header="false" obligation="normative">
+<title id="_336759ae-b2f2-3f52-14d3-2672ec570491">Annex B, TempAlignment.pdf</title>
+<p id="_39095eec-6a6b-afbe-72fc-b6372f3ca7c6"><em>The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence.</em></p>
+
+<p id="_fc56aa06-9575-3eb2-d9b4-1080c82140e1"><em>--- SPECIAL INSTRUCTIONS --- Modify lines 5092 to 5102:</em></p>
+
+<p id="_b34f881c-eda2-c823-12e4-79098c72adbc">[Begin Correction]</p>
+
+<p id="_5c26de3e-0c81-157f-f255-19148e93f76d"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_567c55b0-170f-f5b9-e2ef-fa5382c2ace0" unnumbered="true"><body>for (utt=0 utt&lt;NumberOfUtterances-1 utt++)
+      {
+      if (pStartSampleUtterance[utt+1]-pStopSampleUtterance[utt] &lt; 0.1*mProcessData.mSamplerate)
+           {
+            bool IsInsideActiveSection = true
+            while(LastUsedReparsePoint&lt;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&gt;ReparsePoints[LastUsedReparsePoint].Deg.End)
+                  LastUsedReparsePoint++
+            if (pStartSampleUtterance[utt+1]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start)
+                IsInsideActiveSection = false
+
+                if ((!IsInsideActiveSection &amp;&amp;</body></sourcecode>
+
+
+<p id="_095a3752-e9dd-8f0d-a5a8-b00bc70779a4"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_ff7f6eae-197b-211c-8db3-152f33b9ecbd" unnumbered="true"><body>for (utt=0 utt&lt;NumberOfUtterances-1 utt++)
+     {
+        bool IsInsideActiveSection1 = true
+        bool IsInsideActiveSection2 = true
+        while(LastUsedReparsePoint&lt;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt]&gt;ReparsePoints[LastUsedReparsePoint].Deg.End)
+            LastUsedReparsePoint++
+        if (pStartSampleUtterance[utt]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start)
+            IsInsideActiveSection1 = false
+
+        int ReparsePoint2 = LastUsedReparsePoint
+        while(ReparsePoint2&lt;NumReparsePoints-1 &amp;&amp; pStartSampleUtterance[utt+1]&gt;ReparsePoints[ReparsePoint2].Deg.End)
+            ReparsePoint2++
+        if (pStartSampleUtterance[utt+1]&lt;ReparsePoints[LastUsedReparsePoint].Deg.Start &amp;&amp; pStopSampleUtterance[utt+1]&lt;ReparsePoints[ReparsePoint2].Deg.Start)
+            IsInsideActiveSection2 = false
+
+        if (ReparsePoint2==LastUsedReparsePoint &amp;&amp; (IsInsideActiveSection1 &amp;&amp; IsInsideActiveSection2) || (!IsInsideActiveSection1 &amp;&amp; !IsInsideActiveSection2))
+        {
+            if ((!IsInsideActiveSection1 &amp;&amp;</body></sourcecode>
+
+
+<p id="_526c0414-be6f-fcc4-9ed0-c76b719b8734"><em>[End Correction]</em></p>
+</clause>
+
+<clause id="_1eb7f56c-3a13-da8d-3fd9-119dbbc9aa19" inline-header="false" obligation="normative">
+<title id="_aee20a0e-df32-0f47-7841-9992ce0ac3bc">Annex B, TimeAlign.pdf</title>
+<p id="_79163186-8dc9-2a87-a0e7-5eb450a630d0"><em>When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same.</em></p>
+
+<p id="_e900ace2-370c-10b9-d163-ee657b85c163"><em>--- SPECIAL INSTRUCTIONS --- replace line 878</em></p>
+
+<p id="_ede87ba2-59ce-4b34-9563-b1c4ca88fd1a">[Begin Correction]</p>
+
+<p id="_dd2b8233-65bd-11a3-061e-68df79da1fec"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_6395d6c0-f506-d934-2efc-c48500f8baef" unnumbered="true"><body>pDest[p] = matPearsonCorrelation(pA, pB+p, LenA)</body></sourcecode>
+
+
+<p id="_8e8d0e35-b6d8-6a52-1b8f-2ceecbfe240c"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_1a10b9d0-65ab-5a10-8018-c9fe0d8e071e" unnumbered="true"><body>pDest[p] = matPearsonCorrelation(pA+Offset, pB+p+Offset, LenA);</body></sourcecode>
+
+
+<p id="_534ce186-ba40-d7c1-b310-088e0d62e34f">[End Correction]</p>
+</clause>
+
+<clause id="_ae6afe94-781e-3254-74ab-e4758d430665" inline-header="false" obligation="normative">
+<title id="_c8c2b7c1-3d7e-afa9-87b9-30fa9a3880e9">Annex B, SpeechTempAlign.pdf</title>
+<p id="_c18e2018-17e4-6e03-7c8a-566ab69f7866"><em>Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier.</em></p>
+
+<p id="_59fa7676-876d-697d-e7ae-9f481d4c6f09"><em>--- SPECIAL INSTRUCTIONS --- Insert at line 1439</em></p>
+
+<p id="_10b3e69b-6579-e864-e04f-da3fc270a491">[Begin Correction]</p>
+
+<sourcecode id="_5fa85c79-bf3e-a760-00bb-1916ec656b81" unnumbered="true"><body>if (*NoiseLevelSilence&lt;0.125) *NoiseLevelSilence = 0.125</body></sourcecode>
+
+
+<p id="_9a4f7498-c00a-8290-658a-b77a07782a25">[End Correction]</p>
+</clause>
+
+<clause id="_e1e82a8a-dc93-be02-f63d-b94e061ddb24" inline-header="false" obligation="normative">
+<title id="_37b0b4e3-0f86-1cc3-0d72-aa2fe52640d8">Annex B, TempAlignment.pdf</title>
+<p id="_7dde7f31-1bf7-5019-2e65-76e36ea700ca"><em>Avoid calculating correlation for signal segments which do not contain speech.</em></p>
+
+<p id="_55233cea-f0c4-5f4c-2717-3324b1093872"><em>--- SPECIAL INSTRUCTIONS --- replace line 5146</em></p>
+
+<p id="_3a9da272-d5c6-ada0-9a29-2d17cebba95a">[Begin Correction]</p>
+
+<p id="_0719714a-64e1-63b7-d7df-9928b67a138c"><em>--- SPECIAL INSTRUCTIONS --- Old Description</em></p>
+
+<sourcecode id="_0d75fb8e-c679-7c51-8891-cbd702ea7ea8" unnumbered="true"><body>int Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</body></sourcecode>
+
+
+<p id="_30856a83-86ed-f971-b145-062e77f4cd7d"><em>--- SPECIAL INSTRUCTIONS --- New Description</em></p>
+
+<sourcecode id="_41316bdf-119e-4b59-5ab3-669ffbea41d8" unnumbered="true"><body>int FrameNumStart = floor((float) (SecB.Start)/(float)FrameSize);
+int FrameNumEnd = floor((float) (SecB.End)/(float)FrameSize);
+int FrameNum = FrameNumStart;
+bool ActiveSeg = false;
+while ((!ActiveSeg) &amp;&amp; (FrameNum&lt;=FrameNumEnd) &amp;&amp; (FrameNum&gt;=FrameNumStart) &amp;&amp; (FrameNum&lt;ActiveFramesLen))
+{
+      ActiveSeg = ActiveSeg || ActiveFrames[FrameNum];
+      FrameNum++;
+}
+if (!ActiveSeg)
+      continue;
+int Delay = 0;
+Delay = FindSectionAInSectionB(&amp;SecA, &amp;SecB, &amp;RefSig, &amp;DegSig, 0, 1, 1, 2*MaxLagSamples);</body></sourcecode>
+
+
+<p id="_d8c798e9-414b-2cc0-3ce4-984e20bb8dca">[End Correction]</p>
+</clause>
+
+<clause id="_afac23fb-0863-2435-d195-7526a8bdb8a1" inline-header="false" obligation="normative">
+<title id="_4300a5b0-4802-097a-ae73-30ff054463d7">Annex A, subfolder Results Ed. 3</title>
+<p id="_a8c8061d-bc65-acd6-4e2f-a201332c6250"><em>The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file.</em></p>
+
+<p id="_25ba672d-e19e-f016-9c65-2f552e014f69"><em>--- SPECIAL INSTRUCTIONS --- Replace subfolder in Annex A</em></p>
+
+<p id="_888563d7-4d3b-727d-6bf7-c0430580a590">[Begin Correction]</p>
+
+<p id="_92b89b90-d8cf-1bd6-b9de-0647de03a19a"><em>--- SPECIAL INSTRUCTIONS --- Old Subfolder</em></p>
+
+<sourcecode id="_a442a017-4822-9364-e834-c34ec0f1d8dc" unnumbered="true"><body>Results Ed. 3</body></sourcecode>
+
+
+<p id="_edfed8db-a5cb-552c-b999-03f9f4f2e025"><em>--- SPECIAL INSTRUCTIONS --- New Subfolder</em></p>
+
+<sourcecode id="_ff39c493-cbd7-6601-3aba-d483ba6d7f21" unnumbered="true"><body>Results Ed. 3 - IG 2018-05</body></sourcecode>
+
+
+<p id="_70e19d08-10b4-5f3c-d6a6-9b652ce85dcf">[End Correction]</p>
+</clause>
+
+<clause id="_27b55f05-7bc1-7136-92c4-b4a4925576d5" inline-header="false" obligation="normative">
+<title id="_b5bfd3fa-535f-e05f-3d51-9492f283c049">Annex B - additional info</title>
+<note id="_100e0ee3-c202-0067-f9bd-7d2f479492d4"><p id="_11fc618b-7644-b5fe-5f81-4aa8704f44c0">The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p>
+</note>
+</clause>
+</clause>
+
+
+</sections><annex id="_3f78f8ef-098b-755b-a1a3-6e4da853fe25" inline-header="false" obligation="normative">
+<title id="_1bc481bb-c3c1-e3c5-8774-0afc7c4619bd">P.863 (2018-03) Defect Report Form</title>
+<table id="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369" unnumbered="true"><tbody><tr id="_9adb776d-78a6-a04d-4de3-c8a8b98167f8"><td id="_5fcc1f9b-b475-f8f4-2b9e-c027ccf76cf7" valign="top" align="left">DATE:</td>
+<td id="_597b7bfa-defe-9a70-4403-6bf46fd254c3" valign="top" align="left"/></tr><tr id="_a59c2c84-b33d-977d-0905-ce2b40edd53f"><td id="_8e3afad6-b8cb-9cff-a983-14c77e7f0711" valign="top" align="left"><p id="_c689d0f9-96b4-2efb-8e2f-3ecae1e516a2">CONTACT INFORMATION<br/> NAME:<br/> COMPANY:<br/> ADDRESS:<br/> TEL:<br/> FAX:<br/> E-MAIL:</p>
+</td>
+<td id="_ea5015f0-3129-e662-a902-c5772d06d16f" valign="top" align="left"/></tr><tr id="_c6618471-40fc-3453-7ec9-b2b22ea2fc69"><td id="_37527c18-6aa7-5dba-1f0d-70e22eb9e614" valign="top" align="left">AFFECTED RECOMMENDATIONS:</td>
+<td id="_b1d9cf44-6796-9485-852e-4bfde7b62246" valign="top" align="left"/></tr><tr id="_7b144116-1af7-906a-33ed-e4ebd05ac9b2"><td id="_4b8a9a12-a575-07a1-3ddb-21ed5b11d3d6" valign="top" align="left">DESCRIPTION OF PROBLEM:</td>
+<td id="_25a6933c-1163-8a30-cf79-476ab63a7ba4" valign="top" align="left"/></tr><tr id="_d4b846b7-0b70-ff10-a69f-5f1cc30a6469"><td id="_fcdadf1d-341e-26b0-9f2d-d7d31072ed18" valign="top" align="left">SUGGESTIONS FOR RESOLUTION:</td>
+<td id="_27cd5dbe-880e-04ab-1bf2-09090f20d6ee" valign="top" align="left"/></tr></tbody>
+<note id="_7f4aa079-2475-c564-7dbf-b175d4f88c43"><p id="_4cb1a61f-0ee3-1f2b-0db7-0aee0ceb1294">Attach additional pages if more space is required than is provided above.</p>
+</note></table>
+
+
+</annex><bibliography><references id="_d8fb692e-4d4f-b496-aa4e-ca80265dd8d6" normative="true" obligation="informative">
+<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_3d913cbc-c476-19cf-4c06-cea01e067d1c" type="standard" schema-version="v1.2.9" anchor="p863">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Perceptual objective listening quality prediction</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13570</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.863 (03/2018)</docidentifier>
+  <date type="published">
+    <on>2018-03-16</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T P.863 describes an objective method for predicting overall listening speech quality from narrowband (NB) (300 to 3 400 Hz) to fullband (FB) (20 to 20 000 Hz) telecommunication scenarios as perceived by the user in an ITU-T P.800 or ITU-T P.830 absolute category rating (ACR) listening-only test. Recommendation ITU-T P.863 supports two operational modes, one for narrowband and one for fullband. Super-wideband (50 to 14 000 Hz) experiments can be simulated by band limiting the reference and accordingly the degraded signal. This Recommendation presents a high-level description of the method, advice on how to use it. All essential parts of the model are described in detail, and are provided in separate pdf-files (see Annex B). These files form an integral part of this Recommendation and shall take precedence in case of conflicts between the high-level descriptions included in the main body of this Recommendation and the corresponding detailed description parts. A conformance testing procedure is also specified in Annex A to allow a user to validate that an alternative implementation of the model is correct. 
+
+This Recommendation includes an electronic attachment containing detailed descriptions in pdf format (see Annex B) and conformance testing data (see Annex A).
+
+ 
+
+Ed. 3 of P.863 does not apply an initial 14 kHz low-pass filter anymore and it is therefore able to consider spectral components above 14 kHz in its analysis now. This expands the scope of application to fullband speech codecs such as OPUS or EVS. Additionally, the 'shift-jitter' which could be observed by repeated measurements with slightly differing delay, is decreased. The gain variation introduced by automatic gain control as well as slowly time-varying linear frequency distortions are now adequately considered.
+
+Furthermore, the problems of P.863 Ed. 2 documented in the following implementer's guides were addressed and are resolved now:
+
+·       Former Implementer's Guide on assessment of EVS coded speech with Recommendation ITU-T P.863 (2016)
+
+·       Former Implementer's Guide on non-validated test conditions with inserted gaps in speech by Recommendation ITU-T P.863 (2016)
+
+·       Former Implementer's Guide on discrimination of wideband and super-wideband speech by Recommendation ITU-T P.863 (2016)
+•Former Implementer's Guide on correction of Recommendation ITU-T P.863 regarding reverb (2016)</abstract>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (2018) Amd. 1 (04/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (2018) Amd. 1 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (09/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (09/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (2011) Amd. 1 (11/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (2011) Amd. 1 (11/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.863 (01/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P.863 (01/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 10 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 16 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 20 (03/1993)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 23 (02/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 24 (10/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 25 (01/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 26 (09/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 27 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 27 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 28 (09/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 29 (01/2023)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 29 (01/2023)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 31 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 31 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem>
+
+
+
+</references></bibliography>
+</metanorma>
