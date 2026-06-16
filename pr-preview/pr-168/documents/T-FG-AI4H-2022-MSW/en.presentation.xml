@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.8.6" schema-version="v2.1.5" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.8.9" schema-version="v2.1.6" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Ethics and governance of artificial intelligence for health</title>
-<docidentifier type="ITU" primary="true">ITU-T FG-AI4H DEL01</docidentifier><docidentifier type="ITU-lang">ITU-T FG-AI4H DEL01-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T FG-AI4H</docidentifier><docnumber>FG-AI4H DEL01</docnumber><date type="published"><on>2022-06-02</on></date><date type="published" format="ddMMMyyyy">2.VI.2022</date><contributor><role type="author"/><organization>
+<docidentifier type="ITU" primary="true">ITU-T FG-AI4H DEL01</docidentifier><docidentifier type="ITU-lang">ITU-T FG-AI4H DEL01-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T FG-AI4H DEL01-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T FG-AI4H</docidentifier><docnumber>FG-AI4H DEL01</docnumber><date type="published"><on>2022-06-02</on></date><date type="published" format="ddMMMyyyy">2.VI.2022</date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor"/><person>
 <name><completename>Andreas Reis</completename></name>
@@ -24,17 +24,17 @@
 
 <p>This document endorses a set of six key ethical principles:</p>
 
-<ul><li id="_99883f2f-8f7d-bc8c-4d47-9e6b8eae9b20"><fmt-name id="_58f652c9-769a-11aa-511b-083c7d8ab545"><semx element="autonum" source="_99883f2f-8f7d-bc8c-4d47-9e6b8eae9b20">–</semx></fmt-name><p>Protect human autonomy</p>
+<ul><li id="_7ab57513-9fa3-f455-f200-bc63c0613d5e"><fmt-name id="_e1bb71e8-ce5a-599e-085c-e78d6cf4cc74"><semx element="autonum" source="_7ab57513-9fa3-f455-f200-bc63c0613d5e">–</semx></fmt-name><p>Protect human autonomy</p>
 </li>
-<li id="_2a2702ce-e38c-e4c4-c6f5-82c922a9561d"><fmt-name id="_1b5856ec-2a72-d00b-8052-0538bc1838fb"><semx element="autonum" source="_2a2702ce-e38c-e4c4-c6f5-82c922a9561d">–</semx></fmt-name><p>Promote human well-being and safety and the public interest</p>
+<li id="_9d4551c9-c401-1971-7cd5-58ae845f147b"><fmt-name id="_75a7cc07-5fdc-7b60-dcf8-6f4acfd4ee4d"><semx element="autonum" source="_9d4551c9-c401-1971-7cd5-58ae845f147b">–</semx></fmt-name><p>Promote human well-being and safety and the public interest</p>
 </li>
-<li id="_294c2548-ab2d-b7cb-bc08-9933df8cdc9f"><fmt-name id="_6c6a5191-babe-12de-1b26-9b5fcbefe44a"><semx element="autonum" source="_294c2548-ab2d-b7cb-bc08-9933df8cdc9f">–</semx></fmt-name><p>Ensure transparency, explainability and intelligibility</p>
+<li id="_09187247-7f04-7d8f-ce1b-bdb7765fadfd"><fmt-name id="_d23563d6-a8eb-9648-cb78-02ac7101834f"><semx element="autonum" source="_09187247-7f04-7d8f-ce1b-bdb7765fadfd">–</semx></fmt-name><p>Ensure transparency, explainability and intelligibility</p>
 </li>
-<li id="_8cb29a60-6732-2f33-0c0d-f01b3232c9da"><fmt-name id="_98be01a5-e5e7-3e85-ef56-739c072b2f02"><semx element="autonum" source="_8cb29a60-6732-2f33-0c0d-f01b3232c9da">–</semx></fmt-name><p>Foster responsibility and accountability</p>
+<li id="_da878fac-03d9-1a6e-1fb2-b1b73780a43d"><fmt-name id="_042fae33-f35b-3671-915c-67f8645f6dff"><semx element="autonum" source="_da878fac-03d9-1a6e-1fb2-b1b73780a43d">–</semx></fmt-name><p>Foster responsibility and accountability</p>
 </li>
-<li id="_f1caf1fe-c239-ad10-3ec7-61951123345f"><fmt-name id="_418ba24a-110f-8b87-f712-b68710497fbf"><semx element="autonum" source="_f1caf1fe-c239-ad10-3ec7-61951123345f">–</semx></fmt-name><p>Ensure inclusiveness and equity</p>
+<li id="_2566046f-4d76-dc28-0598-6c1967a0f05b"><fmt-name id="_074434a9-e374-622d-dd31-36727c32faa8"><semx element="autonum" source="_2566046f-4d76-dc28-0598-6c1967a0f05b">–</semx></fmt-name><p>Ensure inclusiveness and equity</p>
 </li>
-<li id="_432c477d-3ebc-7707-0e20-59b8a0cca811"><fmt-name id="_0a5672a0-de66-6c2f-cc5b-412ae05c0278"><semx element="autonum" source="_432c477d-3ebc-7707-0e20-59b8a0cca811">–</semx></fmt-name><p>Promote AI that is responsive and sustainable</p>
+<li id="_906462b6-c843-53f4-0b54-187dfe199f45"><fmt-name id="_830123a4-5402-6b7c-bc8f-cb5f099adea8"><semx element="autonum" source="_906462b6-c843-53f4-0b54-187dfe199f45">–</semx></fmt-name><p>Promote AI that is responsive and sustainable</p>
 </li>
 </ul>
 

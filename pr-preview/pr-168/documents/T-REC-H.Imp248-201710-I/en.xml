@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.6" schema-version="v2.1.5" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.9" schema-version="v2.1.6" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Implementors' Guide for the H.248 Sub-series of Recommendations ("Media Gateway Control Protocol")</title>
-<docidentifier type="ITU" primary="true">ITU-T H.248 Sub-series Implementors Guide</docidentifier><docidentifier type="ITU-lang">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T H.248</docidentifier><docnumber>H.248 Sub-series Implementors Guide</docnumber><date type="published"><on>2017-10-27</on></date><contributor><role type="author"/><organization>
+<docidentifier type="ITU" primary="true">ITU-T H.248 Sub-series Implementors Guide</docidentifier><docidentifier type="ITU-lang">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T H.248 Sub-series Implementors Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T H.248</docidentifier><docnumber>H.248 Sub-series Implementors Guide</docnumber><date type="published"><on>2017-10-27</on></date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor">raporteur</role><person>
 <name><completename>Patrick Luthi</completename></name>
@@ -838,14 +838,14 @@
 </note></table>
 
 
-</annex><bibliography><references id="_c8ad1831-099b-9d06-6795-de26e15a143e" normative="true" obligation="informative">
-<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_5a25b839-088e-5c1c-cd56-f28745220156" type="standard" schema-version="v1.2.9" anchor="h248-1">
-  <fetched>2026-04-16</fetched>
+</annex><bibliography><references id="_bcdfdb4e-8875-3b55-9b2a-b6c0d909c10c" normative="true" obligation="informative">
+<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_2d953ca3-e4ac-0789-798d-cb5690dbf8fd" type="standard" schema-version="v1.5.6" anchor="h248-1">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Version 3</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Version 3</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Version 3</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Version 3</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/11853</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.1-201303-I!!PDF-E&amp;type=items</uri>
@@ -863,16 +863,33 @@
       <uri>www.itu.int</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
   <edition>5</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">To achieve greater scalability, this Recommendation decomposes the ITU-T H.323 Gateway function defined in Recommendation ITU-T H.246 into functional subcomponents and specifies the protocols these components use to communicate. This allows implementations of ITU-T H.323 gateways to be highly scalable and encourages leverage of widely deployed Switched Circuit Network (SCN) capabilities such as SS7 switches. This also enables ITU-T H.323 gateways to be composed of components from multiple vendors distributed across multiple physical platforms. The purpose of this Recommendation is to add capabilities currently defined for ITU-T H.323 systems and is intended to provide new ways of performing operations already supported in ITU-T H.323.
+  <abstract language="en" script="Latn">To achieve greater scalability, this Recommendation decomposes the ITU-T H.323 Gateway function defined in Recommendation ITU-T H.246 into functional subcomponents and specifies the protocols these components use to communicate. This allows implementations of ITU-T H.323 gateways to be highly scalable and encourages leverage of widely deployed Switched Circuit Network (SCN) capabilities such as SS7 switches. This also enables ITU-T H.323 gateways to be composed of components from multiple vendors distributed across multiple physical platforms. The purpose of this Recommendation is to add capabilities currently defined for ITU-T H.323 systems and is intended to provide new ways of performing operations already supported in ITU-T H.323.
 This revision contains a number of clarifications on:
 –	Signal behaviour on new Streams; 
 –	time based Statistics and their applicability to multi flow streams;
 –	the impact of the Mode property on Statistics; 
 –	Event behaviour with respect to new Streams;
-–	ServiceChange version handling.</abstract>
+–	ServiceChange version handling.
+</abstract>
   <status>
     <stage>Published</stage>
   </status>
@@ -890,205 +907,259 @@ This revision contains a number of clarifications on:
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v3 (2005) Amd. 2 (12/2009)</formattedref>
+      
+<title language="en" script="Latn">New Appendix IV, plus corrections and clarifications</title>
+
       <docidentifier type="ITU" primary="true">H.248.1 v3 (2005) Amd. 2 (12/2009)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v3 (2005) Amd. 1 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Corrections and clarifications</title>
+
       <docidentifier type="ITU" primary="true">H.248.1 v3 (2005) Amd. 1 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v3 (09/2005)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Version 3</title>
+
       <docidentifier type="ITU" primary="true">H.248.1 v3 (09/2005)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v2 (2002) Cor. 1 (03/2004)</formattedref>
+      <formattedref>H.248.1 v2 (2002) Cor. 1 (03/2004)</formattedref>
       <docidentifier type="ITU" primary="true">H.248.1 v2 (2002) Cor. 1 (03/2004)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v2 (05/2002)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Version 2</title>
+
       <docidentifier type="ITU" primary="true">H.248.1 v2 (05/2002)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.1 v1 (03/2002)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Version 1</title>
+
       <docidentifier type="ITU" primary="true">H.248.1 v1 (03/2002)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex M4 (07/2001)</formattedref>
+      
+<title language="en" script="Latn">H.248.1 packages for H.323 and H.324 interworking</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex M4 (07/2001)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex M2 (07/2001)</formattedref>
+      
+<title language="en" script="Latn">Media gateway resource congestion handling package</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex M2 (07/2001)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex L (07/2001)</formattedref>
+      
+<title language="en" script="Latn">Error code and service change reason description</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex L (07/2001)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex K (11/2000)</formattedref>
+      
+<title language="en" script="Latn">Generic Announcement package</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex K (11/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex J (11/2000)</formattedref>
+      
+<title language="en" script="Latn">Dynamic Tone Definition package</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex J (11/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex I (11/2000)</formattedref>
+      
+<title language="en" script="Latn">Transport over ATM</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex I (11/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex H (11/2000)</formattedref>
+      
+<title language="en" script="Latn">Transport over Stream Control Transmission Protocol (SCTP)</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex H (11/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex G (11/2000)</formattedref>
+      
+<title language="en" script="Latn">User interface elements and actions packages</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex G (11/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 Annex F (11/2000)</formattedref>
+      
+<title language="en" script="Latn">Facsimile, text conversation and call discrimination packages</title>
+
       <docidentifier type="ITU" primary="true">H.248 Annex F (11/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248 (06/2000)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol</title>
+
       <docidentifier type="ITU" primary="true">H.248 (06/2000)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_5ad2febd-5310-5eea-de46-c8e5c26268b2" type="standard" schema-version="v1.2.9" anchor="h248-40">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_0e1435f7-a79c-9014-df60-2e241238d580" type="standard" schema-version="v1.5.6" anchor="h248-40">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Application data inactivity detection package</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Application data inactivity detection package</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/11835</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.40-201303-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.40 (03/2013)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.40</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -1097,6 +1168,22 @@ This revision contains a number of clarifications on:
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>2</edition>
@@ -1119,96 +1206,119 @@ This revision contains a number of clarifications on:
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.40 (01/2007)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+
       <docidentifier type="ITU" primary="true">H.248.40 (01/2007)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Application data inactivity detection package</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Application data inactivity detection package</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/11835</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.40-201303-I!!PDF-E&amp;type=items</uri>
@@ -1226,11 +1336,28 @@ This revision contains a number of clarifications on:
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>2</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.40 describes the principle used to detect application data inactivity for IP transport connections in general, like e.g., avoid a potential situation of deadlock if latching was set but no application data stream is incoming to latch on. The solution is based on an event to detect if application data had stopped (or not started).
-This revision provides additional information regarding the setting of the detection time for the IP flow stop event.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T H.248.40 describes the principle used to detect application data inactivity for IP transport connections in general, like e.g., avoid a potential situation of deadlock if latching was set but no application data stream is incoming to latch on. The solution is based on an event to detect if application data had stopped (or not started).
+This revision provides additional information regarding the setting of the detection time for the IP flow stop event.
+</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -1248,104 +1375,132 @@ This revision provides additional information regarding the setting of the detec
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H.248.40 (01/2007)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Application data inactivity detection package</title>
+
           <docidentifier type="ITU" primary="true">H.248.40 (01/2007)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_476eac38-9b8b-8cd8-655c-72291812f35a" type="standard" schema-version="v1.2.9" anchor="h248-53">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_a424b3a8-36b9-2c57-47d6-935ead5f8791" type="standard" schema-version="v1.5.6" anchor="h248-53">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Traffic management packages</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Traffic management packages</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/9700</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.53-200903-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.53 (03/2009)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.53</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -1354,6 +1509,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>2</edition>
@@ -1376,96 +1547,119 @@ This revision provides additional information regarding the setting of the detec
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.53 (06/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+
       <docidentifier type="ITU" primary="true">H.248.53 (06/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Traffic management packages</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Traffic management packages</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/9700</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.53-200903-I!!PDF-E&amp;type=items</uri>
@@ -1483,10 +1677,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>2</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">H.248 media gateways may support interfaces with packet-switched networks (via ephemeral terminations). Such types of bearer connections could be subject of traffic control mechanisms. Recommendation ITU-T H.248.53 provides three H.248 packages addressing traffic management, traffic policing and packet size control. This Recommendation focuses on the traffic policing function.This revision contains an update to the traffic policing statistics package. The update adds new statistic elements and expands these package's procedures allowing the reporting of finer-grained information regarding any violations of the policing parameters.</abstract>
+      <abstract language="en" script="Latn">H.248 media gateways may support interfaces with packet-switched networks (via ephemeral terminations). Such types of bearer connections could be subject of traffic control mechanisms. Recommendation ITU-T H.248.53 provides three H.248 packages addressing traffic management, traffic policing and packet size control. This Recommendation focuses on the traffic policing function.This revision contains an update to the traffic policing statistics package. The update adds new statistic elements and expands these package's procedures allowing the reporting of finer-grained information regarding any violations of the policing parameters.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -1504,104 +1714,132 @@ This revision provides additional information regarding the setting of the detec
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H.248.53 (06/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Traffic management packages</title>
+
           <docidentifier type="ITU" primary="true">H.248.53 (06/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_7a5b4ea0-81cd-1a1e-b831-ec0d5c74929c" type="standard" schema-version="v1.2.9" anchor="h248-69">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_2ee58d41-6b23-c83f-cf20-a3aaf4e1b86b" type="standard" schema-version="v1.5.6" anchor="h248-69">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/9707</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.69-200903-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.69 (03/2009)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.69</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -1610,6 +1848,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -1630,91 +1884,112 @@ This revision provides additional information regarding the setting of the detec
       </organization>
     </owner>
   </copyright>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Packages for interworking between MSRP and H.248</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/9707</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.69-200903-I!!PDF-E&amp;type=items</uri>
@@ -1732,10 +2007,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.69 defines packages and procedures to enable the message session relay protocol (MSRP) to be sent and received on a H.248 controlled media gateway (MG). It further allows communication between an MGC and MG regarding the messaging policy, messaging statistics and message protocol connection state.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T H.248.69 defines packages and procedures to enable the message session relay protocol (MSRP) to be sent and received on a H.248 controlled media gateway (MG). It further allows communication between an MGC and MG regarding the messaging policy, messaging statistics and message protocol connection state.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -1751,99 +2042,125 @@ This revision provides additional information regarding the setting of the detec
           </organization>
         </owner>
       </copyright>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_577521c7-b501-fd6b-75a0-ccbc7b5c31d9" type="standard" schema-version="v1.2.9" anchor="h248-80">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_f6d11618-64e0-bc4a-83ba-ee100a8a4a51" type="standard" schema-version="v1.5.6" anchor="h248-80">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/12060</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.80-201401-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.80 (01/2014)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.80</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -1852,6 +2169,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -1872,91 +2205,112 @@ This revision provides additional information regarding the setting of the detec
       </organization>
     </owner>
   </copyright>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Usage of the revised SDP offer/answer model with ITU-T H.248</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/12060</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.80-201401-I!!PDF-E&amp;type=items</uri>
@@ -1974,10 +2328,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.80 describes the interworking of the session description protocol (SDP) described by the "Revised SDP Offer/Answer (O/A) model with ITU-T H.248". This allows SDP capability negotiation and SDP media capabilities negotiation to be supported within ITUT H.248.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T H.248.80 describes the interworking of the session description protocol (SDP) described by the "Revised SDP Offer/Answer (O/A) model with ITU-T H.248". This allows SDP capability negotiation and SDP media capabilities negotiation to be supported within ITUT H.248.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -1993,99 +2363,125 @@ This revision provides additional information regarding the setting of the detec
           </organization>
         </owner>
       </copyright>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_eeabcc5c-4613-51ca-f1a9-43e6ab4b5e4e" type="standard" schema-version="v1.2.9" anchor="h248-83">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_a3ba2c01-fddd-517f-b8db-ed7006bae654" type="standard" schema-version="v1.5.6" anchor="h248-83">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Media gateway instance package</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Media gateway instance package</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/11544</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.83-201202-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.83 (02/2012)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.83</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -2094,6 +2490,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -2114,91 +2526,112 @@ This revision provides additional information regarding the setting of the detec
       </organization>
     </owner>
   </copyright>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Media gateway instance package</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Media gateway instance package</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Media gateway instance package</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/11544</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.83-201202-I!!PDF-E&amp;type=items</uri>
@@ -2216,10 +2649,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.83 defines functionality that allows a media gateway (MG) to indicate to a media gateway controller (MGC) what media gateway instance is in use. A media gateway instance relates to a named set of configuration parameters associated with a media gateway (or virtual media gateway). These configuration parameters may relate to (but are not limited to) the provisioned values associated with ITU-T H.248 packages, allocated memory, allocated storage and allocated processing resources, etc.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T H.248.83 defines functionality that allows a media gateway (MG) to indicate to a media gateway controller (MGC) what media gateway instance is in use. A media gateway instance relates to a named set of configuration parameters associated with a media gateway (or virtual media gateway). These configuration parameters may relate to (but are not limited to) the provisioned values associated with ITU-T H.248 packages, allocated memory, allocated storage and allocated processing resources, etc.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -2235,99 +2684,125 @@ This revision provides additional information regarding the setting of the detec
           </organization>
         </owner>
       </copyright>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_330bbfc1-3ee2-25c2-a0f9-826acd313c6b" type="standard" schema-version="v1.2.9" anchor="h248-87">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_25778a9e-5b90-f0cf-e8c8-d13ddfa00ec0" type="standard" schema-version="v1.5.6" anchor="h248-87">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/12061</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.87-201401-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.87 (01/2014)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.87</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -2336,6 +2811,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -2356,91 +2847,112 @@ This revision provides additional information regarding the setting of the detec
       </organization>
     </owner>
   </copyright>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Guidelines on the use of ITU-T H.248 capabilities for performance monitoring in RTP networks in ITU-T H.248 profiles</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/12061</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.87-201401-I!!PDF-E&amp;type=items</uri>
@@ -2458,10 +2970,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.87 provides guidelines on the use of performance monitoring tools for real-time transport protocol (RTP) traffic in ITU-T H.248 profiles. Such tools are related to RTP control protocol (RTCP) reports and the use of the ITU-T H.248-based gateway control interface for configuring measurement, filtering and reporting activities. These profile guidelines may be used by other standards developing organizations (SDOs) when defining their ITU-T H.248.1 profiles in support of ITU-T H.248 procedures and packages related to RTP bearer traffic with associated RTCP reports.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T H.248.87 provides guidelines on the use of performance monitoring tools for real-time transport protocol (RTP) traffic in ITU-T H.248 profiles. Such tools are related to RTP control protocol (RTCP) reports and the use of the ITU-T H.248-based gateway control interface for configuring measurement, filtering and reporting activities. These profile guidelines may be used by other standards developing organizations (SDOs) when defining their ITU-T H.248.1 profiles in support of ITU-T H.248 procedures and packages related to RTP bearer traffic with associated RTCP reports.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -2477,99 +3005,125 @@ This revision provides additional information regarding the setting of the detec
           </organization>
         </owner>
       </copyright>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_383a96ee-f5e7-c3ad-c643-cfcc6ad2da3d" type="standard" schema-version="v1.2.9" anchor="h248-88">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_3d6f4363-e6d6-1a59-169e-c59b8fa53f10" type="standard" schema-version="v1.5.6" anchor="h248-88">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/12062</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.88-201401-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.88 (01/2014)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.88</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -2578,6 +3132,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -2598,91 +3168,112 @@ This revision provides additional information regarding the setting of the detec
       </organization>
     </owner>
   </copyright>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: RTP topology dependent RTCP handling by ITU-T H.248 media gateways with IP terminations</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/12062</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.88-201401-I!!PDF-E&amp;type=items</uri>
@@ -2700,10 +3291,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">RTCP is the control protocol associated to RTP, which has various connection models called RTP topologies. The handling of RTCP information may be RTP topology dependent. ITUT H.248 media gateways may support various types of RTP topologies, driven by network application scenarios. Recommendation ITU-T H.248.88 provides both general and detailed information about this topic, as well as explicit control means to enforce dedicated RTP topologies in such media gateways.</abstract>
+      <abstract language="en" script="Latn">RTCP is the control protocol associated to RTP, which has various connection models called RTP topologies. The handling of RTCP information may be RTP topology dependent. ITUT H.248 media gateways may support various types of RTP topologies, driven by network application scenarios. Recommendation ITU-T H.248.88 provides both general and detailed information about this topic, as well as explicit control means to enforce dedicated RTP topologies in such media gateways.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -2719,99 +3326,125 @@ This revision provides additional information regarding the setting of the detec
           </organization>
         </owner>
       </copyright>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="_176f733b-2a02-001b-6469-dffca09ccaa6" type="standard" schema-version="v1.2.9" anchor="h248-9">
-  <fetched>2026-04-16</fetched>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_c2de2c4a-e332-5782-7034-c0f80de8025d" type="standard" schema-version="v1.5.6" anchor="h248-9">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Advanced media server packages</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Advanced media server packages</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/10630</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.9-200912-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T H.248.9 (12/2009)</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T H.248.9</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -2820,6 +3453,22 @@ This revision provides additional information regarding the setting of the detec
 
       <abbreviation>ITU</abbreviation>
       <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
   <edition>3</edition>
@@ -2842,110 +3491,137 @@ This revision provides additional information regarding the setting of the detec
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.9 (2005) Amd. 1 (08/2007)</formattedref>
+      
+<title language="en" script="Latn">ASR, TTS and multimedia enhancements</title>
+
       <docidentifier type="ITU" primary="true">H.248.9 (2005) Amd. 1 (08/2007)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.9 (01/2005)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
       <docidentifier type="ITU" primary="true">H.248.9 (01/2005)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H.248.9 (03/2002)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
       <docidentifier type="ITU" primary="true">H.248.9 (03/2002)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="hasEdition">
+  <relation type="complementOf">
     <bibitem>
-      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
       <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
       
-<title type="title-main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+<title language="en" script="Latn" type="title-main">Gateway control protocol: Advanced media server packages</title>
 
       
-<title type="main" format="text/plain" language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+<title language="en" script="Latn" type="main">Gateway control protocol: Advanced media server packages</title>
 
       <uri type="src">https://handle.itu.int/11.1002/1000/10630</uri>
       <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.248.9-200912-I!!PDF-E&amp;type=items</uri>
@@ -2963,10 +3639,26 @@ This revision provides additional information regarding the setting of the detec
           <uri>www.itu.int</uri>
         </organization>
       </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
       <edition>3</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.248.9 provides two sets of packages: syntactic and functional. The syntactic packages provide the ability to specify announcements with variable content, with a degree of flexibility constrained only by the provisioning of the MG and MGC. This syntax may in principle be used to specify multimedia announcements, although its application in this Recommendation is to evoke audio content. The functional packages provide advanced control of an Audio Resource Function using the ITU-T H.248.1 protocol. The packages provide the ability to play recorded announcements with variable content, carry out prompted collection of digits, and carry out prompted collection of recorded audio. An additional package provides the ability to manage recorded media segments on the media gateway.
+      <abstract language="en" script="Latn">Recommendation ITU-T H.248.9 provides two sets of packages: syntactic and functional. The syntactic packages provide the ability to specify announcements with variable content, with a degree of flexibility constrained only by the provisioning of the MG and MGC. This syntax may in principle be used to specify multimedia announcements, although its application in this Recommendation is to evoke audio content. The functional packages provide advanced control of an Audio Resource Function using the ITU-T H.248.1 protocol. The packages provide the ability to play recorded announcements with variable content, carry out prompted collection of digits, and carry out prompted collection of recorded audio. An additional package provides the ability to manage recorded media segments on the media gateway.
 Additional functionality incorporated by ITU-T H.248.9 (2005) Amendment 1 (2007):
 •            6.3.6.11          New variable type "Tone" for dynamic audio segment specification.
 •            6.4               Set extension of basic syntax: introduction of a new selector for text attributes.
@@ -2982,7 +3674,8 @@ This revision introduces a number of new functions. The new functions include:
 –           The ability to detect and report control digits and whether they are associated with the announcement or collection phases.
 –           The ability for control digits to request the MG to pause, resume, fast forward and rewind an announcement or to increase or decrease the volume of an announcement and to adjust the speed of delivery.
 –           The ability to indicate whether the collected digits should be stored in a log file or not. For example: digits related to a pin code would not be stored.
-–           The ability to detect "marks" within text to speech grammar script.</abstract>
+–           The ability to detect "marks" within text to speech grammar script.
+</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -3000,107 +3693,139 @@ This revision introduces a number of new functions. The new functions include:
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H.248.9 (2005) Amd. 1 (08/2007)</formattedref>
+          
+<title language="en" script="Latn">ASR, TTS and multimedia enhancements</title>
+
           <docidentifier type="ITU" primary="true">H.248.9 (2005) Amd. 1 (08/2007)</docidentifier>
         </bibitem>
 
       </relation>
       <relation type="hasEdition">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H.248.9 (01/2005)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
           <docidentifier type="ITU" primary="true">H.248.9 (01/2005)</docidentifier>
         </bibitem>
 
       </relation>
       <relation type="hasEdition">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H.248.9 (03/2002)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Advanced media server packages</title>
+
           <docidentifier type="ITU" primary="true">H.248.9 (03/2002)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          
+<title language="en" script="Latn">Control load quantum for decomposed gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Operation of H.248 with H.225.0, SIP, and ISUP in support of emergency telecommunications service (ETS)/international emergency preference scheme (IEPS)</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          
+<title language="en" script="Latn">Analysis of class-based home network QoS solutions</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Priority traffic treatment by ITU-T H.248 gateways</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: Common ITU-T H.248 terminology — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          
+<title language="en" script="Latn">Gateway control protocol: SDP codepoints for gateway control — Release 2</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          
+<title language="en" script="Latn">Conversion and coding practices for HDR/WCG Y'CbCr 4:2:0 video with PQ transfer characteristics</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          
+<title language="en" script="Latn">Guide for addressing accessibility in standards</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          
+<title language="en" script="Latn">Signalling, backward compatibility and display adaptation for HDR/WCG video coding</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          
+<title language="en" script="Latn">Usage of video signal type code points</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
         </bibitem>
 
       </relation>
-      <relation type="hasEdition">
+      <relation type="complementOf">
         <bibitem>
-          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          
+<title language="en" script="Latn">Film grain synthesis technology for video applications</title>
+
           <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
         </bibitem>
 
       </relation>
-      <place>Geneva</place>
+      <place>
+        <city>Geneva</city>
+      </place>
     </bibitem>
 
   </relation>
-  <place>Geneva</place>
+  <place>
+    <city>Geneva</city>
+  </place>
 </bibitem>
 
 
