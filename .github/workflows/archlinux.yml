@@ -19,7 +19,10 @@ jobs:
         run: pacman -Syu --noconfirm
 
       - name: Install Metanorma dependencies via pacman
-        run: pacman -Sy --noconfirm git ruby jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
+        # ruby-erb, ruby-rdoc, ruby-irb: Arch's ruby 3.4 splits stdlib gems into
+        # separate packages; fontist -> octokit -> require 'erb' fails without these.
+        # Adding rdoc + irb defensively (same shape recurs across stdlib requires).
+        run: pacman -Sy --noconfirm git ruby ruby-erb ruby-rdoc ruby-irb jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
 
       - name: Install Metanorma
         run: gem install metanorma-cli
@@ -33,7 +36,7 @@ jobs:
           PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
           metanorma site generate --agree-to-terms
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: site
           path: site
