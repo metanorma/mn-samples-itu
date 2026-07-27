@@ -308,7 +308,7 @@ sourcecode .nt {
 </td>
 </tr><tr id="_15b39277-5664-c6f9-43f4-f28e1bbfb3e8" semx-id="_15b39277-5664-c6f9-43f4-f28e1bbfb3e8"><td id="_30b5233b-8fd4-beec-86da-446cd1cc337d" valign="top" align="left" semx-id="_30b5233b-8fd4-beec-86da-446cd1cc337d">tva:GenreType</td>
 <td id="_4a735e1d-0ac4-84d7-59e9-ef8c0eacb22f" valign="top" align="left" semx-id="_4a735e1d-0ac4-84d7-59e9-ef8c0eacb22f">Genre</td>
-<td id="_bf32c592-e8c5-de11-817b-d78e679f1544" valign="top" align="left" semx-id="_bf32c592-e8c5-de11-817b-d78e679f1544"><p id="_4f6e5c1a-c4cf-5f51-68f1-a860402ec49f" semx-id="_4f6e5c1a-c4cf-5f51-68f1-a860402ec49f">Used to specify genre of the content.<br/> Defined in  <eref type="inline" bibitemid="etsi" citeas="ETSI TS 102 822-3-1 V1.13.1 (2024-05)" id="_ae2795af-9efb-63f5-b96d-48fade25af5a"/><semx element="eref" source="_ae2795af-9efb-63f5-b96d-48fade25af5a"><fmt-xref type="inline" target="etsi">[ETSI TS 102 822-3-1 V1.13.1 (2024-05)]</fmt-xref></semx>.</p>
+<td id="_bf32c592-e8c5-de11-817b-d78e679f1544" valign="top" align="left" semx-id="_bf32c592-e8c5-de11-817b-d78e679f1544"><p id="_4f6e5c1a-c4cf-5f51-68f1-a860402ec49f" semx-id="_4f6e5c1a-c4cf-5f51-68f1-a860402ec49f">Used to specify genre of the content.<br/> Defined in  <eref type="inline" bibitemid="etsi" citeas="ETSI TS 102 822-3-1" id="_ae2795af-9efb-63f5-b96d-48fade25af5a"/><semx element="eref" source="_ae2795af-9efb-63f5-b96d-48fade25af5a"><fmt-xref type="inline" target="etsi">[ETSI TS 102 822-3-1]</fmt-xref></semx>.</p>
 </td>
 </tr><tr id="_8805add9-db58-74ea-1ac9-39e23380d38d" semx-id="_8805add9-db58-74ea-1ac9-39e23380d38d"><td id="_00f31a71-674a-6315-650d-90116068954e" valign="top" align="left" semx-id="_00f31a71-674a-6315-650d-90116068954e">xs:date</td>
 <td id="_88c03af6-f15d-ec51-f9f3-909d908871b0" valign="top" align="left" semx-id="_88c03af6-f15d-ec51-f9f3-909d908871b0">Date</td>
@@ -1648,7 +1648,7 @@ sourcecode .nt {
 </li>
 <li id="_9d8840f3-1ca0-c8a5-651a-ef4fb7277bb5"><fmt-name id="_2a2b5186-a9c1-4f57-93e3-5caa8ea8996e"><semx element="autonum" source="_9d8840f3-1ca0-c8a5-651a-ef4fb7277bb5">–</semx></fmt-name><p id="_9ffe0fa4-6bcf-86d0-ce2b-90820b887d88" semx-id="_9ffe0fa4-6bcf-86d0-ce2b-90820b887d88"><em>KeywordList</em>: describes a list of keywords for the content. A keyword can be a single word or an entire phrase made up of multiple words, which can be in different languages;</p>
 </li>
-<li id="_1a35d5af-21a5-c6a6-855a-edb8fde54138"><fmt-name id="_b2164a8c-e209-c96e-dab2-cd67db196c39"><semx element="autonum" source="_1a35d5af-21a5-c6a6-855a-edb8fde54138">–</semx></fmt-name><p id="_8bf4da19-e8ec-f6d2-885f-fee1bca6ac68" semx-id="_8bf4da19-e8ec-f6d2-885f-fee1bca6ac68"><em>Genre</em>: describes genre for the contents. TV-Anytime Forum has defined Genre Dictionary in the Appendix B of Metadata Specification, <eref type="inline" bibitemid="etsi" citeas="ETSI TS 102 822-3-1 V1.13.1 (2024-05)" id="_0e6f492b-a8fe-3eb6-9897-5ecbd05f2e1a"/><semx element="eref" source="_0e6f492b-a8fe-3eb6-9897-5ecbd05f2e1a"><fmt-xref type="inline" target="etsi">[ETSI TS 102 822-3-1 V1.13.1 (2024-05)]</fmt-xref></semx>, which can be used as a reference. Some of the categories include information, drama, entertainment, music, enrichment, movies, animations/special effects, hobby, sport events, pure information, information/tabloid, documentary, education, and children;</p>
+<li id="_741a5703-d365-d4ca-87de-47299e7c533c"><fmt-name id="_b2164a8c-e209-c96e-dab2-cd67db196c39"><semx element="autonum" source="_741a5703-d365-d4ca-87de-47299e7c533c">–</semx></fmt-name><p id="_8bf4da19-e8ec-f6d2-885f-fee1bca6ac68" semx-id="_8bf4da19-e8ec-f6d2-885f-fee1bca6ac68"><em>Genre</em>: describes genre for the contents. TV-Anytime Forum has defined Genre Dictionary in the Appendix B of Metadata Specification, <eref type="inline" bibitemid="etsi" citeas="ETSI TS 102 822-3-1" id="_0e6f492b-a8fe-3eb6-9897-5ecbd05f2e1a"/><semx element="eref" source="_0e6f492b-a8fe-3eb6-9897-5ecbd05f2e1a"><fmt-xref type="inline" target="etsi">[ETSI TS 102 822-3-1]</fmt-xref></semx>, which can be used as a reference. Some of the categories include information, drama, entertainment, music, enrichment, movies, animations/special effects, hobby, sport events, pure information, information/tabloid, documentary, education, and children;</p>
 </li>
 <li id="_3af55b2c-32be-c5e9-6c3b-035f7812bed3"><fmt-name id="_3a2761af-f540-9eca-8485-c1c16078f00f"><semx element="autonum" source="_3af55b2c-32be-c5e9-6c3b-035f7812bed3">–</semx></fmt-name><p id="_9ff39f0c-bc80-0c8e-60b8-b6bcb058a0e1" semx-id="_9ff39f0c-bc80-0c8e-60b8-b6bcb058a0e1"><em>PreferenceCondition</em>: describes time, place and/or specific parts of content that can be associated with a particular set for usage restriction. This information can be in different languages;</p>
 </li>
@@ -1878,8 +1878,8 @@ sourcecode .nt {
 
 
 
-<references id="_de9f799b-fb49-1fea-a5f8-1c2a90c9250d" normative="true" obligation="informative" semx-id="_de9f799b-fb49-1fea-a5f8-1c2a90c9250d" displayorder="11">
-<title id="_fd99d3d3-9b08-dc5e-e2a0-dd993e80eb27" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_df7e1da9-1b10-6952-c4a9-d5a2d12f8673"><span class="fmt-caption-label"><semx element="autonum" source="_de9f799b-fb49-1fea-a5f8-1c2a90c9250d">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fd99d3d3-9b08-dc5e-e2a0-dd993e80eb27">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_de9f799b-fb49-1fea-a5f8-1c2a90c9250d">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="iso19136" type="standard" schema-version="v1.5.6" anchor="iso19136" semx-id="_d91da1d1-90e2-319b-1ecc-b4067d4e3471"><biblio-tag>[ISO 19136]</biblio-tag><formattedref>ISO 19136, <em>Geographic information — Geography Markup Language (GML)</em>, First edition.</formattedref>
+<references id="_083a6ac2-2337-872c-81ab-6d3f35a3d3d8" normative="true" obligation="informative" semx-id="_083a6ac2-2337-872c-81ab-6d3f35a3d3d8" displayorder="11">
+<title id="_fd99d3d3-9b08-dc5e-e2a0-dd993e80eb27" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_df7e1da9-1b10-6952-c4a9-d5a2d12f8673"><span class="fmt-caption-label"><semx element="autonum" source="_083a6ac2-2337-872c-81ab-6d3f35a3d3d8">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fd99d3d3-9b08-dc5e-e2a0-dd993e80eb27">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_083a6ac2-2337-872c-81ab-6d3f35a3d3d8">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="iso19136" type="standard" schema-version="v1.5.6" anchor="iso19136" semx-id="_d91da1d1-90e2-319b-1ecc-b4067d4e3471"><biblio-tag>[ISO 19136]</biblio-tag><formattedref>ISO 19136, <em>Geographic information — Geography Markup Language (GML)</em>, First edition.</formattedref>
   <fetched>2026-07-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
@@ -2050,65 +2050,12 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="etsi" type="standard" schema-version="v1.5.6" anchor="etsi" semx-id="_2f9ab739-b78a-61d8-3ebe-41d8fd181a4d"><biblio-tag>[ETSI TS 102 822‑3‑1 V1.13.1 (2024‑05)]</biblio-tag><formattedref>ETSI TS 102 822-3-1 V1.13.1 (2024-05) (2024), <em>Digital Video Broadcasting (DVB); Broadcast and On-line Services: Search, select, and rightful use of content ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1 — Metadata schemas</em>.</formattedref>
-  <fetched>2026-07-27</fetched>
-  
-<title language="en" script="Latn">Digital Video Broadcasting (DVB); Broadcast and On-line Services: Search, select, and rightful use of content ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1 — Metadata schemas</title>
-
-  <uri type="src">https://webapp.etsi.org/workprogram/Report_WorkItem.asp?WKI_ID=69543</uri>
-  <uri type="pdf">https://www.etsi.org/deliver/etsi_ts/102800_102899/1028220301/01.13.01_60/ts_1028220301v011301p.pdf</uri>
-  <docidentifier type="ETSI" primary="true">ETSI TS 102 822-3-1 V1.13.1 (2024-05)</docidentifier><docidentifier scope="biblio-tag">ETSI TS 102 822-3-1 V1.13.1 (2024-05)</docidentifier>
-  <docnumber>ETSI TS 102 822-3-1 V1.13.1 (2024-05)</docnumber>
-  <date type="published">
-    <on>2024-05</on>
-  </date>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">European Telecommunications Standards Institute</name>
-
-      <abbreviation language="en" script="Latn">ETSI</abbreviation>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name>European Telecommunications Standards Institute</name>
-
-      <subdivision type="technical-committee">
-        
-<name>EBU/CENELEC/ETSI on Broadcasting</name>
-
-      </subdivision>
-      <abbreviation language="en" script="Latn">ETSI</abbreviation>
-    </organization>
-  </contributor>
-  <version>1.13.1</version>
+</bibitem><bibitem anchor="etsi" id="etsi" semx-id="_ef5c3449-6347-78b8-90ef-c96c96048c41"><biblio-tag>[ETSI TS 102 822‑3‑1]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">ETSI TS 102 822-3-1, ETSI TS 102 822-3-1 V1.9.2 (2016), <em>Broadcast and On-line Services: Search, select, and rightful use of content on personal storage systems ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1– Metadata schemas</em>.</formattedref>
+  <docidentifier type="ETSI">ETSI TS 102 822-3-1</docidentifier><docidentifier scope="biblio-tag">ETSI TS 102 822-3-1</docidentifier>
+  <docnumber>102 822-3-1</docnumber>
   <language>en</language>
   <script>Latn</script>
-  <abstract language="en" script="Latn">In this update, consolidated Accessibility Attributes structure is added to Related Material and Content Attributes for unified signaling of accessibility features through media and/or application features.</abstract>
-  <status>
-    <stage>Published</stage>
-  </status>
-  <keyword>
-    <vocab language="en" script="Latn">BROADCASTING</vocab>
-  </keyword>
-  <keyword>
-    <vocab language="en" script="Latn">Content</vocab>
-  </keyword>
-  <keyword>
-    <vocab language="en" script="Latn">DATA</vocab>
-  </keyword>
-  <keyword>
-    <vocab language="en" script="Latn">TV</vocab>
-  </keyword>
-  <keyword>
-    <vocab language="en" script="Latn">VIDEO</vocab>
-  </keyword>
 </bibitem><bibitem id="rfc5139" type="standard" schema-version="v1.5.6" anchor="rfc5139" semx-id="_e5d72001-cd88-a1ca-47e5-cc193d93d9fe"><biblio-tag>[IETF RFC 5139]</biblio-tag><formattedref>IETF RFC 5139 (2008), <em>Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)</em>.</formattedref>
   <fetched>2026-07-27</fetched>
   

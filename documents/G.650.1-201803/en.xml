@@ -3929,15 +3929,15 @@
 </ol>
 </clause><clause id="_9bdcc582-7fd8-5b50-2a76-15a127d53c99" anchor="macrobend_loss_reference_bend_radius" inline-header="false" obligation="normative">
 <title id="_699ab59e-b4f6-c179-cab3-bfe11dae1d76">Bend radius</title>
-<p id="_dcaf4f58-5bb0-10f5-3839-d68b6d5a6d36">The value of bend radius shall be in accordance with the values stated in the relevant <eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652"/>, <eref type="inline" bibitemid="ITU-T_G.653" citeas="ITU-T G.653"/>, <eref type="inline" bibitemid="ITU-T_G.654" citeas="ITU-T G.654"/>, <eref type="inline" bibitemid="ITU-T_G.655" citeas="ITU-T G.655"/>, <eref type="inline" bibitemid="ITU-T_G.656" citeas="ITU-T G.656"/> and <eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657"/>. It should be considered that the macrobending losses increase exponentially as radius decreases.<note id="_6a2fb3df-0472-fb05-6498-849f56eadc20"><p id="_d685f167-7ef5-027e-9aea-0963af5915f6">Further information on the relationship between macrobending losses and radius can be found in Annex A of <eref type="inline" bibitemid="IEC_60793-1-47" citeas="IEC 60793-1-47:2017"/>.</p>
+<p id="_dcaf4f58-5bb0-10f5-3839-d68b6d5a6d36">The value of bend radius shall be in accordance with the values stated in the relevant <eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652"/>, <eref type="inline" bibitemid="ITU-T_G.653" citeas="ITU-T G.653"/>, <eref type="inline" bibitemid="ITU-T_G.654" citeas="ITU-T G.654"/>, <eref type="inline" bibitemid="ITU-T_G.655" citeas="ITU-T G.655"/>, <eref type="inline" bibitemid="ITU-T_G.656" citeas="ITU-T G.656"/> and <eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657"/>. It should be considered that the macrobending losses increase exponentially as radius decreases.<note id="_6a2fb3df-0472-fb05-6498-849f56eadc20"><p id="_d685f167-7ef5-027e-9aea-0963af5915f6">Further information on the relationship between macrobending losses and radius can be found in Annex A of <eref type="inline" bibitemid="IEC_60793-1-47" citeas="IEC 60793-1-47"/>.</p>
 </note></p>
 
 
 </clause><clause id="_61dc63d4-853c-127d-8d6d-53a7171d093c" anchor="macrobend_loss_reference_measurement_wavelength" inline-header="false" obligation="normative">
 <title id="_edc18b1b-8558-f099-9712-a2fa406655cc">Measurement wavelength</title>
 <p id="_6705bb74-0452-94d9-85af-574aeb6cbd02">The measurement wavelength shall be 1550 nm or 1625 nm, in accordance with the relevant <eref type="inline" bibitemid="ITU-T_G.652" citeas="ITU-T G.652"/>, <eref type="inline" bibitemid="ITU-T_G.653" citeas="ITU-T G.653"/>, <eref type="inline" bibitemid="ITU-T_G.654" citeas="ITU-T G.654"/>, <eref type="inline" bibitemid="ITU-T_G.655" citeas="ITU-T G.655"/>, <eref type="inline" bibitemid="ITU-T_G.656" citeas="ITU-T G.656"/> and <eref type="inline" bibitemid="ITU-T_G.657" citeas="ITU-T G.657"/>. It should be considered that macrobending losses increase exponentially with the wavelength.<note id="_e536a025-98a7-1730-fcf8-9d77ff98145b"><p id="_fa0e8415-1314-e7b1-6a9c-1f1e2e79234b">As optical bending losses of single-mode fibres increase with wavelength, a loss specification at the highest envisioned wavelength, i.e., either 1550 or 1625 nm, is suffice. If required, customer and supplier can agree on a lower or higher specification wavelength.</p>
-</note><note id="_7dd952a2-16cc-2c05-e486-e61d60752861"><p id="_4f1fddde-626d-ebeb-4699-f8b3331a7de7">Further information on the relationship between macrobending losses and measurement wavelength can be found in Annex A of <eref type="inline" bibitemid="IEC_60793-1-47" citeas="IEC 60793-1-47:2017"/>.</p>
-</note><note id="_4175a709-5f3d-1cb1-fb92-cb7a4574cfdc"><p id="_01f4390b-9595-3ea8-4dd2-199f2ddd41fb">Further information on approximating bend loss for single-mode fibres across a broad wavelength range at various effective bends can be found in Annex E of <eref type="inline" bibitemid="IEC_60793-1-47" citeas="IEC 60793-1-47:2017"/>.</p>
+</note><note id="_7dd952a2-16cc-2c05-e486-e61d60752861"><p id="_4f1fddde-626d-ebeb-4699-f8b3331a7de7">Further information on the relationship between macrobending losses and measurement wavelength can be found in Annex A of <eref type="inline" bibitemid="IEC_60793-1-47" citeas="IEC 60793-1-47"/>.</p>
+</note><note id="_4175a709-5f3d-1cb1-fb92-cb7a4574cfdc"><p id="_01f4390b-9595-3ea8-4dd2-199f2ddd41fb">Further information on approximating bend loss for single-mode fibres across a broad wavelength range at various effective bends can be found in Annex E of <eref type="inline" bibitemid="IEC_60793-1-47" citeas="IEC 60793-1-47"/>.</p>
 </note></p>
 
 
@@ -7042,7 +7042,7 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></stem></formula>
 </li>
 </ol>
 </clause>
-</annex><bibliography><references id="_da6ac395-5a1d-14ef-cce1-5ee1626c68c3" anchor="references" normative="true" obligation="informative">
+</annex><bibliography><references id="_bcb74362-f29e-7b40-160f-0834818a3de6" anchor="references" normative="true" obligation="informative">
 <title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_ef6f0975-12f3-2a66-44c3-0805d5d8dad0" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-1">
   <fetched>2026-07-27</fetched>
   
@@ -7599,117 +7599,7 @@ Mots-clés: diamètre du champ de mode (DCM)</abstract>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_8ca5de6a-fda8-63bd-249e-d6696f5d0efb" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-47">
-  <fetched>2026-07-27</fetched>
-  
-<title language="en" script="Latn" type="title-intro">Optical fibres</title>
-
-  
-<title language="en" script="Latn" type="title-main">Part 1-47: Measurement methods and test procedures</title>
-
-  
-<title language="en" script="Latn" type="title-part">Macrobending loss</title>
-
-  
-<title language="en" script="Latn" type="main">Optical fibres — Part 1-47: Measurement methods and test procedures — Macrobending loss</title>
-
-  
-<title language="fr" script="Latn" type="title-intro">Fibres optiques</title>
-
-  
-<title language="fr" script="Latn" type="title-main">Partie 1-47: Méthodes de mesure et procédures d'essai</title>
-
-  
-<title language="fr" script="Latn" type="title-part">Pertes par macrocourbures</title>
-
-  
-<title language="fr" script="Latn" type="main">Fibres optiques — Partie 1-47: Méthodes de mesure et procédures d'essai — Pertes par macrocourbures</title>
-
-  
-<title language="es" script="Latn" type="title-main">Fibra óptica. Parte 1-47: Métodos de medida y procedimientos de ensayo. Pérdida por macrocurvatura.</title>
-
-  
-<title language="es" script="Latn" type="main">Fibra óptica. Parte 1-47: Métodos de medida y procedimientos de ensayo. Pérdida por macrocurvatura.</title>
-
-  <uri type="src">https://webstore.iec.ch/publication/27706</uri>
-  <uri type="obp">https://webstore.iec.ch/preview/info_iec60793-1-47{ed4.0}b.pdf</uri>
-  <docidentifier type="IEC" primary="true">IEC 60793-1-47:2017</docidentifier>
-  <docidentifier type="URN">urn:iec:std:iec:60793-1-47:2017:::</docidentifier>
-  <date type="published">
-    <on>2017-10-11</on>
-  </date>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-      <abbreviation language="en" script="Latn">IEC</abbreviation>
-      <uri type="org">www.iec.ch</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-      <subdivision type="technical-committee">
-        
-<name language="en" script="Latn">TC 86/SC 86A</name>
-
-        <identifier>86</identifier>
-      </subdivision>
-      <abbreviation language="en" script="Latn">IEC</abbreviation>
-    </organization>
-  </contributor>
-  <edition>4</edition>
-  <language>en</language>
-  <language>fr</language>
-  <language>es</language>
-  <script>Latn</script>
-  <abstract language="en" script="Latn"><!-- NEW -->IEC 60793-1-47:2017 establishes uniform requirements for measuring the macrobending loss of single-mode fibres (class B) at 1 550 nm or 1 625 nm, category A1 multimode fibres at 850 nm or 1 300 nm, and category A3 and A4 multimode fibres at 650 nm, 850 nm or 1 300 nm, thereby assisting in the inspection of fibres and cables for commercial purposes. This document gives two methods for measuring macrobending sensitivity:<br/>
-- Method A – Fibre winding, pertains to class B single-mode fibres and category A1 multimode fibres.<br/>
-- Method B – Quarter circle bends, pertains to category A3 and A4 multimode fibres.<br/>
-For both of these methods, the macrobending loss can be measured utilizing general fibre attenuation techniques, for example the power monitoring technique (see Annex A) or the cut‑back technique (see Annex B). Methods A and B are expected to produce different results if they are applied to the same fibre. This is because the key difference between the two methods is the deployment, including the bend radius and length of fibre that is bent. The reason for the difference is that A3 and A4 multimode fibres are expected to be deployed in short lengths with a smaller number of bends per unit fiber length compared to single-mode and category A1 multimode fibres. In this document, the "curvature radius" is defined as the radius of the suitable circular shaped support (e.g. mandrel or guiding groove on a flat surface) on which the fibre can be bent. In addition, informative Annex E has been added to approximate bend loss for class B single-mode fibres across a broad wavelength range at various effective bends. This fourth edition cancels and replaces the third edition published in 2009. It constitutes a technical revision. This edition includes the following significant technical changes with respect to the previous edition:<br/>
-- former Annex A has been renumbered to Annex D;<br/>
-- introduction of new Annex A on the transmitted power monitoring technique;<br/>
-- introduction of Annex B on the cut-back technique;<br/>
-- introduction of Annex C on the requirements for the optical source characteristics of A1 multimode measurement;<br/>
-- introduction of Annex E on parallel plate (2-point) macrobend loss approximation.<br/>
-Keywords: macrobending loss of single-mode fibers</abstract>
-  <abstract language="fr" script="Latn"><!-- NEW -->IEC 60793-1-47:2017 établit des exigences uniformes pour la mesure des pertes par macrocourbures pour les fibres optiques unimodales (classe B) à 1 550 nm ou 1 625 nm, pour les fibres multimodales de catégorie A1 à 850 nm ou 1 300 nm, et les fibres multimodales des catégories A3 et A4 à 650 nm, 850 nm ou 1 300 nm, contribuant ainsi au contrôle des fibres et câbles dans des relations commerciales. Le présent document décrit deux méthodes destinées à mesurer la sensibilité aux macrocourbures:<br/>
-- Méthode A – Enroulement de fibre, se rapporte aux fibres unimodales de classe B et aux fibres multimodales de catégorie A1.<br/>
-- Méthode B – Courbures d'un quart de cercle, se rapporte aux fibres multimodales de catégories A3 et A4.<br/>
-Pour les deux méthodes, les pertes par macrocourbures peuvent être mesurées par des techniques générales d'affaiblissement des fibres, par exemple la technique de mesure de la puissance (voir Annexe A) ou la technique de la fibre coupée (voir Annexe B). Les méthodes A et B sont susceptibles de produire des résultats différents si elles sont appliquées à la même fibre. Ceci est dû au fait que la différence fondamentale entre les deux méthodes réside dans la façon de les déployer, comprenant à la fois le rayon de courbure et la longueur de fibre courbée. La raison de cette différence repose sur le fait que les fibres multimodales des catégories A3 et A4 sont conçues pour être installées sur de petites longueurs et avec un faible nombre de courbures par unité de longueur de fibre par rapport aux fibres unimodales et aux fibres multimodales de la catégorie A1. Dans le présent document, le "rayon de courbure" est défini comme le rayon du support adapté de forme circulaire (par exemple, un mandrin ou une rainure de guidage sur une surface plane) sur lequel la fibre peut être courbée. En outre, l'Annexe E (informative) a été ajoutée pour présenter une approximation des pertes par courbures pour des fibres unimodales de classe B sur une large plage de longueurs d'onde pour différentes courbures effectives. Cette quatrième édition annule et remplace la troisième édition publiée en 2009 dont elle constitue une révision technique. Cette édition inclut les modifications techniques majeures suivantes par rapport à l'édition précédente:<br/>
-- l'Annexe A a été renumérotée Annexe D;<br/>
-- une nouvelle Annexe A portant sur la technique de la mesure de la puissance transmise a été introduite;<br/>
-- l'Annexe B portant sur la technique de la fibre coupée a été introduite;<br/>
-- l'Annexe C portant sur les exigences relatives aux caractéristiques des sources optiques pour une mesure des fibres multimodales de catégorie A1 a été introduite;<br/>
-- l'Annexe E portant sur l'approximation des pertes par macrocourbures utilisant des plaques parallèles (deux points) a été introduite.<br/>
-<br/>
-Mots clés : macrocourbures pour les fibres optiques unimodales</abstract>
-  <status>
-    <stage>PUBLISHED</stage>
-  </status>
-  <copyright>
-    <from>2017</from>
-    <owner>
-      <organization>
-        
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-        <abbreviation language="en" script="Latn">IEC</abbreviation>
-        <uri type="org">www.iec.ch</uri>
-      </organization>
-    </owner>
-  </copyright>
-  <place>
-    <city>Geneva</city>
-  </place>
-</bibitem><bibitem id="_412b0067-187b-8794-8e2b-4c3269b73d2b" type="standard" schema-version="v1.5.6" anchor="IEC_61745">
+</bibitem><bibitem id="_303760e5-3ba3-6ac8-50f5-179af942374c" type="standard" schema-version="v1.5.6" anchor="IEC_61745">
   <fetched>2026-07-27</fetched>
   
 <title language="en" script="Latn" type="title-main">End-face image analysis procedure for the calibration of optical fibre geometry test sets</title>
@@ -7787,7 +7677,7 @@ Mots clés: analyse d'image d'extrémité, essais de géométrie des fibres opti
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_da57be15-6132-54dd-abcd-b011837b6b80" type="standard" schema-version="v1.5.6" anchor="IEC_61746-1">
+</bibitem><bibitem id="_71335601-2c8f-de58-7a2d-7f47e11ed283" type="standard" schema-version="v1.5.6" anchor="IEC_61746-1">
   <fetched>2026-07-27</fetched>
   
 <title language="en" script="Latn" type="title-main">Calibration of optical time-domain reflectometers (OTDR)</title>
@@ -7866,7 +7756,11 @@ Mots clés: analyse d'image d'extrémité, essais de géométrie des fibres opti
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem anchor="ITU-T_G.650.2" id="_72b55628-300d-5df1-a3de-e9d6c6d55175">
+</bibitem><bibitem anchor="IEC_60793-1-47" id="_5efb8ccb-a87a-9a41-d559-6b6ebcad4ba9" type="standard">
+<title format="text/plain">IEC 60793-1-47 (2017), <em>Optical fibres – Part 1-47: Measurement methods and test procedures – Macrobending loss.</em></title>
+<docidentifier type="IEC">IEC 60793-1-47</docidentifier><docnumber>60793-1-47</docnumber><contributor><role type="publisher"/><organization>
+<name>IEC</name>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="ITU-T_G.650.2" id="_72b55628-300d-5df1-a3de-e9d6c6d55175">
   <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.650.2 (2015), <em>Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable.</em></formattedref>
   <docidentifier type="ITU">ITU-T G.650.2</docidentifier>
   <docnumber>650.2</docnumber>
