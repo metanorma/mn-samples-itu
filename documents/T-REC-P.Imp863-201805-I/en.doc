@@ -1,7 +1,7 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_5d17053b.e8f2.4094"
+Content-Type: multipart/related; boundary="----=_NextPart_ce9449cd.5a2d.47d9"
 
-------=_NextPart_5d17053b.e8f2.4094
+------=_NextPart_ce9449cd.5a2d.47d9
 Content-ID: <en.htm>
 Content-Disposition: inline; filename="en.htm"
 Content-Type: text/html; charset="utf-8"
@@ -2031,6 +2031,7 @@ p.Sourcecode .nt {
 }
 
 
+
 -->
 ]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
   <!--
@@ -2913,7 +2914,7 @@ p.Formula, li.Formula, div.Formula {
   mso-ansi-language: EN-GB;
 }
 
-table.formula_dl {
+div.formula_dl, p.formula_dl, table.formula_dl {
   margin-left: 1.4cm;
   margin-right: 1.4cm;
 }
@@ -3187,6 +3188,11 @@ table.MsoISOTable td, table.MsoISOTableBig td {
   padding: 0cm 2.85pt 0cm 2.85pt;
 }
 
+table.MsoNormalTable th, table.MsoNormalTable td {
+  border: none;
+  mso-border-alt: none;
+}
+
 table.MsoISOTable p, table.MsoISOTableBig p {
   font-size: 11.0pt;
 }
@@ -3340,7 +3346,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:70.9pt;mso-height-rule:   exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal"><v:shapetype coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><a name="_x0000_t75" id="_x0000_t75"></a>
+  <p class="MsoNormal"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
    <v:stroke joinstyle="miter"/>
    <v:formulas>
     <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -3358,8 +3364,8 @@ table.biblio td {
    </v:formulas>
    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
    <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f"><a name="Picture_x0020_2" id="Picture_x0020_2"></a>
-  <v:imagedata src="cid:3504d95b-060e-44e5-9be0-2122bea7316b.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
+  </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f">
+  <v:imagedata src="cid:d538a5d0-1620-4a95-87ac-5c1fc638ab23.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
   </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></a></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></b></span></p>
@@ -3488,8 +3494,8 @@ table.biblio td {
 <p class="MsoNormal" align="right" style="margin-top:0.0pt;text-align:right; tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm">
   <span style="mso-bookmark: _Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt; font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-no-proof:yes" xml:lang="EN-US">
-      <v:shape o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square"><a name="Picture_x0020_1" id="Picture_x0020_1"></a>
-<v:imagedata src="cid:909517d8-d7ab-483b-b0c6-8f7c94a718d9.svg" o:title="logo_E" width="272" height="300"/>
+      <v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square">
+<v:imagedata src="cid:332b7498-e618-4ba9-a988-c9e312f255b8.svg" o:title="logo_E" width="272" height="300"/>
 </v:shape>
     </span>
   </span>
@@ -3509,6 +3515,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
+    
   <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers&#x2019; Guide ITU-T P.863 Implementers' Guide<o:p class="MsoNormal"></o:p></span></span></p>
   <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Implementers' guide for P.863<o:p class="MsoNormal"></o:p></span></span></p>
   
@@ -3518,7 +3525,6 @@ table.biblio td {
   
   
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3534,14 +3540,14 @@ table.biblio td {
 
 
 
-<p class="MsoNormal"><o:wrapblock><v:shapetype coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><a name="_x0000_t202" id="_x0000_t202"></a>
+<p class="MsoNormal"><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt"><a name="Text_x0020_Box_x0020_1" id="Text_x0020_Box_x0020_1"></a>
+ </v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
   <v:fill o:detectmouseclick="t"></v:fill>
   <v:textbox style="mso-fit-shape-to-text:t">
       <div><a name="abstractbox" id="abstractbox"></a>
-  	 <div class="Abstract"><a name="_summary" id="_summary"></a><p class="h1Preface">Summary</p><p class="MsoNormal"><a name="_1dfebe3c-046f-6b81-87e3-70dea8293a0e" id="_1dfebe3c-046f-6b81-87e3-70dea8293a0e"></a>This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p><p class="MsoNormal"><a name="_be206765-85dd-592a-b4ed-0678f65f41cf" id="_be206765-85dd-592a-b4ed-0678f65f41cf"></a>This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p></div></div>
+  	 <div class="Abstract"><a name="_37acbf9a-8868-bddd-782b-e35d81cdd352" id="_37acbf9a-8868-bddd-782b-e35d81cdd352"></a><p class="h1Preface">Summary</p><p class="MsoNormal"><a name="_1dfebe3c-046f-6b81-87e3-70dea8293a0e" id="_1dfebe3c-046f-6b81-87e3-70dea8293a0e"></a>This document contains all updates submitted up to and including those at Study Group 12 meeting in May 2018.</p><p class="MsoNormal"><a name="_be206765-85dd-592a-b4ed-0678f65f41cf" id="_be206765-85dd-592a-b4ed-0678f65f41cf"></a>This document was approved by ITU-T Study Group 12 on 10 May 2018 and is the initial version of this implementers' guide.</p></div></div>
      </v:textbox>
   <w:wrap type="topAndBottom" anchory="margin"/>
   <w:anchorlock></w:anchorlock>
@@ -3618,8 +3624,7 @@ table.biblio td {
 <div><a name="boilerplate-license-destination" id="boilerplate-license-destination"></a></div>
 <div class="boilerplate-copyright">
 
-<div><a name="_f1f445f2-06f2-abca-49ac-16e500ea8d49" id="_f1f445f2-06f2-abca-49ac-16e500ea8d49"></a>
-<p class="boilerplateHdr"><a name="_d10aa1d5-f372-c5d0-5605-ee511b386173" id="_d10aa1d5-f372-c5d0-5605-ee511b386173"></a>&#xA9; ITU 2018</p>
+<div><a name="_8d313973-2235-f756-5550-6205500a3451" id="_8d313973-2235-f756-5550-6205500a3451"></a><p class="boilerplateHdr"><a name="_d10aa1d5-f372-c5d0-5605-ee511b386173" id="_d10aa1d5-f372-c5d0-5605-ee511b386173"></a>&#xA9; ITU 2018</p>
 
 <p class="boilerplate"><a name="_5d0be5a7-3d06-59c3-6502-3c92441bc890" id="_5d0be5a7-3d06-59c3-6502-3c92441bc890"></a>All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </div>
@@ -3630,149 +3635,150 @@ table.biblio td {
 </p></p><div class="authority">
 
 
-</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_cec79f2f-fc4f-4c13-a0b3-7998fe281a7c" id="_cec79f2f-fc4f-4c13-a0b3-7998fe281a7c"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_79bda703-4de4-e387-3f90-33444dda93f0" id="_79bda703-4de4-e387-3f90-33444dda93f0"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc942045360">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc669617596">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc942045360 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc669617596 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc422508087">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc876702588">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc422508087 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc876702588 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc298029014">3. Introduction<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc209454385">3. Introduction<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc298029014 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc209454385 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc075837962">4. Defect resolution procedure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc869016540">4. Defect resolution procedure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc075837962 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc869016540 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc844955039">5. Nomenclature<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc610757136">5. Nomenclature<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc844955039 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc610757136 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc231950532">6. Technical and editorial corrections to Recommendation P.863<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc854692669">6. Technical and editorial corrections to Recommendation P.863<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc231950532 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc854692669 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc586048303">6.1. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc397680199">6.1. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc586048303 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc397680199 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc420533366">6.2. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc927593068">6.2. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc420533366 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc927593068 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc089663727">6.3. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc810476717">6.3. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc089663727 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc810476717 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc928602503">6.4. Annex B, TimeAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc674582434">6.4. Annex B, TimeAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc928602503 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc674582434 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc203823845">6.5. Annex B, SpeechTempAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc117410095">6.5. Annex B, SpeechTempAlign.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc203823845 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc117410095 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc117209165">6.6. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc931217280">6.6. Annex B, TempAlignment.pdf<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc117209165 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc931217280 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc828248804">6.7. Annex A, subfolder Results Ed. 3<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc143769185">6.7. Annex A, subfolder Results Ed. 3<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc828248804 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc143769185 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc419319372">6.8. Annex B - additional info<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc565867781">6.8. Annex B - additional info<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc419319372 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc565867781 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc935542869">
-  Annex A
+<a href="#_Toc587055689">
+  <b>Annex A</b>
    
    
-  P.863 (2018-03) Defect Report Form
+  <b>P.863 (2018-03) Defect Report Form</b>
 <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc935542869 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc587055689 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
-</div><div><a name="_change_log" id="_change_log"></a><p class="h1Preface">Change log</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_11a20585-392a-89b9-c931-1939edfc226a" id="_11a20585-392a-89b9-c931-1939edfc226a"></a><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">2018-05</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Initial version</td></tr></tbody></table></div></div><div><a name="_4821ae9a-a008-4cba-98c1-a2d1f0fe1e6a" id="_4821ae9a-a008-4cba-98c1-a2d1f0fe1e6a"></a><p class="h1Preface"></p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_9183259d-acd1-4fa5-9d02-969552419672" id="_9183259d-acd1-4fa5-9d02-969552419672"></a><tbody><tr><th valign="top" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Editors:</th><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Jens Berger<br/>Rohde &amp; Schwarz, Switzerland</td><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">E-mail: <a href="mailto:jens.berger@rohde-schwarz.com" class="url">jens.berger@rohde-schwarz.com</a></td></tr><tr><th valign="top" style="font-weight:bold;border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"></th><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Joachim Pomy<br/>OPTICOM GmbH, Germany</td><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">E-mail: <a href="mailto:consultant@joachimpomy.de" class="url">consultant@joachimpomy.de</a></td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
+</div><div><a name="_9797e404-e124-d442-e2d0-6ae502f5369a" id="_9797e404-e124-d442-e2d0-6ae502f5369a"></a><p class="h1Preface">Change log</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_11a20585-392a-89b9-c931-1939edfc226a" id="_11a20585-392a-89b9-c931-1939edfc226a"></a><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">2018-05</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Initial version</td></tr></tbody></table></div></div><div><a name="_9210dd20-51e3-e42d-7461-04173a552028" id="_9210dd20-51e3-e42d-7461-04173a552028"></a><p class="h1Preface"></p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_0b5faf96-b91b-7e46-381d-5554054e1d32" id="_0b5faf96-b91b-7e46-381d-5554054e1d32"></a><tbody><tr><th valign="top" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Editors:</th><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Jens Berger<br/>Rohde  Schwarz, Switzerland</td><td valign="top" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">E-mail: <a href="mailto:jens.berger@rohde-schwarz.com">jens.berger@rohde-schwarz.com</a></td></tr><tr><th valign="top" style="font-weight:bold;border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;"></th><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Joachim Pomy<br/>OPTICOM GmbH, Germany</td><td valign="top" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">E-mail: <a href="mailto:consultant@joachimpomy.de">consultant@joachimpomy.de</a></td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
     <p class="MsoNormal">
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection3">
-      <p class="zzSTDTitle1">Implementers Guide ITU-T P.863 Implementers' Guide</p>
+      <p class="zzSTDTitle1">Implementers&#x2019; Guide
+  ITU-T P.863 Implementers' Guide</p>
       <p class="zzSTDTitle2">Implementers' guide for P.863</p>
       <div>
-        <a name="_scope" id="_scope"></a>
+        <a name="_8cabe646-0bfa-aa5f-c57c-c3548666eac2" id="_8cabe646-0bfa-aa5f-c57c-c3548666eac2"></a>
         <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1>
         <p class="MsoNormal"><a name="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265" id="_b5acbc2f-a9c9-e3d6-e75a-0a4f1e3ea265"></a>This guide resolves defects in the following categories:</p>
-        <div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst">editorial errors
+        <div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_33d61e7f-f017-e5e5-0d39-eb4db89c428c" id="_33d61e7f-f017-e5e5-0d39-eb4db89c428c"></a>editorial errors
 </p>
-<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpMiddle">technical errors, such as omissions and inconsistencies
+<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpMiddle"><a name="_5679cb8b-ecbf-c86e-aa11-29834a64b32c" id="_5679cb8b-ecbf-c86e-aa11-29834a64b32c"></a>technical errors, such as omissions and inconsistencies
 </p>
-<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast">ambiguities
+<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast"><a name="_99c19d4f-3e2d-bc34-8d88-9ae5ac4f9e73" id="_99c19d4f-3e2d-bc34-8d88-9ae5ac4f9e73"></a>ambiguities
 </p>
 </div>
         <p class="MsoNormal"><a name="_b5fca65c-b073-e623-4f07-8e57cc4c15d1" id="_b5fca65c-b073-e623-4f07-8e57cc4c15d1"></a>In addition, the implementers' guide may include explanatory text found necessary as a result of interpretation difficulties apparent from the defect reports.</p>
@@ -3789,26 +3795,26 @@ table.biblio td {
             </tr>
             <tr class="NormRef">
               <a name="p863" id="p863"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;P.863&#xA0;(03/2018)]</td>
-              <td>Recommendation ITU-T&#xA0;P.863&#xA0;(03/2018) (2018), <i>Perceptual objective listening quality prediction</i>, Third edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;P.863:2018]</td>
+              <td>Recommendation ITU-T&#xA0;P.863:2018 (2018), [NO INFORMATION AVAILABLE].</td>
             </tr>
           </tbody>
         </table>
       </div>
       <div>
-        <a name="_introduction" id="_introduction"></a>
+        <a name="_d68e13cd-0196-187d-3daf-45a6b95698ea" id="_d68e13cd-0196-187d-3daf-45a6b95698ea"></a>
         <h1>3.<span style="mso-tab-count:1">&#xA0; </span>Introduction</h1>
-        <p class="MsoNormal"><a name="_e15ac562-4a67-cb8e-a233-c6f9dbd3e392" id="_e15ac562-4a67-cb8e-a233-c6f9dbd3e392"></a>This implementers' guide is a compilation of reported defects for the version 2018-03 of <a href="#p863">[ITU-T&#xA0;P.863&#xA0;(03/2018)]</a>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
+        <p class="MsoNormal"><a name="_e15ac562-4a67-cb8e-a233-c6f9dbd3e392" id="_e15ac562-4a67-cb8e-a233-c6f9dbd3e392"></a>This implementers' guide is a compilation of reported defects for the version 2018-03 of <a href="#p863">[ITU-T&#xA0;P.863:2018]</a>. In this edition of the guide, reported defects identified as of 2018-05 are given for:</p>
         <p class="MsoNormal"><a name="_457d763d-98a1-3c2c-2faf-5fdf575bf76a" id="_457d763d-98a1-3c2c-2faf-5fdf575bf76a"></a>P.863</p>
         <p class="MsoNormal"><a name="_5308c9ad-ac84-ca4a-2f58-3a376ee26636" id="_5308c9ad-ac84-ca4a-2f58-3a376ee26636"></a>The guide must be read in conjunction with Recommendation P.863 to serve as an additional source of information for implementers. The changes, clarifications and corrections defined herein are expected to be included in future versions of the affected Recommendations.</p>
       </div>
       <div>
-        <a name="_defect_resolution_procedure" id="_defect_resolution_procedure"></a>
+        <a name="_a3bfa48c-a96a-b654-901e-af6035d61128" id="_a3bfa48c-a96a-b654-901e-af6035d61128"></a>
         <h1>4.<span style="mso-tab-count:1">&#xA0; </span>Defect resolution procedure</h1>
         <p class="MsoNormal"><a name="_8568ddf5-78a5-d0cf-8bac-a26231c0407d" id="_8568ddf5-78a5-d0cf-8bac-a26231c0407d"></a>Upon discovering technical defects with any components of the texts covered by this implementers' guide, please provide a written description directly to the editors of the affected Recommendation(s) with a copy to the respective Rapporteur (See contacts above on page iii). The template for a defect report is located at the end of this guide. Return contact information should also be supplied so a dialogue can be established to resolve the matter and an appropriate reply to the defect report can be conveyed. This defect resolution process is open to any interested party. Formal membership in the ITU is not required to participate in this process.</p>
       </div>
       <div>
-        <a name="_nomenclature" id="_nomenclature"></a>
+        <a name="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a" id="_6ec18be4-2fad-9496-27ab-7c884ca1cd3a"></a>
         <h1>5.<span style="mso-tab-count:1">&#xA0; </span>Nomenclature</h1>
         <p class="MsoNormal"><a name="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642" id="_38b4f64e-38ed-5b1e-d13c-9ab3da7f9642"></a>In addition to traditional revision marks, the following marks and symbols are used to indicate to the reader how changes to the text of a Recommendation should be applied:</p>
         <div align="center" class="table_container">
@@ -3854,9 +3860,9 @@ table.biblio td {
         </div>
       </div>
       <div>
-        <a name="_technical_and_editorial_corrections_to_recommendation_p_863" id="_technical_and_editorial_corrections_to_recommendation_p_863"></a>
+        <a name="_87d7249f-69f7-a196-ad64-e1d8cbdc3911" id="_87d7249f-69f7-a196-ad64-e1d8cbdc3911"></a>
         <h1>6.<span style="mso-tab-count:1">&#xA0; </span>Technical and editorial corrections to Recommendation P.863</h1>
-        <div><a name="_annex_b_tempalignment_pdf" id="_annex_b_tempalignment_pdf"></a><h2>6.1.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
+        <div><a name="_09de59f7-1725-14fd-0158-8fb7903859b6" id="_09de59f7-1725-14fd-0158-8fb7903859b6"></a><h2>6.1.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
 
 <p class="MsoNormal"><a name="_9ff6fe16-cb2d-61d6-54d9-17484b2929bb" id="_9ff6fe16-cb2d-61d6-54d9-17484b2929bb"></a><i>Missing statement, which rendered part of the surrounding code useless.</i></p>
 
@@ -3869,7 +3875,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_c200a9b3-b096-ca85-bff8-e5e0cbde8625" id="_c200a9b3-b096-ca85-bff8-e5e0cbde8625"></a>[End Correction]</p>
 </div>
-        <div><a name="_annex_b_tempalignment_pdf_2" id="_annex_b_tempalignment_pdf_2"></a><h2>6.2.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
+        <div><a name="_98e3218b-db54-fead-b72f-6cb7514dcd99" id="_98e3218b-db54-fead-b72f-6cb7514dcd99"></a><h2>6.2.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
 
 <p class="MsoNormal"><a name="_d238be08-f54f-4331-7d07-0071fd210301" id="_d238be08-f54f-4331-7d07-0071fd210301"></a><i>The fix from clause 6.1 requires setting larger search ranges for simple delay search problems. The old bounds were not used before due to the bug.</i></p>
 
@@ -3889,7 +3895,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_894efce1-9ef8-d209-e3fb-4662fd1405a9" id="_894efce1-9ef8-d209-e3fb-4662fd1405a9"></a>[End Correction]</p>
 </div>
-        <div><a name="_annex_b_tempalignment_pdf_3" id="_annex_b_tempalignment_pdf_3"></a><h2>6.3.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
+        <div><a name="_2da0e71b-28d7-a4e6-d7a1-5ca13ce2b580" id="_2da0e71b-28d7-a4e6-d7a1-5ca13ce2b580"></a><h2>6.3.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
 
 <p class="MsoNormal"><a name="_39095eec-6a6b-afbe-72fc-b6372f3ca7c6" id="_39095eec-6a6b-afbe-72fc-b6372f3ca7c6"></a><i>The fix from clause 6.1 revealed that before combining sections of constant delay, it was not sufficiently checked that both sections are either active speech or silence.</i></p>
 
@@ -3909,7 +3915,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_526c0414-be6f-fcc4-9ed0-c76b719b8734" id="_526c0414-be6f-fcc4-9ed0-c76b719b8734"></a><i>[End Correction]</i></p>
 </div>
-        <div><a name="_annex_b_timealign_pdf" id="_annex_b_timealign_pdf"></a><h2>6.4.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TimeAlign.pdf</h2>
+        <div><a name="_1eb7f56c-3a13-da8d-3fd9-119dbbc9aa19" id="_1eb7f56c-3a13-da8d-3fd9-119dbbc9aa19"></a><h2>6.4.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TimeAlign.pdf</h2>
 
 <p class="MsoNormal"><a name="_79163186-8dc9-2a87-a0e7-5eb450a630d0" id="_79163186-8dc9-2a87-a0e7-5eb450a630d0"></a><i>When building a histogram of correlations, the buffers of the correlations where not shifted, thus all values in the histogram were the same.</i></p>
 
@@ -3929,7 +3935,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_534ce186-ba40-d7c1-b310-088e0d62e34f" id="_534ce186-ba40-d7c1-b310-088e0d62e34f"></a>[End Correction]</p>
 </div>
-        <div><a name="_annex_b_speechtempalign_pdf" id="_annex_b_speechtempalign_pdf"></a><h2>6.5.<span style="mso-tab-count:1">&#xA0; </span>Annex B, SpeechTempAlign.pdf</h2>
+        <div><a name="_ae6afe94-781e-3254-74ab-e4758d430665" id="_ae6afe94-781e-3254-74ab-e4758d430665"></a><h2>6.5.<span style="mso-tab-count:1">&#xA0; </span>Annex B, SpeechTempAlign.pdf</h2>
 
 <p class="MsoNormal"><a name="_c18e2018-17e4-6e03-7c8a-566ab69f7866" id="_c18e2018-17e4-6e03-7c8a-566ab69f7866"></a><i>Avoid round-off errors by bounding the noise threshold at the lower end. This is only important to make porting to other platforms easier.</i></p>
 
@@ -3942,7 +3948,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_9a4f7498-c00a-8290-658a-b77a07782a25" id="_9a4f7498-c00a-8290-658a-b77a07782a25"></a>[End Correction]</p>
 </div>
-        <div><a name="_annex_b_tempalignment_pdf_4" id="_annex_b_tempalignment_pdf_4"></a><h2>6.6.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
+        <div><a name="_e1e82a8a-dc93-be02-f63d-b94e061ddb24" id="_e1e82a8a-dc93-be02-f63d-b94e061ddb24"></a><h2>6.6.<span style="mso-tab-count:1">&#xA0; </span>Annex B, TempAlignment.pdf</h2>
 
 <p class="MsoNormal"><a name="_7dde7f31-1bf7-5019-2e65-76e36ea700ca" id="_7dde7f31-1bf7-5019-2e65-76e36ea700ca"></a><i>Avoid calculating correlation for signal segments which do not contain speech.</i></p>
 
@@ -3962,7 +3968,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_d8c798e9-414b-2cc0-3ce4-984e20bb8dca" id="_d8c798e9-414b-2cc0-3ce4-984e20bb8dca"></a>[End Correction]</p>
 </div>
-        <div><a name="_annex_a_subfolder_results_ed_3" id="_annex_a_subfolder_results_ed_3"></a><h2>6.7.<span style="mso-tab-count:1">&#xA0; </span>Annex A, subfolder Results Ed. 3</h2>
+        <div><a name="_afac23fb-0863-2435-d195-7526a8bdb8a1" id="_afac23fb-0863-2435-d195-7526a8bdb8a1"></a><h2>6.7.<span style="mso-tab-count:1">&#xA0; </span>Annex A, subfolder Results Ed. 3</h2>
 
 <p class="MsoNormal"><a name="_a8c8061d-bc65-acd6-4e2f-a201332c6250" id="_a8c8061d-bc65-acd6-4e2f-a201332c6250"></a><i>The fixes in clauses 6.1 through 6.6 lead to minor changes in the conformance test results. Therefore the subfolder containing the old result files has to be replaced by the subfolder containing the new result files provided in the attached zip file.</i></p>
 
@@ -3982,7 +3988,7 @@ table.biblio td {
 
 <p class="MsoNormal"><a name="_70e19d08-10b4-5f3c-d6a6-9b652ce85dcf" id="_70e19d08-10b4-5f3c-d6a6-9b652ce85dcf"></a>[End Correction]</p>
 </div>
-        <div><a name="_annex_b_additional_info" id="_annex_b_additional_info"></a><h2>6.8.<span style="mso-tab-count:1">&#xA0; </span>Annex B - additional info</h2>
+        <div><a name="_27b55f05-7bc1-7136-92c4-b4a4925576d5" id="_27b55f05-7bc1-7136-92c4-b4a4925576d5"></a><h2>6.8.<span style="mso-tab-count:1">&#xA0; </span>Annex B - additional info</h2>
 
 <div class="Note"><a name="_100e0ee3-c202-0067-f9bd-7d2f479492d4" id="_100e0ee3-c202-0067-f9bd-7d2f479492d4"></a><p class="Note"><span class="note_label">NOTE&#xA0;&#x2013;&#xA0;</span>The fixes from clauses 6.1 through 6.6 have been applied to the Detailed Description files and a new set of all these pdf-files is provided as an electronic attachment.</p></div>
 </div>
@@ -3991,7 +3997,7 @@ table.biblio td {
         <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
       </p>
       <div class="Section3">
-        <a name="_p_863_2018_03_defect_report_form" id="_p_863_2018_03_defect_report_form"></a>
+        <a name="_3f78f8ef-098b-755b-a1a3-6e4da853fe25" id="_3f78f8ef-098b-755b-a1a3-6e4da853fe25"></a>
         <h1 class="Annex">
           <b>Annex A</b>
           <br/>
@@ -3999,16 +4005,17 @@ table.biblio td {
           <b>P.863 (2018-03) Defect Report Form</b>
         </h1>
         <p class="annex_obligation">(This annex forms an integral part of this Implementers&#x2019; Guide.)</p>
+        <p style="display:none;" class="variant-title-toc">Annex A<span style="mso-tab-count:1">&#xA0; </span>P.863 (2018-03) Defect Report Form</p>
         <div align="center" class="table_container">
           <table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;">
-            <a name="_42b75c9a-c152-d54c-4fc5-fef84ee2dd1d" id="_42b75c9a-c152-d54c-4fc5-fef84ee2dd1d"></a>
+            <a name="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369" id="_eaf93d1f-1aeb-5af6-754c-4cc3682cd369"></a>
             <tbody>
               <tr>
                 <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">DATE:</td>
                 <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"></td>
               </tr>
               <tr>
-                <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><p style="text-align: left;page-break-after:avoid" class="MsoNormal"><a name="_b7fd4069-24f3-7089-2cb5-e8aea0ec3d02" id="_b7fd4069-24f3-7089-2cb5-e8aea0ec3d02"></a>CONTACT INFORMATION<br/> NAME: <br/> COMPANY: <br/> ADDRESS: <br/> TEL: <br/> FAX: <br/> E-MAIL:</p>
+                <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><p style="text-align: left;page-break-after:avoid" class="MsoNormal"><a name="_c689d0f9-96b4-2efb-8e2f-3ecae1e516a2" id="_c689d0f9-96b4-2efb-8e2f-3ecae1e516a2"></a>CONTACT INFORMATION<br/> NAME:<br/> COMPANY:<br/> ADDRESS:<br/> TEL:<br/> FAX:<br/> E-MAIL:</p>
 </td>
                 <td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"></td>
               </tr>
@@ -4044,7 +4051,7 @@ table.biblio td {
 </html>
 
 
-------=_NextPart_5d17053b.e8f2.4094
+------=_NextPart_ce9449cd.5a2d.47d9
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
@@ -4053,14 +4060,14 @@ Content-Type: application/xml
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
 ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1pdHUvbW4tc2FtcGxl
 cy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLVAuSW1wODYzLTIwMTgwNS1JL2VuLmh0bSIvPiAg
-PG86RmlsZSBIUmVmPSIzNTA0ZDk1Yi0wNjBlLTQ0ZTUtOWJlMC0yMTIyYmVhNzMxNmIucG5nIi8+
-CiAgPG86RmlsZSBIUmVmPSI5MDk1MTdkOC1kN2FiLTQ4M2ItYjBjNi04ZjdjOTRhNzE4ZDkuc3Zn
+PG86RmlsZSBIUmVmPSIzMzJiNzQ5OC1lNjE4LTRiYTktYTk4OC1jOWUzMTJmMjU1Yjguc3ZnIi8+
+CiAgPG86RmlsZSBIUmVmPSJkNTM4YTVkMC0xNjIwLTRhOTUtODdhYy01YzFmYzYzOGFiMjMucG5n
 Ii8+CiAgPG86RmlsZSBIUmVmPSJmaWxlbGlzdC54bWwiLz4KICA8bzpGaWxlIEhSZWY9ImhlYWRl
 ci5odG1sIi8+CjwveG1sPgo=
 
-------=_NextPart_5d17053b.e8f2.4094
-Content-ID: <3504d95b-060e-44e5-9be0-2122bea7316b.png>
-Content-Disposition: inline; filename="3504d95b-060e-44e5-9be0-2122bea7316b.png"
+------=_NextPart_ce9449cd.5a2d.47d9
+Content-ID: <d538a5d0-1620-4a95-87ac-5c1fc638ab23.png>
+Content-Disposition: inline; filename="d538a5d0-1620-4a95-87ac-5c1fc638ab23.png"
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -4464,11 +4471,139 @@ C7+w2Xb7Eb3o/8qNmGQMnLRiOgtj4OgmE+D4QbowaScm34WpzzFww2/qzparyA1MuOWqRprGNpt9
 e2wfOBmiVbYRslL9tQ8BUrd6JgExGYgGP2+SBj+gC2zppLgQoH0GxLx7ix3HWQBlaDjfTIMuKwYo
 7AdNOpT6a4JR2HSg3ZakAcg368qo/H9lWc/6NFehlQAAAABJRU5ErkJggg==
 
-------=_NextPart_5d17053b.e8f2.4094
+------=_NextPart_ce9449cd.5a2d.47d9
+Content-ID: <332b7498-e618-4ba9-a988-c9e312f255b8.svg>
+Content-Disposition: inline; filename="332b7498-e618-4ba9-a988-c9e312f255b8.svg"
+Content-Transfer-Encoding: base64
+Content-Type: image/svg+xml
+
+PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53
+My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzIiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMjcy
+IDMwMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxNmEwZGI7fTwvc3R5bGU+PC9kZWZzPjx0
+aXRsZT5JVFU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjk1MTc2LDEyNC4wNDMz
+NGExLjM5OTEzLDEuMzk5MTMsMCwwLDEsMS40MDA2OCwxLjQwMDk0djg0LjgwNzM4YTEuNDA0LDEu
+NDA0LDAsMCwxLTEuNDAwNjgsMS40MDY2NkgyOC41NjI2MWExLjQwNzY0LDEuNDA3NjQsMCwwLDEt
+MS40MDA2OC0xLjQwNjY2VjEyNS40NDQyOGExLjQwMjcyLDEuNDAyNzIsMCwwLDEsMS40MDA2OC0x
+LjQwMDk0SDUzLjk1MTc2Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ1LjY3MTA1LDEyNC4w
+NDMzNGExLjM5OTE0LDEuMzk5MTQsMCwwLDEsMS40MDA2OCwxLjQwMDk0VjE0Ni4zMjZhMS40MDQs
+MS40MDQsMCwwLDEtMS40MDA2OCwxLjQwNjY4SDEyMy41MDg2N2ExLjQwNCwxLjQwNCwwLDAsMC0x
+LjQwNjYzLDEuNDAwOTJ2NjEuMTE4YTEuNDA0MSwxLjQwNDEsMCwwLDEtMS40MDEsMS40MDY2Nkg5
+NS4zMTIyMWExLjQwNCwxLjQwNCwwLDAsMS0xLjQwMDY4LTEuNDA2NjZ2LTYxLjExOGExLjQwMjc3
+LDEuNDAyNzcsMCwwLDAtMS40MDEtMS40MDA5Mkg3MC44NTk0MWExLjQwODksMS40MDg5LDAsMCwx
+LTEuNDA2NjQtMS40MDY2OFYxMjUuNDQ0MjhhMS40MDQsMS40MDQsMCwwLDEsMS40MDY2NC0xLjQw
+MDk0aDc0LjgxMTY0Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjQ0LjQ2OTQyLDEyNC4wNDMz
+NGExLjQwNDIyLDEuNDA0MjIsMCwwLDEsMS40MDY2MywxLjQwMDk0djQzLjIyMTg1YzAsMjguNjI3
+LTE1LjAwMjcsNDMuNzYxNTQtNDMuMzgyNzksNDMuNzYxNTQtMjcuNDE1NywwLTQxLjMxNTU5LTE0
+LjkzOTMzLTQxLjMxNTU5LTQ0LjQwNDZWMTI1LjQ0NDI4YTEuMzk5MjEsMS4zOTkyMSwwLDAsMSwx
+LjQwMS0xLjQwMDk0aDI1LjM4Mjg0YTEuNDAwNDMsMS40MDA0MywwLDAsMSwxLjQwNjY0LDEuNDAw
+OTR2NDIuNDQxYzAsOS4zMzU2NCwyLjQ1NzU4LDIwLjQ2MjYzLDE0LjE1ODUsMjAuNDYyNjMsOS41
+MjUxLDAsMTQuMTUyOS02LjY5NDU3LDE0LjE1MjktMjAuNDYyNjN2LTQyLjQ0MWExLjQwNCwxLjQw
+NCwwLDAsMSwxLjQwNjY0LTEuNDAwOTRoMjUuMzgzMiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0i
+TTI3MS4xMjAxMiwyOTljLTE2Ljg0NTYyLTguMzA3OTItMzUuODA0LTE3Ljc4NzEtNTMuMjg2Ny0y
+OC4yMDc4OXE0LjQ2OTYtMy40NjIwNyw4LjYzNS03LjI4MDE4QTEzMy4wMzkxNSwxMzMuMDM5MTUs
+MCwwLDAsMjQ3LjI4MTI4LDg5LjI2OTVhMTM0LjQ3NDU3LDEzNC40NzQ1NywwLDAsMC0xODMuMzM2
+OTUtMzguOTFDNTMuMDEyNiwzNS4xMTU4OCw0Mi4wMzUsMTguNTgwNDMsMzAuNDMxNDYsMSwzNC4w
+ODMsOC40MTIyNSw0NC45MTEzMSwzMS4yNjMzNiw1Ny42MDU3Miw1NC42MDgyMkExMzUuMDM4OSwx
+MzUuMDM4OSwwLDAsMCwuODc5ODgsMTY0LjUxMTYxLDEzMi4zOTY3MywxMzIuMzk2NzMsMCwwLDAs
+MTQuMTk0NTQsMjIyLjU1MjIsMTM0LjUxNDI0LDEzNC41MTQyNCwwLDAsMCwyMDkuOTc4ODQsMjc2
+LjQzNmMyMC40ODU1Niw4LjQ3NDQyLDQxLjA3NDQ5LDE1LjU1MzY3LDYxLjE0MTI4LDIyLjU2NE0x
+MjIuOTMyNTYsMjg3LjMxMDM1YTEyNC40MjI5LDEyNC40MjI5LDAsMCwxLTc5LjEyOTMxLTM5LjYz
+MzQyLDMzLjYwMjI5LDMzLjYwMjI5LDAsMCwxLTUuNTU3NS0xNS45NjcwNiwxNzUuNjM4OTMsMTc1
+LjYzODkzLDAsMCwwLDQ2LjIzNiwzMS42Mjk4LDE4Ny4wMDE0OCwxODcuMDAxNDgsMCwwLDAsNTku
+Nzk3MzgsMTcuNDQyNjFjLTYuOTc1Nyw0Ljg3NDUzLTE0LjE5Mjg1LDcuMTMwOTMtMjEuMzQ2NTcs
+Ni41MjgwN00zNS4yODg4LDIyMC4zNjQ3MmMtLjEyMDU1LDEuMjQwMTYtLjE5NTE5LDIuNDUxNi0u
+MjQ3MDUsMy42NTE1Ny0xLjExMzY4LTEuMjExNDUtMi4yMTA1My0yLjQyMjkxLTMuMjU1MTctMy42
+NTE1N0gyNy43OTAyNmMyLjIzMzY1LDIuNzQ0NDEsNC42NTY1NCw1LjQ0ODY1LDcuMjI4NzEsOC4x
+MDdhNDUuNzc1NDYsNDUuNzc1NDYsMCwwLDAsMS41MjcxOCwxMC41NTI4NUExMjIuNjg4OTEsMTIy
+LjY4ODkxLDAsMCwxLDMxLjkxMjc0LDk2LjQ5MjNhNjcuMDQyODMsNjcuMDQyODMsMCwwLDAtMS45
+MTc1NywxOC44MjYzMUgzMi45OThhNjAuMDE2NDEsNjAuMDE2NDEsMCwwLDEsNC45MzE2My0yNy4w
+OTk3OUExMjQuOTczMywxMjQuOTczMywwLDAsMSw1NC4zOTA1LDcxLjExNXE0LjcwMjQ1LTIuNjQz
+OTUsOS42NTE2LTQuOTI2MmM3LjMzNzcsMTIuODc4MTYsMTQuOTc5NTcsMjUuMTMwNDQsMjIuMDA3
+MTQsMzQuMTg0NzVhMTQ4LjM2Mzc5LDE0OC4zNjM3OSwwLDAsMS0yMy43MTIzNC0uNDkzNzVsMS4y
+ODYwOS4zNjE3MWMtLjQwNzU2LS4wMzQ0NS0uODA5NS0uMDc0NjQtMS4yMjMtLjExNDgzLDIuNTAz
+MTMsNS4yMDc1LDUuMjQyMTEsMTAuMjY1NzUsOC4xNDcxOSwxNS4xOTJoNTEuMTc0cS00LjAxMzMy
+LTMuMjgxMjctNy45MDA0OS02LjgwMzY2QTIxNC44Mzc1NywyMTQuODM3NTcsMCwwLDEsMTUwLjQ1
+NjksODQuMzc3NzhhNTMuMzQ5NDUsNTMuMzQ5NDUsMCwwLDAsMTUuMzMsMTEuNzI0MSw1NS44Njg3
+Myw1NS44Njg3MywwLDAsMCwyMy42OTQ4Miw2LjQ2NDljLjkwMTY2LDQuMTM5NjEsMS42NzY4MSw4
+LjM5OTc5LDIuMzE5ODYsMTIuNzUxODNoMy4wNTQzNnEtLjk0NzIyLTYuNTM2NjctMi4yOTA3Ny0x
+Mi43NzQ4MWM3LjY0NzQ4LS4zMjE1MiwxNC4xNjQxMS0yLjc3MzEyLDE4LjA3NDIzLTcuMjUxNDZh
+MTM0LjA3MTM5LDEzNC4wNzEzOSwwLDAsMSwxNy4wMjMyOSwyMC4wMjYyN2gzLjY0NTlBMTM2Ljk3
+NzQ5LDEzNi45Nzc0OSwwLDAsMCwyMTIuNDE5MjUsOTIuODEyYTE2Ljc5MTg0LDE2Ljc5MTg0LDAs
+MCwwLDEuMzY2MzMtMTIuOTM1NTIsMjguNzQ0MzMsMjguNzQ0MzMsMCwwLDAtNC4zMTc2Ny04Ljk1
+Njc0LDMwLjc1OTkyLDMwLjc1OTkyLDAsMCwxLDE0Ljk2OCw3LjAyNzYxLDEyMi43NzIsMTIyLjc3
+MiwwLDAsMSwyNy4zOTI1OCwxMzEuMDcyMmMtMTAuNTI0MTgsMjEuODkyMjUtMzUuOTg3NjIsMzMu
+NzgyODUtNjcuMjg0MzYsMzQuNjU1NTYsMTMuMjE2ODktMy4zNDE1MiwyMy43NDY2OC03LjkyMzIz
+LDM2LjIyODcyLTE1LjgyOTI2LTQuNjY3NzYtMi4xNDE1NS05LjM1MjY4LTQuNDg0MDgtMTQuMDM4
+LTYuOTg3MzctMS40NDY1OC4wNzQ2NC0yLjkxMDY5LjEyMDU3LTQuNDIwNy4xMjA1Ny0yNi4wNzIx
+NSwwLTQyLjMwOTA3LTExLjQ4My00Ny41OTExMy0zNC4xODQ3Ni04LjE4NzQ5LTYuMjc1NDUtMTYu
+MTg1NDEtMTIuODE1LTIzLjkxOTA5LTE5LjQ4MDg1VjE4Ni4zMTJjMTAuOTU0ODYsOS45Nzg3LDIx
+Ljg5MjE5LDE5LjE0MjExLDMyLjEwNjIzLDI3LjU4NzgtNy44NTk4NCw1LjIzNjI1LTMzLjMwNjEx
+LDEyLjk2NDI4LTM4LjI5LDEzLjgzN3E2LjQyNSw1LjE0MTQ5LDEzLjAwNDU0LDkuNzgzNDdhMTkz
+LjE1NzMyLDE5My4xNTczMiwwLDAsMS0zMS40MjI5LTExLjgzODkzcS0xLjUwNzU1LS43MjM0Mi0y
+Ljk5NzI0LTEuNDY5ODJjLS4xNDMzMy0uMDY4OTEtLjI4MTQtLjEzNzc5LS40MTkxMi0uMjA2Njlx
+LTIuNzkwMTQtMS40MDM4MS01LjUwNi0yLjg3NjQ4YTE0Mi43NDkyMiwxNDIuNzQ5MjIsMCwwLDEt
+MzMuMjQ5LTI0LjYzMXY0LjIxNDI1cTQuNDM1NDEsNC4yOTc1LDkuNDEwMTUsOC4yOTA3YTE2MS4z
+Njc0NCwxNjEuMzY3NDQsMCwwLDAsMzMuNzcxNDksMjAuNDc0MSwxOTMuODc3NzYsMTkzLjg3Nzc2
+LDAsMCwwLDM3LjU5NTQsMTMuMDA0NDVxMTAuNDgwOSw2Ljk3NTkxLDIxLjIyNiwxMi45NDEzYy0u
+MDgwMjUuMTQzNTUtLjE2NjQ2LjI5MjgxLS4yNTI2Ny40NDIxLTUuNTI4NzYsOS4zNzU4My0xMS41
+NDA0MiwxNi43ODIzMy0xNy43OTI4MywyMi4wNTg3NS0xOS43Nzk0NC0xLjcyMjQ0LTQxLjMzODM3
+LTcuNTA0MTEtNjIuMjY2MTgtMTcuNTExNS0xOC44MjYyNi05LjAwMjY1LTM1LjE5NTI5LTIwLjU4
+MzItNDcuNzI4ODUtMzMuMzA2MzJhNTkuMjU4MjUsNTkuMjU4MjUsMCwwLDEsLjMyMTM1LTYuNzQw
+NDlaTTE0My40MDA2LDcxLjkzMDI2YTI5LjUwMDcxLDI5LjUwMDcxLDAsMCwwLDUuMDkyODMsMTAu
+MDU5MDYsMjE5LjMzMjU3LDIxOS4zMzI1NywwLDAsMC0zNi45MzQ4NCwyNC40NjQ0M2MtMTMuNjI0
+NDUtMTIuNjQ4NDctMjYuMjUwMTctMjcuNDI3LTM4LjcyNjI1LTQzLjk4NTQ3LjA2ODY5LS4wMjMu
+MTMyMTEtLjA1NzM4LjIwMDgtLjA4MDM4LjAxMTU2LS4wMDU3NC4wMjg3My0uMDExNDcuMDQwMy0u
+MDE3MjF2LjAwNTc0QTEwOS41MjEsMTA5LjUyMSwwLDAsMSw5MC42NDgsNTcuNDI3MjdhMTI2LjY3
+MzYsMTI2LjY3MzYsMCwwLDEsNTQuMTEzNzIsMS41NzMxOCwxNi43NTQxMiwxNi43NTQxMiwwLDAs
+MC0xLjM2MTA4LDEyLjkyOTgxbTIuOTE3LS43NzUxMmExMy43MDIyMSwxMy43MDIyMSwwLDAsMSwx
+LjM4MzUtMTEuMTg0MzljLjA0MDMtLjA2MzE2LjA5MTgyLS4xMjA1OS4xMzIxMi0uMTgzNzFhMTQz
+LjQ0NzgzLDE0My40NDc4MywwLDAsMSwyOC4zMjg1NywxMC45MzE3N3EtMi44Njc5Mi44MjY3OC01
+LjgyNzY4LDEuODM3MjdhMTU3LjYxMzg1LDE1Ny42MTM4NSwwLDAsMC0xOS4wNjE3NSw4LjAzMjM0
+LDI2LjgxMTYyLDI2LjgxMTYyLDAsMCwxLTQuOTU0NzYtOS40MzMyOG0zMS4wNTU2NC0zLjE5OEEx
+NDcuMTg3NTIsMTQ3LjE4NzUyLDAsMCwwLDE1MC4wMjY1Nyw1Ny4yNTVjMy43MjAxOS0zLjM3MDI0
+LDkuNDc5MTktNS4wODEyMywxNi4xNDQ3Ni01LjA5MjdhNjkuNTE3NTcsNjkuNTE3NTcsMCwwLDEs
+MTEuMjAxOTEsMTUuNzk0OG0tNi43NjkzLTE1LjU1OTRhNTQuNzc1NjUsNTQuNzc1NjUsMCwwLDEs
+MTkuNDAwMjcsNS45OTQxLDUyLjQyOTUxLDUyLjQyOTUxLDAsMCwxLDEyLjA2ODg4LDguNTgzNTIs
+NzguNjE0MDcsNzguNjE0MDcsMCwwLDAtMjAuNTc3NzIsMi4zNDgyNSw3OS4xNDIzNCw3OS4xNDIz
+NCwwLDAsMC0xMC44OTE0My0xNi45MjU4N20uNzA2MTIsMjMuMDE3NjFjMi45MDUwOC0uOTkzMyw1
+LjczNTg3LTEuODM3MjgsOC41MDg4NC0yLjU1NXExLjgzNDUxLDMuOTUzLDMuNDc5NDQsOC4zNDIz
+NGExNTIuMTc5MzMsMTUyLjE3OTMzLDAsMCwxLDUuNTAwMzgsMTguMzc4NDgsNTMuNjYwNDQsNTMu
+NjYwNDQsMCwwLDEtMjEuNjE2NzUtNi4xNjA2LDUwLjkxNzU1LDUwLjkxNzU1LDAsMCwxLTEzLjkw
+MDI0LTEwLjQ2MSwxNTQuNDA0NzMsMTU0LjQwNDczLDAsMCwxLDE4LjAyODMzLTcuNTQ0MjdtMTQu
+ODE4NzIsNC43MzFxLS45NzMtMi42MDA5MS0yLjAxNTMzLTUuMDUyNDlhMTQyLjYzMzc2LDE0Mi42
+MzM3NiwwLDAsMSwyNC4zMzI2LDE4LjEyNTg0Yy0zLjQ1MDcxLDQuMDc2NDUtOS40MzMyOCw2LjIy
+OTUtMTYuNTI5ODgsNi40MDc0OGExNTcuNjYzNDcsMTU3LjY2MzQ3LDAsMCwwLTUuNzg3MzktMTku
+NDgwODNNMTg0LjQxMiw3MS43ODFhNjkuNTI4ODcsNjkuNTI4ODcsMCwwLDEsMjAuNzQ5NzgtMS40
+ODdBMjcuNjEwMTUsMjcuNjEwMTUsMCwwLDEsMjEwLjg2Myw4MC42NTE1NWExNC4wNzU1NywxNC4w
+NzU1NywwLDAsMS0uNzE3NjksMTAuMDE4ODlBMTQ2LjEyMTc4LDE0Ni4xMjE3OCwwLDAsMCwxODQu
+NDEyLDcxLjc4MW02Ljk4MTY1LTE2LjA3MDM4YTU1LjY4MDMsNTUuNjgwMywwLDAsMC0yMy43MTc5
+NC02LjQ1OTE2LDQzLjMyMjUsNDMuMzIyNSwwLDAsMC03LjA1MDY5LTUuNzEyNzksMTI0LjI3Njc1
+LDEyNC4yNzY3NSwwLDAsMSw1My45NTg0OCwyNS40NzQ5Myw0Mi40OTEyMiw0Mi40OTEyMiwwLDAs
+MC03Ljk2MzIyLTEuNjkzNzMsNTMuMjIzNjQsNTMuMjIzNjQsMCwwLDAtMTUuMjI2NjMtMTEuNjA5
+MjVtLTI4LjE5MDUtNi4zNTU4M2MtNi45NTI5My41NDU0NS0xMi44NjA4NiwyLjg5OTQ0LTE2LjUz
+NTQ5LDcuMDEwMzVhMTI5LjkzNzQzLDEyOS45Mzc0MywwLDAsMC01Ni41OTkzNC0xLjkwMDQzLDEx
+My4wMzIzMywxMTMuMDMyMzMsMCwwLDAtMTguNTc0LDUuMjcwNjd2LjAxMTQ4Yy0uMTc4LjA2ODkt
+LjM2MTY0LjE0MzU0LS41NDUyNy4yMTI0NS0uMTM3NzItLjE4OTUtLjI4Ny0uMzg0NjktLjQyNTA4
+LS41NzQxNGExMjQuNTM1MTUsMTI0LjUzNTE1LDAsMCwxLDY1LjIyMzQ3LTE4LjMxNTMzcTUuNTU0
+NTMsMCwxMC45ODkyLjQ3NjU0YzUuNzQ3MDkuNjc3NDcsMTEuMzA0OTQsMy4zNTMsMTYuNDY2NDYs
+Ny44MDg0MU0xNDguNzI4OTIsMjgxLjIwMTQxYzMuODUyNjUuMzA0MzEsNy42NjQ2NS40NzY1NSwx
+MS40MTk4OC40NzY1NSwyLjc4NDUzLDAsNS41NDYyOS0uMDg2MTIsOC4yNjE3OS0uMjU4MzcsMy42
+OTc0MS0uMjI5NjUsNy4yNTc0NC0uNjMxNTYsMTAuNjc5MDYtMS4xNzEyNWExMjQuODQzODUsMTI0
+Ljg0Mzg1LDAsMCwxLTQxLjYwODIsNy42ODIwOSw0NS41MjA1OCw0NS41MjA1OCwwLDAsMCwxMS4y
+NDc0Ny02LjcyOW0zLjQ0NDc1LTIuOTc0MDhhOTIuNjEwNDksOTIuNjEwNDksMCwwLDAsMTYuMjA4
+MTgtMjAuODMwMDljLjEwMzM4LS4xNzIyNC4yMDExNS0uMzQ0NDcuMjk4NTctLjUxNjcxLDkuNzA5
+MDcsNS4zMTA4NiwxOS41NDM5NSwxMC4wODc3OCwyOS40MjUwOCwxNC40NzQyNS0uNjgzLjM5NjE2
+LTEuMzc3OS43NjkzNi0yLjA2Njg1LDEuMTQ4My0xMi4yNjk2OCw0Ljc0ODItMjcuMzY5OCw2LjY4
+ODgyLTQzLjg2NSw1LjcyNDI1bTMxLjM0My0zMS41MTVjNC4xOTY3OC0uMDg2MTIsOC4zMzY0My0u
+MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
+OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
+NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
+
+------=_NextPart_ce9449cd.5a2d.47d9
 Content-ID: <header.html>
 Content-Disposition: inline; filename="header.html"
 Content-Transfer-Encoding: base64
-Content-Type: text/html charset="utf-8"
+Content-Type: text/html; charset="utf-8"
 
 PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiDQp4bWxuczpvPSJ1
 cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiDQp4bWxuczp3PSJ1cm46c2No
@@ -4681,132 +4816,4 @@ ZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86
 cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCg0KDQo8L2JvZHk+DQoNCjwvaHRtbD4NCg==
 
 
-------=_NextPart_5d17053b.e8f2.4094
-Content-ID: <909517d8-d7ab-483b-b0c6-8f7c94a718d9.svg>
-Content-Disposition: inline; filename="909517d8-d7ab-483b-b0c6-8f7c94a718d9.svg"
-Content-Transfer-Encoding: base64
-Content-Type: image/svg+xml
-
-PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53
-My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzIiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMjcy
-IDMwMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxNmEwZGI7fTwvc3R5bGU+PC9kZWZzPjx0
-aXRsZT5JVFU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjk1MTc2LDEyNC4wNDMz
-NGExLjM5OTEzLDEuMzk5MTMsMCwwLDEsMS40MDA2OCwxLjQwMDk0djg0LjgwNzM4YTEuNDA0LDEu
-NDA0LDAsMCwxLTEuNDAwNjgsMS40MDY2NkgyOC41NjI2MWExLjQwNzY0LDEuNDA3NjQsMCwwLDEt
-MS40MDA2OC0xLjQwNjY2VjEyNS40NDQyOGExLjQwMjcyLDEuNDAyNzIsMCwwLDEsMS40MDA2OC0x
-LjQwMDk0SDUzLjk1MTc2Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ1LjY3MTA1LDEyNC4w
-NDMzNGExLjM5OTE0LDEuMzk5MTQsMCwwLDEsMS40MDA2OCwxLjQwMDk0VjE0Ni4zMjZhMS40MDQs
-MS40MDQsMCwwLDEtMS40MDA2OCwxLjQwNjY4SDEyMy41MDg2N2ExLjQwNCwxLjQwNCwwLDAsMC0x
-LjQwNjYzLDEuNDAwOTJ2NjEuMTE4YTEuNDA0MSwxLjQwNDEsMCwwLDEtMS40MDEsMS40MDY2Nkg5
-NS4zMTIyMWExLjQwNCwxLjQwNCwwLDAsMS0xLjQwMDY4LTEuNDA2NjZ2LTYxLjExOGExLjQwMjc3
-LDEuNDAyNzcsMCwwLDAtMS40MDEtMS40MDA5Mkg3MC44NTk0MWExLjQwODksMS40MDg5LDAsMCwx
-LTEuNDA2NjQtMS40MDY2OFYxMjUuNDQ0MjhhMS40MDQsMS40MDQsMCwwLDEsMS40MDY2NC0xLjQw
-MDk0aDc0LjgxMTY0Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjQ0LjQ2OTQyLDEyNC4wNDMz
-NGExLjQwNDIyLDEuNDA0MjIsMCwwLDEsMS40MDY2MywxLjQwMDk0djQzLjIyMTg1YzAsMjguNjI3
-LTE1LjAwMjcsNDMuNzYxNTQtNDMuMzgyNzksNDMuNzYxNTQtMjcuNDE1NywwLTQxLjMxNTU5LTE0
-LjkzOTMzLTQxLjMxNTU5LTQ0LjQwNDZWMTI1LjQ0NDI4YTEuMzk5MjEsMS4zOTkyMSwwLDAsMSwx
-LjQwMS0xLjQwMDk0aDI1LjM4Mjg0YTEuNDAwNDMsMS40MDA0MywwLDAsMSwxLjQwNjY0LDEuNDAw
-OTR2NDIuNDQxYzAsOS4zMzU2NCwyLjQ1NzU4LDIwLjQ2MjYzLDE0LjE1ODUsMjAuNDYyNjMsOS41
-MjUxLDAsMTQuMTUyOS02LjY5NDU3LDE0LjE1MjktMjAuNDYyNjN2LTQyLjQ0MWExLjQwNCwxLjQw
-NCwwLDAsMSwxLjQwNjY0LTEuNDAwOTRoMjUuMzgzMiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0i
-TTI3MS4xMjAxMiwyOTljLTE2Ljg0NTYyLTguMzA3OTItMzUuODA0LTE3Ljc4NzEtNTMuMjg2Ny0y
-OC4yMDc4OXE0LjQ2OTYtMy40NjIwNyw4LjYzNS03LjI4MDE4QTEzMy4wMzkxNSwxMzMuMDM5MTUs
-MCwwLDAsMjQ3LjI4MTI4LDg5LjI2OTVhMTM0LjQ3NDU3LDEzNC40NzQ1NywwLDAsMC0xODMuMzM2
-OTUtMzguOTFDNTMuMDEyNiwzNS4xMTU4OCw0Mi4wMzUsMTguNTgwNDMsMzAuNDMxNDYsMSwzNC4w
-ODMsOC40MTIyNSw0NC45MTEzMSwzMS4yNjMzNiw1Ny42MDU3Miw1NC42MDgyMkExMzUuMDM4OSwx
-MzUuMDM4OSwwLDAsMCwuODc5ODgsMTY0LjUxMTYxLDEzMi4zOTY3MywxMzIuMzk2NzMsMCwwLDAs
-MTQuMTk0NTQsMjIyLjU1MjIsMTM0LjUxNDI0LDEzNC41MTQyNCwwLDAsMCwyMDkuOTc4ODQsMjc2
-LjQzNmMyMC40ODU1Niw4LjQ3NDQyLDQxLjA3NDQ5LDE1LjU1MzY3LDYxLjE0MTI4LDIyLjU2NE0x
-MjIuOTMyNTYsMjg3LjMxMDM1YTEyNC40MjI5LDEyNC40MjI5LDAsMCwxLTc5LjEyOTMxLTM5LjYz
-MzQyLDMzLjYwMjI5LDMzLjYwMjI5LDAsMCwxLTUuNTU3NS0xNS45NjcwNiwxNzUuNjM4OTMsMTc1
-LjYzODkzLDAsMCwwLDQ2LjIzNiwzMS42Mjk4LDE4Ny4wMDE0OCwxODcuMDAxNDgsMCwwLDAsNTku
-Nzk3MzgsMTcuNDQyNjFjLTYuOTc1Nyw0Ljg3NDUzLTE0LjE5Mjg1LDcuMTMwOTMtMjEuMzQ2NTcs
-Ni41MjgwN00zNS4yODg4LDIyMC4zNjQ3MmMtLjEyMDU1LDEuMjQwMTYtLjE5NTE5LDIuNDUxNi0u
-MjQ3MDUsMy42NTE1Ny0xLjExMzY4LTEuMjExNDUtMi4yMTA1My0yLjQyMjkxLTMuMjU1MTctMy42
-NTE1N0gyNy43OTAyNmMyLjIzMzY1LDIuNzQ0NDEsNC42NTY1NCw1LjQ0ODY1LDcuMjI4NzEsOC4x
-MDdhNDUuNzc1NDYsNDUuNzc1NDYsMCwwLDAsMS41MjcxOCwxMC41NTI4NUExMjIuNjg4OTEsMTIy
-LjY4ODkxLDAsMCwxLDMxLjkxMjc0LDk2LjQ5MjNhNjcuMDQyODMsNjcuMDQyODMsMCwwLDAtMS45
-MTc1NywxOC44MjYzMUgzMi45OThhNjAuMDE2NDEsNjAuMDE2NDEsMCwwLDEsNC45MzE2My0yNy4w
-OTk3OUExMjQuOTczMywxMjQuOTczMywwLDAsMSw1NC4zOTA1LDcxLjExNXE0LjcwMjQ1LTIuNjQz
-OTUsOS42NTE2LTQuOTI2MmM3LjMzNzcsMTIuODc4MTYsMTQuOTc5NTcsMjUuMTMwNDQsMjIuMDA3
-MTQsMzQuMTg0NzVhMTQ4LjM2Mzc5LDE0OC4zNjM3OSwwLDAsMS0yMy43MTIzNC0uNDkzNzVsMS4y
-ODYwOS4zNjE3MWMtLjQwNzU2LS4wMzQ0NS0uODA5NS0uMDc0NjQtMS4yMjMtLjExNDgzLDIuNTAz
-MTMsNS4yMDc1LDUuMjQyMTEsMTAuMjY1NzUsOC4xNDcxOSwxNS4xOTJoNTEuMTc0cS00LjAxMzMy
-LTMuMjgxMjctNy45MDA0OS02LjgwMzY2QTIxNC44Mzc1NywyMTQuODM3NTcsMCwwLDEsMTUwLjQ1
-NjksODQuMzc3NzhhNTMuMzQ5NDUsNTMuMzQ5NDUsMCwwLDAsMTUuMzMsMTEuNzI0MSw1NS44Njg3
-Myw1NS44Njg3MywwLDAsMCwyMy42OTQ4Miw2LjQ2NDljLjkwMTY2LDQuMTM5NjEsMS42NzY4MSw4
-LjM5OTc5LDIuMzE5ODYsMTIuNzUxODNoMy4wNTQzNnEtLjk0NzIyLTYuNTM2NjctMi4yOTA3Ny0x
-Mi43NzQ4MWM3LjY0NzQ4LS4zMjE1MiwxNC4xNjQxMS0yLjc3MzEyLDE4LjA3NDIzLTcuMjUxNDZh
-MTM0LjA3MTM5LDEzNC4wNzEzOSwwLDAsMSwxNy4wMjMyOSwyMC4wMjYyN2gzLjY0NTlBMTM2Ljk3
-NzQ5LDEzNi45Nzc0OSwwLDAsMCwyMTIuNDE5MjUsOTIuODEyYTE2Ljc5MTg0LDE2Ljc5MTg0LDAs
-MCwwLDEuMzY2MzMtMTIuOTM1NTIsMjguNzQ0MzMsMjguNzQ0MzMsMCwwLDAtNC4zMTc2Ny04Ljk1
-Njc0LDMwLjc1OTkyLDMwLjc1OTkyLDAsMCwxLDE0Ljk2OCw3LjAyNzYxLDEyMi43NzIsMTIyLjc3
-MiwwLDAsMSwyNy4zOTI1OCwxMzEuMDcyMmMtMTAuNTI0MTgsMjEuODkyMjUtMzUuOTg3NjIsMzMu
-NzgyODUtNjcuMjg0MzYsMzQuNjU1NTYsMTMuMjE2ODktMy4zNDE1MiwyMy43NDY2OC03LjkyMzIz
-LDM2LjIyODcyLTE1LjgyOTI2LTQuNjY3NzYtMi4xNDE1NS05LjM1MjY4LTQuNDg0MDgtMTQuMDM4
-LTYuOTg3MzctMS40NDY1OC4wNzQ2NC0yLjkxMDY5LjEyMDU3LTQuNDIwNy4xMjA1Ny0yNi4wNzIx
-NSwwLTQyLjMwOTA3LTExLjQ4My00Ny41OTExMy0zNC4xODQ3Ni04LjE4NzQ5LTYuMjc1NDUtMTYu
-MTg1NDEtMTIuODE1LTIzLjkxOTA5LTE5LjQ4MDg1VjE4Ni4zMTJjMTAuOTU0ODYsOS45Nzg3LDIx
-Ljg5MjE5LDE5LjE0MjExLDMyLjEwNjIzLDI3LjU4NzgtNy44NTk4NCw1LjIzNjI1LTMzLjMwNjEx
-LDEyLjk2NDI4LTM4LjI5LDEzLjgzN3E2LjQyNSw1LjE0MTQ5LDEzLjAwNDU0LDkuNzgzNDdhMTkz
-LjE1NzMyLDE5My4xNTczMiwwLDAsMS0zMS40MjI5LTExLjgzODkzcS0xLjUwNzU1LS43MjM0Mi0y
-Ljk5NzI0LTEuNDY5ODJjLS4xNDMzMy0uMDY4OTEtLjI4MTQtLjEzNzc5LS40MTkxMi0uMjA2Njlx
-LTIuNzkwMTQtMS40MDM4MS01LjUwNi0yLjg3NjQ4YTE0Mi43NDkyMiwxNDIuNzQ5MjIsMCwwLDEt
-MzMuMjQ5LTI0LjYzMXY0LjIxNDI1cTQuNDM1NDEsNC4yOTc1LDkuNDEwMTUsOC4yOTA3YTE2MS4z
-Njc0NCwxNjEuMzY3NDQsMCwwLDAsMzMuNzcxNDksMjAuNDc0MSwxOTMuODc3NzYsMTkzLjg3Nzc2
-LDAsMCwwLDM3LjU5NTQsMTMuMDA0NDVxMTAuNDgwOSw2Ljk3NTkxLDIxLjIyNiwxMi45NDEzYy0u
-MDgwMjUuMTQzNTUtLjE2NjQ2LjI5MjgxLS4yNTI2Ny40NDIxLTUuNTI4NzYsOS4zNzU4My0xMS41
-NDA0MiwxNi43ODIzMy0xNy43OTI4MywyMi4wNTg3NS0xOS43Nzk0NC0xLjcyMjQ0LTQxLjMzODM3
-LTcuNTA0MTEtNjIuMjY2MTgtMTcuNTExNS0xOC44MjYyNi05LjAwMjY1LTM1LjE5NTI5LTIwLjU4
-MzItNDcuNzI4ODUtMzMuMzA2MzJhNTkuMjU4MjUsNTkuMjU4MjUsMCwwLDEsLjMyMTM1LTYuNzQw
-NDlaTTE0My40MDA2LDcxLjkzMDI2YTI5LjUwMDcxLDI5LjUwMDcxLDAsMCwwLDUuMDkyODMsMTAu
-MDU5MDYsMjE5LjMzMjU3LDIxOS4zMzI1NywwLDAsMC0zNi45MzQ4NCwyNC40NjQ0M2MtMTMuNjI0
-NDUtMTIuNjQ4NDctMjYuMjUwMTctMjcuNDI3LTM4LjcyNjI1LTQzLjk4NTQ3LjA2ODY5LS4wMjMu
-MTMyMTEtLjA1NzM4LjIwMDgtLjA4MDM4LjAxMTU2LS4wMDU3NC4wMjg3My0uMDExNDcuMDQwMy0u
-MDE3MjF2LjAwNTc0QTEwOS41MjEsMTA5LjUyMSwwLDAsMSw5MC42NDgsNTcuNDI3MjdhMTI2LjY3
-MzYsMTI2LjY3MzYsMCwwLDEsNTQuMTEzNzIsMS41NzMxOCwxNi43NTQxMiwxNi43NTQxMiwwLDAs
-MC0xLjM2MTA4LDEyLjkyOTgxbTIuOTE3LS43NzUxMmExMy43MDIyMSwxMy43MDIyMSwwLDAsMSwx
-LjM4MzUtMTEuMTg0MzljLjA0MDMtLjA2MzE2LjA5MTgyLS4xMjA1OS4xMzIxMi0uMTgzNzFhMTQz
-LjQ0NzgzLDE0My40NDc4MywwLDAsMSwyOC4zMjg1NywxMC45MzE3N3EtMi44Njc5Mi44MjY3OC01
-LjgyNzY4LDEuODM3MjdhMTU3LjYxMzg1LDE1Ny42MTM4NSwwLDAsMC0xOS4wNjE3NSw4LjAzMjM0
-LDI2LjgxMTYyLDI2LjgxMTYyLDAsMCwxLTQuOTU0NzYtOS40MzMyOG0zMS4wNTU2NC0zLjE5OEEx
-NDcuMTg3NTIsMTQ3LjE4NzUyLDAsMCwwLDE1MC4wMjY1Nyw1Ny4yNTVjMy43MjAxOS0zLjM3MDI0
-LDkuNDc5MTktNS4wODEyMywxNi4xNDQ3Ni01LjA5MjdhNjkuNTE3NTcsNjkuNTE3NTcsMCwwLDEs
-MTEuMjAxOTEsMTUuNzk0OG0tNi43NjkzLTE1LjU1OTRhNTQuNzc1NjUsNTQuNzc1NjUsMCwwLDEs
-MTkuNDAwMjcsNS45OTQxLDUyLjQyOTUxLDUyLjQyOTUxLDAsMCwxLDEyLjA2ODg4LDguNTgzNTIs
-NzguNjE0MDcsNzguNjE0MDcsMCwwLDAtMjAuNTc3NzIsMi4zNDgyNSw3OS4xNDIzNCw3OS4xNDIz
-NCwwLDAsMC0xMC44OTE0My0xNi45MjU4N20uNzA2MTIsMjMuMDE3NjFjMi45MDUwOC0uOTkzMyw1
-LjczNTg3LTEuODM3MjgsOC41MDg4NC0yLjU1NXExLjgzNDUxLDMuOTUzLDMuNDc5NDQsOC4zNDIz
-NGExNTIuMTc5MzMsMTUyLjE3OTMzLDAsMCwxLDUuNTAwMzgsMTguMzc4NDgsNTMuNjYwNDQsNTMu
-NjYwNDQsMCwwLDEtMjEuNjE2NzUtNi4xNjA2LDUwLjkxNzU1LDUwLjkxNzU1LDAsMCwxLTEzLjkw
-MDI0LTEwLjQ2MSwxNTQuNDA0NzMsMTU0LjQwNDczLDAsMCwxLDE4LjAyODMzLTcuNTQ0MjdtMTQu
-ODE4NzIsNC43MzFxLS45NzMtMi42MDA5MS0yLjAxNTMzLTUuMDUyNDlhMTQyLjYzMzc2LDE0Mi42
-MzM3NiwwLDAsMSwyNC4zMzI2LDE4LjEyNTg0Yy0zLjQ1MDcxLDQuMDc2NDUtOS40MzMyOCw2LjIy
-OTUtMTYuNTI5ODgsNi40MDc0OGExNTcuNjYzNDcsMTU3LjY2MzQ3LDAsMCwwLTUuNzg3MzktMTku
-NDgwODNNMTg0LjQxMiw3MS43ODFhNjkuNTI4ODcsNjkuNTI4ODcsMCwwLDEsMjAuNzQ5NzgtMS40
-ODdBMjcuNjEwMTUsMjcuNjEwMTUsMCwwLDEsMjEwLjg2Myw4MC42NTE1NWExNC4wNzU1NywxNC4w
-NzU1NywwLDAsMS0uNzE3NjksMTAuMDE4ODlBMTQ2LjEyMTc4LDE0Ni4xMjE3OCwwLDAsMCwxODQu
-NDEyLDcxLjc4MW02Ljk4MTY1LTE2LjA3MDM4YTU1LjY4MDMsNTUuNjgwMywwLDAsMC0yMy43MTc5
-NC02LjQ1OTE2LDQzLjMyMjUsNDMuMzIyNSwwLDAsMC03LjA1MDY5LTUuNzEyNzksMTI0LjI3Njc1
-LDEyNC4yNzY3NSwwLDAsMSw1My45NTg0OCwyNS40NzQ5Myw0Mi40OTEyMiw0Mi40OTEyMiwwLDAs
-MC03Ljk2MzIyLTEuNjkzNzMsNTMuMjIzNjQsNTMuMjIzNjQsMCwwLDAtMTUuMjI2NjMtMTEuNjA5
-MjVtLTI4LjE5MDUtNi4zNTU4M2MtNi45NTI5My41NDU0NS0xMi44NjA4NiwyLjg5OTQ0LTE2LjUz
-NTQ5LDcuMDEwMzVhMTI5LjkzNzQzLDEyOS45Mzc0MywwLDAsMC01Ni41OTkzNC0xLjkwMDQzLDEx
-My4wMzIzMywxMTMuMDMyMzMsMCwwLDAtMTguNTc0LDUuMjcwNjd2LjAxMTQ4Yy0uMTc4LjA2ODkt
-LjM2MTY0LjE0MzU0LS41NDUyNy4yMTI0NS0uMTM3NzItLjE4OTUtLjI4Ny0uMzg0NjktLjQyNTA4
-LS41NzQxNGExMjQuNTM1MTUsMTI0LjUzNTE1LDAsMCwxLDY1LjIyMzQ3LTE4LjMxNTMzcTUuNTU0
-NTMsMCwxMC45ODkyLjQ3NjU0YzUuNzQ3MDkuNjc3NDcsMTEuMzA0OTQsMy4zNTMsMTYuNDY2NDYs
-Ny44MDg0MU0xNDguNzI4OTIsMjgxLjIwMTQxYzMuODUyNjUuMzA0MzEsNy42NjQ2NS40NzY1NSwx
-MS40MTk4OC40NzY1NSwyLjc4NDUzLDAsNS41NDYyOS0uMDg2MTIsOC4yNjE3OS0uMjU4MzcsMy42
-OTc0MS0uMjI5NjUsNy4yNTc0NC0uNjMxNTYsMTAuNjc5MDYtMS4xNzEyNWExMjQuODQzODUsMTI0
-Ljg0Mzg1LDAsMCwxLTQxLjYwODIsNy42ODIwOSw0NS41MjA1OCw0NS41MjA1OCwwLDAsMCwxMS4y
-NDc0Ny02LjcyOW0zLjQ0NDc1LTIuOTc0MDhhOTIuNjEwNDksOTIuNjEwNDksMCwwLDAsMTYuMjA4
-MTgtMjAuODMwMDljLjEwMzM4LS4xNzIyNC4yMDExNS0uMzQ0NDcuMjk4NTctLjUxNjcxLDkuNzA5
-MDcsNS4zMTA4NiwxOS41NDM5NSwxMC4wODc3OCwyOS40MjUwOCwxNC40NzQyNS0uNjgzLjM5NjE2
-LTEuMzc3OS43NjkzNi0yLjA2Njg1LDEuMTQ4My0xMi4yNjk2OCw0Ljc0ODItMjcuMzY5OCw2LjY4
-ODgyLTQzLjg2NSw1LjcyNDI1bTMxLjM0My0zMS41MTVjNC4xOTY3OC0uMDg2MTIsOC4zMzY0My0u
-MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
-OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
-NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
-
-------=_NextPart_5d17053b.e8f2.4094--
+------=_NextPart_ce9449cd.5a2d.47d9--

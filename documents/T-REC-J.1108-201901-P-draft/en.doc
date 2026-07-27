@@ -1,7 +1,7 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_252ef31b.bcba.4796"
+Content-Type: multipart/related; boundary="----=_NextPart_b4fedaf2.4f24.46ff"
 
-------=_NextPart_252ef31b.bcba.4796
+------=_NextPart_b4fedaf2.4f24.46ff
 Content-ID: <en.htm>
 Content-Disposition: inline; filename="en.htm"
 Content-Type: text/html; charset="utf-8"
@@ -2031,6 +2031,7 @@ p.Sourcecode .nt {
 }
 
 
+
 -->
 ]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
   <!--
@@ -2913,7 +2914,7 @@ p.Formula, li.Formula, div.Formula {
   mso-ansi-language: EN-GB;
 }
 
-table.formula_dl {
+div.formula_dl, p.formula_dl, table.formula_dl {
   margin-left: 1.4cm;
   margin-right: 1.4cm;
 }
@@ -3187,6 +3188,11 @@ table.MsoISOTable td, table.MsoISOTableBig td {
   padding: 0cm 2.85pt 0cm 2.85pt;
 }
 
+table.MsoNormalTable th, table.MsoNormalTable td {
+  border: none;
+  mso-border-alt: none;
+}
+
 table.MsoISOTable p, table.MsoISOTableBig p {
   font-size: 11.0pt;
 }
@@ -3342,7 +3348,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="663" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:  0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:70.9pt;mso-height-rule:   exactly">
   <td width="95" colspan="2" valign="top" style="width:71.4pt;padding:0cm 5.4pt 0cm 5.4pt;   height:70.9pt;mso-height-rule:exactly">
-  <p class="MsoNormal"><v:shapetype coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><a name="_x0000_t75" id="_x0000_t75"></a>
+  <p class="MsoNormal"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
    <v:stroke joinstyle="miter"/>
    <v:formulas>
     <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -3360,8 +3366,8 @@ table.biblio td {
    </v:formulas>
    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
    <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f"><a name="Picture_x0020_2" id="Picture_x0020_2"></a>
-  <v:imagedata src="cid:b91c5f76-62b1-4dfa-86fa-9a6b7697ac2c.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
+  </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" alt="Fond-Rec_e" style="position:absolute;left:0;text-align:left;    margin-left:-75.7pt;margin-top:-60.0pt;width:123.6pt;height:848.15pt;    z-index:251659264;visibility:visible;mso-wrap-style:square;    mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;    mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;    mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;    mso-position-horizontal-relative:text;mso-position-vertical:absolute;    mso-position-vertical-relative:text;mso-width-percent:0;    mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin" o:allowincell="f">
+  <v:imagedata src="cid:505f199c-bcbc-483d-88e6-1f28c8f4f62c.png" o:title="Fond-Rec_e" width="96" height="660.6"/>
   </v:shape><a name="_Hlk526346232" id="_Hlk526346232"><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></a></p>
   <span style="mso-bookmark:_Hlk526346232"></span>
   <p class="MsoNormal" style="margin-top:0cm"><span style="mso-bookmark:_Hlk526346232"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="font-size:8.0pt;   mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US" xml:lang="EN-US"><o:p class="MsoNormal">&#xA0;</o:p></span></b></span></p>
@@ -3496,8 +3502,8 @@ table.biblio td {
 <p class="MsoNormal" align="right" style="margin-top:0.0pt;text-align:right; tab-stops:39.7pt 59.55pt 79.4pt 99.25pt right 17.0cm">
   <span style="mso-bookmark: _Hlk526346232">
     <span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-size:10.0pt; font-family:&quot;Arial&quot;,sans-serif;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-no-proof:yes" xml:lang="EN-US">
-      <v:shape o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square"><a name="Picture_x0020_1" id="Picture_x0020_1"></a>
-<v:imagedata src="cid:b76f131e-fb6a-46d0-b3bf-01e827a0fd14.svg" o:title="logo_E" width="272" height="300"/>
+      <v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75" alt="logo_E" style="width:68pt;height:75pt;visibility:visible;mso-wrap-style:square">
+<v:imagedata src="cid:72954240-c96b-4ef1-b600-a03aa91d0a94.svg" o:title="logo_E" width="272" height="300"/>
 </v:shape>
     </span>
   </span>
@@ -3517,6 +3523,7 @@ table.biblio td {
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
+    
   <p class="RecNo"><span style="mso-bookmark:_Hlk526346232"><a name="irecnoe" id="irecnoe"></a><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Recommendation ITU-T J.1108<o:p class="MsoNormal"></o:p></span></span></p>
   <p class="Rectitle" align="center"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH;font-size:14pt;font-weight:bold;" xml:lang="FR-CH">Transmission specification for Radio over IP transmission systems<o:p class="MsoNormal"></o:p></span></span></p>
   
@@ -3526,7 +3533,6 @@ table.biblio td {
   
   
   <span style="mso-bookmark:_Hlk526346232"></span>
-  <p class="MsoNormal"><span style="mso-bookmark:_Hlk526346232"><span lang="FR-CH" style="mso-ansi-language:FR-CH" xml:lang="FR-CH"><o:p class="MsoNormal">&#xA0;</o:p></span></span></p>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3542,14 +3548,14 @@ table.biblio td {
 
 
 
-<p class="MsoNormal"><o:wrapblock><v:shapetype coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><a name="_x0000_t202" id="_x0000_t202"></a>
+<p class="MsoNormal"><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt"><a name="Text_x0020_Box_x0020_1" id="Text_x0020_Box_x0020_1"></a>
+ </v:shapetype><v:shape id="Text_x0020_Box_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t202" style="position:absolute;margin-left:-8pt;margin-top:141.75pt;   width:448.15pt;height:69.8pt;z-index:-251657216;visibility:visible;   mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;   mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;   mso-position-horizontal-relative:text;mso-position-vertical:absolute;   mso-position-vertical-relative:top-margin-area;mso-width-percent:0;   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin;   v-text-anchor:top" o:gfxdata="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 " o:allowoverlap="f" filled="f" stroked="f" strokeweight=".5pt">
   <v:fill o:detectmouseclick="t"></v:fill>
   <v:textbox style="mso-fit-shape-to-text:t">
       <div><a name="abstractbox" id="abstractbox"></a>
-  	 <div class="Abstract"><a name="_summary" id="_summary"></a><p class="h1Preface">Summary</p><p class="MsoNormal"><a name="_77421fba-6ecb-3d26-4de6-fd49aeb61256" id="_77421fba-6ecb-3d26-4de6-fd49aeb61256"></a>As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.</p></div></div>
+  	 <div class="Abstract"><a name="_a32283dd-d612-d860-5c54-e9457c247050" id="_a32283dd-d612-d860-5c54-e9457c247050"></a><p class="h1Preface">Summary</p><p class="MsoNormal"><a name="_77421fba-6ecb-3d26-4de6-fd49aeb61256" id="_77421fba-6ecb-3d26-4de6-fd49aeb61256"></a>As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.</p></div></div>
      </v:textbox>
   <w:wrap type="topAndBottom" anchory="margin"/>
   <w:anchorlock></w:anchorlock>
@@ -3592,7 +3598,7 @@ table.biblio td {
  <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
   <td width="663" valign="top" style="width:497.25pt;padding:0cm 5.4pt 0cm 5.4pt">
     <div><a name="keywordsbox" id="keywordsbox"></a>
-    <div class="Keyword"><a name="_f30687a0-058b-44c8-903d-ed1869fc3ed7" id="_f30687a0-058b-44c8-903d-ed1869fc3ed7"></a><p class="h1Preface">Keywords</p><p class="MsoNormal">RoIP.</p></div></div>
+    <div class="Keyword"><a name="_3e484a99-d3f2-cdf5-0f2c-1d5454df5e8b" id="_3e484a99-d3f2-cdf5-0f2c-1d5454df5e8b"></a><p class="h1Preface">Keywords</p><p class="MsoNormal">RoIP.</p></div></div>
   </td>
   <span style="mso-bookmark:_Hlk526346232"></span>
  </tr>
@@ -3638,13 +3644,12 @@ table.biblio td {
 
 <p class="boilerplate"><a name="_1bc27970-25ee-7492-ddb6-24f4a18210f0" id="_1bc27970-25ee-7492-ddb6-24f4a18210f0"></a>ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
 
-<p class="boilerplate"><a name="_b4a64942-dd7c-4fca-5f4f-c2617402905e" id="_b4a64942-dd7c-4fca-5f4f-c2617402905e"></a>As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <a href="http://www.itu.int/ITU-T/ipr/" class="url">http://www.itu.int/ITU-T/ipr/</a>.</p>
+<p class="boilerplate"><a name="_b4a64942-dd7c-4fca-5f4f-c2617402905e" id="_b4a64942-dd7c-4fca-5f4f-c2617402905e"></a>As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <a href="http://www.itu.int/ITU-T/ipr/">http://www.itu.int/ITU-T/ipr/</a>.</p>
 </div>
 <p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p><p class="MsoNormal">&#xA0;</p></div>
 <div class="boilerplate-copyright">
 
-<div><a name="_1b54c7a6-0bb7-1613-f8fa-400b0ebd7641" id="_1b54c7a6-0bb7-1613-f8fa-400b0ebd7641"></a>
-<p class="boilerplateHdr"><a name="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d" id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d"></a>&#xA9; ITU 2019</p>
+<div><a name="_60a6cc77-6559-b78c-5111-c6908a13f2be" id="_60a6cc77-6559-b78c-5111-c6908a13f2be"></a><p class="boilerplateHdr"><a name="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d" id="_997d09ae-dfb4-ab2e-7c53-0fe31d69633d"></a>&#xA9; ITU 2019</p>
 
 <p class="boilerplate"><a name="_5d0be5a7-3d06-59c3-6502-3c92441bc890" id="_5d0be5a7-3d06-59c3-6502-3c92441bc890"></a>All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
 </div>
@@ -3657,92 +3662,92 @@ table.biblio td {
 
 
 
-</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_32acc574-67f3-4dc2-a668-321f3eec267f" id="_32acc574-67f3-4dc2-a668-321f3eec267f"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_79bda703-4de4-e387-3f90-33444dda93f0" id="_79bda703-4de4-e387-3f90-33444dda93f0"></a><p class="zzContents">Table of Contents</p><p style="tab-stops:right 17.0cm" class="MsoNormal"><span style="mso-tab-count:1">&#xA0; </span><b>Page</b></p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc635179157">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc359880309">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc635179157 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc359880309 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc401830278">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc559999478">2. References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc401830278 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc559999478 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc857867068">3. Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc176366473">3. Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc857867068 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc176366473 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc840729238">3.1. Terms defined elsewhere<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc191815038">3.1. Terms defined elsewhere<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc840729238 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc191815038 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc958932564">3.2. Terms defined in this recommendation<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc710748206">3.2. Terms defined in this recommendation<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc958932564 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc710748206 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc508867952">4. Abbreviations and acronyms<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc060361196">4. Abbreviations and acronyms<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc508867952 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc060361196 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc824934443">5. Conventions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc556075937">5. Conventions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc824934443 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc556075937 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc862570257">6. Overview<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc897233799">6. Overview<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc862570257 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc897233799 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc843332840">7. Functional Architecture<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc525398720">7. Functional Architecture<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc843332840 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc525398720 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc388822222">8. Timing Processing Specification<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc851781568">8. Timing Processing Specification<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc388822222 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc851781568 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc324152557">Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc737565045">Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc324152557 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc737565045 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
@@ -3752,15 +3757,16 @@ table.biblio td {
       <br clear="all" class="section"/>
     </p>
     <div class="WordSection3">
-      <p class="zzSTDTitle1">Draft new Recommendation ITU-T J.1108</p>
+      <p class="zzSTDTitle1">Draft new Recommendation
+  ITU-T J.1108</p>
       <p class="zzSTDTitle2">Transmission specification for Radio over IP transmission systems</p>
       <div>
         <a name="scope" id="scope"></a>
         <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1>
-        <p class="MsoNormal"><a name="_2d5f9482-31cc-65e1-b0f3-ace42d6368e8" id="_2d5f9482-31cc-65e1-b0f3-ace42d6368e8"></a>Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. <a><a name="_Hlk530637669" id="_Hlk530637669"></a></a>The architecture described in this Draft [New] Recommendation are defined according to <a href="#j1106">[ITU-T&#xA0;J.1106&#xA0;(07/2017)]</a>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:</p>
-        <div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst">Radio over IP terminal system
+        <p class="MsoNormal"><a name="_2d5f9482-31cc-65e1-b0f3-ace42d6368e8" id="_2d5f9482-31cc-65e1-b0f3-ace42d6368e8"></a>Draft [New] Recommendation ITU-T J.1108 J.roip-trans describes the Recommendation for transmission specification for Radio over IP transmission system in HFC based network. <a><a name="_Hlk530637669" id="_Hlk530637669"></a></a>The architecture described in this Draft [New] Recommendation are defined according to <a href="#j1106">[ITU-T&#xA0;J.1106]</a>. The transmission specifications described in this Draft [New] Recommendation are defined as follows:</p>
+        <div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_3242c4cf-aba6-72d7-2c99-9408c9c42f40" id="_3242c4cf-aba6-72d7-2c99-9408c9c42f40"></a>Radio over IP terminal system
 </p>
-<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast">Radio over IP headend system
+<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast"><a name="_dfba2e3e-6ef2-e08a-c2ce-cc0b6963d1af" id="_dfba2e3e-6ef2-e08a-c2ce-cc0b6963d1af"></a>Radio over IP headend system
 </p>
 </div>
         <p class="MsoNormal"><a name="_b409d66f-2f46-c6d3-45a5-88b81646d20b" id="_b409d66f-2f46-c6d3-45a5-88b81646d20b"></a>The most important part of the RoIP transmission system is having the correct network timing synchronization between the RoIP headend and RoIP terminal. The transmission specifications described in this Draft[New] Recommendation are defined the timing processing specification.</p>
@@ -3776,33 +3782,33 @@ table.biblio td {
             </tr>
             <tr class="NormRef">
               <a name="j1106" id="j1106"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1106&#xA0;(07/2017)]</td>
-              <td>Recommendation ITU-T&#xA0;J.1106&#xA0;(07/2017), <i>Requirement for radio over IP transmission system</i>, First edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1106]</td>
+              <td>Recommendation ITU-T&#xA0;J.1106, ITU-T Recommendation J.1106(2017/05), <i>Requirement for Radio over IP transmission system</i>.</td>
             </tr>
             <tr class="NormRef">
               <a name="j1107" id="j1107"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1107&#xA0;(03/2018)]</td>
-              <td>Recommendation ITU-T&#xA0;J.1107&#xA0;(03/2018), <i>Architecture and specification for radio over IP transmission systems</i>, First edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.1107]</td>
+              <td>Recommendation ITU-T&#xA0;J.1107, ITU-T Recommendation J.1107(2011/01), <i>Architecture and specification for Radio over IP transmission systems</i>.</td>
             </tr>
             <tr class="NormRef">
               <a name="j210" id="j210"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.210&#xA0;(11/2006)]</td>
-              <td>Recommendation ITU-T&#xA0;J.210&#xA0;(11/2006), <i>Downstream RF interface for cable modem termination systems</i>, First edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.210]</td>
+              <td>Recommendation ITU-T&#xA0;J.210, Recommendation ITU-T J.210 (2006/11), <i>Downstream RF Interface for Cable Modem Termination Systems</i>.</td>
             </tr>
             <tr class="NormRef">
               <a name="j222-1" id="j222-1"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.1&#xA0;(07/2007)]</td>
-              <td>Recommendation ITU-T&#xA0;J.222.1&#xA0;(07/2007), <i>Third-generation transmission systems for interactive cable television services &#x2013; IP cable modems: Physical layer specification</i>, First edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.1]</td>
+              <td>Recommendation ITU-T&#xA0;J.222.1, Recommendation ITU-T J.222.1 (2007/07), <i>Physical Layer specification for third-generation transmission systems for interactive cable television services - IP cable modems</i>.</td>
             </tr>
             <tr class="NormRef">
               <a name="j222-2" id="j222-2"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.2&#xA0;(07/2007)]</td>
-              <td>Recommendation ITU-T&#xA0;J.222.2&#xA0;(07/2007), <i>Third-generation transmission systems for interactive cable television services &#x2013; IP cable modems: MAC and Upper Layer protocols</i>, First edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;J.222.2]</td>
+              <td>Recommendation ITU-T&#xA0;J.222.2, ITU-T Recommendation J.222.2 (2007/07), <i>MAC and Upper Layer Protocols for third-generation transmission systems for interactive cable television services - IP cable modems</i>.</td>
             </tr>
             <tr class="NormRef">
               <a name="x743" id="x743"></a>
-              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;X.743&#xA0;(06/1998)]</td>
-              <td>Recommendation ITU-T&#xA0;X.743&#xA0;(06/1998)&#xA0;| ISO/IEC&#xA0;10164-20, <i>Information technology &#x2013; Open Systems Interconnection &#x2013; Systems Management: Time Management Function</i>, First edition.</td>
+              <td style="vertical-align:top">[ITU&#x2011;T&#xA0;X.743]</td>
+              <td>Recommendation ITU-T&#xA0;X.743, ITU-T Recommendation X.743(1998/06), <i>Time Management Function</i>.</td>
             </tr>
           </tbody>
         </table>
@@ -3927,12 +3933,12 @@ table.biblio td {
       <div>
         <a name="overview" id="overview"></a>
         <h1>6.<span style="mso-tab-count:1">&#xA0; </span>Overview</h1>
-        <p class="MsoNormal"><a name="_8cb72834-af37-32a3-3ccd-a978231a230c" id="_8cb72834-af37-32a3-3ccd-a978231a230c"></a>In this section, the overview is defined according to <a href="#j1106">[ITU-T&#xA0;J.1106&#xA0;(07/2017)], Section 6</a>.</p>
+        <p class="MsoNormal"><a name="_8cb72834-af37-32a3-3ccd-a978231a230c" id="_8cb72834-af37-32a3-3ccd-a978231a230c"></a>In this section, the overview is defined according to <a href="#j1106">[ITU-T&#xA0;J.1106],  Section 6</a>.</p>
       </div>
       <div>
         <a name="functional_architecture" id="functional_architecture"></a>
         <h1>7.<span style="mso-tab-count:1">&#xA0; </span>Functional Architecture</h1>
-        <p class="MsoNormal"><a name="_be2efe5c-3069-0dbf-fcc8-807489f1edc7" id="_be2efe5c-3069-0dbf-fcc8-807489f1edc7"></a>In this section, the functional architecture is defined according to <a href="#j1107">[ITU-T&#xA0;J.1107&#xA0;(03/2018)], Section 7</a>.</p>
+        <p class="MsoNormal"><a name="_be2efe5c-3069-0dbf-fcc8-807489f1edc7" id="_be2efe5c-3069-0dbf-fcc8-807489f1edc7"></a>In this section, the functional architecture is defined according to <a href="#j1107">[ITU-T&#xA0;J.1107],  Section 7</a>.</p>
       </div>
       <div>
         <a name="timing_processing_specification" id="timing_processing_specification"></a>
@@ -3988,7 +3994,7 @@ table.biblio td {
 </html>
 
 
-------=_NextPart_252ef31b.bcba.4796
+------=_NextPart_b4fedaf2.4f24.46ff
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
@@ -3997,14 +4003,142 @@ Content-Type: application/xml
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
 ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1pdHUvbW4tc2FtcGxl
 cy1pdHUvX3NpdGUvZG9jdW1lbnRzL1QtUkVDLUouMTEwOC0yMDE5MDEtUC1kcmFmdC9lbi5odG0i
-Lz4gIDxvOkZpbGUgSFJlZj0iYjc2ZjEzMWUtZmI2YS00NmQwLWIzYmYtMDFlODI3YTBmZDE0LnN2
-ZyIvPgogIDxvOkZpbGUgSFJlZj0iYjkxYzVmNzYtNjJiMS00ZGZhLTg2ZmEtOWE2Yjc2OTdhYzJj
-LnBuZyIvPgogIDxvOkZpbGUgSFJlZj0iZmlsZWxpc3QueG1sIi8+CiAgPG86RmlsZSBIUmVmPSJo
+Lz4gIDxvOkZpbGUgSFJlZj0iNTA1ZjE5OWMtYmNiYy00ODNkLTg4ZTYtMWYyOGM4ZjRmNjJjLnBu
+ZyIvPgogIDxvOkZpbGUgSFJlZj0iNzI5NTQyNDAtYzk2Yi00ZWYxLWI2MDAtYTAzYWE5MWQwYTk0
+LnN2ZyIvPgogIDxvOkZpbGUgSFJlZj0iZmlsZWxpc3QueG1sIi8+CiAgPG86RmlsZSBIUmVmPSJo
 ZWFkZXIuaHRtbCIvPgo8L3htbD4K
 
-------=_NextPart_252ef31b.bcba.4796
-Content-ID: <b91c5f76-62b1-4dfa-86fa-9a6b7697ac2c.png>
-Content-Disposition: inline; filename="b91c5f76-62b1-4dfa-86fa-9a6b7697ac2c.png"
+------=_NextPart_b4fedaf2.4f24.46ff
+Content-ID: <72954240-c96b-4ef1-b600-a03aa91d0a94.svg>
+Content-Disposition: inline; filename="72954240-c96b-4ef1-b600-a03aa91d0a94.svg"
+Content-Transfer-Encoding: base64
+Content-Type: image/svg+xml
+
+PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53
+My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzIiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMjcy
+IDMwMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxNmEwZGI7fTwvc3R5bGU+PC9kZWZzPjx0
+aXRsZT5JVFU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjk1MTc2LDEyNC4wNDMz
+NGExLjM5OTEzLDEuMzk5MTMsMCwwLDEsMS40MDA2OCwxLjQwMDk0djg0LjgwNzM4YTEuNDA0LDEu
+NDA0LDAsMCwxLTEuNDAwNjgsMS40MDY2NkgyOC41NjI2MWExLjQwNzY0LDEuNDA3NjQsMCwwLDEt
+MS40MDA2OC0xLjQwNjY2VjEyNS40NDQyOGExLjQwMjcyLDEuNDAyNzIsMCwwLDEsMS40MDA2OC0x
+LjQwMDk0SDUzLjk1MTc2Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ1LjY3MTA1LDEyNC4w
+NDMzNGExLjM5OTE0LDEuMzk5MTQsMCwwLDEsMS40MDA2OCwxLjQwMDk0VjE0Ni4zMjZhMS40MDQs
+MS40MDQsMCwwLDEtMS40MDA2OCwxLjQwNjY4SDEyMy41MDg2N2ExLjQwNCwxLjQwNCwwLDAsMC0x
+LjQwNjYzLDEuNDAwOTJ2NjEuMTE4YTEuNDA0MSwxLjQwNDEsMCwwLDEtMS40MDEsMS40MDY2Nkg5
+NS4zMTIyMWExLjQwNCwxLjQwNCwwLDAsMS0xLjQwMDY4LTEuNDA2NjZ2LTYxLjExOGExLjQwMjc3
+LDEuNDAyNzcsMCwwLDAtMS40MDEtMS40MDA5Mkg3MC44NTk0MWExLjQwODksMS40MDg5LDAsMCwx
+LTEuNDA2NjQtMS40MDY2OFYxMjUuNDQ0MjhhMS40MDQsMS40MDQsMCwwLDEsMS40MDY2NC0xLjQw
+MDk0aDc0LjgxMTY0Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjQ0LjQ2OTQyLDEyNC4wNDMz
+NGExLjQwNDIyLDEuNDA0MjIsMCwwLDEsMS40MDY2MywxLjQwMDk0djQzLjIyMTg1YzAsMjguNjI3
+LTE1LjAwMjcsNDMuNzYxNTQtNDMuMzgyNzksNDMuNzYxNTQtMjcuNDE1NywwLTQxLjMxNTU5LTE0
+LjkzOTMzLTQxLjMxNTU5LTQ0LjQwNDZWMTI1LjQ0NDI4YTEuMzk5MjEsMS4zOTkyMSwwLDAsMSwx
+LjQwMS0xLjQwMDk0aDI1LjM4Mjg0YTEuNDAwNDMsMS40MDA0MywwLDAsMSwxLjQwNjY0LDEuNDAw
+OTR2NDIuNDQxYzAsOS4zMzU2NCwyLjQ1NzU4LDIwLjQ2MjYzLDE0LjE1ODUsMjAuNDYyNjMsOS41
+MjUxLDAsMTQuMTUyOS02LjY5NDU3LDE0LjE1MjktMjAuNDYyNjN2LTQyLjQ0MWExLjQwNCwxLjQw
+NCwwLDAsMSwxLjQwNjY0LTEuNDAwOTRoMjUuMzgzMiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0i
+TTI3MS4xMjAxMiwyOTljLTE2Ljg0NTYyLTguMzA3OTItMzUuODA0LTE3Ljc4NzEtNTMuMjg2Ny0y
+OC4yMDc4OXE0LjQ2OTYtMy40NjIwNyw4LjYzNS03LjI4MDE4QTEzMy4wMzkxNSwxMzMuMDM5MTUs
+MCwwLDAsMjQ3LjI4MTI4LDg5LjI2OTVhMTM0LjQ3NDU3LDEzNC40NzQ1NywwLDAsMC0xODMuMzM2
+OTUtMzguOTFDNTMuMDEyNiwzNS4xMTU4OCw0Mi4wMzUsMTguNTgwNDMsMzAuNDMxNDYsMSwzNC4w
+ODMsOC40MTIyNSw0NC45MTEzMSwzMS4yNjMzNiw1Ny42MDU3Miw1NC42MDgyMkExMzUuMDM4OSwx
+MzUuMDM4OSwwLDAsMCwuODc5ODgsMTY0LjUxMTYxLDEzMi4zOTY3MywxMzIuMzk2NzMsMCwwLDAs
+MTQuMTk0NTQsMjIyLjU1MjIsMTM0LjUxNDI0LDEzNC41MTQyNCwwLDAsMCwyMDkuOTc4ODQsMjc2
+LjQzNmMyMC40ODU1Niw4LjQ3NDQyLDQxLjA3NDQ5LDE1LjU1MzY3LDYxLjE0MTI4LDIyLjU2NE0x
+MjIuOTMyNTYsMjg3LjMxMDM1YTEyNC40MjI5LDEyNC40MjI5LDAsMCwxLTc5LjEyOTMxLTM5LjYz
+MzQyLDMzLjYwMjI5LDMzLjYwMjI5LDAsMCwxLTUuNTU3NS0xNS45NjcwNiwxNzUuNjM4OTMsMTc1
+LjYzODkzLDAsMCwwLDQ2LjIzNiwzMS42Mjk4LDE4Ny4wMDE0OCwxODcuMDAxNDgsMCwwLDAsNTku
+Nzk3MzgsMTcuNDQyNjFjLTYuOTc1Nyw0Ljg3NDUzLTE0LjE5Mjg1LDcuMTMwOTMtMjEuMzQ2NTcs
+Ni41MjgwN00zNS4yODg4LDIyMC4zNjQ3MmMtLjEyMDU1LDEuMjQwMTYtLjE5NTE5LDIuNDUxNi0u
+MjQ3MDUsMy42NTE1Ny0xLjExMzY4LTEuMjExNDUtMi4yMTA1My0yLjQyMjkxLTMuMjU1MTctMy42
+NTE1N0gyNy43OTAyNmMyLjIzMzY1LDIuNzQ0NDEsNC42NTY1NCw1LjQ0ODY1LDcuMjI4NzEsOC4x
+MDdhNDUuNzc1NDYsNDUuNzc1NDYsMCwwLDAsMS41MjcxOCwxMC41NTI4NUExMjIuNjg4OTEsMTIy
+LjY4ODkxLDAsMCwxLDMxLjkxMjc0LDk2LjQ5MjNhNjcuMDQyODMsNjcuMDQyODMsMCwwLDAtMS45
+MTc1NywxOC44MjYzMUgzMi45OThhNjAuMDE2NDEsNjAuMDE2NDEsMCwwLDEsNC45MzE2My0yNy4w
+OTk3OUExMjQuOTczMywxMjQuOTczMywwLDAsMSw1NC4zOTA1LDcxLjExNXE0LjcwMjQ1LTIuNjQz
+OTUsOS42NTE2LTQuOTI2MmM3LjMzNzcsMTIuODc4MTYsMTQuOTc5NTcsMjUuMTMwNDQsMjIuMDA3
+MTQsMzQuMTg0NzVhMTQ4LjM2Mzc5LDE0OC4zNjM3OSwwLDAsMS0yMy43MTIzNC0uNDkzNzVsMS4y
+ODYwOS4zNjE3MWMtLjQwNzU2LS4wMzQ0NS0uODA5NS0uMDc0NjQtMS4yMjMtLjExNDgzLDIuNTAz
+MTMsNS4yMDc1LDUuMjQyMTEsMTAuMjY1NzUsOC4xNDcxOSwxNS4xOTJoNTEuMTc0cS00LjAxMzMy
+LTMuMjgxMjctNy45MDA0OS02LjgwMzY2QTIxNC44Mzc1NywyMTQuODM3NTcsMCwwLDEsMTUwLjQ1
+NjksODQuMzc3NzhhNTMuMzQ5NDUsNTMuMzQ5NDUsMCwwLDAsMTUuMzMsMTEuNzI0MSw1NS44Njg3
+Myw1NS44Njg3MywwLDAsMCwyMy42OTQ4Miw2LjQ2NDljLjkwMTY2LDQuMTM5NjEsMS42NzY4MSw4
+LjM5OTc5LDIuMzE5ODYsMTIuNzUxODNoMy4wNTQzNnEtLjk0NzIyLTYuNTM2NjctMi4yOTA3Ny0x
+Mi43NzQ4MWM3LjY0NzQ4LS4zMjE1MiwxNC4xNjQxMS0yLjc3MzEyLDE4LjA3NDIzLTcuMjUxNDZh
+MTM0LjA3MTM5LDEzNC4wNzEzOSwwLDAsMSwxNy4wMjMyOSwyMC4wMjYyN2gzLjY0NTlBMTM2Ljk3
+NzQ5LDEzNi45Nzc0OSwwLDAsMCwyMTIuNDE5MjUsOTIuODEyYTE2Ljc5MTg0LDE2Ljc5MTg0LDAs
+MCwwLDEuMzY2MzMtMTIuOTM1NTIsMjguNzQ0MzMsMjguNzQ0MzMsMCwwLDAtNC4zMTc2Ny04Ljk1
+Njc0LDMwLjc1OTkyLDMwLjc1OTkyLDAsMCwxLDE0Ljk2OCw3LjAyNzYxLDEyMi43NzIsMTIyLjc3
+MiwwLDAsMSwyNy4zOTI1OCwxMzEuMDcyMmMtMTAuNTI0MTgsMjEuODkyMjUtMzUuOTg3NjIsMzMu
+NzgyODUtNjcuMjg0MzYsMzQuNjU1NTYsMTMuMjE2ODktMy4zNDE1MiwyMy43NDY2OC03LjkyMzIz
+LDM2LjIyODcyLTE1LjgyOTI2LTQuNjY3NzYtMi4xNDE1NS05LjM1MjY4LTQuNDg0MDgtMTQuMDM4
+LTYuOTg3MzctMS40NDY1OC4wNzQ2NC0yLjkxMDY5LjEyMDU3LTQuNDIwNy4xMjA1Ny0yNi4wNzIx
+NSwwLTQyLjMwOTA3LTExLjQ4My00Ny41OTExMy0zNC4xODQ3Ni04LjE4NzQ5LTYuMjc1NDUtMTYu
+MTg1NDEtMTIuODE1LTIzLjkxOTA5LTE5LjQ4MDg1VjE4Ni4zMTJjMTAuOTU0ODYsOS45Nzg3LDIx
+Ljg5MjE5LDE5LjE0MjExLDMyLjEwNjIzLDI3LjU4NzgtNy44NTk4NCw1LjIzNjI1LTMzLjMwNjEx
+LDEyLjk2NDI4LTM4LjI5LDEzLjgzN3E2LjQyNSw1LjE0MTQ5LDEzLjAwNDU0LDkuNzgzNDdhMTkz
+LjE1NzMyLDE5My4xNTczMiwwLDAsMS0zMS40MjI5LTExLjgzODkzcS0xLjUwNzU1LS43MjM0Mi0y
+Ljk5NzI0LTEuNDY5ODJjLS4xNDMzMy0uMDY4OTEtLjI4MTQtLjEzNzc5LS40MTkxMi0uMjA2Njlx
+LTIuNzkwMTQtMS40MDM4MS01LjUwNi0yLjg3NjQ4YTE0Mi43NDkyMiwxNDIuNzQ5MjIsMCwwLDEt
+MzMuMjQ5LTI0LjYzMXY0LjIxNDI1cTQuNDM1NDEsNC4yOTc1LDkuNDEwMTUsOC4yOTA3YTE2MS4z
+Njc0NCwxNjEuMzY3NDQsMCwwLDAsMzMuNzcxNDksMjAuNDc0MSwxOTMuODc3NzYsMTkzLjg3Nzc2
+LDAsMCwwLDM3LjU5NTQsMTMuMDA0NDVxMTAuNDgwOSw2Ljk3NTkxLDIxLjIyNiwxMi45NDEzYy0u
+MDgwMjUuMTQzNTUtLjE2NjQ2LjI5MjgxLS4yNTI2Ny40NDIxLTUuNTI4NzYsOS4zNzU4My0xMS41
+NDA0MiwxNi43ODIzMy0xNy43OTI4MywyMi4wNTg3NS0xOS43Nzk0NC0xLjcyMjQ0LTQxLjMzODM3
+LTcuNTA0MTEtNjIuMjY2MTgtMTcuNTExNS0xOC44MjYyNi05LjAwMjY1LTM1LjE5NTI5LTIwLjU4
+MzItNDcuNzI4ODUtMzMuMzA2MzJhNTkuMjU4MjUsNTkuMjU4MjUsMCwwLDEsLjMyMTM1LTYuNzQw
+NDlaTTE0My40MDA2LDcxLjkzMDI2YTI5LjUwMDcxLDI5LjUwMDcxLDAsMCwwLDUuMDkyODMsMTAu
+MDU5MDYsMjE5LjMzMjU3LDIxOS4zMzI1NywwLDAsMC0zNi45MzQ4NCwyNC40NjQ0M2MtMTMuNjI0
+NDUtMTIuNjQ4NDctMjYuMjUwMTctMjcuNDI3LTM4LjcyNjI1LTQzLjk4NTQ3LjA2ODY5LS4wMjMu
+MTMyMTEtLjA1NzM4LjIwMDgtLjA4MDM4LjAxMTU2LS4wMDU3NC4wMjg3My0uMDExNDcuMDQwMy0u
+MDE3MjF2LjAwNTc0QTEwOS41MjEsMTA5LjUyMSwwLDAsMSw5MC42NDgsNTcuNDI3MjdhMTI2LjY3
+MzYsMTI2LjY3MzYsMCwwLDEsNTQuMTEzNzIsMS41NzMxOCwxNi43NTQxMiwxNi43NTQxMiwwLDAs
+MC0xLjM2MTA4LDEyLjkyOTgxbTIuOTE3LS43NzUxMmExMy43MDIyMSwxMy43MDIyMSwwLDAsMSwx
+LjM4MzUtMTEuMTg0MzljLjA0MDMtLjA2MzE2LjA5MTgyLS4xMjA1OS4xMzIxMi0uMTgzNzFhMTQz
+LjQ0NzgzLDE0My40NDc4MywwLDAsMSwyOC4zMjg1NywxMC45MzE3N3EtMi44Njc5Mi44MjY3OC01
+LjgyNzY4LDEuODM3MjdhMTU3LjYxMzg1LDE1Ny42MTM4NSwwLDAsMC0xOS4wNjE3NSw4LjAzMjM0
+LDI2LjgxMTYyLDI2LjgxMTYyLDAsMCwxLTQuOTU0NzYtOS40MzMyOG0zMS4wNTU2NC0zLjE5OEEx
+NDcuMTg3NTIsMTQ3LjE4NzUyLDAsMCwwLDE1MC4wMjY1Nyw1Ny4yNTVjMy43MjAxOS0zLjM3MDI0
+LDkuNDc5MTktNS4wODEyMywxNi4xNDQ3Ni01LjA5MjdhNjkuNTE3NTcsNjkuNTE3NTcsMCwwLDEs
+MTEuMjAxOTEsMTUuNzk0OG0tNi43NjkzLTE1LjU1OTRhNTQuNzc1NjUsNTQuNzc1NjUsMCwwLDEs
+MTkuNDAwMjcsNS45OTQxLDUyLjQyOTUxLDUyLjQyOTUxLDAsMCwxLDEyLjA2ODg4LDguNTgzNTIs
+NzguNjE0MDcsNzguNjE0MDcsMCwwLDAtMjAuNTc3NzIsMi4zNDgyNSw3OS4xNDIzNCw3OS4xNDIz
+NCwwLDAsMC0xMC44OTE0My0xNi45MjU4N20uNzA2MTIsMjMuMDE3NjFjMi45MDUwOC0uOTkzMyw1
+LjczNTg3LTEuODM3MjgsOC41MDg4NC0yLjU1NXExLjgzNDUxLDMuOTUzLDMuNDc5NDQsOC4zNDIz
+NGExNTIuMTc5MzMsMTUyLjE3OTMzLDAsMCwxLDUuNTAwMzgsMTguMzc4NDgsNTMuNjYwNDQsNTMu
+NjYwNDQsMCwwLDEtMjEuNjE2NzUtNi4xNjA2LDUwLjkxNzU1LDUwLjkxNzU1LDAsMCwxLTEzLjkw
+MDI0LTEwLjQ2MSwxNTQuNDA0NzMsMTU0LjQwNDczLDAsMCwxLDE4LjAyODMzLTcuNTQ0MjdtMTQu
+ODE4NzIsNC43MzFxLS45NzMtMi42MDA5MS0yLjAxNTMzLTUuMDUyNDlhMTQyLjYzMzc2LDE0Mi42
+MzM3NiwwLDAsMSwyNC4zMzI2LDE4LjEyNTg0Yy0zLjQ1MDcxLDQuMDc2NDUtOS40MzMyOCw2LjIy
+OTUtMTYuNTI5ODgsNi40MDc0OGExNTcuNjYzNDcsMTU3LjY2MzQ3LDAsMCwwLTUuNzg3MzktMTku
+NDgwODNNMTg0LjQxMiw3MS43ODFhNjkuNTI4ODcsNjkuNTI4ODcsMCwwLDEsMjAuNzQ5NzgtMS40
+ODdBMjcuNjEwMTUsMjcuNjEwMTUsMCwwLDEsMjEwLjg2Myw4MC42NTE1NWExNC4wNzU1NywxNC4w
+NzU1NywwLDAsMS0uNzE3NjksMTAuMDE4ODlBMTQ2LjEyMTc4LDE0Ni4xMjE3OCwwLDAsMCwxODQu
+NDEyLDcxLjc4MW02Ljk4MTY1LTE2LjA3MDM4YTU1LjY4MDMsNTUuNjgwMywwLDAsMC0yMy43MTc5
+NC02LjQ1OTE2LDQzLjMyMjUsNDMuMzIyNSwwLDAsMC03LjA1MDY5LTUuNzEyNzksMTI0LjI3Njc1
+LDEyNC4yNzY3NSwwLDAsMSw1My45NTg0OCwyNS40NzQ5Myw0Mi40OTEyMiw0Mi40OTEyMiwwLDAs
+MC03Ljk2MzIyLTEuNjkzNzMsNTMuMjIzNjQsNTMuMjIzNjQsMCwwLDAtMTUuMjI2NjMtMTEuNjA5
+MjVtLTI4LjE5MDUtNi4zNTU4M2MtNi45NTI5My41NDU0NS0xMi44NjA4NiwyLjg5OTQ0LTE2LjUz
+NTQ5LDcuMDEwMzVhMTI5LjkzNzQzLDEyOS45Mzc0MywwLDAsMC01Ni41OTkzNC0xLjkwMDQzLDEx
+My4wMzIzMywxMTMuMDMyMzMsMCwwLDAtMTguNTc0LDUuMjcwNjd2LjAxMTQ4Yy0uMTc4LjA2ODkt
+LjM2MTY0LjE0MzU0LS41NDUyNy4yMTI0NS0uMTM3NzItLjE4OTUtLjI4Ny0uMzg0NjktLjQyNTA4
+LS41NzQxNGExMjQuNTM1MTUsMTI0LjUzNTE1LDAsMCwxLDY1LjIyMzQ3LTE4LjMxNTMzcTUuNTU0
+NTMsMCwxMC45ODkyLjQ3NjU0YzUuNzQ3MDkuNjc3NDcsMTEuMzA0OTQsMy4zNTMsMTYuNDY2NDYs
+Ny44MDg0MU0xNDguNzI4OTIsMjgxLjIwMTQxYzMuODUyNjUuMzA0MzEsNy42NjQ2NS40NzY1NSwx
+MS40MTk4OC40NzY1NSwyLjc4NDUzLDAsNS41NDYyOS0uMDg2MTIsOC4yNjE3OS0uMjU4MzcsMy42
+OTc0MS0uMjI5NjUsNy4yNTc0NC0uNjMxNTYsMTAuNjc5MDYtMS4xNzEyNWExMjQuODQzODUsMTI0
+Ljg0Mzg1LDAsMCwxLTQxLjYwODIsNy42ODIwOSw0NS41MjA1OCw0NS41MjA1OCwwLDAsMCwxMS4y
+NDc0Ny02LjcyOW0zLjQ0NDc1LTIuOTc0MDhhOTIuNjEwNDksOTIuNjEwNDksMCwwLDAsMTYuMjA4
+MTgtMjAuODMwMDljLjEwMzM4LS4xNzIyNC4yMDExNS0uMzQ0NDcuMjk4NTctLjUxNjcxLDkuNzA5
+MDcsNS4zMTA4NiwxOS41NDM5NSwxMC4wODc3OCwyOS40MjUwOCwxNC40NzQyNS0uNjgzLjM5NjE2
+LTEuMzc3OS43NjkzNi0yLjA2Njg1LDEuMTQ4My0xMi4yNjk2OCw0Ljc0ODItMjcuMzY5OCw2LjY4
+ODgyLTQzLjg2NSw1LjcyNDI1bTMxLjM0My0zMS41MTVjNC4xOTY3OC0uMDg2MTIsOC4zMzY0My0u
+MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
+OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
+NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
+
+------=_NextPart_b4fedaf2.4f24.46ff
+Content-ID: <505f199c-bcbc-483d-88e6-1f28c8f4f62c.png>
+Content-Disposition: inline; filename="505f199c-bcbc-483d-88e6-1f28c8f4f62c.png"
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -4408,11 +4542,11 @@ C7+w2Xb7Eb3o/8qNmGQMnLRiOgtj4OgmE+D4QbowaScm34WpzzFww2/qzparyA1MuOWqRprGNpt9
 e2wfOBmiVbYRslL9tQ8BUrd6JgExGYgGP2+SBj+gC2zppLgQoH0GxLx7ix3HWQBlaDjfTIMuKwYo
 7AdNOpT6a4JR2HSg3ZakAcg368qo/H9lWc/6NFehlQAAAABJRU5ErkJggg==
 
-------=_NextPart_252ef31b.bcba.4796
+------=_NextPart_b4fedaf2.4f24.46ff
 Content-ID: <header.html>
 Content-Disposition: inline; filename="header.html"
 Content-Transfer-Encoding: base64
-Content-Type: text/html charset="utf-8"
+Content-Type: text/html; charset="utf-8"
 
 PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiDQp4bWxuczpvPSJ1
 cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiDQp4bWxuczp3PSJ1cm46c2No
@@ -4626,132 +4760,4 @@ bGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1F
 Ti1HQiBzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8
 L2Rpdj4NCg0KDQoNCjwvYm9keT4NCg0KPC9odG1sPg0K
 
-------=_NextPart_252ef31b.bcba.4796
-Content-ID: <b76f131e-fb6a-46d0-b3bf-01e827a0fd14.svg>
-Content-Disposition: inline; filename="b76f131e-fb6a-46d0-b3bf-01e827a0fd14.svg"
-Content-Transfer-Encoding: base64
-Content-Type: image/svg+xml
-
-PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53
-My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzIiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMjcy
-IDMwMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMxNmEwZGI7fTwvc3R5bGU+PC9kZWZzPjx0
-aXRsZT5JVFU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUzLjk1MTc2LDEyNC4wNDMz
-NGExLjM5OTEzLDEuMzk5MTMsMCwwLDEsMS40MDA2OCwxLjQwMDk0djg0LjgwNzM4YTEuNDA0LDEu
-NDA0LDAsMCwxLTEuNDAwNjgsMS40MDY2NkgyOC41NjI2MWExLjQwNzY0LDEuNDA3NjQsMCwwLDEt
-MS40MDA2OC0xLjQwNjY2VjEyNS40NDQyOGExLjQwMjcyLDEuNDAyNzIsMCwwLDEsMS40MDA2OC0x
-LjQwMDk0SDUzLjk1MTc2Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQ1LjY3MTA1LDEyNC4w
-NDMzNGExLjM5OTE0LDEuMzk5MTQsMCwwLDEsMS40MDA2OCwxLjQwMDk0VjE0Ni4zMjZhMS40MDQs
-MS40MDQsMCwwLDEtMS40MDA2OCwxLjQwNjY4SDEyMy41MDg2N2ExLjQwNCwxLjQwNCwwLDAsMC0x
-LjQwNjYzLDEuNDAwOTJ2NjEuMTE4YTEuNDA0MSwxLjQwNDEsMCwwLDEtMS40MDEsMS40MDY2Nkg5
-NS4zMTIyMWExLjQwNCwxLjQwNCwwLDAsMS0xLjQwMDY4LTEuNDA2NjZ2LTYxLjExOGExLjQwMjc3
-LDEuNDAyNzcsMCwwLDAtMS40MDEtMS40MDA5Mkg3MC44NTk0MWExLjQwODksMS40MDg5LDAsMCwx
-LTEuNDA2NjQtMS40MDY2OFYxMjUuNDQ0MjhhMS40MDQsMS40MDQsMCwwLDEsMS40MDY2NC0xLjQw
-MDk0aDc0LjgxMTY0Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjQ0LjQ2OTQyLDEyNC4wNDMz
-NGExLjQwNDIyLDEuNDA0MjIsMCwwLDEsMS40MDY2MywxLjQwMDk0djQzLjIyMTg1YzAsMjguNjI3
-LTE1LjAwMjcsNDMuNzYxNTQtNDMuMzgyNzksNDMuNzYxNTQtMjcuNDE1NywwLTQxLjMxNTU5LTE0
-LjkzOTMzLTQxLjMxNTU5LTQ0LjQwNDZWMTI1LjQ0NDI4YTEuMzk5MjEsMS4zOTkyMSwwLDAsMSwx
-LjQwMS0xLjQwMDk0aDI1LjM4Mjg0YTEuNDAwNDMsMS40MDA0MywwLDAsMSwxLjQwNjY0LDEuNDAw
-OTR2NDIuNDQxYzAsOS4zMzU2NCwyLjQ1NzU4LDIwLjQ2MjYzLDE0LjE1ODUsMjAuNDYyNjMsOS41
-MjUxLDAsMTQuMTUyOS02LjY5NDU3LDE0LjE1MjktMjAuNDYyNjN2LTQyLjQ0MWExLjQwNCwxLjQw
-NCwwLDAsMSwxLjQwNjY0LTEuNDAwOTRoMjUuMzgzMiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0i
-TTI3MS4xMjAxMiwyOTljLTE2Ljg0NTYyLTguMzA3OTItMzUuODA0LTE3Ljc4NzEtNTMuMjg2Ny0y
-OC4yMDc4OXE0LjQ2OTYtMy40NjIwNyw4LjYzNS03LjI4MDE4QTEzMy4wMzkxNSwxMzMuMDM5MTUs
-MCwwLDAsMjQ3LjI4MTI4LDg5LjI2OTVhMTM0LjQ3NDU3LDEzNC40NzQ1NywwLDAsMC0xODMuMzM2
-OTUtMzguOTFDNTMuMDEyNiwzNS4xMTU4OCw0Mi4wMzUsMTguNTgwNDMsMzAuNDMxNDYsMSwzNC4w
-ODMsOC40MTIyNSw0NC45MTEzMSwzMS4yNjMzNiw1Ny42MDU3Miw1NC42MDgyMkExMzUuMDM4OSwx
-MzUuMDM4OSwwLDAsMCwuODc5ODgsMTY0LjUxMTYxLDEzMi4zOTY3MywxMzIuMzk2NzMsMCwwLDAs
-MTQuMTk0NTQsMjIyLjU1MjIsMTM0LjUxNDI0LDEzNC41MTQyNCwwLDAsMCwyMDkuOTc4ODQsMjc2
-LjQzNmMyMC40ODU1Niw4LjQ3NDQyLDQxLjA3NDQ5LDE1LjU1MzY3LDYxLjE0MTI4LDIyLjU2NE0x
-MjIuOTMyNTYsMjg3LjMxMDM1YTEyNC40MjI5LDEyNC40MjI5LDAsMCwxLTc5LjEyOTMxLTM5LjYz
-MzQyLDMzLjYwMjI5LDMzLjYwMjI5LDAsMCwxLTUuNTU3NS0xNS45NjcwNiwxNzUuNjM4OTMsMTc1
-LjYzODkzLDAsMCwwLDQ2LjIzNiwzMS42Mjk4LDE4Ny4wMDE0OCwxODcuMDAxNDgsMCwwLDAsNTku
-Nzk3MzgsMTcuNDQyNjFjLTYuOTc1Nyw0Ljg3NDUzLTE0LjE5Mjg1LDcuMTMwOTMtMjEuMzQ2NTcs
-Ni41MjgwN00zNS4yODg4LDIyMC4zNjQ3MmMtLjEyMDU1LDEuMjQwMTYtLjE5NTE5LDIuNDUxNi0u
-MjQ3MDUsMy42NTE1Ny0xLjExMzY4LTEuMjExNDUtMi4yMTA1My0yLjQyMjkxLTMuMjU1MTctMy42
-NTE1N0gyNy43OTAyNmMyLjIzMzY1LDIuNzQ0NDEsNC42NTY1NCw1LjQ0ODY1LDcuMjI4NzEsOC4x
-MDdhNDUuNzc1NDYsNDUuNzc1NDYsMCwwLDAsMS41MjcxOCwxMC41NTI4NUExMjIuNjg4OTEsMTIy
-LjY4ODkxLDAsMCwxLDMxLjkxMjc0LDk2LjQ5MjNhNjcuMDQyODMsNjcuMDQyODMsMCwwLDAtMS45
-MTc1NywxOC44MjYzMUgzMi45OThhNjAuMDE2NDEsNjAuMDE2NDEsMCwwLDEsNC45MzE2My0yNy4w
-OTk3OUExMjQuOTczMywxMjQuOTczMywwLDAsMSw1NC4zOTA1LDcxLjExNXE0LjcwMjQ1LTIuNjQz
-OTUsOS42NTE2LTQuOTI2MmM3LjMzNzcsMTIuODc4MTYsMTQuOTc5NTcsMjUuMTMwNDQsMjIuMDA3
-MTQsMzQuMTg0NzVhMTQ4LjM2Mzc5LDE0OC4zNjM3OSwwLDAsMS0yMy43MTIzNC0uNDkzNzVsMS4y
-ODYwOS4zNjE3MWMtLjQwNzU2LS4wMzQ0NS0uODA5NS0uMDc0NjQtMS4yMjMtLjExNDgzLDIuNTAz
-MTMsNS4yMDc1LDUuMjQyMTEsMTAuMjY1NzUsOC4xNDcxOSwxNS4xOTJoNTEuMTc0cS00LjAxMzMy
-LTMuMjgxMjctNy45MDA0OS02LjgwMzY2QTIxNC44Mzc1NywyMTQuODM3NTcsMCwwLDEsMTUwLjQ1
-NjksODQuMzc3NzhhNTMuMzQ5NDUsNTMuMzQ5NDUsMCwwLDAsMTUuMzMsMTEuNzI0MSw1NS44Njg3
-Myw1NS44Njg3MywwLDAsMCwyMy42OTQ4Miw2LjQ2NDljLjkwMTY2LDQuMTM5NjEsMS42NzY4MSw4
-LjM5OTc5LDIuMzE5ODYsMTIuNzUxODNoMy4wNTQzNnEtLjk0NzIyLTYuNTM2NjctMi4yOTA3Ny0x
-Mi43NzQ4MWM3LjY0NzQ4LS4zMjE1MiwxNC4xNjQxMS0yLjc3MzEyLDE4LjA3NDIzLTcuMjUxNDZh
-MTM0LjA3MTM5LDEzNC4wNzEzOSwwLDAsMSwxNy4wMjMyOSwyMC4wMjYyN2gzLjY0NTlBMTM2Ljk3
-NzQ5LDEzNi45Nzc0OSwwLDAsMCwyMTIuNDE5MjUsOTIuODEyYTE2Ljc5MTg0LDE2Ljc5MTg0LDAs
-MCwwLDEuMzY2MzMtMTIuOTM1NTIsMjguNzQ0MzMsMjguNzQ0MzMsMCwwLDAtNC4zMTc2Ny04Ljk1
-Njc0LDMwLjc1OTkyLDMwLjc1OTkyLDAsMCwxLDE0Ljk2OCw3LjAyNzYxLDEyMi43NzIsMTIyLjc3
-MiwwLDAsMSwyNy4zOTI1OCwxMzEuMDcyMmMtMTAuNTI0MTgsMjEuODkyMjUtMzUuOTg3NjIsMzMu
-NzgyODUtNjcuMjg0MzYsMzQuNjU1NTYsMTMuMjE2ODktMy4zNDE1MiwyMy43NDY2OC03LjkyMzIz
-LDM2LjIyODcyLTE1LjgyOTI2LTQuNjY3NzYtMi4xNDE1NS05LjM1MjY4LTQuNDg0MDgtMTQuMDM4
-LTYuOTg3MzctMS40NDY1OC4wNzQ2NC0yLjkxMDY5LjEyMDU3LTQuNDIwNy4xMjA1Ny0yNi4wNzIx
-NSwwLTQyLjMwOTA3LTExLjQ4My00Ny41OTExMy0zNC4xODQ3Ni04LjE4NzQ5LTYuMjc1NDUtMTYu
-MTg1NDEtMTIuODE1LTIzLjkxOTA5LTE5LjQ4MDg1VjE4Ni4zMTJjMTAuOTU0ODYsOS45Nzg3LDIx
-Ljg5MjE5LDE5LjE0MjExLDMyLjEwNjIzLDI3LjU4NzgtNy44NTk4NCw1LjIzNjI1LTMzLjMwNjEx
-LDEyLjk2NDI4LTM4LjI5LDEzLjgzN3E2LjQyNSw1LjE0MTQ5LDEzLjAwNDU0LDkuNzgzNDdhMTkz
-LjE1NzMyLDE5My4xNTczMiwwLDAsMS0zMS40MjI5LTExLjgzODkzcS0xLjUwNzU1LS43MjM0Mi0y
-Ljk5NzI0LTEuNDY5ODJjLS4xNDMzMy0uMDY4OTEtLjI4MTQtLjEzNzc5LS40MTkxMi0uMjA2Njlx
-LTIuNzkwMTQtMS40MDM4MS01LjUwNi0yLjg3NjQ4YTE0Mi43NDkyMiwxNDIuNzQ5MjIsMCwwLDEt
-MzMuMjQ5LTI0LjYzMXY0LjIxNDI1cTQuNDM1NDEsNC4yOTc1LDkuNDEwMTUsOC4yOTA3YTE2MS4z
-Njc0NCwxNjEuMzY3NDQsMCwwLDAsMzMuNzcxNDksMjAuNDc0MSwxOTMuODc3NzYsMTkzLjg3Nzc2
-LDAsMCwwLDM3LjU5NTQsMTMuMDA0NDVxMTAuNDgwOSw2Ljk3NTkxLDIxLjIyNiwxMi45NDEzYy0u
-MDgwMjUuMTQzNTUtLjE2NjQ2LjI5MjgxLS4yNTI2Ny40NDIxLTUuNTI4NzYsOS4zNzU4My0xMS41
-NDA0MiwxNi43ODIzMy0xNy43OTI4MywyMi4wNTg3NS0xOS43Nzk0NC0xLjcyMjQ0LTQxLjMzODM3
-LTcuNTA0MTEtNjIuMjY2MTgtMTcuNTExNS0xOC44MjYyNi05LjAwMjY1LTM1LjE5NTI5LTIwLjU4
-MzItNDcuNzI4ODUtMzMuMzA2MzJhNTkuMjU4MjUsNTkuMjU4MjUsMCwwLDEsLjMyMTM1LTYuNzQw
-NDlaTTE0My40MDA2LDcxLjkzMDI2YTI5LjUwMDcxLDI5LjUwMDcxLDAsMCwwLDUuMDkyODMsMTAu
-MDU5MDYsMjE5LjMzMjU3LDIxOS4zMzI1NywwLDAsMC0zNi45MzQ4NCwyNC40NjQ0M2MtMTMuNjI0
-NDUtMTIuNjQ4NDctMjYuMjUwMTctMjcuNDI3LTM4LjcyNjI1LTQzLjk4NTQ3LjA2ODY5LS4wMjMu
-MTMyMTEtLjA1NzM4LjIwMDgtLjA4MDM4LjAxMTU2LS4wMDU3NC4wMjg3My0uMDExNDcuMDQwMy0u
-MDE3MjF2LjAwNTc0QTEwOS41MjEsMTA5LjUyMSwwLDAsMSw5MC42NDgsNTcuNDI3MjdhMTI2LjY3
-MzYsMTI2LjY3MzYsMCwwLDEsNTQuMTEzNzIsMS41NzMxOCwxNi43NTQxMiwxNi43NTQxMiwwLDAs
-MC0xLjM2MTA4LDEyLjkyOTgxbTIuOTE3LS43NzUxMmExMy43MDIyMSwxMy43MDIyMSwwLDAsMSwx
-LjM4MzUtMTEuMTg0MzljLjA0MDMtLjA2MzE2LjA5MTgyLS4xMjA1OS4xMzIxMi0uMTgzNzFhMTQz
-LjQ0NzgzLDE0My40NDc4MywwLDAsMSwyOC4zMjg1NywxMC45MzE3N3EtMi44Njc5Mi44MjY3OC01
-LjgyNzY4LDEuODM3MjdhMTU3LjYxMzg1LDE1Ny42MTM4NSwwLDAsMC0xOS4wNjE3NSw4LjAzMjM0
-LDI2LjgxMTYyLDI2LjgxMTYyLDAsMCwxLTQuOTU0NzYtOS40MzMyOG0zMS4wNTU2NC0zLjE5OEEx
-NDcuMTg3NTIsMTQ3LjE4NzUyLDAsMCwwLDE1MC4wMjY1Nyw1Ny4yNTVjMy43MjAxOS0zLjM3MDI0
-LDkuNDc5MTktNS4wODEyMywxNi4xNDQ3Ni01LjA5MjdhNjkuNTE3NTcsNjkuNTE3NTcsMCwwLDEs
-MTEuMjAxOTEsMTUuNzk0OG0tNi43NjkzLTE1LjU1OTRhNTQuNzc1NjUsNTQuNzc1NjUsMCwwLDEs
-MTkuNDAwMjcsNS45OTQxLDUyLjQyOTUxLDUyLjQyOTUxLDAsMCwxLDEyLjA2ODg4LDguNTgzNTIs
-NzguNjE0MDcsNzguNjE0MDcsMCwwLDAtMjAuNTc3NzIsMi4zNDgyNSw3OS4xNDIzNCw3OS4xNDIz
-NCwwLDAsMC0xMC44OTE0My0xNi45MjU4N20uNzA2MTIsMjMuMDE3NjFjMi45MDUwOC0uOTkzMyw1
-LjczNTg3LTEuODM3MjgsOC41MDg4NC0yLjU1NXExLjgzNDUxLDMuOTUzLDMuNDc5NDQsOC4zNDIz
-NGExNTIuMTc5MzMsMTUyLjE3OTMzLDAsMCwxLDUuNTAwMzgsMTguMzc4NDgsNTMuNjYwNDQsNTMu
-NjYwNDQsMCwwLDEtMjEuNjE2NzUtNi4xNjA2LDUwLjkxNzU1LDUwLjkxNzU1LDAsMCwxLTEzLjkw
-MDI0LTEwLjQ2MSwxNTQuNDA0NzMsMTU0LjQwNDczLDAsMCwxLDE4LjAyODMzLTcuNTQ0MjdtMTQu
-ODE4NzIsNC43MzFxLS45NzMtMi42MDA5MS0yLjAxNTMzLTUuMDUyNDlhMTQyLjYzMzc2LDE0Mi42
-MzM3NiwwLDAsMSwyNC4zMzI2LDE4LjEyNTg0Yy0zLjQ1MDcxLDQuMDc2NDUtOS40MzMyOCw2LjIy
-OTUtMTYuNTI5ODgsNi40MDc0OGExNTcuNjYzNDcsMTU3LjY2MzQ3LDAsMCwwLTUuNzg3MzktMTku
-NDgwODNNMTg0LjQxMiw3MS43ODFhNjkuNTI4ODcsNjkuNTI4ODcsMCwwLDEsMjAuNzQ5NzgtMS40
-ODdBMjcuNjEwMTUsMjcuNjEwMTUsMCwwLDEsMjEwLjg2Myw4MC42NTE1NWExNC4wNzU1NywxNC4w
-NzU1NywwLDAsMS0uNzE3NjksMTAuMDE4ODlBMTQ2LjEyMTc4LDE0Ni4xMjE3OCwwLDAsMCwxODQu
-NDEyLDcxLjc4MW02Ljk4MTY1LTE2LjA3MDM4YTU1LjY4MDMsNTUuNjgwMywwLDAsMC0yMy43MTc5
-NC02LjQ1OTE2LDQzLjMyMjUsNDMuMzIyNSwwLDAsMC03LjA1MDY5LTUuNzEyNzksMTI0LjI3Njc1
-LDEyNC4yNzY3NSwwLDAsMSw1My45NTg0OCwyNS40NzQ5Myw0Mi40OTEyMiw0Mi40OTEyMiwwLDAs
-MC03Ljk2MzIyLTEuNjkzNzMsNTMuMjIzNjQsNTMuMjIzNjQsMCwwLDAtMTUuMjI2NjMtMTEuNjA5
-MjVtLTI4LjE5MDUtNi4zNTU4M2MtNi45NTI5My41NDU0NS0xMi44NjA4NiwyLjg5OTQ0LTE2LjUz
-NTQ5LDcuMDEwMzVhMTI5LjkzNzQzLDEyOS45Mzc0MywwLDAsMC01Ni41OTkzNC0xLjkwMDQzLDEx
-My4wMzIzMywxMTMuMDMyMzMsMCwwLDAtMTguNTc0LDUuMjcwNjd2LjAxMTQ4Yy0uMTc4LjA2ODkt
-LjM2MTY0LjE0MzU0LS41NDUyNy4yMTI0NS0uMTM3NzItLjE4OTUtLjI4Ny0uMzg0NjktLjQyNTA4
-LS41NzQxNGExMjQuNTM1MTUsMTI0LjUzNTE1LDAsMCwxLDY1LjIyMzQ3LTE4LjMxNTMzcTUuNTU0
-NTMsMCwxMC45ODkyLjQ3NjU0YzUuNzQ3MDkuNjc3NDcsMTEuMzA0OTQsMy4zNTMsMTYuNDY2NDYs
-Ny44MDg0MU0xNDguNzI4OTIsMjgxLjIwMTQxYzMuODUyNjUuMzA0MzEsNy42NjQ2NS40NzY1NSwx
-MS40MTk4OC40NzY1NSwyLjc4NDUzLDAsNS41NDYyOS0uMDg2MTIsOC4yNjE3OS0uMjU4MzcsMy42
-OTc0MS0uMjI5NjUsNy4yNTc0NC0uNjMxNTYsMTAuNjc5MDYtMS4xNzEyNWExMjQuODQzODUsMTI0
-Ljg0Mzg1LDAsMCwxLTQxLjYwODIsNy42ODIwOSw0NS41MjA1OCw0NS41MjA1OCwwLDAsMCwxMS4y
-NDc0Ny02LjcyOW0zLjQ0NDc1LTIuOTc0MDhhOTIuNjEwNDksOTIuNjEwNDksMCwwLDAsMTYuMjA4
-MTgtMjAuODMwMDljLjEwMzM4LS4xNzIyNC4yMDExNS0uMzQ0NDcuMjk4NTctLjUxNjcxLDkuNzA5
-MDcsNS4zMTA4NiwxOS41NDM5NSwxMC4wODc3OCwyOS40MjUwOCwxNC40NzQyNS0uNjgzLjM5NjE2
-LTEuMzc3OS43NjkzNi0yLjA2Njg1LDEuMTQ4My0xMi4yNjk2OCw0Ljc0ODItMjcuMzY5OCw2LjY4
-ODgyLTQzLjg2NSw1LjcyNDI1bTMxLjM0My0zMS41MTVjNC4xOTY3OC0uMDg2MTIsOC4zMzY0My0u
-MzYxNzEsMTIuMzc4MzEtLjgzODI2LDIwLjc1NTc1LTIuNDYzMDgsMzcuNDUxNzMtOS44ODY4Myw0
-OC42MDczOS0yMS4zNjRhMTI0LjMzOTE4LDEyNC4zMzkxOCwwLDAsMS0zNi4yNzQ2Myw0MC4zNDUz
-NywyMTQuNjA3MjgsMjE0LjYwNzI4LDAsMCwxLTI0LjcxMTA3LTE4LjE0MzA5Ii8+PC9zdmc+
-
-------=_NextPart_252ef31b.bcba.4796--
+------=_NextPart_b4fedaf2.4f24.46ff--

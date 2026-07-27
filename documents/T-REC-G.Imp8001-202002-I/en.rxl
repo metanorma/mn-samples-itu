@@ -1,11 +1,6 @@
 <bibdata type="standard">
-<title language="en" format="text/plain" type="main">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
-
-
-
-
-
-<docidentifier type="ITU" primary="true">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T G.8001</docidentifier><docidentifier type="ITU-Recommendation">Y</docidentifier><docidentifier type="ITU-Recommendation">1354</docidentifier><docnumber>G.8001/Y.1354 Implementers' Guide</docnumber><date type="published"><on>2020-02-07</on></date><contributor><role type="author"/><organization>
+<title language="en" type="main">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
+<docidentifier type="ITU" primary="true">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T G.8001</docidentifier><docidentifier type="ITU-Recommendation">Y</docidentifier><docidentifier type="ITU-Recommendation">1354</docidentifier><docnumber>G.8001/Y.1354 Implementers' Guide</docnumber><date type="published"><on>2020-02-07</on></date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="editor">raporteur</role><person>
 <name><completename>Jessy Rouyer</completename></name>
@@ -15,9 +10,17 @@
 <name><completename>Yuji Tochio</completename></name>
 <affiliation><organization>
 <name>Fujitsu</name>
-</organization></affiliation><phone>+81 44 280 9936</phone><email>tochio@fujitsu.com</email></person></contributor><contributor><role type="publisher"/><organization>
+</organization></affiliation><phone>+81 44 280 9936</phone><email>tochio@fujitsu.com</email></person></contributor><contributor><role type="author"><description>committee</description></role><organization>
 <name>International Telecommunication Union</name>
-<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract><p>This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).</p>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><subdivision type="Group" subtype="study-group">
+<name>15</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract>
+
+<p>This document is an Implementers' Guide for Recommendation ITU-T G.8001/Y.1354 (2016-04).</p>
 
 <p>This version contains all updates submitted up to and including those at Study Group 15 meeting in January/February 2020.</p>
 
@@ -28,6 +31,4 @@
 <title>G: Transmission Systems and Media, Digital Systems and Networks</title>
 </series><series type="secondary">
 <title>Digital networks – General aspects</title>
-</series><ext><doctype>implementers-guide</doctype><flavor>itu</flavor><editorialgroup><bureau>T</bureau><group type="study-group">
-<name>15</name>
-<period><start>2024</start><end>2026</end></period></group></editorialgroup><ip-notice-received>false</ip-notice-received><structuredidentifier><bureau>T</bureau><docnumber>G.8001/Y.1354 Implementers' Guide</docnumber></structuredidentifier></ext></bibdata>
+</series><ext><doctype>implementers-guide</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>G.8001/Y.1354 Implementers' Guide</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata>
