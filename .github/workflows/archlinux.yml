@@ -33,7 +33,7 @@ jobs:
           PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
           metanorma site generate --agree-to-terms
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: site
           path: site
