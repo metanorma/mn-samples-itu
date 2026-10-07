@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.13" schema-version="v2.1.6" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Counterfeit ICT equipment</title>
 <docidentifier type="ITU" primary="true">ITU-T QSTR-COUNTERFEIT</docidentifier><docidentifier type="ITU-lang">ITU-T QSTR-COUNTERFEIT-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T QSTR-COUNTERFEIT-E</docidentifier><docnumber>QSTR-COUNTERFEIT</docnumber><date type="published"><on>2015-12-11</on></date><contributor><role type="author"/><organization>
@@ -16,7 +16,7 @@
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2015</from><owner><organization>
 <name>International Telecommunication Union</name>
-<abbreviation>ITU</abbreviation></organization></owner></copyright><keyword>Counterfeit</keyword><keyword>substandard</keyword><ext><doctype>technical-report</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>QSTR-COUNTERFEIT</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><keyword><vocab>Counterfeit</vocab></keyword><keyword><vocab>substandard</vocab></keyword><ext><doctype>technical-report</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>QSTR-COUNTERFEIT</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -838,7 +838,7 @@
 
 <p id="_9f39a7d6-98b9-1684-f94a-31df8a5552b1">The World Customs Organization (WCO) SAFE Framework of Standards <eref type="inline" bibitemid="wcoomd" citeas="[89]"/> is intended to ensure the security of global supply chains and includes a handbook describing the factors indicating that shipments have a high-risk of containing counterfeit goods. The SAFE Framework is based on customs-to-customs agreements and also customs-to-business partnerships with benefits being given to businesses that meet supply chain security standards.</p>
 
-<p id="_8543c75d-1f96-604c-471e-573436076942">IEC TC 107, whose field of activity is process management for the avionics industry, has produced a specification concerned with the avoidance of use of counterfeit, fraudulent and recycled electronic components <eref type="inline" bibitemid="ts62668" citeas="IEC TS 62668-1"/>. This committee is also currently working on a specification for managing electronic components from non-franchised sources to prevent counterfeit components entering the supply chain <eref type="inline" bibitemid="ts62668-2" citeas="IEC TS 62668-2:2014"/>.</p>
+<p id="_8543c75d-1f96-604c-471e-573436076942">IEC TC 107, whose field of activity is process management for the avionics industry, has produced a specification concerned with the avoidance of use of counterfeit, fraudulent and recycled electronic components <eref type="inline" bibitemid="ts62668" citeas="IEC TS 62668-1:2014"/>. This committee is also currently working on a specification for managing electronic components from non-franchised sources to prevent counterfeit components entering the supply chain <eref type="inline" bibitemid="ts62668-2" citeas="IEC TS 62668-2:2014"/>.</p>
 
 <p id="_5026fe12-80c2-eb10-a4f4-019149a27ca9">SAE International (originally the Society for Automotive Engineers) has developed a number of specifications specifically intended to avoid counterfeit electronic components being introduced in the supply chains of the aerospace and automotive industries that are widely referred to in the electronics industry. SAE has produced two documents that are intended for the use of those making purchasing decisions:</p>
 
@@ -2003,9 +2003,9 @@
 </ul>
 </clause>
 </clause>
-</annex><bibliography><references id="_9b0232f1-21bd-832c-c613-5e4f90ce7274" normative="false" obligation="informative">
-<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_8d494b5d-eb86-b110-4657-0a586137e6b3" type="standard" schema-version="v1.5.6" anchor="iso10486">
-  <fetched>2026-07-27</fetched>
+</annex><bibliography><references id="_158bfaa1-1244-ffeb-a4c5-b64cd37a6bef" normative="false" obligation="informative">
+<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_dca1c15b-b8c4-cbeb-2b5d-a13d7b03a6ba" type="standard" schema-version="v1.5.6" anchor="iso10486">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Passenger cars</title>
 
@@ -2028,6 +2028,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:18555:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/01/85/18555.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 10486:1992</docidentifier>
+  <docidentifier type="iso-undated">ISO 10486</docidentifier>
   <docidentifier type="iso-reference">ISO 10486:1992(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:10486:stage-90.93</docidentifier>
   <docnumber>10486</docnumber>
@@ -2083,8 +2084,118 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_87d7e0eb-00fe-1048-dc49-fd20b849f282" type="standard" schema-version="v1.5.6" anchor="iso11785">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_24a85a5f-c2b2-2be3-bdeb-4c241c8e059e" type="standard" schema-version="v1.5.6" anchor="iso11784">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-intro">Radio frequency identification of animals</title>
+
+  
+<title language="en" script="Latn" type="title-main">Code structure</title>
+
+  
+<title language="en" script="Latn" type="main">Radio frequency identification of animals — Code structure</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Identification des animaux par radiofréquence</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Structure du code</title>
+
+  
+<title language="fr" script="Latn" type="main">Identification des animaux par radiofréquence — Structure du code</title>
+
+  <uri type="src">https://www.iso.org/standard/25881.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:25881:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/58/25881.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 11784:1996</docidentifier>
+  <docidentifier type="iso-undated">ISO 11784</docidentifier>
+  <docidentifier type="iso-reference">ISO 11784:1996(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:11784:stage-95.99</docidentifier>
+  <docnumber>11784</docnumber>
+  <date type="published">
+    <on>1996-08-15</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Agricultural electronics</name>
+
+        <identifier>ISO/TC 23/SC 19</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">Contains the structure of the radio-frequency identification code for animals. Does not specify the characteristics of the transmission protocols between transponder and transceiver. Replaces the first edition.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>1996</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO 11784:1994</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 11784:1994</docidentifier>
+      <date type="published">
+        <on>1994-05-19</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 11784:1996/Amd 1:2004</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 11784:1996/Amd 1:2004</docidentifier>
+      <date type="published">
+        <on>2004-11-23</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 11784:1996/Amd 2:2010</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 11784:1996/Amd 2:2010</docidentifier>
+      <date type="published">
+        <on>2010-05-12</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_69396917-a879-79bb-b4a0-80fdb3e11ac2" type="standard" schema-version="v1.5.6" anchor="iso11785">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Radio frequency identification of animals</title>
 
@@ -2107,6 +2218,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:19982:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/01/99/19982.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 11785:1996</docidentifier>
+  <docidentifier type="iso-undated">ISO 11785</docidentifier>
   <docidentifier type="iso-reference">ISO 11785:1996(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:11785:stage-95.99</docidentifier>
   <docnumber>11785</docnumber>
@@ -2171,8 +2283,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_5b55cf6a-0742-42e9-5dff-944dedeb24ee" type="standard" schema-version="v1.5.6" anchor="iso12931">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_8202f3a9-a404-0f85-aa59-33677b398059" type="standard" schema-version="v1.5.6" anchor="iso12931">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Performance criteria for authentication solutions used to combat counterfeiting of material goods</title>
 
@@ -2189,6 +2301,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:52210:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/22/52210.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 12931:2012</docidentifier>
+  <docidentifier type="iso-undated">ISO 12931</docidentifier>
   <docidentifier type="iso-reference">ISO 12931:2012(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:12931:stage-95.99</docidentifier>
   <docnumber>12931</docnumber>
@@ -2246,8 +2359,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_15e14e51-42a8-3e10-18d8-ff7867d1aae7" type="standard" schema-version="v1.5.6" anchor="iso14816">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_5c2b7397-bded-235b-ac26-0b017a2c7c0a" type="standard" schema-version="v1.5.6" anchor="iso14816">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Road transport and traffic telematics</title>
 
@@ -2276,6 +2389,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:38667:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/86/38667.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 14816:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO 14816</docidentifier>
   <docidentifier type="iso-reference">ISO 14816:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:14816:stage-90.93</docidentifier>
   <docnumber>14816</docnumber>
@@ -2341,8 +2455,97 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_58d7953c-663e-2501-20b0-2324b246db1c" type="standard" schema-version="v1.5.6" anchor="iso16678">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_224d4b44-b056-664a-d939-d8761996e902" type="standard" schema-version="v1.5.6" anchor="iso15394">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-intro">Packaging</title>
+
+  
+<title language="en" script="Latn" type="title-main">Bar code and two-dimensional symbols for shipping, transport and receiving labels</title>
+
+  
+<title language="en" script="Latn" type="main">Packaging — Bar code and two-dimensional symbols for shipping, transport and receiving labels</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Emballage</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Codes à barres et symboles bidimensionnels pour l'expédition, le transport et les étiquettes de réception</title>
+
+  
+<title language="fr" script="Latn" type="main">Emballage — Codes à barres et symboles bidimensionnels pour l'expédition, le transport et les étiquettes de réception</title>
+
+  <uri type="src">https://www.iso.org/standard/44030.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44030:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/40/44030.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 15394:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO 15394</docidentifier>
+  <docidentifier type="iso-reference">ISO 15394:2009(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:15394:stage-95.99</docidentifier>
+  <docnumber>15394</docnumber>
+  <date type="published">
+    <on>2009-04-14</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Packaging</name>
+
+        <identifier>ISO/TC 122</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 15394:2009 specifies the minimum requirements for the design of labels containing linear bar code and two‑dimensional symbols on transport units to convey data between trading partners; provides for traceability of transported units via a unique transport unit identifier (licence plate); provides guidance on the formatting on the label of data presented in linear bar code, two-dimensional symbol or human readable form; provides specific recommendations regarding the choice of bar code symbologies, and specifies quality requirements and classes of bar code density; makes recommendations as to label placement, size and the inclusion of free text and any appropriate graphics; provides guidance on the selection of label material. ISO 15394:2009 is not applicable to the direct printing on to kraft coloured corrugated surfaces. Those wishing to find more information on the direct printing of bar code symbols on to kraft coloured corrugated surfaces may find suitable guidance from texts specific to this subject.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2009</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO 15394:2000</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 15394:2000</docidentifier>
+      <date type="published">
+        <on>2000-04-13</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_4eebe264-c878-9a21-70b7-5ac41e0b5ce1" type="standard" schema-version="v1.5.6" anchor="iso16678">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Guidelines for interoperable object identification and related authentication systems to deter counterfeiting and illicit trade</title>
 
@@ -2359,6 +2562,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:57391:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/73/57391.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 16678:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO 16678</docidentifier>
   <docidentifier type="iso-reference">ISO 16678:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:16678:stage-95.99</docidentifier>
   <docnumber>16678</docnumber>
@@ -2423,8 +2627,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d2dae627-68a6-c47d-6661-9eb29f1fa931" type="standard" schema-version="v1.5.6" anchor="iso17363">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_a69e2654-f718-ba93-30a3-ab73e26ac51e" type="standard" schema-version="v1.5.6" anchor="iso17363">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2447,6 +2651,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:57596:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/75/57596.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 17363:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO 17363</docidentifier>
   <docidentifier type="iso-reference">ISO 17363:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:17363</docidentifier>
   <docnumber>17363</docnumber>
@@ -2518,8 +2723,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4720fc29-c06f-8412-b3f7-8d5ef93d5c00" type="standard" schema-version="v1.5.6" anchor="iso17364">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_7ba2f0fb-f9c1-02f0-6471-33f23fcfb7c2" type="standard" schema-version="v1.5.6" anchor="iso17364">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2542,6 +2747,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:55554:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/55/55554.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 17364:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO 17364</docidentifier>
   <docidentifier type="iso-reference">ISO 17364:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:17364:stage-95.99</docidentifier>
   <docnumber>17364</docnumber>
@@ -2606,8 +2812,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_741338f8-8ed1-f701-5226-064f2cac2b8e" type="standard" schema-version="v1.5.6" anchor="iso17365">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_3f96fff3-37bb-55a5-fa2d-508ac69eb9d0" type="standard" schema-version="v1.5.6" anchor="iso17365">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2630,6 +2836,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:55563:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/55/55563.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 17365:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO 17365</docidentifier>
   <docidentifier type="iso-reference">ISO 17365:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:17365:stage-95.99</docidentifier>
   <docnumber>17365</docnumber>
@@ -2694,8 +2901,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_0fd55e57-98f2-ca77-3b9f-9b63ee7ca63f" type="standard" schema-version="v1.5.6" anchor="iso17366">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_62e0cde2-9d99-bd6b-54eb-bd5ba2c01590" type="standard" schema-version="v1.5.6" anchor="iso17366">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2718,6 +2925,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:55565:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/55/55565.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 17366:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO 17366</docidentifier>
   <docidentifier type="iso-reference">ISO 17366:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:17366:stage-95.99</docidentifier>
   <docnumber>17366</docnumber>
@@ -2782,8 +2990,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_bf8851d5-c2f0-71c0-df5e-9865cb3bef09" type="standard" schema-version="v1.5.6" anchor="iso17367">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_7a027353-8863-4f67-9d28-3a5e2983b914" type="standard" schema-version="v1.5.6" anchor="iso17367">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2806,6 +3014,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:55568:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/55/55568.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 17367:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO 17367</docidentifier>
   <docidentifier type="iso-reference">ISO 17367:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:17367:stage-95.99</docidentifier>
   <docnumber>17367</docnumber>
@@ -2870,8 +3079,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_88eb81eb-7882-f0f5-c227-185f97dbf1ac" type="standard" schema-version="v1.5.6" anchor="iso18185">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_8e6e143d-9aec-8e81-688f-cd268a2d69ca" type="standard" schema-version="v1.5.6" anchor="iso18185">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Freight containers</title>
 
@@ -2894,6 +3103,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41125:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/11/41125.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 18185 (all parts)</docidentifier>
+  <docidentifier type="iso-undated">ISO 18185 (all parts)</docidentifier>
   <docidentifier type="iso-reference">ISO 18185(E) (all parts)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:18185:ser</docidentifier>
   <docnumber>18185</docnumber>
@@ -2981,6 +3191,7 @@
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41125:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/04/11/41125.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 18185-1:2007</docidentifier>
+      <docidentifier type="iso-undated">ISO 18185-1</docidentifier>
       <docidentifier type="iso-reference">ISO 18185-1:2007(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:18185:-1:stage-90.93</docidentifier>
       <docnumber>18185</docnumber>
@@ -3083,8 +3294,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_3321ccd6-4844-545b-fb1c-d32285f0abea" type="standard" schema-version="v1.5.6" anchor="iso2108">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_5c0464b1-f043-36c4-1220-6ca6e0e51be3" type="standard" schema-version="v1.5.6" anchor="iso2108">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information and documentation</title>
 
@@ -3107,6 +3318,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:36563:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/65/36563.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 2108:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO 2108</docidentifier>
   <docidentifier type="iso-reference">ISO 2108:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:2108:stage-95.99</docidentifier>
   <docnumber>2108</docnumber>
@@ -3172,8 +3384,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c71f6e7e-0790-ccc1-c373-17574d6b5004" type="standard" schema-version="v1.5.6" anchor="iso22742">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_0a4be7b9-a20b-4d7f-b6ce-d8552767994c" type="standard" schema-version="v1.5.6" anchor="iso22742">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -3196,6 +3408,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:53004:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/30/53004.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 22742:2010</docidentifier>
+  <docidentifier type="iso-undated">ISO 22742</docidentifier>
   <docidentifier type="iso-reference">ISO 22742:2010(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:22742:stage-95.99</docidentifier>
   <docnumber>22742</docnumber>
@@ -3260,8 +3473,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_0de44c56-b85c-9e92-fbb2-de00fa4b98f4" type="standard" schema-version="v1.5.6" anchor="iso28000-2007">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_9ce1cc47-27f4-be3c-7030-cc4dfacd7958" type="standard" schema-version="v1.5.6" anchor="iso28000-2007">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Specification for security management systems for the supply chain</title>
 
@@ -3278,6 +3491,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44641:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/46/44641.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 28000:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 28000</docidentifier>
   <docidentifier type="iso-reference">ISO 28000:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:28000:stage-95.99</docidentifier>
   <docnumber>28000</docnumber>
@@ -3345,8 +3559,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_1de25478-0cb1-59f7-483e-124ce91fb0bd" type="standard" schema-version="v1.5.6" anchor="iso28001-2007">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_73dc951b-7f5f-f93a-1e5a-c6c2c9d4e505" type="standard" schema-version="v1.5.6" anchor="iso28001-2007">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3375,6 +3589,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:45654:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/56/45654.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 28001:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 28001</docidentifier>
   <docidentifier type="iso-reference">ISO 28001:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:28001</docidentifier>
   <docnumber>28001</docnumber>
@@ -3441,8 +3656,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_f32dd713-9641-ef2b-bb67-33e051e106b0" type="standard" schema-version="v1.5.6" anchor="iso28003-2007">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_f7b3a1d1-5353-e1d9-c0d3-2685c34b86a0" type="standard" schema-version="v1.5.6" anchor="iso28003-2007">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3465,6 +3680,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:45416:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/54/45416.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 28003:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 28003</docidentifier>
   <docidentifier type="iso-reference">ISO 28003:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:28003</docidentifier>
   <docnumber>28003</docnumber>
@@ -3532,8 +3748,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_2150c2cc-c47b-a27f-a6d4-38d4391d4f8b" type="standard" schema-version="v1.5.6" anchor="iso28004-2007">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_4609f5eb-3674-a300-32f4-0e7bae740b94" type="standard" schema-version="v1.5.6" anchor="iso28004-2007">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3562,6 +3778,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44962:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/49/44962.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 28004-1:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 28004-1</docidentifier>
   <docidentifier type="iso-reference">ISO 28004-1:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:28004:-1</docidentifier>
   <docnumber>28004</docnumber>
@@ -3660,8 +3877,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ba818158-1ddb-2f4e-96e5-c3cc4bcdbbee" type="standard" schema-version="v1.5.6" anchor="iso28005-2011">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_5af70ce2-18a3-cbc4-6e0d-3b46ffc5f004" type="standard" schema-version="v1.5.6" anchor="iso28005-2011">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3690,6 +3907,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42144:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42144.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 28005-2:2011</docidentifier>
+  <docidentifier type="iso-undated">ISO 28005-2</docidentifier>
   <docidentifier type="iso-reference">ISO 28005-2:2011(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:28005:-2:stage-95.99</docidentifier>
   <docnumber>28005</docnumber>
@@ -3754,8 +3972,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4e441e5d-d291-cb32-9d27-7d52c542dfb6" type="standard" schema-version="v1.5.6" anchor="iso28219">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_71244994-a2ac-8f7d-fe0c-709505b7d03f" type="standard" schema-version="v1.5.6" anchor="iso28219">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -3778,6 +3996,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44534:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/45/44534.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 28219:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO 28219</docidentifier>
   <docidentifier type="iso-reference">ISO 28219:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:28219:stage-95.99</docidentifier>
   <docnumber>28219</docnumber>
@@ -3834,8 +4053,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ea00afef-6879-2093-d401-4be9ee687f9c" type="standard" schema-version="v1.5.6" anchor="iso3297">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_a31ffa26-a3a4-84a1-cf53-11da2453a788" type="standard" schema-version="v1.5.6" anchor="iso3297">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information and documentation</title>
 
@@ -3858,6 +4077,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:39601:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/96/39601.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3297:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 3297</docidentifier>
   <docidentifier type="iso-reference">ISO 3297:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:3297:stage-95.99</docidentifier>
   <docnumber>3297</docnumber>
@@ -3923,8 +4143,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c7500eee-a2c8-fc6d-cb41-7570ee88a17a" type="standard" schema-version="v1.5.6" anchor="iso3779">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_223d8766-ac66-7681-3a87-e61097a258f7" type="standard" schema-version="v1.5.6" anchor="iso3779">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Road vehicles</title>
 
@@ -3953,6 +4173,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:52200:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/22/52200.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3779:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO 3779</docidentifier>
   <docidentifier type="iso-reference">ISO 3779:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:3779:stage-90.93</docidentifier>
   <docnumber>3779</docnumber>
@@ -4028,8 +4249,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_80d57e1e-c1e9-3d12-d8f3-5d4508d7f53c" type="standard" schema-version="v1.5.6" anchor="iso6346">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_ecdfe3d5-aa45-d738-f53b-87527bbd80a8" type="standard" schema-version="v1.5.6" anchor="iso6346">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Freight containers</title>
 
@@ -4052,6 +4273,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:20453:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/04/20453.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 6346:1995</docidentifier>
+  <docidentifier type="iso-undated">ISO 6346</docidentifier>
   <docidentifier type="iso-reference">ISO 6346:1995(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:6346:stage-95.99</docidentifier>
   <docnumber>6346</docnumber>
@@ -4186,8 +4408,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_428468d8-4184-bf05-14d0-b386b68c92d4" type="standard" schema-version="v1.5.6" anchor="iso15417">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_93325166-8a35-125f-6204-95a9afbe3a37" type="standard" schema-version="v1.5.6" anchor="iso15417">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4216,6 +4438,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43896:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/38/43896.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15417:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15417</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15417:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15417</docidentifier>
   <docnumber>15417</docnumber>
@@ -4290,8 +4513,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_148688b4-7eea-8b73-4ddd-20b92a797f68" type="standard" schema-version="v1.5.6" anchor="iso15420">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_122becbe-24d1-77f0-19f2-90acfe6a108b" type="standard" schema-version="v1.5.6" anchor="iso15420">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4320,6 +4543,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46143:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/61/46143.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15420:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15420</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15420:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15420:stage-95.99</docidentifier>
   <docnumber>15420</docnumber>
@@ -4408,8 +4632,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_96e779ad-4bb2-7181-e492-4dcccc3f0060" type="standard" schema-version="v1.5.6" anchor="iso15438">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_8d3853ac-8b89-3341-c060-5b472db78282" type="standard" schema-version="v1.5.6" anchor="iso15438">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4438,6 +4662,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43816:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/38/43816.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15438:2006</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15438</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15438:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15438:stage-95.99</docidentifier>
   <docnumber>15438</docnumber>
@@ -4523,8 +4748,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_cb7d3623-e93b-666a-57d5-7b56cf16cd98" type="standard" schema-version="v1.5.6" anchor="p1">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_d2db6550-732f-8ed0-68e8-587e81e06650" type="standard" schema-version="v1.5.6" anchor="p1">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4553,6 +4778,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:54779:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/47/54779.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-1:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-1</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-1:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-1:stage-90.93</docidentifier>
   <docnumber>15459</docnumber>
@@ -4627,8 +4853,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_7d802172-0e5a-3d72-1ad9-f38d3df12740" type="standard" schema-version="v1.5.6" anchor="p2">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_3e1f727d-8322-4743-47e3-5e31a5702f56" type="standard" schema-version="v1.5.6" anchor="p2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4657,6 +4883,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43348:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/33/43348.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-2:2006</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-2</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-2:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-2:stage-95.99</docidentifier>
   <docnumber>15459</docnumber>
@@ -4751,8 +4978,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_464a789d-750a-ce9d-a82f-7e68a8a05c7e" type="standard" schema-version="v1.5.6" anchor="p3">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_c6645c1f-c037-39f6-7840-b37111590bfd" type="standard" schema-version="v1.5.6" anchor="p3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4781,6 +5008,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:54781:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/47/54781.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-3:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-3</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-3:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-3:stage-90.93</docidentifier>
   <docnumber>15459</docnumber>
@@ -4855,8 +5083,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_7a452376-f7bb-036b-7449-eda85c9aeb9f" type="standard" schema-version="v1.5.6" anchor="p4">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_51baaed9-780a-822f-766b-46966b9c0c5c" type="standard" schema-version="v1.5.6" anchor="p4">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4885,6 +5113,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:54782:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/47/54782.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-4:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-4</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-4:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-4:stage-90.93</docidentifier>
   <docnumber>15459</docnumber>
@@ -4959,8 +5188,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_5c40cc1d-a275-3974-7128-f8a9737dbf8a" type="standard" schema-version="v1.5.6" anchor="p5">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_5d5a44c1-627c-8aa9-5f07-ca021fcdde15" type="standard" schema-version="v1.5.6" anchor="p5">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4989,6 +5218,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:54785:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/47/54785.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-5:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-5</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-5:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-5:stage-90.93</docidentifier>
   <docnumber>15459</docnumber>
@@ -5063,8 +5293,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4ca5deda-2d0c-a0f4-3e4c-b5fac212ab77" type="standard" schema-version="v1.5.6" anchor="p6">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_04c75a60-d865-7512-84e0-e433aaf18c2c" type="standard" schema-version="v1.5.6" anchor="p6">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5093,6 +5323,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:54786:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/47/54786.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-6:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-6</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-6:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-6:stage-90.93</docidentifier>
   <docnumber>15459</docnumber>
@@ -5167,8 +5398,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_33fec3d7-d4b4-6dd6-140f-33ac7a4ec489" type="standard" schema-version="v1.5.6" anchor="p8">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_0d31bab6-2a5e-697b-3b08-f40cfc0004e6" type="standard" schema-version="v1.5.6" anchor="p8">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5197,6 +5428,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:51399:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/13/51399.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15459-8:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15459-8</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15459-8:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15459:-8:stage-95.99</docidentifier>
   <docnumber>15459</docnumber>
@@ -5261,8 +5493,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e85d1939-f4bf-40fc-89fa-2ee632e66a88" type="standard" schema-version="v1.5.6" anchor="iso15961">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_3a836bc7-4112-87cf-fd3a-3ab65625c29d" type="standard" schema-version="v1.5.6" anchor="iso15961">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5291,6 +5523,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:30528:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/05/30528.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15961:2004</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15961</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15961:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15961:stage-95.99</docidentifier>
   <docnumber>15961</docnumber>
@@ -5365,8 +5598,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c58cdefc-a43d-d855-4b3f-e691d7bd30d9" type="standard" schema-version="v1.5.6" anchor="iso15962">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_8cf22b94-9059-facc-d8d8-920427b58178" type="standard" schema-version="v1.5.6" anchor="iso15962">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5395,6 +5628,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43459:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/34/43459.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15962:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15962</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15962:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15962:stage-95.99</docidentifier>
   <docnumber>15962</docnumber>
@@ -5469,8 +5703,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_2404968d-b26f-4959-9083-5583714b2d6d" type="standard" schema-version="v1.5.6" anchor="iso15963">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_6321e007-f0b4-eecd-6ac8-b00ff165e561" type="standard" schema-version="v1.5.6" anchor="iso15963">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5499,6 +5733,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:52124:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/21/52124.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 15963:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 15963</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 15963:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:15963:stage-95.99</docidentifier>
   <docnumber>15963</docnumber>
@@ -5573,8 +5808,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_a6bbc555-fc60-1d13-a0cc-428ba8209799" type="standard" schema-version="v1.5.6" anchor="iso16022">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_1a1902cd-70a8-b176-2c32-2ac715f9f34a" type="standard" schema-version="v1.5.6" anchor="iso16022">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5603,6 +5838,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44230:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/42/44230.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 16022:2006</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 16022</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 16022:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:16022:stage-95.99</docidentifier>
   <docnumber>16022</docnumber>
@@ -5707,8 +5943,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_55efc82d-ca29-0774-b91a-b3043feda638" type="standard" schema-version="v1.5.6" anchor="iso16023">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_9ae92d27-5ba6-b31c-5600-add619bf8429" type="standard" schema-version="v1.5.6" anchor="iso16023">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5737,6 +5973,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29835:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/98/29835.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 16023:2000</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 16023</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 16023:2000(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:16023</docidentifier>
   <docnumber>16023</docnumber>
@@ -5801,8 +6038,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4524d02c-8b71-f7ec-ed36-c069401f4f56" type="standard" schema-version="v1.5.6" anchor="iso16388">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_061beaae-9352-2472-c889-a3d4f0e0528c" type="standard" schema-version="v1.5.6" anchor="iso16388">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5831,6 +6068,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43897:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/38/43897.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 16388:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 16388</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 16388:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:16388:stage-95.99</docidentifier>
   <docnumber>16388</docnumber>
@@ -5905,8 +6143,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d551d802-006d-59b7-42e5-d515301af5bb" type="standard" schema-version="v1.5.6" anchor="iso18000-all">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_60126ea7-7269-7015-2b45-fb7671052263" type="standard" schema-version="v1.5.6" anchor="iso18000-all">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5929,6 +6167,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46145:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/61/46145.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 18000 (all parts)</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 18000 (all parts)</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 18000(E) (all parts)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:18000:ser</docidentifier>
   <docnumber>18000</docnumber>
@@ -6029,6 +6268,7 @@
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46145:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/04/61/46145.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-1:2008</docidentifier>
+      <docidentifier type="iso-undated">ISO/IEC 18000-1</docidentifier>
       <docidentifier type="iso-reference">ISO/IEC 18000-1:2008(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso-iec:18000:-1:stage-95.99</docidentifier>
       <docnumber>18000</docnumber>
@@ -6178,6 +6418,13 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-63</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-63</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-62:2012</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-62:2012</docidentifier>
     </bibitem>
@@ -6249,8 +6496,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_472b9b58-5139-08f8-f43d-ffa2f0f524c1" type="standard" schema-version="v1.5.6" anchor="iso18000-3">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_9e22c69c-87c1-19ae-fdf2-cc8f43f93322" type="standard" schema-version="v1.5.6" anchor="iso18000-3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6279,6 +6526,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:53424:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/34/53424.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 18000-3:2010</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 18000-3</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 18000-3:2010(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:18000:-3:stage-90.93</docidentifier>
   <docnumber>18000</docnumber>
@@ -6360,8 +6608,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_316ff14c-1220-efd1-b021-891a5e933033" type="standard" schema-version="v1.5.6" anchor="iso18000">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_d6a32928-6864-2233-4f04-02ca4653035a" type="standard" schema-version="v1.5.6" anchor="iso18000">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6390,6 +6638,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59644:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/96/59644.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 18000-6:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 18000-6</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 18000-6:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:18000:-6:stage-95.99</docidentifier>
   <docnumber>18000</docnumber>
@@ -6464,8 +6713,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_756ae397-278a-2bae-8b07-61b0e4ea95d4" type="standard" schema-version="v1.5.6" anchor="iso18004">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_714392e3-5d2a-035b-e299-9f2e2d3a54a4" type="standard" schema-version="v1.5.6" anchor="iso18004">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6494,6 +6743,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43655:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/36/43655.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 18004:2006</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 18004</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 18004:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:18004:stage-95.99</docidentifier>
   <docnumber>18004</docnumber>
@@ -6588,8 +6838,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_22ec7cd4-6cb4-d6d0-7bdd-903f5a3d09f1" type="standard" schema-version="v1.5.6" anchor="iso29160">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_0d35cd95-1854-549f-82ae-caf8d368efd9" type="standard" schema-version="v1.5.6" anchor="iso29160">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6618,6 +6868,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:45239:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/52/45239.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 29160:2012</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 29160</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 29160:2012(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:29160:stage-95.99</docidentifier>
   <docnumber>29160</docnumber>
@@ -6683,8 +6934,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_adabff63-34bd-1ee1-99cf-fd6c28b87159" type="standard" schema-version="v1.5.6" anchor="iso29167">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_89cb0c23-2fdf-85e0-8de5-f60a4ed5742a" type="standard" schema-version="v1.5.6" anchor="iso29167">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6713,6 +6964,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:61128:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/06/11/61128.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 29167-1:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 29167-1</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 29167-1:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:29167:-1:stage-90.93</docidentifier>
   <docnumber>29167</docnumber>
@@ -6787,8 +7039,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e6b75c72-46e3-cfc0-a3f3-dfa33702b5a0" type="standard" schema-version="v1.5.6" anchor="iso7816">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_367b1ae1-2a31-a711-e1ce-163b2b6b29a2" type="standard" schema-version="v1.5.6" anchor="iso7816">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Identification cards</title>
 
@@ -6817,6 +7069,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:38780:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/87/38780.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 7816-6:2004</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 7816-6</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 7816-6:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:7816:-6:stage-95.99</docidentifier>
   <docnumber>7816</docnumber>
@@ -6921,8 +7174,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_2f22227f-cc19-bf54-0cf6-75a3fff55cb8" type="standard" schema-version="v1.5.6" anchor="iso24729">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_cccde68d-c8d4-f3d7-43e2-752d17318512" type="standard" schema-version="v1.5.6" anchor="iso24729">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6951,6 +7204,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:51193:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/11/51193.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC TR 24729-4:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC TR 24729-4</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC TR 24729-4:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:tr:24729:-4:stage-90.93</docidentifier>
   <docnumber>24729</docnumber>
@@ -7015,8 +7269,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4ebd2956-c5f9-504b-e644-f3c5e8e6531e" type="standard" schema-version="v1.5.6" anchor="iec62321">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_a4844598-5e7c-8f34-93ef-f199d751de95" type="standard" schema-version="v1.5.6" anchor="iec62321">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Electrotechnical products</title>
 
@@ -7093,8 +7347,81 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c5483cf4-fbb2-11de-6230-03267746e430" type="standard" schema-version="v1.5.6" anchor="ts62668-2">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_5695caa8-e81e-c8fa-6832-b4723ced5a85" type="standard" schema-version="v1.5.6" anchor="ts62668">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-intro">Process management for avionics</title>
+
+  
+<title language="en" script="Latn" type="title-main">Counterfeit prevention</title>
+
+  
+<title language="en" script="Latn" type="title-part">Part 1: Avoiding the use of counterfeit, fraudulent and recycled electronic components</title>
+
+  
+<title language="en" script="Latn" type="main">Process management for avionics — Counterfeit prevention — Part 1: Avoiding the use of counterfeit, fraudulent and recycled electronic components</title>
+
+  <uri type="src">https://webstore.iec.ch/publication/7338</uri>
+  <uri type="obp">https://webstore.iec.ch/preview/info_iects62668-1{ed2.0}en.pdf</uri>
+  <docidentifier type="IEC" primary="true">IEC TS 62668-1:2014</docidentifier>
+  <docidentifier type="URN">urn:iec:std:iec:62668-1:2014:ts::</docidentifier>
+  <date type="published">
+    <on>2014-07-10</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name language="en" script="Latn">International Electrotechnical Commission</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
+      <uri type="org">www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en" script="Latn">International Electrotechnical Commission</name>
+
+      <subdivision type="technical-committee">
+        
+<name language="en" script="Latn">TC 107</name>
+
+        <identifier>107</identifier>
+      </subdivision>
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract language="en" script="Latn">IEC TS 62668-1:2014(en) defines requirements for avoiding the use of counterfeit, recycled and fraudulent components used in the aerospace, defence and high performance (ADHP) industries. It also defines requirements for ADHP industries to maintain their intellectual property for all of their products and services. The risks associated with purchasing components outside of franchised distributor networks are considered in IEC TS 62668-2. Although developed for the avionics industry, this specification may be applied by other high performance and high reliability industries at their discretion. This new edition includes the following significant technical changes with respect to the previous edition:<br/> 
+- update of "fraudulent component" definition, addition of "recycled component" and "suspect component" definitions, and update of the concerned clauses accordingly;<br/> 
+- addition of counterfeit awareness training as a requirement;<br/>
+- revision to update all references and web links in the annexes.</abstract>
+  <status>
+    <stage>REVISED</stage>
+  </status>
+  <copyright>
+    <from>2014</from>
+    <owner>
+      <organization>
+        
+<name language="en" script="Latn">International Electrotechnical Commission</name>
+
+        <abbreviation language="en" script="Latn">IEC</abbreviation>
+        <uri type="org">www.iec.ch</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_98a20df1-d455-9769-914e-7cee86939e68" type="standard" schema-version="v1.5.6" anchor="ts62668-2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Process management for avionics</title>
 
@@ -7164,12 +7491,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem anchor="ts62668" id="_978df7a2-8dab-7942-b38b-0ee1db0bf64b" type="standard">
-<title format="text/plain">IEC/TS 62668-1 ed2.0 (2014), Process management for avionics – Counterfeiting prevention – Part 1: Avoiding the use of counterfeit, fraudulent and recycled electronic components.</title>
-<docidentifier type="IEC">IEC TS 62668-1</docidentifier><docnumber>62668-1</docnumber><contributor><role type="publisher"/><organization>
-<name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_51466bc7-6dbb-2860-b4db-9d2c83a42c0a" type="standard" schema-version="v1.5.6" anchor="rfc3279">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_67e24a63-6b3d-fe6c-aa3a-bd2b99fb9582" type="standard" schema-version="v1.5.6" anchor="rfc3279">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</title>
 
@@ -7240,7 +7563,7 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_472730f7-3e7c-0309-a5f4-7552bea2efee">This document specifies algorithm identifiers and ASN.1 encoding formats for digital signatures and subject public keys used in the Internet X.509 Public Key Infrastructure (PKI).  Digital signatures are used to sign certificates and certificate revocation list (CRLs).  Certificates include the public key of the named subject. [STANDARDS-TRACK]</p>
+    <p id="_e428385a-5a99-51cb-2c41-48050227d618">This document specifies algorithm identifiers and ASN.1 encoding formats for digital signatures and subject public keys used in the Internet X.509 Public Key Infrastructure (PKI).  Digital signatures are used to sign certificates and certificate revocation list (CRLs).  Certificates include the public key of the named subject. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -7275,8 +7598,8 @@
   <keyword>
     <vocab>Certificate Revocation List</vocab>
   </keyword>
-</bibitem><bibitem id="_2a2e8118-02e4-8f37-2247-775b1b0835b2" type="standard" schema-version="v1.5.6" anchor="rfc3280">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_b1b6860e-170e-2ff6-463e-af27682c7245" type="standard" schema-version="v1.5.6" anchor="rfc3280">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</title>
 
@@ -7355,7 +7678,7 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_2bf859f2-77c3-f246-9d8d-0f9fbc5b9c1c">This memo profiles the X.509 v3 certificate and X.509 v2 Certificate Revocation List (CRL) for use in the Internet. [STANDARDS-TRACK]</p>
+    <p id="_b62e7c49-f632-c3c7-ae59-8f43b894f9ab">This memo profiles the X.509 v3 certificate and X.509 v2 Certificate Revocation List (CRL) for use in the Internet. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -7394,15 +7717,7 @@
   <keyword>
     <vocab>Certificate Revocation List</vocab>
   </keyword>
-</bibitem><bibitem anchor="iso11784" id="_bdb1f8ba-075b-1b6f-5594-aa53d2375ddb" type="standard">
-<title format="text/plain">ISO 11784:1996, Radio frequency identification of animals – Code structure.</title>
-<docidentifier type="ISO">ISO 11784:1996</docidentifier><docnumber>11784</docnumber><date type="published"><on>1996</on></date><contributor><role type="publisher"/><organization>
-<name>ISO</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="iso15394" id="_fa739997-b44e-f8d9-c207-a3a603fd9fb9" type="standard">
-<title format="text/plain">ISO 15394:2009, Packaging – Bar code and two-dimensional symbols for shipping, transport and receiving labels.</title>
-<docidentifier type="ISO">ISO 15394:2009</docidentifier><docnumber>15394</docnumber><date type="published"><on>2009</on></date><contributor><role type="publisher"/><organization>
-<name>ISO</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="iso15459" id="_47340c56-27e7-0677-ca46-e4e0bc1de01f" type="standard">
+</bibitem><bibitem anchor="iso15459" id="_47340c56-27e7-0677-ca46-e4e0bc1de01f" type="standard">
 <title format="text/plain">ISO/IEC 15459, Unique identifiers.</title>
 <docidentifier type="ISO">ISO/IEC 15459</docidentifier><docnumber>15459</docnumber><contributor><role type="publisher"/><organization>
 <name>ISO</name>

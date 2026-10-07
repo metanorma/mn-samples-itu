@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.13" schema-version="v2.1.6" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Cloud computing - Functional requirements of physical machine</title>
 <docidentifier type="ITU" primary="true">ITU-T Y.3507</docidentifier><docidentifier type="ITU-lang">ITU-T Y.3507-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T Y.3507-E</docidentifier><docnumber>Y.3507</docnumber><date type="published"><on>2018-12-01</on></date><contributor><role type="author"/><organization>
@@ -23,7 +23,7 @@
 <title>Y: Global Information Infrastructure, Internet Protocol Aspects, Next-Generation Networks, Internet of Things and Smart Cities</title>
 </series><series type="secondary">
 <title>Cloud Computing</title>
-</series><series type="tertiary"/><keyword>Cloud computing</keyword><keyword>functional requirements</keyword><keyword>physical machine</keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>Y.3507</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+</series><series type="tertiary"/><keyword><vocab>Cloud computing</vocab></keyword><keyword><vocab>functional requirements</vocab></keyword><keyword><vocab>physical machine</vocab></keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>Y.3507</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -2182,31 +2182,1343 @@
 </td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_e9da57ab-83c5-3802-5a58-4e1709e095fa" anchor="references" normative="true" obligation="informative">
-<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem anchor="ITU-T_X.1601" id="_7d0608ed-b9b0-f25a-621e-8bb81489b49a">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.1601 (2015), <em>Security framework for cloud computing.</em></formattedref>
-  <docidentifier type="ITU">ITU-T X.1601</docidentifier>
-  <docnumber>1601</docnumber>
+</annex><bibliography><references id="_5c62041e-e26e-0f25-9a0a-14131bbbba21" anchor="references" normative="true" obligation="informative">
+<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_eea322f3-50e9-0b22-ecec-19928c7a11c4" type="standard" schema-version="v1.5.6" anchor="ITU-T_X.1601">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Security framework for cloud computing</title>
+
+  
+<title language="en" script="Latn" type="main">Security framework for cloud computing</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/12613</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.1601-201510-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T X.1601</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 17</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="ITU-T_Y.3100" id="_0eb17769-3490-f068-52b7-d50db615d586">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.3100 (2017), <em>Terms and definitions for IMT‑2020network.</em></formattedref>
-  <docidentifier type="ITU">ITU-T Y.3100</docidentifier>
-  <docnumber>3100</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2015</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Security framework for cloud computing</title>
+
+      <docidentifier type="ITU" primary="true">X.1601 (01/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Security framework for cloud computing</title>
+
+      
+<title language="en" script="Latn" type="main">Security framework for cloud computing</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/12613</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.1601-201510-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T X.1601 (10/2015)</docidentifier>
+      <date type="published">
+        <on>2015-10-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 17</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">Recommendation ITU-T X.1601 describes the security framework for cloud computing. The Recommendation analyses security threats and challenges in the cloud computing environment, and describes security capabilities that could mitigate these threats and address security challenges. A framework methodology is provided for determining which of these security capabilities will require specification for mitigating security threats and addressing security challenges for cloud computing. Appendix I provides a mapping table on how a particular security threat or challenge is addressed by one or more corresponding security capabilities.
+</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2015</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Security framework for cloud computing</title>
+
+          <docidentifier type="ITU" primary="true">X.1601 (01/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_d7201245-0e47-4cc6-7de1-609ce99c35ac" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3100">
+  <fetched>2026-10-07</fetched>
+  <uri type="src">https://handle.itu.int/11.1002/1000/13617</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3100-201804-I!Cor1!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T Y.3100</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 13</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="ITU-T_Y.3500" id="_94e4583a-8d49-5a61-a546-0ffc0962fd38">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.3500 (2014) | ISO/IEC 17788:2014, <em>Information technology – Cloud computing – Overview and vocabulary.</em></formattedref>
-  <docidentifier type="ITU">ITU-T Y.3500</docidentifier>
-  <docnumber>3500</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Terms and definitions for IMT-2020 network</title>
+
+      <docidentifier type="ITU" primary="true">Y.3100 (09/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Standardization and open source activities related to network softwarization of IMT-2020</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 44 (07/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y-series – Supplement on use cases of smart cities and communities</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 56 (12/2019)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">IMT-2020 and beyond standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 59 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3100-series – Awareness on use cases and migration aspects of IMT-2020</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 64 (07/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Network 2030 services: Capabilities, performance and design of new communication services for the Network 2030 applications</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 66 (07/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Representative use cases and key network requirements for Network 2030</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 67 (07/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Framework for Internet of things ecosystem master plan</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 68 (05/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn"> Web-based data model for Internet of things and smart city systems and services</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 69 (05/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000 series – Use cases for autonomous networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 71 (07/2022)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Artificial intelligence standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 72 (11/2022)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000 series – Quantum key distribution networks – Quantum-enabled future networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 75 (03/2023)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Standardization gaps and roadmap for artificial intelligence and Internet of things in digital agriculture</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 82 (07/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Optimizing digital agriculture with best practices for integrating artificial intelligence and Internet of things</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 83 (07/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Use cases of open service environment for future networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 95 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Machine learning standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 96 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Glossary of terms and definitions for machine learning</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 97 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3100-series – Guidance for migrating existing mobile network technologies to IMT-2020 and beyond</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 111 (07/2026)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <uri type="src">https://handle.itu.int/11.1002/1000/13617</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3100-201804-I!Cor1!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T Y.3100 (2017)</docidentifier>
+      <date type="published">
+        <on>2018-04-25</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 13</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1.1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">Corrigendum 1 to Recommendation ITU-T Y.3100 (2018) adds several clarifications, and fixes various errors and inconsistencies.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2018</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Terms and definitions for IMT-2020 network</title>
+
+          <docidentifier type="ITU" primary="true">Y.3100 (09/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Standardization and open source activities related to network softwarization of IMT-2020</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 44 (07/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y-series – Supplement on use cases of smart cities and communities</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 56 (12/2019)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">IMT-2020 and beyond standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 59 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3100-series – Awareness on use cases and migration aspects of IMT-2020</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 64 (07/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Network 2030 services: Capabilities, performance and design of new communication services for the Network 2030 applications</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 66 (07/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Representative use cases and key network requirements for Network 2030</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 67 (07/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Framework for Internet of things ecosystem master plan</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 68 (05/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn"> Web-based data model for Internet of things and smart city systems and services</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 69 (05/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000 series – Use cases for autonomous networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 71 (07/2022)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Artificial intelligence standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 72 (11/2022)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000 series – Quantum key distribution networks – Quantum-enabled future networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 75 (03/2023)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Standardization gaps and roadmap for artificial intelligence and Internet of things in digital agriculture</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 82 (07/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Optimizing digital agriculture with best practices for integrating artificial intelligence and Internet of things</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 83 (07/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Use cases of open service environment for future networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 95 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Machine learning standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 96 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Glossary of terms and definitions for machine learning</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 97 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3100-series – Guidance for migrating existing mobile network technologies to IMT-2020 and beyond</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 111 (07/2026)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+
+<title>Recommendation ITU-T Y.3100 (2017), <em>Terms and definitions for IMT‑2020network.</em></title>
+</bibitem><bibitem id="_a1993239-a7c7-45d8-d6e4-b1a30488bf8d" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3500">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Information technology – Cloud computing – Overview and vocabulary</title>
+
+  
+<title language="en" script="Latn" type="main">Information technology – Cloud computing – Overview and vocabulary</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/12210</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3500-201408-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T Y.3500</docidentifier>
+  <docidentifier type="ISO" primary="true">ISO/IEC 17788</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 13</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="ITU-T_Y.3510" id="_b090c5c8-c354-09a2-a997-1ae15990ec43">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.3510 (2016), <em>Cloud computing infrastructure requirements.</em></formattedref>
-  <docidentifier type="ITU">ITU-T Y.3510</docidentifier>
-  <docnumber>3510</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2014</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3500-series – Requirements and challenges regarding provision and consumption of cloud computing services in developing countries</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 46 (11/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3500-series – Cloud computing standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 49 (11/2018)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y-series – Supplement on use cases of smart cities and communities</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 56 (12/2019)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Framework for Internet of things ecosystem master plan</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 68 (05/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn"> Web-based data model for Internet of things and smart city systems and services</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 69 (05/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000 series – Use cases for autonomous networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 71 (07/2022)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Artificial intelligence standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 72 (11/2022)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000 series – Quantum key distribution networks – Quantum-enabled future networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 75 (03/2023)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Standardization gaps and roadmap for artificial intelligence and Internet of things in digital agriculture</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 82 (07/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Optimizing digital agriculture with best practices for integrating artificial intelligence and Internet of things</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 83 (07/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Use cases of open service environment for future networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 95 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Machine learning standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 96 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Glossary of terms and definitions for machine learning</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 97 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Information technology – Cloud computing – Overview and vocabulary</title>
+
+      
+<title language="en" script="Latn" type="main">Information technology – Cloud computing – Overview and vocabulary</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/12210</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3500-201408-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T Y.3500 (08/2014)</docidentifier>
+      <docidentifier type="ISO" primary="true">ISO/IEC 17788</docidentifier>
+      <date type="published">
+        <on>2014-08-13</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 13</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">This Recommendation | International Standard provides an overview of cloud computing, and defines related terms.
+The terms and definitions provided in this Recommendation | International Standard:
+–	cover commonly used terms and definitions in cloud computing standards;
+–	will not cover all terms and definitions used in cloud computing standards; and
+–	do not preclude the definition of additional terms for use in cloud computing standards.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2014</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3500-series – Requirements and challenges regarding provision and consumption of cloud computing services in developing countries</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 46 (11/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3500-series – Cloud computing standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 49 (11/2018)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y-series – Supplement on use cases of smart cities and communities</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 56 (12/2019)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Framework for Internet of things ecosystem master plan</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 68 (05/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn"> Web-based data model for Internet of things and smart city systems and services</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 69 (05/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000 series – Use cases for autonomous networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 71 (07/2022)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Artificial intelligence standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 72 (11/2022)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000 series – Quantum key distribution networks – Quantum-enabled future networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 75 (03/2023)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Standardization gaps and roadmap for artificial intelligence and Internet of things in digital agriculture</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 82 (07/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Optimizing digital agriculture with best practices for integrating artificial intelligence and Internet of things</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 83 (07/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Use cases of open service environment for future networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 95 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Machine learning standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 96 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Glossary of terms and definitions for machine learning</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 97 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_a66ee155-d637-987b-4b53-ab29c20ead12" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3510">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Cloud computing infrastructure requirements</title>
+
+  
+<title language="en" script="Latn" type="main">Cloud computing infrastructure requirements</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/16781</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3510-202604-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T Y.3510</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 13</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3</edition>
   <language>en</language>
   <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2026</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Cloud computing infrastructure requirements</title>
+
+      <docidentifier type="ITU" primary="true">Y.3510 (02/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Cloud computing infrastructure requirements</title>
+
+      <docidentifier type="ITU" primary="true">Y.3510 (05/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3500-series – Requirements and challenges regarding provision and consumption of cloud computing services in developing countries</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 46 (11/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3500-series – Cloud computing standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 49 (11/2018)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y-series – Supplement on use cases of smart cities and communities</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 56 (12/2019)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Framework for Internet of things ecosystem master plan</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 68 (05/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn"> Web-based data model for Internet of things and smart city systems and services</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 69 (05/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000 series – Use cases for autonomous networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 71 (07/2022)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Artificial intelligence standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 72 (11/2022)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000 series – Quantum key distribution networks – Quantum-enabled future networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 75 (03/2023)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Standardization gaps and roadmap for artificial intelligence and Internet of things in digital agriculture</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 82 (07/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Optimizing digital agriculture with best practices for integrating artificial intelligence and Internet of things</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 83 (07/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">ITU-T Y.3000-series – Use cases of open service environment for future networks</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 95 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Machine learning standardization roadmap</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 96 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Glossary of terms and definitions for machine learning</title>
+
+      <docidentifier type="ITU" primary="true">Y Suppl. 97 (11/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Cloud computing infrastructure requirements</title>
+
+      
+<title language="en" script="Latn" type="main">Cloud computing infrastructure requirements</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/16781</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3510-202604-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T Y.3510 (04/2026)</docidentifier>
+      <date type="published">
+        <on>2026-04-13</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 13</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>3</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">Recommendation ITU-T Y.3510 provides requirements for cloud computing infrastructure; these include the essential capabilities for processing, storage and networking resources, as well as the capabilities of resource abstraction and control.
+</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2026</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Cloud computing infrastructure requirements</title>
+
+          <docidentifier type="ITU" primary="true">Y.3510 (02/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Cloud computing infrastructure requirements</title>
+
+          <docidentifier type="ITU" primary="true">Y.3510 (05/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3500-series – Requirements and challenges regarding provision and consumption of cloud computing services in developing countries</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 46 (11/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3500-series – Cloud computing standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 49 (11/2018)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y-series – Supplement on use cases of smart cities and communities</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 56 (12/2019)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Framework for Internet of things ecosystem master plan</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 68 (05/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn"> Web-based data model for Internet of things and smart city systems and services</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 69 (05/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000 series – Use cases for autonomous networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 71 (07/2022)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Artificial intelligence standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 72 (11/2022)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000 series – Quantum key distribution networks – Quantum-enabled future networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 75 (03/2023)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Standardization gaps and roadmap for artificial intelligence and Internet of things in digital agriculture</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 82 (07/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Optimizing digital agriculture with best practices for integrating artificial intelligence and Internet of things</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 83 (07/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">ITU-T Y.3000-series – Use cases of open service environment for future networks</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 95 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Machine learning standardization roadmap</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 96 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Glossary of terms and definitions for machine learning</title>
+
+          <docidentifier type="ITU" primary="true">Y Suppl. 97 (11/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
 </bibitem><bibitem anchor="ITU-T_Y.3521" id="_866fbcd6-0c79-fc4a-f2fa-ff6d80583de5">
   <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.3521/M.3070 (2016) ,<em>Overview of end-to-end cloud computing management.</em></formattedref>
   <docidentifier type="ITU">ITU-T Y.3521</docidentifier>

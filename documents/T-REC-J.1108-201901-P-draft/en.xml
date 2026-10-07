@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.13" schema-version="v2.1.6" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Transmission specification for Radio over IP transmission systems</title>
 <docidentifier type="ITU" primary="true">ITU-T J.1108</docidentifier><docidentifier type="ITU-lang">ITU-T J.1108-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T J.1108-E</docidentifier><docnumber>J.1108</docnumber><date type="published"><on>2019-01</on></date><contributor><role type="author"/><organization>
@@ -19,7 +19,7 @@
 <title>J: Cable Networks and Transmission of Television, Sound Programme and Other Multimedia Signals</title>
 </series><series type="secondary">
 <title>Switched digital video over cable networks</title>
-</series><keyword>RoIP</keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>J.1108</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
+</series><keyword><vocab>RoIP</vocab></keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>J.1108</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -211,43 +211,1747 @@
 </clause>
 
 
-</sections><bibliography><references id="_6f9e570b-da3d-fc55-22ff-95b2aa911b40" anchor="references" normative="true" obligation="informative">
-<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem anchor="j1106" id="_3dcf0bb4-7372-9745-cfd8-efc5d508fd50">
-  <formattedref format="application/x-isodoc+xml">ITU-T Recommendation J.1106(2017/05), <em>Requirement for Radio over IP transmission system</em></formattedref>
-  <docidentifier type="ITU">ITU-T J.1106</docidentifier>
-  <docnumber>1106</docnumber>
+</sections><bibliography><references id="_2cfd453d-cb10-b555-e50f-7118f9e2d243" anchor="references" normative="true" obligation="informative">
+<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_68ccd3c1-bad2-8718-57c6-97d59fdb9350" type="standard" schema-version="v1.5.6" anchor="j1106">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Requirement for radio over IP transmission system</title>
+
+  
+<title language="en" script="Latn" type="main">Requirement for radio over IP transmission system</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13287</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1106-201707-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1106</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="j1107" id="_3945f5fb-e76a-bf39-c9e0-03eda5866dba">
-  <formattedref format="application/x-isodoc+xml">ITU-T Recommendation J.1107(2011/01), <em>Architecture and specification for Radio over IP transmission systems</em></formattedref>
-  <docidentifier type="ITU">ITU-T J.1107</docidentifier>
-  <docnumber>1107</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Requirement for radio over IP transmission system</title>
+
+      
+<title language="en" script="Latn" type="main">Requirement for radio over IP transmission system</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/13287</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1106-201707-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.1106 (07/2017)</docidentifier>
+      <date type="published">
+        <on>2017-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">As cable TV network is migrating to deep fiber or fiber to the home (FTTH) architecture, it is now easier to provide bidirectional high quality media services that requires very high speed digital transmission of various high quality contents. As Cable TV network provides services by transmitting RF signal between headend and cable modem (CM), the configuration and devices of the cable TV network are optimized for RF signal transmission. For the migration to all-fiber access, the existing cable TV network devices of the service operators (SO), which provide broadcasting services and various data services through the HFC-based cable TV network, are recommended to be changed by new network devices. Therefore, a cost-effective solution for deployable and acceptable migration towards optic-based cable TV network is required. This Recommendation provides a cost-effective solution to adapt the HFC-based cable TV network devices into optic-based cable TV network devices.  </abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2017</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_b9f3528f-c90a-4ae7-81a5-5a5b0fddaa50" type="standard" schema-version="v1.5.6" anchor="j1107">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Architecture and specification for radio over IP transmission systems</title>
+
+  
+<title language="en" script="Latn" type="main">Architecture and specification for radio over IP transmission systems</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13564</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1107-201803-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.1107</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="j210" id="_c1fc8eab-7494-93c8-1c4f-db8c6fa88814">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T J.210 (2006/11), <em>Downstream RF Interface for Cable Modem Termination Systems</em></formattedref>
-  <docidentifier type="ITU">ITU-T J.210</docidentifier>
-  <docnumber>210</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Architecture and specification for radio over IP transmission systems</title>
+
+      
+<title language="en" script="Latn" type="main">Architecture and specification for radio over IP transmission systems</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/13564</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.1107-201803-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.1107 (03/2018)</docidentifier>
+      <date type="published">
+        <on>2018-03-16</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">As cable TV network is migrating to deep fiber or Fiber To The Home (FTTH) architecture, it is now possible and easy to provide bidirectional high quality media services that require very high speed digital transmission of various high quality contents. Cable TV network provides services by transmitting RF signal between headend and Cable Modem (CM), the configuration and devices of cable TV network are optimized for RF signal transmission. For the migration of all-fiber access cable TV network, the existing network devices of Service Operators (SO) providing broadcasting services and various data services through the HFC-based cable TV network is recommended to change into the new network devices. Therefore, a cost-effective solution for deployable and acceptable migration toward optic-based cable TV network is required. This Draft [New] Recommendation provides a cost-effective adaptable solution for HFC-based cable TV network devices in optic-based cable TV network. The purpose of RoIP system is to transmit Data Over Cable Service Interface Specifications (DOCSIS) based Up Stream (US) RF signal of Cable Modem (CM) to Cable Modem Termination System (CMTS) through IP transmission in optic-based cable TV network.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2018</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_398e9fda-f0bd-f890-312f-e522e916f52b" type="standard" schema-version="v1.5.6" anchor="j210">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Downstream RF interface for cable modem termination systems</title>
+
+  
+<title language="en" script="Latn" type="main">Downstream RF interface for cable modem termination systems</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/8932</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.210-200611-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.210</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="j222-1" id="_f7c3a829-4de6-9593-d5bf-b73c60001e34">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T J.222.1 (2007/07), <em>Physical Layer specification for third-generation transmission systems for interactive cable television services - IP cable modems</em></formattedref>
-  <docidentifier type="ITU">ITU-T J.222.1</docidentifier>
-  <docnumber>222.1</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2006</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Downstream RF interface for cable modem termination systems</title>
+
+      
+<title language="en" script="Latn" type="main">Downstream RF interface for cable modem termination systems</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/8932</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.210-200611-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.210 (11/2006)</docidentifier>
+      <date type="published">
+        <on>2006-11-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">This Recommendation defines the downstream radio frequency interface (DRFI) specifications for:
+• an edgeQAM (EQAM) modular device; or
+• an integrated cable modem termination system (CMTS) with multiple downstream channels per RF port; or
+• an integrated CMTS beyond DOCSIS 2.0.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2006</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_6feddf19-5b29-f7b8-7f35-814468b6fb3f" type="standard" schema-version="v1.5.6" anchor="j222-1">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+  
+<title language="en" script="Latn" type="main">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/9194</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.222.1-200707-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.222.1</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="j222-2" id="_e1b9b305-7a3e-f68e-f22a-8ae9bac94972">
-  <formattedref format="application/x-isodoc+xml">ITU-T Recommendation J.222.2 (2007/07), <em>MAC and Upper Layer Protocols for third-generation transmission systems for interactive cable television services - IP cable modems</em></formattedref>
-  <docidentifier type="ITU">ITU-T J.222.2</docidentifier>
-  <docnumber>222.2</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+      
+<title language="en" script="Latn" type="main">Third-generation transmission systems for interactive cable television services – IP cable modems: Physical layer specification</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/9194</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-J.222.1-200707-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.222.1 (07/2007)</docidentifier>
+      <date type="published">
+        <on>2007-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">ITU-T Recommendation J.222.1 defines the electrical characteristics and signal processing operations for a cable modem (CM) and cable modem termination system (CMTS) over third generation high-speed data-over-cable systems. This Recommendation defines physical layer requirements that support the channel bonding operations defined in ITU-T Recommendation J.222.2.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_65d5beb5-9f66-7778-b4a2-a0b2e7a17de5" type="standard" schema-version="v1.5.6" anchor="j222-2">
+  <fetched>2026-10-07</fetched>
+  
+<title language="en" script="Latn" type="title-main">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+  
+<title language="en" script="Latn" type="main">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/9195</uri>
+  <docidentifier type="ITU" primary="true">ITU-T J.222.2</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 21</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem anchor="x743" id="_c070331f-5e13-7ff0-966e-fcae49a08125">
-  <formattedref format="application/x-isodoc+xml">ITU-T Recommendation X.743(1998/06), <em>Time Management Function</em></formattedref>
-  <docidentifier type="ITU">ITU-T X.743</docidentifier>
-  <docnumber>743</docnumber>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="complementOf">
+    <bibitem>
+      
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+      <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="title-main">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+      
+<title language="en" script="Latn" type="main">Third-generation transmission systems for interactive cable television services – IP cable modems: MAC and Upper Layer protocols</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/9195</uri>
+      <docidentifier type="ITU" primary="true">ITU-T J.222.2 (07/2007)</docidentifier>
+      <date type="published">
+        <on>2007-07-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 21</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">ITU-T Recommendation J.222.2 is part of a series of Recommendations that define the third generation of high-speed data over cable systems. This Recommendation was developed for the benefit of the cable industry, and includes contributions by operators and vendors from North America, Europe and other regions. The third-generation transmission systems introduce a number of new features that build upon what was present in previous Recommendations (ITU T Recommendations J.112 and J.122). This Recommendation includes key new features for the MAC and Upper Layer Protocols Interface, and defines the MAC layer protocols as well as requirements for upper layer protocols (e.g., IP, DHCP, etc.).
+ITU-T Recommendation J.222.2 has been published in two volumes.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Example of linking options between annexes of ITU-T Recommendation J.112 and annexes of ITU-T Recommendation J.83</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 1 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of annex A of Recommendation J.112, "Transmission systems for interactive cable television services" – Example of digital video broadcasting (DVB) interaction channel for cable television distribution</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 2 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for the implementation of Recommendation J.111 "Network independent protocols" – Example of digital video broadcasting (DVB) systems for interactive services</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 3 (11/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines on the use of some ITU-T Recommendations in the J series</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 5 (09/1999)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Ultra high definition television cable transmission with functions defined in Recommendations ITU-T J.183, ITU-T J.288 and ITU-T J.94 </title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 6 (09/2016)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Guidelines for the implementation of ECI</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 7 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface (ECI) for exchangeable CA/DRM solutions; Trust environment</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 8 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Embedded common interface for exchangeable CA/DRM solutions; System validation</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 9 (04/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Correspondence between CableLabs DOCSIS Specifications and ITU-T J-series Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 10 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Guidelines for installing a digital television service for cable networks based on ITU-T Recommendations</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 11 (10/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="complementOf">
+        <bibitem>
+          
+<title language="en" script="Latn">Use cases of microservices architecture for audiovisual media in the converged media cloud</title>
+
+          <docidentifier type="ITU" primary="true">J Suppl. 14 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_ff62f33f-37f3-84a9-73e1-00a8ebaae763" type="standard" schema-version="v1.5.6" anchor="x743">
+  <fetched>2026-10-07</fetched>
+  <uri type="src">https://handle.itu.int/11.1002/1000/5406</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.743-200103-I!Cor1!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T X.743</docidentifier>
+  <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 2</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
   <language>en</language>
   <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2001</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
+      <docidentifier type="ITU" primary="true">X.743 (06/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <uri type="src">https://handle.itu.int/11.1002/1000/5406</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.743-200103-I!Cor1!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T X.743 (1998)</docidentifier>
+      <docidentifier type="ISO" primary="true">ISO/IEC 10164-20</docidentifier>
+      <date type="published">
+        <on>2001-03-01</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 2</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>1.1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">This corrigendum corrects text in Annex A: A.5 and A.6 and Annex B.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2001</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Information technology – Open Systems Interconnection – Systems Management: Time Management Function</title>
+
+          <docidentifier type="ITU" primary="true">X.743 (06/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+
+<title>ITU-T Recommendation X.743(1998/06), <em>Time Management Function</em></title>
 </bibitem>
 
 
