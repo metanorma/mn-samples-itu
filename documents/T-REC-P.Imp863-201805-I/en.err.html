@@ -8,11 +8,11 @@ thead th { font-weight: bold; background-color: aqua; }
 .severity3 { font-style: italic; color: grey; }
 </style>
 </head><body><h1>/__w/mn-samples-itu/mn-samples-itu/_site/documents/T-REC-P.Imp863-201805-I/en.err.html errors</h1>
-<ul><li><p><b><a href="#Relaton">Relaton</a></b>: Severity 3: <b>1</b> error</p></li>
+<ul><li><p><b><a href="#Relaton">Relaton</a></b>: Severity 3: <b>2</b> errors</p></li>
 
 <li><p><b><a href="#Style">Style</a></b>: Severity 2: <b>5</b> errors</p></li>
 
-<li><p><b><a href="#Metanorma_XML_Syntax">Metanorma XML Syntax</a></b>: Severity 2: <b>1</b> error</p></li>
+<li><p><b><a href="#Metanorma_XML_Syntax">Metanorma XML Syntax</a></b>: Severity 2: <b>5</b> errors</p></li>
 </ul>
 <h2 id="Relaton">Relaton</h2>
 <table border="1">
@@ -20,8 +20,11 @@ thead th { font-weight: bold; background-color: aqua; }
 <th width="20%">Message</th><th width="40%">Context</th><th width="5%">Severity</th></thead>
 <tbody>
 <tr class="severity3">
-<td></td><th><code>ITU-T P.863 (2018)</code></th><td>RELATON_4</td>
-<td>(Error from Relaton) Found: <code>ITU-T P.863 (03/​2018)</code></td><td><pre></pre></td><td>3</td></tr>
+<td></td><th><code>--</code></th><td>RELATON_4</td>
+<td>(Error from Relaton) <code>ITU-T P.863:2018</code> -- Failed to match: expected one of [[\x30-\x39], 'bis', 'ter', 'quater',​ 'quarter', '.', '-', [\x41-\x52], [\x61-\x72], ' ', '/', '/BL'] at line 1 char 12.</td><td><pre></pre></td><td>3</td></tr>
+<tr class="severity3">
+<td></td><th><code>ITU-T P.863:2018</code></th><td>RELATON_4</td>
+<td>(Error from Relaton) does not parse as this flavor's pubid; passing the reference to the flavor as written</td><td><pre></pre></td><td>3</td></tr>
 </tbody></table>
 <h2 id="Style">Style</h2>
 <table border="1">
@@ -61,7 +64,19 @@ thead th { font-weight: bold; background-color: aqua; }
 <th width="20%">Message</th><th width="40%">Context</th><th width="5%">Severity</th></thead>
 <tbody>
 <tr class="severity2">
-<td></td><th><code>XML Line 000007:106</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected the element end-tag or element "description"</td><td><pre></pre></td><td>2</td></tr>
+<td></td><th><code>XML Line 000011:104</code></th><td>STANDOC_7</td>
+<td>element "phone" not allowed here; expected the element end-tag, element "affiliation", "identifier" or "address"</td><td><pre></pre></td><td>2</td></tr>
+<tr class="severity2">
+<td></td><th><code>XML Line 000011:145</code></th><td>STANDOC_7</td>
+<td>element "phone" not allowed here; expected the element end-tag, element "affiliation", "identifier" or "address"</td><td><pre></pre></td><td>2</td></tr>
+<tr class="severity2">
+<td></td><th><code>XML Line 000011:145</code></th><td>STANDOC_7</td>
+<td>found attribute "type", but no attributes allowed here</td><td><pre></pre></td><td>2</td></tr>
+<tr class="severity2">
+<td></td><th><code>XML Line 000011:175</code></th><td>STANDOC_7</td>
+<td>element "email" not allowed here; expected the element end-tag, element "affiliation", "identifier" or "address"</td><td><pre></pre></td><td>2</td></tr>
+<tr class="severity2">
+<td></td><th><code>XML Line 000027:4</code></th><td>STANDOC_7</td>
+<td>element "p" not allowed here; expected the element end-tag</td><td><pre></pre></td><td>2</td></tr>
 </tbody></table>
 </body></html>

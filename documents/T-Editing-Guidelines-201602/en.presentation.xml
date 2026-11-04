@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Author's guide for drafting ITU-T Recommendations</title>
 <docidentifier type="ITU" primary="true">ITU-T A.1500 (fictitious)</docidentifier><docidentifier type="ITU-lang">ITU-T A.1500 (fictitious)-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T A.1500 (fictitious)-E</docidentifier><docnumber>A.1500 (fictitious)</docnumber><date type="published"><on>2016-02-05</on></date><date type="published" format="ddMMMyyyy">5.II.2016</date><date type="created"><on>2011-03-15</on></date><date type="created" format="ddMMMyyyy">15.III.2011</date><contributor><role type="author"/><organization>
@@ -817,12 +817,9 @@ sourcecode .nt {
 
 
 
-<references id="References" anchor="References" normative="true" obligation="informative" semx-id="_7c5ca497-a606-7d52-a166-32400c1796bb" displayorder="10">
-<title id="_843e4f10-2e56-42a6-8bda-1adb257ee0cc" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_6eb4ce93-86f8-211f-33fd-a13befc81ac0"><span class="fmt-caption-label"><semx element="autonum" source="References">2</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_843e4f10-2e56-42a6-8bda-1adb257ee0cc">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="References">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="ITU-T_A.23" type="standard" schema-version="v1.5.6" anchor="ITU-T_A.23" semx-id="_53590cbd-b99b-5a12-3153-09c1c995b07f"><biblio-tag>[ITU‑T A.23]</biblio-tag><formattedref>Recommendation ITU-T A.23, <em>Collaboration with the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) on information technology</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Collaboration with the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) on information technology</title>
-
+<references id="References" anchor="References" normative="true" obligation="informative" semx-id="_1f8167e9-b256-4df6-0ad0-9205d6f4b1d6" displayorder="10">
+<title id="_843e4f10-2e56-42a6-8bda-1adb257ee0cc" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_6eb4ce93-86f8-211f-33fd-a13befc81ac0"><span class="fmt-caption-label"><semx element="autonum" source="References">2</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_843e4f10-2e56-42a6-8bda-1adb257ee0cc">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="References">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="ITU-T_A.23" type="standard" schema-version="v1.5.6" anchor="ITU-T_A.23" semx-id="_5290be01-cd8a-df87-1978-c2418b39e809"><biblio-tag>[ITU‑T A.23]</biblio-tag><formattedref>Recommendation ITU-T A.23, <em>Collaboration with the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) on information technology</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Collaboration with the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) on information technology</title>
 
@@ -983,9 +980,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Collaboration with the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) on information technology</title>
-
       
 <title language="en" script="Latn" type="main">Collaboration with the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) on information technology</title>
 
@@ -1157,11 +1151,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_A.5" type="standard" schema-version="v1.5.6" anchor="ITU-T_A.5" semx-id="_79507780-df8e-cf9c-1693-7a86b376a5d8"><biblio-tag>[ITU‑T A.5]</biblio-tag><formattedref>Recommendation ITU-T A.5, <em>Generic procedures for including references to documents of other organizations in ITU-T Recommendations</em>, Seventh edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Generic procedures for including references to documents of other organizations in ITU-T Recommendations</title>
-
+</bibitem><bibitem id="ITU-T_A.5" type="standard" schema-version="v1.5.6" anchor="ITU-T_A.5" semx-id="_5214de67-fef2-d4ab-a214-e3a38db14aaa"><biblio-tag>[ITU‑T A.5]</biblio-tag><formattedref>Recommendation ITU-T A.5, <em>Generic procedures for including references to documents of other organizations in ITU-T Recommendations</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Generic procedures for including references to documents of other organizations in ITU-T Recommendations</title>
 
@@ -1313,9 +1304,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Generic procedures for including references to documents of other organizations in ITU-T Recommendations</title>
-
       
 <title language="en" script="Latn" type="main">Generic procedures for including references to documents of other organizations in ITU-T Recommendations</title>
 
@@ -1765,12 +1753,16 @@ sourcecode .nt {
 <p id="_62e3f21d-5722-c627-483c-42923262945a" semx-id="_62e3f21d-5722-c627-483c-42923262945a">Appendices do not form an integral part of a Recommendation. It should be noted that while a bibliography is considered an appendix, and thus is non-normative, it is not explicitly labelled as an appendix. The text "(This appendix does not form an integral part of this Recommendation.)" does not follow the "Bibliography" heading.</p>
 
 <p id="_0a2d82d8-2efb-6a85-4567-c9cce961a8ad" semx-id="_0a2d82d8-2efb-6a85-4567-c9cce961a8ad">The sole reference to a normative reference listed in clause 2 should not be made from an appendix. The sole reference to a non-normative reference such as <eref type="inline" bibitemid="b-ITU-T_K.35" citeas="[b-ITU-T K.35]" id="_696ed9ef-675b-4ca6-b2fe-e97a432806f1"/><semx element="eref" source="_696ed9ef-675b-4ca6-b2fe-e97a432806f1"><fmt-xref type="inline" target="b-ITU-T_K.35">[b-ITU-T K.35]</fmt-xref></semx> may appear in an appendix.</p>
-</annex><bibliography><references id="Bibliography" anchor="Bibliography" normative="false" obligation="informative" semx-id="_d172326a-7964-c22e-a2bd-6f1d67d0e754" displayorder="25">
-<title id="_6c8748aa-c704-18b7-d648-64b6d67df26b" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_13cab87c-a399-0dd0-3c11-3ba0a5181aeb"><semx element="title" source="_6c8748aa-c704-18b7-d648-64b6d67df26b">Bibliography</semx></fmt-title><bibitem id="b-ITU-T_A.1" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.1" semx-id="_98757a3e-fdc8-49da-05d1-0fe112bb2bca"><biblio-tag>[b‑ITU‑T A.1]</biblio-tag><formattedref>Recommendation ITU-T A.1, <em>Working methods for study groups of the ITU Telecommunication Standardization Sector</em>, Eighth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Working methods for study groups of the ITU Telecommunication Standardization Sector</title>
-
+</annex><bibliography><references id="Bibliography" anchor="Bibliography" normative="false" obligation="informative" semx-id="_ddd57a10-9f7f-f173-6bf9-d3ceed8b2665" displayorder="25">
+<title id="_6c8748aa-c704-18b7-d648-64b6d67df26b" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_13cab87c-a399-0dd0-3c11-3ba0a5181aeb"><semx element="title" source="_6c8748aa-c704-18b7-d648-64b6d67df26b">Bibliography</semx></fmt-title><bibitem anchor="b-ITU_style" id="b-ITU_style" semx-id="_cffbc0b5-0572-f7ea-2b16-5788852d3b6d"><biblio-tag>[b‑ITU style]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU style, <em>ITU English language style guide</em> (2015).<br/> 
+<link target="http://www.itu.int/SG-CP/docs/styleguide.doc" id="_ac449137-3902-cf44-44b5-93b84e1bf8a5">http://www.itu.int/SG-CP/docs/styleguide.doc</link><semx element="link" source="_ac449137-3902-cf44-44b5-93b84e1bf8a5"><fmt-link target="http://www.itu.int/SG-CP/docs/styleguide.doc" style="url">http://www.itu.int/SG-CP/docs/styleguide.doc</fmt-link></semx>.</formattedref>
+  <docidentifier type="metanorma">[b-ITU style]</docidentifier>
+  <docidentifier type="ITU">ITU style</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="b-ITU-T_A.1" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.1" semx-id="_93f66b92-6e57-0718-7512-e8cda9d60ed5"><biblio-tag>[b‑ITU‑T A.1]</biblio-tag><formattedref>Recommendation ITU-T A.1, <em>Working methods for study groups of the ITU Telecommunication Standardization Sector</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Working methods for study groups of the ITU Telecommunication Standardization Sector</title>
 
@@ -1922,9 +1914,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Working methods for study groups of the ITU Telecommunication Standardization Sector</title>
-
       
 <title language="en" script="Latn" type="main">Working methods for study groups of the ITU Telecommunication Standardization Sector</title>
 
@@ -2087,11 +2076,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_A.13" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.13" semx-id="_88b764a4-f862-5d60-cde2-08e863f80847"><biblio-tag>[b‑ITU‑T A.13]</biblio-tag><formattedref>Recommendation ITU-T A.13, <em>Non-normative ITU-T publications, including Supplements to ITU-T Recommendations</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Non-normative ITU-T publications, including Supplements to ITU-T Recommendations</title>
-
+</bibitem><bibitem id="b-ITU-T_A.13" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.13" semx-id="_2f02f76c-36f4-42ab-de24-9f9dc4c76e5b"><biblio-tag>[b‑ITU‑T A.13]</biblio-tag><formattedref>Recommendation ITU-T A.13, <em>Non-normative ITU-T publications, including Supplements to ITU-T Recommendations</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Non-normative ITU-T publications, including Supplements to ITU-T Recommendations</title>
 
@@ -2205,9 +2191,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Non-normative ITU-T publications, including Supplements to ITU-T Recommendations</title>
-
       
 <title language="en" script="Latn" type="main">Non-normative ITU-T publications, including Supplements to ITU-T Recommendations</title>
 
@@ -2332,11 +2315,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_A.2" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.2" semx-id="_d3eb15c2-0042-2956-e3f5-c515e6ec8ff4"><biblio-tag>[b‑ITU‑T A.2]</biblio-tag><formattedref>Recommendation ITU-T A.2, <em>Presentation of contributions to the ITU Telecommunication Standardization Sector</em>, Eighth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Presentation of contributions to the ITU Telecommunication Standardization Sector</title>
-
+</bibitem><bibitem id="b-ITU-T_A.2" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.2" semx-id="_0c17231c-ae04-0d64-beaa-aca19bfdc204"><biblio-tag>[b‑ITU‑T A.2]</biblio-tag><formattedref>Recommendation ITU-T A.2, <em>Presentation of contributions to the ITU Telecommunication Standardization Sector</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Presentation of contributions to the ITU Telecommunication Standardization Sector</title>
 
@@ -2497,9 +2477,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Presentation of contributions to the ITU Telecommunication Standardization Sector</title>
-
       
 <title language="en" script="Latn" type="main">Presentation of contributions to the ITU Telecommunication Standardization Sector</title>
 
@@ -2671,11 +2648,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_A.4" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.4" semx-id="_7af7a0df-0d94-ef54-ec57-1a2422aaf941"><biblio-tag>[b‑ITU‑T A.4]</biblio-tag><formattedref>Recommendation ITU-T A.4, <em>Communication process between the ITU Telecommunication Standardization Sector and forums and consortia</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Communication process between the ITU Telecommunication Standardization Sector and forums and consortia</title>
-
+</bibitem><bibitem id="b-ITU-T_A.4" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.4" semx-id="_48a5866c-cbcd-6ff9-b536-d26514e42d69"><biblio-tag>[b‑ITU‑T A.4]</biblio-tag><formattedref>Recommendation ITU-T A.4, <em>Communication process between the ITU Telecommunication Standardization Sector and forums and consortia</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Communication process between the ITU Telecommunication Standardization Sector and forums and consortia</title>
 
@@ -2780,9 +2754,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Communication process between the ITU Telecommunication Standardization Sector and forums and consortia</title>
-
       
 <title language="en" script="Latn" type="main">Communication process between the ITU Telecommunication Standardization Sector and forums and consortia</title>
 
@@ -2898,11 +2869,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_A.6" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.6" semx-id="_dba7876d-2735-35a9-a631-e2fdaa6cf11c"><biblio-tag>[b‑ITU‑T A.6]</biblio-tag><formattedref>Recommendation ITU-T A.6, <em>Cooperation and exchange of information between the ITU Telecommunication Standardization Sector and national and regional standards development organizations</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Cooperation and exchange of information between the ITU Telecommunication Standardization Sector and national and regional standards development organizations</title>
-
+</bibitem><bibitem id="b-ITU-T_A.6" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.6" semx-id="_79881d57-fbca-aca1-37aa-b3ec94905c4c"><biblio-tag>[b‑ITU‑T A.6]</biblio-tag><formattedref>Recommendation ITU-T A.6, <em>Cooperation and exchange of information between the ITU Telecommunication Standardization Sector and national and regional standards development organizations</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Cooperation and exchange of information between the ITU Telecommunication Standardization Sector and national and regional standards development organizations</title>
 
@@ -3007,9 +2975,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Cooperation and exchange of information between the ITU Telecommunication Standardization Sector and national and regional standards development organizations</title>
-
       
 <title language="en" script="Latn" type="main">Cooperation and exchange of information between the ITU Telecommunication Standardization Sector and national and regional standards development organizations</title>
 
@@ -3125,11 +3090,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_A.8" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.8" semx-id="_c955320e-c925-e194-2a41-0df5c63c7a72"><biblio-tag>[b‑ITU‑T A.8]</biblio-tag><formattedref>Recommendation ITU-T A.8, <em>Alternative approval process for new and revised ITU-T Recommendations</em>, Sixth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Alternative approval process for new and revised ITU-T Recommendations</title>
-
+</bibitem><bibitem id="b-ITU-T_A.8" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_A.8" semx-id="_169b4cfc-56bb-f67a-110b-b9b6e8901e8c"><biblio-tag>[b‑ITU‑T A.8]</biblio-tag><formattedref>Recommendation ITU-T A.8, <em>Alternative approval process for new and revised ITU-T Recommendations</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Alternative approval process for new and revised ITU-T Recommendations</title>
 
@@ -3270,9 +3232,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Alternative approval process for new and revised ITU-T Recommendations</title>
-
       
 <title language="en" script="Latn" type="main">Alternative approval process for new and revised ITU-T Recommendations</title>
 
@@ -3431,11 +3390,8 @@ While this edition does not modify the alternative approval process, it:
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_G.108.2" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_G.108.2" semx-id="_89ecd223-fba0-a913-2ce9-3551171eeef2"><biblio-tag>[b‑ITU‑T G.108.2]</biblio-tag><formattedref>Recommendation ITU-T G.108.2, <em>Transmission planning aspects of echo cancellers</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Transmission planning aspects of echo cancellers</title>
-
+</bibitem><bibitem id="b-ITU-T_G.108.2" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_G.108.2" semx-id="_3351b443-5489-1e81-dedf-e45835b62f53"><biblio-tag>[b‑ITU‑T G.108.2]</biblio-tag><formattedref>Recommendation ITU-T G.108.2, <em>Transmission planning aspects of echo cancellers</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Transmission planning aspects of echo cancellers</title>
 
@@ -4127,9 +4083,6 @@ While this edition does not modify the alternative approval process, it:
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Transmission planning aspects of echo cancellers</title>
-
       
 <title language="en" script="Latn" type="main">Transmission planning aspects of echo cancellers</title>
 
@@ -4832,11 +4785,149 @@ While this edition does not modify the alternative approval process, it:
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ITU-T_K.35" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_K.35" semx-id="_4bb8e3a8-9b87-fadb-49d2-25d170f802c1"><biblio-tag>[b‑ITU‑T K.35]</biblio-tag><formattedref>Recommendation ITU-T K.35, <em>Bonding configurations and earthing at remote electronic sites</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="b-ITU-T_G.709" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_G.709" semx-id="_981a5eef-9b39-bcc3-8c21-e9709352b400"><biblio-tag>[b‑ITU‑T G.709]</biblio-tag><formattedref>Recommendation ITU-T G.709, <em>Synchronous multiplexing structure</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Bonding configurations and earthing at remote electronic sites</title>
+<title language="en" script="Latn" type="main">Synchronous multiplexing structure</title>
 
+  <uri type="src">https://handle.itu.int/11.1002/1000/910</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.709</docidentifier><docidentifier type="metanorma">[b-ITU-T G.709]</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Withdrawal</stage>
+  </status>
+  <copyright>
+    <from>1993</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Synchronous multiplexing structure</title>
+
+      <docidentifier type="ITU" primary="true">G.709 (04/1991)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Synchronous multiplexing structure</title>
+
+      <docidentifier type="ITU" primary="true">G.709 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="main">Synchronous multiplexing structure</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/910</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.709 (03/1993)</docidentifier>
+      <date type="published">
+        <on>1993-03-12</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>3</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn"/>
+      <status>
+        <stage>Withdrawal</stage>
+      </status>
+      <copyright>
+        <from>1993</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Synchronous multiplexing structure</title>
+
+          <docidentifier type="ITU" primary="true">G.709 (04/1991)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Synchronous multiplexing structure</title>
+
+          <docidentifier type="ITU" primary="true">G.709 (11/1988)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="b-ITU-T_K.35" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_K.35" semx-id="_888089be-b077-ebea-2a0c-3c285185f555"><biblio-tag>[b‑ITU‑T K.35]</biblio-tag><formattedref>Recommendation ITU-T K.35, <em>Bonding configurations and earthing at remote electronic sites</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Bonding configurations and earthing at remote electronic sites</title>
 
@@ -4988,9 +5079,6 @@ While this edition does not modify the alternative approval process, it:
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Bonding configurations and earthing at remote electronic sites</title>
-
       
 <title language="en" script="Latn" type="main">Bonding configurations and earthing at remote electronic sites</title>
 
@@ -5160,8 +5248,15 @@ China industrial standard YD/T 1537-2015, Outdoor cabinets for telecommunication
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-ISO_704" type="standard" schema-version="v1.5.6" anchor="b-ISO_704" semx-id="_f208d0aa-9e77-1e97-7481-0e591a4aaf54"><biblio-tag>[b‑ISO 704]</biblio-tag><formattedref>ISO 704, <em>Terminology work — Principles and methods</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem anchor="b-ITU-T_Rap" id="b-ITU-T_Rap" semx-id="_5287015c-443c-7518-6f66-3a6e7082f1ae"><biblio-tag>[b‑ITU‑T Rap]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Rap, ITU-T, <em>Manual for Rapporteurs and Editors</em>, 12 February 2010.<br/> 
+<link target="http://www.itu.int/oth/T0A0F000006/en" id="_dfc664c1-596c-6900-937e-5d0fa90a5c23">http://www.itu.int/oth/T0A0F000006/en</link><semx element="link" source="_dfc664c1-596c-6900-937e-5d0fa90a5c23"><fmt-link target="http://www.itu.int/oth/T0A0F000006/en" style="url">http://www.itu.int/oth/T0A0F000006/en</fmt-link></semx>.</formattedref>
+  <docidentifier type="metanorma">[b-ITU-T Rap]</docidentifier>
+  <docidentifier type="ITU">ITU-T Rap</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="b-ISO_704" type="standard" schema-version="v1.5.6" anchor="b-ISO_704" semx-id="_efe59d41-049f-924c-f5a3-45fade3785f1"><biblio-tag>[b‑ISO 704]</biblio-tag><formattedref>ISO 704, <em>Terminology work — Principles and methods</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Terminology work</title>
 
@@ -5184,7 +5279,6 @@ China industrial standard YD/T 1537-2015, Outdoor cabinets for telecommunication
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:38109:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/81/38109.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 704</docidentifier><docidentifier type="metanorma">[b-ISO 704]</docidentifier>
-  <docidentifier type="iso-undated">iso-undated ISO 704</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 704(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:704:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO 704</docidentifier>
   <docnumber>704</docnumber>
@@ -5210,7 +5304,7 @@ China industrial standard YD/T 1537-2015, Outdoor cabinets for telecommunication
         
 <name>Principles and methods</name>
 
-        <identifier id="_f3889d71-cb1c-7da6-3749-fb0496c6e1d0">ISO/TC 37/SC 1</identifier><fmt-identifier><tt><semx element="identifier" source="_f3889d71-cb1c-7da6-3749-fb0496c6e1d0">ISO/TC 37/SC 1</semx></tt></fmt-identifier>
+        <identifier id="_2e2af755-bdc3-8f88-f386-2307e884e7b3">ISO/TC 37/SC 1</identifier><fmt-identifier><tt><semx element="identifier" source="_2e2af755-bdc3-8f88-f386-2307e884e7b3">ISO/TC 37/SC 1</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5303,7 +5397,7 @@ China industrial standard YD/T 1537-2015, Outdoor cabinets for telecommunication
             
 <name>Principles and methods</name>
 
-            <identifier id="_77dbbf8b-c07f-02a8-43e6-9b2bb8bcc1b4">ISO/TC 37/SC 1</identifier><fmt-identifier><tt><semx element="identifier" source="_77dbbf8b-c07f-02a8-43e6-9b2bb8bcc1b4">ISO/TC 37/SC 1</semx></tt></fmt-identifier>
+            <identifier id="_8c7eaf9e-4e61-2c2a-a88b-82e58abaa04b">ISO/TC 37/SC 1</identifier><fmt-identifier><tt><semx element="identifier" source="_8c7eaf9e-4e61-2c2a-a88b-82e58abaa04b">ISO/TC 37/SC 1</semx></tt></fmt-identifier>
           </subdivision>
           <abbreviation>ISO</abbreviation>
         </organization>
@@ -5353,27 +5447,6 @@ China industrial standard YD/T 1537-2015, Outdoor cabinets for telecommunication
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem anchor="b-ITU_style" id="b-ITU_style" semx-id="_f112a3c1-71e8-4e9d-223c-65a7ffbd5103"><biblio-tag>[b‑ITU style]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU style, <em>ITU English language style guide</em> (2015).<br/> 
-<link target="http://www.itu.int/SG-CP/docs/styleguide.doc" id="_3a9253e7-8fee-162e-15e0-db398defbc83">http://www.itu.int/SG-CP/docs/styleguide.doc</link><semx element="link" source="_3a9253e7-8fee-162e-15e0-db398defbc83"><fmt-link target="http://www.itu.int/SG-CP/docs/styleguide.doc" style="url">http://www.itu.int/SG-CP/docs/styleguide.doc</fmt-link></semx>.</formattedref>
-  <docidentifier type="metanorma">[b-ITU style]</docidentifier>
-  <docidentifier type="ITU">ITU style</docidentifier>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="b-ITU-T_G.709" id="b-ITU-T_G.709" semx-id="_c75259a8-070d-6feb-8832-bd3e0dbe8730"><biblio-tag>[b‑ITU‑T G.709]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.709, Recommendation ITU-T G.709/Y.1331 (2012), <em>Interfaces for the optical transport network</em>.</formattedref>
-  <docidentifier type="metanorma">[b-ITU-T G.709]</docidentifier>
-  <docidentifier type="ITU">ITU-T G.709</docidentifier>
-  <docnumber>709</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="b-ITU-T_Rap" id="b-ITU-T_Rap" semx-id="_763a439a-289a-ead6-1d9f-3893b43c7f3c"><biblio-tag>[b‑ITU‑T Rap]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Rap, ITU-T, <em>Manual for Rapporteurs and Editors</em>, 12 February 2010.<br/> 
-<link target="http://www.itu.int/oth/T0A0F000006/en" id="_48eb850f-2e22-cd28-6c06-38b6c1efe1fd">http://www.itu.int/oth/T0A0F000006/en</link><semx element="link" source="_48eb850f-2e22-cd28-6c06-38b6c1efe1fd"><fmt-link target="http://www.itu.int/oth/T0A0F000006/en" style="url">http://www.itu.int/oth/T0A0F000006/en</fmt-link></semx>.</formattedref>
-  <docidentifier type="metanorma">[b-ITU-T Rap]</docidentifier>
-  <docidentifier type="ITU">ITU-T Rap</docidentifier>
-  <language>en</language>
-  <script>Latn</script>
 </bibitem><bibitem anchor="b-Essay" id="b-Essay" semx-id="_26328720-2290-5951-b431-02838a408523"><biblio-tag>[b‑Essay]</biblio-tag>
   <formattedref format="application/x-isodoc+xml">b-Essay, Essay Writing Center, <em>Definition Essay</em>.<br/> 
 <link target="http://essayinfo.com/essays/definition_essay.php" id="_f924b735-7907-e8ec-267c-13400d969187">http://essayinfo.com/essays/definition_essay.php</link><semx element="link" source="_f924b735-7907-e8ec-267c-13400d969187"><fmt-link target="http://essayinfo.com/essays/definition_essay.php" style="url">http://essayinfo.com/essays/definition_essay.php</fmt-link></semx> (Referenced 1.02.2016).</formattedref>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Implementers' guide for Recommendation ITU-T G.8001/Y.1354</title>
 <docidentifier type="ITU" primary="true">ITU-T G.8001/Y.1354 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T G.8001/Y.1354 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T G.8001</docidentifier><docidentifier type="ITU-Recommendation">Y</docidentifier><docidentifier type="ITU-Recommendation">1354</docidentifier><docnumber>G.8001/Y.1354 Implementers' Guide</docnumber><date type="published"><on>2020-02-07</on></date><contributor><role type="author"/><organization>
@@ -113,7 +113,7 @@
 </table>
 </clause>
 
-<clause id="_212dcf33-14f0-e432-d781-9d666bc75e2d" inline-header="false" obligation="normative">
+<clause id="_dcd28252-f7ef-566c-08c8-11d80866d71b" inline-header="false" obligation="normative">
 <title id="_6c3e2efe-7ffb-a475-75e3-ef1a9d3fdf65">Technical and editorial corrections to Recommendation ITU-T G.8001</title>
 <terms id="_aa096be7-a20b-bed6-2bae-23cd28534345" obligation="normative">
 <title id="_3304949d-0f20-14ce-0945-722960de10e0">Section 3.2</title>
@@ -876,12 +876,9 @@
 </table>
 </clause>
 
-<references id="_db692b63-e818-3dfd-a63b-9c9c68f7a7ca" normative="false" obligation="informative">
-<title id="_826f40eb-53ca-23af-04fb-1e4191ba11fd">Bibliography</title><bibitem id="_0b12ebc7-3d34-ea02-af6a-c7d69bc2cbb8" type="standard" schema-version="v1.5.6" anchor="g7710">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Common equipment management function requirements</title>
-
+<references id="_20189070-d413-9f82-2b37-af5fce95a323" normative="false" obligation="informative">
+<title id="_826f40eb-53ca-23af-04fb-1e4191ba11fd">Bibliography</title><bibitem id="_c2c23410-18f6-7cb6-24d8-230b56a57fde" type="standard" schema-version="v1.5.6" anchor="g7710">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Common equipment management function requirements</title>
 
@@ -1617,9 +1614,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Common equipment management function requirements</title>
-
       
 <title language="en" script="Latn" type="main">Common equipment management function requirements</title>
 
@@ -2367,10 +2361,19 @@ This revision of this Recommendation updates the fault management requirements t
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_07e02611-3e9b-3b6e-a76d-e89610dd74ea" type="standard" schema-version="v1.5.6" anchor="g800">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/14897</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.800-202202-I!Cor1!PDF-E&amp;type=items</uri>
+</bibitem><bibitem anchor="g7712" id="_588e461b-5044-c3ee-54f1-2195d616b4cc">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.7712/Y.1703 (2010), Architecture and specification of data communication network.</formattedref>
+  <docidentifier type="ITU">ITU-T G.7712</docidentifier>
+  <docnumber>7712</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_f7ef79e3-1e16-8387-49ba-a71785c3900e" type="standard" schema-version="v1.5.6" anchor="g800">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Unified functional architecture of transport networks</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/12790</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.800-201604-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.800</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -2398,14 +2401,14 @@ This revision of this Recommendation updates the fault management requirements t
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>3.1</edition>
+  <edition>3</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2022</from>
+    <from>2016</from>
     <owner>
       <organization>
         
@@ -2418,10 +2421,8 @@ This revision of this Recommendation updates the fault management requirements t
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      
-<title language="en" script="Latn">Unified functional architecture of transport networks</title>
-
-      <docidentifier type="ITU" primary="true">G.800 (04/2016)</docidentifier>
+      <formattedref>G.800 (2016) Cor. 1 (02/2022)</formattedref>
+      <docidentifier type="ITU" primary="true">G.800 (2016) Cor. 1 (02/2022)</docidentifier>
     </bibitem>
 
   </relation>
@@ -3055,11 +3056,14 @@ This revision of this Recommendation updates the fault management requirements t
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/14897</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.800-202202-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.800 (2016)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Unified functional architecture of transport networks</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/12790</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.800-201604-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.800 (04/2016)</docidentifier>
       <date type="published">
-        <on>2022-02-13</on>
+        <on>2016-04-13</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -3087,17 +3091,15 @@ This revision of this Recommendation updates the fault management requirements t
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>3.1</edition>
+      <edition>3</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Recommendation ITU-T G.800 describes a unified functional architecture for transport networks that use connection-oriented circuit switching (CO-CS), connection-oriented packet switching (CO PS), and connectionless packet switching (CL-PS) in a technology-independent way.
-Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwarding end port should be a type of port, not point.
-</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T G.800 describes a unified functional architecture for transport networks that use connection-oriented circuit switching (CO-CS), connection-oriented packet switching (CO‑PS), and connectionless packet-switching (CL-PS) in a technology-independent way.</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2022</from>
+        <from>2016</from>
         <owner>
           <organization>
             
@@ -3110,10 +3112,8 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          
-<title language="en" script="Latn">Unified functional architecture of transport networks</title>
-
-          <docidentifier type="ITU" primary="true">G.800 (04/2016)</docidentifier>
+          <formattedref>G.800 (2016) Cor. 1 (02/2022)</formattedref>
+          <docidentifier type="ITU" primary="true">G.800 (2016) Cor. 1 (02/2022)</docidentifier>
         </bibitem>
 
       </relation>
@@ -3754,13 +3754,14 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T G.800 (2012), Unified functional architecture of transport networks.</title>
-</bibitem><bibitem id="_5186b1cb-a880-85d7-9cb8-9fe006eb9c6c" type="standard" schema-version="v1.5.6" anchor="g8011">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Ethernet service characteristics</title>
-
+</bibitem><bibitem anchor="g8010" id="_382558ce-4866-ac25-cb92-0468424f1338">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8010/Y.1306 (2004), Architecture of Ethernet layer networks.</formattedref>
+  <docidentifier type="ITU">ITU-T G.8010</docidentifier>
+  <docnumber>8010</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_d9c856a6-e26b-5d18-03be-1e2ed38e2f9e" type="standard" schema-version="v1.5.6" anchor="g8011">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Ethernet service characteristics</title>
 
@@ -4491,9 +4492,6 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Ethernet service characteristics</title>
-
       
 <title language="en" script="Latn" type="main">Ethernet service characteristics</title>
 
@@ -5235,10 +5233,55 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_2119e739-1b64-6d48-31b5-a44990d9f08e" type="standard" schema-version="v1.5.6" anchor="g805">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/14898</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.805-202202-I!Cor1!PDF-E&amp;type=items</uri>
+</bibitem><bibitem anchor="g8012" id="_2901ab02-dab2-db71-163f-587e36170135">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8012/Y.1308 (2004), Ethernet UNI and Ethernet NNI.</formattedref>
+  <docidentifier type="ITU">ITU-T G.8012</docidentifier>
+  <docnumber>8012</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="g8012-1" id="_934c8831-8d16-b0ee-eaf2-8f64e3192bfa">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8012.1/Y.1308.1 (2012), Interfaces for the Ethernet transport network.</formattedref>
+  <docidentifier type="ITU">ITU-T G.8012.1</docidentifier>
+  <docnumber>8012.1</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="g8013" id="_3839d3bd-23b5-331d-c65b-cc2cefdb58cd">
+  <formattedref format="application/x-isodoc+xml">
+    <strike>Recommendation ITU-T G.8013/Y.1731 (2015), Operations, administration and maintenance (OAM) functions and mechanisms for Ethernet-based networks.</strike>
+  </formattedref>
+  <docidentifier type="ITU">ITU-T G.8013</docidentifier>
+  <docnumber>8013</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="g8021" id="_8d5f4bf7-6ee2-9102-5a0b-d43936863e3b">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8021/Y.1341 (2015), Characteristics of Ethernet transport network equipment functional blocks.</formattedref>
+  <docidentifier type="ITU">ITU-T G.8021</docidentifier>
+  <docnumber>8021</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="g8031" id="_3c61bfeb-e0b8-179b-aefd-100032f892ab">
+  <formattedref format="application/x-isodoc+xml">
+    <strike>Recommendation ITU-T G.8031/Y.1342 (2015), Ethernet linear protection switching.</strike>
+  </formattedref>
+  <docidentifier type="ITU">ITU-T G.8031</docidentifier>
+  <docnumber>8031</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="g8032" id="_9c53f365-e797-0619-0b2d-695b5ba48301">
+  <formattedref format="application/x-isodoc+xml">
+    <strike>Recommendation ITU-T G.8032/Y.1344 (2015), Ethernet ring protection switching.</strike>
+  </formattedref>
+  <docidentifier type="ITU">ITU-T G.8032</docidentifier>
+  <docnumber>8032</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_bf5a5e2e-020d-3549-c1ea-ce9cc9facaa3" type="standard" schema-version="v1.5.6" anchor="g805">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Generic functional architecture of transport networks</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/4956</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.805-200003-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.805</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -5266,14 +5309,14 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>2.1</edition>
+  <edition>2</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2022</from>
+    <from>2000</from>
     <owner>
       <organization>
         
@@ -5286,10 +5329,8 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      
-<title language="en" script="Latn">Generic functional architecture of transport networks</title>
-
-      <docidentifier type="ITU" primary="true">G.805 (03/2000)</docidentifier>
+      <formattedref>G.805 (2000) Cor. 1 (02/2022)</formattedref>
+      <docidentifier type="ITU" primary="true">G.805 (2000) Cor. 1 (02/2022)</docidentifier>
     </bibitem>
 
   </relation>
@@ -5898,11 +5939,14 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/14898</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.805-202202-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.805 (2000)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Generic functional architecture of transport networks</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/4956</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.805-200003-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.805 (03/2000)</docidentifier>
       <date type="published">
-        <on>2022-02-13</on>
+        <on>2000-03-10</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -5930,15 +5974,15 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>2.1</edition>
+      <edition>2</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Corrigendum 1 to Recommendation ITU-T G.805 corrects some figures that use the symbol for port to indicate points.</abstract>
+      <abstract language="en" script="Latn">This Recommendation describes the functional architecture of transport networks in a technology independent way. The generic functional architecture may be used as the basis for a harmonized set of functional architecture Recommendations for ATM, SDH, PDH transport networks, and a corresponding set of Recommendations for management, performance analysis and equipment specification.</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2022</from>
+        <from>2000</from>
         <owner>
           <organization>
             
@@ -5951,10 +5995,8 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          
-<title language="en" script="Latn">Generic functional architecture of transport networks</title>
-
-          <docidentifier type="ITU" primary="true">G.805 (03/2000)</docidentifier>
+          <formattedref>G.805 (2000) Cor. 1 (02/2022)</formattedref>
+          <docidentifier type="ITU" primary="true">G.805 (2000) Cor. 1 (02/2022)</docidentifier>
         </bibitem>
 
       </relation>
@@ -6570,13 +6612,8 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T G.805 (2000), Generic functional architecture of transport networks.</title>
-</bibitem><bibitem id="_bc10c394-d26a-5d49-4285-075f311dc605" type="standard" schema-version="v1.5.6" anchor="g8051">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Management aspects of the Ethernet transport (ET) capable network element</title>
-
+</bibitem><bibitem id="_5e2f6062-7366-ee00-6fcf-e2a15edc1055" type="standard" schema-version="v1.5.6" anchor="g8051">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Management aspects of the Ethernet transport (ET) capable network element</title>
 
@@ -7314,9 +7351,6 @@ Corrigendum 1 updates clause 3.2.8 to indicate that the description of the forwa
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Management aspects of the Ethernet transport (ET) capable network element</title>
-
       
 <title language="en" script="Latn" type="main">Management aspects of the Ethernet transport (ET) capable network element</title>
 
@@ -8074,11 +8108,8 @@ The 2024 revision of this Recommendation has updated LM related MIs in Table 8-1
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_9d84ea82-4a79-f880-9bae-273df9dfd4d8" type="standard" schema-version="v1.5.6" anchor="g8052">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Protocol-neutral management information model for the Ethernet transport capable network element</title>
-
+</bibitem><bibitem id="_bcbfb847-1a8f-6483-c7ef-55d6af64724a" type="standard" schema-version="v1.5.6" anchor="g8052">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Protocol-neutral management information model for the Ethernet transport capable network element</title>
 
@@ -8759,9 +8790,6 @@ The 2024 revision of this Recommendation has updated LM related MIs in Table 8-1
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Protocol-neutral management information model for the Ethernet transport capable network element</title>
-
       
 <title language="en" script="Latn" type="main">Protocol-neutral management information model for the Ethernet transport capable network element</title>
 
@@ -9457,11 +9485,8 @@ Edition 4.0 of this Recommendation adds the FlexE UML model and updates the ETH 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_745dea18-3df1-2b50-8697-b69810462cac" type="standard" schema-version="v1.5.6" anchor="g808-1">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Generic protection switching – Linear trail and subnetwork protection</title>
-
+</bibitem><bibitem id="_f4792eb7-ee0e-4683-191b-da214ba8b3d7" type="standard" schema-version="v1.5.6" anchor="g808-1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Generic protection switching – Linear trail and subnetwork protection</title>
 
@@ -10174,9 +10199,6 @@ Edition 4.0 of this Recommendation adds the FlexE UML model and updates the ETH 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Generic protection switching – Linear trail and subnetwork protection</title>
-
       
 <title language="en" script="Latn" type="main">Generic protection switching – Linear trail and subnetwork protection</title>
 
@@ -10902,11 +10924,8 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ce7cea2f-6c47-9fe0-7fed-db5888fe4477" type="standard" schema-version="v1.5.6" anchor="g809">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Functional architecture of connectionless layer networks</title>
-
+</bibitem><bibitem id="_35d291b2-ad46-792a-e2e6-24caa6ee92a3" type="standard" schema-version="v1.5.6" anchor="g809">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Functional architecture of connectionless layer networks</title>
 
@@ -11553,9 +11572,6 @@ Generic functional models, characteristics and processes for ring protection and
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Functional architecture of connectionless layer networks</title>
-
       
 <title language="en" script="Latn" type="main">Functional architecture of connectionless layer networks</title>
 
@@ -12213,11 +12229,20 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_7e048ee8-495c-90cd-f0d0-78807e6be59f" type="standard" schema-version="v1.5.6" anchor="m3010">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Principles for a telecommunications management network</title>
-
+</bibitem><bibitem anchor="g870" id="_37c1e3ee-560f-f1d4-fb53-7b1c49d964e9">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.870/Y.1352 (2012), Terms and definitions for optical transport networks.</formattedref>
+  <docidentifier type="ITU">ITU-T G.870</docidentifier>
+  <docnumber>870</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="sup52" id="_1429c1a1-9326-021f-c638-3dd3023f2669">
+  <formattedref format="application/x-isodoc+xml">ITU-T G-series Recommendations – Supplement 52 (2012), <em>Ethernet ring protection switching.</em></formattedref>
+  <docidentifier type="ITU">ITU-T G.Sup52</docidentifier>
+  <docnumber>52</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_f8681414-a63f-869f-cabf-24fccf2fb0fd" type="standard" schema-version="v1.5.6" anchor="m3010">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Principles for a telecommunications management network</title>
 
@@ -12324,9 +12349,6 @@ Generic functional models, characteristics and processes for ring protection and
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Principles for a telecommunications management network</title>
-
       
 <title language="en" script="Latn" type="main">Principles for a telecommunications management network</title>
 
@@ -12444,11 +12466,8 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d1b52ae3-a84e-deed-59cb-f7d67c89f29e" type="standard" schema-version="v1.5.6" anchor="m3013">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Considerations for a telecommunications management network</title>
-
+</bibitem><bibitem id="_5a5f2c4a-392c-638a-72cb-53ceceea12a5" type="standard" schema-version="v1.5.6" anchor="m3013">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Considerations for a telecommunications management network</title>
 
@@ -12501,9 +12520,6 @@ Generic functional models, characteristics and processes for ring protection and
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Considerations for a telecommunications management network</title>
-
       
 <title language="en" script="Latn" type="main">Considerations for a telecommunications management network</title>
 
@@ -12567,9 +12583,12 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d73cfa76-daeb-3f79-6733-a66700043118" type="standard" schema-version="v1.5.6" anchor="m3100">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/8625</uri>
+</bibitem><bibitem id="_951d5bf6-0eff-aed9-0a36-c44cffe4eb96" type="standard" schema-version="v1.5.6" anchor="m3100">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Generic network information model</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/8340</uri>
   <docidentifier type="ITU" primary="true">ITU-T M.3100</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -12597,7 +12616,7 @@ Generic functional models, characteristics and processes for ring protection and
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>3.1</edition>
+  <edition>3</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
@@ -12617,10 +12636,8 @@ Generic functional models, characteristics and processes for ring protection and
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      
-<title language="en" script="Latn">Generic network information model</title>
-
-      <docidentifier type="ITU" primary="true">M.3100 (04/2005)</docidentifier>
+      <formattedref>M.3100 (2005) Cor. 1 (11/2005)</formattedref>
+      <docidentifier type="ITU" primary="true">M.3100 (2005) Cor. 1 (11/2005)</docidentifier>
     </bibitem>
 
   </relation>
@@ -12727,10 +12744,13 @@ Generic functional models, characteristics and processes for ring protection and
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/8625</uri>
-      <docidentifier type="ITU" primary="true">ITU-T M.3100 (2005)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Generic network information model</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/8340</uri>
+      <docidentifier type="ITU" primary="true">ITU-T M.3100 (04/2005)</docidentifier>
       <date type="published">
-        <on>2005-11-13</on>
+        <on>2005-04-29</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -12758,10 +12778,10 @@ Generic functional models, characteristics and processes for ring protection and
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>3.1</edition>
+      <edition>3</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn"/>
+      <abstract language="en" script="Latn">This Recommendation provides a generic network information model. The model describes managed object classes and their properties that are generic and useful to describe information exchanged across all interfaces defined in M.3010 TMN architecture. These generic managed object classes are intended to be applicable across different technologies, architecture and services. The managed object classes in this Recommendation may be specialized to support the management of various telecommunications networks.</abstract>
       <status>
         <stage>Published</stage>
       </status>
@@ -12779,10 +12799,8 @@ Generic functional models, characteristics and processes for ring protection and
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          
-<title language="en" script="Latn">Generic network information model</title>
-
-          <docidentifier type="ITU" primary="true">M.3100 (04/2005)</docidentifier>
+          <formattedref>M.3100 (2005) Cor. 1 (11/2005)</formattedref>
+          <docidentifier type="ITU" primary="true">M.3100 (2005) Cor. 1 (11/2005)</docidentifier>
         </bibitem>
 
       </relation>
@@ -12896,13 +12914,8 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T M.3100 (2005), Generic network information model.</title>
-</bibitem><bibitem id="_80fa3ece-bd22-601f-f69b-074849167969" type="standard" schema-version="v1.5.6" anchor="x700">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Management framework for Open Systems Interconnection (OSI) for CCITT applications</title>
-
+</bibitem><bibitem id="_3b0a036f-dd0e-dd7f-f78a-6542c60573f4" type="standard" schema-version="v1.5.6" anchor="x700">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Management framework for Open Systems Interconnection (OSI) for CCITT applications</title>
 
@@ -12956,9 +12969,6 @@ Generic functional models, characteristics and processes for ring protection and
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Management framework for Open Systems Interconnection (OSI) for CCITT applications</title>
-
       
 <title language="en" script="Latn" type="main">Management framework for Open Systems Interconnection (OSI) for CCITT applications</title>
 
@@ -13023,11 +13033,8 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_991bab84-4e86-d90a-7069-681c0dad093e" type="standard" schema-version="v1.5.6" anchor="x701">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Information technology – Open Systems Interconnection – Systems management overview</title>
-
+</bibitem><bibitem id="_62b20250-8675-f533-af4c-f519cf9d16dc" type="standard" schema-version="v1.5.6" anchor="x701">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Information technology – Open Systems Interconnection – Systems management overview</title>
 
@@ -13120,9 +13127,6 @@ Generic functional models, characteristics and processes for ring protection and
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Information technology – Open Systems Interconnection – Systems management overview</title>
-
       
 <title language="en" script="Latn" type="main">Information technology – Open Systems Interconnection – Systems management overview</title>
 
@@ -13226,72 +13230,6 @@ Generic functional models, characteristics and processes for ring protection and
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem anchor="g7712" id="_73079c98-d944-4203-f7f7-431bb2f9a9d9">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.7712/Y.1703 (2010), Architecture and specification of data communication network.</formattedref>
-  <docidentifier type="ITU">ITU-T G.7712</docidentifier>
-  <docnumber>7712</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8010" id="_07b5e369-1078-1960-581a-2e914f836ec2">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8010/Y.1306 (2004), Architecture of Ethernet layer networks.</formattedref>
-  <docidentifier type="ITU">ITU-T G.8010</docidentifier>
-  <docnumber>8010</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8012" id="_bc505cb1-3b67-0205-11b2-db436f910da8">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8012/Y.1308 (2004), Ethernet UNI and Ethernet NNI.</formattedref>
-  <docidentifier type="ITU">ITU-T G.8012</docidentifier>
-  <docnumber>8012</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8012-1" id="_efd36a01-429f-0267-20f1-5e19ef0643a3">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8012.1/Y.1308.1 (2012), Interfaces for the Ethernet transport network.</formattedref>
-  <docidentifier type="ITU">ITU-T G.8012.1</docidentifier>
-  <docnumber>8012.1</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8013" id="_7e233638-5a76-07f4-2b87-701dffa4843c">
-  <formattedref format="application/x-isodoc+xml">
-    <strike>Recommendation ITU-T G.8013/Y.1731 (2015), Operations, administration and maintenance (OAM) functions and mechanisms for Ethernet-based networks.</strike>
-  </formattedref>
-  <docidentifier type="ITU">ITU-T G.8013</docidentifier>
-  <docnumber>8013</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8021" id="_4c5ddc89-d451-86ab-94cb-54742fc04871">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.8021/Y.1341 (2015), Characteristics of Ethernet transport network equipment functional blocks.</formattedref>
-  <docidentifier type="ITU">ITU-T G.8021</docidentifier>
-  <docnumber>8021</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8031" id="_4c230f70-2c31-c777-5544-57899ded78c3">
-  <formattedref format="application/x-isodoc+xml">
-    <strike>Recommendation ITU-T G.8031/Y.1342 (2015), Ethernet linear protection switching.</strike>
-  </formattedref>
-  <docidentifier type="ITU">ITU-T G.8031</docidentifier>
-  <docnumber>8031</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g8032" id="_e5d51fc1-a938-73ea-02e4-7eb3330ebbae">
-  <formattedref format="application/x-isodoc+xml">
-    <strike>Recommendation ITU-T G.8032/Y.1344 (2015), Ethernet ring protection switching.</strike>
-  </formattedref>
-  <docidentifier type="ITU">ITU-T G.8032</docidentifier>
-  <docnumber>8032</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="g870" id="_da4592f7-b411-b0ac-3f4d-1b349cc0e00a">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T G.870/Y.1352 (2012), Terms and definitions for optical transport networks.</formattedref>
-  <docidentifier type="ITU">ITU-T G.870</docidentifier>
-  <docnumber>870</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="sup52" id="_bb37021d-d96a-bd81-ae92-4c3b4af7170a">
-  <formattedref format="application/x-isodoc+xml">ITU-T G-series Recommendations – Supplement 52 (2012), <em>Ethernet ring protection switching.</em></formattedref>
-  <docidentifier type="ITU">ITU-T G.Sup52</docidentifier>
-  <docnumber>52</docnumber>
-  <language>en</language>
-  <script>Latn</script>
 </bibitem><bibitem anchor="mef10-3" id="_126d614c-521f-3c2a-5e47-e923e594a9b8">
   <formattedref format="application/x-isodoc+xml">
     <strike>MEF (2013), <em>Ethernet Services Attributes Phase 3.</em></strike>
@@ -13360,12 +13298,9 @@ Generic functional models, characteristics and processes for ring protection and
 </note></table>
 
 
-</annex><bibliography><references id="_86f9a0df-0e9f-8684-0c06-a3362c0f99d4" normative="true" obligation="informative">
-<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_5194af9b-2179-8aa6-f33c-5ddbdf000328" type="standard" schema-version="v1.5.6" anchor="itu-g8001">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Terms and definitions for Ethernet frames over transport</title>
-
+</annex><bibliography><references id="_789fdd33-559c-7b64-8afe-3d4aff690634" normative="true" obligation="informative">
+<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_90396a96-e6fa-5cc4-3fd5-df6e0a772e2d" type="standard" schema-version="v1.5.6" anchor="itu-g8001">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Terms and definitions for Ethernet frames over transport</title>
 
@@ -13488,9 +13423,6 @@ Generic functional models, characteristics and processes for ring protection and
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Terms and definitions for Ethernet frames over transport</title>
-
       
 <title language="en" script="Latn" type="main">Terms and definitions for Ethernet frames over transport</title>
 

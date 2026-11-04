@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport</title>
 <docidentifier type="ITU" primary="true">ITU-T P.1203</docidentifier><docidentifier type="ITU-lang">ITU-T P.1203-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T P.1203-E</docidentifier><docnumber>P.1203</docnumber><date type="published"><on>2017-10-01</on></date><contributor><role type="author"/><organization>
@@ -1015,12 +1015,9 @@ target_media_quality_level:
 <p id="_8aeb19b3-c665-523f-64ce-f7a620d4f17e">Note that the calculation of the performance figures above was performed after final training of the model on all available subjective test databases. That means that the figures are slightly optimistic compared to if they would have been calculated based on completely unknown databases.</p>
 
 <p id="_b9b27de8-e978-ca50-e90f-99ccb859a904">To compensate for between-test bias effects, the test scores have been mapped to the model output values with a linear mapping applied per each database.</p>
-</annex><bibliography><references id="_b0c7b485-2cd8-eb80-dff9-733a66c31d39" anchor="references" normative="true" obligation="informative">
-<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_a014a117-7a43-b1a7-dc80-3c3e17f82c54" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.1022">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Buffer models for media streams on TCP transport</title>
-
+</annex><bibliography><references id="_613a68b3-72dc-af55-5b84-d1652cc82b9b" anchor="references" normative="true" obligation="informative">
+<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_1ec78292-b13e-5cec-a707-91cfd52a4315" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.1022">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Buffer models for media streams on TCP transport</title>
 
@@ -1667,9 +1664,6 @@ target_media_quality_level:
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Buffer models for media streams on TCP transport</title>
-
       
 <title language="en" script="Latn" type="main">Buffer models for media streams on TCP transport</title>
 
@@ -2327,11 +2321,8 @@ target_media_quality_level:
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_9dfae987-ede5-6117-78c6-911720de1775" type="standard" schema-version="v1.5.6" anchor="ITU-T_H.264">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Advanced video coding for generic audiovisual services</title>
-
+</bibitem><bibitem id="_a8505da8-aad5-ee13-5c11-73f7d15e7237" type="standard" schema-version="v1.5.6" anchor="ITU-T_H.264">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Advanced video coding for generic audiovisual services</title>
 
@@ -2678,9 +2669,6 @@ target_media_quality_level:
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Advanced video coding for generic audiovisual services</title>
-
       
 <title language="en" script="Latn" type="main">Advanced video coding for generic audiovisual services</title>
 
@@ -3061,11 +3049,8 @@ The 16th edition of Rec. ITU-T H.264, approved in 2026-06, adds the interface to
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_fd757173-16ef-3a65-b228-f68463afebfe" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1201.1">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Parametric non-intrusive assessment of audiovisual media streaming quality – Lower resolution application area</title>
-
+</bibitem><bibitem id="_f3441043-d4c9-d0a6-b457-22fb2778bf3c" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1201.1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Parametric non-intrusive assessment of audiovisual media streaming quality – Lower resolution application area</title>
 
@@ -3207,9 +3192,6 @@ The 16th edition of Rec. ITU-T H.264, approved in 2026-06, adds the interface to
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Parametric non-intrusive assessment of audiovisual media streaming quality – Lower resolution application area</title>
-
       
 <title language="en" script="Latn" type="main">Parametric non-intrusive assessment of audiovisual media streaming quality – Lower resolution application area</title>
 
@@ -3364,10 +3346,12 @@ This Recommendation includes an electronic attachment for testing compliance.
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_282c186b-2db1-5bb6-f88d-fa1ffd8d7caa" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1201.2">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/13932</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.1201.2-201906-I!Cor2!PDF-E&amp;type=items</uri>
+</bibitem><bibitem id="_b0531635-9406-a9e0-8ca9-3d9a50fd82b8" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1201.2">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Parametric non-intrusive assessment of audiovisual media streaming quality – Higher resolution application area</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11729</uri>
   <docidentifier type="ITU" primary="true">ITU-T P.1201.2</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -3395,14 +3379,14 @@ This Recommendation includes an electronic attachment for testing compliance.
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.4</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2019</from>
+    <from>2012</from>
     <owner>
       <organization>
         
@@ -3413,6 +3397,13 @@ This Recommendation includes an electronic attachment for testing compliance.
       </organization>
     </owner>
   </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref>P.1201.2 (2012) Cor. 2 (06/2019)</formattedref>
+      <docidentifier type="ITU" primary="true">P.1201.2 (2012) Cor. 2 (06/2019)</docidentifier>
+    </bibitem>
+
+  </relation>
   <relation type="hasEdition">
     <bibitem>
       <formattedref>P.1201.2 (2012) Cor. 1 (04/2014)</formattedref>
@@ -3433,15 +3424,6 @@ This Recommendation includes an electronic attachment for testing compliance.
     <bibitem>
       <formattedref>P.1201.2 (2012) Amd. 1 (05/2013)</formattedref>
       <docidentifier type="ITU" primary="true">P.1201.2 (2012) Amd. 1 (05/2013)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Parametric non-intrusive assessment of audiovisual media streaming quality – Higher resolution application area</title>
-
-      <docidentifier type="ITU" primary="true">P.1201.2 (10/2012)</docidentifier>
     </bibitem>
 
   </relation>
@@ -3535,11 +3517,13 @@ This Recommendation includes an electronic attachment for testing compliance.
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/13932</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.1201.2-201906-I!Cor2!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T P.1201.2 (2012)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Parametric non-intrusive assessment of audiovisual media streaming quality – Higher resolution application area</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/11729</uri>
+      <docidentifier type="ITU" primary="true">ITU-T P.1201.2 (10/2012)</docidentifier>
       <date type="published">
-        <on>2019-06-29</on>
+        <on>2012-10-14</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -3567,15 +3551,18 @@ This Recommendation includes an electronic attachment for testing compliance.
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.4</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Corrigendum 2 to Recommendation ITU-T P.1201.2 (2012) provides a correction for Equation (7).</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T P.1201.2 specifies the algorithmic model for the higher resolution (HR) application area of Recommendation ITU-T P.1201. 
+The ITU-T P.1201 series of Recommendations specifies models for monitoring the audio, video and audiovisual quality of IP-based video services based on packet-header information. The higher resolution application area of the ITU-T P.1201.2 part of ITU-T P.1201 can be applied to the monitoring of performance and quality of experience (QoE) of video services such as Internet Protocol television (IPTV). The algorithm for the lower resolution (LR) case is specified in Recommendation ITU T P.1201.1. See Recommendation ITU-T P.1201 for details and respective application ranges.
+This Recommendation contains an electronic attachment containing a set of test vectors and test files for verification of compliance.
+</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2019</from>
+        <from>2012</from>
         <owner>
           <organization>
             
@@ -3586,6 +3573,13 @@ This Recommendation includes an electronic attachment for testing compliance.
           </organization>
         </owner>
       </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref>P.1201.2 (2012) Cor. 2 (06/2019)</formattedref>
+          <docidentifier type="ITU" primary="true">P.1201.2 (2012) Cor. 2 (06/2019)</docidentifier>
+        </bibitem>
+
+      </relation>
       <relation type="hasEdition">
         <bibitem>
           <formattedref>P.1201.2 (2012) Cor. 1 (04/2014)</formattedref>
@@ -3606,15 +3600,6 @@ This Recommendation includes an electronic attachment for testing compliance.
         <bibitem>
           <formattedref>P.1201.2 (2012) Amd. 1 (05/2013)</formattedref>
           <docidentifier type="ITU" primary="true">P.1201.2 (2012) Amd. 1 (05/2013)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Parametric non-intrusive assessment of audiovisual media streaming quality – Higher resolution application area</title>
-
-          <docidentifier type="ITU" primary="true">P.1201.2 (10/2012)</docidentifier>
         </bibitem>
 
       </relation>
@@ -3715,13 +3700,8 @@ This Recommendation includes an electronic attachment for testing compliance.
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T P.1201.2 (2012), <em>Parametric non-intrusive assessment of audiovisual media streaming quality – Higher resolution application area</em>.</title>
-</bibitem><bibitem id="_0fbe6c32-afab-20df-3dd5-0c2f5f08a475" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1202">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Parametric non-intrusive bitstream assessment of video media streaming quality</title>
-
+</bibitem><bibitem id="_e3f5fef0-527c-a3c3-3d2e-7f3f9bd24d63" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1202">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Parametric non-intrusive bitstream assessment of video media streaming quality</title>
 
@@ -3862,9 +3842,6 @@ This Recommendation includes an electronic attachment for testing compliance.
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Parametric non-intrusive bitstream assessment of video media streaming quality</title>
-
       
 <title language="en" script="Latn" type="main">Parametric non-intrusive bitstream assessment of video media streaming quality</title>
 
@@ -4024,11 +4001,8 @@ The ITU-T P.1201 models use packet header information, while the ITU-T P.1202 mo
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c560ddf8-14ef-694a-125f-d492e9063f54" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1202.1">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Parametric non-intrusive bitstream assessment of video media streaming quality – Lower resolution application area</title>
-
+</bibitem><bibitem id="_e6c40c50-7679-d916-5d65-ef983fb95cc5" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1202.1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Parametric non-intrusive bitstream assessment of video media streaming quality – Lower resolution application area</title>
 
@@ -4161,9 +4135,6 @@ The ITU-T P.1201 models use packet header information, while the ITU-T P.1202 mo
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Parametric non-intrusive bitstream assessment of video media streaming quality – Lower resolution application area</title>
-
       
 <title language="en" script="Latn" type="main">Parametric non-intrusive bitstream assessment of video media streaming quality – Lower resolution application area</title>
 
@@ -4309,11 +4280,8 @@ This Recommendation includes an electronic attachment with test vectors for test
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4a8a63a3-6a99-5095-51cf-b84b4499ce8b" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1203.1">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Video quality estimation module</title>
-
+</bibitem><bibitem id="_209ab396-3eb9-1b2d-0ba7-07374fabbf59" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1203.1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Video quality estimation module</title>
 
@@ -4465,9 +4433,6 @@ This Recommendation includes an electronic attachment with test vectors for test
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Video quality estimation module</title>
-
       
 <title language="en" script="Latn" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Video quality estimation module</title>
 
@@ -4636,11 +4601,8 @@ This revision to Recommendation ITU-T P.1203.1 (10/2007) replaces the scale fact
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_a9e154e8-784b-cec8-5296-89176cf83f34" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1203.2">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Audio quality estimation module</title>
-
+</bibitem><bibitem id="_8b1a1cf1-29d0-0e19-d7af-73a97b1466a2" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1203.2">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Audio quality estimation module</title>
 
@@ -4783,9 +4745,6 @@ This revision to Recommendation ITU-T P.1203.1 (10/2007) replaces the scale fact
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Audio quality estimation module</title>
-
       
 <title language="en" script="Latn" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Audio quality estimation module</title>
 
@@ -4942,10 +4901,12 @@ Only one audio module is recommended for all four modes 0 to 3 of the Recommenda
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_1d61ae11-187d-5772-f8d2-d1907a4d1cec" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1203.3">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/14697</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.1203.3-202106-I!Cor1!PDF-E&amp;type=items</uri>
+</bibitem><bibitem id="_d28ee44b-8740-26ac-7ee6-86bbc94249c5" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1203.3">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Quality integration module</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13846</uri>
   <docidentifier type="ITU" primary="true">ITU-T P.1203.3</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -4973,14 +4934,14 @@ Only one audio module is recommended for all four modes 0 to 3 of the Recommenda
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>3.2</edition>
+  <edition>3</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2021</from>
+    <from>2019</from>
     <owner>
       <organization>
         
@@ -4993,19 +4954,17 @@ Only one audio module is recommended for all four modes 0 to 3 of the Recommenda
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      
-<title language="en" script="Latn">Adjustment of the audiovisual quality</title>
-
-      <docidentifier type="ITU" primary="true">P.1203.3 (2019) Amd. 1 (05/2020)</docidentifier>
+      <formattedref>P.1203.3 (2019) Cor. 1 (06/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">P.1203.3 (2019) Cor. 1 (06/2021)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Quality integration module</title>
+<title language="en" script="Latn">Adjustment of the audiovisual quality</title>
 
-      <docidentifier type="ITU" primary="true">P.1203.3 (01/2019)</docidentifier>
+      <docidentifier type="ITU" primary="true">P.1203.3 (2019) Amd. 1 (05/2020)</docidentifier>
     </bibitem>
 
   </relation>
@@ -5110,11 +5069,13 @@ Only one audio module is recommended for all four modes 0 to 3 of the Recommenda
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/14697</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.1203.3-202106-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T P.1203.3 (2019)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Quality integration module</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/13846</uri>
+      <docidentifier type="ITU" primary="true">ITU-T P.1203.3 (01/2019)</docidentifier>
       <date type="published">
-        <on>2021-06-13</on>
+        <on>2019-01-13</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -5142,34 +5103,22 @@ Only one audio module is recommended for all four modes 0 to 3 of the Recommenda
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>3.2</edition>
+      <edition>3</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Recommendation ITU-T P.1203.3 specifies the quality integration module for Recommendation 
-ITU-T P.1203. The ITU-T P.1203 series of ITU-T Recommendations specify modules for monitoring 
-the audio, video and audiovisual quality of video services such as adaptive bit-rate video streaming. 
-The respective ITU-T work item has formerly been referred to as P.NATS (parametric non-intrusive 
-assessment of TCP-based multimedia streaming quality). The ITU-T P.1203.3 part of 
-Recommendation ITU-T P.1203 can be applied to the monitoring of performance and quality of 
-experience (QoE) of video services such as adaptive bit-rate video streaming. Besides stream-based 
-input information, the ITU-T P.1203.3 quality integration module takes the per-one-second video- and 
-audio-quality scores calculated according to ITU-T P.1203.1 and ITU-T P.1203.2, respectively, 
-as input. 
-Only one quality integration module is recommended for all four modes 0 to 3 of the Recommendation 
-ITU-T P.1203 model series, unique across all modes. 
-This Recommendation includes an electronic attachment containing the 20 trees described in 
-clause 8.4.  
-This revision to Recommendation ITU-T P.1203.3 (2007) replaces equation (20) in clause 8.3. 
-Amendment 1 introduces an adjustment of the audiovisual quality of ITU-T P.1203.3 for the case of 
-very low audio quality and long stalling events.  
-Corrigendum 1 introduces changes related to the qDirChangesLongest parameter in clause 8.1.2.5, 
-as well as equations 24 and 26. 
+      <abstract language="en" script="Latn">Recommendation ITU-T P.1203.3 specifies the quality integration module for Recommendation ITU‑T P.1203. The ITU-T P.1203 series of ITU-T Recommendations specify modules for monitoring the audio, video and audiovisual quality of video services such as adaptive bit-rate video streaming. The respective ITU‑T work item has formerly been referred to as P.NATS (parametric non-intrusive assessment of TCP-based multimedia streaming quality). The ITU-T P.1203.3 part of Recommendation ITU-T P.1203 can be applied to the monitoring of performance and quality of experience (QoE) of video services such as adaptive bit-rate video streaming. Besides stream-based input information, the ITU-T P.1203.3 quality integration module takes the per-one-second video- and audio-quality scores calculated according to ITU-T P.1203.1 and ITU-T P.1203.2, respectively, as input.
+
+Only one quality integration module is recommended for all four modes 0 to 3 of the Recommendation ITU-T P.1203 model series, unique across all modes.
+
+This Recommendation includes an electronic attachment containing the 20 trees described in clause 8.4. 
+
+This revision to Recommendation ITU-T P.1203.3 (2007) replaces equation (20) in clause 8.3.
 </abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2021</from>
+        <from>2019</from>
         <owner>
           <organization>
             
@@ -5182,19 +5131,17 @@ as well as equations 24 and 26.
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          
-<title language="en" script="Latn">Adjustment of the audiovisual quality</title>
-
-          <docidentifier type="ITU" primary="true">P.1203.3 (2019) Amd. 1 (05/2020)</docidentifier>
+          <formattedref>P.1203.3 (2019) Cor. 1 (06/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">P.1203.3 (2019) Cor. 1 (06/2021)</docidentifier>
         </bibitem>
 
       </relation>
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Quality integration module</title>
+<title language="en" script="Latn">Adjustment of the audiovisual quality</title>
 
-          <docidentifier type="ITU" primary="true">P.1203.3 (01/2019)</docidentifier>
+          <docidentifier type="ITU" primary="true">P.1203.3 (2019) Amd. 1 (05/2020)</docidentifier>
         </bibitem>
 
       </relation>
@@ -5306,13 +5253,8 @@ as well as equations 24 and 26.
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T P.1203.3 (2016), <em>Parametric bitstream-based quality assessment of progressive download and adaptive audiovisual streaming services over reliable transport – Quality integration module.</em></title>
-</bibitem><bibitem id="_54b81a30-c426-ada2-2e3b-c4317fc48f27" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1401">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Methods, metrics and procedures for statistical evaluation, qualification and comparison of objective quality prediction models</title>
-
+</bibitem><bibitem id="_ed33c5a3-60fd-7fda-8410-1d8f8f9e505e" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.1401">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Methods, metrics and procedures for statistical evaluation, qualification and comparison of objective quality prediction models</title>
 
@@ -5464,9 +5406,6 @@ as well as equations 24 and 26.
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Methods, metrics and procedures for statistical evaluation, qualification and comparison of objective quality prediction models</title>
-
       
 <title language="en" script="Latn" type="main">Methods, metrics and procedures for statistical evaluation, qualification and comparison of objective quality prediction models</title>
 
@@ -5629,11 +5568,8 @@ as well as equations 24 and 26.
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_1b0db26c-0400-32c4-c6ac-c1b6385005e5" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.800.1">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Mean opinion score (MOS) terminology</title>
-
+</bibitem><bibitem id="_0d9359a0-b93f-7be8-797e-b085e312256a" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.800.1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Mean opinion score (MOS) terminology</title>
 
@@ -5803,9 +5739,6 @@ as well as equations 24 and 26.
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Mean opinion score (MOS) terminology</title>
-
       
 <title language="en" script="Latn" type="main">Mean opinion score (MOS) terminology</title>
 
@@ -5986,11 +5919,8 @@ as well as equations 24 and 26.
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_8545755a-a6dd-d108-1249-e474524aad0e" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.910">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Subjective video quality assessment methods for multimedia applications</title>
-
+</bibitem><bibitem id="_7ab2e134-51d8-290c-d890-6b19d8afc636" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.910">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Subjective video quality assessment methods for multimedia applications</title>
 
@@ -6178,9 +6108,6 @@ as well as equations 24 and 26.
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Subjective video quality assessment methods for multimedia applications</title>
-
       
 <title language="en" script="Latn" type="main">Subjective video quality assessment methods for multimedia applications</title>
 
@@ -6379,10 +6306,13 @@ as well as equations 24 and 26.
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_040d4eb0-d549-1fa1-62ed-3098422c51dd" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.911">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/5090</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.911-199909-W!Cor1!PDF-E&amp;type=items</uri>
+</bibitem><bibitem id="_8c1d68cb-a4b8-6516-bcfc-f053b66eefa6" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.911">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Subjective audiovisual quality assessment methods for multimedia applications</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/4538</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.911-199812-W!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T P.911</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -6410,14 +6340,14 @@ as well as equations 24 and 26.
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.1</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Withdrawal</stage>
   </status>
   <copyright>
-    <from>1999</from>
+    <from>1998</from>
     <owner>
       <organization>
         
@@ -6430,20 +6360,21 @@ as well as equations 24 and 26.
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      
-<title language="en" script="Latn">Subjective audiovisual quality assessment methods for multimedia applications</title>
-
-      <docidentifier type="ITU" primary="true">P.911 (12/1998)</docidentifier>
+      <formattedref>P.911 (1998) Cor. 1 (09/1999)</formattedref>
+      <docidentifier type="ITU" primary="true">P.911 (1998) Cor. 1 (09/1999)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/5090</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.911-199909-W!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T P.911 (1998)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Subjective audiovisual quality assessment methods for multimedia applications</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/4538</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.911-199812-W!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T P.911 (12/1998)</docidentifier>
       <date type="published">
-        <on>1999-09-30</on>
+        <on>1998-12-03</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -6471,15 +6402,15 @@ as well as equations 24 and 26.
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.1</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn"/>
+      <abstract language="en" script="Latn">This Recommendation describes non-interactive subjective assessment methods for evaluating the one-way overall audiovisual quality for multimedia applications such as videoconferencing, storage and retrieval applications, telemedical applications, etc. These methods can be used for several different purposes including, but not limited to, selection of algorithms, ranking of audiovisual system performance and evaluation of the quality level during an audiovisual connection. When interactive aspects are to be assessed, conversation test methods described in Recommendation P.920 should be used. This Recommendation also outlines the characteristics of the source sequences to be used, like duration, kind of content, number of sequences, etc. Finally it provides indications about relation between audio, video and audiovisual quality, as they were derived from results of tests carried out independently in different laboratories.</abstract>
       <status>
         <stage>Withdrawal</stage>
       </status>
       <copyright>
-        <from>1999</from>
+        <from>1998</from>
         <owner>
           <organization>
             
@@ -6492,10 +6423,8 @@ as well as equations 24 and 26.
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          
-<title language="en" script="Latn">Subjective audiovisual quality assessment methods for multimedia applications</title>
-
-          <docidentifier type="ITU" primary="true">P.911 (12/1998)</docidentifier>
+          <formattedref>P.911 (1998) Cor. 1 (09/1999)</formattedref>
+          <docidentifier type="ITU" primary="true">P.911 (1998) Cor. 1 (09/1999)</docidentifier>
         </bibitem>
 
       </relation>
@@ -6508,8 +6437,6 @@ as well as equations 24 and 26.
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T P.911 (1* 998), <em>Subjective audiovisual quality assessment methods for multimedia applications</em>.</title>
 </bibitem>
 
 

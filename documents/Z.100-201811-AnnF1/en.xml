@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Specification and Description Language – Overview of SDL-2010</title>
 <docidentifier type="ITU" primary="true">ITU-T Z.100</docidentifier><docidentifier type="ITU-lang">ITU-T Z.100-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T Z.100-E</docidentifier><docnumber>Z.100</docnumber><date type="published"><on>2018-11-01</on></date><contributor><role type="author"/><organization>
@@ -296,7 +296,7 @@
 
 
 
-</sections><annex id="_e79ca495-6e8e-8c3f-e2fa-40f0f4a2abfa" inline-header="false" obligation="normative">
+</sections><annex id="_ec74ac07-5af4-22ca-6cab-59475b97d006" inline-header="false" obligation="normative">
 <title id="_b06cc38e-1290-f0e0-586c-cf3aac6fd29c">SDL 2010 formal definition: General overview</title>
 <clause id="_2b856411-6d2b-6eca-9d9e-c815373d5f48" anchor="status_of_annex_f1" inline-header="false" obligation="normative">
 <title id="_068b1e90-1542-f244-0d79-7895d761f994">Preface</title>
@@ -525,7 +525,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </clause>
 </clause>
 
-<clause id="_4a8b80ca-58b2-8b4b-9d2a-83c4fc0796b9" anchor="abstract_state_machines" inline-header="false" obligation="normative">
+<clause id="_5a1c8db6-aecd-d0fd-6afb-30f199690f4e" anchor="abstract_state_machines" inline-header="false" obligation="normative">
 <title id="_0905c3fe-f51e-6f6a-041f-5abb1590ade6">Abstract State Machines</title>
 <p id="_71b0aacc-b73b-a79d-320d-49c08ecdc7e4">This clause explains the basic notions and concepts of <em>Abstract State Machines</em> (<em>ASM</em>) as well as the notation used in these Annexes F1, F2 and F3 to define the SDL-2010 abstract machine model. The objective here is to provide an intuitive understanding of the formalism; for a rigorous definition of the mathematical foundations of ASM and its application, the reader is referred to <eref type="inline" bibitemid="b-Gurevich" citeas="b-Gurevich"/>, <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/>, <eref type="inline" bibitemid="b-Blass_2008" citeas="b-Blass 2008"/>, <eref type="inline" bibitemid="b-Glausch" citeas="b-Glausch"/>, <eref type="inline" bibitemid="b-BoergerStaerk" citeas="b-Börger  Stärk"/> and <eref type="inline" bibitemid="b-Boerger" citeas="b-Börger"/>. A discussion and motivation of the appropriateness of the semantic framework used here is given in <eref type="inline" bibitemid="b-Eschbach" citeas="b-Eschbach"/>, <eref type="inline" bibitemid="b-Eschbach_2001" citeas="b-Eschbach 2001"/> and <eref type="inline" bibitemid="b-Glaesser" citeas="b-Glässer"/>. Further references on ASM-related material can also be found on the ASM webpages <eref type="inline" bibitemid="b-ASM" citeas="b-ASM"/>.</p>
 
@@ -570,13 +570,13 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 <p id="_8bcb5114-d470-b69e-ce6a-0a9663642aad">The system will be defined step by step, as the explanations of the ASM model proceed, starting with the basic ASM model with a single agent. The final ASM model of this system is summarized in <xref target="example_the_system_rms" style="short"/>.</p>
 </example>
 
-<clause id="_b834ef87-fdee-8ba9-d9f1-fa6fd4bec300" anchor="basic_asm_model" inline-header="false" obligation="normative">
+<clause id="_ff63c644-46df-c20e-a1c5-e0b48aac578d" anchor="basic_asm_model" inline-header="false" obligation="normative">
 <title id="_32841216-42f0-0803-0439-6b4db5720c6e">Basic ASM model</title>
-<clause id="_959ec2c6-586a-a8d8-9bd4-d9709d78e56a" anchor="overview" inline-header="false" obligation="normative">
+<clause id="_4442ed67-b86e-723f-4bb6-cf39925ba363" anchor="overview" inline-header="false" obligation="normative">
 <title id="_a9647fd9-7b15-85ab-ca24-67ec49254aa0">Overview</title>
 <p id="_eabf079b-c5e8-1772-c787-84328bf6e86e">An abstract state machine (ASM) is a model of computation that treats first-order structures as dynamic entities whose states can change during a computation.</p>
 
-<p id="_9f464434-aec1-d4d9-88d6-99ea6305e02d">An abstract state machine has a set of states <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<p id="_ef3fb168-d9e0-7ddd-26c2-30c29d523d5b">An abstract state machine has a set of states <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>S</mi>
   </mstyle>
@@ -592,12 +592,12 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </math><asciimath>S_0 sube S</asciimath></stem> and a function <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>τ</mi>
-    <mo>:</mo>
+    </mstyle>
     <mi>S</mi>
     <mo>→</mo>
     <mi>S</mi>
-  </mstyle>
-</math><asciimath>tau: S rarr S</asciimath></stem>, called the one-step transformation. Every state is a first-order structure. All the states of an ASM have the same signature, which is also called the signature of the ASM, and all the states have the same base set, called the base set of the ASM. <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  </math>
+</stem>, called the one-step transformation. Every state is a first-order structure. All the states of an ASM have the same signature, which is also called the signature of the ASM, and all the states have the same base set, called the base set of the ASM. <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>τ</mi>
   </mstyle>
@@ -682,7 +682,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 <p id="_f3044e0c-0811-fedf-6fe1-94cf1367df34">Embedded within a state are certain substructures or <em>background classes</em> <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/> and <eref type="inline" bibitemid="b-Blass_2008" citeas="b-Blass 2008"/>. One such background includes <em>true</em>, <em>false</em>, the domain name <em><smallcap>Boolean</smallcap></em> and the Boolean operators. The backgrounds used in modelling SDL-2010 include numbers, sets and sequences. A minimal background is defined in <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/> and <eref type="inline" bibitemid="b-Blass_2008" citeas="b-Blass 2008"/> to characterize the ASMs that model parallel algorithms.</p>
 </clause>
 
-<clause id="_47855cc5-4eaa-0498-76cb-0951ba438dc6" anchor="one_step_transformation" inline-header="false" obligation="normative">
+<clause id="_8052f81e-bb29-ef17-cc8f-d96d7e4d6dca" anchor="one_step_transformation" inline-header="false" obligation="normative">
 <title id="_2ee32abd-195c-1442-4490-0cd443c7271c">One-step transformation</title>
 <p id="_b1eab3e7-a272-3439-8548-76a67a6f9cf1">The one-step transformation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -811,7 +811,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
   </mstyle>
 </math><asciimath>tau(s)</asciimath></stem> <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/>.</p>
 
-<p id="_d2b33519-d7ec-100c-24f3-e4ebde5ae9ec">The pair <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<p id="_eecdde50-8b4d-d98b-70c4-fdd5bb4fa6b0">The pair <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mo>&lt;</mo>
     <mi>f</mi>
@@ -849,11 +849,11 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
       <mi>a</mi>
       <mo>]</mo>
     </mrow>
-    <mo>:</mo>
+    </mstyle>
     <mo>=</mo>
     <mi>b</mi>
-  </mstyle>
-</math><asciimath>f [a]:= b</asciimath></stem> to reinforce the idea of variable assignment.</p>
+  </math>
+</stem> to reinforce the idea of variable assignment.</p>
 
 <p id="_e221a7eb-3bdb-03e7-db81-c685ec530aae">An abstract state machine provides a model of computation for an algorithm that is expressed as a program using a programming-style syntax. The algorithm defines the update set for every state of the ASM. To facilitate the study of the kinds of algorithms captured by different kinds of ASM, axioms <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/> have been developed to define classes of ASMs in a syntax-independent way [b-Glausch]. As well as capturing the ideas of state and one-step transformation outlined above (the Sequential Time and Abstract State postulates, <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/> and <eref type="inline" bibitemid="b-Gurevich_2000" citeas="b-Gurevich 2000"/>), axioms aim to capture the idea that the amount of computation required to move from <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -871,26 +871,26 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </math><asciimath>tau(s)</asciimath></stem> must be bounded, where the bound depends only on the algorithm and not on the state.</p>
 </clause>
 
-<clause id="_4f0750a9-6a9c-3444-315d-1a284f934f91" anchor="specifying_an_abstract_state_machine" inline-header="false" obligation="normative">
+<clause id="_6550bbce-1769-a04f-2700-e396658e8a18" anchor="specifying_an_abstract_state_machine" inline-header="false" obligation="normative">
 <title id="_d91a6da8-d81c-a5fa-8aa0-39f1bca90460">Specifying an abstract state machine</title>
-<p id="_ce5fb73f-b2d5-707f-b493-efd8cd48da34">An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<p id="_43bdc4ae-6686-7039-5ed6-aab1722c3f80">An ASM specification consists of a set of declarations that define its vocabulary (signature), its initial state(s) and a transition rule that defines the one-step transformation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>τ</mi>
-    <mo>:</mo>
+    </mstyle>
     <mi>S</mi>
     <mo>→</mo>
     <mi>S</mi>
-  </mstyle>
-</math><asciimath>tau: S rarr S</asciimath></stem>. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.</p>
+  </math>
+</stem>. The transition rule, called the ASM program, is defined using a pseudo-code-like syntax based on terms of the signature.</p>
 </clause>
 
-<clause id="_21f8e06a-8551-fe65-8ff5-9cce1032cee3" anchor="specifying_the_signature_vocabulary" inline-header="false" obligation="normative">
+<clause id="_83473e9d-f841-86e5-0ca3-50f661ebaadf" anchor="specifying_the_signature_vocabulary" inline-header="false" obligation="normative">
 <title id="_056c3036-1509-7441-6f46-5ad62a198cfa">Specifying the signature (vocabulary)</title>
 <p id="_495bd4c9-0e39-1323-d0a9-46e4f03d2dad">An ASM signature comprises function names, predicate names and domain names. Names in the signature have a specified arity, and are interpreted over the base set of the states of an ASM. The interpretation of names respects their arity.</p>
 
 <p id="_73ae715b-3125-8be0-cf6b-e7b5210ebef7">The following notational conventions are used when declaring names.</p>
 
-<ul id="_7a0ab10b-69dd-5702-09ea-c0e13b65cdcf"><li><p id="_1d83209e-3d05-92b6-1ec6-847e6393af44"><em>Domain names</em> start with an uppercase letter and presented in small-capitalized italics (as in <smallcap><em>Agent</em></smallcap>), except when denoting a non-terminal of the SDL-2010 abstract grammar. In that case, domain names are written as the SDL-2010 non-terminals, i.e., in italics, hyphenated, and starting with an uppercase letter (as in <em>Agent-definition</em>). A domain name <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<ul id="_c5b71e39-086c-4fb3-c4c8-c4f028221bc5"><li><p id="_1d83209e-3d05-92b6-1ec6-847e6393af44"><em>Domain names</em> start with an uppercase letter and presented in small-capitalized italics (as in <smallcap><em>Agent</em></smallcap>), except when denoting a non-terminal of the SDL-2010 abstract grammar. In that case, domain names are written as the SDL-2010 non-terminals, i.e., in italics, hyphenated, and starting with an uppercase letter (as in <em>Agent-definition</em>). A domain name <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>D</mi>
   </mstyle>
@@ -900,14 +900,14 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
   </mstyle>
 </math><asciimath>D</asciimath></stem>. A domain name is interpreted as a unary predicate which yields <em>true</em> for the members of the base set that belong to the domain.</p>
 </li>
-<li><p id="_45dcf0b9-3a0e-a116-b48c-a0647e48aed1"><em>Function names</em> are written in italics starting with a lowercase letter (as in <em>mode</em>). A function name <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<li><p id="_57b3866a-81f9-93f6-1c6d-44ee2e92ff31"><em>Function names</em> are written in italics starting with a lowercase letter (as in <em>mode</em>). A function name <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>f</mi>
   </mstyle>
 </math><asciimath>f</asciimath></stem> is declared by <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>f</mi>
-    <mo>:</mo>
+    </mstyle>
     <msub>
       <mi>D</mi>
       <mn>1</mn>
@@ -929,8 +929,8 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
       <mi>D</mi>
       <mn>0</mn>
     </msub>
-  </mstyle>
-</math><asciimath>f: D_1 xx D_2 xx ... xx D_n rarr D_0</asciimath></stem> , where <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  </math>
+</stem> , where <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>n</mi>
   </mstyle>
@@ -970,14 +970,14 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
   </mstyle>
 </math><asciimath>f</asciimath></stem>.</p>
 </li>
-<li><p id="_daf11af9-53a0-0ae6-60ee-b65958867ee5"><em>Predicate names</em> that are not <em>Domain names</em> are also written in italics (as in <em>available</em>). A predicate name <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<li><p id="_f4198a49-d946-97c1-e608-7e61ac0b9dd2"><em>Predicate names</em> that are not <em>Domain names</em> are also written in italics (as in <em>available</em>). A predicate name <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>p</mi>
   </mstyle>
 </math><asciimath>p</asciimath></stem> is declared by <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>p</mi>
-    <mo>:</mo>
+    </mstyle>
     <msub>
       <mi>D</mi>
       <mn>1</mn>
@@ -995,8 +995,8 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
       <mi>n</mi>
     </msub>
     <mo>→</mo>
-  </mstyle>
-</math><asciimath>p: D_1 xx D_2 xx ... xx D_n -&gt;</asciimath></stem> <em><smallcap>Boolean</smallcap></em>. A predicate is interpreted as a function whose value is either <em>true</em> or <em>false</em>.</p>
+  </math>
+</stem> <em><smallcap>Boolean</smallcap></em>. A predicate is interpreted as a function whose value is either <em>true</em> or <em>false</em>.</p>
 </li>
 </ul>
 
@@ -2622,7 +2622,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </clause>
 </clause>
 
-<clause id="_6801fed6-b377-155c-df80-8744b92cbaf5" anchor="distributed_multi_agent_asm" inline-header="false" obligation="normative">
+<clause id="_1e92d604-fb27-1fb5-a935-7841c74a328b" anchor="distributed_multi_agent_asm" inline-header="false" obligation="normative">
 <title id="_2452bc75-5d8d-4541-91e5-9823f07d0189">Distributed multi-agent ASM</title>
 <p id="_ed977400-2d8a-bfbb-43e5-2590fe2f2330">Mathematical modelling of concurrent and reactive systems requires more than the basic ASM model described above. This section presents the concept of a <em>distributed ASM</em> operating in <em>parallel</em> with its external environment, where the environment behaves as one or more ASMs.</p>
 
@@ -2702,7 +2702,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 <p id="_1e631ddb-318c-625f-fc19-3048968462ac">and a special 0-ary function <em>Self</em> (see <xref target="agents_and_runs" style="short"/>), whose interpretation is different for each agent.</p>
 </clause>
 
-<clause id="_bb4d9aeb-baca-d14c-c6d5-62eb0615ceab" anchor="agents_and_runs" inline-header="false" obligation="normative">
+<clause id="_b04e26b1-ad57-2d2c-275e-ccd711b41460" anchor="agents_and_runs" inline-header="false" obligation="normative">
 <title id="_7678b183-4768-2e08-c70c-1992f4533042">Agents and runs</title>
 <p id="_7a8bf3dc-12d6-07a6-a4e9-870fa8156020">A multi-agent, distributed ASM has a finite number of agents. Agents can be created and destroyed dynamically. Each agent executes its own basic ASM. The behaviour of each agent is determined by a program, which is defined by a transition rule. The association between agents and their behaviour is specified by the background function <em>program</em>: <smallcap><em>Agent</em></smallcap> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -2712,7 +2712,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 
 <p id="_f308817a-9e2b-00b0-6547-af00ae8015ea">Agents operate concurrently and interact by sending messages to one another (see <eref type="inline" bibitemid="b-Blass" citeas="b-Blass"/> and [ITU-T Z.101]). More precisely, agents interact by updating locations that are accessible to other agents. Agents can act as <smallcap><em>Communicators</em></smallcap> <eref type="inline" bibitemid="b-Glaesser" citeas="b-Glässer"/>, whose behaviour is to read input locations, transform the values read, and update output locations that can be read by other agents. In this way messages can be passed asynchronously between agents without the original source or the final destination necessarily having a commonly accessible location. Agents also interact with an external environment, which can be viewed as an agent in its own right, or as a collection of agents.</p>
 
-<p id="_59ee2faf-f697-dd16-d9ed-f113274742ec">A multi-agent distributed ASM is formed by combining its constituent single-agent ASMs. Like a single agent ASM, it has a set states <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<p id="_914d59c7-b211-24c1-d26f-589d48347aa8">A multi-agent distributed ASM is formed by combining its constituent single-agent ASMs. Like a single agent ASM, it has a set states <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>S</mi>
   </mstyle>
@@ -2728,12 +2728,12 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </math><asciimath>S_0 sube S</asciimath></stem> and a function <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>τ</mi>
-    <mo>:</mo>
+    </mstyle>
     <mi>S</mi>
     <mo>→</mo>
     <mi>S</mi>
-  </mstyle>
-</math><asciimath>tau: S rarr S</asciimath></stem>, called the one-step transformation.</p>
+  </math>
+</stem>, called the one-step transformation.</p>
 
 <p id="_b750969f-4f2e-7d48-e81b-75a72a67acff">To assign a behaviour to an agent of <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -3672,7 +3672,7 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </clause>
 </clause>
 
-<clause id="_bf02ca37-b662-8ff7-7be3-e4c1c7030c25" anchor="predefined_names_and_special_symbols" inline-header="false" obligation="normative">
+<clause id="_75867f82-1aee-5e0d-638f-fccd105efc3c" anchor="predefined_names_and_special_symbols" inline-header="false" obligation="normative">
 <title id="_25762b65-a8eb-cd0b-5319-9eba36ddb1d7">Predefined names and special symbols</title>
 <p id="_a48611a7-891f-b5db-35e0-d9de0b28e591">To define an ASM model, in particular the ASM model capturing the semantics of SDL-2010, certain names and their intended interpretation are predefined. These names are grouped and listed in this clause (where <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -3749,9 +3749,9 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 </table>
 </clause>
 
-<clause id="_6393ea6b-2829-3768-2dfe-d7ab55285b5e" anchor="boolean_functions_and_predicates" inline-header="false" obligation="normative">
+<clause id="_c4d043fa-69e7-82ae-c182-a2e6006cd2c4" anchor="boolean_functions_and_predicates" inline-header="false" obligation="normative">
 <title id="_e3c3a7b6-06cf-e0ac-b91a-540746385702">Boolean functions and predicates</title>
-<table id="_53b82c00-e1d3-dc57-3d37-d393368b360c" unnumbered="true"><tbody><tr id="_96dc3094-18c2-ce1b-e5bf-4f59547d49a0"><td id="_6202755c-c9be-352d-66d8-3650f8a90e3e" valign="top" align="left"><strong>static</strong> <em>true</em>: <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<table id="_76dedb66-9f24-1705-538c-e58b1e67d6e5" unnumbered="true"><tbody><tr id="_96dc3094-18c2-ce1b-e5bf-4f59547d49a0"><td id="_6202755c-c9be-352d-66d8-3650f8a90e3e" valign="top" align="left"><strong>static</strong> <em>true</em>: <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mo>→</mo>
   </mstyle>
@@ -3801,54 +3801,54 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
   </mstyle>
 </math><asciimath>not</asciimath></stem> _</td>
 <td id="_fdf9b7e9-d0ac-4150-b990-0dfd9b9151cb" valign="top" align="left">Negation</td>
-</tr><tr id="_1ce85819-62a5-6142-8e1a-75ff4184064d"><td id="_7a5235b9-40e0-32d4-8ee3-ca444edb9a0f" valign="top" align="left"><stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</tr><tr id="_8e7a1da1-92e6-a431-eb63-4b03e73921d9"><td id="_7dff2f8c-d14c-49a5-121a-00bd7bd75a46" valign="top" align="left"><stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>∃</mi>
     <mi>x</mi>
     <mo>∈</mo>
     <mi>D</mi>
-    <mo>:</mo>
+    </mstyle>
     <mi>P</mi>
     <mrow>
       <mo>(</mo>
       <mi>x</mi>
       <mo>)</mo>
     </mrow>
-  </mstyle>
-</math><asciimath>EE x in D: P(x)</asciimath></stem>   prec(0)</td>
+  </math>
+</stem>   prec(0)</td>
 <td id="_48aa2c31-b835-10de-1655-95ca98c92ff6" valign="top" align="left">Existential quantification (at least one element)</td>
-</tr><tr id="_21138349-2444-bc73-1135-e208a8c44231"><td id="_3649424d-d395-b959-3702-9f54a9e56977" valign="top" align="left"><stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</tr><tr id="_362935a5-4376-81e8-43d6-50c1388779ba"><td id="_2e6ef88d-d2b5-ca4c-fb55-880154a67e2e" valign="top" align="left"><stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>∃</mi>
     <mi>!</mi>
     <mi>x</mi>
     <mo>∈</mo>
     <mi>D</mi>
-    <mo>:</mo>
+    </mstyle>
     <mi>P</mi>
     <mrow>
       <mo>(</mo>
       <mi>x</mi>
       <mo>)</mo>
     </mrow>
-  </mstyle>
-</math><asciimath>EE !x in D: P(x)</asciimath></stem>   prec(0)</td>
+  </math>
+</stem>   prec(0)</td>
 <td id="_787a7cd1-3b91-91a5-1afb-f80c5839b385" valign="top" align="left">Unique existential quantification (exactly one element)</td>
-</tr><tr id="_93b88ace-9250-306a-88d9-06228080870f"><td id="_a18bdcc8-b90c-dd4a-711e-3bcb80d15477" valign="top" align="left"><stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</tr><tr id="_f7512556-8954-cf3e-e4e4-f6c6ac674360"><td id="_f5d3c6b5-729b-d5e0-aff8-fff2ccafbf13" valign="top" align="left"><stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>∀</mi>
     <mi>x</mi>
     <mo>∈</mo>
     <mi>D</mi>
-    <mo>:</mo>
+    </mstyle>
     <mi>P</mi>
     <mrow>
       <mo>(</mo>
       <mi>x</mi>
       <mo>)</mo>
     </mrow>
-  </mstyle>
-</math><asciimath>AA x in D: P(x)</asciimath></stem>   prec(0)</td>
+  </math>
+</stem>   prec(0)</td>
 <td id="_a233fbba-1e1f-c2fa-43c8-9aeafbe76535" valign="top" align="left">Universal quantification</td>
 </tr></tbody>
 </table>
@@ -4455,18 +4455,17 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 <p id="_625465ed-0764-a3f2-be6c-2c0ef52c9e37">An invalid selector returns <em>undefined</em>.</p>
 </clause>
 
-<clause id="_b3080f3e-912c-4748-47a2-e7624258ccd2" anchor="abstract_syntax_rules" inline-header="false" obligation="normative">
+<clause id="_9cc69ba5-6adf-d3b7-c6df-762f52c08845" anchor="abstract_syntax_rules" inline-header="false" obligation="normative">
 <title id="_f51b75eb-d5b5-29dc-6e47-5c463671b9f8">Abstract syntax rules</title>
 <p id="_06b5dab1-f6e9-bef7-c433-9cb4288950f6">Abstract syntax rules from the language definition are directly translated to the ASM notation, using the metalanguage for the concrete grammar as defined in [ITU-T Z.111] with the modified representation of semantic subcategories used in Annex F2. This allows rules to be expressed using the usual BNF conventions extended to include square brackets to indicate optional items, suffixes to indicate various kinds of list, and curly brackets to group related items.</p>
 
 <p id="_b0bc1773-c67a-ab2a-41ff-270b9db8c6a9">An abstract syntax rule defined with "::" declares a domain of syntax nodes. Each syntax node has an identity and a value. The value is a member of an auxiliary domain of tuples of syntax nodes. For example, the rule</p>
 
-<figure id="_8213323e-7bb1-07b3-6b0c-68d769db7861" unnumbered="true" class="pseudocode"><p id="_3df326bb-653f-16cb-fec7-50a94800c6c7"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_99e37b82-e069-6e1b-901e-6849352e1219" unnumbered="true" class="pseudocode"><p id="_0e5edbf4-3a3e-7905-e478-3d2b0d54f35e"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> Symbol<sub>2</sub></em></p>
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> Symbol<sub>2</sub></em></p>
 </figure>
 
 <p id="_617db9e3-606a-5937-55bb-b56801490b76">declares</p>
@@ -4508,12 +4507,11 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 
 <p id="_e0954541-0151-e9fd-ceaa-262b4374b97f">Here is a more elaborate example, illustrating the definitions introduced by a variety of extended BNF constructs.</p>
 
-<figure id="_8c974485-7ce4-0fd2-ea9b-c728ffd37304" unnumbered="true" class="pseudocode"><p id="_b750e8cc-e471-71ef-ea24-be9efed0a7b7"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_969363c4-3a13-625f-d406-82d10d6d5fc2" unnumbered="true" class="pseudocode"><p id="_30584140-22f0-7747-ae5e-6e37a03cf1cc"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> Symbol<sub>2</sub><sup>+</sup>  Symbol<sub>3</sub></em> <strong>-set</strong><em>[Symbol<sub>4</sub>]</em><br/> {  <em>Symbol<sub>1</sub> | Symbol<sub>2</sub> } {Symbol<sub>1</sub> Symbol<sub>2</sub>}<sup><strong>*</strong></sup> { Symbol<sub>1</sub> | Symbol<sub>2</sub> }</em> <strong>-set</strong></p>
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> Symbol<sub>2</sub><sup>+</sup>  Symbol<sub>3</sub></em> <strong>-set</strong><em>[Symbol<sub>4</sub>]</em><br/> {  <em>Symbol<sub>1</sub> | Symbol<sub>2</sub> } {Symbol<sub>1</sub> Symbol<sub>2</sub>}<sup><strong>*</strong></sup> { Symbol<sub>1</sub> | Symbol<sub>2</sub> }</em> <strong>-set</strong></p>
 </figure>
 
 <p id="_c33b0ca1-745b-adb9-f175-d0abb9e8267e">which is translated to:</p>
@@ -4610,12 +4608,11 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
   </mstyle>
 </math><asciimath>Symbol_4</asciimath></stem> is not present, that fact is expressed in the ASM model by leaving the corresponding value <em>undefined</em>: <em>sym.s-Symbol<sub>4</sub></em> = <em>undefined</em>. An empty sequence of symbols (constructor with no parts) is denoted by (). For example, the abstract syntax rule</p>
 
-<figure id="_e3f5f5cd-2d25-5a68-eb3f-d84ece7b51ac" unnumbered="true" class="pseudocode"><p id="_f77b714e-e797-e76b-28ad-768e91ffd5cc"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_292a43a0-bbad-22c4-95bc-2293c52cbd2a" unnumbered="true" class="pseudocode"><p id="_f76a04d1-03cb-1624-fd4f-b437aa159fd3"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> ()</p>
+    </mstyle>
+    </math>
+  </stem> ()</p>
 </figure>
 
 <p id="_f0eb5470-b0c9-2fc7-86ef-9733bcfa7285">declares a singleton domain, <em>Symbol</em>, whose only element is the empty tuple.</p>
@@ -4624,12 +4621,11 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 
 <p id="_aeea81af-d3bf-dc59-dfe6-f054a7c225d1">A rule of the form</p>
 
-<figure id="_096a69ce-d610-d65d-2eb2-a28332cc6947" unnumbered="true" class="pseudocode"><p id="_b5814057-cbf5-04c0-cf9f-cd782d5c4013"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_b6e62c1d-034f-74f0-2671-5d6d9eb4c4a6" unnumbered="true" class="pseudocode"><p id="_c53994a7-b21a-13da-5c45-ee23a804363d"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> | Symbol<sub>2</sub> | ... | Symbol<sub>n</sub></em> (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> | Symbol<sub>2</sub> | ... | Symbol<sub>n</sub></em> (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>n</mi>
     <mi>≥</mi>
@@ -4640,12 +4636,11 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 
 <p id="_32b89110-6b86-a203-6782-61e2b045b9c7">where each alternative right side consists of a single symbol, is equivalent to</p>
 
-<figure id="_b8a5e4c7-db8c-da87-4d41-a469cb154360" unnumbered="true" class="pseudocode"><p id="_6c7db097-c517-264d-16a0-e3498b4a2a3c"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_5afbac69-e26f-c383-d16e-686c78b334ea" unnumbered="true" class="pseudocode"><p id="_70d8ad17-3f6c-b095-ac04-7d3c2ede21b2"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>{Symbol<sub>1</sub> | Symbol<sub>2</sub> | ... | Symbol<sub>n</sub>}</em> (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+    </mstyle>
+    </math>
+  </stem> <em>{Symbol<sub>1</sub> | Symbol<sub>2</sub> | ... | Symbol<sub>n</sub>}</em> (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>n</mi>
     <mi>≥</mi>
@@ -4738,22 +4733,20 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 
 <p id="_d6fa5b31-4409-0482-4b11-a68e25d65918">If a name is not required, unnamed unions may be introduced by rules like:</p>
 
-<figure id="_f54b9762-bd07-9566-470e-b089a9bbc535" unnumbered="true" class="pseudocode"><p id="_356fa6cf-c730-a180-f65b-174ad3713ced"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_933d9592-2bec-8b68-5fcb-2e9249ea61bc" unnumbered="true" class="pseudocode"><p id="_5e70f380-657d-ba8e-569f-82132455df61"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> { Symbol<sub>21</sub> | ... | Symbol<sub>2N</sub> }</em></p>
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> { Symbol<sub>21</sub> | ... | Symbol<sub>2N</sub> }</em></p>
 </figure>
 
 <p id="_fce2ea44-9a98-7e24-d33f-66b94da250bd">instead of introducing a name for the union:</p>
 
-<figure id="_91ed45a6-32c7-5fcd-b7a0-3d9a4cd22666" unnumbered="true" class="pseudocode"><p id="_a882e1f3-04f7-d96c-6047-ce270d652be4"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_d8977d3b-8787-2468-cd3d-e47bb8aa9a05" unnumbered="true" class="pseudocode"><p id="_cdd257a8-ee0d-1311-b697-ec1ee6cf7acd"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> Symbol<sub>2</sub></em><br/> <em>Symbol<sub>2</sub> = Symbol<sub>21</sub> | ... | Symbol<sub>2N</sub></em></p>
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> Symbol<sub>2</sub></em><br/> <em>Symbol<sub>2</sub> = Symbol<sub>21</sub> | ... | Symbol<sub>2N</sub></em></p>
 </figure>
 
 <p id="_9baa5062-f8ed-717e-4c80-caa49f04bfd7">Named sequences can be introduced using rules like this:</p>
@@ -4785,22 +4778,20 @@ NOTE: The design objectives of the SDL semantics include executability, intellig
 
 <p id="_6ec73bd6-1efd-6bb7-d281-3822f49440a0">It is not always necessary to name a sequence explicitly. Unnamed sequences may be introduced by rules like:</p>
 
-<figure id="_027a8a2c-a6d6-2d55-69bb-0d8668772d72" unnumbered="true" class="pseudocode"><p id="_ff4c73c7-e270-6dba-8bc5-40c109892097"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_08becccf-8b15-750d-dcec-9bbf8b09dc33" unnumbered="true" class="pseudocode"><p id="_c489a5e3-eaa6-b285-3e93-8540233ac0ff"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> { Symbol<sub>21</sub> ... Symbol<sub>2N</sub> }<sup><strong>*</strong></sup></em></p>
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> { Symbol<sub>21</sub> ... Symbol<sub>2N</sub> }<sup><strong>*</strong></sup></em></p>
 </figure>
 
 <p id="_df6410e4-dfed-5ecf-0a97-afaaaf18f1c3">or like:</p>
 
-<figure id="_9ca5ea63-556c-c9cd-d985-a5556e86e199" unnumbered="true" class="pseudocode"><p id="_ec72f06a-7266-f94d-01aa-11058dd92f9c"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<figure id="_fd53bf60-90f5-7294-f724-ef59b28bbb66" unnumbered="true" class="pseudocode"><p id="_bad19495-dbe0-b204-3e2e-542d5a03c4d3"><em>Symbol</em> <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
-    <mo>:</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>::</asciimath></stem> <em>Symbol<sub>1</sub> { Symbol<sub>21</sub> | ... | Symbol<sub>2N</sub>}<sup><strong>*</strong></sup></em></p>
+    </mstyle>
+    </math>
+  </stem> <em>Symbol<sub>1</sub> { Symbol<sub>21</sub> | ... | Symbol<sub>2N</sub>}<sup><strong>*</strong></sup></em></p>
 </figure>
 
 <p id="_3922bf5c-ef26-0ea1-41e6-980909af0aac">Named and unnamed sets can be introduced in a similar way.</p>

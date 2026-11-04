@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Definitions and test methods for linear, deterministic attributes of single-mode fibre and cable</title>
 <docidentifier type="ITU" primary="true">ITU-T G.650.1</docidentifier><docidentifier type="ITU-lang">ITU-T G.650.1-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T G.650.1-E</docidentifier><docnumber>G.650.1</docnumber><date type="published"><on>2018-03-01</on></date><date type="published" format="ddMMMyyyy">1.III.2018</date><contributor><role type="author"/><organization>
@@ -6343,12 +6343,9 @@ epsilon</asciimath></semx></fmt-stem></formula>
 
 
 
-<references id="references" anchor="references" normative="true" obligation="informative" semx-id="_a4219794-9849-4f9c-29b4-65983e3e68e8" displayorder="11">
-<title id="_7ac01280-cbfb-b0d3-113f-4deae84c4348" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_f3ec53e0-fc8b-3f26-38d4-b6843434e81f"><span class="fmt-caption-label"><semx element="autonum" source="references">2</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7ac01280-cbfb-b0d3-113f-4deae84c4348">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="references">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="ITU-T_G.650.2" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.650.2" semx-id="_a1e111c4-7a80-11e8-a22b-62272e26de63"><biblio-tag>[ITU‑T G.650.2]</biblio-tag><formattedref>Recommendation ITU-T G.650.2, <em>Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable</em>, Seventh edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable</title>
-
+<references id="references" anchor="references" normative="true" obligation="informative" semx-id="_b18d65bf-29b5-443c-635b-1edf667b91ed" displayorder="11">
+<title id="_7ac01280-cbfb-b0d3-113f-4deae84c4348" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_f3ec53e0-fc8b-3f26-38d4-b6843434e81f"><span class="fmt-caption-label"><semx element="autonum" source="references">2</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7ac01280-cbfb-b0d3-113f-4deae84c4348">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="references">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="ITU-T_G.650.2" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.650.2" semx-id="_800f8693-6994-d9c3-0679-211ab8b23670"><biblio-tag>[ITU‑T G.650.2]</biblio-tag><formattedref>Recommendation ITU-T G.650.2, <em>Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable</title>
 
@@ -7036,9 +7033,6 @@ epsilon</asciimath></semx></fmt-stem></formula>
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable</title>
-
       
 <title language="en" script="Latn" type="main">Definitions and test methods for statistical and non-linear related attributes of single-mode fibre and cable</title>
 
@@ -7740,11 +7734,8 @@ This edition of the Recommendation has removed the state of polarization (SOP) m
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.651.1" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.651.1" semx-id="_c980fd37-8221-dfaf-4160-e7284cef8a3a"><biblio-tag>[ITU‑T G.651.1]</biblio-tag><formattedref>Recommendation ITU-T G.651.1, <em>Characteristics of a 50/125 µm multimode graded index optical fibre cable for the optical access network</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a 50/125 µm multimode graded index optical fibre cable for the optical access network</title>
-
+</bibitem><bibitem id="ITU-T_G.651.1" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.651.1" semx-id="_dc17930a-6942-2962-5b97-3f7f51628e50"><biblio-tag>[ITU‑T G.651.1]</biblio-tag><formattedref>Recommendation ITU-T G.651.1, <em>Characteristics of a 50/125 µm multimode graded index optical fibre cable for the optical access network</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a 50/125 µm multimode graded index optical fibre cable for the optical access network</title>
 
@@ -8409,9 +8400,6 @@ This edition of the Recommendation has removed the state of polarization (SOP) m
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a 50/125 µm multimode graded index optical fibre cable for the optical access network</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a 50/125 µm multimode graded index optical fibre cable for the optical access network</title>
 
@@ -9090,11 +9078,8 @@ The recommended fibre type is an improved version of the well-known 50/125 µm m
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.652" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.652" semx-id="_c62685ab-03bf-6fc6-0c58-97693cdf50e0"><biblio-tag>[ITU‑T G.652]</biblio-tag><formattedref>Recommendation ITU-T G.652, <em>Characteristics of a single-mode optical fibre and cable</em>, Tenth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a single-mode optical fibre and cable</title>
-
+</bibitem><bibitem id="ITU-T_G.652" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.652" semx-id="_d7a0c46b-68c2-bf83-0700-d74e0df34ca6"><biblio-tag>[ITU‑T G.652]</biblio-tag><formattedref>Recommendation ITU-T G.652, <em>Characteristics of a single-mode optical fibre and cable</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a single-mode optical fibre and cable</title>
 
@@ -9822,9 +9807,6 @@ The recommended fibre type is an improved version of the well-known 50/125 µm m
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a single-mode optical fibre and cable</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a single-mode optical fibre and cable</title>
 
@@ -10565,11 +10547,8 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.653" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.653" semx-id="_461605bd-4716-825e-0636-e87538eebd3f"><biblio-tag>[ITU‑T G.653]</biblio-tag><formattedref>Recommendation ITU-T G.653, <em>Characteristics of a dispersion-shifted, single-mode optical fibre and cable</em>, Seventh edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a dispersion-shifted, single-mode optical fibre and cable</title>
-
+</bibitem><bibitem id="ITU-T_G.653" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.653" semx-id="_5f61921c-6bb1-f605-9704-255e887a8883"><biblio-tag>[ITU‑T G.653]</biblio-tag><formattedref>Recommendation ITU-T G.653, <em>Characteristics of a dispersion-shifted, single-mode optical fibre and cable</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a dispersion-shifted, single-mode optical fibre and cable</title>
 
@@ -11270,9 +11249,6 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a dispersion-shifted, single-mode optical fibre and cable</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a dispersion-shifted, single-mode optical fibre and cable</title>
 
@@ -11984,11 +11960,8 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.654" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.654" semx-id="_669dad9d-2d72-7bf2-7625-f4fd33e7bca4"><biblio-tag>[ITU‑T G.654]</biblio-tag><formattedref>Recommendation ITU-T G.654, <em>Characteristics of a cut-off shifted single-mode optical fibre and cable</em>, Twelfth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a cut-off shifted single-mode optical fibre and cable</title>
-
+</bibitem><bibitem id="ITU-T_G.654" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.654" semx-id="_640d18f0-eb54-ae48-8b1b-fc980c1bc575"><biblio-tag>[ITU‑T G.654]</biblio-tag><formattedref>Recommendation ITU-T G.654, <em>Characteristics of a cut-off shifted single-mode optical fibre and cable</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a cut-off shifted single-mode optical fibre and cable</title>
 
@@ -12734,9 +12707,6 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a cut-off shifted single-mode optical fibre and cable</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a cut-off shifted single-mode optical fibre and cable</title>
 
@@ -13494,11 +13464,8 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.655" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.655" semx-id="_37b7359c-db72-2a52-d774-98e9e20d53dd"><biblio-tag>[ITU‑T G.655]</biblio-tag><formattedref>Recommendation ITU-T G.655, <em>Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable</em>, Fifth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable</title>
-
+</bibitem><bibitem id="ITU-T_G.655" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.655" semx-id="_86537c8b-b780-5d8d-1ceb-5d3ef50b09c7"><biblio-tag>[ITU‑T G.655]</biblio-tag><formattedref>Recommendation ITU-T G.655, <em>Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable</title>
 
@@ -14181,9 +14148,6 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a non-zero dispersion-shifted single-mode optical fibre and cable</title>
 
@@ -14877,11 +14841,8 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.656" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.656" semx-id="_4fa700a4-b9a2-993f-8202-c53f05d8bdfb"><biblio-tag>[ITU‑T G.656]</biblio-tag><formattedref>Recommendation ITU-T G.656, <em>Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport</title>
-
+</bibitem><bibitem id="ITU-T_G.656" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.656" semx-id="_5fc47fcf-12cb-cb0a-ea63-ff299b4c8d57"><biblio-tag>[ITU‑T G.656]</biblio-tag><formattedref>Recommendation ITU-T G.656, <em>Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport</title>
 
@@ -15546,9 +15507,6 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a fibre and cable with non-zero dispersion for wideband optical transport</title>
 
@@ -16224,11 +16182,8 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.657" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.657" semx-id="_8093f345-8f8c-9e3c-1b56-249564d24a9b"><biblio-tag>[ITU‑T G.657]</biblio-tag><formattedref>Recommendation ITU-T G.657, <em>Characteristics of a bending-loss insensitive single-mode optical fibre and cable</em>, Fifth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Characteristics of a bending-loss insensitive single-mode optical fibre and cable</title>
-
+</bibitem><bibitem id="ITU-T_G.657" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.657" semx-id="_aec8efc2-ace3-5764-da77-0d2fa82bb3ce"><biblio-tag>[ITU‑T G.657]</biblio-tag><formattedref>Recommendation ITU-T G.657, <em>Characteristics of a bending-loss insensitive single-mode optical fibre and cable</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Characteristics of a bending-loss insensitive single-mode optical fibre and cable</title>
 
@@ -16920,9 +16875,6 @@ In this revision, an example guideline for the statistical chromatic dispersion 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Characteristics of a bending-loss insensitive single-mode optical fibre and cable</title>
-
       
 <title language="en" script="Latn" type="main">Characteristics of a bending-loss insensitive single-mode optical fibre and cable</title>
 
@@ -17629,11 +17581,8 @@ This fifth edition of Recommendation ITU-T G.657, amongst other things, extends 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.671" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.671" semx-id="_31b9a186-a1d1-2326-8656-f20ab4eee5b6"><biblio-tag>[ITU‑T G.671]</biblio-tag><formattedref>Recommendation ITU-T G.671, <em>Transmission characteristics of optical components and subsystems</em>, Ninth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Transmission characteristics of optical components and subsystems</title>
-
+</bibitem><bibitem id="ITU-T_G.671" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.671" semx-id="_9c3d53a8-4e66-a113-00e8-0c0567d4148b"><biblio-tag>[ITU‑T G.671]</biblio-tag><formattedref>Recommendation ITU-T G.671, <em>Transmission characteristics of optical components and subsystems</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Transmission characteristics of optical components and subsystems</title>
 
@@ -18389,9 +18338,6 @@ This fifth edition of Recommendation ITU-T G.657, amongst other things, extends 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Transmission characteristics of optical components and subsystems</title>
-
       
 <title language="en" script="Latn" type="main">Transmission characteristics of optical components and subsystems</title>
 
@@ -19160,8 +19106,8 @@ This version of ITU-T G.671 includes transmission characteristics and an applica
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-1" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-1" semx-id="_67feebb9-8f21-ae40-caf4-475d93165d75"><biblio-tag>[IEC 60793‑1‑1:2017]</biblio-tag><formattedref>IEC 60793-1-1:2017 (2017), <em>Optical fibres — Part 1-1: Measurement methods and test procedures — General and guidance</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-1" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-1" semx-id="_35ad3226-9e7c-72dc-722a-2a8b105963d1"><biblio-tag>[IEC 60793‑1‑1:2017]</biblio-tag><formattedref>IEC 60793-1-1:2017 (2017), <em>Optical fibres — Part 1-1: Measurement methods and test procedures — General and guidance</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19265,8 +19211,8 @@ La présente version bilingue (2020-09) correspond à la version anglaise monoli
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-30" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-30" semx-id="_e8df7990-a62b-a314-d1be-ad0ad19378ee"><biblio-tag>[IEC 60793‑1‑30:2010]</biblio-tag><formattedref>IEC 60793-1-30:2010 (2010), <em>Optical fibres — Part 1-30: Measurement methods and test procedures — Fibre proof test</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-30" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-30" semx-id="_e5e9e1f7-a38d-19f4-4e27-e84edbc1bb48"><biblio-tag>[IEC 60793‑1‑30:2010]</biblio-tag><formattedref>IEC 60793-1-30:2010 (2010), <em>Optical fibres — Part 1-30: Measurement methods and test procedures — Fibre proof test</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19351,8 +19297,8 @@ Mots clés: méthodes de mesure et les procédures d'essai s'appliquant aux fibr
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-42" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-42" semx-id="_03fe9fc9-2daf-e65f-8c4c-c64ccbbf9825"><biblio-tag>[IEC 60793‑1‑42:2013]</biblio-tag><formattedref>IEC 60793-1-42:2013 (2013), <em>Optical fibres — Part 1-42: Measurement methods and test procedures — Chromatic dispersion</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-42" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-42" semx-id="_93f4cdc6-a895-6f56-7be9-df2e6f8585ea"><biblio-tag>[IEC 60793‑1‑42:2013]</biblio-tag><formattedref>IEC 60793-1-42:2013 (2013), <em>Optical fibres — Part 1-42: Measurement methods and test procedures — Chromatic dispersion</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19443,8 +19389,8 @@ Cette publication doit être lue conjointement avec la CEI 60793-1-1:2008.</abst
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-44" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-44" semx-id="_8fda150f-5ad6-ffe8-c732-d01c23024529"><biblio-tag>[IEC 60793‑1‑44:2011]</biblio-tag><formattedref>IEC 60793-1-44:2011 (2011), <em>Optical fibres — Part 1-44: Measurement methods and test procedures — Cut-off wavelength</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-44" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-44" semx-id="_7536ef87-d278-a5f7-4c83-d1b2e02e721a"><biblio-tag>[IEC 60793‑1‑44:2011]</biblio-tag><formattedref>IEC 60793-1-44:2011 (2011), <em>Optical fibres — Part 1-44: Measurement methods and test procedures — Cut-off wavelength</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19532,8 +19478,8 @@ Cette publication doit être lue conjointement avec la CEI 60793-1-1:2008.</abst
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-45" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-45" semx-id="_60663b5c-065a-1b4c-4597-e7dc81ba253b"><biblio-tag>[IEC 60793‑1‑45:2017]</biblio-tag><formattedref>IEC 60793-1-45:2017 (2017), <em>Optical fibres — Part 1-45: Measurement methods and test procedures — Mode field diameter</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-45" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-45" semx-id="_e6b9f2db-85eb-686e-e5ca-9cf988c9b864"><biblio-tag>[IEC 60793‑1‑45:2017]</biblio-tag><formattedref>IEC 60793-1-45:2017 (2017), <em>Optical fibres — Part 1-45: Measurement methods and test procedures — Mode field diameter</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19632,8 +19578,8 @@ Mots-clés: diamètre du champ de mode (DCM)</abstract>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-46" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-46" semx-id="_4545c72e-9d97-b532-d61c-685952f15b03"><biblio-tag>[IEC 60793‑1‑46:2001]</biblio-tag><formattedref>IEC 60793-1-46:2001 (2001), <em>Optical fibres — Part 1-46: Measurement methods and test procedures — Monitoring of changes in optical transmittance</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-46" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-46" semx-id="_bc95da07-35f2-0662-56b5-695dd55e86c1"><biblio-tag>[IEC 60793‑1‑46:2001]</biblio-tag><formattedref>IEC 60793-1-46:2001 (2001), <em>Optical fibres — Part 1-46: Measurement methods and test procedures — Monitoring of changes in optical transmittance</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19716,8 +19662,8 @@ Mots-clés: diamètre du champ de mode (DCM)</abstract>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_60793-1-47" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-47" semx-id="_ce18721c-3319-e606-f023-3a6621677f79"><biblio-tag>[IEC 60793‑1‑47:2017]</biblio-tag><formattedref>IEC 60793-1-47:2017 (2017), <em>Optical fibres — Part 1-47: Measurement methods and test procedures — Macrobending loss</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_60793-1-47" type="standard" schema-version="v1.5.6" anchor="IEC_60793-1-47" semx-id="_27fabd4f-b1fe-16db-1c9e-62f65b19a1ea"><biblio-tag>[IEC 60793‑1‑47:2017]</biblio-tag><formattedref>IEC 60793-1-47:2017 (2017), <em>Optical fibres — Part 1-47: Measurement methods and test procedures — Macrobending loss</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -19826,8 +19772,8 @@ Mots clés : macrocourbures pour les fibres optiques unimodales</abstract>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_61745" type="standard" schema-version="v1.5.6" anchor="IEC_61745" semx-id="_28ccad94-1d88-491e-5c94-c23a34572f68"><biblio-tag>[IEC 61745:2017]</biblio-tag><formattedref>IEC 61745:2017 (2017), <em>End-face image analysis procedure for the calibration of optical fibre geometry test sets</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_61745" type="standard" schema-version="v1.5.6" anchor="IEC_61745" semx-id="_05e099d1-9ef6-6693-ae2c-09a7b8887c53"><biblio-tag>[IEC 61745:2017]</biblio-tag><formattedref>IEC 61745:2017 (2017), <em>End-face image analysis procedure for the calibration of optical fibre geometry test sets</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">End-face image analysis procedure for the calibration of optical fibre geometry test sets</title>
 
@@ -19904,8 +19850,8 @@ Mots clés: analyse d'image d'extrémité, essais de géométrie des fibres opti
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="IEC_61746-1" type="standard" schema-version="v1.5.6" anchor="IEC_61746-1" semx-id="_9972f7cf-1932-33fc-80a7-d6d382462828"><biblio-tag>[IEC 61746‑1:2009]</biblio-tag><formattedref>IEC 61746-1:2009 (2009), <em>Calibration of optical time-domain reflectometers (OTDR) — Part 1: OTDR for single mode fibres</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="IEC_61746-1" type="standard" schema-version="v1.5.6" anchor="IEC_61746-1" semx-id="_14ca732a-ffd7-8ad1-ae49-ee58ba87c735"><biblio-tag>[IEC 61746‑1:2009]</biblio-tag><formattedref>IEC 61746-1:2009 (2009), <em>Calibration of optical time-domain reflectometers (OTDR) — Part 1: OTDR for single mode fibres</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Calibration of optical time-domain reflectometers (OTDR)</title>
 
@@ -24409,9 +24355,164 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
 </li>
 </ol>
 </clause>
-</annex><bibliography><references id="bibliography" anchor="bibliography" normative="false" obligation="informative" semx-id="_c24e8df5-4b4b-50c2-106e-745e4760cd9b" displayorder="22">
-<title id="_6c8748aa-c704-18b7-d648-64b6d67df26b" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_13cab87c-a399-0dd0-3c11-3ba0a5181aeb"><semx element="title" source="_6c8748aa-c704-18b7-d648-64b6d67df26b">Bibliography</semx></fmt-title><bibitem id="b-IEC60793-1-20" type="standard" schema-version="v1.5.6" anchor="b-IEC60793-1-20" semx-id="_f74ccda4-874f-1c42-e7c7-af38022c9ae3"><biblio-tag>[b‑IEC 60793‑1‑20]</biblio-tag><formattedref>IEC 60793-1-20:2014 (2014), <em>Optical fibres — Part 1-20: Measurement methods and test procedures — Fibre geometry</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</annex><bibliography><references id="bibliography" anchor="bibliography" normative="false" obligation="informative" semx-id="_ea413662-5195-8f85-5c5a-34fc0dc86db5" displayorder="22">
+<title id="_6c8748aa-c704-18b7-d648-64b6d67df26b" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_13cab87c-a399-0dd0-3c11-3ba0a5181aeb"><semx element="title" source="_6c8748aa-c704-18b7-d648-64b6d67df26b">Bibliography</semx></fmt-title><bibitem id="b-ITU-T_G.Sup.47" type="standard" schema-version="v1.5.6" anchor="b-ITU-T_G.Sup.47" semx-id="_9b19f6ce-6920-1d9a-a24f-e27df065e880"><biblio-tag>[b‑ITU‑T G.Suppl.47]</biblio-tag><formattedref>ITU-T G-series Recommendations – Supplement 47, <em>General aspects of optical fibres and cables</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">General aspects of optical fibres and cables</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/16389</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.Sup47-202503-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G Suppl. 47</docidentifier><docidentifier type="metanorma">[b-ITU-T G.Suppl.47]</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <subdivision type="technical-committee" subtype="study-group">
+        
+<name>ITU-T Study Group 15</name>
+
+      </subdivision>
+      <abbreviation>ITU-T</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2025</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">General aspects of optical fibres and cables</title>
+
+      <docidentifier type="ITU" primary="true">G Suppl. 47 (09/2012)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">General aspects of optical fibre and cable</title>
+
+      <docidentifier type="ITU" primary="true">G Suppl. 47 (10/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="main">General aspects of optical fibres and cables</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/16389</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.Sup47-202503-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G Suppl. 47 (03/2025)</docidentifier>
+      <date type="published">
+        <on>2025-03-28</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="author">
+          <description>committee</description>
+        </role>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <subdivision type="technical-committee" subtype="study-group">
+            
+<name>ITU-T Study Group 15</name>
+
+          </subdivision>
+          <abbreviation>ITU-T</abbreviation>
+        </organization>
+      </contributor>
+      <edition>3</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract language="en" script="Latn">Supplement 47 to ITU-T G-series Recommendations provides information on the general transmission characteristics of single-mode optical fibres and cables specified in the ITUT G.65xseries of Recommendations related to the practical use condition. It covers the environmental and length-related characteristic of ITU-T G.65x-series optical fibres and cables. The fibre material-related characteristics are also described in Appendix I.
+Version 3 of this Supplement provides general guidelines for estimating the wavelength dependence of the attenuation coefficient and chromatic dispersion.
+</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2025</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">General aspects of optical fibres and cables</title>
+
+          <docidentifier type="ITU" primary="true">G Suppl. 47 (09/2012)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">General aspects of optical fibre and cable</title>
+
+          <docidentifier type="ITU" primary="true">G Suppl. 47 (10/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="b-IEC60793-1-20" type="standard" schema-version="v1.5.6" anchor="b-IEC60793-1-20" semx-id="_ceeec6a0-142a-4d08-ad8b-98ff3a072415"><biblio-tag>[b‑IEC 60793‑1‑20]</biblio-tag><formattedref>IEC 60793-1-20:2014 (2014), <em>Optical fibres — Part 1-20: Measurement methods and test procedures — Fibre geometry</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -24471,7 +24572,7 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
         
 <name language="en" script="Latn">TC 86/SC 86A</name>
 
-        <identifier id="_8c12a88b-c2f5-f307-b677-70c6f29ac2ed">86</identifier><fmt-identifier><tt><semx element="identifier" source="_8c12a88b-c2f5-f307-b677-70c6f29ac2ed">86</semx></tt></fmt-identifier>
+        <identifier id="_59d802e2-72e3-2f63-7897-ac71e9c876dd">86</identifier><fmt-identifier><tt><semx element="identifier" source="_59d802e2-72e3-2f63-7897-ac71e9c876dd">86</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en" script="Latn">IEC</abbreviation>
     </organization>
@@ -24515,8 +24616,8 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-IECTR62048" type="standard" schema-version="v1.5.6" anchor="b-IECTR62048" semx-id="_774bb6f3-773e-8630-9f4b-02e7083fe7bf"><biblio-tag>[b‑IEC/TR 62048]</biblio-tag><formattedref>IEC TR 62048:2014 (2014), <em>Optical fibres — Reliability — Power law theory</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="b-IECTR62048" type="standard" schema-version="v1.5.6" anchor="b-IECTR62048" semx-id="_1a228e56-cdf1-2fba-c872-79f6161beba0"><biblio-tag>[b‑IEC/TR 62048]</biblio-tag><formattedref>IEC TR 62048:2014 (2014), <em>Optical fibres — Reliability — Power law theory</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Optical fibres</title>
 
@@ -24558,7 +24659,7 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
         
 <name language="en" script="Latn">TC 86/SC 86A</name>
 
-        <identifier id="_dec2705b-138d-dd45-683f-5027f8dd1dc9">86</identifier><fmt-identifier><tt><semx element="identifier" source="_dec2705b-138d-dd45-683f-5027f8dd1dc9">86</semx></tt></fmt-identifier>
+        <identifier id="_d0e94ee4-a7f0-48de-9365-ca020e3cb7f1">86</identifier><fmt-identifier><tt><semx element="identifier" source="_d0e94ee4-a7f0-48de-9365-ca020e3cb7f1">86</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en" script="Latn">IEC</abbreviation>
     </organization>
@@ -24590,8 +24691,8 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="b-IECTR62547" type="standard" schema-version="v1.5.6" anchor="b-IECTR62547" semx-id="_90d4e23f-4017-244c-bfe4-1ee10787bdfd"><biblio-tag>[b‑IEC/TR 62547]</biblio-tag><formattedref>IEC TR 62547:2013 (2013), <em>Guidelines for the measurement of high-power damage sensitivity of single-mode fibre to bends — Guidance for interpretation of results</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="b-IECTR62547" type="standard" schema-version="v1.5.6" anchor="b-IECTR62547" semx-id="_90abc860-1431-a150-a278-fed1813ee67c"><biblio-tag>[b‑IEC/TR 62547]</biblio-tag><formattedref>IEC TR 62547:2013 (2013), <em>Guidelines for the measurement of high-power damage sensitivity of single-mode fibre to bends — Guidance for interpretation of results</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Guidelines for the measurement of high-power damage sensitivity of single-mode fibre to bends</title>
 
@@ -24630,7 +24731,7 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
         
 <name language="en" script="Latn">TC 86/SC 86A</name>
 
-        <identifier id="_88fe26cc-518c-4326-e7b4-1dbefe8a4c97">86</identifier><fmt-identifier><tt><semx element="identifier" source="_88fe26cc-518c-4326-e7b4-1dbefe8a4c97">86</semx></tt></fmt-identifier>
+        <identifier id="_982b89f3-7fc1-4979-3b46-13a5a0237766">86</identifier><fmt-identifier><tt><semx element="identifier" source="_982b89f3-7fc1-4979-3b46-13a5a0237766">86</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en" script="Latn">IEC</abbreviation>
     </organization>
@@ -24661,13 +24762,6 @@ D_m(x,lambda)+D_w(x,lambda)</asciimath></semx></fmt-stem></formula>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem anchor="b-ITU-T_G.Sup.47" id="b-ITU-T_G.Sup.47" semx-id="_d6dd96af-498f-691a-4790-aa3882f06b3a"><biblio-tag>[b‑ITU‑T G.Suppl.47]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">ITU-T G-series Recommendations – Supplement 47, ITU-T G-series Recommendations – Supplement 47 (2012), <em>General aspects of optical fibres and cables</em>.</formattedref>
-  <docidentifier type="metanorma">[b-ITU-T G.Suppl.47]</docidentifier>
-  <docidentifier type="ITU">ITU-T G Suppl.47</docidentifier>
-  <docnumber>47</docnumber>
-  <language>en</language>
-  <script>Latn</script>
 </bibitem><bibitem anchor="b-Fleming" id="b-Fleming" semx-id="_19d7d3df-e8eb-5f43-0231-8668d5ab5dce"><biblio-tag>[b‑Fleming]</biblio-tag>
   <formattedref format="application/x-isodoc+xml">b-Fleming, Fleming, J.W. (1978), <em>Material dispersion in lightguide glasses,</em> Electron. Lett., Vol. 14, No.11, pp. 326-328.</formattedref>
   <docidentifier>b-Fleming</docidentifier><docidentifier scope="biblio-tag">b-Fleming</docidentifier>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Counterfeit ICT equipment</title>
 <docidentifier type="ITU" primary="true">ITU-T QSTR-COUNTERFEIT</docidentifier><docidentifier type="ITU-lang">ITU-T QSTR-COUNTERFEIT-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T QSTR-COUNTERFEIT-E</docidentifier><docnumber>QSTR-COUNTERFEIT</docnumber><date type="published"><on>2015-12-11</on></date><contributor><role type="author"/><organization>
@@ -2003,9 +2003,45 @@
 </ul>
 </clause>
 </clause>
-</annex><bibliography><references id="_4bb1e3c5-3dc1-40ab-75fb-e58257b4b4e9" normative="false" obligation="informative">
-<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_e00eca64-71e2-cf1d-1638-4c29b8712e6e" type="standard" schema-version="v1.5.6" anchor="iso10486">
-  <fetched>2026-10-27</fetched>
+</annex><bibliography><references id="_0bed11c0-08f0-3076-c0e5-7c746f376ec9" normative="false" obligation="informative">
+<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem anchor="x509" id="_0795813a-f7c4-3951-d304-6e0ce670c1ef">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.509 (2012) | ISO/IEC 9594-8:2014, <em>Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</em>.</formattedref>
+  <docidentifier type="ITU">ITU X.509</docidentifier>
+  <docnumber>509</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="e164" id="_e325afb3-8d8e-9399-6fa3-cec2a8474b2b">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T E.164 (2010), <em>The international public telecommunication numbering plan</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T E.164</docidentifier>
+  <docnumber>164</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="x1255" id="_652d4ff4-b00f-9914-ef84-bf3ad0daa051">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.1255 (2013), <em>Framework for discovery of identity management information</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T X.1255</docidentifier>
+  <docnumber>1255</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="x668" id="_684d35da-f072-c251-1320-238d53563c89">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.668 (2008) | ISO/IEC 9834-9:2008, <em>Information technology – Open Systems Interconnection – Procedures for the operation of OSI Registration Authorities: Registration of object identifier arcs for applications and services using tag-based identification</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T X.668</docidentifier>
+  <docnumber>668</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="h621" id="_0a0f3c81-d5c5-bdc3-7945-df10a8e9cd20">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T H.621 (2008), <em>Architecture of a system for multimedia information access triggered by tag-based identification</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T Y.4405</docidentifier>
+  <docnumber>4405</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="f771" id="_3a01cc25-9d15-b5ff-9831-ea5715f0c1c8">
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T F.771 (2008), <em>Service description and requirements for multimedia information access triggered by tag-based identification</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T Y.4551</docidentifier>
+  <docnumber>4551</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_5c9872c4-ec36-6912-cbc7-bc597bc469b8" type="standard" schema-version="v1.5.6" anchor="iso10486">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Passenger cars</title>
 
@@ -2084,8 +2120,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_9c38ca5d-4614-8eb1-92f5-7ebfe0debb10" type="standard" schema-version="v1.5.6" anchor="iso11784">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_2aac46f2-f3df-7700-efb7-87ec4b1631ff" type="standard" schema-version="v1.5.6" anchor="iso11784">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Radio frequency identification of animals</title>
 
@@ -2194,8 +2230,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_166b692f-6630-5e26-b127-c6c1fee5559c" type="standard" schema-version="v1.5.6" anchor="iso11785">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_a617b8fe-7845-b4b5-edcd-1594abd7796d" type="standard" schema-version="v1.5.6" anchor="iso11785">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Radio frequency identification of animals</title>
 
@@ -2283,8 +2319,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_017d4d9d-95b4-35d8-618a-eb05fba701ee" type="standard" schema-version="v1.5.6" anchor="iso12931">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_00ef5d22-f2c9-9dfd-6ad2-bc61033f1c99" type="standard" schema-version="v1.5.6" anchor="iso12931">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Performance criteria for authentication solutions used to combat counterfeiting of material goods</title>
 
@@ -2359,8 +2395,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_1e465cf8-4835-5611-0831-28f44980f27c" type="standard" schema-version="v1.5.6" anchor="iso14816">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_3587adf3-e889-c4b3-3590-2f341845a5dc" type="standard" schema-version="v1.5.6" anchor="iso14816">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Road transport and traffic telematics</title>
 
@@ -2455,8 +2491,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_736bb282-99d4-9e74-226f-9982a862aa60" type="standard" schema-version="v1.5.6" anchor="iso15394">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_bdd4c88f-5a1c-0426-3bd0-70306dedf327" type="standard" schema-version="v1.5.6" anchor="iso15394">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -2544,8 +2580,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_0d688c78-fedf-8fb2-1e50-5e366a2a5219" type="standard" schema-version="v1.5.6" anchor="iso16678">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_82d4f831-4bb8-1719-a5c3-6631c42354c0" type="standard" schema-version="v1.5.6" anchor="iso16678">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Guidelines for interoperable object identification and related authentication systems to deter counterfeiting and illicit trade</title>
 
@@ -2627,8 +2663,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_a0fc15b3-4496-bc2a-faea-02bc7a16f603" type="standard" schema-version="v1.5.6" anchor="iso17363">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_53bee92e-d5ab-d3eb-a18a-c4217ccef936" type="standard" schema-version="v1.5.6" anchor="iso17363">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2723,8 +2759,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_84581ca8-a1be-3b88-671b-dc8b1a4052fb" type="standard" schema-version="v1.5.6" anchor="iso17364">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_b38535fa-d243-a301-afff-597b004abbae" type="standard" schema-version="v1.5.6" anchor="iso17364">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2812,8 +2848,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_8c1b4150-119c-07d2-1c87-fb889dac9d0a" type="standard" schema-version="v1.5.6" anchor="iso17365">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_dff04685-bad2-6d6f-3fba-e23551a95325" type="standard" schema-version="v1.5.6" anchor="iso17365">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2901,8 +2937,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_20bb540a-d22a-1671-1b4e-f54162efcc42" type="standard" schema-version="v1.5.6" anchor="iso17366">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_03450347-7714-68bf-51a3-a4111cd3a513" type="standard" schema-version="v1.5.6" anchor="iso17366">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2990,8 +3026,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_8c773880-33fc-7435-5b82-d5d1760fe6fd" type="standard" schema-version="v1.5.6" anchor="iso17367">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_a9f32fc1-cbb5-d838-ce8e-33fb1367f46f" type="standard" schema-version="v1.5.6" anchor="iso17367">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -3079,8 +3115,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_a67882aa-b01c-7033-212a-ea08916ffa78" type="standard" schema-version="v1.5.6" anchor="iso18185">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_8479dd30-fe4b-35b3-0ff0-b14283bad0aa" type="standard" schema-version="v1.5.6" anchor="iso18185">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Freight containers</title>
 
@@ -3103,7 +3139,6 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41125:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/11/41125.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 18185 (all parts)</docidentifier>
-  <docidentifier type="iso-undated">ISO 18185 (all parts)</docidentifier>
   <docidentifier type="iso-reference">ISO 18185(E) (all parts)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:18185:ser</docidentifier>
   <docnumber>18185</docnumber>
@@ -3265,8 +3300,22 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO 18185-5</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-5</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO 18185-4:2007</formattedref>
       <docidentifier type="ISO" primary="true">ISO 18185-4:2007</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO 18185-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-4</docidentifier>
     </bibitem>
 
   </relation>
@@ -3286,16 +3335,58 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO 18185-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO 18185-2:2007</formattedref>
       <docidentifier type="ISO" primary="true">ISO 18185-2:2007</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO 18185-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/WDAR 18185-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WDAR 18185-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/WDA 18185-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WDA 18185-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/WDA 18185-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WDA 18185-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/CD 18185-6</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 18185-6</docidentifier>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_63e636cf-6b60-4824-8076-07145f77e49a" type="standard" schema-version="v1.5.6" anchor="iso2108">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_da242c49-a0b7-a027-0832-72bc1a44ad23" type="standard" schema-version="v1.5.6" anchor="iso2108">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information and documentation</title>
 
@@ -3384,8 +3475,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_6de7f77e-49d3-4ddc-83b1-2a39cf751709" type="standard" schema-version="v1.5.6" anchor="iso22742">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_9718bf55-54ec-5041-dee3-bb7872932bd7" type="standard" schema-version="v1.5.6" anchor="iso22742">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -3473,8 +3564,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_80bcf021-a34f-78d7-b1a5-80ec0ff727a5" type="standard" schema-version="v1.5.6" anchor="iso28000-2007">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_63317795-b512-6b50-453a-bb1b3ebc5243" type="standard" schema-version="v1.5.6" anchor="iso28000-2007">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Specification for security management systems for the supply chain</title>
 
@@ -3559,8 +3650,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_7941061a-214e-8de7-0391-e1cbb33f7dc2" type="standard" schema-version="v1.5.6" anchor="iso28001-2007">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_5692999b-98a3-36e4-1604-e4c249a6e447" type="standard" schema-version="v1.5.6" anchor="iso28001-2007">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3656,8 +3747,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_98e3b9e4-f458-1832-7968-83764e3ccfc2" type="standard" schema-version="v1.5.6" anchor="iso28003-2007">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_d5f367c8-e3af-a246-b05f-8bb4375e605a" type="standard" schema-version="v1.5.6" anchor="iso28003-2007">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3748,8 +3839,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ba0a7a8f-030b-8c9a-b0e8-5379b49c872c" type="standard" schema-version="v1.5.6" anchor="iso28004-2007">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_2805201a-0822-ef58-2e4f-ba5fc99229da" type="standard" schema-version="v1.5.6" anchor="iso28004-2007">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3877,8 +3968,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_da2c5448-3ad1-9103-1f91-0772a876ca87" type="standard" schema-version="v1.5.6" anchor="iso28005-2011">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_ad503891-3854-9289-2cf6-3ca61b41d906" type="standard" schema-version="v1.5.6" anchor="iso28005-2011">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3972,8 +4063,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_646d9aec-51fc-7f53-0627-35d226f7a632" type="standard" schema-version="v1.5.6" anchor="iso28219">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_e11bc162-8e18-ea30-8dcc-45b692a63128" type="standard" schema-version="v1.5.6" anchor="iso28219">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -4053,8 +4144,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_503d776f-2d51-cc8d-ba2e-a72d19c4d8f9" type="standard" schema-version="v1.5.6" anchor="iso3297">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_dd4a07c0-8a55-764c-d1e5-dd26752a061d" type="standard" schema-version="v1.5.6" anchor="iso3297">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information and documentation</title>
 
@@ -4143,8 +4234,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ccd59468-779a-cf7d-d3d4-32b8462eaba7" type="standard" schema-version="v1.5.6" anchor="iso3779">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_4124c939-a624-d7af-4dfa-21327de1a43c" type="standard" schema-version="v1.5.6" anchor="iso3779">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Road vehicles</title>
 
@@ -4249,8 +4340,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_3ecf58eb-8779-3509-b32a-44901f2116a3" type="standard" schema-version="v1.5.6" anchor="iso6346">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_cda06f8e-7f91-74f4-5e3d-87b97fe82e12" type="standard" schema-version="v1.5.6" anchor="iso6346">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Freight containers</title>
 
@@ -4408,8 +4499,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_88231719-7729-8ecd-093a-e34ac3fe6967" type="standard" schema-version="v1.5.6" anchor="iso15417">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_e83c8e4d-68fe-c627-517e-65e583938906" type="standard" schema-version="v1.5.6" anchor="iso15417">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4513,8 +4604,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_6d6524ef-8671-b64b-4c4c-fcf6bd722116" type="standard" schema-version="v1.5.6" anchor="iso15420">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_47581fe5-7593-56e9-ecf2-4b23e881ca4c" type="standard" schema-version="v1.5.6" anchor="iso15420">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4632,8 +4723,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ab497dc0-cbf2-08b6-41a2-b5e00534428d" type="standard" schema-version="v1.5.6" anchor="iso15438">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_086e1c42-4ca3-c4f6-98f4-2caa015f3f5b" type="standard" schema-version="v1.5.6" anchor="iso15438">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4748,8 +4839,14 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_baab0035-0390-4f65-02ea-18668ee4bbc6" type="standard" schema-version="v1.5.6" anchor="p1">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem anchor="iso15459" id="_4e7abb8b-053a-38c6-8dd0-88b569f24ced" type="standard">
+<title format="text/plain">ISO/IEC 15459, Unique identifiers.</title>
+<docidentifier type="ISO">ISO/IEC 15459</docidentifier><docnumber>15459</docnumber><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor><contributor><role type="publisher"/><organization>
+<name>IEC</name>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_6b2141f0-c4e1-6a21-6204-c13491bdd209" type="standard" schema-version="v1.5.6" anchor="p1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4853,8 +4950,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_823483d1-4355-6d2b-d62b-5fa99cd5b3de" type="standard" schema-version="v1.5.6" anchor="p2">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_aede8841-3fa3-3930-2baf-a39506491e5a" type="standard" schema-version="v1.5.6" anchor="p2">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4978,8 +5075,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_b25efe60-c110-f426-2f8e-6a567483dd54" type="standard" schema-version="v1.5.6" anchor="p3">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_2b54a8f6-ee2d-3ac8-a56e-8a68fd631f7e" type="standard" schema-version="v1.5.6" anchor="p3">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5083,8 +5180,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_31f71766-898f-250e-ec52-94e9969953a0" type="standard" schema-version="v1.5.6" anchor="p4">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_46c561d2-21f3-d2e1-ab60-d0e67311a6bb" type="standard" schema-version="v1.5.6" anchor="p4">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5188,8 +5285,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_8ebc8224-3f82-9ee5-faec-8176e92a54fe" type="standard" schema-version="v1.5.6" anchor="p5">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_8ccf33fd-a1ee-45aa-a6e4-4ddc4c88c68a" type="standard" schema-version="v1.5.6" anchor="p5">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5293,8 +5390,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ab49e160-e005-470e-5cf7-25c4b9fd1288" type="standard" schema-version="v1.5.6" anchor="p6">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_4e2f1ea2-1aeb-0710-7cf0-61b9b2310352" type="standard" schema-version="v1.5.6" anchor="p6">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5398,8 +5495,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_67da3151-2291-f09b-c0ec-a310ce4a0be4" type="standard" schema-version="v1.5.6" anchor="p8">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_c5985db7-c225-7c25-917c-70a7302eebcd" type="standard" schema-version="v1.5.6" anchor="p8">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5493,8 +5590,14 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_75ed73b6-685f-b425-133e-d9589bfec60b" type="standard" schema-version="v1.5.6" anchor="iso15961">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem anchor="iso15693" id="_71969742-ea07-6276-8e7f-5fb1afc3f7b0" type="standard">
+<title format="text/plain">ISO/IEC 15693, Identification cards – Contactless integrated circuit cards – Vicinity cards.</title>
+<docidentifier type="ISO">ISO/IEC 15693</docidentifier><docnumber>15693</docnumber><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor><contributor><role type="publisher"/><organization>
+<name>IEC</name>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_aa240a73-55c8-7007-9f8c-85b2542a0e30" type="standard" schema-version="v1.5.6" anchor="iso15961">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5598,8 +5701,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_3dd52f24-5328-97c9-69f8-a35b63bac11e" type="standard" schema-version="v1.5.6" anchor="iso15962">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_cfe84422-c393-80f6-3237-d39fa963d8c6" type="standard" schema-version="v1.5.6" anchor="iso15962">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5703,8 +5806,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ab784425-6959-dbc0-1c36-a792ea625269" type="standard" schema-version="v1.5.6" anchor="iso15963">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_7a58ed18-eb1d-a528-4eef-fe913d2a1de9" type="standard" schema-version="v1.5.6" anchor="iso15963">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5808,8 +5911,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_946196b0-48bb-24e9-6322-5ec02ff2c60f" type="standard" schema-version="v1.5.6" anchor="iso16022">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_1a42857c-9e07-395c-0b96-64aca531960d" type="standard" schema-version="v1.5.6" anchor="iso16022">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5943,8 +6046,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4b877d45-46d5-3fe5-a550-a222e8f657bf" type="standard" schema-version="v1.5.6" anchor="iso16023">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_1bce01f7-6882-aed9-38e3-8ec03b67db99" type="standard" schema-version="v1.5.6" anchor="iso16023">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6038,8 +6141,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_eefd742f-8ab4-8118-1b2e-eb5c4e7ea88e" type="standard" schema-version="v1.5.6" anchor="iso16388">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_3cfed8ec-3379-0813-1caf-e9f1e9103c8b" type="standard" schema-version="v1.5.6" anchor="iso16388">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6143,8 +6246,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ba4ce96c-871e-ff49-1165-0a924dd270d3" type="standard" schema-version="v1.5.6" anchor="iso18000-all">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_dde3804e-6661-8cb4-8bbf-766abb5e0015" type="standard" schema-version="v1.5.6" anchor="iso18000-all">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6167,7 +6270,6 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46145:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/61/46145.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 18000 (all parts)</docidentifier>
-  <docidentifier type="iso-undated">ISO/IEC 18000 (all parts)</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 18000(E) (all parts)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:18000:ser</docidentifier>
   <docnumber>18000</docnumber>
@@ -6376,6 +6478,13 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-7</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-7</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-6:2013</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-6:2013</docidentifier>
     </bibitem>
@@ -6397,8 +6506,22 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-65</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-65</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-64:2012</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-64:2012</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-64</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-64</docidentifier>
     </bibitem>
 
   </relation>
@@ -6432,8 +6555,29 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-62</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-62</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-61:2012</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-61:2012</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-61</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-61</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-6</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-6</docidentifier>
     </bibitem>
 
   </relation>
@@ -6460,6 +6604,13 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-3:2010</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-3:2010</docidentifier>
     </bibitem>
@@ -6481,6 +6632,13 @@
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-2:2009</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-2:2009</docidentifier>
     </bibitem>
@@ -6493,11 +6651,137 @@
     </bibitem>
 
   </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-7</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-7</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-63</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-63</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-6</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-6</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-7</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-7</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-64</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-64</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-62</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-62</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-61</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-61</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC NP 18000-N</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC NP 18000-N</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC NP 18000-8</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC NP 18000-8</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC CD 18000-5</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC CD 18000-5</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC CD 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC CD 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_67217132-891f-4946-a666-4e85b632114e" type="standard" schema-version="v1.5.6" anchor="iso18000-3">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_22812e90-a676-514c-2c56-a322af5b1f3b" type="standard" schema-version="v1.5.6" anchor="iso18000-3">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6608,8 +6892,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_a2cb870a-8a2d-5c5e-46c0-56d2cb03a107" type="standard" schema-version="v1.5.6" anchor="iso18000">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_6d35f789-9567-11fe-6127-eb1b86017682" type="standard" schema-version="v1.5.6" anchor="iso18000">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6713,8 +6997,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_26b2e721-c8f3-b3a9-6f85-669ab6dc2a82" type="standard" schema-version="v1.5.6" anchor="iso18004">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_11a88479-7876-a041-d88a-efb852a73241" type="standard" schema-version="v1.5.6" anchor="iso18004">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6838,8 +7122,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ddb42518-5ba3-db44-9b49-c5383345e468" type="standard" schema-version="v1.5.6" anchor="iso29160">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_0dcf2d9b-9cf6-f5ce-b081-996da36f5c13" type="standard" schema-version="v1.5.6" anchor="iso29160">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6934,8 +7218,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_95115887-c11f-206f-8aa7-5c76b5291d85" type="standard" schema-version="v1.5.6" anchor="iso29167">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_4270830b-be32-c22b-022f-53baa236d85e" type="standard" schema-version="v1.5.6" anchor="iso29167">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -7039,8 +7323,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_0db027dc-c96d-39c7-7b22-e0f5cb69b45b" type="standard" schema-version="v1.5.6" anchor="iso7816">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_ec424d08-2bf5-837c-96db-65125a970f7b" type="standard" schema-version="v1.5.6" anchor="iso7816">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Identification cards</title>
 
@@ -7174,8 +7458,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_1a1e9074-96fe-18d2-6100-50b11e8fea68" type="standard" schema-version="v1.5.6" anchor="iso24729">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_67053168-7738-c9ce-5bee-0ebe6b86dfc6" type="standard" schema-version="v1.5.6" anchor="iso24729">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -7269,8 +7553,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d80d960f-1231-0913-aba3-e039760e3052" type="standard" schema-version="v1.5.6" anchor="iec62321">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_0709597f-7baa-d0dc-ead3-3f6567890229" type="standard" schema-version="v1.5.6" anchor="iec62321">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Electrotechnical products</title>
 
@@ -7347,8 +7631,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_47d2521f-5386-5bae-e616-6d26f3740281" type="standard" schema-version="v1.5.6" anchor="ts62668">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_898cb2cd-41ba-0ec5-9689-96050d683f75" type="standard" schema-version="v1.5.6" anchor="ts62668">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Process management for avionics</title>
 
@@ -7420,8 +7704,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_27076916-74fd-be3b-ed44-aa1c484a7e6f" type="standard" schema-version="v1.5.6" anchor="ts62668-2">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_94eb3312-59d0-ad88-389f-a7d57f75a554" type="standard" schema-version="v1.5.6" anchor="ts62668-2">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Process management for avionics</title>
 
@@ -7491,8 +7775,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_f873dc41-813e-fbb5-2b74-3652d42cee6f" type="standard" schema-version="v1.5.6" anchor="rfc3279">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_2d0eb7bf-f49b-0a1e-e130-96f7c2839fe5" type="standard" schema-version="v1.5.6" anchor="rfc3279">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</title>
 
@@ -7563,7 +7847,7 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_e428385a-5a99-51cb-2c41-48050227d618">This document specifies algorithm identifiers and ASN.1 encoding formats for digital signatures and subject public keys used in the Internet X.509 Public Key Infrastructure (PKI).  Digital signatures are used to sign certificates and certificate revocation list (CRLs).  Certificates include the public key of the named subject. [STANDARDS-TRACK]</p>
+    <p id="_7b890b62-cd0d-b544-3e1f-650e6a1bbd06">This document specifies algorithm identifiers and ASN.1 encoding formats for digital signatures and subject public keys used in the Internet X.509 Public Key Infrastructure (PKI).  Digital signatures are used to sign certificates and certificate revocation list (CRLs).  Certificates include the public key of the named subject. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -7574,11 +7858,6 @@
 <title>RFC</title>
 
     <number>3279</number>
-  </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
   </series>
   <keyword>
     <vocab>ASN.1</vocab>
@@ -7598,8 +7877,8 @@
   <keyword>
     <vocab>Certificate Revocation List</vocab>
   </keyword>
-</bibitem><bibitem id="_c6cacb4d-415b-2f1d-7b5c-67b145868ca1" type="standard" schema-version="v1.5.6" anchor="rfc3280">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_9a872958-82dc-fdde-d98c-f0817e21e3c9" type="standard" schema-version="v1.5.6" anchor="rfc3280">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</title>
 
@@ -7678,7 +7957,7 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_b62e7c49-f632-c3c7-ae59-8f43b894f9ab">This memo profiles the X.509 v3 certificate and X.509 v2 Certificate Revocation List (CRL) for use in the Internet. [STANDARDS-TRACK]</p>
+    <p id="_cbd35556-97a6-6c1d-b5b8-b4120ec8aa26">This memo profiles the X.509 v3 certificate and X.509 v2 Certificate Revocation List (CRL) for use in the Internet. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -7697,11 +7976,6 @@
 
     <number>3280</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>X.509</vocab>
   </keyword>
@@ -7717,54 +7991,6 @@
   <keyword>
     <vocab>Certificate Revocation List</vocab>
   </keyword>
-</bibitem><bibitem anchor="iso15459" id="_47340c56-27e7-0677-ca46-e4e0bc1de01f" type="standard">
-<title format="text/plain">ISO/IEC 15459, Unique identifiers.</title>
-<docidentifier type="ISO">ISO/IEC 15459</docidentifier><docnumber>15459</docnumber><contributor><role type="publisher"/><organization>
-<name>ISO</name>
-</organization></contributor><contributor><role type="publisher"/><organization>
-<name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="iso15693" id="_8470686a-74d7-357a-fc78-0c1c0970cde0" type="standard">
-<title format="text/plain">ISO/IEC 15693, Identification cards – Contactless integrated circuit cards – Vicinity cards.</title>
-<docidentifier type="ISO">ISO/IEC 15693</docidentifier><docnumber>15693</docnumber><contributor><role type="publisher"/><organization>
-<name>ISO</name>
-</organization></contributor><contributor><role type="publisher"/><organization>
-<name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="x509" id="_c6057071-1711-1553-f1ca-d63395b4e8a0">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.509 (2012) | ISO/IEC 9594-8:2014, <em>Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</em>.</formattedref>
-  <docidentifier type="ITU">ITU X.509</docidentifier>
-  <docnumber>509</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="e164" id="_fc4ce31e-95e9-0426-6aea-63f6167db3df">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T E.164 (2010), <em>The international public telecommunication numbering plan</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T E.164</docidentifier>
-  <docnumber>164</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="x1255" id="_41d26b71-0a20-a15f-68d1-059346297e4d">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.1255 (2013), <em>Framework for discovery of identity management information</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T X.1255</docidentifier>
-  <docnumber>1255</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="x668" id="_5dc1ac29-415b-ade0-706a-8d485394fac5">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.668 (2008) | ISO/IEC 9834-9:2008, <em>Information technology – Open Systems Interconnection – Procedures for the operation of OSI Registration Authorities: Registration of object identifier arcs for applications and services using tag-based identification</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T X.668</docidentifier>
-  <docnumber>668</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="h621" id="_e5b2f572-2619-3f85-0af0-d52002d89e69">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T H.621 (2008), <em>Architecture of a system for multimedia information access triggered by tag-based identification</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T Y.4405</docidentifier>
-  <docnumber>4405</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="f771" id="_a2e3d5b7-3fb3-dab1-e6e5-1a226b4f34f4">
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T F.771 (2008), <em>Service description and requirements for multimedia information access triggered by tag-based identification</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T Y.4551</docidentifier>
-  <docnumber>4551</docnumber>
-  <language>en</language>
-  <script>Latn</script>
 </bibitem><bibitem anchor="oecd-web" id="_3c8ad9cd-196e-bc52-0fbb-30e9df1c12f0">
   <formattedref format="application/x-isodoc+xml">
     <link target="http://www.oecd.org/sti/ind/44088872.pdf"/>

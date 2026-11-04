@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Implementers' guide 2 for ITU-T P.863</title>
 <docidentifier type="ITU" primary="true">ITU-T P.863 Implementers' Guide</docidentifier><docidentifier type="ITU-lang">ITU-T P.863 Implementers' Guide-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T P.863 Implementers' Guide-E</docidentifier><docidentifier type="ITU-Recommendation">ITU-T P.863</docidentifier><docnumber>P.863 Implementers' Guide</docnumber><date type="published"><on>2019-12-05</on></date><contributor><role type="author"/><organization>
@@ -206,12 +206,9 @@
 </note></table>
 
 
-</annex><bibliography><references id="_06628930-0fd6-d110-bc5c-97f89e9afbea" normative="true" obligation="informative">
-<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_0e666f2f-cf09-c019-7b1f-c3db5921b42d" type="standard" schema-version="v1.5.6" anchor="p863">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Perceptual objective listening quality prediction</title>
-
+</annex><bibliography><references id="_3fb04b79-5645-2ec0-668b-6369f1f52cbf" normative="true" obligation="informative">
+<title id="_1d852725-9432-e979-5884-c8c2939954c3">References</title><p id="_f6495672-080e-a1a8-e90c-32b40b9e2cdb">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_98b06ea4-3840-687b-d48b-106350e22d47" type="standard" schema-version="v1.5.6" anchor="p863">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Perceptual objective listening quality prediction</title>
 
@@ -398,9 +395,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Perceptual objective listening quality prediction</title>
-
       
 <title language="en" script="Latn" type="main">Perceptual objective listening quality prediction</title>
 
@@ -614,8 +608,8 @@ Furthermore, the problems of P.863 Ed. 2 documented in the following implementer
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ae820c14-5354-183f-6301-31c386670f5c" type="standard" schema-version="v1.5.6" anchor="p-imp863">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_74dc8be0-39de-86e1-641a-cba11a782115" type="standard" schema-version="v1.5.6" anchor="p-imp863">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Implementer's guide 3 for Recommendation ITU-T P.863</title>
 

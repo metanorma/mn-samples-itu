@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Guideline on web-based remote sign language interpretation or video remote interpretation (VRI) system</title>
 <docidentifier type="ITU" primary="true">ITU-T FSTP.ACC-WebVRI</docidentifier><docidentifier type="ITU-lang">ITU-T FSTP.ACC-WebVRI-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T FSTP.ACC-WebVRI-E</docidentifier><docnumber>FSTP.ACC-WebVRI</docnumber><date type="published"><on>2020-07-03</on></date><contributor><role type="author"/><organization>
@@ -526,7 +526,7 @@
 <title id="_55816372-081b-b410-6c27-7270fcf48e80">VRI session data encoding format</title>
 <p id="_bd147df3-424a-7676-9ef5-7036133ac052">For the convenience of the VRI client, encode the VRI session data by the following method. Also, it is desirable to use both methods to ensure that the VRI client can obtain the notification.</p>
 
-<ul id="_74229554-4a82-c5eb-4be1-a504052cb7ed"><li><p id="_059a5adc-dd06-6682-e324-aef05473d03a">QR code: 2D barcode according to <eref type="inline" bibitemid="iso18004" citeas="ISO/IEC 18004"/></p>
+<ul id="_74229554-4a82-c5eb-4be1-a504052cb7ed"><li><p id="_059a5adc-dd06-6682-e324-aef05473d03a">QR code: 2D barcode according to <eref type="inline" bibitemid="iso18004" citeas="ISO/IEC 18004:2006"/></p>
 </li>
 <li><p id="_9ded70d1-2db5-f5a3-fdf9-c4a00589b062">URL: Data from <eref type="inline" bibitemid="rfc1738" citeas="IETF RFC 1738"/>.</p>
 </li>
@@ -771,12 +771,9 @@
 <li><p id="_06c3af9a-7ca9-995c-b59a-265f7768132e">The VRI client accesses the URL in the QR code or email on his or her terminal, and the VRI agent starts the VRI session.</p>
 </li>
 </ol>
-</annex><bibliography><references id="_edca5595-78d4-125a-25de-10f0977a0eb5" normative="true" obligation="informative">
-<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_764141e8-4c53-18cf-40e1-47a189c5dc90" type="standard" schema-version="v1.5.6" anchor="e800">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Definitions of terms related to quality of service</title>
-
+</annex><bibliography><references id="_31691170-5603-eb07-bca1-568461be001e" normative="true" obligation="informative">
+<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_0e5d3330-29fb-9794-84be-f2be5edc779f" type="standard" schema-version="v1.5.6" anchor="e800">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Definitions of terms related to quality of service</title>
 
@@ -937,9 +934,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Definitions of terms related to quality of service</title>
-
       
 <title language="en" script="Latn" type="main">Definitions of terms related to quality of service</title>
 
@@ -1111,11 +1105,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_737704fb-50fa-fc17-0e0c-ccc4f2b124e4" type="standard" schema-version="v1.5.6" anchor="f703">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Multimedia conversational services</title>
-
+</bibitem><bibitem id="_23b5e4d1-adc7-8791-9f40-197254328191" type="standard" schema-version="v1.5.6" anchor="f703">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Multimedia conversational services</title>
 
@@ -1222,9 +1213,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Multimedia conversational services</title>
-
       
 <title language="en" script="Latn" type="main">Multimedia conversational services</title>
 
@@ -1342,11 +1330,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_02c119d4-208c-ecbf-05d0-3b20d465903e" type="standard" schema-version="v1.5.6" anchor="f742">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Service description and requirements for distance learning services</title>
-
+</bibitem><bibitem id="_13ebf9bb-d3e2-6827-5a08-5bead36f332a" type="standard" schema-version="v1.5.6" anchor="f742">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Service description and requirements for distance learning services</title>
 
@@ -1462,9 +1447,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Service description and requirements for distance learning services</title>
-
       
 <title language="en" script="Latn" type="main">Service description and requirements for distance learning services</title>
 
@@ -1592,11 +1574,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_eee3b2fc-f0cb-35d9-e9f6-4db0e4f28d11" type="standard" schema-version="v1.5.6" anchor="f791">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Accessibility terms and definitions</title>
-
+</bibitem><bibitem id="_84eccfa6-d638-4d11-0d9a-73998074de12" type="standard" schema-version="v1.5.6" anchor="f791">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Accessibility terms and definitions</title>
 
@@ -1712,9 +1691,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Accessibility terms and definitions</title>
-
       
 <title language="en" script="Latn" type="main">Accessibility terms and definitions</title>
 
@@ -1850,11 +1826,8 @@ This edition updates some of the definitions based on feedback received from the
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_0ee38a39-126f-abcc-b8c8-5ce5e8e17301" type="standard" schema-version="v1.5.6" anchor="f930">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Multimedia telecommunication relay services</title>
-
+</bibitem><bibitem id="_60219dc7-bd59-d3d7-5f60-9c9be6f0ee3e" type="standard" schema-version="v1.5.6" anchor="f930">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Multimedia telecommunication relay services</title>
 
@@ -1961,9 +1934,6 @@ This edition updates some of the definitions based on feedback received from the
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Multimedia telecommunication relay services</title>
-
       
 <title language="en" script="Latn" type="main">Multimedia telecommunication relay services</title>
 
@@ -2084,16 +2054,13 @@ This Recommendation provides a functional description of four common types of re
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_45329dd4-58d2-797f-ff98-825f3caba85e" type="standard" schema-version="v1.5.6" anchor="g711">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_4265ae7c-db0f-4ee6-7088-52386b7dc958" type="standard" schema-version="v1.5.6" anchor="g711">
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
+<title language="en" script="Latn" type="main">Pulse code modulation (PCM) of voice frequencies</title>
 
-  
-<title language="en" script="Latn" type="main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/5132</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-200002-I!AppII!PDF-E&amp;type=items</uri>
+  <uri type="src">https://handle.itu.int/11.1002/1000/911</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-198811-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -2121,14 +2088,14 @@ This Recommendation provides a functional description of four common types of re
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>5.2</edition>
+  <edition>5</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2000</from>
+    <from>1988</from>
     <owner>
       <organization>
         
@@ -2160,18 +2127,18 @@ This Recommendation provides a functional description of four common types of re
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
+<title language="en" script="Latn">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
 
-      <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
+      <docidentifier type="ITU" primary="true">G.711 App. II (02/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">Pulse code modulation (PCM) of voice frequencies</title>
+<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
 
-      <docidentifier type="ITU" primary="true">G.711 (11/1988)</docidentifier>
+      <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
     </bibitem>
 
   </relation>
@@ -2808,16 +2775,13 @@ This Recommendation provides a functional description of four common types of re
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
+<title language="en" script="Latn" type="main">Pulse code modulation (PCM) of voice frequencies</title>
 
-      
-<title language="en" script="Latn" type="main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/5132</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-200002-I!AppII!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/911</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-198811-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.711 (11/1988)</docidentifier>
       <date type="published">
-        <on>2000-02-17</on>
+        <on>1988-11-25</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -2845,15 +2809,15 @@ This Recommendation provides a functional description of four common types of re
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>5.2</edition>
+      <edition>5</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">This appendix defines a comfort noise payload format (or bit-stream) for ITU-T G.711 use in packet-based multimedia communication systems.The use of the payload format is intended for packet-based systems with a large header overhead where the packet transmission rate plays a significant role in the overall system bit-rate. In this situation, the use of VAD/DTX/CNG can significantly reduce the packet transmission rate and hence improve the bandwidth efficiency.</abstract>
+      <abstract language="en" script="Latn"/>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2000</from>
+        <from>1988</from>
         <owner>
           <organization>
             
@@ -2885,18 +2849,18 @@ This Recommendation provides a functional description of four common types of re
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
+<title language="en" script="Latn">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
 
-          <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
+          <docidentifier type="ITU" primary="true">G.711 App. II (02/2000)</docidentifier>
         </bibitem>
 
       </relation>
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">Pulse code modulation (PCM) of voice frequencies</title>
+<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
 
-          <docidentifier type="ITU" primary="true">G.711 (11/1988)</docidentifier>
+          <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
         </bibitem>
 
       </relation>
@@ -3539,11 +3503,8 @@ This Recommendation provides a functional description of four common types of re
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ea9e18a5-0615-a8a3-43f5-0a1fb66e7d32" type="standard" schema-version="v1.5.6" anchor="h264">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Advanced video coding for generic audiovisual services</title>
-
+</bibitem><bibitem id="_651b1725-669f-caed-1130-8cbddb22fd11" type="standard" schema-version="v1.5.6" anchor="h264">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Advanced video coding for generic audiovisual services</title>
 
@@ -3890,9 +3851,6 @@ This Recommendation provides a functional description of four common types of re
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Advanced video coding for generic audiovisual services</title>
-
       
 <title language="en" script="Latn" type="main">Advanced video coding for generic audiovisual services</title>
 
@@ -4273,11 +4231,8 @@ The 16th edition of Rec. ITU-T H.264, approved in 2026-06, adds the interface to
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ad48c00a-32ed-e25d-7f8b-3072d193e118" type="standard" schema-version="v1.5.6" anchor="h265">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">High efficiency video coding</title>
-
+</bibitem><bibitem id="_e7d79ed1-51e2-4e56-eaad-8cb8f0f3ac7d" type="standard" schema-version="v1.5.6" anchor="h265">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">High efficiency video coding</title>
 
@@ -4538,9 +4493,6 @@ The 16th edition of Rec. ITU-T H.264, approved in 2026-06, adds the interface to
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">High efficiency video coding</title>
-
       
 <title language="en" script="Latn" type="main">High efficiency video coding</title>
 
@@ -4816,11 +4768,8 @@ This Recommendation | International Standard was developed jointly with ISO/IEC 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4f1417dd-0c5d-90b3-b093-3c7711d847f4" type="standard" schema-version="v1.5.6" anchor="h702">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Accessibility profiles for IPTV systems</title>
-
+</bibitem><bibitem id="_c4ca7355-1ce1-6726-6f9c-35df03e299da" type="standard" schema-version="v1.5.6" anchor="h702">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Accessibility profiles for IPTV systems</title>
 
@@ -4999,9 +4948,6 @@ This Recommendation | International Standard was developed jointly with ISO/IEC 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Accessibility profiles for IPTV systems</title>
-
       
 <title language="en" script="Latn" type="main">Accessibility profiles for IPTV systems</title>
 
@@ -5192,11 +5138,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_6a6c4972-5e75-23ac-8840-97455a5f2e80" type="standard" schema-version="v1.5.6" anchor="v34">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">A modem operating at data signalling rates of up to 33 600 bit/s for use on the general switched telephone network and on leased point-to-point 2-wire telephone-type circuits</title>
-
+</bibitem><bibitem id="_c00e035a-0fdb-6eca-9bcf-88385487a9fc" type="standard" schema-version="v1.5.6" anchor="v34">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">A modem operating at data signalling rates of up to 33 600 bit/s for use on the general switched telephone network and on leased point-to-point 2-wire telephone-type circuits</title>
 
@@ -5267,9 +5210,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">A modem operating at data signalling rates of up to 33 600 bit/s for use on the general switched telephone network and on leased point-to-point 2-wire telephone-type circuits</title>
-
       
 <title language="en" script="Latn" type="main">A modem operating at data signalling rates of up to 33 600 bit/s for use on the general switched telephone network and on leased point-to-point 2-wire telephone-type circuits</title>
 
@@ -5351,8 +5291,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_7a518160-f4f2-27b7-38c7-93066a011b5b" type="standard" schema-version="v1.5.6" anchor="iso717-1">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_35d7b8a3-cd38-7418-a715-7e41ff59ee32" type="standard" schema-version="v1.5.6" anchor="iso717-1">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Acoustics</title>
 
@@ -5381,7 +5321,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:77435:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/07/74/77435.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 717-1</docidentifier>
-  <docidentifier type="iso-undated">ISO 717-1</docidentifier>
   <docidentifier type="iso-reference">ISO 717-1(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:717:-1:stage-90.93</docidentifier>
   <docnumber>717</docnumber>
@@ -5542,8 +5481,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d9d0eed6-68d5-a852-fa57-8d66a7f05a70" type="standard" schema-version="v1.5.6" anchor="iso9241-210">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_69f83840-07a0-c2e9-9170-065016490fab" type="standard" schema-version="v1.5.6" anchor="iso9241-210">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Ergonomics of human-system interaction</title>
 
@@ -5566,7 +5505,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:77520:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/07/75/77520.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 9241-210</docidentifier>
-  <docidentifier type="iso-undated">ISO 9241-210</docidentifier>
   <docidentifier type="iso-reference">ISO 9241-210(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:9241:-210:stage-90.93</docidentifier>
   <docnumber>9241</docnumber>
@@ -5721,8 +5659,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_3045a8c0-d35b-0fc6-95d8-dcaf9aa9c045" type="standard" schema-version="v1.5.6" anchor="iso18004">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_427f5e01-c571-80fd-4f46-ac2273593e99" type="standard" schema-version="v1.5.6" anchor="iso18004">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5730,31 +5668,34 @@ This version of the Recommendation includes the accessibility profiles for cogni
 <title language="en" script="Latn" type="title-main">Automatic identification and data capture techniques</title>
 
   
-<title language="en" script="Latn" type="title-part">QR Code bar code symbology specification</title>
+<title language="en" script="Latn" type="title-part">QR Code 2005 bar code symbology specification</title>
 
   
-<title language="en" script="Latn" type="main">Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification</title>
+<title language="en" script="Latn" type="main">Information technology — Automatic identification and data capture techniques — QR Code 2005 bar code symbology specification</title>
 
   
 <title language="fr" script="Latn" type="title-intro">Technologies de l'information</title>
 
   
-<title language="fr" script="Latn" type="title-main">Technologie d'identification automatique et de capture des données</title>
+<title language="fr" script="Latn" type="title-main">Techniques automatiques d'identification et de capture des données</title>
 
   
-<title language="fr" script="Latn" type="title-part">Spécification de la symbologie de code à barres Code QR</title>
+<title language="fr" script="Latn" type="title-part">Spécification de symbologie de code à barres, code QR 2005</title>
 
   
-<title language="fr" script="Latn" type="main">Technologies de l'information — Technologie d'identification automatique et de capture des données — Spécification de la symbologie de code à barres Code QR</title>
+<title language="fr" script="Latn" type="main">Technologies de l'information — Techniques automatiques d'identification et de capture des données — Spécification de symbologie de code à barres, code QR 2005</title>
 
-  <uri type="src">https://www.iso.org/standard/62021.html</uri>
-  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:62021:en</uri>
-  <uri type="rss">https://www.iso.org/contents/data/standard/06/20/62021.detail.rss</uri>
-  <docidentifier type="ISO" primary="true">ISO/IEC 18004</docidentifier>
+  <uri type="src">https://www.iso.org/standard/43655.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:43655:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/36/43655.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO/IEC 18004:2006</docidentifier>
   <docidentifier type="iso-undated">ISO/IEC 18004</docidentifier>
-  <docidentifier type="iso-reference">ISO/IEC 18004(E)</docidentifier>
+  <docidentifier type="iso-reference">ISO/IEC 18004:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:18004:stage-95.99</docidentifier>
   <docnumber>18004</docnumber>
+  <date type="published">
+    <on>2006-08-31</on>
+  </date>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -5792,16 +5733,16 @@ This version of the Recommendation includes the accessibility profiles for cogni
       <abbreviation>ISO</abbreviation>
     </organization>
   </contributor>
-  <edition>3</edition>
+  <edition>2</edition>
   <language>en</language>
-  <language>fr</language>
   <script>Latn</script>
+  <abstract language="en" script="Latn">ISO/IEC 18004:2006 defines the requirements for the symbology known as QR Code 2005. It specifies the QR Code 2005 symbology characteristics, data character encoding methods, symbol formats, dimensional characteristics, error correction rules, reference decoding algorithm, production quality requirements, and user-selectable application parameters, and lists in an informative annex the features of QR Code Model 1 symbols which differ from QR Code 2005.</abstract>
   <status>
-    <stage>60</stage>
-    <substage>60</substage>
+    <stage>95</stage>
+    <substage>99</substage>
   </status>
   <copyright>
-    <from>2015</from>
+    <from>2006</from>
     <owner>
       <organization>
         
@@ -5812,15 +5753,25 @@ This version of the Recommendation includes the accessibility profiles for cogni
   </copyright>
   <relation type="obsoletes">
     <bibitem>
-      <formattedref>ISO/IEC 18004:2006</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/IEC 18004:2006</docidentifier>
+      <formattedref>ISO/IEC 18004:2000</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18004:2000</docidentifier>
       <date type="published">
-        <on>2006-08-31</on>
+        <on>2000-06-22</on>
       </date>
     </bibitem>
 
   </relation>
-  <relation type="obsoletes">
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/IEC 18004:2015</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18004:2015</docidentifier>
+      <date type="published">
+        <on>2015-02-16</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="updatedBy">
     <bibitem>
       <formattedref>ISO/IEC 18004:2006/Cor 1:2009</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18004:2006/Cor 1:2009</docidentifier>
@@ -5830,130 +5781,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
     </bibitem>
 
   </relation>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-intro">Information technology</title>
-
-      
-<title language="en" script="Latn" type="title-main">Automatic identification and data capture techniques</title>
-
-      
-<title language="en" script="Latn" type="title-part">QR Code bar code symbology specification</title>
-
-      
-<title language="en" script="Latn" type="main">Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification</title>
-
-      
-<title language="fr" script="Latn" type="title-intro">Technologies de l'information</title>
-
-      
-<title language="fr" script="Latn" type="title-main">Technologie d'identification automatique et de capture des données</title>
-
-      
-<title language="fr" script="Latn" type="title-part">Spécification de la symbologie de code à barres Code QR</title>
-
-      
-<title language="fr" script="Latn" type="main">Technologies de l'information — Technologie d'identification automatique et de capture des données — Spécification de la symbologie de code à barres Code QR</title>
-
-      <uri type="src">https://www.iso.org/standard/62021.html</uri>
-      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:62021:en</uri>
-      <uri type="rss">https://www.iso.org/contents/data/standard/06/20/62021.detail.rss</uri>
-      <docidentifier type="ISO" primary="true">ISO/IEC 18004:2015</docidentifier>
-      <docidentifier type="iso-undated">ISO/IEC 18004</docidentifier>
-      <docidentifier type="iso-reference">ISO/IEC 18004:2015(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso-iec:18004:stage-95.99</docidentifier>
-      <docnumber>18004</docnumber>
-      <date type="published">
-        <on>2015-02-16</on>
-      </date>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Organization for Standardization</name>
-
-          <abbreviation>ISO</abbreviation>
-          <uri>www.iso.org</uri>
-        </organization>
-      </contributor>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Electrotechnical Commission</name>
-
-          <abbreviation>IEC</abbreviation>
-          <uri>www.iec.ch</uri>
-        </organization>
-      </contributor>
-      <contributor>
-        <role type="author">
-          <description>committee</description>
-        </role>
-        <organization>
-          
-<name>International Organization for Standardization</name>
-
-          <subdivision type="technical-committee" subtype="IEC">
-            
-<name>Automatic identification and data capture techniques</name>
-
-            <identifier>ISO/IEC JTC 1/SC 31</identifier>
-          </subdivision>
-          <abbreviation>ISO</abbreviation>
-        </organization>
-      </contributor>
-      <edition>3</edition>
-      <language>en</language>
-      <language>fr</language>
-      <script>Latn</script>
-      <abstract language="en" script="Latn">ISO/IEC 18004:2015 defines the requirements for the symbology known as QR Code. It specifies the QR Code symbology characteristics, data character encoding methods, symbol formats, dimensional characteristics, error correction rules, reference decoding algorithm, production quality requirements, and user-selectable application parameters.</abstract>
-      <status>
-        <stage>60</stage>
-        <substage>60</substage>
-      </status>
-      <copyright>
-        <from>2015</from>
-        <owner>
-          <organization>
-            
-<name>ISO/IEC</name>
-
-          </organization>
-        </owner>
-      </copyright>
-      <relation type="obsoletes">
-        <bibitem>
-          <formattedref>ISO/IEC 18004:2006</formattedref>
-          <docidentifier type="ISO" primary="true">ISO/IEC 18004:2006</docidentifier>
-          <date type="published">
-            <on>2006-08-31</on>
-          </date>
-        </bibitem>
-
-      </relation>
-      <relation type="obsoletes">
-        <bibitem>
-          <formattedref>ISO/IEC 18004:2006/Cor 1:2009</formattedref>
-          <docidentifier type="ISO" primary="true">ISO/IEC 18004:2006/Cor 1:2009</docidentifier>
-          <date type="published">
-            <on>2009-03-10</on>
-          </date>
-        </bibitem>
-
-      </relation>
-      <place>
-        <city>Geneva</city>
-      </place>
-    </bibitem>
-
-  </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c0489469-16fa-a1ff-27a4-07a06d8f9b96" type="standard" schema-version="v1.5.6" anchor="rfc1738">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_c5a88932-c9e7-928f-bcab-cc355cac8323" type="standard" schema-version="v1.5.6" anchor="rfc1738">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Uniform Resource Locators (URL)</title>
 
@@ -6033,16 +5865,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>1738</number>
   </series>
-  <series type="stream">
-    
-<title>Legacy</title>
-
-  </series>
   <keyword>
     <vocab>URL</vocab>
   </keyword>
-</bibitem><bibitem id="_4f0e44ef-c611-31d1-33a8-d3588ede9c64" type="standard" schema-version="v1.5.6" anchor="rfc1983">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_b71d13d6-1b41-bf0a-8d1f-aafd228b641f" type="standard" schema-version="v1.5.6" anchor="rfc1983">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Internet Users' Glossary</title>
 
@@ -6115,11 +5942,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>1983</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>basic</vocab>
   </keyword>
@@ -6129,8 +5951,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>acronyms</vocab>
   </keyword>
-</bibitem><bibitem id="_efd3789c-79db-b367-45af-988944505c5e" type="standard" schema-version="v1.5.6" anchor="rfc2818">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_29102d20-017f-8dd7-210b-2198c239b134" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">HTTP Over TLS</title>
 
@@ -6204,11 +6026,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>2818</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>hypertext</vocab>
   </keyword>
@@ -6227,8 +6044,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>security</vocab>
   </keyword>
-</bibitem><bibitem id="_150c0854-cd01-0202-3996-66a8cd97b90c" type="standard" schema-version="v1.5.6" anchor="rfc3551">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_180368f2-85d6-611e-0c4f-d10a1cdf1b87" type="standard" schema-version="v1.5.6" anchor="rfc3551">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">RTP Profile for Audio and Video Conferences with Minimal Control</title>
 
@@ -6309,11 +6126,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>3551</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>RTP-AV</vocab>
   </keyword>
@@ -6335,8 +6147,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>conference</vocab>
   </keyword>
-</bibitem><bibitem id="_c17d09f6-6b9c-c149-ed50-299ee87484f9" type="standard" schema-version="v1.5.6" anchor="rfc3711">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_800c4381-5644-19eb-55d8-9274c9816977" type="standard" schema-version="v1.5.6" anchor="rfc3711">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">The Secure Real-time Transport Protocol (SRTP)</title>
 
@@ -6435,11 +6247,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>3711</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>SRTP</vocab>
   </keyword>
@@ -6455,8 +6262,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>cryptographic</vocab>
   </keyword>
-</bibitem><bibitem id="_44eb8b1f-dbf3-0637-497c-e098b60a3c33" type="standard" schema-version="v1.5.6" anchor="rfc4347">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_1502ffbd-b63c-8a21-7df5-a346260e279f" type="standard" schema-version="v1.5.6" anchor="rfc4347">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Datagram Transport Layer Security</title>
 
@@ -6521,16 +6328,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>4347</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>dtls</vocab>
   </keyword>
-</bibitem><bibitem id="_743e5590-60fc-1b54-54fc-b0b8e3e33163" type="standard" schema-version="v1.5.6" anchor="rfc4733">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_e32915db-ba7e-6488-95e9-c1c38b556da2" type="standard" schema-version="v1.5.6" anchor="rfc4733">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">RTP Payload for DTMF Digits, Telephony Tones, and Telephony Signals</title>
 
@@ -6609,11 +6411,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>4733</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>real-time</vocab>
   </keyword>
@@ -6632,8 +6429,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>multifrequency</vocab>
   </keyword>
-</bibitem><bibitem id="_855bfff5-1093-6f8f-08f5-fd7bc387c8f6" type="standard" schema-version="v1.5.6" anchor="rfc5246">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_9fe8669e-9a66-d2ed-7e08-a1b0fabfee64" type="standard" schema-version="v1.5.6" anchor="rfc5246">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">The Transport Layer Security (TLS) Protocol Version 1.2</title>
 
@@ -6729,11 +6526,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>5246</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>idea</vocab>
   </keyword>
@@ -6752,8 +6544,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>privacy</vocab>
   </keyword>
-</bibitem><bibitem id="_55c880b2-528a-c59a-78af-4994e74a3ae8" type="standard" schema-version="v1.5.6" anchor="rfc5321">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_93233ddf-f894-75ae-5cf3-3224a0a91500" type="standard" schema-version="v1.5.6" anchor="rfc5321">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Simple Mail Transfer Protocol</title>
 
@@ -6810,16 +6602,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>5321</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>SMTP</vocab>
   </keyword>
-</bibitem><bibitem id="_dbf99f44-7ba5-61ee-65d4-9b5e3f356e22" type="standard" schema-version="v1.5.6" anchor="rfc5322">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_062d7978-d1e6-7cc2-a15e-fea5a27755ed" type="standard" schema-version="v1.5.6" anchor="rfc5322">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Internet Message Format</title>
 
@@ -6875,11 +6662,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 <title>RFC</title>
 
     <number>5322</number>
-  </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
   </series>
   <keyword>
     <vocab>MAIL</vocab>
@@ -6986,8 +6768,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>Received</vocab>
   </keyword>
-</bibitem><bibitem id="_6ea8d9aa-5330-4cdf-978c-c2ad2c2cc085" type="standard" schema-version="v1.5.6" anchor="rfc5764">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_ecc48dca-c749-dd26-3dc2-a8d2b40f8b2e" type="standard" schema-version="v1.5.6" anchor="rfc5764">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Datagram Transport Layer Security (DTLS) Extension to Establish Keys for the Secure Real-time Transport Protocol (SRTP)</title>
 
@@ -7062,19 +6844,14 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>5764</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>secure rtp control protocol</vocab>
   </keyword>
   <keyword>
     <vocab>srtcp</vocab>
   </keyword>
-</bibitem><bibitem id="_3a79d9c6-47dc-9265-ea4f-412db6617feb" type="standard" schema-version="v1.5.6" anchor="rfc6101">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_df043d1a-0680-dc04-2449-2dd7dab224de" type="standard" schema-version="v1.5.6" anchor="rfc6101">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">The Secure Sockets Layer (SSL) Protocol Version 3.0</title>
 
@@ -7142,16 +6919,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>6101</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>Transport layer security</vocab>
   </keyword>
-</bibitem><bibitem id="_9cec8518-1a7f-1b39-65d9-103420436641" type="standard" schema-version="v1.5.6" anchor="rfc6347">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_fa4b7d5e-15f7-9eb2-ad5c-f2784288dd8a" type="standard" schema-version="v1.5.6" anchor="rfc6347">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Datagram Transport Layer Security Version 1.2</title>
 
@@ -7233,19 +7005,14 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>6347</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>dtls</vocab>
   </keyword>
   <keyword>
     <vocab>dtls protocol</vocab>
   </keyword>
-</bibitem><bibitem id="_152943fd-6eff-512a-1573-10034e2ace4d" type="standard" schema-version="v1.5.6" anchor="rfc6716">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_2840176d-5ccc-6aec-014d-b366b928e07e" type="standard" schema-version="v1.5.6" anchor="rfc6716">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Definition of the Opus Audio Codec</title>
 
@@ -7328,11 +7095,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>6716</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>voice</vocab>
   </keyword>
@@ -7345,8 +7107,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
   <keyword>
     <vocab>VOIP</vocab>
   </keyword>
-</bibitem><bibitem id="_894b6e48-62b5-af0a-d2c7-64058e9252e8" type="standard" schema-version="v1.5.6" anchor="rfc768">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_5882954d-3f2e-3abf-d745-d6dd9fe92cbc" type="standard" schema-version="v1.5.6" anchor="rfc768">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">User Datagram Protocol</title>
 
@@ -7398,16 +7160,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>768</number>
   </series>
-  <series type="stream">
-    
-<title>Legacy</title>
-
-  </series>
   <keyword>
     <vocab>UDP</vocab>
   </keyword>
-</bibitem><bibitem id="_1e7056f3-52e4-4702-e0fb-9895d30f285e" type="standard" schema-version="v1.5.6" anchor="rfc7874">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_efdf4c6f-d465-005c-9757-5921139a56cb" type="standard" schema-version="v1.5.6" anchor="rfc7874">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">WebRTC Audio Codec and Processing Requirements</title>
 
@@ -7482,13 +7239,8 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>7874</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
-</bibitem><bibitem id="_6e993876-83dd-bc25-1bc8-df30e813cfcd" type="standard" schema-version="v1.5.6" anchor="rfc793">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_19167135-fefc-c79a-4770-c939eff16014" type="standard" schema-version="v1.5.6" anchor="rfc793">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Transmission Control Protocol</title>
 
@@ -7541,16 +7293,11 @@ This version of the Recommendation includes the accessibility profiles for cogni
 
     <number>793</number>
   </series>
-  <series type="stream">
-    
-<title>Legacy</title>
-
-  </series>
   <keyword>
     <vocab>TCP</vocab>
   </keyword>
-</bibitem><bibitem id="_d380d0e6-0b30-c422-5cec-1d187853ed83" type="standard" schema-version="v1.5.6" anchor="rfc8445">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_2b0b2328-0d6d-0325-c454-4084e4006d25" type="standard" schema-version="v1.5.6" anchor="rfc8445">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Interactive Connectivity Establishment (ICE): A Protocol for Network Address Translator (NAT) Traversal</title>
 
@@ -7634,11 +7381,6 @@ This version of the Recommendation includes the accessibility profiles for cogni
 <title>RFC</title>
 
     <number>8445</number>
-  </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
   </series>
   <keyword>
     <vocab>NAT</vocab>

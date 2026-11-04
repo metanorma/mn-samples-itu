@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Cloud computing - Functional requirements of physical machine</title>
 <docidentifier type="ITU" primary="true">ITU-T Y.3507</docidentifier><docidentifier type="ITU-lang">ITU-T Y.3507-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T Y.3507-E</docidentifier><docnumber>Y.3507</docnumber><date type="published"><on>2018-12-01</on></date><contributor><role type="author"/><organization>
@@ -2182,12 +2182,9 @@
 </td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_7dce0ae4-5390-ba8d-9fed-5fbe43653756" anchor="references" normative="true" obligation="informative">
-<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_2a55e125-01c0-0e8f-bbe7-50aa8654a188" type="standard" schema-version="v1.5.6" anchor="ITU-T_X.1601">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Security framework for cloud computing</title>
-
+</annex><bibliography><references id="_4e44e0fe-2485-8ad3-bba4-40df53d1c8af" anchor="references" normative="true" obligation="informative">
+<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_cc31e957-a33d-8b79-0293-49a3491f7555" type="standard" schema-version="v1.5.6" anchor="ITU-T_X.1601">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Security framework for cloud computing</title>
 
@@ -2249,9 +2246,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Security framework for cloud computing</title>
-
       
 <title language="en" script="Latn" type="main">Security framework for cloud computing</title>
 
@@ -2325,10 +2319,13 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_46fe787d-74ee-b7c9-600b-ab8da44b6c64" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3100">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/13617</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3100-201804-I!Cor1!PDF-E&amp;type=items</uri>
+</bibitem><bibitem id="_e2de7358-6180-ff9d-a13d-cab0d53931d6" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3100">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">Terms and definitions for IMT-2020 network</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/13349</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3100-201709-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T Y.3100</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -2356,14 +2353,14 @@
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.1</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2018</from>
+    <from>2017</from>
     <owner>
       <organization>
         
@@ -2376,10 +2373,8 @@
   </copyright>
   <relation type="hasEdition">
     <bibitem>
-      
-<title language="en" script="Latn">Terms and definitions for IMT-2020 network</title>
-
-      <docidentifier type="ITU" primary="true">Y.3100 (09/2017)</docidentifier>
+      <formattedref>Y.3100 (2017) Cor. 1 (04/2018)</formattedref>
+      <docidentifier type="ITU" primary="true">Y.3100 (2017) Cor. 1 (04/2018)</docidentifier>
     </bibitem>
 
   </relation>
@@ -2538,11 +2533,14 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/13617</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3100-201804-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T Y.3100 (2017)</docidentifier>
+      
+<title language="en" script="Latn" type="main">Terms and definitions for IMT-2020 network</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/13349</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-Y.3100-201709-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T Y.3100 (09/2017)</docidentifier>
       <date type="published">
-        <on>2018-04-25</on>
+        <on>2017-09-13</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -2570,15 +2568,18 @@
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.1</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Corrigendum 1 to Recommendation ITU-T Y.3100 (2018) adds several clarifications, and fixes various errors and inconsistencies.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T Y.3100 describes essential terms and their definitions for IMT-2020 network to provide a general common understanding for ITU-T IMT-2020 related standard documents. It can be used as a guideline for the further development of IMT-2020 related documents. 
+
+The terms defined in this Recommendation will constitute a reference for other ITU-T IMT-2020 related standard documents.
+</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2018</from>
+        <from>2017</from>
         <owner>
           <organization>
             
@@ -2591,10 +2592,8 @@
       </copyright>
       <relation type="hasEdition">
         <bibitem>
-          
-<title language="en" script="Latn">Terms and definitions for IMT-2020 network</title>
-
-          <docidentifier type="ITU" primary="true">Y.3100 (09/2017)</docidentifier>
+          <formattedref>Y.3100 (2017) Cor. 1 (04/2018)</formattedref>
+          <docidentifier type="ITU" primary="true">Y.3100 (2017) Cor. 1 (04/2018)</docidentifier>
         </bibitem>
 
       </relation>
@@ -2760,13 +2759,8 @@
   <place>
     <city>Geneva</city>
   </place>
-
-<title>Recommendation ITU-T Y.3100 (2017), <em>Terms and definitions for IMT‑2020network.</em></title>
-</bibitem><bibitem id="_06f5364b-0b0b-ae28-025f-f523d70f5019" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3500">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Information technology – Cloud computing – Overview and vocabulary</title>
-
+</bibitem><bibitem id="_1f83293c-b776-0087-8abb-5beb85045ab4" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3500">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Information technology – Cloud computing – Overview and vocabulary</title>
 
@@ -2946,9 +2940,6 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Information technology – Cloud computing – Overview and vocabulary</title>
-
       
 <title language="en" script="Latn" type="main">Information technology – Cloud computing – Overview and vocabulary</title>
 
@@ -3143,11 +3134,8 @@ The terms and definitions provided in this Recommendation | International Standa
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e21bafe8-61c2-6604-3ab8-d0969d1646a7" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3510">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Cloud computing infrastructure requirements</title>
-
+</bibitem><bibitem id="_68c58172-9790-a4b0-2fd0-53761cd60740" type="standard" schema-version="v1.5.6" anchor="ITU-T_Y.3510">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Cloud computing infrastructure requirements</title>
 
@@ -3353,9 +3341,6 @@ The terms and definitions provided in this Recommendation | International Standa
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Cloud computing infrastructure requirements</title>
-
       
 <title language="en" script="Latn" type="main">Cloud computing infrastructure requirements</title>
 

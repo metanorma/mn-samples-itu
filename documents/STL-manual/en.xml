@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">ITU-T Software Tool Library 2019 User's Manual</title>
 <docidentifier type="ITU" primary="true">ITU-T G.191 STL-2019 Manual</docidentifier><docidentifier type="ITU-lang">ITU-T G.191 STL-2019 Manual-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T G.191 STL-2019 Manual-E</docidentifier><docnumber>G.191 STL-2019 Manual</docnumber><date type="published"><on>2019-02</on></date><contributor><role type="author"/><organization>
@@ -79,7 +79,7 @@
 
 <p id="_570adffc-77b0-7343-a27d-617edba27a2d">The STL2019 build toolchain is using CMake to generate platform-dependent and tool-dependent build scripts as well as to execute regression tests for each module in the STL. STL2019 modules have been tested on Windows, MacOS and several Linux flavors.</p>
 
-<p id="_6e8e3cdf-e4bf-4e7c-84fa-0f68c944adb0">Terms and conditions on the usage of the ITU-T STL are found in Recommendation ITU-T G.191 <eref type="inline" bibitemid="G.191" citeas="[2]"/>.</p>
+<p id="_6e8e3cdf-e4bf-4e7c-84fa-0f68c944adb0">Terms and conditions on the usage of the ITU-T STL are found in Recommendation ITU-T G.191 <eref type="inline" bibitemid="G.191" citeas="[3]"/>.</p>
 
 <p id="_b6ba21cc-91ce-891f-7e01-48138d1fc980">The remaining chapters of this document describe the principles that guided the generation of the ITU-T STL, as well as the description of its organization. The various tools are described in separate chapters. These descriptions have the following general outline:</p>
 
@@ -1207,13 +1207,13 @@ void main()
 </clause>
 </clause>
 
-<clause id="_fee49a2f-50c0-21dc-85c8-587a2b2b4f1f" inline-header="false" obligation="normative">
+<clause id="_7efddfbc-5203-47bc-4bc0-d6bbb38f9d9d" inline-header="false" obligation="normative">
 <title id="_bcf0d046-57fe-b720-0016-8c5075674aa3">G.711: The ITU-T 64 kbit/s log-PCM algorithm</title>
 <p id="_c165b7e8-7a42-e118-6990-876f5e5257dc">In the early 1960's an interest was expressed in encoding the analog signals in telephone networks, mainly to reduce costs in switching and multiplexing equipments and to allow the integration of communication and computing, increasing the efficiency in operation and maintenance <eref type="inline" bibitemid="Qual-meas-tel-sys" citeas="[51]"/>.</p>
 
-<p id="_fcf19f5d-3878-fce9-59a2-f6da7df3d48e">In 1972, the then CCITT published the Recommendation ITU-T G.711 that constitutes the principal reference as far as transmission systems are concerned <eref type="inline" bibitemid="G.711" citeas="[4]"/>. The basic principle of the algorithm is to code speech using 8 bits per sample, the input voiceband signal being sampled at 8 kHz, keeping the telephony bandwidth of 300—​3400 Hz. With this combination, each voice channel requires 64 kbit/s.</p>
+<p id="_fcf19f5d-3878-fce9-59a2-f6da7df3d48e">In 1972, the then CCITT published the Recommendation ITU-T G.711 that constitutes the principal reference as far as transmission systems are concerned <eref type="inline" bibitemid="G.711" citeas="[5]"/>. The basic principle of the algorithm is to code speech using 8 bits per sample, the input voiceband signal being sampled at 8 kHz, keeping the telephony bandwidth of 300—​3400 Hz. With this combination, each voice channel requires 64 kbit/s.</p>
 
-<clause id="_258660bd-b85a-8333-34ec-f32595a9ca9d" inline-header="false" obligation="normative">
+<clause id="_b35ec186-8876-59e9-9fc6-7f52065dfdc4" inline-header="false" obligation="normative">
 <title id="_5ec12bb9-182a-e312-5dd8-15ef744a8585">Description of the algorithm</title>
 <p id="_505db946-540a-9443-cb71-f1225f7dc16b">The idea behind the digitalization of the network involved a compromise: use as far as possible the existing infrastructure; this imposes a bandwidth limitation for the bit-streams of coded signals. A rate of 64 kbit/s was found to be reasonable.</p>
 
@@ -1225,7 +1225,7 @@ void main()
   </mstyle>
 </math><asciimath>mu</asciimath></stem> law compression characteristic:</p>
 
-<formula id="_a4a7fa30-588f-975f-c9ad-b67531e09fb2" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<formula id="_2a38c548-0cb1-277e-575e-03c2c239a76c" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
     <mi>c</mi>
     <mrow>
@@ -1252,10 +1252,10 @@ void main()
             <mo>+</mo>
             <mi>μ</mi>
             <mo>|</mo>
-            <mo>:</mo>
+            </mrow>
             <mi>x</mi>
             <mo>|</mo>
-            <mo>:</mo>
+            </mrow>
             <mtext>/</mtext>
             <msub>
               <mi>x</mi>
@@ -1266,8 +1266,8 @@ void main()
             </msub>
             <mo>)</mo>
           </mrow>
-        </mrow>
-      </mrow>
+        </mfrac>
+      </mstyle>
       <mrow>
         <mo rspace="thickmathspace"/>
         <mrow>
@@ -1281,7 +1281,7 @@ void main()
           </mrow>
         </mrow>
       </mrow>
-    </mfrac>
+    </math>
     <mi>s</mi>
     <mi>g</mi>
     <mi>n</mi>
@@ -1290,12 +1290,11 @@ void main()
       <mi>x</mi>
       <mo>)</mo>
     </mrow>
-  </mstyle>
-</math><asciimath>c(x) = x_(max) (ln(1+mu:|:x:|:text(/)x_(max)))/(ln(1+mu))sgn(x)</asciimath></stem></formula>
+  </stem></formula>
 
 <p id="_ba710928-6569-bda9-fdc1-475de1f243a1">and the other using the A law compression characteristic:</p>
 
-<formula id="_69a182c9-4849-61d0-b834-a92489e2ed01" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<formula id="_37173640-57bb-cef1-a290-a288d327d907" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
     <mi>c</mi>
     <mrow>
@@ -1313,10 +1312,10 @@ void main()
               <mrow>
                 <mi>A</mi>
                 <mo>|</mo>
-                <mo>:</mo>
+                </mrow>
                 <mi>x</mi>
                 <mo>|</mo>
-              </mrow>
+              </mfrac>
               <mrow>
                 <mn>1</mn>
                 <mo>+</mo>
@@ -1332,7 +1331,7 @@ void main()
                   </mrow>
                 </mrow>
               </mrow>
-            </mfrac>
+            </mtd>
             <mi>s</mi>
             <mi>g</mi>
             <mi>n</mi>
@@ -1341,7 +1340,7 @@ void main()
               <mi>x</mi>
               <mo>)</mo>
             </mrow>
-          </mtd>
+          </mtr>
           <mtd>
             <mtext>for</mtext>
           </mtd>
@@ -1351,10 +1350,10 @@ void main()
             <mfrac>
               <mrow>
                 <mo>|</mo>
-                <mo>:</mo>
+                </mrow>
                 <mi>x</mi>
                 <mo>|</mo>
-              </mrow>
+              </mfrac>
               <msub>
                 <mi>x</mi>
                 <mrow>
@@ -1362,14 +1361,14 @@ void main()
                   <mi>max</mi>
                 </mrow>
               </msub>
-            </mfrac>
+            </mtd>
             <mo>≤</mo>
             <mfrac>
               <mn>1</mn>
               <mi>A</mi>
             </mfrac>
-          </mtd>
-        </mtr>
+          </mtable>
+        </mrow>
         <mtr>
           <mtd>
             <msub>
@@ -1391,10 +1390,10 @@ void main()
                       <mo>(</mo>
                       <mi>A</mi>
                       <mo>|</mo>
-                      <mo>:</mo>
+                      </mrow>
                       <mi>x</mi>
                       <mo>|</mo>
-                      <mo>:</mo>
+                      </mrow>
                       <mtext>/</mtext>
                       <msub>
                         <mi>x</mi>
@@ -1406,8 +1405,8 @@ void main()
                       <mo>)</mo>
                     </mrow>
                   </mrow>
-                </mrow>
-              </mrow>
+                </mfrac>
+              </mtd>
               <mrow>
                 <mn>1</mn>
                 <mo>+</mo>
@@ -1423,7 +1422,7 @@ void main()
                   </mrow>
                 </mrow>
               </mrow>
-            </mfrac>
+            </mtr>
             <mi>s</mi>
             <mi>g</mi>
             <mi>n</mi>
@@ -1432,7 +1431,7 @@ void main()
               <mi>x</mi>
               <mo>)</mo>
             </mrow>
-          </mtd>
+          </mstyle>
           <mtd>
             <mtext>for</mtext>
           </mtd>
@@ -1445,10 +1444,10 @@ void main()
             <mfrac>
               <mrow>
                 <mo>|</mo>
-                <mo>:</mo>
+                </mrow>
                 <mi>x</mi>
                 <mo>|</mo>
-              </mrow>
+              </mfrac>
               <msub>
                 <mi>x</mi>
                 <mrow>
@@ -1456,16 +1455,11 @@ void main()
                   <mi>max</mi>
                 </mrow>
               </msub>
-            </mfrac>
+            </mtd>
             <mo>≤</mo>
             <mn>1</mn>
-          </mtd>
-        </mtr>
-      </mtable>
-      <mo/>
-    </mrow>
-  </mstyle>
-</math><asciimath>c(x)={((A:|:x:|:)/(1+ln(A))sgn(x),text(for),0&lt;=( :|:x:|:)/x_(max)&lt;=1/A),(x_(max)(1+ln(A :|:x:|:text(/)x_(max)))/(1+ln(A))sgn(x),text(for),1/A&lt;=( :|:x:|:)/x_(max)&lt;=1):}</asciimath></stem></formula>
+          </math>
+        </stem></formula>
 
 <p id="_f37d3bea-5599-bf4a-fcbc-0ca83613923b">Both characteristics behave as linear for small amplitude signals (being then equivalent to a linear quantization scheme), but are truly logarithmic for large signals. In fact, for large signals the SNR is:</p>
 
@@ -1641,7 +1635,7 @@ void main()
 <title id="_b610ea16-29ff-3ce2-5c17-7abb99a4b857">Implementation</title>
 <p id="_fe930165-e9c3-6cc7-e891-bcf38468743c">This implementation of the G.711 can be found in the module <tt>g711.c</tt>, with prototypes in <tt>g711.h</tt>.</p>
 
-<p id="_280a3d1e-d7a1-a780-a086-30ead76ed0ff">For the reason explained before, an algorithmic approach to the G.711 was followed. For the compression routines, first the samples are converted from two's complement to signed magnitude notation<fn id="_eacd11d1-127c-9e46-f072-11e33b0c06ab" reference="5"><p id="_c8903f8d-505c-f99e-375b-311746837e46">Using the samples as two's complement in the compression algorithm is a very common error whose effects are only noticeable for small amplitude signals. Our approach agrees to the one in G.726 <eref type="inline" bibitemid="G.726" citeas="[8]"/>, block <em>compress</em>.</p>
+<p id="_280a3d1e-d7a1-a780-a086-30ead76ed0ff">For the reason explained before, an algorithmic approach to the G.711 was followed. For the compression routines, first the samples are converted from two's complement to signed magnitude notation<fn id="_eacd11d1-127c-9e46-f072-11e33b0c06ab" reference="5"><p id="_c8903f8d-505c-f99e-375b-311746837e46">Using the samples as two's complement in the compression algorithm is a very common error whose effects are only noticeable for small amplitude signals. Our approach agrees to the one in G.726 <eref type="inline" bibitemid="G.726" citeas="[9]"/>, block <em>compress</em>.</p>
 </fn>. So, a segment classification is done, and then the linear quantization of a certain number of bits of the input sample, that depends on the segment number (e.g., for A law, segment 1 uses a factor of 2:1, 2 a 4:1, etc.) is carried out. Finally, the sign of the sample is added. The expansion routines are even simpler: find the sign, get the mantissa and the exponent, and compute the linear sample.</p>
 
 <p id="_a09ebb35-011d-5cfe-7158-73f13b3093fc">One important point here is that, following UGST Guidelines, linear input samples must be left-justified <tt>short</tt>s. With this approach, the knowledge of the 0 dB reference for the file is simplified, and the need of having to apply different normalization factors to files if they are to be coded by A or <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1683,7 +1677,7 @@ void main()
   </mstyle>
 </math><asciimath>Atext(/)mu</asciimath></stem> law is the same, therefore one factor is sufficient.</p>
 
-<p id="_aa87d070-dc44-bfb6-405c-2a8682483c16">Compliance tests to this code have been done using a ramp file having the full excursion of the dynamic range for each of the laws, and examining the compressed and expanded samples against the values expected in tables 1a, 1b, 2a, and 2b of Recommendation ITU-T G.711 (see <eref type="inline" bibitemid="G.711" citeas="[4]"/>). Another test done exploits the synchronous property of the G.711 scheme. Only samples from column 7 of G.711 tables 1 and 2 were used. These values are transparent to quantization. Hence, if the coding was done properly, output samples should match exactly the original ones.</p>
+<p id="_aa87d070-dc44-bfb6-405c-2a8682483c16">Compliance tests to this code have been done using a ramp file having the full excursion of the dynamic range for each of the laws, and examining the compressed and expanded samples against the values expected in tables 1a, 1b, 2a, and 2b of Recommendation ITU-T G.711 (see <eref type="inline" bibitemid="G.711" citeas="[5]"/>). Another test done exploits the synchronous property of the G.711 scheme. Only samples from column 7 of G.711 tables 1 and 2 were used. These values are transparent to quantization. Hence, if the coding was done properly, output samples should match exactly the original ones.</p>
 
 <p id="_0b345750-0f4f-2441-9946-449b491a0b16">The compression functions are <tt>alaw_compress</tt> and <tt>ulaw_compress</tt>, and the expansion functions are <tt>alaw_expand</tt> and <tt>ulaw_expand</tt>. In the next part you find a summary of calls to these functions.</p>
 
@@ -2116,7 +2110,7 @@ int main(int argc, char *argv[]) {
 
 <p id="_40b34a61-f763-c46a-67d5-3c23c0592966">In the Study Period of 1989—​1992, these two Recommendations have been joined into a single one, keeping full compatibility with the former ones, and adding a lower rate of 16 kbit/s. This new Recommendation was named ITU-T G.726, and the former ITU-T G.721 and G.723 have been replaced.</p>
 
-<p id="_b187ad72-6d6d-9ed0-9ff8-9788fa7c0bf3">The current version of the STL includes a G.726 implementation. In the section to follow, the operation of the G.726 algorithm is described only for the 32 kbit/s bit rate. A complete description of the G.726 algorithm can be found in <eref type="inline" bibitemid="G.726" citeas="[8]"/>. Other analyses of the algorithm, besides some based on the Red Book version, can be found in several studies <eref type="inline" bibitemid="ADPCM-theor" citeas="[89]"/>, <eref type="inline" bibitemid="ADPCM-over" citeas="[97]"/>, <eref type="inline" bibitemid="ADPCM-Tech-Report" citeas="[26]"/>.</p>
+<p id="_b187ad72-6d6d-9ed0-9ff8-9788fa7c0bf3">The current version of the STL includes a G.726 implementation. In the section to follow, the operation of the G.726 algorithm is described only for the 32 kbit/s bit rate. A complete description of the G.726 algorithm can be found in <eref type="inline" bibitemid="G.726" citeas="[9]"/>. Other analyses of the algorithm, besides some based on the Red Book version, can be found in several studies <eref type="inline" bibitemid="ADPCM-theor" citeas="[89]"/>, <eref type="inline" bibitemid="ADPCM-over" citeas="[97]"/>, <eref type="inline" bibitemid="ADPCM-Tech-Report" citeas="[26]"/>.</p>
 
 <p id="_3a5f85bc-308c-7149-0dd6-98ef8020959e">Despite the change in numbering, the ITU-T ADPCM algorithm for speech coding at 32 kbit/s, the term "G.721 algorithm" has been retained for simplicity of the text, although a more formal reference should be <em>"G.726 at 32 kbit/s"</em>.</p>
 
@@ -2186,7 +2180,7 @@ int main(int argc, char *argv[]) {
 </li>
 </ul>
 
-<p id="_c37e1ce4-bfb0-7a83-812f-bb9f7cea074b">These and others have already been considered in the design of the G.721, and many blocks of the algorithm are made to assure a good behaviour. For example, one possibility in this backward approach for adaptation is to have encoder and decoder starting from the same point, which is accomplished by reseting key variables to a known state (useful for implementation verification). Leak factors have been introduced to ensure that the algorithm will always converge, independently of the initial state. To avoid instabilities, some parameters had their range limited. To provide some insight in the building blocks of the G.721 algorithm, a short description of each of them is given <eref type="inline" bibitemid="G.726" citeas="[8]"/>, <eref type="inline" bibitemid="ADPCM-over" citeas="[97]"/>.</p>
+<p id="_c37e1ce4-bfb0-7a83-812f-bb9f7cea074b">These and others have already been considered in the design of the G.721, and many blocks of the algorithm are made to assure a good behaviour. For example, one possibility in this backward approach for adaptation is to have encoder and decoder starting from the same point, which is accomplished by reseting key variables to a known state (useful for implementation verification). Leak factors have been introduced to ensure that the algorithm will always converge, independently of the initial state. To avoid instabilities, some parameters had their range limited. To provide some insight in the building blocks of the G.721 algorithm, a short description of each of them is given <eref type="inline" bibitemid="G.726" citeas="[9]"/>, <eref type="inline" bibitemid="ADPCM-over" citeas="[97]"/>.</p>
 
 <clause id="_6f602a3d-cab6-8ad7-c16a-4ba5b930b49b" inline-header="false" obligation="normative">
 <title id="_93b86fab-1dd9-c8f7-4c14-d29412f2487f">PCM format conversion</title>
@@ -2203,7 +2197,7 @@ int main(int argc, char *argv[]) {
   <mstyle displaystyle="false">
     <mi>μ</mi>
   </mstyle>
-</math><asciimath>mu</asciimath></stem>-law format, must be converted into linear samples. This expansion is accomplished using the same algorithm in G.711 <eref type="inline" bibitemid="G.711" citeas="[4]"/>, but converting from signed magnitude to 14-bit two's complement samples.</p>
+</math><asciimath>mu</asciimath></stem>-law format, must be converted into linear samples. This expansion is accomplished using the same algorithm in G.711 <eref type="inline" bibitemid="G.711" citeas="[5]"/>, but converting from signed magnitude to 14-bit two's complement samples.</p>
 </clause>
 
 <clause id="_d1f88801-ece7-1897-3a1a-1b6869c43523" inline-header="false" obligation="normative">
@@ -2791,7 +2785,7 @@ is in the range [<stem block="false" type="MathML"><math xmlns="http://www.w3.or
 
 <clause id="_fba35874-a62c-49a2-6c3e-d02fd295d712" inline-header="false" obligation="normative">
 <title id="_33f1116a-efa3-6103-7f4f-c7d782550f98">Extension for linear input and output signals</title>
-<p id="_d8e0b05b-ddc4-84df-8bf2-cd73275633b6">An extension of the G.726 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <eref type="inline" bibitemid="G726-LinearIO" citeas="[9]"/>.</p>
+<p id="_d8e0b05b-ddc4-84df-8bf2-cd73275633b6">An extension of the G.726 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <eref type="inline" bibitemid="G726-LinearIO" citeas="[10]"/>.</p>
 
 <p id="_033302f7-dd39-3e07-c349-4154b9920521">This extension bypasses the PCM format conversion block for linear input signals, and both the Output PCM Format Conversion and the Synchronous Coding Adjustment blocks, for linear output signals. These linear versions of the input and output signals are 14-bit, 2's complement samples.</p>
 
@@ -3072,7 +3066,7 @@ void G726 decode (short _*inp_buf_, short _*out_buf_, long _smpno_, char
   </mstyle>
 </math><asciimath>mu</asciimath></stem>-law format (as generated by <tt>g711demo.c</tt>) and encodes and/or decodes using one of the G.726 bit rates (16, 24, 32, or 40 kbit/s). Linear PCM files are not accepted by the program. Three operations are possible: logarithmic in, logarithmic out (<em>lolo</em>) logarithmic in, ADPCM out (<em>load</em>), or ADPCM in, logarithmic out (<em>adlo</em>).</p>
 
-<p id="_dc00ca37-5c0c-1b6a-5360-f1abeb2da71b">Program <tt>vbr-g726.c</tt> can perform the same functions as <tt>g726demo.c</tt>, however it is capable of two additional features. It can perform in variable bit rate mode, which is switched at user-specified frame sizes (i.e. number of samples), and it can operate from 16-bit linear PCM input files. In the latter case, A-law is used to compand the linear signal prior to G.726 encoding, since G.726 Annex A <eref type="inline" bibitemid="G726-LinearIO" citeas="[9]"/> is not yet implemented in the STL.</p>
+<p id="_dc00ca37-5c0c-1b6a-5360-f1abeb2da71b">Program <tt>vbr-g726.c</tt> can perform the same functions as <tt>g726demo.c</tt>, however it is capable of two additional features. It can perform in variable bit rate mode, which is switched at user-specified frame sizes (i.e. number of samples), and it can operate from 16-bit linear PCM input files. In the latter case, A-law is used to compand the linear signal prior to G.726 encoding, since G.726 Annex A <eref type="inline" bibitemid="G726-LinearIO" citeas="[10]"/> is not yet implemented in the STL.</p>
 </clause>
 
 <clause id="_ae46ce9b-18a5-13b1-dd6a-8fa303a80f39" inline-header="false" obligation="normative">
@@ -3140,11 +3134,11 @@ void main(argc, argv)
 <title id="_0ca022e5-170f-e13e-0aba-8809981d805c">G.727: The ITU-T embedded ADPCM algorithm at 40, 32, 24, and 16 kbit/s</title>
 <clause id="_079d12e9-099c-6ebc-8bf0-ae6fa5ac70c6" inline-header="false" obligation="normative">
 <title id="_bf3f20f4-93c6-bee6-158e-66b5e4b449f3">Description of the Embedded ADPCM</title>
-<p id="_9d1cf7aa-481f-66d3-f17c-a038b1acf3d1">The G.727 algorithm is specified in Recommendation ITU-T G.727 <eref type="inline" bibitemid="G.727" citeas="[10]"/> with the block diagram shown in <xref target="fig-G727"/>, and will not be further described here. Additional information can be found in <eref type="inline" bibitemid="ADPCM-Tech-Report" citeas="[26]"/>, where a thorough comparison is made between different ADPCM schemes, including G.726 and G.727. Details on the linear interface for the G.727 algorithm are found in G.727 Annex A <eref type="inline" bibitemid="G727-LinearIO" citeas="[11]"/>.</p>
+<p id="_9d1cf7aa-481f-66d3-f17c-a038b1acf3d1">The G.727 algorithm is specified in Recommendation ITU-T G.727 <eref type="inline" bibitemid="G.727" citeas="[11]"/> with the block diagram shown in <xref target="fig-G727"/>, and will not be further described here. Additional information can be found in <eref type="inline" bibitemid="ADPCM-Tech-Report" citeas="[26]"/>, where a thorough comparison is made between different ADPCM schemes, including G.726 and G.727. Details on the linear interface for the G.727 algorithm are found in G.727 Annex A <eref type="inline" bibitemid="G727-LinearIO" citeas="[12]"/>.</p>
 
 <clause id="_69430958-9640-d6f2-a15a-49d823b2ef7c" inline-header="false" obligation="normative">
 <title id="_efdccbd3-1e24-e655-d597-70ca5ca4bf00">Extension for linear input and output signals</title>
-<p id="_2ff44bba-9e29-cd17-79a4-455b6160a453">An extension of the G.727 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <eref type="inline" bibitemid="G727-LinearIO" citeas="[11]"/>.</p>
+<p id="_2ff44bba-9e29-cd17-79a4-455b6160a453">An extension of the G.727 algorithm was carried out in 1994 to include, as an option, linear input and output signals. The specification for such linear interface is given in its Annex A <eref type="inline" bibitemid="G727-LinearIO" citeas="[12]"/>.</p>
 
 <p id="_35eff101-35a9-a921-5827-ef253fa5bb05">This extension bypasses the PCM format conversion block for linear input signals, and both the Output PCM Format Conversion and the Synchronous Coding Adjustment blocks, for linear output signals. These linear versions of the input and output signals are 14-bit, 2's complement samples.</p>
 
@@ -3360,7 +3354,7 @@ void G727_decode (short _*src_, short _*dst_, short _smpno_, short _law_,
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>16 xx (N_c+N_e)</asciimath></stem> kbit/s. Linear PCM files are not accepted by the program, since G.727 Annex A <eref type="inline" bibitemid="G727-LinearIO" citeas="[11]"/> is not yet implemented in the STL. Three operations are possible: logarithmic in, logarithmic out (default) logarithmic in, ADPCM out (option <em>-enc</em>), or ADPCM in, logarithmic out (option <em>-dec</em>).</p>
+</math><asciimath>16 xx (N_c+N_e)</asciimath></stem> kbit/s. Linear PCM files are not accepted by the program, since G.727 Annex A <eref type="inline" bibitemid="G727-LinearIO" citeas="[12]"/> is not yet implemented in the STL. Three operations are possible: logarithmic in, logarithmic out (default) logarithmic in, ADPCM out (option <em>-enc</em>), or ADPCM in, logarithmic out (option <em>-dec</em>).</p>
 </clause>
 
 <clause id="_da64d7be-4eed-1bc3-3af5-8b5f9802d700" inline-header="false" obligation="normative">
@@ -3425,16 +3419,16 @@ void main(argc, argv)
 </clause>
 </clause>
 
-<clause id="_d5405156-1f15-1bf5-fc68-348da371e83d" inline-header="false" obligation="normative">
+<clause id="_8cdd8d83-e028-ee1c-0c91-5fb927aacaa6" inline-header="false" obligation="normative">
 <title id="_62aa668d-04a4-c61c-12c8-6f72055d9d9d">G.728: The ITU-T low-delay CELP algorithm at 16 kbit/s</title>
-<note id="_00c7bbc1-ac73-59d8-c683-813cbe85eaf5"><p id="_01bb85a3-c657-18b4-142b-1a8285a9c640">The following description is only applicable to the basic G.728 operating mode, 16 kbit/s, both in floating-point (i.e. G.728 main body <eref type="inline" bibitemid="G.728" citeas="[12]"/>) and in fixed-point implementation (i.e. G.728 Annex G <eref type="inline" bibitemid="G.728G" citeas="[13]"/>). The packet loss concealment for the LD-CELP decoder (G.728 Annex I <eref type="inline" bibitemid="G.728I" citeas="[14]"/>) is also described. The other bitrate extensions (G.728 Annexes H and J) are not part of this description.</p>
+<note id="_00c7bbc1-ac73-59d8-c683-813cbe85eaf5"><p id="_01bb85a3-c657-18b4-142b-1a8285a9c640">The following description is only applicable to the basic G.728 operating mode, 16 kbit/s, both in floating-point (i.e. G.728 main body <eref type="inline" bibitemid="G.728" citeas="[13]"/>) and in fixed-point implementation (i.e. G.728 Annex G <eref type="inline" bibitemid="G.728G" citeas="[14]"/>). The packet loss concealment for the LD-CELP decoder (G.728 Annex I <eref type="inline" bibitemid="G.728I" citeas="[15]"/>) is also described. The other bitrate extensions (G.728 Annexes H and J) are not part of this description.</p>
 </note>
 
 <p id="_46e5fb51-5967-7a23-6ac6-9e556503eb10">CCITT, the predecessor of ITU-T, started an effort in 1985 to define a successor to then advanced ADPCM coding at 32 kbit/s. Due to the ample spectrum of its potential applications, extremely demanding requirements were defined for its performance <eref type="inline" bibitemid="Q21-ROs" citeas="[28]"/>, which required quality at least the same as that of G.721 (later superseded by G.726 operating at 32 kbit/s) for one encoding, and a one-way delay under 5 ms (but preferably under 2 ms), to avoid the need of echo cancelers.</p>
 
 <p id="_35fd5f9a-b034-4b28-829b-7e8bce15e905">The process to identify the performance requirements and objectives (usually referred to as "Terms of Reference", or ToR) for the 16 kbit/s speech coder started in 1985 and lasted until about 1990. The process to identify suitable algorithms and their tests, after the creation of a group of experts in June 1988, started in March 1989, with two potential candidates: one from BNR (Canada) <eref type="inline" bibitemid="BNR-coder" citeas="[29]"/> and another from AT&amp;T (USA) <eref type="inline" bibitemid="LD-CELP-1" citeas="[30]"/>. In 1989, BNR withdrew <eref type="inline" bibitemid="BNR-Letter" citeas="[31]"/> its candidate, however another candidate appeared from the Consortium between a company called VoiceCraft (USA), University of California at Santa Barbara (USA) and Simon Fraser University (Canada), which would also soon withdraw <eref type="inline" bibitemid="Consort-Letter" citeas="[32]"/>, <eref type="inline" bibitemid="LD-VCX-HLD" citeas="[33]"/>, <eref type="inline" bibitemid="LD-VCX" citeas="[34]"/>, <eref type="inline" bibitemid="LD-VCX2" citeas="[35]"/>. This way, AT&amp;T continued as the only candidate algorithm proponent in the CCITT standardization process.</p>
 
-<p id="_96b6d665-05ba-25f3-67db-5af4b2bdecdb">Its algorithm, the LD-CELP <em>(Low-Delay Code-Excited Linear Prediction)</em>, underwent two testing phases (Phase 1 in 1989-1990 and Phase 2 in 1992) that were organized by volunteers from eight organizations <eref type="inline" bibitemid="Q026" citeas="[36]"/>. After tests ensuring that it met all performance requirements, the LD-CELP algorithm was approved and published as ITU-T Rec. G.728 <eref type="inline" bibitemid="G.728" citeas="[12]"/>. Its simplified block diagram is found in <xref target="fig-G728"/>.</p>
+<p id="_96b6d665-05ba-25f3-67db-5af4b2bdecdb">Its algorithm, the LD-CELP <em>(Low-Delay Code-Excited Linear Prediction)</em>, underwent two testing phases (Phase 1 in 1989-1990 and Phase 2 in 1992) that were organized by volunteers from eight organizations <eref type="inline" bibitemid="Q026" citeas="[36]"/>. After tests ensuring that it met all performance requirements, the LD-CELP algorithm was approved and published as ITU-T Rec. G.728 <eref type="inline" bibitemid="G.728" citeas="[13]"/>. Its simplified block diagram is found in <xref target="fig-G728"/>.</p>
 
 <figure id="_c85d902c-b556-b7e3-659e-7167b186f2bd" anchor="fig-G728">
 <name id="_479f3918-8260-8cfc-c867-c0b87fe6f0ea">Simplified LD-CELP block diagram</name>
@@ -3447,7 +3441,7 @@ void main(argc, argv)
 <image id="_227b691a-2e77-888a-bfb5-3e32577b3eab" src="data:image/png;base64,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" mimetype="image/png" height="auto" width="auto" filename="images/image7-1b.png"/></figure>
 </figure>
 
-<clause id="_3be1c2c3-188f-6a6d-b91a-358a7b50f91c" inline-header="false" obligation="normative">
+<clause id="_4e86f00b-e997-5431-eacc-6dcc4332f658" inline-header="false" obligation="normative">
 <title id="_aae66073-894d-fb37-250b-be89ce6d05e3">General overview</title>
 <clause id="_b301ea1f-5f7f-7dcd-fc2b-9193c5c97caf" inline-header="false" obligation="normative">
 <title id="_bf57c066-3084-aaa0-d105-4b227dc6aaae">General characteristics</title>
@@ -3509,7 +3503,7 @@ void main(argc, argv)
 
 <p id="_27760e57-3383-7196-43fe-ae827e46eebe">Normally, a Hamming window is used, but this is not appropriate for LD-CELP. The LD-CELP analysis block has only 5 samples, compared to the conventional 160 to 256 samples normally used. Hence, using a Hamming window would imply a significant overlap of windows across frames and a high computational complexity <eref type="inline" bibitemid="LD-CELP-FixedPt" citeas="[41]"/>. It was noticed that in the backward adaptation context of LD-CELP, the Barnwell recursive windowing technique <eref type="inline" bibitemid="RecursWind" citeas="[42]"/> gave higher prediction gains than the Hamming windowing, in addition to a higher subjective quality for the processed speech. For this reason, the LD-CELP version tested in Phase 1 of subjective assessments used a modified adaptive windowing <eref type="inline" bibitemid="LD-CELP-Phase2" citeas="[43]"/>, <eref type="inline" bibitemid="LD-CELP-RecurWind" citeas="[44]"/>. This way, it was possible to obtain a better quality, a more balanced computational load and a lower complexity for frequent predictor updates <eref type="inline" bibitemid="LD-CELP-Phase1" citeas="[45]"/>.</p>
 
-<p id="_1ebb0bed-1f30-3198-927c-1e7228e5b7e7">However, aiming at a future fixed-point implementation with minimal changes compared to the floating-point version (since interoperability was a requirement), a hybrid windowing technique was developed <eref type="inline" bibitemid="LD-CELP-FixedPt" citeas="[41]"/>, <eref type="inline" bibitemid="G.728" citeas="[12]"/>, with results equivalent to those of the Barnwell version<fn id="_3771cc18-0009-a92f-300c-c02eeba5f4d7" reference="14"><p id="_59acbaba-c720-b836-89be-3561cb5e3170">The prediction gain loss was below 0.1 dBm, a very small value.</p>
+<p id="_1ebb0bed-1f30-3198-927c-1e7228e5b7e7">However, aiming at a future fixed-point implementation with minimal changes compared to the floating-point version (since interoperability was a requirement), a hybrid windowing technique was developed <eref type="inline" bibitemid="LD-CELP-FixedPt" citeas="[41]"/>, <eref type="inline" bibitemid="G.728" citeas="[13]"/>, with results equivalent to those of the Barnwell version<fn id="_3771cc18-0009-a92f-300c-c02eeba5f4d7" reference="14"><p id="_59acbaba-c720-b836-89be-3561cb5e3170">The prediction gain loss was below 0.1 dBm, a very small value.</p>
 </fn>. This was implemented in the version tested in Phase 2 of testings and today is present in G.728 (see <xref target="fig-hybwin"/>). With it, it was possible to keep the same quality (since the shape of both the hybrid and recursive windows is the same) while reducing the computational complexity between 20% and 30%. The objective was to reduce the complexity by mixing a recursive portion using the Barnwell technique with a non-recursive one, however maintaining the overall shape of the Barnwell window. The windowing was implemented such that the <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>m</mi>
@@ -3520,7 +3514,7 @@ void main(argc, argv)
   </mstyle>
 </math><asciimath>m</asciimath></stem>-th sample are considering in the recursive portion of the window. This window has a characteristic that non-recursive part has a sinusoidal shape and the recursive part has a decaying exponential (so as to lessen the influence of older past samples).</p>
 
-<p id="_2ab58137-1ff7-67aa-743c-644f1200e5f9">In terms of equations <eref type="inline" bibitemid="G.728" citeas="[12]"/>, <eref type="inline" bibitemid="LD-CELP-Phase2" citeas="[43]"/>, the hybrid window
+<p id="_2ab58137-1ff7-67aa-743c-644f1200e5f9">In terms of equations <eref type="inline" bibitemid="G.728" citeas="[13]"/>, <eref type="inline" bibitemid="LD-CELP-Phase2" citeas="[43]"/>, the hybrid window
 <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
@@ -4344,7 +4338,7 @@ void main(argc, argv)
 </math><latexmath>r_m^{\cal R}(i)</latexmath></stem> from the previous adaptation cycle and that the auto-correlation coefficients always have a recursive and a non-recursive portion.</p>
 </clause>
 
-<clause id="_297af55d-30a5-e0fa-c0b7-933c2da2d4f8" inline-header="false" obligation="normative">
+<clause id="_5518a9dc-1abf-7030-96f1-df260d733b2b" inline-header="false" obligation="normative">
 <title id="_f78e3324-3b26-7083-36ff-ab2a12a27509">White noise correction</title>
 <p id="_f6196a43-b61e-0dda-90f5-e3aa3c7a7f63">The use of the auto-correlation method for the calculation of the LPC coefficients has embedded in it the calculation of the inverse of the auto-correlation matrix, even though this is not explicitly made in methods such as the Levinson-Durbin method, where the prediction (and reflection) coefficients are iteratively calculated.</p>
 
@@ -4550,7 +4544,7 @@ void main(argc, argv)
   </mstyle>
 </math><asciimath>n(k)</asciimath></stem> is a white noise, its auto-correlation function is given by:</p>
 
-<formula id="_b9e564e4-d83e-7274-6a96-c03ee1cbeb59" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<formula id="_fc65c58f-8efb-2ee3-6b86-ec08c394e73b" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
     <msub>
       <mi>R</mi>
@@ -4601,11 +4595,11 @@ void main(argc, argv)
       <mo/>
     </mrow>
   </mstyle>
-</math><asciimath>R_n(i)={(1",",if,i=0),(0",",,otherwise):}</asciimath></stem></formula>
+</math>}</stem></formula>
 
 <p id="_1e600dd5-0dce-de02-0acb-2e8ac31a99d4">Consequently:</p>
 
-<formula id="_b0f966c1-d98e-1383-5a23-7c83916879ec" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<formula id="_8b3e2cb2-45ca-6df9-dce9-f557bcb3126f" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
     <mi>R</mi>
     <mrow>
@@ -4671,7 +4665,7 @@ void main(argc, argv)
       <mo/>
     </mrow>
   </mstyle>
-</math><asciimath>R(i)={(R_s(0)+G",",if,i=0),(R_s(i)",",,otherwise):}</asciimath></stem></formula>
+</math>}</stem></formula>
 
 <p id="_8b9fc1b7-dec2-e200-5a3b-ebead5a06a29">This way, it can be seen that it is sufficient to add a certain value <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -5033,7 +5027,7 @@ void main(argc, argv)
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>s(n)</asciimath></stem>, a search is made to find which of the 1024 codevectors generates the lowest (perceptually weighted) average quadratic error. The selected codevector has its index transmitted to the decoder and is fed back to the adaptive part of the encoder (a replica of the decoder inside the encoder), to be used as excitation for the synthesis filter. An efficient search algorithm was selected for the LD-CELP algorithm <eref type="inline" bibitemid="LD-CELP-Phase1-HQLD" citeas="[49]"/>, <eref type="inline" bibitemid="LD-CELP-Phase1-Globecom" citeas="[50]"/>, which is described in detail in the Recommendation <eref type="inline" bibitemid="G.728" citeas="[12]"/>.</p>
+</math><asciimath>s(n)</asciimath></stem>, a search is made to find which of the 1024 codevectors generates the lowest (perceptually weighted) average quadratic error. The selected codevector has its index transmitted to the decoder and is fed back to the adaptive part of the encoder (a replica of the decoder inside the encoder), to be used as excitation for the synthesis filter. An efficient search algorithm was selected for the LD-CELP algorithm <eref type="inline" bibitemid="LD-CELP-Phase1-HQLD" citeas="[49]"/>, <eref type="inline" bibitemid="LD-CELP-Phase1-Globecom" citeas="[50]"/>, which is described in detail in the Recommendation <eref type="inline" bibitemid="G.728" citeas="[13]"/>.</p>
 </clause>
 
 <clause id="_0c47ab02-d180-8aae-4d4e-8073e34e811d" inline-header="false" obligation="normative">
@@ -6079,9 +6073,9 @@ while (fread(s, sizeof(Short), IDIM, speechinf) == IDIM) {
 <title id="_6bfb19a8-dbbc-b9d5-3734-f5417739f4c7">G.722: The ITU-T 64, 56, and 48 kbit/s wideband speech coding algorithm</title>
 <p id="_37784c46-53d4-2d49-0925-d9eaa6b92385">With the emergence of ISDN networks offering digital connectivity at 64 kbit/s between subscribers, the possibility was given to improve the standard telephone quality by increasing the transmitted bandwidth. A bandwidth of 50-7000 Hz corresponding to a sampling of 16 kHz was chosen because it provides a substantial improvement of the quality for applications where the speech is to be heard through high quality loudspeakers e.g. for audio or video conference services, commentary broadcasting, and high quality handsfree phones.</p>
 
-<p id="_09ded063-b4e2-9ab3-42b2-dc4961f36db9">An expert group was created in November 1983 whose mandate was to define a standard for 7 kHz speech coding within 64 kbit/s. After many contributions received from several organisations, it has been decided to choose a coder which combined subband filtering and adaptive differential pulse-code modulation algorithms (SB-ADPCM). The final recommendation was produced in March 1986 and approved in July 1986 by the then CCITT SG XVIII as Recommendation ITU-T G.722 <eref type="inline" bibitemid="G.722" citeas="[6]"/>.</p>
+<p id="_09ded063-b4e2-9ab3-42b2-dc4961f36db9">An expert group was created in November 1983 whose mandate was to define a standard for 7 kHz speech coding within 64 kbit/s. After many contributions received from several organisations, it has been decided to choose a coder which combined subband filtering and adaptive differential pulse-code modulation algorithms (SB-ADPCM). The final recommendation was produced in March 1986 and approved in July 1986 by the then CCITT SG XVIII as Recommendation ITU-T G.722 <eref type="inline" bibitemid="G.722" citeas="[7]"/>.</p>
 
-<p id="_5d6af761-8270-fa16-ec94-5abba920b41c">The full description on the implementation of the G.722 algorithm is found in <eref type="inline" bibitemid="G.722" citeas="[6]"/>, and network aspects related to its operation are found in <eref type="inline" bibitemid="G.725" citeas="[7]"/>. <xref target="fig-G722-systemic"/> summarizes some systemic aspects of the G.722 algorithm. Overview and notes on the development of the G.722 algorithm can be found in several papers <eref type="inline" bibitemid="G722-General" citeas="[54]"/>, <eref type="inline" bibitemid="G722-Overview" citeas="[55]"/>, <eref type="inline" bibitemid="G722-SubjTest" citeas="[56]"/>, <eref type="inline" bibitemid="G722-Implementation" citeas="[57]"/>, <eref type="inline" bibitemid="G722-Modes" citeas="[58]"/>, <eref type="inline" bibitemid="G722-Applications" citeas="[59]"/>. The following description of the G.722 algorithm is based on the text in <eref type="inline" bibitemid="G722-Summary" citeas="[60]"/>.</p>
+<p id="_5d6af761-8270-fa16-ec94-5abba920b41c">The full description on the implementation of the G.722 algorithm is found in <eref type="inline" bibitemid="G.722" citeas="[7]"/>, and network aspects related to its operation are found in <eref type="inline" bibitemid="G.725" citeas="[8]"/>. <xref target="fig-G722-systemic"/> summarizes some systemic aspects of the G.722 algorithm. Overview and notes on the development of the G.722 algorithm can be found in several papers <eref type="inline" bibitemid="G722-General" citeas="[54]"/>, <eref type="inline" bibitemid="G722-Overview" citeas="[55]"/>, <eref type="inline" bibitemid="G722-SubjTest" citeas="[56]"/>, <eref type="inline" bibitemid="G722-Implementation" citeas="[57]"/>, <eref type="inline" bibitemid="G722-Modes" citeas="[58]"/>, <eref type="inline" bibitemid="G722-Applications" citeas="[59]"/>. The following description of the G.722 algorithm is based on the text in <eref type="inline" bibitemid="G722-Summary" citeas="[60]"/>.</p>
 
 <p id="_3fbf03c2-ea82-6b4d-7893-4e234649cbd4">In 2006, upon ETSI DECT request, packet loss concealment (PLC) procedures for G.722 were standardized to ensure a sufficient robustness over the DECT wireless interface. ITU-T G.722 at 64 kbit/s codec is the mandatory coder in ETSI New Generation DECT (NG-DECT) standards (ETSI TS 102 527-1 and -3) <eref type="inline" bibitemid="G722-ETSITS102527-1" citeas="[61]"/>, <eref type="inline" bibitemid="G722-ETSITS102527-3" citeas="[62]"/>. These standards are intended for wideband audio enabled devices to be connected on VoIP networks.</p>
 
@@ -6156,7 +6150,7 @@ while (fread(s, sizeof(Short), IDIM, speechinf) == IDIM) {
 
 <clause id="_158701cd-436f-3269-d3b2-7f1fdd8972ef" inline-header="false" obligation="normative">
 <title id="_66db39e1-c75b-e3ff-9556-3085e4796f9b">Lower subband ADPCM encoder</title>
-<p id="_ae0bfe3d-9789-c7a2-4af5-0f35246cb68d"><xref target="G722-low-encoder"/> gives block diagram of the lower subband ADPCM encoder. To transmit the lower band, the encoder was designed to operate at 6, 5 or 4 bits per sample, corresponding to 48, 40 or 32 kbit/s, respectively. The ADPCM algorithm is very similar to the embedded ADPCM algorithm of Recommendation ITU-T G.727 <eref type="inline" bibitemid="G.727" citeas="[10]"/>. It is an embedded ADPCM with 4 core bits and 2 additional bits. The embedded property was introduced to prevent degradation in speech quality when the encoder and the decoder operate during short intervals in different modes.</p>
+<p id="_ae0bfe3d-9789-c7a2-4af5-0f35246cb68d"><xref target="G722-low-encoder"/> gives block diagram of the lower subband ADPCM encoder. To transmit the lower band, the encoder was designed to operate at 6, 5 or 4 bits per sample, corresponding to 48, 40 or 32 kbit/s, respectively. The ADPCM algorithm is very similar to the embedded ADPCM algorithm of Recommendation ITU-T G.727 <eref type="inline" bibitemid="G.727" citeas="[11]"/>. It is an embedded ADPCM with 4 core bits and 2 additional bits. The embedded property was introduced to prevent degradation in speech quality when the encoder and the decoder operate during short intervals in different modes.</p>
 
 <figure id="_044696fe-ad28-1467-2e05-1e3deb892c14" anchor="G722-low-encoder">
 <name id="_d7ce12e6-3560-81b9-5534-3b0efbc9b11f">Block diagram of the lower subband ADPCM encoder</name>
@@ -6230,7 +6224,7 @@ while (fread(s, sizeof(Short), IDIM, speechinf) == IDIM) {
 
 <clause id="_81d7532e-a8f6-c7b6-0599-6cd005175916" inline-header="false" obligation="normative">
 <title id="_4769c1ee-2fe9-5ce6-815e-f71a9d645cc5">Quantizer adaptation</title>
-<p id="_140a2842-f7df-171c-2be1-cc5662f32e09">In order to maintain a wide dynamic range and minimize complexity, the quantizer scale factor adaptation is performed in the base 2 logarithmic domain. The log-to-linear conversion is accomplished using a lookup table. There is no adaptation of the speed control parameter as in 32 kbit/s ADPCM <eref type="inline" bibitemid="G.726" citeas="[8]"/> because the encoder is designed to transmit more than voiceband data.</p>
+<p id="_140a2842-f7df-171c-2be1-cc5662f32e09">In order to maintain a wide dynamic range and minimize complexity, the quantizer scale factor adaptation is performed in the base 2 logarithmic domain. The log-to-linear conversion is accomplished using a lookup table. There is no adaptation of the speed control parameter as in 32 kbit/s ADPCM <eref type="inline" bibitemid="G.726" citeas="[9]"/> because the encoder is designed to transmit more than voiceband data.</p>
 </clause>
 
 <clause id="_8bb50b0c-4f9d-0c3b-7e31-a6018ca504b9" inline-header="false" obligation="normative">
@@ -6478,7 +6472,7 @@ while (fread(s, sizeof(Short), IDIM, speechinf) == IDIM) {
 <title id="_e535df7d-ae9a-8d72-7aad-b419bf1d0b00">G.192 bit stream format for standalone G.722 encoder and decoder</title>
 <p id="_865e9148-a7e9-6474-d345-4314061bccd2">As described previously, G.722 is an embedded algorithm which supports network scaling of the bitstream in three bitrates: 48, 56 and 64 kbit/s. To support this functionality within the G.192 file format the G.722 encoder writes the 16 kbit/s embedded bits in the end of every G.192 bitstream frame.</p>
 
-<p id="_5b101089-7ae3-956b-90eb-cb10a18ff09f">For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <xref target="fig-G722trame"/>, <xref target="fig-G722trame1"/> and <xref target="fig-G722trame2"/> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <eref type="inline" bibitemid="G.722" citeas="[6]"/> and as used in <eref type="inline" bibitemid="IETFRFC3551" citeas="[22]"/>).</p>
+<p id="_5b101089-7ae3-956b-90eb-cb10a18ff09f">For every 16 kHz sample, there are eight G.722 encoded bits (an octet index) to be transported in the G.192 frame. Bits b1 and b0 are the embedded bits and bits b2-b7 are the non-embedded bits. In a G.192 frame, the b2 bits are written first in chunk, followed by that of b3, until b7 bits. After all b7 bits are written, b1 bits are written and then b0 bits. By sorting bits in this manner, truncation of a G.192 type G.722 frame bitstream from 64 kbit/s to 48 or 56 kbit/s is made easy. <xref target="fig-G722trame"/>, <xref target="fig-G722trame1"/> and <xref target="fig-G722trame2"/> show how the G.192 frames are composed for various bit rates (64, 56, 48 kbit/s) and example frame sizes (10, 5, 20 ms). G.192 format is useful for enhanced simulation of G.722, however actual application transport formats may be different (e.g. as defined in <eref type="inline" bibitemid="G.722" citeas="[7]"/> and as used in <eref type="inline" bibitemid="IETFRFC3551" citeas="[25]"/>).</p>
 
 <figure id="_05579d7d-e9c1-37ce-ad46-82c0ab3db8bb" anchor="fig-G722trame">
 <name id="_e3be5ea6-16bf-e19b-0c34-8f71aaf3dc82">Example of a G.192 compatible G.722 encoder output frame for a 10 ms input frame size. This frame has a length of 640 bits and a G192_SYNC (0x6B21) header tag, in the G.192 file each g722 bit is stored as a 16 bit word.</name>
@@ -7400,11 +7394,11 @@ int main(argc, argv)
 <title id="_f8aa7ecc-3777-fc03-5ad7-1501368c7bb9">Narrowband weighting</title>
 <clause id="_3bf34df3-c192-b96a-6e59-6a4fcdf33889" inline-header="false" obligation="normative">
 <title id="_875a6806-8e13-c6e1-171e-db9eb3c0ebb0">IRS weighting</title>
-<p id="_064b7669-4c8a-fb85-af28-c24188f8007b">The IRS weighting corresponds to a bandpass filtering characteristic whose mask can be found in Recommendation ITU-T P.48 <eref type="inline" bibitemid="P.48" citeas="[17]"/>. The send and receive spectral shapes of the IRS weighting were obtained in a round-robin series of measurements made on a number of analog telephones in the early 1970's <eref type="inline" bibitemid="BNR-ModIRS" citeas="[73]"/>. From these measurements, the average send and receive frequency-response characteristics were derived. However, for the loudness balance purposes for which the IRS was designed, it was also necessary to include a 300-3400 Hz bandpass filter, known as the SRAEN <em>(Système de Référence pour la détermination de l'Affablissement équivalent pour la Netteté; Reference System for determining Articulation Ratings)</em> filter <eref type="inline" bibitemid="P.11" citeas="[15]"/>, <eref type="inline" bibitemid="G.111" citeas="[1]"/>. The values of send and receive sensitivity currently given in ITU-T Rec. P.48 (columns 2 and 3 in <xref target="tbl-IRS"/>) are therefore composed of the average send and receive responses for a number of telephones, as well as the response of the SRAEN filter (see column 4 of <xref target="tbl-IRS"/>).</p>
+<p id="_064b7669-4c8a-fb85-af28-c24188f8007b">The IRS weighting corresponds to a bandpass filtering characteristic whose mask can be found in Recommendation ITU-T P.48 <eref type="inline" bibitemid="P.48" citeas="[18]"/>. The send and receive spectral shapes of the IRS weighting were obtained in a round-robin series of measurements made on a number of analog telephones in the early 1970's <eref type="inline" bibitemid="BNR-ModIRS" citeas="[73]"/>. From these measurements, the average send and receive frequency-response characteristics were derived. However, for the loudness balance purposes for which the IRS was designed, it was also necessary to include a 300-3400 Hz bandpass filter, known as the SRAEN <em>(Système de Référence pour la détermination de l'Affablissement équivalent pour la Netteté; Reference System for determining Articulation Ratings)</em> filter <eref type="inline" bibitemid="P.11" citeas="[16]"/>, <eref type="inline" bibitemid="G.111" citeas="[2]"/>. The values of send and receive sensitivity currently given in ITU-T Rec. P.48 (columns 2 and 3 in <xref target="tbl-IRS"/>) are therefore composed of the average send and receive responses for a number of telephones, as well as the response of the SRAEN filter (see column 4 of <xref target="tbl-IRS"/>).</p>
 
 <p id="_e63d26a2-e10e-6114-c1bf-227530be09a0">Because the P.48 IRS weighting used to be considered to model an average narrow-band telephone handset deployed in the PSTN, the IRS weighting has been chosen to simulate speech signals obtained from a regular handset. Examples of standardization efforts using the P.48 weighting characteristic are the Recommendations ITU-T G.711, G.721, and G.728. This weighting, as defined in P.48, is sometimes called "full-IRS" weighting.</p>
 
-<p id="_35c7e6dd-225d-cd1f-7600-632506c363f6">While the weighting characteristic in P.48 was considered to model connections over analog transmission facilities in the past (although it is not clear why the SRAEN filter should be included in both the send and receive paths), it is no longer representative of connections over modern digital facilities. In particular, the low frequency roll-off gives rise to unnecessary quality degradation. For the purpose of low bit-rate coder evaluation, especially where the coder is located in the telephone handset, a better characteristic can be obtained by modifying the P.48 full-IRS response to remove the SRAEN filter as shown in columns 5 and 6 of <xref target="tbl-IRS"/>. These values are specified in Annex D of ITU-T Recommendation P.830 <eref type="inline" bibitemid="P.830" citeas="[21]"/> and define the so-called "modified" IRS weighting. The modified IRS has been used in the development of Recommendations ITU-T G.723.1 and G.729.</p>
+<p id="_35c7e6dd-225d-cd1f-7600-632506c363f6">While the weighting characteristic in P.48 was considered to model connections over analog transmission facilities in the past (although it is not clear why the SRAEN filter should be included in both the send and receive paths), it is no longer representative of connections over modern digital facilities. In particular, the low frequency roll-off gives rise to unnecessary quality degradation. For the purpose of low bit-rate coder evaluation, especially where the coder is located in the telephone handset, a better characteristic can be obtained by modifying the P.48 full-IRS response to remove the SRAEN filter as shown in columns 5 and 6 of <xref target="tbl-IRS"/>. These values are specified in Annex D of ITU-T Recommendation P.830 <eref type="inline" bibitemid="P.830" citeas="[24]"/> and define the so-called "modified" IRS weighting. The modified IRS has been used in the development of Recommendations ITU-T G.723.1 and G.729.</p>
 
 <table id="_2e9fa478-21fa-cab5-1016-ea11a8f83b03" anchor="tbl-IRS">
 <name id="_31e68270-d51a-eb89-bd2f-6e59f259a530">Send and receive amplitude frequency characteristics for the IRS response as in ITU-T Rec.P.48, the SRAEN filter, and the modified IRS (P.48 IRS with SRAEN filter insertion loss removed).</name>
@@ -7581,7 +7575,7 @@ int main(argc, argv)
 <title id="_595e47d1-6d4b-da42-6769-545f4af6c86c">Wideband weighting</title>
 <clause id="_37517a9f-abc4-558f-dfa3-da1bc57e102f" inline-header="false" obligation="normative">
 <title id="_e78e2fc8-9e83-2b46-4534-5fd981b6b852">P.341 weighting</title>
-<p id="_572db255-222f-ee9a-5538-e38ac0dcefc6">While the IRS filter is applicable to telephony bandwidth (or narrowband) speech, for wideband speech the specification for the send and receive sides is given in Recommendation ITU-T P.341 <eref type="inline" bibitemid="P.341" citeas="[16]"/>. The mask specified in P.341 is rather wide, and an implementation of the send-side mask agreed on by the experts has been incorporated in the STL.</p>
+<p id="_572db255-222f-ee9a-5538-e38ac0dcefc6">While the IRS filter is applicable to telephony bandwidth (or narrowband) speech, for wideband speech the specification for the send and receive sides is given in Recommendation ITU-T P.341 <eref type="inline" bibitemid="P.341" citeas="[17]"/>. The mask specified in P.341 is rather wide, and an implementation of the send-side mask agreed on by the experts has been incorporated in the STL.</p>
 </clause>
 
 <clause id="_e6314668-84ab-3090-08f6-5d209634f63b" inline-header="false" obligation="normative">
@@ -7601,7 +7595,7 @@ int main(argc, argv)
 
 <clause id="_0612ed3f-0daa-b7f8-59ab-e634914c28ac" inline-header="false" obligation="normative">
 <title id="_d4634327-ab2b-66fc-294e-d337821e6742">Other weightings</title>
-<p id="_f3ee4fda-b563-8377-1e4d-42c8b3a8a08c">To generate anchors typically used in BS.1534 <eref type="inline" bibitemid="BS.1534" citeas="[23]"/> "MUlti Stimulus test with Hidden Reference and Anchor (MUSHRA)" subjective tests, seven low-pass filters are also provided in the STL. Those anchors are generated by low-pass filters with cut-off frequencies 1.5, 3.5, 7, 10, 12, 14 and 20 kHz at sampling frequency of 48 kHz. Their frequency responses are shown, respectively, in <xref target="LP1p5-frq"/>, <xref target="LP35-frq"/>, <xref target="LP7-frq"/>, <xref target="LP10-frq"/>, <xref target="LP12-frq"/>, <xref target="LP14-frq"/>, and <xref target="LP20-frq"/>. Their impulse responses are also given in <xref target="LP1p5-ir"/>, <xref target="LP35-ir"/>, <xref target="LP7-ir"/>, <xref target="LP10-ir"/>, <xref target="LP12-ir"/>, <xref target="LP14-ir"/>, and <xref target="LP20-ir"/>. In addition a bandpass filter [20 Hz - 20 kHz) operating at sampling frequency of 48 kHz was also designed. Its frequency response is shown in <xref target="bp20_20k-48k-frq"/> and its impulse responses in <xref target="bp20_20k-48k-ir"/>.</p>
+<p id="_f3ee4fda-b563-8377-1e4d-42c8b3a8a08c">To generate anchors typically used in BS.1534 <eref type="inline" bibitemid="BS.1534" citeas="[1]"/> "MUlti Stimulus test with Hidden Reference and Anchor (MUSHRA)" subjective tests, seven low-pass filters are also provided in the STL. Those anchors are generated by low-pass filters with cut-off frequencies 1.5, 3.5, 7, 10, 12, 14 and 20 kHz at sampling frequency of 48 kHz. Their frequency responses are shown, respectively, in <xref target="LP1p5-frq"/>, <xref target="LP35-frq"/>, <xref target="LP7-frq"/>, <xref target="LP10-frq"/>, <xref target="LP12-frq"/>, <xref target="LP14-frq"/>, and <xref target="LP20-frq"/>. Their impulse responses are also given in <xref target="LP1p5-ir"/>, <xref target="LP35-ir"/>, <xref target="LP7-ir"/>, <xref target="LP10-ir"/>, <xref target="LP12-ir"/>, <xref target="LP14-ir"/>, and <xref target="LP20-ir"/>. In addition a bandpass filter [20 Hz - 20 kHz) operating at sampling frequency of 48 kHz was also designed. Its frequency response is shown in <xref target="bp20_20k-48k-frq"/> and its impulse responses in <xref target="bp20_20k-48k-ir"/>.</p>
 </clause>
 </clause>
 
@@ -7677,7 +7671,7 @@ int main(argc, argv)
 
 <clause id="_2813250e-ee2d-ce23-e980-fcac3a271cfe" inline-header="false" obligation="normative">
 <title id="_43398abd-80fb-cfd2-758e-f7293a9cdd1e">PCM Quality</title>
-<p id="_0838c898-379c-d84c-2778-f636eb775416">There are applications requiring the simulation of the response of filters found in the A/D and D/A interfaces of current transmission systems, which are in general PCM systems satisfying Recommendation ITU-T G.711. The filters associated with G.711 are specified in Recommendation ITU-T G.712 <eref type="inline" bibitemid="G.712" citeas="[5]"/>. The main characteristic of these filters is the low out-of-band rejection of 25 dB.</p>
+<p id="_0838c898-379c-d84c-2778-f636eb775416">There are applications requiring the simulation of the response of filters found in the A/D and D/A interfaces of current transmission systems, which are in general PCM systems satisfying Recommendation ITU-T G.711. The filters associated with G.711 are specified in Recommendation ITU-T G.712 <eref type="inline" bibitemid="G.712" citeas="[6]"/>. The main characteristic of these filters is the low out-of-band rejection of 25 dB.</p>
 
 <figure id="_c9fe999c-6163-5feb-f5b2-84019a022e4b" anchor="IIR-filter">
 <name id="_01a38045-4c87-8a4d-eff3-6fe581b648fd">Parallel-form IIR filter block diagram.</name>
@@ -9941,7 +9935,7 @@ void main(argc, argv)
 
 <p id="_748f2f0b-7ecd-0791-580e-f873716a017a">Error patterns produced and used by the EID module use this softbit definition. Input and output data (i.e. signals which are affected by bit errors or frame erasures) also use softbits, but additionally have a so-called synchronization header.</p>
 
-<p id="_bbc6cb0b-980a-26c7-2911-b024fb265f96">The <em>synchronization header</em> is defined as two consecutive 16-bit words, the first one always being a synchronization (sync) word in the range <tt>0x6B21</tt> to <tt>0x6B2F</tt>, followed by the bitstream length word, a two-complement number indicating the number of softbits in the frame. The sync word <tt>0x6B20</tt> is reserved to indicate that a frame erasure happened. For example, for the RPE-LTP algorithm, which uses 260 bits per frame, the soft bitstream would have the format indicated in <xref target="fig-bs-rpeltp"/>. It can be seen that each RPE-LTP frame will have 262 16-bit words, being one for the sync word (<tt>0x6B21</tt>) in the example), one for the frame length word (whose value here is 260), followed by 260 softbit words (here corresponding to <tt>'1'</tt>, <tt>'0'</tt>, …​, <tt>'0'</tt>, <tt>'0'</tt>). This combination of the synchronization header and a softbit "payload" is called the bitstream signal representation and is used in ITU-T Recommendation G.192 <eref type="inline" bibitemid="G.192" citeas="[3]"/> to represent encoded signals between speech encoders, error-insertion devices, transmission channel models and speech decoders.</p>
+<p id="_bbc6cb0b-980a-26c7-2911-b024fb265f96">The <em>synchronization header</em> is defined as two consecutive 16-bit words, the first one always being a synchronization (sync) word in the range <tt>0x6B21</tt> to <tt>0x6B2F</tt>, followed by the bitstream length word, a two-complement number indicating the number of softbits in the frame. The sync word <tt>0x6B20</tt> is reserved to indicate that a frame erasure happened. For example, for the RPE-LTP algorithm, which uses 260 bits per frame, the soft bitstream would have the format indicated in <xref target="fig-bs-rpeltp"/>. It can be seen that each RPE-LTP frame will have 262 16-bit words, being one for the sync word (<tt>0x6B21</tt>) in the example), one for the frame length word (whose value here is 260), followed by 260 softbit words (here corresponding to <tt>'1'</tt>, <tt>'0'</tt>, …​, <tt>'0'</tt>, <tt>'0'</tt>). This combination of the synchronization header and a softbit "payload" is called the bitstream signal representation and is used in ITU-T Recommendation G.192 <eref type="inline" bibitemid="G.192" citeas="[4]"/> to represent encoded signals between speech encoders, error-insertion devices, transmission channel models and speech decoders.</p>
 
 <figure id="_05848c77-a345-dfa9-7fbc-40d5feae859f" anchor="fig-bs-rpeltp">
 <name id="_2e3977dc-6909-c7d4-b8c3-a45b9a454c91">Soft bitstream format for the 13 kbit/s RPELTP algorithm, where 260 bits are transmitted per 20 ms transmission frame.</name>
@@ -10577,7 +10571,7 @@ void main(argc, argv)
 <title id="_8ed41582-6421-a576-91ca-281d5905b05f">Duo-MNRU: The Dual-mode Modulated Noise Reference Unit</title>
 <p id="_3f79a9d3-c531-adb2-c0ed-6ac11f3f58d3">For evaluation of the quality of a system or equipment, it is important to express the quality measure in a unit suitable for comparison with other reference (or well-known) equipments and systems. A common way of representing these figures is by means of relative units, where the quality is expressed by means of a unique figure, in a unidimensional scale.</p>
 
-<p id="_eb9c08f9-d65f-a3a0-eb7d-09c14916dcf8">But it is insuficient to be unidimensional; the scale must be inequivocal, with a universal meaning. As an example, the ACR scale (<em>Absolute Category Rating</em>, <eref type="inline" bibitemid="P.800" citeas="[19]"/>, Annex B), which is a scale used for listening opinion tests and has five points termed <em>Excellent</em>, <em>Good</em>, <em>Fair</em>, <em>Poor</em>, and <em>Bad</em>, is inadequate: besides it shows a continuum of quality points, the meaning of the adjectives are far from universal, varying from language to language, and from person to person. Exchange of information on the performance of these systems and equipments is easier and more consistent with more objective measures. The issue of how the MNRU is to be used as a reference system in subjective tests has been studied in ITU-T Study Group 12, which is described in Recommendation ITU-T P.830 <eref type="inline" bibitemid="P.830" citeas="[21]"/> in its Sections 8.2.2 and 11.</p>
+<p id="_eb9c08f9-d65f-a3a0-eb7d-09c14916dcf8">But it is insuficient to be unidimensional; the scale must be inequivocal, with a universal meaning. As an example, the ACR scale (<em>Absolute Category Rating</em>, <eref type="inline" bibitemid="P.800" citeas="[22]"/>, Annex B), which is a scale used for listening opinion tests and has five points termed <em>Excellent</em>, <em>Good</em>, <em>Fair</em>, <em>Poor</em>, and <em>Bad</em>, is inadequate: besides it shows a continuum of quality points, the meaning of the adjectives are far from universal, varying from language to language, and from person to person. Exchange of information on the performance of these systems and equipments is easier and more consistent with more objective measures. The issue of how the MNRU is to be used as a reference system in subjective tests has been studied in ITU-T Study Group 12, which is described in Recommendation ITU-T P.830 <eref type="inline" bibitemid="P.830" citeas="[24]"/> in its Sections 8.2.2 and 11.</p>
 
 <p id="_ed475d14-9004-9574-695f-f3c7c06c994b">The Modulated Noise Reference Unity (MNRU) was introduced as a means to controlled degradations that are representative of the non-linear distortion introduced by waveform coding techniques. Initially aiming at evaluating the quality of log-PCM waveform coding systems, it has been used in the process of generating several ITU-T standards, such as the ITU-T G.726 (32 kbit/s), G.722, G.728, and G.729.</p>
 
@@ -10600,7 +10594,7 @@ void main(argc, argv)
 <clause id="_014a15c5-363b-f451-0d81-355cd3b9656b" inline-header="false" obligation="normative">
 <title id="_bf1d543a-0175-ddd9-0daf-b6733fbdb2e8">Description of the Algorithm</title>
 <p id="_2204f5e9-03b1-bf85-8cc9-1a42b1f9d325">The de-facto reference implementation of the MNRU<fn id="_b29847ee-6227-df4e-afbc-f4313b7d3f91" reference="36"><p id="_c7ee92a0-6d32-4312-8752-f796db10eba2">Developed by the British Telecom and licenced to Malden Electronics.</p>
-</fn> is the same of the original description, whose specification can be found in Recommendation ITU-T P.810 <eref type="inline" bibitemid="P.810" citeas="[20]"/> (formerly Recommendation ITU-T P.81 <eref type="inline" bibitemid="Old-P.81" citeas="[84]"/>). This Recommendation describes two MNRU schemes, one called <em>Narrow-band MNRU</em>, and another, <em>Wideband MNRU</em>. Wideband MNRU is applicable to systems where wideband speech (70—​7000Hz) is expected, whereas Narrow-band MNRU is for telephone bandwidth (300—​3400Hz). Both narrowband and wideband MNRUs are implemented in this version of the ITU-T Software Tools Library.</p>
+</fn> is the same of the original description, whose specification can be found in Recommendation ITU-T P.810 <eref type="inline" bibitemid="P.810" citeas="[23]"/> (formerly Recommendation ITU-T P.81 <eref type="inline" bibitemid="Old-P.81" citeas="[84]"/>). This Recommendation describes two MNRU schemes, one called <em>Narrow-band MNRU</em>, and another, <em>Wideband MNRU</em>. Wideband MNRU is applicable to systems where wideband speech (70—​7000Hz) is expected, whereas Narrow-band MNRU is for telephone bandwidth (300—​3400Hz). Both narrowband and wideband MNRUs are implemented in this version of the ITU-T Software Tools Library.</p>
 
 <p id="_31e90a62-0d60-aa42-f603-29ce83ad4bc2">The basic block diagram of the P.810 MNRU is found in <xref target="fig-1-P.810"/>. In summary, there are two paths, one called <em>signal path</em>, another called <em>noise path</em>. In the noise path, gaussian noise (uniform in a range at least the cutoff frequency of the low-pass filter in the output of the MNRU) is modulated by the incoming signal. The result is then added with the output from the signal path. The gains are set such that the gain (in dB) applied in the output of the noise path is the signal-to-correlated-noise ratio <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -11832,11 +11826,11 @@ main(argc, argv)
 </clause>
 </clause>
 
-<clause id="_22a07688-b12c-789b-609f-d48636ce4509" inline-header="false" obligation="normative">
+<clause id="_3ee49a21-64e9-b2bc-f6d4-0a246db3afbb" inline-header="false" obligation="normative">
 <title id="_a1e39f84-3ff3-7819-6b9c-f81a9261cc95">SVP56: The Speech Voltmeter</title>
-<clause id="_20c33136-9f51-298b-4e33-3f1b73ae9295" inline-header="false" obligation="normative">
+<clause id="_8e49cca1-5efa-6d17-4a75-bf4a096df016" inline-header="false" obligation="normative">
 <title id="_d41b9af5-4c52-e821-89cf-0493113382a6">Description of the Algorithm</title>
-<p id="_1758fc4b-caf5-2972-f3ee-100d47b106fd">The specification for the measurement of the active level of speech signals is given in Recommendation ITU-T P.56 <eref type="inline" bibitemid="P.56" citeas="[25]"/> <eref type="inline" bibitemid="P.56-rev" citeas="[18]"/>, and is commonly referred as <em>speech voltmeter</em><fn id="_147bcce4-4069-212f-c6cd-a61986a2f412" reference="39"><p id="_16de0764-6d5b-a4f6-9ab1-14c153528715">After the British Telecom and Malden Ltd.'s SV6 Speech Voltmeter.</p>
+<p id="_1758fc4b-caf5-2972-f3ee-100d47b106fd">The specification for the measurement of the active level of speech signals is given in Recommendation ITU-T P.56 <eref type="inline" bibitemid="P.56" citeas="[21]"/> <eref type="inline" bibitemid="P.56-rev" citeas="[20]"/>, and is commonly referred as <em>speech voltmeter</em><fn id="_147bcce4-4069-212f-c6cd-a61986a2f412" reference="39"><p id="_16de0764-6d5b-a4f6-9ab1-14c153528715">After the British Telecom and Malden Ltd.'s SV6 Speech Voltmeter.</p>
 </fn>. Besides the description above, there is complementary information in the ITU-T <em>Handbook on Telephony</em> <eref type="inline" bibitemid="Hndbk-tel" citeas="[88]"/>, section on `Measurement of Speech'.</p>
 
 <p id="_ddfcbead-f5af-ed41-6009-4e98036dd6e2">In summary, the P.56 algorithm takes samples of a signal in the speech bandwidth and calculates its active speech level. This means that silence and idle noise are not taken into account when calculating the level of the signal. Furthermore, <em>structural pauses</em> (pauses in the range of 250 ms which are inherent to the uterance process) are considered in the measurements, but <em>grammatical pauses</em> (pauses between phrases or to emphasise words, generally in the range of 300 ms or more) are excluded, because they do not contribute to speech subjective loudness <eref type="inline" bibitemid="Hndbk-tel" citeas="[88]"/>.</p>
@@ -11851,7 +11845,7 @@ main(argc, argv)
   </mstyle>
 </math><asciimath>Q</asciimath></stem>), the P.56 algorithm shall not be utilized for re-equalization. Since the noise introduced by the processing algorithm will be far above the threshold discussed, the P.56 algorithm will generate wrong measurements of the active level and speech activity. A practical way to observe whether the P.56 may be utilized on processed files is to observe the activity factor: if it increases significantly in relation to the original file's activity factor, then the use of the P.56 for re-equalizations should be discarded.</p>
 
-<p id="_2e39e175-0d04-f27e-016e-519d9565c125">Another operating assumption for the P.56 Recommendation suggests that the input signal be band-limited (300—​3400 Hz for telephony band signals and 100—​7000 Hz for wideband signals, as given in Table 3 and Figure 2 of P.56. The revision of P.56 made in 2011 <eref type="inline" bibitemid="P.56-rev" citeas="[18]"/> now states that the input signal should be bandlimited to 50 — 14000 Hz for superwideband signals and 20 — 20000 Hz for fullband signals, as given in Annexes B and C, respectively.</p>
+<p id="_2e39e175-0d04-f27e-016e-519d9565c125">Another operating assumption for the P.56 Recommendation suggests that the input signal be band-limited (300—​3400 Hz for telephony band signals and 100—​7000 Hz for wideband signals, as given in Table 3 and Figure 2 of P.56. The revision of P.56 made in 2011 <eref type="inline" bibitemid="P.56-rev" citeas="[20]"/> now states that the input signal should be bandlimited to 50 — 14000 Hz for superwideband signals and 20 — 20000 Hz for fullband signals, as given in Annexes B and C, respectively.</p>
 
 <p id="_15f2f4df-ba27-4782-21b0-61fe56b99e8c">The speech voltmeter algorithm is expressed in terms of discrete operations. Because of this, a minimum sampling frequency must be chosen, and the specification in P.56 gives it as 600 Hz. This is well below Nyquist frequency of the digitized sample's normally used for telephony applications, either 8000 or 16000 Hz, which is explained by the fact that the matter of interest here is not signal's frequency content's information, but only signal statistics. This is one of the unspecified details of the P.56 that may cause implementations to differ.</p>
 
@@ -11881,7 +11875,7 @@ main(argc, argv)
   </mstyle>
 </math><asciimath>q</asciimath></stem> of the signal is extracted using a second-order exponential filtering:</p>
 
-<formula id="_01807b04-093a-26a9-1b7f-0e93f1dbb142" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<formula id="_24b88ee3-199c-ab99-694c-d7707c939511" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
     <msub>
       <mi>p</mi>
@@ -11908,15 +11902,14 @@ main(argc, argv)
     </mrow>
     <mo>⋅</mo>
     <mo>|</mo>
-    <mo>:</mo>
+    </mstyle>
     <msub>
       <mi>x</mi>
       <mi>i</mi>
     </msub>
     <mo>|</mo>
-    <mo>:</mo>
-  </mstyle>
-</math><asciimath>p_i = g * p_(i-1) + (1-g) * :|:x_i:|:</asciimath></stem></formula>
+    </math>
+  </stem></formula>
 
 <formula id="_cdfe5cdf-b9cf-9874-fccb-637634605880" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
@@ -13563,7 +13556,7 @@ void trunc (short _syncWord_, short _outFrameLgth_, short* _inpFrame_,
 <title id="_bd7d6d2e-29f3-a698-ca94-ecc924d6356d">Variable frame size</title>
 <p id="_bc23c8c6-39b1-4bed-495e-8e9d76354a83">In STL2005, the window size used for discrete Fourier transform was fixed to 2048 samples and could not provide changes in the frequency resolution. In order provide more freedom, a variable window size was implemented using Fast Fourier Transform (FFT) algorithm. The use of FFT implies that the window size is a power of 2, thus, available sizes are: 16, 32, 64, 128, 256, 512, 1024, 2048, 4096 and 8192. The dimensions of the bitmap file created by the tool (with option "-bmp") are adapted to the new variable size: if the size is smaller than 2048, then the bitmap file is in the same dimensions as for a 2048-sample bitmap file, because smaller dimensions would give unreadable figures. For windows sizes larger than 2048, the bitmap dimensions are increased to adapt to better frequency resolution.</p>
 
-<p id="_b5f8d7f0-b35a-a167-ddad-607b897b7bcb">The <xref target="fig-femaleVoice256"/>, <xref target="fig-femaleVoice2048"/>, <xref target="fig-femaleVoice8192"/> give the bitmap files obtained with <tt>freqresp</tt> tool operating in 256-, 2048- and 8192-sample windowing, respectively. The input file was the artificial female voice standardized by ITU in <eref type="inline" bibitemid="P.50" citeas="[24]"/>.</p>
+<p id="_b5f8d7f0-b35a-a167-ddad-607b897b7bcb">The <xref target="fig-femaleVoice256"/>, <xref target="fig-femaleVoice2048"/>, <xref target="fig-femaleVoice8192"/> give the bitmap files obtained with <tt>freqresp</tt> tool operating in 256-, 2048- and 8192-sample windowing, respectively. The input file was the artificial female voice standardized by ITU in <eref type="inline" bibitemid="P.50" citeas="[19]"/>.</p>
 
 <figure id="_b0a64f7c-d851-9059-2370-b1eb423be319" anchor="fig-femaleVoice256">
 <name id="_8a767425-3db2-b06b-4b7b-6c6f27fe9245">P.50 female voice analyzed with a 256-sample window</name>
@@ -13905,7 +13898,7 @@ stereoop -mono      infile.stereo.2ch  outfile.mono.1ch</body></sourcecode>
 <clause id="_143b4678-8563-0c91-43a8-1828aa1b135e" inline-header="false" obligation="normative">
 <title id="_503d34f9-33b9-f4b4-abad-8ef5a7bf73d7">Overview of basic operator libraries</title>
 <p id="_b93e62c8-6221-3b49-d025-ca79fbc1cb87">Since the standardization of G.729 and G.723.1<fn id="_1e8927ae-a05d-bff4-1083-3d31f9254dc6" reference="47"><p id="_b20ee7ad-7337-df47-041e-56f3b5927010">For older standards (G.711, G.726, G722, G.727, G.728), their C-codes are included in the software tools library.</p>
-</fn>, ANSI-C source codes constitute integral parts of the ITU-T speech and audio coding Recommendations and their specification relies on bit-exact fixed-point C code using library of basic operators that simulates DSP operations. The fixed-point descriptions of G.723.1 and G.729 are based on 16- and 32-bit arithmetic operations defined by ETSI in 1993 for the standardisation of the half-rate GSM speech codec. These operations are also used to define the GSM enhanced full-rate (EFR) and adaptive multi-rate (AMR) speech codecs <eref type="inline" bibitemid="G.191" citeas="[2]"/>.</p>
+</fn>, ANSI-C source codes constitute integral parts of the ITU-T speech and audio coding Recommendations and their specification relies on bit-exact fixed-point C code using library of basic operators that simulates DSP operations. The fixed-point descriptions of G.723.1 and G.729 are based on 16- and 32-bit arithmetic operations defined by ETSI in 1993 for the standardisation of the half-rate GSM speech codec. These operations are also used to define the GSM enhanced full-rate (EFR) and adaptive multi-rate (AMR) speech codecs <eref type="inline" bibitemid="G.191" citeas="[3]"/>.</p>
 
 <p id="_6a18a5e6-6395-e736-583c-e70404c91b78">In STL2005, the version 2.0 of the ITU-T Basic Operators bears the following additional features compared to the version 1.x:</p>
 
@@ -18739,18 +18732,39 @@ void main(argc, argv)
 </clause>
 </annex><bibliography><references id="_adbe3bc3-62bc-3b24-6c4c-b1a8f184fd16" normative="true" obligation="informative">
 <title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><p id="_615a50a2-df41-5809-7c30-49227562252c">None.</p></references>
-<references id="_cb9d4486-452c-340d-1b6b-801255d4be35" normative="false" obligation="informative">
-<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_ef38ebf3-1646-165f-77d5-ebc04022cd4e" type="standard" schema-version="v1.5.6" anchor="G.111">
-  <fetched>2026-10-27</fetched>
+<references id="_609b0697-2965-271b-3515-8f5efa257b9f" normative="false" obligation="informative">
+<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_2ce343a1-73af-ff27-0da4-ae1b10017192" type="standard" schema-version="v1.5.6" anchor="BS.1534">
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Loudness ratings (LRs) in an international connection</title>
+<title language="en" script="Latn" type="main">Method for the subjective assessment of intermediate quality level of audio systems</title>
 
+  <uri type="pdf">https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1534-1-200301-S!!PDF-E.pdf</uri>
+  <docidentifier type="ITU" primary="true">ITU-R BS.1534-1</docidentifier><docidentifier type="metanorma">[1]</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      
+<title language="en" script="Latn" type="main">Method for the subjective assessment of intermediate quality level of audio systems</title>
+
+      <uri type="pdf">https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1534-1-200301-S!!PDF-E.pdf</uri>
+      <docidentifier type="ITU" primary="true">ITU-R BS.1534-1</docidentifier>
+      <date type="published">
+        <on>2003-01-14</on>
+      </date>
+      <language>en</language>
+      <script>Latn</script>
+    </bibitem>
+
+  </relation>
+</bibitem><bibitem id="_ee7da8a6-cda9-d434-273f-c30c752ed2f5" type="standard" schema-version="v1.5.6" anchor="G.111">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Loudness ratings (LRs) in an international connection</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/756</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.111-199303-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.111</docidentifier><docidentifier type="metanorma">[1]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.111</docidentifier><docidentifier type="metanorma">[2]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -19463,9 +19477,6 @@ void main(argc, argv)
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Loudness ratings (LRs) in an international connection</title>
-
       
 <title language="en" script="Latn" type="main">Loudness ratings (LRs) in an international connection</title>
 
@@ -20195,17 +20206,14 @@ void main(argc, argv)
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_13537309-c79b-8764-43c6-3dcc9693a0fa" type="standard" schema-version="v1.5.6" anchor="G.191">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Software tools for speech and audio coding standardization</title>
-
+</bibitem><bibitem id="_ef908446-84d4-808c-0b02-72fa19a9dbe9" type="standard" schema-version="v1.5.6" anchor="G.191">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Software tools for speech and audio coding standardization</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/16857</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.191-202607-P!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.191</docidentifier><docidentifier type="metanorma">[2]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.191</docidentifier><docidentifier type="metanorma">[3]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -20954,9 +20962,6 @@ void main(argc, argv)
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Software tools for speech and audio coding standardization</title>
-
       
 <title language="en" script="Latn" type="main">Software tools for speech and audio coding standardization</title>
 
@@ -21722,17 +21727,14 @@ void main(argc, argv)
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_5137730e-8ef4-910e-a34d-28663ff85994" type="standard" schema-version="v1.5.6" anchor="G.192">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">A common digital parallel interface for speech standardization activities</title>
-
+</bibitem><bibitem id="_7b77d775-7480-22d5-ad12-c99d47a4cee8" type="standard" schema-version="v1.5.6" anchor="G.192">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">A common digital parallel interface for speech standardization activities</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/3332</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.192-199603-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.192</docidentifier><docidentifier type="metanorma">[3]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.192</docidentifier><docidentifier type="metanorma">[4]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -22400,9 +22402,6 @@ void main(argc, argv)
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">A common digital parallel interface for speech standardization activities</title>
-
       
 <title language="en" script="Latn" type="main">A common digital parallel interface for speech standardization activities</title>
 
@@ -23087,17 +23086,14 @@ void main(argc, argv)
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_1f6c168a-4062-3351-9347-71703a74d849" type="standard" schema-version="v1.5.6" anchor="G.711">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_a48d1d2d-8a91-68d5-e970-80485b441ea5" type="standard" schema-version="v1.5.6" anchor="G.711">
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
+<title language="en" script="Latn" type="main">Pulse code modulation (PCM) of voice frequencies</title>
 
-  
-<title language="en" script="Latn" type="main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/5132</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-200002-I!AppII!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier><docidentifier type="metanorma">[4]</docidentifier>
+  <uri type="src">https://handle.itu.int/11.1002/1000/911</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-198811-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier><docidentifier type="metanorma">[5]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -23124,14 +23120,14 @@ void main(argc, argv)
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>5.2</edition>
+  <edition>5</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2000</from>
+    <from>1988</from>
     <owner>
       <organization>
         
@@ -23163,18 +23159,18 @@ void main(argc, argv)
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
+<title language="en" script="Latn">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
 
-      <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
+      <docidentifier type="ITU" primary="true">G.711 App. II (02/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">Pulse code modulation (PCM) of voice frequencies</title>
+<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
 
-      <docidentifier type="ITU" primary="true">G.711 (11/1988)</docidentifier>
+      <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
     </bibitem>
 
   </relation>
@@ -23811,16 +23807,13 @@ void main(argc, argv)
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
+<title language="en" script="Latn" type="main">Pulse code modulation (PCM) of voice frequencies</title>
 
-      
-<title language="en" script="Latn" type="main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/5132</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-200002-I!AppII!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/911</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-198811-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.711 (11/1988)</docidentifier>
       <date type="published">
-        <on>2000-02-17</on>
+        <on>1988-11-25</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -23848,15 +23841,15 @@ void main(argc, argv)
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>5.2</edition>
+      <edition>5</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">This appendix defines a comfort noise payload format (or bit-stream) for ITU-T G.711 use in packet-based multimedia communication systems.The use of the payload format is intended for packet-based systems with a large header overhead where the packet transmission rate plays a significant role in the overall system bit-rate. In this situation, the use of VAD/DTX/CNG can significantly reduce the packet transmission rate and hence improve the bandwidth efficiency.</abstract>
+      <abstract language="en" script="Latn"/>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2000</from>
+        <from>1988</from>
         <owner>
           <organization>
             
@@ -23888,18 +23881,18 @@ void main(argc, argv)
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
+<title language="en" script="Latn">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
 
-          <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
+          <docidentifier type="ITU" primary="true">G.711 App. II (02/2000)</docidentifier>
         </bibitem>
 
       </relation>
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">Pulse code modulation (PCM) of voice frequencies</title>
+<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
 
-          <docidentifier type="ITU" primary="true">G.711 (11/1988)</docidentifier>
+          <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
         </bibitem>
 
       </relation>
@@ -24542,17 +24535,14 @@ void main(argc, argv)
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e8b186d3-9165-fa12-8087-2f1f3ce38fdf" type="standard" schema-version="v1.5.6" anchor="G.712">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Transmission performance characteristics of pulse code modulation channels</title>
-
+</bibitem><bibitem id="_25e3fe17-c9c0-93a6-6602-5d043a193aa9" type="standard" schema-version="v1.5.6" anchor="G.712">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Transmission performance characteristics of pulse code modulation channels</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/5603</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.712-200111-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.712</docidentifier><docidentifier type="metanorma">[5]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.712</docidentifier><docidentifier type="metanorma">[6]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -25256,9 +25246,6 @@ void main(argc, argv)
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Transmission performance characteristics of pulse code modulation channels</title>
-
       
 <title language="en" script="Latn" type="main">Transmission performance characteristics of pulse code modulation channels</title>
 
@@ -25979,16 +25966,13 @@ void main(argc, argv)
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_bfa1dd15-8322-7634-6bf9-334ca48742b6" type="standard" schema-version="v1.5.6" anchor="G.722">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">7 kHz audio-coding within 64 kbit/s</title>
-
+</bibitem><bibitem id="_b5f97a92-a18e-09a1-211d-80d869d81009" type="standard" schema-version="v1.5.6" anchor="G.722">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">7 kHz audio-coding within 64 kbit/s</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/11673</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.722</docidentifier><docidentifier type="metanorma">[6]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.722</docidentifier><docidentifier type="metanorma">[7]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -26735,9 +26719,6 @@ void main(argc, argv)
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">7 kHz audio-coding within 64 kbit/s</title>
-
       
 <title language="en" script="Latn" type="main">7 kHz audio-coding within 64 kbit/s</title>
 
@@ -27512,17 +27493,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_02fbf8ad-667b-2b75-8c55-b1772cdcc83a" type="standard" schema-version="v1.5.6" anchor="G.725">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">System aspects for the use of the 7 kHz audio codec within 64 kbit/s</title>
-
+</bibitem><bibitem id="_171d0f3b-f30e-e10c-3b12-c90a62d69dfd" type="standard" schema-version="v1.5.6" anchor="G.725">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">System aspects for the use of the 7 kHz audio codec within 64 kbit/s</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/923</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.725-198811-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.725</docidentifier><docidentifier type="metanorma">[7]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.725</docidentifier><docidentifier type="metanorma">[8]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -28163,9 +28141,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">System aspects for the use of the 7 kHz audio codec within 64 kbit/s</title>
-
       
 <title language="en" script="Latn" type="main">System aspects for the use of the 7 kHz audio codec within 64 kbit/s</title>
 
@@ -28823,17 +28798,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_2352a11a-19a2-d080-cce7-ceda2fe24841" type="standard" schema-version="v1.5.6" anchor="G.726">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_581ada6b-1d52-cbcf-1355-06f6df74fcb6" type="standard" schema-version="v1.5.6" anchor="G.726">
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
 
-  
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/8496</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-200505-I!Cor1!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.726</docidentifier><docidentifier type="metanorma">[8]</docidentifier>
+  <uri type="src">https://handle.itu.int/11.1002/1000/924</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-199012-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.726</docidentifier><docidentifier type="metanorma">[9]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -28860,14 +28832,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>4.5</edition>
+  <edition>4</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2005</from>
+    <from>1990</from>
     <owner>
       <organization>
         
@@ -28878,6 +28850,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       </organization>
     </owner>
   </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+
+      <docidentifier type="ITU" primary="true">G.726 (1990) Cor. 1 (05/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
   <relation type="hasEdition">
     <bibitem>
       
@@ -28911,15 +28892,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.726 40, 32, 24 and 16 kbit/s ADPCM algorithm</title>
 
       <docidentifier type="ITU" primary="true">G.726 App. II test vectors (03/1991)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
-
-      <docidentifier type="ITU" primary="true">G.726 (12/1990)</docidentifier>
     </bibitem>
 
   </relation>
@@ -29547,16 +29519,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
 
-      
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/8496</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-200505-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.726 (1990)</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/924</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-199012-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.726 (12/1990)</docidentifier>
       <date type="published">
-        <on>2005-05-14</on>
+        <on>1990-12-14</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -29584,15 +29553,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>4.5</edition>
+      <edition>4</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">ITU-T Rec. G.726 contains the specification for the adaptive differential PCM voice-coding algorithm at 16, 24, 32, and 40 kbit/s. Its Annex A contains the specification for linear PCM input and output. This corrigendum to ITU-T Rec. G.726 fixes an omission in Decoder Block LIMO of its Annex A, which limits the output linear two's complement sample to a 14-bit value. The pseudo-code, as originally published, misses the case for reconstructed samples SR equal to 57 344.</abstract>
+      <abstract language="en" script="Latn"/>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2005</from>
+        <from>1990</from>
         <owner>
           <organization>
             
@@ -29603,6 +29572,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           </organization>
         </owner>
       </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+
+          <docidentifier type="ITU" primary="true">G.726 (1990) Cor. 1 (05/2005)</docidentifier>
+        </bibitem>
+
+      </relation>
       <relation type="hasEdition">
         <bibitem>
           
@@ -29636,15 +29614,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.726 40, 32, 24 and 16 kbit/s ADPCM algorithm</title>
 
           <docidentifier type="ITU" primary="true">G.726 App. II test vectors (03/1991)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
-
-          <docidentifier type="ITU" primary="true">G.726 (12/1990)</docidentifier>
         </bibitem>
 
       </relation>
@@ -30278,17 +30247,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ff31d59f-6f7e-556d-5a24-6b1e1f131b46" type="standard" schema-version="v1.5.6" anchor="G726-LinearIO">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
-
+</bibitem><bibitem id="_5aa07c93-f574-b823-a08b-5a643e9fc57b" type="standard" schema-version="v1.5.6" anchor="G726-LinearIO">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/925</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-199411-I!AnnA!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.726 Annex A</docidentifier><docidentifier type="metanorma">[9]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.726 Annex A</docidentifier><docidentifier type="metanorma">[10]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -31001,9 +30967,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
-
       
 <title language="en" script="Latn" type="main">Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
 
@@ -31733,17 +31696,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_149d8a15-9b30-7bb0-526a-db8eac3c69ba" type="standard" schema-version="v1.5.6" anchor="G.727">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_ce502ba3-5fb7-403d-4d87-be04cb89a7a1" type="standard" schema-version="v1.5.6" anchor="G.727">
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
 
-  
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/8497</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-200505-I!Cor1!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.727</docidentifier><docidentifier type="metanorma">[10]</docidentifier>
+  <uri type="src">https://handle.itu.int/11.1002/1000/927</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-199012-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.727</docidentifier><docidentifier type="metanorma">[11]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -31770,14 +31730,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.4</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2005</from>
+    <from>1990</from>
     <owner>
       <organization>
         
@@ -31788,6 +31748,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       </organization>
     </owner>
   </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+
+      <docidentifier type="ITU" primary="true">G.727 (1990) Cor. 1 (05/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
   <relation type="hasEdition">
     <bibitem>
       
@@ -31812,15 +31781,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.727 5-, 4-, 3- and 2-bit/sample embedded ADPCM algorithm</title>
 
       <docidentifier type="ITU" primary="true">G.727 App. I test vectors (03/1991)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
-
-      <docidentifier type="ITU" primary="true">G.727 (12/1990)</docidentifier>
     </bibitem>
 
   </relation>
@@ -32421,16 +32381,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
 
-      
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/8497</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-200505-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.727 (1990)</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/927</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-199012-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.727 (12/1990)</docidentifier>
       <date type="published">
-        <on>2005-05-14</on>
+        <on>1990-12-14</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -32458,15 +32415,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.4</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">ITU-T Rec. G.727 contains the specification for the embedded adaptive differential PCM voice-coding algorithm at 16, 24, 32, and 40 kbit/s. Its Annex A contains the specification for linear PCM input and output. This corrigendum fixes an omission in Decoder Block LIMO of Annex A/G.727, which limits the output linear two's complement sample to a 14-bit value. The pseudo-code, as originally published, misses the case for reconstructed samples SRFFequal to 57 344.</abstract>
+      <abstract language="en" script="Latn">This Recommendation contains the specification of an embedded Adaptive Differential Pulse Code Modulation (ADPCM) algorithms with 5-, 4-, 3- and 2-bits per sample (i.e., at rates of 40, 32, 24 and 16 kbit/s). The characteristics below are recommended for the conversion of 64 kbit/s. A law or Mu law PCM channels to/ from variable rate embedded ADPCM channels.</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2005</from>
+        <from>1990</from>
         <owner>
           <organization>
             
@@ -32477,6 +32434,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           </organization>
         </owner>
       </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+
+          <docidentifier type="ITU" primary="true">G.727 (1990) Cor. 1 (05/2005)</docidentifier>
+        </bibitem>
+
+      </relation>
       <relation type="hasEdition">
         <bibitem>
           
@@ -32501,15 +32467,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.727 5-, 4-, 3- and 2-bit/sample embedded ADPCM algorithm</title>
 
           <docidentifier type="ITU" primary="true">G.727 App. I test vectors (03/1991)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
-
-          <docidentifier type="ITU" primary="true">G.727 (12/1990)</docidentifier>
         </bibitem>
 
       </relation>
@@ -33116,17 +33073,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e395f258-effc-2844-6d84-348b2e70b307" type="standard" schema-version="v1.5.6" anchor="G727-LinearIO">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
-
+</bibitem><bibitem id="_fb8033e3-f767-8c83-2272-626346b63c1c" type="standard" schema-version="v1.5.6" anchor="G727-LinearIO">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/928</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-199411-I!AnnA!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.727 Annex A</docidentifier><docidentifier type="metanorma">[11]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.727 Annex A</docidentifier><docidentifier type="metanorma">[12]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -33803,9 +33757,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
-
       
 <title language="en" script="Latn" type="main">Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
 
@@ -34499,16 +34450,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_3cf70766-d65f-333f-e995-e342106b2db3" type="standard" schema-version="v1.5.6" anchor="G.728">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
-
+</bibitem><bibitem id="_b6f54b7e-8641-b8a6-d912-6759bdd506fa" type="standard" schema-version="v1.5.6" anchor="G.728">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/11674</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.728</docidentifier><docidentifier type="metanorma">[12]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.728</docidentifier><docidentifier type="metanorma">[13]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -35244,9 +35192,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
-
       
 <title language="en" script="Latn" type="main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
 
@@ -36008,11 +35953,14 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_989a9e9c-9798-e775-b4b9-396f31fdb0bb" type="standard" schema-version="v1.5.6" anchor="G.728G">
-  <fetched>2026-10-27</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/4919</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.728-200002-S!AnnG-Cor1!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.728 Annex G</docidentifier><docidentifier type="metanorma">[13]</docidentifier>
+</bibitem><bibitem id="_924eaf89-4336-ebec-a1fe-98a21d08519e" type="standard" schema-version="v1.5.6" anchor="G.728G">
+  <fetched>2026-11-04</fetched>
+  
+<title language="en" script="Latn" type="main">16 kbit/s fixed point specification</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/931</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.728-199411-S!AnnG!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T G.728 Annex G</docidentifier><docidentifier type="metanorma">[14]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -36039,14 +35987,14 @@ This Recommendation includes an electronic attachment containing programs and te
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.8</edition>
+  <edition>1.1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Withdrawal</stage>
   </status>
   <copyright>
-    <from>2000</from>
+    <from>1994</from>
     <owner>
       <organization>
         
@@ -36079,6 +36027,13 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">Revised Annex J – Variable bit-rate operation of LD-CELP mainly for voiceband-data applications in DCME</title>
 
       <docidentifier type="ITU" primary="true">G.728 (1992) Amd. 1 (05/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref>G.728 Annex G (1994) Cor. 1 (02/2000)</formattedref>
+      <docidentifier type="ITU" primary="true">G.728 Annex G (1994) Cor. 1 (02/2000)</docidentifier>
     </bibitem>
 
   </relation>
@@ -36133,15 +36088,6 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">Programs and test sequences for implementation verification of the algorithm of the G.728 16 kbit/s LD-CELP speech coder</title>
 
       <docidentifier type="ITU" primary="true">G.728 App. I Software (07/1995)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">16 kbit/s fixed point specification</title>
-
-      <docidentifier type="ITU" primary="true">G.728 Annex G (11/1994)</docidentifier>
     </bibitem>
 
   </relation>
@@ -36750,11 +36696,14 @@ This Recommendation includes an electronic attachment containing programs and te
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/4919</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.728-200002-S!AnnG-Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.728 Annex G (1994)</docidentifier>
+      
+<title language="en" script="Latn" type="main">16 kbit/s fixed point specification</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/931</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.728-199411-S!AnnG!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.728 Annex G (11/1994)</docidentifier>
       <date type="published">
-        <on>2000-02-17</on>
+        <on>1994-11-01</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -36782,7 +36731,7 @@ This Recommendation includes an electronic attachment containing programs and te
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.8</edition>
+      <edition>1.1</edition>
       <language>en</language>
       <script>Latn</script>
       <abstract language="en" script="Latn"/>
@@ -36790,7 +36739,7 @@ This Recommendation includes an electronic attachment containing programs and te
         <stage>Withdrawal</stage>
       </status>
       <copyright>
-        <from>2000</from>
+        <from>1994</from>
         <owner>
           <organization>
             
@@ -36823,6 +36772,13 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">Revised Annex J – Variable bit-rate operation of LD-CELP mainly for voiceband-data applications in DCME</title>
 
           <docidentifier type="ITU" primary="true">G.728 (1992) Amd. 1 (05/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref>G.728 Annex G (1994) Cor. 1 (02/2000)</formattedref>
+          <docidentifier type="ITU" primary="true">G.728 Annex G (1994) Cor. 1 (02/2000)</docidentifier>
         </bibitem>
 
       </relation>
@@ -36877,15 +36833,6 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">Programs and test sequences for implementation verification of the algorithm of the G.728 16 kbit/s LD-CELP speech coder</title>
 
           <docidentifier type="ITU" primary="true">G.728 App. I Software (07/1995)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">16 kbit/s fixed point specification</title>
-
-          <docidentifier type="ITU" primary="true">G.728 Annex G (11/1994)</docidentifier>
         </bibitem>
 
       </relation>
@@ -37501,19 +37448,14 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-
-<title>ITU Telecommunication Standardization Sector. <em>Recommendation ITU-T G.728 Annex G — 16 kbit/s fixed point specification.</em> ITU, Geneva, Switzerland, November 1994.</title>
-</bibitem><bibitem id="_133cc1df-f4a8-92af-87b1-ac1d8a593c17" type="standard" schema-version="v1.5.6" anchor="G.728I">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Frame or packet loss concealment for the LD-CELP decoder</title>
-
+</bibitem><bibitem id="_1bea59f0-e674-36bb-8067-6fe5626516ef" type="standard" schema-version="v1.5.6" anchor="G.728I">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Frame or packet loss concealment for the LD-CELP decoder</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/4684</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.728-199905-S!AnnI!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T G.728 Annex I</docidentifier><docidentifier type="metanorma">[14]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T G.728 Annex I</docidentifier><docidentifier type="metanorma">[15]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -38249,9 +38191,6 @@ This Recommendation includes an electronic attachment containing programs and te
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Frame or packet loss concealment for the LD-CELP decoder</title>
-
       
 <title language="en" script="Latn" type="main">Frame or packet loss concealment for the LD-CELP decoder</title>
 
@@ -39004,17 +38943,14 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_573637df-84b9-1b37-2c7f-94d593477c86" type="standard" schema-version="v1.5.6" anchor="P.11">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Effect of transmission impairments</title>
-
+</bibitem><bibitem id="_b15ae9ca-9439-9334-08e5-62bca35107a9" type="standard" schema-version="v1.5.6" anchor="P.11">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Effect of transmission impairments</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/1718</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.11-199303-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.11</docidentifier><docidentifier type="metanorma">[15]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.11</docidentifier><docidentifier type="metanorma">[16]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -39169,9 +39105,6 @@ This Recommendation includes an electronic attachment containing programs and te
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Effect of transmission impairments</title>
-
       
 <title language="en" script="Latn" type="main">Effect of transmission impairments</title>
 
@@ -39343,17 +39276,14 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_a05f95c4-fc59-aaf6-4292-f0c5386c6f6f" type="standard" schema-version="v1.5.6" anchor="P.341">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
-
+</bibitem><bibitem id="_6f23aae6-4fb6-f462-388a-6861c31fe871" type="standard" schema-version="v1.5.6" anchor="P.341">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/11077</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.341-201103-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.341</docidentifier><docidentifier type="metanorma">[16]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.341</docidentifier><docidentifier type="metanorma">[17]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -39515,9 +39445,6 @@ This Recommendation includes an electronic attachment containing programs and te
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
-
       
 <title language="en" script="Latn" type="main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
 
@@ -39704,17 +39631,14 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_d69a118e-dd5a-b442-c0bb-7067659dd778" type="standard" schema-version="v1.5.6" anchor="P.48">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Specification for an intermediate reference system</title>
-
+</bibitem><bibitem id="_fa04e524-865e-95c0-72eb-0170bbfb3e41" type="standard" schema-version="v1.5.6" anchor="P.48">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Specification for an intermediate reference system</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/1735</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.48-198811-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.48</docidentifier><docidentifier type="metanorma">[17]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.48</docidentifier><docidentifier type="metanorma">[18]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -39869,9 +39793,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Specification for an intermediate reference system</title>
-
       
 <title language="en" script="Latn" type="main">Specification for an intermediate reference system</title>
 
@@ -40043,17 +39964,21 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ae355b1d-8834-98b2-5e2c-3b3250ee006c" type="standard" schema-version="v1.5.6" anchor="P.56-rev">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Objective measurement of active speech level</title>
-
+</bibitem><bibitem anchor="P.50" id="_3b8a459d-a526-e0be-2360-293694b55304">
+  <formattedref format="application/x-isodoc+xml">ITU Telecommunication Standardization Sector. <em>Recommendation ITU-T P.50 Annex I - Artificial voices.</em> ITU, Geneva, Switzerland, February 1998.</formattedref>
+  <docidentifier type="metanorma">[19]</docidentifier>
+  <docidentifier type="ITU">ITU-T P.50 Annex I</docidentifier>
+  <docnumber>50 Annex I</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_47c0433a-7c81-2208-319d-2cbab20579ac" type="standard" schema-version="v1.5.6" anchor="P.56-rev">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Objective measurement of active speech level</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/16858</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.56-202607-P!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.56</docidentifier><docidentifier type="metanorma">[18]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.56</docidentifier><docidentifier type="metanorma">[20]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -40226,9 +40151,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Objective measurement of active speech level</title>
-
       
 <title language="en" script="Latn" type="main">Objective measurement of active speech level</title>
 
@@ -40418,17 +40340,24 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e909da4e-12bd-a2c0-d0f5-95763669d9d8" type="standard" schema-version="v1.5.6" anchor="P.800">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Methods for subjective determination of transmission quality</title>
-
+</bibitem><bibitem anchor="P.56" id="_226b705b-cf4c-bf7f-a258-5546d31083aa">
+  <formattedref format="application/x-isodoc+xml">ITU Telecommunication Standardization Sector. <em>Recommendation ITU-T P.56, Objective measurement of active speech level,</em> volume V of <em>Blue Book</em>, pages 110–120. ITU, Geneva, Switzerland, 1989.</formattedref>
+  <docidentifier type="metanorma">[21]</docidentifier>
+  <docidentifier type="ITU">ITU-T P.56:1989</docidentifier>
+  <docnumber>56</docnumber>
+  <date type="published">
+    <on>1989</on>
+  </date>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_768ace25-3b3e-45d8-0a4d-255ee959f9c7" type="standard" schema-version="v1.5.6" anchor="P.800">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Methods for subjective determination of transmission quality</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/3638</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.800-199608-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.800</docidentifier><docidentifier type="metanorma">[19]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.800</docidentifier><docidentifier type="metanorma">[22]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -40610,9 +40539,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Methods for subjective determination of transmission quality</title>
-
       
 <title language="en" script="Latn" type="main">Methods for subjective determination of transmission quality</title>
 
@@ -40811,17 +40737,14 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ced86639-66fa-b54a-e6e0-2e063c8a8bd4" type="standard" schema-version="v1.5.6" anchor="P.810">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Modulated noise reference unit (MNRU)</title>
-
+</bibitem><bibitem id="_dd611f46-80b9-37ec-78ad-1a0943445316" type="standard" schema-version="v1.5.6" anchor="P.810">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Modulated noise reference unit (MNRU)</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/15467</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.810-202303-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.810</docidentifier><docidentifier type="metanorma">[20]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.810</docidentifier><docidentifier type="metanorma">[23]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -40994,9 +40917,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Modulated noise reference unit (MNRU)</title>
-
       
 <title language="en" script="Latn" type="main">Modulated noise reference unit (MNRU)</title>
 
@@ -41190,17 +41110,14 @@ A reference implementation of the algorithms is provided in the software tool li
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_e0e7dd3f-ea0b-39f6-d3c6-b810dc673816" type="standard" schema-version="v1.5.6" anchor="P.830">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Subjective performance assessment of telephone-band and wideband digital codecs</title>
-
+</bibitem><bibitem id="_76dac638-5185-2eeb-8721-a3f31e4cf196" type="standard" schema-version="v1.5.6" anchor="P.830">
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Subjective performance assessment of telephone-band and wideband digital codecs</title>
 
   <uri type="src">https://handle.itu.int/11.1002/1000/3302</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.830-199602-I!!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T P.830</docidentifier><docidentifier type="metanorma">[21]</docidentifier>
+  <docidentifier type="ITU" primary="true">ITU-T P.830</docidentifier><docidentifier type="metanorma">[24]</docidentifier>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -41346,9 +41263,6 @@ A reference implementation of the algorithms is provided in the software tool li
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Subjective performance assessment of telephone-band and wideband digital codecs</title>
-
       
 <title language="en" script="Latn" type="main">Subjective performance assessment of telephone-band and wideband digital codecs</title>
 
@@ -41511,13 +41425,13 @@ A reference implementation of the algorithms is provided in the software tool li
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_89184c1f-b09e-5698-a429-c9f991379672" type="standard" schema-version="v1.5.6" anchor="IETFRFC3551">
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="_9bc667c2-77fd-ea93-a690-a2bfe897c28e" type="standard" schema-version="v1.5.6" anchor="IETFRFC3551">
+  <fetched>2026-11-04</fetched>
   
 <title type="main">RTP Profile for Audio and Video Conferences with Minimal Control</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc3551</uri>
-  <docidentifier type="IETF" primary="true">RFC 3551</docidentifier><docidentifier type="metanorma">[22]</docidentifier>
+  <docidentifier type="IETF" primary="true">RFC 3551</docidentifier><docidentifier type="metanorma">[25]</docidentifier>
   <docidentifier type="DOI">10.17487/RFC3551</docidentifier>
   <docnumber>RFC3551</docnumber>
   <date type="published">
@@ -41575,7 +41489,7 @@ A reference implementation of the algorithms is provided in the software tool li
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_0eb75f5d-060f-badc-2dad-d3b7217e4d2d">This document describes a profile called "RTP/AVP" for the use of the real-time transport protocol (RTP), version 2, and the associated control protocol, RTCP, within audio and video multiparticipant conferences with minimal control.  It provides interpretations of generic fields within the RTP specification suitable for audio and video conferences.  In particular, this document defines a set of default mappings from payload type numbers to encodings.  This document also describes how audio and video data may be carried within RTP.  It defines a set of standard encodings and their names when used within RTP.  The descriptions provide pointers to reference implementations and the detailed standards.  This document is meant as an aid for implementors of audio, video and other real-time multimedia applications.  This memorandum obsoletes RFC 1890.  It is mostly backwards-compatible except for functions removed because two interoperable implementations were not found.  The additions to RFC 1890 codify existing practice in the use of payload formats under this profile and include new payload formats defined since RFC 1890 was published. [STANDARDS-TRACK]</p>
+    <p id="_33bf8fab-5c7c-1d33-c64b-cc5a6a5b83be">This document describes a profile called "RTP/AVP" for the use of the real-time transport protocol (RTP), version 2, and the associated control protocol, RTCP, within audio and video multiparticipant conferences with minimal control.  It provides interpretations of generic fields within the RTP specification suitable for audio and video conferences.  In particular, this document defines a set of default mappings from payload type numbers to encodings.  This document also describes how audio and video data may be carried within RTP.  It defines a set of standard encodings and their names when used within RTP.  The descriptions provide pointers to reference implementations and the detailed standards.  This document is meant as an aid for implementors of audio, video and other real-time multimedia applications.  This memorandum obsoletes RFC 1890.  It is mostly backwards-compatible except for functions removed because two interoperable implementations were not found.  The additions to RFC 1890 codify existing practice in the use of payload formats under this profile and include new payload formats defined since RFC 1890 was published. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -41592,11 +41506,6 @@ A reference implementation of the algorithms is provided in the software tool li
 <title>RFC</title>
 
     <number>3551</number>
-  </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
   </series>
   <keyword>
     <vocab>RTP-AV</vocab>
@@ -41619,47 +41528,6 @@ A reference implementation of the algorithms is provided in the software tool li
   <keyword>
     <vocab>conference</vocab>
   </keyword>
-</bibitem><bibitem id="_05372f3a-bb05-990a-acb3-bbe282444cc0" type="standard" schema-version="v1.5.6" anchor="BS.1534">
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="main">Method for the subjective assessment of intermediate quality level of audio systems</title>
-
-  <uri type="pdf">https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1534-1-200301-S!!PDF-E.pdf</uri>
-  <docidentifier type="ITU" primary="true">ITU-R BS.1534-1</docidentifier><docidentifier type="metanorma">[23]</docidentifier>
-  <language>en</language>
-  <script>Latn</script>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      
-<title language="en" script="Latn" type="main">Method for the subjective assessment of intermediate quality level of audio systems</title>
-
-      <uri type="pdf">https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1534-1-200301-S!!PDF-E.pdf</uri>
-      <docidentifier type="ITU" primary="true">ITU-R BS.1534-1</docidentifier>
-      <date type="published">
-        <on>2003-01-14</on>
-      </date>
-      <language>en</language>
-      <script>Latn</script>
-    </bibitem>
-
-  </relation>
-</bibitem><bibitem anchor="P.50" id="_b861b02d-e9a4-053d-59ae-b229adf21a5f">
-  <formattedref format="application/x-isodoc+xml">ITU Telecommunication Standardization Sector. <em>Recommendation ITU-T P.50 Annex I - Artificial voices.</em> ITU, Geneva, Switzerland, February 1998.</formattedref>
-  <docidentifier type="metanorma">[24]</docidentifier>
-  <docidentifier type="ITU">ITU-T P.50 Annex I</docidentifier>
-  <docnumber>50 Annex I</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="P.56" id="_db540b81-2183-876d-1784-be62b946447f">
-  <formattedref format="application/x-isodoc+xml">ITU Telecommunication Standardization Sector. <em>Recommendation ITU-T P.56, Objective measurement of active speech level,</em> volume V of <em>Blue Book</em>, pages 110–120. ITU, Geneva, Switzerland, 1989.</formattedref>
-  <docidentifier type="metanorma">[25]</docidentifier>
-  <docidentifier type="ITU">ITU-T P.56:1989</docidentifier>
-  <docnumber>56</docnumber>
-  <date type="published">
-    <on>1989</on>
-  </date>
-  <language>en</language>
-  <script>Latn</script>
 </bibitem><bibitem anchor="ADPCM-Tech-Report" id="_655ae03c-a8c1-2ee1-5100-73708922912a">
   <formattedref format="application/x-isodoc+xml">ITU Telecommunication Standardization Sector. Comparison of ADPCM Algorithms. In <em>Recommendation G.726</em>, chapter Appendix III. ITU, Geneva, Switzerland, November 1994.</formattedref>
   <docidentifier type="metanorma">[26]</docidentifier>

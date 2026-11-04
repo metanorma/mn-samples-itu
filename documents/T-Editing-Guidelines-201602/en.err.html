@@ -8,7 +8,7 @@ thead th { font-weight: bold; background-color: aqua; }
 .severity3 { font-style: italic; color: grey; }
 </style>
 </head><body><h1>/__w/mn-samples-itu/mn-samples-itu/_site/documents/T-Editing-Guidelines-201602/en.err.html errors</h1>
-<ul><li><p><b><a href="#Relaton">Relaton</a></b>: Severity 1: <b>2</b> errors; Severity 3: <b>14</b> errors</p></li>
+<ul><li><p><b><a href="#Relaton">Relaton</a></b>: Severity 3: <b>18</b> errors</p></li>
 
 <li><p><b><a href="#Style">Style</a></b>: Severity 2: <b>12</b> errors</p></li>
 </ul>
@@ -17,22 +17,15 @@ thead th { font-weight: bold; background-color: aqua; }
 <thead><th width="5%">Line</th><th width="20%">ID</th><th width="10%">Error</th>
 <th width="20%">Message</th><th width="40%">Context</th><th width="5%">Severity</th></thead>
 <tbody>
-<tr class="severity1">
-<td></td><th><code>--</code></th><td>RELATON_2</td>
-<td>(Error from Relaton) <code>ITU style</code> -- Expected one of [ITU_​PUBID_SECTOR, ITU_​PUBID_NO_​SECTOR] at line 1 char 1.</td><td><pre></pre></td><td>1</td></tr>
-<tr class="severity1">
-<td></td><th><code>--</code></th><td>RELATON_2</td>
-<td>(Error from Relaton) <code>ITU style</code> is invalid ITU publication identifier
-Expected one of [ITU_​PUBID_SECTOR, ITU_​PUBID_NO_​SECTOR] at line 1 char 1.
-|- Failed to match sequence (PREFIX SECTOR TYPE? CODE SUP? ANNEX? VER? DATE? AMD? .{0, }) at line 1 char 4.
-|  <code>- Failed to match sequence (SEPARATOR sector:​[A-Z]) at line 1 char 5.
-|     </code>- Failed to match [A-Z] at line 1 char 5.
-<code>- Failed to match sequence (PREFIX TYPE? CODE SUP? ANNEX? VER? DATE? AMD? .{0, }) at line 1 char 4.
-   </code>- Failed to match sequence (SEPARATOR code:([A-Z0-9]{1, } [[:alnum:​]/.-]{0, })) at line 1 char 5.
-      <code>- Failed to match sequence ([A-Z0-9]{1, } [[:alnum:​]/.-]{0, }) at line 1 char 5.
-         </code>- Expected at least 1 of [A-Z0-9] at line 1 char 5.
-            `- Failed to match [A-Z0-9] at line 1 char 5.
-</td><td><pre></pre></td><td>1</td></tr>
+<tr class="severity3">
+<td></td><th><code>--</code></th><td>RELATON_4</td>
+<td>(Error from Relaton) <code>ITU style</code> -- Failed to match: expected one of ['R', 'T', 'D', 'OB', 'Operational Bulletin'] at line 1 char 5.</td><td><pre></pre></td><td>3</td></tr>
+<tr class="severity3">
+<td></td><th><code>--</code></th><td>RELATON_4</td>
+<td>(Error from Relaton) <code>ITU-T Rap</code> -- Failed to match: expected one of [[\x41-\x5a], '.', [\x30-\x39], '-', ' ', '-C'] at line 1 char 8.</td><td><pre></pre></td><td>3</td></tr>
+<tr class="severity3">
+<td></td><th><code>ITU style</code></th><td>RELATON_4</td>
+<td>(Error from Relaton) does not parse as this flavor's pubid; passing the reference to the flavor as written</td><td><pre></pre></td><td>3</td></tr>
 <tr class="severity3">
 <td></td><th><code>ITU-T A.1</code></th><td>RELATON_4</td>
 <td>(Error from Relaton) Found: <code>ITU-T A.1 (09/​2019)</code></td><td><pre></pre></td><td>3</td></tr>
@@ -62,19 +55,22 @@ Expected one of [ITU_​PUBID_SECTOR, ITU_​PUBID_NO_​SECTOR] at line 1 char 
 <td>(Error from Relaton) Found: <code>ITU-T G.108.2 (03/​2007)</code></td><td><pre></pre></td><td>3</td></tr>
 <tr class="severity3">
 <td></td><th><code>ITU-T G.709</code></th><td>RELATON_4</td>
-<td>(Error from Relaton) Not found.</td><td><pre></pre></td><td>3</td></tr>
+<td>(Error from Relaton) Found: <code>ITU-T G.709 (03/​1993)</code></td><td><pre></pre></td><td>3</td></tr>
 <tr class="severity3">
 <td></td><th><code>ITU-T K.35</code></th><td>RELATON_4</td>
 <td>(Error from Relaton) Found: <code>ITU-T K.35 (12/​2020)</code></td><td><pre></pre></td><td>3</td></tr>
 <tr class="severity3">
 <td></td><th><code>ITU-T Rap</code></th><td>RELATON_4</td>
-<td>(Error from Relaton) Not found.</td><td><pre></pre></td><td>3</td></tr>
+<td>(Error from Relaton) does not parse as this flavor's pubid; passing the reference to the flavor as written</td><td><pre></pre></td><td>3</td></tr>
 <tr class="severity3">
 <td></td><th><code>b-Essay</code></th><td>RELATON_4</td>
 <td>(Error from Relaton) <code>b-Essay</code> does not have a recognised prefix</td><td><pre></pre></td><td>3</td></tr>
 <tr class="severity3">
 <td></td><th><code>b-Essay</code></th><td>RELATON_4</td>
 <td>(Error from Relaton) <code>b-Essay</code> does not have a recognised prefix</td><td><pre></pre></td><td>3</td></tr>
+<tr class="severity3">
+<td></td><th><code>b-Essay</code></th><td>RELATON_4</td>
+<td>(Error from Relaton) <code>b-Essay</code> is not a recognized standards identifier</td><td><pre></pre></td><td>3</td></tr>
 </tbody></table>
 <h2 id="Style">Style</h2>
 <table border="1">
@@ -151,11 +147,11 @@ Expected one of [ITU_​PUBID_SECTOR, ITU_​PUBID_NO_​SECTOR] at line 1 char 
 
 &lt;clause id=&quot;_643532dc-b0c4-890c-59fe-c4fadb4d32e9&quot; anchor=&quot;Deletion_od_a_clause_table_or_figure&quot; inline-header=&quot;false&quot; obligation=&quot;normative&quot;&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>001357</td><th><code><a href='/__w/mn-samples-itu/mn-samples-itu/_site/documents/T-Editing-Guidelines-201602/en.html#_2541163f-3310-4357-91c9-b848858a3eb2'>_2541163f-3310-4357-91c9-b848858a3eb2</a></code></th><td>STANDOC_14</td>
-<td>Style override set for ordered list</td><td><pre>&lt;ol id=&quot;_2541163f-3310-4357-91c9-b848858a3eb2&quot; class=&quot;&quot;&gt; &lt;li&gt; &lt;p id=&quot;_1ff807cf-2bf2-4284-b508-fb0c6e7ee9f0&quot;&gt;The term (word or phrase) to be defined;&lt;/p&gt;
+<td>001345</td><th><code><a href='/__w/mn-samples-itu/mn-samples-itu/_site/documents/T-Editing-Guidelines-201602/en.html#_9a28e333-0c7b-4e97-a957-b26a9131e862'>_9a28e333-0c7b-4e97-a957-b26a9131e862</a></code></th><td>STANDOC_14</td>
+<td>Style override set for ordered list</td><td><pre>&lt;ol id=&quot;_9a28e333-0c7b-4e97-a957-b26a9131e862&quot; class=&quot;&quot;&gt; &lt;li&gt; &lt;p id=&quot;_6a6985d6-b2ef-4160-a76d-18482f773177&quot;&gt;The term (word or phrase) to be defined;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt; &lt;p id=&quot;_efe0ede8-687c-42bc-87dd-8c276a66f04e&quot;&gt;The class of object or concept to which the term belongs; and&lt;/p&gt;
+&lt;li&gt; &lt;p id=&quot;_6b7ba52c-bdfd-4589-857b-a41652330dd2&quot;&gt;The class of object or concept to which the term belongs; and&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt; &lt;p id=&quot;_9f8dedfe-93ca-469c-9fd8-5140dd17aa5b&quot;&gt;The characteristics that distinguish it from all others of its class.&lt;/p&gt;</pre></td><td>2</td></tr>
+&lt;li&gt; &lt;p id=&quot;_1990141d-05b1-4973-bce5-882d41562ff3&quot;&gt;The characteristics that distinguish it from all others of its class.&lt;/p&gt;</pre></td><td>2</td></tr>
 </tbody></table>
 </body></html>

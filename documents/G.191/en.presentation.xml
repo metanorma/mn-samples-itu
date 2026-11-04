@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Software tools for speech and audio coding standardization</title>
 <docidentifier type="ITU" primary="true">ITU-T G.191</docidentifier><docidentifier type="ITU-lang">ITU-T G.191-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T G.191-E</docidentifier><docnumber>G.191</docnumber><date type="published"><on>2019-01</on></date><date type="published" format="ddMMMyyyy">I.2019</date><contributor><role type="author"/><organization>
@@ -261,12 +261,9 @@ sourcecode .nt {
 
 
 
-<references id="_041c2b8b-0cfe-3cb2-7df3-d86173577a93" normative="true" obligation="informative" semx-id="_041c2b8b-0cfe-3cb2-7df3-d86173577a93" displayorder="11">
-<title id="_45c804d8-8294-2ee9-d282-48454c6487f0" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_86d35776-0d9c-6b23-a491-ab675edd1084"><span class="fmt-caption-label"><semx element="autonum" source="_041c2b8b-0cfe-3cb2-7df3-d86173577a93">2</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_45c804d8-8294-2ee9-d282-48454c6487f0">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_041c2b8b-0cfe-3cb2-7df3-d86173577a93">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="ITU-T_G.192" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.192" semx-id="_ec949dbc-9ea5-5d47-d5be-9fc0b5591a4a"><biblio-tag>[ITU‑T G.192]</biblio-tag><formattedref>Recommendation ITU-T G.192, <em>A common digital parallel interface for speech standardization activities</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">A common digital parallel interface for speech standardization activities</title>
-
+<references id="_a479a52a-3d3c-7f45-d815-e9d451465f63" normative="true" obligation="informative" semx-id="_a479a52a-3d3c-7f45-d815-e9d451465f63" displayorder="11">
+<title id="_45c804d8-8294-2ee9-d282-48454c6487f0" semx-id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd">References</title><fmt-title depth="1" id="_86d35776-0d9c-6b23-a491-ab675edd1084"><span class="fmt-caption-label"><semx element="autonum" source="_a479a52a-3d3c-7f45-d815-e9d451465f63">2</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_45c804d8-8294-2ee9-d282-48454c6487f0">References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">clause</span> <semx element="autonum" source="_a479a52a-3d3c-7f45-d815-e9d451465f63">2</semx></fmt-xref-label><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc" semx-id="_8990d08f-344a-a8c8-e9a2-aff975b00acc">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="ITU-T_G.192" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.192" semx-id="_e1b55547-052b-f79d-8315-fc6c6afdf39c"><biblio-tag>[ITU‑T G.192]</biblio-tag><formattedref>Recommendation ITU-T G.192, <em>A common digital parallel interface for speech standardization activities</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">A common digital parallel interface for speech standardization activities</title>
 
@@ -940,9 +937,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">A common digital parallel interface for speech standardization activities</title>
-
       
 <title language="en" script="Latn" type="main">A common digital parallel interface for speech standardization activities</title>
 
@@ -1627,16 +1621,13 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.711" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.711" semx-id="_c96eb470-17d0-be7f-4e70-b8117ef82d97"><biblio-tag>[ITU‑T G.711]</biblio-tag><formattedref>Recommendation ITU-T G.711, <em>A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</em>, Edition 5.2.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ITU-T_G.711" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.711" semx-id="_94f8bfc9-4e30-c960-52bc-dcecc9e95cef"><biblio-tag>[ITU‑T G.711]</biblio-tag><formattedref>Recommendation ITU-T G.711, <em>Pulse code modulation (PCM) of voice frequencies</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
+<title language="en" script="Latn" type="main">Pulse code modulation (PCM) of voice frequencies</title>
 
-  
-<title language="en" script="Latn" type="main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/5132</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-200002-I!AppII!PDF-E&amp;type=items</uri>
+  <uri type="src">https://handle.itu.int/11.1002/1000/911</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-198811-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -1664,14 +1655,14 @@ sourcecode .nt {
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>5.2</edition>
+  <edition>5</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2000</from>
+    <from>1988</from>
     <owner>
       <organization>
         
@@ -1703,18 +1694,18 @@ sourcecode .nt {
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
+<title language="en" script="Latn">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
 
-      <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
+      <docidentifier type="ITU" primary="true">G.711 App. II (02/2000)</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="hasEdition">
     <bibitem>
       
-<title language="en" script="Latn">Pulse code modulation (PCM) of voice frequencies</title>
+<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
 
-      <docidentifier type="ITU" primary="true">G.711 (11/1988)</docidentifier>
+      <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
     </bibitem>
 
   </relation>
@@ -2351,16 +2342,13 @@ sourcecode .nt {
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
+<title language="en" script="Latn" type="main">Pulse code modulation (PCM) of voice frequencies</title>
 
-      
-<title language="en" script="Latn" type="main">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/5132</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-200002-I!AppII!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.711</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/911</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.711-198811-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.711 (11/1988)</docidentifier>
       <date type="published">
-        <on>2000-02-17</on>
+        <on>1988-11-25</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -2388,15 +2376,15 @@ sourcecode .nt {
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>5.2</edition>
+      <edition>5</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">This appendix defines a comfort noise payload format (or bit-stream) for ITU-T G.711 use in packet-based multimedia communication systems.The use of the payload format is intended for packet-based systems with a large header overhead where the packet transmission rate plays a significant role in the overall system bit-rate. In this situation, the use of VAD/DTX/CNG can significantly reduce the packet transmission rate and hence improve the bandwidth efficiency.</abstract>
+      <abstract language="en" script="Latn"/>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2000</from>
+        <from>1988</from>
         <owner>
           <organization>
             
@@ -2428,18 +2416,18 @@ sourcecode .nt {
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
+<title language="en" script="Latn">A comfort noise payload definition for ITU-T G.711 use in packet-based multimedia communication systems</title>
 
-          <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
+          <docidentifier type="ITU" primary="true">G.711 App. II (02/2000)</docidentifier>
         </bibitem>
 
       </relation>
       <relation type="hasEdition">
         <bibitem>
           
-<title language="en" script="Latn">Pulse code modulation (PCM) of voice frequencies</title>
+<title language="en" script="Latn">A high quality low-complexity algorithm for packet loss concealment with G.711</title>
 
-          <docidentifier type="ITU" primary="true">G.711 (11/1988)</docidentifier>
+          <docidentifier type="ITU" primary="true">G.711 App. I (09/1999)</docidentifier>
         </bibitem>
 
       </relation>
@@ -3082,11 +3070,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.712" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.712" semx-id="_20c48815-ea4c-b8e8-e1c3-90397465e352"><biblio-tag>[ITU‑T G.712]</biblio-tag><formattedref>Recommendation ITU-T G.712, <em>Transmission performance characteristics of pulse code modulation channels</em>, Eighth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Transmission performance characteristics of pulse code modulation channels</title>
-
+</bibitem><bibitem id="ITU-T_G.712" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.712" semx-id="_3d45def7-682f-6854-4b1d-bfb9c78dbb21"><biblio-tag>[ITU‑T G.712]</biblio-tag><formattedref>Recommendation ITU-T G.712, <em>Transmission performance characteristics of pulse code modulation channels</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Transmission performance characteristics of pulse code modulation channels</title>
 
@@ -3796,9 +3781,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Transmission performance characteristics of pulse code modulation channels</title>
-
       
 <title language="en" script="Latn" type="main">Transmission performance characteristics of pulse code modulation channels</title>
 
@@ -4519,15 +4501,12 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.718" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.718" semx-id="_01a9cb5b-3083-25c8-78e4-10bc72ad1849"><biblio-tag>[ITU‑T G.718]</biblio-tag><formattedref>Recommendation ITU-T G.718, <em>Corrections to text and C-code</em>, Edition 1.5.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ITU-T_G.718" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.718" semx-id="_d6d9dae0-e600-9a3e-5e24-e1cd2a5a174e"><biblio-tag>[ITU‑T G.718]</biblio-tag><formattedref>Recommendation ITU-T G.718, <em>Frame error robust narrow-band and wideband embedded variable bit-rate coding of speech and audio from 8-32 kbit/s</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Corrections to text and C-code</title>
+<title language="en" script="Latn" type="main">Frame error robust narrow-band and wideband embedded variable bit-rate coding of speech and audio from 8-32 kbit/s</title>
 
-  
-<title language="en" script="Latn" type="main">Corrections to text and C-code</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/10981</uri>
+  <uri type="src">https://handle.itu.int/11.1002/1000/9467</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.718</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -4555,14 +4534,14 @@ sourcecode .nt {
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.5</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2011</from>
+    <from>2008</from>
     <owner>
       <organization>
         
@@ -4579,6 +4558,15 @@ sourcecode .nt {
 <title language="en" script="Latn">New Annex C describing an alternative floating-point implementation of the superwideband monaural extension</title>
 
       <docidentifier type="ITU" primary="true">G.718 (2008) Amd. 3 (03/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Corrections to text and C-code</title>
+
+      <docidentifier type="ITU" primary="true">G.718 (2008) Cor. 3 (01/2011)</docidentifier>
     </bibitem>
 
   </relation>
@@ -4615,15 +4603,6 @@ sourcecode .nt {
 <title language="en" script="Latn">Corrections to fixed-point C-code</title>
 
       <docidentifier type="ITU" primary="true">G.718 (2008) Cor. 1 (11/2008)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Frame error robust narrow-band and wideband embedded variable bit-rate coding of speech and audio from 8-32 kbit/s</title>
-
-      <docidentifier type="ITU" primary="true">G.718 (06/2008)</docidentifier>
     </bibitem>
 
   </relation>
@@ -5224,15 +5203,12 @@ sourcecode .nt {
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">Corrections to text and C-code</title>
+<title language="en" script="Latn" type="main">Frame error robust narrow-band and wideband embedded variable bit-rate coding of speech and audio from 8-32 kbit/s</title>
 
-      
-<title language="en" script="Latn" type="main">Corrections to text and C-code</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/10981</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.718 (2008)</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/9467</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.718 (06/2008)</docidentifier>
       <date type="published">
-        <on>2011-01-13</on>
+        <on>2008-06-13</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -5260,15 +5236,41 @@ sourcecode .nt {
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.5</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Recommendation ITU-T G.718 describes a narrow-band (NB) and wideband (WB) embedded variable bit-rate coding algorithm for speech and audio operating in the range from 8 to 32 kbit/s which is designed to be robust to frame erasures.This codec provides state-of-the-art NB speech quality over the lower bit rates and state-of-the-art WB speech quality over the complete range of bit rates. In addition, the ITU-T G.718 codec is designed to be highly robust to frame erasures, thereby enhancing the speech quality when used in IP transport applications on fixed, wireless and mobile networks. Despite its embedded nature, the codec also performs well with both NB and WB generic audio signals.This codec has an embedded scalable structure, enabling maximum flexibility in the transport of voice packets through IP networks of today and in future media-aware networks. In addition, the embedded structure of ITU-T G.718 will easily allow the codec to be extended to provide a super-wideband and stereo capability through additional layers which are currently under development. The bitstream may be truncated at the decoder side or by any component of the communication system to instantaneously adjust the bit rate to the desired value without the need for out-of-band signalling. The encoder produces an embedded bitstream structured in five layers corresponding to the five available bit rates: 8, 12, 16, 24 and 32 kbit/s.The ITU-T G.718 encoder can accept WB sampled signals at 16 kHz, or NB signals sampled at either 16 or 8 kHz. Similarly, the decoder output can be 16 kHz WB, in addition to 16 or 8 kHz NB. Input signals sampled at 16 kHz, but with bandwidth limited to NB, are detected by the encoder.The output of the ITU-T G.718 codec is capable of operating with a bandwidth of 300-3400 Hz at 8 and 12 kbit/s and 50-7000 Hz from 8 to 32 kbit/s.The high quality codec core represents a significant performance improvement, providing 8 kbit/s wideband clean speech quality equivalent to the ITU-T G.722.2 codec at 12.65 kbit/s whilst the 8 kbit/s narrow-band codec operating mode provides clean speech quality equivalent to the ITU-T G.729E codec at 11.8 kbit/s.The codec operates on 20-ms frames and has a maximum algorithmic delay of 42.875 ms for wideband input and wideband output signals. The maximum algorithmic delay for narrow-band input and narrow-band output signals is 43.875 ms. The codec may also be employed in a low-delay mode when the encoder and decoder maximum bit rates are set to 8 kbit/s or 12 kbit/s. In this case, the maximum algorithmic delay is reduced by 10 ms.</abstract>
+      <abstract language="en" script="Latn">Recommendation ITU-T G.718 describes a narrow‑band (NB) and wideband (WB) embedded variable bit-rate coding algorithm for speech and audio operating in the range from 8 to 32 kbit/s which is designed to be robust to frame erasures.
+
+This codec provides state-of-the-art NB speech quality over the lower bit rates and state-of-the-art WB speech quality over the complete range of bit rates. In addition, the ITU-T G.718 codec is designed to be highly robust to frame erasures, thereby enhancing the speech quality when used in IP transport applications on fixed, wireless and mobile networks. Despite its embedded nature, the codec also performs well with both NB and WB generic audio signals.
+
+This codec has an embedded scalable structure, enabling maximum flexibility in the transport of voice packets through IP networks of today and in future media-aware networks. In addition, the embedded structure of ITU-T G.718 will easily allow the codec to be extended to provide a super‑wideband and stereo capability through additional layers which are currently under development. The bitstream may be truncated at the decoder side or by any component of the communication system to instantaneously adjust the bit rate to the desired value without the need for out-of-band signalling. The encoder produces an embedded bitstream structured in five layers corresponding to the five available bit rates: 8, 12, 16, 24 and 32 kbit/s.
+
+The ITU-T G.718 encoder can accept WB sampled signals at 16 kHz, or NB signals sampled at either 16 or 8 kHz. Similarly, the decoder output can be 16 kHz WB, in addition to 16 or 8 kHz NB. Input signals sampled at 16 kHz, but with bandwidth limited to NB, are detected by the encoder.
+
+The output of the ITU-T G.718 codec is capable of operating with a bandwidth of 300-3400 Hz at 8 and 12 kbit/s and 50-7000 Hz from 8 to 32 kbit/s.
+
+The high quality codec core represents a significant performance improvement, providing 8 kbit/s wideband clean speech quality equivalent to the ITU-T G.722.2 codec at 12.65 kbit/s whilst the 8 kbit/s narrow‑band codec operating mode provides clean speech quality equivalent to the ITU‑T G.729E codec at 11.8 kbit/s.
+
+The codec operates on 20‑ms frames and has a maximum algorithmic delay of 42.875 ms for wideband input and wideband output signals. The maximum algorithmic delay for narrow‑band input and narrow‑band output signals is 43.875 ms. The codec may also be employed in a low-delay mode when the encoder and decoder maximum bit rates are set to 12 kbit/s. In this case, the maximum algorithmic delay is reduced by 10 ms.
+
+The codec also incorporates an alternate coding mode, with a minimum bit rate of 12.65 kbit/s, which is bitstream interoperable with Recommendation ITU-T G.722.2, 3GPP AMR-WB and 3GPP2 VMR-WB mobile WB speech coding standards. This option replaces layer 1 and layer 2, and the layers 3-5 are similar to the default option with the exception that in layer 3 fewer bits are used to compensate for the extra bits of the 12.65 kbit/s core. The decoder is further able to decode all other ITU‑T G.722.2 operating modes. Furthermore, a new annex to this Recommendation is under development that will efficiently enable bit-stream interoperability with the 3GPP2 EVRC‑WB codec. This Recommendation also includes discontinuous transmission mode (DTX) and comfort noise generation (CNG) algorithms that enable bandwidth savings during inactive periods. An integrated noise reduction algorithm can be used provided that the communication session is limited to 12 kbit/s.
+
+The underlying algorithm is based on a two-stage coding structure: the lower two layers are based on code-excited linear prediction (CELP) coding of the band (50-6400 Hz) where the core layer takes advantage of signal classification to use optimized coding modes for each frame. The higher layers encode the weighted error signal from the lower layers using overlap-add modified discrete cosine transformation (MDCT) transform coding. Several technologies are used to encode the MDCT coefficients to maximize performance for both speech and music.
+
+Corrigendum 1 (11/2008) corrects a number of minor problems that have been identified in the fixed-point ANSI C source code of the base text of this Recommendation.
+
+Amendment 1 (03/2009) introduces some additional minor corrections to the fixed-point ANSI C source code and to the text of the Recommendation. It also describes an addition of a verification of the default value of the layer 5 unused bit, and the procedure of erasure of layer 5 if the bit does not have the default value. Amendment 1 also introduces the new Annex A, which defines an alternative implementation of the ITU-T G.718 algorithm using floating point arithmetic to be used for implementation on DSP hardware optimized for floating-point operations. The accompanying floating point ANSI C source code is fully interoperable with the fixed-point code.
+
+While Corrigendum 2 (08/2009) includes further corrections to address minor problems found in both the fixed and floating-point implementations, its main benefit is in the streamlining of the fixed‑point implementation which reduces the complexity of the codec from 69 to 57 WMOPS whilst remaining bit-exact with the original code on both steps of the characterization text. This 17% complexity reduction is significant and will clearly make the G.718 more attractive to implement.
+
+This Recommendation contains an electronic attachment with the ANSI C source code, which is an integral part of this Recommendation.
+
+This edition integrates all changes introduced by Corrigendum 1 (11/2008), Amendment 1 (03/2009) and Corrigendum 2 (08/2009), including the associated updated ANSI C source code.</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2011</from>
+        <from>2008</from>
         <owner>
           <organization>
             
@@ -5285,6 +5287,15 @@ sourcecode .nt {
 <title language="en" script="Latn">New Annex C describing an alternative floating-point implementation of the superwideband monaural extension</title>
 
           <docidentifier type="ITU" primary="true">G.718 (2008) Amd. 3 (03/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Corrections to text and C-code</title>
+
+          <docidentifier type="ITU" primary="true">G.718 (2008) Cor. 3 (01/2011)</docidentifier>
         </bibitem>
 
       </relation>
@@ -5321,15 +5332,6 @@ sourcecode .nt {
 <title language="en" script="Latn">Corrections to fixed-point C-code</title>
 
           <docidentifier type="ITU" primary="true">G.718 (2008) Cor. 1 (11/2008)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Frame error robust narrow-band and wideband embedded variable bit-rate coding of speech and audio from 8-32 kbit/s</title>
-
-          <docidentifier type="ITU" primary="true">G.718 (06/2008)</docidentifier>
         </bibitem>
 
       </relation>
@@ -5936,11 +5938,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.722" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.722" semx-id="_efcc8306-eec3-6e76-f6b0-c14189638b9a"><biblio-tag>[ITU‑T G.722]</biblio-tag><formattedref>Recommendation ITU-T G.722, <em>7 kHz audio-coding within 64 kbit/s</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">7 kHz audio-coding within 64 kbit/s</title>
-
+</bibitem><bibitem id="ITU-T_G.722" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.722" semx-id="_b7e3ac5c-bb7c-97a1-5d44-3e9e3c500ae6"><biblio-tag>[ITU‑T G.722]</biblio-tag><formattedref>Recommendation ITU-T G.722, <em>7 kHz audio-coding within 64 kbit/s</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">7 kHz audio-coding within 64 kbit/s</title>
 
@@ -6692,9 +6691,6 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">7 kHz audio-coding within 64 kbit/s</title>
-
       
 <title language="en" script="Latn" type="main">7 kHz audio-coding within 64 kbit/s</title>
 
@@ -7469,16 +7465,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.726" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.726" semx-id="_4cc9e83b-0cc7-1d1e-084a-f0da929d3fd7"><biblio-tag>[ITU‑T G.726]</biblio-tag><formattedref>Recommendation ITU-T G.726, <em>Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</em>, Edition 4.5.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ITU-T_G.726" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.726" semx-id="_77ad3a93-9d9c-9762-ab74-9c94b257a2c1"><biblio-tag>[ITU‑T G.726]</biblio-tag><formattedref>Recommendation ITU-T G.726, <em>40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
 
-  
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/8496</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-200505-I!Cor1!PDF-E&amp;type=items</uri>
+  <uri type="src">https://handle.itu.int/11.1002/1000/924</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-199012-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.726</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -7506,14 +7499,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>4.5</edition>
+  <edition>4</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2005</from>
+    <from>1990</from>
     <owner>
       <organization>
         
@@ -7524,6 +7517,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       </organization>
     </owner>
   </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+
+      <docidentifier type="ITU" primary="true">G.726 (1990) Cor. 1 (05/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
   <relation type="hasEdition">
     <bibitem>
       
@@ -7557,15 +7559,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.726 40, 32, 24 and 16 kbit/s ADPCM algorithm</title>
 
       <docidentifier type="ITU" primary="true">G.726 App. II test vectors (03/1991)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
-
-      <docidentifier type="ITU" primary="true">G.726 (12/1990)</docidentifier>
     </bibitem>
 
   </relation>
@@ -8193,16 +8186,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
 
-      
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/8496</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-200505-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.726 (1990)</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/924</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.726-199012-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.726 (12/1990)</docidentifier>
       <date type="published">
-        <on>2005-05-14</on>
+        <on>1990-12-14</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -8230,15 +8220,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>4.5</edition>
+      <edition>4</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">ITU-T Rec. G.726 contains the specification for the adaptive differential PCM voice-coding algorithm at 16, 24, 32, and 40 kbit/s. Its Annex A contains the specification for linear PCM input and output. This corrigendum to ITU-T Rec. G.726 fixes an omission in Decoder Block LIMO of its Annex A, which limits the output linear two's complement sample to a 14-bit value. The pseudo-code, as originally published, misses the case for reconstructed samples SR equal to 57 344.</abstract>
+      <abstract language="en" script="Latn"/>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2005</from>
+        <from>1990</from>
         <owner>
           <organization>
             
@@ -8249,6 +8239,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           </organization>
         </owner>
       </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.726 for use with uniform-quantized input and output</title>
+
+          <docidentifier type="ITU" primary="true">G.726 (1990) Cor. 1 (05/2005)</docidentifier>
+        </bibitem>
+
+      </relation>
       <relation type="hasEdition">
         <bibitem>
           
@@ -8282,15 +8281,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.726 40, 32, 24 and 16 kbit/s ADPCM algorithm</title>
 
           <docidentifier type="ITU" primary="true">G.726 App. II test vectors (03/1991)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">40, 32, 24, 16 kbit/s Adaptive Differential Pulse Code Modulation (ADPCM)</title>
-
-          <docidentifier type="ITU" primary="true">G.726 (12/1990)</docidentifier>
         </bibitem>
 
       </relation>
@@ -8924,16 +8914,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.727" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.727" semx-id="_a501a368-d401-c582-9adf-e56db25d35f0"><biblio-tag>[ITU‑T G.727]</biblio-tag><formattedref>Recommendation ITU-T G.727, <em>Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</em>, Edition 1.4.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ITU-T_G.727" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.727" semx-id="_ba6e58c0-1cd2-6ec2-17ed-5d419aa604bd"><biblio-tag>[ITU‑T G.727]</biblio-tag><formattedref>Recommendation ITU-T G.727, <em>5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
 
-  
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/8497</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-200505-I!Cor1!PDF-E&amp;type=items</uri>
+  <uri type="src">https://handle.itu.int/11.1002/1000/927</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-199012-I!!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.727</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -8961,14 +8948,14 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.4</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2005</from>
+    <from>1990</from>
     <owner>
       <organization>
         
@@ -8979,6 +8966,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
       </organization>
     </owner>
   </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+
+      <docidentifier type="ITU" primary="true">G.727 (1990) Cor. 1 (05/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
   <relation type="hasEdition">
     <bibitem>
       
@@ -9003,15 +8999,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.727 5-, 4-, 3- and 2-bit/sample embedded ADPCM algorithm</title>
 
       <docidentifier type="ITU" primary="true">G.727 App. I test vectors (03/1991)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
-
-      <docidentifier type="ITU" primary="true">G.727 (12/1990)</docidentifier>
     </bibitem>
 
   </relation>
@@ -9612,16 +9599,13 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+<title language="en" script="Latn" type="main">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
 
-      
-<title language="en" script="Latn" type="main">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/8497</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-200505-I!Cor1!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.727 (1990)</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/927</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-G.727-199012-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.727 (12/1990)</docidentifier>
       <date type="published">
-        <on>2005-05-14</on>
+        <on>1990-12-14</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -9649,15 +9633,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.4</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">ITU-T Rec. G.727 contains the specification for the embedded adaptive differential PCM voice-coding algorithm at 16, 24, 32, and 40 kbit/s. Its Annex A contains the specification for linear PCM input and output. This corrigendum fixes an omission in Decoder Block LIMO of Annex A/G.727, which limits the output linear two's complement sample to a 14-bit value. The pseudo-code, as originally published, misses the case for reconstructed samples SRFFequal to 57 344.</abstract>
+      <abstract language="en" script="Latn">This Recommendation contains the specification of an embedded Adaptive Differential Pulse Code Modulation (ADPCM) algorithms with 5-, 4-, 3- and 2-bits per sample (i.e., at rates of 40, 32, 24 and 16 kbit/s). The characteristics below are recommended for the conversion of 64 kbit/s. A law or Mu law PCM channels to/ from variable rate embedded ADPCM channels.</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2005</from>
+        <from>1990</from>
         <owner>
           <organization>
             
@@ -9668,6 +9652,15 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
           </organization>
         </owner>
       </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Correction to Annex A: Extensions of Recommendation G.727 for use with uniform-quantized input and output</title>
+
+          <docidentifier type="ITU" primary="true">G.727 (1990) Cor. 1 (05/2005)</docidentifier>
+        </bibitem>
+
+      </relation>
       <relation type="hasEdition">
         <bibitem>
           
@@ -9692,15 +9685,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
 <title language="en" script="Latn">Digital test sequences for the verification of the G.727 5-, 4-, 3- and 2-bit/sample embedded ADPCM algorithm</title>
 
           <docidentifier type="ITU" primary="true">G.727 App. I test vectors (03/1991)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">5-, 4-, 3- and 2-bit/sample embedded adaptive differential pulse code modulation (ADPCM)</title>
-
-          <docidentifier type="ITU" primary="true">G.727 (12/1990)</docidentifier>
         </bibitem>
 
       </relation>
@@ -10307,11 +10291,8 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.728" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.728" semx-id="_b15ce940-c12c-9565-99b3-55d3e29d3069"><biblio-tag>[ITU‑T G.728]</biblio-tag><formattedref>Recommendation ITU-T G.728, <em>Coding of speech at 16 kbit/s using low-delay code excited linear prediction</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
-
+</bibitem><bibitem id="ITU-T_G.728" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.728" semx-id="_afcb8243-f1ae-535d-4624-50adfcb65e44"><biblio-tag>[ITU‑T G.728]</biblio-tag><formattedref>Recommendation ITU-T G.728, <em>Coding of speech at 16 kbit/s using low-delay code excited linear prediction</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
 
@@ -11052,9 +11033,6 @@ Test sequences are provided for compliance testing of the ITU-T G.722 algorithm 
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
-
       
 <title language="en" script="Latn" type="main">Coding of speech at 16 kbit/s using low-delay code excited linear prediction</title>
 
@@ -11816,15 +11794,12 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_G.729.1" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.729.1" semx-id="_1f799f7c-c461-8dfb-207d-715050770bc6"><biblio-tag>[ITU‑T G.729.1]</biblio-tag><formattedref>Recommendation ITU-T G.729.1, <em>Corrections to source code</em>, Edition 1.6.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ITU-T_G.729.1" type="standard" schema-version="v1.5.6" anchor="ITU-T_G.729.1" semx-id="_ba3b3d8c-4f2f-03c8-f9f9-9c4d2b594563"><biblio-tag>[ITU‑T G.729.1]</biblio-tag><formattedref>Recommendation ITU-T G.729.1, <em>G.729-based embedded variable bit-rate coder: An 8-32 kbit/s scalable wideband coder bitstream interoperable with G.729</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
-<title language="en" script="Latn" type="title-main">Corrections to source code</title>
+<title language="en" script="Latn" type="main">G.729-based embedded variable bit-rate coder: An 8-32 kbit/s scalable wideband coder bitstream interoperable with G.729</title>
 
-  
-<title language="en" script="Latn" type="main">Corrections to source code</title>
-
-  <uri type="src">https://handle.itu.int/11.1002/1000/10178</uri>
+  <uri type="src">https://handle.itu.int/11.1002/1000/8825</uri>
   <docidentifier type="ITU" primary="true">ITU-T G.729.1</docidentifier>
   <contributor>
     <role type="publisher"/>
@@ -11852,14 +11827,14 @@ This Recommendation includes an electronic attachment containing programs and te
       <abbreviation>ITU-T</abbreviation>
     </organization>
   </contributor>
-  <edition>1.6</edition>
+  <edition>1</edition>
   <language>en</language>
   <script>Latn</script>
   <status>
     <stage>Published</stage>
   </status>
   <copyright>
-    <from>2009</from>
+    <from>2006</from>
     <owner>
       <organization>
         
@@ -11894,6 +11869,15 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">New Annex E on superwideband scalable extension</title>
 
       <docidentifier type="ITU" primary="true">G.729.1 (2006) Amd. 6 (03/2010)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      
+<title language="en" script="Latn">Corrections to source code</title>
+
+      <docidentifier type="ITU" primary="true">G.729.1 (2006) Cor. 1 (08/2009)</docidentifier>
     </bibitem>
 
   </relation>
@@ -11939,15 +11923,6 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">New Annex A on G.729.1 usage in H.245, plus corrections to the main body and updated test vectors</title>
 
       <docidentifier type="ITU" primary="true">G.729.1 (2006) Amd. 1 (01/2007)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">G.729-based embedded variable bit-rate coder: An 8-32 kbit/s scalable wideband coder bitstream interoperable with G.729</title>
-
-      <docidentifier type="ITU" primary="true">G.729.1 (05/2006)</docidentifier>
     </bibitem>
 
   </relation>
@@ -12548,15 +12523,12 @@ This Recommendation includes an electronic attachment containing programs and te
   <relation type="instanceOf">
     <bibitem type="standard">
       
-<title language="en" script="Latn" type="title-main">Corrections to source code</title>
+<title language="en" script="Latn" type="main">G.729-based embedded variable bit-rate coder: An 8-32 kbit/s scalable wideband coder bitstream interoperable with G.729</title>
 
-      
-<title language="en" script="Latn" type="main">Corrections to source code</title>
-
-      <uri type="src">https://handle.itu.int/11.1002/1000/10178</uri>
-      <docidentifier type="ITU" primary="true">ITU-T G.729.1 (2006)</docidentifier>
+      <uri type="src">https://handle.itu.int/11.1002/1000/8825</uri>
+      <docidentifier type="ITU" primary="true">ITU-T G.729.1 (05/2006)</docidentifier>
       <date type="published">
-        <on>2009-08-29</on>
+        <on>2006-05-29</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -12584,15 +12556,17 @@ This Recommendation includes an electronic attachment containing programs and te
           <abbreviation>ITU-T</abbreviation>
         </organization>
       </contributor>
-      <edition>1.6</edition>
+      <edition>1</edition>
       <language>en</language>
       <script>Latn</script>
-      <abstract language="en" script="Latn">Corrigendum 1 to Recommendation ITU-T G.729.1 contains the details of several problems that have been identified recently in the C-code of the main body of Recommendation ITU-T G.729.1, and of its Annexes B, C and D. Corrigendum 1 does not introduce any changes to the text description of ITU-T G.729.1 (including Annexes A, B, C and D).Corrigendum 1 revises the source code to Release 1.5, which is found in the electronic attachment. The attachment incorporates the ANSI C source code for the main body of ITU-T G.729.1, Annex B, Annex C and Annex D (including updated test vectors for Annex C) and all approved corrections till 29 September 2009.</abstract>
+      <abstract language="en" script="Latn">This Recommendation describes an 8-32 kbit/s scalable wideband speech and audio coding algorithm interoperable with G.729, G.729A and G.729B.The output of the G.729EV coder has a bandwidth of 50-4000 Hz at 8 and 12 kbit/s and 50-7000 Hz from 14 to 32 kbit/s. At 8 kbit/s, G.729EV is fully interoperable with G.729, Annex A/G.729 and Annex B/G.729. Hence, an efficient deployment in existing G.729-based VoIP infrastructures is foreseen. The coder operates on 20 ms frames and has an algorithmic delay of 48.9375 ms. By default, the encoder input and decoder output are sampled at 16 kHz.
+The encoder produces an embedded bitstream structured in 12 layers corresponding to 12 available bit rates from 8 to 32 kbit/s. The bitstream can be truncated at the decoder side or by any component of the communication system to adjust "on the fly" the bit rate to the desired value with no need for outband signalling.
+The underlying algorithm is based on a three-stage coding structure: embedded Code-Excited Linear Prediction (CELP) coding of the lower band (50-4000 Hz), parametric coding of the higher band (4000-7000 Hz) by Time-Domain Bandwidth Extension (TDBWE), and enhancement of the full band (50-7000 Hz) by a predictive transform coding technique referred to as Time-Domain Aliasing Cancellation (TDAC).Amendment 1 introduces the new Annex A containing the RTP payload format, capability identifiers and parameters for signalling of G.729.1 capabilities using H.245. Both format and capability parameters are fully compatible with the corresponding G.729.1 RTP definitions to allow seamless interoperability. Besides the new Annex, Amendment 1 to G.729.1 incorporates changes needed to correct defects in G.729.1 and provides new, more comprehensive test vectors.Amendment 2 introduces the new Annex B, which defines an alternative implementation of the G.729.1 algorithm using floating point arithmetic to be used for implementation on DSP hardware optimized for floating-point operations. The accompanying floating point C-code is fully interoperable with the fixed-point C-code.</abstract>
       <status>
         <stage>Published</stage>
       </status>
       <copyright>
-        <from>2009</from>
+        <from>2006</from>
         <owner>
           <organization>
             
@@ -12627,6 +12601,15 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">New Annex E on superwideband scalable extension</title>
 
           <docidentifier type="ITU" primary="true">G.729.1 (2006) Amd. 6 (03/2010)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          
+<title language="en" script="Latn">Corrections to source code</title>
+
+          <docidentifier type="ITU" primary="true">G.729.1 (2006) Cor. 1 (08/2009)</docidentifier>
         </bibitem>
 
       </relation>
@@ -12672,15 +12655,6 @@ This Recommendation includes an electronic attachment containing programs and te
 <title language="en" script="Latn">New Annex A on G.729.1 usage in H.245, plus corrections to the main body and updated test vectors</title>
 
           <docidentifier type="ITU" primary="true">G.729.1 (2006) Amd. 1 (01/2007)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">G.729-based embedded variable bit-rate coder: An 8-32 kbit/s scalable wideband coder bitstream interoperable with G.729</title>
-
-          <docidentifier type="ITU" primary="true">G.729.1 (05/2006)</docidentifier>
         </bibitem>
 
       </relation>
@@ -13287,11 +13261,8 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_O.41" type="standard" schema-version="v1.5.6" anchor="ITU-T_O.41" semx-id="_ee4f64ca-8f37-410b-1ab2-ba5086954898"><biblio-tag>[ITU‑T O.41]</biblio-tag><formattedref>Recommendation ITU-T O.41, <em>Psophometer for use on telephone-type circuits</em>, Sixth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Psophometer for use on telephone-type circuits</title>
-
+</bibitem><bibitem id="ITU-T_O.41" type="standard" schema-version="v1.5.6" anchor="ITU-T_O.41" semx-id="_d964f68f-9f28-8318-7846-a84f88d1f63b"><biblio-tag>[ITU‑T O.41]</biblio-tag><formattedref>Recommendation ITU-T O.41, <em>Psophometer for use on telephone-type circuits</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Psophometer for use on telephone-type circuits</title>
 
@@ -13389,9 +13360,6 @@ This Recommendation includes an electronic attachment containing programs and te
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Psophometer for use on telephone-type circuits</title>
-
       
 <title language="en" script="Latn" type="main">Psophometer for use on telephone-type circuits</title>
 
@@ -13500,11 +13468,8 @@ This Recommendation includes an electronic attachment containing programs and te
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_P.341" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.341" semx-id="_0f7fb9ed-5e3f-efd6-a2fd-032e670a7779"><biblio-tag>[ITU‑T P.341]</biblio-tag><formattedref>Recommendation ITU-T P.341, <em>Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
-
+</bibitem><bibitem id="ITU-T_P.341" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.341" semx-id="_e44c2ca8-b43b-d9fd-87c3-cec265dad7a7"><biblio-tag>[ITU‑T P.341]</biblio-tag><formattedref>Recommendation ITU-T P.341, <em>Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
 
@@ -13672,9 +13637,6 @@ This Recommendation includes an electronic attachment containing programs and te
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
-
       
 <title language="en" script="Latn" type="main">Transmission characteristics for wideband digital loudspeaking and hands-free telephony terminals</title>
 
@@ -13861,11 +13823,8 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_P.48" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.48" semx-id="_5d87b1d1-5b33-cc98-46b8-25cb85bf43b1"><biblio-tag>[ITU‑T P.48]</biblio-tag><formattedref>Recommendation ITU-T P.48, <em>Specification for an intermediate reference system</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Specification for an intermediate reference system</title>
-
+</bibitem><bibitem id="ITU-T_P.48" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.48" semx-id="_9b2fad74-7504-e206-db8c-d2dd8e8bdc7a"><biblio-tag>[ITU‑T P.48]</biblio-tag><formattedref>Recommendation ITU-T P.48, <em>Specification for an intermediate reference system</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Specification for an intermediate reference system</title>
 
@@ -14026,9 +13985,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Specification for an intermediate reference system</title>
-
       
 <title language="en" script="Latn" type="main">Specification for an intermediate reference system</title>
 
@@ -14200,11 +14156,8 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_P.56" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.56" semx-id="_45f2786a-cd1c-d607-6314-4f208fa0ccee"><biblio-tag>[ITU‑T P.56]</biblio-tag><formattedref>Recommendation ITU-T P.56, <em>Objective measurement of active speech level</em>, Sixth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Objective measurement of active speech level</title>
-
+</bibitem><bibitem id="ITU-T_P.56" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.56" semx-id="_2cc60497-1e05-e424-10ac-c7d430b870f3"><biblio-tag>[ITU‑T P.56]</biblio-tag><formattedref>Recommendation ITU-T P.56, <em>Objective measurement of active speech level</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Objective measurement of active speech level</title>
 
@@ -14383,9 +14336,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Objective measurement of active speech level</title>
-
       
 <title language="en" script="Latn" type="main">Objective measurement of active speech level</title>
 
@@ -14575,11 +14525,8 @@ Some technical requirements and related test methods have been modified accordin
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ITU-T_P.810" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.810" semx-id="_25382f10-17b9-4eeb-25d9-4866c89cba6d"><biblio-tag>[ITU‑T P.810]</biblio-tag><formattedref>Recommendation ITU-T P.810, <em>Modulated noise reference unit (MNRU)</em>, Fifth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
-  
-<title language="en" script="Latn" type="title-main">Modulated noise reference unit (MNRU)</title>
-
+</bibitem><bibitem id="ITU-T_P.810" type="standard" schema-version="v1.5.6" anchor="ITU-T_P.810" semx-id="_7bcf6902-52b2-ac3b-5868-02adb387303e"><biblio-tag>[ITU‑T P.810]</biblio-tag><formattedref>Recommendation ITU-T P.810, <em>Modulated noise reference unit (MNRU)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="main">Modulated noise reference unit (MNRU)</title>
 
@@ -14758,9 +14705,6 @@ Some technical requirements and related test methods have been modified accordin
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      
-<title language="en" script="Latn" type="title-main">Modulated noise reference unit (MNRU)</title>
-
       
 <title language="en" script="Latn" type="main">Modulated noise reference unit (MNRU)</title>
 

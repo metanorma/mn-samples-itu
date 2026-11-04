@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.2" schema-version="v2.2.0" flavor="itu">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.3.0" flavor="itu">
 <bibdata type="standard">
 <title language="en" type="main">Counterfeit ICT equipment</title>
 <docidentifier type="ITU" primary="true">ITU-T QSTR-COUNTERFEIT</docidentifier><docidentifier type="ITU-lang">ITU-T QSTR-COUNTERFEIT-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T QSTR-COUNTERFEIT-E</docidentifier><docnumber>QSTR-COUNTERFEIT</docnumber><date type="published"><on>2015-12-11</on></date><date type="published" format="ddMMMyyyy">11.XII.2015</date><contributor><role type="author"/><organization>
@@ -2055,9 +2055,45 @@ sourcecode .nt {
 </ul>
 </clause>
 </clause>
-</annex><bibliography><references id="_4bb1e3c5-3dc1-40ab-75fb-e58257b4b4e9" normative="false" obligation="informative" semx-id="_4bb1e3c5-3dc1-40ab-75fb-e58257b4b4e9" displayorder="23">
-<title id="_b1bae69f-7769-efdd-3091-a594f21e3d01" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_ef643f91-fb9d-1009-60be-079b7f598293"><semx element="title" source="_b1bae69f-7769-efdd-3091-a594f21e3d01">Bibliography</semx></fmt-title><bibitem id="iso10486" type="standard" schema-version="v1.5.6" anchor="iso10486" semx-id="_e00eca64-71e2-cf1d-1638-4c29b8712e6e"><biblio-tag>[ISO 10486:1992]</biblio-tag><formattedref>ISO 10486:1992 (1992), <em>Passenger cars — Car radio identification number (CRIN)</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</annex><bibliography><references id="_0bed11c0-08f0-3076-c0e5-7c746f376ec9" normative="false" obligation="informative" semx-id="_0bed11c0-08f0-3076-c0e5-7c746f376ec9" displayorder="23">
+<title id="_b1bae69f-7769-efdd-3091-a594f21e3d01" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_ef643f91-fb9d-1009-60be-079b7f598293"><semx element="title" source="_b1bae69f-7769-efdd-3091-a594f21e3d01">Bibliography</semx></fmt-title><bibitem anchor="x509" id="x509" semx-id="_0795813a-f7c4-3951-d304-6e0ce670c1ef"><biblio-tag>[ITU X.509]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU X.509, Recommendation ITU-T X.509 (2012) | ISO/IEC 9594-8:2014, <em>Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</em>.</formattedref>
+  <docidentifier type="ITU">ITU X.509</docidentifier>
+  <docnumber>509</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="e164" id="e164" semx-id="_e325afb3-8d8e-9399-6fa3-cec2a8474b2b"><biblio-tag>[ITU‑T E.164]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T E.164, Recommendation ITU-T E.164 (2010), <em>The international public telecommunication numbering plan</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T E.164</docidentifier>
+  <docnumber>164</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="x1255" id="x1255" semx-id="_652d4ff4-b00f-9914-ef84-bf3ad0daa051"><biblio-tag>[ITU‑T X.1255]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.1255, Recommendation ITU-T X.1255 (2013), <em>Framework for discovery of identity management information</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T X.1255</docidentifier>
+  <docnumber>1255</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="x668" id="x668" semx-id="_684d35da-f072-c251-1320-238d53563c89"><biblio-tag>[ITU‑T X.668]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.668, Recommendation ITU-T X.668 (2008) | ISO/IEC 9834-9:2008, <em>Information technology – Open Systems Interconnection – Procedures for the operation of OSI Registration Authorities: Registration of object identifier arcs for applications and services using tag-based identification</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T X.668</docidentifier>
+  <docnumber>668</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="h621" id="h621" semx-id="_0a0f3c81-d5c5-bdc3-7945-df10a8e9cd20"><biblio-tag>[ITU‑T Y.4405]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.4405, Recommendation ITU-T H.621 (2008), <em>Architecture of a system for multimedia information access triggered by tag-based identification</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T Y.4405</docidentifier>
+  <docnumber>4405</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="f771" id="f771" semx-id="_3a01cc25-9d15-b5ff-9831-ea5715f0c1c8"><biblio-tag>[ITU‑T Y.4551]</biblio-tag>
+  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.4551, Recommendation ITU-T F.771 (2008), <em>Service description and requirements for multimedia information access triggered by tag-based identification</em>.</formattedref>
+  <docidentifier type="ITU">ITU-T Y.4551</docidentifier>
+  <docnumber>4551</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="iso10486" type="standard" schema-version="v1.5.6" anchor="iso10486" semx-id="_5c9872c4-ec36-6912-cbc7-bc597bc469b8"><biblio-tag>[ISO 10486:1992]</biblio-tag><formattedref>ISO 10486:1992 (1992), <em>Passenger cars — Car radio identification number (CRIN)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Passenger cars</title>
 
@@ -2109,7 +2145,7 @@ sourcecode .nt {
         
 <name>Electrical and electronic components and general system aspects</name>
 
-        <identifier id="_30d9dd1b-91ce-31a2-375a-d8b03c04da71">ISO/TC 22/SC 32</identifier><fmt-identifier><tt><semx element="identifier" source="_30d9dd1b-91ce-31a2-375a-d8b03c04da71">ISO/TC 22/SC 32</semx></tt></fmt-identifier>
+        <identifier id="_80cb5b38-0d9c-9a45-b73f-10b05d6e37eb">ISO/TC 22/SC 32</identifier><fmt-identifier><tt><semx element="identifier" source="_80cb5b38-0d9c-9a45-b73f-10b05d6e37eb">ISO/TC 22/SC 32</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2136,8 +2172,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso11784" type="standard" schema-version="v1.5.6" anchor="iso11784" semx-id="_9c38ca5d-4614-8eb1-92f5-7ebfe0debb10"><biblio-tag>[ISO 11784:1996]</biblio-tag><formattedref>ISO 11784:1996 (1996), <em>Radio frequency identification of animals — Code structure</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso11784" type="standard" schema-version="v1.5.6" anchor="iso11784" semx-id="_2aac46f2-f3df-7700-efb7-87ec4b1631ff"><biblio-tag>[ISO 11784:1996]</biblio-tag><formattedref>ISO 11784:1996 (1996), <em>Radio frequency identification of animals — Code structure</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Radio frequency identification of animals</title>
 
@@ -2189,7 +2225,7 @@ sourcecode .nt {
         
 <name>Agricultural electronics</name>
 
-        <identifier id="_c6447e62-2aa4-e603-f28e-eea0bf072c94">ISO/TC 23/SC 19</identifier><fmt-identifier><tt><semx element="identifier" source="_c6447e62-2aa4-e603-f28e-eea0bf072c94">ISO/TC 23/SC 19</semx></tt></fmt-identifier>
+        <identifier id="_0344e9f2-cea9-2084-fec0-fd60951dd89b">ISO/TC 23/SC 19</identifier><fmt-identifier><tt><semx element="identifier" source="_0344e9f2-cea9-2084-fec0-fd60951dd89b">ISO/TC 23/SC 19</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2246,8 +2282,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso11785" type="standard" schema-version="v1.5.6" anchor="iso11785" semx-id="_166b692f-6630-5e26-b127-c6c1fee5559c"><biblio-tag>[ISO 11785:1996]</biblio-tag><formattedref>ISO 11785:1996 (1996), <em>Radio frequency identification of animals — Technical concept</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso11785" type="standard" schema-version="v1.5.6" anchor="iso11785" semx-id="_a617b8fe-7845-b4b5-edcd-1594abd7796d"><biblio-tag>[ISO 11785:1996]</biblio-tag><formattedref>ISO 11785:1996 (1996), <em>Radio frequency identification of animals — Technical concept</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Radio frequency identification of animals</title>
 
@@ -2299,7 +2335,7 @@ sourcecode .nt {
         
 <name>Agricultural electronics</name>
 
-        <identifier id="_6bfe07bf-e455-cb53-36ab-c0497a4d8288">ISO/TC 23/SC 19</identifier><fmt-identifier><tt><semx element="identifier" source="_6bfe07bf-e455-cb53-36ab-c0497a4d8288">ISO/TC 23/SC 19</semx></tt></fmt-identifier>
+        <identifier id="_7fc34d5c-5f52-6e38-923b-b17cff6fd98a">ISO/TC 23/SC 19</identifier><fmt-identifier><tt><semx element="identifier" source="_7fc34d5c-5f52-6e38-923b-b17cff6fd98a">ISO/TC 23/SC 19</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2335,8 +2371,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso12931" type="standard" schema-version="v1.5.6" anchor="iso12931" semx-id="_017d4d9d-95b4-35d8-618a-eb05fba701ee"><biblio-tag>[ISO 12931:2012]</biblio-tag><formattedref>ISO 12931:2012 (2012), <em>Performance criteria for authentication solutions used to combat counterfeiting of material goods</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso12931" type="standard" schema-version="v1.5.6" anchor="iso12931" semx-id="_00ef5d22-f2c9-9dfd-6ad2-bc61033f1c99"><biblio-tag>[ISO 12931:2012]</biblio-tag><formattedref>ISO 12931:2012 (2012), <em>Performance criteria for authentication solutions used to combat counterfeiting of material goods</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Performance criteria for authentication solutions used to combat counterfeiting of material goods</title>
 
@@ -2382,7 +2418,7 @@ sourcecode .nt {
         
 <name>Security and resilience</name>
 
-        <identifier id="_c7124f14-b89b-b762-60f4-30094e5e3d84">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_c7124f14-b89b-b762-60f4-30094e5e3d84">ISO/TC 292</semx></tt></fmt-identifier>
+        <identifier id="_812b290a-fac3-7535-6b87-67a4ad71a35f">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_812b290a-fac3-7535-6b87-67a4ad71a35f">ISO/TC 292</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2411,8 +2447,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso14816" type="standard" schema-version="v1.5.6" anchor="iso14816" semx-id="_1e465cf8-4835-5611-0831-28f44980f27c"><biblio-tag>[ISO 14816:2005]</biblio-tag><formattedref>ISO 14816:2005 (2005), <em>Road transport and traffic telematics — Automatic vehicle and equipment identification — Numbering and data structure</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso14816" type="standard" schema-version="v1.5.6" anchor="iso14816" semx-id="_3587adf3-e889-c4b3-3590-2f341845a5dc"><biblio-tag>[ISO 14816:2005]</biblio-tag><formattedref>ISO 14816:2005 (2005), <em>Road transport and traffic telematics — Automatic vehicle and equipment identification — Numbering and data structure</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Road transport and traffic telematics</title>
 
@@ -2470,7 +2506,7 @@ sourcecode .nt {
         
 <name>Intelligent transport systems</name>
 
-        <identifier id="_8bbc31d0-dae6-c895-5d24-1b29ad078696">ISO/TC 204</identifier><fmt-identifier><tt><semx element="identifier" source="_8bbc31d0-dae6-c895-5d24-1b29ad078696">ISO/TC 204</semx></tt></fmt-identifier>
+        <identifier id="_7d8b62a6-c8d5-6fd8-1bc2-a7a8852823ec">ISO/TC 204</identifier><fmt-identifier><tt><semx element="identifier" source="_7d8b62a6-c8d5-6fd8-1bc2-a7a8852823ec">ISO/TC 204</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2507,8 +2543,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15394" type="standard" schema-version="v1.5.6" anchor="iso15394" semx-id="_736bb282-99d4-9e74-226f-9982a862aa60"><biblio-tag>[ISO 15394:2009]</biblio-tag><formattedref>ISO 15394:2009 (2009), <em>Packaging — Bar code and two-dimensional symbols for shipping, transport and receiving labels</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso15394" type="standard" schema-version="v1.5.6" anchor="iso15394" semx-id="_bdd4c88f-5a1c-0426-3bd0-70306dedf327"><biblio-tag>[ISO 15394:2009]</biblio-tag><formattedref>ISO 15394:2009 (2009), <em>Packaging — Bar code and two-dimensional symbols for shipping, transport and receiving labels</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -2560,7 +2596,7 @@ sourcecode .nt {
         
 <name>Packaging</name>
 
-        <identifier id="_04d07c23-6ab8-753b-e521-42ce9e9f5faa">ISO/TC 122</identifier><fmt-identifier><tt><semx element="identifier" source="_04d07c23-6ab8-753b-e521-42ce9e9f5faa">ISO/TC 122</semx></tt></fmt-identifier>
+        <identifier id="_a077ab54-ee53-58ca-a9d7-0422cc60395c">ISO/TC 122</identifier><fmt-identifier><tt><semx element="identifier" source="_a077ab54-ee53-58ca-a9d7-0422cc60395c">ISO/TC 122</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2596,8 +2632,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso16678" type="standard" schema-version="v1.5.6" anchor="iso16678" semx-id="_0d688c78-fedf-8fb2-1e50-5e366a2a5219"><biblio-tag>[ISO 16678:2014]</biblio-tag><formattedref>ISO 16678:2014 (2014), <em>Guidelines for interoperable object identification and related authentication systems to deter counterfeiting and illicit trade</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso16678" type="standard" schema-version="v1.5.6" anchor="iso16678" semx-id="_82d4f831-4bb8-1719-a5c3-6631c42354c0"><biblio-tag>[ISO 16678:2014]</biblio-tag><formattedref>ISO 16678:2014 (2014), <em>Guidelines for interoperable object identification and related authentication systems to deter counterfeiting and illicit trade</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Guidelines for interoperable object identification and related authentication systems to deter counterfeiting and illicit trade</title>
 
@@ -2643,7 +2679,7 @@ sourcecode .nt {
         
 <name>Security and resilience</name>
 
-        <identifier id="_2e56550e-0c76-4c0c-1f4d-dceb32cb7466">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_2e56550e-0c76-4c0c-1f4d-dceb32cb7466">ISO/TC 292</semx></tt></fmt-identifier>
+        <identifier id="_4f6b61d6-711f-f74f-3647-a2c2d9c884d8">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_4f6b61d6-711f-f74f-3647-a2c2d9c884d8">ISO/TC 292</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2679,8 +2715,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso17363" type="standard" schema-version="v1.5.6" anchor="iso17363" semx-id="_a0fc15b3-4496-bc2a-faea-02bc7a16f603"><biblio-tag>[ISO 17363:2013]</biblio-tag><formattedref>ISO 17363:2013 (2013), <em>Supply chain applications of RFID — Freight containers</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso17363" type="standard" schema-version="v1.5.6" anchor="iso17363" semx-id="_53bee92e-d5ab-d3eb-a18a-c4217ccef936"><biblio-tag>[ISO 17363:2013]</biblio-tag><formattedref>ISO 17363:2013 (2013), <em>Supply chain applications of RFID — Freight containers</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2732,7 +2768,7 @@ sourcecode .nt {
         
 <name>Identification and communication</name>
 
-        <identifier id="_5c6b196f-3247-d757-63e8-42747ad48d9a">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_5c6b196f-3247-d757-63e8-42747ad48d9a">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
+        <identifier id="_963c40ea-8241-f773-92cb-2cc72e4462e2">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_963c40ea-8241-f773-92cb-2cc72e4462e2">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2775,8 +2811,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso17364" type="standard" schema-version="v1.5.6" anchor="iso17364" semx-id="_84581ca8-a1be-3b88-671b-dc8b1a4052fb"><biblio-tag>[ISO 17364:2013]</biblio-tag><formattedref>ISO 17364:2013 (2013), <em>Supply chain applications of RFID — Returnable transport items (RTIs) and returnable packaging items (RPIs)</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso17364" type="standard" schema-version="v1.5.6" anchor="iso17364" semx-id="_b38535fa-d243-a301-afff-597b004abbae"><biblio-tag>[ISO 17364:2013]</biblio-tag><formattedref>ISO 17364:2013 (2013), <em>Supply chain applications of RFID — Returnable transport items (RTIs) and returnable packaging items (RPIs)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2828,7 +2864,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_8c81b7de-90ec-0911-54ca-9506f17c441b">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_8c81b7de-90ec-0911-54ca-9506f17c441b">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_68a4d50c-8ac0-97e6-c707-8aff05bf06fb">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_68a4d50c-8ac0-97e6-c707-8aff05bf06fb">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2864,8 +2900,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso17365" type="standard" schema-version="v1.5.6" anchor="iso17365" semx-id="_8c1b4150-119c-07d2-1c87-fb889dac9d0a"><biblio-tag>[ISO 17365:2013]</biblio-tag><formattedref>ISO 17365:2013 (2013), <em>Supply chain applications of RFID — Transport units</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso17365" type="standard" schema-version="v1.5.6" anchor="iso17365" semx-id="_dff04685-bad2-6d6f-3fba-e23551a95325"><biblio-tag>[ISO 17365:2013]</biblio-tag><formattedref>ISO 17365:2013 (2013), <em>Supply chain applications of RFID — Transport units</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -2917,7 +2953,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_61ec03a9-ebe4-393d-23ed-429756a6d3a8">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_61ec03a9-ebe4-393d-23ed-429756a6d3a8">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_9927b69a-63dc-969b-1b71-7f3227328431">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_9927b69a-63dc-969b-1b71-7f3227328431">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -2953,8 +2989,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso17366" type="standard" schema-version="v1.5.6" anchor="iso17366" semx-id="_20bb540a-d22a-1671-1b4e-f54162efcc42"><biblio-tag>[ISO 17366:2013]</biblio-tag><formattedref>ISO 17366:2013 (2013), <em>Supply chain applications of RFID — Product packaging</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso17366" type="standard" schema-version="v1.5.6" anchor="iso17366" semx-id="_03450347-7714-68bf-51a3-a4111cd3a513"><biblio-tag>[ISO 17366:2013]</biblio-tag><formattedref>ISO 17366:2013 (2013), <em>Supply chain applications of RFID — Product packaging</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -3006,7 +3042,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_8d342fc8-b9c7-ba44-b1fa-cb459fe3db7f">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_8d342fc8-b9c7-ba44-b1fa-cb459fe3db7f">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_434561db-d83e-1339-d122-23e97c213f34">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_434561db-d83e-1339-d122-23e97c213f34">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3042,8 +3078,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso17367" type="standard" schema-version="v1.5.6" anchor="iso17367" semx-id="_8c773880-33fc-7435-5b82-d5d1760fe6fd"><biblio-tag>[ISO 17367:2013]</biblio-tag><formattedref>ISO 17367:2013 (2013), <em>Supply chain applications of RFID — Product tagging</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso17367" type="standard" schema-version="v1.5.6" anchor="iso17367" semx-id="_a9f32fc1-cbb5-d838-ce8e-33fb1367f46f"><biblio-tag>[ISO 17367:2013]</biblio-tag><formattedref>ISO 17367:2013 (2013), <em>Supply chain applications of RFID — Product tagging</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Supply chain applications of RFID</title>
 
@@ -3095,7 +3131,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_b08d8dc0-2f6d-cc04-5bff-b0c1bd9292b7">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_b08d8dc0-2f6d-cc04-5bff-b0c1bd9292b7">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_337a9d99-e0ff-e746-84e9-1ee8e56a8d9f">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_337a9d99-e0ff-e746-84e9-1ee8e56a8d9f">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3131,8 +3167,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso18185" type="standard" schema-version="v1.5.6" anchor="iso18185" semx-id="_a67882aa-b01c-7033-212a-ea08916ffa78"><biblio-tag>[ISO 18185 (all parts)]</biblio-tag><formattedref>ISO 18185 (all parts) (2007), <em>Freight containers — Electronic seals</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso18185" type="standard" schema-version="v1.5.6" anchor="iso18185" semx-id="_8479dd30-fe4b-35b3-0ff0-b14283bad0aa"><biblio-tag>[ISO 18185 (all parts)]</biblio-tag><formattedref>ISO 18185 (all parts) (2007), <em>Freight containers — Electronic seals</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Freight containers</title>
 
@@ -3155,7 +3191,6 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41125:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/11/41125.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 18185 (all parts)</docidentifier>
-  <docidentifier type="iso-undated">iso-undated ISO 18185 (all parts)</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 18185(E) (all parts)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:18185:ser</docidentifier><docidentifier scope="biblio-tag">ISO 18185 (all parts)</docidentifier>
   <docnumber>18185</docnumber>
@@ -3184,7 +3219,7 @@ sourcecode .nt {
         
 <name>Identification and communication</name>
 
-        <identifier id="_8101a832-53d3-182c-358b-0e39ffb5ef85">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_8101a832-53d3-182c-358b-0e39ffb5ef85">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
+        <identifier id="_c9945d0a-ef7e-bfad-d783-ff8f18087899">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_c9945d0a-ef7e-bfad-d783-ff8f18087899">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3272,7 +3307,7 @@ sourcecode .nt {
             
 <name>Identification and communication</name>
 
-            <identifier id="_b5484ccd-e3db-a9f0-75ba-8862a1d84073">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_b5484ccd-e3db-a9f0-75ba-8862a1d84073">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
+            <identifier id="_7d253f1d-605d-66b9-394d-227e08a68ce8">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_7d253f1d-605d-66b9-394d-227e08a68ce8">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
           </subdivision>
           <abbreviation>ISO</abbreviation>
         </organization>
@@ -3317,8 +3352,22 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO 18185-5</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-5</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO 18185-4:2007</formattedref>
       <docidentifier type="ISO" primary="true">ISO 18185-4:2007</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO 18185-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-4</docidentifier>
     </bibitem>
 
   </relation>
@@ -3338,16 +3387,58 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO 18185-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO 18185-2:2007</formattedref>
       <docidentifier type="ISO" primary="true">ISO 18185-2:2007</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO 18185-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 18185-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/WDAR 18185-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WDAR 18185-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/WDA 18185-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WDA 18185-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/WDA 18185-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WDA 18185-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/CD 18185-6</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 18185-6</docidentifier>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso2108" type="standard" schema-version="v1.5.6" anchor="iso2108" semx-id="_63e636cf-6b60-4824-8076-07145f77e49a"><biblio-tag>[ISO 2108:2005]</biblio-tag><formattedref>ISO 2108:2005 (2005), <em>Information and documentation — International standard book number (ISBN)</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso2108" type="standard" schema-version="v1.5.6" anchor="iso2108" semx-id="_da242c49-a0b7-a027-0832-72bc1a44ad23"><biblio-tag>[ISO 2108:2005]</biblio-tag><formattedref>ISO 2108:2005 (2005), <em>Information and documentation — International standard book number (ISBN)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information and documentation</title>
 
@@ -3399,7 +3490,7 @@ sourcecode .nt {
         
 <name>Identification and description</name>
 
-        <identifier id="_33c4fd7f-282b-1b07-f1fe-f928d59728af">ISO/TC 46/SC 9</identifier><fmt-identifier><tt><semx element="identifier" source="_33c4fd7f-282b-1b07-f1fe-f928d59728af">ISO/TC 46/SC 9</semx></tt></fmt-identifier>
+        <identifier id="_6ed3108c-c72a-2dba-04fb-1778cb61974f">ISO/TC 46/SC 9</identifier><fmt-identifier><tt><semx element="identifier" source="_6ed3108c-c72a-2dba-04fb-1778cb61974f">ISO/TC 46/SC 9</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3436,8 +3527,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso22742" type="standard" schema-version="v1.5.6" anchor="iso22742" semx-id="_6de7f77e-49d3-4ddc-83b1-2a39cf751709"><biblio-tag>[ISO 22742:2010]</biblio-tag><formattedref>ISO 22742:2010 (2010), <em>Packaging — Linear bar code and two-dimensional symbols for product packaging</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso22742" type="standard" schema-version="v1.5.6" anchor="iso22742" semx-id="_9718bf55-54ec-5041-dee3-bb7872932bd7"><biblio-tag>[ISO 22742:2010]</biblio-tag><formattedref>ISO 22742:2010 (2010), <em>Packaging — Linear bar code and two-dimensional symbols for product packaging</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -3489,7 +3580,7 @@ sourcecode .nt {
         
 <name>Packaging</name>
 
-        <identifier id="_2038a11f-ce9c-3016-b5d3-3d1733eeb972">ISO/TC 122</identifier><fmt-identifier><tt><semx element="identifier" source="_2038a11f-ce9c-3016-b5d3-3d1733eeb972">ISO/TC 122</semx></tt></fmt-identifier>
+        <identifier id="_02a3fdb1-16cb-b8eb-8da4-ca8fafbadaa5">ISO/TC 122</identifier><fmt-identifier><tt><semx element="identifier" source="_02a3fdb1-16cb-b8eb-8da4-ca8fafbadaa5">ISO/TC 122</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3525,8 +3616,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso28000-2007" type="standard" schema-version="v1.5.6" anchor="iso28000-2007" semx-id="_80bcf021-a34f-78d7-b1a5-80ec0ff727a5"><biblio-tag>[ISO 28000:2007]</biblio-tag><formattedref>ISO 28000:2007 (2007), <em>Specification for security management systems for the supply chain</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso28000-2007" type="standard" schema-version="v1.5.6" anchor="iso28000-2007" semx-id="_63317795-b512-6b50-453a-bb1b3ebc5243"><biblio-tag>[ISO 28000:2007]</biblio-tag><formattedref>ISO 28000:2007 (2007), <em>Specification for security management systems for the supply chain</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-main">Specification for security management systems for the supply chain</title>
 
@@ -3572,7 +3663,7 @@ sourcecode .nt {
         
 <name>Security and resilience</name>
 
-        <identifier id="_4b2ffe72-6238-540c-9152-c18c97642459">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_4b2ffe72-6238-540c-9152-c18c97642459">ISO/TC 292</semx></tt></fmt-identifier>
+        <identifier id="_e86dcac1-5422-2071-8567-8a10fa138369">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_e86dcac1-5422-2071-8567-8a10fa138369">ISO/TC 292</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3611,8 +3702,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso28001-2007" type="standard" schema-version="v1.5.6" anchor="iso28001-2007" semx-id="_7941061a-214e-8de7-0391-e1cbb33f7dc2"><biblio-tag>[ISO 28001:2007]</biblio-tag><formattedref>ISO 28001:2007 (2007), <em>Security management systems for the supply chain — Best practices for implementing supply chain security, assessments and plans — Requirements and guidance</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso28001-2007" type="standard" schema-version="v1.5.6" anchor="iso28001-2007" semx-id="_5692999b-98a3-36e4-1604-e4c249a6e447"><biblio-tag>[ISO 28001:2007]</biblio-tag><formattedref>ISO 28001:2007 (2007), <em>Security management systems for the supply chain — Best practices for implementing supply chain security, assessments and plans — Requirements and guidance</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3670,7 +3761,7 @@ sourcecode .nt {
         
 <name>Security and resilience</name>
 
-        <identifier id="_c6cb29a7-3291-3bd2-0856-2d62dd335d8e">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_c6cb29a7-3291-3bd2-0856-2d62dd335d8e">ISO/TC 292</semx></tt></fmt-identifier>
+        <identifier id="_0a898339-d775-edf8-2fe8-2a1aff5008ea">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_0a898339-d775-edf8-2fe8-2a1aff5008ea">ISO/TC 292</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3708,8 +3799,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso28003-2007" type="standard" schema-version="v1.5.6" anchor="iso28003-2007" semx-id="_98e3b9e4-f458-1832-7968-83764e3ccfc2"><biblio-tag>[ISO 28003:2007]</biblio-tag><formattedref>ISO 28003:2007 (2007), <em>Security management systems for the supply chain — Requirements for bodies providing audit and certification of supply chain security management systems</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso28003-2007" type="standard" schema-version="v1.5.6" anchor="iso28003-2007" semx-id="_d5f367c8-e3af-a246-b05f-8bb4375e605a"><biblio-tag>[ISO 28003:2007]</biblio-tag><formattedref>ISO 28003:2007 (2007), <em>Security management systems for the supply chain — Requirements for bodies providing audit and certification of supply chain security management systems</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3761,7 +3852,7 @@ sourcecode .nt {
         
 <name>Security and resilience</name>
 
-        <identifier id="_1663dff4-fafa-1dad-2ebf-cec1bf4a9317">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_1663dff4-fafa-1dad-2ebf-cec1bf4a9317">ISO/TC 292</semx></tt></fmt-identifier>
+        <identifier id="_0b757bec-089b-4213-7ca3-59ad932349ff">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_0b757bec-089b-4213-7ca3-59ad932349ff">ISO/TC 292</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3800,8 +3891,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso28004-2007" type="standard" schema-version="v1.5.6" anchor="iso28004-2007" semx-id="_ba0a7a8f-030b-8c9a-b0e8-5379b49c872c"><biblio-tag>[ISO 28004‑1:2007]</biblio-tag><formattedref>ISO 28004-1:2007 (2007), <em>Security management systems for the supply chain — Guidelines for the implementation of ISO 28000 — Part 1: General principles</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso28004-2007" type="standard" schema-version="v1.5.6" anchor="iso28004-2007" semx-id="_2805201a-0822-ef58-2e4f-ba5fc99229da"><biblio-tag>[ISO 28004‑1:2007]</biblio-tag><formattedref>ISO 28004-1:2007 (2007), <em>Security management systems for the supply chain — Guidelines for the implementation of ISO 28000 — Part 1: General principles</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3859,7 +3950,7 @@ sourcecode .nt {
         
 <name>Security and resilience</name>
 
-        <identifier id="_28115dc5-c5e6-22ea-997a-7795e624ed90">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_28115dc5-c5e6-22ea-997a-7795e624ed90">ISO/TC 292</semx></tt></fmt-identifier>
+        <identifier id="_7721bcef-b39a-2421-e44b-284b87d05fcd">ISO/TC 292</identifier><fmt-identifier><tt><semx element="identifier" source="_7721bcef-b39a-2421-e44b-284b87d05fcd">ISO/TC 292</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -3929,8 +4020,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso28005-2011" type="standard" schema-version="v1.5.6" anchor="iso28005-2011" semx-id="_da2c5448-3ad1-9103-1f91-0772a876ca87"><biblio-tag>[ISO 28005‑2:2011]</biblio-tag><formattedref>ISO 28005-2:2011 (2011), <em>Security management systems for the supply chain — Electronic port clearance (EPC) — Part 2: Core data elements</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso28005-2011" type="standard" schema-version="v1.5.6" anchor="iso28005-2011" semx-id="_ad503891-3854-9289-2cf6-3ca61b41d906"><biblio-tag>[ISO 28005‑2:2011]</biblio-tag><formattedref>ISO 28005-2:2011 (2011), <em>Security management systems for the supply chain — Electronic port clearance (EPC) — Part 2: Core data elements</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Security management systems for the supply chain</title>
 
@@ -3988,7 +4079,7 @@ sourcecode .nt {
         
 <name>Intermodal and Short Sea Shipping</name>
 
-        <identifier id="_876b59e2-2b96-9932-5e14-5bf9fbb71484">ISO/TC 8/SC 11</identifier><fmt-identifier><tt><semx element="identifier" source="_876b59e2-2b96-9932-5e14-5bf9fbb71484">ISO/TC 8/SC 11</semx></tt></fmt-identifier>
+        <identifier id="_1216e5df-1370-a5c3-5d07-739be7b38fdd">ISO/TC 8/SC 11</identifier><fmt-identifier><tt><semx element="identifier" source="_1216e5df-1370-a5c3-5d07-739be7b38fdd">ISO/TC 8/SC 11</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4024,8 +4115,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso28219" type="standard" schema-version="v1.5.6" anchor="iso28219" semx-id="_646d9aec-51fc-7f53-0627-35d226f7a632"><biblio-tag>[ISO 28219:2009]</biblio-tag><formattedref>ISO 28219:2009 (2009), <em>Packaging — Labelling and direct product marking with linear bar code and two-dimensional symbols</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso28219" type="standard" schema-version="v1.5.6" anchor="iso28219" semx-id="_e11bc162-8e18-ea30-8dcc-45b692a63128"><biblio-tag>[ISO 28219:2009]</biblio-tag><formattedref>ISO 28219:2009 (2009), <em>Packaging — Labelling and direct product marking with linear bar code and two-dimensional symbols</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Packaging</title>
 
@@ -4077,7 +4168,7 @@ sourcecode .nt {
         
 <name>Packaging</name>
 
-        <identifier id="_02a3fdb1-16cb-b8eb-8da4-ca8fafbadaa5">ISO/TC 122</identifier><fmt-identifier><tt><semx element="identifier" source="_02a3fdb1-16cb-b8eb-8da4-ca8fafbadaa5">ISO/TC 122</semx></tt></fmt-identifier>
+        <identifier id="_e50fdafd-f31e-6aa6-03bd-79d5f4619bb0">ISO/TC 122</identifier><fmt-identifier><tt><semx element="identifier" source="_e50fdafd-f31e-6aa6-03bd-79d5f4619bb0">ISO/TC 122</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4105,8 +4196,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso3297" type="standard" schema-version="v1.5.6" anchor="iso3297" semx-id="_503d776f-2d51-cc8d-ba2e-a72d19c4d8f9"><biblio-tag>[ISO 3297:2007]</biblio-tag><formattedref>ISO 3297:2007 (2007), <em>Information and documentation — International standard serial number (ISSN)</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso3297" type="standard" schema-version="v1.5.6" anchor="iso3297" semx-id="_dd4a07c0-8a55-764c-d1e5-dd26752a061d"><biblio-tag>[ISO 3297:2007]</biblio-tag><formattedref>ISO 3297:2007 (2007), <em>Information and documentation — International standard serial number (ISSN)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information and documentation</title>
 
@@ -4158,7 +4249,7 @@ sourcecode .nt {
         
 <name>Identification and description</name>
 
-        <identifier id="_47bb2d8a-815b-c5f4-254d-50ba996f2a5d">ISO/TC 46/SC 9</identifier><fmt-identifier><tt><semx element="identifier" source="_47bb2d8a-815b-c5f4-254d-50ba996f2a5d">ISO/TC 46/SC 9</semx></tt></fmt-identifier>
+        <identifier id="_5b0e4369-3df3-a128-9438-4509361291ee">ISO/TC 46/SC 9</identifier><fmt-identifier><tt><semx element="identifier" source="_5b0e4369-3df3-a128-9438-4509361291ee">ISO/TC 46/SC 9</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4195,8 +4286,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso3779" type="standard" schema-version="v1.5.6" anchor="iso3779" semx-id="_ccd59468-779a-cf7d-d3d4-32b8462eaba7"><biblio-tag>[ISO 3779:2009]</biblio-tag><formattedref>ISO 3779:2009 (2009), <em>Road vehicles — Vehicle identification number (VIN) — Content and structure</em>, Fourth edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso3779" type="standard" schema-version="v1.5.6" anchor="iso3779" semx-id="_4124c939-a624-d7af-4dfa-21327de1a43c"><biblio-tag>[ISO 3779:2009]</biblio-tag><formattedref>ISO 3779:2009 (2009), INTERNATIONAL ORGANIZATION FOR STANDARDIZATION (ISO). _Road vehicles — Vehicle identification number (VIN) — Content and structure_. Report no. 3779. Fourth edition. Geneva: International Organization for Standardization, 2009. ISO 3779:2009. iso-undated ISO 3779. iso-reference ISO 3779:2009(E). URN urn:iso:std:iso:3779:stage-90.93. Available from: https://www.iso.org/standard/52200.html.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Road vehicles</title>
 
@@ -4254,7 +4345,7 @@ sourcecode .nt {
         
 <name>Road vehicles</name>
 
-        <identifier id="_71f3b247-a70a-215b-916a-2589d9bc4f3e">ISO/TC 22</identifier><fmt-identifier><tt><semx element="identifier" source="_71f3b247-a70a-215b-916a-2589d9bc4f3e">ISO/TC 22</semx></tt></fmt-identifier>
+        <identifier id="_5719c62c-654d-e378-e83d-f0793ade17b4">ISO/TC 22</identifier><fmt-identifier><tt><semx element="identifier" source="_5719c62c-654d-e378-e83d-f0793ade17b4">ISO/TC 22</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4301,8 +4392,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso6346" type="standard" schema-version="v1.5.6" anchor="iso6346" semx-id="_3ecf58eb-8779-3509-b32a-44901f2116a3"><biblio-tag>[ISO 6346:1995]</biblio-tag><formattedref>ISO 6346:1995 (1995), <em>Freight containers — Coding, identification and marking</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso6346" type="standard" schema-version="v1.5.6" anchor="iso6346" semx-id="_cda06f8e-7f91-74f4-5e3d-87b97fe82e12"><biblio-tag>[ISO 6346:1995]</biblio-tag><formattedref>ISO 6346:1995 (1995), <em>Freight containers — Coding, identification and marking</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Freight containers</title>
 
@@ -4354,7 +4445,7 @@ sourcecode .nt {
         
 <name>Identification and communication</name>
 
-        <identifier id="_89481c07-092b-4da2-43df-824ea82440a1">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_89481c07-092b-4da2-43df-824ea82440a1">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
+        <identifier id="_21de479f-f273-cb34-27ae-d13aebe2589f">ISO/TC 104/SC 4</identifier><fmt-identifier><tt><semx element="identifier" source="_21de479f-f273-cb34-27ae-d13aebe2589f">ISO/TC 104/SC 4</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4460,8 +4551,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15417" type="standard" schema-version="v1.5.6" anchor="iso15417" semx-id="_88231719-7729-8ecd-093a-e34ac3fe6967"><biblio-tag>[ISO/IEC 15417:2007]</biblio-tag><formattedref>ISO/IEC 15417:2007 (2007), <em>Information technology — Automatic identification and data capture techniques — Code 128 bar code symbology specification</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso15417" type="standard" schema-version="v1.5.6" anchor="iso15417" semx-id="_e83c8e4d-68fe-c627-517e-65e583938906"><biblio-tag>[ISO/IEC 15417:2007]</biblio-tag><formattedref>ISO/IEC 15417:2007 (2007), <em>Information technology — Automatic identification and data capture techniques — Code 128 bar code symbology specification</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4529,7 +4620,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_0ae3c900-8be9-159e-385d-b53b468f3d97">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_0ae3c900-8be9-159e-385d-b53b468f3d97">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_d52ccdde-a2a5-9fdc-ab87-c5f0df9a0701">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_d52ccdde-a2a5-9fdc-ab87-c5f0df9a0701">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4565,8 +4656,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15420" type="standard" schema-version="v1.5.6" anchor="iso15420" semx-id="_6d6524ef-8671-b64b-4c4c-fcf6bd722116"><biblio-tag>[ISO/IEC 15420:2009]</biblio-tag><formattedref>ISO/IEC 15420:2009 (2009), <em>Information technology — Automatic identification and data capture techniques — EAN/UPC bar code symbology specification</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso15420" type="standard" schema-version="v1.5.6" anchor="iso15420" semx-id="_47581fe5-7593-56e9-ecf2-4b23e881ca4c"><biblio-tag>[ISO/IEC 15420:2009]</biblio-tag><formattedref>ISO/IEC 15420:2009 (2009), <em>Information technology — Automatic identification and data capture techniques — EAN/UPC bar code symbology specification</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4634,7 +4725,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_bfb4475a-6e9d-c444-13cc-e89aa27ac2ed">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_bfb4475a-6e9d-c444-13cc-e89aa27ac2ed">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_ddfe08c5-5966-61a0-d117-68a233d94894">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_ddfe08c5-5966-61a0-d117-68a233d94894">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4684,8 +4775,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15438" type="standard" schema-version="v1.5.6" anchor="iso15438" semx-id="_ab497dc0-cbf2-08b6-41a2-b5e00534428d"><biblio-tag>[ISO/IEC 15438:2006]</biblio-tag><formattedref>ISO/IEC 15438:2006 (2006), <em>Information technology — Automatic identification and data capture techniques — PDF417 bar code symbology specification</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso15438" type="standard" schema-version="v1.5.6" anchor="iso15438" semx-id="_086e1c42-4ca3-c4f6-98f4-2caa015f3f5b"><biblio-tag>[ISO/IEC 15438:2006]</biblio-tag><formattedref>ISO/IEC 15438:2006 (2006), <em>Information technology — Automatic identification and data capture techniques — PDF417 bar code symbology specification</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4753,7 +4844,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_6cc2bfca-c06c-eca1-d3bf-7324ec467b3c">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_6cc2bfca-c06c-eca1-d3bf-7324ec467b3c">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_4bafc2cc-48ad-60f9-ac98-1a07b51d57c1">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_4bafc2cc-48ad-60f9-ac98-1a07b51d57c1">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4800,8 +4891,14 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p1" type="standard" schema-version="v1.5.6" anchor="p1" semx-id="_baab0035-0390-4f65-02ea-18668ee4bbc6"><biblio-tag>[ISO/IEC 15459‑1:2014]</biblio-tag><formattedref>ISO/IEC 15459-1:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 1: Individual transport units</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem anchor="iso15459" id="iso15459" type="standard" semx-id="_4e7abb8b-053a-38c6-8dd0-88b569f24ced"><biblio-tag>[ISO/IEC 15459]</biblio-tag><formattedref>ISO/IEC 15459, <em>ISO/IEC 15459, Unique identifiers.</em>.</formattedref>
+<title format="text/plain">ISO/IEC 15459, Unique identifiers.</title>
+<docidentifier type="ISO">ISO/IEC 15459</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 15459</docidentifier><docnumber>15459</docnumber><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor><contributor><role type="publisher"/><organization>
+<name>IEC</name>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="p1" type="standard" schema-version="v1.5.6" anchor="p1" semx-id="_6b2141f0-c4e1-6a21-6204-c13491bdd209"><biblio-tag>[ISO/IEC 15459‑1:2014]</biblio-tag><formattedref>ISO/IEC 15459-1:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 1: Individual transport units</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4869,7 +4966,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_b06051e5-b5a2-c938-e81b-ded404b020f0">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_b06051e5-b5a2-c938-e81b-ded404b020f0">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_694319f6-9aaf-08ea-26b0-35986ded77c9">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_694319f6-9aaf-08ea-26b0-35986ded77c9">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -4905,8 +5002,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p2" type="standard" schema-version="v1.5.6" anchor="p2" semx-id="_823483d1-4355-6d2b-d62b-5fa99cd5b3de"><biblio-tag>[ISO/IEC 15459‑2:2006]</biblio-tag><formattedref>ISO/IEC 15459-2:2006 (2006), <em>Information technology — Unique identifiers — Part 2: Registration procedures</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="p2" type="standard" schema-version="v1.5.6" anchor="p2" semx-id="_aede8841-3fa3-3930-2baf-a39506491e5a"><biblio-tag>[ISO/IEC 15459‑2:2006]</biblio-tag><formattedref>ISO/IEC 15459-2:2006 (2006), <em>Information technology — Unique identifiers — Part 2: Registration procedures</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4974,7 +5071,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_d79a5604-135f-8620-b69c-a566728a55b9">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_d79a5604-135f-8620-b69c-a566728a55b9">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_9664c137-2920-aeef-932b-fa66803c8288">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_9664c137-2920-aeef-932b-fa66803c8288">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5030,8 +5127,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p3" type="standard" schema-version="v1.5.6" anchor="p3" semx-id="_b25efe60-c110-f426-2f8e-6a567483dd54"><biblio-tag>[ISO/IEC 15459‑3:2014]</biblio-tag><formattedref>ISO/IEC 15459-3:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 3: Common rules</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="p3" type="standard" schema-version="v1.5.6" anchor="p3" semx-id="_2b54a8f6-ee2d-3ac8-a56e-8a68fd631f7e"><biblio-tag>[ISO/IEC 15459‑3:2014]</biblio-tag><formattedref>ISO/IEC 15459-3:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 3: Common rules</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5099,7 +5196,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_01895eeb-5bc0-0833-d586-81c77a0c0042">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_01895eeb-5bc0-0833-d586-81c77a0c0042">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_5004a550-c8d8-2cfd-7985-b77f5ca1817e">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_5004a550-c8d8-2cfd-7985-b77f5ca1817e">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5135,8 +5232,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p4" type="standard" schema-version="v1.5.6" anchor="p4" semx-id="_31f71766-898f-250e-ec52-94e9969953a0"><biblio-tag>[ISO/IEC 15459‑4:2014]</biblio-tag><formattedref>ISO/IEC 15459-4:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 4: Individual products and product packages</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="p4" type="standard" schema-version="v1.5.6" anchor="p4" semx-id="_46c561d2-21f3-d2e1-ab60-d0e67311a6bb"><biblio-tag>[ISO/IEC 15459‑4:2014]</biblio-tag><formattedref>ISO/IEC 15459-4:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 4: Individual products and product packages</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5204,7 +5301,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_d52ccdde-a2a5-9fdc-ab87-c5f0df9a0701">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_d52ccdde-a2a5-9fdc-ab87-c5f0df9a0701">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_b02a8c74-b0bf-d31b-79b1-0516ea5125fa">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_b02a8c74-b0bf-d31b-79b1-0516ea5125fa">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5240,8 +5337,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p5" type="standard" schema-version="v1.5.6" anchor="p5" semx-id="_8ebc8224-3f82-9ee5-faec-8176e92a54fe"><biblio-tag>[ISO/IEC 15459‑5:2014]</biblio-tag><formattedref>ISO/IEC 15459-5:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 5: Individual returnable transport items (RTIs)</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="p5" type="standard" schema-version="v1.5.6" anchor="p5" semx-id="_8ccf33fd-a1ee-45aa-a6e4-4ddc4c88c68a"><biblio-tag>[ISO/IEC 15459‑5:2014]</biblio-tag><formattedref>ISO/IEC 15459-5:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 5: Individual returnable transport items (RTIs)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5309,7 +5406,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_ddfe08c5-5966-61a0-d117-68a233d94894">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_ddfe08c5-5966-61a0-d117-68a233d94894">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_9b57a0e3-3beb-7c1b-6bbc-1be4d8019c4f">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_9b57a0e3-3beb-7c1b-6bbc-1be4d8019c4f">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5345,8 +5442,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p6" type="standard" schema-version="v1.5.6" anchor="p6" semx-id="_ab49e160-e005-470e-5cf7-25c4b9fd1288"><biblio-tag>[ISO/IEC 15459‑6:2014]</biblio-tag><formattedref>ISO/IEC 15459-6:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 6: Groupings</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="p6" type="standard" schema-version="v1.5.6" anchor="p6" semx-id="_4e2f1ea2-1aeb-0710-7cf0-61b9b2310352"><biblio-tag>[ISO/IEC 15459‑6:2014]</biblio-tag><formattedref>ISO/IEC 15459-6:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Unique identification — Part 6: Groupings</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5414,7 +5511,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_4bafc2cc-48ad-60f9-ac98-1a07b51d57c1">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_4bafc2cc-48ad-60f9-ac98-1a07b51d57c1">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_3ff1bcc6-e9e1-562a-bbf1-995a5f104fa9">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_3ff1bcc6-e9e1-562a-bbf1-995a5f104fa9">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5450,8 +5547,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="p8" type="standard" schema-version="v1.5.6" anchor="p8" semx-id="_67da3151-2291-f09b-c0ec-a310ce4a0be4"><biblio-tag>[ISO/IEC 15459‑8:2009]</biblio-tag><formattedref>ISO/IEC 15459-8:2009 (2009), <em>Information technology — Unique identifiers — Part 8: Grouping of transport units</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="p8" type="standard" schema-version="v1.5.6" anchor="p8" semx-id="_c5985db7-c225-7c25-917c-70a7302eebcd"><biblio-tag>[ISO/IEC 15459‑8:2009]</biblio-tag><formattedref>ISO/IEC 15459-8:2009 (2009), <em>Information technology — Unique identifiers — Part 8: Grouping of transport units</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5519,7 +5616,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_aa686dcc-812d-70c1-0654-843d9ee885f1">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_aa686dcc-812d-70c1-0654-843d9ee885f1">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_3f8c30bf-bba9-abcc-be43-4ef252277ded">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_3f8c30bf-bba9-abcc-be43-4ef252277ded">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5545,8 +5642,14 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15961" type="standard" schema-version="v1.5.6" anchor="iso15961" semx-id="_75ed73b6-685f-b425-133e-d9589bfec60b"><biblio-tag>[ISO/IEC 15961:2004]</biblio-tag><formattedref>ISO/IEC 15961:2004 (2004), <em>Information technology — Radio frequency identification (RFID) for item management — Data protocol: application interface</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem anchor="iso15693" id="iso15693" type="standard" semx-id="_71969742-ea07-6276-8e7f-5fb1afc3f7b0"><biblio-tag>[ISO/IEC 15693]</biblio-tag><formattedref>ISO/IEC 15693, <em>ISO/IEC 15693, Identification cards – Contactless integrated circuit cards – Vicinity cards.</em>.</formattedref>
+<title format="text/plain">ISO/IEC 15693, Identification cards – Contactless integrated circuit cards – Vicinity cards.</title>
+<docidentifier type="ISO">ISO/IEC 15693</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 15693</docidentifier><docnumber>15693</docnumber><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor><contributor><role type="publisher"/><organization>
+<name>IEC</name>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="iso15961" type="standard" schema-version="v1.5.6" anchor="iso15961" semx-id="_aa240a73-55c8-7007-9f8c-85b2542a0e30"><biblio-tag>[ISO/IEC 15961:2004]</biblio-tag><formattedref>ISO/IEC 15961:2004 (2004), <em>Information technology — Radio frequency identification (RFID) for item management — Data protocol: application interface</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5614,7 +5717,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_694319f6-9aaf-08ea-26b0-35986ded77c9">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_694319f6-9aaf-08ea-26b0-35986ded77c9">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_155865a5-35bd-0446-e344-5c63eea651b8">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_155865a5-35bd-0446-e344-5c63eea651b8">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5650,8 +5753,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15962" type="standard" schema-version="v1.5.6" anchor="iso15962" semx-id="_3dd52f24-5328-97c9-69f8-a35b63bac11e"><biblio-tag>[ISO/IEC 15962:2013]</biblio-tag><formattedref>ISO/IEC 15962:2013 (2013), <em>Information technology — Radio frequency identification (RFID) for item management — Data protocol: data encoding rules and logical memory functions</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso15962" type="standard" schema-version="v1.5.6" anchor="iso15962" semx-id="_cfe84422-c393-80f6-3237-d39fa963d8c6"><biblio-tag>[ISO/IEC 15962:2013]</biblio-tag><formattedref>ISO/IEC 15962:2013 (2013), <em>Information technology — Radio frequency identification (RFID) for item management — Data protocol: data encoding rules and logical memory functions</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5719,7 +5822,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_9664c137-2920-aeef-932b-fa66803c8288">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_9664c137-2920-aeef-932b-fa66803c8288">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_04c0364c-ce75-188b-c1bf-b04b3438f41b">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_04c0364c-ce75-188b-c1bf-b04b3438f41b">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5755,8 +5858,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso15963" type="standard" schema-version="v1.5.6" anchor="iso15963" semx-id="_ab784425-6959-dbc0-1c36-a792ea625269"><biblio-tag>[ISO/IEC 15963:2009]</biblio-tag><formattedref>ISO/IEC 15963:2009 (2009), <em>Information technology — Radio frequency identification for item management — Unique identification for RF tags</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso15963" type="standard" schema-version="v1.5.6" anchor="iso15963" semx-id="_7a58ed18-eb1d-a528-4eef-fe913d2a1de9"><biblio-tag>[ISO/IEC 15963:2009]</biblio-tag><formattedref>ISO/IEC 15963:2009 (2009), <em>Information technology — Radio frequency identification for item management — Unique identification for RF tags</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5824,7 +5927,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_5004a550-c8d8-2cfd-7985-b77f5ca1817e">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_5004a550-c8d8-2cfd-7985-b77f5ca1817e">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_57577a83-09e0-394a-a58a-6d393efb5677">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_57577a83-09e0-394a-a58a-6d393efb5677">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5860,8 +5963,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso16022" type="standard" schema-version="v1.5.6" anchor="iso16022" semx-id="_946196b0-48bb-24e9-6322-5ec02ff2c60f"><biblio-tag>[ISO/IEC 16022:2006]</biblio-tag><formattedref>ISO/IEC 16022:2006 (2006), <em>Information technology — Automatic identification and data capture techniques — Data Matrix bar code symbology specification</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso16022" type="standard" schema-version="v1.5.6" anchor="iso16022" semx-id="_1a42857c-9e07-395c-0b96-64aca531960d"><biblio-tag>[ISO/IEC 16022:2006]</biblio-tag><formattedref>ISO/IEC 16022:2006 (2006), <em>Information technology — Automatic identification and data capture techniques — Data Matrix bar code symbology specification</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -5929,7 +6032,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_b02a8c74-b0bf-d31b-79b1-0516ea5125fa">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_b02a8c74-b0bf-d31b-79b1-0516ea5125fa">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_49e22da3-adeb-1090-d9f9-c018a4af6c2d">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_49e22da3-adeb-1090-d9f9-c018a4af6c2d">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -5995,8 +6098,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso16023" type="standard" schema-version="v1.5.6" anchor="iso16023" semx-id="_4b877d45-46d5-3fe5-a550-a222e8f657bf"><biblio-tag>[ISO/IEC 16023:2000]</biblio-tag><formattedref>ISO/IEC 16023:2000 (2000), <em>Information technology — International symbology specification — MaxiCode</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso16023" type="standard" schema-version="v1.5.6" anchor="iso16023" semx-id="_1bce01f7-6882-aed9-38e3-8ec03b67db99"><biblio-tag>[ISO/IEC 16023:2000]</biblio-tag><formattedref>ISO/IEC 16023:2000 (2000), <em>Information technology — International symbology specification — MaxiCode</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6064,7 +6167,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_9b57a0e3-3beb-7c1b-6bbc-1be4d8019c4f">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_9b57a0e3-3beb-7c1b-6bbc-1be4d8019c4f">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_93aed81c-5987-d10d-64be-8f7c20e23a87">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_93aed81c-5987-d10d-64be-8f7c20e23a87">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6090,8 +6193,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso16388" type="standard" schema-version="v1.5.6" anchor="iso16388" semx-id="_eefd742f-8ab4-8118-1b2e-eb5c4e7ea88e"><biblio-tag>[ISO/IEC 16388:2007]</biblio-tag><formattedref>ISO/IEC 16388:2007 (2007), <em>Information technology — Automatic identification and data capture techniques — Code 39 bar code symbology specification</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso16388" type="standard" schema-version="v1.5.6" anchor="iso16388" semx-id="_3cfed8ec-3379-0813-1caf-e9f1e9103c8b"><biblio-tag>[ISO/IEC 16388:2007]</biblio-tag><formattedref>ISO/IEC 16388:2007 (2007), <em>Information technology — Automatic identification and data capture techniques — Code 39 bar code symbology specification</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6159,7 +6262,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_3ff1bcc6-e9e1-562a-bbf1-995a5f104fa9">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_3ff1bcc6-e9e1-562a-bbf1-995a5f104fa9">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_93d6d4c8-cedc-c2f3-590c-7d2e32932af7">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_93d6d4c8-cedc-c2f3-590c-7d2e32932af7">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6195,8 +6298,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso18000-all" type="standard" schema-version="v1.5.6" anchor="iso18000-all" semx-id="_ba4ce96c-871e-ff49-1165-0a924dd270d3"><biblio-tag>[ISO/IEC 18000 (all parts)]</biblio-tag><formattedref>ISO/IEC 18000 (all parts) (2008), <em>Information technology — Radio frequency identification for item management</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso18000-all" type="standard" schema-version="v1.5.6" anchor="iso18000-all" semx-id="_dde3804e-6661-8cb4-8bbf-766abb5e0015"><biblio-tag>[ISO/IEC 18000 (all parts)]</biblio-tag><formattedref>ISO/IEC 18000 (all parts) (2008), <em>Information technology — Radio frequency identification for item management</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6219,7 +6322,6 @@ sourcecode .nt {
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46145:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/61/46145.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 18000 (all parts)</docidentifier>
-  <docidentifier type="iso-undated">iso-undated ISO/IEC 18000 (all parts)</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO/IEC 18000(E) (all parts)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso-iec:18000:ser</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 18000 (all parts)</docidentifier>
   <docnumber>18000</docnumber>
@@ -6258,7 +6360,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_f45eea55-80d2-efef-c638-e34f0e43e2d9">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_f45eea55-80d2-efef-c638-e34f0e43e2d9">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_397132b8-5ce6-6f36-16b6-bbd60022c675">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_397132b8-5ce6-6f36-16b6-bbd60022c675">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6359,7 +6461,7 @@ sourcecode .nt {
             
 <name>Automatic identification and data capture techniques</name>
 
-            <identifier id="_1d463258-e6f9-6b74-1dd7-c4020609d970">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_1d463258-e6f9-6b74-1dd7-c4020609d970">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+            <identifier id="_e20ce971-1348-6960-1877-bdb8589dcc9e">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_e20ce971-1348-6960-1877-bdb8589dcc9e">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
           </subdivision>
           <abbreviation>ISO</abbreviation>
         </organization>
@@ -6428,6 +6530,13 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-7</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-7</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-6:2013</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-6:2013</docidentifier>
     </bibitem>
@@ -6449,8 +6558,22 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-65</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-65</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-64:2012</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-64:2012</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-64</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-64</docidentifier>
     </bibitem>
 
   </relation>
@@ -6484,8 +6607,29 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-62</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-62</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-61:2012</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-61:2012</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-61</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-61</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-6</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-6</docidentifier>
     </bibitem>
 
   </relation>
@@ -6512,6 +6656,13 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-3:2010</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-3:2010</docidentifier>
     </bibitem>
@@ -6533,6 +6684,13 @@ sourcecode .nt {
   </relation>
   <relation type="instanceOf">
     <bibitem>
+      <formattedref>ISO/IEC 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
       <formattedref>ISO/IEC 18000-2:2009</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 18000-2:2009</docidentifier>
     </bibitem>
@@ -6545,11 +6703,137 @@ sourcecode .nt {
     </bibitem>
 
   </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC 18000-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 18000-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-7</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-7</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-63</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-63</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-6</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-6</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDAR 18000-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDAR 18000-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-7</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-7</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-64</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-64</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-62</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-62</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-61</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-61</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-4</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC WDA 18000-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC WDA 18000-2</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC NP 18000-N</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC NP 18000-N</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC NP 18000-8</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC NP 18000-8</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC CD 18000-5</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC CD 18000-5</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem>
+      <formattedref>ISO/IEC CD 18000-3</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC CD 18000-3</docidentifier>
+    </bibitem>
+
+  </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso18000-3" type="standard" schema-version="v1.5.6" anchor="iso18000-3" semx-id="_67217132-891f-4946-a666-4e85b632114e"><biblio-tag>[ISO/IEC 18000‑3:2010]</biblio-tag><formattedref>ISO/IEC 18000-3:2010 (2010), <em>Information technology — Radio frequency identification for item management — Part 3: Parameters for air interface communications at 13,56 MHz</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso18000-3" type="standard" schema-version="v1.5.6" anchor="iso18000-3" semx-id="_22812e90-a676-514c-2c56-a322af5b1f3b"><biblio-tag>[ISO/IEC 18000‑3:2010]</biblio-tag><formattedref>ISO/IEC 18000-3:2010 (2010), <em>Information technology — Radio frequency identification for item management — Part 3: Parameters for air interface communications at 13,56 MHz</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6617,7 +6901,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_604c01a7-e0df-6773-4a7a-3c14b2b8b335">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_604c01a7-e0df-6773-4a7a-3c14b2b8b335">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_8618e8ba-dfd0-b366-6b49-87ecddf00ad1">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_8618e8ba-dfd0-b366-6b49-87ecddf00ad1">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6660,8 +6944,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso18000" type="standard" schema-version="v1.5.6" anchor="iso18000" semx-id="_a2cb870a-8a2d-5c5e-46c0-56d2cb03a107"><biblio-tag>[ISO/IEC 18000‑6:2013]</biblio-tag><formattedref>ISO/IEC 18000-6:2013 (2013), <em>Information technology — Radio frequency identification for item management — Part 6: Parameters for air interface communications at 860 MHz to 960 MHz General</em>, Third edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso18000" type="standard" schema-version="v1.5.6" anchor="iso18000" semx-id="_6d35f789-9567-11fe-6127-eb1b86017682"><biblio-tag>[ISO/IEC 18000‑6:2013]</biblio-tag><formattedref>ISO/IEC 18000-6:2013 (2013), <em>Information technology — Radio frequency identification for item management — Part 6: Parameters for air interface communications at 860 MHz to 960 MHz General</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6729,7 +7013,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_155865a5-35bd-0446-e344-5c63eea651b8">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_155865a5-35bd-0446-e344-5c63eea651b8">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_1328245b-15d4-69cd-5478-171b2ee45184">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_1328245b-15d4-69cd-5478-171b2ee45184">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6765,8 +7049,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso18004" type="standard" schema-version="v1.5.6" anchor="iso18004" semx-id="_26b2e721-c8f3-b3a9-6f85-669ab6dc2a82"><biblio-tag>[ISO/IEC 18004:2006]</biblio-tag><formattedref>ISO/IEC 18004:2006 (2006), <em>Information technology — Automatic identification and data capture techniques — QR Code 2005 bar code symbology specification</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso18004" type="standard" schema-version="v1.5.6" anchor="iso18004" semx-id="_11a88479-7876-a041-d88a-efb852a73241"><biblio-tag>[ISO/IEC 18004:2006]</biblio-tag><formattedref>ISO/IEC 18004:2006 (2006), <em>Information technology — Automatic identification and data capture techniques — QR Code 2005 bar code symbology specification</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6834,7 +7118,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_04c0364c-ce75-188b-c1bf-b04b3438f41b">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_04c0364c-ce75-188b-c1bf-b04b3438f41b">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_ea82272d-51ee-2446-753c-e461d46a87db">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_ea82272d-51ee-2446-753c-e461d46a87db">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6890,8 +7174,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso29160" type="standard" schema-version="v1.5.6" anchor="iso29160" semx-id="_ddb42518-5ba3-db44-9b49-c5383345e468"><biblio-tag>[ISO/IEC 29160:2012]</biblio-tag><formattedref>ISO/IEC 29160:2012 (2012), <em>Information technology — Radio frequency identification for item management — RFID Emblem</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso29160" type="standard" schema-version="v1.5.6" anchor="iso29160" semx-id="_0dcf2d9b-9cf6-f5ce-b081-996da36f5c13"><biblio-tag>[ISO/IEC 29160:2012]</biblio-tag><formattedref>ISO/IEC 29160:2012 (2012), <em>Information technology — Radio frequency identification for item management — RFID Emblem</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -6959,7 +7243,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_57577a83-09e0-394a-a58a-6d393efb5677">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_57577a83-09e0-394a-a58a-6d393efb5677">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_3a46c581-7348-43a2-f22c-d193e8f56130">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_3a46c581-7348-43a2-f22c-d193e8f56130">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -6986,8 +7270,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso29167" type="standard" schema-version="v1.5.6" anchor="iso29167" semx-id="_95115887-c11f-206f-8aa7-5c76b5291d85"><biblio-tag>[ISO/IEC 29167‑1:2014]</biblio-tag><formattedref>ISO/IEC 29167-1:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Part 1: Security services for RFID air interfaces</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso29167" type="standard" schema-version="v1.5.6" anchor="iso29167" semx-id="_4270830b-be32-c22b-022f-53baa236d85e"><biblio-tag>[ISO/IEC 29167‑1:2014]</biblio-tag><formattedref>ISO/IEC 29167-1:2014 (2014), <em>Information technology — Automatic identification and data capture techniques — Part 1: Security services for RFID air interfaces</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -7055,7 +7339,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_49e22da3-adeb-1090-d9f9-c018a4af6c2d">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_49e22da3-adeb-1090-d9f9-c018a4af6c2d">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_e7036c15-d2fc-7572-6b3b-ec480674e3ac">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_e7036c15-d2fc-7572-6b3b-ec480674e3ac">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -7091,8 +7375,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso7816" type="standard" schema-version="v1.5.6" anchor="iso7816" semx-id="_0db027dc-c96d-39c7-7b22-e0f5cb69b45b"><biblio-tag>[ISO/IEC 7816‑6:2004]</biblio-tag><formattedref>ISO/IEC 7816-6:2004 (2004), <em>Identification cards — Integrated circuit cards — Part 6: Interindustry data elements for interchange</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso7816" type="standard" schema-version="v1.5.6" anchor="iso7816" semx-id="_ec424d08-2bf5-837c-96db-65125a970f7b"><biblio-tag>[ISO/IEC 7816‑6:2004]</biblio-tag><formattedref>ISO/IEC 7816-6:2004 (2004), <em>Identification cards — Integrated circuit cards — Part 6: Interindustry data elements for interchange</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Identification cards</title>
 
@@ -7160,7 +7444,7 @@ sourcecode .nt {
         
 <name>Cards and security devices for personal identification</name>
 
-        <identifier id="_81cb97ab-8a4c-90b4-9441-27b5f15983e9">ISO/IEC JTC 1/SC 17</identifier><fmt-identifier><tt><semx element="identifier" source="_81cb97ab-8a4c-90b4-9441-27b5f15983e9">ISO/IEC JTC 1/SC 17</semx></tt></fmt-identifier>
+        <identifier id="_bc6a1a64-90c8-1df5-dd00-07d0387360a5">ISO/IEC JTC 1/SC 17</identifier><fmt-identifier><tt><semx element="identifier" source="_bc6a1a64-90c8-1df5-dd00-07d0387360a5">ISO/IEC JTC 1/SC 17</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -7226,8 +7510,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iso24729" type="standard" schema-version="v1.5.6" anchor="iso24729" semx-id="_1a1e9074-96fe-18d2-6100-50b11e8fea68"><biblio-tag>[ISO/IEC TR 24729‑4:2009]</biblio-tag><formattedref>ISO/IEC TR 24729-4:2009 (2009), <em>Information technology — Radio frequency identification for item management — Implementation guidelines — Part 4: Tag data security</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iso24729" type="standard" schema-version="v1.5.6" anchor="iso24729" semx-id="_67053168-7738-c9ce-5bee-0ebe6b86dfc6"><biblio-tag>[ISO/IEC TR 24729‑4:2009]</biblio-tag><formattedref>ISO/IEC TR 24729-4:2009 (2009), <em>Information technology — Radio frequency identification for item management — Implementation guidelines — Part 4: Tag data security</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -7295,7 +7579,7 @@ sourcecode .nt {
         
 <name>Automatic identification and data capture techniques</name>
 
-        <identifier id="_93d6d4c8-cedc-c2f3-590c-7d2e32932af7">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_93d6d4c8-cedc-c2f3-590c-7d2e32932af7">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
+        <identifier id="_327bc039-39f5-fa6e-5f80-5a40bb3677cc">ISO/IEC JTC 1/SC 31</identifier><fmt-identifier><tt><semx element="identifier" source="_327bc039-39f5-fa6e-5f80-5a40bb3677cc">ISO/IEC JTC 1/SC 31</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation>ISO</abbreviation>
     </organization>
@@ -7321,8 +7605,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="iec62321" type="standard" schema-version="v1.5.6" anchor="iec62321" semx-id="_d80d960f-1231-0913-aba3-e039760e3052"><biblio-tag>[IEC 62321:2008]</biblio-tag><formattedref>IEC 62321:2008 (2008), <em>Electrotechnical products — Determination of levels of six regulated substances (lead, mercury, cadmium, hexavalent chromium, polybrominated biphenyls, polybrominated diphenyl ethers)</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="iec62321" type="standard" schema-version="v1.5.6" anchor="iec62321" semx-id="_0709597f-7baa-d0dc-ead3-3f6567890229"><biblio-tag>[IEC 62321:2008]</biblio-tag><formattedref>IEC 62321:2008 (2008), <em>Electrotechnical products — Determination of levels of six regulated substances (lead, mercury, cadmium, hexavalent chromium, polybrominated biphenyls, polybrominated diphenyl ethers)</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Electrotechnical products</title>
 
@@ -7370,7 +7654,7 @@ sourcecode .nt {
         
 <name language="en" script="Latn">TC 111</name>
 
-        <identifier id="_47348b82-3859-d95c-f2ff-a7480318217e">111</identifier><fmt-identifier><tt><semx element="identifier" source="_47348b82-3859-d95c-f2ff-a7480318217e">111</semx></tt></fmt-identifier>
+        <identifier id="_0a254110-0910-40dc-781c-f193f4ff40bc">111</identifier><fmt-identifier><tt><semx element="identifier" source="_0a254110-0910-40dc-781c-f193f4ff40bc">111</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en" script="Latn">IEC</abbreviation>
     </organization>
@@ -7399,8 +7683,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ts62668" type="standard" schema-version="v1.5.6" anchor="ts62668" semx-id="_47d2521f-5386-5bae-e616-6d26f3740281"><biblio-tag>[IEC TS 62668‑1:2014]</biblio-tag><formattedref>IEC TS 62668-1:2014 (2014), <em>Process management for avionics — Counterfeit prevention — Part 1: Avoiding the use of counterfeit, fraudulent and recycled electronic components</em>, Second edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ts62668" type="standard" schema-version="v1.5.6" anchor="ts62668" semx-id="_898cb2cd-41ba-0ec5-9689-96050d683f75"><biblio-tag>[IEC TS 62668‑1:2014]</biblio-tag><formattedref>IEC TS 62668-1:2014 (2014), <em>Process management for avionics — Counterfeit prevention — Part 1: Avoiding the use of counterfeit, fraudulent and recycled electronic components</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Process management for avionics</title>
 
@@ -7442,7 +7726,7 @@ sourcecode .nt {
         
 <name language="en" script="Latn">TC 107</name>
 
-        <identifier id="_0b4e7366-4cf9-8104-a0e8-dd9b516126be">107</identifier><fmt-identifier><tt><semx element="identifier" source="_0b4e7366-4cf9-8104-a0e8-dd9b516126be">107</semx></tt></fmt-identifier>
+        <identifier id="_60c2fb91-b119-0716-2f81-e2ab7090f6c3">107</identifier><fmt-identifier><tt><semx element="identifier" source="_60c2fb91-b119-0716-2f81-e2ab7090f6c3">107</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en" script="Latn">IEC</abbreviation>
     </organization>
@@ -7472,8 +7756,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ts62668-2" type="standard" schema-version="v1.5.6" anchor="ts62668-2" semx-id="_27076916-74fd-be3b-ed44-aa1c484a7e6f"><biblio-tag>[IEC TS 62668‑2:2014]</biblio-tag><formattedref>IEC TS 62668-2:2014 (2014), <em>Process management for avionics — Counterfeit prevention — Part 2: Managing electronic components from non-franchised sources</em>, First edition.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="ts62668-2" type="standard" schema-version="v1.5.6" anchor="ts62668-2" semx-id="_94eb3312-59d0-ad88-389f-a7d57f75a554"><biblio-tag>[IEC TS 62668‑2:2014]</biblio-tag><formattedref>IEC TS 62668-2:2014 (2014), <em>Process management for avionics — Counterfeit prevention — Part 2: Managing electronic components from non-franchised sources</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title language="en" script="Latn" type="title-intro">Process management for avionics</title>
 
@@ -7515,7 +7799,7 @@ sourcecode .nt {
         
 <name language="en" script="Latn">TC 107</name>
 
-        <identifier id="_a64e2bd3-4aac-1f16-9cb8-9544c394a224">107</identifier><fmt-identifier><tt><semx element="identifier" source="_a64e2bd3-4aac-1f16-9cb8-9544c394a224">107</semx></tt></fmt-identifier>
+        <identifier id="_1ace31f5-59ff-5af8-4de0-ca27c3a8c710">107</identifier><fmt-identifier><tt><semx element="identifier" source="_1ace31f5-59ff-5af8-4de0-ca27c3a8c710">107</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en" script="Latn">IEC</abbreviation>
     </organization>
@@ -7543,8 +7827,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="rfc3279" type="standard" schema-version="v1.5.6" anchor="rfc3279" semx-id="_f873dc41-813e-fbb5-2b74-3652d42cee6f"><biblio-tag>[IETF RFC 3279]</biblio-tag><formattedref>IETF RFC 3279 (2002), <em>Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</em>.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="rfc3279" type="standard" schema-version="v1.5.6" anchor="rfc3279" semx-id="_2d0eb7bf-f49b-0a1e-e130-96f7c2839fe5"><biblio-tag>[IETF RFC 3279]</biblio-tag><formattedref>IETF RFC 3279 (2002), <em>Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</title>
 
@@ -7607,7 +7891,7 @@ sourcecode .nt {
         
 <name>Public-Key Infrastructure (X.509)</name>
 
-        <identifier id="_c7da2923-4344-f4b0-390b-02b7ffaaa58a">pkix</identifier><fmt-identifier><tt><semx element="identifier" source="_c7da2923-4344-f4b0-390b-02b7ffaaa58a">pkix</semx></tt></fmt-identifier>
+        <identifier id="_cd95f0af-9960-1df8-6346-8edddf1a6d6e">pkix</identifier><fmt-identifier><tt><semx element="identifier" source="_cd95f0af-9960-1df8-6346-8edddf1a6d6e">pkix</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en">IETF</abbreviation>
     </organization>
@@ -7615,7 +7899,7 @@ sourcecode .nt {
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_e428385a-5a99-51cb-2c41-48050227d618" semx-id="_e428385a-5a99-51cb-2c41-48050227d618">This document specifies algorithm identifiers and ASN.1 encoding formats for digital signatures and subject public keys used in the Internet X.509 Public Key Infrastructure (PKI).  Digital signatures are used to sign certificates and certificate revocation list (CRLs).  Certificates include the public key of the named subject. [STANDARDS-TRACK]</p>
+    <p id="_7b890b62-cd0d-b544-3e1f-650e6a1bbd06" semx-id="_7b890b62-cd0d-b544-3e1f-650e6a1bbd06">This document specifies algorithm identifiers and ASN.1 encoding formats for digital signatures and subject public keys used in the Internet X.509 Public Key Infrastructure (PKI).  Digital signatures are used to sign certificates and certificate revocation list (CRLs).  Certificates include the public key of the named subject. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -7626,11 +7910,6 @@ sourcecode .nt {
 <title>RFC</title>
 
     <number>3279</number>
-  </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
   </series>
   <keyword>
     <vocab>ASN.1</vocab>
@@ -7650,8 +7929,8 @@ sourcecode .nt {
   <keyword>
     <vocab>Certificate Revocation List</vocab>
   </keyword>
-</bibitem><bibitem id="rfc3280" type="standard" schema-version="v1.5.6" anchor="rfc3280" semx-id="_c6cacb4d-415b-2f1d-7b5c-67b145868ca1"><biblio-tag>[IETF RFC 3280]</biblio-tag><formattedref>IETF RFC 3280 (2002), <em>Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</em>.</formattedref>
-  <fetched>2026-10-27</fetched>
+</bibitem><bibitem id="rfc3280" type="standard" schema-version="v1.5.6" anchor="rfc3280" semx-id="_9a872958-82dc-fdde-d98c-f0817e21e3c9"><biblio-tag>[IETF RFC 3280]</biblio-tag><formattedref>IETF RFC 3280 (2002), <em>Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</em>.</formattedref>
+  <fetched>2026-11-04</fetched>
   
 <title type="main">Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</title>
 
@@ -7722,7 +8001,7 @@ sourcecode .nt {
         
 <name>Public-Key Infrastructure (X.509)</name>
 
-        <identifier id="_a868506e-c2d6-4475-0d63-12645e8a7f43">pkix</identifier><fmt-identifier><tt><semx element="identifier" source="_a868506e-c2d6-4475-0d63-12645e8a7f43">pkix</semx></tt></fmt-identifier>
+        <identifier id="_ed4a5d2e-9149-46d6-c726-86462d0ecf77">pkix</identifier><fmt-identifier><tt><semx element="identifier" source="_ed4a5d2e-9149-46d6-c726-86462d0ecf77">pkix</semx></tt></fmt-identifier>
       </subdivision>
       <abbreviation language="en">IETF</abbreviation>
     </organization>
@@ -7730,7 +8009,7 @@ sourcecode .nt {
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">
-    <p id="_b62e7c49-f632-c3c7-ae59-8f43b894f9ab" semx-id="_b62e7c49-f632-c3c7-ae59-8f43b894f9ab">This memo profiles the X.509 v3 certificate and X.509 v2 Certificate Revocation List (CRL) for use in the Internet. [STANDARDS-TRACK]</p>
+    <p id="_cbd35556-97a6-6c1d-b5b8-b4120ec8aa26" semx-id="_cbd35556-97a6-6c1d-b5b8-b4120ec8aa26">This memo profiles the X.509 v3 certificate and X.509 v2 Certificate Revocation List (CRL) for use in the Internet. [STANDARDS-TRACK]</p>
 
   </abstract>
   <status>
@@ -7749,11 +8028,6 @@ sourcecode .nt {
 
     <number>3280</number>
   </series>
-  <series type="stream">
-    
-<title>IETF</title>
-
-  </series>
   <keyword>
     <vocab>X.509</vocab>
   </keyword>
@@ -7769,54 +8043,6 @@ sourcecode .nt {
   <keyword>
     <vocab>Certificate Revocation List</vocab>
   </keyword>
-</bibitem><bibitem anchor="iso15459" id="iso15459" type="standard" semx-id="_47340c56-27e7-0677-ca46-e4e0bc1de01f"><biblio-tag>[ISO/IEC 15459]</biblio-tag><formattedref>ISO/IEC 15459, <em>ISO/IEC 15459, Unique identifiers.</em>.</formattedref>
-<title format="text/plain">ISO/IEC 15459, Unique identifiers.</title>
-<docidentifier type="ISO">ISO/IEC 15459</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 15459</docidentifier><docnumber>15459</docnumber><contributor><role type="publisher"/><organization>
-<name>ISO</name>
-</organization></contributor><contributor><role type="publisher"/><organization>
-<name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="iso15693" id="iso15693" type="standard" semx-id="_8470686a-74d7-357a-fc78-0c1c0970cde0"><biblio-tag>[ISO/IEC 15693]</biblio-tag><formattedref>ISO/IEC 15693, <em>ISO/IEC 15693, Identification cards – Contactless integrated circuit cards – Vicinity cards.</em>.</formattedref>
-<title format="text/plain">ISO/IEC 15693, Identification cards – Contactless integrated circuit cards – Vicinity cards.</title>
-<docidentifier type="ISO">ISO/IEC 15693</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 15693</docidentifier><docnumber>15693</docnumber><contributor><role type="publisher"/><organization>
-<name>ISO</name>
-</organization></contributor><contributor><role type="publisher"/><organization>
-<name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem anchor="x509" id="x509" semx-id="_c6057071-1711-1553-f1ca-d63395b4e8a0"><biblio-tag>[ITU X.509]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU X.509, Recommendation ITU-T X.509 (2012) | ISO/IEC 9594-8:2014, <em>Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</em>.</formattedref>
-  <docidentifier type="ITU">ITU X.509</docidentifier>
-  <docnumber>509</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="e164" id="e164" semx-id="_fc4ce31e-95e9-0426-6aea-63f6167db3df"><biblio-tag>[ITU‑T E.164]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T E.164, Recommendation ITU-T E.164 (2010), <em>The international public telecommunication numbering plan</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T E.164</docidentifier>
-  <docnumber>164</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="x1255" id="x1255" semx-id="_41d26b71-0a20-a15f-68d1-059346297e4d"><biblio-tag>[ITU‑T X.1255]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.1255, Recommendation ITU-T X.1255 (2013), <em>Framework for discovery of identity management information</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T X.1255</docidentifier>
-  <docnumber>1255</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="x668" id="x668" semx-id="_5dc1ac29-415b-ade0-706a-8d485394fac5"><biblio-tag>[ITU‑T X.668]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T X.668, Recommendation ITU-T X.668 (2008) | ISO/IEC 9834-9:2008, <em>Information technology – Open Systems Interconnection – Procedures for the operation of OSI Registration Authorities: Registration of object identifier arcs for applications and services using tag-based identification</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T X.668</docidentifier>
-  <docnumber>668</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="h621" id="h621" semx-id="_e5b2f572-2619-3f85-0af0-d52002d89e69"><biblio-tag>[ITU‑T Y.4405]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.4405, Recommendation ITU-T H.621 (2008), <em>Architecture of a system for multimedia information access triggered by tag-based identification</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T Y.4405</docidentifier>
-  <docnumber>4405</docnumber>
-  <language>en</language>
-  <script>Latn</script>
-</bibitem><bibitem anchor="f771" id="f771" semx-id="_a2e3d5b7-3fb3-dab1-e6e5-1a226b4f34f4"><biblio-tag>[ITU‑T Y.4551]</biblio-tag>
-  <formattedref format="application/x-isodoc+xml">Recommendation ITU-T Y.4551, Recommendation ITU-T F.771 (2008), <em>Service description and requirements for multimedia information access triggered by tag-based identification</em>.</formattedref>
-  <docidentifier type="ITU">ITU-T Y.4551</docidentifier>
-  <docnumber>4551</docnumber>
-  <language>en</language>
-  <script>Latn</script>
 </bibitem><bibitem anchor="oecd-web" id="oecd-web" semx-id="_3c8ad9cd-196e-bc52-0fbb-30e9df1c12f0"><biblio-tag>[1]</biblio-tag>
   <formattedref format="application/x-isodoc+xml">
     <link target="http://www.oecd.org/sti/ind/44088872.pdf" id="_cb12a95c-b59d-1e1c-3d46-af63e96261f9"/><semx element="link" source="_cb12a95c-b59d-1e1c-3d46-af63e96261f9"><fmt-link target="http://www.oecd.org/sti/ind/44088872.pdf" style="url"/></semx>
