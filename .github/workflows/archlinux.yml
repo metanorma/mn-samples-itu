@@ -12,5 +12,5 @@ on:
 
 jobs:
   test:
-    uses: metanorma/ci/.github/workflows/sample-archlinux.yml@archlinux-toolchain-472
+    uses: metanorma/ci/.github/workflows/sample-archlinux.yml@main
     secrets: inherit
