@@ -12,31 +12,5 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    container: docker://archlinux/archlinux:latest
-    steps:
-      - name: Update pacman repositories
-        run: pacman -Syu --noconfirm
-
-      - name: Install Metanorma dependencies via pacman
-        # ruby-erb, ruby-rdoc, ruby-irb: Arch's ruby 3.4 splits stdlib gems into
-        # separate packages; fontist -> octokit -> require 'erb' fails without these.
-        # Adding rdoc + irb defensively (same shape recurs across stdlib requires).
-        run: pacman -Sy --noconfirm git ruby ruby-erb ruby-rdoc ruby-irb jre-openjdk-headless gcc libffi libxml2 libxslt make fontconfig ttf-dejavu
-
-      - name: Install Metanorma
-        run: gem install metanorma-cli
-
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
-          submodules: true
-
-      - run: |
-          PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
-          metanorma site generate --agree-to-terms
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: site
+    uses: metanorma/ci/.github/workflows/sample-archlinux.yml@archlinux-toolchain-472
+    secrets: inherit
