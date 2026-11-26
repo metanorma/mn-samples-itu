@@ -256,7 +256,7 @@ The mode field diameter (MFD) asciimath:[2w] represents a measure of the transve
 [ (2 int_0^(pi/2)
 {:F^2(theta) sin theta cos theta d theta:}) /
 (int_0^(pi/2)
-{:F^2(theta)sin^3 theta cos theta d theta:}}]^(1/2)
+{:F^2(theta)sin^3 theta cos theta d theta:}]^(1/2)
 ++++
 
 [[term_mode_field_non_circularity]]
@@ -355,7 +355,7 @@ For a uniform fibre, it is possible to define an attenuation per unit length or 
 [stem]
 ++++
 a(lambda)=
-(A(lambda))/L (text(dB/unit length)))
+(A(lambda))/L (text(dB/unit length))
 ++++
 
 [[term_macrobending_loss]]
@@ -2125,7 +2125,7 @@ In both cases the fibre section attenuation can be calculated as:
 [stem]
 ++++
 A = 10 log
-{:((P_1(lambda))/{P_2(lambda))):}-C_a(dB)
+{:((P_1(lambda))/(P_2(lambda))):}-C_a(dB)
 ++++
 
 where C~a~ is the nominal average loss (in dB) of the connection between the fibre under test and that part of the test set-up (launch or receive) belonging to option a).
@@ -2852,7 +2852,7 @@ Lower wavelength of region plus 0.15 μm.
 
 [stem]
 ++++
-a(lambda) ~=
+a(lambda) \approx
 A_u + B_u lambda
 ++++
 
@@ -3209,9 +3209,9 @@ Calculate the characteristic of the ratio _R_~W~ of mode field diameters of two 
 R_W=
 (2W(lambda_1))/(2W(lambda_2))=
 (c_0+c_1 ( (lambda_1)/(lambda_c) )^(1.5)
-+c_2 ( (lambda_1)/(lambda_c))^6} /
++c_2 ( (lambda_1)/(lambda_c))^6) /
 (c_0+c_1 ( (lambda_2)/(lambda_c))^(1.5)
-+c_2  (lambda_2/lambda_c)^6
++c_2  (lambda_2/lambda_c)^6)
 ++++
 
 Determine the approximate function between the ratio _R_~W~ of mode field diameters at two wavelengths and cut-off wavelength λ~c~.
@@ -3238,7 +3238,7 @@ Alternatively, relative index difference Δ(_x_) in % is obtained with <<eq-II-1
 Delta(x) =
 1/0.62 [ {1+0.62 Delta(x_0)} *
 10^((I_n(x,lambda)-20log{
-(2W(x_0,lambda))/(2W(x,lambda))})/10} -1]
+(2W(x_0,lambda))/(2W(x,lambda))})/10) -1]
 ++++
 --
 
